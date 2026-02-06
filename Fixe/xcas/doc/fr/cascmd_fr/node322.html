@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Factorisation : factor factoriser</TITLE>
+<META NAME="description" CONTENT="Factorisation : factor factoriser">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node323.html">
+<LINK REL="previous" HREF="node321.html">
+<LINK REL="up" HREF="node313.html">
+<LINK REL="next" HREF="node323.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7669"
+  HREF="node323.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7663"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7657"
+  HREF="node321.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7665"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7667"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7670"
+  HREF="node323.html">Factorisation dans : cFactor</A>
+<B> monter:</B> <A NAME="tex2html7664"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7658"
+  HREF="node321.html">S&#233;paration des variables :</A>
+ &nbsp; <B>  <A NAME="tex2html7666"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7668"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009139000000000000000"></A><A NAME="7332"></A><A NAME="7333"></A><A NAME="sec:factore"></A>
+<BR>
+Factorisation : <TT>factor factoriser</TT>
+</H2>
+<TT>factor</TT> a comme param&#232;tre une expression.
+<BR><TT>factor</TT> factorise cette  expression sur le corps de ses coefficients.
+<BR><B>Exemples</B> :
+
+<OL>
+<LI>Factoriser dans <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> :
+<P><!-- MATH
+ \begin{displaymath}
+x^4-1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>4</SUP> - 1
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>4-1)</TT>
+</DIV>
+On trouve :
+<DIV ALIGN="CENTER">
+<TT>(x<code>^</code>2+1)*(x+1)*(x-1)</TT>
+</DIV>
+Les coefficients sont entiers donc la factorisation se fera avec des polyn&#244;mes &#224; coefficients entiers.
+<BR></LI>
+<LI>Factoriser dans <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \mathbb {C}$"> :
+<P><!-- MATH
+ \begin{displaymath}
+x^4-1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>4</SUP> - 1
+</DIV><P></P>
+Pour avoir une factorisation complexe, on coche <TT>complex</TT> dans l'&#233;cran de
+configuration du <TT>cas</TT> (bouton donnant la ligne d'&#233;tat) on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>4-1)</TT>
+</DIV>
+On trouve :
+<DIV ALIGN="CENTER">
+<TT>-i*(-x+-i)*(i*x+1)*(-x+1)*(x+1)</TT>
+</DIV>
+</LI>
+<LI>Factoriser dans <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> :
+<P><!-- MATH
+ \begin{displaymath}
+x^4+1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>4</SUP> + 1
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>4+1)</TT>
+</DIV>
+On trouve :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>4+1</TT>
+</DIV>
+car <I>x</I><SUP>4</SUP> + 1 ne se fatorise pas sur les entiers.
+<BR></LI>
+<LI>Factoriser sur les entiers de Gauss :
+<P><!-- MATH
+ \begin{displaymath}
+x^4+1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>4</SUP> + 1
+</DIV><P></P>
+Si l'on veut une factorisation sur les entiers de Gauss, on coche <TT>complex</TT>
+dans l'&#233;cran de configuration du <TT>cas</TT> (bouton donnant la ligne 
+d'&#233;tat), on tape&nbsp;:
+<BR>
+<DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>4-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x<code>^</code>2+i)*(x<code>^</code>2+-i)</TT>
+</DIV>
+</LI>
+<LI>Factoriser dans <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"> :
+<P><!-- MATH
+ \begin{displaymath}
+x^4+1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>4</SUP> + 1
+</DIV><P></P>
+Si l'on veut une factorisation r&#233;elle, afin de connaitre le r&#233;el qui sert
+dans la factorisation, on coche <TT>complex</TT> dans l'&#233;cran de configuration 
+du <TT>cas</TT> et on tape tout d'abord :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>solve(x<code>^</code>4+1,x)</TT>
+</DIV><A NAME="7372"></A><A NAME="7373"></A>
+On trouve :
+<DIV ALIGN="CENTER">
+<TT>[sqrt(2)/2+(i)*sqrt(2)/2,sqrt(2)/2+(i)*(-(sqrt(2)/2)),</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>-sqrt(2)/2+(i)*sqrt(2)/2,-sqrt(2)/2+(i)*(-(sqrt(2)/2))]</TT>
+</DIV>
+On voit que les racines d&#233;pendent de <IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \sqrt{2}$"> donc on tape :
+<DIV ALIGN="CENTER">
+<TT>factor(sqrt(2)*(x<code>^</code>4+1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(2)*(x<code>^</code>2+sqrt(2)*x+1)*(x<code>^</code>2+(-(sqrt(2)))*x+1)</TT>
+</DIV>
+Pour factoriser dans <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \mathbb {C}$"> l'expression <I>x</I><SUP>4</SUP> + 1, il faut cocher
+<TT>complex</TT> dans l'&#233;cran de configuration du <TT>cas</TT> et taper
+<TT>cFactor(sqrt(2)*(x<code>^</code>4+1))</TT> (cf <TT>cFactor</TT>.
+</LI>
+</OL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7669"
+  HREF="node323.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7663"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7657"
+  HREF="node321.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7665"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7667"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7670"
+  HREF="node323.html">Factorisation dans : cFactor</A>
+<B> monter:</B> <A NAME="tex2html7664"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7658"
+  HREF="node321.html">S&#233;paration des variables :</A>
+ &nbsp; <B>  <A NAME="tex2html7666"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7668"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

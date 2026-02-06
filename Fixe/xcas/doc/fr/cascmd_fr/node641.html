@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Modifier un &#233;l&#233;ment ou une ligne d'une matrice contenue dans une variable : =&lt;</TITLE>
+<META NAME="description" CONTENT="Modifier un &#233;l&#233;ment ou une ligne d'une matrice contenue dans une variable : =&lt;">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node642.html">
+<LINK REL="previous" HREF="node640.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node642.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12383"
+  HREF="node642.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12377"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12371"
+  HREF="node640.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12379"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12381"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12384"
+  HREF="node642.html">Modifier un &#233;l&#233;ment ou</A>
+<B> monter:</B> <A NAME="tex2html12378"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12372"
+  HREF="node640.html">Extraire un ou des</A>
+ &nbsp; <B>  <A NAME="tex2html12380"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12382"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094313000000000000000"></A><A NAME="16526"></A>
+<BR>
+Modifier un &#233;l&#233;ment ou une ligne d'une matrice contenue dans une variable : <TT>=&lt;</TT>
+</H2>
+Si la matrice a un nom, on peut assigner un &#233;l&#233;ment d'une 
+matrice en utilisant son indice.
+Si on assigne avec <TT>:=</TT>, une nouvelle copie de la matrice est cr&#233;&#233;e
+et l'&#233;l&#233;ment est modifi&#233;, et si on assigne avec <TT>=&lt;</TT> la matrice est
+modifi&#233;e sans faire de copie ce qui est plus rapide lorque la matrice est de 
+grande taille.
+<BR>
+Par exemple :
+<BR><TT>A:=[[4,5],[2,6]]</TT>, on peut taper directement <TT>A[1,0]:=3</TT> ou
+<TT>A[1,0]=&lt;3</TT> pour modifier <TT>A</TT> en la matrice <TT>[[4,5],[3,6]]</TT>.
+<BR>&#192; utiliser avec pr&#233;cautions car tous les objets pointant sur cette matrice 
+seront modifi&#233;s. Dans un programme il faudra utiliser <TT>copy</TT> lors de 
+l'initialisation pour que les modifications se fassent sur la copie 
+(cf <A HREF="node856.html#sec:copie">8.4.14</A>).
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

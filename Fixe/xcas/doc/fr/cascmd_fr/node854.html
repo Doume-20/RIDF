@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'affectation par copie : copy</TITLE>
+<META NAME="description" CONTENT="L'affectation par copie : copy">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node855.html">
+<LINK REL="previous" HREF="node853.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node855.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15624"
+  HREF="node855.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15618"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15612"
+  HREF="node853.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15620"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15622"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15625"
+  HREF="node855.html">Les diff&#233;rences entre :=,</A>
+<B> monter:</B> <A NAME="tex2html15619"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15613"
+  HREF="node853.html">Les affectations infix&#233;es :</A>
+ &nbsp; <B>  <A NAME="tex2html15621"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15623"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011412000000000000000"></A><A NAME="22248"></A>
+<BR>
+L'affectation par copie : <TT>copy</TT>
+</H2>
+<TT>copy</TT>  permet de cloner une liste, un vecteur
+ou une matrice, en g&#233;n&#233;ral pour le stocker dans une 
+variable.
+<BR><TT>copy</TT> a un argument, la liste (vecteur ou matrice) &#224; cloner.
+<BR><TT>A:= copy(B)</TT> recopie la liste (vecteur, matrice) B dans A.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>B:=copy([[4,5],[2,6]])</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>A:=[[4,5],[2,6]];B:=copy(A)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[2,6]],[[4,5],[2,6]]</TT>
+</DIV>
+<B>Quand doit-on utiliser <TT>copy</TT> ?</B>
+<BR><TT>copy</TT> est surtout utile pour des listes ou des matrices qui 
+seront par la suite modifi&#233;es par r&#233;f&#233;rence avec <TT>=&lt;</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=copy(A)</TT>
+</DIV>
+Puis, si on tape :
+<DIV ALIGN="CENTER">
+<TT>A[3]=&lt;33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,33,4],[0,1,2,3,4]</TT>
+</DIV>
+Puis si on tape :
+<DIV ALIGN="CENTER">
+<TT>B[3]=&lt;55</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,33,4],[0,1,2,55,4]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

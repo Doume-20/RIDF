@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les tests : ==, !=, &gt;, &gt;=, &lt;, &lt;=</TITLE>
+<META NAME="description" CONTENT="Les tests : ==, !=, &gt;, &gt;=, &lt;, &lt;=">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node200.html">
+<LINK REL="previous" HREF="node198.html">
+<LINK REL="up" HREF="node197.html">
+<LINK REL="next" HREF="node200.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html5847"
+  HREF="node200.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5841"
+  HREF="node197.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5835"
+  HREF="node198.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5843"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5845"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html5848"
+  HREF="node200.html">Les op&#233;rateurs bool&#233;ens :</A>
+<B> monter:</B> <A NAME="tex2html5842"
+  HREF="node197.html">Les bool&#233;ens</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html5836"
+  HREF="node198.html">Les valeurs d'un bool&#233;en</A>
+ &nbsp; <B>  <A NAME="tex2html5844"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5846"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00922000000000000000"></A><A NAME="4146"></A><A NAME="4147"></A><A NAME="4148"></A><A NAME="4149"></A><A NAME="4150"></A>
+<BR>
+Les tests : <TT>==, !=, &gt;, &gt;=, &lt;, &lt;=</TT>
+</H2><A NAME="29668"></A>
+<TT>==, !=, &gt;, &gt;=, &lt;, &lt;=</TT> sont des op&#233;rateurs infix&#233;s.
+<BR><TT>a==b</TT> teste l'&#233;galit&#233; entre <TT>a</TT> et <TT>b</TT> et renvoie <TT>1</TT> si
+ <TT>a</TT> est &#233;gal &#224; <TT>b</TT> et <TT>0</TT> sinon.
+<BR><TT>a!=b</TT> renvoie <TT>1</TT> si <TT>a</TT> est diff&#233;rent de <TT>b</TT> et <TT>0</TT> 
+sinon.
+<BR> <TT>a&gt;=b</TT> renvoie <TT>1</TT> si <TT>a</TT> est sup&#233;rieur ou &#233;gal &#224; <TT>b</TT> 
+et <TT>0</TT> sinon.
+<BR><TT>a&gt;b</TT> renvoie <TT>1</TT> si <TT>a</TT> est strictement sup&#233;rieur &#224; <TT>b</TT>
+ et <TT>0</TT> sinon.
+<BR><TT>a&lt;=b</TT> renvoie <TT>1</TT> si <TT>a</TT> est inf&#233;rieur ou &#233;gal &#224; <TT>b</TT> et 
+<TT>0</TT> sinon.
+<BR><TT>a&lt;b</TT> renvoie <TT>1</TT> si <TT>a</TT> est strictement inf&#233;rieur &#224; <TT>b</TT> 
+et <TT>0</TT> sinon.
+<BR>
+On tape pour d&#233;finir la fonction bool&#233;enne qui vaut <TT>true</TT> sur 
+<!-- MATH
+ $]0;+\infty[$
+ -->
+]0; + <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">[ et qui vaut <TT>false</TT> sur <!-- MATH
+ $]-\infty;0]$
+ -->
+] - <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">;0] :
+<DIV ALIGN="CENTER">
+<TT>f(x):=ifte(x&gt;0,true,false)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>f(0)==0</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+<B>Attention</B>
+<BR><TT>a=b</TT> n'est pas un bool&#233;en !!!!
+<BR>
+Pour tester l'&#233;galit&#233; entre <TT>a</TT> et <TT>b</TT> il faut mettre <TT>a==b</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5847"
+  HREF="node200.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5841"
+  HREF="node197.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5835"
+  HREF="node198.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5843"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5845"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html5848"
+  HREF="node200.html">Les op&#233;rateurs bool&#233;ens :</A>
+<B> monter:</B> <A NAME="tex2html5842"
+  HREF="node197.html">Les bool&#233;ens</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html5836"
+  HREF="node198.html">Les valeurs d'un bool&#233;en</A>
+ &nbsp; <B>  <A NAME="tex2html5844"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5846"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

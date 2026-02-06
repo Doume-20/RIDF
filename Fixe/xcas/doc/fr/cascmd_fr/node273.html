@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La fonction sinus integral Si : Si</TITLE>
+<META NAME="description" CONTENT="La fonction sinus integral Si : Si">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node274.html">
+<LINK REL="previous" HREF="node272.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node274.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6942"
+  HREF="node274.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6936"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6930"
+  HREF="node272.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6938"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6940"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6943"
+  HREF="node274.html">La fonction de Heaviside</A>
+<B> monter:</B> <A NAME="tex2html6937"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6931"
+  HREF="node272.html">La fonction cosinus integral</A>
+ &nbsp; <B>  <A NAME="tex2html6939"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6941"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009107000000000000000"></A><A NAME="6340"></A>
+<BR>
+La fonction sinus integral <I>Si</I> : <TT>Si</TT>
+</H2>
+<TT>Si</TT> a comme argument un nombre complexe <I>a</I>.
+<BR><TT>Si</TT> calcule les valeurs de la fonction <I>Si</I> au point <I>a</I>.
+<BR>
+On a par d&#233;finition 
+<P><!-- MATH
+ \begin{displaymath}
+Si(x)=\int_{t=0}^x\frac{\sin(t)}{t} dt
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>Si</I>(<I>x</I>) = <IMG
+ WIDTH="37" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.png"
+ ALT="$\displaystyle \int_{{t=0}}^{x}$"><IMG
+ WIDTH="50" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.png"
+ ALT="$\displaystyle {\frac{{\sin(t)}}{{t}}}$"><I>dt</I>
+</DIV><P></P>
+On a <I>Si</I>(0) = 0, <!-- MATH
+ $Si(-\infty)=-\frac{\pi}{2}$
+ -->
+<I>Si</I>(- <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">) = - <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.png"
+ ALT="$ {\frac{{\pi}}{{2}}}$">, <!-- MATH
+ $Si(+\infty)=\frac{\pi}{2}$
+ -->
+<I>Si</I>(+ <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">) = <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.png"
+ ALT="$ {\frac{{\pi}}{{2}}}$">.
+Lorsque l'on est proche de <I>x</I> = 0 on sait que :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{\sin(x)}{x}=1-\frac{x^2}{3!}+\frac{x^4}{5!}+...+(-1)^n\frac{x^{2n}}{(2n+1)!}....
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="53" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img160.png"
+ ALT="$\displaystyle {\frac{{\sin(x)}}{{x}}}$"> = 1 - <IMG
+ WIDTH="26" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="$\displaystyle {\frac{{x^2}}{{3!}}}$"> + <IMG
+ WIDTH="26" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.png"
+ ALT="$\displaystyle {\frac{{x^4}}{{5!}}}$"> + ... + (- 1)<SUP>n</SUP><IMG
+ WIDTH="76" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.png"
+ ALT="$\displaystyle {\frac{{x^{2n}}}{{(2n+1)!}}}$">....
+</DIV><P></P>
+ce qui donne par int&#233;gration le d&#233;veloppement en s&#233;ries de Si en 0.
+On observe aussi que <TT>Si</TT> est une fonction impaire.
+
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Si(1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.946083070367</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Si(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-0.946083070367</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Si(1.)+Si(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Si(1.)-Si(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.89216614073</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>int(sin(x)/x,x=-1..1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.89216614073</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

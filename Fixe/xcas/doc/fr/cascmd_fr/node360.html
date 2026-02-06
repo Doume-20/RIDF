@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fonction d&#233;riv&#233;e d'une fonction : function_diff fonction_derivee</TITLE>
+<META NAME="description" CONTENT="Fonction d&#233;riv&#233;e d'une fonction : function_diff fonction_derivee">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node361.html">
+<LINK REL="previous" HREF="node359.html">
+<LINK REL="up" HREF="node359.html">
+<LINK REL="next" HREF="node361.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8222"
+  HREF="node361.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8216"
+  HREF="node359.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8210"
+  HREF="node359.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8218"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8220"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8223"
+  HREF="node361.html">Longueur d'un arc de</A>
+<B> monter:</B> <A NAME="tex2html8217"
+  HREF="node359.html">D&#233;rivation et variation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8211"
+  HREF="node359.html">D&#233;rivation et variation</A>
+ &nbsp; <B>  <A NAME="tex2html8219"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8221"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009181000000000000000"></A><A NAME="8521"></A><A NAME="8522"></A>
+<BR>
+Fonction d&#233;riv&#233;e d'une fonction : <TT>function_diff fonction_derivee</TT>
+</H2>
+<TT>function_diff</TT> a comme argument une fonction.
+<BR><TT>function_diff</TT> renvoie la fonction  d&#233;riv&#233;e de cette fonction.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>function_diff(sin)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(` x`)-&gt;cos(` x`)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>function_diff(sin)(x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>cos(x)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>f(x):=x<code>^</code>2+x*cos(x)</TT>
+</DIV> 
+<DIV ALIGN="CENTER">
+<TT>function_diff(f)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(` x`)-&gt;2*` x`+cos(` x`)+` x`*(-(sin(` x`)))</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>function_diff(f)(x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>cos(x)+x*(-(sin(x)))+2*x</TT>
+</DIV>
+Pour d&#233;finir <I>g</I> comme <I>f'</I>, on tape :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>g:=function_diff(f)</TT>
+</DIV>
+Ou :
+<DIV ALIGN="CENTER">
+<TT>g:=unapply(diff(f(x),x),x)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>g(x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>cos(x)+x*(-(sin(x)))+2*x</TT>
+</DIV>  
+<B>Attention !!!</B>
+<BR>
+Lorsqu'on est en mode <TT>Maple</TT>, pour des raisons de compatibilit&#233;,
+on peut aussi utiliser <TT>D</TT> &#224; la place de <TT>function_diff</TT> et c'est 
+pourquoi en g&#233;om&#233;trie on ne pourra pas avoir d'objet g&#233;om&#233;trique ayant
+comme nom  <TT>D</TT>, lorsqu'on est en mode <TT>Maple</TT>.
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

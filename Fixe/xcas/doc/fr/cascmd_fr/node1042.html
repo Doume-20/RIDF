@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Plan et droites parall&#232;les : parallel parallele</TITLE>
+<META NAME="description" CONTENT="Plan et droites parall&#232;les : parallel parallele">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1043.html">
+<LINK REL="previous" HREF="node1041.html">
+<LINK REL="up" HREF="node1036.html">
+<LINK REL="next" HREF="node1043.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18611"
+  HREF="node1043.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18605"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18599"
+  HREF="node1041.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18607"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18609"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18612"
+  HREF="node1043.html">Plans (ou droites) perpendiculaires</A>
+<B> monter:</B> <A NAME="tex2html18606"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18600"
+  HREF="node1041.html">Le vecteur en 3D</A>
+ &nbsp; <B>  <A NAME="tex2html18608"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18610"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001346000000000000000"></A><A NAME="27134"></A><A NAME="27135"></A><A NAME="sec:parallele3"></A>
+<BR>
+Plan et droites parall&#232;les : <TT>parallel parallele</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node934.html#sec:parallele2">9.10.6</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>parallele</TT>, en g&#233;om&#233;trie 3D, renvoie et dessine une droite 
+ou un plan selon ses arguments. Si ses arguments sont :
+
+<UL>
+<LI>un point <I>A</I> et 1 droites <I>d</I>, <TT>parallele(A,d)</TT> renvoie et dessine la
+droite parall&#232;le &#224; la droite <I>d</I> passant par le point <I>A</I>,
+</LI>
+<LI>une droite <I>dd</I> et une droite <I>d</I> non parall&#232;les <TT>parallele(dd,d)</TT>
+renvoie et dessine le plan parall&#232;le &#224; la droite <I>d</I> passant par la 
+droite <I>dd</I>, 
+</LI>
+<LI>un point <I>A</I> et un plan <I>P</I>, <TT>parallele(A,P)</TT>
+ renvoie et dessine le plan parall&#232;le au plan <I>P</I> passant par le point <I>A</I>,
+</LI>
+<LI>un point <I>A</I> et 2 droites <I>d</I> et <I>dd</I> non parall&#232;les,
+<TT>parallele(A,d,dd)</TT> renvoie et dessine le plan parall&#232;le aux droites <I>d</I> 
+et <I>dd</I> passant par le point <I>A</I>.
+<BR></LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>parallele(point(1,1,1),droite(point(0,0,0),point(0,0,1)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La droite d'&#233;quation x=1,y=1 est trac&#233;e</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>parallele(droite(point(1,0,0),point(0,1,0)),droite(point(0,0,0),point(0,0,1)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le plan d'&#233;quation x+y-1=0 est trac&#233;</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>parallele(point(0,0,0),plan(point(1,0,0),point(0,1,0),point(0,0,1)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le plan d'&#233;quation x+y+z=0 est trac&#233;</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>parallele(point(1,1,1),droite(point(0,0,0),point(0,0,1)),droite(point(1,0,0),point(0,1,0)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le plan d'&#233;quation x+y=2 est trac&#233;e</TT>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18611"
+  HREF="node1043.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18605"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18599"
+  HREF="node1041.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18607"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18609"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18612"
+  HREF="node1043.html">Plans (ou droites) perpendiculaires</A>
+<B> monter:</B> <A NAME="tex2html18606"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18600"
+  HREF="node1041.html">Le vecteur en 3D</A>
+ &nbsp; <B>  <A NAME="tex2html18608"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18610"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

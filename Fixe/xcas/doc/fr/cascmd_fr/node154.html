@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Animation d'une s&#233;quence d'objets graphiques&nbsp;:animation</TITLE>
+<META NAME="description" CONTENT="Animation d'une s&#233;quence d'objets graphiques&nbsp;:animation">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node153.html">
+<LINK REL="up" HREF="node151.html">
+<LINK REL="next" HREF="node155.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4596"
+  HREF="node155.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4590"
+  HREF="node151.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4586"
+  HREF="node153.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4592"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4594"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4597"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> monter:</B> <A NAME="tex2html4591"
+  HREF="node151.html">Faire une animation en</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4587"
+  HREF="node153.html">Animation d'un graphe 3D&nbsp;:animate3d</A>
+ &nbsp; <B>  <A NAME="tex2html4593"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4595"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION006223000000000000000"></A><A NAME="3245"></A>
+<BR>
+Animation d'une s&#233;quence d'objets graphiques&nbsp;:<TT>animation</TT>
+</H2>
+<TT>animation</TT> permet de dessiner chaque objet d'une suite d'objets 
+graphiques avec un temps d'affichage donn&#233;. En g&#233;n&#233;ral les objets de la 
+suite d&#233;pendent d'un param&#232;tre, il faut alors cr&#233;er une suite en faisant 
+varier ce param&#232;tre.
+<BR><TT>animation</TT> a comme param&#232;tre une s&#233;quence d'objets graphiques.
+<BR><B>Remarque</B> 
+<BR>
+Si on veut que dans l'animation plusieurs objets graphiques soient affich&#232;s 
+en m&#234;me temps, il faut mettre ces objets dans une liste, par exemple :
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x<code>^</code>2);animation([point(1),segment(1,1+i), point(1+i)],droite(y=2*x-1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le graphe de <I>y</I> = <I>x</I><SUP>2</SUP> puis une animation de 2 objets (le premier objet est 2 points et un segment et le deuxi&#232;me une droite)</TT>
+</DIV>  
+<B>Attention</B> 
+<BR>
+Pour d&#233;finir la s&#233;quence d'objets graphiques avec <TT>seq</TT> on peut quoter 
+ou ne pas quoter la commande dessinant l'objet graphique.
+<BR>
+On peut aussi sp&#233;cifier le pas de la s&#233;quence si on utilise 5 arguments 
+pour <TT>seq</TT> : l'objet graphique, le nom du param&#232;tre, sa valeur 
+minimum, sa valeur maximum et le pas.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotfunc(cos(a*x),x),a,0,10))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations de la courbe d&#233;finies par <!-- MATH
+ $y=\cos(ax)$
+ -->
+<I>y</I> = cos(<I>ax</I>), pour <!-- MATH
+ $a=0,1,2..10$
+ -->
+<I>a</I> = 0, 1, 2..10</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotfunc(cos(a*x),x),a,0,10,0.5))</TT>
+<BR>
+ou
+<BR><TT>animation(seq(plotfunc(cos(a*x),x),a=0..10,0.5))</TT>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations de la courbe d&#233;finies par <!-- MATH
+ $y=\cos(ax)$
+ -->
+<I>y</I> = cos(<I>ax</I>), pour <!-- MATH
+ $a=0,0.5,1,1.5..10$
+ -->
+<I>a</I> = 0, 0.5, 1, 1.5..10 </TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotfunc([cos(a*x),sin(a*x)],x=0..2*pi/a), a,1,10))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations des 2 courbes d&#233;finies par <!-- MATH
+ $y=\cos(ax)$
+ -->
+<I>y</I> = cos(<I>ax</I>) et <!-- MATH
+ $y=\sin(ax)$
+ -->
+<I>y</I> = sin(<I>ax</I>), pour <I>a</I> = 1..10 et pour <!-- MATH
+ $x=0..2\pi/a$
+ -->
+<I>x</I> = 0..2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>a</I> </TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotparam([cos(a*t),sin(a*t)], t=0..2*pi),a,1,10))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations des courbes d&#233;finies param&#233;triquement par <!-- MATH
+ $x=\cos(at)$
+ -->
+<I>x</I> = cos(<I>at</I>) et <!-- MATH
+ $y=\sin(at)$
+ -->
+<I>y</I> = sin(<I>at</I>), pour <I>a</I> = 1..10 et pour <I>t</I> = 0..2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> </TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotparam([sin(t),sin(a*t)], t,0,2*pi,tstep=0.01),a,1,10))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations des courbes param&#233;tr&#233;es d&#233;finies par <!-- MATH
+ $x=\sin(t),y=\sin(at)$
+ -->
+<I>x</I> = sin(<I>t</I>), <I>y</I> = sin(<I>at</I>), pour <I>a</I> = 0..10 et <I>t</I> = 0..2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"></TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotpolar(1-a*0.01*t<code>^</code>2, t,0,5*pi,tstep=0.01),a,1,10))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations des courbes polaires d&#233;finies par <!-- MATH
+ $\rho=1-a*0.01*t^2$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ \rho$"> = 1 - <I>a</I>*0.01*<I>t</I><SUP>2</SUP>, pour <I>a</I> = 0..10 et <I>t</I> = 0..5<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"></TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfield(sin(x*y),[x,y]); animation(seq(plotode(sin(x*y),[x,y],[0,a]),a,-4,4,0.5))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le champ des tangentes de y'=sin(xy) et la suite des diff&#233;rentes courbes int&#233;grales passant par le point (0;<I>a</I>) pour <I>a</I>=-4,-3.5...3.5,4</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(affichage(carre(0,1+i*a),rempli),a,-5,5))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rents carr&#233;s d&#233;finis par les points 0 et 1+i*<I>a</I> pour <I>a</I> = - 5..5</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(droite([0,0,0],[1,1,a]),a,-5,5))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes droites  d&#233;finies par les points [0,0,0] et [1,1,<I>a</I>] pour <I>a</I> = - 5..5</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotfunc(x<code>^</code>2-y<code>^</code>a,[x,y]), a=1..3))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations 3D des surfaces  d&#233;finies par <I>x</I><SUP>2</SUP> - <I>y</I><SUP>a</SUP>, pour <I>a</I> = 1..3 avec les couleurs de l'arc en ciel</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>animation(seq(plotfunc((x+i*y)<code>^</code>a,[x,y], affichage=rempli),a=1..10)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La suite des diff&#233;rentes repr&#233;sentations "4D" des surfaces  d&#233;finies par (<I>x</I> + <I>i</I>*<I>y</I>)<SUP>a</SUP>, pour <I>a</I> = 0..10 avec les couleurs de l'arc en ciel</TT>
+</DIV>
+
+<P>
+<B>Remarque</B>
+0n peut construire la s&#233;quence avec un programme, par exemple on 
+veut dessiner les segments de longueur <!-- MATH
+ $1,\sqrt 2...\sqrt 20$
+ -->
+1,<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \sqrt{2}$">...<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \sqrt{2}$"> 0 construit avec 
+un triangle rectangle de c&#244;t&#233;s 1 et le segment pr&#233;c&#233;dent.
+<BR>
+Voici ce programme (bien mettre <TT>c:=evalf(..)</TT> pour que les calculs soient 
+approch&#233;s sinon le temps de calcul est trop long) :
+<PRE>
+essai(n):={
+local a,b,c,j,aa,bb,L;
+a:=1;
+b:=1;
+L:=[point(1)];
+for(j:=1;j&lt;=n;j++){
+L:=append(L,point(a+i*b));
+c:=evalf(sqrt(a^2+b^2));
+aa:=a;
+bb:=b;
+a:=aa-bb/c;
+b:=bb+aa/c;
+}
+L;
+}
+</PRE>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>animation(essai(20))</TT>
+</DIV>
+On voit, en boucle, chaque point, l'un apr&#232;s l'autre, avec un temps 
+d'affichage plus ou moins grand selon la valeur de <TT>animate</TT> de <TT>cfg</TT>.
+<BR>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>L:=essai(20); s:=segment(0,L[k])$(k=0..20)</TT>
+</DIV>
+On voit les 21 segments. 
+<BR>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>animation(s)</TT>
+</DIV>
+On voit, en boucle, chaque segment, l'un apres l'autre avec un temps 
+d'affichage plus ou moins grand selon la valeur de <TT>animate</TT> de <TT>cfg</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4596"
+  HREF="node155.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4590"
+  HREF="node151.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4586"
+  HREF="node153.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4592"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4594"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4597"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> monter:</B> <A NAME="tex2html4591"
+  HREF="node151.html">Faire une animation en</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4587"
+  HREF="node153.html">Animation d'un graphe 3D&nbsp;:animate3d</A>
+ &nbsp; <B>  <A NAME="tex2html4593"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4595"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

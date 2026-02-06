@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;gression logarithmique : logarithmic_regression</TITLE>
+<META NAME="description" CONTENT="R&#233;gression logarithmique : logarithmic_regression">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node795.html">
+<LINK REL="previous" HREF="node793.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node795.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14685"
+  HREF="node795.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14679"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14673"
+  HREF="node793.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14681"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14683"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14686"
+  HREF="node795.html">Graphe de la r&#233;gression</A>
+<B> monter:</B> <A NAME="tex2html14680"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14674"
+  HREF="node793.html">Graphe de la r&#233;gression</A>
+ &nbsp; <B>  <A NAME="tex2html14682"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14684"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010213000000000000000"></A><A NAME="20794"></A>
+<BR>
+R&#233;gression logarithmique : <TT>logarithmic_regression</TT>
+</H2>
+Pour approcher les donn&#233;es par une fonction logarithmique d'&#233;quation 
+<!-- MATH
+ $y=m\ln(x)+b$
+ -->
+<I>y</I> = <I>m</I> ln(<I>x</I>) + <I>b</I>, on utilise  <TT>logarithmic_regression</TT> qui renvoie le couple 
+(<I>m</I>, <I>b</I>).
+<BR><TT>logarithmic_regression</TT> a les m&#234;mes arguments que <TT>covariance</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(logarithmic_regression([[1,1],[2,4],[3,9],[4,16]]))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(logarithmic_regression([1,2,3,4],[1,4,9,16]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>10.1506450002,-0.564824055818</TT>
+</DIV>
+c'est donc la fonction logarithmique d'&#233;quation 
+<!-- MATH
+ $y=10.15\ln(x)-0.565$
+ -->
+<I>y</I> = 10.15 ln(<I>x</I>) - 0.565 qui approche au mieux les donn&#233;es.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>X:=[1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Y:=[1.6,2.15,2.65,3.12,3.56,3.99,4.4,4.8,5.18,</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>5.58,5.92,6.27,6.62,7.06,7.3]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>logarithmic_regression(X,Y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2.83870854646,0.843078064152</TT>
+</DIV>
+c'est donc la fonction logarithmique d'&#233;quation 
+<!-- MATH
+ $y=0.84\ln(x)+2.84$
+ -->
+<I>y</I> = 0.84 ln(<I>x</I>) + 2.84 qui approche au mieux les donn&#233;es .
+<BR>
+On v&#233;rifie en tapant :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>linear_regression(ln(X),Y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2.83870854646,0.843078064152</TT>
+</DIV>
+et le coefficient de corr&#233;lation est :
+<DIV ALIGN="CENTER">
+<TT>correlation(ln(X),Y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.977939822434</TT>
+</DIV>
+On peut aussi taper pour chercher une meilleur approximation :
+<DIV ALIGN="CENTER">
+<TT>logarithmic_regression(X,log(Y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.732351031846,0.467599676658</TT>
+</DIV>
+c'est donc la fonction logarithmique d'&#233;quation 
+<!-- MATH
+ $z=\ln(y)=0.73\ln(x)+0.47$
+ -->
+<I>z</I> = ln(<I>y</I>) = 0.73 ln(<I>x</I>) + 0.47 qui approche au mieux les donn&#233;es.
+<BR>
+On v&#233;rifie en tapant :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>linear_regression(ln(X),ln(Y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.732351031846,0.467599676658</TT>
+</DIV>
+et le coefficient de corr&#233;lation est :
+<DIV ALIGN="CENTER">
+<TT>correlation(ln(X),ln(Y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.999969474543</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14685"
+  HREF="node795.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14679"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14673"
+  HREF="node793.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14681"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14683"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14686"
+  HREF="node795.html">Graphe de la r&#233;gression</A>
+<B> monter:</B> <A NAME="tex2html14680"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14674"
+  HREF="node793.html">Graphe de la r&#233;gression</A>
+ &nbsp; <B>  <A NAME="tex2html14682"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14684"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

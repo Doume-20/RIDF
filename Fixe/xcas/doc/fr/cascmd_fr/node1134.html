@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour d&#233;finir de nouvelles fonctions de giac</TITLE>
+<META NAME="description" CONTENT="Pour d&#233;finir de nouvelles fonctions de giac">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node1133.html">
+<LINK REL="up" HREF="node1132.html">
+<LINK REL="next" HREF="node1135.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19945"
+  HREF="node1135.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19939"
+  HREF="node1132.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19935"
+  HREF="node1133.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19941"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19943"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19946"
+  HREF="node1135.html">Le type gen</A>
+<B> monter:</B> <A NAME="tex2html19940"
+  HREF="node1132.html">Utilisation de giac &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19936"
+  HREF="node1133.html">Utilisation dans un programme</A>
+ &nbsp; <B>  <A NAME="tex2html19942"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19944"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001420000000000000000">
+Pour d&#233;finir de nouvelles fonctions de <TT>giac</TT></A>
+</H1>
+On peut d&#233;finir de nouvelles fonctions qui deviendront des 
+fonctions de <TT>giac</TT>. Pour d&#233;finir par exemple la fonction de nom 
+<TT>pgcd</TT> ( et c'est l'instruction  : <TT>const string _pgcd_s("pgcd")</TT>; qui d&#233;finit le nom de la fonction), on tape :
+<A NAME="29456"></A>
+<PRE> 
+// -*- mode:C++ ; compile-command: "g++ -I.. -fPIC -DPIC 
+-g -c pgcd.cpp  -o pgcd.lo &amp;&amp; ln -sf pgcd.lo pgcd.o &amp;&amp; gcc 
+-shared pgcd.lo -lc  -Wl,-soname -Wl,libpgcd.so.0 -o 
+libpgcd.so.0.0.0 &amp;&amp;  ln -sf libpgcd.so.0.0.0 libpgcd.so.0 &amp;&amp; 
+ ln -sf libpgcd.so.0.0.0 libpgcd.so" -*-
+using namespace std;
+#include &lt;stdexcept&gt;
+#include &lt;cmath&gt;
+#include &lt;cstdlib&gt;
+#include &lt;giac/giac.h&gt;
+#include "pgcd.h"
+
+#ifndef NO_NAMESPACE_GIAC
+namespace giac {
+#endif // ndef NO_NAMESPACE_GIAC
+
+  gen pgcd(gen a,gen b){
+    gen q,r;
+    for (;b!=0;){
+      r=irem(a,b,q);
+      a=b;
+      b=r;
+    }
+    return a;
+  }
+  gen _pgcd(const gen &amp; args){
+    if ((args.type!=_VECT)||(args._VECTptr-&gt;size()!=2))
+      setsizeerr();
+    vecteur &amp;v=*args._VECTptr;
+    return pgcd(v[0],v[1]);
+  }
+  const string _pgcd_s("pgcd");
+  unary_function_unary __pgcd(&amp;_pgcd,_pgcd_s);
+  unary_function_ptr at_pgcd (&amp;__pgcd,0,true);
+  
+
+#ifndef NO_NAMESPACE_GIAC
+} // namespace giac
+#endif // ndef NO_NAMESPACE_GIAC
+</PRE>
+On compile avec la commande situ&#233;e apr&#232;s <TT>compile-command</TT> de 
+l'en-t&#234;te du programme. Puis, pour l'ins&#233;rer dans 
+une session <TT>Xcas</TT>, il faut taper la commande <TT>insmod</TT>
+ suivi du chemin absolu complet de la librairie, par exemple :
+<BR><TT>insmod("/home/user/giac-0.4.0/doc/en/libpgcd.so")</TT>.
+<BR>
+Cela suppose que le source de giac a &#233;t&#233; d&#233;sarchiv&#233; dans le 
+r&#233;pertoire /home/user).
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><UL>
+<LI><A NAME="tex2html19947"
+  HREF="node1135.html">Le type <TT>gen</TT></A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

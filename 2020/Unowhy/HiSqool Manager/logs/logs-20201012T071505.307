@@ -1,0 +1,19 @@
+2020-10-12 09:15:00 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +16ms
+2020-10-12 07:15:00.748: 2020-10-12 09:15:00 [4908] INFO [Runner] Creating configuration unit runner object... +159ms
+2020-10-12 07:15:00.758: 2020-10-12 09:15:00 [4908] INFO [Runner] Checking if runner needs to be performed... +9ms
+2020-10-12 07:15:00.758: 2020-10-12 09:15:00 [4908] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +2ms
+2020-10-12 07:15:00.763: 2020-10-12 09:15:00 [4908] INFO [JS] We are triggering +2ms
+2020-10-12 07:15:00.763: 2020-10-12 09:15:00 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +1ms
+2020-10-12 07:15:00.830: 2020-10-12 09:15:00 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +1ms
+2020-10-12 07:15:00.830: 2020-10-12 09:15:00 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +2ms
+2020-10-12 07:15:00.830: 2020-10-12 09:15:00 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2020-10-12 07:15:00.830: 2020-10-12 09:15:00 [4908] INFO [Runner] Performing runner... +1ms
+2020-10-12 07:15:00.830: 2020-10-12 09:15:00 [4908] INFO [JS] Performing facts gathering and upload... +2ms
+2020-10-12 07:15:01.525: 2020-10-12 09:15:01 [4908] INFO [JS] Getting installed applications... +753ms
+2020-10-12 07:15:05.291: 2020-10-12 09:15:05 [4908] INFO [JS] Getting apps result: 0 +3768ms
+2020-10-12 07:15:05.291: 2020-10-12 09:15:05 [4908] INFO [JS] Setting facts... +1ms
+2020-10-12 07:15:05.291: 2020-10-12 09:15:05 [4908] INFO [JS] Uploading facts... +3ms
+2020-10-12 07:15:05.307: 2020-10-12 09:15:05 [4908] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com idf.hisqool.com:443
+2020-10-12 07:15:05.307:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26) +9ms
+2020-10-12 07:15:05.307: 2020-10-12 09:15:05 [4908] INFO [Runner] Running result: false +1ms
+2020-10-12 07:15:05.307: 2020-10-12 09:15:05 [4908] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms

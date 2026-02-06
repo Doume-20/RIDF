@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Supprimer des lignes ou des colonnes d'une matrice : delrows delcols</TITLE>
+<META NAME="description" CONTENT="Supprimer des lignes ou des colonnes d'une matrice : delrows delcols">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node645.html">
+<LINK REL="previous" HREF="node643.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node645.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12425"
+  HREF="node645.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12419"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12413"
+  HREF="node643.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12421"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12423"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12426"
+  HREF="node645.html">Extraire une sous-matrice d'une</A>
+<B> monter:</B> <A NAME="tex2html12420"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12414"
+  HREF="node643.html">Extraire des lignes ou</A>
+ &nbsp; <B>  <A NAME="tex2html12422"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12424"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094316000000000000000"></A><A NAME="16692"></A><A NAME="16693"></A>
+<BR>
+Supprimer des lignes ou des colonnes d'une matrice : <TT>delrows delcols</TT>
+</H2>
+<TT>delrows</TT> (resp <TT>delcols</TT>) permet de supprimer une ou 
+plusieurs lignes (resp colonnes) d'une matrice.
+<BR><TT>delrows</TT> (resp <TT>delcols</TT>) a 2 arguments : une matrice <I>A</I>, et 
+un intervalle <I>n</I><SUB>1</SUB>..<I>n</I><SUB>2</SUB>.
+<BR><TT>delrows</TT> (resp <TT>delcols</TT>) renvoie  la matrice obtenue en supprimant
+ les lignes (resp colonnes) <I>n</I><SUB>1</SUB> jusqu'&#224; <I>n</I><SUB>2</SUB> de la matrice <I>A</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>delrows([[1,2,3],[4,5,6],[7,8,9]],1..1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,2,3],[7,8,9]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>delrows([[1,2,3],[4,5,6],[7,8,9]],0..1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[7,8,9]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>delcols([[1,2,3],[4,5,6],[7,8,9]],1..1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,3],[4,6],[7,9]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>delcols([[1,2,3],[4,5,6],[7,8,9]],0..1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[3],[6],[9]]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

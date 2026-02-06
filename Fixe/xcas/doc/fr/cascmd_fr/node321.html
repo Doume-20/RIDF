@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>S&#233;paration des variables : split</TITLE>
+<META NAME="description" CONTENT="S&#233;paration des variables : split">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node322.html">
+<LINK REL="previous" HREF="node320.html">
+<LINK REL="up" HREF="node313.html">
+<LINK REL="next" HREF="node322.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7655"
+  HREF="node322.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7649"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7643"
+  HREF="node320.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7651"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7653"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7656"
+  HREF="node322.html">Factorisation : factor factoriser</A>
+<B> monter:</B> <A NAME="tex2html7650"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7644"
+  HREF="node320.html">Multiplier par la quantit&#233;</A>
+ &nbsp; <B>  <A NAME="tex2html7652"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7654"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009138000000000000000"></A><A NAME="7312"></A>
+<BR>
+S&#233;paration des variables : <TT>split</TT>
+</H2>
+<TT>split</TT> a deux arguments : une expression d&#233;pendant de deux 
+variables et la liste de ces deux variables.
+<BR>
+Si l'expression est factorisable avec deux facteurs qui ne dependent chacun que
+d'une des 2 variables, <TT>split</TT> renvoie une liste form&#233;e par ces deux 
+facteurs et sinon renvoie la liste <TT>[0]</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>split((x+1)*(y-2),[x,y])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>split(x*y-2*x+y-2,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[x+1,y-2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>split((x<code>^</code>2*y<code>^</code>2-1,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0]</TT>
+</DIV> 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

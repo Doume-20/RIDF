@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;gression lin&#233;aire : linear_regression</TITLE>
+<META NAME="description" CONTENT="R&#233;gression lin&#233;aire : linear_regression">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node791.html">
+<LINK REL="previous" HREF="node789.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node791.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14629"
+  HREF="node791.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14623"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14617"
+  HREF="node789.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14625"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14627"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14630"
+  HREF="node791.html">Graphe de la r&#233;gression</A>
+<B> monter:</B> <A NAME="tex2html14624"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14618"
+  HREF="node789.html">Interpolation lin&#233;aire : linear_interpolate</A>
+ &nbsp; <B>  <A NAME="tex2html14626"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14628"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001029000000000000000"></A><A NAME="20688"></A>
+<BR>
+R&#233;gression lin&#233;aire : <TT>linear_regression</TT>
+</H2>
+Pour approcher les donn&#233;es  par la droite des moindres carr&#233;s ayant pour
+&#233;quation <I>y</I> = <I>mx</I> + <I>b</I>, on utilise  <TT>linear_regression</TT> qui renvoie le couple
+ (<I>m</I>, <I>b</I>).
+<BR>
+Si les donn&#233;es sont <I>x</I><SUB>i</SUB>, <I>y</I><SUB>i</SUB> avec <I>i</I> = 1..<I>n</I>, on a :
+<BR><!-- MATH
+ $m=\frac{cov(X,Y)}{\sigma(X)^2}$
+ -->
+<I>m</I> = <IMG
+ WIDTH="64" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img554.png"
+ ALT="$ {\frac{{cov(X,Y)}}{{\sigma(X)^2}}}$">
+<BR>
+et <!-- MATH
+ $b=\bar{Y}-m\bar{X}$
+ -->
+<I>b</I> = <IMG
+ WIDTH="18" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img555.png"
+ ALT="$ \bar{{Y}}$"> - <I>m</I><IMG
+ WIDTH="20" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img556.png"
+ ALT="$ \bar{{X}}$">
+<BR>
+car la somme des carr&#233;s des distances <!-- MATH
+ $d_i=|y_i-mx_i-b_i|$
+ -->
+<I>d</I><SUB>i</SUB> = | <I>y</I><SUB>i</SUB> - <I>mx</I><SUB>i</SUB> - <I>b</I><SUB>i</SUB>| est 
+minimale pour ces valeurs et ce minimum (qui est donc l'erreur quadratique 
+moyenne verticale) vaut <!-- MATH
+ $(1-\rho^2)\sigma(Y)^2$
+ -->
+(1 - <IMG
+ WIDTH="21" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img557.png"
+ ALT="$ \rho^{2}_{}$">)<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img552.png"
+ ALT="$ \sigma$">(<I>Y</I>)<SUP>2</SUP> o&#249; <I>r</I> est
+le coefficient de corr&#233;lation (<!-- MATH
+ $\rho=\frac{cov(X,Y}{\sigma(X)\sigma(Y)}$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ \rho$"> = <IMG
+ WIDTH="69" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img558.png"
+ ALT="$ {\frac{{cov(X,Y}}{{\sigma(X)\sigma(Y)}}}$">).
+<BR><TT>linear_regression</TT> a les m&#234;mes arguments que <TT>covariance</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>linear_regression([[0,0],[1,1],[2,4],[3,9],[4,16]])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>linear_regression([0,1,2,3,4],[0,1,4,9,16])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4,-2</TT>
+</DIV>
+c'est donc la fonction lin&#233;aire d'&#233;quation <I>y</I> = 4<I>x</I> - 2 
+qui approche au mieux les donn&#233;es.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>X:=[0,1,2,3,4,5,6,7,8,9,10]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Y:=[7.3,9.53,12.47,16.3,21.24,27.73,36.22,</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>47.31,61.78,80.68,105]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Z:=log(Y)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>linear_regression(X,Z)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.266729219953,1.98904252589</TT>
+</DIV>
+c'est donc la fonction lin&#233;aire d'&#233;quation <!-- MATH
+ $z=\ln(y)=0.267x+1.99$
+ -->
+<I>z</I> = ln(<I>y</I>) = 0.267<I>x</I> + 1.99 
+qui approche au mieux les donn&#233;es.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14629"
+  HREF="node791.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14623"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14617"
+  HREF="node789.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14625"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14627"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14630"
+  HREF="node791.html">Graphe de la r&#233;gression</A>
+<B> monter:</B> <A NAME="tex2html14624"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14618"
+  HREF="node789.html">Interpolation lin&#233;aire : linear_interpolate</A>
+ &nbsp; <B>  <A NAME="tex2html14626"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14628"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Listes, s&#233;quences, ensembles</TITLE>
+<META NAME="description" CONTENT="Listes, s&#233;quences, ensembles">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html230"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html224"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html218"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html226"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html228"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html231"
+  HREF="node13.html">Temps de calcul, place</A>
+<B> monter:</B> <A NAME="tex2html225"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html219"
+  HREF="node11.html">Les fonctions</A>
+ &nbsp; <B>  <A NAME="tex2html227"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html229"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00027000000000000000"></A>
+<A NAME="291"></A>
+<A NAME="292"></A>
+<A NAME="293"></A>
+<BR>
+Listes, s&#233;quences, ensembles
+</H2>
+<TT>Xcas</TT> distingue plusieurs sortes de collections d'objets, 
+s&#233;par&#233;s par des virgules&nbsp;: 
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>les listes (entre crochets)
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>les s&#233;quences (entre parenth&#232;ses) 
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>les ensembles (entre pourcentage-accolades)
+</DD>
+</DL>
+<PRE>
+liste:=[1,2,4,2]
+sequence:=(1,2,4,2)
+ensemble:=%{1,2,4,2%}
+</PRE>
+Les listes peuvent contenir des listes (c'est le cas des matrices), 
+alors que les s&#233;quences sont plates (un &#233;l&#233;ment d'une s&#233;quence
+ne peut pas &#234;tre une s&#233;quence). Dans un ensemble,
+l'ordre n'a pas d'importance et chaque objet est unique. 
+Il existe une autre structure, appel&#233;e table, dont nous
+reparlerons plus loin.
+
+<P>
+Il suffit de mettre une s&#233;quence entre crochets pour en faire une liste
+ou entre accolades pr&#233;c&#233;d&#233;es de <code>%</code> pour en faire un ensemble.
+On passe d'une liste &#224; sa s&#233;quence associ&#233;e par <code>op</code>, 
+d'une s&#233;quence &#224; sa liste associ&#233;e en la mettant entre crochets
+ou avec la fonction <code>nop</code>.
+Le nombre d'&#233;l&#233;ments d'une liste est donn&#233; par <code>size</code> 
+(ou <code>nops</code>).
+<A NAME="1621"></A>
+<A NAME="1622"></A>
+<A NAME="1623"></A>
+<A NAME="1624"></A>
+<A NAME="303"></A>
+<PRE>
+se:=(1,2,4,2)
+li:=[se]
+op(li)
+nop(se)
+nops(se)
+%{se%}
+size([se])
+size(%{se%})
+</PRE>
+<A NAME="306"></A>
+<A NAME="1625"></A>
+<A NAME="1626"></A>
+Pour fabriquer une liste ou une s&#233;quence, on utilise des commandes
+d'it&#233;ration comme <code>$</code> ou <code>seq</code> (qui it&#232;rent une
+expression) ou <code>makelist</code> (qui d&#233;finit une liste &#224; l'aide d'une 
+fonction).  
+<PRE>
+1$5
+k^2 $ (k=-2..2)
+seq(k^2,k=-2..2)
+seq(k^2,k,-2..2)
+[k^2$(k=-2..2)]
+seq(k^2,k,-2,2)
+seq(k^2,k,-2,2,2)
+makelist(x-&gt;x^2,-2,2)
+seq(k^2,k,-2,2,2)
+makelist(x-&gt;x^2,-2,2,2)
+</PRE>
+<A NAME="1627"></A>
+<A NAME="312"></A>
+<A NAME="313"></A>
+La s&#233;quence vide est not&#233;e <code>NULL</code>, la liste vide
+<code>[]</code>. Pour ajouter un &#233;l&#233;ment &#224; une s&#233;quence il suffit
+d'&#233;crire la s&#233;quence et '&#233;l&#233;ment s&#233;par&#233;s par une virgule. 
+<A NAME="1628"></A>
+Pour ajouter un
+&#233;l&#233;ment &#224; une liste on utilise <code>append</code>.
+On acc&#232;de &#224; un &#233;l&#233;ment d'une liste ou d'une s&#233;quence gr&#226;ce 
+&#224; son indice mis entre 
+crochets, le premier &#233;l&#233;ment &#233;tant d'indice 0.
+<PRE>
+se:=NULL; se:=se,k^2$(k=-2..2); se:=se,1
+li:=[1,2]; (li:=append(li,k^2))$(k=-2..2)
+li[0],li[1],li[2]
+</PRE>
+
+<P>
+Les polyn&#244;mes sont souvent d&#233;finis par une expression, mais
+ils peuvent aussi &#234;tre repr&#233;sent&#233;s 
+par la liste de leurs coefficients par ordre
+de degr&#233; d&#233;croissant, avec comme d&#233;limiteurs <code>poly1[</code> et <code>]</code>.
+Il existe aussi une repr&#233;sentation
+pour les polyn&#244;mes &#224; plusieurs variables. Les fonctions
+<code>symb2poly</code> et <code>poly2symb</code> permettent
+de passer de la repr&#233;sentation expression &#224; la repr&#233;sentation
+par liste et inversement, 
+le deuxi&#232;me argument d&#233;termine s'il s'agit de polyn&#244;mes
+en une variable (on met le nom de la variable) ou de
+polyn&#244;mes &#224; plusieurs variables (on met la liste des variables).
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>S&#233;quences et listes</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>E$(k=n..m)</code></TD>
+<TD ALIGN="LEFT">cr&#233;er une s&#233;quence</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>seq(E,k=n..m)</code></TD>
+<TD ALIGN="LEFT">cr&#233;er une s&#233;quence</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>[E$(k=n..m)]</code></TD>
+<TD ALIGN="LEFT">cr&#233;er une liste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>makelist(f,k,n,m,p)</code></TD>
+<TD ALIGN="LEFT">cr&#233;er une liste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>op(li)</code></TD>
+<TD ALIGN="LEFT">passer de liste &#224; s&#233;quence</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>nop(se)</code></TD>
+<TD ALIGN="LEFT">passer de s&#233;quence &#224; liste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>nops(li)</code></TD>
+<TD ALIGN="LEFT">nombre d'&#233;l&#233;ments</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>size(li)</code></TD>
+<TD ALIGN="LEFT">nombre d'&#233;l&#233;ments</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sum</code></TD>
+<TD ALIGN="LEFT">somme des &#233;l&#233;ments</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>product</code></TD>
+<TD ALIGN="LEFT">produit des &#233;l&#233;ments</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cumSum</code></TD>
+<TD ALIGN="LEFT">sommes cumul&#233;es des &#233;l&#233;ments</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>apply(f,li)</code></TD>
+<TD ALIGN="LEFT">appliquer une fonction aux &#233;l&#233;ments d'une liste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>map(li,f)</code></TD>
+<TD ALIGN="LEFT">appliquer une fonction  aux &#233;l&#233;ments d'une liste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>map(li,f,matrix)</code></TD>
+<TD ALIGN="LEFT">appliquer une fonction  aux &#233;l&#233;ments d'une matrice</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>poly2symb</code></TD>
+<TD ALIGN="LEFT">polyn&#244;me associ&#233; &#224; une liste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>symb2poly</code></TD>
+<TD ALIGN="LEFT">coefficients d'un polyn&#244;me</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1629"></A>
+<A NAME="326"></A>
+<A NAME="1630"></A>
+<A NAME="328"></A>
+<A NAME="1631"></A>
+<A NAME="330"></A>
+<A NAME="1632"></A>
+<A NAME="332"></A>
+<A NAME="1633"></A>
+<A NAME="1634"></A>
+<A NAME="1635"></A>
+<A NAME="336"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html230"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html224"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html218"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html226"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html228"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html231"
+  HREF="node13.html">Temps de calcul, place</A>
+<B> monter:</B> <A NAME="tex2html225"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html219"
+  HREF="node11.html">Les fonctions</A>
+ &nbsp; <B>  <A NAME="tex2html227"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html229"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Exercice 1</TITLE>
+<META NAME="description" CONTENT="Exercice 1">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1130.html">
+<LINK REL="previous" HREF="node1128.html">
+<LINK REL="up" HREF="node1128.html">
+<LINK REL="next" HREF="node1130.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19876"
+  HREF="node1130.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19870"
+  HREF="node1128.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19864"
+  HREF="node1128.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19872"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19874"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19877"
+  HREF="node1130.html">Exercice 2</A>
+<B> monter:</B> <A NAME="tex2html19871"
+  HREF="node1128.html">Figures et preuves d''exercices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19865"
+  HREF="node1128.html">Figures et preuves d''exercices</A>
+ &nbsp; <B>  <A NAME="tex2html19873"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19875"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013171000000000000000">
+Exercice 1</A>
+</H2>
+Soit <TT>SABCD</TT> une pyramide de sommet <TT>S</TT> dont la base <TT>ABCD</TT> est un 
+parall&#233;logramme de centre <TT>O</TT>.
+<BR>
+Soient <TT>M</TT> et <TT>N</TT> les milieux respectifs de <TT>SA</TT> et <TT>SD</TT>.
+<BR>
+Montrer que les plans <TT>OMN</TT> et <TT>SBC</TT> sont parall&#232;les.
+<BR>
+Pour faire la figure, on tape :
+<PRE>
+// dessin exo1
+A:=point(2,2,0);
+B:=point(-2,2,0);
+C:=point(-3,-2,0);
+D:=point(1,-2,0);
+S:=point(0,0,4);
+polyedre(S,A,B,C,D);
+M:=milieu(S,A);
+N:=milieu(S,D);
+O:=milieu(A,C);
+P:=plan(O,M,N);
+Q:=plan(S,B,C);
+est_parallele(P,Q);
+</PRE>
+Pour faire la d&#233;monstration  avec <TT>Xcas</TT>, on tape :
+<PRE>
+// demo exo1
+A:=point(a,b,c);
+B:=point(d,e,f);
+D:=point(u,v,w);
+C:=B+(D-A);
+//S:=isobarycentre(A,B,C,D)+t*cross(B-A,D-A);
+S:=point(k,l,m);
+M:=milieu(S,A);
+N:=milieu(S,D);
+O:=milieu(A,C);
+P:=plan(O,M,N);
+Q:=plan(S,B,C);
+est_parallele(P,Q);
+</PRE>
+On obtient :
+<TT>1</TT>
+<BR>
+ce qui veut dire que les plans <TT>P</TT> et <TT>Q</TT> sont parall&#232;les.
+<BR>
+<P>
+La d&#233;monstration g&#233;om&#233;trique :
+<BR>
+Soit <TT>R</TT> le milieu de <TT>AB</TT>. 
+<BR>
+On a  :
+<BR><TT>M</TT> est le milieu de <TT>SA </TT> et <TT>N</TT>  est le milieu de <TT>SD</TT>, donc
+<TT>MN</TT> est parall&#232;le &#224; <TT>AD</TT> et <TT>2*MN=AD</TT> 
+<BR><TT>M</TT> est le milieu de <TT>SA </TT> et <TT>R</TT>  est le milieu de <TT>AB</TT>, donc
+<TT>MR</TT> est parall&#232;le &#224; <TT>SB</TT> et <TT>2*MR=SB</TT> 
+<BR><TT>O</TT> est le milieu de <TT>AC </TT> et <TT>R</TT>  est le milieu de <TT>AB</TT>, donc
+<TT>OR</TT> est parall&#232;le &#224; <TT>CB</TT> et <TT>2*OR=CB</TT> 
+<BR>
+ou encore :
+<BR><!-- MATH
+ ${\tt 2*\overrightarrow{MN}=\overrightarrow{AD}}$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img611.png"
+ ALT="$ \tt 2*\overrightarrow{MN}=\overrightarrow{AD}$">
+<BR><!-- MATH
+ ${\tt 2*\overrightarrow{MR}=\overrightarrow{SB}}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img612.png"
+ ALT="$ \tt 2*\overrightarrow{MR}=\overrightarrow{SB}$">
+<BR><!-- MATH
+ ${\tt 2*\overrightarrow{OR}=\overrightarrow{CB}}$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img613.png"
+ ALT="$ \tt 2*\overrightarrow{OR}=\overrightarrow{CB}$">
+<BR>
+La base <TT>ABCD</TT> est un parall&#233;logramme donc :
+<BR><!-- MATH
+ ${\tt overrightarrow{AD}=\overrightarrow{BC}}$
+ -->
+<IMG
+ WIDTH="202" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img614.png"
+ ALT="$ \tt overrightarrow{AD}=\overrightarrow{BC}$">
+<BR>
+On en d&#233;duit que <TT>MNOR</TT> est un parall&#233;logramme dont le plan est 
+parall&#232;le &#224; la face <TT>SBC</TT>.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html19876"
+  HREF="node1130.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19870"
+  HREF="node1128.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19864"
+  HREF="node1128.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19872"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19874"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19877"
+  HREF="node1130.html">Exercice 2</A>
+<B> monter:</B> <A NAME="tex2html19871"
+  HREF="node1128.html">Figures et preuves d''exercices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19865"
+  HREF="node1128.html">Figures et preuves d''exercices</A>
+ &nbsp; <B>  <A NAME="tex2html19873"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19875"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

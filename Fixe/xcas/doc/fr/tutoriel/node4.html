@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Entrer des commandes</TITLE>
+<META NAME="description" CONTENT="Entrer des commandes">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="node1.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html110"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html104"
+  HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html100"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html106"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html108"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html111"
+  HREF="node5.html">Les objets du calcul</A>
+<B> monter:</B> <A NAME="tex2html105"
+  HREF="node1.html">Pour commencer</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html101"
+  HREF="node3.html">Aide en ligne</A>
+ &nbsp; <B>  <A NAME="tex2html107"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html109"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00013000000000000000">
+Entrer des commandes</A>
+</H2>
+L'ex&#233;cution d'une ligne se fait simplement par la touche "Entr&#233;e". 
+Si on ne souhaite pas afficher le r&#233;sultat, on termine la ligne de commande
+par <code>:;</code> et on valide avec "Entr&#233;e".
+On peut &#233;diter plusieurs commandes &#224; la file avant leur ex&#233;cution
+&#224; condition de les s&#233;parer par un point-virgule.
+
+<P>
+Au d&#233;but, de nombreuses erreurs proviennent d'une
+mauvaise traduction des math&#233;matiques&nbsp;: <TT>Xcas</TT> ne peut pas les comprendre
+telles que vous les &#233;crivez. Votre clavier vous
+permet de taper <I>ax</I><SUP>2</SUP> + <I>bx</I> + <I>c</I>, mais votre ordinateur ne peut pas
+comprendre que vous souhaitez &#233;lever <I>x</I> au carr&#233;, le multiplier
+par <I>a</I>, etc...&nbsp; Vous devez sp&#233;cifier chaque op&#233;ration, et la
+syntaxe correcte est <code>a*x^2+b*x+c</code>.  
+La multiplication doit &#234;tre not&#233;e par une &#233;toile 
+dans les commandes, mais est not&#233;e par un point dans
+les r&#233;ponses. Nous insistons sur le fait que pour <TT>Xcas</TT>, 
+<code>ax</code> est une
+variable dont le nom comporte deux lettres, et pas le produit de <I>a</I>
+par <I>x</I>.
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Op&#233;rations</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>+</code></TD>
+<TD ALIGN="LEFT">addition</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>-</code></TD>
+<TD ALIGN="LEFT">soustraction</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>*</code></TD>
+<TD ALIGN="LEFT">mutiplication</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>/</code></TD>
+<TD ALIGN="LEFT">division</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>^</code></TD>
+<TD ALIGN="LEFT">puissance</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="81"></A>
+<A NAME="82"></A>
+<A NAME="83"></A>
+<A NAME="84"></A>
+<A NAME="85"></A>
+
+<P>
+Modulo quelques pr&#233;cautions, l'&#233;criture des formules est assez
+directe. Les parenth&#232;ses ont le sens 
+usuel pour sp&#233;cifier l'ordre des op&#233;rations. Les crochets 
+sont r&#233;serv&#233;s aux listes et aux indices.
+Les priorit&#233;s entre op&#233;rations sont standard 
+(la multiplication est prioritaire sur l'addition, la puissance sur
+la multiplication). Par exemple&nbsp;:
+<A NAME="86"></A>
+<A NAME="87"></A>
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><code>2*a+b</code> retourne <!-- MATH
+ $2\cdot a+b$
+ -->
+2<SUP> . </SUP><I>a</I> + <I>b</I>
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><code>a/2*b</code> retourne <!-- MATH
+ $\displaystyle \frac{a\cdot b}{2}$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$\displaystyle {\frac{{a\cdot b}}{{2}}}$">
+<BR></DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><code>a/2/b</code> retourne <!-- MATH
+ $\displaystyle \frac{a}{\displaystyle \frac{2}{b}}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$\displaystyle {\frac{{a}}{{\displaystyle \frac{2}{b}}}}$">
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><code>normal(a/2/b)</code> retourne <!-- MATH
+ $\displaystyle \frac{a}{2\cdot b}$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$\displaystyle {\frac{{a}}{{2\cdot b}}}$">
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><code>a^2*b</code> retourne <!-- MATH
+ $a^2\cdot b$
+ -->
+<I>a</I><SUP>2 . </SUP><I>b</I>
+</DD>
+</DL>
+Dans le doute, il est toujours prudent de mettre des parenth&#232;ses 
+pour s'assurer que l'ordre des op&#233;rations est celui souhait&#233;.
+
+<P>
+Les commandes sont num&#233;rot&#233;es, ainsi que les r&#233;ponses,
+mais, si vous avez modifi&#233; une ligne de commande, celle-ci
+garde le num&#233;ro qu'elle avait. On peut rappeler par <code>ans()</code> (answer) la 
+r&#233;ponse pr&#233;c&#233;dente c'est &#224; dire la r&#233;ponse de la derni&#232;re commande
+&#233;valu&#233;e.
+<A NAME="1566"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html110"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html104"
+  HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html100"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html106"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html108"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html111"
+  HREF="node5.html">Les objets du calcul</A>
+<B> monter:</B> <A NAME="tex2html105"
+  HREF="node1.html">Pour commencer</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html101"
+  HREF="node3.html">Aide en ligne</A>
+ &nbsp; <B>  <A NAME="tex2html107"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html109"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

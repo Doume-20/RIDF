@@ -1,0 +1,88 @@
+// fltk 7Fl_Tile 34 86 724 247
+[
+// fltk N4xcas7EditeurE 34 86 724 246
+1315 ,
+// Noyau d'une application lineaire de matrice M
+// detaille l'algorithme de la fonction ker de xcas
+gauss_j(M):= { 
+  local pivo,jc,k,j,nl,nc,temp,l,a,noyau; 
+  nl:=nrows(M);
+  nc:=ncols(M);  
+  jc:=0;  
+  while((jc<nc) && (jc<nl)){ 
+    k:=jc;  
+    while(((M[k,jc])==0) && (k<(nl-1))){ 
+      k:=k+1;  
+    }
+    if ((M[k,jc])!=0) { 
+      pivo:=M[k,jc];  
+      for (l:=jc;l<nc;l:=l+1) { 
+        temp:=M[jc,l];  
+        M[jc,l]:=M[k,l];  
+        M[k,l]:=temp;  
+      }  
+      for (l:=0;l<nc;l:=l+1) { 
+        M[jc,l]:=(M[jc,l])/pivo;  
+      }  
+      for (k:=0;k<jc;k:=k+1) { 
+        a:=M[k,jc];  
+        for (l:=0;l<nc;l:=l+1) { 
+          M[k,l]:=M[k,l]-M[jc,l]*a;  
+        }  
+      } 
+      for (k:=jc+1;k<nl;k:=k+1) { 
+        a:=M[k,jc];  
+        for (l:=jc;l<nc;l:=l+1) { 
+          M[k,l]:=M[k,l]-M[jc,l]*a;  
+        }  
+      } 
+    } 
+    else { 
+      if (jc<(nc-1)) { 
+        for (j:=nl;j>jc;j:=j-1) { 
+          M[j]:=M[j-1];  
+        }  
+        M[jc]:=makelist(0,1,nc);  
+        nl:=nl+1;  
+      }  
+    } 
+    jc:=jc+1;  
+    if ((jc==nl) && (jc<nc)) { 
+      M[nl]:=makelist(0,1,nc);  
+      nl:=nl+1;  
+    }
+  } 
+  noyau:=[];  
+  M:=M-idn(nc);  
+  for (j:=0;j<nc;j:=j+1) { 
+    if ((M[j,j])==(-1)) { 
+      noyau:=append(noyau,tran(M)[j]);  
+    }  
+  } 
+  return(noyau);  
+}
+,
+// fltk N4xcas10Log_OutputE 34 332 724 1
+
+]
+,
+// fltk 7Fl_Tile 34 335 724 73
+[
+// fltk N4xcas19Multiline_Input_tabE 34 335 724 29
+gauss_j([[1,2,3],[4,5,6],[7,8,9]])
+,
+// fltk N4xcas10Log_OutputE 34 364 724 1
+
+,
+// fltk N4xcas8EquationE 34 365 724 43
+[[-1,2,-1]]
+]
+,
+// fltk 7Fl_Tile 34 410 724 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 410 724 30
+
+,
+// fltk N4xcas10Log_OutputE 34 440 724 1
+
+]

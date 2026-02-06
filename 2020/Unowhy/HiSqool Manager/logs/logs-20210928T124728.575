@@ -1,0 +1,67 @@
+2021-09-28 14:46:40 [5224] INFO [JS] Result: 0 +1343ms
+2021-09-28 12:46:40.430: 2021-09-28 14:46:40 [5224] INFO [JS] Stdout:  +1ms
+2021-09-28 12:46:40.430: 2021-09-28 14:46:40 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-28 12:46:40.430: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +1ms
+2021-09-28 12:46:40.446: 2021-09-28 14:46:40 [5224] INFO [Runner] Running result: true +1ms
+2021-09-28 12:46:40.446: 2021-09-28 14:46:40 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +3ms
+2021-09-28 12:46:42.398: 2021-09-28 14:46:42 [5224] INFO [JS] Version of update package: 2.4 +1953ms
+2021-09-28 12:46:42.398: 2021-09-28 14:46:42 [5224] INFO [JS] Your package is up to date +0ms
+2021-09-28 12:46:42.398: 2021-09-28 14:46:42 [5224] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-28 12:46:42.398: 2021-09-28 14:46:42 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (181) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +2ms
+2021-09-28 12:46:42.414: 2021-09-28 14:46:42 [5224] INFO [JS] Version of update package: 1.1 +10ms
+2021-09-28 12:46:42.414: 2021-09-28 14:46:42 [5224] INFO [JS] Your package is up to date +0ms
+2021-09-28 12:46:42.414: 2021-09-28 14:46:42 [5224] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-28 12:46:42.414: 2021-09-28 14:46:42 [5224] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +2ms
+2021-09-28 12:46:42.461: 2021-09-28 14:46:42 [5224] INFO [JS] Version of update package: 3.92 +53ms
+2021-09-28 12:46:42.461: 2021-09-28 14:46:42 [5224] INFO [JS] Your package is up to date +1ms
+2021-09-28 12:46:42.461: 2021-09-28 14:46:42 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-28 12:46:42.461: 2021-09-28 14:46:42 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows (262) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows.json +2ms
+2021-09-28 12:46:42.492: 2021-09-28 14:46:42 [5224] INFO [JS] Version of update package: 8.19 +24ms
+2021-09-28 12:46:42.492: 2021-09-28 14:46:42 [5224] INFO [JS] Your package is up to date +0ms
+2021-09-28 12:46:42.492: 2021-09-28 14:46:42 [5224] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-28 12:46:42.492: 2021-09-28 14:46:42 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (182) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +1ms
+2021-09-28 12:46:42.960: 2021-09-28 14:46:42 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\356\payload\application.ppkg' -QuietInstall +458ms
+2021-09-28 12:46:42.960: 2021-09-28 14:46:42 [5224] INFO [Runner] Running result: false +1ms
+2021-09-28 12:46:42.960: 2021-09-28 14:46:42 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (356) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +1ms
+2021-09-28 12:47:27.406: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:c00d0c07a30b8e2654be12bd4eb022b4 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +44441ms
+2021-09-28 12:47:27.406: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +4ms
+2021-09-28 12:47:27.406: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:5238da14c9ec49ed27d246f3309a7e9b for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2021-09-28 12:47:27.406: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +3ms
+2021-09-28 12:47:27.422: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2021-09-28 12:47:27.422: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2021-09-28 12:47:27.422: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2021-09-28 12:47:27.422: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +2ms
+2021-09-28 12:47:27.422: 2021-09-28 14:47:27 [5224] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +3ms
+2021-09-28 12:47:27.438: 2021-09-28 14:47:27 [5224] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +16ms
+2021-09-28 12:47:27.438: 2021-09-28 14:47:27 [5224] INFO [KeyedObservableCollector] Sending 9 items +0ms
+2021-09-28 12:47:27.531: 2021-09-28 14:47:27 [5224] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +85ms
+2021-09-28 12:47:27.531: 2021-09-28 14:47:27 [5224] INFO [KeyedObservableCollector] Sending 9 items +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1012ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +2ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +1ms
+2021-09-28 12:47:28.544: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +2ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels: context.platform==='win32' +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +2ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2021-09-28 12:47:28.559: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.575: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2021-09-28 12:47:28.575: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-28 12:47:28.575: 2021-09-28 14:47:28 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +0ms

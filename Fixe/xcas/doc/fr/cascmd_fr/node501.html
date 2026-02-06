@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;composition en &#233;l&#233;ments simples : partfrac</TITLE>
+<META NAME="description" CONTENT="D&#233;composition en &#233;l&#233;ments simples : partfrac">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node502.html">
+<LINK REL="previous" HREF="node500.html">
+<LINK REL="up" HREF="node492.html">
+<LINK REL="next" HREF="node502.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10300"
+  HREF="node502.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10294"
+  HREF="node492.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10288"
+  HREF="node500.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10296"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10298"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10301"
+  HREF="node502.html">D&#233;composition en &#233;l&#233;ments simples</A>
+<B> monter:</B> <A NAME="tex2html10295"
+  HREF="node492.html">Les fractions rationnelles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10289"
+  HREF="node500.html">Partie enti&#232;re et fractionnaire</A>
+ &nbsp; <B>  <A NAME="tex2html10297"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10299"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009299000000000000000"></A><A NAME="12864"></A><A NAME="sec:convertparf"></A>
+<BR>
+D&#233;composition en &#233;l&#233;ments simples : <TT>partfrac</TT>
+</H2><A NAME="30072"></A><A NAME="30073"></A>
+<TT>partfrac</TT> a comme argument une fraction rationnelle.
+<BR><TT>partfrac</TT> renvoie sa d&#233;composition en &#233;l&#233;ments simples.
+<BR><B>Exemple</B> :
+<BR>
+D&#233;composer en &#233;l&#233;ments simples la fraction rationnelle :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{x^5-2x^3+1}{x^4-2x^3+2x^2-2x+1}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="191" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img388.png"
+ ALT="$\displaystyle {\frac{{x^5-2x^3+1}}{{x^4-2x^3+2x^2-2x+1}}}$">
+</DIV><P></P>
+On utilise la commande <TT>partfrac</TT>.
+<BR>
+On peut aussi utiliser <TT>convert</TT> avec l'option <TT>parfrac</TT> ou
+<TT>partfrac</TT> ou <TT>fullparfrac</TT> (voir aussi <A HREF="node407.html#sec:convert">6.22.25</A>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>partfrac((x<code>^</code>5-2*x<code>^</code>3+1)/(x<code>^</code>4-2*x<code>^</code>3+2*x<code>^</code>2-2*x+1))</TT>
+</DIV>
+On obtient en mode r&#233;el:
+<DIV ALIGN="CENTER">
+<TT>x+2-1/(2*(x-1))+(x-3)/(2*(x<code>^</code>2+1)) </TT>
+</DIV>
+On obtient en mode complexe :
+<DIV ALIGN="CENTER">
+<TT>x+2+(-1+2*i)/((2-2*i)*((i)*x+1))+1/(2*(-x+1))+</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>(-1-2*i)/((2-2*i)*(x+i))</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

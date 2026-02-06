@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Division harmonique : harmonic_division div_harmonique</TITLE>
+<META NAME="description" CONTENT="Division harmonique : harmonic_division div_harmonique">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1018.html">
+<LINK REL="previous" HREF="node1016.html">
+<LINK REL="up" HREF="node1014.html">
+<LINK REL="next" HREF="node1018.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18144"
+  HREF="node1018.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18138"
+  HREF="node1014.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18132"
+  HREF="node1016.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18140"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18142"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18145"
+  HREF="node1018.html">Le conjugu&#233; harmonique :</A>
+<B> monter:</B> <A NAME="tex2html18139"
+  HREF="node1014.html">La division harmonique, p&#244;les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18133"
+  HREF="node1016.html">Le birapport de 4</A>
+ &nbsp; <B>  <A NAME="tex2html18141"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18143"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012193000000000000000"></A><A NAME="26588"></A><A NAME="26589"></A>
+<BR>
+Division harmonique : <TT>harmonic_division div_harmonique</TT>
+</H2>
+Quatre points align&#233;s <!-- MATH
+ $A,\ B,\ C,\ D$
+ -->
+<I>A</I>,&nbsp;<I>B</I>,&nbsp;<I>C</I>,&nbsp;<I>D</I> sont en division harmonique 
+si on a :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\frac{\overline{CA}}{\overline{CB}}=-\frac{\overline{DA}}{\overline{DB}}=k
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="36" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img600.png"
+ ALT="$\displaystyle {\frac{{\overline{CA}}}{{\overline{CB}}}}$"> = - <IMG
+ WIDTH="37" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img601.png"
+ ALT="$\displaystyle {\frac{{\overline{DA}}}{{\overline{DB}}}}$"> = <I>k</I>
+</DIV><P></P>
+On dit aussi que <I>C</I> et <I>D</I> divisent le segment <I>AB</I> dans le rapport <I>k</I> et que
+le point <I>D</I> est le conjugu&#233; harmonique de <I>C</I> par rapport &#224; <I>A</I> et <I>B</I>
+ou plus rapidement <I>D</I> est le conjugu&#233; harmonique de <I>A</I>, <I>B</I>, <I>C</I>.
+<BR>
+Quatre droites concourantes ou parall&#232;les <!-- MATH
+ $d1,\ d2,\ d3,\ d4$
+ -->
+<I>d</I>1,&nbsp;<I>d</I>2,&nbsp;<I>d</I>3,&nbsp;<I>d</I>4 sont 
+en division harmonique si elles d&#233;terminent sur chaque droite s&#233;cante une
+division harmonique. On dit aussi que <!-- MATH
+ $d1,\ d2,\ d3,\ d4$
+ -->
+<I>d</I>1,&nbsp;<I>d</I>2,&nbsp;<I>d</I>3,&nbsp;<I>d</I>4 forment un
+faisceau harmonique.
+<BR><TT>div_harmonique</TT> a comme arguments 3 points align&#233;s ou leur 3 affixes
+ (resp 3 droites concourantes ou parall&#232;les) et le nom d'une variable.
+<BR><TT>div_harmonique</TT> affecte le dernier argument pour que l'on obtienne une 
+division harmonique et renvoie la liste des 4 points (resp des 4 
+droites) et dessine les points (resp les droites).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>div_harmonique(0,2,3/2,D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,2,3/2,pnt(3,0,"D")] et seul le point <I>D</I> est dessin&#233;</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>div_harmonique(point(0),point(2),point(3/2),D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[pnt(0,0),pnt(2,0),pnt(3/2,0), pnt(3,0,"D")] et les 4 points sont dessin&#233;s</TT>
+</DIV>
+<B>Remarque</B> : 0 repr&#233;sente la couleur du point.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>div_harmonique(droite(i,0),droite(i,1+i), droite(i,3+2*(i)),D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[pnt([[i,0],0]),pnt([[i,1+i],0]), pnt([[i,3+2*i],0]),pnt([[i,-3+2*i],0,"D"])] et les 4 droites sont dessin&#233;es</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18144"
+  HREF="node1018.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18138"
+  HREF="node1014.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18132"
+  HREF="node1016.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18140"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18142"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18145"
+  HREF="node1018.html">Le conjugu&#233; harmonique :</A>
+<B> monter:</B> <A NAME="tex2html18139"
+  HREF="node1014.html">La division harmonique, p&#244;les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18133"
+  HREF="node1016.html">Le birapport de 4</A>
+ &nbsp; <B>  <A NAME="tex2html18141"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18143"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,127 @@
+2021-10-04 18:49:28 [5224] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-10-04 16:49:28.256: 2021-10-04 18:49:28 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (182) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +2ms
+2021-10-04 16:49:28.256: 2021-10-04 18:49:28 [5224] INFO [JS] Version of update package: 2.4 +2ms
+2021-10-04 16:49:28.303: 2021-10-04 18:49:28 [5224] INFO [JS] Your package is up to date +47ms
+2021-10-04 16:49:28.318: 2021-10-04 18:49:28 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-10-04 16:49:28.318: 2021-10-04 18:49:28 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (181) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +3ms
+2021-10-04 16:49:30.261: 2021-10-04 18:49:30 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\356\payload\application.ppkg' -QuietInstall +1952ms
+2021-10-04 16:49:30.261: 2021-10-04 18:49:30 [5224] INFO [Runner] Running result: false +0ms
+2021-10-04 16:49:30.261: 2021-10-04 18:49:30 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (356) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +1ms
+2021-10-04 16:49:34.843: 2021-10-04 18:49:34 [5224] INFO [JS] Result: 0 +4575ms
+2021-10-04 16:49:34.843: 2021-10-04 18:49:34 [5224] INFO [JS] Stdout:  +0ms
+2021-10-04 16:49:34.843: 2021-10-04 18:49:34 [5224] INFO [JS] Stderr: #< CLIXML
+2021-10-04 16:49:34.843: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +0ms
+2021-10-04 16:49:34.843: 2021-10-04 18:49:34 [5224] INFO [Runner] Running result: true +1ms
+2021-10-04 16:49:34.843: 2021-10-04 18:49:34 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +3ms
+2021-10-04 16:49:35.566: 2021-10-04 18:49:35 [5224] INFO [JS] Install Result: 0 +708ms
+2021-10-04 16:49:35.568: 2021-10-04 18:49:35 [5224] INFO [JS] Install Stdout: 
+2021-10-04 16:49:35.568: 
+2021-10-04 16:49:35.568: IsInstalled     : False
+2021-10-04 16:49:35.568: PackageID       : f7639fd5-22e3-42bd-9806-a3aafb44760a
+2021-10-04 16:49:35.568: PackageName     : BiblioManuels
+2021-10-04 16:49:35.568: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\262\payload\application.ppkg
+2021-10-04 16:49:35.568: Description     : 
+2021-10-04 16:49:35.568: Rank            : 0
+2021-10-04 16:49:35.568: Altitude        : 5000
+2021-10-04 16:49:35.568: Version         : 3.92
+2021-10-04 16:49:35.568: OwnerType       : ITAdmin
+2021-10-04 16:49:35.568: Notes           : 
+2021-10-04 16:49:35.568: LastInstallTime : 28/09/2021 13:50:10
+2021-10-04 16:49:35.568: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-10-04 16:49:35.568:                   	Category:Content
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-10-04 16:49:35.568:                   	Category:Content
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-10-04 16:49:35.568:                   	Category:Content
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-10-04 16:49:35.568:                   	Category:Content
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   4__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-10-04 16:49:35.568:                   	Category:Content
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   5__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-10-04 16:49:35.568:                   	Category:Content
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   6__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-10-04 16:49:35.568:                   	Category:Scripts
+2021-10-04 16:49:35.568:                   	LastResult:Success
+2021-10-04 16:49:35.568:                   	Message:Provisioning succeeded
+2021-10-04 16:49:35.568:                   	NumberOfFailures:0 (0x0)
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568:                   
+2021-10-04 16:49:35.568: 
+2021-10-04 16:49:35.568: 
+2021-10-04 16:49:35.568:  +0ms
+2021-10-04 16:49:35.568: 2021-10-04 18:49:35 [5224] INFO [JS] Install Stderr:  +0ms
+2021-10-04 16:49:35.568: 2021-10-04 18:49:35 [5224] INFO [JS] Finishing Installation +0ms
+2021-10-04 16:49:35.568: 2021-10-04 18:49:35 [5224] INFO [Runner] Running result: true +0ms
+2021-10-04 16:49:35.568: 2021-10-04 18:49:35 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows (262) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows.json +1ms
+2021-10-04 16:49:50.260: 2021-10-04 18:49:50 [5224] INFO [CommandService] Got command facts:set +14693ms
+2021-10-04 16:49:50.268: 2021-10-04 18:49:50 [5224] INFO [CommandService] Got command units:trigger +3ms
+2021-10-04 16:49:50.290: 2021-10-04 18:49:50 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +22ms
+2021-10-04 16:49:50.290: 2021-10-04 18:49:50 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2021-10-04 16:49:50.399: 2021-10-04 18:49:50 [5224] INFO [Runner] Creating configuration unit runner object... +106ms
+2021-10-04 16:49:50.399: 2021-10-04 18:49:50 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-04 16:49:50.401: 2021-10-04 18:49:50 [5224] INFO [JS] Checking if programming or tiggering with trigger configuration... +3ms
+2021-10-04 16:49:50.401: 2021-10-04 18:49:50 [5224] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2021-10-04 16:49:50.409: 2021-10-04 18:49:50 [5224] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +4ms
+2021-10-04 16:49:50.409: 2021-10-04 18:49:50 [5224] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2021-10-04 16:49:50.409: 2021-10-04 18:49:50 [5224] INFO [JS] Scheduling result: undefined +0ms
+2021-10-04 16:49:50.411: 2021-10-04 18:49:50 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +1ms
+2021-10-04 16:49:50.411: 2021-10-04 18:49:50 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +1ms
+2021-10-04 16:49:50.462: 2021-10-04 18:49:50 [5224] INFO [Runner] Creating configuration unit runner object... +52ms
+2021-10-04 16:49:50.462: 2021-10-04 18:49:50 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-04 16:49:50.462: 2021-10-04 18:49:50 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-10-04 16:49:50.472: 2021-10-04 18:49:50 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> configuration... +1ms
+2021-10-04 16:49:50.472: 2021-10-04 18:49:50 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-10-04 16:49:50.482: 2021-10-04 18:49:50 [5224] INFO [Runner] Creating configuration unit runner object... +11ms
+2021-10-04 16:49:50.482: 2021-10-04 18:49:50 [5224] INFO [Runner] Checking if runner needs to be performed... +3ms
+2021-10-04 16:49:50.482: 2021-10-04 18:49:50 [5224] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-10-04 16:49:50.482: {
+2021-10-04 16:49:50.482:   "platform": "win32",
+2021-10-04 16:49:50.482:   "deviceId": "IFP052046109",
+2021-10-04 16:49:50.482:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-10-04 16:49:50.482:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-10-04 16:49:50.490:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-10-04 16:49:50.490:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-10-04 16:49:50.490:   "versionCode": 21090427,
+2021-10-04 16:49:50.490:   "trigger": "configuration",
+2021-10-04 16:49:50.490:   "metadata": {
+2021-10-04 16:49:50.490:     "packageVersion": "1.0.16.0",
+2021-10-04 16:49:50.490:     "componentParameters": {
+2021-10-04 16:49:50.490:       "AppX": "Hisqool.Legal.GDPR",
+2021-10-04 16:49:50.490:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-10-04 16:49:50.490:       "DesktopShortcut": "Charte de protection*",
+2021-10-04 16:49:50.490:       "ProvisioningPackage": "Hisqool GDPR",
+2021-10-04 16:49:50.490:       "InstallationDirectory": "hisqool.gdpr",
+2021-10-04 16:49:50.490:       "UninstallationDirectory": "hisqool.gdpr",
+2021-10-04 16:49:50.490:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-10-04 16:49:50.490:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-10-04 16:49:50.490:     },
+2021-10-04 16:49:50.490:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-10-04 16:49:50.490:   }
+2021-10-04 16:49:50.490: } +1ms
+2021-10-04 16:49:50.490: 2021-10-04 18:49:50 [5224] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-10-04 16:49:50.492: 2021-10-04 18:49:50 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +1ms
+2021-10-04 16:49:50.492: 2021-10-04 18:49:50 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +1ms

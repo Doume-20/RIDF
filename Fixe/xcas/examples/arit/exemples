@@ -1,0 +1,44 @@
+idiv2(a,b):={ 
+ local (q:=0),(r:=a);
+ if (b!=0) {
+     q:=iquo(a,b);
+     r:=irem(a,b);
+ }
+ return([q,r]);
+};
+testif(a,b):={
+if ((a==10) or (a<b))
+    b:=b-a;
+else 
+    a:=a-b;
+return([a,b]);
+};
+testfor1(a,b):={
+local s:=0;
+for (j:=a;j<=b;j++)
+   s:=s+1/j^2;
+   return(s);
+};
+testfor2(a,b):={
+local s:=0;
+for (j:=b;j>=a;j--)
+    s:=s+1/j^2;
+return(s);
+};
+testwhile(a,b):={
+while ((a==10) or (a<b))
+   b:=b-a;
+return([a,b]);
+};
+pgcd(a,b):={
+ local r;
+ while (b!=0) {
+    r:=irem(a,b);
+    a:=b;
+    b:=r;
+ }
+ return(a);
+};
+pgcdr(a,b):={if (b==0) return(a);
+                else return(pgcdr(b,irem(a,b)));};
+

@@ -1,0 +1,377 @@
+﻿info: Sqoolctl.Program[0] @ 2026-01-21T10:39:24.8646370+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T10:39:25.0258006+01:00
+      Running as user C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe in - with -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1578\payload\EvaluateAction.ps1 -Users paul.peyrot@monlycee.net, elevated False, system False, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T10:39:25.0950512+01:00
+      ### SQOOLCTL ### STOP: [1] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:39:26.9295727+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T10:39:27.2274175+01:00
+      Running as user C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe in - with -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1578\payload\ExecuteAction.ps1, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T10:39:47.7451903+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:39:53.0602691+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:39:53.2980364+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:40:30.0085534+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T10:40:30.1940993+01:00
+      Running as user C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe in - with -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1578\payload\EvaluateAction.ps1 -Users paul.peyrot@monlycee.net, elevated False, system False, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T10:40:30.2444126+01:00
+      ### SQOOLCTL ### STOP: [1] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:40:34.3514936+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:40:46.6600438+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:40:44.1360227+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T10:40:44.2782256+01:00
+      Running as user C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe in - with -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1578\payload\ExecuteAction.ps1, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T10:40:45.6727808+01:00
+      ### SQOOLCTL ### STOP: [-196608] =========================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:41:00.3986643+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:41:00.6353494+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:42:21.2757322+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:42:25.0089080+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T10:44:16.2270772+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T10:44:16.5966410+01:00
+      Received event [Boot] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T10:44:16.5974691+01:00
+      Sending boot event to device manager...
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T10:44:16.7205192+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T10:44:16.7255852+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T10:44:25.2544037+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T10:44:32.8240606+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T10:44:40.2717833+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+fail: Sqoolctl.DeviceManagerService[0] @ 2026-01-21T10:44:44.7502887+01:00
+      Error while sending commands facts:set, facts:set, units:trigger
+System.Net.Http.HttpRequestException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée. (localhost:7654)
+ ---> System.Net.Sockets.SocketException (10061): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Sqoolctl.DeviceManagerService.SendCommands[T](IManagerCommand`1[] commands)
+info: Sqoolctl.Program[0] @ 2026-01-21T10:44:44.7649570+01:00
+      ### SQOOLCTL ### STOP: [-1] ==============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:13:56.1532509+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:13:56.6493432+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoolsys.exe in - with start, elevated False, system False, hidden True, waiting False, modern False
+info: Sqoolctl.Program[0] @ 2026-01-21T11:13:56.9370313+01:00
+      ### SQOOLCTL ### STOP: [1] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:13:56.6372515+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:13:56.9552818+01:00
+      Received event [Boot] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:13:56.9559599+01:00
+      Sending boot event to device manager...
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:13:57.0478620+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:13:57.0531285+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:14:06.0390106+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:14:13.7757877+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:14:21.5104400+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+fail: Sqoolctl.DeviceManagerService[0] @ 2026-01-21T11:14:26.0926700+01:00
+      Error while sending commands facts:set, facts:set, units:trigger
+System.Net.Http.HttpRequestException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée. (localhost:7654)
+ ---> System.Net.Sockets.SocketException (10061): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Sqoolctl.DeviceManagerService.SendCommands[T](IManagerCommand`1[] commands)
+info: Sqoolctl.Program[0] @ 2026-01-21T11:14:26.1371492+01:00
+      ### SQOOLCTL ### STOP: [-1] ==============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:14:49.6311371+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:14:50.6447216+01:00
+      Received event [Boot] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:14:50.6454526+01:00
+      Sending boot event to device manager...
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:14:50.6660961+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:14:50.6703259+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2026-01-21T11:14:56.8603416+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 6185.4667ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2026-01-21T11:14:56.8669570+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 6209.68ms - 200
+info: Sqoolctl.Program[0] @ 2026-01-21T11:16:54.1025825+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:16:57.5545987+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:17:56.3106971+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:17:56.6338111+01:00
+      Received event [Boot] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:17:56.6346599+01:00
+      Sending boot event to device manager...
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:17:56.6565591+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:17:56.6610547+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:06.1408049+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:13.3871440+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:21.1413120+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+fail: Sqoolctl.DeviceManagerService[0] @ 2026-01-21T11:18:25.6361579+01:00
+      Error while sending commands facts:set, facts:set, units:trigger
+System.Net.Http.HttpRequestException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée. (localhost:7654)
+ ---> System.Net.Sockets.SocketException (10061): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Sqoolctl.DeviceManagerService.SendCommands[T](IManagerCommand`1[] commands)
+info: Sqoolctl.Program[0] @ 2026-01-21T11:18:25.6503619+01:00
+      ### SQOOLCTL ### STOP: [-1] ==============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:18:02.7944147+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:18:02.8900778+01:00
+      Received event [Boot] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:18:02.8908912+01:00
+      Sending boot event to device manager...
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:18:02.9085536+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:08.5122037+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:20.4722849+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:34.7160119+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:18:44.6958467+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+fail: Sqoolctl.DeviceManagerService[0] @ 2026-01-21T11:18:49.4355956+01:00
+      Error while sending commands facts:set, facts:set, units:trigger
+System.Net.Http.HttpRequestException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée. (localhost:7654)
+ ---> System.Net.Sockets.SocketException (10061): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Sqoolctl.DeviceManagerService.SendCommands[T](IManagerCommand`1[] commands)
+info: Sqoolctl.Program[0] @ 2026-01-21T11:18:49.4552718+01:00
+      ### SQOOLCTL ### STOP: [-1] ==============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:19:47.5130860+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:19:47.8537255+01:00
+      Received event [Login] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:19:47.9221343+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:19:47.9296705+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2026-01-21T11:19:50.7435858+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 2809.246ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2026-01-21T11:19:50.7496056+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 2842.2875ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:19:50.7579179+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:19:50.7583753+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2026-01-21T11:19:54.7626142+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 4004.2277ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2026-01-21T11:19:54.7630090+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 4005.1579ms - 200
+info: Sqoolctl.Program[0] @ 2026-01-21T11:19:54.7772752+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:19:57.0059401+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:19:57.1858412+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoollck.exe in - with unprotect, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T11:19:57.3615472+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:19:58.8682600+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:19:59.0047884+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoollck.exe in - with unprotect, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T11:19:59.1086717+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:01.5637925+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:20:01.6697650+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoollck.exe in - with unprotect, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:01.7237875+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:04.8371123+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:20:05.3327062+01:00
+      Received event [Login] with arguments [] and user WORKGROUP\IFP052046109$, SA True
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:20:05.4104038+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:20:05.4302135+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:20:13.6776633+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2026-01-21T11:20:16.5196045+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 2822.1203ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2026-01-21T11:20:16.5249894+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 11122.6039ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:20:16.5336845+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:20:16.5340807+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2026-01-21T11:20:20.1521419+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 3618.0214ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2026-01-21T11:20:20.1525280+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 3618.8793ms - 200
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:20.1696963+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:20.7644380+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:20:20.8870154+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoollck.exe in - with unprotect, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:20.9455919+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:23.1502267+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:20:23.2681684+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoollck.exe in - with unprotect, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:23.3482380+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:28.0767125+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+dbug: Sqoolctl.AsUserCommand[0] @ 2026-01-21T11:20:28.1999114+01:00
+      Running as user C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoollck.exe in - with unprotect, elevated False, system True, hidden True, waiting True, modern True
+info: Sqoolctl.Program[0] @ 2026-01-21T11:20:28.2718160+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:23:15.8974191+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:23:16.4458951+01:00
+      Received event [Install] with arguments [Application, 15072] and user WORKGROUP\IFP052046109$, SA True
+info: Sqoolctl.EventCommand[0] @ 2026-01-21T11:23:16.4468587+01:00
+      Handle installation event on Application with id 15072...
+dbug: Sqoolctl.EventCommand[0] @ 2026-01-21T11:23:16.4595963+01:00
+      Reading event 15072 from source Application
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2026-01-21T11:23:17.8163350+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2026-01-21T11:23:17.8263401+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2026-01-21T11:23:21.2900287+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 3455.8702ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2026-01-21T11:23:21.3008420+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 3511.9193ms - 200
+info: Sqoolctl.Program[0] @ 2026-01-21T11:23:21.3593842+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:25:08.3880504+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2026-01-21T11:25:11.5276619+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================

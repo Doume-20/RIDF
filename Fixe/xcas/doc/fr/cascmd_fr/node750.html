@@ -1,0 +1,894 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#201;quations diff&#233;rentielles : desolve deSolve dsolve</TITLE>
+<META NAME="description" CONTENT="&#201;quations diff&#233;rentielles : desolve deSolve dsolve">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node751.html">
+<LINK REL="previous" HREF="node749.html">
+<LINK REL="up" HREF="node749.html">
+<LINK REL="next" HREF="node751.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13964"
+  HREF="node751.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13958"
+  HREF="node749.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13952"
+  HREF="node749.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13960"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13962"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13965"
+  HREF="node751.html">Transform&#233;e de Laplace et</A>
+<B> monter:</B> <A NAME="tex2html13959"
+  HREF="node749.html">Les &#233;quations diff&#233;rentielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13953"
+  HREF="node749.html">Les &#233;quations diff&#233;rentielles</A>
+ &nbsp; <B>  <A NAME="tex2html13961"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13963"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009541000000000000000"></A><A NAME="19357"></A><A NAME="19358"></A><A NAME="19359"></A>
+<BR>
+&#201;quations diff&#233;rentielles : <TT>desolve deSolve dsolve</TT>
+</H2>
+<TT>desolve</TT> (ou <TT>deSolve</TT>) permet de  r&#233;soudre :
+
+<UL>
+<LI>les &#233;quations diff&#233;rentielles lin&#233;aires &#224; coefficients constants 
+du premier ou du deuxi&#232;me ordre,
+</LI>
+<LI>les &#233;quations diff&#233;rentielles lin&#233;aires du premier ordre,
+</LI>
+<LI>les &#233;quations diff&#233;rentielles du premier ordre incompl&#232;te en <I>y</I>,
+</LI>
+<LI>les &#233;quations diff&#233;rentielles du premier ordre incompl&#232;te en <I>x</I>,
+</LI>
+<LI>les &#233;quations diff&#233;rentielles du premier ordre &#224; variables 
+s&#233;par&#233;es,
+</LI>
+<LI>les &#233;quations diff&#233;rentielles du premier ordre homog&#232;nes 
+(<I>y'</I> = <I>F</I>(<I>y</I>/<I>x</I>)),
+</LI>
+<LI>les &#233;quations diff&#233;rentielles du premier ordre ayant un facteur 
+int&#233;grant,
+</LI>
+<LI>les &#233;quations diff&#233;rentielles de Bernoulli 
+(<!-- MATH
+ $a(x)y'+b(x)y=c(x)y^n$
+ -->
+<I>a</I>(<I>x</I>)<I>y'</I> + <I>b</I>(<I>x</I>)<I>y</I> = <I>c</I>(<I>x</I>)<I>y</I><SUP>n</SUP>),
+</LI>
+<LI>les &#233;quations diff&#233;rentielles de Clairaut (<!-- MATH
+ $y=x*y'+f(y')$
+ -->
+<I>y</I> = <I>x</I>*<I>y'</I> + <I>f</I> (<I>y'</I>)).
+</LI>
+</UL>
+Les param&#232;tres de <TT>desolve</TT>: 
+
+<UL>
+<LI>quand la variable est la variable courante (ici <I>x</I>), 
+<BR>
+les param&#232;tres sont : l'&#233;quation diff&#233;rentielle (ou la liste form&#233;e par
+l'&#233;quation diff&#233;rentielle et les conditions initiales) et l'inconnue 
+<TT>y</TT>.
+<BR>
+Dans l'&#233;quation diff&#233;rentielle <I>y</I> s'&#233;crit <I>y</I> et <I>y'</I> s'&#233;crit  
+<IMG
+ WIDTH="18" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img507.png"
+ ALT="$ \tt y'$"> et <I>y</I>" s'&#233;crit <IMG
+ WIDTH="22" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img508.png"
+ ALT="$ \tt y''$"> car on d&#233;rive par rapport &#224; la 
+variable <I>x</I>. Par exemple : <TT>desolve(y''+2*y'+y,y)</TT> et
+<TT>desolve([y''+2*y'+y,y(0)=1,y'(0)=0],y)</TT>.
+</LI>
+<LI>quand la variable n'est pas la variable courante (ici <I>t</I>), 
+<BR>
+les param&#232;tres sont : l'&#233;quation diff&#233;rentielle (ou la liste form&#233;e par
+l'&#233;quation diff&#233;rentielle et les conditions initiales), la variable <TT>t</TT>
+et  et l'inconnue <TT>y</TT> ou l'inconnue <TT>y(t)</TT> (la variable est alors 
+<TT>t</TT> et l'inconnue est <TT>y</TT>).
+<BR>
+Dans l'&#233;quation diff&#233;rentielle <I>y</I> s'&#233;crit <I>y</I>(<I>t</I>) et <I>y</I><IMG
+ WIDTH="9" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img509.png"
+ ALT="$ \prime$"> s'&#233;crit
+<TT>diff(y(t),t)</TT>, <I>y'</I>' s'&#233;crit <TT>diff(y(t),t$2)</TT>. 
+<BR>
+Par exemple :
+<BR><TT>desolve(diff(y(t),t$2)+2*diff(y(t),t)+y(t),y(t))</TT>; ou
+<BR><TT>desolve(diff(y(t),t$2)+2*diff(y(t),t)+y(t),t,y)</TT>;
+<BR>
+et
+<BR><PRE>
+desolve([diff(y(t),t$2)+2*diff(y(t),t)+y(t),
+         y(0)=1,y'(0)=0],y(t)); ou
+desolve([diff(y(t),t$2)+2*diff(y(t),t)+y(t), 
+         y(0)=1,y'(0)=0],t,y);
+</PRE>
+</LI>
+</UL>
+Lorsqu'il n'y a pas de conditions initiales (ou une seule condition initiale 
+pour une &#233;quation du second ordre), <TT>desolve</TT> renvoie la solution 
+&#233;crite avec des constantes d'int&#233;gration&nbsp;: <TT>c_0, c_1</TT> o&#249; 
+<TT>y(0)=c_0</TT> et <TT>y'(0)=c_1</TT> ou renvoie une liste des solutions.
+<BR><B>Exemples</B>
+
+<UL>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle lin&#233;aire &#224;
+coefficients constants du deuxi&#232;me ordre.
+<BR>
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y''+y=\cos (x)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y''</I> + <I>y</I> = cos(<I>x</I>)
+</DIV><P></P>
+On tape (en tapant deux fois prime pour <TT>y''</TT>): 
+<DIV ALIGN="CENTER">
+<TT>desolve(y''+y=cos(x),y)</TT>
+</DIV>
+ou encore :
+<DIV ALIGN="CENTER">
+<TT>desolve((diff(diff(y))+y)=(cos(x)),y)</TT>
+</DIV>
+On trouve :
+<DIV ALIGN="CENTER">
+<TT>c_0*cos(x)+(x+2*c_1)*sin(x)/2</TT>
+</DIV>
+<TT>c_0, c_1</TT> sont les constantes d'int&#233;gration : <TT>y(0)=c_0</TT> et 
+<TT>y'(0)=c_1</TT>.
+<BR>
+ou bien si la variable n'est pas <TT>x</TT> mais <TT>t</TT>, on tape : 
+<DIV ALIGN="CENTER">
+<TT>desolve(derive(derive(y(t),t),t)+y(t)=cos(t),t,y)</TT>
+</DIV>
+ou encore
+<DIV ALIGN="CENTER">
+<TT>desolve(derive(derive(y(t),t),t)+y(t)=cos(t),[t,y])</TT>
+</DIV>
+On trouve alors :
+<DIV ALIGN="CENTER">
+<TT>c_0*cos(t)+(t+2*c_1)/2*sin(t)</TT>
+</DIV>
+<TT>c_0, c_1</TT> sont les constantes d'int&#233;gration : <TT>y(0)=c_0</TT> et 
+<TT>y'(0)=c_1</TT>.
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y''+y=\cos (x) \; \; y(0)=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y''</I> + <I>y</I> = cos(<I>x</I>) &nbsp; &nbsp;<I>y</I>(0) = 1
+</DIV><P></P>
+On &#233;crit, si veut les solutions v&#233;rifiant <I>y</I>(0) = 1 :
+<DIV ALIGN="CENTER">
+<TT>desolve([y''+y=cos(x),y(0)=1],y)</TT>
+</DIV>
+On obtient 
+<DIV ALIGN="CENTER">
+<TT>[cos(x)+(x+2*c_1)/2*sin(x)]</TT>
+</DIV>
+les composantes de ce vecteur sont solutions (ici on a une seule
+composante car on obtient une seule solution d&#233;pendant de la constante 
+<TT>c_1</TT>).
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y''+y=\cos (x) \; \; (y(0))^2=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y''</I> + <I>y</I> = cos(<I>x</I>) &nbsp; &nbsp;(<I>y</I>(0))<SUP>2</SUP> = 1
+</DIV><P></P>
+On veut les solutions v&#233;rifiant <!-- MATH
+ $(y(0))^2=1$
+ -->
+(<I>y</I>(0))<SUP>2</SUP> = 1, on tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve([y''+y=cos(x),y(0)<code>^</code>2=1],y)</TT>
+</DIV>
+On obtient 
+<DIV ALIGN="CENTER">
+<TT>[-cos(x)+(x+2*c_1)/2*sin(x), cos(x)+(x+2*c_1)/2*sin(x)]</TT>
+</DIV>
+chaque composantes de cette liste est une solution, on a donc deux solutions 
+d&#233;pendant de la constante <TT>c_1</TT> qui correspondent 
+&#224; <I>y</I>(0) = 1 et &#224; <I>y</I>(0) = - 1.
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y''+y=\cos (x) \; \; (y(0))^2=1 \; \; y'(0)=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y''</I> + <I>y</I> = cos(<I>x</I>) &nbsp; &nbsp;(<I>y</I>(0))<SUP>2</SUP> = 1 &nbsp; &nbsp;<I>y'</I>(0) = 1
+</DIV><P></P>
+On veut les solutions v&#233;rifiant <!-- MATH
+ $(y(0))^2=1$
+ -->
+(<I>y</I>(0))<SUP>2</SUP> = 1 et <I>y'</I>(0) = 1, on tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve([y''+y=cos(x),y(0)<code>^</code>2=1,y'(0)=1],y)</TT>
+</DIV>
+On obtient  :
+<DIV ALIGN="CENTER">
+<TT>[-cos(x)+(x+2)/2*sin(x),cos(x)+(x+2)/2*sin(x)]</TT>
+</DIV>
+chaque composante de cette liste est une solution.On a donc deux solutions. 
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y''+2y'+y=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y''</I> + 2<I>y'</I> + <I>y</I> = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(y''+2*y'+y=0,y)</TT>
+</DIV>
+On obtient les solutions d&#233;pendant de 2 constantes d'int&#233;gration <TT>c_0</TT>
+et  <TT>c_1</TT>:
+<DIV ALIGN="CENTER">
+<TT>(x*c_0+x*c_1+c_0)*exp(-x)</TT>
+</DIV>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y''-6y'+9y=xe^{3x}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y''</I> - 6<I>y'</I> + 9<I>y</I> = <I>xe</I><SUP>3x</SUP>
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(y''-6*y'+9*y=(x*exp(3*x),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x<code>^</code>3+(-(18*x))*c_0+6*x*c_1+6*c_0)*1/6*exp(3*x)</TT>
+</DIV>
+la solution d&#233;pend de 2 constantes d'int&#233;gration <TT>c_0</TT> et <TT>c_1</TT>.
+</LI>
+</OL>
+</LI>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle lin&#233;aire
+ du premier ordre.
+
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+xy'+y-3x^2=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>xy'</I> + <I>y</I> - 3<I>x</I><SUP>2</SUP> = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'+y-3*x<code>^</code>2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(3*1/3*x<code>^</code>3+c_0)/x </TT>
+</DIV>
+
+<P>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y'+x*y=0, y(0)=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y'</I> + <I>x</I>*<I>y</I> = 0, <I>y</I>(0) = 1
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve([y'+x*y=0, y(0)=1],y)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>desolve((y'+x*y=0) &amp;&amp; (y(0)=1),[x,y])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>desolve((y'+x*y=0) &amp;&amp; (y(0)=1),x,y)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>desolve((y'+x*y=0) &amp;&amp; (y(0)=1),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1/(exp(1/2*x<code>^</code>2))]</TT>
+</DIV> 
+
+<P>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+x(x^2-1)y'+2y=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I>(<I>x</I><SUP>2</SUP> - 1)<I>y'</I> + 2<I>y</I> = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*(x<code>^</code>2-1)*y'+2*y=0,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(c_0)/((x<code>^</code>2-1)/(x<code>^</code>2))</TT>
+</DIV>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+x(x^2-1)y'+2y=x^2
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I>(<I>x</I><SUP>2</SUP> -1)<I>y'</I> + 2<I>y</I> = <I>x</I><SUP>2</SUP>
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*(x<code>^</code>2-1)*y'+2*y=x<code>^</code>2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(ln(x)+c_0)/((x<code>^</code>2-1)/(x<code>^</code>2))</TT>
+</DIV>
+Si la variable est <I>t</I> et non <I>x</I>,  par exemple :
+<P><!-- MATH
+ \begin{displaymath}
+t(t^2-1)y'(t)+2y(t)=t^2
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>t</I>(<I>t</I><SUP>2</SUP> -1)<I>y'</I>(<I>t</I>) + 2<I>y</I>(<I>t</I>) = <I>t</I><SUP>2</SUP>
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>desolve(t*(t<code>^</code>2-1)*diff(y(t),t)+2*y(t)=(t<code>^</code>2),y(t))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(ln(t)+c_0)/((t<code>^</code>2-1)/(t<code>^</code>2))</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+x(x^2-1)y'+2y=x^2,y(2)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I>(<I>x</I><SUP>2</SUP> -1)<I>y'</I> + 2<I>y</I> = <I>x</I><SUP>2</SUP>, <I>y</I>(2) = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve([x*(x<code>^</code>2-1)*y'+2*y=x<code>^</code>2,y(0)=1],y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(ln(x)-ln(2))*1/(x<code>^</code>2-1)*x<code>^</code>2]</TT>
+</DIV>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+\sqrt{1+x^2}y'-x-y=\sqrt{1+x^2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="70" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img510.png"
+ ALT="$\displaystyle \sqrt{{1+x^2}}$"><I>y'</I> - <I>x</I> - <I>y</I> = <IMG
+ WIDTH="70" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img510.png"
+ ALT="$\displaystyle \sqrt{{1+x^2}}$">
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(y'*sqrt(1+x<code>^</code>2)-x-y-sqrt(1+x<code>^</code>2),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(-c_0+ln(sqrt(x<code>^</code>2+1)-x))/(x-sqrt(x<code>^</code>2+1))</TT>
+</DIV>
+</LI>
+</OL>
+
+<P>
+</LI>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle &#224; variables
+ s&#233;par&#233;es.
+
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y'=2\sqrt{y}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y'</I> = 2<IMG
+ WIDTH="28" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img511.png"
+ ALT="$\displaystyle \sqrt{{y}}$">
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(y'=2*sqrt(y),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[x<code>^</code>2+-2*x*c_0+c_0<code>^</code>2]</TT>
+</DIV>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+xy'\ln(x)-y(3\ln(x)+1)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>xy'</I>ln(<I>x</I>) - <I>y</I>(3 ln(<I>x</I>) + 1) = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'*ln(x)-(3*ln(x)+1)*y,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>c_0*x<code>^</code>3*ln(x)</TT>
+</DIV>
+</LI>
+</OL>
+</LI>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle de Bernoulli 
+du premier ordre, de type <!-- MATH
+ $a(x)y'+b(x)y=c(x)y^n$
+ -->
+<I>a</I>(<I>x</I>)<I>y'</I> + <I>b</I>(<I>x</I>)<I>y</I> = <I>c</I>(<I>x</I>)<I>y</I><SUP>n</SUP> avec <I>n</I>=constante r&#233;elle.
+<BR>
+Ces &#233;quations se r&#233;solvent en divisant par <I>y</I><SUP>n</SUP>, car on se ram&#232;ne &#224; 
+une &#233;quation lin&#233;aire en <!-- MATH
+ $u=1/y^{n-1}$
+ -->
+<I>u</I> = 1/<I>y</I><SUP>n-1</SUP>.
+
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+xy'+2y+xy^2=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>xy'</I> + 2<I>y</I> + <I>xy</I><SUP>2</SUP> = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'+2*y+x*y<code>^</code>2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1/(exp(2*ln(x))*(-1/x+c_0))]</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+xy'-2y=xy^3
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>xy'</I> - 2<I>y</I> = <I>xy</I><SUP>3</SUP>
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'-2*y-x*y<code>^</code>3,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[((-2*1/5*x<code>^</code>5+c_0)*exp(-(4*log(x))))<code>^</code>(1/-2),</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>-((-2*1/5*x<code>^</code>5+c_0)*exp(-(4*log(x))))<code>^</code>(1/-2)]</TT>
+</DIV>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+x^2y'-2y=xe^(4/x)y^3
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>2</SUP><I>y'</I> - 2<I>y</I> = <I>xe</I><SUP>(</SUP>4/<I>x</I>)<I>y</I><SUP>3</SUP>
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'-2*y-x*exp(4/x)*y<code>^</code>3,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[((-2*ln(x)+c_0)*exp(-(4*(-(1/x)))))<code>^</code>(1/-2),</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>-(((-2*ln(x)+c_0)*exp(-(4*(-(1/x)))))<code>^</code>(1/-2))]</TT>
+</DIV>
+</LI>
+</OL>
+</LI>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle homog&#233;ne 
+du premier ordre qui se r&#233;sout en posant <I>y</I> = <I>t</I>*<I>x</I>.
+
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+(3x^3y'=y(3x^2-y^2)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(3<I>x</I><SUP>3</SUP><I>y'</I> = <I>y</I>(3<I>x</I><SUP>2</SUP> - <I>y</I><SUP>2</SUP>)
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(3*x<code>^</code>3*diff(y)=((3*x<code>^</code>2-y<code>^</code>2)*y),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,pnt[c_0*exp((3*1/2)/(` t`<code>^</code>2)),` t`*c_0*exp((3*1/2)/(` t`<code>^</code>2))]]</TT>
+</DIV>
+donc les solutions sont <I>y</I> = 0 et la famille de courbes d'&#233;quation 
+param&#233;trique <!-- MATH
+ $x=c_0\exp(3/(2t^2)), y=t*c_0\exp(3/(2t^2))$
+ -->
+<I>x</I> = <I>c</I><SUB>0</SUB>exp(3/(2<I>t</I><SUP>2</SUP>)), <I>y</I> = <I>t</I>*<I>c</I><SUB>0</SUB>exp(3/(2<I>t</I><SUP>2</SUP>)) 
+(le param&#232;tre est not&#233; `<I>t</I>` dans la r&#233;ponse).
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+xy'=y+\sqrt{x^2+y^2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>xy'</I> = <I>y</I> + <IMG
+ WIDTH="78" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img512.png"
+ ALT="$\displaystyle \sqrt{{x^2+y^2}}$">
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'=y+sqrt(x<code>^</code>2+y<code>^</code>2),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-i)*x,(i)*x,pnt[c_0/(sqrt(` t`<code>^</code>2+1)-` t`),(` t`*c_0)/(sqrt(` t`<code>^</code>2+1)-` t`)]]</TT>
+</DIV>
+donc les solutions sont :
+<P><!-- MATH
+ \begin{displaymath}
+y=ix,y=-ix
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I> = <I>ix</I>, <I>y</I> = - <I>ix</I>
+</DIV><P></P>
+et la famille de courbes d'&#233;quation param&#233;trique 
+<P><!-- MATH
+ \begin{displaymath}
+x=c_0/(\sqrt{t^2+1}-t), y=t*c_0/(\sqrt{t^2+1}-t)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I> = <I>c</I><SUB>0</SUB>/(<IMG
+ WIDTH="66" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img513.png"
+ ALT="$\displaystyle \sqrt{{t^2+1}}$"> - <I>t</I>), <I>y</I> = <I>t</I>*<I>c</I><SUB>0</SUB>/(<IMG
+ WIDTH="66" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img513.png"
+ ALT="$\displaystyle \sqrt{{t^2+1}}$"> - <I>t</I>)
+</DIV><P></P>
+(le param&#232;tre est not&#233; `<I>t</I>` dans la r&#233;ponse.
+</LI>
+</OL>
+
+<P>
+</LI>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle
+du premier ordre ayant un facteur int&#233;grant.
+
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+yy'+x
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>yy'</I> + <I>x</I>
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(y*y'+x,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[sqrt(-2*c_0-x<code>^</code>2),-(sqrt(-2*c_0-x<code>^</code>2))]</TT>
+</DIV>
+dans cet exemple, <I>xdx</I> + <I>ydy</I> est une diff&#233;rentielle totale, et le facteur 
+int&#233;grant est 1.
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+2xyy'+x^2-y^2+a^2=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+2<I>xyy'</I> + <I>x</I><SUP>2</SUP> - <I>y</I><SUP>2</SUP> + <I>a</I><SUP>2</SUP> = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(2*x*y*y'+x<code>^</code>2-y<code>^</code>2+a<code>^</code>2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[sqrt(a<code>^</code>2-x<code>^</code>2-c_1*x),-(sqrt(a<code>^</code>2-x<code>^</code>2-c_1*x))]</TT>
+</DIV>
+dans cet exemple le facteur int&#233;grant est 1/<I>x</I><SUP>2</SUP>.
+</LI>
+</OL>
+
+<P>
+</LI>
+<LI>Exemple de r&#233;solution d'une &#233;quation diff&#233;rentielle
+du premier ordre incompl&#232;te en <I>x</I>.
+<BR>
+R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+(y+y')^4+y'+3y=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(<I>y</I> + <I>y'</I>)<SUP>4</SUP> + <I>y'</I> + 3<I>y</I> = 0
+</DIV><P></P>
+Ce genre d'&#233;quations n'est pas r&#233;soluble directement par <TT>Xcas</TT>, nous 
+allons expliquer ce qu'il faut faire pour l'aider &#224; r&#233;soudre de telles &#233;quations. On doit trouver pour r&#233;soudre <I>F</I>(<I>y</I>, <I>y'</I>) = 0, une repr&#233;sentation
+ param&#233;trique de <I>F</I>(<I>u</I>, <I>v</I>) = 0, par exemple, <!-- MATH
+ $u=f(t),v=g(t)$
+ -->
+<I>u</I> = <I>f</I> (<I>t</I>), <I>v</I> = <I>g</I>(<I>t</I>) puis, poser 
+<I>y</I> = <I>f</I> (<I>t</I>) et <!-- MATH
+ $dy/dx=y'=g(t)$
+ -->
+<I>dy</I>/<I>dx</I> = <I>y'</I> = <I>g</I>(<I>t</I>).
+<BR>
+On a donc <!-- MATH
+ $dy/dt=f'(t)=y'*dx/dt=g(t)*dx/dt$
+ -->
+<I>dy</I>/<I>dt</I> = <I>f'</I>(<I>t</I>) = <I>y'</I>*<I>dx</I>/<I>dt</I> = <I>g</I>(<I>t</I>)*<I>dx</I>/<I>dt</I>.
+<BR>
+On trouve alors, comme solution la courbe d'&#233;quation param&#233;trique 
+<!-- MATH
+ $x(t), y(t)=f(t)$
+ -->
+<I>x</I>(<I>t</I>), <I>y</I>(<I>t</I>) = <I>f</I> (<I>t</I>), o&#249; <I>x</I>(<I>t</I>) est obtenu en r&#233;solvant l'&#233;quation 
+diff&#233;rentielle <!-- MATH
+ $g(t)dx=f'(t)dt$
+ -->
+<I>g</I>(<I>t</I>)<I>dx</I> = <I>f'</I>(<I>t</I>)<I>dt</I>.
+<BR>
+Ici on peut poser <I>y</I> + <I>y'</I> = <I>t</I> ce qui donne :
+<BR><!-- MATH
+ $y=-t-8*t^4$
+ -->
+<I>y</I> = - <I>t</I> - 8*<I>t</I><SUP>4</SUP> et <!-- MATH
+ $y'=dy/dx=3*t+8*t^4$
+ -->
+<I>y'</I> = <I>dy</I>/<I>dx</I> = 3*<I>t</I> + 8*<I>t</I><SUP>4</SUP> et donc <!-- MATH
+ $dy/dt=-1-32*t^3$
+ -->
+<I>dy</I>/<I>dt</I> = - 1 - 32*<I>t</I><SUP>3</SUP> donc
+<BR><!-- MATH
+ $(3*t+8*t^4)*dx=(-1-32*t^3)dt$
+ -->
+(3*<I>t</I> + 8*<I>t</I><SUP>4</SUP>)*<I>dx</I> = (- 1 - 32*<I>t</I><SUP>3</SUP>)<I>dt</I>.
+<BR>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve((3*t+8*t<code>^</code>4)*diff(x(t),t)=(-1-32*t<code>^</code>3),x(t))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-11*1/9*ln(8*t<code>^</code>3+3)+1/-9*ln(t<code>^</code>3)+c_0</TT>
+</DIV>
+on a donc comme solution la courbe d'&#233;quation :
+<BR><P><!-- MATH
+ \begin{displaymath}
+x(t)=-11*1/9*\ln(8*t^3+3)+1/-9*\ln(t^3)+c_0,
+\quad y(t)=-t-8*t^4
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I>(<I>t</I>) = - 11*1/9*ln(8*<I>t</I><SUP>3</SUP> +3) + 1/ -9*ln(<I>t</I><SUP>3</SUP>) + <I>c</I><SUB>0</SUB>,&nbsp;&nbsp;&nbsp;&nbsp;<I>y</I>(<I>t</I>) = - <I>t</I> - 8*<I>t</I><SUP>4</SUP>
+</DIV><P></P>
+
+<P>
+</LI>
+<LI>Exemples de r&#233;solution d'une &#233;quation diff&#233;rentielle de Clairaut 
+du premier ordre, de type <!-- MATH
+ $y=x*y'+f(y')$
+ -->
+<I>y</I> = <I>x</I>*<I>y'</I> + <I>f</I> (<I>y'</I>).
+<BR>
+Les solultions sont les droites  <I>D</I><SUB>m</SUB> d'&#233;quation <I>y</I> = <I>mx</I> + <I>f</I> (<I>m</I>) o&#249; <I>m</I> est
+une constante r&#233;elle.
+
+<OL>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+xy'+y'^3-y)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>xy'</I> + <I>y'</I><SUP>3</SUP> - <I>y</I>) = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve(x*y'+y'<code>^</code>3-y),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>c_0*x+c_0<code>^</code>3</TT>
+</DIV>
+</LI>
+<LI>R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y-xy'=\sqrt{a^2+b^2*y'^2}=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I> - <I>xy'</I> = <IMG
+ WIDTH="112" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img514.png"
+ ALT="$\displaystyle \sqrt{{a^2+b^2*y'^2}}$"> = 0
+</DIV><P></P>
+On tape alors :
+<DIV ALIGN="CENTER">
+<TT>desolve((y-x*y'-sqrt(a<code>^</code>2+b<code>^</code>2*y'<code>^</code>2),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>c_0*x+sqrt(a<code>^</code>2+b<code>^</code>2*c_0<code>^</code>2)</TT>
+</DIV>
+</LI>
+</OL>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13964"
+  HREF="node751.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13958"
+  HREF="node749.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13952"
+  HREF="node749.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13960"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13962"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13965"
+  HREF="node751.html">Transform&#233;e de Laplace et</A>
+<B> monter:</B> <A NAME="tex2html13959"
+  HREF="node749.html">Les &#233;quations diff&#233;rentielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13953"
+  HREF="node749.html">Les &#233;quations diff&#233;rentielles</A>
+ &nbsp; <B>  <A NAME="tex2html13961"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13963"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

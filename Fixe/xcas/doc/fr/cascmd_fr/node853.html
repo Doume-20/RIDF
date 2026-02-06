@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les affectations infix&#233;es : =&gt; := =&lt;</TITLE>
+<META NAME="description" CONTENT="Les affectations infix&#233;es : =&gt; := =&lt;">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node854.html">
+<LINK REL="previous" HREF="node852.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node854.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15610"
+  HREF="node854.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15604"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15598"
+  HREF="node852.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15606"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15608"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15611"
+  HREF="node854.html">L'affectation par copie :</A>
+<B> monter:</B> <A NAME="tex2html15605"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15599"
+  HREF="node852.html">Sortie dans une petite</A>
+ &nbsp; <B>  <A NAME="tex2html15607"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15609"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011411000000000000000"></A><A NAME="22137"></A><A NAME="22138"></A><A NAME="22139"></A>
+<BR>
+Les affectations infix&#233;es : <TT>=&gt; := =&lt;</TT>
+</H2>
+<TT>:= =&gt; =&lt;</TT> sont des op&#233;rateurs infix&#233;s qui permettent de 
+stocker une valeur dans une variable, mais leurs arguments de <TT>=&gt;</TT> et de
+<TT>:= =&lt;</TT> ne sont pas dans le m&#234;me ordre !
+<BR>
+De plus <TT>:=</TT> et <TT>=&lt;</TT> n'ont pas le m&#234;me effet lorsque le premier 
+argument est un &#233;l&#233;ment d'une liste (ou matrice) contenu dans une variable.
+En effet, <TT>=&lt;</TT> modifie l&#233;l&#233;ment d'une liste (ou matrice)  par 
+r&#233;f&#233;rence (voir <A HREF="node855.html#sec:diffaffectation">8.4.13</A>)
+
+<UL>
+<LI><TT>=&gt;</TT> est la version infix&#233;e de <TT>sto</TT>.
+<BR><TT>=&gt;</TT> stocke le premier argument dans la variable donn&#233;e comme deuxi&#232;me 
+argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>4=&gt;a</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>sto(4,a)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4 et la variable a contient 4</TT>
+</DIV>
+
+<P>
+</LI>
+<LI><TT>:=</TT> et <TT>=&lt;</TT> ont comme arguments, un nom de variable et la valeur
+&#224; stocker. 
+On tape :
+<DIV ALIGN="CENTER">
+<TT>a:=4</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>a=&lt;4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4 et la variable a contient 4</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=A</TT>
+</DIV>
+puis par exemple pour modifier <TT>A[3]</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>A[3]=&lt;33</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,33,4],[0,1,2,33,4]</TT>
+</DIV>
+Les variables <TT>A</TT> et <TT>B</TT> contiennent toutes les deux la liste
+<TT>[0,1,2,33,4]</TT>, en effet :
+<BR><TT>A:=[0,1,2,3,4]</TT> fait pointer <TT>A</TT> sur la liste <TT>[0,1,2,3,4]</TT>, 
+puis
+<BR><TT>B:=A</TT> fait pointer <TT>B</TT> sur <TT>A</TT> donc sur la liste 
+<TT>[0,1,2,3,4]</TT>,
+<BR><TT>A[3]=&lt;33</TT> modifie la liste point&#233;e par <TT>A</TT> donc modifie la liste 
+<TT>[0,1,2,3,4]</TT> en la liste <TT>[0,1,2,33,4]</TT> et donc <TT>B</TT> est modifi&#233;.
+Il en serait de m&#234;me si on avait mis <TT>B[3]=&lt;33</TT> au lieu de 
+<TT>A[3]=&lt;33</TT>, les variables <TT>A</TT> et <TT>B</TT> contiendraient toutes les 
+deux la liste <TT>[0,1,2,33,4]</TT>. 
+</LI>
+</UL> 
+<B>Remarque</B>
+<BR>
+On peut faire plusieurs affectations &#224; la fois en utilisant les s&#233;quences 
+ou les listes.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>[a,b,c]:=[1,2,3]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,3]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>a contient 1, b contient 2 et c contient 3</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>(a,b,c):=(1,2,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(1,2,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>a contient 1, b contient 2 et c contient 3</TT>
+</DIV>
+<B>Attention</B>
+<BR>
+Si <TT>a</TT> contient <TT>5</TT> et que l'on tape :
+<BR><TT>(a,b):=(2,a)</TT>
+<BR>
+alors <TT>a</TT> contient <TT>2</TT> et <TT>b</TT> contient <TT>5</TT>
+<BR>
+Si <TT>a</TT> contient <TT>1</TT> et que l'on tape :
+<BR><TT>(a,b):=(2,a)</TT>
+<BR>
+alors <TT>a</TT> contient <TT>2</TT> et <TT>b</TT> contient <TT>1</TT>
+<BR><TT>(a,b):=(b,a+b)</TT>
+<BR>
+alors <TT>a</TT> contient <TT>1</TT> et <TT>b</TT> contient <TT>3</TT>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15610"
+  HREF="node854.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15604"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15598"
+  HREF="node852.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15606"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15608"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15611"
+  HREF="node854.html">L'affectation par copie :</A>
+<B> monter:</B> <A NAME="tex2html15605"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15599"
+  HREF="node852.html">Sortie dans une petite</A>
+ &nbsp; <B>  <A NAME="tex2html15607"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15609"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

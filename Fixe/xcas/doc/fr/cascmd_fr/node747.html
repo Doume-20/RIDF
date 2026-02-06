@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;solution d'un syst&#232;me lin&#233;aire : linsolve resoudre_systeme_lineaire</TITLE>
+<META NAME="description" CONTENT="R&#233;solution d'un syst&#232;me lin&#233;aire : linsolve resoudre_systeme_lineaire">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node748.html">
+<LINK REL="previous" HREF="node746.html">
+<LINK REL="up" HREF="node741.html">
+<LINK REL="next" HREF="node748.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13922"
+  HREF="node748.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13916"
+  HREF="node741.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13910"
+  HREF="node746.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13918"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13920"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13923"
+  HREF="node748.html">R&#233;solution d'une r&#233;currence lin&#233;aire</A>
+<B> monter:</B> <A NAME="tex2html13917"
+  HREF="node741.html">Les syst&#232;mes lin&#233;aires</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13911"
+  HREF="node746.html">&#201;tape de la r&#233;duction</A>
+ &nbsp; <B>  <A NAME="tex2html13919"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13921"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009536000000000000000"></A><A NAME="19289"></A><A NAME="19290"></A>
+<BR>
+R&#233;solution d'un syst&#232;me lin&#233;aire : <TT>linsolve resoudre_systeme_lineaire</TT>
+</H2>
+<TT>linsolve</TT> permet de r&#233;soudre un syst&#232;me d'&#233;quations 
+lin&#233;aires &#233;crite sous la forme <!-- MATH
+ $expression = 0$
+ -->
+<I>expression</I> = 0.
+<BR><TT>linsolve</TT> a comme param&#232;tres la liste des &#233;quations et la liste des 
+variables.
+<TT>linsolve</TT> renvoie une liste qui est solution du syst&#232;me d'&#233;quations.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>linsolve([2*x+y+z=1,x+y+2*z=1,x+2*y+z=4],[x,y,z])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1/-2,5/2,1/-2]</TT>
+</DIV>
+donc 
+<P><!-- MATH
+ \begin{displaymath}
+x=-\frac{1}{2}, y=\frac{5}{2}, z=-\frac{1}{2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I> = - <IMG
+ WIDTH="17" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$">, <I>y</I> = <IMG
+ WIDTH="17" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img503.png"
+ ALT="$\displaystyle {\frac{{5}}{{2}}}$">, <I>z</I> = - <IMG
+ WIDTH="17" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$">
+</DIV><P></P>
+sont solutions du syst&#232;me :
+<P><!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rl}
+2x+y+z &=1\\
+x+y+2z &=1\\
+x+2y+z &=4
+\end{array}
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="22" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img504.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rl}
+2x+y+z &amp;=1\\
+x+y+2z &amp;=1\\
+x+2y+z &amp;=4
+\end{array}}\right.$"><IMG
+ WIDTH="142" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img505.png"
+ ALT="$\displaystyle \begin{array}{rl}
+2x+y+z &amp;=1\\
+x+y+2z &amp;=1\\
+x+2y+z &amp;=4
+\end{array}$">
+</DIV><P></P> 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

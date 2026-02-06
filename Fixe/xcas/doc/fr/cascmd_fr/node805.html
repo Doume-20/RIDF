@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Tirage &#233;quir&#233;parti sur [0, 1,.., 232[ : rand() alea() hasard()</TITLE>
+<META NAME="description" CONTENT="Tirage &#233;quir&#233;parti sur [0, 1,.., 232[ : rand() alea() hasard()">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node806.html">
+<LINK REL="previous" HREF="node804.html">
+<LINK REL="up" HREF="node804.html">
+<LINK REL="next" HREF="node806.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14848"
+  HREF="node806.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14842"
+  HREF="node804.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14836"
+  HREF="node804.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14844"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14846"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14849"
+  HREF="node806.html">Tirage al&#233;atoire &#233;quir&#233;parti sur</A>
+<B> monter:</B> <A NAME="tex2html14843"
+  HREF="node804.html">Tirage &#233;quir&#233;parti rand alea</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14837"
+  HREF="node804.html">Tirage &#233;quir&#233;parti rand alea</A>
+ &nbsp; <B>  <A NAME="tex2html14845"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14847"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION001032100000000000000">
+Tirage &#233;quir&#233;parti sur <!-- MATH
+ $[0,1,..,2^{32}[$
+ -->
+[0, 1,.., 2<SUP>32</SUP>[ : <TT>rand() alea() hasard()</TT></A>
+</H3>
+<TT>rand()</TT> renvoie au hasard, de fa&#231;on &#233;quiprobable, un nombre 
+entier de <!-- MATH
+ $[0,2^{32}[$
+ -->
+[0, 2<SUP>32</SUP>[ (<!-- MATH
+ $2^{32}=4294967296$
+ -->
+2<SUP>32</SUP> = 4294967296).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rand()</TT>
+</DIV>
+ou on tape
+<DIV ALIGN="CENTER">
+<TT>hasard()</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1804289383</TT>
+</DIV>
+Pour avoir, au hasard, de fa&#231;on &#233;quiprobable, un nombre de [0;1[, on 
+  peut donc utiliser :
+<DIV ALIGN="CENTER">
+<TT>evalf(rand()/2<code>^</code>32)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.391549611697</TT>
+</DIV>
+Mais il est plus simple de taper : <TT>rand(0,1)</TT> (voir le paragraphe 
+suivant).
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

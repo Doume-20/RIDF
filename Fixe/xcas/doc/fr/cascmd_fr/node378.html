@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Limite et int&#233;grale</TITLE>
+<META NAME="description" CONTENT="Limite et int&#233;grale">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node377.html">
+<LINK REL="up" HREF="node376.html">
+<LINK REL="next" HREF="node379.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8478"
+  HREF="node379.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8472"
+  HREF="node376.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8468"
+  HREF="node377.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8474"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8476"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8479"
+  HREF="node379.html">R&#233;&#233;crire des expressions transcendantes</A>
+<B> monter:</B> <A NAME="tex2html8473"
+  HREF="node376.html">Limites</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8469"
+  HREF="node377.html">Limites : limit limite</A>
+ &nbsp; <B>  <A NAME="tex2html8475"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8477"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009202000000000000000"></A><A NAME="9406"></A> <A NAME="9407"></A>
+<BR>
+Limite et int&#233;grale
+</H2> 
+On ne donne ici que deux exemple :
+
+<UL>
+<LI>D&#233;terminer la limite quand <I>a</I> tend vers l'infini de :
+<P><!-- MATH
+ \begin{displaymath}
+\int _2^a \frac {1}{x^2}\ dx
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="30" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img252.png"
+ ALT="$\displaystyle \int_{2}^{a}$"><IMG
+ WIDTH="26" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img253.png"
+ ALT="$\displaystyle {\frac{{1}}{{x^2}}}$">&nbsp;<I>dx</I>
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit(integrate(1/(x<code>^</code>2),x,2,a),a,+(infinity))</TT>
+</DIV>
+On obtient (v&#233;rifier que <TT>a</TT> est formelle sinon faire <TT>purge(a)</TT>) :
+<DIV ALIGN="CENTER">
+<TT>1/2</TT>
+</DIV>
+</LI>
+<LI>D&#233;terminer la limite quand <I>a</I> tend vers l'infini de :
+<P><!-- MATH
+ \begin{displaymath}
+\int _2^a (\frac {x}{x^2-1}+\ln(\frac {x+1}{x-1}))\ dx
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="30" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img252.png"
+ ALT="$\displaystyle \int_{2}^{a}$">(<IMG
+ WIDTH="56" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.png"
+ ALT="$\displaystyle {\frac{{x}}{{x^2-1}}}$"> + ln(<IMG
+ WIDTH="48" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.png"
+ ALT="$\displaystyle {\frac{{x+1}}{{x-1}}}$">))&nbsp;<I>dx</I>
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit(integrate(x/(x<code>^</code>2-1)+log((x+1)/(x-1)),x,2,a),</TT>
+</DIV> 
+<DIV ALIGN="CENTER">
+<TT>a,+(infinity))</TT>
+</DIV>
+On obtient (v&#233;rifier que <TT>a</TT> est formelle sinon faire <TT>purge(a)</TT>):
+<DIV ALIGN="CENTER">
+<TT>+(infinity)</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

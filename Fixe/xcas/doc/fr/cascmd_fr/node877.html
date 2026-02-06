@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour ne pas faire la fin d'une boucle : continue</TITLE>
+<META NAME="description" CONTENT="Pour ne pas faire la fin d'une boucle : continue">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node878.html">
+<LINK REL="previous" HREF="node876.html">
+<LINK REL="up" HREF="node874.html">
+<LINK REL="next" HREF="node878.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15955"
+  HREF="node878.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15949"
+  HREF="node874.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15943"
+  HREF="node876.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15951"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15953"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15956"
+  HREF="node878.html">Ouvrir l'&#232;cran DispG depuis</A>
+<B> monter:</B> <A NAME="tex2html15950"
+  HREF="node874.html">D'autres instructions utiles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15944"
+  HREF="node876.html">Pour sortir d'une boucle</A>
+ &nbsp; <B>  <A NAME="tex2html15952"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15954"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001163000000000000000"></A><A NAME="23059"></A>
+<BR>
+Pour ne pas faire la fin d'une boucle : <TT>continue</TT>
+</H2>
+<TT>continue</TT> n'a pas d'argument ni parenth&#232;se.
+<BR><TT>continue</TT> dans une boucle, permet d'ignorer la fin de l'it&#233;ration 
+et ainsi de  passer directement &#224; l'it&#233;ration suivante.
+<BR>
+On tape :
+<PRE>
+testcont(b):={
+local a;
+a:=10;
+while (a&gt;0) {
+a:=a-3; 
+if (a&gt;=b) {continue;} 
+print(a);
+}
+}
+</PRE>
+puis on tape :
+<DIV ALIGN="CENTER">
+<TT>testcont(4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>a:1 et a:-2 &#233;crit en bleu et 1 comme r&#233;ponse</TT>
+</DIV>
+car <TT>a</TT> est imprim&#233; que si <TT>a&lt;b=4</TT>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

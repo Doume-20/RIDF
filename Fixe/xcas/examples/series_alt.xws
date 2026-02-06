@@ -1,0 +1,77 @@
+// fltk 7Fl_Tile 34 55 809 287
+[
+// fltk N4xcas7EditeurE 34 55 809 286
+731 ,
+// n=nombres de termes et a fonction definissant a(n)
+// S_n(P_n) =serie_alt(n,a) qui approche sum((-1)^k*a(k),k,0,+infinity)
+// avec P_n=poly de chebyshev
+series_alt(a,n,digits):={
+  local k,d,c,p,S;
+  d:=normal(((3+sqrt(8))^n+(3-sqrt(8))^n)/2);
+  p:=1;
+  c:=d-p;
+  S:=a(0)*c;
+  for (k:=1;k<n;k++) {
+    p:=p*(k+n-1)*(k-n-1)/(k-1/2)/k;
+    c:=-p-c;
+    S:=S+a(k)*c;
+  }
+  return evalf(S/d,digits);
+};
+
+// si a(n):=1/n^2, 2^k*a(2^k*m)=1/(2^k*m2)
+// b(m):=1/m^2*sum(1/2^k,k,0,+infinity)=2/m2
+// si a(n):=1/n^s, 2^k*a(2^k*m)=1/(2^(k*(s-1))*m^s)
+// b(m):=1/m^s*sum((1/2^(s-1))^k,k,0,+infinity)=2^(s-1)/(2^(s-1)-1)/m^s
+// pour s=4 b(m):=8/(7*m^4)
+// sum((-1)^(m-1)*b(m),1,+infinity)=sum((-1)^(m)*b(m+1),0,+infinity)
+// avec Digits:=30
+,
+// fltk N4xcas10Log_OutputE 34 341 809 1
+
+]
+,
+// fltk 7Fl_Tile 34 344 809 171
+[
+// fltk N4xcas19Multiline_Input_tabE 34 344 809 30
+a(n):=1/(n+1)^2;series_alt(a,5,30)
+,
+// fltk N4xcas10Log_OutputE 34 374 809 64
+// Parsing a£// Success compiling a££
+,
+// fltk N4xcas8EquationE 34 438 809 77
+ (n)->1/((n+1)^2),0.8224905012059338553540159249344
+]
+,
+// fltk 7Fl_Tile 34 517 809 161
+[
+// fltk N4xcas19Multiline_Input_tabE 34 517 809 30
+a(n):=1/(n+1);series_alt(a,10,30);evalf(ln(2),30)
+,
+// fltk N4xcas10Log_OutputE 34 547 809 64
+// Parsing a£// Success compiling a££
+,
+// fltk N4xcas8EquationE 34 611 809 67
+ (n)->1/(n+1),0.6931471808977303453162972303438,0.6931471805599453094172321214580
+]
+,
+// fltk 7Fl_Tile 34 680 809 161
+[
+// fltk N4xcas19Multiline_Input_tabE 34 680 809 30
+a(m):=1/(2*m+1);series_alt(a,20,30);evalf(pi/4,30)
+,
+// fltk N4xcas10Log_OutputE 34 710 809 64
+// Parsing a£// Success compiling a££
+,
+// fltk N4xcas8EquationE 34 774 809 67
+ (m)->1/(2*m+1),0.7853981633974483099206676876810,0.7853981633974483096156608458198
+]
+,
+// fltk 7Fl_Tile 34 843 809 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 843 809 30
+
+,
+// fltk N4xcas10Log_OutputE 34 873 809 1
+
+]

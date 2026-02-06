@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transform&#233;e en z inverse d'une fraction rationnelle, la fonction invztrans : invztrans</TITLE>
+<META NAME="description" CONTENT="Transform&#233;e en z inverse d'une fraction rationnelle, la fonction invztrans : invztrans">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node753.html">
+<LINK REL="up" HREF="node752.html">
+<LINK REL="next" HREF="node755.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14018"
+  HREF="node755.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14012"
+  HREF="node752.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14008"
+  HREF="node753.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14014"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14016"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14019"
+  HREF="node755.html">Autres fonctions</A>
+<B> monter:</B> <A NAME="tex2html14013"
+  HREF="node752.html">Transform&#233;e en z et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14009"
+  HREF="node753.html">Transform&#233;e en z d'une</A>
+ &nbsp; <B>  <A NAME="tex2html14015"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14017"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009552000000000000000"></A><A NAME="19771"></A>
+<BR>
+Transform&#233;e en z inverse d'une fraction rationnelle, la fonction <I>invztrans</I> : <TT>invztrans</TT>
+</H2>
+<TT>invztrans</TT> a un ou trois arguments :
+
+<UL>
+<LI>une fraction rationnelle donn&#233;e par son expression en utilisant la 
+variable <I>x</I> et <I>x</I> sera 
+aussi le nom de la variable utilis&#233;e dans la fonction renvoy&#233;e par 
+,<TT>ztrans</TT>
+</LI>
+<LI>trois arguments une fraction rationnelle donn&#233;e par son expression, le 
+nom de la variable utilis&#233;e pour d&#233;finir cette expression (paz exemple la 
+variable <I>z</I>), et le nom de la variable utilis&#233;e dans la fonction renvoy&#233;e 
+par <TT>invztrans</TT> (par exemple <I>n</I>).
+</LI>
+</UL> 
+<TT>invztrans</TT> calcule la transform&#233;e en z inverse de la fraction 
+rationnelle donn&#233;e en argument.
+<BR>
+On a par d&#233;finition :
+<BR>
+si <!-- MATH
+ $invztrans(R_x)=a_x$
+ -->
+<I>invztrans</I>(<I>R</I><SUB>x</SUB>) = <I>a</I><SUB>x</SUB> on a  
+<P><!-- MATH
+ \begin{displaymath}
+R_x=\sum_{n=0}^{inf} \frac{a_n}{x^n}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>R</I><SUB>x</SUB> = <IMG
+ WIDTH="30" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img523.png"
+ ALT="$\displaystyle \sum_{{n=0}}^{{inf}}$"><IMG
+ WIDTH="27" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img524.png"
+ ALT="$\displaystyle {\frac{{a_n}}{{x^n}}}$">
+</DIV><P></P>
+si <!-- MATH
+ $a_n=invztrans(R_z,z,n)$
+ -->
+<I>a</I><SUB>n</SUB> = <I>invztrans</I>(<I>R</I><SUB>z</SUB>, <I>z</I>, <I>n</I>) on a  
+<P><!-- MATH
+ \begin{displaymath}
+R_z=\sum_{n=0}^{inf} \frac{a_n}{z^n}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>R</I><SUB>z</SUB> = <IMG
+ WIDTH="30" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img523.png"
+ ALT="$\displaystyle \sum_{{n=0}}^{{inf}}$"><IMG
+ WIDTH="26" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img525.png"
+ ALT="$\displaystyle {\frac{{a_n}}{{z^n}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>invztrans(x/(x-1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>invztrans(z/(z-1),z,n)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On a en effet :
+<!-- MATH
+ $\frac{z}{(z-1)}=\frac{1}{1-\frac{1}{z}}=1+\frac{1}{z}+\frac{1}{z^2}+\frac{1}{z^3}+\frac{1}{z^4}+..=\sum_{n=0}^{inf}\frac{1}{z^n}$
+ -->
+<IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img526.png"
+ ALT="$ {\frac{{z}}{{(z-1)}}}$"> = <IMG
+ WIDTH="35" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img527.png"
+ ALT="$ {\frac{{1}}{{1-\frac{1}{z}}}}$"> = 1 + <IMG
+ WIDTH="15" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img528.png"
+ ALT="$ {\frac{{1}}{{z}}}$"> + <IMG
+ WIDTH="22" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img529.png"
+ ALT="$ {\frac{{1}}{{z^2}}}$"> + <IMG
+ WIDTH="22" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img530.png"
+ ALT="$ {\frac{{1}}{{z^3}}}$"> + <IMG
+ WIDTH="22" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img531.png"
+ ALT="$ {\frac{{1}}{{z^4}}}$"> + .. = <IMG
+ WIDTH="49" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img532.png"
+ ALT="$ \sum_{{n=0}}^{{inf}}$"><IMG
+ WIDTH="23" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img533.png"
+ ALT="$ {\frac{{1}}{{z^n}}}$">
+On tape :
+<DIV ALIGN="CENTER">
+<TT>invztrans(x/(x-1)<code>^</code>2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>invztrans(z/(z-1)<code>^</code>2,z,n)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>n</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14018"
+  HREF="node755.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14012"
+  HREF="node752.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14008"
+  HREF="node753.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14014"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14016"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14019"
+  HREF="node755.html">Autres fonctions</A>
+<B> monter:</B> <A NAME="tex2html14013"
+  HREF="node752.html">Transform&#233;e en z et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14009"
+  HREF="node753.html">Transform&#233;e en z d'une</A>
+ &nbsp; <B>  <A NAME="tex2html14015"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14017"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

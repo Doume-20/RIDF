@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;velopper une expression transcendante et trigonom&#233;trique : texpand tExpand developper_transcendant</TITLE>
+<META NAME="description" CONTENT="D&#233;velopper une expression transcendante et trigonom&#233;trique : texpand tExpand developper_transcendant">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node381.html">
+<LINK REL="previous" HREF="node379.html">
+<LINK REL="up" HREF="node379.html">
+<LINK REL="next" HREF="node381.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8508"
+  HREF="node381.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8502"
+  HREF="node379.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8496"
+  HREF="node379.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8504"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8506"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8509"
+  HREF="node381.html">Rassembler les termes de</A>
+<B> monter:</B> <A NAME="tex2html8503"
+  HREF="node379.html">R&#233;&#233;crire des expressions transcendantes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8497"
+  HREF="node379.html">R&#233;&#233;crire des expressions transcendantes</A>
+ &nbsp; <B>  <A NAME="tex2html8505"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8507"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009211000000000000000"></A><A NAME="9437"></A><A NAME="9438"></A><A NAME="9439"></A>
+<BR>
+D&#233;velopper une expression transcendante et trigonom&#233;trique : <TT>texpand tExpand developper_transcendant</TT>
+</H2>
+<TT>texpand</TT> ou <TT>tExpand</TT> a comme argument une expression 
+transcendante et trigonom&#233;trique.
+<BR><TT>texpand</TT> ou <TT>tExpand</TT> est la g&#233;n&#233;ralisation de <TT>expexpand</TT>, 
+<TT>lnexpand</TT> et <TT>trigexpand</TT> car elle d&#233;veloppe les expressions 
+transcendantes et trigonom&#233;triques.
+<BR><TT>texpand</TT> ou <TT>tExpand</TT> permet, par exemple, de transformer ln(<I>x</I><SUP>n</SUP>) 
+en <I>n</I> ln(<I>x</I>), exp(<I>x</I>)<SUP>n</SUP> en exp(<I>nx</I>) et sin(2<I>x</I>) en <!-- MATH
+ $2\sin(x)\cos(x)$
+ -->
+2 sin(<I>x</I>)cos(<I>x</I>).
+<BR>
+<UL>
+<LI><TT>texpand</TT> ou <TT>tExpand</TT> a comme argument une expression 
+transcendante et trigonom&#233;trique.
+<BR><B>Exemple</B> :
+<BR>
+Developper <!-- MATH
+ $\exp(x+y)+\cos(x+y)+\ln(3x^2)$
+ -->
+exp(<I>x</I> + <I>y</I>) + cos(<I>x</I> + <I>y</I>) + ln(3<I>x</I><SUP>2</SUP>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(exp(x+y)+cos(x+y)+ln(3*x<code>^</code>2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>cos(x)*cos(y)-sin(x)*sin(y)+exp(x)*exp(y)+ ln(3)+2*ln(x)</TT>
+</DIV>
+</LI>
+<LI><TT>texpand</TT> ou <TT>tExpand</TT> a comme argument une expression 
+trigonom&#233;trique.
+<BR><TT>texpand</TT> ou <TT>tExpand</TT> d&#233;veloppe cette expression en fonction de sin(<I>x</I>) et cos(<I>x</I>).
+<BR><B>Exemples</B> 
+
+<OL>
+<LI>Developper cos(<I>x</I> + <I>y</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(cos(x+y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>cos(x)*cos(y)-sin(x)*sin(y)</TT>
+</DIV>
+</LI>
+<LI>Developper cos(3<I>x</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(cos(3*x))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4*(cos(x))<code>^</code> 3-3*cos(x)</TT>
+</DIV>
+</LI>
+<LI>Developper <!-- MATH
+ $\displaystyle \frac{\sin(3*x)+\sin(7*x)}{\sin(5*x)}$
+ -->
+<IMG
+ WIDTH="170" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.png"
+ ALT="$\displaystyle {\frac{{\sin(3*x)+\sin(7*x)}}{{\sin(5*x)}}}$">.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand((sin(3*x)+sin(7*x))/sin(5*x))</TT>
+</DIV>
+On obtient
+<DIV ALIGN="CENTER">
+<TT>(4*(cos(x))<code>^</code>2-1)*(sin(x)/(16*(cos(x))<code>^</code>4- 12*(cos(x))<code>^</code>2+1))/sin(x)+(64*(cos(x))<code>^</code>6- 80*(cos(x))<code>^</code>4+24*(cos(x))<code>^</code>2- 1)*sin(x)/ (16*(cos(x))<code>^</code>4-12*(cos(x))<code>^</code>2+1)/sin(x)</TT>
+</DIV>
+Et, apr&#232;s une simplification en tapant <TT>normal(ans())</TT>, on obtient :
+<DIV ALIGN="CENTER">
+<TT>4*(cos(x))<code>^</code>2-2</TT>
+</DIV>
+</LI>
+</OL>
+</LI>
+<LI><TT>texpand</TT> ou <TT>tExpand</TT> a comme argument une expression 
+transcendante.
+<BR><TT>texpand</TT> ou <TT>tExpand</TT> d&#233;veloppe cette expression.
+<BR><B>Exemples</B> 
+
+<OL>
+<LI>Developper exp(<I>x</I> + <I>y</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(exp(x+y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>exp(x)*exp(y)</TT>
+</DIV>
+</LI>
+<LI>Developper  ln(<I>x</I> + <I>y</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(log(x*y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>log(x)+log(y)</TT>
+</DIV>
+</LI>
+<LI>Developper  ln(<I>x</I><SUP>n</SUP>).
+<BR>
+<DIV ALIGN="CENTER">
+<TT>texpand(ln(x<code>^</code>n))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>n*ln(x)</TT>
+</DIV>
+</LI>
+<LI>Developper <!-- MATH
+ $\ln((e^2)+\exp(2*\ln(2))+exp(\ln(3)+\ln(2)))$
+ -->
+ln((<I>e</I><SUP>2</SUP>) + exp(2*ln(2)) + <I>exp</I>(ln(3) + ln(2))).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(log(e<code>^</code>2)+exp(2*log(2))+exp(log(3)+log(2)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>6+3*2</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>texpand(log(e<code>^</code>2)+exp(2*log(2)))+ lncollect(exp(log(3)+log(2)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>12</TT>
+</DIV>
+</LI>
+</OL>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8508"
+  HREF="node381.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8502"
+  HREF="node379.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8496"
+  HREF="node379.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8504"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8506"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8509"
+  HREF="node381.html">Rassembler les termes de</A>
+<B> monter:</B> <A NAME="tex2html8503"
+  HREF="node379.html">R&#233;&#233;crire des expressions transcendantes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8497"
+  HREF="node379.html">R&#233;&#233;crire des expressions transcendantes</A>
+ &nbsp; <B>  <A NAME="tex2html8505"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8507"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

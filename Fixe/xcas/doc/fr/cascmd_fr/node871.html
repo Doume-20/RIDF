@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour utiliser une cha&#238;ne comme un nombre : expr</TITLE>
+<META NAME="description" CONTENT="Pour utiliser une cha&#238;ne comme un nombre : expr">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node872.html">
+<LINK REL="previous" HREF="node870.html">
+<LINK REL="up" HREF="node866.html">
+<LINK REL="next" HREF="node872.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15867"
+  HREF="node872.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15861"
+  HREF="node866.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15855"
+  HREF="node870.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15863"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15865"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15868"
+  HREF="node872.html">Pour utiliser une cha&#238;ne</A>
+<B> monter:</B> <A NAME="tex2html15862"
+  HREF="node866.html">Les autres instructions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15856"
+  HREF="node870.html">Pour utiliser une cha&#238;ne</A>
+ &nbsp; <B>  <A NAME="tex2html15864"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15866"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001155000000000000000"></A><A NAME="22933"></A><A NAME="sec:expr2"></A>
+<BR>
+Pour utiliser une cha&#238;ne comme un nombre : <TT>expr</TT>
+</H2>
+<TT>expr</TT> permet d'utiliser une cha&#238;ne de chiffres ne 
+commen&#231;ant pas par un z&#233;ro comme un nombre entier &#233;crit en base 10.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>expr("123")+1</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>124</TT>
+</DIV>
+<TT>expr</TT> permet d'utiliser une cha&#238;ne de chiffres ne comportant 
+pas de <TT>8</TT>, ni de <TT>9</TT>, et  commen&#231;ant
+ par un z&#233;ro comme un nombre  entier &#233;crit en base <TT>8</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>expr("0123")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>83</TT>
+</DIV>
+En effet <!-- MATH
+ $1*8^2+2*8+3=83$
+ -->
+1*8<SUP>2</SUP> + 2*8 + 3 = 83
+<BR><B>Remarque</B>:
+<BR>
+Si on tape  <TT>expr("018")</TT> on obtient le nombre d&#233;cimale <TT>18.0</TT>.
+<BR><TT>expr</TT> permet d'utiliser une cha&#238;ne contenant des chiffres et 
+les lettres <TT>a,b,c,d,e,f</TT>, et commen&#231;ant par z&#233;ro suivi de la 
+lettre <TT>x</TT>  comme un nombre  entier &#233;crit en base 16.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>expr("0x12f")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>303</TT>
+</DIV>
+En effet <!-- MATH
+ $1*16^2+2*16+15=303$
+ -->
+1*16<SUP>2</SUP> + 2*16 + 15 = 303
+Voir aussi <A HREF="node217.html#sec:expr1">6.5.11</A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15867"
+  HREF="node872.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15861"
+  HREF="node866.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15855"
+  HREF="node870.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15863"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15865"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15868"
+  HREF="node872.html">Pour utiliser une cha&#238;ne</A>
+<B> monter:</B> <A NAME="tex2html15862"
+  HREF="node866.html">Les autres instructions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15856"
+  HREF="node870.html">Pour utiliser une cha&#238;ne</A>
+ &nbsp; <B>  <A NAME="tex2html15864"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15866"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

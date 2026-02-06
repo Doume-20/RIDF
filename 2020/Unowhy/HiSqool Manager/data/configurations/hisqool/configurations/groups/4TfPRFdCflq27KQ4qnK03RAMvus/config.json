@@ -1,0 +1,17 @@
+{
+  "__noop": {
+    "description": "No operation unit. Just for testing",
+    "payload": {
+      "id": 1,
+      "name": "Noop",
+      "description": "No operation payload",
+      "url": "https://idf.hisqool.com/conf/payloads/noop_1.0.0.jar",
+      "size": 5213,
+      "digest": "MD5:ef9f76ab706872591246dc78c4b282c6"
+    },
+    "when": "true",
+    "triggers": [
+      "configuration"
+    ]
+  }
+}

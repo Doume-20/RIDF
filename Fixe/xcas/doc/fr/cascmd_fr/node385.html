@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Lin&#233;ariser une expression trigonom&#233;trique : tlin lineariser_trigo</TITLE>
+<META NAME="description" CONTENT="Lin&#233;ariser une expression trigonom&#233;trique : tlin lineariser_trigo">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node386.html">
+<LINK REL="previous" HREF="node384.html">
+<LINK REL="up" HREF="node382.html">
+<LINK REL="next" HREF="node386.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8601"
+  HREF="node386.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8595"
+  HREF="node382.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8589"
+  HREF="node384.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8597"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8599"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8602"
+  HREF="node386.html">Rassembler les sinus et</A>
+<B> monter:</B> <A NAME="tex2html8596"
+  HREF="node382.html">Les expressions trigonom&#233;triques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8590"
+  HREF="node384.html">D&#233;velopper une expression trigonométriques</A>
+ &nbsp; <B>  <A NAME="tex2html8598"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8600"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009223000000000000000"></A><A NAME="9624"></A><A NAME="9625"></A>
+<BR>
+Lin&#233;ariser une  expression trigonom&#233;trique : <TT>tlin lineariser_trigo</TT>
+</H2>
+<TT>tlin</TT> a comme argument une expression trigonom&#233;trique.
+<BR><TT>tlin</TT> lin&#233;arise cette expression en fonction de sin(<I>n</I>.<I>x</I>) et cos(<I>n</I>.<I>x</I>).
+<BR><B>Exemples</B>
+
+<UL>
+<LI>Lin&#233;ariser <!-- MATH
+ $\cos(x)*\cos(y)$
+ -->
+cos(<I>x</I>)*cos(<I>y</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tlin(cos(x)*cos(y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1/2*cos(x-y)+1/2*cos(x+y)</TT>
+</DIV>
+</LI>
+<LI>Lin&#233;ariser cos(<I>x</I>)<SUP>3</SUP>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tlin(cos(x)<code>^</code>3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3/4*cos(x)+1/4*cos(3*x)</TT>
+</DIV>
+</LI>
+<LI>Lin&#233;ariser  <!-- MATH
+ $4\cos(x)^2-2$
+ -->
+4 cos(<I>x</I>)<SUP>2</SUP> - 2.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tlin(4*cos(x)<code>^</code>2-2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*cos(2*x)</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

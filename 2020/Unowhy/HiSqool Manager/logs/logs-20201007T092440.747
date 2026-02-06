@@ -1,0 +1,74 @@
+2020-10-07 11:24:32 [4660] INFO [Runner] Creating configuration unit runner object... +3ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [Runner] Checking if runner needs to be performed... +1ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +1ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [JS] We are triggering +1ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +1ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +2ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +1ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [Runner] Performing runner... +2ms
+2020-10-07 09:24:32.083: 2020-10-07 11:24:32 [4660] INFO [JS] Performing facts gathering and upload... +1ms
+2020-10-07 09:24:33.081: 2020-10-07 11:24:33 [4660] INFO [JS] Getting installed applications... +980ms
+2020-10-07 09:24:33.471: 2020-10-07 11:24:33 [4660] INFO [Runner] Runner doesn't need to be performed +2ms
+2020-10-07 09:24:33.471: 2020-10-07 11:24:33 [4660] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (2) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +2ms
+2020-10-07 09:24:33.628: 2020-10-07 11:24:33 [4660] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +2ms
+2020-10-07 09:24:33.971: 2020-10-07 11:24:33 [4660] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2020-10-07 09:24:33.971: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2020-10-07 09:24:33.971: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 09:24:33.971: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 09:24:33.971: Arguments=
+2020-10-07 09:24:33.971: ArgumentsExpanded=
+2020-10-07 09:24:33.971: WorkingDirectory=
+2020-10-07 09:24:33.971: WorkingDirectoryExpanded=
+2020-10-07 09:24:33.971: RunStyle=1
+2020-10-07 09:24:33.971: IconLocation=,0
+2020-10-07 09:24:33.971: IconLocationExpanded=,0
+2020-10-07 09:24:33.971: HotKey=0 (None)
+2020-10-07 09:24:33.971: Description=
+2020-10-07 09:24:33.971: 
+2020-10-07 09:24:33.971: The command completed successfully. +338ms
+2020-10-07 09:24:33.971: 2020-10-07 11:24:33 [4660] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2020-10-07 09:24:34.159: 2020-10-07 11:24:34 [4660] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2020-10-07 09:24:34.159: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2020-10-07 09:24:34.159: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 09:24:34.159: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 09:24:34.159: Arguments=
+2020-10-07 09:24:34.159: ArgumentsExpanded=
+2020-10-07 09:24:34.159: WorkingDirectory=
+2020-10-07 09:24:34.159: WorkingDirectoryExpanded=
+2020-10-07 09:24:34.159: RunStyle=1
+2020-10-07 09:24:34.159: IconLocation=,0
+2020-10-07 09:24:34.159: IconLocationExpanded=,0
+2020-10-07 09:24:34.159: HotKey=0 (None)
+2020-10-07 09:24:34.159: Description=
+2020-10-07 09:24:34.159: 
+2020-10-07 09:24:34.159: The command completed successfully. +184ms
+2020-10-07 09:24:34.159: 2020-10-07 11:24:34 [4660] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2020-10-07 09:24:34.331: 2020-10-07 11:24:34 [4660] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: 0. 
+2020-10-07 09:24:34.331: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk]
+2020-10-07 09:24:34.331: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 09:24:34.331: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 09:24:34.331: Arguments=
+2020-10-07 09:24:34.331: ArgumentsExpanded=
+2020-10-07 09:24:34.331: WorkingDirectory=
+2020-10-07 09:24:34.331: WorkingDirectoryExpanded=
+2020-10-07 09:24:34.331: RunStyle=1
+2020-10-07 09:24:34.331: IconLocation=,0
+2020-10-07 09:24:34.331: IconLocationExpanded=,0
+2020-10-07 09:24:34.331: HotKey=0 (None)
+2020-10-07 09:24:34.331: Description=
+2020-10-07 09:24:34.331: 
+2020-10-07 09:24:34.331: The command completed successfully. +171ms
+2020-10-07 09:24:34.331: 2020-10-07 11:24:34 [4660] INFO [JS] Missing value: 0 +1ms
+2020-10-07 09:24:34.331: 2020-10-07 11:24:34 [4660] INFO [Runner] Runner doesn't need to be performed +1ms
+2020-10-07 09:24:34.331: 2020-10-07 11:24:34 [4660] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +3ms
+2020-10-07 09:24:39.794: 2020-10-07 11:24:39 [4660] INFO [JS] Getting apps result: 0 +5455ms
+2020-10-07 09:24:39.794: 2020-10-07 11:24:39 [4660] INFO [JS] Setting facts... +1ms
+2020-10-07 09:24:39.794: 2020-10-07 11:24:39 [4660] INFO [JS] Uploading facts... +2ms
+2020-10-07 09:24:39.810: 2020-10-07 11:24:39 [4660] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com idf.hisqool.com:443
+2020-10-07 09:24:39.810:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26) +11ms
+2020-10-07 09:24:39.810: 2020-10-07 11:24:39 [4660] INFO [Runner] Running result: false +1ms
+2020-10-07 09:24:39.810: 2020-10-07 11:24:39 [4660] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2020-10-07 09:24:40.747: 2020-10-07 11:24:40 [4660] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +931ms
+2020-10-07 09:24:40.747: 2020-10-07 11:24:40 [4660] INFO [Runner] Running result: false +1ms
+2020-10-07 09:24:40.747: 2020-10-07 11:24:40 [4660] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms

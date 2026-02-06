@@ -1,0 +1,48 @@
+2022-02-14 11:47:03 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms
+2022-02-14 10:47:03.291: 2022-02-14 11:47:03 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2022-02-14 10:47:03.291: 2022-02-14 11:47:03 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +1ms
+2022-02-14 10:47:03.291: 2022-02-14 11:47:03 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +1ms
+2022-02-14 10:47:03.291: 2022-02-14 11:47:03 [5360] INFO [Runner] Performing runner... +2ms
+2022-02-14 10:47:03.291: 2022-02-14 11:47:03 [5360] INFO [JS] Performing facts gathering and upload... +1ms
+2022-02-14 10:47:03.416: 2022-02-14 11:47:03 [5360] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +53ms
+2022-02-14 10:47:03.447: 2022-02-14 11:47:03 [5360] INFO [JS] Current GPO version: 1.5 +25ms
+2022-02-14 10:47:03.447: 2022-02-14 11:47:03 [5360] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-02-14 10:47:03.447: 2022-02-14 11:47:03 [5360] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2022-02-14 10:47:03.634: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Got 9 items. 9 in, 0 out +188ms
+2022-02-14 10:47:03.634: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +1ms
+2022-02-14 10:47:03.650: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +32ms
+2022-02-14 10:47:03.681: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +16ms
+2022-02-14 10:47:03.712: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +37ms
+2022-02-14 10:47:03.728: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +3ms
+2022-02-14 10:47:03.728: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +3ms
+2022-02-14 10:47:03.728: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +4ms
+2022-02-14 10:47:03.728: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +5ms
+2022-02-14 10:47:03.728: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +4ms
+2022-02-14 10:47:03.744: 2022-02-14 11:47:03 [5360] INFO [KeyedObservableCollector] Sending 9 items +3ms
+2022-02-14 10:47:03.744: 2022-02-14 11:47:03 [5360] INFO [RequestPerformerService] Got response 200. +7ms
+2022-02-14 10:47:03.744: 2022-02-14 11:47:03 [5360] INFO [RequestPerformerService] Response content length is 24687042  +7ms
+2022-02-14 10:47:03.822: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:34c9768147e6552c993865dc64eede3f for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +70ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +6ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +2ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:7e3fb14071d24528fb23856f56cc3d8a for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +3ms
+2022-02-14 10:47:03.837: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +2ms
+2022-02-14 10:47:03.853: 2022-02-14 11:47:03 [5360] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +2ms
+2022-02-14 10:47:03.853: 2022-02-14 11:47:03 [5360] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0... +6ms
+2022-02-14 10:47:03.994: 2022-02-14 11:47:03 [5360] INFO [RequestPerformerService] Got response 200. +141ms
+2022-02-14 10:47:03.994: 2022-02-14 11:47:03 [5360] INFO [RequestPerformerService] Response content length is 11288  +1ms
+2022-02-14 10:47:04.025: 2022-02-14 11:47:04 [5360] INFO [RequestPerformerService] Download finished undefined. +23ms
+2022-02-14 10:47:04.025: 2022-02-14 11:47:04 [5360] INFO [RequestPerformerService] Digest: expected=34c9768147e6552c993865dc64eede3f, actual=34c9768147e6552c993865dc64eede3f. +2ms
+2022-02-14 10:47:04.025: 2022-02-14 11:47:04 [5360] INFO [RequestPerformerService] Got disposed. +4ms
+2022-02-14 10:47:04.025: 2022-02-14 11:47:04 [5360] INFO [RequestPerformerService] Complete. +2ms
+2022-02-14 10:47:04.040: 2022-02-14 11:47:04 [5360] INFO [MQTTObserver] Fetched [https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0] -> [C:\Program Files\Unowhy\HiSqool Manager\data\configurations\hisqool\configurations\groups\I2wtMgAsLCNCS5N00QtmmuOtLB0\config.json]. digest=[md5:34c9768147e6552c993865dc64eede3f] +17ms
+2022-02-14 10:47:04.040: 2022-02-14 11:47:04 [5360] INFO [KeyedObservableCollector] Sending 9 items +1ms
+2022-02-14 10:47:05.040: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1003ms
+2022-02-14 10:47:05.056: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:47:05.056: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +1ms
+2022-02-14 10:47:05.056: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:47:05.056: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +0ms
+2022-02-14 10:47:05.056: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService]   => result: false +2ms
+2022-02-14 10:47:05.056: 2022-02-14 11:47:05 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +0ms

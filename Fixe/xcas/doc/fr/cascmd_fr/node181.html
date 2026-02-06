@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Racines num&#233;riques d'un polyn&#244;me : proot</TITLE>
+<META NAME="description" CONTENT="Racines num&#233;riques d'un polyn&#244;me : proot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node182.html">
+<LINK REL="previous" HREF="node174.html">
+<LINK REL="up" HREF="node155.html">
+<LINK REL="next" HREF="node182.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html5012"
+  HREF="node182.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5006"
+  HREF="node155.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5000"
+  HREF="node180.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5008"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5010"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html5013"
+  HREF="node182.html">Factorisation num&#233;rique d'une matrice</A>
+<B> monter:</B> <A NAME="tex2html5007"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html5001"
+  HREF="node180.html">fsolve avec l'option hybridsj_solver</A>
+ &nbsp; <B>  <A NAME="tex2html5009"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5011"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00770000000000000000"></A><A NAME="3902"></A>
+<BR>
+Racines num&#233;riques d'un polyn&#244;me : <TT>proot</TT>
+</H1>
+<TT>proot</TT> a comme argument un polyn&#244;me ou le vecteur de 
+composantes les coefficients d'un polyn&#244;me (par ordre d&#233;croissant).
+<BR><TT>proot</TT> renvoie un vecteur dont les composantes sont les racines 
+num&#233;riques non multiples du polyn&#244;me.
+<BR>
+Pour chercher les racines num&#233;riques de <!-- MATH
+ $P(x)=x^3+1$
+ -->
+<I>P</I>(<I>x</I>) = <I>x</I><SUP>3</SUP> + 1, on tape :
+<DIV ALIGN="CENTER">
+<TT>proot([1,0,0,1]) </TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>proot(x<code>^</code>3+1) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0.5+0.866025403784*i,0.5-0.866025403784*i,-1.0]</TT>
+</DIV>
+On tape pour avoir les racines num&#233;riques de <I>x</I><SUP>2</SUP> - 3 :
+<DIV ALIGN="CENTER">
+<TT>proot([1,0,-3])</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>proot(x<code>^</code>2-3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1.73205080757,-1.73205080757]</TT>
+</DIV> 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

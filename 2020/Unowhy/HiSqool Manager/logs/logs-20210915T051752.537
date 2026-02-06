@@ -1,0 +1,55 @@
+2021-09-15 7:17:48 [7780] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2021-09-15 05:17:48.241: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2021-09-15 05:17:48.241: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-15 05:17:48.241: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-15 05:17:48.241: Arguments=
+2021-09-15 05:17:48.241: ArgumentsExpanded=
+2021-09-15 05:17:48.241: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-09-15 05:17:48.241: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-09-15 05:17:48.241: RunStyle=1
+2021-09-15 05:17:48.241: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-15 05:17:48.241: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-15 05:17:48.241: HotKey=0 (None)
+2021-09-15 05:17:48.241: Description=HiSqool
+2021-09-15 05:17:48.241: 
+2021-09-15 05:17:48.241: The command completed successfully. +194ms
+2021-09-15 05:17:48.241: 2021-09-15 7:17:48 [7780] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +2ms
+2021-09-15 05:17:48.366: 2021-09-15 7:17:48 [7780] INFO [JS] Result: 0 +129ms
+2021-09-15 05:17:48.366: 2021-09-15 7:17:48 [7780] INFO [JS] Stdout: Custom shell possible: True +1ms
+2021-09-15 05:17:48.366: 2021-09-15 7:17:48 [7780] INFO [JS] Stderr: #< CLIXML
+2021-09-15 05:17:48.366: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2021-09-15T07:17:48.0231378+02:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">5236</U32><U32 N="NativeThreadId">8544</U32><U32 N="ManagedThreadId">9</U32></Props></Obj></Objs> +1ms
+2021-09-15 05:17:48.522: 2021-09-15 7:17:48 [7780] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +147ms
+2021-09-15 05:17:48.522: 2021-09-15 7:17:48 [7780] INFO [JS] Actions to perform: 1 +1ms
+2021-09-15 05:17:48.522: 2021-09-15 7:17:48 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 05:17:48.522: 2021-09-15 7:17:48 [7780] INFO [JS] Running installer... +1ms
+2021-09-15 05:17:48.522: 2021-09-15 7:17:48 [7780] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +1ms
+2021-09-15 05:17:48.882: 2021-09-15 7:17:48 [7780] INFO [RequestPerformerService] Download finished undefined. +356ms
+2021-09-15 05:17:48.882: 2021-09-15 7:17:48 [7780] INFO [RequestPerformerService] Digest: expected=299b4340586a1d5aee1c32349f719297, actual=299b4340586a1d5aee1c32349f719297. +3ms
+2021-09-15 05:17:48.897: 2021-09-15 7:17:48 [7780] INFO [RequestPerformerService] Complete. +1ms
+2021-09-15 05:17:48.897: 2021-09-15 7:17:48 [7780] INFO [PayloadDownloader] [PAYLOAD 121] Persisting status=state=Downloaded, error=None, active=true +6ms
+2021-09-15 05:17:48.913: 2021-09-15 7:17:48 [7780] INFO [PayloadDownloader] [PAYLOAD 121] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\121\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\121\payload... +20ms
+2021-09-15 05:17:48.929: 2021-09-15 7:17:48 [7780] INFO [RequestPerformerService] Got disposed. +6ms
+2021-09-15 05:17:49.007: 2021-09-15 7:17:49 [7780] INFO [JS] ===> Network: Livebox-1EB0 +75ms
+2021-09-15 05:17:49.007: 2021-09-15 7:17:49 [7780] INFO [Runner] Performing runner... +2ms
+2021-09-15 05:17:49.007: 2021-09-15 7:17:49 [7780] INFO [JS] ### Apply configuration +2ms
+2021-09-15 05:17:49.007: 2021-09-15 7:17:49 [7780] INFO [JS] creating configuration file C:\Windows\TEMP\776966695F656C65766573.xml +2ms
+2021-09-15 05:17:49.038: 2021-09-15 7:17:49 [7780] INFO [JS] Executing netsh command +24ms
+2021-09-15 05:17:49.069: 2021-09-15 7:17:49 [7780] INFO [Runner] Running result: true +30ms
+2021-09-15 05:17:49.069: 2021-09-15 7:17:49 [7780] INFO [ConfigurationRunner] Writing execution result of conf/network/all/wifi_eleves (17) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_network_all_wifi_eleves.json +2ms
+2021-09-15 05:17:49.819: 2021-09-15 7:17:49 [7780] INFO [JS] Getting installed applications... +752ms
+2021-09-15 05:17:50.053: 2021-09-15 7:17:50 [7780] INFO [RequestPerformerService] Got response 200. +232ms
+2021-09-15 05:17:50.053: 2021-09-15 7:17:50 [7780] INFO [RequestPerformerService] Response content length is 5884873  +1ms
+2021-09-15 05:17:50.053: 2021-09-15 7:17:50 [7780] INFO [JS] command result 0: Le profil wifi_eleves est ajout� sur l'interface Wi-Fi. +2ms
+2021-09-15 05:17:50.053: 2021-09-15 7:17:50 [7780] INFO [JS] Creation ok. connecting to network... +1ms
+2021-09-15 05:17:51.162: 2021-09-15 7:17:51 [7780] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +1111ms
+2021-09-15 05:17:51.287: 2021-09-15 7:17:51 [7780] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +126ms
+2021-09-15 05:17:52.521: 2021-09-15 7:17:52 [7780] INFO [PayloadDownloader] [PAYLOAD 224] Persisting status=state=Ok, error=None, active=true +1224ms
+2021-09-15 05:17:52.521: 2021-09-15 7:17:52 [7780] INFO [PayloadDispatcher] Emitting 12 entries ["__/conf/agents/facts","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0","conf/application/windows/HiSqool","conf/application/windows/LGPO-Windows","conf/application/windows/Lib-Manuels","conf/application/windows/sqoolctl","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows","conf/application/windows/GenieGen-1.2.3.2","conf/network/all/wifi_eleves"] +6ms
+2021-09-15 05:17:52.521: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Processing for execution configuration with 12 keys +2ms
+2021-09-15 05:17:52.521: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got 12 configurations. 1 in, 0 out +1ms
+2021-09-15 05:17:52.521: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2021-09-15 05:17:52.537: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2021-09-15 05:17:52.537: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +1ms
+2021-09-15 05:17:52.537: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +0ms
+2021-09-15 05:17:52.537: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +1ms
+2021-09-15 05:17:52.537: 2021-09-15 7:17:52 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms

@@ -1,0 +1,742 @@
+CLASS MACHINE
+
+
+CATEGORY "Mozilla Firefox"
+
+KEYNAME "Software\Policies\Firefox"
+
+CATEGORY "General"
+
+KEYNAME "Software\Policies\Firefox"
+
+POLICY "Homepage"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxHomepageType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "When Firefox Starts" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxHomepagePage
+ITEMLIST
+	NAME "Show a blank page" VALUE NUMERIC 0
+	NAME "Show my home page" VALUE NUMERIC 1 DEFAULT
+END ITEMLIST
+END PART
+PART "Homepage (if required)" EDITTEXT
+VALUENAME FirefoxHomepage
+END PART
+END POLICY
+
+
+POLICY "Proxy Settings"
+EXPLAIN !!Proxy_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxProxyType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Proxy Setting" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxProxy
+ITEMLIST
+	NAME "Connect Directly To The Internet" VALUE NUMERIC 0 DEFAULT
+	NAME "Autodetect Proxy Settings For This Network" VALUE NUMERIC 4
+	NAME "Manual Proxy Configuration" VALUE NUMERIC 1
+	NAME "Automatic Proxy Configuration URL" VALUE NUMERIC 2
+END ITEMLIST
+END PART
+
+PART "Automatic Proxy Configuration URL" EDITTEXT
+VALUENAME FirefoxAutoProxyURL
+END PART
+
+PART "Manual Setting - HTTP Proxy" EDITTEXT
+VALUENAME FirefoxManualHTTP
+END PART
+PART "HTTP Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualHTTPPort
+END PART
+
+PART "Manual Setting - SSL Proxy" EDITTEXT
+VALUENAME FirefoxManualSSL
+END PART
+PART "SSL Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualSSLPort
+END PART
+
+PART "Manual Setting - FTP Proxy" EDITTEXT
+VALUENAME FirefoxManualFTP
+END PART
+PART "FTP Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualFTPPort
+END PART
+
+PART "Manual Setting - Gopher Proxy" EDITTEXT
+VALUENAME FirefoxManualGopher
+END PART
+PART "Gopher Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualGopherPort
+END PART
+
+PART "Manual Setting - SOCKS Host" EDITTEXT
+VALUENAME FirefoxManualSOCKS
+END PART
+PART "SOCKS Host Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualSOCKSPort
+END PART
+PART "SOCKS Version (4 or 5)" NUMERIC DEFAULT 4
+VALUENAME FirefoxManualSOCKSVersion
+MIN 4
+MAX 5
+END PART
+
+PART "Manual Setting - Proxy Exceptions" EDITTEXT
+VALUENAME FirefoxProxyExceptions
+DEFAULT "localhost, 127.0.0.1"
+END PART
+END POLICY
+
+
+POLICY "Tab Behaviour"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTabType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "New pages should be opened in:" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTabNewPage
+ITEMLIST
+	NAME "Window" VALUE "Window"
+	NAME "Tab" VALUE "TAB" DEFAULT
+END ITEMLIST
+END PART
+PART "Warn when closing multiple tabs" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTabCloseWarn
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+PART "Warn when opening multiple tabs might slow down Firefox" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTabOpenWarn
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+PART "Auto-Hide Tab Bar" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTabShowBar
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+PART "Load tabs in background" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTabBackground
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Enable Automatic Image Resizing"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME ImageResizeType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+VALUENAME ImageResize
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Use Download Directory"
+EXPLAIN !!DownloadDir_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxUseDownloadDirType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Use Download Directory" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxUseDownloadDir
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1
+	NAME "No" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Advanced Options"
+EXPLAIN !!Advanced_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxBrowsingType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Use AutoScroll" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxAutoScroll
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+PART "Use Smooth Scrolling" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxSmoothScroll
+ITEMLIST
+	NAME "True" VALUE "true"
+	NAME "False" VALUE "false" DEFAULT
+END ITEMLIST
+END PART
+PART "Check my spelling as I type" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCheckSpell
+ITEMLIST
+	NAME "True" VALUE NUMERIC 1 DEFAULT
+	NAME "False" VALUE NUMERIC 0
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Bookmarks Location"
+EXPLAIN !!Bookmarks_Explain
+PART "Please put in location for bookmarks.  Use double-slashes for directories (eg.  D:\\Firefox)" EDITTEXT REQUIRED
+VALUENAME FirefoxBookmarks
+END PART
+END POLICY
+
+
+POLICY "Enable 'Type Ahead Find'"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxIDNStateType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Type Ahead Find State:" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxTypeAheadFindState
+ITEMLIST
+	NAME "Disabled" VALUE NUMERIC 0
+	NAME "Enabled" VALUE NUMERIC 1 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Cache"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCacheType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Firefox Maximum Cache" NUMERIC REQUIRED
+MAX 100000
+SPIN 1000
+DEFAULT 50000
+VALUENAME FirefoxCacheSize
+END PART
+PART "SSL in Cache" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCacheSSL
+ITEMLIST
+	NAME "Allowed" VALUE NUMERIC 1
+	NAME "Disallowed" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+END CATEGORY
+
+
+CATEGORY "Privacy"
+
+KEYNAME "Software\Policies\Firefox"
+
+
+POLICY "History"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxHistoryType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Remember visited pages for xx days (0 for no retention)" NUMERIC DEFAULT 90
+VALUENAME FirefoxHistoryDays
+MIN 0
+MAX 999
+END PART
+PART "Remember Forms & Search Bar" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxHistoryForms
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+PART "Remember Downloads" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxHistoryDownloads
+ITEMLIST
+	NAME "True" VALUE NUMERIC 2 DEFAULT
+	NAME "False" VALUE NUMERIC 0
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Delete Private Data Passwords"
+EXPLAIN !!PrivateDataPasswords_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDelPrivDataPasswordsType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Delete Private Data Passwords" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDelPrivDataPasswords
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1
+	NAME "No" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Delete Private Data Offline Websites"
+EXPLAIN !!PrivateDataWebsites_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDelPrivDataOfflineWebsitesType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Delete Private Data Offline Websites" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDelPrivDataOfflineWebsites
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1
+	NAME "No" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Delete Private Data Cookies"
+EXPLAIN !!PrivateDataCookies_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDelPrivDataCookiesType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Delete Private Data Cookies" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDelPrivDataCookies
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1
+	NAME "No" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Save Form Data"
+EXPLAIN !!FormData_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxSaveFormDataType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Save Form Data" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxSaveFormData
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1
+	NAME "No" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Private Data"
+EXPLAIN !!PrivateData_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDataType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Always clear my private data when I close Firefox" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDataClear
+ITEMLIST
+	NAME "True" VALUE "true"
+	NAME "False" VALUE "false" DEFAULT
+END ITEMLIST
+END PART
+PART "Ask me before clearing private data" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDataPrompt
+ITEMLIST
+	NAME "True" VALUE "true" DEFAULT
+	NAME "False" VALUE "false"
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Cookie Handling"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCookieBehaviourType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Handling Behaviour" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCookieBehaviour
+ITEMLIST
+	NAME "Enable all cookies" VALUE NUMERIC 0 DEFAULT
+	NAME "Allow cookies from originating server only" VALUE NUMERIC 1
+	NAME "Disable all cookies" VALUE NUMERIC 2
+	NAME "Use P3P policy to decide" VALUE NUMERIC 3
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Disable Firefox prefetch"
+VALUENAME FirefoxPrefetchState
+VALUEON NUMERIC 0
+VALUEOFF NUMERIC 1
+END POLICY
+
+END CATEGORY
+
+
+CATEGORY "Security"
+
+KEYNAME "Software\Policies\Firefox"
+
+POLICY "Phishing Protection"
+EXPLAIN !!PhishProtect_Explain
+VALUENAME FirefoxPhishProtect
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Replace Certificates for all User Profiles"
+EXPLAIN !!Certs_Explain
+PART "Set Location of Master folder that contains the 3 certificate files (cert8.db, key3.db, secmod.db)" EDITTEXT REQUIRED
+VALUENAME FirefoxCertificateLocation
+END PART
+PART "Behaviour:" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxMandatoryCertificates
+ITEMLIST
+	NAME "Replace User's Current Certificate Files, If Found" VALUE "Replace" DEFAULT
+	NAME "Do Not Replace Certificates, If Found" VALUE "Merge"
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Show SSL Domain Icon"
+EXPLAIN !!SSLIcon_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxShowSSLDomainIconType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Show SSL Domain Icon" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxShowSSLDomainIcon
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1
+	NAME "No" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Trusted NTLM Sites"
+PART "Trusted Sites" EDITTEXT
+VALUENAME FirefoxTrustedNTLM
+END PART
+END POLICY
+
+
+POLICY "Sites Allowed Integrated Authentication"
+EXPLAIN !!IntAuth_Explain
+PART "Trusted Sites (comma seperated list)" EDITTEXT
+VALUENAME FirefoxTrustedAuth
+END PART
+PART "Delegated To Server Authorisation (comma seperated list)" EDITTEXT
+VALUENAME FirefoxDelegatedAuth
+END PART
+END POLICY
+
+
+POLICY "Disable Security Check for local URLs"
+EXPLAIN !!SecCheckLocal_Explain
+VALUENAME FirefoxSecurityCheckLoadUri
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Disable Password Remembering"
+VALUENAME FirefoxPasswordRememberState
+VALUEON NUMERIC 0
+VALUEOFF NUMERIC 1
+END POLICY
+
+
+POLICY "Disable IDNs"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxIDNStateType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "IDN State:" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxIDNState
+ITEMLIST
+	NAME "Disabled" VALUE NUMERIC 0 DEFAULT
+	NAME "Enabled" VALUE NUMERIC 1
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Disable TLS, SSL2 & SSL3"
+VALUENAME FirefoxSSLState
+VALUEON NUMERIC 0
+VALUEOFF NUMERIC 1
+END POLICY
+
+
+POLICY "Javascript"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxJavascriptStateType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Javascript State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxJavascriptState
+ITEMLIST
+	NAME "Allowed" VALUE NUMERIC 1
+	NAME "Disallowed" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Java"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxJavaStateType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Java State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxJavaState
+ITEMLIST
+	NAME "Allowed" VALUE NUMERIC 1
+	NAME "Disallowed" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Disable IPv6"
+VALUENAME FirefoxDisableIPv6
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Display Warning Messages"
+PART "I am about to view an encrypted page" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxWarningEnteringSecure
+ITEMLIST
+	Name "Display" VALUE NUMERIC 1
+	Name "Don't Display" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+PART "I am about to view a page that uses low-grade encryption" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxWarningEnteringWeak
+ITEMLIST
+	Name "Display" VALUE NUMERIC 1 DEFAULT
+	Name "Don't Display" VALUE NUMERIC 0
+END ITEMLIST
+END PART
+PART "I leave an encrypted page for one that isn't encrypted" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxWarningLeavingSecure
+ITEMLIST
+	Name "Display" VALUE NUMERIC 1
+	Name "Don't Display" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+PART "I submit information that's not encrypted" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxWarningSubmitInsecure
+ITEMLIST
+	Name "Display" VALUE NUMERIC 1
+	Name "Don't Display" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+PART "I'm about to view an encrypted page that contains some unecrypted information" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxWarningViewingMixed
+ITEMLIST
+	Name "Display" VALUE NUMERIC 1 DEFAULT
+	Name "Don't Display" VALUE NUMERIC 0
+END ITEMLIST
+END PART
+END POLICY
+
+
+END CATEGORY
+
+
+CATEGORY "Accessibility"
+
+KEYNAME "Software\Policies\Firefox"
+
+POLICY "Accessibility"
+PART "Enable Keyboard Browsing Using 'Caret'" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCaret
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1 DEFAULT
+	NAME "No" VALUE NUMERIC 0
+END ITEMLIST
+END PART
+END POLICY
+
+END CATEGORY
+
+
+CATEGORY "Addins and Updates"
+
+KEYNAME "Software\Policies\Firefox"
+
+POLICY "Suppress Firefox Updated Page After Update"
+EXPLAIN !!SuppressFirefoxUpdatePage_Explain
+VALUENAME FirefoxSupressUpdatePage
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Allow Update of Firefox's Search Engines"
+VALUENAME FirefoxSearchUpdateState
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Allow Update and Auto Update Firefox Extensions"
+VALUENAME FirefoxExtUpdateState
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Allow Update and Auto Update Firefox"
+EXPLAIN !!Update_Explain
+VALUENAME FirefoxUpdateState
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Extension and Theme Installation"
+EXPLAIN !!AddinInstall_Explain
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxXPIStateType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Allow Addin Installation?" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxXPIState
+ITEMLIST
+	NAME "Allowed" VALUE NUMERIC 1
+	NAME "Disallowed" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+END CATEGORY
+
+
+POLICY "Query Registry To Find Firefox Installation Location"
+EXPLAIN !!InstallLoc_Explain
+VALUENAME FirefoxUseRegLoc
+VALUEON "yes"
+VALUEOFF "no"
+END POLICY
+
+
+POLICY "Disable Firefox Default Browser Check"
+PART "Preference State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCheckDefaultType
+ITEMLIST
+	NAME "Locked" VALUE "locked" DEFAULT
+	NAME "Default" VALUE "default"
+END ITEMLIST
+END PART
+PART "Default Browser State" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCheckDefault
+ITEMLIST
+	NAME "Allowed" VALUE NUMERIC 1
+	NAME "Disallowed" VALUE NUMERIC 0 DEFAULT
+END ITEMLIST
+END PART
+END POLICY
+
+END CATEGORY
+
+
+
+[strings]
+Proxy_Explain="When using Automatic Proxy Configuration URL, URL field required.  When using Manual Proxy, ALL manual proxy fields must be filled"
+DownloadDir_Explain="Yes, all Downloads will be saved to a predefined Folder - No, User will be asked for a Downloadlocation"
+Advanced_Explain="Various advanced browsing settings for Firefox"
+Bookmarks_Explain="Sets location for bookmarks"
+PrivateDataPasswords_Explain="If set, Saved Passwords will be deleted whithin 'Delete Private Data...'"
+PrivateDataWebsites_Explain="If set, Offline Websites will be deleted whithin 'Delete Private Data...'"
+PrivateDataCookies_Explain="If set, Cookies will be deleted whithin 'Delete Private Data...'"
+FormData_Explain="If set, data entered into Forms and the Searchbar saved"
+PrivateData_Explain="This setting allows you to control the behaviour of the way Firefox stores and clears Private Data"
+Certs_Explain="Set Location of Master folder that contains the 3 certificate files (cert8.db, key3.db, secmod.db), which will be copied to all User Profiles with Firefox Profile"
+SSLIcon_Explain="Show the highlighted secure Domain Icon on each HTTPS Site beside the Addressbar"
+IntAuth_Explain="This setting allows you to set sites which either are trusted or delegated to server to get authorisation (NTLM/Kerberos)"
+SecCheckLocal_Explain="This Policy enables/disables file:// URLs on pages from a network (http: https: ftp:) source, for security reasons. Errors are sent to the Javascript console, not to the user via dialog box."
+SuppressFirefoxUpdatePage_Explain="Setting this will suppress the screen notifying users that firefox has been updated when a new version is installed."
+Update_Explain="Recommended state is this is DISABLED.  If Enabled, this will require correct security permissions in C:\Program Files\Mozilla Firefox"
+AddinInstall_Explain="Enabling disables installation of XPI extensions and themes"
+InstallLoc_Explain="By default, FirefoxADM uses the Mozilla Firefox directory in Program Files as the location for Firefox.  Obviously, it can be installed elsewhere.  This option reads the Mozilla keys in the registry to locate Firefox's install location.  If it can't, it will use the default"
+PhishProtect_Explain="Enabling enables and locks the 'Block reported attack sites' and 'Block reported web forgeries' options in Firefox to On.  Disabling the setting locks them to Off"

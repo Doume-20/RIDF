@@ -1,0 +1,309 @@
+// fltk 7Fl_Tile 34 -286 824 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 34 -286 824 30
+La figure dynamique
+,
+// fltk N4xcas10Log_OutputE 34 -256 824 1
+
+]
+,
+// fltk N4xcas6FigureE 34 -253 824 374
+// fltk N4xcas12History_PackE 36 -878 254 999
+[
+// fltk 7Fl_Tile 61 -878 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -878 229 30
+assume(a=[1.65,0.0,5.0])
+,
+// fltk N4xcas10Log_OutputE 61 -848 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -847 229 25
+parameter(a,0.0,5.0,1.65)
+]
+,
+// fltk 7Fl_Tile 61 -820 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -820 229 30
+assume(b=[1.55,0.0,5.0])
+,
+// fltk N4xcas10Log_OutputE 61 -790 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -789 229 25
+parameter(b,0.0,5.0,1.55)
+]
+,
+// fltk 7Fl_Tile 61 -762 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -762 229 30
+A:=point(0,0)
+,
+// fltk N4xcas10Log_OutputE 61 -732 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -731 229 25
+point(0,0)
+]
+,
+// fltk 7Fl_Tile 61 -704 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -704 229 30
+B:=point(a,0)
+,
+// fltk N4xcas10Log_OutputE 61 -674 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -673 229 25
+point(a,0)
+]
+,
+// fltk 7Fl_Tile 61 -646 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -646 229 30
+rectangle(A,B,b/a,D,C)
+,
+// fltk N4xcas10Log_OutputE 61 -616 229 1
+
+,
+// fltk 9Fl_Scroll 61 -615 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -615 830 25
+[polygone(point(0,0),point(a,0),point(a,a*b/a),point(0,a*b/a),point(0,0)),point(0,a*b/a),point(a,a*b/a)]
+,
+// fltk 12Fl_Scrollbar 61 208 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 177 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -566 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -566 229 30
+triangle_equilateral(B,C,I,color=jaune)
+,
+// fltk N4xcas10Log_OutputE 61 -536 229 1
+
+,
+// fltk 9Fl_Scroll 61 -535 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -535 957 25
+[polygone(point(a,0),point(a,a*b/a),point(a+(-a*b/a*sqrt(3))/2,a*b/a/2),point(a,0)),point(a+(-a*b/a*sqrt(3))/2,a*b/a/2)]
+,
+// fltk 12Fl_Scrollbar 61 230 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 199 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -486 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -486 229 30
+triangle_equilateral(C,D,J,color=vert)
+,
+// fltk N4xcas10Log_OutputE 61 -456 229 1
+
+,
+// fltk 9Fl_Scroll 61 -455 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -455 1036 25
+[polygone(point(a,a*b/a),point(0,a*b/a),point(a+(-a)/2,a*b/a+(-a)*sqrt(3)/2),point(a,a*b/a)),point(a+(-a)/2,a*b/a+(-a)*sqrt(3)/2)]
+,
+// fltk 12Fl_Scrollbar 61 181 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 150 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -406 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -406 229 30
+P:=inter_unique(droite(A,J),droite(B,C))
+,
+// fltk N4xcas10Log_OutputE 61 -376 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -375 229 25
+point(a,(-(sqrt(3)))*a+2*b)
+]
+,
+// fltk 7Fl_Tile 61 -348 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -348 229 30
+Q:=inter_unique(droite(A,I),droite(C,D))
+,
+// fltk N4xcas10Log_OutputE 61 -318 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -317 229 25
+point(2*a+(-(sqrt(3)))*b,b)
+]
+,
+// fltk 7Fl_Tile 61 -290 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -290 229 30
+triangle(A,P,Q,affichage=rouge)
+,
+// fltk N4xcas10Log_OutputE 61 -260 229 1
+
+,
+// fltk 9Fl_Scroll 61 -259 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -259 687 25
+polygone(point(0,0),point(a,(-(sqrt(3)))*a+2*b),point(2*a+(-(sqrt(3)))*b,b),point(0,0))
+,
+// fltk 12Fl_Scrollbar 61 119 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 88 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -210 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -210 229 30
+legende([0,40],"a/b=",evalf(a/b))
+,
+// fltk N4xcas10Log_OutputE 61 -180 229 1
+
+,
+// fltk 9Fl_Scroll 61 -179 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -179 351 25
+pnt(pnt[legende([[0,40],"a/b=1.06",63]),63])
+,
+// fltk 12Fl_Scrollbar 61 199 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 168 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -130 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -130 229 30
+legende([0,60],"sqrt(3)/2=",evalf(sqrt(3)/2))
+,
+// fltk N4xcas10Log_OutputE 61 -100 229 1
+
+,
+// fltk 9Fl_Scroll 61 -99 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -99 403 25
+pnt(pnt[legende([[0,60],"sqrt(3)/2=0.866",63]),63])
+,
+// fltk 12Fl_Scrollbar 61 279 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 248 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -50 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -50 229 30
+legende([0,80],"2/sqrt(3)=",evalf(2/sqrt(3)))
+,
+// fltk N4xcas10Log_OutputE 61 -20 229 1
+
+,
+// fltk 9Fl_Scroll 61 -19 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -19 393 25
+pnt(pnt[legende([[0,80],"2/sqrt(3)=1.15",63]),63])
+,
+// fltk 12Fl_Scrollbar 61 51 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 20 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 30 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 30 229 30
+est_equilateral(A,P,Q)
+,
+// fltk N4xcas10Log_OutputE 61 60 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 61 229 25
+1
+]
+,
+// fltk 7Fl_Tile 61 88 229 31
+[
+// fltk N4xcas19Multiline_Input_tabE 61 88 229 30
+
+,
+// fltk N4xcas10Log_OutputE 61 118 229 1
+
+]
+]
+// fltk N4xcas8GeometryE 308 -228 429 349
+-1.6574,2.3161,-1.2341,1.9336,[parameter(a,0.0,5.0,1.65),parameter(b,0.0,5.0,1.55),pnt(pnt[0,0,"A"]),pnt(pnt[a,0,"B"]),group[pnt(pnt[group[0,a,a+a*b/a*(i),a*b/a*(i),0],0]),pnt(pnt[a*b/a*(i),0,"D"]),pnt(pnt[a+a*b/a*(i),0,"C"])],group[pnt(pnt[group[a,a+a*b/a*(i),a+(a+a*b/a*(i)-a)*(sqrt(3)*(i)+1)/2,a],3]),pnt(pnt[a+(a+a*b/a*(i)-a)*(sqrt(3)*(i)+1)/2,0,"I"])],group[pnt(pnt[group[a+a*b/a*(i),a*b/a*(i),a+a*b/a*(i)+(-a-a*b/a*(i)+a*b/a*(i))*(sqrt(3)*(i)+1)/2,a+a*b/a*(i)],2]),pnt(pnt[a+a*b/a*(i)+(-a-a*b/a*(i)+a*b/a*(i))*(sqrt(3)*(i)+1)/2,0,"J"])],pnt(pnt[((-i)*sqrt(3)+1)*a+(2*i)*b,0,"P"]),pnt(pnt[2*a+(-sqrt(3)+i)*b,0,"Q"]),pnt(pnt[group[0,((-i)*sqrt(3)+1)*a+(2*i)*b,2*a+(-sqrt(3)+i)*b,0],1]),pnt(pnt[legende([[0,40],"a/b=1.06",63]),63]),pnt(pnt[legende([[0,60],"sqrt(3)/2=0.866",63]),63]),pnt(pnt[legende([[0,80],"2/sqrt(3)=1.15",63]),63]),1],-1.7664,1.7664,1,0,0,0,0.5,0.5,0
+
+,
+// fltk 7Fl_Tile 34 123 824 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 34 123 824 30
+Les preuves en utilisant le calcul formel
+,
+// fltk N4xcas10Log_OutputE 34 153 824 1
+
+]
+,
+// fltk 7Fl_Tile 34 156 824 150
+[
+// fltk N4xcas19Multiline_Input_tabE 34 156 824 30
+p:=point(abscisse(B),y):; q:=point(x,ordonnee(C)):; res:=normal(rotation(A,pi/3,p)-q)
+,
+// fltk N4xcas10Log_OutputE 34 186 824 1
+
+,
+// fltk N4xcas8EquationE 34 187 824 119
+"Done","Done",-x-(((-i)*sqrt(3)-1)*a)/2-(i)*b-((sqrt(3)-i)*y)/2
+]
+,
+// fltk 7Fl_Tile 34 308 824 78
+[
+// fltk N4xcas19Multiline_Input_tabE 34 308 824 30
+solve([re(res)=0,im(res)=0],[x,y])
+,
+// fltk N4xcas10Log_OutputE 34 338 824 1
+
+,
+// fltk N4xcas8EquationE 34 339 824 47
+[[2*a-sqrt(3)*b,-sqrt(3)*a+2*b]]
+]
+,
+// fltk 7Fl_Tile 34 388 824 78
+[
+// fltk N4xcas19Multiline_Input_tabE 34 388 824 30
+normal(affixe(rotation(A,pi/3,P))),normal(affixe(Q))
+,
+// fltk N4xcas10Log_OutputE 34 418 824 1
+
+,
+// fltk N4xcas8EquationE 34 419 824 47
+2*a+(-sqrt(3)+i)*b,2*a+(-sqrt(3)+i)*b
+]
+,
+// fltk 7Fl_Tile 34 468 824 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 468 824 30
+
+,
+// fltk N4xcas10Log_OutputE 34 498 824 1
+
+]

@@ -1,0 +1,240 @@
+// fltk 7Fl_Tile 45 -2414 1102 748 30
+[
+// fltk N4xcas7EditeurE 45 -2414 1102 321 30
+1456 ,
+// algorithme d'Eculide
+pgcd0:= (P,Q)-> 
+{ local R; 
+  while(Q!=0){ 
+    R:=rem(P,Q);  
+    P:=Q;  
+    Q:=R;
+    print(R);
+  };  
+  return(P);  
+}:;
+
+// avec pseudo-division
+pgcd1:= (P,Q)-> { 
+  local R,a,dd; 
+  while(Q!=0){ 
+    a:=lcoeff(Q);  
+    dd:=degree(P)-degree(Q)+1;  
+    R:=rem(a^dd*P,Q);  
+    P:=Q;  
+    Q:=R;
+    print(R);  
+  };  
+  return(P);  
+}:;
+
+// division par le contenu a chaque etape
+pgcd2:= (a,b)-> { 
+  local P,p,Q,q,R,g,h,d; 
+  P:=symb2poly(a);  
+  p:=lgcd(P);  
+  P:=P/p;  
+  Q:=symb2poly(b);  
+  q:=lgcd(Q);  
+  Q:=Q/q;  
+  if ((size(P))<(size(Q))) { 
+    R:=P;  
+    P:=Q;  
+    Q:=R;  
+  };  
+  p:=gcd(p,q);  
+  g:=1;  
+  h:=1;  
+  while((size(Q))!=1){ 
+    q:=Q[0];  
+    d:=size(P)-size(Q);  
+    R:=rem(q^(d+1)*P,Q);  
+    if ((size(R))==0){
+      return(p*poly2symb(Q/(lgcd(Q)),x)) ;  
+    }
+    P:=Q;  
+    Q:=R/(lgcd(R));  
+    print(Q);  
+  };  
+  return(p);  
+}:;
+
+// sous-resultant
+pgcd3:= (a,b)-> { 
+  local P,p,Q,q,R,g,h,d; 
+  P:=symb2poly(a);  
+  p:=lgcd(P);  
+  P:=P/p;  
+  Q:=symb2poly(b);  
+  q:=lgcd(Q);  
+  Q:=Q/q;  
+  if ((size(P))<(size(Q))) { 
+    R:=P;  
+    P:=Q;  
+    Q:=R;  
+  };  
+  p:=gcd(p,q);  
+  g:=1;  
+  h:=1;  
+  while((size(Q))!=1){ 
+    q:=Q[0];  
+    d:=size(P)-size(Q);  
+    R:=rem(q^(d+1)*P,Q);  
+    if ((size(R))==0) {
+      return(p*poly2symb(Q/(lgcd(Q)),x)) ; 
+    } 
+    P:=Q;  
+    Q:=R/(g*h^d);  
+    print(Q);  
+    g:=q;  
+    h:=(q^d)/(h^(d-1));  
+  };  
+  return(p);  
+}:;,
+// fltk N4xcas10Log_OutputE 45 -2093 1102 364 30
+// Success££// End defining pgcd0£// Success££// End defining pgcd1£// Warning: x  declared as global variable(s)££// End defining pgcd2£// Warning: x  declared as global variable(s)££// End defining pgcd3£
+,
+// fltk N4xcas8EquationE 45 -1729 1102 63 16
+"Done","Done","Done","Done"
+]
+,
+// fltk 7Fl_Tile 45 -1664 1102 220 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1664 1102 90 30
+P1:=(x+1)^7-(x-1)^6; Q1:=diff(P1); £P2:=(x+1)^20-(x-1)^19;Q2:=diff(P2);£P3:=(x+1)^7*(x-1)^6;Q3:=diff(P3);£
+,
+// fltk N4xcas10Log_OutputE 45 -1574 1102 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1573 1102 129 30
+(x+1)^7-(x-1)^6,7*(x+1)^6-6*(x-1)^5,(x+1)^20-(x-1)^19,20*(x+1)^19-19*(x-1)^18,(x+1)^7*(x-1)^6,7*(x+1)^6*(x-1)^6+(x+1)^7*6*(x-1)^5
+]
+,
+// fltk 7Fl_Tile 45 -1442 1102 341 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1442 1102 30 30
+pgcd0(P1,Q1)
+,
+// fltk N4xcas10Log_OutputE 45 -1412 1102 214 30
+R:162/49*x^5-390/49*x^4+1060/49*x^3-780/49*x^2+474/49*x-78/49£R:157780/729*x^4-507640/2187*x^3+290864/729*x^2-101528/729*x+28028/729£R:1/49*(1400328/2645*x^3-732888/2645*x^2+1133352/3703*x-732888/18515)£R:1/2187*(2161816376832/4669921*x^2-555436846944/4669921*x+301917024864/4669921)£R:1/907235*(469345063045455/129411872*x-47641670106615/129411872)£R:5497465490623352995840/209648836272383412129£R:0£
+,
+// fltk N4xcas8EquationE 45 -1198 1102 97 30
+5497465490623352995840/209648836272383412129
+]
+,
+// fltk 7Fl_Tile 45 -1099 1102 317 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1099 1102 40 30
+pgcd0(P1 %11,Q1 %11)
+,
+// fltk N4xcas10Log_OutputE 45 -1059 1102 214 30
+R:(-5 % 11)*x^5+(-1 % 11)*x^4+(3 % 11)*x^3+(-2 % 11)*x^2+(-2 % 11)*x+2 % 11£R:(-5 % 11)*x^4+(-5 % 11)*x^3+(-3 % 11)*x^2+(-3 % 11)*x£R:(2 % 11)*x^3+(3 % 11)*x^2+(0 % 11)*x+2 % 11£R:(-4 % 11)*x^2+(2 % 11)*x+3 % 11£R:(-2 % 11)*x+5 % 11£R:5 % 11£R:0£
+,
+// fltk N4xcas8EquationE 45 -845 1102 63 30
+5 % 11
+]
+,
+// fltk 7Fl_Tile 45 -780 1102 307 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -780 1102 30 30
+pgcd1(P1,Q1)
+,
+// fltk N4xcas10Log_OutputE 45 -750 1102 214 30
+R:162*x^5-390*x^4+1060*x^3-780*x^2+474*x-78£R:5680080*x^4-6091680*x^3+10471104*x^2-3655008*x+1009008£R:17080988542248960*x^3-8939656659548160*x^2+9874611277977600*x-1277093808506880£R:1620751818387361789401766420835362406400*x^2-416420788246156138518908596501925068800*x+226352511848168658657852779704143052800£R:16601080599279110052908839302615690450580626256882195477399064794823467416168431766994944000000*x-1685120964503646294208477778588834130532507351651880766705535227577111069404037782700032000000£R:55334858510813000659552233196155476678357253974299742428215010236397972196587317675022338073363698517452450124577192651336763743704825876159361253923027507115662656151159105570453879515591557997402979320436097024000000000000000£R:0£
+,
+// fltk N4xcas8EquationE 45 -536 1102 63 30
+55334858510813000659552233196155476678357253974299742428215010236397972196587317675022338073363698517452450124577192651336763743704825876159361253923027507115662656151159105570453879515591557997402979320436097024000000000000000
+]
+,
+// fltk 7Fl_Tile 45 -471 1102 277 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -471 1102 30 30
+pgcd2(P1,Q1)
+,
+// fltk N4xcas10Log_OutputE 45 -441 1102 184 30
+Q:poly1[81,-195,530,-390,237,-39]£Q:poly1[2415,-2590,4452,-1554,429]£Q:poly1[15127,-7917,8745,-1131]£Q:poly1[96528,-24801,13481]£Q:poly1[744473,-75569]£Q:poly1[1]£
+,
+// fltk N4xcas8EquationE 45 -257 1102 63 30
+1
+]
+,
+// fltk 7Fl_Tile 45 -192 1102 277 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -192 1102 30 30
+pgcd3(P1,Q1)
+,
+// fltk N4xcas10Log_OutputE 45 -162 1102 184 30
+Q:poly1[162,-390,1060,-780,474,-78]£Q:poly1[115920,-124320,213696,-74592,20592]£Q:poly1[271075840,-141872640,156710400,-20267520]£Q:poly1[619953782784,-159285116928,86582099968]£Q:poly1[524587741741056,-53249172307968]£Q:poly1[54990356076298240]£
+,
+// fltk N4xcas8EquationE 45 22 1102 63 30
+1
+]
+,
+// fltk 7Fl_Tile 45 87 1102 112 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 87 1102 44 30
+P4:=normal((11x+2)*(3x+5))
+,
+// fltk N4xcas10Log_OutputE 45 131 1102 0 30
+
+,
+// fltk N4xcas8EquationE 45 131 1102 68 16
+33*x^2+61*x+10
+]
+,
+// fltk 7Fl_Tile 45 201 1102 122 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 201 1102 40 30
+Q4:=normal((11x+2)*(2x+3))
+,
+// fltk N4xcas10Log_OutputE 45 241 1102 1 30
+
+,
+// fltk N4xcas8EquationE 45 242 1102 81 16
+22*x^2+37*x+6
+]
+,
+// fltk 7Fl_Tile 45 325 1102 104 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 325 1102 40 30
+gcd(P4%5,Q4%5)
+,
+// fltk N4xcas10Log_OutputE 45 365 1102 1 30
+
+,
+// fltk N4xcas8EquationE 45 366 1102 63 16
+(1 % 5)*x+2 % 5
+]
+,
+// fltk 7Fl_Tile 45 431 1102 104 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 431 1102 40 30
+gcd(P4%7,Q4%7)
+,
+// fltk N4xcas10Log_OutputE 45 471 1102 1 30
+
+,
+// fltk N4xcas8EquationE 45 472 1102 63 16
+(1 % 7)*x-3 % 7
+]
+,
+// fltk 7Fl_Tile 45 537 1102 104 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 537 1102 40 30
+ichinrem(22%5,-33%7)%0
+,
+// fltk N4xcas10Log_OutputE 45 577 1102 1 30
+
+,
+// fltk N4xcas8EquationE 45 578 1102 63 16
+2
+]
+,
+// fltk 7Fl_Tile 45 643 1102 41 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 643 1102 40 30
+
+,
+// fltk N4xcas10Log_OutputE 45 683 1102 1 30
+
+]

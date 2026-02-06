@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Construction d'un corps de Galois : GF</TITLE>
+<META NAME="description" CONTENT="Construction d'un corps de Galois : GF">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node530.html">
+<LINK REL="previous" HREF="node528.html">
+<LINK REL="up" HREF="node511.html">
+<LINK REL="next" HREF="node530.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10711"
+  HREF="node530.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10705"
+  HREF="node511.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10699"
+  HREF="node528.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10707"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10709"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10712"
+  HREF="node530.html">Factorisation d'un polyn&#244;me &#224;</A>
+<B> monter:</B> <A NAME="tex2html10706"
+  HREF="node511.html">Le calcul modulaire dans</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10700"
+  HREF="node528.html">R&#233;solution d'un syst&#232;me lin&#233;aire</A>
+ &nbsp; <B>  <A NAME="tex2html10708"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10710"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093218000000000000000"></A><A NAME="13419"></A>
+<BR>
+Construction d'un corps de Galois : <TT>GF</TT>
+</H2>
+<TT>GF</TT> a comme arguments un nombre premier <I>p</I> et un entier <I>n</I> &gt; 1.
+<BR><TT>GF</TT> cr&#233;e un corps de Galois de caract&#233;ristique <I>p</I> et ayant <I>p</I><SUP>n</SUP> 
+&#233;l&#233;ments.
+<BR>
+Les &#233;l&#233;ments de ce corps et le corps lui-m&#234;me sont repr&#233;sent&#233;s par 
+<TT>GF(...)</TT> o&#249; <TT>...</TT> est une s&#233;quence compos&#233;e de&nbsp;:
+
+<UL>
+<LI>la caract&#233;ristique <I>p</I> (<I>px</I> = 0),
+</LI>
+<LI>le polyn&#244;me minimal irr&#233;ductible et primitif engendrant un
+id&#233;al <I>I</I> dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>], le corps de Galois est alors le quotient
+de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>] par <I>I</I>,
+</LI>
+<LI>le nom  de la variable du polyn&#244;me, par d&#233;faut <TT>x</TT>,
+</LI>
+<LI>un polyn&#244;me (un reste modulo le polyn&#244;me minimal) pour d&#233;signer
+un &#233;l&#233;ment du corps (ces &#233;l&#233;ments ont une repr&#233;sentation additive)
+ou <TT>undef</TT> pour d&#233;signer tout le corps qui est le quotient des 
+polyn&#244;mes &#224; coefficients dans <I>Z</I>/<I>pZ</I> par <I>I</I>.
+</LI>
+</UL>
+Habituellement on donne un nom au corps cr&#233;e (par exemple <TT>G:=GF(p,n)</TT>), 
+afin de construire un &#233;l&#233;ment particulier du groupe &#224; partir d'un 
+polyn&#244;me de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>], on &#233;crira par
+exemple <TT>G(x<code>^</code>3+x)</TT>. Notez que <TT>G(x)</TT>
+est un g&#233;n&#233;rateur du groupe multiplicatif <TT><I>G</I><SUP>*</SUP></TT>.
+<BR>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>G:=GF(2,8)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>GF(2,x<code>^</code>8-x<code>^</code>6-x<code>^</code>4-x<code>^</code>3-x<code>^</code>2-x-1,x,undef)</TT>
+</DIV>
+Le corps <I>G</I> a 2<SUP>8</SUP> = 256 &#233;l&#233;ments et <I>x</I> engendre le groupe 
+multiplicatif de ce corps (<!-- MATH
+ $\{ 1,x,x^2,...x^{254} \}$
+ -->
+{1, <I>x</I>, <I>x</I><SUP>2</SUP>,...<I>x</I><SUP>254</SUP>}).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>G(x<code>^</code>9)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>GF(2,x<code>^</code>8-x<code>^</code>6-x<code>^</code>4-x<code>^</code>3-x<code>^</code>2-x-1,x,x<code>^</code>7+x<code>^</code>5+x<code>^</code>4+x<code>^</code>3+x<code>^</code>2+x)</TT>
+</DIV>
+en effet <!-- MATH
+ $x^8=x^6+x^4+x^3+x^2+x+1$
+ -->
+<I>x</I><SUP>8</SUP> = <I>x</I><SUP>6</SUP> + <I>x</I><SUP>4</SUP> + <I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> + <I>x</I> + 1 donc <!-- MATH
+ $x^9=x^7+x^5+x^4+x^3+x^2+x$
+ -->
+<I>x</I><SUP>9</SUP> = <I>x</I><SUP>7</SUP> + <I>x</I><SUP>5</SUP> + <I>x</I><SUP>4</SUP> + <I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> + <I>x</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>G(x)<code>^</code>255</TT>
+</DIV>
+On obtient l'unit&#233; :
+<DIV ALIGN="CENTER">
+<TT>GF(2,x<code>^</code>8-x<code>^</code>6-x<code>^</code>4-x<code>^</code>3-x<code>^</code>2-x-1,x,1)</TT>
+</DIV>
+Comme vous pouvez le constater sur les exemples pr&#233;c&#233;dents, lorsque l'on 
+travaille avec le m&#234;me corps, les r&#233;ponses
+contiennent des informations redondantes. C'est pourquoi la d&#233;finition d'un 
+corps peut avoir un  troisi&#232;me argument : une liste contenant deux noms 
+de variable formelle, (le nom de l'ind&#233;termin&#233;e du polyn&#244;me
+irr&#233;ductible et le nom du corps de Galois que l'on doit mettre entre quote 
+pour que ces variables ne soient pas &#233;valu&#233;es). Cela permet d'obtenir un 
+affichage plus compact des &#233;l&#233;ments du corps.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>G:=GF(2,2,['w','G']):; G(w<code>^</code>2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Done, G(w+1)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>G(w<code>^</code>3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>G(1)</TT>
+</DIV>
+Les &#233;l&#233;ments de <TT>GF(2,2)</TT> sont donc :
+<TT>0,1,w,w<code>^</code>2=w+1</TT>.
+
+<P>
+On peut enfin indiquer quel polyn&#244;me irr&#233;ductible primitif on souhaite
+utiliser, en l'indiquant en 2-i&#232;me param&#232;tre (au lieu de <I>n</I>), 
+par exemple :
+<DIV ALIGN="CENTER">
+<code>G:=GF(2,w^8+w^6+w^3+w^2+1,['w','G'])</code>
+</DIV>
+Si on donne un polyn&#244;me non primitif, <TT>Xcas</TT> le remplace par un 
+polyn&#244;me primitif, par exemple :
+<DIV ALIGN="CENTER">
+<code>G:=GF(2,w^8+w^7+w^5+w+1,['w','G'])</code>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>G:=GF(2,w^8-w^6-w^3-w^2-1,['w','G'],undef)</code>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10711"
+  HREF="node530.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10705"
+  HREF="node511.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10699"
+  HREF="node528.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10707"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10709"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10712"
+  HREF="node530.html">Factorisation d'un polyn&#244;me &#224;</A>
+<B> monter:</B> <A NAME="tex2html10706"
+  HREF="node511.html">Le calcul modulaire dans</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10700"
+  HREF="node528.html">R&#233;solution d'un syst&#232;me lin&#233;aire</A>
+ &nbsp; <B>  <A NAME="tex2html10708"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10710"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

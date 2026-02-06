@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les param&#232;tres optionnels d'attributs</TITLE>
+<META NAME="description" CONTENT="Les param&#232;tres optionnels d'attributs">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node898.html">
+<LINK REL="previous" HREF="node896.html">
+<LINK REL="up" HREF="node894.html">
+<LINK REL="next" HREF="node898.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16385"
+  HREF="node898.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16379"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16373"
+  HREF="node896.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16381"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16383"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16386"
+  HREF="node898.html">Mettre une l&#233;gende :</A>
+<B> monter:</B> <A NAME="tex2html16380"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16374"
+  HREF="node896.html">Les commandes d'attributs</A>
+ &nbsp; <B>  <A NAME="tex2html16382"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16384"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001233000000000000000">
+Les param&#232;tres optionnels d'attributs</A>
+</H2>
+Les attributs des objets graphiques peuvent aussi se d&#233;finir 
+&#224; partir de param&#232;tres optionnels. Ils sont de la forme 
+<TT>nom_de_l'attribut=valeur1+valeur2+...</TT>.
+<BR>
+Il y a deux sortes de param&#232;tres optionnels :
+
+<UL>
+<LI>les param&#232;tres optionnels globaux sont mis au d&#233;but d'une ligne de 
+commandes ayant comme derni&#232;re instruction une instruction graphique et sont 
+applicables &#224; toutes les instructions graphiques de cette ligne de commandes,
+</LI>
+<LI>les param&#232;tres optionnels locaux sont pass&#233;s en param&#232;tre d'une 
+commande graphique. 
+</LI>
+</UL> 
+La liste des attributs et leurs valeurs possibles sont :
+<BR><A NAME="30525"></A><A NAME="30526"></A><A NAME="30527"></A><A NAME="30528"></A><A NAME="30529"></A><A NAME="30530"></A><A NAME="30531"></A><A NAME="30532"></A>
+<A NAME="30533"></A><A NAME="30534"></A><A NAME="30535"></A><A NAME="30536"></A><A NAME="30537"></A>
+<A NAME="30538"></A><A NAME="30539"></A><A NAME="30540"></A><A NAME="30541"></A><A NAME="30542"></A>
+<A NAME="30543"></A><A NAME="30544"></A><A NAME="30545"></A><A NAME="30546"></A><A NAME="30547"></A><A NAME="30548"></A><A NAME="30549"></A><A NAME="30550"></A><A NAME="30551"></A>
+<A NAME="30552"></A><A NAME="30553"></A><A NAME="30554"></A><A NAME="30555"></A><A NAME="30556"></A><A NAME="30557"></A><A NAME="30558"></A><A NAME="30559"></A>
+<A NAME="30560"></A><A NAME="30561"></A><A NAME="30562"></A><A NAME="30563"></A><A NAME="30564"></A><A NAME="30565"></A><A NAME="30566"></A>
+
+<UL>
+<LI><TT>display=filled</TT> ou <TT>affichage=rempli</TT> pour dessiner des 
+figures pleines (est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>axes=1</TT> ou <TT>axes=true</TT> et <TT>axes=0</TT> ou <TT>axes= false</TT>  
+montre ou cache les axes (est utilis&#233; seulement comme attribut global),
+</LI>
+<LI><TT>couleur=0</TT>...<TT>couleur=255</TT> ou <TT>color=0</TT>...<TT>color=255</TT>
+pour dessiner avec la couleur indiqu&#233;e (est utilis&#233; seulement comme 
+attribut local),
+</LI>
+<LI><TT>couleur=</TT> une valeur enti&#232;re entr 256 et 256+7*16+14 pour dessiner
+ avec une couleur de l'arc en ciel,
+</LI>
+<LI><TT>epaisseur=1</TT>... <TT>epaisseur=7</TT> ou <TT>thickness=1</TT>... pour faire
+ des traits plus ou moins &#233;pais. <TT>epaisseur</TT> est un attribut pour 
+compatibilit&#233; <TT>Maple</TT> (est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>nstep=400</TT> permet de sp&#233;cifier le nombre de points 
+d'&#233;chantillonnage de la fonction &#224; repr&#233;senter en 3D (est utilis&#233; seulement
+comme attribut local),
+</LI>
+<LI><TT>tstep=0.3</TT> permet de donner le saut d'&#233;chantillonnage
+d'un param&#232;tre de trac&#233; param&#233;trique en g&#233;n&#233;ral <TT>t</TT>, par exemple
+<TT>plotparam(sin(3*t)+i*cos(3*t),t=0..2*pi/3,tstep=0.01)</TT> (est utilis&#233; 
+seulement comme attribut local),
+</LI>
+<LI><TT>ustep=0.3</TT> permet de donner le saut d'&#233;chantillonnage de la
+premi&#232;re variable d'un trac&#233; param&#233;trique 2D, en g&#233;n&#233;ral <TT>u</TT>,
+(est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>vstep=0.3</TT> permet de donner le saut d'&#233;chantillonnage de la
+deuxi&#232;me variable d'un trac&#233; param&#233;trique 2D, en g&#233;n&#233;ral <TT>v</TT>,
+(est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>xstep=0.01</TT> permet de donner le saut d'&#233;chantillonnage de la
+variable <TT>x</TT> (est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>ystep=0.01</TT> permet de donner le saut d'&#233;chantillonnage de la
+variable <TT>y</TT> (est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>zstep=0.01</TT> permet de donner le saut d'&#233;chantillonnage de la
+variable <TT>z</TT> (est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>frames=10</TT> or <TT>trames=10</TT> permet de sp&#233;cifier le nombre de 
+graphes calcul&#233;s dans une animation de graphe par les commandes <TT>animate</TT>
+ou <TT>animate3d</TT> (est utilis&#233; seulement comme attribut local),
+</LI>
+<LI><TT>labels=["u","v"]</TT> permet de renommer les axes (est utilis&#233; 
+seulement comme attribut global),
+</LI>
+<LI><TT>legende</TT> ou <TT>legend</TT> (est utilis&#233; comme attribut global ou 
+local ou comme commande) :
+
+<UL>
+<LI><TT>legende=["mn","kg"]</TT> (utilis&#233; comme attribut global) permet de 
+mettre comme l&#233;gende le nom des unit&#233;s sur les axes, &#224; condition qu'en
+dehors d'un &#233;cran de g&#233;om&#233;trie, 
+cette commande soit suivie sur la m&#234;me ligne par une commande graphique. 
+Par exemple : <TT>legende=["mn","kg"];point(1+i)</TT>, ou 
+<BR><TT>legend=["xunit","yunit","zunit"]; point([1,1,1])</TT>
+</LI>
+<LI><TT>legende(1+i*sin(1),"sin(1)")</TT> ou 
+<TT>legende(point(1+i*sin(1)),"sin(1)")</TT> (utilis&#233; comme commande) ou
+<TT>point(1+i*sin(1),legende="sin(1)")</TT> (utilis&#233; comme attribut local)
+permet de mettre une l&#233;gende en un point de l'&#233;cran, donn&#233; par son 
+affixe. On peut sp&#233;cifier la couleur ou la position de la l&#233;gende par 
+rapport au point en mettant d'autres param&#232;tres par exemple :
+<TT>legende(1+i*sin(1),"sin(1)",quadrant4,rouge)</TT> (utilis&#233; comme commande) 
+ou <TT>point(1+i*sin(1),legende="sin(1)",affichage=quadrant4+rouge)</TT> 
+(utilis&#233; comme attribut local)
+</LI>
+<LI><TT>legende([20,60],"graphe")</TT> (utilis&#233; comme commande) 
+permet de mettre une l&#233;gende en un point de l'&#233;cran, donn&#232; par ses 
+coordonn&#233;es en pixels ([0,0] se trouve en haut et &#224; gauche de l'&#233;cran), 
+</LI>
+<LI><TT>polygone(-1,-i,1,2*i,legende="p")</TT> permet de mettre une l&#233;gende au
+milieu du c&#244;t&#233; reliant le dernier au premier sommet du polygone ici -1,2*i 
+(utilis&#233; 
+comme attribut local),
+</LI>
+<LI><TT>point([i,1,2,2*i],legende="1+i",display=quadrant2+rouge)</TT> permet de 
+mettre une l&#233;gende au milieu du segment 2,2+i, 
+</LI>
+</UL>
+</LI>
+<LI><TT>style</TT> n'a qu'une valeur reconnue : <TT>point</TT> (c'est pour la 
+compatibilit&#233; <TT>Maple</TT>) et <TT>style=point</TT> (utilis&#233; comme attribut 
+local) permet de dessiner une droite selon des pointill&#233;s. 
+Ces pointill&#233;s correspondent &#224; <TT>dashdot_line</TT> ou &#224; 
+<TT>ligne_tiret_point</TT>. On a :
+<BR><TT>droite(y=x,style=point,affichage=vert+line_width_2)</TT> est identique 
+&#224; :
+<BR><TT>droite(y=x,affichage=vert+ligne_tiret_point+line_width_2)</TT>,
+</LI>
+<LI><TT>titre="..."</TT> ou <TT>title="..."</TT> permet de mettre un titre &#224; la 
+fen`&#234;tre graphique (est utilis&#233; seulement comme attribut global).
+
+<P>
+</LI>
+<LI><TT>gl_texture=</TT> peut &#234;tre un attribut local ou global. 
+<BR><TT>gl_texture="nom_fichier_image"</TT> permet de mettre une image sur un
+objet graphique 3-d ou sur un rectangle 2-d si il est utilis&#233; comme attribut 
+local. Par exemple <TT>carre(i,1+i,gl_texture="image.jpg")</TT> dessine l'image 
+contenue dans le fichier <TT>"image.jpg"</TT> dans le carr&#233;, et 
+<BR><TT>gl_texture=</TT> permet de mettre un fond sur un graphique 2-d si il est 
+utilis&#233; comme attribut global.
+Par exemple <TT>gl_texture="image.jpg"; carre(i,1+i)</TT> dessine un carr&#233; 
+avec comme fond d'&#233;cran l'image contenu dans le fichier <TT>"image.jpg"</TT>
+</LI>
+<LI><TT>gl_x_axis_name="xname"</TT>, <TT>gl_y_axis_name="yname"</TT>,
+<TT>gl_z_axis_name=""</TT> : utilis&#233; comme attribut global, d&#233;finit 
+individuellement les noms des  axes <I>x</I>, <I>y</I>, <I>z</I>,
+</LI>
+<LI><TT>gl_x_axis_unit="xunit"</TT>, <TT>gl_y_axis_unit="yunit"</TT>,
+<TT>gl_z_axis_unit=""</TT> : utilis&#233; comme attribut global, d&#233;finit 
+individuellement les unit&#233;s des  axes <I>x</I>, <I>y</I>, <I>z</I>,
+</LI>
+<LI><TT>gl_x=xmin..xmax</TT>, <TT>gl_y=ymin..ymax</TT>,
+<TT>gl_z=zmin..zmax</TT>: utilis&#233; comme attribut global, definit la 
+configuration du graphique (pas compatible avec l'interactivit&#233;),
+</LI>
+<LI><TT>gl_xtick=</TT>, <TT>gl_ytick=</TT>, <TT>gl_ztick=</TT> : utilis&#233; comme 
+attribut global met des marques sur les axes selon la valeur donn&#233;e,
+</LI>
+<LI><TT>gl_shownames=true or false</TT> : utilis&#233; comme attribut global, 
+montre ou cache les noms des objets,
+</LI>
+<LI><TT>gl_rotation=[x,y,z]</TT> : utilis&#233; comme attribut global, definit 
+l'axe de rotation pour les animations des sc&#233;nes 3-d,
+</LI>
+<LI><TT>gl_quaternion=[x,y,z,t]</TT> : utilis&#233; comme attribut global definit 
+le quaternion pour la visualisation des sc&#233;nes 3-d (pas compatible avec 
+l'interactivit&#233;),
+</LI>
+<LI>d'autres options d' OpenGL pour configurer la lumi&#232;re existent mais ne 
+sont pas d&#233;crites ici.
+</LI>
+</UL>
+<B>Remarque</B> 
+<BR>
+Les options d'opengl sont &#224; utiliser avec une grande prudence car
+elles ne sont pas compatibles avec l'interactivit&#233;.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16385"
+  HREF="node898.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16379"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16373"
+  HREF="node896.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16381"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16383"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16386"
+  HREF="node898.html">Mettre une l&#233;gende :</A>
+<B> monter:</B> <A NAME="tex2html16380"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16374"
+  HREF="node896.html">Les commandes d'attributs</A>
+ &nbsp; <B>  <A NAME="tex2html16382"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16384"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

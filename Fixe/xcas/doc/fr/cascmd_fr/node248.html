@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Symbole de Legendre : legendre_symbol</TITLE>
+<META NAME="description" CONTENT="Symbole de Legendre : legendre_symbol">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node249.html">
+<LINK REL="previous" HREF="node247.html">
+<LINK REL="up" HREF="node221.html">
+<LINK REL="next" HREF="node249.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6568"
+  HREF="node249.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6562"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6556"
+  HREF="node247.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6564"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6566"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6569"
+  HREF="node249.html">Symbole de Jacobi :</A>
+<B> monter:</B> <A NAME="tex2html6563"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6557"
+  HREF="node247.html">Indicatrice d'Euler : euler</A>
+ &nbsp; <B>  <A NAME="tex2html6565"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6567"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009727000000000000000"></A><A NAME="5536"></A>
+<BR>
+Symbole de Legendre : <TT>legendre_symbol</TT>
+</H2>
+Lorsque <I>n</I> est premier, on d&#233;finit le symbole de Legendre de <I>a</I> 
+not&#233; <!-- MATH
+ $\left(\frac{a}{n}\right)$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ \left(\vphantom{\frac{a}{n}}\right.$"><IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ {\frac{{a}}{{n}}}$"><IMG
+ WIDTH="15" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$ \left.\vphantom{\frac{a}{n}}\right)$"> par :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\left(\frac{a}{n}\right)=\left\{\begin{array}{rl}
+0 & \mbox{si }a=0\ \bmod n \\
+1 & \mbox{si } a \neq 0 \bmod n \mbox{ et si } a=b^2 \bmod n\\
+-1 & \mbox{si } a \neq 0 \bmod n \mbox{ et si } a \neq b^2 \bmod n\\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="17" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{a}{n}}\right.$"><IMG
+ WIDTH="19" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.png"
+ ALT="$\displaystyle {\frac{{a}}{{n}}}$"><IMG
+ WIDTH="17" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{a}{n}}\right)$"> = <IMG
+ WIDTH="22" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.png"
+ ALT="$\displaystyle \left\{\vphantom{\begin{array}{rl}
+0 &amp; \mbox{si }a=0\ \bmod n \\ ...
+...si } a \neq 0 \bmod n \mbox{ et si } a \neq b^2 \bmod n\\
+\end{array}}\right.$"><IMG
+ WIDTH="307" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$\displaystyle \begin{array}{rl}
+0 &amp; \mbox{si }a=0\ \bmod n \\
+1 &amp; \mbox{si } ...
+...&amp; \mbox{si } a \neq 0 \bmod n \mbox{ et si } a \neq b^2 \bmod n\\
+\end{array}$">
+</DIV><P></P>
+Quelques propri&#233;t&#233;s
+
+<UL>
+<LI>Si <I>n</I> est premier :
+<BR><P><!-- MATH
+ \begin{displaymath}
+a^\frac{n-1}{2}=\left(\frac{a}{n}\right) \bmod n
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>a</I><SUP><IMG
+ WIDTH="8" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$\scriptstyle {\frac{}{}}$"></SUP><I>n</I>-12 = <IMG
+ WIDTH="17" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{a}{n}}\right.$"><IMG
+ WIDTH="19" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.png"
+ ALT="$\displaystyle {\frac{{a}}{{n}}}$"><IMG
+ WIDTH="17" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{a}{n}}\right)$"> mod <I>n</I>
+</DIV><P></P>
+</LI>
+<LI>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left(\frac{p}{q}\right).\left(\frac{q}{p}\right)
+&=&(-1)^{\frac{p-1}{2}}.(-1)^{\frac{q-1}{2}}
+\mbox{ si $p$\  et $q$\  sont impairs et positifs} \\
+\left(\frac{2}{p}\right)&=&(-1)^{\frac{p^2-1}{8}} \\
+\left(\frac{-1}{p}\right)&=&(-1)^{\frac{p-1}{2}}
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img97.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{p}{q}}\right.$"><IMG
+ WIDTH="17" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.png"
+ ALT="$\displaystyle {\frac{{p}}{{q}}}$"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{p}{q}}\right)$">.<IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{q}{p}}\right.$"><IMG
+ WIDTH="17" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.png"
+ ALT="$\displaystyle {\frac{{q}}{{p}}}$"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{q}{p}}\right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>(- 1)<SUP><IMG
+ WIDTH="29" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$\scriptstyle {\frac{{p-1}}{{2}}}$"></SUP>.(- 1)<SUP><IMG
+ WIDTH="29" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img104.png"
+ ALT="$\scriptstyle {\frac{{q-1}}{{2}}}$"></SUP><IMG
+ WIDTH="226" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$\displaystyle \mbox{ si $p$\ et $q$\ sont impairs et positifs}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{2}{p}}\right.$"><IMG
+ WIDTH="17" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.png"
+ ALT="$\displaystyle {\frac{{2}}{{p}}}$"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img108.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{2}{p}}\right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>(- 1)<SUP><IMG
+ WIDTH="36" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.png"
+ ALT="$\scriptstyle {\frac{{p^2-1}}{{8}}}$"></SUP></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img110.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{-1}{p}}\right.$"><IMG
+ WIDTH="30" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.png"
+ ALT="$\displaystyle {\frac{{-1}}{{p}}}$"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{-1}{p}}\right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>(- 1)<SUP><IMG
+ WIDTH="29" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$\scriptstyle {\frac{{p-1}}{{2}}}$"></SUP></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+</LI>
+</UL>
+
+<P>
+<TT>legendre_symbol</TT> a deux param&#232;tres <I>a</I> et <I>n</I> et renvoie le symbole de 
+Legendre <!-- MATH
+ $\left(\frac{a}{n}\right)$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$ \left(\vphantom{\frac{a}{n}}\right.$"><IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ {\frac{{a}}{{n}}}$"><IMG
+ WIDTH="15" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$ \left.\vphantom{\frac{a}{n}}\right)$">.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legendre_symbol(26,17)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legendre_symbol(27,17)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legendre_symbol(34,17)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

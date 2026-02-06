@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Common features</TITLE>
+<META NAME="description" CONTENT="Common features">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html130"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html128"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html122"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html131"
+  HREF="node10.html">2-d geometry</A>
+<B> Up:</B> <A NAME="tex2html129"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html123"
+  HREF="node8.html">Geometry and graphics</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00035100000000000000">
+Common features</A>
+</H3>
+The controls are common to 2-d, 3-d graphics or geometry. You can
+move left, right, up and down the window, redefine it using
+coordinates, zoom in and out, pause and restart an animation using the
+buttons and the <TT>M</TT> menu at the right of the graphic, or 
+using the <TT>Graph</TT> menu.
+In 2-d, the coordinates 
+of the mouse are displayed while it is in the graphic area. 
+You can modify the visualization
+window with the mouse (drag will move, 
+use the scroll button for centered zoom in/out, or select an area with
+the right mouse button for an area zoom in).
+In 3-d,
+you can rotate the representation along the current x, y, z axis
+with a mouse drag outside of the scene rendering, or
+by hitting the x,X, y,Y and z,Z key (if the focus is in the 3-d scene).
+
+<P>
+Note that the controls apply only to the visualization, not to the creation
+of graphic objects. For example, if you create a plot of a function,
+the discretisation parameters for this plot (e.g. minimal value for
+<I>x</I>) are fixed and will not change if you move the minimal visualisation
+value using the controls. You must recreate a graphical object if
+you did not choose correctly the parameters. For example if you
+run the command <code>plot(sin(x))</code>, the minimal value for computation
+of <I>x</I> will be the default value 
+(Xmin from the Geo configuration, -10 by default). If
+you move the minimal value of <I>x</I> for visualization below Xmin, you will
+not see the plot there. To see the plot below Xmin, you would have
+to specify something like <code>plot(sin(x),x=-20..0)</code> and validate
+the commandline. This limitation does not apply to geometric objetcs
+(point, segments, lines and circles) 
+which will always be drawn if they are visible.
+
+<P>
+A <TT>M</TT> menu is available below the controls (it's items are also available
+from the top <TT>Geo</TT> menu), 
+it contains items to print
+and control the screen. You can export a graph to encapsulated
+postscript and to PNG (you must have the converting tools 
+netpbm or ImageMagic
+installed, this should be installed by the Xcas installer under Windows. If they
+are not installed under Linux, run your software installer or 
+open a Terminal
+and type 
+<BR><code>sudo apt-get install imagemagick</code> 
+<BR>
+for Debian/Ubuntu distributions or
+<BR><code>sudo yum install imagemagick</code> 
+<BR>
+for Fedora-compatible distributions).
+
+<P>
+Title and axis legends must be part of the command(s) that generate
+the graph or geometry window. For example, try this on a commandline
+<DIV ALIGN="CENTER">
+<code>f(t):=sin(t);title="Graph of f on a period",</code>
+<code>labels=["t","f(t)"],legend=["cm","m"],</code>
+<code>plot(f(t),t=-pi..pi,legend="f")</code>
+
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html130"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html128"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html122"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html131"
+  HREF="node10.html">2-d geometry</A>
+<B> Up:</B> <A NAME="tex2html129"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html123"
+  HREF="node8.html">Geometry and graphics</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>

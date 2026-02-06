@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le potentiel : potential</TITLE>
+<META NAME="description" CONTENT="Le potentiel : potential">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node732.html">
+<LINK REL="previous" HREF="node730.html">
+<LINK REL="up" HREF="node725.html">
+<LINK REL="next" HREF="node732.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13688"
+  HREF="node732.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13682"
+  HREF="node725.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13676"
+  HREF="node730.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13684"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13686"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13689"
+  HREF="node732.html">Champ &#224; flux conservatif</A>
+<B> monter:</B> <A NAME="tex2html13683"
+  HREF="node725.html">Les expressions de plusieurs</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13677"
+  HREF="node730.html">Le rotationnel : curl</A>
+ &nbsp; <B>  <A NAME="tex2html13685"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13687"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009516000000000000000"></A><A NAME="18817"></A>
+<BR>
+Le potentiel : <TT>potential</TT>
+</H2>
+<TT>potential</TT> a deux arguments : un vecteur <!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$"> 
+de <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP> d&#233;pendant de <I>n</I> variables et le vecteur constitu&#233; du nom 
+de ces variables.
+<BR><TT>potential</TT> renvoie une fonction <I>U</I> telle que <!-- MATH
+ $\overrightarrow{\mathcal{G}rad}(U)=\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img492.png"
+ ALT="$ \overrightarrow{\mathcal{G}rad}(U)=\overrightarrow{V}$"> si bien s&#251;r, cela est possible ! On dit alors que 
+<!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$"> d&#233;rive du potentiel <I>U</I>.
+<BR>
+La solution g&#233;n&#233;rale est la somme d'une solution particuli&#232;re et d'une 
+constante.
+<BR>
+On sait qu'un vecteur <!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$"> est un gradient si et seulement si son rotationnel est nul : autrement dit si <TT>curl(V)=0</TT>.
+<BR><TT>potential</TT> est la fonction r&#233;ciproque de <TT>derive</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>potential([2*x*y+3,x<code>^</code>2-4*z,-4*y],[x,y,z]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*y*x<code>^</code>2/2+3*x+(x<code>^</code>2-4*z-2*x<code>^</code>2/2)*y</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

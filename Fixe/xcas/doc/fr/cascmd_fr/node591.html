@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compter les &#233;l&#233;ments d'une liste ou d'une matrice v&#233;rifiant une propri&#233;t&#233; : count</TITLE>
+<META NAME="description" CONTENT="Compter les &#233;l&#233;ments d'une liste ou d'une matrice v&#233;rifiant une propri&#233;t&#233; : count">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node592.html">
+<LINK REL="previous" HREF="node590.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node592.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11639"
+  HREF="node592.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11633"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11627"
+  HREF="node590.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11635"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11637"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11640"
+  HREF="node592.html">Nombre d'&#233;l&#233;ments ayant une</A>
+<B> monter:</B> <A NAME="tex2html11634"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11628"
+  HREF="node590.html">Tester si un &#233;l&#233;ment</A>
+ &nbsp; <B>  <A NAME="tex2html11636"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11638"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093825000000000000000"></A><A NAME="15000"></A>
+<BR>
+Compter les &#233;l&#233;ments d'une liste ou d'une matrice v&#233;rifiant une propri&#233;t&#233; : <TT>count</TT>
+</H2><A NAME="30158"></A>
+<A NAME="30159"></A>
+<TT>count</TT> a deux ou trois param&#232;tres : 
+
+<UL>
+<LI>une fonction r&#233;elle <TT>f</TT>,
+</LI>
+<LI>liste <TT>l</TT> de longueur <TT>n</TT> ou une matrice <TT>A</TT> de 
+dimension <TT>p*q</TT>,
+</LI>
+<LI>un argument optionnel <TT>row</TT> ou <TT>col</TT>, dans le cas o&#249; le 
+deuxi&#232;me param&#232;tre est une matrice <TT>A</TT>.
+</LI>
+</UL>
+Lorsque <TT>count</TT> a :
+
+<UL>
+<LI>deux param&#232;tres, 
+<TT>count</TT> applique la fonction aux &#233;l&#233;ments de la liste (ou de la 
+matrice) et en renvoie la somme, c'est &#224; dire,
+<BR><TT>count(f,l)</TT> renvoie donc le nombre <TT>f(l[0])+f(l[1])+...+f(l[n-1])</TT> ou
+<TT>count(f,A)</TT> renvoie le nombre <TT>f(A[0,0])+....+f(A[p-1,q-1])</TT>.
+<BR>
+Si <TT>f</TT> est une fonction bool&#233;nne <TT>count</TT> renvoie le nombre 
+d'&#233;l&#233;ments de la liste (ou de la matrice) pour lesquels la fonction 
+bool&#233;nne est vraie.
+<BR></LI>
+<LI>ou trois param&#232;tres,
+<TT>count</TT> applique la fonction aux &#233;l&#233;ments de chaque ligne 
+(resp colonne) de la  matrice <TT>A</TT> si l'argument optionnel est <TT>row</TT> 
+(resp <TT>col</TT>) et renvoie une liste de longueur <I>p</I> ayant comme <I>k</I>i&#232;me 
+&#233;l&#233;ment : <TT>f(A[k,0])+....+f(A[k,q-1])</TT>(resp une liste de longueur <I>q</I>
+ayant comme <I>k</I>i&#232;me &#233;l&#233;ment : <TT>f(A[0,k])+....+f(A[p-1,k])</TT>).
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x,[2,12,45,3,7,78])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x,[[2,12,45],[3,7,78]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>147</TT>
+</DIV>
+car on a : 2+12+45+3+7+78=147.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x,[[2,12,45],[3,7,78]],row)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[59,88]</TT>
+</DIV>
+car on a : 2+12+45=59 et 3+7+78=88.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x,[[2,12,45],[3,7,78]],col)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[5,19,123]</TT>
+</DIV>
+car on a : 2+3=5,12+7=10,45+78=123.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x&lt;12,[2,12,45,3,7,78])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x==12,[2,12,45,3,7,78])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x==12,[[2,12,45],[3,7,78]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count((x)-&gt;x&gt;12,[2,12,45,3,7,78])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count(x-&gt;x<code>^</code>2,[3,5,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>35</TT>
+</DIV>
+En effet on a : <!-- MATH
+ $3^2+5^2+1^1=35$
+ -->
+3<SUP>2</SUP> +5<SUP>2</SUP> +1<SUP>1</SUP> = 35.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count(id,[3,5,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>9</TT>
+</DIV>
+En effet, <TT>id</TT> est la fonction identit&#233; et on a :  3+5+1=9.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count(1,[3,5,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+En effet, <TT>1</TT> est la fonction constante &#233;gale &#224; 1 et on a : 1+1+1=3.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11639"
+  HREF="node592.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11633"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11627"
+  HREF="node590.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11635"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11637"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11640"
+  HREF="node592.html">Nombre d'&#233;l&#233;ments ayant une</A>
+<B> monter:</B> <A NAME="tex2html11634"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11628"
+  HREF="node590.html">Tester si un &#233;l&#233;ment</A>
+ &nbsp; <B>  <A NAME="tex2html11636"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11638"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

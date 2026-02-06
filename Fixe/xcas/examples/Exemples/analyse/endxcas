@@ -1,0 +1,7 @@
+mount -f -u -b "C:/cygwin/bin" "/usr/bin"
+mount -f -s -b "C:/cygwin/bin" "/usr/bin"
+mount -f -u -b "C:/cygwin/lib" "/usr/lib"
+mount -f -s -b "C:/cygwin/lib" "/usr/lib"
+mount -f -u -b "C:/cygwin" "/"
+mount -f -s -b "C:/cygwin" "/"
+mount -s -b --change-cygdrive-prefix "/cygdrive"

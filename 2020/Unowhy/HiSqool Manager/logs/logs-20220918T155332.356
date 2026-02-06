@@ -1,0 +1,56 @@
+2022-09-18 17:53:32 [4852] INFO [DeviceConfigurationService]   => result: true +4ms
+2022-09-18 15:53:32.071: 2022-09-18 17:53:32 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2022-09-18 15:53:32.071: 2022-09-18 17:53:32 [4852] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-09-18 15:53:32.071: 2022-09-18 17:53:32 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +0ms
+2022-09-18 15:53:32.071: 2022-09-18 17:53:32 [4852] INFO [DeviceConfigurationService]   => result: false +2ms
+2022-09-18 15:53:32.081: 2022-09-18 17:53:32 [4852] INFO [DeviceConfigurationService] Emitting configuration with 12 units +8ms
+2022-09-18 15:53:32.081: 2022-09-18 17:53:32 [4852] INFO [PayloadDispatcher] Got 12 payloads of which 12 are valid +45ms
+2022-09-18 15:53:32.128: 2022-09-18 17:53:32 [4852] INFO [PayloadDispatcher] Got 12 items. 8 in, 4 out +1ms
+2022-09-18 15:53:32.141: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 111] Received payload Facts Uploader Windows. current status=state=Ok, error=None, active=true +15ms
+2022-09-18 15:53:32.141: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 111] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2022-09-18 15:53:32.141: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 545] Received payload Certificat RIDF 1.1. current status=state=Ok, error=None, active=true +1ms
+2022-09-18 15:53:32.146: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 545] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2022-09-18 15:53:32.146: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 279] Received payload sqoolctl. current status=state=Ok, error=None, active=true +1ms
+2022-09-18 15:53:32.148: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 279] Same payload as before emitting current status: state=Ok, error=None, active=true +0ms
+2022-09-18 15:53:32.148: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 360] Received payload Windows MDM Agent 1.2.3. current status=state=Ok, error=None, active=true +1ms
+2022-09-18 15:53:32.148: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 360] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2022-09-18 15:53:32.151: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Received payload Biblio Manuels Windows 3.11.0. current status=state=Empty, error=None, active=false +5ms
+2022-09-18 15:53:32.151: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 984] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.11.0.jar +0ms
+2022-09-18 15:53:32.156: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Received payload Educadhoc 9.0.19. current status=state=Empty, error=None, active=false +2ms
+2022-09-18 15:53:32.156: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 986] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/educadhoc_9.0.19.jar +0ms
+2022-09-18 15:53:32.158: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Received payload LeLivreScolaire 4.0.6. current status=state=Empty, error=None, active=false +2ms
+2022-09-18 15:53:32.158: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_4.0.6.jar +1ms
+2022-09-18 15:53:32.158: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 130] Received payload LGPO Windows. current status=state=Empty, error=None, active=false +1ms
+2022-09-18 15:53:32.161: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 130] payload is new. Downloading from https://idf.hisqool.com/conf/payloads/desktop-gpo_1.5.jar +1ms
+2022-09-18 15:53:32.161: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Received payload Lib Manuels Windows 5.0.0. current status=state=Empty, error=None, active=false +2ms
+2022-09-18 15:53:32.161: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 991] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_5.0.0.jar +0ms
+2022-09-18 15:53:32.161: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 359] Received payload Microsoft Office 1.0.0. current status=state=Empty, error=None, active=false +2ms
+2022-09-18 15:53:32.217: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 359] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/Microsoft_Office_1.0.0.jar +52ms
+2022-09-18 15:53:32.219: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 173] Received payload Nettoyage post déploiement. current status=state=Empty, error=None, active=false +2ms
+2022-09-18 15:53:32.219: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 173] payload is new. Downloading from https://idf.hisqool.com/conf/payloads/_Nettoyage_post_deploiement_1.0.0.jar +0ms
+2022-09-18 15:53:32.221: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 179] Received payload Blocage du service de réinitialisation Windows. current status=state=Empty, error=None, active=false +1ms
+2022-09-18 15:53:32.221: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 179] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/disablerecovery_1.0.0.jar +1ms
+2022-09-18 15:53:32.226: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Todo, error=None, active=true +5ms
+2022-09-18 15:53:32.231: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Downloading, error=None, active=true +4ms
+2022-09-18 15:53:32.231: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/educadhoc_9.0.19.jar... +4ms
+2022-09-18 15:53:32.239: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Todo, error=None, active=true +4ms
+2022-09-18 15:53:32.241: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Downloading, error=None, active=true +3ms
+2022-09-18 15:53:32.241: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.11.0.jar... +3ms
+2022-09-18 15:53:32.249: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Todo, error=None, active=true +4ms
+2022-09-18 15:53:32.251: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Downloading, error=None, active=true +4ms
+2022-09-18 15:53:32.288: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_4.0.6.jar... +35ms
+2022-09-18 15:53:32.291: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Todo, error=None, active=true +3ms
+2022-09-18 15:53:32.291: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Downloading, error=None, active=true +3ms
+2022-09-18 15:53:32.296: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/payloads/desktop-gpo_1.5.jar... +3ms
+2022-09-18 15:53:32.301: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Todo, error=None, active=true +3ms
+2022-09-18 15:53:32.301: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Downloading, error=None, active=true +3ms
+2022-09-18 15:53:32.306: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_5.0.0.jar... +3ms
+2022-09-18 15:53:32.309: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 359] Persisting status=state=Todo, error=None, active=true +3ms
+2022-09-18 15:53:32.311: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 359] Persisting status=state=Downloading, error=None, active=true +2ms
+2022-09-18 15:53:32.311: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/Microsoft_Office_1.0.0.jar... +4ms
+2022-09-18 15:53:32.319: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Todo, error=None, active=true +4ms
+2022-09-18 15:53:32.345: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Downloading, error=None, active=true +29ms
+2022-09-18 15:53:32.351: 2022-09-18 17:53:32 [4852] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/payloads/_Nettoyage_post_deploiement_1.0.0.jar... +3ms
+2022-09-18 15:53:32.351: 2022-09-18 17:53:32 [4852] INFO [PayloadDownloader] [PAYLOAD 179] Persisting status=state=Todo, error=None, active=true +4ms
+2022-09-18 15:53:32.356: 2022-09-18 17:53:32 [4852] INFO [PayloadDispatcher] Emitting 4 entries ["__/conf/agents/facts","conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/sqoolctl","__/unowhy/manager/windows"] +2ms
+2022-09-18 15:53:32.356: 2022-09-18 17:53:32 [4852] INFO [ConfigurationRunner] Processing for execution configuration with 4 keys +1ms

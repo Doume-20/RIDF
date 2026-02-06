@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Faire une liste al&#233;atoire : randvector</TITLE>
+<META NAME="description" CONTENT="Faire une liste al&#233;atoire : randvector">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node606.html">
+<LINK REL="previous" HREF="node604.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node606.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11835"
+  HREF="node606.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11829"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11823"
+  HREF="node604.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11831"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11833"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11836"
+  HREF="node606.html">Liste des diff&#233;rences de</A>
+<B> monter:</B> <A NAME="tex2html11830"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11824"
+  HREF="node604.html">Faire une liste avec</A>
+ &nbsp; <B>  <A NAME="tex2html11832"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11834"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093837000000000000000"></A><A NAME="15633"></A><A NAME="sec:ranm4"></A>
+<BR>
+Faire une liste al&#233;atoire : <TT>randvector</TT>
+</H2>
+<TT>randvector</TT> fabrique une liste de nombres al&#233;atoires.
+<BR><TT>randvector</TT> a comme argument un entier <I>n</I> et &#233;ventuellement un 
+deuxi&#232;me argument, soit un entier <I>k</I>, soit le nom quot&#233; de la loi de 
+distribution des nombres al&#233;atoires de la liste (voir aussi <A HREF="node459.html#sec:ranm1">6.25.30</A>, 
+<A HREF="node623.html#sec:ranm2">6.42.3</A> et <A HREF="node810.html#sec:ranm3">7.3.5</A>).
+<BR><TT>randvector</TT> renvoie une liste d'ordre <I>n</I> 
+constitu&#233;e d'entiers al&#233;atoires uniform&#233;ment distribu&#233;s entre -99 et 99 
+(par d&#233;faut) ou entre 0 et <I>k</I> - 1 ou 
+une liste d'ordre <I>n</I> de nombres al&#233;atoires distribu&#233;s selon la loi mise 
+entre-quote.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>randvector(3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-54,78,-29]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>randvector(3,5)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>randvector(3,'rand(5)')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,4]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>randvector(3,'randnorm(0,1)')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1.39091705476,-0.136794772167,0.187312440336]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>randvector(3,2..4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3.92450003885,3.50059241243,2.7322040787]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

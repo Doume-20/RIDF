@@ -1,0 +1,50 @@
+2022-03-17 3:20:32 [4928] INFO [JS] isActivationScriptNeeded: false +1ms
+2022-03-17 02:20:32.440: 2022-03-17 3:20:32 [4928] INFO [JS] isDisabled: false +1ms
+2022-03-17 02:20:32.440: 2022-03-17 3:20:32 [4928] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-03-17 02:20:32.440: 2022-03-17 3:20:32 [4928] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows (280) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows.json +3ms
+2022-03-17 02:20:32.440: 2022-03-17 3:20:32 [4928] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2022-03-17 02:20:32.456: 2022-03-17 3:20:32 [4928] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-03-17 02:20:32.456: 2022-03-17 3:20:32 [4928] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-03-17 02:20:32.456: 2022-03-17 3:20:32 [4928] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-03-17 02:20:35.548: 2022-03-17 3:20:35 [4928] INFO [JS] Version of current package: 1.0 +3078ms
+2022-03-17 02:20:35.923: 2022-03-17 3:20:35 [4928] INFO [JS] Result: 0 +374ms
+2022-03-17 02:20:35.923: 2022-03-17 3:20:35 [4928] INFO [JS] Stdout: Custom shell possible: True +1ms
+2022-03-17 02:20:35.923: 2022-03-17 3:20:35 [4928] INFO [JS] Stderr: #< CLIXML
+2022-03-17 02:20:35.923: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2022-03-17T03:20:35.439595+01:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">6548</U32><U32 N="NativeThreadId">8068</U32><U32 N="ManagedThreadId">9</U32></Props></Obj></Objs> +0ms
+2022-03-17 07:31:57.376: 2022-03-17 8:31:57 [4928] INFO [PayloadDownloader] [PAYLOAD 279] Persisting status=state=Downloading, error=None, active=true +18681460ms
+2022-03-17 07:31:58.079: 2022-03-17 8:31:58 [4928] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/sqoolctl-paq_0.9.8.jar... +705ms
+2022-03-17 07:31:58.079: 2022-03-17 8:31:58 [4928] INFO [CleanerService] Received payload list: 359, 179, 360, 111, 358, 394, 170, 457, 130, 521, 280, 545, 271, 173, 279 +5ms
+2022-03-17 07:31:58.111: 2022-03-17 8:31:58 [4928] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +21ms
+2022-03-17 07:31:58.111: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.121: 2022-03-17 8:31:58 [4928] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +12ms
+2022-03-17 07:31:58.248: 2022-03-17 8:31:58 [4928] INFO [Runner] Creating configuration unit runner object... +133ms
+2022-03-17 07:31:58.248: 2022-03-17 8:31:58 [4928] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-03-17 07:31:58.248: 2022-03-17 8:31:58 [4928] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.248: 2022-03-17 8:31:58 [4928] INFO [JS] We are triggering +1ms
+2022-03-17 07:31:58.263: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +8ms
+2022-03-17 07:31:58.263: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +0ms
+2022-03-17 07:31:58.263: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> __/conf/agents/facts... +3ms
+2022-03-17 07:31:58.263: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +5ms
+2022-03-17 07:31:58.263: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +2ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +2ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +1ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +0ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +0ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [Runner] Performing runner... +1ms
+2022-03-17 07:31:58.279: 2022-03-17 8:31:58 [4928] INFO [JS] Performing facts gathering and upload... +1ms
+2022-03-17 07:31:58.326: 2022-03-17 8:31:58 [4928] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net. +40ms
+2022-03-17 07:31:58.326: 2022-03-17 8:31:58 [4928] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/sqoolctl-paq_0.9.8.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload.jara0984da8eb630742.new: Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net +1ms
+2022-03-17 07:31:58.326: 2022-03-17 8:31:58 [4928] WARN [PayloadDownloader] Received Error while downloading Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net: Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net
+2022-03-17 07:31:58.326:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +1ms
+2022-03-17 07:31:58.326: 2022-03-17 8:31:58 [4928] INFO [PayloadDownloader] [PAYLOAD 279] Persisting status=state=Error, error=Network, active=true +2ms
+2022-03-17 07:31:58.342: 2022-03-17 8:31:58 [4928] INFO [RequestPerformerService] Got disposed. +19ms
+2022-03-17 07:31:58.342: 2022-03-17 8:31:58 [4928] INFO [PayloadDownloader] [PAYLOAD 279] Persisting status=state=Error, error=Network, active=true +1ms
+2022-03-17 07:31:58.357: 2022-03-17 8:31:58 [4928] INFO [PayloadDownloader] [PAYLOAD 279] Error Network. Waiting 60 seconds before retrying... +4ms
+2022-03-17 07:31:58.357: 2022-03-17 8:31:58 [4928] INFO [CleanerService] Current payload list: 111, 130, 170, 173, 179, 271, 279, 280, 358, 359, 360, 394, 457, 521, 545 +4ms
+2022-03-17 07:31:58.357: 2022-03-17 8:31:58 [4928] INFO [CleanerService] Payloads to delete:  +1ms
+2022-03-17 07:32:00.763: 2022-03-17 8:32:00 [4928] INFO [JS] Version of update package: 1.0 +2405ms
+2022-03-17 07:32:00.763: 2022-03-17 8:32:00 [4928] INFO [JS] Your package is up to date +1ms

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;finir une droite 3D : line droite</TITLE>
+<META NAME="description" CONTENT="D&#233;finir une droite 3D : line droite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1038.html">
+<LINK REL="previous" HREF="node1036.html">
+<LINK REL="up" HREF="node1036.html">
+<LINK REL="next" HREF="node1038.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18541"
+  HREF="node1038.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18535"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18529"
+  HREF="node1036.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18537"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18539"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18542"
+  HREF="node1038.html">D&#233;finir une droite orient&#233;e</A>
+<B> monter:</B> <A NAME="tex2html18536"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18530"
+  HREF="node1036.html">Les lignes</A>
+ &nbsp; <B>  <A NAME="tex2html18538"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18540"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001341000000000000000"></A><A NAME="27003"></A><A NAME="27004"></A><A NAME="sec:droite3"></A>
+<BR>
+D&#233;finir une droite 3D : <TT>line droite</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node127.html#sec:droite">3.9.1</A> et<A HREF="node929.html#sec:droite2">9.10.1</A> pour la g&#233;om&#233;trie 
+plane.
+<BR><TT>droite</TT>, en g&#233;om&#233;trie 3D, a comme argument deux points ou 
+deux &#233;quations de plans.
+<BR><TT>droite</TT> renvoie et trace la droite d&#233;finit par ses arguments.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite([0,3,0],[3,0,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le trac&#233; de la droite passant par [0,3,0] et [3,0,3] </TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(x=y,y=z)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le trac&#233; de la droite intersection des plans x=y et y=z</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>point3d(A,B)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>droite(A,B)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le trac&#233; de la droite AB</TT>
+</DIV>
+<B>Remarque</B>
+<BR><TT>droite</TT> d&#233;finit une droite orient&#233;e :
+<BR>
+Lorsque la droite est donn&#233;e par deux points, son orientation
+est d&#233;finie par l'ordre des points donn&#233;s en argument.
+Par exemple <TT>droite(A,B)</TT> d&#233;finit une droite orient&#233;e par le vecteur 
+<!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$">.
+<BR>
+Lorsque la droite est donn&#233;e par deux &#233;quations de plans, son orientation
+est d&#233;finie par le produit vectoriel des normales aux plans (en mettant les 
+&#233;quations des plans sous la forme " membredegauche-membrededroite=0" on
+ d&#233;termine les normales orient&#233;es de ces plans).
+Par exemple <TT>droite(x=y,y=z)</TT> est orient&#233;e par 
+<TT>cross([1,-1,0],[0,1,-1])</TT>=<TT>[1,1,1]</TT>.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18541"
+  HREF="node1038.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18535"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18529"
+  HREF="node1036.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18537"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18539"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18542"
+  HREF="node1038.html">D&#233;finir une droite orient&#233;e</A>
+<B> monter:</B> <A NAME="tex2html18536"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18530"
+  HREF="node1036.html">Les lignes</A>
+ &nbsp; <B>  <A NAME="tex2html18538"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18540"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

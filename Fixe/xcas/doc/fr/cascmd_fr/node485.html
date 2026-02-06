@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Polyn&#244;me de Laguerre : laguerre</TITLE>
+<META NAME="description" CONTENT="Polyn&#244;me de Laguerre : laguerre">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node486.html">
+<LINK REL="previous" HREF="node484.html">
+<LINK REL="up" HREF="node482.html">
+<LINK REL="next" HREF="node486.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10067"
+  HREF="node486.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10061"
+  HREF="node482.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10055"
+  HREF="node484.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10063"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10065"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10068"
+  HREF="node486.html">Polyn&#244;me de Tchebychev de</A>
+<B> monter:</B> <A NAME="tex2html10062"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10056"
+  HREF="node484.html">Polyn&#244;me de Hermite :</A>
+ &nbsp; <B>  <A NAME="tex2html10064"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10066"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009273000000000000000"></A><A NAME="12578"></A>
+<BR>
+Polyn&#244;me de Laguerre : <TT>laguerre</TT>
+</H2>
+<TT>laguerre</TT> a comme argument un entier <I>n</I> et eventuellement le 
+nom de la variable (<I>x</I> par d&#233;faut) et du param&#232;tre (<I>a</I> par d&#233;faut).
+<BR><TT>laguerre</TT> renvoie le polyn&#244;me de Laguerre de degr&#233; <I>n</I> et de param&#232;tre <I>a</I>.
+<BR>
+Le polyn&#244;me de Laguerre de degr&#233; <I>n</I> de param&#232;tre <I>a</I> not&#233; <I>L</I>(<I>n</I>, <I>a</I>, <I>x</I>) 
+v&#233;rifie les relations :
+<BR><!-- MATH
+ $L(0,a,x)=1$
+ -->
+<I>L</I>(0, <I>a</I>, <I>x</I>) = 1
+<BR><!-- MATH
+ $L(1,a,x)=1+a-x$
+ -->
+<I>L</I>(1, <I>a</I>, <I>x</I>) = 1 + <I>a</I> - <I>x</I>
+<BR><!-- MATH
+ $L(n,a,x)=\frac{2n+a-1-x}{n}L(n-1,a,x)-\frac{n+a-1}{n}L(n-2,a,x)$
+ -->
+<I>L</I>(<I>n</I>, <I>a</I>, <I>x</I>) = <IMG
+ WIDTH="76" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img379.png"
+ ALT="$ {\frac{{2n+a-1-x}}{{n}}}$"><I>L</I>(<I>n</I> - 1, <I>a</I>, <I>x</I>) - <IMG
+ WIDTH="52" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img380.png"
+ ALT="$ {\frac{{n+a-1}}{{n}}}$"><I>L</I>(<I>n</I> - 2, <I>a</I>, <I>x</I>)
+<BR>
+Ces polyn&#244;mes sont orthogonaux pour le produit scalaire :
+<BR><!-- MATH
+ $<f,g>=\int_{0}^{+\infty}f(x)g(x)x^ae^{-x}dx$
+ -->
+&lt; <I>f</I>, <I>g</I> &gt; = <IMG
+ WIDTH="41" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img381.png"
+ ALT="$ \int_{{0}}^{{+\infty}}$"><I>f</I> (<I>x</I>)<I>g</I>(<I>x</I>)<I>x</I><SUP>a</SUP><I>e</I><SUP>-x</SUP><I>dx</I> 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>laguerre(2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(a<code>^</code>2+-2*a*x+3*a+x<code>^</code>2+-4*x+2)/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>laguerre(2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(a<code>^</code>2+-2*a*y+3*a+y<code>^</code>2+-4*y+2)/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>laguerre(2,y,b)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(b<code>^</code>2+-2*b*y+3*b+y<code>^</code>2+-4*y+2)/2</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

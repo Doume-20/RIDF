@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La fonction erfc : erfc</TITLE>
+<META NAME="description" CONTENT="La fonction erfc : erfc">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node278.html">
+<LINK REL="previous" HREF="node276.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node278.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6998"
+  HREF="node278.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6992"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6986"
+  HREF="node276.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6994"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6996"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6999"
+  HREF="node278.html">La fonction : Gamma</A>
+<B> monter:</B> <A NAME="tex2html6993"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6987"
+  HREF="node276.html">La fonction erf :</A>
+ &nbsp; <B>  <A NAME="tex2html6995"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6997"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0091011000000000000000"></A><A NAME="6495"></A>
+<BR>
+La fonction <I>erfc</I> : <TT>erfc</TT>
+</H2>
+<TT>erfc</TT>  a comme argument un nombre <I>a</I>.
+<BR><TT>erfc</TT> calcule les valeurs de la fonction <I>erfc</I> au point <I>a</I>.
+<BR>
+On a par d&#233;finition :
+<BR><P><!-- MATH
+ \begin{displaymath}
+erfc(x)=\frac{2}{\sqrt{\pi}}\int_x^{+\infty}e^{-t^2}dt=1-erf(x)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>erfc</I>(<I>x</I>) = <IMG
+ WIDTH="34" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img166.png"
+ ALT="$\displaystyle {\frac{{2}}{{\sqrt{\pi}}}}$"><IMG
+ WIDTH="47" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img177.png"
+ ALT="$\displaystyle \int_{x}^{{+\infty}}$"><I>e</I><SUP>-t<SUP>2</SUP></SUP><I>dt</I> = 1 - <I>erf</I> (<I>x</I>)
+</DIV><P></P>
+On a : <P><!-- MATH
+ \begin{displaymath}
+erfc(0)=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>erfc</I>(0) = 1
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+erfc()=-1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>erfc</I>() = - 1
+</DIV><P></P>
+En effet on sait que :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\int_0^{+\infty}e^{-t^2}dt=\frac{\sqrt{\pi}}{2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="47" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.png"
+ ALT="$\displaystyle \int_{0}^{{+\infty}}$"><I>e</I><SUP>-t<SUP>2</SUP></SUP><I>dt</I> = <IMG
+ WIDTH="33" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img169.png"
+ ALT="$\displaystyle {\frac{{\sqrt{\pi}}}{{2}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>erfc(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.15729920705</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>1- erfc(1/(sqrt(2)))*1/2</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.841344746069</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Il y a une relation entre les fonctions <TT>erfc</TT>  et <TT>normal_cdf</TT> :
+<BR><TT>normal_cdf</TT><!-- MATH
+ $(x)=1-\frac{1}{2}\*$
+ -->
+(<I>x</I>) = 1 - <IMG
+ WIDTH="15" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.png"
+ ALT="$ {\frac{{1}}{{2}}}$">&sstarf#star;<TT>erfc</TT><!-- MATH
+ $(\frac{x}{\sqrt{2}})$
+ -->
+(<IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.png"
+ ALT="$ {\frac{{x}}{{\sqrt{2}}}}$">)
+<BR>
+En effet :
+<BR>
+normal_cdf<!-- MATH
+ $(x)=\frac{1}{2}+\frac{1}{\sqrt{2\pi}}\int_0^{x}e^{-t^2/2}dt$
+ -->
+(<I>x</I>) = <IMG
+ WIDTH="15" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.png"
+ ALT="$ {\frac{{1}}{{2}}}$"> + <IMG
+ WIDTH="35" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.png"
+ ALT="$ {\frac{{1}}{{\sqrt{2\pi}}}}$"><IMG
+ WIDTH="24" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.png"
+ ALT="$ \int_{0}^{{x}}$"><I>e</I><SUP>-t<SUP>2</SUP>/2</SUP><I>dt</I>
+<BR>
+donc avec le changement de variables <!-- MATH
+ $t=u*\sqrt{2}$
+ -->
+<I>t</I> = <I>u</I>*<IMG
+ WIDTH="28" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ \sqrt{{2}}$">
+<BR>
+normal_cdf<!-- MATH
+ $(x)=\frac{1}{2}+\frac{1}{\sqrt{\pi}}\int_0^{\frac{x}{\sqrt{2}}}e^{-u^2}du=1-\frac{1}{2}\*$
+ -->
+(<I>x</I>) = <IMG
+ WIDTH="15" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.png"
+ ALT="$ {\frac{{1}}{{2}}}$"> + <IMG
+ WIDTH="28" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img175.png"
+ ALT="$ {\frac{{1}}{{\sqrt{\pi}}}}$"><IMG
+ WIDTH="36" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img176.png"
+ ALT="$ \int_{0}^{{\frac{x}{\sqrt{2}}}}$"><I>e</I><SUP>-u<SUP>2</SUP></SUP><I>du</I> = 1 - <IMG
+ WIDTH="15" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.png"
+ ALT="$ {\frac{{1}}{{2}}}$">&sstarf#star;erfc<!-- MATH
+ $(\frac{x}{\sqrt{2}})$
+ -->
+(<IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.png"
+ ALT="$ {\frac{{x}}{{\sqrt{2}}}}$">)
+<BR>
+On v&#233;rifie en tapant :
+<BR><TT>normal_cdf(1)=0.841344746069</TT>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

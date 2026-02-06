@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions de géométrie 2D</TITLE>
+<META NAME="description" CONTENT="Les fonctions de géométrie 2D">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1025.html">
+<LINK REL="previous" HREF="node834.html">
+<LINK REL="up" HREF="cascmd_fr.html">
+<LINK REL="next" HREF="node887.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16079"
+  HREF="node887.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16073"
+  HREF="cascmd_fr.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16067"
+  HREF="node885.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16075"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16077"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16080"
+  HREF="node887.html">G&#233;n&#233;ralit&#233;s</A>
+<B> monter:</B> <A NAME="tex2html16074"
+  HREF="cascmd_fr.html">Calcul formel et Math&#233;matiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16068"
+  HREF="node885.html">G&#233;n&#233;rer une erreur :</A>
+ &nbsp; <B>  <A NAME="tex2html16076"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16078"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001200000000000000000">
+Les fonctions de g&#233;om&#233;trie 2D</A>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html16081"
+  HREF="node887.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html16082"
+  HREF="node888.html">Les fonctions de base</A>
+<UL>
+<LI><A NAME="tex2html16083"
+  HREF="node889.html">Effacer l'&#233;cran  <TT>DispG</TT> : <TT>erase</TT></A>
+<LI><A NAME="tex2html16084"
+  HREF="node890.html">Effacer les axes : <TT>switch_axes</TT></A>
+<LI><A NAME="tex2html16085"
+  HREF="node891.html">Effacer les points d&#233;finis par <TT>TX</TT> et <TT>TY</TT></A>
+<LI><A NAME="tex2html16086"
+  HREF="node892.html">Avoir du papier point&#233; : <TT>papier_pointe dot_paper</TT></A>
+<LI><A NAME="tex2html16087"
+  HREF="node893.html">Changer les param&#232;tres de la fen&#234;tre graphique : <TT>xyztrange</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16088"
+  HREF="node894.html">Les attributs des objets graphiques</A>
+<UL>
+<LI><A NAME="tex2html16089"
+  HREF="node895.html">G&#233;n&#233;ralit&#233;s sur les attributs</A>
+<LI><A NAME="tex2html16090"
+  HREF="node896.html">Les commandes d'attributs</A>
+<LI><A NAME="tex2html16091"
+  HREF="node897.html">Les param&#232;tres optionnels d'attributs</A>
+<LI><A NAME="tex2html16092"
+  HREF="node898.html">Mettre une l&#233;gende : <TT>legende</TT></A>
+<LI><A NAME="tex2html16093"
+  HREF="node899.html">Les commandes d'affichage : <TT>display color affichage couleur</TT></A>
+<UL>
+<LI><A NAME="tex2html16094"
+  HREF="node900.html">Pour ne pas afficher le nom de l'objet</A>
+<LI><A NAME="tex2html16095"
+  HREF="node901.html">Mettre de la couleur</A>
+<LI><A NAME="tex2html16096"
+  HREF="node902.html">Pour dessiner une figure pleine</A>
+<LI><A NAME="tex2html16097"
+  HREF="node903.html">Les diff&#233;rents affichages de points</A>
+<LI><A NAME="tex2html16098"
+  HREF="node904.html">Les diff&#233;rents formes d'affichage des lignes</A>
+<LI><A NAME="tex2html16099"
+  HREF="node905.html">Les diff&#233;rentes &#233;paisseurs d'affichage des lignes</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html16100"
+  HREF="node906.html">Comment d&#233;finir un objet g&#233;om&#233;trique sans le tracer : <TT>nodisp</TT></A>
+<LI><A NAME="tex2html16101"
+  HREF="node907.html">Comment d&#233;finir et tracer sans nom, un objet g&#233;om&#233;trique</A>
+<LI><A NAME="tex2html16102"
+  HREF="node908.html">Comment d&#233;finir et tracer un objet g&#233;om&#233;trique avec son nom</A>
+<LI><A NAME="tex2html16103"
+  HREF="node909.html">Comment lire et cr&#233;er une image</A>
+<UL>
+<LI><A NAME="tex2html16104"
+  HREF="node910.html">Qu'est-ce qu'une image ?</A>
+<LI><A NAME="tex2html16105"
+  HREF="node911.html">Pour lire une image : <TT>readrgb</TT></A>
+<LI><A NAME="tex2html16106"
+  HREF="node912.html">Pour  cr&#233;er une image : <TT>writergb</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16107"
+  HREF="node913.html">Comment faire une d&#233;monstration : <TT>assume</TT></A>
+<LI><A NAME="tex2html16108"
+  HREF="node914.html">Les points en g&#233;om&#233;trie plane</A>
+<UL>
+<LI><A NAME="tex2html16109"
+  HREF="node915.html">Les points et les nombres complexes</A>
+<LI><A NAME="tex2html16110"
+  HREF="node916.html">Le point en g&#233;om&#233;trie plane : <TT>point</TT></A>
+<LI><A NAME="tex2html16111"
+  HREF="node917.html">D&#233;finir au hasard un point 2D : <TT>point2d</TT></A>
+<LI><A NAME="tex2html16112"
+  HREF="node918.html">Un des points d'intersection de deux objets g&#233;om&#233;triques : <TT>single_inter inter_unique line_inter inter_droite</TT></A>
+<LI><A NAME="tex2html16113"
+  HREF="node919.html">Les points d'intersection de deux objets g&#233;om&#233;triques : <TT>inter</TT></A>
+<LI><A NAME="tex2html16114"
+  HREF="node920.html">Orthocentre d'un triangle : <TT>orthocenter orthocentre</TT></A>
+<LI><A NAME="tex2html16115"
+  HREF="node921.html">Le milieu d'un segment : <TT>midpoint milieu</TT></A>
+<LI><A NAME="tex2html16116"
+  HREF="node922.html">L'isobarycentre de <I>n</I> points : <TT>isobarycenter isobarycentre</TT></A>
+<LI><A NAME="tex2html16117"
+  HREF="node923.html">Point d&#233;fini comme barycentre de <I>n</I> points : <TT>barycenter barycentre</TT></A>
+<LI><A NAME="tex2html16118"
+  HREF="node924.html">Le centre d'un cercle : <TT>centre center</TT></A>
+<LI><A NAME="tex2html16119"
+  HREF="node925.html">Les sommets d'un polygone : <TT>vertices vertices_abc sommets sommets_abc</TT></A>
+<LI><A NAME="tex2html16120"
+  HREF="node926.html">Les sommets d'un polygone : <TT>vertices_abca sommets_abca</TT></A>
+<LI><A NAME="tex2html16121"
+  HREF="node927.html">Un point sur un objet g&#233;om&#233;trique : <TT>element</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16122"
+  HREF="node928.html">Les droites en g&#233;om&#233;trie plane </A>
+<UL>
+<LI><A NAME="tex2html16123"
+  HREF="node929.html">La droite et la droite orient&#233;e en g&#233;om&#233;trie plane : <TT>line droite</TT></A>
+<LI><A NAME="tex2html16124"
+  HREF="node930.html">La demi-droite en g&#233;om&#233;trie plane : <TT>half_line demi_droite</TT></A>
+<LI><A NAME="tex2html16125"
+  HREF="node931.html">Le segment en g&#233;om&#233;trie plane : <TT>segment</TT></A>
+<LI><A NAME="tex2html16126"
+  HREF="node932.html">Le segment : <TT>Line</TT></A>
+<LI><A NAME="tex2html16127"
+  HREF="node933.html">Le vecteur en g&#233;om&#233;trie plane : <TT>vecteur</TT></A>
+<LI><A NAME="tex2html16128"
+  HREF="node934.html">Les droites parall&#232;les : <TT>parallel parallele</TT></A>
+<LI><A NAME="tex2html16129"
+  HREF="node935.html">Les droites perpendiculaires en 2D : <TT>perpendicular perpendiculaire</TT></A>
+<LI><A NAME="tex2html16130"
+  HREF="node936.html">Les tangentes &#224; un objet g&#233;om&#233;trique plan : <TT>tangent</TT></A>
+<LI><A NAME="tex2html16131"
+  HREF="node937.html">La m&#233;diane d'un triangle issue d'un sommet : <TT>median_line mediane</TT></A>
+<LI><A NAME="tex2html16132"
+  HREF="node938.html">La hauteur d'un triangle issue d'un sommet : <TT>altitude hauteur</TT></A>
+<LI><A NAME="tex2html16133"
+  HREF="node939.html">La m&#233;diatrice d'un segment : <TT>perpen_bisector mediatrice</TT></A>
+<LI><A NAME="tex2html16134"
+  HREF="node940.html">La bissectrice int&#233;rieure d'un angle : <TT>bisector bissectrice</TT></A>
+<LI><A NAME="tex2html16135"
+  HREF="node941.html">La bissectrice ext&#233;rieur d'un angle : <TT>exbisector exbissectrice</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16136"
+  HREF="node942.html">Les triangles</A>
+<UL>
+<LI><A NAME="tex2html16137"
+  HREF="node943.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html16138"
+  HREF="node944.html">Le triangle quelconque : <TT>triangle</TT></A>
+<LI><A NAME="tex2html16139"
+  HREF="node945.html">Le triangle isoc&#232;le : <TT>isoceles_triangle triangle_isocele</TT></A>
+<LI><A NAME="tex2html16140"
+  HREF="node946.html">Le triangle rectangle : <TT>right_triangle triangle_rectangle</TT></A>
+<LI><A NAME="tex2html16141"
+  HREF="node947.html">Le triangle &#233;quilat&#232;ral : <TT>equilateral_triangle triangle_equilateral</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16142"
+  HREF="node948.html">Les quadrilat&#232;res</A>
+<UL>
+<LI><A NAME="tex2html16143"
+  HREF="node949.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html16144"
+  HREF="node950.html">Le carr&#233; : <TT>square carre</TT></A>
+<LI><A NAME="tex2html16145"
+  HREF="node951.html">Le losange : <TT>rhombus losange</TT></A>
+<LI><A NAME="tex2html16146"
+  HREF="node952.html">Le rectangle : <TT>rectangle</TT></A>
+<LI><A NAME="tex2html16147"
+  HREF="node953.html">Le parall&#233;logramme : <TT>parallelogram parallelogramme</TT></A>
+<LI><A NAME="tex2html16148"
+  HREF="node954.html">Le quadrilat&#232;re : <TT>quadrilateral quadrilatere</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16149"
+  HREF="node955.html">Les polygones</A>
+<UL>
+<LI><A NAME="tex2html16150"
+  HREF="node956.html">L'hexagone : <TT>hexagon hexagone</TT></A>
+<LI><A NAME="tex2html16151"
+  HREF="node957.html">Les polygones r&#233;guliers : <TT>isopolygon isopolygone</TT></A>
+<LI><A NAME="tex2html16152"
+  HREF="node958.html">Le polygone : <TT>polygon polygone</TT></A>
+<LI><A NAME="tex2html16153"
+  HREF="node959.html">La ligne polygonale : <TT>open_polygon polygone_ouvert</TT></A>
+<LI><A NAME="tex2html16154"
+  HREF="node960.html">L'enveloppe convexe de points du plan: <TT>convexhull</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16155"
+  HREF="node961.html">Les cercles</A>
+<UL>
+<LI><A NAME="tex2html16156"
+  HREF="node962.html">Le cercle : <TT>circle cercle</TT></A>
+<LI><A NAME="tex2html16157"
+  HREF="node963.html">Les arcs de cercle : <TT>arc</TT></A>
+<LI><A NAME="tex2html16158"
+  HREF="node964.html">Le cercle (compatibilit&#233; TI): <TT>Circle</TT></A>
+<LI><A NAME="tex2html16159"
+  HREF="node965.html">Le cercle inscrit : <TT>incircle inscrit</TT></A>
+<LI><A NAME="tex2html16160"
+  HREF="node966.html">Le cercle circonscrit : <TT>circumcircle circonscrit</TT></A>
+<LI><A NAME="tex2html16161"
+  HREF="node967.html">Le cercle exinscrit : <TT>excircle exinscrit</TT></A>
+<LI><A NAME="tex2html16162"
+  HREF="node968.html">Puissance d'un point par rapport &#224; un cercle : <TT>powerpc puissance</TT></A>
+<LI><A NAME="tex2html16163"
+  HREF="node969.html">Axe radical de deux cercles : <TT>radical_axis axe_radical</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16164"
+  HREF="node970.html">Les coniques</A>
+<UL>
+<LI><A NAME="tex2html16165"
+  HREF="node971.html">L'ellipse : <TT>ellipse</TT></A>
+<LI><A NAME="tex2html16166"
+  HREF="node972.html">L'hyperbole : <TT>hyperbola hyperbole</TT></A>
+<LI><A NAME="tex2html16167"
+  HREF="node973.html">La parabole : <TT>parabola parabole</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16168"
+  HREF="node974.html">Les mesures</A>
+<UL>
+<LI><A NAME="tex2html16169"
+  HREF="node975.html">L'affixe d'un point ou d'un vecteur : <TT>affix affixe</TT></A>
+<LI><A NAME="tex2html16170"
+  HREF="node976.html">L'abscisse d'un point ou d'un  vecteur : <TT>abscissa abscisse</TT></A>
+<LI><A NAME="tex2html16171"
+  HREF="node977.html">L'ordonn&#233;e d'un point ou d'un  vecteur : <TT>ordinate ordonnee</TT></A>
+<LI><A NAME="tex2html16172"
+  HREF="node978.html">Les coordonn&#233;es d'un point, d'un  vecteur ou d'une droite : <TT>coordinates coordonnees</TT></A>
+<LI><A NAME="tex2html16173"
+  HREF="node979.html">L'&#233;quation cart&#233;sienne d'un objet g&#233;om&#233;trique : <TT>equation</TT></A>
+<LI><A NAME="tex2html16174"
+  HREF="node980.html">L'&#233;quation param&#233;trique d'un objet g&#233;om&#233;trique : <TT>parameq</TT></A>
+<LI><A NAME="tex2html16175"
+  HREF="node981.html">La longueur d'un segment: <TT>distance longueur</TT></A>
+<LI><A NAME="tex2html16176"
+  HREF="node982.html">Le carr&#233; de la longueur d'un segment : <TT>distance2 longueur2</TT></A>
+<LI><A NAME="tex2html16177"
+  HREF="node983.html">La mesure d'un angle : <TT>angle</TT></A>
+<LI><A NAME="tex2html16178"
+  HREF="node984.html">Le rayon d'un cercle : <TT>radius rayon</TT></A>
+<LI><A NAME="tex2html16179"
+  HREF="node985.html">La longueur d'un vecteur : <TT>abs</TT></A>
+<LI><A NAME="tex2html16180"
+  HREF="node986.html">L'angle d'un vecteur avec Ox : <TT>arg</TT></A>
+<LI><A NAME="tex2html16181"
+  HREF="node987.html">Pour normaliser un nombre complexe : <TT>normalize</TT></A>
+<LI><A NAME="tex2html16182"
+  HREF="node988.html">Aire d'un polygone : <TT>area aire</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16183"
+  HREF="node989.html">Les transformations</A>
+<UL>
+<LI><A NAME="tex2html16184"
+  HREF="node990.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html16185"
+  HREF="node991.html">La translation : <TT>translation</TT></A>
+<LI><A NAME="tex2html16186"
+  HREF="node992.html">La sym&#233;trie droite et la sym&#233;trie point : <TT>reflection symetrie</TT></A>
+<LI><A NAME="tex2html16187"
+  HREF="node993.html">La rotation : <TT>rotation</TT></A>
+<LI><A NAME="tex2html16188"
+  HREF="node994.html">L'homoth&#233;tie : <TT>homothety homothetie</TT></A>
+<LI><A NAME="tex2html16189"
+  HREF="node995.html">La similitude : <TT>similarity similitude</TT></A>
+<LI><A NAME="tex2html16190"
+  HREF="node996.html">L'inversion : <TT>inversion</TT></A>
+<LI><A NAME="tex2html16191"
+  HREF="node997.html">La projection orthogonale : <TT>projection</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16192"
+  HREF="node998.html">Les propri&#233;t&#233;s</A>
+<UL>
+<LI><A NAME="tex2html16193"
+  HREF="node999.html">Savoir si 1 point est sur un objet graphique : <TT>is_element est_element</TT></A>
+<LI><A NAME="tex2html16194"
+  HREF="node1000.html">Savoir si 3 points sont align&#233;s : <TT>is_collinear est_aligne</TT></A>
+<LI><A NAME="tex2html16195"
+  HREF="node1001.html">Savoir si 4 points sont cocycliques : <TT>is_cocyclic est_cocyclique</TT></A>
+<LI><A NAME="tex2html16196"
+  HREF="node1002.html">Savoir si on a un triangle &#233;quilat&#233;ral : <TT>is_equilateral est_equilateral</TT></A>
+<LI><A NAME="tex2html16197"
+  HREF="node1003.html">Savoir si on a un triangle isoc&#233;le : <TT>is_isoceles est_isocele</TT></A>
+<LI><A NAME="tex2html16198"
+  HREF="node1004.html">Savoir si on a un triangle rectangle ou si on a un rectangle : <TT>est_rectangle</TT></A>
+<LI><A NAME="tex2html16199"
+  HREF="node1005.html">Savoir si on a un carr&#233; : <TT>is_square est_carre</TT></A>
+<LI><A NAME="tex2html16200"
+  HREF="node1006.html">Savoir si on a un losange : <TT>is_rhombus est_losange</TT></A>
+<LI><A NAME="tex2html16201"
+  HREF="node1007.html">Savoir si on a un parall&#233;logramme : <TT>is_parallelogram est_parallelogramme</TT></A>
+<LI><A NAME="tex2html16202"
+  HREF="node1008.html">Savoir si 2 droites sont parall&#232;les : <TT>is_parallel est_parallele</TT></A>
+<LI><A NAME="tex2html16203"
+  HREF="node1009.html">Savoir si 2 droites 2D sont perpendiculaires : <TT>is_perpendicular est_perpendiculaire</TT></A>
+<LI><A NAME="tex2html16204"
+  HREF="node1010.html">Savoir si 2 cercles sont orthogonaux : <TT>is_orthogonal est_orthogonal</TT></A>
+<LI><A NAME="tex2html16205"
+  HREF="node1011.html">Savoir si des &#233;l&#233;ments sont conjugu&#233;s : <TT>is_conjugate est_conjugue</TT></A>
+<LI><A NAME="tex2html16206"
+  HREF="node1012.html">Ces droites sont en faisceau ? <TT>is_harmonic_line_bundle est_faisceau_droite</TT></A>
+<LI><A NAME="tex2html16207"
+  HREF="node1013.html">Ces cercles sont-ils en faisceau : <TT>is_harmonic_circle_bundle est_faisceau_cercle</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16208"
+  HREF="node1014.html">La division harmonique, p&#244;les et polaires</A>
+<UL>
+<LI><A NAME="tex2html16209"
+  HREF="node1015.html">Point divisant un segment dans le rapport <I>k</I> : <TT>division_point point_div</TT></A>
+<LI><A NAME="tex2html16210"
+  HREF="node1016.html">Le birapport de 4 points align&#233;s : <TT>cross_ratio birapport</TT></A>
+<LI><A NAME="tex2html16211"
+  HREF="node1017.html">Division harmonique : <TT>harmonic_division div_harmonique</TT></A>
+<LI><A NAME="tex2html16212"
+  HREF="node1018.html">Le conjugu&#233; harmonique : <TT>harmonic_conjugate conj_harmonique</TT></A>
+<LI><A NAME="tex2html16213"
+  HREF="node1019.html">P&#244;le et polaire : <TT>pole</TT> et <TT>polar polaire</TT></A>
+<LI><A NAME="tex2html16214"
+  HREF="node1020.html">Polaire r&#233;ciproque: <TT>reciprocation polaire_reciproque</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html16215"
+  HREF="node1021.html">Les lieux et les enveloppes</A>
+<UL>
+<LI><A NAME="tex2html16216"
+  HREF="node1022.html">Les lieux : <TT>locus lieu</TT></A>
+<LI><A NAME="tex2html16217"
+  HREF="node1023.html">Les enveloppes : <TT>envelope enveloppe</TT></A>
+<LI><A NAME="tex2html16218"
+  HREF="node1024.html">La trace d'un objet g&#233;om&#233;trique: <TT>trace</TT></A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

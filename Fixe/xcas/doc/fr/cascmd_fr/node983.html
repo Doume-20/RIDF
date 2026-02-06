@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La mesure d'un angle : angle</TITLE>
+<META NAME="description" CONTENT="La mesure d'un angle : angle">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node984.html">
+<LINK REL="previous" HREF="node982.html">
+<LINK REL="up" HREF="node974.html">
+<LINK REL="next" HREF="node984.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17645"
+  HREF="node984.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17639"
+  HREF="node974.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17633"
+  HREF="node982.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17641"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17643"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17646"
+  HREF="node984.html">Le rayon d'un cercle</A>
+<B> monter:</B> <A NAME="tex2html17640"
+  HREF="node974.html">Les mesures</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17634"
+  HREF="node982.html">Le carr&#233; de la</A>
+ &nbsp; <B>  <A NAME="tex2html17642"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17644"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012169000000000000000"></A><A NAME="25745"></A>
+<A NAME="sec:angle2"></A>
+<BR>
+La mesure d'un angle : <TT>angle</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1082.html#sec:angle3">10.11.9</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>angle</TT> a comme argument trois points (ou trois nombres 
+complexes qui sont l'affixe de ces points) et &#233;ventuellement une chaine 
+de caract&#232;res pour afficher un petit arc de cercle avec ce symbole en 
+l&#233;gende afin de repr&#233;senter l'angle sur la figure (l'arc est 
+remplac&#233; par le symbole quart de carre si l'angle vaut pi/2 ou -pi/2).
+<BR><TT>angle</TT>  renvoie la mesure (en radians (ou en degr&#233;s) de 
+l'angle orient&#233;  de sommet le premier argument, le deuxi&#232;me argument se 
+trouve sur le premier cot&#233; de l'angle  et le troisi&#232;me argument se 
+trouve sur le deuxi&#233;me cot&#233;.
+<BR>
+Ainsi <TT>angle(A,B,C)</TT> d&#233;signe la mesure de l'angle en radians (
+ou en degr&#233;s)
+<!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})$
+ -->
+(<IMG
+ WIDTH="73" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img583.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})$">.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>angle(0,1,1+i) </TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du 
+<TT>cas</TT> (bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>pi/4</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>angle(0,1,1+i,"") </TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du 
+<TT>cas</TT> (bouton on rouge donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>[pi/4,cercle(point(0,0),1/5)]</TT>
+</DIV>
+et l'angle est rep&#233;r&#233; par un arc de cercle sans l&#233;gende.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>angle(0,1,1+i,"a")</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du 
+<TT>cas</TT> (bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>[pi/4,cercle(point(0,0),1/5)]</TT>
+</DIV>
+et l'angle est rep&#233;r&#233; par un arc de cercle avec <TT>a</TT> comme
+l&#233;gende.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>angle(0,1,i,"a") </TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du 
+<TT>cas</TT> (bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>[pi/2,polygone(point(1/5,0),point(1/5,1/5),point(0,1/5),point(0,1/5))]</TT>
+</DIV>
+et l'angle droit est rep&#233;r&#233; par un quart de carr&#233; avec <TT>a</TT> 
+comme l&#233;gende.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17645"
+  HREF="node984.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17639"
+  HREF="node974.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17633"
+  HREF="node982.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17641"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17643"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17646"
+  HREF="node984.html">Le rayon d'un cercle</A>
+<B> monter:</B> <A NAME="tex2html17640"
+  HREF="node974.html">Les mesures</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17634"
+  HREF="node982.html">Le carr&#233; de la</A>
+ &nbsp; <B>  <A NAME="tex2html17642"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17644"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

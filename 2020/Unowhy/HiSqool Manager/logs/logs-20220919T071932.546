@@ -1,0 +1,64 @@
+2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/educadhoc_9.0.19.jar... +3ms
+2022-09-19 07:18:05.014: 2022-09-19 9:18:05 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Error, error=Network, active=true +3ms
+2022-09-19 07:18:05.022: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_4.0.6.jar... +4ms
+2022-09-19 07:18:05.166: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Got response 200. +150ms
+2022-09-19 07:18:05.207: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Response content length is 66833251  +1ms
+2022-09-19 07:18:05.207: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Got response 200. +29ms
+2022-09-19 07:18:05.207: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Response content length is 43905510  +1ms
+2022-09-19 07:18:05.217: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Got response 200. +20ms
+2022-09-19 07:18:05.217: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Response content length is 168931842  +0ms
+2022-09-19 07:18:05.257: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Got response 200. +35ms
+2022-09-19 07:18:05.257: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] Response content length is 80874641  +1ms
+2022-09-19 07:18:40.915: 2022-09-19 9:18:40 [4852] INFO [CommandService] Got command facts:set +35659ms
+2022-09-19 07:18:40.923: 2022-09-19 9:18:40 [4852] INFO [CommandService] Got command facts:set +5ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [CommandService] Got command units:trigger +3ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> login... +1ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> login... +1ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> login... +1ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +1ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +1ms
+2022-09-19 07:18:40.926: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +1ms
+2022-09-19 07:18:40.934: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> login... +1ms
+2022-09-19 07:18:40.934: 2022-09-19 9:18:40 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +1ms
+2022-09-19 07:18:40.936: 127.0.0.1 - - [19/Sep/2022:07:18:40 +0000] "POST /commands HTTP/1.1" 200 29 "-" "-"
+2022-09-19 07:19:23.798: 2022-09-19 9:19:23 [4852] INFO [RequestPerformerService] Download finished undefined. +42864ms
+2022-09-19 07:19:23.798: 2022-09-19 9:19:23 [4852] INFO [RequestPerformerService] Digest: expected=cd24fc4cfad91883a267257c6ea8a359, actual=cd24fc4cfad91883a267257c6ea8a359. +1ms
+2022-09-19 07:19:23.798: 2022-09-19 9:19:23 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Downloaded, error=None, active=true +4ms
+2022-09-19 07:19:23.798: 2022-09-19 9:19:23 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload... +2ms
+2022-09-19 07:19:23.814: 2022-09-19 9:19:23 [4852] INFO [RequestPerformerService] Got disposed. +18ms
+2022-09-19 07:19:23.814: 2022-09-19 9:19:23 [4852] INFO [RequestPerformerService] Complete. +1ms
+2022-09-19 07:19:31.483: 2022-09-19 9:19:31 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Ok, error=None, active=true +7656ms
+2022-09-19 07:19:31.483: 2022-09-19 9:19:31 [4852] INFO [PayloadDispatcher] Emitting 9 entries ["__/conf/agents/facts","conf/application/windows/Biblio-Manuels-Windows-3.11.0","conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/LGPO-Windows","conf/application/windows/Microsoft-Office-1.0.0","conf/application/windows/sqoolctl","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows"] +4ms
+2022-09-19 07:19:31.483: 2022-09-19 9:19:31 [4852] INFO [ConfigurationRunner] Processing for execution configuration with 9 keys +1ms
+2022-09-19 07:19:31.483: 2022-09-19 9:19:31 [4852] INFO [ConfigurationRunner] Got 9 configurations. 1 in, 0 out +0ms
+2022-09-19 07:19:31.483: 2022-09-19 9:19:31 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +1ms
+2022-09-19 07:19:31.491: 2022-09-19 9:19:31 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +3ms
+2022-09-19 07:19:31.523: 2022-09-19 9:19:31 [4852] INFO [Runner] Creating configuration unit runner object... +38ms
+2022-09-19 07:19:31.523: 2022-09-19 9:19:31 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-19 07:19:31.531: 2022-09-19 9:19:31 [4852] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2022-09-19 07:19:31.534: 2022-09-19 9:19:31 [4852] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2022-09-19 07:19:31.534: 2022-09-19 9:19:31 [4852] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2022-09-19 07:19:31.534: 2022-09-19 9:19:31 [4852] INFO [SchedulerService] Identical schedule existing. Doing nothing +0ms
+2022-09-19 07:19:31.534: 2022-09-19 9:19:31 [4852] INFO [JS] Scheduling result: undefined +1ms
+2022-09-19 07:19:31.534: 2022-09-19 9:19:31 [4852] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Biblio-Manuels-Windows-3.11.0... +1ms
+2022-09-19 07:19:31.534: 2022-09-19 9:19:31 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows-3.11.0 -> configuration... +2ms
+2022-09-19 07:19:31.542: 2022-09-19 9:19:31 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload... +2ms
+2022-09-19 07:19:32.202: 2022-09-19 9:19:32 [4852] INFO [Runner] Creating configuration unit runner object... +663ms
+2022-09-19 07:19:32.202: 2022-09-19 9:19:32 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-19 07:19:32.202: 2022-09-19 9:19:32 [4852] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-09-19 07:19:32.384: 2022-09-19 9:19:32 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> configuration... +178ms
+2022-09-19 07:19:32.384: 2022-09-19 9:19:32 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2022-09-19 07:19:32.414: 2022-09-19 9:19:32 [4852] INFO [Runner] Creating configuration unit runner object... +31ms
+2022-09-19 07:19:32.414: 2022-09-19 9:19:32 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-19 07:19:32.414: 2022-09-19 9:19:32 [4852] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-09-19 07:19:32.455: 2022-09-19 9:19:32 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +32ms
+2022-09-19 07:19:32.455: 2022-09-19 9:19:32 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +3ms
+2022-09-19 07:19:32.496: 2022-09-19 9:19:32 [4852] INFO [Runner] Creating configuration unit runner object... +42ms
+2022-09-19 07:19:32.496: 2022-09-19 9:19:32 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-19 07:19:32.496: 2022-09-19 9:19:32 [4852] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-09-19 07:19:32.514: 2022-09-19 9:19:32 [4852] INFO [JS] Getting GPO version... +7ms
+2022-09-19 07:19:32.516: 2022-09-19 9:19:32 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +2ms
+2022-09-19 07:19:32.516: 2022-09-19 9:19:32 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +1ms
+2022-09-19 07:19:32.536: 2022-09-19 9:19:32 [4852] INFO [Runner] Creating configuration unit runner object... +24ms
+2022-09-19 07:19:32.546: 2022-09-19 9:19:32 [4852] INFO [Runner] Checking if runner needs to be performed... +5ms
+2022-09-19 07:19:32.546: 2022-09-19 9:19:32 [4852] INFO [JS] Checking that the unit needs to be performed +2ms

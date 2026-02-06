@@ -1,0 +1,55 @@
+{
+  "conf/application/windows/Drive-monlycee.net-3.12.1.20241004": {
+    "description": "Installation de l'application Drive monlycee.net 3.12.1.20241004",
+    "payload": {
+      "id": 2334,
+      "name": "Monlyc\u00e9e.net-Drive 3.12.1.20241004 (Windows)",
+      "description": "Drive Monlyc\u00e9e.net 3.12.1.20241004",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar",
+      "size": 93313406,
+      "digest": "MD5:373720ea8b3340469cc09d85b84c697c",
+      "metadata": {
+        "software": {
+          "id": "Monlyc\u00e9e.net-Drive",
+          "version": "3.12.1.20241004"
+        },
+        "versionName": "3.12.1.20241004",
+        "applicationLabel": "Drive Monlyc\u00e9e.net"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Utilitaires-de-gestion-Unowhy-Windows-0.9.101": {
+    "description": "Installation de l'application Utilitaires de gestion Unowhy Windows 0.9.101",
+    "payload": {
+      "id": 2163,
+      "name": "Utilitaires de gestion Unowhy Windows 0.9.101",
+      "description": "Utilitaires de gestion Unowhy 0.9.101",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar",
+      "size": 27389196,
+      "digest": "MD5:e878cbf37cd2b15f0b0d908028cc8d4d",
+      "metadata": {
+        "software": {
+          "id": "sqoolctl",
+          "version": "0.9.101"
+        },
+        "versionName": "0.9.101",
+        "packageVersion": "0.9.101",
+        "applicationLabel": "Utilitaires de gestion Unowhy"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  }
+}

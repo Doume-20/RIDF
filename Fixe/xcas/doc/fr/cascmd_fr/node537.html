@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Inverse d'une matrice de /p : Inverse</TITLE>
+<META NAME="description" CONTENT="Inverse d'une matrice de /p : Inverse">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node538.html">
+<LINK REL="previous" HREF="node536.html">
+<LINK REL="up" HREF="node531.html">
+<LINK REL="next" HREF="node538.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10828"
+  HREF="node538.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10822"
+  HREF="node531.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10816"
+  HREF="node536.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10824"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10826"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10829"
+  HREF="node538.html">R&#233;solution d'un syst&#232;me lin&#233;aire</A>
+<B> monter:</B> <A NAME="tex2html10823"
+  HREF="node531.html">Le calcul modulaire comme</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10817"
+  HREF="node536.html">D&#233;terminant d'une matrice de</A>
+ &nbsp; <B>  <A NAME="tex2html10825"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10827"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009336000000000000000"></A><A NAME="13667"></A>
+<BR>
+Inverse d'une matrice de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>Inverse</TT>
+</H2>
+<TT>Inverse</TT> a pour argument une matrice <I>A</I> de <I>Z</I>/<I>pZ</I>.
+<BR><TT>Inverse</TT> renvoie <TT>inverse</TT> sans l'&#233;valuer. Ensuite, 
+<TT>inverse</TT> calcule, dans  <I>Z</I>/<I>pZ</I>, l'inverse de la matrice <I>A</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Inverse([[1,2,9] mod 13,[3,10,0] mod 13,[3,11,1] mod13])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>Inverse([[1,2,9],[3,10,0],[3,11,1]] mod 13)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>Inverse([[1,2,9]%13,[3,10,0]%13,[3,11,1]%13])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>Inverse([[1,2,9],[3,10,0],[3,11,1]]%13)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>inverse([[1%13,2%13,9%13],[3%13,10%13,0%13], [3%13,11%13,1%13]])</TT>
+</DIV>
+puis :
+<DIV ALIGN="CENTER">
+<TT>[[2%13,-4%13,-5%13],[2%13,0%13,-5%13], [-2%13,-1%13,6%13]]</TT>
+</DIV>
+c'est l'inverse de la matrice  <!-- MATH
+ $A=[[1,2,9],[3,10,0],[3,11,1]]$
+ -->
+<I>A</I> = [[1, 2, 9],[3, 10, 0],[3, 11, 1]] dans  <I>Z</I>/13<I>Z</I>.
+<BR><B>Attention</B> en mode <TT>Maple</TT> on tape :
+<DIV ALIGN="CENTER">
+<TT>Inverse([[1,2,9],[3,10,0],[3,11,1]]) mod 13</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[2,-4,-5],[2,0,-5],[-2,-1,6]]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

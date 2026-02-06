@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Proc&#233;d&#233; de Gramschmidt : gramschmidt</TITLE>
+<META NAME="description" CONTENT="Proc&#233;d&#233; de Gramschmidt : gramschmidt">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node721.html">
+<LINK REL="previous" HREF="node719.html">
+<LINK REL="up" HREF="node716.html">
+<LINK REL="next" HREF="node721.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13529"
+  HREF="node721.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13523"
+  HREF="node716.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13517"
+  HREF="node719.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13525"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13527"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13530"
+  HREF="node721.html">Trac&#233; d'une conique :</A>
+<B> monter:</B> <A NAME="tex2html13524"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13518"
+  HREF="node719.html">M&#233;thode de Gauss :</A>
+ &nbsp; <B>  <A NAME="tex2html13526"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13528"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009504000000000000000"></A><A NAME="18515"></A>
+<BR>
+Proc&#233;d&#233; de Gramschmidt : <TT>gramschmidt</TT>
+</H2>
+<TT>gramschmidt</TT> a un ou deux param&#232;tres : 
+
+<UL>
+<LI>une matrice vue comme une liste de vecteurs lignes, 
+ le produit scalaire &#232;tant le  produit scalaire canonique, ou
+</LI>
+<LI>un vecteur contenant la base d'un espace vectoriel et une fonction qui 
+d&#233;finit un produit scalaire.
+<BR></LI>
+</UL>
+<TT>gramschmidt</TT> donne une base orthonormale par rapport &#224; ce produit 
+scalaire.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(gramschmidt([[1,1,1],[0,0,1],[0,1,0]]))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>normal(gramschmidt([[1,1,1],[0,0,1],[0,1,0]], dot))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[(sqrt(3))/3,(sqrt(3))/3,(sqrt(3))/3],[(-(sqrt(6)))/6,(-(sqrt(6)))/6,(sqrt(6))/3],[(-(sqrt(2)))/2,(sqrt(2))/2,0]]</TT>
+</DIV>
+<B>Exemple</B>
+<BR>
+Pour les polyn&#244;mes de degr&#233; &lt;<I>n</I>, on consid&#232;re le produit scalaire 
+d&#233;fini par : 
+<P><!-- MATH
+ \begin{displaymath}
+P.Q=\int_{-1}^1P(x).Q(x)dx
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>P</I>.<I>Q</I> = <IMG
+ WIDTH="32" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img468.png"
+ ALT="$\displaystyle \int_{{-1}}^{1}$"><I>P</I>(<I>x</I>).<I>Q</I>(<I>x</I>)<I>dx</I>
+</DIV><P></P>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>gramschmidt([1,1+x],(p,q)-&gt;integrate(p*q,x,-1,1))</TT>
+</DIV>
+Ou on  &#233;crit la fonction <TT>p_scal</TT>, on tape :
+<BR><TT>p_scal(p,q):=integrate(p*q,x,-1,1)</TT>
+<BR>
+et on tape :
+ <DIV ALIGN="CENTER">
+<TT>gramschmidt([1,1+x],p_scal)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1/(sqrt(2)),(1+x-1)/sqrt(2/3)]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

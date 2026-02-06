@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Construire un polyn&#244;me de n variables : genpoly</TITLE>
+<META NAME="description" CONTENT="Construire un polyn&#244;me de n variables : genpoly">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node490.html">
+<LINK REL="up" HREF="node488.html">
+<LINK REL="next" HREF="node492.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10150"
+  HREF="node492.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10144"
+  HREF="node488.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10140"
+  HREF="node490.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10146"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10148"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10151"
+  HREF="node492.html">Les fractions rationnelles</A>
+<B> monter:</B> <A NAME="tex2html10145"
+  HREF="node488.html">Base et r&#233;duction de</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10141"
+  HREF="node490.html">R&#233;duction par rapport à</A>
+ &nbsp; <B>  <A NAME="tex2html10147"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10149"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009283000000000000000"></A><A NAME="12701"></A>
+<BR>
+Construire un polyn&#244;me de n variables : <TT>genpoly</TT>
+</H2>
+<TT>genpoly</TT> a trois arguments : un polyn&#244;me <I>P</I> de <I>n</I> - 1 variables, un entier <I>b</I> et le nom d'une variable <TT>var</TT>.
+<BR><TT>genpoly</TT> renvoie le polyn&#244;me <I>Q</I> de <I>n</I> variables (celles de <I>P</I> et celle donn&#233;e dans l'argument), construit &#224; partir de <I>P</I> pour avoir :
+<BR> <TT>subst(Q,var=b)=P</TT> et de plus
+ les coefficients de <I>Q</I> sont dans l'intervalle  <!-- MATH
+ $]-b/2 \ ; \ b/2]$
+ -->
+] - <I>b</I>/2&nbsp;;&nbsp;<I>b</I>/2]
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>genpoly(61,6,x) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*x<code>^</code>2-2*x+1</TT>
+</DIV>
+En effet, on a : <!-- MATH
+ $61=6^2+4*6+1$
+ -->
+61 = 6<SUP>2</SUP> + 4*6 + 1 mais les coefficients des puissances de 6 
+doivent &#234;tre dans l'intervalle  <!-- MATH
+ $]-3 \ ; \ 3]$
+ -->
+] - 3&nbsp;;&nbsp;3] donc on &#233;crit 
+<!-- MATH
+ $61=2*6^2-2*6+1$
+ -->
+61 = 2*6<SUP>2</SUP> - 2*6 + 1
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>genpoly(5,6,x) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x-1</TT>
+</DIV>
+En effet : 5 = 6 - 1
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>genpoly(7,6,x) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x+1</TT>
+</DIV>
+En effet : 7 = 6 + 1
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>genpoly(7*y+5,6,x) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*y+x+y-1</TT>
+</DIV>
+En effet : <!-- MATH
+ $x*y+x+y-1=y(x+1)+(x-1)$
+ -->
+<I>x</I>*<I>y</I> + <I>x</I> + <I>y</I> - 1 = <I>y</I>(<I>x</I> + 1) + (<I>x</I> - 1)
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>genpoly(7*y+5*z<code>^2</code>,6,x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*y+x*z+y-z</TT>
+</DIV>
+En effet : <!-- MATH
+ $x*y+x*z+y-z=y*(x+1)+z*(x-1)$
+ -->
+<I>x</I>*<I>y</I> + <I>x</I>*<I>z</I> + <I>y</I> - <I>z</I> = <I>y</I>*(<I>x</I> + 1) + <I>z</I>*(<I>x</I> - 1)
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10150"
+  HREF="node492.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10144"
+  HREF="node488.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10140"
+  HREF="node490.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10146"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10148"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10151"
+  HREF="node492.html">Les fractions rationnelles</A>
+<B> monter:</B> <A NAME="tex2html10145"
+  HREF="node488.html">Base et r&#233;duction de</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10141"
+  HREF="node490.html">R&#233;duction par rapport à</A>
+ &nbsp; <B>  <A NAME="tex2html10147"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10149"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

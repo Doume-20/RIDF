@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Description du tableur</TITLE>
+<META NAME="description" CONTENT="Description du tableur">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node75.html">
+<LINK REL="previous" HREF="node73.html">
+<LINK REL="up" HREF="node71.html">
+<LINK REL="next" HREF="node75.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1246"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1240"
+  HREF="node71.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1234"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1242"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1244"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1247"
+  HREF="node75.html">L'&#233;cran de représentation graphique</A>
+<B> monter:</B> <A NAME="tex2html1241"
+  HREF="node71.html">Le tableur</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1235"
+  HREF="node73.html">Comment avoir un tableur</A>
+ &nbsp; <B>  <A NAME="tex2html1243"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1245"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000183000000000000000">
+Description du tableur</A>
+</H2>
+Les deux premi&#232;res lignes du tableur sont  : 
+
+<UL>
+<LI>une ligne compos&#233;e 
+de deux cases :
+
+<UL>
+<LI>une case de s&#233;lection qui permet soit de s&#233;lectionner une cellule 
+(en tapant par exemple <TT>B0</TT>) ou un sous tableau (en tapant par exemple 
+<TT>B0..D3</TT>), ou des colonnes non contig&#252;es (par exemple 
+<TT>B0..3,D</TT>), soit de savoir ce que l'on a s&#233;lectionn&#233;. 
+</LI>
+<LI>une ligne de commandes qui permet de modifier une cellule du tableur ou 
+de savoir ce qui se trouve dans cette cellule.
+
+<P>
+<B>Attention</B>
+Si le curseur
+est dans cette ligne de commandes, lorsqu'on clique dans une case, c'est le 
+nom de cette case qui va s'afficher dans cette ligne, sans changer la case de 
+s&#233;lection. Pour enlever le curseur tapez sur <TT>Echap</TT> ou <TT>Escape</TT> ou
+encore sur la touche d'effacement <!-- MATH
+ $\longleftarrow$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img70.png"
+ ALT="$ \longleftarrow$"> jusqu'au d&#233;but
+de ligne puis encore une fois.
+
+<P>
+Si le curseur n'est pas dans la ligne de commandes, lorsqu'on clique dans une 
+case, c'est la formule de cette case qui va s'afficher dans cette ligne, en
+mettant son nom dans la case de s&#233;lection (pour avoir la valeur de cette case
+il faut appuyer sur le bouton <TT>val</TT>). 
+</LI>
+</UL>
+</LI>
+<LI>la ligne d'&#233;tat rappelant la configuration choisie et servant aussi de 
+bouton permettant de changer cette configuration.
+ On d&#233;termine la configuration dans le menu 
+<TT>Edit<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Configuration</TT> du tableur ou en cliquant sur 
+cette ligne d'&#233;tat.
+On a par exemple dans la ligne d'&#233;tat :
+<BR><TT>* Spreadsheet A R40C6 auto down fill</TT> 
+<BR>
+cela veut dire que l'on a un tableur qui a &#233;t&#233; modifi&#233; depuis la 
+derni&#232;re sauvegarde (<TT>*</TT>), de nom de variable <TT>A</TT> qui a 40 lignes
+et 6 colonnes, il est r&#233;&#233;valu&#233; automatiquement, le curseur se d&#233;place 
+vers le bas lorsqu'on vient de remplir une cellule et une matrice remplit 
+plusieurs cellules.
+
+<P>
+Autre exemple :
+<BR><TT>- Matrix &lt;&gt; R4C6 manual right cell</TT>
+<BR>
+cela veut dire que l'on a une matrice qui n'a pas &#233;t&#233; modifi&#233;e depuis la 
+derni&#232;re sauvegarde (<TT>-</TT>), il ne lui correspond pas de nom de variable
+(<TT>&lt;&gt;</TT>), elle a 4 lignes et 6 colonnes, elle n'est r&#233;&#233;valu&#233;e que si on 
+appuie sur le bouton <TT>eval</TT>, le curseur se d&#233;place vers la droite 
+lorsqu'on vient de remplir une cellule et une matrice remplit une seule 
+cellule.
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1246"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1240"
+  HREF="node71.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1234"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1242"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1244"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1247"
+  HREF="node75.html">L'&#233;cran de représentation graphique</A>
+<B> monter:</B> <A NAME="tex2html1241"
+  HREF="node71.html">Le tableur</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1235"
+  HREF="node73.html">Comment avoir un tableur</A>
+ &nbsp; <B>  <A NAME="tex2html1243"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1245"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

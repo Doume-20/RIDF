@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Modifier un &#233;l&#233;ment ou une ligne d'une matrice : subsop</TITLE>
+<META NAME="description" CONTENT="Modifier un &#233;l&#233;ment ou une ligne d'une matrice : subsop">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node643.html">
+<LINK REL="previous" HREF="node641.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node643.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12397"
+  HREF="node643.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12391"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12385"
+  HREF="node641.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12393"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12395"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12398"
+  HREF="node643.html">Extraire des lignes ou</A>
+<B> monter:</B> <A NAME="tex2html12392"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12386"
+  HREF="node641.html">Modifier un &#233;l&#233;ment ou</A>
+ &nbsp; <B>  <A NAME="tex2html12394"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12396"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094314000000000000000"></A><A NAME="16537"></A>
+<BR>
+Modifier un &#233;l&#233;ment ou une ligne d'une matrice : <TT>subsop</TT>
+</H2>
+<TT>subsop</TT> permet de modifier un &#233;l&#233;ment ou une ligne d'une 
+matrice sans avoir &#224; stocker la matrice dans une variable.
+
+<OL>
+<LI>Modification d'un &#233;l&#233;ment
+<BR><TT>subsop</TT> a deux ou trois arguments.
+<BR><B>Attention</B>
+<BR>
+En mode <TT>Maple</TT> les arguments sont permut&#233;s.
+<BR>
+<UL>
+<LI>En mode <TT>Xcas</TT>, les indices commence &#224; 0 :
+<BR><TT>subsop</TT> a deux (resp trois) arguments : une matrice <TT>A</TT> et une 
+&#233;galit&#233; <TT>[r,c]=v</TT> (resp une matrice <TT>A</TT>, la liste des indices de 
+la ligne et de la colonne  <TT>[r,c]</TT>, la nouvelle valeur <TT>v</TT>).
+<BR>
+On tape en mode <TT>Xcas</TT> :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],[1,0]=3)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],[1,0],3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[3,6]]</TT>
+</DIV>
+</LI>
+<LI>En mode <TT>Mupad, TI</TT>, les indices commencent &#224; 1 :
+<BR><TT>subsop</TT> a deux (resp trois) arguments : une matrice <TT>A</TT> et une 
+&#233;galit&#233; <TT>[r,c]=v</TT> (resp une matrice <TT>A</TT>, la liste des indices de 
+la ligne et de la colonne  <TT>[r,c]</TT>, la nouvelle valeur <TT>v</TT>).
+<BR>
+On tape en mode <TT>Mupad, TI</TT> :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],[2,1]=3)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],[2,1],3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[3,6]]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si la matrice a un nom par exemple :
+<BR><TT>A:=[[4,5],[2,6]]</TT>, on peut taper directement <TT>A[2,1]:=3</TT> pour modifier
+ <TT>A</TT> en la matrice <TT>[[4,5],[3,6]]</TT>.
+<BR>
+<P>
+</LI>
+<LI>En mode <TT>Maple</TT>, les arguments sont permut&#233;s et les indices 
+commencent &#224; 1 :
+<BR><TT>subsop</TT> a deux arguments : une &#233;galit&#233; <TT>[r,c]=v</TT> et une matrice 
+<TT>A</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subsop([2,1]=3,[[4,5],[2,6]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[3,6]]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si la matrice &#224; un nom par exemple :
+<BR><TT>A:=[[4,5],[2,6]]</TT>, on peut taper directement <TT>A[2,1]:=3</TT> pour modifier
+ <TT>A</TT> en la matrice <TT>[[4,5],[3,6]]</TT>.
+</LI>
+</UL>
+</LI>
+<LI>Modification d'une ligne
+<BR><TT>subsop</TT> permet de modifier une ligne d'une matrice sans 
+avoir &#224; stocker la matrice dans une variable.
+<BR><TT>subsop</TT> a alors deux arguments :
+<BR>
+<UL>
+<LI>En mode <TT>Xcas</TT>, les indices commence &#224; 0 :
+<BR><TT>subsop</TT> a deux arguments une matrice et une &#233;galit&#233;, &#224; savoir
+l'indice de la ligne &#224; modifier,
+ suivi du signe <TT>=</TT> puis la liste des nouvelles valeurs de cette ligne.
+<BR>
+On tape  en mode <TT>Xcas</TT> :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],1=[3,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[3,3]]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si la matrice &#224; un nom par exemple :
+<BR><TT>A:=[[4,5],[2,6]]</TT>, on peut taper directement <TT>A[1]:=[3,3</TT> pour 
+modifier <TT>A</TT> en la matrice <TT>[[4,5],[3,3]]</TT>.
+
+<P>
+</LI>
+<LI>En mode <TT>Mupad, TI</TT>, les indices commencent &#224; 1 :
+<BR><TT>subsop</TT> a deux arguments une matrice et une &#233;galit&#233;, &#224; savoir
+l'indice de la ligne &#224; modifier,
+ suivi du signe <TT>=</TT> puis la liste des nouvelles valeurs de cette ligne.
+<BR>
+On tape  en mode <TT>Mupad, TI</TT> :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],2=[3,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[3,3]]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si la matrice &#224; un nom par exemple :
+<BR><TT>A:=[[4,5],[2,6]]</TT>, on peut taper directement <TT>A[2]:=[3,3</TT> pour 
+modifier <TT>A</TT> en la matrice <TT>[[4,5],[3,3]]</TT>.
+
+<P>
+</LI>
+<LI>En mode <TT>Maple</TT> les arguments sont permut&#233;s et les indices 
+commencent &#224; 1 :
+<BR><TT>subsop</TT> a deux arguments  une &#233;galit&#233;, &#224; savoir l'indice de la 
+ligne &#224; modifier, suivi du signe <TT>=</TT> puis la liste des nouvelles valeurs 
+de cette ligne et une matrice.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subsop(2=[3,3],[[4,5],[2,6]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[3,3]]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si la matrice &#224; un nom par exemple :
+<BR><TT>A:=[[4,5],[2,6]]</TT>, on peut taper directement <TT>A[2]:=[3,3</TT> pour 
+modifier <TT>A</TT> en la matrice <TT>[[4,5],[3,3]]</TT>.
+</LI>
+</UL>
+</LI>
+</OL>
+<B>Remarque</B>
+<BR>
+On peut aussi supprimer la ligne <I>n</I> d'une matrice avec <TT>subsop</TT> 
+en mettant comme second argument <TT>'n=NULL'</TT>.
+<BR>
+On tape en mode <TT>Xcas</TT> :
+<DIV ALIGN="CENTER">
+<TT>subsop([[4,5],[2,6]],'1=NULL')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12397"
+  HREF="node643.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12391"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12385"
+  HREF="node641.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12393"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12395"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12398"
+  HREF="node643.html">Extraire des lignes ou</A>
+<B> monter:</B> <A NAME="tex2html12392"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12386"
+  HREF="node641.html">Modifier un &#233;l&#233;ment ou</A>
+ &nbsp; <B>  <A NAME="tex2html12394"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12396"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

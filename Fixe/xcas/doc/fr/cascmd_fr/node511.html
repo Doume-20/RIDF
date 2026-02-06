@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le calcul modulaire dans /p ou dans /p[x]</TITLE>
+<META NAME="description" CONTENT="Le calcul modulaire dans /p ou dans /p[x]">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node531.html">
+<LINK REL="previous" HREF="node508.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node512.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10440"
+  HREF="node512.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10434"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10428"
+  HREF="node510.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10436"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10438"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10441"
+  HREF="node512.html">D&#233;velopper et r&#233;duire :</A>
+<B> monter:</B> <A NAME="tex2html10435"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10429"
+  HREF="node510.html">Coefficients d'une fraction rationnelle</A>
+ &nbsp; <B>  <A NAME="tex2html10437"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10439"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009320000000000000000"></A><A NAME="13050"></A><A NAME="sec:modulaire"></A>
+<BR>
+Le calcul modulaire dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>]
+</H1>
+On peut faire des calculs modulo <TT>p</TT> c'est &#224; dire dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou dans  
+<!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] et la fa&#231;on de s'y prendre d&#233;pends de la syntaxe choisie : 
+
+<UL>
+<LI>En mode <TT>Xcas</TT>, les nombres <I>n</I> de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> sont not&#233;s <I>n</I>%<I>p</I>.
+<BR><B>Exemples de notation</B>
+
+<UL>
+<LI>un entier <TT>n</TT> de <!-- MATH
+ ${\mathbb{Z}}/13{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/13<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">
+<BR><TT>n:=12%13</TT>.
+</LI>
+<LI>un vecteur <TT>V</TT>  de coordonn&#233;es dans <!-- MATH
+ ${\mathbb{Z}}/13{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/13<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> 
+<BR><TT>V:=[1,2,3]%13</TT> ou
+<TT>V:=[1%13,2%13,3%13]</TT>.
+</LI>
+<LI>une matrice <TT>A</TT> de coefficients dans <!-- MATH
+ ${\mathbb{Z}}/13{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/13<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> 
+<BR><TT>A:=[[1,2,3],[2,3,4]]%13</TT> ou 
+<BR><TT>A:=[[1%13,2%13,3%13],[[2%13,3%13,4%13]]</TT>.
+</LI>
+<LI>un polyn&#244;me <TT>A</TT> de <!-- MATH
+ ${\mathbb{Z}}/13{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/13<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] en repr&#233;sentation symbolique
+<BR><TT>A:=(2*x<code>^</code>2+3*x-1)%13</TT> ou 
+<BR><TT>A:=2%13*x<code>^</code>2+3%13*x-1%13</TT>.
+</LI>
+<LI>un polyn&#244;me <TT>A</TT> de <!-- MATH
+ ${\mathbb{Z}}/13{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/13<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] en repr&#233;sent&#233; avec une liste
+<BR><TT>A:=poly1[1,2,3]%13</TT> ou 
+<TT>A:=poly1[1%13,2%13,3%13]</TT>.
+</LI>
+</UL> 
+Pour transformer un objet <TT>o</TT> &#224;  coefficients modulaires en un objet&#224; 
+coefficients entiers  tapez <TT>o % 0</TT>. Par exemple, si on tape <TT>o:=4%7</TT>
+ puis <TT>o%0</TT>, on obtient <TT>-3</TT>.
+</LI>
+<LI>En mode <TT>Maple</TT>, on n'utilise pas % pour repr&#233;senter les entiers
+modulo <I>p</I> : ces entiers sont repr&#233;sent&#233;s comme 
+les entiers usuels et pour eviter les confusions on utilise 
+les commandes commen&#231;ant par une majuscule que l'on fait suivre par la 
+commande  mod (on se repotera &#224; la section suivante).
+</LI>
+</UL> 
+<B>Remarque</B> 
+
+<UL>
+<LI>Pour certaines commandes dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>], il faut 
+choisir un nombre <TT>p</TT> premier.
+<BR></LI>
+<LI>La repr&#233;sentation choisie est la repr&#233;sentation sym&#233;trique :
+<BR><TT>11%13 = -2%13</TT>.
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html10442"
+  HREF="node512.html">D&#233;velopper et r&#233;duire : <TT>normal</TT></A>
+<LI><A NAME="tex2html10443"
+  HREF="node513.html">Addition dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>+</TT></A>
+<LI><A NAME="tex2html10444"
+  HREF="node514.html">Soustraction dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou  <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>-</TT></A>
+<LI><A NAME="tex2html10445"
+  HREF="node515.html">Multiplication dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou  <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>*</TT></A>
+<LI><A NAME="tex2html10446"
+  HREF="node516.html">Quotient : <TT>quo</TT></A>
+<LI><A NAME="tex2html10447"
+  HREF="node517.html">Remainder : <TT>rem</TT></A>
+<LI><A NAME="tex2html10448"
+  HREF="node518.html">Quotient and remainder : <TT>quorem</TT></A>
+<LI><A NAME="tex2html10449"
+  HREF="node519.html">Division dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>/</TT></A>
+<LI><A NAME="tex2html10450"
+  HREF="node520.html">Puissance dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> et dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>^</TT></A>
+<LI><A NAME="tex2html10451"
+  HREF="node521.html">Calcul de <!-- MATH
+ $a^n\ \bmod \ p$
+ -->
+<I>a</I><SUP>n</SUP>&nbsp; mod&nbsp;<I>p</I> ou de <!-- MATH
+ $A(x)^n \bmod \P(x),p$
+ -->
+<I>A</I>(<I>x</I>)<SUP>n</SUP> mod&#182;(<I>x</I>), <I>p</I>:
+  <TT>powmod powermod</TT></A>
+<LI><A NAME="tex2html10452"
+  HREF="node522.html">Inverse dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>inv</TT> ou <TT>/</TT></A>
+<LI><A NAME="tex2html10453"
+  HREF="node523.html">Transformer un entier en sa fraction modulo <I>p</I> : <TT>fracmod  iratrecon</TT></A>
+<LI><A NAME="tex2html10454"
+  HREF="node524.html">PGCD dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>gcd</TT></A>
+<LI><A NAME="tex2html10455"
+  HREF="node525.html">Factorisation dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>factor factoriser</TT></A>
+<LI><A NAME="tex2html10456"
+  HREF="node526.html">D&#233;terminant d'une matrice de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>det</TT></A>
+<LI><A NAME="tex2html10457"
+  HREF="node527.html">Inverse d'une matrice de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>inv inverse</TT></A>
+<LI><A NAME="tex2html10458"
+  HREF="node528.html">R&#233;solution d'un syst&#232;me lin&#233;aire de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>rref</TT></A>
+<LI><A NAME="tex2html10459"
+  HREF="node529.html">Construction d'un corps de Galois : <TT>GF</TT></A>
+<LI><A NAME="tex2html10460"
+  HREF="node530.html">Factorisation d'un polyn&#244;me &#224; coefficients dans un corps de Galois : <TT>factor</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10440"
+  HREF="node512.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10434"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10428"
+  HREF="node510.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10436"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10438"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10441"
+  HREF="node512.html">D&#233;velopper et r&#233;duire :</A>
+<B> monter:</B> <A NAME="tex2html10435"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10429"
+  HREF="node510.html">Coefficients d'une fraction rationnelle</A>
+ &nbsp; <B>  <A NAME="tex2html10437"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10439"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

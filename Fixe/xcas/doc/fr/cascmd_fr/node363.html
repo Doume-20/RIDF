@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Tableau de valeurs et graphe : tablefunc table_fonction et plotfunc</TITLE>
+<META NAME="description" CONTENT="Tableau de valeurs et graphe : tablefunc table_fonction et plotfunc">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node364.html">
+<LINK REL="previous" HREF="node362.html">
+<LINK REL="up" HREF="node359.html">
+<LINK REL="next" HREF="node364.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8264"
+  HREF="node364.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8258"
+  HREF="node359.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8252"
+  HREF="node362.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8260"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8262"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8265"
+  HREF="node364.html">Deriv&#233;es et deriv&#233;es partielles</A>
+<B> monter:</B> <A NAME="tex2html8259"
+  HREF="node359.html">D&#233;rivation et variation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8253"
+  HREF="node362.html">Maximum et minimum d'une</A>
+ &nbsp; <B>  <A NAME="tex2html8261"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8263"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009184000000000000000"></A><A NAME="8641"></A> <A NAME="8642"></A><A NAME="8643"></A>
+<BR>
+Tableau de valeurs et graphe : <TT>tablefunc table_fonction</TT> et <TT>plotfunc</TT>
+</H2>   
+On peut avoir, dans le tableur, les diff&#233;rentes valeurs d'une expression 
+<I>f</I> (<I>x</I>) pour <!-- MATH
+ $x=x_0,\ x_0+h,....$
+ -->
+<I>x</I> = <I>x</I><SUB>0</SUB>,&nbsp;<I>x</I><SUB>0</SUB> + <I>h</I>,...., gr&#226;ce &#224;  la commande :
+<BR><!-- MATH
+ ${\tt tablefunc(f(x),x,x_0,h)}$
+ -->
+<IMG
+ WIDTH="191" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$ \tt tablefunc(f(x),x,x_0,h)$"> ou  <!-- MATH
+ ${\tt tablefunc(f(x),x)}$
+ -->
+<IMG
+ WIDTH="149" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.png"
+ ALT="$ \tt tablefunc(f(x),x)$">.
+<BR>
+Dans ce cas les
+ valeurs de d&#233;part <IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$ \tt x_0$"> et le pas <IMG
+ WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img208.png"
+ ALT="$ \tt h$">, valent par d&#233;faut :
+ <!-- MATH
+ ${\tt x_0=-5.0}$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.png"
+ ALT="$ \tt x_0=-5.0$"> et <!-- MATH
+ ${\tt h=1.0}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img210.png"
+ ALT="$ \tt h=1.0$">.
+<BR>
+On ouvre un tableur avec <TT>Alt+t</TT>.
+<BR>
+Puis, on s&#233;lectionne une case du tableur (par exemple <TT>C0</TT>) et pour 
+avoir une table de <TT>"sinus"</TT>, on tape, dans la ligne de commande du 
+tableur : 
+<DIV ALIGN="CENTER">
+<TT>tablefunc(sin(x),x)</TT>
+</DIV>
+On obtient deux colonnes <TT>x</TT> et <TT>sin(x)</TT> :
+<BR>- dans la colonne <TT>x</TT> il y a la valeur du  pas <TT>h</TT> (1.0) et le d&#233;part
+ de l'&#233;valuation num&#233;rique (-5.0), puis une formule, par exemple 
+<TT>=C2+C$1</TT> qui a &#233;t&#233; recopi&#233;e vers le bas.
+<BR>- dans la colonne <TT>sin(x)</TT> il y a 
+<TT>"Tablefunc"</TT> puis  une formule, par exemple <TT>=evalf(subst(D$0,C$0,C2))</TT>, qui a &#233;t&#233; aussi recopi&#233;e vers le bas.
+<BR>
+Les valeurs de <TT>sin(x)</TT> s'affichent alors en face des <TT>x</TT> 
+correspondants.
+<BR>
+On peut bien s&#251;r changer le pas ou la valeur de d&#233;part ou encore remplacer 
+<TT>sin(x)</TT> par <TT>cos(x)</TT> en changeant la valeur de la cellule 
+correspondante.
+<BR>
+La repr&#233;sentation graphique se fait avec la commande :
+<BR><TT>plotfunc</TT> pour cela voir <A HREF="node120.html#sec:plotfunc">3.6.1</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8264"
+  HREF="node364.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8258"
+  HREF="node359.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8252"
+  HREF="node362.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8260"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8262"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8265"
+  HREF="node364.html">Deriv&#233;es et deriv&#233;es partielles</A>
+<B> monter:</B> <A NAME="tex2html8259"
+  HREF="node359.html">D&#233;rivation et variation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8253"
+  HREF="node362.html">Maximum et minimum d'une</A>
+ &nbsp; <B>  <A NAME="tex2html8261"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8263"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

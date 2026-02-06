@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Trac&#233; d'une droite : line droite</TITLE>
+<META NAME="description" CONTENT="Trac&#233; d'une droite : line droite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node128.html">
+<LINK REL="previous" HREF="node126.html">
+<LINK REL="up" HREF="node126.html">
+<LINK REL="next" HREF="node128.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4221"
+  HREF="node128.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4215"
+  HREF="node126.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4209"
+  HREF="node126.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4217"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4219"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4222"
+  HREF="node128.html">Trac&#233; d'une droite horizontale</A>
+<B> monter:</B> <A NAME="tex2html4216"
+  HREF="node126.html">Graphe d'une droite et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4210"
+  HREF="node126.html">Graphe d'une droite et</A>
+ &nbsp; <B>  <A NAME="tex2html4218"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4220"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00691000000000000000"></A><A NAME="2582"></A><A NAME="2583"></A><A NAME="sec:droite"></A>
+<BR>
+Trac&#233; d'une droite : <TT>line droite</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node929.html#sec:droite2">9.10.1</A> et <A HREF="node1037.html#sec:droite3">10.4.1</A> pour la droite en 
+g&#233;om&#233;trie et <A HREF="node929.html#sec:axe2">9.10.1</A> et <A HREF="node1038.html#sec:axe3">10.4.2</A> pour la droite orient&#233;e.
+<BR><TT>droite</TT> a comme argument son &#233;quation cart&#233;sienne :
+
+<UL>
+<LI>en 2D 
+<BR>
+une &#233;quation de droite,
+</LI>
+<LI>en 3D 
+<BR>
+deux &#233;quations de plan.
+</LI>
+</UL>
+ <TT>droite</TT> d&#233;finit et trace la droite d'&#233;quation donn&#233;e en argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(2*y+x-1=0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le trac&#233; de la droite 2*y+x-1=0</TT>
+</DIV>
+On tape : 
+<DIV ALIGN="CENTER">
+<TT>droite(y=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le trac&#233; de la droite horizontale y=1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(x=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le trac&#233; de la droite verticale x=1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(x+2*y+z-1=0,z=2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le trac&#233; de la droite x+2*y+1=0 dans le plan z=2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(y=1,x=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le trac&#233; de la droite verticale passant par (1,1,0)</TT>
+</DIV>
+<B>Remarque</B>
+<BR><TT>droite</TT> d&#233;finit une droite orient&#233;e :
+
+<UL>
+<LI>Lorsque la droite 2D est donn&#233;e par son &#233;quation, on met cette 
+&#233;quation sous la forme "membre_gauche-membre_droite=<TT>ax+by+c=0</TT>", cela 
+d&#233;termine
+son vecteur normal <TT>[a,b]</TT> et l'orientation est donn&#233;e par le vecteur 
+<TT>[b,-a]</TT>) (ou encore son orientation est d&#233;finie par le produit vectoriel
+3D de son vecteur normal (de cote 0) et du vecteur de coordonn&#233;es [0,0,1]).
+<BR>
+Par exemple <TT>droite(y=2*x)</TT> d&#233;finit une droite orient&#233;e par le vecteur 
+ de coordonn&#233;es <TT>[1,2]</TT>.
+</LI>
+<LI>Lorsque la droite 3D est donn&#233;e par deux &#233;quations de plans, son 
+orientation est d&#233;finie par le produit vectoriel des normales aux plans (en 
+mettant les &#233;quations des plans sous la forme 
+"membre_gauche-membre_droite=0" on  d&#233;termine les normales orient&#233;es de 
+ces plans).
+<BR>
+Par exemple, <TT>droite(x=y,y=z)</TT> est orient&#233;e par :
+<BR><TT>cross([1,-1,0],[0,1,-1])</TT>=<TT>[1,1,1]</TT>.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4221"
+  HREF="node128.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4215"
+  HREF="node126.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4209"
+  HREF="node126.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4217"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4219"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4222"
+  HREF="node128.html">Trac&#233; d'une droite horizontale</A>
+<B> monter:</B> <A NAME="tex2html4216"
+  HREF="node126.html">Graphe d'une droite et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4210"
+  HREF="node126.html">Graphe d'une droite et</A>
+ &nbsp; <B>  <A NAME="tex2html4218"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4220"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

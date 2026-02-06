@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les nombres</TITLE>
+<META NAME="description" CONTENT="Les nombres">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html146"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html140"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html134"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html142"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html144"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html147"
+  HREF="node7.html">Les caract&#232;res et les</A>
+<B> monter:</B> <A NAME="tex2html141"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html135"
+  HREF="node5.html">Les objets du calcul</A>
+ &nbsp; <B>  <A NAME="tex2html143"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html145"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00021000000000000000"></A>
+<A NAME="100"></A>
+<A NAME="101"></A>
+<BR>
+Les nombres
+</H2>
+Les nombres peuvent &#234;tre exacts ou approch&#233;s.
+Les nombres exacts sont les constantes pr&#233;d&#233;finies, les entiers, 
+les fractions d'entiers et plus g&#233;n&#233;ralement toute  expression 
+ne contenant que des entiers et des constantes, comme 
+<code>sqrt(2)*e^(i*pi/3)</code>.
+Les nombres approch&#233;s sont not&#233;s avec la notation scientifique 
+standard&nbsp;: partie enti&#232;re suivie du point de s&#233;paration 
+et partie fractionnaire (&#233;ventuellement
+suivie de <code>e</code> et d'un exposant).
+Par exemple, <code>2</code> est un entier exact, 
+<code>2.0</code> est la version approch&#233;e du m&#234;me
+entier; <code>1/2</code> est un  rationnel, <code>0.5</code> 
+est la version approch&#233;e du m&#234;me
+rationnel.
+<TT>Xcas</TT> peut g&#233;rer des nombres entiers en pr&#233;cision arbitraire&nbsp;: 
+essayez de taper <code>500!</code> et comptez le nombre de chiffres 
+de la r&#233;ponse.
+
+<P>
+On passe d'une valeur exacte &#224; une valeur approch&#233;e par
+<code>evalf</code>, on transforme une valeur approch&#233;e en un rationnel
+exact par <code>exact</code>
+<A NAME="1567"></A>
+<A NAME="1568"></A>
+Les calculs sont effectu&#233;s en mode exact si tous les nombres qui
+interviennent sont exacts. Ils sont effectu&#233;s en mode approch&#233; si
+un des nombres est approch&#233;. Ainsi
+<code>1.5+1</code> renvoie un nombre approch&#233; alors que <code>3/2+1</code> 
+renvoie un nombre exact.
+<PRE>
+sqrt(2)
+evalf(sqrt(2))
+sqrt(2)-evalf(sqrt(2))
+exact(evalf(sqrt(2)))*10^9
+exact(evalf(sqrt(2)*10^9))
+</PRE> 
+<A NAME="1569"></A>
+<A NAME="108"></A>
+Pour les nombres r&#233;els approch&#233;s, la pr&#233;cision par d&#233;faut est
+proche de 14 chiffres significatifs (la pr&#233;cision relative est de 53
+ou 45 bits pour les r&#233;els flottants normalis&#233;s selon les versions de Xcas). 
+Elle peut &#234;tre augmentée, en
+donnant le nombre de d&#233;cimales d&#233;sir&#233;
+comme second argument de <code>evalf</code>.
+<PRE>
+evalf(sqrt(2),50)
+evalf(pi,100)
+</PRE>
+On peut aussi changer la pr&#233;cision par d&#233;faut pour tous les
+calculs en modifiant
+<A NAME="1570"></A>
+la variable <code>Digits</code>.
+<PRE>
+Digits:=50
+evalf(pi)
+evalf(exp(pi*sqrt(163)))
+</PRE>
+
+<P>
+<A NAME="1571"></A>
+La lettre <code>i</code> est r&#233;serv&#233;e &#224; <IMG
+ WIDTH="38" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \sqrt{{-1}}$"> et ne peut &#234;tre
+r&#233;affect&#233;e&nbsp;; en particulier on ne peut pas l'utiliser comme indice
+de boucle.
+<PRE>
+(1+2*i)^2
+(1+2*i)/(1-2*i)
+e^(i*pi/3)
+</PRE>
+<A NAME="118"></A>
+<A NAME="1572"></A>
+<TT>Xcas</TT> distingue l'infini non sign&#233; <code>infinity</code> (<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">), de
+<code>+infinity</code> ou <code>inf</code> (+ <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">) et de <code>-infinity</code>  
+ou <code>-inf</code>(- <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">).
+<PRE>
+1/0; (1/0)^2; -(1/0)^2
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Constantes pr&#233;d&#233;finies</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>pi</code></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $\pi\simeq 3.14159265359$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \pi$"> <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \simeq$"> 3.14159265359</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>e</code></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $e\simeq 2.71828182846$
+ -->
+<I>e</I> <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \simeq$"> 2.71828182846</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>i</code></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $i=\sqrt{-1}$
+ -->
+<I>i</I> = <IMG
+ WIDTH="38" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \sqrt{{-1}}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>infinity</code></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>+infinity</code> ou <code>inf</code></TD>
+<TD ALIGN="LEFT">+ <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>-infinity</code> ou <code>-inf</code></TD>
+<TD ALIGN="LEFT">- <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"></TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1573"></A>
+<A NAME="1574"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html146"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html140"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html134"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html142"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html144"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html147"
+  HREF="node7.html">Les caract&#232;res et les</A>
+<B> monter:</B> <A NAME="tex2html141"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html135"
+  HREF="node5.html">Les objets du calcul</A>
+ &nbsp; <B>  <A NAME="tex2html143"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html145"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

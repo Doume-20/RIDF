@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Arithm&#233;tique des entiers</TITLE>
+<META NAME="description" CONTENT="Arithm&#233;tique des entiers">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node22.html">
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node22.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html363"
+  HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html357"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html351"
+  HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html359"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html361"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html364"
+  HREF="node22.html">Polyn&#244;mes et fractions rationnelles</A>
+<B> monter:</B> <A NAME="tex2html358"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html352"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+ &nbsp; <B>  <A NAME="tex2html360"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html362"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00041000000000000000"></A>
+<A NAME="466"></A>
+<BR>
+Arithm&#233;tique des entiers
+</H2>
+Les op&#233;rations sur les entiers figurent dans le menu 
+<code>Cmds-&gt;Entier</code>.
+<A NAME="467"></A>
+Les calculs modulo <I>p</I> se font en 
+utilisant <code>% p</code>. Une fois d&#233;fini un entier modulo <I>p</I>, disons
+<code>a:=3%5</code>, tous les calculs seront efffectu&#233;s dans
+<!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \mathbb {Z}$">&nbsp;: <code>a*2</code> renvoie <code>1%5</code> (6 modulo 5),
+<code>1/a</code> renvoie <code>2%5</code>, ...&nbsp;
+Pour calculer efficacement les puissances modulo <I>p</I>, on peut utiliser ce qui
+pr&#233;c&#232;de, ou la fonction <code>powermod</code> ou <code>powmod</code>. 
+<PRE>
+a:=3%5
+a+12
+a^4
+powermod(3,4,5)
+</PRE>
+<A NAME="1659"></A>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Nombres entiers</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>a%p</code></TD>
+<TD ALIGN="LEFT"><I>a</I> modulo <I>p</I></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>powmod(a,n,p)</code></TD>
+<TD ALIGN="LEFT"><I>a</I><SUP>n</SUP> modulo <I>p</I></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>irem</code></TD>
+<TD ALIGN="LEFT">reste de la division euclidienne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>iquo</code></TD>
+<TD ALIGN="LEFT">quotient de la division euclidienne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>iquorem</code></TD>
+<TD ALIGN="LEFT">quotient et reste</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ifactor</code></TD>
+<TD ALIGN="LEFT">d&#233;composition en facteurs premiers</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ifactors</code></TD>
+<TD ALIGN="LEFT">liste des facteurs premiers</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>idivis</code></TD>
+<TD ALIGN="LEFT">liste des diviseurs</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>gcd</code></TD>
+<TD ALIGN="LEFT">plus grand diviseur commun</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>lcm</code></TD>
+<TD ALIGN="LEFT">plus petit multiple commun</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>iegcd</code></TD>
+<TD ALIGN="LEFT">identit&#233; de Bezout</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>iabcuv</code></TD>
+<TD ALIGN="LEFT">renvoie [<I>u</I>, <I>v</I>] tels que <I>au</I> + <I>bv</I> = <I>c</I></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>is_prime</code></TD>
+<TD ALIGN="LEFT">l'entier est-il premier</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>nextprime</code></TD>
+<TD ALIGN="LEFT">prochain entier premier</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>previousprime</code></TD>
+<TD ALIGN="LEFT">entier premier pr&#233;c&#233;dent</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1660"></A>
+<A NAME="480"></A>
+<A NAME="1661"></A>
+<A NAME="482"></A>
+<A NAME="1662"></A>
+<A NAME="1663"></A>
+<A NAME="485"></A>
+<A NAME="1664"></A>
+<A NAME="1665"></A>
+<A NAME="1666"></A>
+<A NAME="489"></A>
+<A NAME="1667"></A>
+<A NAME="491"></A>
+<A NAME="1668"></A>
+<A NAME="493"></A>
+<A NAME="1669"></A>
+<A NAME="1670"></A>
+<A NAME="496"></A>
+<A NAME="1671"></A>
+<A NAME="1672"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html363"
+  HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html357"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html351"
+  HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html359"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html361"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html364"
+  HREF="node22.html">Polyn&#244;mes et fractions rationnelles</A>
+<B> monter:</B> <A NAME="tex2html358"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html352"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+ &nbsp; <B>  <A NAME="tex2html360"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html362"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,53 @@
+{
+  "conf/application/android/com.android.vending_": {
+    "description": "D\u00e9sactivation de l'application d'identifiant com.android.vending",
+    "payload": {
+      "id": 45,
+      "name": "Disable application",
+      "description": "Disable application on android",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/android-disable-paq_1.0.0.jar",
+      "size": 4563,
+      "digest": "MD5:a71260d1100f279cb9566b06de91a7e8"
+    },
+    "when": "context.platform === 'android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove",
+      "package_changed"
+    ],
+    "options": {
+      "applicationId": "com.android.vending"
+    }
+  },
+  "conf/application/android/com.rockstargames.gtasa": {
+    "description": "Blocage de l'application d'identifiant com.rockstargames.gtasa",
+    "payload": {
+      "id": 22,
+      "name": "Block application",
+      "description": "Block application on android",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/android-block-paq_1.0.0.jar",
+      "size": 4810,
+      "digest": "MD5:49d8aaf9e5403bde77a1fc438aaad645",
+      "metadata": {
+        "software": {
+          "id": "Device-Uninstallapk-Settings",
+          "version": "1.0"
+        },
+        "versionName": "1.0",
+        "applicationLabel": "Bloqueur d'application"
+      }
+    },
+    "when": "context.platform==='android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ],
+    "options": {
+      "applicationId": "com.rockstargames.gtasa"
+    }
+  }
+}

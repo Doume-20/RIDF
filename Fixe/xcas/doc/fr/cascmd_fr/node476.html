@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Polyn&#244;me cyclotomique : cyclotomic</TITLE>
+<META NAME="description" CONTENT="Polyn&#244;me cyclotomique : cyclotomic">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node477.html">
+<LINK REL="previous" HREF="node475.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node477.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9938"
+  HREF="node477.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9932"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9926"
+  HREF="node475.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9934"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9936"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9939"
+  HREF="node477.html">Suites de Sturm et</A>
+<B> monter:</B> <A NAME="tex2html9933"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9927"
+  HREF="node475.html">Les restes chinois :</A>
+ &nbsp; <B>  <A NAME="tex2html9935"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9937"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092614000000000000000"></A><A NAME="12254"></A>
+<BR>
+Polyn&#244;me cyclotomique : <TT>cyclotomic</TT>
+</H2>
+<TT>cyclotomic</TT> a comme param&#232;tre un entier <I>n</I>.
+<BR><TT>cyclotomic</TT> renvoie la liste des coefficients du polyn&#244;me cyclotomique 
+d'ordre <I>n</I>.
+C'est le polyn&#244;me dont les  z&#233;ros sont toutes les racines <I>n</I>-i&#232;me et
+primitives de l'unit&#233; (une racine <I>n</I>-i&#232;me de l'unit&#233;  est primitive 
+si ses puissances engendrent toutes 
+les autres racines  <I>n</I>-i&#232;me de l'unit&#233;).
+<BR>
+Par exemple pour <I>n</I> = 4, les racines quatri&#232;me de l'unit&#233; sont :
+<!-- MATH
+ $\{ 1,i,-1,-i\}$
+ -->
+{1, <I>i</I>, -1, - <I>i</I>},
+<BR>
+et les racines primitives sont : {<I>i</I>, - <I>i</I>}.
+<BR>
+Donc le polyn&#244;me cyclotomique d'ordre 4 est <!-- MATH
+ $(x-i).(x+i)=x^2+1$
+ -->
+(<I>x</I> - <I>i</I>).(<I>x</I> + <I>i</I>) = <I>x</I><SUP>2</SUP> + 1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cyclotomic(4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0,1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cyclotomic(5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,1,1,1,1]</TT>
+</DIV>
+Donc le polyn&#244;me cyclotomique d'ordre 5 est <!-- MATH
+ $x^4+x^3+x^2+x+1$
+ -->
+<I>x</I><SUP>4</SUP> + <I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> + <I>x</I> + 1 et on a 
+<!-- MATH
+ $(x-1)*(x^4+x^3+x^2+x+1)=x^5-1$
+ -->
+(<I>x</I> - 1)*(<I>x</I><SUP>4</SUP> + <I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> + <I>x</I> + 1) = <I>x</I><SUP>5</SUP> - 1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cyclotomic(10)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,-1,1,-1,1]</TT>
+</DIV>
+Donc le polyn&#244;me cyclotomique d'ordre 10 est <!-- MATH
+ $x^4-x^3+x^2-x+1$
+ -->
+<I>x</I><SUP>4</SUP> - <I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> - <I>x</I> + 1 et on a 
+<P><!-- MATH
+ \begin{displaymath}
+(x^5-1)*(x+1)*(x^4-x^3+x^2-x+1)=x^{10}-1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(<I>x</I><SUP>5</SUP> -1)*(<I>x</I> + 1)*(<I>x</I><SUP>4</SUP> - <I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> - <I>x</I> + 1) = <I>x</I><SUP>10</SUP> - 1
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cyclotomic(20)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0,-1,0,1,0,-1,0,1]</TT>
+</DIV>
+Donc le polyn&#244;me cyclotomique d'ordre 20 est <!-- MATH
+ $x^8-x^6+x^4-x^2+1$
+ -->
+<I>x</I><SUP>8</SUP> - <I>x</I><SUP>6</SUP> + <I>x</I><SUP>4</SUP> - <I>x</I><SUP>2</SUP> + 1 et on a 
+<P><!-- MATH
+ \begin{displaymath}
+(x^{10}-1)*(x^2+1)*(x^8-x^6+x^4-x^2+1)=x^{20}-1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(<I>x</I><SUP>10</SUP> -1)*(<I>x</I><SUP>2</SUP> +1)*(<I>x</I><SUP>8</SUP> - <I>x</I><SUP>6</SUP> + <I>x</I><SUP>4</SUP> - <I>x</I><SUP>2</SUP> +1) = <I>x</I><SUP>20</SUP> - 1
+</DIV><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9938"
+  HREF="node477.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9932"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9926"
+  HREF="node475.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9934"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9936"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9939"
+  HREF="node477.html">Suites de Sturm et</A>
+<B> monter:</B> <A NAME="tex2html9933"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9927"
+  HREF="node475.html">Les restes chinois :</A>
+ &nbsp; <B>  <A NAME="tex2html9935"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9937"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

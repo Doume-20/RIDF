@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Appliquer une fonction d'une variable aux &#233;l&#233;ments d'une liste : map apply of</TITLE>
+<META NAME="description" CONTENT="Appliquer une fonction d'une variable aux &#233;l&#233;ments d'une liste : map apply of">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node601.html">
+<LINK REL="previous" HREF="node597.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node601.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11765"
+  HREF="node601.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11759"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11753"
+  HREF="node599.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11761"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11763"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11766"
+  HREF="node601.html">Appliquer une fonction de</A>
+<B> monter:</B> <A NAME="tex2html11760"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11754"
+  HREF="node599.html">Produit des &#233;l&#233;ments d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11762"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11764"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093832000000000000000"></A><A NAME="15404"></A><A NAME="15405"></A><A NAME="15406"></A>
+<BR>
+Appliquer une fonction d'une variable aux &#233;l&#233;ments d'une liste : <TT>map apply of</TT>
+</H2><A NAME="30175"></A>
+<TT>map</TT> ou <TT>apply</TT> ou <TT>of</TT> sert &#224; appliquer une fonction 
+aux &#233;l&#233;ments d'une liste. Mais ces trois instructions ne sont pas des 
+synonymes. On a :
+
+<UL>
+<LI><TT>of</TT> a 2 param&#232;tres une fonction <TT>f</TT> et une expression <TT>E</TT> 
+ou une liste <TT>L</TT>. <TT>of(f,E)</TT> renvoie <TT>f(E)</TT> et <TT>of(f,L)</TT> renvoie 
+<TT>f(L)</TT>. En effet, <TT>of</TT> est la traduction interne des parenth&#232;ses : 
+<TT>f(x)</TT> est traduit en interne par <TT>of(f,x)</TT>. On peut donc utiliser 
+directement <TT>f(x)</TT>, 
+</LI>
+<LI><TT>apply</TT> a 2 param&#232;tres une fonction <TT>f</TT> et une liste <TT>L</TT>. 
+<TT>apply(f,L)</TT> renvoie <TT>[f(L[0]),f(L[1]),...f(L[size(L)-1])]</TT>.
+<B>Attention</B>
+<BR><TT>apply</TT> r&#232;pond <TT>[]</TT> si le deuxi&#232;me &#233;l&#233;ment 
+n'est pas  une liste.
+<BR></LI>
+<LI><TT>map</TT> a 2 param&#232;tres une expression <TT>E</TT> ou une liste <TT>L</TT> 
+et une fonction <TT>f</TT>.  <TT>map(E,f)</TT> renvoie <TT>f(E)</TT> et <TT>map(L,f)</TT> 
+renvoie <TT>[f(L[0]),f(L[1]),...f(L[size(L)-1])]</TT>.
+<BR><B>Attention</B> &#224; l'ordre des param&#232;tres qui n'est pas 
+le m&#234;me pour <TT>map</TT> et pour <TT>apply</TT> , c'est pour des raisons de 
+compatibilit&#233;!!!.
+<BR>
+Lorsque la liste est une matrice et que la fonction doit s'appliquer &#224; chaque
+&#233;l&#233;ment d'une matrice il faut mettre <TT>matrix</TT> comme argument optionnel 
+&#224; <TT>map</TT> 
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>apply(x-&gt;x+1,[3,5,1])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([3,5,1],x-&gt;x+1)</TT>
+</DIV>
+cela ajoute 1 &#224; chaque &#233;l&#233;ment de la liste et on obtient :
+<DIV ALIGN="CENTER">
+<TT>[4,6,2]</TT>
+</DIV>
+On tape 
+<BR>
+<DIV ALIGN="CENTER">
+<TT>of(x-&gt;x+1,[3,5,1])</TT>
+</DIV>
+et puisque <TT>[3,5,1]+1=[3,5,2]</TT>, on obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,5,2]</TT>
+</DIV>
+<B>Exemple avec une matrice</B>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>apply(x-&gt;x+1,[[3,5,1],[3,5,1],[3,5,1]])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([[3,5,1],[3,5,1],[3,5,1]],x-&gt;x+1)</TT>
+</DIV>
+cela ajoute 1 &#224; chaque &#233;l&#233;ment de la liste c'est &#224; dire &#224; chaque 
+ligne de la matrice et comme <TT>[3,5,1]+1=[3,5,2]</TT>, on obtient :
+<DIV ALIGN="CENTER">
+<TT>[[3,5,2],[3,5,2],[3,5,2]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>of(x-&gt;x+1,[[3,5,1],[3,5,1],[3,5,1]])</TT>
+</DIV>
+cela ajoute 1 c'est &#224; dire la matrice identit&#233; &#224; la matrice et 
+on obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5,1],[3,6,1],[3,5,2]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>map([[3,5,1],[3,5,1],[3,5,1]],x-&gt;x+1,matrix)</TT>
+</DIV>
+cela ajoute 1 &#224; chaque &#233;l&#233;ment de la  matrice et on obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,6,2],[4,6,2],[4,6,2]]</TT>
+</DIV>
+<B>Autres exemples</B>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>apply(x-&gt;x<code>^</code>2,[3,5,1])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>of(x-&gt;x<code>^</code>2,[3,5,1])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([3,5,1],x-&gt;x<code>^</code>2)</TT>
+</DIV>
+ou on d&#233;finit la fonction <I>h</I>(<I>x</I>) = <I>x</I><SUP>2</SUP> en tapant :
+<DIV ALIGN="CENTER">
+<TT>h(x):=x<code>^</code>2</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>apply(h,[3,5,1])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>of(h,[3,5,1])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([3,5,1],h)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[9,25,1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>apply(h,[[3,5,1],[3,5,1],[3,5,1]])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([[3,5,1],[3,5,1],[3,5,1]],h)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([[3,5,1],[3,5,1],[3,5,1]],h,matrix)</TT>
+</DIV>
+On obtient chaque &#232;lement au carr&#233; :
+<DIV ALIGN="CENTER">
+<TT>[[9,25,1],[9,25,1],[9,25,1]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>of(h,[[3,5,1],[3,5,1],[3,5,1]])</TT>
+</DIV>
+On obtient le carr&#233; de la matrice :
+<DIV ALIGN="CENTER">
+<TT>[[27,45,9],[27,45,9],[27,45,9]]</TT>
+</DIV>
+
+<P>
+On d&#233;finit la fonction <!-- MATH
+ $g(x)=[x,x^2,x^3]$
+ -->
+<I>g</I>(<I>x</I>) = [<I>x</I>, <I>x</I><SUP>2</SUP>, <I>x</I><SUP>3</SUP>] en tapant :
+<DIV ALIGN="CENTER">
+<TT>g(x):=[x,x<code>^</code>2,x<code>^</code>3]</TT>
+</DIV>
+ou  
+<DIV ALIGN="CENTER">
+<TT>g:=(x)-&gt;[x,x<code>^</code>2,x<code>^</code>3]</TT>
+</DIV>
+puis, on tape :
+<DIV ALIGN="CENTER">
+<TT>apply(g,[3,5,1])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>map([3,5,1],g)</TT>
+</DIV>
+On fait agir <I>g</I> sur 3, puis sur 5, puis sur 1 et on obtient :
+<DIV ALIGN="CENTER">
+<TT>[[3,9,27],[5,25,125],[1,1,1]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>of(g,[3,5,1])</TT>
+</DIV>
+On fait agir <I>g</I> sur la liste [3,5,1] et on obtient :
+<DIV ALIGN="CENTER">
+<TT>[[3,5,1],[9,25,1],[27,125,1]] </TT>
+</DIV>
+<B>Remarque</B> 
+<BR>
+Si <TT>l1,l2,l3</TT> sont des listes :
+<BR> <TT>sizes([l1,l2,l3]=map(size,[l1,l2,l3]</TT>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11765"
+  HREF="node601.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11759"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11753"
+  HREF="node599.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11761"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11763"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11766"
+  HREF="node601.html">Appliquer une fonction de</A>
+<B> monter:</B> <A NAME="tex2html11760"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11754"
+  HREF="node599.html">Produit des &#233;l&#233;ments d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11762"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11764"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

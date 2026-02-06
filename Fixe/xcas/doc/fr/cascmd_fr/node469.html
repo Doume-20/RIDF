@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>PGCD de polyn&#244;mes par l'algorithme d'Euclide : gcd,igcd</TITLE>
+<META NAME="description" CONTENT="PGCD de polyn&#244;mes par l'algorithme d'Euclide : gcd,igcd">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node470.html">
+<LINK REL="previous" HREF="node468.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node470.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9840"
+  HREF="node470.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9834"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9828"
+  HREF="node468.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9836"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9838"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9841"
+  HREF="node470.html">PGCD de deux polyn&#244;mes</A>
+<B> monter:</B> <A NAME="tex2html9835"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9829"
+  HREF="node468.html">Quotient et reste euclidien</A>
+ &nbsp; <B>  <A NAME="tex2html9837"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9839"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009267000000000000000"></A><A NAME="11910"></A><A NAME="11911"></A><A NAME="sec:gcd"></A>
+<BR>
+PGCD de polyn&#244;mes par l'algorithme d'Euclide : <TT>gcd,igcd</TT>
+</H2>
+<TT>gcd</TT> d&#233;signe le PGCD (plus grand commun diviseur) de deux 
+polyn&#244;mes pouvant avoir plusieurs variables et aussi le PGCD d'une liste de 
+polyn&#244;mes ou d'une s&#233;quence de polyn&#244;mes pouvant avoir plusieurs 
+variables (voir <A HREF="node223.html#sec:igcd">6.7.2</A> pour le PGCD d'entiers).
+n peut aussi mettre comme param&#232;tres deux listes de m&#234;me longueur (ou une 
+matrice ayant 2 lignes), dans ce 
+cas <TT>gcd</TT> renvoie le PGCD des &#233;l&#233;ments de m&#234;me indice (ou d'une 
+m&#234;me colonne).
+On tape :
+<DIV ALIGN="CENTER">
+<TT>gcd([x<code>^</code>2-4,x*y-y],[x<code>^</code>3-8,y<code>^</code>2-x<code>^</code>2*y])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>gcd([[x<code>^</code>2-4,x*y-y],[x<code>^</code>3-8,y<code>^</code>2-x<code>^</code>2*y]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[x-2,y]</TT>
+</DIV> 
+
+<P>
+<B>Exemples</B>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>gcd(x<code>^</code>2+2*x+1,x<code>^</code>2-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x+1 </TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>gcd(x<code>^</code>2-2*x+1,x<code>^</code>3-1,x<code>^</code>2-1,x<code>^</code>2+x-2)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>gcd([x<code>^</code>2-2*x+1,x<code>^</code>3-1,x<code>^</code>2-1,x<code>^</code>2+x-2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x-1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=z<code>^</code>2+x<code>^</code>2*y<code>^</code>2*z<code>^</code>2+(-(y<code>^</code>2))*z<code>^</code>2+(-(x<code>^</code>2))*z<code>^</code>2</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=x<code>^</code>3*y<code>^</code>3*z+(-(y<code>^</code>3))*z+x<code>^</code>3*z-z</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>C:=gcd(A,B)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>z*x*y+z*x-z*y-z</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>factor(A)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(y-1)*(y+1)*(x-1)*(x+1)*z<code>^</code>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>factor(B)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x<code>^</code>2+x+1)*(x-1)*(y+1)*(y<code>^</code>2-y+1)*z</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>factor(C)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(y+1)*(x-1)*z</TT>
+</DIV>
+
+<P>
+Pour les polyn&#244;mes &#224; coefficients modulaire, on tape par exemple :
+On tape :
+<DIV ALIGN="CENTER">
+<TT>gcd((x<code>^</code>2+2*x+1) mod 5,(x<code>^</code>2-1) mod 5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x % 5</TT>
+</DIV>
+Mais si on tape :
+<DIV ALIGN="CENTER">
+<TT>gcd(x<code>^</code>2+2*x+1,x<code>^</code>2-1) mod 5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+car l'op&#233;ration modilaire se fait apr&#232;s le calcul du PGCD qui a &#232;t&#233; 
+calcul&#233; dans <!-- MATH
+ ${\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>].
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9840"
+  HREF="node470.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9834"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9828"
+  HREF="node468.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9836"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9838"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9841"
+  HREF="node470.html">PGCD de deux polyn&#244;mes</A>
+<B> monter:</B> <A NAME="tex2html9835"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9829"
+  HREF="node468.html">Quotient et reste euclidien</A>
+ &nbsp; <B>  <A NAME="tex2html9837"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9839"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

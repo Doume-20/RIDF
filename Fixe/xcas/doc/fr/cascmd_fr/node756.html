@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>N&#233;gliger les petites valeurs : epsilon2zero</TITLE>
+<META NAME="description" CONTENT="N&#233;gliger les petites valeurs : epsilon2zero">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node757.html">
+<LINK REL="previous" HREF="node755.html">
+<LINK REL="up" HREF="node755.html">
+<LINK REL="next" HREF="node757.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14051"
+  HREF="node757.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14045"
+  HREF="node755.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14039"
+  HREF="node755.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14047"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14049"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14052"
+  HREF="node757.html">Liste des variables :</A>
+<B> monter:</B> <A NAME="tex2html14046"
+  HREF="node755.html">Autres fonctions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14040"
+  HREF="node755.html">Autres fonctions</A>
+ &nbsp; <B>  <A NAME="tex2html14048"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14050"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009561000000000000000"></A>
+<A NAME="19829"></A> <A NAME="sec:epsilon2zero"></A>
+<BR>
+N&#233;gliger les petites valeurs : <TT>epsilon2zero</TT>
+</H2>
+<TT>epsilon2zero</TT> a comme param&#232;tre une expression de <TT>x</TT>.
+<BR><TT>epsilon2zero</TT> renvoie l'expression o&#249; les valeurs plus petites que 
+<TT>epsilon</TT> ont &#233;t&#233; remplac&#233;es par z&#233;ro dans l'expression non 
+&#233;valu&#233;e.
+<BR>
+La valeur de <TT>epsilon</TT><A NAME="19836"></A> peut &#234;tre chang&#233; dans la 
+configuration du <TT>cas</TT> (par d&#233;faut <TT>epsilon=1e-10</TT>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>epsilon2zero(1e-13+x) </TT>
+</DIV>
+On obtient (avec <TT>epsilon=1e-10</TT>) :
+<DIV ALIGN="CENTER">
+<TT>0+x</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>epsilon2zero((1e-13+x)*100000) </TT>
+</DIV>
+On obtient (avec <TT>epsilon=1e-10</TT>) :
+<DIV ALIGN="CENTER">
+<TT>(0+x)*100000</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>epsilon2zero(0.001+x) </TT>
+</DIV>
+On obtient (avec <TT>epsilon=0.0001</TT>) :
+<DIV ALIGN="CENTER">
+<TT>0.001+x</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

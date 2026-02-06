@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'homoth&#233;tie : homothety homothetie</TITLE>
+<META NAME="description" CONTENT="L'homoth&#233;tie : homothety homothetie">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1104.html">
+<LINK REL="previous" HREF="node1102.html">
+<LINK REL="up" HREF="node1098.html">
+<LINK REL="next" HREF="node1104.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19501"
+  HREF="node1104.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19495"
+  HREF="node1098.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19489"
+  HREF="node1102.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19497"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19499"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19502"
+  HREF="node1104.html">La similitude : similarity</A>
+<B> monter:</B> <A NAME="tex2html19496"
+  HREF="node1098.html">Les transformations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19490"
+  HREF="node1102.html">La rotation : rotation</A>
+ &nbsp; <B>  <A NAME="tex2html19498"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19500"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013135000000000000000"></A><A NAME="28767"></A><A NAME="28768"></A><A NAME="sec:homothetie3"></A>
+<BR>
+L'homoth&#233;tie : <TT>homothety homothetie</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node994.html#sec:homothetie2">9.17.5</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>homothetie</TT>, en g&#233;om&#233;trie 3D, a deux ou trois arguments&nbsp;:
+un point (le centre de l'homoth&#233;tie), un r&#233;el (la valeur du rapport de 
+l'homoth&#233;tie) et &#233;ventuellement l'objet g&#233;om&#233;trique &#224; transformer.
+<BR>
+Lorsque <TT>homothetie</TT>  a deux arguments, c'est une fonction qui agit sur 
+un objet g&#233;om&#233;trique.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>h:=homothetie(point(0,0,0),2)</TT>
+</DIV>
+Puis :
+<DIV ALIGN="CENTER">
+<TT>h(point(0,0,1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point (0,0,2) est trac&#233;</TT>
+</DIV>
+Lorsque <TT>homothetie</TT>  a trois arguments, <TT>homothetie</TT> dessine et 
+renvoie le transform&#233; du troisi&#232;me argument dans l'homoth&#233;tie de centre
+le premier argument et de rapport le deuxi&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>homothetie(point(0,0,0),2,point(0,0,1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point (0,0,2) est trac&#233;</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>homothetie(point(0,0,0),2,sqhere(point(0,0,0),1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La sph&#232;re de centre (0,0,0) et de rayon 2</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

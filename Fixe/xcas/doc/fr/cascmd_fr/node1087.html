@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Savoir si des droites ou/et plans sont perpendiculaires is_perpendicular est_perpendiculaire</TITLE>
+<META NAME="description" CONTENT="Savoir si des droites ou/et plans sont perpendiculaires is_perpendicular est_perpendiculaire">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1088.html">
+<LINK REL="previous" HREF="node1086.html">
+<LINK REL="up" HREF="node1083.html">
+<LINK REL="next" HREF="node1088.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19271"
+  HREF="node1088.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19265"
+  HREF="node1083.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19259"
+  HREF="node1086.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19267"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19269"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19272"
+  HREF="node1088.html">Orthogonalit&#233; de 2 droites</A>
+<B> monter:</B> <A NAME="tex2html19266"
+  HREF="node1083.html">Les propri&#233;t&#233;s</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19260"
+  HREF="node1086.html">Savoir si droites ou</A>
+ &nbsp; <B>  <A NAME="tex2html19268"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19270"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013124000000000000000"></A><A NAME="28341"></A><A NAME="28342"></A><A NAME="sec:estperp3"></A>
+<BR>
+Savoir si des droites ou/et plans sont perpendiculaires 
+<BR><TT>is_perpendicular</TT> <TT>est_perpendiculaire</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1009.html#sec:estperp2">9.18.11</A> pour la g&#233;om&#233;trie plane et 
+<A HREF="node1088.html#sec:estortho3">10.12.5</A> pour l'orthogonalit&#233; 3D.
+<BR><TT>est_perpendiculaire</TT>, en g&#233;om&#233;trie 3D, teste si deux droites ou, si
+une droite et un plan ou, si deux plans sont perpendiculaires.
+<BR>
+En 3D, deux droites perpendiculaires sont coplanaires et orthogonales.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>est_perpendiculaire(droite([2,3,-2],[-1,-1,-1]), droite([1,0,0],[1,2,8]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>est_coplanaire(droite([2,3,-2],[-1,-1,-1]), droite([1,0,0],[1,2,8]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>P:=plan([0,0,0],[1,2,-3],[1,1,-2])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>S:=plan([-1,-1,-1],[1,2,-3],[0,0,0])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>est_perpendiculaire(P,S)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dd:=droite([2,3,-2],[-1,-1,-1])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>est_perpendiculaire(dd,P)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

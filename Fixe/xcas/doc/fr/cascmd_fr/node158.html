@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Diff&#233;rence de codage entre (3.1-3) et 0.1</TITLE>
+<META NAME="description" CONTENT="Diff&#233;rence de codage entre (3.1-3) et 0.1">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node157.html">
+<LINK REL="up" HREF="node156.html">
+<LINK REL="next" HREF="node159.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4679"
+  HREF="node159.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4673"
+  HREF="node156.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4669"
+  HREF="node157.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4675"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4677"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4680"
+  HREF="node159.html">&#201;valuation des r&#233;els :</A>
+<B> monter:</B> <A NAME="tex2html4674"
+  HREF="node156.html">Codage des r&#233;els et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4670"
+  HREF="node157.html">Un exemple : codage</A>
+ &nbsp; <B>  <A NAME="tex2html4676"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4678"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00712000000000000000">
+Diff&#233;rence de codage entre (3.1-3) et 0.1</A>
+</H2>
+
+<UL>
+<LI>codage de  0.1 :
+<BR>
+On a :
+<BR><!-- MATH
+ $0.1=2^{-4}*(1+1/2+1/2^4+1/2^5+1/2^8+1/2^9+...)=2^{-4}*\sum_{k=0}^\infty 1/2^{4*k}+1/2^{4*k+1}$
+ -->
+0.1 = 2<SUP>-4</SUP>*(1 + 1/2 + 1/2<SUP>4</SUP> +1/2<SUP>5</SUP> +1/2<SUP>8</SUP> +1/2<SUP>9</SUP> + ...) = 2<SUP>-4</SUP>*<IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.png"
+ ALT="$ \sum_{{k=0}}^{\infty}$">1/2<SUP>4*k</SUP> +1/2<SUP>4*k+1</SUP>
+<BR>
+donc <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 1 et <!-- MATH
+ $m=1/2+\sum_{k=1}^\infty 1/2^{4*k}+1/2^{4*k+1}$
+ -->
+<I>m</I> = 1/2 + <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$ \sum_{{k=1}}^{\infty}$">1/2<SUP>4*k</SUP> +1/2<SUP>4*k+1</SUP> 
+<BR>
+On obtient le codage de 0.1 :
+<BR>
+the code of3f (00111111), b9 (10111001), 99 (10011001), 99 (10011001),
+<BR>
+99 (10011001), 99 (10011001), 99 (10011001), 9a (10011010),
+<BR>
+le dernier octet est 1010 car il y a eu un arrondi les 2 derniers bits 01
+sont devenus 10  car le  chiffre suivant etait 1.
+
+<P>
+</LI>
+<LI>codage de  a:=3.1-3 :
+<BR>
+L'exposant sera donc <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = - 4 (qui correspond &#224; 2*2<SUP>-5</SUP>) et les bits 
+qui correspondent &#224; la mantisse vont d&#233;buter &#224; <!-- MATH
+ $1/2=2*2^{-6}$
+ -->
+1/2 = 2*2<SUP>-6</SUP> : ainsi
+les nombres de la mantisse subissent un d&#233;calage vers la gauche de 5 places
+et  on  obtient :
+<BR>
+3f (00111111), b9 (10111001), 99 (10011001), 99 (10011001),
+<BR>
+99 (10011001), 99 (10011001), 99 (10011001), 9a (10100000),
+<BR>
+On voit alors que :
+<BR><I>a</I> &gt; 0.1 et que <!-- MATH
+ $a-0.1=1/2^{50}+1/2^{51}$
+ -->
+<I>a</I> - 0.1 = 1/2<SUP>50</SUP> +1/2<SUP>51</SUP> (car 100000-11010=110)
+</LI>
+</UL>
+<TT>Remarque</TT>
+<BR>
+Ce qui pr&#233;c&#233;de permet d'expliquer pourquoi lorsque <TT>Digits:=15</TT> :
+<BR><TT>floor(1/(3.1-3))</TT> renvoie <TT>9</TT> et non <TT>10</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4679"
+  HREF="node159.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4673"
+  HREF="node156.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4669"
+  HREF="node157.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4675"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4677"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4680"
+  HREF="node159.html">&#201;valuation des r&#233;els :</A>
+<B> monter:</B> <A NAME="tex2html4674"
+  HREF="node156.html">Codage des r&#233;els et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4670"
+  HREF="node157.html">Un exemple : codage</A>
+ &nbsp; <B>  <A NAME="tex2html4676"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4678"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

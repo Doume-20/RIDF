@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les matrices</TITLE>
+<META NAME="description" CONTENT="Les matrices">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="previous" HREF="node41.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node43.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html662"
+  HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html656"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html652"
+  HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html658"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html660"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html663"
+  HREF="node43.html">Vrai ou Faux ?</A>
+<B> monter:</B> <A NAME="tex2html657"
+  HREF="node35.html">Des exercices corrig&#233;s avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html653"
+  HREF="node41.html">&#201;quations diff&#233;rentielles</A>
+ &nbsp; <B>  <A NAME="tex2html659"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html661"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00075000000000000000">
+Les matrices</A>
+</H2>
+
+<OL>
+<LI>Soit <!-- MATH
+ $M_a=\left[ 
+\begin{array}{ccc}
+2a-1 & a & 2a-1\\
+a^2+a-2 & a^2-1 & a-1\\
+a^2+a-1 & a^2+a-1 & a
+\end{array}
+\right]$
+ -->
+<I>M</I><SUB>a</SUB> = <IMG
+ WIDTH="17" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$ \left[\vphantom{
+\begin{array}{ccc}
+2a-1 &amp; a &amp; 2a-1\\
+a^2+a-2 &amp; a^2-1 &amp; a-1\\
+a^2+a-1 &amp; a^2+a-1 &amp; a
+\end{array}}\right.$"><IMG
+ WIDTH="221" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$ \begin{array}{ccc}
+2a-1 &amp; a &amp; 2a-1\\
+a^2+a-2 &amp; a^2-1 &amp; a-1\\
+a^2+a-1 &amp; a^2+a-1 &amp; a
+\end{array}$"><IMG
+ WIDTH="17" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ \left.\vphantom{
+\begin{array}{ccc}
+2a-1 &amp; a &amp; 2a-1\\
+a^2+a-2 &amp; a^2-1 &amp; a-1\\
+a^2+a-1 &amp; a^2+a-1 &amp; a
+\end{array}}\right]$">
+<BR>
+a) Pour quelles valeurs de <I>a</I>, <I>M</I><SUB>a</SUB> est-elle inversible ?
+<BR>
+Pr&#233;ciser son rang lorsqu'elle n'est pas inversible.
+<BR>
+b) Calculer l'inverse de <I>M</I><SUB>2</SUB>
+
+<P>
+<B>R&#233;ponse</B>&nbsp;:
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<code> M:=[[2a-1,a,2a-1],[a^2+a-2,a^2-1,a-1],[a^2+a-1,a^2+a-1,a]] </code>
+
+</DIV>
+On calcule le d&#233;terminant de <I>M</I>, on tape :
+<DIV ALIGN="CENTER">
+<code> det(M)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>2*a^4+-2*a^3+-2*a^2+2*a</code>
+</DIV>
+Pour avoir l'inverse de <I>M</I> on tape :
+<DIV ALIGN="CENTER">
+<code> inv(M)</code>
+
+</DIV>
+On obtient :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{1}{2a^4-2a^3-2a^2+2a}\left[
+\begin{array}{ccc}
+a-1 & 2a^3+3a+1 & -2a^3+a^2+a-1\\
+-a^2+1 & -2a^3+a^2+2a-1 & 2a^3-a^2-2a+1\\
+a^3-2a+1 & -a^3+2a-1 & a^3-2a^2+1
+\end{array}
+\right]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="142" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$\displaystyle {\frac{{1}}{{2a^4-2a^3-2a^2+2a}}}$"><IMG
+ WIDTH="17" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\displaystyle \left[\vphantom{
+\begin{array}{ccc}
+a-1 &amp; 2a^3+3a+1 &amp; -2a^3+a^2+a...
+...+2a-1 &amp; 2a^3-a^2-2a+1\\
+a^3-2a+1 &amp; -a^3+2a-1 &amp; a^3-2a^2+1
+\end{array}}\right.$"><IMG
+ WIDTH="364" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$\displaystyle \begin{array}{ccc}
+a-1 &amp; 2a^3+3a+1 &amp; -2a^3+a^2+a-1\\
+-a^2+1 &amp; -2a^3+a^2+2a-1 &amp; 2a^3-a^2-2a+1\\
+a^3-2a+1 &amp; -a^3+2a-1 &amp; a^3-2a^2+1
+\end{array}$"><IMG
+ WIDTH="17" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$\displaystyle \left.\vphantom{
+\begin{array}{ccc}
+a-1 &amp; 2a^3+3a+1 &amp; -2a^3+a^2+a...
+...+2a-1 &amp; 2a^3-a^2-2a+1\\
+a^3-2a+1 &amp; -a^3+2a-1 &amp; a^3-2a^2+1
+\end{array}}\right]$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<code> solve(2a^4-2*a^3-2*a^2+2*a,a)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> [-1,0,1]</code>
+</DIV>
+Donc la matrice est inversible si <!-- MATH
+ $a \not\in [-1,0,1]$
+ -->
+<I>a</I> <IMG
+ WIDTH="15" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ \not\in$">[- 1, 0, 1]
+<BR>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<code> factor(2a^4-2*a^3-2*a^2+2*a)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>2*(a+1)*a*(a-1)^2</code>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> rank(subst(M,a,-1))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 2</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> rank(subst(M,a,0))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 2</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> rank(subst(M,a,1))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 1</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> inv(subst(M,a,2))</code>
+
+</DIV>
+On obtient :
+<!-- MATH
+ $A=\frac{1}{12}\left[ 
+\begin{array}{ccc}
+1 & 11 & -7\\
+-3 & -9 & 9\\
+5 & -5 & 1
+\end{array}
+\right]$
+ -->
+<I>A</I> = <IMG
+ WIDTH="20" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ {\frac{{1}}{{12}}}$"><IMG
+ WIDTH="17" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \left[\vphantom{
+\begin{array}{ccc}
+1 &amp; 11 &amp; -7\\
+-3 &amp; -9 &amp; 9\\
+5 &amp; -5 &amp; 1
+\end{array}}\right.$"><IMG
+ WIDTH="113" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$ \begin{array}{ccc}
+1 &amp; 11 &amp; -7\\
+-3 &amp; -9 &amp; 9\\
+5 &amp; -5 &amp; 1
+\end{array}$"><IMG
+ WIDTH="17" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \left.\vphantom{
+\begin{array}{ccc}
+1 &amp; 11 &amp; -7\\
+-3 &amp; -9 &amp; 9\\
+5 &amp; -5 &amp; 1
+\end{array}}\right]$">
+<BR>
+Remarque : pour &#233;viter de faire des substitutions on peut d&#233;finir la matrice <I>M</I> comme une fonction de <I>a</I>, il faut alors &#233;crire :
+<DIV ALIGN="CENTER">
+<code>M(a):={[[2a-1,a,2a-1],[a^2+a-2,a^2-1,a-1],[a^2+a-1,a^2+a-1,a]]}</code>
+
+</DIV>
+surtout ne pas oublier { et }.
+<BR>
+On peut alors taper : <code>inv(M(2))</code>.
+
+<P>
+</LI>
+<LI>Soit <!-- MATH
+ $A=\left[ 
+\begin{array}{ccc}
+1 & 1 & a\\
+1 & a & 1\\
+a & 1 & 1
+\end{array}
+\right]$
+ -->
+<I>A</I> = <IMG
+ WIDTH="17" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$ \left[\vphantom{
+\begin{array}{ccc}
+1 &amp; 1 &amp; a\\
+1 &amp; a &amp; 1\\
+a &amp; 1 &amp; 1
+\end{array}}\right.$"><IMG
+ WIDTH="76" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$ \begin{array}{ccc}
+1 &amp; 1 &amp; a\\
+1 &amp; a &amp; 1\\
+a &amp; 1 &amp; 1
+\end{array}$"><IMG
+ WIDTH="17" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \left.\vphantom{
+\begin{array}{ccc}
+1 &amp; 1 &amp; a\\
+1 &amp; a &amp; 1\\
+a &amp; 1 &amp; 1
+\end{array}}\right]$">
+<BR>
+Pour quelles valeurs de <I>a</I>, <I>A</I> est-elle diagonalisable ?
+
+<P>
+<B>R&#233;ponse</B>&nbsp;:
+<BR>
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[[1,1,a],[1,a,1],[a,1,1]] </TT>
+
+</DIV>
+Pour avoir les valeurs propres de <I>A</I> on tape :
+<DIV ALIGN="CENTER">
+<TT>egvl(A)</TT>
+
+</DIV>
+On obtient :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left[ 
+\begin{array}{ccc}
+-a+1 & 0 & 0\\
+0 & a+2 & 0\\
+0 & 0 & a-1
+\end{array}
+\right] }
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="186" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$\displaystyle \tt\left[
+\begin{array}{ccc}
+-a+1 &amp; 0 &amp; 0\\
+0 &amp; a+2 &amp; 0\\
+0 &amp; 0 &amp; a-1
+\end{array}\right]$">
+</DIV><P></P>
+ce qui s'&#233;crit :
+<DIV ALIGN="CENTER">
+<TT>[[-a+1,0,0],[0,a+2,0],[0,0,a-1]]</TT>
+</DIV>
+Si <I>a</I> <IMG
+ WIDTH="17" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \neq$"> 1 il y a 3 valeurs propres distinctes <!-- MATH
+ $-a+1,a+2,a-1$
+ -->
+- <I>a</I> + 1, <I>a</I> + 2, <I>a</I> - 1 et
+<BR>
+si <I>a</I> = 1 il y a une valeur propre double (<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$ \lambda$"> = 0) et une valeur propre 
+simple  (<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$ \lambda$"> = 3).
+<BR>
+Puis on cherche la matrice de passage, on tape :
+<DIV ALIGN="CENTER">
+<TT>egv(A)</TT>
+
+</DIV>
+On obtient :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left[ 
+\begin{array}{rrr}
+-1 & 1 & 1\\
+0 & 1 & -2\\
+-1 & 1 & 1
+\end{array}
+\right] }
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="122" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$\displaystyle \tt\left[
+\begin{array}{rrr}
+-1 &amp; 1 &amp; 1\\
+0 &amp; 1 &amp; -2\\
+-1 &amp; 1 &amp; 1
+\end{array}\right]$">
+</DIV><P></P>
+ce qui s'&#233;crit : 
+<DIV ALIGN="CENTER">
+<TT>[[1,1,1],[0,1,-2],[-1,1,1]]</TT>
+
+</DIV>
+les vecteurs propres sont les colonnes de cette matrice.
+<BR>
+Ou on tape pour avoir directement les deux informations, matrice de passage et r&#233;duite de Jordan :
+<DIV ALIGN="CENTER">
+<TT>jordan(A)</TT>
+
+</DIV>
+On obtient une liste de deux matrices [<I>P</I>, <I>B</I>] (<I>P</I> est la matrice de passage et
+<!-- MATH
+ $B=P^{-1}AP$
+ -->
+<I>B</I> = <I>P</I><SUP>-1</SUP><I>AP</I>) :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left[ \left[ 
+\begin{array}{rrr}
+-1 & 1 & 1\\
+0 & 1 & -2\\
+-1 & 1 & 1
+\end{array}
+\right] 
+\left[\begin{array}{ccc}
+-a+1 & 0 & 0\\
+0 & a+2 & 0\\
+0 & 0 & a-1
+\end{array}
+\right] 
+\right]}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="324" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$\displaystyle \tt\left[ \left[
+\begin{array}{rrr}
+-1 &amp; 1 &amp; 1\\
+0 &amp; 1 &amp; -2\\ ...
+...}{ccc}
+-a+1 &amp; 0 &amp; 0\\
+0 &amp; a+2 &amp; 0\\
+0 &amp; 0 &amp; a-1
+\end{array}\right]
+\right]$">
+</DIV><P></P>
+ce qui s'&#233;crit :
+<DIV ALIGN="CENTER">
+<TT>[[[1,1,1],[0,1,-2],[-1,1,1]],[[-a+1,0,0],[0,a+2,0],[0,0,a-1]]]</TT>
+
+</DIV>
+On remarque qu'en faisant : <TT>a:=1</TT> puis <TT>jordan(A)</TT> 
+<BR>
+les valeurs propres doubles sont regroup&#233;es et on obtient :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left[ \left[ 
+\begin{array}{rrr}
+1 & -3 & 0\\
+1 & 0 & -3\\
+1 & 3 & 3
+\end{array}
+\right] 
+\left[\begin{array}{ccc}
+3 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}
+\right] 
+\right]}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="238" HEIGHT="75" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$\displaystyle \tt\left[ \left[
+\begin{array}{rrr}
+1 &amp; -3 &amp; 0\\
+1 &amp; 0 &amp; -3\\ ...
+...n{array}{ccc}
+3 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0
+\end{array}\right]
+\right]$">
+</DIV><P></P>
+<BR>
+ce qui s'&#233;crit :
+<DIV ALIGN="CENTER">
+<TT>[[[1,-3,0],[1,0,-3],[1,3,3]],[[3,0,0],[0,0,0],[0,0,0]]]</TT>
+
+</DIV>
+<I>A</I> est donc diagonalisable quelque soit <I>a</I> et <!-- MATH
+ $B=P^{-1}AP$
+ -->
+<I>B</I> = <I>P</I><SUP>-1</SUP><I>AP</I>.
+</LI>
+</OL>
+
+<P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html662"
+  HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html656"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html652"
+  HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html658"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html660"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html663"
+  HREF="node43.html">Vrai ou Faux ?</A>
+<B> monter:</B> <A NAME="tex2html657"
+  HREF="node35.html">Des exercices corrig&#233;s avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html653"
+  HREF="node41.html">&#201;quations diff&#233;rentielles</A>
+ &nbsp; <B>  <A NAME="tex2html659"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html661"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

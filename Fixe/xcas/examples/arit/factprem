@@ -1,0 +1,62 @@
+factprem(n):={
+//decompose n en facteur premier dans la liste l de dimension s
+local j,d,s,l;
+d:=2;
+s:=0;
+l:=[];
+while (d*d<=n) {
+j:=0;
+while (irem(n,d)==0){
+n:=iquo(n,d);
+j:=j+1;
+}
+if (j!=0) {
+l:=concat(l,[d,j]);
+s:=s+2;
+}
+if (d<4) {
+d:=2*d-1;
+}
+else {
+d:=d+irem(4*d,6);
+}
+}
+if (n!=1) {
+l:=concat(l,[n,1]);
+s:=s+2;
+}
+return([l,s]);
+};
+ddiv(n,d):={
+//si n=a*d^j (pgcd(a,d)=1), ddiv renvoie si j!=0 [a,[d,j]] sinon [n,[]] 
+local l,j;
+j:=0;
+while (irem(n,d)==0){
+n:=iquo(n,d);
+j:=j+1;
+}
+if (j==0){
+l:=[n,[]];
+} else {
+l:=[n,[d,j]];
+}
+return(l);
+};
+criblefact(n):={
+//decomposition en facteurs premiers de n en utilisant ddiv et crible qui se
+//trouve ds le fichier erathostene
+local d,prem,s,ld,ldiv;
+prem:=crible(floor(sqrt(n)));
+s:=size(prem);
+ldiv:=[];
+for (k:=0;k<s;k++){
+ld:=ddiv(n,prem[k]);
+ldiv:=concat(ldiv,ld[1]);
+n:=ld[0];
+k:=k+1;
+}
+if (n!=1){
+ldiv:=concat(ldiv,[n,1]);
+}
+return(ldiv);
+};

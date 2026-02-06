@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Produit des valeurs d'une expression : product</TITLE>
+<META NAME="description" CONTENT="Produit des valeurs d'une expression : product">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node599.html">
+<LINK REL="previous" HREF="node597.html">
+<LINK REL="up" HREF="node597.html">
+<LINK REL="next" HREF="node599.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11739"
+  HREF="node599.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11733"
+  HREF="node597.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11727"
+  HREF="node597.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11735"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11737"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11740"
+  HREF="node599.html">Produit des &#233;l&#233;ments d'une</A>
+<B> monter:</B> <A NAME="tex2html11734"
+  HREF="node597.html">Produit indic&#233; : product</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11728"
+  HREF="node597.html">Produit indic&#233; : product</A>
+ &nbsp; <B>  <A NAME="tex2html11736"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11738"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION0093831100000000000000"></A><A NAME="sec:product0"></A>
+<BR>
+Produit des valeurs d'une expression : <TT>product</TT>
+</H3>
+<TT>product</TT> ou <TT>mul</TT> a 4 ou 5 arguments.
+
+<UL>
+<LI>Avec 5 arguments <TT>product(Expr,Var,a,b,p)</TT> ou 
+<TT>mul(Expr,Var,a,b,p)</TT> renvoie le produit demand&#233; c'est &#224; dire renvoie 
+le produit des valeurs de l'expression <TT>Expr</TT> quand la variable <TT>Var</TT> 
+va de <TT>a</TT> &#224; <TT>b</TT> avec un pas &#233;gal &#224; <TT>p</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product(x<code>^</code>2+1,x,1,5,2)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>mul(x<code>^</code>2+1,x,1,5,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>520</TT>
+</DIV>
+En effet :
+<BR><!-- MATH
+ $2*10*26=520$
+ -->
+2*10*26 = 520
+</LI>
+<LI>Avec 4 arguments, <TT>product(Expr,Var,a,b)</TT> ou <TT>mul(Expr,Var,a,b)</TT>
+n'a pas la m&#234;me valeur selon que <TT>a</TT> est plus petit ou &#233;gal &#224; <TT>b</TT> ou non car on veut avoir l'&#233;galit&#233; :
+<BR>  <TT>product(Expr,Var,a,b)= product(Expr,Var,a,c)*product(Expr,Var,c+1,b)</TT>.
+<BR>
+Aussi, lorsque le  pas <TT>p</TT> n'est pas pr&#233;cis&#233; on a :
+
+<UL>
+<LI>si  <TT>a</TT> est inf&#233;rieur &#224; <TT>b</TT>,
+<BR><TT>product(Expr,Var,a,b)</TT> renvoie le produit des valeurs de l'expression 
+<TT>Expr</TT> quand la variable <TT>Var</TT> va de <TT>a</TT> &#224; <TT>b</TT> avec un pas de 
+1 : cette syntaxe est 
+compatible avec Maple.
+<BR>
+Ainsi si <TT>a&lt;= b</TT> on a :
+<BR><TT>product(Expr,Var,a,b)</TT>=<TT>product(Expr,Var,a,b,1)</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product(x<code>^</code>2+1,x,1,4)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>mul(x<code>^</code>2+1,x,1,4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1700</TT>
+</DIV>
+En effet :
+<BR><!-- MATH
+ $2*5*10*17=1700$
+ -->
+2*5*10*17 = 1700
+<BR></LI>
+<LI>si  <TT>a</TT> est sup&#233;rieur &#224; <TT>b+1</TT>,
+<BR><TT>product(Expr,Var,a,b)</TT> renvoie l'inverse du produit des valeurs de 
+l'expression <TT>Expr</TT> quand la variable 
+<TT>Var</TT> va de <TT>b+1</TT> &#224; <TT>a-1</TT> avec un pas <TT>1</TT> : cette syntaxe est 
+compatible avec Maple.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product(x<code>^</code>2+1,x,4,1)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>mul(x<code>^</code>2+1,x,4,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1/50</TT>
+</DIV>
+En effet :
+<BR><!-- MATH
+ $1/(5*10)=1/50$
+ -->
+1/(5*10) = 1/50
+<BR></LI>
+<LI>si  <TT>a</TT> est &#233;gal &#224; <TT>b+1</TT>,
+<BR><TT>product(Expr,Var,b+1,b)</TT> renvoie 1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product(x<code>^</code>2+1,x,5,4)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>mul(x<code>^</code>2+1,x,5,4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+</LI>
+</UL>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11739"
+  HREF="node599.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11733"
+  HREF="node597.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11727"
+  HREF="node597.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11735"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11737"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11740"
+  HREF="node599.html">Produit des &#233;l&#233;ments d'une</A>
+<B> monter:</B> <A NAME="tex2html11734"
+  HREF="node597.html">Produit indic&#233; : product</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11728"
+  HREF="node597.html">Produit indic&#233; : product</A>
+ &nbsp; <B>  <A NAME="tex2html11736"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11738"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

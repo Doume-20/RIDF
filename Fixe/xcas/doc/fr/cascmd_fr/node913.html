@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Comment faire une d&#233;monstration : assume</TITLE>
+<META NAME="description" CONTENT="Comment faire une d&#233;monstration : assume">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node914.html">
+<LINK REL="previous" HREF="node909.html">
+<LINK REL="up" HREF="node886.html">
+<LINK REL="next" HREF="node914.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16612"
+  HREF="node914.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16606"
+  HREF="node886.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16600"
+  HREF="node912.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16608"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16610"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16613"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html16607"
+  HREF="node886.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16601"
+  HREF="node912.html">Pour cr&#233;er une image</A>
+ &nbsp; <B>  <A NAME="tex2html16609"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16611"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001280000000000000000"></A><A NAME="24020"></A>
+<BR>
+Comment faire une d&#233;monstration : <TT>assume</TT>
+</H1>
+Pour pouvoir faire une d&#233;monstration en g&#233;om&#233;trie, il suffit de demander 
+au calcul formel de faire les calculs, en choisisant bien les param&#232;tres du 
+probl&#232;me et ces param&#232;tres doivent &#234;tre formels....En g&#233;om&#233;trie
+les points peuvent avoir des coordonn&#232;es exactes ou num&#233;riques ou formelles.
+Mais pour faire une figure, il faut affecter les param&#232;tres formels. On 
+peut le faire de diff&#233;rentes fa&#231;ons :
+
+<UL>
+<LI>on utilise a commande <TT>assume</TT> avant la cr&#233;ation du point &#224; 
+coordonn&#232;es formelles. Par exemple <TT>assume(a=2.1);A:=point(a+i);</TT> fera la
+figure en donnant &#224;  <TT>a</TT> la valeur <TT>2.1</TT>, mais <TT>a</TT> ne sera pas 
+affect&#233; dans les calculs qui seront faits ult&#233;rieurement avec le 
+param&#232;tre formel <TT>a</TT> : si on tape <TT>longueur(0,A)</TT>, on obtient 
+<TT>sqrt((-a)<code>^</code>2+1)</TT>
+</LI>
+<LI>on utilise l'&#233;cran de configuration des attributs d'un point d&#233;j&#224; 
+cr&#233;e avec des coordonn&#232;es exactes ou num&#233;riques et on coche la rubrique 
+<TT>symb</TT> figurant sur cet &#233;cran.
+<BR>
+Pour  faire apparaitre l'&#233;cran de configuration des attributs d'un 
+point o&#249; figure la rubrique <TT>symb</TT>, il faut &#234;tre 
+ en mode <TT>point</TT> ou en  mode <TT>Pointeur</TT> et uniquement dans 
+ces 2  modes. On suppose que l'on a d&#233;j&#224; d&#233;fini un point, par exemple 
+<TT>A:=point(2.1,1)</TT>. On clique sur <TT>A</TT> avec le  bouton droit 
+de la souris, on fait apparaitre l'&#233;cran de configuration des attributs du 
+point <TT>A</TT> o&#249; figure la rubrique <TT>symb</TT>. On coche <TT>symb</TT> avec la 
+souris et cela a pour effet de rajouter les deux lignes
+ <TT>assume(Ax=[2.1,-5.0,5.0])</TT>, <TT>assume(Ay=[1,-5.0,5.0])</TT>
+et de d&#233;finir automatiquement le point  <TT>A</TT> avec les 
+coordonn&#233;es symboliques <TT>(Ax,Ay)</TT>. 
+<B>Attention</B> la rubrique <TT>symb</TT> n'apparait que dans l'&#233;cran de 
+configuration des attributs d'un point non symbolique : autrement dit si on a 
+d&#233;fini un point avec des coordonn&#233;es symboliques c'est d&#233;finitif !
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16612"
+  HREF="node914.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16606"
+  HREF="node886.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16600"
+  HREF="node912.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16608"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16610"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16613"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html16607"
+  HREF="node886.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16601"
+  HREF="node912.html">Pour cr&#233;er une image</A>
+ &nbsp; <B>  <A NAME="tex2html16609"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16611"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

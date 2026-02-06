@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;finition d'une fonction de p-1 dans q &#224; partir d'une fonction de p dans q</TITLE>
+<META NAME="description" CONTENT="D&#233;finition d'une fonction de p-1 dans q &#224; partir d'une fonction de p dans q">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node354.html">
+<LINK REL="up" HREF="node352.html">
+<LINK REL="next" HREF="node356.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8147"
+  HREF="node356.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8141"
+  HREF="node352.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8137"
+  HREF="node354.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8143"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8145"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8148"
+  HREF="node356.html">Composition de fonctions :</A>
+<B> monter:</B> <A NAME="tex2html8142"
+  HREF="node352.html">D&#233;finition d'une fonction</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8138"
+  HREF="node354.html">D&#233;finition d'une fonction de</A>
+ &nbsp; <B>  <A NAME="tex2html8144"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8146"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009173300000000000000">
+D&#233;finition d'une fonction de <!-- MATH
+ $\mathbb{R}^{p-1}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p-1</SUP> dans <!-- MATH
+ $\mathbb{R}^q$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>q</SUP> &#224; partir d'une fonction de <!-- MATH
+ $\mathbb{R}^p$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p</SUP> dans <!-- MATH
+ $\mathbb{R}^q$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>q</SUP></A>
+</H3>
+On d&#233;finit la fonction <!-- MATH
+ $f(x,y)=x*\sin(y)$
+ -->
+<I>f</I> (<I>x</I>, <I>y</I>) = <I>x</I>*sin(<I>y</I>), puis on veut d&#233;finir la famille
+de fonctions d&#233;pendant du param&#232;tre <I>t</I> par
+<!-- MATH
+ $g(t)(y):=f(t,y)$
+ -->
+<I>g</I>(<I>t</I>)(<I>y</I>) : = <I>f</I> (<I>t</I>, <I>y</I>).
+<BR>
+Comme ce qui se trouve apr&#232;s <TT>-&gt; </TT> n'est pas &#233;valu&#233;, on ne peut pas 
+d&#233;finir <I>g</I>(<I>t</I>) par <TT>g(t):=y-&gt;f(t,y)</TT> et on doit utiliser la commande
+<TT>unapply</TT>.
+<BR>
+On tape pour d&#233;finir les fonctions <!-- MATH
+ $f(x,y)=x\sin(y)$
+ -->
+<I>f</I> (<I>x</I>, <I>y</I>) = <I>x</I> sin(<I>y</I>) et <!-- MATH
+ $g(t)=y->f(t,y)$
+ -->
+<I>g</I>(<I>t</I>) = <I>y</I> - &gt; <I>f</I> (<I>t</I>, <I>y</I>) :
+<DIV ALIGN="CENTER">
+<TT>f(x,y):=x*sin(y);g(t):=unapply(f(t,y),y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>((x,y)-&gt;x*sin(y), (t)-&gt;unapply(f(t,y),y))</TT>
+</DIV>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>g(2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>y-&gt;2<SUP> . </SUP> sin(y)</TT>
+</DIV>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>g(2)(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2<SUP> . </SUP> sin(1)</TT>
+</DIV>
+
+<P>
+On d&#233;finit la fonction <!-- MATH
+ $h(x,y)=(x*\cos(y),x*\sin(y))$
+ -->
+<I>h</I>(<I>x</I>, <I>y</I>) = (<I>x</I>*cos(<I>y</I>), <I>x</I>*sin(<I>y</I>)), 
+puis on veut d&#233;finir la famille de fonctions d&#233;pendant du param&#232;tre <I>t</I> 
+par <!-- MATH
+ $k(t)(y):=h(t,y)$
+ -->
+<I>k</I>(<I>t</I>)(<I>y</I>) : = <I>h</I>(<I>t</I>, <I>y</I>).
+<BR>
+Comme ce qui se trouve apr&#232;s <TT>-&gt; </TT> n'est pas &#233;valu&#233;, on ne peut pas 
+d&#233;finir <I>k</I>(<I>t</I>) par <!-- MATH
+ $k(t):=y->h(x,y)$
+ -->
+<I>k</I>(<I>t</I>) : = <I>y</I> - &gt; <I>h</I>(<I>x</I>, <I>y</I>) et on est oblig&#233; d'utiliser la 
+commande <TT>unapply</TT>.
+<BR>
+On tape pour d&#233;finir la fonction <I>h</I>(<I>x</I>, <I>y</I>) :
+<DIV ALIGN="CENTER">
+<TT>h(x,y):=(x*cos(y),x*sin(y))</TT>
+</DIV>
+On tape pour d&#233;finir la fonction <I>k</I>(<I>t</I>) :
+<DIV ALIGN="CENTER">
+<TT>k(t):=unapply(h(x,t),x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(t)-&gt;unapply(h(x,t),x)</TT>
+</DIV>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>k(2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x)-&gt;(x*cos(2),x*sin(2))</TT>
+</DIV>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>k(2)(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(2*cos(1),2*sin(1))</TT>
+</DIV>
+Ou encore
+On d&#233;finit la fonction <!-- MATH
+ $h(x,y)=[x*\cos(y),x*\sin(y)]$
+ -->
+<I>h</I>(<I>x</I>, <I>y</I>) = [<I>x</I>*cos(<I>y</I>), <I>x</I>*sin(<I>y</I>)], 
+puis on veut d&#233;finir la famille de fonctions d&#233;pendant du param&#232;tre <I>t</I> 
+par <!-- MATH
+ $k(t)(y):=h(t,y)$
+ -->
+<I>k</I>(<I>t</I>)(<I>y</I>) : = <I>h</I>(<I>t</I>, <I>y</I>).
+<BR>
+Comme ce qui se trouve apr&#232;s <TT>-&gt; </TT> n'est pas &#233;valu&#233;, on ne peut pas 
+d&#233;finir <I>k</I>(<I>t</I>) par <!-- MATH
+ $k(t):=y->h(x,y)$
+ -->
+<I>k</I>(<I>t</I>) : = <I>y</I> - &gt; <I>h</I>(<I>x</I>, <I>y</I>) et on est oblig&#233; d'utiliser la 
+commande <TT>unapply</TT>.
+<BR>
+On tape pour d&#233;finir la fonction <I>h</I>(<I>x</I>, <I>y</I>) :
+<DIV ALIGN="CENTER">
+<TT>h(x,y):={[x*cos(y),x*sin(y)]}</TT>
+</DIV>
+On tape pour d&#233;finir la fonction <I>k</I>(<I>t</I>) :
+<DIV ALIGN="CENTER">
+<TT>k(t):=unapply(h(x,t),x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(t)-&gt;unapply(h(x,t),x)</TT>
+</DIV>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>k(2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x)-&gt;{[x*cos(2),x*sin(2)];}</TT>
+</DIV>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>k(2)(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2<SUP> . </SUP> cos(1),2<SUP> . </SUP> sin(1)]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8147"
+  HREF="node356.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8141"
+  HREF="node352.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8137"
+  HREF="node354.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8143"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8145"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8148"
+  HREF="node356.html">Composition de fonctions :</A>
+<B> monter:</B> <A NAME="tex2html8142"
+  HREF="node352.html">D&#233;finition d'une fonction</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8138"
+  HREF="node354.html">D&#233;finition d'une fonction de</A>
+ &nbsp; <B>  <A NAME="tex2html8144"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8146"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

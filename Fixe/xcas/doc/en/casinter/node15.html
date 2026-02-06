@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Spreadsheet</TITLE>
+<META NAME="description" CONTENT="Spreadsheet">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html188"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html186"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html180"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html189"
+  HREF="node16.html">Logo-like turtle</A>
+<B> Up:</B> <A NAME="tex2html187"
+  HREF="node3.html">Level types</A>
+<B> Previous:</B> <A NAME="tex2html181"
+  HREF="node14.html">3-d geometry</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00036000000000000000">
+Spreadsheet</A>
+</H2>
+Use the <code>Table-&gt;new spreadsheet</code> menu to add a spreadsheet level.
+You will see a small configuration screen where you can change
+the number of rows/columns, if an attached graph is displayed,
+and also a variable name that you can use to get values
+from commandlines outside of the spreadsheet (using the matrix notation,
+e.g. <TT>a[1,2]</TT> will return the value of the cell at row 2, column 3
+in <TT>xcas</TT> syntax mode, or at row 1, column 2 in other syntax modes). 
+You can modify the spreadsheet configuration by hitting the
+status line above the cells or with the 
+spreadsheet <code>File-&gt;variable name</code> menu later).
+If you have choosed to display the graph inside the spreadsheet
+configuration, it will dynamically
+display all cells that evaluate to a graphic object. 
+You may also display all the graphic
+objects of the spreadsheet in a separate window, either in 2-d or in 3-d by 
+hitting the <!-- MATH
+ $\framebox{2d}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.png"
+ ALT="\framebox{2d}"> or <!-- MATH
+ $\framebox{3d}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.png"
+ ALT="\framebox{3d}"> button at the right of 
+the spreadsheet menu.
+
+<P>
+A cell may contain
+a fixed value (any valid Xcas object: integer, real, symbols,
+algebraic objects, strings, ...) or a formula depending on other
+cells. The syntax for formulas is the same as for many spreadsheet, 
+begin with a <code>=</code>, then enter an algebraic expression where
+other cells are represented using a symbol made of the column
+name (e.g. A) and the row number (e.g. 1). When copying cells,
+cell dependance in a formula is considered relative
+unless you write a dollar ($) sign before the column name or
+row number. You can enter an area instead of a cell name, an area
+is always a rectangular area, it is made of two cell names separated
+by <code>..</code> representing opposite vertices of the rectangular area.
+
+<P>
+To enter a new value or formula in a cell, click on the cell, then
+enter your value or formula with the keyboard. As soon as you type
+a normal character, the focus will move from the sheet to the
+commandline above the sheet. To help enter formula, you can use the mouse 
+to select a cell or a cell area. Once the value or formula is correct
+press the enter key to validate it. You can cancel your edit at
+any time by pressing the Esc key.
+
+<P>
+To modify a cell value, click on the cell so that the value or formula
+is displayed in the commandline above, then click in the commandline,
+modify it and press Enter (or Esc to cancel).
+
+<P>
+You can move in the sheet using the mouse or the direction keys, or
+using the ``goto'' input value at the topleft of the sheet. Just enter
+a cell name then enter to move there. If the cell does not exist,
+the sheet will be enlarged to make it exist. You can also enter
+an area in the ``goto'' input value to select this area without the
+mouse. You must use the ``goto'' input value to make special
+selections that are not connected areas, for example <code>A1..B3,D,F</code> will
+``select'' the tabular with rows 1 to 3 and columns A, B, D and F.
+You can copy and paste a rectangular area with the mouse like this:
+select the rectangular area with the mouse, click on the target cell,
+click on the commandline, type Ctrl-U to erase the previous
+value then click on the middle button and type enter.
+
+<P>
+If you want to copy a cell formula to an area of the spreadsheet,
+push at the right bottom part of the cell (when the mouse is on the
+correct area of the cell, it will display a different cursor)
+and move the mouse over the area you want to
+copy, then release the mouse.
+You can also copy cells using a menu item in the spreadsheet
+<code>Edit</code> menu, you can either copy to the left, or to the bottom,
+or to a rectangular area previously selected with the mouse (in this
+case the cell which was below the mouse when you pushed the button
+will be copied to the rectangular area).
+
+<P>
+The spreadsheet can be saved, exported, imported, etc. using the
+spreadsheet <code>File</code> menu. The spreadsheet is also saved 
+as part of the session (but not as a standalone spreadsheet)
+when you save the whole session. When you load a session, the
+spreadsheet will not be evaled automatically, you must reeval
+it with the <code>reeval</code> button explicitely (or modify one cell).
+
+<P>
+Xcas does not provide filters for native binary spreadsheet formats,
+but you can import spreadsheet from other softwares or data using
+copy/paste or by saving them in the text CSV (comma separated values) format:
+cells values must always be separated by the same character e.g. a comma, and
+another character should be used to start a new row like a newline.
+For example, you can select a spreadsheet area inside Open Office
+and paste it inside Xcas.
+If you want to import formulas instead of values,
+use the Tools-&gt;Option menu of Open Office, find the spreadsheet Display item
+and check Formulas. Select the area inside Open Office, then
+paste at the same upper left cell position inside Xcas.
+Alternatively you can save the spreadsheet in CSV format inside
+Open Office with the <code>File-&gt;Save as</code> 
+menuitem, then select CSV in the choosebox below. 
+Then inside Xcas, use the <code>File-&gt;Insert CSV</code> menu item,
+select the file, change the separators if Xcas made a bad guess.
+Note that Xcas must use row numerotation starting
+at 1 instead of 0 for Open Office CSV formula import (this is the default).
+
+<P>
+Click on the status line or select inside the <code>Edit</code> menu
+for configuration and sheet modifications operations. Configuration
+operations should be self-explanatory, except for matrix fill cells : 
+when entering a matrix in the commandline, 
+you can choose between two modes, either the matrix will fill
+a rectangular area of cells, or it will fill only one cell.
+
+<P>
+The <code>Stats</code>
+menu is useful to make statistic plots in the corresponding graph.
+When you make a graph using this menu, you will have to select
+the data area where the statistic function will be applied (e.g.
+a polygonplot on <code>A1..B10</code>) and a target cell. The target
+cell is a regular cell which was empty and will contain the formula
+defining the graphic object that will be displayed. If you check the
+value box, the graph will not change later, but if you don't check
+the value box and modify
+one data cell later, the graph will be updated like any cell 
+depending on this data cell would be.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html188"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html186"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html180"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html189"
+  HREF="node16.html">Logo-like turtle</A>
+<B> Up:</B> <A NAME="tex2html187"
+  HREF="node3.html">Level types</A>
+<B> Previous:</B> <A NAME="tex2html181"
+  HREF="node14.html">3-d geometry</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>

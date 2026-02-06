@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer un entier en la liste des coefficients de son &#233;criture en base b : convert convertir</TITLE>
+<META NAME="description" CONTENT="Transformer un entier en la liste des coefficients de son &#233;criture en base b : convert convertir">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node220.html">
+<LINK REL="previous" HREF="node218.html">
+<LINK REL="up" HREF="node218.html">
+<LINK REL="next" HREF="node220.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6136"
+  HREF="node220.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6130"
+  HREF="node218.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6124"
+  HREF="node218.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6132"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6134"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6137"
+  HREF="node220.html">Transformer la liste des</A>
+<B> monter:</B> <A NAME="tex2html6131"
+  HREF="node218.html">&#201;criture en base b</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6125"
+  HREF="node218.html">&#201;criture en base b</A>
+ &nbsp; <B>  <A NAME="tex2html6133"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6135"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00961000000000000000"></A><A NAME="4708"></A><A NAME="4709"></A>
+<BR>
+Transformer un entier en la liste des coefficients de son &#233;criture en base b : <TT>convert convertir</TT>
+</H2><A NAME="29688"></A>
+<TT>convert</TT> ou <TT>convertir</TT> permet de faire diff&#233;rente conversions selon
+l'option choisie par le deuxi&#232;me argument.
+Pour convertir un entier <TT>n</TT> en son &#233;criture en base <TT>b</TT>, cette 
+option est <TT>base</TT>. Les arguments de <TT>convert</TT> ou <TT>convertir</TT> sont 
+alors un entier <TT>n</TT>, <TT>base</TT> et la valeur de la base <TT>b</TT>.
+<BR><TT>convert</TT> ou <TT>convertir</TT> renvoie la liste des coefficients de 
+l'&#233;criture en base <TT>b</TT> de l'entier <TT>n</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>convert(123,base,8)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,7,1]</TT>
+</DIV>
+On v&#233;rifie en tapant <TT>expr("0173")</TT> ou  <TT>horner(revlist([3,7,1]),8)</TT>
+ou <TT>convert([3,7,1],base,8)</TT> et on obtient bien <TT>123</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>convert(142,base,12)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[10,11]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

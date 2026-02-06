@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Modifier un &#233;l&#233;ment d'une liste : subsop</TITLE>
+<META NAME="description" CONTENT="Modifier un &#233;l&#233;ment d'une liste : subsop">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node577.html">
+<LINK REL="previous" HREF="node575.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node577.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11429"
+  HREF="node577.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11423"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11417"
+  HREF="node575.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11425"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11427"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11430"
+  HREF="node577.html">Transformer une liste en</A>
+<B> monter:</B> <A NAME="tex2html11424"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11418"
+  HREF="node575.html">Avoir la liste permut&#233;e</A>
+ &nbsp; <B>  <A NAME="tex2html11426"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11428"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093810000000000000000"></A><A NAME="14623"></A>
+<BR>
+Modifier un &#233;l&#233;ment d'une liste : <TT>subsop</TT>
+</H2>
+<TT>subsop</TT> permet de  modifier un &#233;l&#233;ment dans une liste sans 
+avoir &#224; la mettre dans une variable.
+<BR><B>Remarque</B> Si le second argument est <TT>'k=NULL'</TT>, l'&#233;l&#233;ment d'indice
+<TT>k</TT> est enlev&#233; de la liste.
+<BR>
+On tape en mode <TT>Xcas</TT> (les indices commencent &#224; 0) :
+<DIV ALIGN="CENTER">
+<TT>subsop([0,1,2],1=5)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>L:=[0,1,2];L[1]:=5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,5,2]</TT>
+</DIV>
+On tape en mode <TT>Xcas</TT> (les indices commencent &#224; 0) 
+<DIV ALIGN="CENTER">
+<TT>subsop([0,1,2],'1=NULL')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,2]</TT>
+</DIV>
+On tape en mode <TT>Mupad TI</TT> (les indices commencent &#224; 1) :
+<DIV ALIGN="CENTER">
+<TT>subsop([0,1,2],2=5)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>L:=[0,1,2];L[2]:=5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,5,2]</TT>
+</DIV>
+<B>Attention</B>, en mode <TT>Maple</TT> les arguments sont permut&#233;s et les 
+indices commencent &#224; 1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subsop(2=5,[0,1,2])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>L:=[0,1,2];L[2]:=5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,5,2]</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

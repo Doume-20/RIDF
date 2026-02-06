@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La sym&#233;trie droite et la sym&#233;trie point : reflection symetrie</TITLE>
+<META NAME="description" CONTENT="La sym&#233;trie droite et la sym&#233;trie point : reflection symetrie">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node993.html">
+<LINK REL="previous" HREF="node991.html">
+<LINK REL="up" HREF="node989.html">
+<LINK REL="next" HREF="node993.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17777"
+  HREF="node993.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17771"
+  HREF="node989.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17765"
+  HREF="node991.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17773"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17775"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17778"
+  HREF="node993.html">La rotation : rotation</A>
+<B> monter:</B> <A NAME="tex2html17772"
+  HREF="node989.html">Les transformations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17766"
+  HREF="node991.html">La translation : translation</A>
+ &nbsp; <B>  <A NAME="tex2html17774"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17776"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012173000000000000000"></A><A NAME="25903"></A><A NAME="25904"></A><A NAME="sec:symetrie2"></A>
+<BR>
+La sym&#233;trie droite et la sym&#233;trie point : <TT>reflection symetrie</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1101.html#sec:symetrie3">10.13.3</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>symetrie</TT>, en g&#233;om&#233;trie plane,  a un ou deux arguments  : un
+point ou une droite et &#233;ventuellement l'objet g&#233;om&#233;trique &#224; 
+transformer.
+<BR>
+Lorsque <TT>symetrie</TT>  a un argument, c'est une fonction qui agit sur un 
+objet g&#233;om&#233;trique : quand le premier argument est un point (ou un nombre 
+complexe) il s'agit de la sym&#233;trie par rapport &#224; ce point (ou par rapport 
+au  point d'affixe ce nombre complexe) et quand le premier argument est une 
+droite il s'agit de la sym&#233;trie par rapport &#224; cette droite.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sp:=symetrie(-1)</TT>
+</DIV>
+Puis :
+<DIV ALIGN="CENTER">
+<TT>sp(1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point -3-i trac&#233; avec une croix (x) noire</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sd:=symetrie(droite(-1,i))</TT>
+</DIV>
+Puis :
+<DIV ALIGN="CENTER">
+<TT>sd(1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point 2*i trac&#233; avec une croix (x) noire</TT>
+</DIV>
+Lorsque <TT>symetrie</TT> a deux arguments, <TT>symetrie</TT> dessine et renvoie le 
+transform&#233; du deuxi&#232;me argument dans la sym&#233;trie d&#233;finie par le 
+premier argument : quand le premier argument est un point (ou un nombre 
+complexe) il s'agit de la sym&#233;trie par rapport &#224; ce point (ou par rapport 
+au  point d'affixe ce nombre complexe) et quand le premier argument est une 
+droite il s'agit de la sym&#233;trie par rapport &#224; cette droite.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>symetrie(-1,1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point -3-i trac&#233; avec une croix (x) noire</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>symetrie(droite(-1,i),1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point 2*i trac&#233; avec une croix (x) noire</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17777"
+  HREF="node993.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17771"
+  HREF="node989.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17765"
+  HREF="node991.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17773"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17775"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17778"
+  HREF="node993.html">La rotation : rotation</A>
+<B> monter:</B> <A NAME="tex2html17772"
+  HREF="node989.html">Les transformations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17766"
+  HREF="node991.html">La translation : translation</A>
+ &nbsp; <B>  <A NAME="tex2html17774"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17776"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

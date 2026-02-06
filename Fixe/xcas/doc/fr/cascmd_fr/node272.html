@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La fonction cosinus integral Ci : Ci</TITLE>
+<META NAME="description" CONTENT="La fonction cosinus integral Ci : Ci">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node273.html">
+<LINK REL="previous" HREF="node271.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node273.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6928"
+  HREF="node273.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6922"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6916"
+  HREF="node271.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6924"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6926"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6929"
+  HREF="node273.html">La fonction sinus integral</A>
+<B> monter:</B> <A NAME="tex2html6923"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6917"
+  HREF="node271.html">La fonction exponentielle integrale</A>
+ &nbsp; <B>  <A NAME="tex2html6925"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6927"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009106000000000000000"></A><A NAME="6297"></A>
+<BR>
+La fonction cosinus integral <I>Ci</I> : <TT>Ci</TT>
+</H2>
+<TT>Ci</TT> a comme argument un nombre  complexe <I>a</I>.
+<BR><TT>Ci</TT> calcule les valeurs de la fonction <I>Ci</I> au point <I>a</I>.
+<BR>
+On a par d&#233;finition :
+<P><!-- MATH
+ \begin{displaymath}
+Ci(x)=\int_{t=+\infty}^x\frac{\cos(t)}{t} dt
+=\ln(x)+\gamma+\int_0^x \frac{cos(t)-1}{t} \ dt
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>Ci</I>(<I>x</I>) = <IMG
+ WIDTH="54" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$\displaystyle \int_{{t=+\infty}}^{x}$"><IMG
+ WIDTH="52" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.png"
+ ALT="$\displaystyle {\frac{{\cos(t)}}{{t}}}$"><I>dt</I> = ln(<I>x</I>) + <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$\displaystyle \gamma$"> + <IMG
+ WIDTH="30" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img151.png"
+ ALT="$\displaystyle \int_{0}^{x}$"><IMG
+ WIDTH="82" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.png"
+ ALT="$\displaystyle {\frac{{cos(t)-1}}{{t}}}$">&nbsp;<I>dt</I>
+</DIV><P></P>
+On a : <!-- MATH
+ $Ci(0)=-\infty$
+ -->
+<I>Ci</I>(0) = - <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">, <!-- MATH
+ $Ci(-\infty)=i\pi$
+ -->
+<I>Ci</I>(- <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">) = <I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">, <!-- MATH
+ $Ci(+\infty)=0$
+ -->
+<I>Ci</I>(+ <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">) = 0.
+Lorsque l'on est proche de <I>x</I> = 0 on sait que 
+<P><!-- MATH
+ \begin{displaymath}
+\frac{\cos(x)}{x}=\frac{1}{x}-\frac{x}{2}+\frac{x^3}{4!}+...+(-1)^n\frac{x^{2n-1}}{(2n)!}....
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="55" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.png"
+ ALT="$\displaystyle {\frac{{\cos(x)}}{{x}}}$"> = <IMG
+ WIDTH="18" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.png"
+ ALT="$\displaystyle {\frac{{1}}{{x}}}$"> - <IMG
+ WIDTH="18" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img154.png"
+ ALT="$\displaystyle {\frac{{x}}{{2}}}$"> + <IMG
+ WIDTH="26" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img155.png"
+ ALT="$\displaystyle {\frac{{x^3}}{{4!}}}$"> + ... + (- 1)<SUP>n</SUP><IMG
+ WIDTH="51" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.png"
+ ALT="$\displaystyle {\frac{{x^{2n-1}}}{{(2n)!}}}$">....
+</DIV><P></P>
+ce qui donne par int&#233;gration le d&#233;veloppement en s&#233;ries de Ci.
+
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Ci(1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.337403922901</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Ci(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.337403922901+3.14159265359*i</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Ci(1.)-Ci(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-3.14159265359*i</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>int((cos(x)-1)/x,x=-1..1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-3.14159265359*i</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

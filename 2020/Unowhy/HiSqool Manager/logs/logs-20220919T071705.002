@@ -1,0 +1,83 @@
+2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform === 'win32' +0ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +4ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +6ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +0ms
+2022-09-19 07:16:37.982: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [CommandService] Got command facts:set +765ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [CommandService] Got command units:trigger +3ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +1ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> logout... +1ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> logout... +0ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +0ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +1ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +0ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> logout... +1ms
+2022-09-19 07:16:38.747: 2022-09-19 9:16:38 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +0ms
+2022-09-19 07:16:38.763: 127.0.0.1 - - [19/Sep/2022:07:16:38 +0000] "POST /commands HTTP/1.1" 200 25 "-" "-"
+2022-09-19 07:16:39.825: 2022-09-19 9:16:39 [4852] INFO [JS] Getting apps result: 0 +1064ms
+2022-09-19 07:16:39.825: 2022-09-19 9:16:39 [4852] INFO [JS] Setting facts... +1ms
+2022-09-19 07:16:39.825: 2022-09-19 9:16:39 [4852] INFO [JS] Uploading facts... +2ms
+2022-09-19 07:16:40.059: 2022-09-19 9:16:40 [4852] INFO [JS] Uploading facts result:  +239ms
+2022-09-19 07:16:40.059: 2022-09-19 9:16:40 [4852] INFO [Runner] Running result: true +0ms
+2022-09-19 07:16:40.059: 2022-09-19 9:16:40 [4852] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2022-09-19 07:16:58.458: 2022-09-19 9:16:58 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Error, error=Network, active=true +18387ms
+2022-09-19 07:16:58.458: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_4.0.6.jar... +5ms
+2022-09-19 07:16:58.458: 2022-09-19 9:16:58 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Error, error=Network, active=true +4ms
+2022-09-19 07:16:58.458: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.11.0.jar... +3ms
+2022-09-19 07:16:58.520: 2022-09-19 9:16:58 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Error, error=Network, active=true +51ms
+2022-09-19 07:16:58.520: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_5.0.0.jar... +2ms
+2022-09-19 07:16:58.520: 2022-09-19 9:16:58 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Error, error=Network, active=true +6ms
+2022-09-19 07:16:58.520: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/educadhoc_9.0.19.jar... +2ms
+2022-09-19 07:16:58.629: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Got response 200. +103ms
+2022-09-19 07:16:58.629: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Response content length is 43905510  +0ms
+2022-09-19 07:16:58.629: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Got response 200. +5ms
+2022-09-19 07:16:58.629: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Response content length is 168931842  +1ms
+2022-09-19 07:16:58.661: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Got response 200. +27ms
+2022-09-19 07:16:58.661: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Response content length is 66833251  +1ms
+2022-09-19 07:16:58.661: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Got response 200. +2ms
+2022-09-19 07:16:58.661: 2022-09-19 9:16:58 [4852] INFO [RequestPerformerService] Response content length is 80874641  +1ms
+2022-09-19 07:17:04.955: 2022-09-19 9:17:04 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_5.0.0.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\991\payload.jard6e5e877df1345c4.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +6285ms
+2022-09-19 07:17:04.955: 2022-09-19 9:17:04 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:17:04.955:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:17:04.955:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:17:04.955:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:17:04.955:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:17:04.955:     at net.js:673:12
+2022-09-19 07:17:04.955:     at TCP.done (_tls_wrap.js:563:7) +3ms
+2022-09-19 07:17:04.955: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:17:04.955: 2022-09-19 9:17:04 [4852] INFO [RequestPerformerService] Got disposed. +2ms
+2022-09-19 07:17:04.955: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:17:04.955: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Error Network. Waiting 60 seconds before retrying... +2ms
+2022-09-19 07:17:04.971: 2022-09-19 9:17:04 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.11.0.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload.jarbf74fbdf925a53fc.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +5ms
+2022-09-19 07:17:04.971: 2022-09-19 9:17:04 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:17:04.971:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:17:04.971:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:17:04.971:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:17:04.971:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:17:04.971:     at net.js:673:12
+2022-09-19 07:17:04.971:     at TCP.done (_tls_wrap.js:563:7) +4ms
+2022-09-19 07:17:04.971: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:17:04.971: 2022-09-19 9:17:04 [4852] INFO [RequestPerformerService] Got disposed. +2ms
+2022-09-19 07:17:04.971: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Error, error=Network, active=true +1ms
+2022-09-19 07:17:04.971: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Error Network. Waiting 60 seconds before retrying... +3ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/educadhoc_9.0.19.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\986\payload.jarc4254a987fea579a.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +2ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:17:04.987:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:17:04.987:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:17:04.987:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:17:04.987:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:17:04.987:     at net.js:673:12
+2022-09-19 07:17:04.987:     at TCP.done (_tls_wrap.js:563:7) +3ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] INFO [RequestPerformerService] Got disposed. +2ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Error, error=Network, active=true +1ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Error Network. Waiting 60 seconds before retrying... +3ms
+2022-09-19 07:17:04.987: 2022-09-19 9:17:04 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_4.0.6.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1027\payload.jar0bbef8592bcbe66b.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +2ms
+2022-09-19 07:17:05.002: 2022-09-19 9:17:04 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close

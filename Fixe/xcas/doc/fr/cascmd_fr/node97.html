@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Faire une hypoth&#232;se suppl'ementaire sur une variable : additionally</TITLE>
+<META NAME="description" CONTENT="Faire une hypoth&#232;se suppl'ementaire sur une variable : additionally">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node98.html">
+<LINK REL="previous" HREF="node96.html">
+<LINK REL="up" HREF="node89.html">
+<LINK REL="next" HREF="node98.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3748"
+  HREF="node98.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3742"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3736"
+  HREF="node96.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3744"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3746"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3749"
+  HREF="node98.html">Connaitre les hypoth&#232;ses faites</A>
+<B> monter:</B> <A NAME="tex2html3743"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3737"
+  HREF="node96.html">Faire une hypoth&#232;se sur</A>
+ &nbsp; <B>  <A NAME="tex2html3745"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3747"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00558000000000000000"></A><A NAME="2033"></A>
+<BR>
+Faire une hypoth&#232;se suppl'ementaire sur une variable : <TT>additionally</TT>
+</H2><A NAME="29559"></A>
+<TT>additionally</TT> permet de faire des hypoth&#232;ses suppl&#233;mentaires
+sur une variable. En effet, si on fait une autre hypoth&#232;se avec <TT>assume</TT>, 
+l'ancienne hypoth&#232;se est effac&#233;e. Donc, si vous voulez rajoutez une 
+nouvelle hypoth&#232;se il faut utiliser la commande <TT>additionally</TT> ou mettre 
+<TT>additionally</TT> comme deuxi&#232;me argument de <TT>assume</TT>.
+<BR><TT>additionally</TT> a les m&#234;mes arguments que <TT>assume</TT> ou <TT>supposons</TT> :
+un nom de variable suivi d'une&#233;galit&#233; ou d'une in&#233;galit&#233; repr&#233;sentant
+l'hypoth&#232;se faite ou bien un nom de variable suivi d'une virgule et de son 
+type. On peut mettre plusieurs hypoth&#232;ses &#224; condition de les relier par 
+<TT>and</TT> ou <TT>or</TT> selon ce que l'on veut faire ! 
+<BR>
+On est oblig&#233; d'utiliser 
+<TT>additionally</TT> pour sp&#233;cifier le type de la variable et une plage de 
+valeurs pour cette variable.
+<BR>
+On tape pour dire que <TT>b</TT> est un entier sup&#233;rieur strictement &#224; 5 :
+<DIV ALIGN="CENTER">
+<TT>assume(b,integer);</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>additionally(b&gt;5)</TT>
+</DIV>
+ou bien 
+<DIV ALIGN="CENTER">
+<TT>assume(b,integer);</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>assume(b&gt;5,additionally)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>DOM_INT</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>b</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>assume(b)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[DOM_INT]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3748"
+  HREF="node98.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3742"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3736"
+  HREF="node96.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3744"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3746"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3749"
+  HREF="node98.html">Connaitre les hypoth&#232;ses faites</A>
+<B> monter:</B> <A NAME="tex2html3743"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3737"
+  HREF="node96.html">Faire une hypoth&#232;se sur</A>
+ &nbsp; <B>  <A NAME="tex2html3745"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3747"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

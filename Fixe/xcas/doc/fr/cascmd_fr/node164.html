@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Solution approch&#233;e de y'=f(t,y) : odesolve</TITLE>
+<META NAME="description" CONTENT="Solution approch&#233;e de y'=f(t,y) : odesolve">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node165.html">
+<LINK REL="previous" HREF="node163.html">
+<LINK REL="up" HREF="node160.html">
+<LINK REL="next" HREF="node165.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4768"
+  HREF="node165.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4762"
+  HREF="node160.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4756"
+  HREF="node163.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4764"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4766"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4769"
+  HREF="node165.html">Solution approch&#233;e du syst&#232;me</A>
+<B> monter:</B> <A NAME="tex2html4763"
+  HREF="node160.html">Quelques fonctions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4757"
+  HREF="node163.html">Calcul approch&#233; d'int&#232;grales :</A>
+ &nbsp; <B>  <A NAME="tex2html4765"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4767"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00734000000000000000"></A><A NAME="3615"></A>
+<BR>
+Solution approch&#233;e de y'=f(t,y) : <TT>    odesolve</TT>
+</H2><A NAME="29624"></A>
+
+<UL>
+<LI>Soit <I>f</I> une fonction de <!-- MATH
+ $\mathbb R^2$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>2</SUP> 
+dans <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$">.
+<BR><TT>odesolve(f(t,y),[t,y],[t0,y0],t1)</TT> ou
+<BR><TT>odesolve(f(t,y),t=t0..t1,y,y0)</TT> ou
+<BR><TT>odesolve(t0..t1,f,y0)</TT> ou
+<BR><TT>odesolve(t0..t1,(t,y)-&gt;f(t,y),y0)</TT>
+<BR>
+renvoie  la valeur approch&#233;e de 
+<I>y</I>(<I>t</I>1) lorsque <I>y</I>(<I>t</I>) est la  
+solution de <!-- MATH
+ $y'(t)=f(t,y(t))$
+ -->
+<I>y'</I>(<I>t</I>) = <I>f</I> (<I>t</I>, <I>y</I>(<I>t</I>)) qui v&#233;rifie <I>y</I>(<I>t</I>0) = <I>y</I>0.
+</LI>
+<LI>On peut ajouter un param&#232;tre optionnel pour
+indiquer la discr&#233;tisation en temps souhait&#233;e
+(<TT>tstep=valeur</TT>). Cette valeur n'est pas forc&#233;ment
+respect&#233;e par le solver.
+</LI>
+<LI>On peut indiquer en param&#232;tre optionnel <TT>curve</TT>
+pour obtenir la liste des [<I>t</I>,[<I>y</I>(<I>t</I>)]] calcul&#233;s au lieu
+de la seule valeur de <I>y</I>(<I>t</I>1).
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve(sin(t*y),[t,y],[0,1],2)</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>odesolve(sin(t*y),t=0..2,y,1)</TT>
+
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>odesolve(0..2,(t,y)-&gt;sin(t*y),1)</TT>
+
+</DIV>
+ou encore on d&#233;finit la fonction :
+<DIV ALIGN="CENTER">
+<TT>f(t,y):=sin(t*y)</TT>
+
+</DIV>
+et on tape:
+<DIV ALIGN="CENTER">
+<TT>odesolve(0..2,f,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1.82241255675]</TT>
+</DIV>
+puis on tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve(0..2,f,1,tstep=0.3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1.82241255675]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve(sin(t*y),t=0..2,y,1,tstep=0.5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1.82241255675]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve(sin(t*y),t=0..2,y,1,tstep=0.5,curve)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0.760963063136,[1.30972370515]],[1.39334557388,[1.86417104853]]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4768"
+  HREF="node165.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4762"
+  HREF="node160.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4756"
+  HREF="node163.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4764"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4766"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4769"
+  HREF="node165.html">Solution approch&#233;e du syst&#232;me</A>
+<B> monter:</B> <A NAME="tex2html4763"
+  HREF="node160.html">Quelques fonctions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4757"
+  HREF="node163.html">Calcul approch&#233; d'int&#232;grales :</A>
+ &nbsp; <B>  <A NAME="tex2html4765"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4767"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

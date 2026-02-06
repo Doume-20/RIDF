@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Objets graphiques 2D</TITLE>
+<META NAME="description" CONTENT="Objets graphiques 2D">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node30.html">
+<LINK REL="previous" HREF="node28.html">
+<LINK REL="up" HREF="node27.html">
+<LINK REL="next" HREF="node30.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html476"
+  HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html470"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html464"
+  HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html472"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html474"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html477"
+  HREF="node30.html">Objets graphiques 3D</A>
+<B> monter:</B> <A NAME="tex2html471"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html465"
+  HREF="node28.html">Trac&#233;s de courbes</A>
+ &nbsp; <B>  <A NAME="tex2html473"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html475"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00052000000000000000">
+Objets graphiques 2D</A>
+</H2>
+<TT>Xcas</TT> &#233;tant aussi un logiciel de g&#233;om&#233;trie plane, de nombreuses
+figures peuvent &#234;tre trac&#233;es (dans un &#233;cran que l'on obtient avec 
+<TT>Alt+g</TT>) par des commandes du menu <code>Geo</code>, par exemple des polygones,
+ des coniques...&nbsp;
+Les arguments de ces commandes sont souvent des points (commande 
+<code>point</code>) qui peuvent en g&#233;n&#233;ral &#234;tre saisis 
+directement par leur affixe complexe. 
+Par exemple <code>cercle(2+3*i,2)</code> trace le cercle centr&#233; au point
+(2, 3), de rayon 2.
+La commande <code>legende</code> permet de placer un texte &#224; un endroit,
+lui aussi sp&#233;cifi&#233; par un nombre complexe. Les fonctions
+<code>polygonplot</code> et <code>scatterplot</code> prennent en entr&#233;e une
+liste d'abscisses et une liste d'ordonn&#233;es.
+<PRE>
+lx:=[k$(k=1..10)]
+ly:=apply(sin,lx)
+polygonplot(lx,ly)
+erase
+scatterplot(lx,ly)
+polygone_ouvert(lx+i*ly)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Objets graphiques 2D</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>legend</code></TD>
+<TD ALIGN="LEFT">met du texte &#224; partir d'un point donn&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>point</code></TD>
+<TD ALIGN="LEFT">point donn&#233; par son affixe ou 2 coordonnées</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>segment</code></TD>
+<TD ALIGN="LEFT">segment donnée par 2 points</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>droite</code></TD>
+<TD ALIGN="LEFT">droite donnée par son équation ou 2 points</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cercle</code></TD>
+<TD ALIGN="LEFT">cercle donnée par centre et rayon</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>inter</code></TD>
+<TD ALIGN="LEFT">intersection de courbes</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>equation</code></TD>
+<TD ALIGN="LEFT">équation cartésienne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>parameq</code></TD>
+<TD ALIGN="LEFT">équation paramétrique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>polygonplot</code></TD>
+<TD ALIGN="LEFT">ligne polygonale</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>scatterplot</code></TD>
+<TD ALIGN="LEFT">nuage de points</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>polygone</code></TD>
+<TD ALIGN="LEFT">polygone ferm&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>polygone_ouvert</code></TD>
+<TD ALIGN="LEFT">polygone ouvert</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1741"></A>
+<A NAME="718"></A>
+<A NAME="1742"></A>
+<A NAME="720"></A>
+<A NAME="1743"></A>
+<A NAME="1744"></A>
+<A NAME="1745"></A>
+<A NAME="724"></A>
+<A NAME="1746"></A>
+<A NAME="1747"></A>
+<A NAME="1748"></A>
+<A NAME="1749"></A>
+<A NAME="1750"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html476"
+  HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html470"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html464"
+  HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html472"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html474"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html477"
+  HREF="node30.html">Objets graphiques 3D</A>
+<B> monter:</B> <A NAME="tex2html471"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html465"
+  HREF="node28.html">Trac&#233;s de courbes</A>
+ &nbsp; <B>  <A NAME="tex2html473"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html475"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

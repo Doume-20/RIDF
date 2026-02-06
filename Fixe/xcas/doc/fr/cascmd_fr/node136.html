@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Repr&#233;sentation graphique de l'aire sous une courbe : plotarea areaplot</TITLE>
+<META NAME="description" CONTENT="Repr&#233;sentation graphique de l'aire sous une courbe : plotarea areaplot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node137.html">
+<LINK REL="previous" HREF="node135.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node137.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4345"
+  HREF="node137.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4339"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4333"
+  HREF="node135.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4341"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4343"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4346"
+  HREF="node137.html">Lignes de niveaux :</A>
+<B> monter:</B> <A NAME="tex2html4340"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4334"
+  HREF="node135.html">Repr&#233;sentation graphique d'in&#233;quations &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html4342"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4344"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006110000000000000000"></A><A NAME="2794"></A><A NAME="2795"></A>
+<BR>
+Repr&#233;sentation graphique de l'aire sous une courbe : <TT>plotarea areaplot</TT>
+</H1><A NAME="29591"></A><A NAME="29592"></A><A NAME="29593"></A><A NAME="29594"></A><A NAME="29595"></A><A NAME="29596"></A><A NAME="29597"></A><A NAME="29598"></A>
+
+<UL>
+<LI>Avec deux arguments, <TT>plotarea</TT> permet de repr&#233;senter l'aire sous 
+une courbe.
+<BR>
+Ainsi, <TT>plotarea(f(x),x=a..b)</TT> trace l'aire sous 
+la courbe <I>y</I> = <I>f</I> (<I>x</I>) pour <I>a</I> &lt; <I>x</I> &lt; <I>b</I>, c'est &#224; dire la portion du plan d&#233;finie 
+par les in&#233;quations <I>a</I> &lt; <I>x</I> &lt; <I>b</I> et selon le signe de 
+<I>f</I> (<I>x</I>) 0 &lt; <I>y</I> &lt; <I>f</I> (<I>x</I>) ou 0 &gt; <I>y</I> &gt; <I>f</I> (<I>x</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotarea(sin(x),x=0..2*pi)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>la portion de plan situ&#233; dans les deux arches de sin(x)</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Avec quatre arguments, <TT>plotarea</TT> permet de repr&#233;senter l'aire qui est cacul&#233;e avec la m&#233;thode num&#233;rique choisie parmi :
+<BR><TT>trapezoid, left_rectangle, right_rectangle, middle_point</TT> ou
+<TT>trapeze, rectangle_gauche, rectangle_droit, point_milieu</TT>.
+<BR>
+Ainsi, <TT>plotarea(f(x),x=a..b,n,trapeze)</TT> trace l'aire
+de <I>n</I> trap&#232;zes : le troisi&#232;me argument est un entier <I>n</I>, et le
+quatri&#232;me argument est le nom de la m&#233;thode num&#233;rique d'int&#233;gration 
+lorsqu'on partage [<I>a</I>, <I>b</I>] en <I>n</I> parties &#233;gales.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotarea((x<code>^</code>2,x=0..1,5,trapeze)</TT>
+</DIV>
+Ou on tape pour voir la courbe en rouge :
+<DIV ALIGN="CENTER">
+<TT>plotarea(x<code>^</code>2,x=0..1,5,trapeze); plot(x<code>^</code>2,x=0..1,affichage=rouge)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>les 5 trap&#232;zes qui sont utilis&#233;s dans la m&#233;thode dite des trap&#232;zes, pour approcher une int&#233;grale</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotarea((x<code>^</code>2,x=0..1,5,point_milieu)</TT>
+</DIV>
+Ou on tape pour voir la courbe en rouge :
+<DIV ALIGN="CENTER">
+<TT>plotarea(x<code>^</code>2,x=0..1,5,point_milieu); plot(x<code>^</code>2,x=0..1,affichage=rouge)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>les 5 rectangles qui sont utilis&#233;s dans la m&#233;thode dite du point milieu, pour approcher une int&#233;grale</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4345"
+  HREF="node137.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4339"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4333"
+  HREF="node135.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4341"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4343"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4346"
+  HREF="node137.html">Lignes de niveaux :</A>
+<B> monter:</B> <A NAME="tex2html4340"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4334"
+  HREF="node135.html">Repr&#233;sentation graphique d'in&#233;quations &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html4342"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4344"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

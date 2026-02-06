@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le vecteur en 3D : vecteur</TITLE>
+<META NAME="description" CONTENT="Le vecteur en 3D : vecteur">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1042.html">
+<LINK REL="previous" HREF="node1040.html">
+<LINK REL="up" HREF="node1036.html">
+<LINK REL="next" HREF="node1042.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18597"
+  HREF="node1042.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18591"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18585"
+  HREF="node1040.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18593"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18595"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18598"
+  HREF="node1042.html">Plan et droites parall&#232;les</A>
+<B> monter:</B> <A NAME="tex2html18592"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18586"
+  HREF="node1040.html">Le segment en 3D</A>
+ &nbsp; <B>  <A NAME="tex2html18594"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18596"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001345000000000000000"></A><A NAME="27088"></A>
+<A NAME="sec:vecteur3"></A>
+<BR>
+Le vecteur en 3D : <TT>vecteur</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node933.html#sec:vecteur2">9.10.5</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>vecteur</TT>, en g&#233;om&#233;trie 3D, a comme arguments soit :
+
+<UL>
+<LI>une liste repr&#233;sentant les coordonn&#233;es d'un point <I>A</I>.
+<BR><TT>vecteur</TT> d&#233;finit et dessine le vecteur <!-- MATH
+ $\overrightarrow{OA}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img605.png"
+ ALT="$ \overrightarrow{OA}$"> o&#249; <I>O</I> est l'origine du rep&#232;re.
+</LI>
+<LI>deux points <I>A</I>, <I>B</I> ou deux listes repr&#233;sentant les coordonn&#233;es de ces 
+points.
+<BR><TT>vecteur</TT> d&#233;finit et dessine le vecteur <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$">
+</LI>
+<LI>un point <I>A</I> (ou une liste repr&#233;sentant les coordonn&#233;es de ce point) 
+et un vecteur <I>V</I> (d&#233;finition r&#233;cursive).
+<BR><TT>vecteur</TT> d&#233;finit et dessine le vecteur <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$"> tel que
+<!-- MATH
+ $\overrightarrow{AB}=\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img582.png"
+ ALT="$ \overrightarrow{AB}=\overrightarrow{V}$">.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>vecteur([1,2,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le trac&#233; du vecteur d'origine [0,0,0] et d'extr&#233;mit&#233; [1,2,3]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>vecteur(point([-1,0,0]),point([0,1,2]))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>vecteur([-1,0,0],[0,1,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le trac&#233; du vecteur d'origine [-1,0,0] et d'extr&#233;mit&#233; [0,1,2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>V:=vecteur([-1,0,0],[0,1,2])</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>vecteur(point([-1,2,0]),V)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>vecteur([-1,2,0],V)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le trac&#233; du vecteur d'origine [-1,2,0] et d'extr&#233;mit&#233; [0,3,2]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+En calcul formel, on travaille sur la liste des coordonn&#233;es des vecteurs que 
+l'on obtient avec la commande <TT>coordonnees</TT> (cf <A HREF="node1077.html#sec:coordonnees3">10.11.4</A>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18597"
+  HREF="node1042.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18591"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18585"
+  HREF="node1040.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18593"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18595"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18598"
+  HREF="node1042.html">Plan et droites parall&#232;les</A>
+<B> monter:</B> <A NAME="tex2html18592"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18586"
+  HREF="node1040.html">Le segment en 3D</A>
+ &nbsp; <B>  <A NAME="tex2html18594"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18596"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

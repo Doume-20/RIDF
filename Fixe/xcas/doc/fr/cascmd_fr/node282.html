@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions de Airy : Airy_Ai et Airy_Bi</TITLE>
+<META NAME="description" CONTENT="Les fonctions de Airy : Airy_Ai et Airy_Bi">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node281.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node283.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7066"
+  HREF="node283.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7060"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7056"
+  HREF="node281.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7062"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7064"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7067"
+  HREF="node283.html">Les permutations</A>
+<B> monter:</B> <A NAME="tex2html7061"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7057"
+  HREF="node281.html">La fonction : Zeta</A>
+ &nbsp; <B>  <A NAME="tex2html7063"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7065"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0091016000000000000000"></A><A NAME="6667"></A><A NAME="6668"></A>
+<BR>
+Les fonctions de Airy : <TT>Airy_Ai</TT> et <TT>Airy_Bi</TT>
+</H2>
+<TT>Airy_Ai</TT> et <TT>Airy_Bi</TT> a comme argument un r&#233;el <I>x</I>.
+<BR><TT>Airy_Ai</TT> et <TT>Airy_Bi</TT> sont deux solutions ind&#233;pendantes
+de l'&#233;quation : 
+<BR><!-- MATH
+ $y^{\prime\prime}-x*y=0$
+ -->
+<I>y</I><SUP><IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img186.png"
+ ALT="$\scriptstyle \prime{^\prime}$"></SUP> - <I>x</I>*<I>y</I> = 0.
+<BR>
+On d&#233;finit :
+<BR><!-- MATH
+ $Airy\_Ai(x) = (1/\pi) \int_0^\infty \cos(t^3/3 + x*t) dt$
+ -->
+<I>Airy</I><IMG
+ WIDTH="32" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img187.png"
+ ALT="$ \_Ai$">(<I>x</I>) = (1/<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">)<IMG
+ WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$ \int_{0}^{\infty}$">cos(<I>t</I><SUP>3</SUP>/3 + <I>x</I>*<I>t</I>)<I>dt</I>
+<BR><!-- MATH
+ $Airy\_Bi(x) = (1/\pi) \int_0^\infty (e^{- t^3/3} + \sin( t^3/3 + x*t)) dt$
+ -->
+<I>Airy</I><IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ \_Bi$">(<I>x</I>) = (1/<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">)<IMG
+ WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$ \int_{0}^{\infty}$">(<I>e</I><SUP>-t<SUP>3</SUP>/3</SUP> + sin(<I>t</I><SUP>3</SUP>/3 + <I>x</I>*<I>t</I>))<I>dt</I>
+<BR>
+On a aussi :
+<BR><TT>Airy_Ai(x)</TT> v&#233;rifie :
+<BR><!-- MATH
+ ${\tt Airy\_Ai(x)=Airy\_Ai(0)*f(x)+Airy\_Ai^\prime (0)*g(x)}$
+ -->
+<IMG
+ WIDTH="409" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="$ \tt Airy\_Ai(x)=Airy\_Ai(0)*f(x)+Airy\_Ai^\prime (0)*g(x)$"> et
+<BR><TT>Airy_Bi</TT> v&#233;rifie :
+<BR><!-- MATH
+ ${\tt Airy\_Bi(x)=\sqrt{3}(Airy\_Ai(0)*f(x)-Airy\_Ai^\prime (0)*g(x))}$
+ -->
+<IMG
+ WIDTH="446" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="$ \tt Airy\_Bi(x)=\sqrt{3}(Airy\_Ai(0)*f(x)-Airy\_Ai^\prime (0)*g(x))$">
+<BR>
+o&#249; f et g sont deux s&#233;ries enti&#232;res solutions de  
+<!-- MATH
+ $w^{\prime\prime}-x*w=0$
+ -->
+<I>w</I><SUP><IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img186.png"
+ ALT="$\scriptstyle \prime{^\prime}$"></SUP> - <I>x</I>*<I>w</I> = 0 :
+<BR><P><!-- MATH
+ \begin{displaymath}
+f(x)=\sum_{k=0}^\infty 3^k\left (\frac{\Gamma(k+\frac{1}{3})}{\Gamma(\frac{1}{3})}\right ) \frac{x^{3k}}{(3k)!}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>f</I> (<I>x</I>) = <IMG
+ WIDTH="30" HEIGHT="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$\displaystyle \sum_{{k=0}}^{\infty}$">3<SUP>k</SUP><IMG
+ WIDTH="20" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{\Gamma(k+\frac{1}{3})}{\Gamma(\frac{1}{3})}}\right.$"><IMG
+ WIDTH="74" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.png"
+ ALT="$\displaystyle {\frac{{\Gamma(k+\frac{1}{3})}}{{\Gamma(\frac{1}{3})}}}$"><IMG
+ WIDTH="20" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{\Gamma(k+\frac{1}{3})}{\Gamma(\frac{1}{3})}}\right)$"><IMG
+ WIDTH="45" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.png"
+ ALT="$\displaystyle {\frac{{x^{3k}}}{{(3k)!}}}$">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+g(x)=\sum_{k=0}^\infty 3^k\left (\frac{\Gamma(k+\frac{2}{3})}{\Gamma(\frac{2}{3})}\right ) \frac{x^{3k+1}}{(3k+1)!}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>g</I>(<I>x</I>) = <IMG
+ WIDTH="30" HEIGHT="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$\displaystyle \sum_{{k=0}}^{\infty}$">3<SUP>k</SUP><IMG
+ WIDTH="20" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{\Gamma(k+\frac{2}{3})}{\Gamma(\frac{2}{3})}}\right.$"><IMG
+ WIDTH="74" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.png"
+ ALT="$\displaystyle {\frac{{\Gamma(k+\frac{2}{3})}}{{\Gamma(\frac{2}{3})}}}$"><IMG
+ WIDTH="20" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{\Gamma(k+\frac{2}{3})}{\Gamma(\frac{2}{3})}}\right)$"><IMG
+ WIDTH="75" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.png"
+ ALT="$\displaystyle {\frac{{x^{3k+1}}}{{(3k+1)!}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Airy_Ai(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.135292416313</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Airy_Bi(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.20742359495</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Airy_Ai(0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.355028053888</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Airy_Bi(0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.614926627446</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

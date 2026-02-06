@@ -1,0 +1,406 @@
+// xcas version=0.7.2 fontsize=20
+// fltk 7Fl_Tile 26 52 914 70 20
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 52 914 69 20
+Soit ABC un triangle, G son cercle circonscrit, M un point du plan, P sa projection sur BC£Q sur CA, R sur AB, alors M est sur G si et seulement si P, Q, R sont alignes£La figure ci-dessous permet de tester ce theoreme, mais aussi de le prouver par le calcul formel
+,
+// fltk N4xcas10Log_OutputE 26 121 914 1 20
+
+]
+,
+// fltk N4xcas6FigureE 26 124 914 523 20 landscape=0 history=0.29869 geo=0.54814  mouse_param=0.15317
+// fltk N4xcas12History_PackE 28 -1092 253 1739 20
+[
+// fltk 7Fl_Tile 50 -1092 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -1092 231 30 20
+xa:=0;
+,
+// fltk N4xcas10Log_OutputE 50 -1062 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -1061 231 27 20
+0
+]
+,
+// fltk 7Fl_Tile 50 -1032 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -1032 231 30 20
+ya:=0;
+,
+// fltk N4xcas10Log_OutputE 50 -1002 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -1001 231 27 20
+0
+]
+,
+// fltk 7Fl_Tile 50 -972 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -972 231 30 20
+xb:=1;
+,
+// fltk N4xcas10Log_OutputE 50 -942 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -941 231 27 20
+1
+]
+,
+// fltk 7Fl_Tile 50 -912 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -912 231 30 20
+yb:=0;
+,
+// fltk N4xcas10Log_OutputE 50 -882 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -881 231 27 20
+0
+]
+,
+// fltk 7Fl_Tile 50 -852 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -852 231 30 20
+assume(xc=[-0.4,-10.0,10.0])
+,
+// fltk N4xcas10Log_OutputE 50 -822 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -821 231 27 20
+parameter(xc,-10.0,10.0,-0.4)
+]
+,
+// fltk 7Fl_Tile 50 -792 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -792 231 30 20
+assume(yc=[2.0,-10.0,10.0])
+,
+// fltk N4xcas10Log_OutputE 50 -762 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -761 231 27 20
+parameter(yc,-10.0,10.0,2.0)
+]
+,
+// fltk 7Fl_Tile 50 -732 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -732 231 30 20
+A:=point(xa,ya);
+,
+// fltk N4xcas10Log_OutputE 50 -702 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -701 231 27 20
+point(0,0)
+]
+,
+// fltk 7Fl_Tile 50 -672 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -672 231 30 20
+B:=point(xb,yb);
+,
+// fltk N4xcas10Log_OutputE 50 -642 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -641 231 27 20
+point(1,0)
+]
+,
+// fltk 7Fl_Tile 50 -612 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -612 231 30 20
+C:=point(xc,yc);
+,
+// fltk N4xcas10Log_OutputE 50 -582 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -581 231 27 20
+point(xc+(i)*yc)
+]
+,
+// fltk 7Fl_Tile 50 -552 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -552 231 30 20
+color(triangle(A,B,C),bleu);
+,
+// fltk N4xcas10Log_OutputE 50 -522 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 -521 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 -521 473 27 20
+polygone(point(0,0),point(1,0),point(xc+(i)*yc),point(0,0))
+,
+// fltk 12Fl_Scrollbar 50 224 286 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 336 197 16 33 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 -470 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -470 231 30 20
+G:=circumcircle(A,B,C);
+,
+// fltk N4xcas10Log_OutputE 50 -440 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 -439 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 -439 733 27 20
+cercle(point(((i)*xc^2+(-i)*xc+(i)*yc^2+yc)/(2*yc)),sqrt((-yc)^2+(-xc^2+xc-yc^2)^2)*1/2/yc)
+,
+// fltk 12Fl_Scrollbar 50 224 286 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 336 197 16 33 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 -388 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -388 231 30 20
+assume(x=[1.4,-10.0,10.0])
+,
+// fltk N4xcas10Log_OutputE 50 -358 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -357 231 27 20
+parameter(x,-10.0,10.0,1.4)
+]
+,
+// fltk 7Fl_Tile 50 -328 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -328 231 30 20
+assume(y=[2.0,-10.0,10.0])
+,
+// fltk N4xcas10Log_OutputE 50 -298 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -297 231 27 20
+parameter(y,-10.0,10.0,2.0)
+]
+,
+// fltk 7Fl_Tile 50 -268 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -268 231 30 20
+M:=point(x,y);
+,
+// fltk N4xcas10Log_OutputE 50 -238 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -237 231 27 20
+point(x+(i)*y)
+]
+,
+// fltk 7Fl_Tile 50 -208 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -208 231 30 20
+P:=projection(line(B,C),M);
+,
+// fltk N4xcas10Log_OutputE 50 -178 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 -177 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 -177 515 27 20
+point(1+((x-1)*(xc-1)+y*yc)/((xc-1)*(xc-1)+yc*yc)*(xc+(i)*yc-1))
+,
+// fltk 12Fl_Scrollbar 50 224 286 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 336 197 16 33 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 -126 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -126 231 30 20
+color(segment(M,P),rouge)
+,
+// fltk N4xcas10Log_OutputE 50 -96 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 -95 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 -95 711 27 20
+segment(point(x+(i)*y),point(1+((x-1)*(xc-1)+y*yc)/((xc-1)*(xc-1)+yc*yc)*(xc+(i)*yc-1)))
+,
+// fltk 12Fl_Scrollbar 50 224 286 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 336 197 16 33 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 -44 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -44 231 30 20
+Q:=projection(line(C,A),M);
+,
+// fltk N4xcas10Log_OutputE 50 -14 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 -13 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 -13 636 27 20
+point(xc+(i)*yc+((x-xc)*(-xc)+(y-yc)*(-yc))/((-xc)*(-xc)+(-yc)*(-yc))*(-xc-(i)*yc))
+,
+// fltk 12Fl_Scrollbar 50 224 286 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 336 197 16 33 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 38 231 66 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 38 231 38 20
+color(segment(M,Q),rouge),£color(line(Q,P),cyan)
+,
+// fltk N4xcas10Log_OutputE 50 76 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 77 231 27 20
+Done
+]
+,
+// fltk 7Fl_Tile 50 106 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 106 231 30 20
+R:=projection(line(A,B),M);
+,
+// fltk N4xcas10Log_OutputE 50 136 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 137 231 27 20
+point(x)
+]
+,
+// fltk 7Fl_Tile 50 166 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 166 231 30 20
+color(segment(M,R),rouge)
+,
+// fltk N4xcas10Log_OutputE 50 196 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 197 231 27 20
+segment(point(x+(i)*y),point(x))
+]
+,
+// fltk 7Fl_Tile 50 226 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 226 231 30 20
+D1:=factor(numer(im((Q-P)*conj(R-P))));
+,
+// fltk N4xcas10Log_OutputE 50 256 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 257 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 257 428 27 20
+(-(yc^2))*(xc^2*y-xc*y-y^2*yc+y*yc^2-yc*x^2+yc*x)
+,
+// fltk 12Fl_Scrollbar 50 286 231 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 281 257 16 29 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 308 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 308 231 30 20
+D12:=D1[2];
+,
+// fltk N4xcas10Log_OutputE 50 338 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 339 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 339 340 27 20
+xc^2*y-xc*y-y^2*yc+y*yc^2-yc*x^2+yc*x
+,
+// fltk 12Fl_Scrollbar 50 368 231 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 281 339 16 29 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 390 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 390 231 30 20
+D2:=equation(G);
+,
+// fltk N4xcas10Log_OutputE 50 420 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 421 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 421 968 27 20
+(x-yc/(2*yc))^2+(y-(xc^2-xc+yc^2)/(2*yc))^2=(((-i)*xc^2+(i)*xc+(-i)*yc^2-yc)/(2*yc)*((i)*xc^2+(-i)*xc+(i)*yc^2-yc)/(2*yc))
+,
+// fltk 12Fl_Scrollbar 50 450 231 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 281 421 16 29 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 472 231 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 472 231 30 20
+D22:=factor(numer(equal2diff(D2)));
+,
+// fltk N4xcas10Log_OutputE 50 502 231 1 20
+
+,
+// fltk 9Fl_Scroll 50 503 231 49 20
+[
+// fltk N4xcas10Gen_OutputE 50 503 340 27 20
+x^2*yc-x*yc-yc^2*y+yc*y^2-y*xc^2+y*xc
+,
+// fltk 12Fl_Scrollbar 50 532 231 20 20
+[]
+,
+// fltk 12Fl_Scrollbar 281 503 16 29 20
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 554 231 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 554 231 30 20
+normal(D12/D22)
+,
+// fltk N4xcas10Log_OutputE 50 584 231 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 585 231 27 20
+-1
+]
+,
+// fltk 7Fl_Tile 50 614 231 31 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 614 231 30 20
+
+,
+// fltk N4xcas10Log_OutputE 50 644 231 1 20
+
+]
+]
+// fltk N4xcas5Geo2dE 299 144 501 503 20
+-3.535,3.535,-2.8653,4.2979,[0,0,1,0,parameter(xc,-10.0,10.0,-0.4),parameter(yc,-10.0,10.0,2.0),pnt(pnt[0,[0],"A"]),pnt(pnt[1,[0],"B"]),pnt(pnt[xc+(i)*yc,[0],"C"]),pnt(pnt[group[0,1,xc+(i)*yc,0],bleu]),pnt(pnt[cercle(pnt[[0,2*((i)*xc^2+(-i)*xc+(i)*yc^2+yc)/(2*yc)],0,2*pi]),0,"G"]),parameter(x,-10.0,10.0,1.4),parameter(y,-10.0,10.0,2.0),pnt(pnt[x+(i)*y,[0],"M"]),pnt(pnt[1+((x-1)*(xc-1)+y*yc)/((xc-1)*(xc-1)+yc*yc)*(xc+(i)*yc-1),0,"P"]),pnt(pnt[group[x+(i)*y,1+((x-1)*(xc-1)+y*yc)/((xc-1)*(xc-1)+yc*yc)*(xc+(i)*yc-1)],rouge]),pnt(pnt[xc+(i)*yc+((x-xc)*(-xc)+(y-yc)*(-yc))/((-xc)*(-xc)+(-yc)*(-yc))*(-xc-(i)*yc),0,"Q"]),pnt(pnt[group[x+(i)*y,xc+(i)*yc+((x-xc)*(-xc)+(y-yc)*(-yc))/((-xc)*(-xc)+(-yc)*(-yc))*(-xc-(i)*yc)],rouge]),pnt(pnt[line[xc+(i)*yc+((x-xc)*(-xc)+(y-yc)*(-yc))/((-xc)*(-xc)+(-yc)*(-yc))*(-xc-(i)*yc),1+((x-1)*(xc-1)+y*yc)/((xc-1)*(xc-1)+yc*yc)*(xc+(i)*yc-1)],cyan]),pnt(pnt[x,0,"R"]),pnt(pnt[group[x+(i)*y,x],rouge]),(-(yc^2))*(xc^2*y-xc*y-y^2*yc+y*yc^2-yc*x^2+yc*x),xc^2*y-xc*y-y^2*yc+y*yc^2-yc*x^2+yc*x,(x-yc/(2*yc))^2+(y-(xc^2-xc+yc^2)/(2*yc))^2=(((-i)*xc^2+(i)*xc+(-i)*yc^2-yc)/(2*yc)*((i)*xc^2+(-i)*xc+(i)*yc^2-yc)/(2*yc)),x^2*yc-x*yc-yc^2*y+yc*y^2-y*xc^2+y*xc,-1],-3.535,3.535,1,0,0,0,0.2,0.2,1,0,1,1.2143,0,1,1,[],24,18,256,0,100,0,0,1,0.1
+

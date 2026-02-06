@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les normes d'un vecteur : maxnorm l1norm l2norm norm</TITLE>
+<META NAME="description" CONTENT="Les normes d'un vecteur : maxnorm l1norm l2norm norm">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node611.html">
+<LINK REL="previous" HREF="node609.html">
+<LINK REL="up" HREF="node609.html">
+<LINK REL="next" HREF="node611.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11911"
+  HREF="node611.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11905"
+  HREF="node609.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11899"
+  HREF="node609.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11907"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11909"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11912"
+  HREF="node611.html">Pour normaliser les composantes</A>
+<B> monter:</B> <A NAME="tex2html11906"
+  HREF="node609.html">Fonctions utiles pour les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11900"
+  HREF="node609.html">Fonctions utiles pour les</A>
+ &nbsp; <B>  <A NAME="tex2html11908"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11910"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009391000000000000000"></A><A NAME="15708"></A>
+<BR>
+Les normes d'un vecteur : <TT>maxnorm l1norm l2norm norm</TT>
+</H2>
+Les diff&#233;rentes instructions pour les normes d'un vecteur sont :
+
+<UL>
+<LI><TT>maxnorm</TT> pour calculer la norme <!-- MATH
+ ${\mathnormal{l}}^\infty$
+ -->
+<IMG
+ WIDTH="4" HEIGHT="5" ALIGN="BOTTOM" BORDER="0"
+ SRC="img406.png"
+ ALT="$ \mathnormal$"><I>l</I><SUP><IMG
+ WIDTH="18" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$\scriptstyle \infty$"></SUP> d'un 
+vecteur : c'est le maximum des valeurs absolues de ses coordonn&#233;es<A NAME="15712"></A><A NAME="sec:maxnormv"></A>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>maxnorm([3,-4,2])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>maxnorm(vecteur(3,-4,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4</TT>
+</DIV>
+En effet : <TT>x=3, y=-4, z=2</TT> et <TT>4=max(|x|,|y|,|z|)</TT>.
+</LI>
+<LI><TT>l1norm</TT> pour calculer la norme <!-- MATH
+ ${\tt {\mathnormal{l}}^1}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img407.png"
+ ALT="$ \tt {\mathnormal{l}}^1$"> d'un 
+vecteur : c'est la somme des valeurs absolues de ses coordonn&#233;es<A NAME="15727"></A><A NAME="sec:l1normv"></A>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>l1norm([3,-4,2])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>l1norm(vecteur(3,-4,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>9</TT>
+</DIV>
+En effet : <TT>x=3, y=-4, z=2</TT> et <TT>9=|x|+|y|+|z|</TT>.
+</LI>
+<LI><TT>norm</TT> ou  <TT>l2norm</TT> pour calculer la norme
+ <!-- MATH
+ ${\mathnormal{l}}^2$
+ -->
+<IMG
+ WIDTH="4" HEIGHT="5" ALIGN="BOTTOM" BORDER="0"
+ SRC="img406.png"
+ ALT="$ \mathnormal$"><I>l</I><SUP>2</SUP> d'un vecteur : c'est
+la racine carr&#233;e de la somme des carr&#233;s de ses coordonn&#233;es<A NAME="15743"></A><A NAME="sec:l2normv"></A>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>norm([3,-4,2])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>norm(vecteur(3,-4,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(29)</TT>
+</DIV>
+En effet : <TT>x=3, y=-4, z=2</TT> et <!-- MATH
+ $29=|x|^2+|y|^2+|z|^2$
+ -->
+29 = | <I>x</I>|<SUP>2</SUP> + | <I>y</I>|<SUP>2</SUP> + | <I>z</I>|<SUP>2</SUP>.
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11911"
+  HREF="node611.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11905"
+  HREF="node609.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11899"
+  HREF="node609.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11907"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11909"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11912"
+  HREF="node611.html">Pour normaliser les composantes</A>
+<B> monter:</B> <A NAME="tex2html11906"
+  HREF="node609.html">Fonctions utiles pour les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11900"
+  HREF="node609.html">Fonctions utiles pour les</A>
+ &nbsp; <B>  <A NAME="tex2html11908"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11910"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

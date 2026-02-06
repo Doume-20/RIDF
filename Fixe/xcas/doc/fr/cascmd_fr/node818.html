@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Densit&#233; de probabilit&#233; de la loi normale : normald</TITLE>
+<META NAME="description" CONTENT="Densit&#233; de probabilit&#233; de la loi normale : normald">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node819.html">
+<LINK REL="previous" HREF="node817.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node819.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15046"
+  HREF="node819.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15040"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15034"
+  HREF="node817.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15042"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15044"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15047"
+  HREF="node819.html">Fonction de r&#233;partition de</A>
+<B> monter:</B> <A NAME="tex2html15041"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15035"
+  HREF="node817.html">Fonction de r&#233;partition inverse</A>
+ &nbsp; <B>  <A NAME="tex2html15043"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15045"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001047000000000000000"></A><A NAME="21417"></A>
+<BR>
+Densit&#233; de probabilit&#233; de la loi normale : <TT>normald</TT>
+</H2>
+<TT>normald(x)</TT> est la densit&#233; de probabilit&#233; de la loi normale 
+centr&#233;e r&#233;duite (de moyenne 0 et d'&#233;cart-type 1).
+<BR> <TT>normald(x)</TT>, est &#233;gale &#224; <!-- MATH
+ $\displaystyle \frac{1}{\sqrt{2\pi}}e^\frac{-x^2}{2}$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img559.png"
+ ALT="$\displaystyle {\frac{{1}}{{\sqrt{2\pi}}}}$"><I>e</I><SUP><IMG
+ WIDTH="8" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$\scriptstyle {\frac{}{}}$"></SUP>-<I>x</I><SUP>2</SUP>2.
+<BR><TT>normald(<!-- MATH
+ $\mu,\sigma$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$">,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img552.png"
+ ALT="$ \sigma$">,x)</TT> est la densit&#233; de probabilit&#233; de la loi normale 
+de moyenne <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$"> et d'&#233;cart-type <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img552.png"
+ ALT="$ \sigma$">,
+<BR><TT>normald(<!-- MATH
+ $\mu,\sigma$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$">,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img552.png"
+ ALT="$ \sigma$">,x)</TT>, est &#233;gale &#224; 
+<!-- MATH
+ $\displaystyle \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{(x-\mu)}{\sigma})^2}$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img560.png"
+ ALT="$\displaystyle {\frac{{1}}{{\sigma\sqrt{2\pi}}}}$"><I>e</I><SUP>-<IMG
+ WIDTH="14" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img561.png"
+ ALT="$\scriptstyle {\frac{{1}}{{2}}}$">(<IMG
+ WIDTH="41" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img562.png"
+ ALT="$\scriptstyle {\frac{{(x-\mu)}}{{\sigma}}}$">)<SUP>2</SUP></SUP>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normald(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>exp(-1/2)/sqrt(2*pi)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normald(2,1,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>exp(-1/2)/sqrt(2*pi)</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

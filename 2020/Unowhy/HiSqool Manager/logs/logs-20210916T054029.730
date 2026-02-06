@@ -1,0 +1,65 @@
+2021-09-16 7:40:29 [7780] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 05:40:29.679: 2021-09-16 7:40:29 [7780] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-09-16 05:40:29.679: {
+2021-09-16 05:40:29.679:   "platform": "win32",
+2021-09-16 05:40:29.679:   "deviceId": "IFP052046109",
+2021-09-16 05:40:29.679:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-09-16 05:40:29.679:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-09-16 05:40:29.679:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-09-16 05:40:29.679:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-09-16 05:40:29.679:   "versionCode": 21090427,
+2021-09-16 05:40:29.679:   "trigger": "login",
+2021-09-16 05:40:29.679:   "metadata": {
+2021-09-16 05:40:29.679:     "packageVersion": "1.0.16.0",
+2021-09-16 05:40:29.679:     "componentParameters": {
+2021-09-16 05:40:29.679:       "AppX": "Hisqool.Legal.GDPR",
+2021-09-16 05:40:29.679:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-09-16 05:40:29.679:       "DesktopShortcut": "Charte de protection*",
+2021-09-16 05:40:29.679:       "ProvisioningPackage": "Hisqool GDPR",
+2021-09-16 05:40:29.679:       "InstallationDirectory": "hisqool.gdpr",
+2021-09-16 05:40:29.679:       "UninstallationDirectory": "hisqool.gdpr",
+2021-09-16 05:40:29.679:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-09-16 05:40:29.679:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-09-16 05:40:29.679:     },
+2021-09-16 05:40:29.679:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-09-16 05:40:29.679:   }
+2021-09-16 05:40:29.679: } +1ms
+2021-09-16 05:40:29.679: 2021-09-16 7:40:29 [7780] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> login... +2ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +1ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> login... +1ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> login... +1ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +1ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +1ms
+2021-09-16 05:40:29.689: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/network/all/wifi_eleves -> login... +3ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/GenieGen-1.2.3.2 -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Audacity-Windows -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/NotePad++-Windows -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Paint.net-Windows -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/EduAnat2-2.0.0 -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Python-Windows -> login... +1ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Gnuplot-5.4.1 -> login... +0ms
+2021-09-16 05:40:29.699: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Manuels-Numeriques-Bertrand-Lacoste-Windows -> login... +1ms
+2021-09-16 05:40:29.707: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Mesurim-3.4.4 -> login... +0ms
+2021-09-16 05:40:29.707: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/VLC-Windows -> login... +1ms
+2021-09-16 05:40:29.707: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> login... +1ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> login... +1ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows-3.5.0 -> login... +1ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Code-with-Mu-1.0.3 -> login... +1ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Espace-Langues-Windows -> login... +2ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/GeoGebra-Windows -> login... +1ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Google-Earth-Pro-7.3.3 -> login... +1ms
+2021-09-16 05:40:29.709: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LibManuels-3.7.4 -> login... +1ms
+2021-09-16 05:40:29.718: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels-Windows -> login... +3ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/TexMaker-Latex-5.0.4 -> login... +1ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Thunderbird-78.10.0 -> login... +1ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/TI-Connect-CE-3.4.1 -> login... +1ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> login... +0ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/GIMP-Windows -> login... +1ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LeLivreScolaire-2.2 -> login... +0ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/MuseScore-3.6.2 -> login... +1ms
+2021-09-16 05:40:29.720: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Openshot-2.5.1 -> login... +1ms
+2021-09-16 05:40:29.728: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Pronote-0.2.7 -> login... +2ms
+2021-09-16 05:40:29.728: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/SimClimat-1.0.4 -> login... +1ms
+2021-09-16 05:40:29.730: 2021-09-16 7:40:29 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Stellarium-0.20.4.3 -> login... +1ms

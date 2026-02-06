@@ -1,0 +1,1634 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Vrai ou Faux ? (d'un point de vue informatique)</TITLE>
+<META NAME="description" CONTENT="Vrai ou Faux ? (d'un point de vue informatique)">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node44.html">
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="up" HREF="tutoriel.html">
+<LINK REL="next" HREF="node44.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html676"
+  HREF="node44.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html670"
+  HREF="tutoriel.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html664"
+  HREF="node42.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html672"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html674"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html677"
+  HREF="node44.html">Exercices (niveau universit&#233;)</A>
+<B> monter:</B> <A NAME="tex2html671"
+  HREF="tutoriel.html">tutoriel</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html665"
+  HREF="node42.html">Les matrices</A>
+ &nbsp; <B>  <A NAME="tex2html673"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html675"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00080000000000000000">
+Vrai ou Faux ? (d'un point de vue informatique)</A>
+</H1>
+<P>
+<DIV><B>Exercice  8.1</B> &nbsp; Les commandes suivantes affichent la valeur exacte 2&nbsp;: r&#233;pondre
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>1+1:;</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>3-1</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>1.5+1/2</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>4/2</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>sqrt(4)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>evalf(sqrt(4))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>1^(1+1)+1^(1+1)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>(1+1)^(1+1)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>1*1^(1+1)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>1+1*1^1</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>(1+1)*1^(1+1)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.2</B> &nbsp; Les commandes suivantes affectent la valeur exacte 2
+&#224; la variable <code>c</code>&nbsp;: r&#233;pondre vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=2:;</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c==2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c=2</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=4/2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c:=3/1.5</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=(2+2)/2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c:=(2.0+2)/2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c:=2a/a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c:=(2*a)/a</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=2*a/a</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=1:; c:=2*c</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.3</B> &nbsp; Les commandes suivantes affectent &#224; la variable <code>c</code> une expression 
+valide&nbsp;: r&#233;pondre vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=ab</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=a*b</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c==a</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:= c==a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c:=a+(a*b))/2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c=a+a*b</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=a/b</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c-&gt;a/b</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>a/b=&gt;c</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=a/0</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>c:=2*a/a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>c:=1: c:=2*c</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.4</B> &nbsp; Les commandes suivantes affectent la valeur 1 &#224; <code>b</code>&nbsp;: 
+r&#233;pondre vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>a:=1:; b=a</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>a:=1:; b:=a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>a:=1:; b:='a':; a:=3:; b</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>a:=1:; b:="a"</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>b:=a/a</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>b:=a^0</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.5</B> &nbsp; Les commandes suivantes retournent la valeur exacte 2&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>1/2^-1</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>a:=2</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>2*a/a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>sqrt(4*a^2)/a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>simplify(sqrt(4*a^2)/a)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>sqrt(4*a^4)/(a*a)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>simplify(sqrt(4*a^4)/(a*a))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>expand(sqrt(4*a^4)/(a*a))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>normal(sqrt(4*a^4)/(a*a))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>ln(a^2)/ln(a)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>simplify(ln(a^2)/ln(a))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>texpand(ln(a^2)/ln(a))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>normal(texpand(ln(a^2)/ln(a)))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>-ln(exp(-2))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>1/exp(-ln(2))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>exp2pow(1/exp(-ln(2)))</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.6</B> &nbsp; Les commandes suivantes d&#233;finissent la fonction <I>f</I> qui &#224; <I>x</I>
+associe <I>x</I><SUP>2</SUP>&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f(x):=x^2</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f(a):=a^2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f := x^2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=a^2</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f := a-&gt;a^2</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=evalf(x^2)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=simplify(x^3/x)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=simplify(x*x*a/a)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>E:=x^2:;f:=unapply(E,x)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f:=unapply(simplify(x^3/x),x)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.7</B> &nbsp; Les commandes suivantes d&#233;finissent la fonction <code>f</code> qui au
+couple (<I>x</I>, <I>y</I>) associe le produit <I>xy</I>&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f:=x*y</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f:=x-&gt;x*y</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f:=(a,b)-&gt;a*b</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f(x,y):=x*y</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x,y):=xy</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f:=((x,y)-&gt;x)*((x,y)-&gt;y)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f:=(x-&gt;x)*(y-&gt;y)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f:=unapply(x*y,x,y)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>E:=x*y:;f:=unapply(E,x,y)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.8</B> &nbsp; Les commandes suivantes d&#233;finissent la fonction <code>f1</code> qui &#224;
+<I>x</I> associe 2*<I>x</I>&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=x^2:; f1(x):=diff(f(x))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f1:=diff(x^2)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f1:=unapply(diff(x^2),x)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f(x):=x^2:; f1:=function_diff(f)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=x^2:; f1:=diff(f)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=x^2:; f1:=diff(f(x))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f(x):=x^2:; f1:=unapply(diff(f(x),x),x)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f(x):=x^2:; f1:=x-&gt;diff(f(x))</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.9</B> &nbsp; Les commandes suivantes affectent &#224; <I>A</I> l'expression 2*<I>x</I>*<I>y</I>&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>A:=diff(x^2*y)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>A:=x-&gt;diff(x^2*y)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>A:=diff(x^2*y,x)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>A:=diff(x^2*y,y)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>A:=diff(x*y^2,y)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>A:=normal(diff(x*y^2,y))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>A:=normal(diff(x^2*y^2/2,x,y))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>A:=normal(diff(diff(x^2*y^2/2,x),y))</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.10</B> &nbsp; Les lignes de commande suivantes affichent
+un losange&nbsp;:
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>losange(1,i,pi/3)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>losange((1,0),(0,1),pi/3)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>losange(point(1,0),point(0,1),pi/3)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>parallelogramme(0,1,1+i)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>parallelogramme(0,1,1/2+i*sqrt(3)/2)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>quadrilatere(0,1,3/2+i*sqrt(3)/2,1/2+i*sqrt(3)/2)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>polygone(0,1,3/2+i*sqrt(3)/2,1/2+i*sqrt(3)/2)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>polygonplot(0,1,3/2+i*sqrt(3)/2,1/2+i*sqrt(3)/2)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>polygonplot([0,1,3/2,1/2],[0,0,sqrt(3)/2,sqrt(3)/2])</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>polygone_ouvert(0,1,3/2+i*sqrt(3)/2,1/2+i*sqrt(3)/2)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>polygone_ouvert(0,1,3/2+i*sqrt(3)/2,1/2+i*sqrt(3)/2,0)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.11</B> &nbsp; Les lignes de commande suivantes affichent
+le cercle unit&#233;&nbsp;:
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>cercle(0,1)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>arc(-1,1,2*pi)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>arc(-1,1,pi), arc(-1,1,-pi)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>plot(sqrt(1-x^2))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plot(sqrt(1-x^2)), plot(-sqrt(1-x^2))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotimplicit(x^2+y^2-1,x,y)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>plotparam(cos(t),sin(t))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotparam(cos(t)+i*sin(t))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotparam(cos(t)+i*sin(t),t)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotparam(exp(i*t))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>plotparam(cos(t)+i*sin(t),t,0,pi)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotparam(cos(t)+i*sin(t),t,0,2*pi)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotpolar(1,t)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotpolar(1,t,-pi,pi)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>plotpolar(1,t,0,2*pi)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.12</B> &nbsp; Les commandes suivantes retournent la liste
+<!-- MATH
+ $[1,2,3,4,5]$
+ -->
+[1, 2, 3, 4, 5]&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=[1,2,3,4,5]</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=op([1,2,3,4,5])</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=nop(1,2,3,4,5)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=seq(i,i=1..5)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=seq(j=1..5)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=seq(j,j=1..5)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=seq(j,j,1..5)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=seq(j,j,1,5)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=seq(j,j,1,5,1)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=[seq(j,j=1..5)]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=nop(seq(j,j=1..5))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=[k$k=1..5]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=[k$(k=1..5)]</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=[k+1$(k=0..4)]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=[(k+1)$(k=0..4)]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=cumSum([1$5])</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=sort(5,2,3,1,4)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=sort([5,2,3,1,4])</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l:=makelist(k,1,5)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l:=makelist(x-&gt;x,1,5)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<P>
+<DIV><B>Exercice  8.13</B> &nbsp; Les commandes suivantes retournent la liste
+<!-- MATH
+ $[1.0,0.5,0.25,0.125,0.0625]$
+ -->
+[1.0, 0.5, 0.25, 0.125, 0.0625]&nbsp;: 
+vrai ou faux et pourquoi&nbsp;?
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>0.5^[0,1,2,3,4]</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>2^(-[0,1,2,3,4])</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>2.0^(-[0,1,2,3,4])</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>2^-evalf([0,1,2,3,4])</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>evalf(2^(-[0,1,2,3,4]))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>seq(2^(-n),n=0..4)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>evalf([seq(2^(-n),n=0..4)])</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>1/evalf(2^n$(n=0..4))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>evalf(2^n$(n=0..4))^(-1)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>[evalf(2^n$(n=0..4))]^(-1)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>evalf(nop(2^n$(n=0..4))^(-1))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>a:=[]:; (a:=append(a,0.5^k))$(k=0..4):; a</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>makelist(k-&gt;2^(-k),0,4)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f:=x-&gt;2.0^(-x):; makelist(f,0,4)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.14</B> &nbsp; Soit <I>l</I> la liste <!-- MATH
+ $[1,0,2,0,3]$
+ -->
+[1, 0, 2, 0, 3]. Les lignes de commande 
+suivantes retournent l'entier 10203&nbsp;: vrai ou faux et pourquoi&nbsp;? 
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l*10^[4,3,2,1,0]</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l*10^[0,1,2,3,4]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>revlist(l)*10^[0,1,2,3,4]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l*seq(10^n,n,4,0,-1)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>expr(char(sum(l,48)))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l*nop(seq(10^n,n=(4..0)))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l*10^nop(j$(j=4..0))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l*10^(j$(j=4..0))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>l*10^(j$(j=4..0))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>l*nop(10^j)$(j=4..0))</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.15</B> &nbsp; Soit <I>n</I> l'entier 10203.
+Les lignes de commande suivantes retournent la
+liste d'entiers <!-- MATH
+ $[1,0,2,0,3]$
+ -->
+[1, 0, 2, 0, 3]&nbsp;: 
+vrai ou faux et pourquoi&nbsp;? 
+
+<OL>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>(floor(n/10^k)-floor(n/10^(k+1))*10)$(k=4..0)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>[(floor(n/10^k)-floor(n/10^(k+1))*10)$(k=4..0)]</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>seq(iquo(n,10^k)-10*iquo(n,10^(k+1)),k=4..0)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>nop(seq(iquo(n,10^k)-10*iquo(n,10^(k+1)),k=4..0))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>revlist(convert(n,base,10))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>sum(asc(string(n)),-48)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>string(n)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>mid(string(n),k,1)$(k=0..4)</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>[mid(string(n),k,1)$(k=0..4)]</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>[expr(mid(string(n),k,1))$(k=0..4)]</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<DIV><B>Exercice  8.16</B> &nbsp; Le polyn&#244;me <!-- MATH
+ $P=X^4+2X^2+3$
+ -->
+<I>P</I> = <I>X</I><SUP>4</SUP> +2<I>X</I><SUP>2</SUP> + 3 a &#233;t&#233; affect&#233; 
+par la commande <code>P:=X^4+2*X^2+3</code>.
+Les lignes de commande suivantes affichent
+le polyn&#244;me r&#233;ciproque <code>3*X^4+2*X^2+1</code>&nbsp;: 
+vrai ou faux et pourquoi&nbsp;? 
+
+<OL>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>poly2symb(revlist(symb2poly(P)))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>X^4*subst(P,X,1/X)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>normal(X^4*subst(P,X,1/X))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>normal(subst(P,X,1/X))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>normal(subst(P/X^4,X,1/X))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>normal(X^degree(P)*subst(P,X,1/X))</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>getNum(subst(P,X,1/X))</code>
+</LI>
+<LI><IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \square$"> &nbsp;
+<code>f:=unapply(P,X):; part(f(1/X),1)</code>
+</LI>
+<LI><!-- MATH
+ $\boxtimes\;$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \boxtimes$"> &nbsp;
+<code>f:=unapply(P,X):; part(normal(f(1/X)),1)</code>
+</LI>
+</OL></DIV><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html676"
+  HREF="node44.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html670"
+  HREF="tutoriel.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html664"
+  HREF="node42.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html672"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html674"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html677"
+  HREF="node44.html">Exercices (niveau universit&#233;)</A>
+<B> monter:</B> <A NAME="tex2html671"
+  HREF="tutoriel.html">tutoriel</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html665"
+  HREF="node42.html">Les matrices</A>
+ &nbsp; <B>  <A NAME="tex2html673"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html675"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

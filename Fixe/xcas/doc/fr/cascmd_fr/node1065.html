@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les polygones r&#233;guliers dans l'espace : isopolygon isopolygone</TITLE>
+<META NAME="description" CONTENT="Les polygones r&#233;guliers dans l'espace : isopolygon isopolygone">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1066.html">
+<LINK REL="previous" HREF="node1064.html">
+<LINK REL="up" HREF="node1063.html">
+<LINK REL="next" HREF="node1066.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18943"
+  HREF="node1066.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18937"
+  HREF="node1063.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18931"
+  HREF="node1064.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18939"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18941"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18944"
+  HREF="node1066.html">Les polygones quelconques dans</A>
+<B> monter:</B> <A NAME="tex2html18938"
+  HREF="node1063.html">Les polygones dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18932"
+  HREF="node1064.html">L'hexagone : hexagon hexagone</A>
+ &nbsp; <B>  <A NAME="tex2html18940"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18942"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001382000000000000000"></A><A NAME="27807"></A><A NAME="27808"></A><A NAME="sec:isopolygone3"></A>
+<BR>
+Les polygones r&#233;guliers dans l'espace : <TT>isopolygon isopolygone</TT>
+</H2>
+<B>Voir aussi :</B>  <A HREF="node957.html#sec:isopolygone2">9.13.2</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>isopolygone</TT>, en g&#233;om&#233;trie 3D, a quatre arguments.
+<BR>
+D&#233;scription des arguments : 
+Le quatri&#232;me argument est un entier <I>n</I> et <I>abs</I>(<I>n</I>) repr&#233;sente le nombre 
+de c&#244;t&#233;s de l'isopolygone. Selon le signe de <I>n</I> on aura :
+
+<UL>
+<LI><I>n</I> &gt; 0
+<BR>
+les 3 premiers arguments sont 3 points de l'espace : les 2 sommets 
+de l'isopolygone et le troisi&#232;me point qui d&#233;finit le plan de 
+l'isopolygone et l'orientation du plan.
+<BR><TT>isopolygone(A,B,P,n)</TT> renvoie et trace l'isopolygone direct de
+sommets  <I>A</I>, <I>B</I> et ayant <I>n</I> c&#244;t&#233;s dans le plan <I>ABP</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>P:=point(0,0,3)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>isopolygone(A,B,P,5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Dans le demi-plan ABP, un pentagone de sommets A et B</TT>
+</DIV>
+</LI>
+<LI><I>n</I> &lt; 0
+<BR>
+les 3 premiers arguments sont 3 points de l'espace : le centre et un
+ sommet de l'isopolygone et le troisi&#232;me point qui d&#233;finit le plan de 
+l'isopolygone et l'orientation du plan.
+<BR><TT>isopolygone(A,B,P,n)</TT> renvoie et trace l'isopolygone indirect de 
+centre <I>A</I> et de sommet <I>B</I> et ayant - <I>n</I> c&#244;t&#233;s dans le plan <I>ABP</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>P:=point(0,0,3)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>isopolygone(A,B,P,-5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Un pentagone de centre A et de sommet B non situ&#233; dans le demi-plan ABP</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18943"
+  HREF="node1066.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18937"
+  HREF="node1063.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18931"
+  HREF="node1064.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18939"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18941"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18944"
+  HREF="node1066.html">Les polygones quelconques dans</A>
+<B> monter:</B> <A NAME="tex2html18938"
+  HREF="node1063.html">Les polygones dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18932"
+  HREF="node1064.html">L'hexagone : hexagon hexagone</A>
+ &nbsp; <B>  <A NAME="tex2html18940"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18942"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

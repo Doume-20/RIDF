@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Nombre d'&#233;l&#233;ments ayant une valeur donn&#233;e : count_eq</TITLE>
+<META NAME="description" CONTENT="Nombre d'&#233;l&#233;ments ayant une valeur donn&#233;e : count_eq">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node593.html">
+<LINK REL="previous" HREF="node591.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node593.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11653"
+  HREF="node593.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11647"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11641"
+  HREF="node591.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11649"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11651"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11654"
+  HREF="node593.html">Nombre d'&#233;l&#233;ments inf&#233;rieurs &#224;</A>
+<B> monter:</B> <A NAME="tex2html11648"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11642"
+  HREF="node591.html">Compter les &#233;l&#233;ments d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11650"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11652"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093826000000000000000"></A><A NAME="15093"></A>
+<BR>
+Nombre d'&#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT>
+</H2><A NAME="30161"></A>
+<A NAME="30162"></A>
+<TT>count_eq</TT> a deux ou trois et param&#232;tres : une nombre et une 
+liste (ou une matrice) et dans le cas o&#249; le deuxi&#232;me param&#232;tre est une 
+matrice, un argument optionnel <TT>row</TT> ou <TT>col</TT>.
+<BR><TT>count_eq</TT> renvoie le nombre d'&#233;l&#233;ments de la liste (ou de la matrice)
+qui sont &#233;gaux au premier argument. Dans le cas o&#249; il y a  un argument 
+optionnel <TT>row</TT> (resp <TT>col</TT>) <TT>count_eq</TT> agit sur chacune des 
+lignes (resp colonnes) de la matrice et renvoie alors une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[2,12,45,3,7,78])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[[2,12,45],[3,7,78]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[[2,12,45],[3,7,78]],row)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[[2,12,45],[3,7,78]],col)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,0]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Les deux param&#232;tres de <TT>count_eq</TT> ne sont pas forc&#233;ment num&#233;riques :
+<TT>count_eq(ab,[[-ab,1,ab,1,ab,-3],[-ab,1,ab,1,ab,-3]])</TT> renvoie 4 si la 
+variable <TT>ab</TT> n'est pas affect&#233;e, mais renverra 6 si il y a <TT>0</TT> dans 
+ <TT>ab</TT>
+<BR><TT>count_eq("ab",["ab",1,"ab",1,"ab",-3])</TT> renvoie 3.
+Attention !!!
+<BR>
+si la variable <TT>ab</TT> n'est pas affect&#233;e,
+<BR><TT>count_eq(ab+1-1,[[-ab,1,ab,1,ab,-3],[-ab,1,ab,1,ab,-3]])</TT> renvoie 4,
+<BR>
+mais
+<TT>count_eq(ab+1,[-ab,1,ab+1,1,1+ab,-3])</TT> renvoie 1.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11653"
+  HREF="node593.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11647"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11641"
+  HREF="node591.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11649"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11651"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11654"
+  HREF="node593.html">Nombre d'&#233;l&#233;ments inf&#233;rieurs &#224;</A>
+<B> monter:</B> <A NAME="tex2html11648"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11642"
+  HREF="node591.html">Compter les &#233;l&#233;ments d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11650"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11652"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

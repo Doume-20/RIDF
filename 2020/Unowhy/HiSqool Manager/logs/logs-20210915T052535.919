@@ -1,0 +1,170 @@
+2021-09-15 7:24:41 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\208\payload... +2ms
+2021-09-15 05:24:41.348: 2021-09-15 7:24:41 [7780] INFO [Runner] Creating configuration unit runner object... +19ms
+2021-09-15 05:24:41.348: 2021-09-15 7:24:41 [7780] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-15 05:24:41.348: 2021-09-15 7:24:41 [7780] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-09-15 05:24:47.174: 2021-09-15 7:24:47 [7780] INFO [JS] GUID package: 3152267f-0e7e-45bb-9570-b793d506a6d6 +5823ms
+2021-09-15 05:24:47.205: 2021-09-15 7:24:47 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '9ff58fa2-cb54-40fc-ab02-067dfdf1696c').version +31ms
+2021-09-15 05:24:47.252: 2021-09-15 7:24:47 [7780] INFO [JS] Installing the package ... +1ms
+2021-09-15 05:24:47.252: 2021-09-15 7:24:47 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 05:24:47.252: 2021-09-15 7:24:47 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\234\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-15 05:24:52.485: 2021-09-15 7:24:52 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '3152267f-0e7e-45bb-9570-b793d506a6d6').version +5279ms
+2021-09-15 05:24:52.485: 2021-09-15 7:24:52 [7780] INFO [JS] Installing the package ... +0ms
+2021-09-15 05:24:52.485: 2021-09-15 7:24:52 [7780] INFO [Runner] Performing runner... +0ms
+2021-09-15 05:24:52.485: 2021-09-15 7:24:52 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\208\payload\application.ppkg, args=-QuietInstall... +2ms
+2021-09-15 05:25:21.511: 2021-09-15 7:25:21 [7780] INFO [JS] Install Result: 0 +29027ms
+2021-09-15 05:25:21.511: 2021-09-15 7:25:21 [7780] INFO [JS] Install Stdout: 
+2021-09-15 05:25:21.511: 
+2021-09-15 05:25:21.511: IsInstalled     : False
+2021-09-15 05:25:21.511: PackageID       : 4d914676-b5e0-44d9-96ad-3397dfca8bdd
+2021-09-15 05:25:21.511: PackageName     : OpenShot
+2021-09-15 05:25:21.511: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\206\payload\application.ppkg
+2021-09-15 05:25:21.511: Description     : 
+2021-09-15 05:25:21.511: Rank            : 0
+2021-09-15 05:25:21.511: Altitude        : 5000
+2021-09-15 05:25:21.511: Version         : 2.52
+2021-09-15 05:25:21.511: OwnerType       : ITAdmin
+2021-09-15 05:25:21.511: Notes           : 
+2021-09-15 05:25:21.511: LastInstallTime : 15/09/2021 07:24:42
+2021-09-15 05:25:21.511: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-15 05:25:21.511:                   	Category:InitialCustomization
+2021-09-15 05:25:21.511:                   	LastResult:Success
+2021-09-15 05:25:21.511:                   	Message:OOBE successfully configured.
+2021-09-15 05:25:21.511:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.511:                   
+2021-09-15 05:25:21.511:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-15 05:25:21.511:                   	Category:Content
+2021-09-15 05:25:21.511:                   	LastResult:Success
+2021-09-15 05:25:21.511:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.511:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.511:                   
+2021-09-15 05:25:21.511:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-15 05:25:21.511:                   	Category:Content
+2021-09-15 05:25:21.511:                   	LastResult:Success
+2021-09-15 05:25:21.511:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.511:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.511:                   
+2021-09-15 05:25:21.511:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-15 05:25:21.511:                   	Category:Content
+2021-09-15 05:25:21.511:                   	LastResult:Success
+2021-09-15 05:25:21.511:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.511:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.511:                   
+2021-09-15 05:25:21.511:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-15 05:25:21.511:                   	Category:Content
+2021-09-15 05:25:21.511:                   	LastResult:Success
+2021-09-15 05:25:21.511:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.511:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.511:                   
+2021-09-15 05:25:21.511:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-15 05:25:21.511:                   	Category:Content
+2021-09-15 05:25:21.511:                   	LastResult:Success
+2021-09-15 05:25:21.511:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.511:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.511:                   
+2021-09-15 05:25:21.527:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-15 05:25:21.527:                   	Category:Content
+2021-09-15 05:25:21.527:                   	LastResult:Success
+2021-09-15 05:25:21.527:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.527:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.527:                   
+2021-09-15 05:25:21.527:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-15 05:25:21.527:                   	Category:Scripts
+2021-09-15 05:25:21.527:                   	LastResult:Success
+2021-09-15 05:25:21.527:                   	Message:Provisioning succeeded
+2021-09-15 05:25:21.527:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:21.527:                   
+2021-09-15 05:25:21.527:                   
+2021-09-15 05:25:21.527: 
+2021-09-15 05:25:21.527: 
+2021-09-15 05:25:21.527:  +1ms
+2021-09-15 05:25:21.527: 2021-09-15 7:25:21 [7780] INFO [JS] Install Stderr:  +1ms
+2021-09-15 05:25:21.527: 2021-09-15 7:25:21 [7780] INFO [JS] Finishing Installation +1ms
+2021-09-15 05:25:21.527: 2021-09-15 7:25:21 [7780] INFO [Runner] Running result: true +1ms
+2021-09-15 05:25:21.542: 2021-09-15 7:25:21 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Openshot-2.5.1 (206) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Openshot-2.5.1.json +4ms
+2021-09-15 05:25:21.542: 2021-09-15 7:25:21 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\206\payload... +3ms
+2021-09-15 05:25:21.558: 2021-09-15 7:25:21 [7780] INFO [Runner] Creating configuration unit runner object... +27ms
+2021-09-15 05:25:21.558: 2021-09-15 7:25:21 [7780] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-15 05:25:21.558: 2021-09-15 7:25:21 [7780] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [JS] Install Result: 0 +3210ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [JS] Install Stdout: 
+2021-09-15 05:25:24.776: 
+2021-09-15 05:25:24.776: IsInstalled     : False
+2021-09-15 05:25:24.776: PackageID       : 253191fb-2d92-4b35-87ed-4d3d18115876
+2021-09-15 05:25:24.776: PackageName     : Stellarium
+2021-09-15 05:25:24.776: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\205\payload\application.ppkg
+2021-09-15 05:25:24.776: Description     : 
+2021-09-15 05:25:24.776: Rank            : 0
+2021-09-15 05:25:24.776: Altitude        : 5000
+2021-09-15 05:25:24.776: Version         : 0.22
+2021-09-15 05:25:24.776: OwnerType       : ITAdmin
+2021-09-15 05:25:24.776: Notes           : 
+2021-09-15 05:25:24.776: LastInstallTime : 15/09/2021 07:24:03
+2021-09-15 05:25:24.776: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-15 05:25:24.776:                   	Category:InitialCustomization
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:OOBE successfully configured.
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-15 05:25:24.776:                   	Category:Content
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-15 05:25:24.776:                   	Category:Content
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-15 05:25:24.776:                   	Category:Content
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-15 05:25:24.776:                   	Category:Content
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-15 05:25:24.776:                   	Category:Content
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-15 05:25:24.776:                   	Category:Content
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-15 05:25:24.776:                   	Category:Scripts
+2021-09-15 05:25:24.776:                   	LastResult:Success
+2021-09-15 05:25:24.776:                   	Message:Provisioning succeeded
+2021-09-15 05:25:24.776:                   	NumberOfFailures:0 (0x0)
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776:                   
+2021-09-15 05:25:24.776: 
+2021-09-15 05:25:24.776: 
+2021-09-15 05:25:24.776:  +1ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [JS] Install Stderr:  +0ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [JS] Finishing Installation +0ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [Runner] Running result: true +0ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Stellarium-0.20.4.3 (205) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Stellarium-0.20.4.3.json +2ms
+2021-09-15 05:25:24.776: 2021-09-15 7:25:24 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\205\payload... +2ms
+2021-09-15 05:25:24.994: 2021-09-15 7:25:25 [7780] INFO [Runner] Creating configuration unit runner object... +224ms
+2021-09-15 05:25:24.994: 2021-09-15 7:25:25 [7780] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-15 05:25:25.010: 2021-09-15 7:25:25 [7780] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-09-15 05:25:26.297: 2021-09-15 7:25:26 [7780] INFO [JS] GUID package: 4d914676-b5e0-44d9-96ad-3397dfca8bdd +1294ms
+2021-09-15 05:25:29.171: 2021-09-15 7:25:29 [7780] INFO [JS] GUID package: 253191fb-2d92-4b35-87ed-4d3d18115876 +2869ms
+2021-09-15 05:25:32.545: 2021-09-15 7:25:32 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '4d914676-b5e0-44d9-96ad-3397dfca8bdd').version +3379ms
+2021-09-15 05:25:32.545: 2021-09-15 7:25:32 [7780] INFO [JS] Installing the package ... +1ms
+2021-09-15 05:25:32.545: 2021-09-15 7:25:32 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 05:25:32.545: 2021-09-15 7:25:32 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\206\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-15 05:25:35.919: 2021-09-15 7:25:35 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '253191fb-2d92-4b35-87ed-4d3d18115876').version +3365ms
+2021-09-15 05:25:35.919: 2021-09-15 7:25:35 [7780] INFO [JS] Installing the package ... +0ms
+2021-09-15 05:25:35.919: 2021-09-15 7:25:35 [7780] INFO [Runner] Performing runner... +1ms

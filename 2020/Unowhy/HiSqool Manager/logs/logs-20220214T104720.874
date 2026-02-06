@@ -1,0 +1,51 @@
+2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 279] Received payload sqoolctl. current status=state=Downloading, error=None, active=true +1ms
+2022-02-14 10:47:05.149: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 279] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/sqoolctl-paq_0.9.8.jar +1ms
+2022-02-14 10:47:05.149: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 271] Received payload Charte sur la protection des données 1.0.16.0 . current status=state=Ok, error=None, active=true +1ms
+2022-02-14 10:47:05.149: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 271] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2022-02-14 10:47:05.149: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 521] Received payload Lib Manuels Windows 4.0.4. current status=state=Empty, error=None, active=false +8ms
+2022-02-14 10:47:05.212: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 521] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_4.0.4.jar +1ms
+2022-02-14 10:47:05.212: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 279] Payload in currently ongoing, same=true +8ms
+2022-02-14 10:47:05.212: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 279] waiting for end of download... +1ms
+2022-02-14 10:47:05.212: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 521] Persisting status=state=Todo, error=None, active=true +2ms
+2022-02-14 10:47:05.212: 2022-02-14 11:47:05 [5360] INFO [PayloadDispatcher] Emitting 12 entries ["__/conf/agents/facts","conf/application/windows/LGPO-Windows","conf/other/cleanafterinstall","conf/other/disablerecovery","conf/application/windows/HiSqool","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Microsoft-Office-1.0.0","__/unowhy/manager/windows","conf/application/windows/Educadhoc-Windows","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Le-Livre-Scolaire-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0"] +4ms
+2022-02-14 10:47:05.228: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Processing for execution configuration with 12 keys +1ms
+2022-02-14 10:47:05.228: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got 12 configurations. 0 in, 1 out +1ms
+2022-02-14 10:47:05.228: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +2ms
+2022-02-14 10:47:05.228: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +1ms
+2022-02-14 10:47:05.228: 2022-02-14 11:47:05 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2022-02-14 10:47:05.290: 2022-02-14 11:47:05 [5360] INFO [Runner] Creating configuration unit runner object... +68ms
+2022-02-14 10:47:05.290: 2022-02-14 11:47:05 [5360] INFO [Runner] Checking if runner needs to be performed... +0ms
+2022-02-14 10:47:05.290: 2022-02-14 11:47:05 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-14 10:47:05.290: 2022-02-14 11:47:05 [5360] INFO [JS] Getting GPO version... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +2ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +0ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> configuration... +0ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> configuration... +1ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [WatcherService] Received a list of 14 payloads +2ms
+2022-02-14 10:47:05.306: 2022-02-14 11:47:05 [5360] INFO [PayloadDownloader] [PAYLOAD 521] Persisting status=state=Downloading, error=None, active=true +3ms
+2022-02-14 10:47:05.321: 2022-02-14 11:47:05 [5360] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_4.0.4.jar... +5ms
+2022-02-14 10:47:05.368: 2022-02-14 11:47:05 [5360] INFO [JS] Current GPO version: 1.5 +46ms
+2022-02-14 10:47:05.368: 2022-02-14 11:47:05 [5360] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-02-14 10:47:05.368: 2022-02-14 11:47:05 [5360] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2022-02-14 10:47:05.571: 2022-02-14 11:47:05 [5360] INFO [RequestPerformerService] Got response 200. +205ms
+2022-02-14 10:47:05.571: 2022-02-14 11:47:05 [5360] INFO [RequestPerformerService] Response content length is 66653276  +1ms
+2022-02-14 10:47:07.258: 2022-02-14 11:47:07 [5360] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-02-14 10:47:07.274: 2022-02-14 11:47:07 [5360] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (360) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +2ms
+2022-02-14 10:47:07.274: 2022-02-14 11:47:07 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +2ms
+2022-02-14 10:47:07.274: 2022-02-14 11:47:07 [5360] INFO [Runner] Creating configuration unit runner object... +11ms
+2022-02-14 10:47:07.274: 2022-02-14 11:47:07 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-14 10:47:14.060: 2022-02-14 11:47:14 [5360] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-02-14 10:47:14.060: 2022-02-14 11:47:14 [5360] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (360) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +7ms
+2022-02-14 10:47:17.418: 2022-02-14 11:47:17 [5360] INFO [RequestPerformerService] Download finished undefined. +3350ms
+2022-02-14 10:47:17.418: 2022-02-14 11:47:17 [5360] INFO [RequestPerformerService] Digest: expected=20bd2b704d20a909f34fb83e9cc3bdb8, actual=20bd2b704d20a909f34fb83e9cc3bdb8. +1ms
+2022-02-14 10:47:17.418: 2022-02-14 11:47:17 [5360] INFO [PayloadDownloader] [PAYLOAD 279] Persisting status=state=Downloaded, error=None, active=true +5ms
+2022-02-14 10:47:17.418: 2022-02-14 11:47:17 [5360] INFO [PayloadDownloader] [PAYLOAD 279] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload... +3ms
+2022-02-14 10:47:17.434: 2022-02-14 11:47:17 [5360] INFO [RequestPerformerService] Got disposed. +9ms
+2022-02-14 10:47:17.434: 2022-02-14 11:47:17 [5360] INFO [RequestPerformerService] Complete. +2ms
+2022-02-14 10:47:20.874: 2022-02-14 11:47:20 [5360] ERROR [PayloadDownloader] [PAYLOAD 279] Error while unziping file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload: Error: EBUSY: resource busy or locked, rmdir 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload\sqoolctl' +3430ms

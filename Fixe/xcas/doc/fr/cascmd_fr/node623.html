@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice al&#233;atoire : ranm randMat randmatrix</TITLE>
+<META NAME="description" CONTENT="Matrice al&#233;atoire : ranm randMat randmatrix">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node624.html">
+<LINK REL="previous" HREF="node622.html">
+<LINK REL="up" HREF="node620.html">
+<LINK REL="next" HREF="node624.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12098"
+  HREF="node624.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12092"
+  HREF="node620.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12086"
+  HREF="node622.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12094"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12096"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12099"
+  HREF="node624.html">Diagonale d'une matrice ou</A>
+<B> monter:</B> <A NAME="tex2html12093"
+  HREF="node620.html">Les matrices particuli&#232;res</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12087"
+  HREF="node622.html">Matrice de z&#233;ros :</A>
+ &nbsp; <B>  <A NAME="tex2html12095"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12097"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009423000000000000000"></A><A NAME="16140"></A><A NAME="16141"></A><A NAME="16142"></A><A NAME="sec:ranm2"></A>
+<BR>
+Matrice al&#233;atoire : <TT>ranm randMat randmatrix</TT>
+</H2>
+<TT>ranm</TT> ou <TT>randMat</TT> ou <TT>randmatrix</TT> a comme argument un 
+entier <I>n</I> ou deux entiers <I>n</I>, <I>m</I> et &#233;ventuellement un troisi&#232;me 
+argument soit un entier <I>k</I>, soit le nom quot&#233;
+de la loi de distribution des nombres al&#233;atoires de la matrice 
+(voir aussi <A HREF="node459.html#sec:ranm1">6.25.30</A>, <A HREF="node605.html#sec:ranm4">6.38.37</A> 
+et <A HREF="node810.html#sec:ranm3">7.3.5</A>).
+<BR><TT>ranm</TT> renvoie un vecteur d'ordre <I>n</I> ou une matrice <I>n</I>&#215;<I>m</I>
+constitu&#233;e d'entiers al&#233;atoires uniform&#233;ment distribu&#233;s entre -99 et 99 
+(par d&#233;faut) ou entre 0 et <I>k</I> - 1 ou 
+une matrice <I>n</I>&#215;<I>m</I> de 
+nombres al&#233;atoires distribu&#233;s selon la loi mise entre-quote.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-54,78,-29]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[27,-29,37,-66],[-11,76,65,-33]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,4,3)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,4,'rand(3)')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,1,1,0],[0,1,2,0]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,4,'randnorm(0,1)')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1.83785427742,0.793007112053,-0.978388964902,-1.88602023857], [-1.50900874199,-0.241173369698,0.311373795585,-0.532752431454]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,4,2..4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[2.00549363438,3.03381264955,2.06539073586,2.04844321217],
+ [3.88383254968,3.28664474655,3.76909781061,2.39113253355]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12098"
+  HREF="node624.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12092"
+  HREF="node620.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12086"
+  HREF="node622.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12094"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12096"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12099"
+  HREF="node624.html">Diagonale d'une matrice ou</A>
+<B> monter:</B> <A NAME="tex2html12093"
+  HREF="node620.html">Les matrices particuli&#232;res</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12087"
+  HREF="node622.html">Matrice de z&#233;ros :</A>
+ &nbsp; <B>  <A NAME="tex2html12095"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12097"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

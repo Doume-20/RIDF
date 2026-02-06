@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Regrouper les log : lncollect</TITLE>
+<META NAME="description" CONTENT="Regrouper les log : lncollect">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node425.html">
+<LINK REL="previous" HREF="node423.html">
+<LINK REL="up" HREF="node419.html">
+<LINK REL="next" HREF="node425.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9163"
+  HREF="node425.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9157"
+  HREF="node419.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9151"
+  HREF="node423.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9159"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9161"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9164"
+  HREF="node425.html">Transformer une puissance en</A>
+<B> monter:</B> <A NAME="tex2html9158"
+  HREF="node419.html">Les Exponentielles et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9152"
+  HREF="node423.html">Lin&#233;ariser les exponentielles :</A>
+ &nbsp; <B>  <A NAME="tex2html9160"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9162"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009245000000000000000"></A><A NAME="10660"></A>
+<BR>
+Regrouper les log : <TT>lncollect</TT>
+</H2>
+<TT>lncollect</TT> a comme argument une expression contenant des logarithmes.
+<BR><TT>lncollect</TT> regroupe les termes en logarithmes. Il est donc pr&#233;f&#233;rable
+de l'utiliser sur une expression factoris&#233;e (en utilisant <TT>factor</TT>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>lncollect(ln(x+1)+ln(x-1))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>log((x+1)*(x-1))</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>lncollect(exp(ln(x+1)+ln(x-1)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x+1)*(x-1)</TT>
+</DIV>
+<B>Attention!!!</B> Pour <TT>Xcas</TT>, <TT>log=ln</TT>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

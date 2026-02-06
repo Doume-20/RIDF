@@ -1,0 +1,57 @@
+2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +0ms
+2021-10-21 20:05:06.081: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:06.081: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +1ms
+2021-10-21 20:05:06.081: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:06.089: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2021-10-21 20:05:06.089: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:06.111: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +28ms
+2021-10-21 20:05:06.111: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:06.111: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2021-10-21 20:05:06.119: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:06.119: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2021-10-21 20:05:06.119: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-10-21 20:05:06.121: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +0ms
+2021-10-21 20:05:06.121: 2021-10-21 22:05:06 [5308] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-10-21 20:05:07.398: 2021-10-21 22:05:07 [5308] INFO [RequestPerformerService] Got Error Error: connect ECONNREFUSED 51.210.253.83:443. +1277ms
+2021-10-21 20:05:07.398: 2021-10-21 22:05:07 [5308] ERROR [RequestPerformerService] Error while downloading https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\hisqool\configurations\groups\I2wtMgAsLCNCS5N00QtmmuOtLB0\config.json6f5ead71eb2a0d96.new: Error: connect ECONNREFUSED 51.210.253.83:443 +0ms
+2021-10-21 20:05:07.406: 2021-10-21 22:05:07 [5308] INFO [RequestPerformerService] Got disposed. +7ms
+2021-10-21 20:05:07.408: 2021-10-21 22:05:07 [5308] INFO [MQTTObserver] Error Error: connect ECONNREFUSED 51.210.253.83:443. Waiting 4000 milliseconds before retrying... +1ms
+2021-10-21 20:05:09.596: 2021-10-21 22:05:09 [5308] INFO [JS] Getting installed applications... +2194ms
+2021-10-21 20:05:11.447: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0... +1845ms
+2021-10-21 20:05:11.588: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] Got response 200. +143ms
+2021-10-21 20:05:11.588: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] Response content length is 11153  +0ms
+2021-10-21 20:05:11.599: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] Download finished undefined. +16ms
+2021-10-21 20:05:11.599: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] Digest: expected=e7a27278fa4d5d8c7e55c8e7790c4811, actual=e7a27278fa4d5d8c7e55c8e7790c4811. +1ms
+2021-10-21 20:05:11.607: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] Complete. +0ms
+2021-10-21 20:05:11.609: 2021-10-21 22:05:11 [5308] INFO [RequestPerformerService] Got disposed. +4ms
+2021-10-21 20:05:11.627: 2021-10-21 22:05:11 [5308] INFO [MQTTObserver] Fetched [https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0] -> [C:\Program Files\Unowhy\HiSqool Manager\data\configurations\hisqool\configurations\groups\I2wtMgAsLCNCS5N00QtmmuOtLB0\config.json]. digest=[md5:e7a27278fa4d5d8c7e55c8e7790c4811] +17ms
+2021-10-21 20:05:11.627: 2021-10-21 22:05:11 [5308] INFO [KeyedObservableCollector] Sending 9 items +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1005ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels: context.platform==='win32' +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-10-21 20:05:12.632: 2021-10-21 22:05:12 [5308] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms

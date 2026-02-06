@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Trac&#233;s de courbes</TITLE>
+<META NAME="description" CONTENT="Trac&#233;s de courbes">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node29.html">
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node27.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html462"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html456"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html450"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html458"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html460"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html463"
+  HREF="node29.html">Objets graphiques 2D</A>
+<B> monter:</B> <A NAME="tex2html457"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html451"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+ &nbsp; <B>  <A NAME="tex2html459"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html461"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00051000000000000000">
+Trac&#233;s de courbes</A>
+</H2>
+Pour créer rapidement des tracés de courbes simples, 
+il est conseillé d'utiliser le menu <code>Graphic</code>.
+
+<P>
+L'instruction de tracé d'une courbe représentative de fonction est <code>plot</code> avec en
+param&#232;tres une expression ou une liste d'expressions dont on
+veut la repr&#233;sentation graphique, puis la variable (&#233;ventuellement
+on indique l'intervalle de valeurs de la variable). 
+<A NAME="1734"></A>
+<A NAME="681"></A>
+Pour distinguer plusieurs courbes,
+on peut utiliser un troisi&#232;me argument par exemple
+<code>color=</code> suivi de la liste des couleurs &#224; utiliser. Les
+couleurs peuvent &#234;tre cod&#233;es par leur nom fran&#231;ais, leur nom
+anglais ou leur num&#233;ro. La fonction <code>couleur</code> change la couleur
+de base pour toutes les fonctions graphiques qui suivent.
+La fonction <code>tangent</code> permet d'obtenir la tangente &#224; une courbe en un 
+point.
+<A NAME="1735"></A>
+<A NAME="1736"></A>
+<A NAME="1737"></A>
+<PRE>
+E:=(2*x+1)/(x^2+1);plot(E)
+plot(E,x=-2..2,color=red)
+couleur(vert);plot(E,color=rouge);tangent(plot(E),0)
+DispG()
+plot([sin(x),x,x-x^3/6],x=-2..2,color=[rouge,bleu,vert])
+erase
+li:=[(x+k*0.5)^2$(k=-5..5)]:;
+plot(li,x=-8..8,color=[k$(k=0..10)])
+</PRE>
+
+<P>
+La fonction <code>plotparam</code> permet d'effectuer le
+trac&#233; de <!-- MATH
+ $(x(t),y(t))$
+ -->
+(<I>x</I>(<I>t</I>), <I>y</I>(<I>t</I>)). Il faut d&#233;finir les deux coordonn&#233;es 
+comme une seule expression complexe dont <I>x</I>(<I>t</I>) est la partie r&#233;elle 
+et <I>y</I>(<I>t</I>) la partie imaginaire. La fonction <code>plotpolar</code> 
+trace les courbes en coordonn&#233;es polaires. La commande
+<code>plotimplicit(f(x,y),x,y)</code> trace l'ensemble des solutions de
+<I>f</I> (<I>x</I>, <I>y</I>) = 0.
+<PRE>
+plotparam(sin(t)^3+i*cos(t)^3,t,0,2*pi)
+plotparam(t^2+i*t^3,t,-1,1)
+plotpolar(1/(1-2sin(t/2)),t,0,4*pi)
+plotpolar(tan(t)+tan(t/2),t,0,2*pi)
+plotimplicit(x^2+4*y^2-4,x,y)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Trac&#233;s de courbes</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plot</code></TD>
+<TD ALIGN="LEFT">graphe d'une expression</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>color</code></TD>
+<TD ALIGN="LEFT">param&#232;tre de <code>plot</code> pour la couleur</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>couleur</code></TD>
+<TD ALIGN="LEFT">choisir la couleur d'un trac&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tangent</code></TD>
+<TD ALIGN="LEFT">tangente &#224; une courbe</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plotparam</code></TD>
+<TD ALIGN="LEFT">courbe param&#233;trique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plotpolar</code></TD>
+<TD ALIGN="LEFT">courbe en polaires</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plotimplicit</code></TD>
+<TD ALIGN="LEFT">courbe implicite</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1738"></A>
+<A NAME="1739"></A>
+<A NAME="1740"></A>
+<A NAME="701"></A>
+<A NAME="702"></A>
+<A NAME="703"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html462"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html456"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html450"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html458"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html460"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html463"
+  HREF="node29.html">Objets graphiques 2D</A>
+<B> monter:</B> <A NAME="tex2html457"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html451"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+ &nbsp; <B>  <A NAME="tex2html459"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html461"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

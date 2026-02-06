@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transform&#233;e de Fourier discr&#232;te</TITLE>
+<META NAME="description" CONTENT="Transform&#233;e de Fourier discr&#232;te">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node416.html">
+<LINK REL="previous" HREF="node409.html">
+<LINK REL="up" HREF="node408.html">
+<LINK REL="next" HREF="node414.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9002"
+  HREF="node414.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8996"
+  HREF="node408.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8990"
+  HREF="node412.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8998"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9000"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9003"
+  HREF="node414.html">Les propri&#233;tes</A>
+<B> monter:</B> <A NAME="tex2html8997"
+  HREF="node408.html">Transform&#233;e de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8991"
+  HREF="node412.html">fourier_cn</A>
+ &nbsp; <B>  <A NAME="tex2html8999"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9001"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009232000000000000000">
+Transform&#233;e de Fourier discr&#232;te</A>
+</H2>
+Soit <I>N</I> un entier.
+<BR>
+On consid&#232;re une suite <I>x</I> p&#233;riodique de p&#233;riode <I>N</I> : elle est
+enti&#232;rement d&#233;termin&#233;e par la liste <!-- MATH
+ $x=[x_0,x_1,...x_{N-1}]$
+ -->
+<I>x</I> = [<I>x</I><SUB>0</SUB>, <I>x</I><SUB>1</SUB>,...<I>x</I><SUB>N-1</SUB>].
+<BR>
+La transform&#233;e de Fourier discr&#233;te est une transformation <I>F</I><SUB>N</SUB> qui a une 
+suite <I>x</I> p&#233;riodique de p&#233;riode <I>N</I> fait correspondre une suite <I>y</I>,
+ p&#233;riodique de p&#233;riode <I>N</I>, d&#233;finie pour <I>k</I> = 0..<I>N</I> - 1 par :
+<BR><!-- MATH
+ $\displaystyle {(F_N(x))}_k=y_k=\sum_{j=0}^{N-1}x_j\omega_N^{-k\cdot j}$
+ -->
+(<I>F</I><SUB>N</SUB>(<I>x</I>))<SUB>k</SUB> = <I>y</I><SUB>k</SUB> = <IMG
+ WIDTH="34" HEIGHT="73" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$\displaystyle \sum_{{j=0}}^{{N-1}}$"><I>x</I><SUB>j</SUB><IMG
+ WIDTH="44" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.png"
+ ALT="$\displaystyle \omega_{N}^{{-k\cdot j}}$">
+avec <IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$ \omega_{N}^{}$"> racine <I>N</I>-i&#232;me de l'unit&#233;.
+<BR>
+Le but est de calculer pour <I>k</I> = 0..<I>N</I> - 1:
+<P><!-- MATH
+ \begin{displaymath}
+\sum_{j=0}^{N-1}x_j\omega_N^{-k\cdot j}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="34" HEIGHT="73" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$\displaystyle \sum_{{j=0}}^{{N-1}}$"><I>x</I><SUB>j</SUB><IMG
+ WIDTH="44" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.png"
+ ALT="$\displaystyle \omega_{N}^{{-k\cdot j}}$">
+</DIV><P></P>
+avec <!-- MATH
+ $\omega_N=\exp(\frac{2i\pi}{N})$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$ \omega_{N}^{}$"> = exp(<IMG
+ WIDTH="28" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img275.png"
+ ALT="$ {\frac{{2i\pi}}{{N}}}$">)
+<BR>
+La m&#233;thode de la transform&#233;e de Fourier rapide permet de calculer 
+rapidement ces sommes si <I>N</I> est une puissance de 2.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html9004"
+  HREF="node414.html">Les propri&#233;tes</A>
+<LI><A NAME="tex2html9005"
+  HREF="node415.html">O&#249; interviennent ces sommes ?</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

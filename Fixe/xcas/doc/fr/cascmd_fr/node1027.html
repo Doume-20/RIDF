@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les angles d'Euler</TITLE>
+<META NAME="description" CONTENT="Les angles d'Euler">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1028.html">
+<LINK REL="previous" HREF="node1026.html">
+<LINK REL="up" HREF="node1025.html">
+<LINK REL="next" HREF="node1028.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18387"
+  HREF="node1028.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18381"
+  HREF="node1025.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18375"
+  HREF="node1026.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18383"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18385"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18388"
+  HREF="node1028.html">Les points</A>
+<B> monter:</B> <A NAME="tex2html18382"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18376"
+  HREF="node1026.html">G&#233;n&#233;ralit&#233;s</A>
+ &nbsp; <B>  <A NAME="tex2html18384"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18386"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001320000000000000000"></A><A NAME="sec:euler"></A>
+<BR>
+Les angles d'Euler
+</H1>
+Les angles d'Euler sont utilis&#233;s pour modifier le rep&#232;re de visualisation.
+<B>Rappel</B>
+Soient deux rep&#232;res : l'ancien (<I>Oxyz</I>) et le nouveau (<I>OXYZ</I>).
+<BR>
+Soit <I>Ou</I> l'intersection du plan (<I>OY</I>, <I>OZ</I>) avec  le plan (<I>Ox</I>, <I>Oz</I>) que l'on 
+oriente arbitrairement.
+<BR>
+Soient :
+
+<UL>
+<LI><I>Ra</I> la rotation d'axe <I>Oy</I> et d'angle <!-- MATH
+ $a=(\overrightarrow{Oz},\overrightarrow{Ou})$
+ -->
+<I>a</I> = (<IMG
+ WIDTH="66" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img602.png"
+ ALT="$ \overrightarrow{Oz},\overrightarrow{Ou})$"> qui transforme <I>Ox</I> en <I>Ov</I> et <I>Oz</I> en <I>Ou</I>, 
+</LI>
+<LI><I>Rb</I> la rotation d'axe <I>Ou</I> et d'angle <!-- MATH
+ $b=(\overrightarrow{Ov},\overrightarrow{OX})$
+ -->
+<I>b</I> = (<IMG
+ WIDTH="71" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img603.png"
+ ALT="$ \overrightarrow{Ov},\overrightarrow{OX})$"> qui transforme <I>Ov</I> en <I>OX</I> et <I>Oy</I> en <I>Ow</I>, 
+</LI>
+<LI><I>Rc</I> la rotation d'axe OX et d'angle <!-- MATH
+ $c=(\overrightarrow{Ou},\overrightarrow{OZ})$
+ -->
+<I>c</I> = (<IMG
+ WIDTH="70" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img604.png"
+ ALT="$ \overrightarrow{Ou},\overrightarrow{OZ})$"> qui transforme <I>Ow</I> en <I>OY</I> et <I>Ou</I> en <I>OZ</I>.
+</LI>
+</UL>
+On d&#233;finit compl&#232;tement la mise en place de (<I>OXYZ</I>) par rapport &#224; 
+(<I>Oxyz</I>) en donnant les angles <I>a</I>,<I>b</I>,<I>c</I> de  (<I>OXYZ</I>) par rapport 
+&#224; (<I>Oxyz</I>) et en effectuant la composition de ces trois rotations :
+<I>Rc</I>@<I>Rb</I>@<I>Ra</I>.
+<BR>
+Les angles d'Euler sont  :
+<BR><!-- MATH
+ $a=(\overrightarrow{Oz},\overrightarrow{Ou})$
+ -->
+<I>a</I> = (<IMG
+ WIDTH="66" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img602.png"
+ ALT="$ \overrightarrow{Oz},\overrightarrow{Ou})$">,
+<BR><!-- MATH
+ $b=(\overrightarrow{Ov},\overrightarrow{OX})$
+ -->
+<I>b</I> = (<IMG
+ WIDTH="71" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img603.png"
+ ALT="$ \overrightarrow{Ov},\overrightarrow{OX})$">,
+<BR><!-- MATH
+ $c=(\overrightarrow{Ou},\overrightarrow{OZ})$
+ -->
+<I>c</I> = (<IMG
+ WIDTH="70" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img604.png"
+ ALT="$ \overrightarrow{Ou},\overrightarrow{OZ})$">.
+
+<P>
+Les dessins de la g&#233;om&#233;trie 3D se font en choissisant comme rep&#232;re 
+<I>Oxyz</I>, <I>Ox</I> horizontal dirig&#233; vers la droite, <I>Oy</I> vertical dirig&#233; vers le
+haut et l'axe des z qui pointe vers vous.
+<BR>
+Les mesures en degr&#233; de <I>a</I>, <I>b</I>, <I>c</I> sont mises dans <I>ry</I>, <I>rz</I>, <I>rx</I>.
+<BR>
+Selon l'orientation de <I>Ou</I>, les valeurs de <I>a</I>, <I>b</I>, <I>c</I> ne sont pas uniques :
+<BR><I>a</I>, <I>b</I>, <I>c</I> et <!-- MATH
+ $a+180,180-b,c+180$
+ -->
+<I>a</I> + 180, 180 - <I>b</I>, <I>c</I> + 180 mettent en place le m&#234;me rep&#232;re <I>OXYZ</I>,
+<BR>
+Lorsque <I>b</I> est un angle droit, c'est &#224; dire que l'axe <I>OX</I> et l'axe <I>Oy</I> 
+ont le m&#234;me support on n'a pas non plus unicit&#233;:
+<BR><I>a</I>, 90, <I>c</I> et <I>a</I> + <I>c</I>, 90, 0 mettent en place le m&#234;me rep&#232;re <I>OXYZ</I> et
+<BR><I>a</I>, - 90, <I>c</I> et <I>a</I> - <I>c</I>, - 90, 0 mettent en place le m&#234;me rep&#232;re <I>OXYZ</I>.
+<BR>
+On peut donc choisir, l'angle <I>b</I> dans ] - 90, 90[ et les angles <I>a</I> et <I>c</I> 
+dans <!-- MATH
+ $]-180,180]$
+ -->
+] - 180, 180] ou bien <I>b</I> dans -90, 90 <I>c</I> = 0 et <I>a</I> dans <!-- MATH
+ $]-180,180]$
+ -->
+] - 180, 180].
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18387"
+  HREF="node1028.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18381"
+  HREF="node1025.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18375"
+  HREF="node1026.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18383"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18385"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18388"
+  HREF="node1028.html">Les points</A>
+<B> monter:</B> <A NAME="tex2html18382"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18376"
+  HREF="node1026.html">G&#233;n&#233;ralit&#233;s</A>
+ &nbsp; <B>  <A NAME="tex2html18384"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18386"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

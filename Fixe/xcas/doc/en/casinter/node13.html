@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>3-d spots</TITLE>
+<META NAME="description" CONTENT="3-d spots">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html170"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html168"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html162"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html171"
+  HREF="node14.html">3-d geometry</A>
+<B> Up:</B> <A NAME="tex2html169"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html163"
+  HREF="node12.html">3-d rendering.</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00035500000000000000">
+3-d spots</A>
+</H3>
+If you enable <code>Lights</code> in the <code>cfg</code> configuration of a 3-d
+graph, the scene will be rendered by the OpenGL lighting
+algorithm. You can enable 1 to 8 spots of light, each is configurable
+(buttons <code>l1</code> to <code>l8</code>). 
+
+<P>
+Each spot has geometric properties: it may be a positional spot
+if <I>w</I> = 1 or a directional spot if <I>w</I> = 0
+
+<UL>
+<LI>A positional spot (<I>w</I> = 1) is
+at position <I>x</I>, <I>y</I>, <I>z</I> and has a direction, defined by 
+<code>x-&gt;, y-&gt;, z-&gt;</code>. Light coming from a positional spot may
+be attenuated, the attenuation may depend on the distance between
+the spot and the object (with a quadratic formula, 
+<code>att0, att1, att2</code> in the spot configuration), and by the
+cosine of the angle between the spot direction and the segment
+spot-object to an exponent (<code>exp</code> in the spot configuration).
+In addition, the spot may light only inside a cone of angle
+configurable by the <code>cutoff</code> value (in degrees, use 180
+for no cutoff or a value between 0 and 90). An additional attenuation
+comes from the cosine of the angle incoming direction-normal to the
+object, so that zenithal lighting is maximal.
+</LI>
+<LI>A directional spot <I>w</I> = 0 (emulating e.g. Sun light), does not
+attenuate (except for the angle between the direction of the
+spot and the normal). The direction is defined by <I>x</I>, <I>y</I>, <I>z</I>.
+</LI>
+</UL>
+
+<P>
+Objects from the scene may
+have their own properties with respect to three kinds of light:
+
+<UL>
+<LI>ambient light,
+emulating light coming from all directions and diffused
+in all directions without attenuation, 
+</LI>
+<LI>diffuse light,
+emulating light coming from one direction and diffused in all directions
+with an attenuation factor proportionnal to the cosine of the
+angle of the incoming direction and the normal to the object,
+</LI>
+<LI>specular light,
+emulating light coming from one direction and reflected 
+preferentially in the direction symmetric with respect to
+the normal of the object.
+</LI>
+</UL>
+In addition, an object may have intrinsic light, called emission.
+Each property must be specified for 4 channels: r (red), b (blue)
+and g (green) for the colors, and a (alpha) for transparency (if
+you enable <code>Blending</code>).
+Object properties must be specified in their definition (on 
+the commandline):
+
+<UL>
+<LI><code>gl_material=[gl_front,gl_ambient,[r,g,b,a]]</code>
+<BR>
+specifies the property for ambient light, use 
+<code>gl_diffuse</code>, <code>gl_specular</code> or <code>gl_emission</code>
+instead of <code>gl_ambient</code> for diffuse, specular or intrinsic
+light. Default is 0.2 for ambient, 0.8 for diffuse and 0 for emission
+on r,g,b channels and 1 on alpha channels.
+</LI>
+<LI><code>gl_material=[gl_front,gl_shininess,n]</code>
+<BR>
+specifies the exponent <I>n</I> that will be used for specular light. The
+exponent is that of <!-- MATH
+ $\cos(\theta)$
+ -->
+cos(<IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \theta$">), where <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \theta$"> is the angle
+between reflected incoming light and visualization direction (default
+is <I>n</I> = 50).
+</LI>
+<LI><code>gl_texture="filename"</code> specify an image filename that
+will be mapped on a sphere or a polygon or a parametric
+defined surface.
+</LI>
+</UL> 
+
+<P>
+Summing up, the formula for light on each channel is&nbsp;:
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+l &=&o_e+ o_a \sum_{j=1}^8 l_{a,j} + o_s \sum_{j=1}^8 l_{s,j}
+ \cos(\gamma_j)^S + \\
+ &  & +  o_d \sum_{j=1}^8 l_{d,j} 
+\cos(\alpha_j)^{e_j} \cos(\beta_j) \frac{1}{a_{0,j}+a_{1,j}
+  d_j+a_{2,j} d_j^2}
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><I>l</I></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><I>o</I><SUB>e</SUB> + <I>o</I><SUB>a</SUB><IMG
+ WIDTH="27" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$\displaystyle \sum_{{j=1}}^{8}$"><I>l</I><SUB>a, j</SUB> + <I>o</I><SUB>s</SUB><IMG
+ WIDTH="27" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$\displaystyle \sum_{{j=1}}^{8}$"><I>l</I><SUB>s, j</SUB>cos(<IMG
+ WIDTH="19" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$\displaystyle \gamma_{j}^{}$">)<SUP>S</SUP> +</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP>+ <I>o</I><SUB>d</SUB><IMG
+ WIDTH="27" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$\displaystyle \sum_{{j=1}}^{8}$"><I>l</I><SUB>d, j</SUB>cos(<IMG
+ WIDTH="21" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle \alpha_{j}^{}$">)<SUP>e<SUB>j</SUB></SUP>cos(<IMG
+ WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle \beta_{j}^{}$">)<IMG
+ WIDTH="153" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$\displaystyle {\frac{{1}}{{a_{0,j}+a_{1,j}
+d_j+a_{2,j} d_j^2}}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+where&nbsp;:
+
+<UL>
+<LI><!-- MATH
+ $o_e,o_a,o_d,o_s$
+ -->
+<I>o</I><SUB>e</SUB>, <I>o</I><SUB>a</SUB>, <I>o</I><SUB>d</SUB>, <I>o</I><SUB>s</SUB> are the material properties with respect to
+ ambiant, diffuse, specular light, <I>S</I> is the
+``shininess'' (exponent for specular light)
+</LI>
+<LI><!-- MATH
+ $l_{a,j},l_{d,j},l_{s,j}$
+ -->
+<I>l</I><SUB>a, j</SUB>, <I>l</I><SUB>d, j</SUB>, <I>l</I><SUB>s, j</SUB> are the properties of spot <I>j</I> for
+  ambiant, diffuse and specular light
+</LI>
+<LI><!-- MATH
+ $a_{0,j}, a_{1,j}, a_{2,j}$
+ -->
+<I>a</I><SUB>0, j</SUB>, <I>a</I><SUB>1, j</SUB>, <I>a</I><SUB>2, j</SUB> are attenuation coefficients
+of spot <I>j</I>, replaced by 1,0,0 if <I>w</I> = 0 (no attenuation)
+</LI>
+<LI><I>d</I><SUB>j</SUB> is the distance of spot <I>j</I> to the objet
+</LI>
+<LI><IMG
+ WIDTH="21" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \alpha_{j}^{}$"> is the angle between the direction of spot <I>j</I> and the
+segment from spot <I>j</I> and the object, except if <IMG
+ WIDTH="21" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \alpha_{j}^{}$"> is
+greater to the angle of cutoff of spot <I>j</I> (<!-- MATH
+ $\alpha_j=\pi/2$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \alpha_{j}^{}$"> = <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ \pi$">/2), 
+or if <I>w</I> = 0 (<!-- MATH
+ $\alpha_j=0$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \alpha_{j}^{}$"> = 0, no attenuation for directionnal light).
+</LI>
+<LI><IMG
+ WIDTH="20" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \beta_{j}^{}$"> is the angle between the segment spot <I>j</I>-object and
+the normale to the objet (if <I>w</I> = 0, replace spot <I>j</I>-objet by
+the spot direction)
+</LI>
+<LI><IMG
+ WIDTH="19" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \gamma_{j}^{}$"> is the angle between the symmetric of the direction 
+of the spot w.r.t. the normal of the object 
+and the segment object-eye
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html170"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html168"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html162"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html171"
+  HREF="node14.html">3-d geometry</A>
+<B> Up:</B> <A NAME="tex2html169"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html163"
+  HREF="node12.html">3-d rendering.</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>

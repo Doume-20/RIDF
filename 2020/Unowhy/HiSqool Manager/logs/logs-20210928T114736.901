@@ -1,0 +1,79 @@
+2021-09-28 13:47:04 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 (271) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Charte-sur-la-protection-des-donnees-1.0.16.0.json +2ms
+2021-09-28 11:47:05.874: 2021-09-28 13:47:05 [5224] INFO [JS] Result: 0 +1834ms
+2021-09-28 11:47:05.874: 2021-09-28 13:47:05 [5224] INFO [JS] Stdout:  +0ms
+2021-09-28 11:47:05.874: 2021-09-28 13:47:05 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-28 11:47:05.874: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +0ms
+2021-09-28 11:47:05.905: 2021-09-28 13:47:05 [5224] INFO [Runner] Running result: true +1ms
+2021-09-28 11:47:05.905: 2021-09-28 13:47:05 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +1ms
+2021-09-28 11:47:09.543: 2021-09-28 13:47:09 [5224] INFO [JS] Version of update package: 1.1 +3668ms
+2021-09-28 11:47:09.543: 2021-09-28 13:47:09 [5224] INFO [JS] Your package is up to date +1ms
+2021-09-28 11:47:09.543: 2021-09-28 13:47:09 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-28 11:47:09.543: 2021-09-28 13:47:09 [5224] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +1ms
+2021-09-28 11:47:35.027: 2021-09-28 13:47:35 [5224] INFO [CommandService] Got command facts:set +25466ms
+2021-09-28 11:47:35.027: 2021-09-28 13:47:35 [5224] INFO [CommandService] Got command facts:set +3ms
+2021-09-28 11:47:35.027: 2021-09-28 13:47:35 [5224] INFO [CommandService] Got command facts:set +6ms
+2021-09-28 11:47:35.027: 2021-09-28 13:47:35 [5224] INFO [CommandService] Got command units:trigger +2ms
+2021-09-28 11:47:35.027: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> login... +1ms
+2021-09-28 11:47:35.027: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> login... +0ms
+2021-09-28 11:47:35.043: 2021-09-28 13:47:35 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2021-09-28 11:47:35.043: 2021-09-28 13:47:35 [5224] INFO [Runner] Creating configuration unit runner object... +12ms
+2021-09-28 11:47:35.043: 2021-09-28 13:47:35 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-28 11:47:35.043: 2021-09-28 13:47:35 [5224] INFO [JS] Checking that the unit needs to be performed +0ms
+2021-09-28 11:47:35.058: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> login... +0ms
+2021-09-28 11:47:35.058: 2021-09-28 13:47:35 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-09-28 11:47:35.058: 2021-09-28 13:47:35 [5224] INFO [Runner] Creating configuration unit runner object... +11ms
+2021-09-28 11:47:35.058: 2021-09-28 13:47:35 [5224] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-09-28 11:47:35.058: 2021-09-28 13:47:35 [5224] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-09-28 11:47:35.074: {
+2021-09-28 11:47:35.074:   "platform": "win32",
+2021-09-28 11:47:35.074:   "deviceId": "IFP052046109",
+2021-09-28 11:47:35.074:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-09-28 11:47:35.074:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-09-28 11:47:35.074:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-09-28 11:47:35.074:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-09-28 11:47:35.074:   "versionCode": 21090427,
+2021-09-28 11:47:35.074:   "trigger": "login",
+2021-09-28 11:47:35.074:   "metadata": {
+2021-09-28 11:47:35.074:     "packageVersion": "1.0.16.0",
+2021-09-28 11:47:35.074:     "componentParameters": {
+2021-09-28 11:47:35.074:       "AppX": "Hisqool.Legal.GDPR",
+2021-09-28 11:47:35.074:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-09-28 11:47:35.074:       "DesktopShortcut": "Charte de protection*",
+2021-09-28 11:47:35.074:       "ProvisioningPackage": "Hisqool GDPR",
+2021-09-28 11:47:35.074:       "InstallationDirectory": "hisqool.gdpr",
+2021-09-28 11:47:35.074:       "UninstallationDirectory": "hisqool.gdpr",
+2021-09-28 11:47:35.074:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-09-28 11:47:35.074:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-09-28 11:47:35.074:     },
+2021-09-28 11:47:35.074:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-09-28 11:47:35.074:   }
+2021-09-28 11:47:35.074: } +2ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> login... +1ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +0ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> login... +1ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +0ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +1ms
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +0ms
+2021-09-28 11:47:35.074: 127.0.0.1 - - [28/Sep/2021:11:47:35 +0000] "POST /commands HTTP/1.1" 200 29 "-" "-"
+2021-09-28 11:47:35.074: 2021-09-28 13:47:35 [5224] INFO [CommandService] Got command facts:set +8ms
+2021-09-28 11:47:35.105: 2021-09-28 13:47:35 [5224] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +27ms
+2021-09-28 11:47:35.152: 2021-09-28 13:47:35 [5224] INFO [CommandService] Got command units:trigger +45ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +7ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> logout... +2ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> logout... +1ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> logout... +0ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +0ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> logout... +1ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +0ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +1ms
+2021-09-28 11:47:35.168: 2021-09-28 13:47:35 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +0ms
+2021-09-28 11:47:35.168: 127.0.0.1 - - [28/Sep/2021:11:47:35 +0000] "POST /commands HTTP/1.1" 200 30 "-" "-"
+2021-09-28 11:47:36.402: 2021-09-28 13:47:36 [5224] INFO [JS] Result: 0 +1229ms
+2021-09-28 11:47:36.402: 2021-09-28 13:47:36 [5224] INFO [JS] Stdout: Custom shell possible: True +1ms
+2021-09-28 11:47:36.402: 2021-09-28 13:47:36 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-28 11:47:36.402: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2021-09-28T13:47:36.3396264+02:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">11120</U32><U32 N="NativeThreadId">6884</U32><U32 N="ManagedThreadId">10</U32></Props></Obj></Objs> +0ms
+2021-09-28 11:47:36.901: 2021-09-28 13:47:36 [5224] INFO [CleanerService] Received payload list: 111, 280, 271, 130, 170, 173, 179, 2, 279, 182, 262, 181, 356 +490ms
+2021-09-28 11:47:36.901: 2021-09-28 13:47:36 [5224] INFO [CleanerService] Current payload list: 111, 117, 118, 119, 120, 121, 130, 136, 137, 138, 139, 17, 170, 173, 179, 181, 182, 187, 190, 2, 202, 205, 206, 207, 208, 220, 221, 222, 223, 224, 225, 226, 227, 230, 231, 232, 233, 234, 261, 262, 271, 279, 280, 356, 79, 80, 85, 86 +12ms
+2021-09-28 11:47:36.901: 2021-09-28 13:47:36 [5224] INFO [CleanerService] Payloads to delete: 117, 118, 119, 120, 121, 136, 137, 138, 139, 17, 187, 190, 202, 205, 206, 207, 208, 220, 221, 222, 223, 224, 225, 226, 227, 230, 231, 232, 233, 234, 261, 79, 80, 85, 86 +1ms
+2021-09-28 11:47:36.901: 2021-09-28 13:47:36 [5224] INFO [CleanerService] Deleting unused payload: 117... +0ms

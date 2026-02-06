@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#201;criture matricielle et algorithme du simplexe</TITLE>
+<META NAME="description" CONTENT="&#201;criture matricielle et algorithme du simplexe">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node683.html">
+<LINK REL="previous" HREF="node681.html">
+<LINK REL="up" HREF="node680.html">
+<LINK REL="next" HREF="node683.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12973"
+  HREF="node683.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12967"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12961"
+  HREF="node681.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12969"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12971"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12974"
+  HREF="node683.html">Premier cas&nbsp;: 3 arguments</A>
+<B> monter:</B> <A NAME="tex2html12968"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12962"
+  HREF="node681.html">La commande Xcas :</A>
+ &nbsp; <B>  <A NAME="tex2html12970"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12972"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009452000000000000000">
+&#201;criture matricielle et algorithme du simplexe</A>
+</H2>
+Un simplexe est une portion de  <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP> d&#233;limit&#233;e par des 
+hyperplans.
+<BR>
+L'algorithme du simplexe sert &#224; maximiser une fonction lin&#233;aire
+sous des contraintes d'&#233;galit&#233; ou d'in&#233;galit&#233; lin&#233;aire.
+Le principe de l'algorithme consiste &#224; trouver un sommet du simplexe
+d&#233;fini par les contraintes, puis &#224; s&#233;lectionner une ar&#234;te
+et la suivre jusqu'au sommet suivant, la s&#233;lection se faisant
+de sorte &#224; ne jamais diminuer la valeur de la fonction lin&#233;aire.
+On effectue donc les &#233;tapes suivantes
+
+<UL>
+<LI>r&#233;&#233;crire les contraintes impliquant une seule variable
+sous la forme <!-- MATH
+ $x_k \geq 0$
+ -->
+<I>x</I><SUB>k</SUB> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0, &#233;liminer si possible par pivot de Gauss
+les variables sans contraintes (ou ajouter des variables). &#192; la fin de cette
+&#233;tape, on doit avoir pour contraintes que toutes les composantes des
+&#233;l&#233;ments du simplexe sont positives.
+</LI>
+<LI>transformer si n&#233;cessaire les contraintes d'in&#233;galit&#233;
+restante en &#233;galit&#233; (par ajout de variables d'&#233;cart) avec un
+second membre positif,
+</LI>
+<LI>construire un sommet s'il en existe (ce qui dans les cas
+non &#233;vidents se fait en optimisant une fonction artificielle),
+</LI>
+<LI>passer de sommet &#224; sommet.
+</LI>
+</UL>
+Un sommet va &#234;tre caract&#233;ris&#233; dans la suite par ses composantes
+nulles et ses composantes non nulles. La repr&#233;sentation matricielle
+associ&#233;e &#224; un sommet des contraintes d'&#233;galit&#233;
+fait apparaitre une sous-matrice identit&#233; dans les
+colonnes correspondant aux composantes non nulles du sommet. 
+Par exemple, si on part du probl&#232;me
+<P><!-- MATH
+ \begin{displaymath}
+\mbox{max}(2x+y-z+4) /
+\left\{
+\begin{array}{rcl}
+x & \leq & 1 \\
+y & \geq & 2 \\
+x+3y-z & = & 2 \\
+2x-y+z & \leq & 8
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+max(2<I>x</I> + <I>y</I> - <I>z</I> + 4)/<IMG
+ WIDTH="22" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img436.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+x &amp; \leq &amp; 1 \\
+y &amp; \geq &amp; 2 \\
+x+3y-z &amp; = &amp; 2 \\
+2x-y+z &amp; \leq &amp; 8
+\end{array}
+}\right.$"><IMG
+ WIDTH="154" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img437.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+x &amp; \leq &amp; 1 \\
+y &amp; \geq &amp; 2 \\
+x+3y-z &amp; = &amp; 2 \\
+2x-y+z &amp; \leq &amp; 8
+\end{array}$">
+</DIV><P></P>
+on pose <I>x</I> = 1 - <I>X</I>, <I>y</I> = <I>Y</I> + 2, donc
+<P><!-- MATH
+ \begin{displaymath}
+\mbox{max}(-2X+Y-z+8) /
+\left\{
+\begin{array}{rcl}
+X & \geq & 0 \\
+Y & \geq & 0 \\
+1-X+3(Y+2)-z & = & 2 \\
+2(1-X)-(Y+2)+z & \leq & 8
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+max(- 2<I>X</I> + <I>Y</I> - <I>z</I> + 8)/<IMG
+ WIDTH="22" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img438.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+1-X+3(Y+2)-z &amp; = &amp; 2 \\
+2(1-X)-(Y+2)+z &amp; \leq &amp; 8
+\end{array}
+}\right.$"><IMG
+ WIDTH="251" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img439.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+1-X+3(Y+2)-z &amp; = &amp; 2 \\
+2(1-X)-(Y+2)+z &amp; \leq &amp; 8
+\end{array}$">
+</DIV><P></P>
+puis on &#233;limine <I>z</I> par la contrainte d'&#233;galit&#233; <I>z</I> = 5 - <I>X</I> + 3<I>Y</I>
+<P><!-- MATH
+ \begin{displaymath}
+\mbox{max}(-2X+Y-(5-X+3Y)+8) /
+\left\{
+\begin{array}{rcl}
+X & \geq & 0 \\
+Y & \geq & 0 \\
+-2X-Y+ 5-X+3Y & \leq & 8
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+max(- 2<I>X</I> + <I>Y</I> - (5 - <I>X</I> + 3<I>Y</I>) + 8)/<IMG
+ WIDTH="22" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img440.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+-2X-Y+ 5-X+3Y &amp; \leq &amp; 8
+\end{array}
+}\right.$"><IMG
+ WIDTH="259" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+-2X-Y+ 5-X+3Y &amp; \leq &amp; 8
+\end{array}$">
+</DIV><P></P>
+soit
+<P><!-- MATH
+ \begin{displaymath}
+\mbox{max}(-X-2Y+3) /
+\left\{
+\begin{array}{rcl}
+(X,Y) & \geq & 0 \\
+-3X +2Y  & \leq & 3
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+max(- <I>X</I> - 2<I>Y</I> + 3)/<IMG
+ WIDTH="20" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img442.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+(X,Y) &amp; \geq &amp; 0 \\
+-3X +2Y &amp; \leq &amp; 3
+\end{array}
+}\right.$"><IMG
+ WIDTH="156" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img443.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+(X,Y) &amp; \geq &amp; 0 \\
+-3X +2Y &amp; \leq &amp; 3
+\end{array}$">
+</DIV><P></P>
+Il faut ici ajouter une variable d'&#233;cart <I>t</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 pour
+transformer la derni&#232;re in&#233;galit&#233; en &#233;galit&#233; :
+<BR>
+on pose <!-- MATH
+ $t=3-(-3X +2Y)$
+ -->
+<I>t</I> = 3 - (- 3<I>X</I> + 2<I>Y</I>) et on a alors  
+<BR><I>t</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 et <!-- MATH
+ $-3X +2Y+t=3$
+ -->
+-3<I>X</I> + 2<I>Y</I> + <I>t</I> = 3 est &#233;quivalent &#224; <!-- MATH
+ $-3X +2Y \leq 3$
+ -->
+-3<I>X</I> + 2<I>Y</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> 3, et 
+cela donne un sommet de d&#233;part &#233;vident.
+La matrice correspondant &#224; ces conditions est alors la ligne
+<P><!-- MATH
+ \begin{displaymath}
+(-3, 2, 1, 3 )
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(- 3, 2, 1, 3)
+</DIV><P></P>
+le sommet de d&#233;part associ&#233; est <!-- MATH
+ $(X,Y,t)=(0,0,3)$
+ -->
+(<I>X</I>, <I>Y</I>, <I>t</I>) = (0, 0, 3) 
+la sous-matrice identit&#233; utilise la 3&#232;me colonne (<I>t</I> est le coefficient
+non nul).
+On pourrait passer le coefficient non nul en 2&#232;me colonne
+(sommet <!-- MATH
+ $(X,Y,t)=(0,3/2,0)$
+ -->
+(<I>X</I>, <I>Y</I>, <I>t</I>) = (0, 3/2, 0)) en r&#233;&#233;crivant l'&#233;galit&#233; sous la forme
+<P><!-- MATH
+ \begin{displaymath}
+(-3/2, 1, 1/2, 3/2 )
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(- 3/2, 1, 1/2, 3/2)
+</DIV><P></P>
+mais on ne pourrait passer le coefficient non nul en 1&#232;re colonne
+(il n'y a en effet que 2 sommets &#224; ce simplexe).
+<BR>
+Avec <TT>Xcas</TT>, on tape : 
+<DIV ALIGN="CENTER">
+<TT>simplex_reduce([[-3,2]],[3],[-1,-2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(0,[0,0,3],[[-3,2,1,3],[1,2,0,0]])</TT>
+</DIV>
+
+<P>
+En g&#233;n&#233;ral, 
+le passage d'un sommet &#224; un autre sommet consiste alors &#224; effectuer
+une op&#233;ration de r&#233;duction de Gauss qui fait sortir une colonne
+et entrer une autre colonne dans les composantes non nulles du sommet,
+ce qui revient &#224; d&#233;placer la sous-matrice identit&#233;. On doit
+prendre garde &#224; effectuer l'op&#233;ration de r&#233;duction de Gauss
+en conservant la positivit&#233; du membre de droite des contraintes
+de l'&#233;galit&#233;, et ce sans diminuer la valeur de la fonction
+&#224; optimiser. Pour pouvoir r&#233;aliser cette derni&#232;re condition,
+on augmente la matrice des contraintes
+d'&#233;galit&#233; par une ligne form&#233;e des oppos&#233;s des coefficients 
+de la fonction &#224; maximiser, sauf en derni&#232;re colonne (on y met
+le coefficient constant de la fonction &#224; maximiser). Dans l'exemple
+ce serait
+<P><!-- MATH
+ \begin{displaymath}
+\left(
+\begin{array}{cccc}
+-3 & 2 & 1 & 3 \\
+ 1 & 2 & 0 & 3
+\end{array}
+\right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img444.png"
+ ALT="$\displaystyle \left(\vphantom{
+\begin{array}{cccc}
+-3 &amp; 2 &amp; 1 &amp; 3 \\
+1 &amp; 2 &amp; 0 &amp; 3
+\end{array}}\right.$"><IMG
+ WIDTH="116" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img445.png"
+ ALT="$\displaystyle \begin{array}{cccc}
+-3 &amp; 2 &amp; 1 &amp; 3 \\
+1 &amp; 2 &amp; 0 &amp; 3
+\end{array}$"><IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img446.png"
+ ALT="$\displaystyle \left.\vphantom{
+\begin{array}{cccc}
+-3 &amp; 2 &amp; 1 &amp; 3 \\
+1 &amp; 2 &amp; 0 &amp; 3
+\end{array}}\right)$">
+</DIV><P></P>
+On cr&#233;e (si n&#233;cessaire) des z&#233;ros dans cette derni&#232;re
+ligne dans les colonnes correspondant &#224; la sous-matrice identit&#233;
+(donc aux composantes non nulles du sommet), de sorte que le
+coefficient constant de la ligne (apr&#232;s cette r&#233;duction)
+repr&#233;sente la valeur de la fonction &#224; optimiser en ce sommet.
+Plus g&#233;n&#233;rallement pour un point du simplexe, 
+au cours de la r&#233;duction la somme de la fonction &#224; maximiser et
+du produit scalaire des coordonn&#233;s du point avec cette derni&#232;re
+ligne (priv&#233; du dernier coefficient) vaut le dernier coefficient.
+On aura donc un sommet r&#233;alisant le maximum si tous les coefficients
+de la ligne sont positifs (sauf le dernier). C'est le cas ici, le
+maximum est 3, atteint pour <I>X</I> = <I>Y</I> = 0 (donc <I>x</I> = 1, <I>y</I> = 2 et <I>z</I> = 5).
+
+<P>
+L'instruction <TT>simplex_reduce</TT> de <TT>Xcas</TT> applique l'algorithme
+du simplexe dans deux situations distinctes&nbsp;: soit le probl&#232;me
+est pos&#233; sous forme ``canonique'' et on lui donne 3 arguments
+(cf. infra), soit on lui donne un seul argument qui doit &#234;tre
+une matrice ``associ&#233;e &#224; un sommet'' au sens de ce paragraphe.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12973"
+  HREF="node683.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12967"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12961"
+  HREF="node681.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12969"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12971"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12974"
+  HREF="node683.html">Premier cas&nbsp;: 3 arguments</A>
+<B> monter:</B> <A NAME="tex2html12968"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12962"
+  HREF="node681.html">La commande Xcas :</A>
+ &nbsp; <B>  <A NAME="tex2html12970"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12972"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

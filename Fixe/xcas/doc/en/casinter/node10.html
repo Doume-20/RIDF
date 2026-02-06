@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>2-d geometry</TITLE>
+<META NAME="description" CONTENT="2-d geometry">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html140"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html138"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html132"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html141"
+  HREF="node11.html">Parameters (cursors)</A>
+<B> Up:</B> <A NAME="tex2html139"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html133"
+  HREF="node9.html">Common features</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00035200000000000000">
+2-d geometry</A>
+</H3>
+Use the <code>Geo-&gt;New figure-&gt;geo2d</code> menu to make a new 2-d geometry
+session. This will open a new level with a ``subsession'' (group of
+commandlines) at the left,
+a 2-d screen in the middle, and the controls at the right. If there
+are parameters, they will be below the controls at the right.
+The subsession is a list of commandline levels. Evaluation of
+a commandline level will automatically reevaluate all levels
+below (i.e. with a higher level number), therefore if you use
+one level to define an object and modify the definition of this
+object later, all objects depending on this object will be modified.
+Modification of a level defining a point or a 1-d parameter can be
+done interactively with the mouse either in the geometric screen or in the
+parameter area (below the controls).
+
+<P>
+The geometry level has a mode, which affects how the mouse behave.
+
+<UL>
+<LI>In all modes, right-clicking (or double-clicking) on an object
+displays a dialog box so that you can easily modify the object
+attributes (or delete the object).
+</LI>
+<LI>In 2-d frame mode, draging the mouse will move the visualization windows
+and scrolling will zoom in/out.
+</LI>
+<LI>In pointer mode, you can move an existing point, push the mouse 
+near the point (when the mouse is near enough, it will show
+a different cursor) and move the mouse, release it at the
+new postion.
+</LI>
+<LI>In point mode, the mouse can be used to define new
+points or segments. To define a new
+point, just click somewhere not near another point or segment. To
+define a segment, push the mouse button at the beginning, move
+the mouse, release the mouse at the end of the segment (if
+you release the mouse out of the screen, the segment will be
+cancelled). 
+</LI>
+<LI>You can draw a few more complex object with the mouse using
+the other modes, like triangles, circles, bisectors, .... 
+</LI>
+<LI>You may also type Xcas commands (from the Geo menu)
+in a commandline at the left of the graphic. Each command may evaluate
+to a graphic object and be displayed or to a non graphical object which
+may be used later in the construction.
+</LI>
+</UL>
+To erase a geometrical object, right-click on it, select Delete
+or select it's level in the
+subsession at the left, and use the <code>Edit-&gt;Suppress levels</code>
+menu or Backspace key.
+
+<P>
+For example, you can click three points with the mouse (in point mode),
+this will create 3 levels with definitions for points A,B,C.
+Then you can make the circle containing A, B, C either by selecting
+the <code>Circles-&gt;circumcircle</code> mode and click on A,B,C
+or by entering in a commandline the
+<code>circumcircle</code> command (menu <code>Geo-&gt;Circles</code>)
+<BR><code>c:=circumcircle(A,B,C)</code>
+
+<P>
+<B>Remark: how to work with several figures in a tab</B>
+<BR>
+When you create objets in a figure with a mouse, 
+the name of the created object is
+automatically choosen. This name is shared between figures of the same
+tab so that they don't interfer if you have several figures in the
+same tab. If you want to copy a part of a figure in another figure,
+enter in a level of the target figure
+the instruction <TT>eval([ ],1)</TT> where you put inside the brackets
+the names of the objects to be copied (e.g. <TT>eval([A,B,AB],1)</TT>
+will copy A, B and AB from a previous figure to the new figure). 
+If you change the initial figure (where A,
+etc. were defined), you must reeval the instruction in the target figure
+to reflect the changes (press Enter in the first level of the target figure).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html140"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html138"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html132"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html141"
+  HREF="node11.html">Parameters (cursors)</A>
+<B> Up:</B> <A NAME="tex2html139"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html133"
+  HREF="node9.html">Common features</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>

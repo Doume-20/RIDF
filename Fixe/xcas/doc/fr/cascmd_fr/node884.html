@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Intercepter une erreur : try..catch</TITLE>
+<META NAME="description" CONTENT="Intercepter une erreur : try..catch">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node885.html">
+<LINK REL="previous" HREF="node883.html">
+<LINK REL="up" HREF="node881.html">
+<LINK REL="next" HREF="node885.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16053"
+  HREF="node885.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16047"
+  HREF="node881.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16041"
+  HREF="node883.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16049"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16051"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16054"
+  HREF="node885.html">G&#233;n&#233;rer une erreur :</A>
+<B> monter:</B> <A NAME="tex2html16048"
+  HREF="node881.html">Le debuggeur</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16042"
+  HREF="node883.html">Avoir un arr&#234;t momentan&#233;</A>
+ &nbsp; <B>  <A NAME="tex2html16050"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16052"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001173000000000000000"></A><A NAME="23173"></A><A NAME="23174"></A>
+<BR>
+Intercepter une erreur : <TT>try..catch</TT>
+</H2>
+On fait le bloc d'instructions apr&#232;s <TT>try</TT> : en cas d'erreur 
+le message d'erreur est stock&#233; dans la variable <TT>err</TT> sous forme d'une 
+chaine, et <TT>catch</TT> ex&#233;cute le bloc d'instructions 
+apr&#232;s <TT>catch (err)</TT>.
+<BR>
+On tape :
+<PRE>
+try{A:=idn(2)*idn(3)} 
+catch(erreur) 
+{print("l'erreur est "+erreur)}
+</PRE>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>"l'erreur est * Invalid dimension"</TT>
+</DIV>
+On tape :
+<PRE>
+essai(x):={
+local y,err;
+try {y:=[[1,2]]+x;}
+catch (err){y:="l'erreur est "+err;} 
+return y;}
+</PRE>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>essai(1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>"l'erreur est + Bad Argument Value"</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>essai([[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,6]]</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

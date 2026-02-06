@@ -1,0 +1,140 @@
+// fltk 7Fl_Tile 44 -155 938 322
+[
+// fltk N4xcas7EditeurE 44 -155 938 321
+884 ,
+code:= (c)->{ 
+  if (c=="é") return(100) ;  
+  if (c=="è") return(99) ;  
+  if (c=="à") return(98) ;  
+  if (c=="ç") return(97) ;  
+  if (c=="ù") return(96) ;  
+  if (c=="ê") return(95) ;  
+  return(asc(c)-32);  
+};
+decode:= (k)->{ 
+  if (k==100) return("é") ;  
+  if (k==99) return("è") ;  
+  if (k==98) return("à") ;  
+  if (k==97) return("ç") ;  
+  if (k==96) return("ù") ;  
+  if (k==95) return("ê") ;  
+  return(char(k+32));  
+};
+jules_cesar:= (message,cle)-> 
+{ local s,j,messcode; 
+  s:=size(message);  
+  messcode:="";  
+  for (j:=0;j<s;j:=j+1) { 
+      messcode:=append(messcode,decode(irem(cle+code(message[j]),101)));  
+    };  
+  return(messcode);  
+};
+lineaire:= (message,cle)-> 
+{ local s,j,messcode; 
+  s:=size(message);  
+  messcode:="";  
+  for (j:=0;j<s;j:=j+1) { 
+      messcode:=messcode+decode(irem(cle*code(message[j]),101));  
+    };  
+  return(messcode);  
+};
+,
+// fltk N4xcas10Log_OutputE 44 166 938 1
+
+]
+,
+// fltk 7Fl_Tile 44 169 938 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 169 938 30
+Codage Jules Cesar, on decale par exemple de 2 tous les caracteres, le decodage est simple (-la clef)
+,
+// fltk N4xcas10Log_OutputE 44 199 938 1
+
+]
+,
+// fltk 7Fl_Tile 44 202 938 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 202 938 30
+jules_cesar("bonjour",2)
+,
+// fltk N4xcas10Log_OutputE 44 232 938 1
+
+,
+// fltk N4xcas8EquationE 44 233 938 43
+"dqplqwt"
+]
+,
+// fltk 7Fl_Tile 44 278 938 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 278 938 30
+jules_cesar(ans(),-2)
+,
+// fltk N4xcas10Log_OutputE 44 308 938 1
+
+,
+// fltk N4xcas8EquationE 44 309 938 43
+"bonjour"
+]
+,
+// fltk 7Fl_Tile 44 354 938 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 354 938 30
+Codage lineaire, on multiplie le code du caractere par exemple par 7 et on prend le reste modulo 101
+,
+// fltk N4xcas10Log_OutputE 44 384 938 1
+
+]
+,
+// fltk 7Fl_Tile 44 387 938 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 387 938 30
+lineaire("bonjour",7)
+,
+// fltk N4xcas10Log_OutputE 44 417 938 1
+
+,
+// fltk N4xcas8EquationE 44 418 938 43
+"ZPI-Pze"
+]
+,
+// fltk 7Fl_Tile 44 463 938 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 463 938 30
+Decodage: il faut calculer la clef d'inversion
+,
+// fltk N4xcas10Log_OutputE 44 493 938 1
+
+]
+,
+// fltk 7Fl_Tile 44 496 938 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 496 938 30
+inv(7%101)
+,
+// fltk N4xcas10Log_OutputE 44 526 938 1
+
+,
+// fltk N4xcas8EquationE 44 527 938 43
+29 % 101
+]
+,
+// fltk 7Fl_Tile 44 572 938 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 572 938 30
+lineaire("ZPI-Pze",29)
+,
+// fltk N4xcas10Log_OutputE 44 602 938 1
+
+,
+// fltk N4xcas8EquationE 44 603 938 43
+"bonjour"
+]
+,
+// fltk 7Fl_Tile 44 648 938 31
+[
+// fltk N4xcas19Multiline_Input_tabE 44 648 938 30
+
+,
+// fltk N4xcas10Log_OutputE 44 678 938 1
+
+]

@@ -1,0 +1,467 @@
+// fltk 7Fl_Tile 45 -3042 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -3042 981 30 30
+On part de la factorisation obtenue modulo 5 (fichier berle.xws), 3 facteurs
+,
+// fltk N4xcas10Log_OutputE 45 -3012 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -3009 981 113 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -3009 981 31 30
+P:=x^7+x^5+2*x^4+x^3+x^2+2*x+1;
+,
+// fltk N4xcas10Log_OutputE 45 -2978 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2977 981 81 16
+x^7+x^5+2*x^4+x^3+x^2+2*x+1
+]
+,
+// fltk 7Fl_Tile 45 -2894 981 97 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2894 981 33 30
+P1:=x+2;
+,
+// fltk N4xcas10Log_OutputE 45 -2861 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2860 981 63 16
+x+2
+]
+,
+// fltk 7Fl_Tile 45 -2795 981 112 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2795 981 30 30
+P2:=x^3+x+1;
+,
+// fltk N4xcas10Log_OutputE 45 -2765 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2764 981 81 16
+x^3+x+1
+]
+,
+// fltk 7Fl_Tile 45 -2681 981 114 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2681 981 32 30
+P3:=x^3-2*x^2-x-2;
+,
+// fltk N4xcas10Log_OutputE 45 -2649 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2648 981 81 16
+x^3-2*x^2-x-2
+]
+,
+// fltk 7Fl_Tile 45 -2565 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -2565 981 30 30
+1ere etape de remontee
+,
+// fltk N4xcas10Log_OutputE 45 -2535 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -2532 981 113 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2532 981 31 30
+Q:=normal((P-P1*P2*P3)/5);
+,
+// fltk N4xcas10Log_OutputE 45 -2501 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2500 981 81 16
+x^5+x^4+2*x^3+2*x^2+2*x+1
+]
+,
+// fltk 7Fl_Tile 45 -2417 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -2417 981 30 30
+on résout u*P1+v*P2*P3=Q
+,
+// fltk N4xcas10Log_OutputE 45 -2387 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -2384 981 164 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2384 981 34 30
+[u,v]:=abcuv(P1 % 5,P2*(P3 % 5),Q % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -2350 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2349 981 129 16
+[(-2 % 5)*x^5+(-1 % 5)*x^4+(-2 % 5)*x^3+(2 % 5)*x^2+(-1 % 5)*x,2 % 5]
+]
+,
+// fltk 7Fl_Tile 45 -2218 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -2218 981 30 30
+On normalise les degrés de u et v -> v1*P1+Q1*P2*P3=Q
+,
+// fltk N4xcas10Log_OutputE 45 -2188 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -2185 981 118 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2185 981 36 30
+v1:=rem(u,(P2*P3) % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -2149 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2148 981 81 16
+(-2 % 5)*x^5+(-1 % 5)*x^4+(-2 % 5)*x^3+(2 % 5)*x^2+(-1 % 5)*x
+]
+,
+// fltk 7Fl_Tile 45 -2065 981 99 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -2065 981 35 30
+Q1:=rem(v,P1 % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -2030 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -2029 981 63 16
+2 % 5
+]
+,
+// fltk 7Fl_Tile 45 -1964 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -1964 981 30 30
+On résout ensuite u2*P2+v2*P3=v1 donc u2*P2*P1+v2*P3*P1+Q1*P2*P3=Q
+,
+// fltk N4xcas10Log_OutputE 45 -1934 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -1931 981 118 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1931 981 36 30
+[u2,v2]:=abcuv(P2 % 5,P3 % 5,v1);
+,
+// fltk N4xcas10Log_OutputE 45 -1895 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1894 981 81 16
+[(-2 % 5)*x^2+(-1 % 5)*x,0]
+]
+,
+// fltk 7Fl_Tile 45 -1811 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -1811 981 30 30
+On normalise les degrés de u2 et v2 -> Q3*P2*P1+Q2*P3*P1+Q1*P2*P3=Q
+,
+// fltk N4xcas10Log_OutputE 45 -1781 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -1778 981 100 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1778 981 36 30
+Q2:=rem(v2,P2 % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -1742 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1741 981 63 16
+0
+]
+,
+// fltk 7Fl_Tile 45 -1676 981 115 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1676 981 33 30
+Q3:=rem(u2,P3 % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -1643 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1642 981 81 16
+(-2 % 5)*x^2+(-1 % 5)*x
+]
+,
+// fltk 7Fl_Tile 45 -1559 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -1559 981 30 30
+On vérifie la relation Q3*P2*P1+Q2*P3*P1+Q1*P2*P3=Q
+,
+// fltk N4xcas10Log_OutputE 45 -1529 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -1526 981 113 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1526 981 31 30
+normal(Q1*P2*P3+Q2*P1*P3+Q3*P1*P2);
+,
+// fltk N4xcas10Log_OutputE 45 -1495 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1494 981 81 16
+(1 % 5)*x^5+(1 % 5)*x^4+(2 % 5)*x^3+(2 % 5)*x^2+(2 % 5)*x+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 -1411 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -1411 981 30 30
+On calcule ensuite les nouveaux P1, P2, P3 modulo 25
+,
+// fltk N4xcas10Log_OutputE 45 -1381 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -1378 981 97 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1378 981 33 30
+P11:=P1+5*normal(Q1%0);
+,
+// fltk N4xcas10Log_OutputE 45 -1345 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1344 981 63 16
+x+12
+]
+,
+// fltk 7Fl_Tile 45 -1279 981 113 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1279 981 31 30
+P21:=P2+5*normal(Q2%0);
+,
+// fltk N4xcas10Log_OutputE 45 -1248 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1247 981 81 16
+x^3+x+1
+]
+,
+// fltk 7Fl_Tile 45 -1164 981 116 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1164 981 34 30
+P31:=normal(P3+5*normal(Q3%0))
+,
+// fltk N4xcas10Log_OutputE 45 -1130 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -1129 981 81 16
+x^3-12*x^2-6*x-2
+]
+,
+// fltk 7Fl_Tile 45 -1046 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -1046 981 30 30
+On vérifie que P11*P21*P31=P modulo 25
+,
+// fltk N4xcas10Log_OutputE 45 -1016 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -1013 981 114 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1013 981 32 30
+normal(P11*P21*(P31 % 25));
+,
+// fltk N4xcas10Log_OutputE 45 -981 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -980 981 81 16
+(1 % 25)*x^7+(1 % 25)*x^5+(2 % 25)*x^4+(1 % 25)*x^3+(1 % 25)*x^2+(2 % 25)*x+1 % 25
+]
+,
+// fltk 7Fl_Tile 45 -897 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -897 981 30 30
+P21=P2 on teste donc s'il s'agit d'un vrai facteur dans Q[X]
+,
+// fltk N4xcas10Log_OutputE 45 -867 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -864 981 99 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -864 981 35 30
+rem(P,P21);
+,
+// fltk N4xcas10Log_OutputE 45 -829 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -828 981 63 16
+0
+]
+,
+// fltk 7Fl_Tile 45 -763 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -763 981 30 30
+Oui, donc on simplifie le probleme, reste à factoriser P/P21
+,
+// fltk N4xcas10Log_OutputE 45 -733 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -730 981 114 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -730 981 32 30
+newP:=quo(P,P21);
+,
+// fltk N4xcas10Log_OutputE 45 -698 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -697 981 81 16
+x^4+x+1
+]
+,
+// fltk 7Fl_Tile 45 -614 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -614 981 30 30
+On remonte modulo 125 la factorisation newP=P11*P31
+,
+// fltk N4xcas10Log_OutputE 45 -584 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -581 981 115 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -581 981 33 30
+newQ:=normal((newP-P11*P31)/25);
+,
+// fltk N4xcas10Log_OutputE 45 -548 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -547 981 81 16
+6*x^2+3*x+1
+]
+,
+// fltk 7Fl_Tile 45 -464 981 115 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -464 981 33 30
+[u,v]:=abcuv(P11 % 5,P31 % 5,newQ % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -431 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -430 981 81 16
+[(-1 % 5)*x^2+(0 % 5)*x-1 % 5,1 % 5]
+]
+,
+// fltk 7Fl_Tile 45 -347 981 115 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -347 981 33 30
+Q31:=rem(u,P31 % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -314 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -313 981 81 16
+(-1 % 5)*x^2-1 % 5
+]
+,
+// fltk 7Fl_Tile 45 -230 981 98 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -230 981 34 30
+Q11:=rem(v,P11 % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -196 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -195 981 63 16
+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 -130 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -130 981 30 30
+Vérification, newQ=6*x^2+3*x+1=Q31*P11+Q11*P31 modulo 5
+,
+// fltk N4xcas10Log_OutputE 45 -100 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 -97 981 113 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -97 981 31 30
+normal(Q31*P11+Q11*P31);
+,
+// fltk N4xcas10Log_OutputE 45 -66 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 -65 981 81 16
+(1 % 5)*x^2+(-2 % 5)*x+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 18 981 101 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 18 981 37 30
+P12:=normal(P11+25*normal(Q11%0));
+,
+// fltk N4xcas10Log_OutputE 45 55 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 56 981 63 16
+x+37
+]
+,
+// fltk 7Fl_Tile 45 121 981 115 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 121 981 33 30
+P32:=normal(P31+25*normal(Q31%0));
+,
+// fltk N4xcas10Log_OutputE 45 154 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 155 981 81 16
+x^3-37*x^2-6*x-27
+]
+,
+// fltk 7Fl_Tile 45 238 981 117 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 238 981 35 30
+normal(P12*(P32 % 125))
+,
+// fltk N4xcas10Log_OutputE 45 273 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 274 981 81 16
+(1 % 125)*x^4+(1 % 125)*x+1 % 125
+]
+,
+// fltk 7Fl_Tile 45 357 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 357 981 30 30
+On teste si P12 ou P32 est un vrai facteur de newP=x^4+x+1
+,
+// fltk N4xcas10Log_OutputE 45 387 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 390 981 101 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 390 981 37 30
+rem(newP,P12)
+,
+// fltk N4xcas10Log_OutputE 45 427 981 1 30
+
+,
+// fltk N4xcas8EquationE 45 428 981 63 16
+1874125
+]
+,
+// fltk 7Fl_Tile 45 493 981 31 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 493 981 30 30
+Non, en vertu de la borne sur les facteurs on en déduit newP irréductible
+,
+// fltk N4xcas10Log_OutputE 45 523 981 1 30
+
+]
+,
+// fltk 7Fl_Tile 45 526 981 39 30
+[
+// fltk N4xcas19Multiline_Input_tabE 45 526 981 38 30
+
+,
+// fltk N4xcas10Log_OutputE 45 564 981 1 30
+
+]

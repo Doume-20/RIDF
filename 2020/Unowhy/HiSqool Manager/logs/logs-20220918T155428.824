@@ -1,0 +1,70 @@
+2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2022-09-18 15:53:35.531: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +0ms
+2022-09-18 15:53:35.531: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +1ms
+2022-09-18 15:53:35.531: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/other/disablerecovery... +0ms
+2022-09-18 15:53:35.533: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +3ms
+2022-09-18 15:53:35.533: 2022-09-18 17:53:35 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +2ms
+2022-09-18 15:53:35.675: 2022-09-18 17:53:35 [4852] INFO [Runner] Creating configuration unit runner object... +141ms
+2022-09-18 15:53:35.675: 2022-09-18 17:53:35 [4852] INFO [Runner] Checking if runner needs to be performed... +0ms
+2022-09-18 15:53:35.675: 2022-09-18 17:53:35 [4852] INFO [JS] Checking that the unit needs to be performed +2ms
+2022-09-18 15:53:35.857: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +180ms
+2022-09-18 15:53:35.857: 2022-09-18 17:53:35 [4852] INFO [WatcherService] Received a list of 12 payloads +0ms
+2022-09-18 15:53:36.030: 2022-09-18 17:53:36 [4852] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Ok, error=None, active=true +178ms
+2022-09-18 15:53:36.040: 2022-09-18 17:53:36 [4852] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Ok, error=None, active=true +8ms
+2022-09-18 15:53:40.815: 2022-09-18 17:53:40 [4852] INFO [JS] version 0.9.8 already installed. Skipping +1ms
+2022-09-18 15:53:40.815: 2022-09-18 17:53:40 [4852] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-09-18 15:53:40.823: 2022-09-18 17:53:40 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/sqoolctl (279) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_sqoolctl.json +8ms
+2022-09-18 15:53:41.513: 2022-09-18 17:53:41 [4852] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-09-18 15:53:41.513: 2022-09-18 17:53:41 [4852] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (360) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +2ms
+2022-09-18 15:53:48.284: 2022-09-18 17:53:48 [4852] INFO [JS] Getting installed applications... +6772ms
+2022-09-18 15:53:51.123: 2022-09-18 17:53:51 [4852] INFO [JS] GUID package: ca4da4f5-769b-441b-895f-b788fe565522 +2838ms
+2022-09-18 15:53:52.294: 2022-09-18 17:53:52 [4852] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +1174ms
+2022-09-18 15:53:53.028: 2022-09-18 17:53:53 [4852] INFO [JS] Getting apps result: 0 +737ms
+2022-09-18 15:53:53.028: 2022-09-18 17:53:53 [4852] INFO [JS] Setting facts... +1ms
+2022-09-18 15:53:53.028: 2022-09-18 17:53:53 [4852] INFO [JS] Uploading facts... +2ms
+2022-09-18 15:53:58.386: 2022-09-18 17:53:58 [4852] INFO [JS] Version of current package: 1.1 +5357ms
+2022-09-18 15:54:01.883: 2022-09-18 17:54:01 [4852] INFO [JS] Uploading facts result:  +3491ms
+2022-09-18 15:54:01.891: 2022-09-18 17:54:01 [4852] INFO [Runner] Running result: true +1ms
+2022-09-18 15:54:01.891: 2022-09-18 17:54:01 [4852] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2022-09-18 15:54:01.891: 2022-09-18 17:54:01 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +3ms
+2022-09-18 15:54:01.899: 2022-09-18 17:54:01 [4852] INFO [Runner] Creating configuration unit runner object... +10ms
+2022-09-18 15:54:01.899: 2022-09-18 17:54:01 [4852] INFO [Runner] Checking if runner needs to be performed... +0ms
+2022-09-18 15:54:01.907: 2022-09-18 17:54:01 [4852] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2022-09-18 15:54:01.907: 2022-09-18 17:54:01 [4852] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2022-09-18 15:54:01.907: 2022-09-18 17:54:01 [4852] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +0ms
+2022-09-18 15:54:01.907: 2022-09-18 17:54:01 [4852] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2022-09-18 15:54:01.907: 2022-09-18 17:54:01 [4852] INFO [JS] Scheduling result: undefined +0ms
+2022-09-18 15:54:01.907: 2022-09-18 17:54:01 [4852] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-09-18 15:54:01.915: 2022-09-18 17:54:01 [4852] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2022-09-18 15:54:01.915: 2022-09-18 17:54:01 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +3ms
+2022-09-18 15:54:01.915: 2022-09-18 17:54:01 [4852] INFO [Runner] Creating configuration unit runner object... +3ms
+2022-09-18 15:54:01.923: 2022-09-18 17:54:01 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-18 15:54:01.923: 2022-09-18 17:54:01 [4852] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +1ms
+2022-09-18 15:54:01.923: 2022-09-18 17:54:01 [4852] INFO [JS] We are triggering +0ms
+2022-09-18 15:54:01.923: 2022-09-18 17:54:01 [4852] INFO [Runner] Performing runner... +1ms
+2022-09-18 15:54:01.923: 2022-09-18 17:54:01 [4852] INFO [JS] Performing facts gathering and upload... +1ms
+2022-09-18 15:54:01.963: 2022-09-18 17:54:01 [4852] INFO [JS] Version of current package: 1.1 +38ms
+2022-09-18 15:54:09.154: 2022-09-18 17:54:09 [4852] INFO [JS] Version of update package: 1.1 +7192ms
+2022-09-18 15:54:09.154: 2022-09-18 17:54:09 [4852] INFO [JS] Your package is up to date +0ms
+2022-09-18 15:54:09.154: 2022-09-18 17:54:09 [4852] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-09-18 15:54:09.162: 2022-09-18 17:54:09 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Certificat-RIDF-1.1 (545) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Certificat-RIDF-1.1.json +2ms
+2022-09-18 15:54:10.689: 2022-09-18 17:54:10 [4852] INFO [JS] Getting installed applications... +1530ms
+2022-09-18 15:54:14.446: 2022-09-18 17:54:14 [4852] INFO [JS] Getting apps result: 0 +3763ms
+2022-09-18 15:54:14.446: 2022-09-18 17:54:14 [4852] INFO [JS] Setting facts... +1ms
+2022-09-18 15:54:14.462: 2022-09-18 17:54:14 [4852] INFO [JS] Uploading facts... +2ms
+2022-09-18 15:54:20.488: 2022-09-18 17:54:20 [4852] INFO [JS] Version of update package: 1.1 +6033ms
+2022-09-18 15:54:20.496: 2022-09-18 17:54:20 [4852] INFO [JS] Your package is up to date +0ms
+2022-09-18 15:54:20.496: 2022-09-18 17:54:20 [4852] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-09-18 15:54:20.496: 2022-09-18 17:54:20 [4852] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +2ms
+2022-09-18 15:54:23.999: 2022-09-18 17:54:23 [4852] INFO [JS] Uploading facts result:  +3507ms
+2022-09-18 15:54:23.999: 2022-09-18 17:54:24 [4852] INFO [Runner] Running result: true +0ms
+2022-09-18 15:54:23.999: 2022-09-18 17:54:24 [4852] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2022-09-18 15:54:28.617: 2022-09-18 17:54:28 [4852] INFO [RequestPerformerService] Download finished undefined. +4616ms
+2022-09-18 15:54:28.617: 2022-09-18 17:54:28 [4852] INFO [RequestPerformerService] Digest: expected=b08d791961b1b35a45d875e77b899b1c, actual=b08d791961b1b35a45d875e77b899b1c. +1ms
+2022-09-18 15:54:28.632: 2022-09-18 17:54:28 [4852] INFO [PayloadDownloader] [PAYLOAD 359] Persisting status=state=Downloaded, error=None, active=true +3ms
+2022-09-18 15:54:28.632: 2022-09-18 17:54:28 [4852] INFO [PayloadDownloader] [PAYLOAD 359] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +3ms
+2022-09-18 15:54:28.632: 2022-09-18 17:54:28 [4852] INFO [RequestPerformerService] Got disposed. +7ms
+2022-09-18 15:54:28.632: 2022-09-18 17:54:28 [4852] INFO [RequestPerformerService] Complete. +1ms
+2022-09-18 15:54:28.814: 2022-09-18 17:54:28 [4852] INFO [PayloadDownloader] [PAYLOAD 359] Persisting status=state=Ok, error=None, active=true +175ms
+2022-09-18 15:54:28.822: 2022-09-18 17:54:28 [4852] INFO [PayloadDispatcher] Emitting 8 entries ["__/conf/agents/facts","conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/LGPO-Windows","conf/application/windows/Microsoft-Office-1.0.0","conf/application/windows/sqoolctl","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows"] +2ms
+2022-09-18 15:54:28.824: 2022-09-18 17:54:28 [4852] INFO [ConfigurationRunner] Processing for execution configuration with 8 keys +1ms

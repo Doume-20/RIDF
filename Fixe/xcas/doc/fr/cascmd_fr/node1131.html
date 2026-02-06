@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Exercice 3 prolongement de l'exercice 2</TITLE>
+<META NAME="description" CONTENT="Exercice 3 prolongement de l'exercice 2">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node1130.html">
+<LINK REL="up" HREF="node1128.html">
+<LINK REL="next" HREF="node1132.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19902"
+  HREF="node1132.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19896"
+  HREF="node1128.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19892"
+  HREF="node1130.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19898"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19900"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19903"
+  HREF="node1132.html">Utilisation de giac &#224;</A>
+<B> monter:</B> <A NAME="tex2html19897"
+  HREF="node1128.html">Figures et preuves d''exercices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19893"
+  HREF="node1130.html">Exercice 2</A>
+ &nbsp; <B>  <A NAME="tex2html19899"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19901"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013173000000000000000">
+Exercice 3 prolongement de l'exercice 2</A>
+</H2>
+Soit <TT>SABCD</TT> une pyramide de sommet <TT>S</TT> dont la base <TT>ABCD</TT> est un 
+losange de centre <TT>O</TT> et tel que <TT>SO</TT> est perpendiculaire au plan 
+<TT>ABCD</TT>.
+<BR>
+Le plan passant par <TT>C</TT> et perpendiculaire &#224; <TT>SA</TT> coupe <TT>SA</TT>,
+<TT>SB</TT>, <TT>SC</TT> respectivement en <TT>M</TT>, <TT>N</TT> et <TT>P</TT>.
+<BR>
+Montrer que <TT>NP</TT> est parall&#232;le &#224; <TT>BD</TT>.
+<BR>
+Pour faire la d&#233;monstration  avec <TT>Xcas</TT>, on peut taper en supposant que 
+le plan du losange est le plan Oxy et que lepoint  A est sur Ox, on tape alors 
+puisque les diagonales d'un losange sont perpendiculaires en leur milieu :
+<PRE>
+// demo exo3
+A:=point(a,0,0);
+B:=point(0,b,0);
+C:=point(-a,0,0);
+D:=point(0,-b,0);
+S:=point(0,0,c);
+Q:=perpendiculaire(C,droite(S,A));
+M:=head(inter(Q,droite(S,A)));
+N:=normal(head(inter(Q,droite(S,B))));
+P:=normal(head(inter(Q,droite(S,D))));
+est_parallele(droite(D,B),droite(N,P));
+</PRE>
+On obtient :
+<BR><TT>1</TT> 
+<BR>
+La d&#233;monstration g&#233;om&#233;trique :
+<BR>
+Les triangles <TT>0BS</TT> et <TT>0DS </TT> rectangles en <TT>0</TT> sont 
+&#233;gaux puisque <TT>OB=0D</TT> en tant que demi diagonale d'un losange.
+<BR>
+Donc les ar&#234;tes <TT>SB</TT> et <TT>SD</TT> sont &#233;gales ainsi
+les triangles <TT>SAB</TT> et <TT>SAD</TT> ont 3 cot&#233;s &#233;gaux ; ils sont donc
+ &#233;gaux.
+<BR>
+Les triangles <TT>MSN</TT> et <TT>MSP</TT>  rectangles en <TT>M</TT> sont &#233;gaux 
+(m&#234;me c&#244;t&#233; <TT>MS</TT> et leurs angles <TT>S</TT> sont &#233;gaux), donc
+<TT>SN=SP</TT>.
+<BR>
+Puisque <TT>SB=SD</TT>, on a donc :
+<BR><!-- MATH
+ ${\tt\displaystyle \frac{SN}{SB}=\frac{SP}{SD}}$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img615.png"
+ ALT="$ \tt\displaystyle \frac{SN}{SB}=\frac{SP}{SD}$">
+<BR>
+ce qui montre d'apr&#232;s le th&#233;or&#232;me de Thal&#232;s que 
+<TT>NP</TT> est parall&#232;le &#224; <TT>BD</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html19902"
+  HREF="node1132.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19896"
+  HREF="node1128.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19892"
+  HREF="node1130.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19898"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19900"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19903"
+  HREF="node1132.html">Utilisation de giac &#224;</A>
+<B> monter:</B> <A NAME="tex2html19897"
+  HREF="node1128.html">Figures et preuves d''exercices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19893"
+  HREF="node1130.html">Exercice 2</A>
+ &nbsp; <B>  <A NAME="tex2html19899"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19901"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

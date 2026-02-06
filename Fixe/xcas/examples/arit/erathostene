@@ -1,0 +1,25 @@
+//renvoie la liste des nombres premiers<=n selon erathostene
+crible(n):={
+  local tab,prem,p;
+  tab:=[0,0];
+  prem:=[];
+  for (j:=2;j<=n;j++){
+    tab:=append(tab,j);
+  }
+  p:=2;
+  while (p*p<=n) {
+    for (j:=p;j*p<=n;j++){
+      tab[eval(j*p)]:=0;
+    }
+    p:=p+1;
+    while ((p*p<=n) and (tab[p]==0)) {
+      p:=p+1;
+    } 
+  }
+  for (j:=2;j<=n;j++) {
+    if (tab[j]!=0) { 
+      prem:=append(prem,j);
+    }
+  } 
+  return(prem);
+};

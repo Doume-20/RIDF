@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Premier cas&nbsp;: 3 arguments</TITLE>
+<META NAME="description" CONTENT="Premier cas&nbsp;: 3 arguments">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node684.html">
+<LINK REL="previous" HREF="node682.html">
+<LINK REL="up" HREF="node680.html">
+<LINK REL="next" HREF="node684.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12987"
+  HREF="node684.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12981"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12975"
+  HREF="node682.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12983"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12985"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12988"
+  HREF="node684.html">Deuxi&#232;me cas: un argument</A>
+<B> monter:</B> <A NAME="tex2html12982"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12976"
+  HREF="node682.html">&#201;criture matricielle et algorithme</A>
+ &nbsp; <B>  <A NAME="tex2html12984"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12986"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009453000000000000000">
+Premier cas&nbsp;: 3 arguments</A>
+</H2>
+Lorsqu'on lui passe 3 arguments <I>A</I>, <I>b</I>, <I>c</I>,
+la fonction <code>simplex_reduce</code> calcule le maximum (s'il existe)
+de <I>c</I>.<I>x</I> pour <I>c</I> vecteur fix&#233; de <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP> et <I>x</I> variable, 
+sous les conditions <I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 et
+<!-- MATH
+ $A.x \leq b$
+ -->
+<I>A</I>.<I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I> (avec <I>A</I> et <I>b</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 fix&#233;s). 
+Ce probl&#232;me est appel&#233; ``forme canonique''.
+
+<P>
+<TT>Xcas</TT> ajoute <I>m</I> variables d'&#233;cart <!-- MATH
+ $y_1,...,y_m$
+ -->
+<I>y</I><SUB>1</SUB>,..., <I>y</I><SUB>m</SUB> (<I>m</I>=nombre de lignes
+de <I>A</I>) pour transformer les in&#233;galit&#233;s en &#233;galit&#233;s, puis
+choisit comme sommet de d&#233;part &#233;vident 
+toutes les variables de d&#233;part nulles et les variables d'&#233;cart
+valant <I>b</I>. Il construit donc la matrice 
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccc}
+A & I & b^t \\
+-c & 0 & 0
+\end{array} \right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img447.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccc}
+A &amp; I &amp; b^t \\
+-c &amp; 0 &amp; 0
+\end{array} }\right.$"><IMG
+ WIDTH="96" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.png"
+ ALT="$\displaystyle \begin{array}{ccc}
+A &amp; I &amp; b^t \\
+-c &amp; 0 &amp; 0
+\end{array}$"><IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img449.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccc}
+A &amp; I &amp; b^t \\
+-c &amp; 0 &amp; 0
+\end{array} }\right)$">
+</DIV><P></P>
+Ensuite il se d&#233;place en suivant des ar&#234;tes
+du simplexe d&#233;fini par les conditions <!-- MATH
+ $Ax+y=b, x,y\geq 0$
+ -->
+<I>Ax</I> + <I>y</I> = <I>b</I>, <I>x</I>, <I>y</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 en augmentant
+le plus possible la valeur de <I>c</I>.<I>x</I>. Cela se fait en cherchant
+dans la derni&#232;re ligne un coefficient n&#233;gatif strict (soit le plus
+n&#233;gatif possible, soit le premier n&#233;gatif), qui repr&#233;sentera
+une colonne entrant dans la sous-matrice identit&#233; (en rendant son
+coefficient non nul dans les composantes du sommet, on augmentera
+au sens large la valeur de <I>c</I>.<I>x</I>). S'il n'y a pas de coefficient
+n&#233;gatif, on arr&#234;te l'algorithme (on verra que le maximum
+est le coefficient en bas &#224; droite de la matrice). S'il existe,
+on s&#233;lectionne cette colonne, il nous reste &#224; d&#233;terminer la
+colonne sortant de la matrice identit&#233;, c'est-&#224;-dire la ligne
+du pivot utilis&#233;&nbsp;:
+
+<UL>
+<LI>tout d'abord la coordonn&#233;e positive du sommet
+en colonne sortante 
+va &#234;tre ramen&#233; &#224; 0, et cela doit compenser l'augmentation
+de 0 &#224; une valeur positive de la coordonn&#233;e en une
+colonne entrante, donc dans la colonne entrante, ligne
+sortante, le coefficient dans la matrice doit &#234;tre strictement positif,
+</LI>
+<LI>d'autre part les autres coefficients du sommet doivent rester
+  positifs. Pour r&#233;aliser cela, on calcule de la ligne 1 &#224; <I>m</I>
+les rapport des coefficients de cette ligne derni&#232;re colonne avec
+le coefficient de cette ligne, colonne sortante,
+en cherchant la ligne qui donne un rapport positif le plus petit
+possible.
+S'il n'existe pas de telle ligne, le maximum est alors
++ <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$"> (car on peut ind&#233;finiment augmenter la valeur de la
+composante ayant ce num&#233;ro de colonne en restant dans le domaine). 
+Si une telle ligne existe, on se sert du coefficient
+de cette ligne/colonne comme d'un pivot, et on cr&#233;e un 1 &#224; cette
+ligne et des 0 ailleurs dans
+cette colonne par combinaisons lin&#233;aires de lignes.
+</LI>
+</UL>
+
+<P>
+Au cours de l'algorithme, les <I>m</I> premi&#232;res lignes de la matrice contiennent
+toujours une sous-matrice identit&#233; <I>m</I>, <I>m</I> (puisqu'on fait du pivot de Gauss), 
+et les coefficients de la derni&#232;re
+ligne qui correspondent &#224; cette sous-matrice identit&#233; sont nuls 
+(pour la m&#234;me raison).
+On a donc une matrice de la forme
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccc}
+B^{-1} A & B^{-1} & B^{-1} b \\
+-c+ c_B B^{-1} A & c_B B^{-1} & c_B B^{-1} b
+\end{array} \right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img450.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccc}
+B^{-1} A &amp; B^{-1} &amp; B^{-1} b \\
+-c+ c_B B^{-1} A &amp; c_B B^{-1} &amp; c_B B^{-1} b
+\end{array} }\right.$"><IMG
+ WIDTH="269" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img451.png"
+ ALT="$\displaystyle \begin{array}{ccc}
+B^{-1} A &amp; B^{-1} &amp; B^{-1} b \\
+-c+ c_B B^{-1} A &amp; c_B B^{-1} &amp; c_B B^{-1} b
+\end{array}$"><IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img452.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccc}
+B^{-1} A &amp; B^{-1} &amp; B^{-1} b \\
+-c+ c_B B^{-1} A &amp; c_B B^{-1} &amp; c_B B^{-1} b
+\end{array} }\right)$">
+</DIV><P></P>
+o&#249; <I>B</I> est une sous-matrice extraite de <I>A</I>, <I>I</I> (correspondant &#224; des
+colonnes de la derni&#232;re ligne ayant pour coefficients 0) et <I>c</I><SUB>B</SUB> est
+la liste des coefficients de <I>c</I> correspondant aux m&#234;mes colonnes de
+<I>A</I>, <I>I</I> que <I>B</I>.
+Pour &#233;viter de boucler ind&#233;finiment si le coefficient en bas
+&#224; droite est constant, on peut garder en
+m&#233;moire dans une table
+les colonnes correspondant &#224; l'identit&#233; et se refuser
+&#224; revenir &#224; une configuration pr&#233;c&#233;dente.
+
+<P>
+Si on ne quitte pas l'algorithme (maximum=+ <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">), &#224; la fin,
+la derni&#232;re ligne ne contient que des coefficients positifs ou
+nuls. On a de plus l'identit&#233; fonction &#224; optimiser + produit
+scalaire entre la derni&#232;re ligne et (<I>x</I>, <I>y</I>) est &#233;gal
+au coefficient en bas &#224; droite (=<!-- MATH
+ $c_B B^{-1} b$
+ -->
+<I>c</I><SUB>B</SUB><I>B</I><SUP>-1</SUP><I>b</I>). Comme les
+coefficients de la derni&#232;re ligne sont positifs ou nuls, de m&#234;me
+que les composantes de <I>x</I> et <I>y</I>, on en d&#233;duit que la fonction
+&#224; optimiser est inf&#233;rieure au coefficient en bas &#224; droite.
+D'autre part, cette valeur est atteinte au sommet correspondant.
+
+<P>
+Le r&#233;sultat renvoy&#233; par <TT>simplex_reduce</TT>
+est une s&#233;quence compos&#233;e de la valeur du maximum, d'une solution
+augment&#233;e (les premi&#232;res composantes sont celles de la solution,
+les composantes suivantes celles des variables ajout&#233;es
+artificiellement pour transformer <I>Ax</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I> en une &#233;galit&#233;)
+et de la matrice de l'algorithme du simplexe apr&#232;s r&#233;duction.
+
+<P>
+Exemple&nbsp;: si on cherche le maximum de <!-- MATH
+ $3x_1+x_2+3x_3$
+ -->
+3<I>x</I><SUB>1</SUB> + <I>x</I><SUB>2</SUB> +3<I>x</I><SUB>3</SUB> sous les
+conditions <!-- MATH
+ $x_1,x_2,x_3 \geq 0$
+ -->
+<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>, <I>x</I><SUB>3</SUB> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 et
+<P><!-- MATH
+ \begin{displaymath}
+\left\{ \begin{array}{rcl}
+2x_1+x_2+x_3 &\leq & 2\\
+x_1+2x_2+3x_3 & \leq & 5 \\
+2x_1+2x_2+x_3 & \leq & 6
+\end{array} \right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="22" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img453.png"
+ ALT="$\displaystyle \left\{\vphantom{ \begin{array}{rcl}
+2x_1+x_2+x_3 &amp;\leq &amp; 2\\
+x_1+2x_2+3x_3 &amp; \leq &amp; 5 \\
+2x_1+2x_2+x_3 &amp; \leq &amp; 6
+\end{array} }\right.$"><IMG
+ WIDTH="187" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img454.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+2x_1+x_2+x_3 &amp;\leq &amp; 2\\
+x_1+2x_2+3x_3 &amp; \leq &amp; 5 \\
+2x_1+2x_2+x_3 &amp; \leq &amp; 6
+\end{array}$">
+</DIV><P></P>
+on prend <code>A:=[[2,1,1],[1,2,3],[2,2,1]]</code>,
+<code>b:=[2,5,6]</code> et <code>c:=[3,1,3]</code>, donc on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>simplex_reduce([[2,1,1],[1,2,3],[2,2,1]],[2,5,6],[3,1,3]</TT>
+
+</DIV>
+et on obtient <code>27/5</code> comme maximum,
+<code>[1/5,0,8/5,0,0,4]</code> comme solution augment&#233;e (donc
+<code>[1/5,0,8/5]</code> est solution), ainsi que la matrice r&#233;duite.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12987"
+  HREF="node684.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12981"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12975"
+  HREF="node682.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12983"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12985"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12988"
+  HREF="node684.html">Deuxi&#232;me cas: un argument</A>
+<B> monter:</B> <A NAME="tex2html12982"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12976"
+  HREF="node682.html">&#201;criture matricielle et algorithme</A>
+ &nbsp; <B>  <A NAME="tex2html12984"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12986"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

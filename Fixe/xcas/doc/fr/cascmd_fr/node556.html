@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour fabriquer une s&#233;quence ou une liste : seq $</TITLE>
+<META NAME="description" CONTENT="Pour fabriquer une s&#233;quence ou une liste : seq $">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node557.html">
+<LINK REL="previous" HREF="node555.html">
+<LINK REL="up" HREF="node551.html">
+<LINK REL="next" HREF="node557.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11105"
+  HREF="node557.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11099"
+  HREF="node551.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11093"
+  HREF="node555.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11101"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11103"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11106"
+  HREF="node557.html">Pour transformer une s&#233;quence</A>
+<B> monter:</B> <A NAME="tex2html11100"
+  HREF="node551.html">Les s&#233;quences</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11094"
+  HREF="node555.html">Pour extraire une sous-s&#233;quence</A>
+ &nbsp; <B>  <A NAME="tex2html11102"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11104"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009365000000000000000"></A><A NAME="14182"></A><A NAME="14183"></A><A NAME="sec:seq"></A>
+<BR>
+Pour fabriquer une s&#233;quence ou une liste : <TT>seq $</TT>
+</H2>
+<TT>seq</TT> peut renvoyer une s&#233;quence (avec la m&#234;me syntaxe que
+<TT>Maple</TT>) ou une liste (avec la m&#234;me syntaxe que <TT>TI</TT>) selon la forme 
+de ses arguments qui sont : une expression d&#233;pendant d'un param&#232;tre (par 
+exemple <I>j</I>) et des param&#232;tres d&#233;crivant la variation de <I>j</I>.
+<BR><TT>$</TT> renvoie une s&#233;quence et c'est la version infix&#233;e de <TT>seq</TT> 
+lorsque <TT>seq</TT> a deux arguments :  une expression d&#233;pendant d'un 
+param&#232;tre (par exemple <I>j</I>) et (<I>j</I> = <I>a</I>..<I>b</I>) o&#249; <I>a</I> et <I>b</I> sont des nombres 
+r&#233;els (par exemple <TT>j<code>^</code>2$ (j=-1..3)</TT>), ou une expression constante
+ et un nombre <I>n</I> (par exemple <TT>4$3</TT>).
+<BR><TT>seq</TT> a deux, trois, quatre ou cinq arguments car on peut exprimer
+la variation de <I>j</I> de <I>a</I> &#224; <I>b</I> &#224; l'aide d'un argument (<I>j</I> = <I>a</I>..<I>b</I>) ou de
+deux arguments (<I>j</I>, <I>a</I>..<I>b</I>) (syntaxe  <TT>Maple</TT> o&#249; il n'y a pas 
+la possibilit&#233; de mettre un param&#232;tre de saut) ou encore &#224; l'aide de 
+trois arguments (<I>j</I>, <I>a</I>, <I>b</I>) ou de quatre arguments (<I>j</I>, <I>a</I>, <I>b</I>, <I>p</I>) (syntaxe <TT>TI</TT>
+avec la possibilit&#233; de mettre <I>p</I> comme param&#232;tre de saut).
+
+<UL>
+<LI><B>Syntaxe</B>  <TT>Maple</TT>
+<BR><TT>seq</TT> a deux arguments une expression d&#233;pendant d'un 
+param&#232;tre (par exemple <I>j</I>) et <I>j</I> = <I>a</I>..<I>b</I> o&#249; <I>a</I> et <I>b</I> sont des nombres 
+r&#233;els  (ou une expression constante et un nombre <I>n</I>). On peut
+ajouter pour <TT>seq</TT> un troisi&#232;me argument, le pas (1 par d&#233;faut).
+<BR><TT>$</TT>  a les m&#234;me arguments mais est une fonction infix&#233;e et 
+il faut parenth&#233;ser les arguments.
+<BR><TT>seq</TT> (ou <TT>$</TT>) d&#233;finit la s&#233;quence obtenue en remplacant dans 
+l'expression <I>j</I> par <I>a</I>, <I>a</I> + 1..<I>b</I> si <I>b</I> &gt; <I>a</I> et par <I>a</I>, <I>a</I> - 1..<I>b</I> si <I>b</I> &lt; <I>a</I>
+ (ou <TT>seq</TT> renvoie la s&#233;quence form&#233;e par <I>n</I> fois la constante).
+<BR>-<TT>seq</TT> a trois arguments une expression d&#233;pendant d'un 
+param&#232;tre (par exemple <I>j</I>), le nom du param&#232;tre (par exemple <I>j</I>) et 
+<I>a</I>..<I>b</I> o&#249; <I>a</I> et <I>b</I> sont des nombres r&#233;els, ou 
+<BR><TT>seq</TT> d&#233;finit la s&#233;quence obtenue en remplacant dans 
+l'expression <I>j</I> par <I>a</I>, <I>a</I> + 1..<I>b</I> si <I>b</I> &gt; <I>a</I> et par <I>a</I>, <I>a</I> - 1..<I>b</I> si <I>b</I> &lt; <I>a</I>
+le pas est donc soit &#233;gal &#224; 1, soit &#233;gal &#224; -1.
+<BR></LI>
+<LI><B>Syntaxe</B>  <TT>TI</TT>
+<BR>-<TT>seq</TT> a quatre arguments une expression d&#233;pendant d'un 
+param&#232;tre (par exemple <I>j</I>), le nom du param&#232;tre (par exemple <I>j</I>), puis 
+<I>a</I> et <I>b</I> o&#249; <I>a</I> et <I>b</I> sont des nombres r&#233;els. <TT>seq</TT> d&#233;finit la 
+liste obtenue en rempla&#231;ant dans l'expression <I>j</I> par <I>a</I>, <I>a</I> + 1..<I>b</I> si 
+<I>b</I> &gt; <I>a</I> ou  par <I>a</I>, <I>a</I> - 1..<I>b</I> si <I>b</I> &lt; <I>a</I>).
+<BR>-<TT>seq</TT> a cinq arguments une expression d&#233;pendant d'un 
+param&#232;tre (par exemple <I>j</I>), le nom du param&#232;tre (par exemple <I>j</I>), puis 
+<I>a</I> et <I>b</I> (o&#249; <I>a</I> et <I>b</I> sont des nombres r&#233;els) et <I>p</I> le pas (o&#249; <I>p</I> 
+est un nombre r&#233;el positif ou n&#233;gatif).
+<BR><TT>seq</TT> d&#233;finit la liste obtenue en rempla&#231;ant dans l'expression <I>j</I> 
+par <I>a</I>, <I>a</I> + <I>p</I>..<I>a</I> + <I>k</I>*<I>p</I> (<!-- MATH
+ $a+k*p \leq b <a+(k+1)*p$
+ -->
+<I>a</I> + <I>k</I>*<I>p</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I> &lt; <I>a</I> + (<I>k</I> + 1)*<I>p</I> ou 
+<!-- MATH
+ $a+k*p \geq b> a+(k+1)*p$
+ -->
+<I>a</I> + <I>k</I>*<I>p</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> <I>b</I> &gt; <I>a</I> + (<I>k</I> + 1)*<I>p</I>). Par d&#233;faut, on a  <I>p</I>=1 si <I>b</I> &gt; <I>a</I> et <I>p</I>=-1  si 
+<I>b</I> &lt; <I>a</I>. Si <I>p</I> n'a pas le bon signe, ce signe est rectifi&#233; par le logiciel!
+<BR></LI>
+</UL>
+<B>Remarque</B> :
+<BR>
+Dans la syntaxe <TT>Maple</TT>, <TT>seq</TT> renvoie une s&#233;quence et il n'y a pas 
+la possibilit&#233; de mettre un param&#232;tre de saut, contrairement &#224; la syntaxe
+ <TT>TI</TT> o&#249; <TT>seq</TT> renvoie une liste avec 
+la possibilit&#233; de mettre un param&#232;tre de saut.
+<BR>
+On tape pour avoir une s&#233;quence d'&#233;l&#233;ments identiques :
+<DIV ALIGN="CENTER">
+<TT>seq(t,4)</TT>
+</DIV>
+Ou on tape 
+<DIV ALIGN="CENTER">
+<TT>seq(t,k=1..4)</TT>
+</DIV>
+Ou on tape
+<DIV ALIGN="CENTER">
+<TT>t$4</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(t,t,t,t)</TT>
+</DIV>
+On tape pour avoir une s&#233;quence :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j=1..4)</TT>
+</DIV>
+Ou on tape 
+<DIV ALIGN="CENTER">
+<TT>(j<code>^</code>3)$(j=1..4)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,1..4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(1,4,9,16)</TT>
+</DIV>
+Ou on tape  pour avoir une liste :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,1,4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,4,9,16]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,0,5,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,8,64]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,5,0,-2)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,5,0,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[125,27,1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,1,3,0.5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,3.375,8,15.625,27</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>seq(j<code>^</code>3,j,1,3,1/2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,27/8,8,125/8,27]</TT>
+</DIV>
+<B>Exemples d'utilisation</B>
+
+<UL>
+<LI>On tape pour avoir la d&#233;riv&#233;e troisi&#232;me de ln(<I>t</I>) :
+<DIV ALIGN="CENTER">
+<TT>diff(log(t),t$3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-((-(2*t))/t<code>^</code>4)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>l:=[[2,3],[5,1],[7,2]]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>seq((l[k][0])$(l[k][1]),k=0 .. size(l)-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2,2,2,seq[5],7,7</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>2,2,2,5,7,7</TT>
+</DIV>
+</LI>
+<LI>On tape pour transformer une cha&#238;ne en la liste de ces caract&#232;res :
+<DIV ALIGN="CENTER">
+<TT>f(chn):={
+local l;
+l:=size(chn);
+return seq(chn[j],j,0,l-1);
+}</TT>
+</DIV>
+puis,
+<DIV ALIGN="CENTER">
+<TT>f("abracadabra")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>["a","b","r","a","c","a","d","a","b","r","a"]</TT>
+</DIV>
+</LI>
+<LI>On tape pour transformer une cha&#238;ne en la s&#233;quence de ces caract&#232;res :
+<DIV ALIGN="CENTER">
+<TT>f(chn):={
+local l;
+l:=size(chn);
+return seq(chn[j],j,0..l-1);
+}</TT>
+</DIV>
+puis,
+<DIV ALIGN="CENTER">
+<TT>f("abracadabra")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>("a","b","r","a","c","a","d","a","b","r","a"]))</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11105"
+  HREF="node557.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11099"
+  HREF="node551.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11093"
+  HREF="node555.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11101"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11103"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11106"
+  HREF="node557.html">Pour transformer une s&#233;quence</A>
+<B> monter:</B> <A NAME="tex2html11100"
+  HREF="node551.html">Les s&#233;quences</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11094"
+  HREF="node555.html">Pour extraire une sous-s&#233;quence</A>
+ &nbsp; <B>  <A NAME="tex2html11102"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11104"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

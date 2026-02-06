@@ -1,0 +1,48 @@
+2022-03-20 20:06:21 [4928] INFO [JS] Current GPO version: 1.5 +27ms
+2022-03-20 19:06:21.091: 2022-03-20 20:06:21 [4928] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-03-20 19:06:21.099: 2022-03-20 20:06:21 [4928] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2022-03-20 19:06:22.608: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:5dd3f91a9c1ec69aa743ef6693d8c6f3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +1511ms
+2022-03-20 19:06:22.608: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +2ms
+2022-03-20 19:06:22.668: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:7e3fb14071d24528fb23856f56cc3d8a for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +57ms
+2022-03-20 19:06:22.668: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +1ms
+2022-03-20 19:06:22.668: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +1ms
+2022-03-20 19:06:22.668: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2022-03-20 19:06:22.668: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +1ms
+2022-03-20 19:06:22.668: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +1ms
+2022-03-20 19:06:22.676: 2022-03-20 20:06:22 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +1ms
+2022-03-20 19:06:22.699: 2022-03-20 20:06:22 [4928] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +25ms
+2022-03-20 19:06:22.699: 2022-03-20 20:06:22 [4928] INFO [KeyedObservableCollector] Sending 9 items +1ms
+2022-03-20 19:06:22.800: 2022-03-20 20:06:22 [4928] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +102ms
+2022-03-20 19:06:22.800: 2022-03-20 20:06:22 [4928] INFO [KeyedObservableCollector] Sending 9 items +0ms
+2022-03-20 19:06:23.840: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1041ms
+2022-03-20 19:06:23.840: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-20 19:06:23.840: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +1ms
+2022-03-20 19:06:23.840: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.848: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +0ms
+2022-03-20 19:06:23.848: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-03-20 19:06:23.848: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2022-03-20 19:06:23.850: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.850: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2022-03-20 19:06:23.850: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.850: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +48ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +0ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +1ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.900: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +0ms
+2022-03-20 19:06:23.908: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.909: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +1ms
+2022-03-20 19:06:23.909: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.911: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels: context.platform==='win32' +2ms
+2022-03-20 19:06:23.919: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-20 19:06:23.919: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +1ms
+2022-03-20 19:06:23.921: 2022-03-20 20:06:23 [4928] INFO [DeviceConfigurationService]   => result: true +1ms

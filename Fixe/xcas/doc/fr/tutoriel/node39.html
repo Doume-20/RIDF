@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Calcul de primitives (niveau d&#233;but universit&#233;)</TITLE>
+<META NAME="description" CONTENT="Calcul de primitives (niveau d&#233;but universit&#233;)">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node40.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node40.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html622"
+  HREF="node40.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html616"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html610"
+  HREF="node38.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html618"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html620"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html623"
+  HREF="node40.html">D&#233;velopements limit&#233;s</A>
+<B> monter:</B> <A NAME="tex2html617"
+  HREF="node35.html">Des exercices corrig&#233;s avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html611"
+  HREF="node38.html">Exercice 2</A>
+ &nbsp; <B>  <A NAME="tex2html619"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html621"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00072000000000000000">
+Calcul de primitives (niveau d&#233;but universit&#233;)</A>
+</H2>
+
+<OL>
+<LI>Calculer <P><!-- MATH
+ \begin{displaymath}
+\int_1^2\frac{1}{x^3+1}dx
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="25" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$\displaystyle \int_{1}^{2}$"><IMG
+ WIDTH="47" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$\displaystyle {\frac{{1}}{{x^3+1}}}$"><I>dx</I>
+</DIV><P></P>
+<B>R&#233;ponse</B>&nbsp;:
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<code> int(1/(x^3+1),x,1,2)</code>
+
+</DIV>
+On obtient apres simplification (en utilisant <code> normal} </code>
+<DIV ALIGN="CENTER">
+<code> (sqrt(3)*ln(2)+pi)*1/3/sqrt(3)</code>
+
+</DIV>
+Pour v&#233;rifier, on tape :
+<DIV ALIGN="CENTER">
+<code> partfrac(1/(1+t^3))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 1/((t+1)*3)+(-1/3*t+2/3)/(t^2-t+1)</code>
+
+</DIV>
+Puis on int&#232;gre chaque terme s&#233;par&#233;ment...
+
+<P>
+</LI>
+<LI>D&#233;composer, sur <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$">, en &#233;l&#233;ments simples :
+<!-- MATH
+ $\displaystyle \frac{t^2}{1-t^4}$
+ -->
+<IMG
+ WIDTH="45" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$\displaystyle {\frac{{t^2}}{{1-t^4}}}$">.
+<BR>
+Calculer <!-- MATH
+ $\displaystyle \int \frac{t^2}{1-t^4}dt\$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \int$"><IMG
+ WIDTH="45" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$\displaystyle {\frac{{t^2}}{{1-t^4}}}$"><I>dt</I>&nbsp; et <!-- MATH
+ $\displaystyle\int \frac{\sin(x)^2}{\cos(2x)}dx$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \int$"><IMG
+ WIDTH="57" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$\displaystyle {\frac{{\sin(x)^2}}{{\cos(2x)}}}$"><I>dx</I>
+<BR><B>R&#233;ponse</B>&nbsp;:
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<code> partfrac(t^2/(1-t^4))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>-1/2/(t^2+1)+1/(4*(t+1))-1/4/(t-1)</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code>int(-1/2/(t^2+1)+1/(4*(t+1))-1/4/(t-1),t)</code>
+
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<code>int(t^2/(1-t^4),t)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>1/(-2*atan(t))+1/(4*ln(abs(t+1)))+1/(-4*ln(abs(t-1)))</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> normal(int(sin(x)^2/cos(2*x),x))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>-1/2*x-1/-4*ln(abs((tan(1/2*x))^2-2*tan(1/2*x)-1))-</code>
+<code>1/4*ln(abs((tan(1/2*x))^2+2*tan(1/2*x)-1))</code>
+
+</DIV>
+Ou on tape en lin&#233;arisant avant d'int&#233;grer :
+<DIV ALIGN="CENTER">
+<code>normal(int(tlin(sin(x)^2/cos(2*x))))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>1/4*ln(abs(tan(x)+1))+1/-4*ln(abs(tan(x)-1))+1/-2*x</code>
+
+</DIV>
+Ou encore on veut faire le changement de variable tan(<I>x</I>) = <I>t</I>
+et on tape pour avoir l'expression en fonction de la tangente,
+ avant d'int&#233;grer :
+<DIV ALIGN="CENTER">
+<code>trigtan(texpand(sin(x)^2/cos(2x)))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>(-((tan(x))^2))/((tan(x))^2-1)</code>
+
+</DIV>
+On fait le changement de variable <I>x</I> =atan(<I>t</I>) on tape  :
+<DIV ALIGN="CENTER">
+<code>subst('integrate(-tan(x)^2/(tan(x)^2-1),x)',x=atan(t))</code>
+
+</DIV>
+ou on tape
+<DIV ALIGN="CENTER">
+<code>subst(Int(-tan(x)^2/(tan(x)^2-1),x),x=atan(t))</code>
+
+</DIV>
+On obtient 
+<DIV ALIGN="CENTER">
+<code>integrate((-(t^2))/((1+t^2)*(t^2-1)),t)</code>
+
+</DIV>
+Soit, le remplacant <I>t</I> par tan(<I>x</I>) :
+<DIV ALIGN="CENTER">
+<code>1/-2*atan(tan(x))+1/4*ln(abs(tan(x)+1))+1/-4*ln(abs(tan(x)-1))</code>
+
+</DIV>
+</LI>
+<LI>Calculer <!-- MATH
+ $\displaystyle\int \frac{1}{t^2}dt,\$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \int$"><IMG
+ WIDTH="20" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$\displaystyle {\frac{{1}}{{t^2}}}$"><I>dt</I>,&nbsp; 
+<!-- MATH
+ $\displaystyle\int \frac{1}{t(t^2+1)}dt,\$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \int$"><IMG
+ WIDTH="62" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$\displaystyle {\frac{{1}}{{t(t^2+1)}}}$"><I>dt</I>,&nbsp; et
+<!-- MATH
+ $\displaystyle\int \frac{t^2-t+1}{t^4+t^2}dt$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \int$"><IMG
+ WIDTH="67" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$\displaystyle {\frac{{t^2-t+1}}{{t^4+t^2}}}$"><I>dt</I>
+<BR><B>R&#233;ponse</B>&nbsp;:
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<code> int(1/t^2,t)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 1/(-t)</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> int(1/(t*(t^2+1)),t)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 1/-2*ln(t^2+1)+1/2*ln((abs(t))^2)</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> int((t^2-t+1)/(t^2+t^4),t)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>1/2*ln(t^2+1)-ln(abs(t))+(-t+1)/(-t)</code>
+
+</DIV>
+</LI>
+</OL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html622"
+  HREF="node40.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html616"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html610"
+  HREF="node38.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html618"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html620"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html623"
+  HREF="node40.html">D&#233;velopements limit&#233;s</A>
+<B> monter:</B> <A NAME="tex2html617"
+  HREF="node35.html">Des exercices corrig&#233;s avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html611"
+  HREF="node38.html">Exercice 2</A>
+ &nbsp; <B>  <A NAME="tex2html619"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html621"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

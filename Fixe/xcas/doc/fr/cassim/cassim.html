@@ -1,0 +1,867 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Algorithmique et simulation avec Xcas</TITLE>
+<META NAME="description" CONTENT="Algorithmique et simulation avec Xcas">
+<META NAME="keywords" CONTENT="cassim">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cassim.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html5"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png"> 
+<A NAME="tex2html1"
+  HREF="node237.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3"
+  HREF="node236.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6"
+  HREF="node1.html">Le tableur</A>
+ &nbsp; <B>  <A NAME="tex2html2"
+  HREF="node237.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4"
+  HREF="node236.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<H1 ALIGN=CENTER>Algorithmique et simulation 
+<BR>
+avec <TT>Xcas</TT></H1>
+<P ALIGN=CENTER><STRONG>Ren&#233;e De Graeve</STRONG>
+</P>
+<HR>
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html7"
+  HREF="node1.html">Le tableur</A>
+<UL>
+<LI><A NAME="tex2html8"
+  HREF="node2.html">G&#233;n&#233;ralit&#233;s</A>
+<UL>
+<LI><A NAME="tex2html9"
+  HREF="node3.html">Pour ouvrir un niveau contenant un tableur</A>
+<LI><A NAME="tex2html10"
+  HREF="node4.html">D&#233;scription d'un niveau contenant un tableur</A>
+<LI><A NAME="tex2html11"
+  HREF="node5.html">Tableur et &#233;diteur de matrice</A>
+<UL>
+<LI><A NAME="tex2html12"
+  HREF="node6.html">Description de l'&#233;cran du tableur</A>
+<LI><A NAME="tex2html13"
+  HREF="node7.html">Description de l'&#233;diteur de matrice</A>
+</UL>
+<LI><A NAME="tex2html14"
+  HREF="node8.html">Principe et configuration du tableur</A>
+<LI><A NAME="tex2html15"
+  HREF="node9.html">La <TT>case de s&#233;lection</TT></A>
+<LI><A NAME="tex2html16"
+  HREF="node10.html">Les diff&#233;rents boutons d'un tableur</A>
+</UL>
+<LI><A NAME="tex2html17"
+  HREF="node11.html">La barre de menu d'un tableur</A>
+<UL>
+<LI><A NAME="tex2html18"
+  HREF="node12.html">Le menu <TT>Table</TT> d'un tableur</A>
+<LI><A NAME="tex2html19"
+  HREF="node13.html">Le menu <TT>Edit</TT> d'un tableur</A>
+<LI><A NAME="tex2html20"
+  HREF="node14.html">Le menu <TT>Maths</TT> d'un tableur</A>
+<UL>
+<LI><A NAME="tex2html21"
+  HREF="node15.html">Le menu <TT>Maths<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">stats 1-d</TT> d'un tableur</A>
+<LI><A NAME="tex2html22"
+  HREF="node16.html">Le menu <TT>Maths<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">stats 2-d</TT> d'un tableur</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html23"
+  HREF="node17.html">Pour remplir le tableur</A>
+<UL>
+<LI><A NAME="tex2html24"
+  HREF="node18.html">Comment remplir une cellule</A>
+<LI><A NAME="tex2html25"
+  HREF="node19.html">Pour voir le contenu d'une cellule</A>
+<LI><A NAME="tex2html26"
+  HREF="node20.html">R&#233;f&#233;rences absolues et relatives</A>
+<LI><A NAME="tex2html27"
+  HREF="node21.html">R&#233;f&#233;rence d'un sous-tableau</A>
+</UL>
+<LI><A NAME="tex2html28"
+  HREF="node22.html">Pour sauver l'&#233;cran du tableur</A>
+<UL>
+<LI><A NAME="tex2html29"
+  HREF="node23.html">Pour sauver une matrice</A>
+<LI><A NAME="tex2html30"
+  HREF="node24.html">Pour sauver un tableur</A>
+</UL>
+<LI><A NAME="tex2html31"
+  HREF="node25.html">Pour copier une partie du tableur dans une ligne d'enr&#233;e</A>
+<UL>
+<LI><A NAME="tex2html32"
+  HREF="node26.html">Pour copier une seule cellule du tableur dans une ligne d'enr&#233;e</A>
+<LI><A NAME="tex2html33"
+  HREF="node27.html">Pour copier plusieurs cellules du tableur dans une ligne d'enr&#233;e</A>
+</UL>
+<LI><A NAME="tex2html34"
+  HREF="node28.html">Les fonctions sp&#233;cifiques du tableur</A>
+<UL>
+<LI><A NAME="tex2html35"
+  HREF="node29.html">Tableau de valeurs de  <I>f</I> (<I>x</I>) : <TT>tablefunc</TT></A>
+<LI><A NAME="tex2html36"
+  HREF="node30.html">Termes d'une suite r&#233;currente : <TT>tableseq</TT></A>
+</UL>
+<LI><A NAME="tex2html37"
+  HREF="node31.html">R&#233;f&#233;rences de la cellule active : <TT>Row</TT> et <TT>Col</TT></A>
+<LI><A NAME="tex2html38"
+  HREF="node32.html">Nommer une cellule par une variable : <TT>current_sheet</TT></A>
+<LI><A NAME="tex2html39"
+  HREF="node33.html">Compter les &#233;l&#233;ments du tableur v&#233;rifiant une propri&#233;t&#233;</A>
+<UL>
+<LI><A NAME="tex2html40"
+  HREF="node34.html">Compter les &#233;l&#233;ments d'un sous tableau v&#233;rifiant une propri&#233;t&#233; : <TT>count</TT></A>
+<LI><A NAME="tex2html41"
+  HREF="node35.html">Compter les &#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT></A>
+<LI><A NAME="tex2html42"
+  HREF="node36.html">Compter les &#233;l&#233;ments plus petits qu'une valeur donn&#233;e : <TT>count_inf</TT></A>
+<LI><A NAME="tex2html43"
+  HREF="node37.html">Compter les &#233;l&#233;ments plus grands qu'une valeur donn&#233;e : <TT>count_sup</TT></A>
+</UL>
+<LI><A NAME="tex2html44"
+  HREF="node38.html">Les fonctions statistiques &#224; une variable du tableur</A>
+<UL>
+<LI><A NAME="tex2html45"
+  HREF="node39.html">Les fonctions graphiques</A>
+<LI><A NAME="tex2html46"
+  HREF="node40.html">Centre d'un intervalle : <TT>interval2center</TT></A>
+<LI><A NAME="tex2html47"
+  HREF="node41.html">Centre d'un intervalle : <TT>center2interval</TT></A>
+<LI><A NAME="tex2html48"
+  HREF="node42.html">Somme des cellules d'un sous-tableau : <TT>sum</TT></A>
+<LI><A NAME="tex2html49"
+  HREF="node43.html">Somme de <I>n</I> cellules : <TT>sum</TT></A>
+<LI><A NAME="tex2html50"
+  HREF="node44.html">Moyenne des cellules d'un sous-tableau : <TT>mean</TT></A>
+<UL>
+<LI><A NAME="tex2html51"
+  HREF="node45.html">Moyenne des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html52"
+  HREF="node46.html">Moyenne des cellules d'un sous-tableau avec effectifs</A>
+</UL>
+<LI><A NAME="tex2html53"
+  HREF="node47.html">&#201;cart-type des cellules d'un sous-tableau : <TT>stddev</TT></A>
+<UL>
+<LI><A NAME="tex2html54"
+  HREF="node48.html">&#201;cart-type des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html55"
+  HREF="node49.html">&#201;cart-type des cellules d'un sous-tableau avec effectifs</A>
+<LI><A NAME="tex2html56"
+  HREF="node50.html">Estimation de l'&#233;cart-type de la population m&#232;re : <TT>stdDev</TT></A>
+</UL>
+<LI><A NAME="tex2html57"
+  HREF="node51.html">Variance des cellules d'un sous-tableau : <TT>variance</TT></A>
+<UL>
+<LI><A NAME="tex2html58"
+  HREF="node52.html">Variance des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html59"
+  HREF="node53.html">Variance des cellules d'un sous-tableau avec effectifs</A>
+</UL>
+<LI><A NAME="tex2html60"
+  HREF="node54.html">La m&#233;diane : <TT>median</TT></A>
+<UL>
+<LI><A NAME="tex2html61"
+  HREF="node55.html">M&#233;diane des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html62"
+  HREF="node56.html">M&#233;diane des cellules d'un sous-tableau avec effectifs</A>
+</UL>
+<LI><A NAME="tex2html63"
+  HREF="node57.html">Le premier quartile : <TT>quartile1</TT></A>
+<UL>
+<LI><A NAME="tex2html64"
+  HREF="node58.html">Le premier quartile  des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html65"
+  HREF="node59.html">Le premier quartile  des cellules d'un sous-tableau avec effectifs</A>
+</UL>
+<LI><A NAME="tex2html66"
+  HREF="node60.html">Le troisi&#232;me quartile : <TT>quartile3</TT></A>
+<UL>
+<LI><A NAME="tex2html67"
+  HREF="node61.html">Le troisi&#232;me quartile des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html68"
+  HREF="node62.html">Le troisi&#232;me quartile des cellules d'un sous-tableau avec effectifs</A>
+</UL>
+<LI><A NAME="tex2html69"
+  HREF="node63.html">Les valeurs indiquant la r&#233;partition : <TT>quartiles</TT></A>
+<UL>
+<LI><A NAME="tex2html70"
+  HREF="node64.html">Valeurs indiquant la r&#233;partition  des cellules d'un sous-tableau d'effectif 1</A>
+<LI><A NAME="tex2html71"
+  HREF="node65.html">Valeurs indiquant la r&#233;partition  des cellules d'un sous-tableau avec effectifs</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html72"
+  HREF="node66.html">Les fonctions statistiques &#224; deux variables du tableur</A>
+<UL>
+<LI><A NAME="tex2html73"
+  HREF="node67.html">Les fonctions graphiques</A>
+<LI><A NAME="tex2html74"
+  HREF="node68.html">La covariance avec  effectif 1 : <TT>covariance</TT></A>
+<LI><A NAME="tex2html75"
+  HREF="node69.html">La corr&#233;lation  lin&#233;aire avec effectif 1 : <TT>correlation</TT></A>
+<LI><A NAME="tex2html76"
+  HREF="node70.html">La covariance et la corr&#233;lation lin&#233;aire avec effectifs : <TT>covariance</TT> et <TT>correlation</TT></A>
+<LI><A NAME="tex2html77"
+  HREF="node71.html">La r&#233;gression lin&#233;aire : <TT>linear_regression</TT></A>
+<LI><A NAME="tex2html78"
+  HREF="node72.html">Ajustement lin&#233;aire et corr&#233;lation lin&#233;aire</A>
+<LI><A NAME="tex2html79"
+  HREF="node73.html">Le graphe de la r&#233;gression lin&#233;aire : <TT>linear_regression_plot</TT></A>
+<LI><A NAME="tex2html80"
+  HREF="node74.html">La r&#233;gression lin&#233;aire &#224; 2 ou plusieurs variables</A>
+<UL>
+<LI><A NAME="tex2html81"
+  HREF="node75.html">Le principe</A>
+<LI><A NAME="tex2html82"
+  HREF="node76.html">Avec le tableur</A>
+</UL>
+<LI><A NAME="tex2html83"
+  HREF="node77.html">La r&#233;gression exponentielle : <TT>exponential_regression</TT></A>
+<LI><A NAME="tex2html84"
+  HREF="node78.html">Le graphe de la r&#233;gression exponentielle : <TT>exponential_regression_plot</TT></A>
+<LI><A NAME="tex2html85"
+  HREF="node79.html">La r&#233;gression logarithmique : <TT>logarithmic_regression</TT></A>
+<LI><A NAME="tex2html86"
+  HREF="node80.html">Le graphe de la r&#233;gression logarithmique : <TT>logarithmic_regression_plot</TT></A>
+<LI><A NAME="tex2html87"
+  HREF="node81.html">La r&#233;gression polynomiale : <TT>polynomial_regression</TT></A>
+<LI><A NAME="tex2html88"
+  HREF="node82.html">La r&#233;gression puissance : <TT>power_regression</TT></A>
+<LI><A NAME="tex2html89"
+  HREF="node83.html">Le graphe de la r&#233;gression puissance : <TT>power_regression_plot</TT></A>
+</UL>
+<LI><A NAME="tex2html90"
+  HREF="node84.html">D&#233;finition de fonctions de <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html91"
+  HREF="node85.html">Les fonctions de r&#233;partition et de r&#233;partition inverse</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html92"
+  HREF="node86.html">R&#233;sum&#233; de statistique descriptive</A>
+<UL>
+<LI><A NAME="tex2html93"
+  HREF="node87.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html94"
+  HREF="node88.html">Statistique &#224; 1 variable</A>
+<UL>
+<LI><A NAME="tex2html95"
+  HREF="node89.html">S&#233;rie statistique qualitative</A>
+<LI><A NAME="tex2html96"
+  HREF="node90.html">S&#233;rie statistique quantitative</A>
+<LI><A NAME="tex2html97"
+  HREF="node91.html">Vocabulaire des s&#233;ries quantitatives &#224; 1 variable</A>
+</UL>
+<LI><A NAME="tex2html98"
+  HREF="node92.html">S&#233;rie statistique quantitative &#224; 2 variables</A>
+<UL>
+<LI><A NAME="tex2html99"
+  HREF="node93.html">D&#233;finition</A>
+<LI><A NAME="tex2html100"
+  HREF="node94.html">Vocabulaire des s&#233;ries quantitatives &#224; 2 variables</A>
+<LI><A NAME="tex2html101"
+  HREF="node95.html">Moyennes, variances, covariances d'effectif 1</A>
+<LI><A NAME="tex2html102"
+  HREF="node96.html">Moyennes, variances, covariances avec effectifs</A>
+<LI><A NAME="tex2html103"
+  HREF="node97.html">Corr&#233;lation statistique</A>
+<LI><A NAME="tex2html104"
+  HREF="node98.html">Les fonctions <TT>covariance</TT> et <TT>correlation</TT> de <TT>Xcas</TT></A>
+<LI><A NAME="tex2html105"
+  HREF="node99.html">Ajustement lin&#233;aire</A>
+</UL>
+<LI><A NAME="tex2html106"
+  HREF="node100.html">Rappel des diff&#233;rentes lois de probabilit&#233;s</A>
+<UL>
+<LI><A NAME="tex2html107"
+  HREF="node101.html">La loi &#233;quir&#233;partie</A>
+<LI><A NAME="tex2html108"
+  HREF="node102.html">La loi de Bernouilli</A>
+<LI><A NAME="tex2html109"
+  HREF="node103.html">La loi binomiale</A>
+<LI><A NAME="tex2html110"
+  HREF="node104.html">La loi des fr&#233;quences</A>
+<LI><A NAME="tex2html111"
+  HREF="node105.html">La loi de Poisson</A>
+<LI><A NAME="tex2html112"
+  HREF="node106.html">La loi Normale ou loi de Gauss</A>
+<LI><A NAME="tex2html113"
+  HREF="node107.html">Th&#233;or&#232;mes</A>
+<LI><A NAME="tex2html114"
+  HREF="node108.html">Probabilit&#233;s et fr&#233;quences</A>
+</UL>
+<LI><A NAME="tex2html115"
+  HREF="node109.html">Les th&#233;or&#232;mes de statistique inf&#233;rentielle</A>
+<UL>
+<LI><A NAME="tex2html116"
+  HREF="node110.html">Probl&#232;mes de jugement sur &#233;chantillon</A>
+<LI><A NAME="tex2html117"
+  HREF="node111.html">Th&#233;or&#232;me de Bienaym&#233;-Tchebychef</A>
+<LI><A NAME="tex2html118"
+  HREF="node112.html">Loi des grands nombres</A>
+<LI><A NAME="tex2html119"
+  HREF="node113.html">Moyenne et variance empirique</A>
+<LI><A NAME="tex2html120"
+  HREF="node114.html">&#201;tude de <!-- MATH
+ ${\tt\bar X}$
+ -->
+<IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img172.png"
+ ALT="$ \tt\bar X$"></A>
+<LI><A NAME="tex2html121"
+  HREF="node115.html">Estimateur de <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"></A>
+<LI><A NAME="tex2html122"
+  HREF="node116.html">&#201;tude de <IMG
+ WIDTH="21" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \tt S^2$"></A>
+<LI><A NAME="tex2html123"
+  HREF="node117.html">Estimateur de <IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \sigma^{2}_{}$"></A>
+<LI><A NAME="tex2html124"
+  HREF="node118.html">En r&#233;sum&#233;</A>
+</UL>
+<LI><A NAME="tex2html125"
+  HREF="node119.html">Les tests d'hypoth&#232;ses</A>
+<UL>
+<LI><A NAME="tex2html126"
+  HREF="node120.html">&#201;tude de la fr&#233;quence  <I>p</I> d'un caract&#232;re <I>X</I></A>
+<LI><A NAME="tex2html127"
+  HREF="node121.html">&#201;tude de la valeur moyenne <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> d'un caract&#232;re <I>X</I></A>
+<UL>
+<LI><A NAME="tex2html128"
+  HREF="node122.html"><I>n</I> est grand (<I>n</I> &gt; 30)</A>
+<LI><A NAME="tex2html129"
+  HREF="node123.html"><!-- MATH
+ $X \in \mathcal N(\mu,\sigma)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathcal {N}$">(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$">,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$">) et <I>n</I> est petit,  (<I>n</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \leq$"> 30)</A>
+<LI><A NAME="tex2html130"
+  HREF="node124.html"><I>X</I> ne suit pas une loi normale  et  <I>n</I> est  petit</A>
+</UL>
+<LI><A NAME="tex2html131"
+  HREF="node125.html">&#201;tude de l'&#233;cart-type <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> de <!-- MATH
+ $X\in \mathcal N(\mu,\sigma)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathcal {N}$">(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$">,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$">)</A>
+</UL>
+<LI><A NAME="tex2html132"
+  HREF="node126.html">Intervalle de confiance</A>
+<UL>
+<LI><A NAME="tex2html133"
+  HREF="node127.html">Valeur de la fr&#233;quence  <I>p</I> d'un caract&#232;re <I>X</I></A>
+<UL>
+<LI><A NAME="tex2html134"
+  HREF="node128.html">Estimation ponctuelle</A>
+<LI><A NAME="tex2html135"
+  HREF="node129.html">Estimation par un intervalle</A>
+</UL>
+<LI><A NAME="tex2html136"
+  HREF="node130.html">Valeur moyenne <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> d'un caract&#232;re <I>X</I></A>
+<UL>
+<LI><A NAME="tex2html137"
+  HREF="node131.html">Estimation ponctuelle</A>
+<LI><A NAME="tex2html138"
+  HREF="node132.html">Estimation par un intervalle</A>
+</UL>
+<LI><A NAME="tex2html139"
+  HREF="node133.html">Valeur de l'&#233;cart-type  <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> de <!-- MATH
+ $X\in \mathcal N(\mu,\sigma)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathcal {N}$">(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$">,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$">)</A>
+<UL>
+<LI><A NAME="tex2html140"
+  HREF="node134.html">Estimation ponctuelle</A>
+<LI><A NAME="tex2html141"
+  HREF="node135.html">Estimation par un intervalle</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html142"
+  HREF="node136.html">Un exemple</A>
+<UL>
+<LI><A NAME="tex2html143"
+  HREF="node137.html"><!-- MATH
+ $\sigma=0.01$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> = 0.01 et <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> est inconnu</A>
+<UL>
+<LI><A NAME="tex2html144"
+  HREF="node138.html"><I>H</I><SUB>0</SUB> : <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> = 10 et <I>H</I><SUB>1</SUB> :  <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> &gt; 10 au  seuil de 5%</A>
+<LI><A NAME="tex2html145"
+  HREF="node139.html"><I>H</I><SUB>0</SUB> : <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> = 10 et <I>H</I><SUB>1</SUB> :  <!-- MATH
+ $\mu\neq 10$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.png"
+ ALT="$ \neq$"> 10 au  seuil de 5%</A>
+<LI><A NAME="tex2html146"
+  HREF="node140.html">Intervalle de confiance de <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> au  seuil de 5%</A>
+</UL>
+<LI><A NAME="tex2html147"
+  HREF="node141.html"><IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> = 10 et <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> est inconnu</A>
+<UL>
+<LI><A NAME="tex2html148"
+  HREF="node142.html"><I>H</I><SUB>0</SUB> : <!-- MATH
+ $\sigma=0.005$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> = 0.005 et <I>H</I><SUB>1</SUB> : <!-- MATH
+ $\sigma>0.005$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> &gt; 0.005 au  seuil de 5%</A>
+<LI><A NAME="tex2html149"
+  HREF="node143.html"><I>H</I><SUB>0</SUB> : <!-- MATH
+ $\sigma=0.005$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> = 0.005 et <I>H</I><SUB>1</SUB> : <!-- MATH
+ $\sigma\neq 0.005$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.png"
+ ALT="$ \neq$"> 0.005 au  seuil de 5%</A>
+<LI><A NAME="tex2html150"
+  HREF="node144.html">Intervalle de confiance de <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> au  seuil de 5%</A>
+</UL>
+<LI><A NAME="tex2html151"
+  HREF="node145.html"><IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> = 10 et <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> sont inconnus</A>
+<UL>
+<LI><A NAME="tex2html152"
+  HREF="node146.html">Intervalle de confiance de <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \sigma$"> au  seuil de 5%</A>
+<LI><A NAME="tex2html153"
+  HREF="node147.html">Tests d'hypoth&#232;ses pour <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"></A>
+<LI><A NAME="tex2html154"
+  HREF="node148.html">Intervalle de confiance de <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \mu$"> au  seuil de 5%</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html155"
+  HREF="node149.html">Les tests d'homog&#233;n&#233;it&#233;</A>
+<UL>
+<LI><A NAME="tex2html156"
+  HREF="node150.html">Comparaison de deux fr&#233;quences observ&#233;es</A>
+<LI><A NAME="tex2html157"
+  HREF="node151.html">Comparaison de deux moyennes observ&#233;es </A>
+<LI><A NAME="tex2html158"
+  HREF="node152.html">Comparaison de deux &#233;carts-types observ&#233;s</A>
+</UL>
+<LI><A NAME="tex2html159"
+  HREF="node153.html">Le test du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \chi^{2}_{}$"></A>
+<UL>
+<LI><A NAME="tex2html160"
+  HREF="node154.html">Ad&#233;quation d'une distribution exp&#233;rimentale &#224; une distribution th&#233;orique</A>
+<LI><A NAME="tex2html161"
+  HREF="node155.html">Ad&#233;quation d'une distribution exp&#233;rimentale &#224; une distribution de Poisson</A>
+<LI><A NAME="tex2html162"
+  HREF="node156.html">Ad&#233;quation d'une distribution exp&#233;rimentale &#224; une distribution normale</A>
+</UL>
+<LI><A NAME="tex2html163"
+  HREF="node157.html">Comparaison de la distribution de plusieurs &#233;chantillons</A>
+<UL>
+<LI><A NAME="tex2html164"
+  HREF="node158.html">Cas g&#233;n&#233;ral : on a <I>m</I> &#233;chantillons</A>
+<LI><A NAME="tex2html165"
+  HREF="node159.html">Application &#224; deux &#233;chantillons prenant deux valeurs</A>
+</UL>
+<LI><A NAME="tex2html166"
+  HREF="node160.html">Application : le test d'ind&#233;pendance</A>
+<LI><A NAME="tex2html167"
+  HREF="node161.html">Le test de corr&#233;lation</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html168"
+  HREF="node162.html">R&#233;solution d'exercices de statistiques</A>
+<UL>
+<LI><A NAME="tex2html169"
+  HREF="node163.html">Statistiques &#224; 1 variable</A>
+<LI><A NAME="tex2html170"
+  HREF="node164.html">Intervalle de confiance</A>
+<LI><A NAME="tex2html171"
+  HREF="node165.html">Intervalle de confiance d'une fr&#233;quence</A>
+<LI><A NAME="tex2html172"
+  HREF="node166.html">Statistiques &#224; 2 variables</A>
+<LI><A NAME="tex2html173"
+  HREF="node167.html">Comparaison de deux &#233;chantillons</A>
+<UL>
+<LI><A NAME="tex2html174"
+  HREF="node168.html">Test de comparaison de deux moyennes</A>
+</UL>
+<LI><A NAME="tex2html175"
+  HREF="node169.html">Jet d'un d&#233; et test du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \chi^{2}_{}$"></A>
+<UL>
+<LI><A NAME="tex2html176"
+  HREF="node170.html">On jette un d&#233; 90 fois</A>
+<LI><A NAME="tex2html177"
+  HREF="node171.html">On jette un d&#233; 180 fois</A>
+<LI><A NAME="tex2html178"
+  HREF="node172.html">Intervalle de confiance</A>
+</UL>
+<LI><A NAME="tex2html179"
+  HREF="node173.html">Simulation de la loi uniforme sur [0;1]</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html180"
+  HREF="node174.html">Exemples d'exercies utilisant le tableur</A>
+<UL>
+<LI><A NAME="tex2html181"
+  HREF="node175.html"><I>PGCD</I></A>
+<UL>
+<LI><A NAME="tex2html182"
+  HREF="node176.html">L'algorithme d'Euclide</A>
+<LI><A NAME="tex2html183"
+  HREF="node177.html">Une mise en <IMG
+ WIDTH="14" HEIGHT="24" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="\oe">uvre simple</A>
+<LI><A NAME="tex2html184"
+  HREF="node178.html">La suite des restes avec le tableur</A>
+</UL>
+<LI><A NAME="tex2html185"
+  HREF="node179.html">Bézout</A>
+<UL>
+<LI><A NAME="tex2html186"
+  HREF="node180.html">Avec le tableur</A>
+<LI><A NAME="tex2html187"
+  HREF="node181.html">Les pas de Louis</A>
+</UL>
+<LI><A NAME="tex2html188"
+  HREF="node182.html">Acc&#233;l&#233;ration de convergence vers <IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \pi^{2}_{}$">/6</A>
+<LI><A NAME="tex2html189"
+  HREF="node183.html">ln(2)</A>
+<LI><A NAME="tex2html190"
+  HREF="node184.html">L'algorithme de H&#233;ron avec Xcas</A>
+<UL>
+<LI><A NAME="tex2html191"
+  HREF="node185.html">Les fonctions de <TT>Xcas</TT> utilis&#233;es</A>
+<LI><A NAME="tex2html192"
+  HREF="node186.html">Le probl&#232;me : valeur approch&#233;e de <IMG
+ WIDTH="28" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \sqrt{7}$"></A>
+<LI><A NAME="tex2html193"
+  HREF="node187.html">Correction</A>
+</UL>
+<LI><A NAME="tex2html194"
+  HREF="node188.html">Suites adjacentes et convergence de 
+<!-- MATH
+ $\displaystyle \sum_{k=0}^n \frac{(-1)^k}{2k+1}$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img472.png"
+ ALT="$\displaystyle \sum_{{k=0}}^{n}$"><IMG
+ WIDTH="57" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$\displaystyle {\frac{{(-1)^k}}{{2k+1}}}$"></A>
+<UL>
+<LI><A NAME="tex2html195"
+  HREF="node189.html">Les fonctions de <TT>Xcas</TT> utilis&#233;es</A>
+<LI><A NAME="tex2html196"
+  HREF="node190.html"><I>u</I> et <I>v</I> sont deux suites ajacentes de limite <!-- MATH
+ $\displaystyle \frac{\pi}{4}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle {\frac{{\pi }}{{4}}}$"></A>
+<LI><A NAME="tex2html197"
+  HREF="node191.html">Correction</A>
+<LI><A NAME="tex2html198"
+  HREF="node192.html">Accélération de convergence</A>
+<LI><A NAME="tex2html199"
+  HREF="node193.html">Comparaison avec une int&#233;grale</A>
+<LI><A NAME="tex2html200"
+  HREF="node194.html">Prolongement avec la formule d'Euler-Mac Laurin</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html201"
+  HREF="node195.html">Probabilit&#233;s et simulation</A>
+<UL>
+<LI><A NAME="tex2html202"
+  HREF="node196.html">D&#233;placement al&#233;atoire</A>
+<UL>
+<LI><A NAME="tex2html203"
+  HREF="node197.html">D&#233;placement sur un axe</A>
+<UL>
+<LI><A NAME="tex2html204"
+  HREF="node198.html">Simulation d'un parcours</A>
+<LI><A NAME="tex2html205"
+  HREF="node199.html">Simulation de n  parcours</A>
+<LI><A NAME="tex2html206"
+  HREF="node200.html">Analyse des r&#233;sultats</A>
+</UL>
+<LI><A NAME="tex2html207"
+  HREF="node201.html">D&#233;placement dans deux directions</A>
+<UL>
+<LI><A NAME="tex2html208"
+  HREF="node202.html">Simulation d'un parcours</A>
+<LI><A NAME="tex2html209"
+  HREF="node203.html">Simulation de n  parcours</A>
+<LI><A NAME="tex2html210"
+  HREF="node204.html">Analyse des r&#233;sultats</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html211"
+  HREF="node205.html">Les trois cartes bicolores</A>
+<UL>
+<LI><A NAME="tex2html212"
+  HREF="node206.html">Simulation de n tirages</A>
+<LI><A NAME="tex2html213"
+  HREF="node207.html">Analyse du r&#233;sultat</A>
+</UL>
+<LI><A NAME="tex2html214"
+  HREF="node208.html">Les quatre cartes bicolores</A>
+<UL>
+<LI><A NAME="tex2html215"
+  HREF="node209.html">Simulation</A>
+<LI><A NAME="tex2html216"
+  HREF="node210.html">Analyse du r&#233;sultat</A>
+</UL>
+<LI><A NAME="tex2html217"
+  HREF="node211.html">La voiture et les deux ch&#232;vres</A>
+<UL>
+<LI><A NAME="tex2html218"
+  HREF="node212.html">Simulation</A>
+<LI><A NAME="tex2html219"
+  HREF="node213.html">Analyse du r&#233;sultat</A>
+</UL>
+<LI><A NAME="tex2html220"
+  HREF="node214.html">Comment couper des spaghettis en trois ?</A>
+<UL>
+<LI><A NAME="tex2html221"
+  HREF="node215.html">Simulation premi&#232;re m&#233;thode</A>
+<LI><A NAME="tex2html222"
+  HREF="node216.html">Simulation deuxi&#232;me m&#233;thode</A>
+<LI><A NAME="tex2html223"
+  HREF="node217.html">Simulation troisi&#232;me m&#233;thode</A>
+<LI><A NAME="tex2html224"
+  HREF="node218.html">Simulation quatri&#232;me m&#233;thode</A>
+<LI><A NAME="tex2html225"
+  HREF="node219.html">Analyse des r&#233;sultats</A>
+<UL>
+<LI><A NAME="tex2html226"
+  HREF="node220.html">Premi&#232;re m&#233;thode</A>
+<LI><A NAME="tex2html227"
+  HREF="node221.html">Deuxi&#232;me m&#233;thode</A>
+<LI><A NAME="tex2html228"
+  HREF="node222.html">Troisi&#232;me m&#233;thode</A>
+<LI><A NAME="tex2html229"
+  HREF="node223.html">Quatri&#232;me m&#233;thode</A>
+<LI><A NAME="tex2html230"
+  HREF="node224.html">Quelques questions</A>
+</UL>
+<LI><A NAME="tex2html231"
+  HREF="node225.html">Comment simuler l'exp&#233;rimentation ?</A>
+<UL>
+<LI><A NAME="tex2html232"
+  HREF="node226.html">premi&#232;re fa&#231;on</A>
+<LI><A NAME="tex2html233"
+  HREF="node227.html">Une autre fa&#231;on de simuler l'exp&#233;rimentation</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html234"
+  HREF="node228.html">La ration de pain</A>
+<UL>
+<LI><A NAME="tex2html235"
+  HREF="node229.html">Simulation avec une loi binomiale</A>
+<UL>
+<LI><A NAME="tex2html236"
+  HREF="node230.html">Simulation de la fabrication des pains</A>
+<LI><A NAME="tex2html237"
+  HREF="node231.html">Simulation de la pes&#233;e du professeur</A>
+</UL>
+<LI><A NAME="tex2html238"
+  HREF="node232.html">Analyse du r&#233;sultat</A>
+<LI><A NAME="tex2html239"
+  HREF="node233.html">Simulation avec une loi gaussienne</A>
+<UL>
+<LI><A NAME="tex2html240"
+  HREF="node234.html">Simulation avec rand()</A>
+<LI><A NAME="tex2html241"
+  HREF="node235.html">Simulation avec <TT>randnorm()</TT></A>
+</UL>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html242"
+  HREF="node236.html">Index</A>
+<LI><A NAME="tex2html243"
+  HREF="node237.html">Table des mati&#232;res</A>
+<LI><A NAME="tex2html244"
+  HREF="node238.html">&#192; propos de ce document...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

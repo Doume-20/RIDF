@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Objets graphiques 3D</TITLE>
+<META NAME="description" CONTENT="Objets graphiques 3D">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="previous" HREF="node29.html">
+<LINK REL="up" HREF="node27.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html488"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html482"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html478"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html484"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html486"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html489"
+  HREF="node31.html">Programmation</A>
+<B> monter:</B> <A NAME="tex2html483"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html479"
+  HREF="node29.html">Objets graphiques 2D</A>
+ &nbsp; <B>  <A NAME="tex2html485"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html487"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00053000000000000000">
+Objets graphiques 3D</A>
+</H2>
+
+<UL>
+<LI>Pour tracer une surface d&#233;finie par l'équation
+<I>z</I> = <I>f</I> (<I>x</I>, <I>y</I>), on utilise la commande <code>plotfunc</code>, avec
+en arguments l'équation de la surface et la liste des deux variables.
+On peut aussi indiquer la plage de variable, et la discrétisation.
+<PRE>
+plotfunc(x^2-y^2,[x,y])
+plotfunc(x+y^2,[x=-5..5,y=-2..2],xstep=0.5,ystep=0.1,
+affichage=vert+rempli)
+</PRE>
+On obtient une surface en dimension 3.
+Pour modifier le point de vue, utilisez la souris en-dehors du cube de visualisation
+ou cliquez dans la figure 3-d, puis
+utilisez les touches x,X,y,Y,z,Z (rotations par rapport aux axes), 
++ et - pour les zooms, 
+les fl&#232;ches de direction et page up/down pour changer la
+fen&#234;tre de visualisation (la fen&#234;tre de calcul par défaut est 
+d&#233;finie par la configuration graphique si on ne l'a pas indiquée
+en param&#232;tre dans <code>plotfunc</code>)
+</LI>
+<LI>On peut aussi tracer une surface param&#233;tr&#233;e
+avec <code>plotparam</code> dont le premier
+argument est une liste de taille 3 contenant les coordonnées du point
+et les 2 arguments suivants les paramètres&nbsp;:
+<PRE>
+plotparam([u,v,u+v],u=-1..1,v=-2..2)
+</PRE>
+</LI>
+<LI>Pour tracer des courbes param&#233;tr&#233;es dans l'espace, on utilise
+aussi la commande <code>plotparam</code> mais avec un seul param&#232;tre&nbsp;:
+<PRE>
+plotparam([u,u^2,u^3],u=-1..1)
+</PRE>
+</LI>
+<LI>On peut aussi tracer des objets géométriques 3D dans une figure 3-d que l'on 
+obtient avec <TT>Alt+h</TT>, puis en utilisant des commandes du menu <code>Geo</code>, par exemple&nbsp;:
+point, droite ,plan, polygone, sphere...
+<PRE>
+plan(z=x+y);
+droite(x=y,z=y);
+A:=point(1,2,3); B:=point(2,-1,1); C:=point(1,0,0);
+plan(A,B,C,couleur=cyan);
+droite(A,B,affichage=line_width_3)
+</PRE>
+</LI>
+</UL>
+
+<P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Objets graphiques 3D</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plotfunc</code></TD>
+<TD ALIGN="LEFT">surface par équation</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plotparam</code></TD>
+<TD ALIGN="LEFT">surface ou courbe paramétrique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>point</code></TD>
+<TD ALIGN="LEFT">point donn&#233; par 3 coordonnées</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>droite</code></TD>
+<TD ALIGN="LEFT">droite donnée par 2 équations ou 2 points</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>plan</code></TD>
+<TD ALIGN="LEFT">plan donné par 1 équation ou 3 points</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sphere</code></TD>
+<TD ALIGN="LEFT">sphère donnée par centre et rayon</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cone</code></TD>
+<TD ALIGN="LEFT">cone donné par centre, axe, angle d'ouverture</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>inter</code></TD>
+<TD ALIGN="LEFT">intersection</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>polygone</code></TD>
+<TD ALIGN="LEFT">polygone</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>polygone_ouvert</code></TD>
+<TD ALIGN="LEFT">polygone ouvert</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="750"></A>
+<A NAME="1751"></A>
+<A NAME="1752"></A>
+<A NAME="1753"></A>
+<A NAME="754"></A>
+<A NAME="1754"></A>
+<A NAME="1755"></A>
+<A NAME="1756"></A>
+<A NAME="1757"></A> 
+<A NAME="1758"></A>
+<A NAME="1759"></A>
+<A NAME="1760"></A>
+<A NAME="1761"></A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html488"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html482"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html478"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html484"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html486"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html489"
+  HREF="node31.html">Programmation</A>
+<B> monter:</B> <A NAME="tex2html483"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html479"
+  HREF="node29.html">Objets graphiques 2D</A>
+ &nbsp; <B>  <A NAME="tex2html485"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html487"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

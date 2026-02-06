@@ -1,0 +1,57 @@
+2021-09-14 18:36:56.145: 2021-09-14 20:36:56 [5012] INFO [NestFactory] Starting Nest application...
+2021-09-14 18:36:56.236: 2021-09-14 20:36:56 [5012] INFO [ConfigurationService] Application data folder: C:\Program Files\Unowhy\HiSqool Manager\data +95ms
+2021-09-14 18:36:56.244: 2021-09-14 20:36:56 [5012] INFO [ConfigurationService] User data folder: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +2ms
+2021-09-14 18:36:56.254: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] HttpModule dependencies initialized +9ms
+2021-09-14 18:36:56.254: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] ConfigurationModule dependencies initialized +2ms
+2021-09-14 18:36:56.256: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] CommonModule dependencies initialized +6ms
+2021-09-14 18:36:56.264: 2021-09-14 20:36:56 [5012] INFO [CommandService] Connecting to MQTT... +3ms
+2021-09-14 18:36:56.266: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] DeviceConfigurationModule dependencies initialized +3ms
+2021-09-14 18:36:56.266: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] WatcherModule dependencies initialized +2ms
+2021-09-14 18:36:56.294: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] CommandModule dependencies initialized +26ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] SchedulerModule dependencies initialized +1ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] PayloadModule dependencies initialized +1ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] DeviceFactsModule dependencies initialized +1ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] ScriptorModule dependencies initialized +1ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] MqttModule dependencies initialized +1ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] GlobalModule dependencies initialized +2ms
+2021-09-14 18:36:56.297: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] AppModule dependencies initialized +1ms
+2021-09-14 18:36:56.305: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] ExecutorModule dependencies initialized +1ms
+2021-09-14 18:36:56.317: 2021-09-14 20:36:56 [5012] INFO [InstanceLoader] InstallerModule dependencies initialized +19ms
+2021-09-14 18:36:57.490: 2021-09-14 20:36:57 [5012] INFO [InstanceLoader] DeviceInformationModule dependencies initialized +1170ms
+2021-09-14 18:36:57.749: 2021-09-14 20:36:57 [5012] INFO [HiSqoolManager] Starting HiSqool Manager false +254ms
+2021-09-14 18:36:57.752: 2021-09-14 20:36:57 [5012] INFO [ConfigurationService] Configuration file is C:\snapshot\hisqoolmanager\config\idf.json +4ms
+2021-09-14 18:36:58.184: 2021-09-14 20:36:58 [5012] INFO [HiSqoolManager] Listening on port 7654... +447ms
+2021-09-14 18:36:58.200: 2021-09-14 20:36:58 [5012] INFO [DeviceConfigurationService] Starting with saved configuration +5ms
+2021-09-14 18:36:58.200: 2021-09-14 20:36:58 [5012] INFO [DeviceConfigurationService] Emitting configuration with 0 units +3ms
+2021-09-14 18:36:58.200: 2021-09-14 20:36:58 [5012] INFO [PayloadDispatcher] Got 0 payloads of which 0 are valid +2ms
+2021-09-14 18:36:58.200: 2021-09-14 20:36:58 [5012] INFO [PayloadDispatcher] Got 0 items. 0 in, 0 out +1ms
+2021-09-14 18:36:58.200: 2021-09-14 20:36:58 [5012] INFO [ConfigurationRunner] Processing for execution configuration with 0 keys +1ms
+2021-09-14 18:36:58.200: 2021-09-14 20:36:58 [5012] INFO [ConfigurationRunner] Got 0 configurations. 0 in, 0 out +1ms
+2021-09-14 18:36:58.215: 2021-09-14 20:36:58 [5012] INFO [RoutesResolver] AppController {/}: +7ms
+2021-09-14 18:36:58.215: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/, GET} route +6ms
+2021-09-14 18:36:58.215: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/halamadridynadamas, GET} route +3ms
+2021-09-14 18:36:58.231: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/stop, GET} route +15ms
+2021-09-14 18:36:58.231: 2021-09-14 20:36:58 [5012] INFO [RoutesResolver] MqttController {/mqtt}: +2ms
+2021-09-14 18:36:58.247: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/, GET} route +2ms
+2021-09-14 18:36:58.247: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/topic/*, GET} route +3ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/restart, GET} route +2ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RoutesResolver] WatcherController {/watcher}: +2ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/, GET} route +2ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/payloads, GET} route +2ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/payloads/:id, GET} route +3ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/payloads/:id/restart, GET} route +2ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/configuration/*, GET} route +2ms
+2021-09-14 18:36:58.253: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/restart/*, GET} route +2ms
+2021-09-14 18:36:58.269: 2021-09-14 20:36:58 [5012] INFO [RoutesResolver] DeviceConfigurationController {/device-configuration}: +2ms
+2021-09-14 18:36:58.269: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/, GET} route +2ms
+2021-09-14 18:36:58.269: 2021-09-14 20:36:58 [5012] INFO [RoutesResolver] DeviceInformationController {/device-information}: +1ms
+2021-09-14 18:36:58.269: 2021-09-14 20:36:58 [5012] INFO [RouterExplorer] Mapped {/, GET} route +2ms
+2021-09-14 18:36:58.269: 2021-09-14 20:36:58 [5012] INFO [NestApplication] Nest application successfully started +6ms
+2021-09-14 18:36:58.269: 2021-09-14 20:36:58 [5012] INFO [HiSqoolManager] Name of service DeviceFactsService... +2ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Got 7 items. 7 in, 0 out +1241772ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +1ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +3ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +2ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +1ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2021-09-14 18:57:40.058: 2021-09-14 20:57:40 [5012] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +1ms

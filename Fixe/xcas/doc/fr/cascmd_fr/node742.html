@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice d'un syst&#232;me : syst2mat</TITLE>
+<META NAME="description" CONTENT="Matrice d'un syst&#232;me : syst2mat">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node743.html">
+<LINK REL="previous" HREF="node741.html">
+<LINK REL="up" HREF="node741.html">
+<LINK REL="next" HREF="node743.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13852"
+  HREF="node743.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13846"
+  HREF="node741.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13840"
+  HREF="node741.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13848"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13850"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13853"
+  HREF="node743.html">R&#233;duction de Gauss d'une</A>
+<B> monter:</B> <A NAME="tex2html13847"
+  HREF="node741.html">Les syst&#232;mes lin&#233;aires</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13841"
+  HREF="node741.html">Les syst&#232;mes lin&#233;aires</A>
+ &nbsp; <B>  <A NAME="tex2html13849"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13851"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009531000000000000000"></A><A NAME="19076"></A>
+<BR>
+Matrice d'un syst&#232;me : <TT>syst2mat</TT>
+</H2>
+<TT>syst2mat</TT> a comme argument un vecteur contenant un syst&#232;me 
+d'&#233;quations lin&#233;aires et un vecteur contenant les variables.
+<BR><TT>syst2mat</TT> &#233;crit le syst&#232;me <I>AX</I> = <I>B</I> sous la forme d'une matrice 
+form&#233;e de <I>A</I> bord&#233;e &#224; droite par - <I>B</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>syst2mat([x+y,x-y-2],[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,1,0],[1,-1,-2]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>syst2mat([x+y=0,x-y=2],[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,1,0],[1,-1,-2]]</TT>
+</DIV>
+<B>Attention !!!</B>
+<BR>
+Il faut purger auparavant les variables (ici <TT>x</TT> et <TT>y</TT>).
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

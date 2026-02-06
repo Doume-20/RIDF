@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La similitude : similarity similitude</TITLE>
+<META NAME="description" CONTENT="La similitude : similarity similitude">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node996.html">
+<LINK REL="previous" HREF="node994.html">
+<LINK REL="up" HREF="node989.html">
+<LINK REL="next" HREF="node996.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17819"
+  HREF="node996.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17813"
+  HREF="node989.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17807"
+  HREF="node994.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17815"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17817"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17820"
+  HREF="node996.html">L'inversion : inversion</A>
+<B> monter:</B> <A NAME="tex2html17814"
+  HREF="node989.html">Les transformations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17808"
+  HREF="node994.html">L'homoth&#233;tie : homothety homothetie</A>
+ &nbsp; <B>  <A NAME="tex2html17816"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17818"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012176000000000000000"></A><A NAME="26016"></A><A NAME="26017"></A><A NAME="sec:similitude2"></A>
+<BR>
+La similitude : <TT>similarity similitude</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1104.html#sec:similitude3">10.13.6</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>similitude</TT>, en g&#233;om&#233;trie plane, a trois ou quatre 
+arguments&nbsp;: un point (le centre de rotation), un r&#233;el (la valeur du rapport 
+<I>k</I> de la similitude), un r&#233;el (la mesure <I>a</I> de l'angle de rotation en 
+radians (ou degr&#233;s)) et &#233;ventuellement l'objet g&#233;om&#233;trique &#224; 
+transformer.
+<BR><B>Remarque</B> : si le rapport <I>k</I> est n&#233;gatif, l'angle de la similitude 
+est alors de mesure - <I>a</I> radians (ou degr&#233;s).
+<BR>
+Lorsque <TT>similitude</TT> a trois arguments, c'est une fonction qui agit sur 
+un objet g&#233;om&#233;trique.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>s:=similitude(i,2,-pi/2)</TT>
+</DIV>
+Puis :
+<DIV ALIGN="CENTER">
+<TT>s(1+i)</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Le point -i trac&#233; avec une croix (x) noire</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>s(cercle(1+i,1))</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Le cercle de centre -i et de rayon 2</TT>
+</DIV>
+Lorsque <TT>similitude</TT> a quatre arguments, <TT>similitude</TT> dessine et 
+renvoie le transform&#233; du quatri&#232;me argument 
+dans la similitude de centre le premier argument de rapport le deuxi&#232;me 
+argument et d'angle le troisi&#232;me argument. 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>similitude(i,2,-pi/2,1+i)</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Le point -i trac&#233; avec une croix (x) noire</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>similitude(i,2,-pi/2,cercle(1+i,1))</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Le cercle de centre -i et de rayon 2</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+En 2d la similitude de centre le point <TT>A</TT>, de 
+rapport <TT>k</TT> et d'angle <TT>a1</TT> se traduit par :
+<BR><TT>similitude(A,k,a1)</TT> ou par <TT>homothetie(A,k*exp(i*a*1)</TT>. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17819"
+  HREF="node996.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17813"
+  HREF="node989.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17807"
+  HREF="node994.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17815"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17817"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17820"
+  HREF="node996.html">L'inversion : inversion</A>
+<B> monter:</B> <A NAME="tex2html17814"
+  HREF="node989.html">Les transformations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17808"
+  HREF="node994.html">L'homoth&#233;tie : homothety homothetie</A>
+ &nbsp; <B>  <A NAME="tex2html17816"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17818"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

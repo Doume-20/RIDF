@@ -1,0 +1,67 @@
+2021-10-21 22:07:20 [11080] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-10-21 20:07:20.839: {
+2021-10-21 20:07:20.839:   "platform": "win32",
+2021-10-21 20:07:20.839:   "deviceId": "IFP052046109",
+2021-10-21 20:07:20.839:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-10-21 20:07:20.839:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-10-21 20:07:20.839:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-10-21 20:07:20.839:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-10-21 20:07:20.839:   "versionCode": 21093040,
+2021-10-21 20:07:20.839:   "trigger": "application_add",
+2021-10-21 20:07:20.839:   "metadata": {
+2021-10-21 20:07:20.839:     "packageVersion": "1.0.16.0",
+2021-10-21 20:07:20.839:     "componentParameters": {
+2021-10-21 20:07:20.839:       "AppX": "Hisqool.Legal.GDPR",
+2021-10-21 20:07:20.839:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-10-21 20:07:20.839:       "DesktopShortcut": "Charte de protection*",
+2021-10-21 20:07:20.839:       "ProvisioningPackage": "Hisqool GDPR",
+2021-10-21 20:07:20.839:       "InstallationDirectory": "hisqool.gdpr",
+2021-10-21 20:07:20.839:       "UninstallationDirectory": "hisqool.gdpr",
+2021-10-21 20:07:20.839:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-10-21 20:07:20.839:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-10-21 20:07:20.839:     },
+2021-10-21 20:07:20.839:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-10-21 20:07:20.839:   }
+2021-10-21 20:07:20.839: } +4ms
+2021-10-21 20:07:20.839: 2021-10-21 22:07:20 [11080] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-10-21 20:07:20.855: 2021-10-21 22:07:20 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> application_add... +1ms
+2021-10-21 20:07:20.855: 2021-10-21 22:07:20 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +3ms
+2021-10-21 20:07:20.870: 2021-10-21 22:07:20 [11080] INFO [Runner] Creating configuration unit runner object... +22ms
+2021-10-21 20:07:20.870: 2021-10-21 22:07:20 [11080] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-10-21 20:07:20.870: 2021-10-21 22:07:20 [11080] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe +2ms
+2021-10-21 20:07:20.902: 2021-10-21 22:07:20 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> application_add... +22ms
+2021-10-21 20:07:20.902: 2021-10-21 22:07:20 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\181\payload... +2ms
+2021-10-21 20:07:20.933: 2021-10-21 22:07:20 [11080] INFO [Runner] Creating configuration unit runner object... +24ms
+2021-10-21 20:07:20.933: 2021-10-21 22:07:20 [11080] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-10-21 20:07:20.933: 2021-10-21 22:07:20 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:07:20.995: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> application_add... +64ms
+2021-10-21 20:07:20.995: 2021-10-21 22:07:21 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2021-10-21 20:07:21.042: 2021-10-21 22:07:21 [11080] INFO [Runner] Creating configuration unit runner object... +37ms
+2021-10-21 20:07:21.042: 2021-10-21 22:07:21 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:21.042: 2021-10-21 22:07:21 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:07:21.042: 2021-10-21 22:07:21 [11080] INFO [JS] Getting GPO version... +1ms
+2021-10-21 20:07:21.042: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> application_add... +1ms
+2021-10-21 20:07:21.042: 2021-10-21 22:07:21 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2021-10-21 20:07:21.073: 2021-10-21 22:07:21 [11080] INFO [Runner] Creating configuration unit runner object... +21ms
+2021-10-21 20:07:21.073: 2021-10-21 22:07:21 [11080] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-10-21 20:07:21.073: 2021-10-21 22:07:21 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:07:21.167: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> application_add... +99ms
+2021-10-21 20:07:21.167: 2021-10-21 22:07:21 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload... +2ms
+2021-10-21 20:07:21.183: 2021-10-21 22:07:21 [11080] INFO [Runner] Creating configuration unit runner object... +16ms
+2021-10-21 20:07:21.183: 2021-10-21 22:07:21 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:21.198: 2021-10-21 22:07:21 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:07:21.230: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> application_add... +34ms
+2021-10-21 20:07:21.230: 2021-10-21 22:07:21 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2021-10-21 20:07:21.245: 2021-10-21 22:07:21 [11080] INFO [Runner] Creating configuration unit runner object... +18ms
+2021-10-21 20:07:21.245: 2021-10-21 22:07:21 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:21.245: 2021-10-21 22:07:21 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-10-21 20:07:21.245: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> application_add... +1ms
+2021-10-21 20:07:21.261: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> application_add... +4ms
+2021-10-21 20:07:21.276: 2021-10-21 22:07:21 [11080] INFO [Runner] Performing runner... +19ms
+2021-10-21 20:07:21.276: 2021-10-21 22:07:21 [11080] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2021-10-21 20:07:21.417: 127.0.0.1 - - [21/Oct/2021:20:07:21 +0000] "POST /commands HTTP/1.1" 200 34 "-" "-"
+2021-10-21 20:07:21.417: 2021-10-21 22:07:21 [11080] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +144ms
+2021-10-21 20:07:21.480: 2021-10-21 22:07:21 [11080] INFO [JS] Current GPO version: 1.5 +58ms
+2021-10-21 20:07:21.480: 2021-10-21 22:07:21 [11080] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-10-21 20:07:21.495: 2021-10-21 22:07:21 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +3ms
+2021-10-21 20:07:22.979: 2021-10-21 22:07:22 [11080] INFO [Runner] Runner doesn't need to be performed +1ms

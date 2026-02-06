@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;duction des matrices</TITLE>
+<META NAME="description" CONTENT="R&#233;duction des matrices">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html431"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html425"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html421"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html427"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html429"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html432"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> monter:</B> <A NAME="tex2html426"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html422"
+  HREF="node25.html">Syst&#232;mes lin&#233;aires</A>
+ &nbsp; <B>  <A NAME="tex2html428"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html430"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00046000000000000000"></A>
+<A NAME="647"></A>
+<BR>
+R&#233;duction des matrices
+</H2>
+<A NAME="1727"></A>
+La fonction <code>jordan</code> prend en entr&#233;e une matrice <I>A</I> et retourne en
+sortie une matrice de passage <I>P</I> et une forme r&#233;duite de Jordan <I>J</I> telles
+que <!-- MATH
+ $P^{-1}A P=J$
+ -->
+<I>P</I><SUP>-1</SUP><I>AP</I> = <I>J</I>. Soit <I>A</I> est diagonalisable auquel cas <I>J</I> est
+diagonale et contient les valeurs propres de <I>A</I> sur la diagonale,
+soit <I>A</I> n'est pas diagonalisable et <I>J</I> comporte des "1" ou des "0"
+au-dessus de la diagonale. Pour les matrices exactes et symboliques,
+seules les valeurs propres calculables par
+<code>solve</code> sont accessibles. Pour des matrices de nombres approch&#233;s,
+un algorithme num&#233;rique est utilis&#233;, et il risque
+d'&#233;chouer en cas de valeurs propres multiples ou tr&#232;s proches.
+La matrice <I>A</I> de l'exemple qui suit a pour valeurs propres doubles 1
+et 2. Elle est diagonalisable pour
+<I>a</I> = 0, non diagonalisable pour <I>a</I> <IMG
+ WIDTH="17" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \neq$"> 0.
+<PRE>
+A:=[[1,1,-1,0],[0,1,0,a],[0,-1,2,0],[1,0,1,2]
+factor(poly2symb(simplify(pcar(A))))
+jordan(A)
+eigenvals(A)
+eigenvects(A)
+jordan(subs(A,a=0))
+eigenvects(subs(A,a=1))
+jordan(evalf(subs(A,a=0)))
+jordan(evalf(subs(A,a=1)))
+</PRE>
+Certaines fonctions, d&#233;finies par des s&#233;ries
+enti&#232;res, s'&#233;tendent aux matrices d&#232;s lors que l'on sait calculer
+leur forme de Jordan. La plus utile est l'exponentielle.
+<PRE>
+A:=[[0,1,0],[0,0,1],[-2,1,2]]
+jordan(A)
+exp(A)
+ln(A)
+sin(A)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>R&#233;duction des matrices</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>jordan</code></TD>
+<TD ALIGN="LEFT">diagonalisation ou r&#233;duction de Jordan</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>pcar</code></TD>
+<TD ALIGN="LEFT">coefficients du polyn&#244;me caract&#233;ristique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>pmin</code></TD>
+<TD ALIGN="LEFT">coefficients du polyn&#244;me minimal</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>eigenvals</code></TD>
+<TD ALIGN="LEFT">valeurs propres</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>eigenvects</code></TD>
+<TD ALIGN="LEFT">vecteurs propres</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1728"></A>
+<A NAME="1729"></A>
+<A NAME="1730"></A>
+<A NAME="1731"></A>
+<A NAME="666"></A>
+<A NAME="667"></A>
+<A NAME="668"></A>
+<A NAME="669"></A>
+<A NAME="670"></A>
+<A NAME="671"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html431"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html425"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html421"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html427"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html429"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html432"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<B> monter:</B> <A NAME="tex2html426"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html422"
+  HREF="node25.html">Syst&#232;mes lin&#233;aires</A>
+ &nbsp; <B>  <A NAME="tex2html428"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html430"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

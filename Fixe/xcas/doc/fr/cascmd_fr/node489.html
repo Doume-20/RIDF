@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Base de Gr&#246;bner : gbasis</TITLE>
+<META NAME="description" CONTENT="Base de Gr&#246;bner : gbasis">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node490.html">
+<LINK REL="previous" HREF="node488.html">
+<LINK REL="up" HREF="node488.html">
+<LINK REL="next" HREF="node490.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10124"
+  HREF="node490.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10118"
+  HREF="node488.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10112"
+  HREF="node488.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10120"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10122"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10125"
+  HREF="node490.html">R&#233;duction par rapport à</A>
+<B> monter:</B> <A NAME="tex2html10119"
+  HREF="node488.html">Base et r&#233;duction de</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10113"
+  HREF="node488.html">Base et r&#233;duction de</A>
+ &nbsp; <B>  <A NAME="tex2html10121"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10123"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009281000000000000000"></A><A NAME="12649"></A>
+<A NAME="sec:gbasis"></A>
+<BR>
+Base de Gr&#246;bner : <TT>gbasis</TT>
+</H2>
+<TT>gbasis</TT> a au moins deux arguments :  
+une liste de polyn&#244;mes de 
+plusieurs variables et la liste du nom de ces variables.
+<BR><TT>gbasis</TT> renvoie une base de Gr&#246;bner de l'id&#233;al polynomial engendr&#233;
+par les polyn&#244;mes donn&#233;s dans le premier argument.
+<BR>
+On choisit d'ordonner les mon&#244;mes selon l'ordre lexicographique en accord 
+avec la liste donn&#233;e par le dernier 
+argument et selon les puissances d&#233;croissantes : par exemple on &#233;crira
+<!-- MATH
+ $x^2*y^4*z^3$
+ -->
+<I>x</I><SUP>2</SUP>*<I>y</I><SUP>4</SUP>*<I>z</I><SUP>3</SUP> puis <!-- MATH
+ $x^2*y^3*z^4$
+ -->
+<I>x</I><SUP>2</SUP>*<I>y</I><SUP>3</SUP>*<I>z</I><SUP>4</SUP> si le deuxi&#232;me argument est [<I>x</I>, <I>y</I>, <I>z</I>] car
+<!-- MATH
+ $(2,4,3)>(2,3,4)$
+ -->
+(2, 4, 3) &gt; (2, 3, 4) mais on &#233;crira <!-- MATH
+ $x^2*y^3z^4$
+ -->
+<I>x</I><SUP>2</SUP>*<I>y</I><SUP>3</SUP><I>z</I><SUP>4</SUP> puis <!-- MATH
+ $x^2*y^4*z^3$
+ -->
+<I>x</I><SUP>2</SUP>*<I>y</I><SUP>4</SUP>*<I>z</I><SUP>3</SUP> si le
+ deuxi&#232;me argument est [<I>x</I>, <I>z</I>, <I>y</I>].
+<BR>
+Si <I>I</I> est un id&#233;al et si 
+<!-- MATH
+ $(G_k)_{k \in K}$
+ -->
+(<I>G</I><SUB>k</SUB>)<SUB>k <IMG
+ WIDTH="13" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img385.png"
+ ALT="$\scriptstyle \in$"> K</SUB> est une base de Gr&#246;bner de l'id&#233;al <I>I</I> alors,
+ si <I>F</I> est  un polyn&#244;me non nul de <I>I</I>, le terme dominant de <I>F</I> 
+est divisible par le terme dominant d'un <I>G</I><SUB>k</SUB>. 
+<BR>
+Propri&#233;t&#233; : Si on fait la division euclidienne de <I>F</I> par un des  <I>G</I><SUB>k</SUB> 
+puis, si on recommence avec le reste obtenu et le <I>G</I><SUB>k</SUB> suivant, on  finit par obtenir un reste nul.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>gbasis([2*x*y-y<code>^</code>2,x<code>^</code>2-2*x*y],[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>    [4*x<code>^</code>2+-4*y<code>^</code>2,2*x*y-y<code>^</code>2,-(3*y<code>^</code>3)]</TT>
+</DIV>
+
+<P>
+On peut donner des arguments suppl&#233;mentaires&nbsp;:
+
+<UL>
+<LI><TT>plex</TT> (lexicographique pur), <TT>tdeg</TT> (degr&#233; total puis
+ordre lexicographique),
+<TT>revlex</TT> (degr&#233; total puis ordre lexicographique inverse), pour
+sp&#233;cifier un ordre sur les mon&#244;mes diff&#233;rent de l'ordre
+par d&#233;faut (qui est <TT>plex</TT>),
+</LI>
+<LI><TT>with_cocoa=true</TT> ou <TT>with_cocoa=false</TT>, si on veut
+utiliser la librairie <TT>CoCoA</TT> pour faire le calcul de la base
+de Gr&#246;bner.
+</LI>
+<LI><TT>with_f5=true</TT> ou <TT>with_f5=false</TT> pour utiliser
+l'impl&#233;mentation de l'algorithme F5 de la librairie <TT>CoCoA</TT>.
+L'ordre sp&#233;cifi&#233; n'est alors pas utilis&#233;, les polyn&#244;mes &#233;tant 
+homog&#233;n&#233;is&#233;s.
+</LI>
+</UL>
+On tape&nbsp;:
+<DIV ALIGN="CENTER">
+<code>gbasis([x1+x2+x3,x1*x2+x1*x3+x2*x3,x1*x2*x3-1],[x1,x2,x3],tdeg,with_cocoa=false)</code>
+
+</DIV>
+On obtient
+<DIV ALIGN="CENTER">
+<code>[x3^3-1,-x2^2-x2*x3-x3^2,x1+x2+x3]</code>
+
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10124"
+  HREF="node490.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10118"
+  HREF="node488.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10112"
+  HREF="node488.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10120"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10122"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10125"
+  HREF="node490.html">R&#233;duction par rapport à</A>
+<B> monter:</B> <A NAME="tex2html10119"
+  HREF="node488.html">Base et r&#233;duction de</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10113"
+  HREF="node488.html">Base et r&#233;duction de</A>
+ &nbsp; <B>  <A NAME="tex2html10121"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10123"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

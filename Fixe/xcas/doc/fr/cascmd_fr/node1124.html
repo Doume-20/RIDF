@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>: centered_cube cube_centre</TITLE>
+<META NAME="description" CONTENT=": centered_cube cube_centre">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1125.html">
+<LINK REL="previous" HREF="node1123.html">
+<LINK REL="up" HREF="node1122.html">
+<LINK REL="next" HREF="node1125.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19807"
+  HREF="node1125.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19801"
+  HREF="node1122.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19795"
+  HREF="node1123.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19803"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19805"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19808"
+  HREF="node1125.html">L'octa&#232;dre : octahedron octaedre</A>
+<B> monter:</B> <A NAME="tex2html19802"
+  HREF="node1122.html">Les solides de Platon</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19796"
+  HREF="node1123.html">: centered_tetrahedron tetraedre_centre</A>
+ &nbsp; <B>  <A NAME="tex2html19804"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19806"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013162000000000000000"></A><A NAME="29177"></A><A NAME="29178"></A>
+<BR>
+ : <TT>centered_cube cube_centre</TT>
+</H2>
+<TT>cube_centre</TT> a comme argument trois points <TT>A,B,C</TT>.
+<BR><TT>cube_centre</TT> dessine un cube de centre <TT>A</TT>, de sommet <TT>B</TT>
+ et tel que le plan <TT>ABC</TT>  soit un plan de symetrie du cube.
+<BR>
+Ce plan <TT>ABC</TT>  contient  une ar&#234;te <TT>BD</TT> du cube issue de <TT>B</TT> et 
+le sommet <TT>D</TT> de cette ar&#234;te est situ&#233; du m&#234;me c&#244;t&#233; que <TT>C</TT>
+par rapport &#224; <TT>AB</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cube_centre([0,0,0],[3,3,3],[0,1,0])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le cube de centre [0,0,0], de sommet [3,3,3] et ayant comme sommet D [-1,5,-1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cube_centre([0,0,0],[3,3,3],[0,-1,0])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>cube_centre([0,0,0],[3,3,3],[3,-3,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le cube de centre [0,0,0], de sommet [3,3,3] et ayant l'axe det ayant comme sommet D [3,-3,3] et dont les ar&#234;tes sont parall&#232;les aux axes</TT>
+</DIV>
+<B>Remarques</B>
+
+<UL>
+<LI>Il existe (cf les exemples ci-dessus)  2 cubes ayant un sommet commun 
+<TT>B</TT>, m&#234;me centre <TT>A</TT>,  et le m&#234;me plan de sym&#233;trie <TT>ABC</TT>.
+<BR>
+En effet, si <I>a</I> est le c&#244;t&#233; du cube, on a <!-- MATH
+ $AB=a*\sqrt 3$
+ -->
+<I>AB</I> = <I>a</I>*<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img587.png"
+ ALT="$ \sqrt{3}$">. La donn&#233;e de 
+<I>A</I> et de <I>B</I> d&#233;termine donc enti&#232;rement la sph&#232;re <I>S</I> inscrite dans le 
+cube. 
+Le plan <I>ABC</I> coupe <I>S</I> selon un cercle <I>Cs</I> et le cube selon un rectangle 
+<I>BDEF</I> avec <I>BD</I> = <I>a</I> et <!-- MATH
+ $BF=a*\sqrt 2$
+ -->
+<I>BF</I> = <I>a</I>*<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \sqrt{2}$"> car <I>BD</I> est une ar&#234;te et <I>BF</I> est une 
+diagonale d'une face du cube. Cette face est tangente &#224; <I>S</I> et <I>BF</I> est une
+tangente au cercle <I>Cs</I> men&#233;e par <I>B</I>. Du point <I>B</I>, on peut mener, dans le 
+plan <I>ABC</I>, deux tangentes au cercle <I>Cs</I>. Ces 2 tangentes sont situ&#233;es
+de part et d'autre de la droite <I>AB</I> (car <I>A</I> est le centre du cercle <I>Cs</I>). 
+On choisit la tangente situ&#233;e dans le demi-plan ne contenant pas <I>C</I> et on 
+d&#233;termine ainsi, une face contenue dans le plan tangent &#224; la sph&#232;re 
+passant par cette tangente. Par sym&#233;trie par rapport &#224; <I>A</I>, on d&#233;termine 
+enfin tout le cube.
+<BR>
+Si le cube a <TT>A</TT> comme centre et <TT>B</TT> comme sommet et si de plus le plan
+<TT>ABC</TT> contient une ar&#234;te du cube, on peut aussi dire que le point <TT>C</TT>
+est dans un plan passant par <TT>A, B</TT> et une ar&#234;te du cube <TT>BD</TT> issue 
+de <TT>B</TT> et que <TT>C</TT> est du m&#234;me c&#244;t&#233; que <TT>D</TT> par rapport
+&#224; <TT>AB</TT>.
+<BR></LI>
+<LI>Pour avoir les coordonn&#233;es des sommets du cube, on tape :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>normal(cube_centre([0,0,0],[3,3,3],[0,1,0])),0</TT>
+</DIV>
+car c'est le dernier argument d'une liste qui d&#233;termine 
+le mode d'affichage : ici <TT>0</TT> dit 
+que l'on affiche des expressions.
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>pnt(pnt[[[[3,3,3],[-1,-1,5],[-5,1,1],[-1,5,-1]], 
+[[3,3,3],[-1,5,-1],[1,1,-5],[5,-1,-1]],[[3,3,3],[-1,-1,5],[1,-5,1],
+[5,-1,-1]],[[-1,-1,5],[-5,1,1],[-3,-3,-3],[1,-5,1]],[[-1,5,-1],
+[-5,1,1],[-3,-3,-3],[1,1,-5]],[[5,-1,-1],[1,-5,1],[-3,-3,-3],
+[1,1,-5]]],0]),0</TT>
+</DIV>
+On peut aussi taper
+<DIV ALIGN="CENTER">
+<TT>normal(coordonnees(sommets(cube_centre([0,0,0],[3,3,3],[0,1,0]))))</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html19807"
+  HREF="node1125.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19801"
+  HREF="node1122.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19795"
+  HREF="node1123.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19803"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19805"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19808"
+  HREF="node1125.html">L'octa&#232;dre : octahedron octaedre</A>
+<B> monter:</B> <A NAME="tex2html19802"
+  HREF="node1122.html">Les solides de Platon</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19796"
+  HREF="node1123.html">: centered_tetrahedron tetraedre_centre</A>
+ &nbsp; <B>  <A NAME="tex2html19804"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19806"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

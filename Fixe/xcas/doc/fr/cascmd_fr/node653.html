@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Faire une matrice avec une fonction : makemat</TITLE>
+<META NAME="description" CONTENT="Faire une matrice avec une fonction : makemat">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node654.html">
+<LINK REL="previous" HREF="node652.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node654.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12551"
+  HREF="node654.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12545"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12539"
+  HREF="node652.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12547"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12549"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12552"
+  HREF="node654.html">D&#233;finir une matrice :</A>
+<B> monter:</B> <A NAME="tex2html12546"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12540"
+  HREF="node652.html">Faire une matrice avec</A>
+ &nbsp; <B>  <A NAME="tex2html12548"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12550"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094325000000000000000"></A><A NAME="16909"></A>
+<BR>
+Faire une matrice avec une fonction : <TT>makemat</TT>
+</H2>
+<TT>makemat</TT> a trois arguments : 
+
+<UL>
+<LI>une fonction de deux variables <TT>j</TT> et <TT>k</TT> &#233;gale &#224; la valeur de <I>a</I><SUB>j, k</SUB> (<TT>j</TT> repr&#233;sente un num&#233;ro de ligne et <TT>k</TT> un num&#233;ro de colonne), 
+</LI>
+<LI>deux entiers <I>n</I> et <I>p</I>.
+</LI>
+</UL>
+<TT>makemat</TT> renvoie la matrice de coefficients <I>a</I><SUB>j, k</SUB> 
+(<I>j</I> = 0..<I>n</I> - 1 et <I>k</I> = 0..<I>p</I> - 1) de dimension <!-- MATH
+ $n \times p$
+ -->
+<I>n</I>&#215;<I>p</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>makemat((j,k)-&gt;j+k,4,3)</TT>
+</DIV>
+ou on tape pour d&#233;finir la fonction  <I>h</I> : 
+<DIV ALIGN="CENTER">
+<TT>h(j,k):=j+k</TT>
+</DIV>
+puis, on tape :
+<DIV ALIGN="CENTER">
+<TT>makemat(h,4,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,1,2],[1,2,3],[2,3,4],[3,4,5]]</TT>
+</DIV>
+<B>Attention !</B>  &#224; la dimension et aux indices qui partent de 0.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

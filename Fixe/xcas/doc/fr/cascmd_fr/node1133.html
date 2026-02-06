@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Utilisation dans un programme C++</TITLE>
+<META NAME="description" CONTENT="Utilisation dans un programme C++">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1134.html">
+<LINK REL="previous" HREF="node1132.html">
+<LINK REL="up" HREF="node1132.html">
+<LINK REL="next" HREF="node1134.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19933"
+  HREF="node1134.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19927"
+  HREF="node1132.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19921"
+  HREF="node1132.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19929"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19931"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19934"
+  HREF="node1134.html">Pour d&#233;finir de nouvelles</A>
+<B> monter:</B> <A NAME="tex2html19928"
+  HREF="node1132.html">Utilisation de giac &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19922"
+  HREF="node1132.html">Utilisation de giac &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html19930"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19932"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001410000000000000000">
+Utilisation dans un programme  <TT>C++</TT></A>
+</H1>
+On peut utiliser <TT>giac</TT> &#224; l'int&#233;rieur d'un programme <TT>C++</TT> en
+mettant au d&#233;but du programme par exemple <TT>essai.cc</TT> :
+<BR><TT>#include&lt;giac/giac.h&gt;</TT>
+<BR>
+puis en compilant le compilant avec :
+<BR><TT>c++ -g essai.cc -lgiac -lgmp</TT>
+<BR>
+et en l'ex&#233;cutant en mettant :
+<BR><TT>./a.out</TT>
+<BR><B>Exemple</B>
+<PRE>
+// -*- compile-command: "g++ -g pgcd.cc -lgiac -lgmp" -*-
+#include &lt;giac/giac.h&gt;
+
+using namespace std;
+using namespace giac;
+
+gen pgcd(gen a,gen b){
+  gen q,r;
+  for (;b!=0;){
+    r=irem(a,b,q);
+    a=b;
+    b=r;
+  }
+  return a;
+}
+
+int main(){
+  cout &lt;&lt; "Entrer 2 entiers";
+  gen a,b;
+  cin &gt;&gt; a &gt;&gt; b;
+  cout &lt;&lt; pgcd(a,b) &lt;&lt; endl;
+  return 0;
+}
+</PRE>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

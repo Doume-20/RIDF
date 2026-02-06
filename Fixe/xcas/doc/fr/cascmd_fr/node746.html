@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#201;tape de la r&#233;duction de Gauss-Jordan d'une matrice : pivot</TITLE>
+<META NAME="description" CONTENT="&#201;tape de la r&#233;duction de Gauss-Jordan d'une matrice : pivot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node747.html">
+<LINK REL="previous" HREF="node745.html">
+<LINK REL="up" HREF="node741.html">
+<LINK REL="next" HREF="node747.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13908"
+  HREF="node747.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13902"
+  HREF="node741.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13896"
+  HREF="node745.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13904"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13906"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13909"
+  HREF="node747.html">R&#233;solution d'un syst&#232;me lin&#233;aire</A>
+<B> monter:</B> <A NAME="tex2html13903"
+  HREF="node741.html">Les syst&#232;mes lin&#233;aires</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13897"
+  HREF="node745.html">R&#233;solution de A*X=B :</A>
+ &nbsp; <B>  <A NAME="tex2html13905"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13907"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009535000000000000000"></A><A NAME="19269"></A><A NAME="sec:pivot"></A>
+<BR>
+&#201;tape de la r&#233;duction de Gauss-Jordan d'une matrice : <TT>pivot</TT>
+</H2>
+<TT>pivot</TT> a trois arguments : une matrice de <I>n</I> lignes et <I>p</I> 
+colonnes et deux entiers <I>l</I> et <I>c</I> v&#233;rifiant : 0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>l</I> &lt; <I>n</I> et 0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>c</I> &lt; <I>p</I>.
+<BR><TT>pivot(A,l,c)</TT> renvoie la matrice obtenue en cr&#233;ant des z&#233;ros dans
+ la colonne <TT>c</TT> de <TT>A</TT>, avec la m&#233;thode de Gauss-Jordan, en 
+utilisant comme pivot l'&#233;l&#233;ment <TT>A[l,c]</TT>.
+<BR>
+On tape  :
+<DIV ALIGN="CENTER">
+<TT>pivot([[1,2],[3,4],[5,6]],1,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-2,0],[3,4],[2,0]]</TT>
+</DIV>
+On tape  :
+<DIV ALIGN="CENTER">
+<TT>pivot([[1,2],[3,4],[5,6]],0,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,2],[2,0],[4,0]]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

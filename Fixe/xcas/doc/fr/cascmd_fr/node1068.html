@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les cercles dans l'espace : circle cercle</TITLE>
+<META NAME="description" CONTENT="Les cercles dans l'espace : circle cercle">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1069.html">
+<LINK REL="previous" HREF="node1063.html">
+<LINK REL="up" HREF="node1025.html">
+<LINK REL="next" HREF="node1069.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18983"
+  HREF="node1069.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18977"
+  HREF="node1025.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18971"
+  HREF="node1067.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18979"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18981"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18984"
+  HREF="node1069.html">Les coniques dans l'espace</A>
+<B> monter:</B> <A NAME="tex2html18978"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18972"
+  HREF="node1067.html">Ligne polygonale dans l'espace</A>
+ &nbsp; <B>  <A NAME="tex2html18980"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18982"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001390000000000000000"></A><A NAME="27891"></A><A NAME="27892"></A><A NAME="sec:cercle3d"></A>
+<BR>
+Les cercles dans l'espace : <TT>circle cercle</TT>
+</H1>
+<B>Voir aussi :</B>  <A HREF="node962.html#sec:cercle">9.14.1</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>cercle</TT>, en g&#233;om&#233;trie 3D, a comme argument :
+
+<UL>
+<LI>soit 3 points <TT>A,B,C</TT> non coplanaires : les deux premiers points 
+d&#233;finissent un diam&#232;tre du cercle et les trois points d&#233;finissent le 
+plan du cercle.
+</LI>
+<LI>soit un point <TT>A</TT>, un vecteur <TT>v</TT> et un point <TT>C</TT> non 
+situ&#233; sur la droite d&#233;finie par <TT>A</TT> et <TT>v</TT> : le point <TT>A</TT> est 
+le centre du cercle, le point <TT>B:=A+v</TT>
+est un point du cercle et le plan <TT>ABC</TT> est le plan du cercle.
+</LI>
+</UL>
+<B>&#192; noter</B>  que dans les 2 cas, le premier argument peut &#234;tre les 
+coordonn&#233;es du point <TT>A</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(point(0,0,1),point(0,1,0),point(0,2,2))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>cercle([0,0,1],point(0,1,0),point(0,2,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Un cercle de diam&#232;tre les points [0,0,1] et [0,1,0]
+situ&#233;s dans le plan x=0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(point(0,0,1),[0,1,0],point(0,2,2))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>cercle([0,0,1],[0,1,0],point(0,2,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Un cercle de centre [0,0,1] et passant par le point [0,1,1]
+(donc de rayon 1) situ&#233;s dans le plan x=0</TT>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18983"
+  HREF="node1069.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18977"
+  HREF="node1025.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18971"
+  HREF="node1067.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18979"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18981"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18984"
+  HREF="node1069.html">Les coniques dans l'espace</A>
+<B> monter:</B> <A NAME="tex2html18978"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18972"
+  HREF="node1067.html">Ligne polygonale dans l'espace</A>
+ &nbsp; <B>  <A NAME="tex2html18980"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18982"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

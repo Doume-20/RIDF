@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La corr&#233;lation : correlation</TITLE>
+<META NAME="description" CONTENT="La corr&#233;lation : correlation">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node784.html">
+<LINK REL="previous" HREF="node782.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node784.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14531"
+  HREF="node784.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14525"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14519"
+  HREF="node782.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14527"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14529"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14532"
+  HREF="node784.html">Covariance et corr&#233;lation :</A>
+<B> monter:</B> <A NAME="tex2html14526"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14520"
+  HREF="node782.html">La covariance : covariance</A>
+ &nbsp; <B>  <A NAME="tex2html14528"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14530"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001022000000000000000"></A><A NAME="20463"></A>
+<BR>
+La corr&#233;lation : <TT>correlation</TT>
+</H2>
+Le coefficient de corr&#233;lation lin&#233;aire de deux variables al&#233;atoires
+<I>X</I> et <I>Y</I> est <!-- MATH
+ $\displaystyle \rho=\frac{cov(X,Y)}{\sigma(X)\sigma(Y)}$
+ -->
+<IMG
+ WIDTH="14" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img550.png"
+ ALT="$\displaystyle \rho$"> = <IMG
+ WIDTH="86" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img551.png"
+ ALT="$\displaystyle {\frac{{cov(X,Y)}}{{\sigma(X)\sigma(Y)}}}$"> o&#249; 
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img552.png"
+ ALT="$ \sigma$">(<I>X</I>) (resp <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img552.png"
+ ALT="$ \sigma$">(<I>Y</I>)) d&#233;signe l'&#233;cart-type de <I>X</I> (resp<I>Y</I>).
+<BR><TT>correlation</TT> a les m&#234;mes arguments que <TT>covariance</TT>.
+
+<P>
+Quand les effectifs sont &#233;gaux &#224; 1,
+<BR><TT>correlation</TT> a pour argument deux listes de m&#234;me longueur ou une matrice
+ ayant deux colonnes.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>correlation([1,2,3,4],[1,4,9,16])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>100/(4*sqrt(645))</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>correlation([[1,1],[2,4],[3,9],[4,16]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>100/(4*sqrt(645))</TT>
+</DIV>
+On tape (on a <TT>A:=[0,1,2,3,4,5,6,7,8,9,10,11]</TT>) :
+<DIV ALIGN="CENTER">
+<TT>correlation(A,A<code>^</code>2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>18876/(572*sqrt(1173))</TT>
+</DIV>
+
+<P>
+Quand les effectifs sont diff&#233;rents de 1 :
+<BR>- si les couples <I>a</I>[<I>j</I>], <I>b</I>[<I>j</I>] ont pour 
+effectif <I>n</I>[<I>j</I>] (<I>j</I> = 0..<I>p</I> - 1), <TT>correlation</TT> a pour argument 
+trois listes <I>a</I>, <I>b</I>, <I>n</I> de m&#234;me longueur <I>p</I>, ou 
+une matrice de trois colonnes <I>a</I>, 
+<I>b</I>, <I>n</I> et de <I>p</I> lignes <!-- MATH
+ $[a[j],b[j],n[j]]$
+ -->
+[<I>a</I>[<I>j</I>], <I>b</I>[<I>j</I>], <I>n</I>[<I>j</I>]].
+<BR><TT>correlation</TT> calcule la corr&#233;lation num&#233;rique des deux premi&#232;res 
+listes qui sont pond&#233;r&#233;es par la liste donn&#233;e comme dernier argument ou  
+calcule la corr&#233;lation num&#233;rique des deux colonnes de cette matrice qui 
+sont pond&#233;r&#233;es par la troisi&#233;me colonne.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>correlation([1,2,3,4],[1,4,9,16],[3,1,5,2])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>correlation([[1,1,3],[2,4,1],[3,9,5],[4,16,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>662/(180*sqrt(14))</TT>
+</DIV>
+
+<P>
+- si les couples <I>a</I>[<I>j</I>], <I>b</I>[<I>k</I>] ont pour effectif <I>N</I>[<I>j</I>, <I>k</I>] (<!-- MATH
+ $j=0..p-1,k=0..q-1$
+ -->
+<I>j</I> = 0..<I>p</I> - 1, <I>k</I> = 0..<I>q</I> - 1), 
+<TT>correlation</TT> a pour argument deux listes <I>a</I>, <I>b</I> de longueurs respectives
+ <I>p</I> et <I>q</I> et une matrice <I>N</I> de <I>p</I> lignes et <I>q</I> colonnes ou encore,
+<BR>
+afin de pouvoir &#233;crire les donn&#233;es de fa&#231;on plaisante dans le tableur,
+<TT>correlation</TT> peut aussi avoir pour argument, une matrice <I>M</I> et -1.
+<BR><I>M</I> est alors un tableau &#224; deux entr&#233;es &#233;gal &#224; :
+<BR><P><!-- MATH
+ \begin{displaymath}
+M=\left[\begin{array}{cccc}
+a \setminus b & b[0] &...& b[q-1]\\
+a[0] & N[0,0] &...& N[0,q-1]\\
+...&...&...&...\\
+a[p-1] & N[p-1,0] &...& N[p-1,q-1]
+\end{array}
+\right]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>M</I> = <IMG
+ WIDTH="18" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img546.png"
+ ALT="$\displaystyle \left[\vphantom{\begin{array}{cccc}
+a \setminus b &amp; b[0] &amp;...&amp; b[...
+...\\
+...&amp;...&amp;...&amp;...\\
+a[p-1] &amp; N[p-1,0] &amp;...&amp; N[p-1,q-1]
+\end{array}}\right.$"><IMG
+ WIDTH="331" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img547.png"
+ ALT="$\displaystyle \begin{array}{cccc}
+a \setminus b &amp; b[0] &amp;...&amp; b[q-1]\\
+a[0] &amp; ...
+...N[0,q-1]\\
+...&amp;...&amp;...&amp;...\\
+a[p-1] &amp; N[p-1,0] &amp;...&amp; N[p-1,q-1]
+\end{array}$"><IMG
+ WIDTH="18" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img548.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{cccc}
+a \setminus b &amp; b[0] &amp;...&amp; b[...
+...\\
+...&amp;...&amp;...&amp;...\\
+a[p-1] &amp; N[p-1,0] &amp;...&amp; N[p-1,q-1]
+\end{array}}\right]$">
+</DIV><P></P>
+<TT>correlation(a,b,N)</TT> ou  <TT>correlation(M,-1)</TT> calcule la corr&#233;lation  
+num&#233;rique des couples <I>a</I>[<I>j</I>], <I>b</I>[<I>k</I>] pond&#233;r&#233;s par <I>N</I><SUB>j, k</SUB>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>correlation([1,2,3,4],[1,4,9,16],[[3,0,0,0],[0,1,0,0],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[0,0,5,0],[0,0,0,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>662/(180*sqrt(14))</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>correlation([["b<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img549.png"
+ ALT="$ \setminus$">a",1,2,3,4],[1,3,0,0,0],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[4,0,1,0,0],[9,0,0,5,0],[16,0,0,0,2]],-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>662/(180*sqrt(14))</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14531"
+  HREF="node784.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14525"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14519"
+  HREF="node782.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14527"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14529"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14532"
+  HREF="node784.html">Covariance et corr&#233;lation :</A>
+<B> monter:</B> <A NAME="tex2html14526"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14520"
+  HREF="node782.html">La covariance : covariance</A>
+ &nbsp; <B>  <A NAME="tex2html14528"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14530"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>fsolve avec l'option secant_solver</TITLE>
+<META NAME="description" CONTENT="fsolve avec l'option secant_solver">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node173.html">
+<LINK REL="previous" HREF="node171.html">
+<LINK REL="up" HREF="node167.html">
+<LINK REL="next" HREF="node173.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4884"
+  HREF="node173.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4878"
+  HREF="node167.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4872"
+  HREF="node171.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4880"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4882"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4885"
+  HREF="node173.html">fsolve avec l'option steffenson_solver</A>
+<B> monter:</B> <A NAME="tex2html4879"
+  HREF="node167.html">R&#233;solution d'&#233;quations avec fsolve</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4873"
+  HREF="node171.html">fsolve avec l'option newton_solver</A>
+ &nbsp; <B>  <A NAME="tex2html4881"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4883"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00755000000000000000">
+<TT>fsolve</TT> avec l'option <TT>secant_solver</TT></A>
+</H2><A NAME="29638"></A>
+La m&#233;thode de la s&#233;cante est une m&#233;thode simplifi&#233;e de la m&#233;thode de 
+Newton.
+<BR>
+Le calcul de <I>f'</I>(<I>x</I><SUB>n</SUB>) se fait de fa&#231;on approch&#233;e : cela peut &#234;tre utile quand le calcul de la deriv&#233;e est couteux.
+<BR>
+On a :
+<BR><!-- MATH
+ $x_{i+1} = x_i-\frac{ f(x_i)}{f'_{est}}$
+ -->
+<I>x</I><SUB>i+1</SUB> = <I>x</I><SUB>i</SUB> - <IMG
+ WIDTH="39" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$ {\frac{{ f(x_i)}}{{f'_{est}}}}$"> et
+<!-- MATH
+ $f'_{est} = \frac{f(x_i) - f(x_{i-1})}{(x_i - x_{i-1})}$
+ -->
+<I>f'</I><SUB>est</SUB> = <IMG
+ WIDTH="96" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$ {\frac{{f(x_i) - f(x_{i-1})}}{{(x_i - x_{i-1})}}}$">
+<BR>
+Pour le calcul de <I>x</I><SUB>1</SUB> on utilise la m&#233;thode de Newton.
+<BR>
+La convergence pour les racines simples est d'ordre <!-- MATH
+ $(1 + \sqrt5)/2=1.62$
+ -->
+(1 + <IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.png"
+ ALT="$ \sqrt{5}$">)/2 = 1.62.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fsolve((cos(x))=x,x,-1..1,secant_solver)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0.739085078239,0.739085137844]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fsolve((cos(x))=x,x,0,secant_solver)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.739085133215</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La fonction exponentielle integrale Ei : Ei</TITLE>
+<META NAME="description" CONTENT="La fonction exponentielle integrale Ei : Ei">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node272.html">
+<LINK REL="previous" HREF="node270.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node272.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6914"
+  HREF="node272.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6908"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6902"
+  HREF="node270.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6910"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6912"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6915"
+  HREF="node272.html">La fonction cosinus integral</A>
+<B> monter:</B> <A NAME="tex2html6909"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6903"
+  HREF="node270.html">La fonction racine n-i&#232;me</A>
+ &nbsp; <B>  <A NAME="tex2html6911"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6913"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009105000000000000000"></A><A NAME="6252"></A>
+<BR>
+La fonction exponentielle integrale <I>Ei</I> : <TT>Ei</TT>
+</H2>
+<TT>Ei</TT> a comme argument un nombre complexe <I>a</I>.
+<BR><TT>Ei</TT> calcule les valeurs de la fonction <I>Ei</I> au point <I>a</I>.
+<BR>
+On a par d&#233;finition :
+<P><!-- MATH
+ \begin{displaymath}
+Ei(x)=\int_{t=-\infty}^x\frac{\exp(t)}{t} dt
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>Ei</I>(<I>x</I>) = <IMG
+ WIDTH="54" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.png"
+ ALT="$\displaystyle \int_{{t=-\infty}}^{x}$"><IMG
+ WIDTH="55" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.png"
+ ALT="$\displaystyle {\frac{{\exp(t)}}{{t}}}$"><I>dt</I>
+</DIV><P></P>
+Pour <I>x</I> &gt; 0, on prolonge par la valeur principale de l'int&#233;grale
+(les morceaux en 0<SUP>-</SUP> et 0<SUP>+</SUP> se compensent).
+On a : 
+<P><!-- MATH
+ \begin{displaymath}
+Ei(0)=-\infty, \quad Ei(-\infty)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>Ei</I>(0) = - <IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$\displaystyle \infty$">,&nbsp;&nbsp;&nbsp;&nbsp;<I>Ei</I>(- <IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$\displaystyle \infty$">) = 0
+</DIV><P></P>
+Lorsque l'on est proche de <I>x</I> = 0 on sait que&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+\frac{\exp(x)}{x}=\frac{1}{x}+1+\frac{x}{2!}+\frac{x^2}{3!}+...+\frac{x^n}{(n-1)!}....
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="59" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.png"
+ ALT="$\displaystyle {\frac{{\exp(x)}}{{x}}}$"> = <IMG
+ WIDTH="18" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.png"
+ ALT="$\displaystyle {\frac{{1}}{{x}}}$"> +1 + <IMG
+ WIDTH="22" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.png"
+ ALT="$\displaystyle {\frac{{x}}{{2!}}}$"> + <IMG
+ WIDTH="26" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="$\displaystyle {\frac{{x^2}}{{3!}}}$"> + ... + <IMG
+ WIDTH="67" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.png"
+ ALT="$\displaystyle {\frac{{x^n}}{{(n-1)!}}}$">....
+</DIV><P></P>
+on a donc, avec <!-- MATH
+ $\gamma=0.59...$
+ -->
+<IMG
+ WIDTH="14" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.png"
+ ALT="$ \gamma$"> = 0.59... est la constante d'Euler&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+Ei(x)=\ln(-x)+\gamma + x+\frac{x^2}{2.2!}+\frac{x^3}{3.3!}+...
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>Ei</I>(<I>x</I>) = ln(- <I>x</I>) + <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$\displaystyle \gamma$"> + <I>x</I> + <IMG
+ WIDTH="35" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$\displaystyle {\frac{{x^2}}{{2.2!}}}$"> + <IMG
+ WIDTH="36" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.png"
+ ALT="$\displaystyle {\frac{{x^3}}{{3.3!}}}$"> + ...
+</DIV><P></P>
+sauf sur l'axe <I>x</I> &gt; 0 o&#249; on prend ln(<I>x</I>) 
+(la fonction est discontinue sur <!-- MATH
+ ${\mathbb{R}}^+$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>+</SUP>).
+
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Ei(1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.89511781636</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Ei(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-0.219383934396</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Ei(1.)-Ei(-1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2.11450175075</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>int((exp(x)-1)/x,x=-1..1.)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2.11450175075</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6914"
+  HREF="node272.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6908"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6902"
+  HREF="node270.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6910"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6912"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6915"
+  HREF="node272.html">La fonction cosinus integral</A>
+<B> monter:</B> <A NAME="tex2html6909"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6903"
+  HREF="node270.html">La fonction racine n-i&#232;me</A>
+ &nbsp; <B>  <A NAME="tex2html6911"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6913"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

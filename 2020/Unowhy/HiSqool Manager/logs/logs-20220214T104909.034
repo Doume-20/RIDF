@@ -1,0 +1,102 @@
+2022-02-14 11:48:44 [5360] INFO [JS] Running installer... +1ms
+2022-02-14 10:48:44.512: 2022-02-14 11:48:44 [5360] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +518ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +0ms
+2022-02-14 10:48:45.043: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.059: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +124ms
+2022-02-14 10:48:45.168: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.168: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +1ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +1ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +1ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels: context.platform==='win32' +1ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +0ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +0ms
+2022-02-14 10:48:45.184: 2022-02-14 11:48:45 [5360] INFO [DeviceConfigurationService]   => result: false +0ms
+2022-02-14 10:48:55.721: 2022-02-14 11:48:55 [5360] INFO [CleanerService] Received payload list: 111, 170, 173, 130, 358, 360, 359, 179, 394, 280, 457, 271, 279, 521 +10534ms
+2022-02-14 10:48:55.724: 2022-02-14 11:48:55 [5360] INFO [CleanerService] Current payload list: 111, 130, 170, 173, 179, 271, 279, 280, 358, 359, 360, 394, 433, 457, 521 +4ms
+2022-02-14 10:48:55.724: 2022-02-14 11:48:55 [5360] INFO [CleanerService] Payloads to delete: 433 +0ms
+2022-02-14 10:48:55.724: 2022-02-14 11:48:55 [5360] INFO [CleanerService] Deleting unused payload: 433... +1ms
+2022-02-14 10:49:08.831: 2022-02-14 11:49:08 [5360] INFO [JS] Install Result: 0 +13106ms
+2022-02-14 10:49:08.833: 2022-02-14 11:49:08 [5360] INFO [JS] Install Stdout: 
+2022-02-14 10:49:08.833: 
+2022-02-14 10:49:08.833: IsInstalled     : False
+2022-02-14 10:49:08.833: PackageID       : 52191d55-a6aa-4d53-9830-fded6eb78582
+2022-02-14 10:49:08.833: PackageName     : Microsoft_Office
+2022-02-14 10:49:08.833: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg
+2022-02-14 10:49:08.833: Description     : 
+2022-02-14 10:49:08.833: Rank            : 0
+2022-02-14 10:49:08.833: Altitude        : 5000
+2022-02-14 10:49:08.833: Version         : 1.0
+2022-02-14 10:49:08.833: OwnerType       : ITAdmin
+2022-02-14 10:49:08.833: Notes           : 
+2022-02-14 10:49:08.833: LastInstallTime : 14/02/2022 11:48:35
+2022-02-14 10:49:08.833: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2022-02-14 10:49:08.833:                   	Category:Content
+2022-02-14 10:49:08.833:                   	LastResult:Success
+2022-02-14 10:49:08.833:                   	Message:Provisioning succeeded
+2022-02-14 10:49:08.833:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:49:08.833:                   
+2022-02-14 10:49:08.833:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2022-02-14 10:49:08.833:                   	Category:Content
+2022-02-14 10:49:08.833:                   	LastResult:Success
+2022-02-14 10:49:08.833:                   	Message:Provisioning succeeded
+2022-02-14 10:49:08.833:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:49:08.833:                   
+2022-02-14 10:49:08.833:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2022-02-14 10:49:08.833:                   	Category:Content
+2022-02-14 10:49:08.833:                   	LastResult:Success
+2022-02-14 10:49:08.833:                   	Message:Provisioning succeeded
+2022-02-14 10:49:08.833:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:49:08.833:                   
+2022-02-14 10:49:08.833:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2022-02-14 10:49:08.833:                   	Category:Content
+2022-02-14 10:49:08.833:                   	LastResult:Success
+2022-02-14 10:49:08.833:                   	Message:Provisioning succeeded
+2022-02-14 10:49:08.833:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:49:08.833:                   
+2022-02-14 10:49:08.833:                   4__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2022-02-14 10:49:08.833:                   	Category:Scripts
+2022-02-14 10:49:08.833:                   	LastResult:Success
+2022-02-14 10:49:08.833:                   	Message:Provisioning succeeded
+2022-02-14 10:49:08.833:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:49:08.833:                   
+2022-02-14 10:49:08.833:                   
+2022-02-14 10:49:08.833: 
+2022-02-14 10:49:08.833: 
+2022-02-14 10:49:08.833:  +0ms
+2022-02-14 10:49:08.833: 2022-02-14 11:49:08 [5360] INFO [JS] Install Stderr:  +1ms
+2022-02-14 10:49:08.833: 2022-02-14 11:49:08 [5360] INFO [JS] Finishing Installation +1ms
+2022-02-14 10:49:08.833: 2022-02-14 11:49:08 [5360] INFO [Runner] Running result: true +1ms
+2022-02-14 10:49:08.833: 2022-02-14 11:49:08 [5360] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +2ms
+2022-02-14 10:49:08.842: 2022-02-14 11:49:08 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2022-02-14 10:49:08.854: 2022-02-14 11:49:08 [5360] INFO [Runner] Creating configuration unit runner object... +12ms
+2022-02-14 10:49:08.854: 2022-02-14 11:49:08 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-14 10:49:08.854: 2022-02-14 11:49:08 [5360] INFO [JS] Checking that the unit needs to be performed +2ms
+2022-02-14 10:49:09.026: 2022-02-14 11:49:09 [5360] INFO [JS] Result: 2 +176ms
+2022-02-14 10:49:09.034: 2022-02-14 11:49:09 [5360] INFO [JS] Stdout: Current logged in user: @{Username=AzureAD\paulpeyrot}
+2022-02-14 10:49:09.034: Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583
+2022-02-14 10:49:09.034: Custom shell enabled: False
+2022-02-14 10:49:09.034: Custom shell command:  +1ms
+2022-02-14 10:49:09.034: 2022-02-14 11:49:09 [5360] INFO [JS] Stderr: #< CLIXML

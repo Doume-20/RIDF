@@ -1,0 +1,58 @@
+2021-10-21 20:05:47.795: 2021-10-21 22:05:47 [11080] INFO [NestFactory] Starting Nest application...
+2021-10-21 20:05:47.904: 2021-10-21 22:05:47 [11080] INFO [ConfigurationService] Application data folder: C:\Program Files\Unowhy\HiSqool Manager\data +106ms
+2021-10-21 20:05:47.904: 2021-10-21 22:05:47 [11080] INFO [ConfigurationService] User data folder: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +1ms
+2021-10-21 20:05:47.920: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] HttpModule dependencies initialized +7ms
+2021-10-21 20:05:47.920: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] ConfigurationModule dependencies initialized +1ms
+2021-10-21 20:05:47.920: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] CommonModule dependencies initialized +6ms
+2021-10-21 20:05:47.920: 2021-10-21 22:05:47 [11080] INFO [CleanerService] Starting cleaning service... +3ms
+2021-10-21 20:05:47.920: 2021-10-21 22:05:47 [11080] INFO [CommandService] Connecting to MQTT... +2ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] DeviceConfigurationModule dependencies initialized +3ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] CleanerModule dependencies initialized +1ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] MqttModule dependencies initialized +2ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] WatcherModule dependencies initialized +0ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] SchedulerModule dependencies initialized +0ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] PayloadModule dependencies initialized +1ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] ScriptorModule dependencies initialized +1ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] GlobalModule dependencies initialized +6ms
+2021-10-21 20:05:47.935: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] AppModule dependencies initialized +1ms
+2021-10-21 20:05:47.951: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] CommandModule dependencies initialized +2ms
+2021-10-21 20:05:47.951: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] DeviceFactsModule dependencies initialized +1ms
+2021-10-21 20:05:47.951: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] ExecutorModule dependencies initialized +2ms
+2021-10-21 20:05:47.998: 2021-10-21 22:05:47 [11080] INFO [InstanceLoader] InstallerModule dependencies initialized +57ms
+2021-10-21 20:05:59.444: 2021-10-21 22:05:59 [11080] INFO [InstanceLoader] DeviceInformationModule dependencies initialized +11433ms
+2021-10-21 20:05:59.522: 2021-10-21 22:05:59 [11080] INFO [HiSqoolManager] Starting HiSqool Manager false +78ms
+2021-10-21 20:05:59.522: 2021-10-21 22:05:59 [11080] INFO [ConfigurationService] Configuration file is C:\snapshot\hisqool\front\hisqoolmanager\config\idf.json +2ms
+2021-10-21 20:06:00.256: 2021-10-21 22:06:00 [11080] INFO [HiSqoolManager] Listening on port 7654... +744ms
+2021-10-21 20:06:00.256: 2021-10-21 22:06:00 [11080] INFO [DeviceConfigurationService] Starting with saved configuration +1ms
+2021-10-21 20:06:00.271: 2021-10-21 22:06:00 [11080] INFO [DeviceConfigurationService] Emitting configuration with 14 units +2ms
+2021-10-21 20:06:00.271: 2021-10-21 22:06:00 [11080] INFO [PayloadDispatcher] Got 14 payloads of which 14 are valid +1ms
+2021-10-21 20:06:00.271: 2021-10-21 22:06:00 [11080] INFO [PayloadDispatcher] Got 14 items. 14 in, 0 out +1ms
+2021-10-21 20:06:00.287: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] AppController {}: +21ms
+2021-10-21 20:06:00.287: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {, GET} route +2ms
+2021-10-21 20:06:00.287: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/halamadridynadamas, GET} route +1ms
+2021-10-21 20:06:00.287: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/stop, GET} route +2ms
+2021-10-21 20:06:00.287: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] MqttController {/mqtt}: +1ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/mqtt, GET} route +2ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/mqtt/topic/*, GET} route +2ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/mqtt/restart, GET} route +2ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] WatcherController {/watcher}: +1ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/watcher, GET} route +1ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/watcher/payloads, GET} route +2ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/watcher/payloads/:id, GET} route +2ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/watcher/payloads/:id/restart, GET} route +1ms
+2021-10-21 20:06:00.303: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/watcher/configuration/*, GET} route +2ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/watcher/restart/*, GET} route +23ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] DeviceConfigurationController {/device-configuration}: +0ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/device-configuration, GET} route +2ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] DeviceInformationController {/device-information}: +1ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/device-information, GET} route +1ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] CommandController {/commands}: +1ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/commands, POST} route +2ms
+2021-10-21 20:06:00.334: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] ExecutorController {/executor}: +1ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/executor, GET} route +2ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/executor/event, POST} route +2ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RoutesResolver] DeviceFactsController {/facts}: +1ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/facts, GET} route +2ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/facts/delete/:name, GET} route +1ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/facts/all, GET} route +2ms
+2021-10-21 20:06:00.350: 2021-10-21 22:06:00 [11080] INFO [RouterExplorer] Mapped {/facts/:name, GET} route +1ms

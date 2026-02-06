@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Densit&#233; de probabilit&#233; de la loi du : chisquare</TITLE>
+<META NAME="description" CONTENT="Densit&#233; de probabilit&#233; de la loi du : chisquare">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node827.html">
+<LINK REL="previous" HREF="node825.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node827.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15158"
+  HREF="node827.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15152"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15146"
+  HREF="node825.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15154"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15156"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15159"
+  HREF="node827.html">Fonction de r&#233;partition de</A>
+<B> monter:</B> <A NAME="tex2html15153"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15147"
+  HREF="node825.html">Compl&#233;ment &#224; 1 de</A>
+ &nbsp; <B>  <A NAME="tex2html15155"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15157"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010415000000000000000"></A><A NAME="21584"></A>
+<BR>
+Densit&#233; de probabilit&#233; de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare</TT>
+</H2>
+<TT>chisquare(n,x)</TT> est la densit&#233; de probabilit&#233; de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> ayant <I>n</I> degr&#233;s de libert&#233;.
+<BR> <TT>chisquare(n,x)</TT>, est &#233;gale &#224; 
+<!-- MATH
+ $\displaystyle  \frac{1}{2^{\frac{n}{2}}\Gamma(\frac{n}{2})} x^{\frac{n}{2}-1}e^{-\frac{x}{2}}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img567.png"
+ ALT="$\displaystyle {\frac{{1}}{{2^{\frac{n}{2}}\Gamma(\frac{n}{2})}}}$"><I>x</I><SUP><IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img568.png"
+ ALT="$\scriptstyle {\frac{{n}}{{2}}}$">-1</SUP><I>e</I><SUP>-<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img569.png"
+ ALT="$\scriptstyle {\frac{{x}}{{2}}}$"></SUP> o&#249; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$"> est d&#233;finie pour <I>x</I> &gt; 0 par 
+<!-- MATH
+ $\Gamma(x)=\int_0^\infty e^{-t}t^{x-1} dt$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$">(<I>x</I>) = <IMG
+ WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$ \int_{0}^{\infty}$"><I>e</I><SUP>-t</SUP><I>t</I><SUP>x-1</SUP><I>dt</I>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>chisquare(5,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(2)*2*exp(-1)/(Gamma(5/2)*sqrt(2)*2<code>^</code>2)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(chisquare(5,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.138369165807</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

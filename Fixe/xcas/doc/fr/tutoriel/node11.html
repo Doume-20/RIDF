@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions</TITLE>
+<META NAME="description" CONTENT="Les fonctions">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html216"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html210"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html204"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html212"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html214"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html217"
+  HREF="node12.html">Listes, s&#233;quences, ensembles</A>
+<B> monter:</B> <A NAME="tex2html211"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html205"
+  HREF="node10.html">D&#233;velopper et simplifier</A>
+ &nbsp; <B>  <A NAME="tex2html213"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html215"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00026000000000000000">
+Les fonctions</A>
+</H2>
+De nombreuses fonctions sont d&#233;j&#224; d&#233;finies dans <TT>Xcas</TT>, en
+particulier les fonctions classiques. Les plus courantes figurent dans
+le tableau ci-apr&#232;s; pour les autres, voir le menu <code>Cmds-&gt;Réel-&gt;Special</code>.
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Fonctions classiques</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>abs</code></TD>
+<TD ALIGN="LEFT">valeur absolue</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sign</code></TD>
+<TD ALIGN="LEFT">signe (-1,0,+1)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>max</code></TD>
+<TD ALIGN="LEFT">maximum</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>min</code></TD>
+<TD ALIGN="LEFT">minimum</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>round</code></TD>
+<TD ALIGN="LEFT">arrondi</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>floor</code></TD>
+<TD ALIGN="LEFT">partie enti&#232;re (plus grand entier <IMG
+ WIDTH="17" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \leq$">)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>frac</code></TD>
+<TD ALIGN="LEFT">partie fractionnaire</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ceil</code></TD>
+<TD ALIGN="LEFT">plus petit entier <IMG
+ WIDTH="17" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \geq$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>re</code></TD>
+<TD ALIGN="LEFT">partie réelle</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>im</code></TD>
+<TD ALIGN="LEFT">partie imaginaire</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>abs</code></TD>
+<TD ALIGN="LEFT">module</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>arg</code></TD>
+<TD ALIGN="LEFT">argument</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>conj</code></TD>
+<TD ALIGN="LEFT">conjugu&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>affixe</code></TD>
+<TD ALIGN="LEFT">affixe</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>coordonees</code></TD>
+<TD ALIGN="LEFT">coordonn&#233;es</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>factorial ou !</code></TD>
+<TD ALIGN="LEFT">factorielle</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sqrt</code></TD>
+<TD ALIGN="LEFT">racine carr&#233;e</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>exp</code></TD>
+<TD ALIGN="LEFT">exponentielle</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>log</code></TD>
+<TD ALIGN="LEFT">logarithme naturel</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ln</code></TD>
+<TD ALIGN="LEFT">logarithme naturel</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>log10</code></TD>
+<TD ALIGN="LEFT">logarithme en base 10</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sin</code></TD>
+<TD ALIGN="LEFT">sinus</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cos</code></TD>
+<TD ALIGN="LEFT">cosinus</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tan</code></TD>
+<TD ALIGN="LEFT">tangente</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cot</code></TD>
+<TD ALIGN="LEFT">cotangente</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>asin</code></TD>
+<TD ALIGN="LEFT">arc sinus</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>acos</code></TD>
+<TD ALIGN="LEFT">arc cosinus</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>atan</code></TD>
+<TD ALIGN="LEFT">arc tangente</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sinh</code></TD>
+<TD ALIGN="LEFT">sinus hyperbolique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cosh</code></TD>
+<TD ALIGN="LEFT">cosinus hyperbolique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tanh</code></TD>
+<TD ALIGN="LEFT">tangente hyperbolique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>asinh</code></TD>
+<TD ALIGN="LEFT">argument sinus hyperbolique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>acosh</code></TD>
+<TD ALIGN="LEFT">argument cosinus hyperbolique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>atanh</code></TD>
+<TD ALIGN="LEFT">argument tangente hyperbolique</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1588"></A>
+<A NAME="220"></A>
+<A NAME="1589"></A>
+<A NAME="222"></A>
+<A NAME="1590"></A>
+<A NAME="224"></A>
+<A NAME="1591"></A>
+<A NAME="226"></A>
+<A NAME="1592"></A>
+<A NAME="228"></A>
+<A NAME="1593"></A>
+<A NAME="1594"></A>
+<A NAME="231"></A>
+<A NAME="1595"></A>
+<A NAME="233"></A>
+<A NAME="1596"></A>
+<A NAME="235"></A>
+<A NAME="1597"></A>
+<A NAME="237"></A>
+<A NAME="1598"></A>
+<A NAME="239"></A>
+<A NAME="1599"></A>
+<A NAME="241"></A>
+<A NAME="1600"></A>
+<A NAME="243"></A>
+<A NAME="1601"></A>
+<A NAME="245"></A>
+<A NAME="1602"></A>
+<A NAME="247"></A>
+<A NAME="1603"></A>
+<A NAME="1604"></A>
+<A NAME="1605"></A>
+<A NAME="251"></A>
+<A NAME="252"></A>
+<A NAME="1606"></A>
+<A NAME="1607"></A>
+<A NAME="255"></A>
+<A NAME="1608"></A>
+<A NAME="257"></A>
+<A NAME="1609"></A>
+<A NAME="259"></A>
+<A NAME="1610"></A>
+<A NAME="261"></A>
+<A NAME="1611"></A>
+<A NAME="263"></A>
+<A NAME="1612"></A>
+<A NAME="265"></A>
+<A NAME="1613"></A>
+<A NAME="267"></A>
+<A NAME="1614"></A>
+<A NAME="269"></A>
+<A NAME="1615"></A>
+<A NAME="271"></A>
+<A NAME="1616"></A>
+<A NAME="273"></A>
+<A NAME="1617"></A>
+<A NAME="275"></A>
+<A NAME="1618"></A>
+<A NAME="277"></A>
+<A NAME="1619"></A>
+<A NAME="279"></A>
+Pour cr&#233;er une nouvelle fonction, il faut la d&#233;clarer &#224; l'aide 
+d'une expression contenant la variable. 
+Par exemple l'expression <I>x</I><SUP>2</SUP> - 1 est 
+d&#233;finie par <code>x^2-1</code>. Pour la transformer en la fonction <I>f</I> qui
+&#224; <I>x</I> associe <I>x</I><SUP>2</SUP> - 1, trois possibilit&#233;s existent&nbsp;:
+<PRE>
+f(x):= x^2-1
+f:=x-&gt;x^2-1
+f:=unapply(x^2-1,x)
+
+f(2); 
+f(a^2);
+</PRE>
+<A NAME="282"></A>
+<A NAME="283"></A>
+<A NAME="284"></A>
+<A NAME="1620"></A>
+Si <code>f</code> est une fonction d'une variable et <code>E</code> est une
+expression, <code>f(E)</code> est une autre expression.
+Il est essentiel de ne pas confondre fonction et expression.
+Si on d&#233;finit : <code>E:=x^2-1</code>, alors la variable <code>E</code> 
+contient l'expression <I>x</I><SUP>2</SUP> - 1. Pour avoir la valeur de cette
+expression en <I>x</I> = 2 il faut 
+&#233;crire <code>subst(E,x=2)</code> et non <code>E(2)</code>
+car <code>E</code> n'est pas une fonction.
+Lorsqu'on d&#233;finit une fonction,
+le membre de droite de l'affectation n'est pas &#233;valu&#233;.
+Ainsi l'&#233;criture <code>E:=x^2-1; f(x):=E</code>
+d&#233;finit la fonction <!-- MATH
+ $f: x \mapsto E$
+ -->
+<I>f</I> : <I>x</I> <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ \mapsto$"> <I>E</I> car <code>E</code> n'est pas évalué.
+Par contre <code>E:= x^2-1; f:=unapply(E,x)</code> d&#233;finit bien la
+fonction <!-- MATH
+ $f: x\mapsto x^2-1$
+ -->
+<I>f</I> : <I>x</I> <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ \mapsto$"> <I>x</I><SUP>2</SUP> - 1 car <code>E</code> est évalué.
+
+<P>
+<A NAME="286"></A>
+<A NAME="287"></A>
+On peut ajouter et multiplier des fonctions,
+par exemple <code>f:=sin*exp</code>. Pour composer des fonctions, on utilise 
+l'op&#233;rateur <code>@</code> et pour composer plusieurs fois une fonction 
+avec elle-m&#234;me, on utilise l'op&#233;rateur <code>@@</code>.
+<PRE>
+f:=x-&gt;x^2-1;
+(f@f)(2);
+(f@sqrt)(a);
+f1:=f@sin
+f2:=f@f
+f3:=f@@3
+f1(a)
+f2(a)
+f3(a)
+</PRE> 
+On peut d&#233;finir des fonctions de plusieurs variables &#224; valeurs dans 
+<IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$"> comme :
+<BR><code>f(x,y):=x+2*y</code> 
+<BR>
+et des fonctions de plusieurs variables &#224; valeurs dans <!-- MATH
+ $\mathbb R^p$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$"><SUP>p</SUP>
+par exemple :
+<BR><code>f(x,y):=(x+2*y,x-y)</code> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html216"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html210"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html204"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html212"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html214"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html217"
+  HREF="node12.html">Listes, s&#233;quences, ensembles</A>
+<B> monter:</B> <A NAME="tex2html211"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html205"
+  HREF="node10.html">D&#233;velopper et simplifier</A>
+ &nbsp; <B>  <A NAME="tex2html213"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html215"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

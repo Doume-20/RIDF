@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Polyn&#244;me de Tchebychev de 2-i&#232;me esp&#232;ce : tchebyshev2</TITLE>
+<META NAME="description" CONTENT="Polyn&#244;me de Tchebychev de 2-i&#232;me esp&#232;ce : tchebyshev2">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node486.html">
+<LINK REL="up" HREF="node482.html">
+<LINK REL="next" HREF="node488.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10093"
+  HREF="node488.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10087"
+  HREF="node482.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10083"
+  HREF="node486.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10089"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10091"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10094"
+  HREF="node488.html">Base et r&#233;duction de</A>
+<B> monter:</B> <A NAME="tex2html10088"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10084"
+  HREF="node486.html">Polyn&#244;me de Tchebychev de</A>
+ &nbsp; <B>  <A NAME="tex2html10090"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10092"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009275000000000000000"></A><A NAME="12627"></A>
+<BR>
+Polyn&#244;me de Tchebychev de 2-i&#232;me esp&#232;ce : <TT>tchebyshev2</TT>
+</H2>
+<TT>tchebyshev2</TT> a comme argument un entier <I>n</I> et eventuellement le 
+nom de la variable (<I>x</I> par d&#233;faut).
+<BR><TT>tchebyshev2</TT> renvoie le polyn&#244;me de Tchebychev de seconde esp&#232;ce,
+de degr&#233; <I>n</I>, not&#233; <I>U</I>(<I>n</I>, <I>x</I>).
+<BR>
+On a :
+<P><!-- MATH
+ \begin{displaymath}
+U(n,x)=\frac{\sin((n+1).\arccos(x))}{\sin(\arccos(x))}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>U</I>(<I>n</I>, <I>x</I>) = <IMG
+ WIDTH="175" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img383.png"
+ ALT="$\displaystyle {\frac{{\sin((n+1).\arccos(x))}}{{\sin(\arccos(x))}}}$">
+</DIV><P></P>
+<BR>
+ou encore
+<P><!-- MATH
+ \begin{displaymath}
+\sin((n+1)x)=\sin(x)*U(n,\cos(x))
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+sin((<I>n</I> + 1)<I>x</I>) = sin(<I>x</I>)*<I>U</I>(<I>n</I>, cos(<I>x</I>))
+</DIV><P></P> 
+<I>U</I>(<I>n</I>, <I>x</I>) v&#233;rifie les relations :
+<BR><I>U</I>(0, <I>x</I>) = 1
+<BR><I>U</I>(1, <I>x</I>) = 2<I>x</I>
+<BR><!-- MATH
+ $U(n,x)=2xU(n-1,x)-U(n-2,x)$
+ -->
+<I>U</I>(<I>n</I>, <I>x</I>) = 2<I>xU</I>(<I>n</I> - 1, <I>x</I>) - <I>U</I>(<I>n</I> - 2, <I>x</I>)
+<BR>
+Les polyn&#244;mes <I>U</I>(<I>n</I>, <I>x</I>) sont orthogonaux pour le produit scalaire :
+<BR><!-- MATH
+ $<f,g>=\int_{-1}^{+1}f(x)g(x)\sqrt{1-x^2}dx$
+ -->
+&lt; <I>f</I>, <I>g</I> &gt; = <IMG
+ WIDTH="34" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img377.png"
+ ALT="$ \int_{{-1}}^{{+1}}$"><I>f</I> (<I>x</I>)<I>g</I>(<I>x</I>)<IMG
+ WIDTH="67" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img384.png"
+ ALT="$ \sqrt{{1-x^2}}$"><I>dx</I> 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tchebyshev2(3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>8*x<code>^</code>3+-4*x</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tchebyshev2(3,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>8*y<code>^</code>3+-4*y</TT>
+</DIV>
+en effet :
+<BR><!-- MATH
+ $\sin(4.x)=\sin(x)*(8*\cos(x)^3-4.\cos(x))=\sin(x)*U(3,\cos(x))$
+ -->
+sin(4.<I>x</I>) = sin(<I>x</I>)*(8*cos(<I>x</I>)<SUP>3</SUP> -4.cos(<I>x</I>)) = sin(<I>x</I>)*<I>U</I>(3, cos(<I>x</I>)).
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

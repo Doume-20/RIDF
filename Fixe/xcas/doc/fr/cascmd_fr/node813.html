@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fonction de r&#233;partition de la loi binomiale : binomial_cdf</TITLE>
+<META NAME="description" CONTENT="Fonction de r&#233;partition de la loi binomiale : binomial_cdf">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node814.html">
+<LINK REL="previous" HREF="node812.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node814.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14976"
+  HREF="node814.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14970"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14964"
+  HREF="node812.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14972"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14974"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14977"
+  HREF="node814.html">Fonction de r&#233;partition inverse</A>
+<B> monter:</B> <A NAME="tex2html14971"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14965"
+  HREF="node812.html">Probabilit&#233; que X &#233;gale</A>
+ &nbsp; <B>  <A NAME="tex2html14973"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14975"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001042000000000000000"></A><A NAME="21335"></A>
+<BR>
+Fonction de r&#233;partition de la loi  binomiale : <TT>binomial_cdf</TT>
+</H2>
+Lorsqu'une variable al&#233;atoire <I>X</I> suit une loi binomiale  <!-- MATH
+ $\mathcal{B}(n,p)$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \mathcal {B}$">(<I>n</I>, <I>p</I>),
+on a : 
+<BR><TT>binomial_cdf(n,p,x)</TT>=<!-- MATH
+ $Proba(X \leq x)$
+ -->
+<I>Proba</I>(<I>X</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>x</I>)= 
+<BR><TT>binomial(n,0,p)+...+binomial(n,floor(x),p)</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>binomial_cdf(4,0.5,2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.6875</TT>
+</DIV>
+On peut v&#233;rifier que :
+<DIV ALIGN="CENTER">
+<TT>binomial(4,0,0.5)+binomial(4,1,0.5)+binomial(4,2,0.5)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>=0.6875</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>binomial_cdf(2,0.3,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.91</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,45 @@
+rabin(n):={
+//teste par la methode de rabin si n est pseudo-premier
+local k,j,p;
+j:=1;
+p:=1;
+while ((p==1) and (j<20)) {
+k:=2+rand(n-2);
+p:=powmod(k,n-1,n);
+j:=j+1;
+}
+if (p==1) {
+return(true);
+} 
+return(false);
+};
+miller(n):={
+local p,q,t,c,a,b,ex;
+if (n==2){return(true);}
+if (irem(n,2)==0) {return(false);}
+q:=n-1;
+t:=0;
+while (irem(q,2)==0) {
+t:=t+1;
+q:=iquo(q,2);
+}
+//ainsi n-1=q*2^t
+c:=20;
+p:=true;
+while ((c>0) and p) {
+//rand(k) renvoie un nombre entier de [0,k-1] si k<999999999
+if (n<=10^9) {a:=2+rand(n-2);} else {a:=2+rand(999999999);}
+ex:=0;
+b:=powmod(a,q,n);
+//si b!=1 on regarde si b^{2^e}=-1 mod n (e=0..t-1) 
+if (b!=1) {
+while ((b!=1) and (b!=n-1) and (ex<=t-2)) {
+b:=powmod(b,2,n);
+ex:=ex+1;}
+//si b!=n-1 c'est que n n'est pas premier
+if (b!=n-1) {p:=false;}
+}
+c:=c-1;
+}
+return(p);
+};

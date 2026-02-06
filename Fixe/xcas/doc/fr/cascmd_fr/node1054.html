@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le triangle isoc&#232;le dans l'espace : isoceles_triangle triangle_isocele</TITLE>
+<META NAME="description" CONTENT="Le triangle isoc&#232;le dans l'espace : isoceles_triangle triangle_isocele">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1055.html">
+<LINK REL="previous" HREF="node1053.html">
+<LINK REL="up" HREF="node1052.html">
+<LINK REL="next" HREF="node1055.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18784"
+  HREF="node1055.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18778"
+  HREF="node1052.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18772"
+  HREF="node1053.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18780"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18782"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18785"
+  HREF="node1055.html">Le triangle rectangle dans</A>
+<B> monter:</B> <A NAME="tex2html18779"
+  HREF="node1052.html">Les triangles dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18773"
+  HREF="node1053.html">Le triangle quelconque dans</A>
+ &nbsp; <B>  <A NAME="tex2html18781"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18783"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001362000000000000000"></A><A NAME="27349"></A><A NAME="27350"></A><A NAME="sec:triangleiso3"></A>
+<BR>
+Le triangle isoc&#232;le dans l'espace : <TT>isoceles_triangle triangle_isocele</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node945.html#sec:triangleiso2">9.11.3</A>  pour la g&#233;om&#233;trie plane.
+<BR><TT>triangle_isocele</TT>, en g&#233;om&#233;trie 3D, a trois ou quatre 
+arguments.
+<BR>
+Description des arguments :
+<BR>- si il a trois arguments, ce sont : 3 points (les 2 premiers sommets <I>A</I> et
+ <I>B</I> du triangle) et le troisi&#232;me argument est soit un point <I>P</I>, soit une 
+liste form&#233;e par un point <I>P</I> et un r&#233;el <I>c</I> qui d&#233;signe la mesure en 
+radians (ou en degr&#233;s) de l'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})$
+ -->
+(<IMG
+ WIDTH="73" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img583.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})$">, l'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+(<IMG
+ WIDTH="73" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AP})$"> &#233;tant positif.
+<BR>
+Le point <I>P</I> d&#233;finit le plan du triangle 
+ainsi que l'orientation de ce plan pour que l'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+(<IMG
+ WIDTH="73" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AP})$"> soit positif.
+<BR><TT>triangle_isocele(A,B,P)</TT> renvoie et trace dans le plan <I>ABP</I> orient&#233; 
+par <I>P</I> (l'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+(<IMG
+ WIDTH="73" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AP})$"> est positif)
+le triangle <I>ABC</I> isoc&#232;le de sommet <I>A</I> (<I>AB</I> = <I>AC</I>) et tel que l'angle 
+<!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})=(\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+(<IMG
+ WIDTH="171" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img607.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})=(\overrightarrow{AB},\overrightarrow{AP})$">, sans d&#233;finir le point <I>C</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>P:=point(0,0,3)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>triangle_isocele(A,B,P)</TT>
+</DIV>
+
+<P>
+<DIV ALIGN="CENTER">
+<TT>Dans le plan ABP, le triangle isoc&#233;le de sommets AB, d'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})=(\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+(<IMG
+ WIDTH="171" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img607.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})=(\overrightarrow{AB},\overrightarrow{AP})$"></TT>
+</DIV>
+
+<P>
+<TT>triangle_isocele(A,B,[P,c])</TT> renvoie et trace dans le plan <I>ABP</I> 
+orient&#233; par <I>P</I> (l'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+(<IMG
+ WIDTH="73" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AP})$"> est positif) le triangle <I>ABC</I> isoc&#232;le de sommet <I>A</I> (<I>AB</I> = <I>AC</I>) et tel que l'angle 
+<!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})=c$
+ -->
+(<IMG
+ WIDTH="104" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img584.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})=c$"> radians (ou degr&#233;s), sans 
+d&#233;finir le point <I>C</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>P:=point(0,0,3)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>triangle_isocele(A,B,[P,3*pi/4])</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Dans le plan ABP, le triangle isoc&#233;le de sommets AB, 
+d'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})=3*pi/4$
+ -->
+(<IMG
+ WIDTH="154" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})=3*pi/4$"></TT>
+</DIV>
+- si il a quatre arguments, le dernier argument est le nom d'une 
+variable qui servira &#224; d&#233;finir le troisi&#232;me sommet.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>triangle_isocele(A,B,[P,3*pi/4],C)</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Dans le plan ABP, le triangle isoc&#233;le de sommets AB, d'angle <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AC})=3*pi/4$
+ -->
+(<IMG
+ WIDTH="154" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AC})=3*pi/4$"></TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>simplify(coordonnees(C))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-3*sqrt(2)-3)/2,(-3*sqrt(2)-3)/2,(-3*sqrt(2)+6)/2]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18784"
+  HREF="node1055.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18778"
+  HREF="node1052.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18772"
+  HREF="node1053.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18780"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18782"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18785"
+  HREF="node1055.html">Le triangle rectangle dans</A>
+<B> monter:</B> <A NAME="tex2html18779"
+  HREF="node1052.html">Les triangles dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18773"
+  HREF="node1053.html">Le triangle quelconque dans</A>
+ &nbsp; <B>  <A NAME="tex2html18781"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18783"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

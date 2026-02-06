@@ -1,0 +1,375 @@
+{
+  "aconf/application/windows/cplusplusruntime": {
+    "description": "Microsoft Visual C++ 2015-2019 Redistributable x64 14.29.30133",
+    "payload": {
+      "id": 320,
+      "name": "Cpp-Runtime 14.29.30133 (Windows)",
+      "description": "Visual C++ runtime 14.29.30133",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar",
+      "size": 24943789,
+      "digest": "MD5:0780ddd82e1ad3043ab8c52a3d8afa23",
+      "metadata": {
+        "software": {
+          "id": "Cpp-Runtime",
+          "version": "14.29.30133"
+        },
+        "versionName": "14.29.30133",
+        "applicationLabel": "Visual C++ runtime"
+      }
+    },
+    "when": "context.platform === 'win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove",
+      "package_changed"
+    ]
+  },
+  "aconf/application/windows/edgeruntime": {
+    "description": "Microsoft Edge WebView2 Runtime 1.3.151.27",
+    "payload": {
+      "id": 447,
+      "name": "Edge-Webview2-Runtime (Windows)",
+      "description": "Edge WebView2 Runtime",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/microsoftedgewebview2_1.3.151.27.jar",
+      "size": 109732428,
+      "digest": "MD5:9fea7a054a1620f9ab789519ebac2b90",
+      "metadata": {
+        "software": {
+          "id": "Edge-Webview2-Runtime",
+          "version": "1.3.151.27"
+        },
+        "versionName": "1.3.151.27",
+        "applicationLabel": "Edge WebView2 Runtime"
+      }
+    },
+    "when": "context.platform === 'win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove",
+      "package_changed"
+    ]
+  },
+  "conf/agent/windows/mindviewlicense": {
+    "description": "Licence Mindview",
+    "payload": {
+      "id": 461,
+      "name": "Mind-View-Licence (Windows)",
+      "description": "Licence MindView",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/mindview-license-paq_1.0.0.jar",
+      "size": 14123,
+      "digest": "MD5:f9cde4129352f5f97c5e04aeb26f55f3",
+      "metadata": {
+        "software": {
+          "id": "Mind-View-Licence",
+          "version": "1.0"
+        },
+        "versionName": "1.0",
+        "applicationLabel": "Licence MindView"
+      }
+    },
+    "when": "context.platform === 'win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove",
+      "package_changed"
+    ],
+    "options": {
+      "LicenseId": "gar.0782540M",
+      "Operation": "install"
+    }
+  },
+  "conf/application/android/cn.wps.moffice_eng": {
+    "description": "Installation de l'application WPS",
+    "payload": {
+      "id": 57,
+      "name": "Wps (Android)",
+      "description": "WPS",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/cn.wps.moffice_eng_145.jar",
+      "size": 21831712,
+      "digest": "MD5:c8097824cd692ddbfcb24798017d425d",
+      "metadata": {
+        "software": {
+          "id": "Wps",
+          "version": "145"
+        },
+        "versionCode": 145,
+        "versionName": "9.5.1",
+        "applicationId": "cn.wps.moffice_eng",
+        "applicationLabel": "WPS"
+      }
+    },
+    "when": "context.platform==='android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/android/com.hisqool.linker.cned": {
+    "description": "Installation de l'application CNED Lyc\u00e9e Ma Classe \u00e0 la Maison Android",
+    "payload": {
+      "id": 129,
+      "name": "Unowhy-Cned (Android)",
+      "description": "CNED Lyc\u00e9e Ma Classe \u00e0 la Maison",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/com.hisqool.linker.cned_v.1.1.0_20031359.jar",
+      "size": 1834142,
+      "digest": "MD5:d3fbd946d5b51c7536fd13fb394b442b",
+      "metadata": {
+        "software": {
+          "id": "Unowhy-Cned",
+          "version": "20031359"
+        },
+        "versionCode": 20031359,
+        "versionName": "v.1.1.0",
+        "applicationId": "com.hisqool.linker.cned",
+        "applicationLabel": "CNED Lyc\u00e9e Ma Classe \u00e0 la Maison"
+      }
+    },
+    "when": "context.platform==='android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/android/com.pearltrees.android.prod": {
+    "description": "Installation de l'application Pearltrees",
+    "payload": {
+      "id": 73,
+      "name": "Pearltrees (Android)",
+      "description": "Pearltrees",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/com.pearltrees.android.prod_2765.jar",
+      "size": 19275688,
+      "digest": "MD5:d68a87aefd303e969a982311e9a21b19",
+      "metadata": {
+        "software": {
+          "id": "Pearltrees",
+          "version": "2765"
+        },
+        "versionCode": 2765,
+        "versionName": "2.4.21",
+        "applicationId": "com.pearltrees.android.prod",
+        "applicationLabel": "Pearltrees"
+      }
+    },
+    "when": "context.platform==='android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/android/com.xodo.pdf.reader": {
+    "description": "Installation de l'application Xodo PDF Reader & Editor",
+    "payload": {
+      "id": 42,
+      "name": "Xodo 204071700 (Android)",
+      "description": "Xodo PDF Reader & Editor 4.7.17",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/com.xodo.pdf.reader_204071700.jar",
+      "size": 25824796,
+      "digest": "MD5:178d23cc4b578cbb2f5dac6b9d6a9edc",
+      "metadata": {
+        "software": {
+          "id": "Xodo",
+          "version": "204071700"
+        },
+        "versionCode": 204071700,
+        "versionName": "4.7.17",
+        "applicationId": "com.xodo.pdf.reader",
+        "applicationLabel": "Xodo PDF Reader & Editor"
+      }
+    },
+    "when": "context.platform==='android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/android/org.documentfoundation.libreoffice": {
+    "description": "Installation de l'application Libre Office Viewer",
+    "payload": {
+      "id": 97,
+      "name": "Libre-Office-Viewer 14 (Android)",
+      "description": "Libre Office Viewer 6.1.0.0.alpha",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/org.documentfoundation.libreoffice_14.jar",
+      "size": 58266928,
+      "digest": "MD5:18b874ab60694a87f876fe16dbc70827",
+      "metadata": {
+        "software": {
+          "id": "Libre-Office-Viewer",
+          "version": "14"
+        },
+        "versionCode": 14,
+        "versionName": "6.1.0.0.alpha",
+        "applicationId": "org.documentfoundation.libreoffice",
+        "applicationLabel": "Libre Office Viewer"
+      }
+    },
+    "when": "context.platform==='android'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/BDnF-2019.4.2": {
+    "description": "Installation de l'application BDnF 2019.4.2",
+    "payload": {
+      "id": 201,
+      "name": "Bdnf (Windows)",
+      "description": "BDnF",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/bdnf_2019.4.2.jar",
+      "size": 99135558,
+      "digest": "MD5:1b7190732e3100fcec79220d8467023b",
+      "metadata": {
+        "software": {
+          "id": "Bdnf",
+          "version": "2019.4.2"
+        },
+        "versionName": "2019.4.2",
+        "applicationLabel": "BDnF"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/LibreOffice-7.0.5": {
+    "description": "Installation de l'application LibreOffice 7.0.5",
+    "payload": {
+      "id": 239,
+      "name": "Libre-Office 7.0.5 (Windows)",
+      "description": "LibreOffice 7.0.5",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/libreoffice_7.0.5.jar",
+      "size": 304234957,
+      "digest": "MD5:269e2a2ad5fef68465a990febd0e3437",
+      "metadata": {
+        "software": {
+          "id": "Libre-Office",
+          "version": "7.0.5"
+        },
+        "versionName": "7.0.5",
+        "applicationLabel": "LibreOffice"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/network/all/Eleves-(Rostand)": {
+    "description": "Configuration du r\u00e9seau Eleves (Rostand)",
+    "payload": {
+      "id": 17,
+      "name": "Wifi",
+      "description": "Wifi network configuration - windows only for now",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/WiFi/2.0.0/package.jar",
+      "size": 9600,
+      "digest": "MD5:4ebb263676ef9de020eac149afc9ab66",
+      "metadata": {
+        "definition": {
+          "Id": "WiFi",
+          "Name": "Configuration Wi-Fi",
+          "Level": "Configuration",
+          "Factory": {
+            "Build": {
+              "Step": "845628",
+              "Workflow": "342999"
+            },
+            "Commit": {
+              "Id": "5e911f4a57d94b3ea5e42ecd5cd1f6ecf3cc0930",
+              "Name": "master"
+            }
+          },
+          "Release": "2.0.0",
+          "Version": "2.0.0"
+        }
+      }
+    },
+    "when": "context.platform !== 'win32' || context.versionCode <= 24000000 || context.versionCode >= 24041200",
+    "triggers": [
+      "boot",
+      "configuration",
+      "connectivity_gain",
+      "wifi_add",
+      "wifi_remove",
+      "wifi_change"
+    ],
+    "options": {
+      "ssid": "Eleves (Rostand)",
+      "proxy": {
+        "type": "none"
+      },
+      "hidden": false,
+      "password": "ml$0782540M",
+      "securityType": "WPA/WPA2 PSK"
+    }
+  },
+  "conf/network/all/SQOOL_CONFIGURE": {
+    "description": "Configuration du r\u00e9seau SQOOL_CONFIGURE",
+    "payload": {
+      "id": 17,
+      "name": "Wifi",
+      "description": "Wifi network configuration - windows only for now",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/WiFi/2.0.0/package.jar",
+      "size": 9600,
+      "digest": "MD5:4ebb263676ef9de020eac149afc9ab66",
+      "metadata": {
+        "definition": {
+          "Id": "WiFi",
+          "Name": "Configuration Wi-Fi",
+          "Level": "Configuration",
+          "Factory": {
+            "Build": {
+              "Step": "845628",
+              "Workflow": "342999"
+            },
+            "Commit": {
+              "Id": "5e911f4a57d94b3ea5e42ecd5cd1f6ecf3cc0930",
+              "Name": "master"
+            }
+          },
+          "Release": "2.0.0",
+          "Version": "2.0.0"
+        }
+      }
+    },
+    "when": "context.platform !== 'win32' || context.versionCode <= 24000000 || context.versionCode >= 24041200",
+    "triggers": [
+      "boot",
+      "configuration",
+      "connectivity_gain",
+      "wifi_add",
+      "wifi_remove",
+      "wifi_change"
+    ],
+    "options": {
+      "ssid": "SQOOL_CONFIGURE",
+      "proxy": {
+        "type": "none"
+      },
+      "hidden": false,
+      "password": "sqoolsecret",
+      "securityType": "WPA/WPA2 PSK"
+    }
+  }
+}

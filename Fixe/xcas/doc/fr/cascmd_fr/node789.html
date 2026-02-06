@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Interpolation lin&#233;aire : linear_interpolate</TITLE>
+<META NAME="description" CONTENT="Interpolation lin&#233;aire : linear_interpolate">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node790.html">
+<LINK REL="previous" HREF="node788.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node790.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14615"
+  HREF="node790.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14609"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14603"
+  HREF="node788.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14611"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14613"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14616"
+  HREF="node790.html">R&#233;gression lin&#233;aire : linear_regression</A>
+<B> monter:</B> <A NAME="tex2html14610"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14604"
+  HREF="node788.html">Ligne polygonale et nuage</A>
+ &nbsp; <B>  <A NAME="tex2html14612"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14614"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001028000000000000000"></A><A NAME="20655"></A>
+<BR>
+Interpolation lin&#233;aire : <TT>linear_interpolate</TT>
+</H2>
+&#201; tant donn&#233;  une matrice &#224; 2 lignes donnant
+les coordonn&#233;es de points : apres avoir ordonn&#233; les abcisses de ces points,
+ces points d&#233;finissent une ligne polygonale.
+On veut avoir les coordonn&#233;es des points de cette ligne pour des points
+ d&#233;finis de maniere r&#233;guli&#232;re.
+<BR><TT>linear_interpolate</TT> a 4 arguments, une matrice <TT>A</TT> &#224; 2 lignes donnant
+les coordonn&#233;es des points d'une ligne polygonale, la valeur minimum des x 
+(<TT>xmin</TT>), la valeur maximum des x (<TT>xmax</TT>) et le pas (<TT>xstep</TT>).
+<BR><TT>linear_interpolate</TT> renvoie les coordonn&#233;es des points de la ligne 
+polygonale pour x variant de <TT>xmin</TT> &#224; <TT>xmax</TT> avec un pas &#232;gal &#224; 
+<TT>xstep</TT>.
+<BR><B>Remarque</B> on doit avoir <TT>xmin</TT> et <TT>xmax</TT> dans l'intervalle 
+<TT>[min(A[0]);max(A[0])]</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>linear_interpolate([[1,2,6,9],[3,4,6,12]],1,9,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0],[3.0,4.0,4.5,5.0,5.5,6.0,8.0,10.0,12.0]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>linear_interpolate([[1,2,6,9],[3,4,6,12]],2,7,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[2.0,3.0,4.0,5.0,6.0,7.0],[4.0,4.5,5.0,5.5,6.0,8.0]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>linear_interpolate([[1,2,9,6],[3,4,6,12]],1,9,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0],[3.0,4.0,6.0,8.0,10.0,12.0,10.0,8.0,6.0]]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les d&#233;ciles : quantile</TITLE>
+<META NAME="description" CONTENT="Les d&#233;ciles : quantile">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node774.html">
+<LINK REL="previous" HREF="node772.html">
+<LINK REL="up" HREF="node764.html">
+<LINK REL="next" HREF="node774.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14373"
+  HREF="node774.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14367"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14361"
+  HREF="node772.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14369"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14371"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14374"
+  HREF="node774.html">Le regroupement en classes</A>
+<B> monter:</B> <A NAME="tex2html14368"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14362"
+  HREF="node772.html">Le troisi&#232;me quartile :</A>
+ &nbsp; <B>  <A NAME="tex2html14370"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14372"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001019000000000000000"></A><A NAME="20219"></A>
+<BR>
+Les d&#233;ciles : <TT>quantile</TT>
+</H2>
+<TT>quantile(L,p)</TT> o&#249; <TT>L</TT> est la s&#233;rie statistique et <TT>p</TT> un 
+r&#233;el de [0,1[, indique la valeur du caract&#232;re &#224; partir de laquelle 
+la fr&#233;quence cumul&#233;e de <TT>L</TT> atteint ou d&#233;passe <TT>p</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile(A,0.1)</TT>
+</DIV>
+On obtient le premier d&#233;cile :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile(A,0.25)</TT>
+</DIV>
+On obtient le premier quartile :
+<DIV ALIGN="CENTER">
+<TT>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile(A,0.5)</TT>
+</DIV>
+On obtient la m&#233;diane :
+<DIV ALIGN="CENTER">
+<TT>5</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile(A,0.75)</TT>
+</DIV>
+On obtient le troisi&#232;me quartile :
+<DIV ALIGN="CENTER">
+<TT>8</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile(A,0.9)</TT>
+</DIV>
+On obtient le neuvi&#232;me d&#233;cile :
+<DIV ALIGN="CENTER">
+<TT>9</TT>
+</DIV>
+<TT>quantile(l1,l2,p)</TT> calcule le quantile sp&#233;cifi&#233; par le dernier 
+argument des &#233;l&#233;ments de la liste <TT>l1</TT>  pond&#233;r&#233;e par la liste 
+<TT>l2</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile(A,A,0.25)</TT>
+</DIV>
+On obtient le premier quartile de la liste <TT>A</TT> pond&#233;r&#233;e par <TT>A</TT> :
+<DIV ALIGN="CENTER">
+<TT>6</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

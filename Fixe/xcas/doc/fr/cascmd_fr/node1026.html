@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>G&#233;n&#233;ralit&#233;s</TITLE>
+<META NAME="description" CONTENT="G&#233;n&#233;ralit&#233;s">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1027.html">
+<LINK REL="previous" HREF="node1025.html">
+<LINK REL="up" HREF="node1025.html">
+<LINK REL="next" HREF="node1027.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18373"
+  HREF="node1027.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18367"
+  HREF="node1025.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18361"
+  HREF="node1025.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18369"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18371"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18374"
+  HREF="node1027.html">Les angles d'Euler</A>
+<B> monter:</B> <A NAME="tex2html18368"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18362"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+ &nbsp; <B>  <A NAME="tex2html18370"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18372"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001310000000000000000">
+G&#233;n&#233;ralit&#233;s</A>
+</H1> 
+Les graphes ou les dessins de la g&#233;om&#233;trie 3D se font dans un &#233;cran 
+graphique 3D qui s'ouvre automatiquement en r&#233;ponse d'une commande graphique 
+3D.
+<BR>
+Les dessins de la g&#233;om&#233;trie 3D se font en g&#233;n&#233;ral dans un &#233;cran de 
+<TT>g&#233;om&#233;trie 3D</TT> qui est un &#233;cran graphique muni d'un &#233;diteur
+de commandes et d'une barre de menus at que l'on ouvre avec <TT>Alt+h</TT>.
+<BR>
+Si on clique dans la fen&#234;tre graphique avec la souris, en dehors du 
+parall&#233;l&#233;pip&#233;de servant &#224; la repr&#233;sentation,
+on peut faire tourner les axes x, y ou z, soit avec les touches <TT>x</TT>, 
+<TT>X</TT>, <TT>y</TT>, <TT>Y</TT>, <TT>z</TT>, <TT>Z</TT>, soit en bougeant la souris
+sans relacher son bouton. Cela modifie l'axe de vision (axe passant par 
+l'observateur et de vecteur directeur la direction de la vis&#233;e de l'objet) et
+le plan de vision (plan perpendiculaire &#224; l'axe de vision dont l'&#233;quation 
+est inscrite en haut de l'&#233;cran). Le plan de vision est mat&#233;rialis&#233; par 
+son intersection avec le parall&#233;l&#233;pip&#233;de servant &#224; la repr&#233;sentation,
+ces droites d'intersection sont dessin&#233;e en pointill&#233;.
+<BR>
+On peut aussi translater le plan de vision, le long de l'axe de vision gr&#226;ce 
+&#224; la molette de la souris : les plans successifs sont obtenus par une 
+translation de vecteur parall&#232;le &#224; l'axe de vision.
+<BR>
+On peut se servir d'attributs pour faire une repr&#233;sentation 
+graphique 3D comme la couleur, l'&#233;paisseur, les lignes en pointill&#233; pour 
+cela voir <A HREF="node894.html#sec:attribut">9.3</A>. Mais, les points ont toujours la forme d'un 
+carr&#233; et il faut mettre une epaisseur d'au moins 3 si on veut le voir 
+(<TT>point_width=3</TT>).
+<BR>
+On peut faire des dessins en perspective ou en rep&#232;re orthonorm&#233; (en 
+cochant <TT>Proj_ortho</TT> dans la configuration graphique (bouton <TT>cfg</TT>), 
+les surfaces sont transparentes ou non et peuvent &#234;tre &#233;clair&#233;es par 8 
+spots que l'on peut placer en diff&#232;rents endroits  rep&#233;r&#233;s par leur 
+coordonn&#233;es homog&#232;nes (on configure ses spots avec les boutons 
+<TT>l0,l1..l7</TT> situ&#233;s dans la configuration graphique).
+<BR>
+Ces dessins sont interactifs :
+on peut faire bouger, avec la souris, les points situ&#233;s dans le plan de 
+vision, et aussi d&#233;placer ces points, avec la molette de la souris, sur une 
+parall&#232;le &#224; l'axe de vision .
+
+<P>
+&#192; noter que l'on peut aussi faire un zoom-in ou un 
+zoom-out &#224; l'aide des boutons <TT>in</TT> et <TT>out</TT> (voir <A HREF="node116.html#sec:bcfg">3.3</A>).
+
+<P>
+Si dans la configuration du graphique,
+on coche <TT>hidden3d</TT>, la surface sera trac&#233;e sans dessiner les lignes 
+qui sont cach&#233;es et si on veut voir les  lignes cach&#233;es on d&#233;coche
+<TT>hiden3d</TT> (voir aussi <A HREF="node35.html#sec:configgeo">1.6.2</A>).
+<BR>
+Pour la traduction Latex de l'&#233;cran <TT>3D</TT> on se reportera &#224; la section
+<A HREF="node60.html#sec:latex3d">1.10.5</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18373"
+  HREF="node1027.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18367"
+  HREF="node1025.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18361"
+  HREF="node1025.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18369"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18371"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18374"
+  HREF="node1027.html">Les angles d'Euler</A>
+<B> monter:</B> <A NAME="tex2html18368"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18362"
+  HREF="node1025.html">Les fonctions de géométrie</A>
+ &nbsp; <B>  <A NAME="tex2html18370"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18372"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

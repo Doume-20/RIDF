@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Un exemple : codage de 3.1 et de 3</TITLE>
+<META NAME="description" CONTENT="Un exemple : codage de 3.1 et de 3">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node158.html">
+<LINK REL="previous" HREF="node156.html">
+<LINK REL="up" HREF="node156.html">
+<LINK REL="next" HREF="node158.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4667"
+  HREF="node158.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4661"
+  HREF="node156.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4655"
+  HREF="node156.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4663"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4665"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4668"
+  HREF="node158.html">Diff&#233;rence de codage entre</A>
+<B> monter:</B> <A NAME="tex2html4662"
+  HREF="node156.html">Codage des r&#233;els et</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4656"
+  HREF="node156.html">Codage des r&#233;els et</A>
+ &nbsp; <B>  <A NAME="tex2html4664"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4666"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00711000000000000000">
+Un exemple : codage de  3.1 et de 3</A>
+</H2>
+
+<UL>
+<LI>codage de 3.1 :
+<BR>
+On a :
+<BR><!-- MATH
+ $3.1=2*(1+1/2+1/2^5+1/2^6+1/2^9+1/2^{10}+....)=2*(1+1/2+\sum_{k=01}^\infty 1/2^{4*k+1}+1/2^{4*k+12})$
+ -->
+3.1 = 2*(1 + 1/2 + 1/2<SUP>5</SUP> +1/2<SUP>6</SUP> +1/2<SUP>9</SUP> +1/2<SUP>10</SUP> + ....) = 2*(1 + 1/2 + <IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.png"
+ ALT="$ \sum_{{k=01}}^{\infty}$">1/2<SUP>4*k+1</SUP> +1/2<SUP>4*k+12</SUP>) 
+<BR>
+donc <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 1 et <!-- MATH
+ $m=1/2+\sum_{k=1}^\infty 1/2^{4*k+1}+1/2^{4*k+2}$
+ -->
+<I>m</I> = 1/2 + <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$ \sum_{{k=1}}^{\infty}$">1/2<SUP>4*k+1</SUP> +1/2<SUP>4*k+2</SUP> 
+<BR>
+On obtient le codage de 3.1 :
+<BR>
+40 (01000000), 8 (00001000), cc (11001100), cc (11001100), 
+<BR>
+cc (11001100), cc (11001100), cc (11001100), cd (11001101), 
+<BR>
+le dernier octet est 1101 car il y a eu un arrondi du dernier bit a 1, car le
+ chiffre suivant etait 1.
+
+<P>
+</LI>
+<LI>codage de 3 :
+<BR>
+On a :
+<BR><!-- MATH
+ $3=2*(1+1/2)$
+ -->
+3 = 2*(1 + 1/2)
+<BR>
+On obtient le codage de 3 :
+<BR>
+40 (01000000), 8 (00001000), 0 (00000000), 0 (00000000), 0 (00000000),
+<BR>
+0 (00000000), 0 (00000000), 0 (00000000).
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

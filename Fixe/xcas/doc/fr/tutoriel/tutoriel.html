@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>tutoriel</TITLE>
+<META NAME="description" CONTENT="tutoriel">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html5"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png"> 
+<A NAME="tex2html1"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6"
+  HREF="node1.html">Pour commencer</A>
+ &nbsp; <B>  <A NAME="tex2html2"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<BR>
+<BR>
+<BR>
+<DIV ALIGN="CENTER">
+<FONT SIZE="+4">D&#233;marrer en calcul formel</FONT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR><FONT SIZE="+2">R. De Graeve, B. Parisse, B. Ycart</FONT>
+<BR>
+<BR>
+<BR>
+<BR><FONT SIZE="+1">Universit&#233; Joseph Fourier, Grenoble</FONT>
+
+</DIV>
+<TT>Xcas</TT> est un logiciel libre de calcul formel.
+Il est t&#233;l&#233;chargeable &#224; partir de :
+<PRE>
+http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html
+</PRE>
+C'est un &#233;quivalent de Maple et Mupad, avec lesquels il est
+largement compatible. Il est possible de param&#233;trer <TT>Xcas</TT> pour qu'il
+accepte les syntaxes de Maple, Mupad ou des calculatrices TI (89, Voyage 200, Nspire CAS).
+Nous nous limiterons &#224; la syntaxe propre &#224; <code>Xcas</code>. 
+
+<P>
+Ce cours d'introduction est destin&#233; &#224; faciliter la prise en main
+de <TT>Xcas</TT> par un utilisateur connaissant un peu de math&#233;matiques
+(niveau terminale S, premi&#232;re ann&#233;e d'universit&#233; scientifique), 
+et ayant une pratique minimale de l'outil informatique. 
+
+<P>
+Il est hors de question d'illustrer ici toutes les possibilit&#233;s 
+de <TT>Xcas</TT>. En particulier, nous ne parlerons ni de g&#233;om&#233;trie
+interactive, ni de la tortue logo, ni du tableur. Pour une pratique plus
+avanc&#233;e, on se reportera &#224; l'aide en ligne et aux diff&#233;rents
+documents disponibles &#224; partir de la page d'accueil du logiciel.
+
+<P>
+Le but de ce qui suit est d'aider le d&#233;butant en introduisant quelques unes 
+des commandes les plus courantes. 
+Il est conseill&#233; de lire ce document apr&#232;s avoir lanc&#233; <TT>Xcas</TT> (sous Windows,
+cliquer sur le raccourci <TT>xcasfr.bat</TT>, sous linux Gnome, cliquer sur Xcas dans
+le menu Education ou en tapant depuis un Terminal <TT>xcas &amp;</TT> puis la touche <TT>enter</TT>,
+sur Mac en cliquant sur xcas dans le menu Applications), 
+en ex&#233;cutant les commandes propos&#233;es une par une pour en 
+comprendre l'effet. 
+
+<P>
+La table des mati&#232;res et l'index sont &#224; la fin de ce document,
+cf. l'appendice <A HREF="node45.html#sec:appendice">A</A>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html7"
+  HREF="node1.html">Pour commencer</A>
+<UL>
+<LI><A NAME="tex2html8"
+  HREF="node2.html">Interface</A>
+<LI><A NAME="tex2html9"
+  HREF="node3.html">Aide en ligne</A>
+<LI><A NAME="tex2html10"
+  HREF="node4.html">Entrer des commandes</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html11"
+  HREF="node5.html">Les objets du calcul formel</A>
+<UL>
+<LI><A NAME="tex2html12"
+  HREF="node6.html">Les nombres</A>
+<LI><A NAME="tex2html13"
+  HREF="node7.html">Les caract&#232;res et les cha&#238;nes</A>
+<LI><A NAME="tex2html14"
+  HREF="node8.html">Les variables</A>
+<LI><A NAME="tex2html15"
+  HREF="node9.html">Les expressions</A>
+<LI><A NAME="tex2html16"
+  HREF="node10.html">D&#233;velopper et simplifier</A>
+<LI><A NAME="tex2html17"
+  HREF="node11.html">Les fonctions</A>
+<LI><A NAME="tex2html18"
+  HREF="node12.html">Listes, s&#233;quences, ensembles</A>
+<LI><A NAME="tex2html19"
+  HREF="node13.html">Temps de calcul, place m&#233;moire</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html20"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<UL>
+<LI><A NAME="tex2html21"
+  HREF="node15.html">D&#233;riv&#233;es</A>
+<LI><A NAME="tex2html22"
+  HREF="node16.html">Limites et d&#233;veloppements limit&#233;s</A>
+<LI><A NAME="tex2html23"
+  HREF="node17.html">Primitives et int&#233;grales</A>
+<LI><A NAME="tex2html24"
+  HREF="node18.html">R&#233;solution d'&#233;quations</A>
+<LI><A NAME="tex2html25"
+  HREF="node19.html">Equations diff&#233;rentielles</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html26"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<UL>
+<LI><A NAME="tex2html27"
+  HREF="node21.html">Arithm&#233;tique des entiers</A>
+<LI><A NAME="tex2html28"
+  HREF="node22.html">Polyn&#244;mes et fractions rationnelles</A>
+<LI><A NAME="tex2html29"
+  HREF="node23.html">Trigonom&#233;trie</A>
+<LI><A NAME="tex2html30"
+  HREF="node24.html">Vecteurs et matrices</A>
+<LI><A NAME="tex2html31"
+  HREF="node25.html">Syst&#232;mes lin&#233;aires</A>
+<LI><A NAME="tex2html32"
+  HREF="node26.html">R&#233;duction des matrices</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html33"
+  HREF="node27.html">Repr&#233;sentations graphiques</A>
+<UL>
+<LI><A NAME="tex2html34"
+  HREF="node28.html">Trac&#233;s de courbes</A>
+<LI><A NAME="tex2html35"
+  HREF="node29.html">Objets graphiques 2D</A>
+<LI><A NAME="tex2html36"
+  HREF="node30.html">Objets graphiques 3D</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html37"
+  HREF="node31.html">Programmation</A>
+<UL>
+<LI><A NAME="tex2html38"
+  HREF="node32.html">Le langage</A>
+<LI><A NAME="tex2html39"
+  HREF="node33.html">Quelques exemples</A>
+<LI><A NAME="tex2html40"
+  HREF="node34.html">Style de programmation</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html41"
+  HREF="node35.html">Des exercices corrig&#233;s avec <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html42"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique (niveau terminale S)</A>
+<UL>
+<LI><A NAME="tex2html43"
+  HREF="node37.html">Exercice 1</A>
+<LI><A NAME="tex2html44"
+  HREF="node38.html">Exercice 2</A>
+</UL>
+<LI><A NAME="tex2html45"
+  HREF="node39.html">Calcul de primitives (niveau d&#233;but universit&#233;)</A>
+<LI><A NAME="tex2html46"
+  HREF="node40.html">D&#233;velopements limit&#233;s</A>
+<LI><A NAME="tex2html47"
+  HREF="node41.html">&#201;quations diff&#233;rentielles</A>
+<LI><A NAME="tex2html48"
+  HREF="node42.html">Les matrices</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html49"
+  HREF="node43.html">Vrai ou Faux ? (d'un point de vue informatique)</A>
+<LI><A NAME="tex2html50"
+  HREF="node44.html">Exercices (niveau universit&#233;)</A>
+<LI><A NAME="tex2html51"
+  HREF="node45.html">Table des mati&#232;res et index</A>
+<LI><A NAME="tex2html52"
+  HREF="node46.html">Table des mati&#232;res</A>
+<LI><A NAME="tex2html53"
+  HREF="node47.html">Index</A>
+<LI><A NAME="tex2html54"
+  HREF="node48.html">&#192; propos de ce document...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html5"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png"> 
+<A NAME="tex2html1"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6"
+  HREF="node1.html">Pour commencer</A>
+ &nbsp; <B>  <A NAME="tex2html2"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

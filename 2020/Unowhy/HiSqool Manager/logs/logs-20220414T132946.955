@@ -1,0 +1,65 @@
+2022-04-14 15:29:33 [4976] INFO [JS] isUserExempt: false +1ms
+2022-04-14 13:29:33.923: 2022-04-14 15:29:33 [4976] INFO [JS] currentUserLogin: paul.peyrot@monlycee.net +1ms
+2022-04-14 13:29:33.923: 2022-04-14 15:29:33 [4976] INFO [JS] isRescueModeInstalled: true +1ms
+2022-04-14 13:29:33.923: 2022-04-14 15:29:33 [4976] INFO [JS] hisqoolLaunchNeeded: false +1ms
+2022-04-14 13:29:33.923: 2022-04-14 15:29:33 [4976] INFO [JS] isActivationScriptNeeded: false +0ms
+2022-04-14 13:29:33.923: 2022-04-14 15:29:33 [4976] INFO [JS] isDisabled: false +1ms
+2022-04-14 13:29:33.923: 2022-04-14 15:29:33 [4976] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-04-14 13:29:33.938: 2022-04-14 15:29:33 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows (280) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows.json +3ms
+2022-04-14 13:29:34.423: 2022-04-14 15:29:34 [4976] INFO [JS] version 0.9.8 already installed. Skipping +1ms
+2022-04-14 13:29:34.438: 2022-04-14 15:29:34 [4976] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-04-14 13:29:34.438: 2022-04-14 15:29:34 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/sqoolctl (279) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_sqoolctl.json +1ms
+2022-04-14 13:29:37.000: 2022-04-14 15:29:37 [4976] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +2568ms
+2022-04-14 13:29:37.000: 2022-04-14 15:29:37 [4976] INFO [Runner] Running result: false +0ms
+2022-04-14 13:29:37.000: 2022-04-14 15:29:37 [4976] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2022-04-14 13:29:39.671: 2022-04-14 15:29:39 [4976] INFO [JS] Version of current package: 3.16 +2664ms
+2022-04-14 13:29:43.488: 2022-04-14 15:29:43 [4976] INFO [JS] Version of current package: 1.1 +3817ms
+2022-04-14 13:29:43.559: 2022-04-14 15:29:43 [4976] INFO [JS] Version of current package: 1.1 +68ms
+2022-04-14 13:29:43.700: 2022-04-14 15:29:43 [4976] INFO [JS] Version of current package: 4.1 +141ms
+2022-04-14 13:29:44.397: 2022-04-14 15:29:44 [4976] INFO [JS] Result: 0 +697ms
+2022-04-14 13:29:44.397: 2022-04-14 15:29:44 [4976] INFO [JS] Stdout:  +0ms
+2022-04-14 13:29:44.397: 2022-04-14 15:29:44 [4976] INFO [JS] Stderr: #< CLIXML
+2022-04-14 13:29:44.397: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +1ms
+2022-04-14 13:29:44.397: 2022-04-14 15:29:44 [4976] INFO [Runner] Running result: true +1ms
+2022-04-14 13:29:44.405: 2022-04-14 15:29:44 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +2ms
+2022-04-14 13:29:44.407: 2022-04-14 15:29:44 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +3ms
+2022-04-14 13:29:44.425: 2022-04-14 15:29:44 [4976] INFO [Runner] Creating configuration unit runner object... +17ms
+2022-04-14 13:29:44.425: 2022-04-14 15:29:44 [4976] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-04-14 13:29:44.427: 2022-04-14 15:29:44 [4976] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe +2ms
+2022-04-14 13:29:45.073: 2022-04-14 15:29:45 [4976] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '52191d55-a6aa-4d53-9830-fded6eb78582').version +649ms
+2022-04-14 13:29:45.073: 2022-04-14 15:29:45 [4976] INFO [JS] Installing the package ... +1ms
+2022-04-14 13:29:45.073: 2022-04-14 15:29:45 [4976] INFO [Runner] Performing runner... +1ms
+2022-04-14 13:29:45.081: 2022-04-14 15:29:45 [4976] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-04-14 13:29:45.122: 2022-04-14 15:29:45 [4976] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'f7639fd5-22e3-42bd-9806-a3aafb44760a').version +40ms
+2022-04-14 13:29:45.124: 2022-04-14 15:29:45 [4976] INFO [JS] Installing the package ... +1ms
+2022-04-14 13:29:45.124: 2022-04-14 15:29:45 [4976] INFO [Runner] Performing runner... +1ms
+2022-04-14 13:29:45.124: 2022-04-14 15:29:45 [4976] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-04-14 13:29:45.326: 2022-04-14 15:29:45 [4976] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '10108c63-247d-41bd-92fa-2e15beeb2c93').version +207ms
+2022-04-14 13:29:45.334: 2022-04-14 15:29:45 [4976] INFO [JS] Installing the package ... +1ms
+2022-04-14 13:29:45.336: 2022-04-14 15:29:45 [4976] INFO [Runner] Performing runner... +0ms
+2022-04-14 13:29:45.336: 2022-04-14 15:29:45 [4976] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-04-14 13:29:46.288: 2022-04-14 15:29:46 [4976] INFO [JS] Version of update package: 3.16 +954ms
+2022-04-14 13:29:46.288: 2022-04-14 15:29:46 [4976] INFO [JS] Your package is up to date +1ms
+2022-04-14 13:29:46.288: 2022-04-14 15:29:46 [4976] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-04-14 13:29:46.296: 2022-04-14 15:29:46 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (457) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +2ms
+2022-04-14 13:29:46.298: 2022-04-14 15:29:46 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\457\payload... +2ms
+2022-04-14 13:29:46.309: 2022-04-14 15:29:46 [4976] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-04-14 13:29:46.309: 2022-04-14 15:29:46 [4976] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-04-14 13:29:46.309: 2022-04-14 15:29:46 [4976] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-04-14 13:29:46.814: 2022-04-14 15:29:46 [4976] INFO [JS] Result: 0 +500ms
+2022-04-14 13:29:46.814: 2022-04-14 15:29:46 [4976] INFO [JS] Stdout: 1.1.4.21090425 +1ms
+2022-04-14 13:29:46.814: 2022-04-14 15:29:46 [4976] INFO [JS] Stderr:  +0ms
+2022-04-14 13:29:46.814: 2022-04-14 15:29:46 [4976] INFO [JS] Build number of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe is 21090425 +0ms
+2022-04-14 13:29:46.814: 2022-04-14 15:29:46 [4976] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe +0ms
+2022-04-14 13:29:46.953: 2022-04-14 15:29:46 [4976] INFO [JS] Result: 0 +134ms
+2022-04-14 13:29:46.955: 2022-04-14 15:29:46 [4976] INFO [JS] Stdout: [UNINSTALL] => Gettings components from C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json...
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component AppX: Hisqool.Legal.GDPR... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component UserDirectory: AppData\Local\Programs\Unowhy\Hisqool\GDPR... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component DesktopShortcut: Charte de protection*... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component ProvisioningPackage: Hisqool GDPR... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component InstallationDirectory: hisqool.gdpr... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component UninstallationDirectory: hisqool.gdpr... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component InstallationScriptShortcut: silent_hisqool.gdpr.vbs.lnk... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Testing component ProtocolHandlerRegistryKey: UYinstallAppGDPR... => [-]
+2022-04-14 13:29:46.955: [UNINSTALL] => Results written into C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json. +1ms
+2022-04-14 13:29:46.955: 2022-04-14 15:29:46 [4976] INFO [JS] Stderr: #< CLIXML

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Graphe en 2D</TITLE>
+<META NAME="description" CONTENT="Graphe en 2D">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node121.html">
+<LINK REL="previous" HREF="node119.html">
+<LINK REL="up" HREF="node119.html">
+<LINK REL="next" HREF="node121.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4117"
+  HREF="node121.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4111"
+  HREF="node119.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4105"
+  HREF="node119.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4113"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4115"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4118"
+  HREF="node121.html">Graphe en 3D</A>
+<B> monter:</B> <A NAME="tex2html4112"
+  HREF="node119.html">Graphe d'une fonction :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4106"
+  HREF="node119.html">Graphe d'une fonction :</A>
+ &nbsp; <B>  <A NAME="tex2html4114"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4116"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00661000000000000000"></A><A NAME="sec:plotfunc"></A>
+<BR>
+Graphe en 2D
+</H2>
+<TT>plotfunc(f(x),x)</TT> trace la repr&#233;sentation graphique de 
+<I>y</I> = <I>f</I> (<I>x</I>) et 
+<BR><TT>plotfunc(f(x),x=a..b)</TT> trace la repr&#233;sentation graphique 
+de <I>y</I> = <I>f</I> (<I>x</I>) lorsque <!-- MATH
+ $a\leq x\leq b$
+ -->
+<I>a</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x<code>^</code>2-2)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>plotfunc(a<code>^</code>2-2,a=-1..2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>la repr&#233;sentation graphique de y=x<code>^</code>2-2</TT>
+</DIV>
+On peut rajouter un param&#232;tre pour indiquer le saut 
+d'&#233;chantillonnage en <I>x</I> c'est &#224; dire le pas en <I>x</I> que l'on veut 
+utiliser pour faire le graphe en utilisant <code>xstep</code>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x<code>^</code>2-2,x,xstep=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>une ligne polygonale qui est la repr&#233;sentation grossi&#232;re de y=x<code>^</code>2-2 </TT>
+</DIV>
+On peut aussi sp&#233;cifier le nombre de points d'&#233;chantillonage de la
+fonction &#224; repr&#233;senter en utilisant <code>nstep</code> &#224; la place de <code>xstep</code>. 
+Par exemple, on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x<code>^</code>2-2,x=-2..3,nstep=30)</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Polyn&#244;me de Legendre : legendre</TITLE>
+<META NAME="description" CONTENT="Polyn&#244;me de Legendre : legendre">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node484.html">
+<LINK REL="previous" HREF="node482.html">
+<LINK REL="up" HREF="node482.html">
+<LINK REL="next" HREF="node484.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10039"
+  HREF="node484.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10033"
+  HREF="node482.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10027"
+  HREF="node482.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10035"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10037"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10040"
+  HREF="node484.html">Polyn&#244;me de Hermite :</A>
+<B> monter:</B> <A NAME="tex2html10034"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10028"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+ &nbsp; <B>  <A NAME="tex2html10036"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10038"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009271000000000000000"></A><A NAME="12537"></A>
+<BR>
+Polyn&#244;me de Legendre : <TT>legendre</TT>
+</H2>
+<TT>legendre</TT> a comme argument un entier <I>n</I> et eventuellement le 
+nom de la variable (<I>x</I> par d&#233;faut).
+<BR><TT>legendre</TT> renvoie le polyn&#244;me de Legendre de degr&#233; <I>n</I> : c'est le 
+polyn&#244;me non nul, solution de l'&#233;quation diff&#233;rentielle :
+<P><!-- MATH
+ \begin{displaymath}
+(x^2-1).y''-2.x.y'-n(n+1).y=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(<I>x</I><SUP>2</SUP> - 1).<I>y''</I> - 2.<I>x</I>.<I>y'</I> - <I>n</I>(<I>n</I> + 1).<I>y</I> = 0
+</DIV><P></P>
+Le polyn&#244;me de Legendre  de degr&#233; <I>n</I> not&#233; <I>P</I>(<I>n</I>, <I>x</I>) v&#233;rifie les 
+relations :
+<BR><I>P</I>(0, <I>x</I>) = 1
+<BR><I>P</I>(1, <I>x</I>) = <I>x</I>
+<BR><!-- MATH
+ $P(n,x)=\frac{2n-1}{n}xP(n-1,x)-\frac{n-1}{n}P(n-2,x)$
+ -->
+<I>P</I>(<I>n</I>, <I>x</I>) = <IMG
+ WIDTH="40" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img375.png"
+ ALT="$ {\frac{{2n-1}}{{n}}}$"><I>xP</I>(<I>n</I> - 1, <I>x</I>) - <IMG
+ WIDTH="34" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img376.png"
+ ALT="$ {\frac{{n-1}}{{n}}}$"><I>P</I>(<I>n</I> - 2, <I>x</I>)
+<BR>
+Ces polyn&#244;mes sont orthogonaux pour le produit scalaire :
+<BR><!-- MATH
+ $<f,g>=\int_{-1}^{+1}f(x)g(x)dx$
+ -->
+&lt; <I>f</I>, <I>g</I> &gt; = <IMG
+ WIDTH="34" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img377.png"
+ ALT="$ \int_{{-1}}^{{+1}}$"><I>f</I> (<I>x</I>)<I>g</I>(<I>x</I>)<I>dx</I> 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legendre(4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(35*x<code>^</code>4+-30*x<code>^</code>2+3)/8</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legendre(4,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(35*y<code>^</code>4+-30*y<code>^</code>2+3)/8</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

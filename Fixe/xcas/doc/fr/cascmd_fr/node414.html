@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les propri&#233;tes</TITLE>
+<META NAME="description" CONTENT="Les propri&#233;tes">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node415.html">
+<LINK REL="previous" HREF="node413.html">
+<LINK REL="up" HREF="node413.html">
+<LINK REL="next" HREF="node415.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9018"
+  HREF="node415.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9012"
+  HREF="node413.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9006"
+  HREF="node413.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9014"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9016"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9019"
+  HREF="node415.html">O&#249; interviennent ces sommes</A>
+<B> monter:</B> <A NAME="tex2html9013"
+  HREF="node413.html">Transform&#233;e de Fourier discr&#232;te</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9007"
+  HREF="node413.html">Transform&#233;e de Fourier discr&#232;te</A>
+ &nbsp; <B>  <A NAME="tex2html9015"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9017"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009232100000000000000">
+Les propri&#233;tes</A>
+</H3>
+La transform&#233;e de Fourier discr&#233;te  <I>F</I><SUB>N</SUB> est une transformation bijective.
+<BR>
+On a :
+<BR><!-- MATH
+ $F_N^{-1}=\frac{1}{N} \overline{F_N}$
+ -->
+<I>F</I><SUB>N</SUB><SUP>-1</SUP> = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><IMG
+ WIDTH="28" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.png"
+ ALT="$ \overline{{F_N}}$">
+<BR>
+c'est &#224; dire :
+<BR><!-- MATH
+ $\displaystyle {(F_N^{-1}(x))}_k=\frac{1}{N}\sum_{j=0}^{N-1}x_j\omega_N^{k\cdot j}$
+ -->
+(<I>F</I><SUB>N</SUB><SUP>-1</SUP>(<I>x</I>))<SUB>k</SUB> = <IMG
+ WIDTH="24" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.png"
+ ALT="$\displaystyle {\frac{{1}}{{N}}}$"><IMG
+ WIDTH="34" HEIGHT="73" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$\displaystyle \sum_{{j=0}}^{{N-1}}$"><I>x</I><SUB>j</SUB><IMG
+ WIDTH="34" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.png"
+ ALT="$\displaystyle \omega_{N}^{{k\cdot j}}$">
+<BR><B>Notation</B>
+<BR>
+Avec <TT>Xcas</TT> on a les fonctions <TT>fft</TT> et <TT>ifft</TT> qui sont :
+<BR><TT>fft(x)</TT>=<I>F</I><SUB>N</SUB>(<I>x</I>) et
+<BR><TT>ifft(x)</TT>=<!-- MATH
+ $F_N^{-1}(x)$
+ -->
+<I>F</I><SUB>N</SUB><SUP>-1</SUP>(<I>x</I>)
+<BR><B>D&#233;finiton</B>
+<BR>
+Soient deux suites <I>x</I> et <I>y</I> p&#233;riodiques de p&#233;riode <I>N</I>.
+<BR>
+On d&#233;finit :
+<BR>- le produit de Hadamard, not&#233; <SUP> . </SUP>, par :
+<BR><!-- MATH
+ ${(x \cdot y)}_k=x_ky_k$
+ -->
+(<I>x</I><SUP> . </SUP><I>y</I>)<SUB>k</SUB> = <I>x</I><SUB>k</SUB><I>y</I><SUB>k</SUB>
+<BR>- le produit de convolution, not&#233; *, par :
+<BR><!-- MATH
+ ${(x * y)}_k=\sum_{j=0}^{N-1}x_jy_{k-j}$
+ -->
+(<I>x</I>*<I>y</I>)<SUB>k</SUB> = <IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.png"
+ ALT="$ \sum_{{j=0}}^{{N-1}}$"><I>x</I><SUB>j</SUB><I>y</I><SUB>k-j</SUB>
+<BR>
+On a alors :
+<BR><!-- MATH
+ $N*F_N(x \cdot y)=F_N(x) * F_N(y)$
+ -->
+<I>N</I>*<I>F</I><SUB>N</SUB>(<I>x</I><SUP> . </SUP><I>y</I>) = <I>F</I><SUB>N</SUB>(<I>x</I>)*<I>F</I><SUB>N</SUB>(<I>y</I>)
+<BR><!-- MATH
+ $F_N(x * y)=F_N(x) \cdot F_N(y)$
+ -->
+<I>F</I><SUB>N</SUB>(<I>x</I>*<I>y</I>) = <I>F</I><SUB>N</SUB>(<I>x</I>)<SUP> . </SUP><I>F</I><SUB>N</SUB>(<I>y</I>)
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

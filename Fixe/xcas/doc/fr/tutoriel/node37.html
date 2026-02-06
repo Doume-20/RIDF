@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Exercice 1</TITLE>
+<META NAME="description" CONTENT="Exercice 1">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node38.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node36.html">
+<LINK REL="next" HREF="node38.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html596"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html590"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html584"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html592"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html594"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html597"
+  HREF="node38.html">Exercice 2</A>
+<B> monter:</B> <A NAME="tex2html591"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html585"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique</A>
+ &nbsp; <B>  <A NAME="tex2html593"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html595"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00071100000000000000">
+Exercice 1</A>
+</H3>
+On consid&#232;re la fonction <I>f</I> de <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$">-{3} dans <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$"> 
+d&#233;finie par :
+<P><!-- MATH
+ \begin{displaymath}
+f(x)=(x+1)\ln|x-3|
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>f</I> (<I>x</I>) = (<I>x</I> + 1)ln| <I>x</I> - 3|
+</DIV><P></P>
+
+<OL>
+<LI>Calculer la deriv&#233;e premi&#232;re <I>f'</I> et seconde <I>f''</I> de <I>f</I>.
+<BR>
+En d&#233;duire les variations de <I>f'</I>.
+</LI>
+<LI>Calculer les limites de <I>f'</I> en - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"> et en 3 &#224; gauche.
+</LI>
+<LI>Montrer que <I>f'</I> s'annule une seule fois en <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$"> sur <!-- MATH
+ $]-\infty;3[$
+ -->
+] - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">;3[.
+Donner un encadrement de <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$"> d'amplitude 0.1.
+</LI>
+<LI>&#201;tudier le signe de <I>f'</I>(<I>x</I>) sur <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$">-{3} et en d&#233;duire les 
+variations de <I>f</I>.
+</LI>
+<LI>Tracer la courbe <I>C</I> de <I>f</I> dans un rep&#232;re orthonorm&#233; (unit&#233; 1<I>cm</I>).
+</LI>
+<LI>Calculer l'aire en <I>cm</I><SUP>2</SUP> de la r&#233;gion comprise entre <I>C</I>, l'axe des
+ abscisses et les droites d'&#233;quations <I>x</I> = - 1 et <I>x</I> = 2.
+</LI>
+</OL>
+
+<P>
+<B>R&#233;ponses</B>
+
+<OL>
+<LI>On tape pour d&#233;finir la fonction <I>f</I> :
+<DIV ALIGN="CENTER">
+<code> f(x):=(x+1)*ln(abs(x-3))</code>
+
+</DIV>
+On tape pour d&#233;finir la fonction <I>f'</I> :
+<DIV ALIGN="CENTER">
+<code> f1:=function_diff(f):;</code>
+
+</DIV>
+puis,
+<DIV ALIGN="CENTER">
+<code> f1(x)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> ln(abs(x-3))+(x+1)/(x-3)</code>
+
+</DIV>
+Donc <!-- MATH
+ $\displaystyle f'(x)=\ln(|x-3|)+\frac{x+1}{x-3}$
+ -->
+<I>f'</I>(<I>x</I>) = ln(| <I>x</I> - 3|) + <IMG
+ WIDTH="40" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle {\frac{{x+1}}{{x-3}}}$">.
+<BR>
+On tape  pour d&#233;finir la fonction <I>f''</I> :
+<DIV ALIGN="CENTER">
+<code> f2:=function_diff(f1):;</code>
+
+</DIV>
+puis,
+<DIV ALIGN="CENTER">
+<code> f2(x)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 1/(x-3)+1/(x-3)+(x+1)*(-(1/((x-3)^2)))</code>
+
+</DIV>
+puis pour simplifier l'&#233;criture, on tape :
+<DIV ALIGN="CENTER">
+<code> normal(f2(x))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> (x-7)/(x^2-6*x+9)</code>
+
+</DIV>
+ou bien pour factoriser, on tape : 
+<DIV ALIGN="CENTER">
+<code> factor(f2(x))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>(x-7)/((x-3)^2)</code>
+
+</DIV>
+Donc <!-- MATH
+ $\displaystyle f''(x)= \frac{x-7}{(x-3)^2}$
+ -->
+<I>f''</I>(<I>x</I>) = <IMG
+ WIDTH="59" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle {\frac{{x-7}}{{(x-3)^2}}}$">
+
+<P>
+<B>Autre fa&#231;on</B>
+<BR>
+On tape pour d&#233;finir la fonction <I>f</I> :
+<DIV ALIGN="CENTER">
+<code> f(x):=(x+1)*ln(abs(x-3))</code>
+
+</DIV>
+On tape pour calculer <I>f'</I>(<I>x</I>) :
+<DIV ALIGN="CENTER">
+<code> dfx:=diff(f(x)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> ln(abs(x-3))+(x+1)/(x-3)</code>
+
+</DIV>
+Donc <!-- MATH
+ $\displaystyle f'(x)=\ln(|x-3|)+\frac{x+1}{x-3}$
+ -->
+<I>f'</I>(<I>x</I>) = ln(| <I>x</I> - 3|) + <IMG
+ WIDTH="40" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$\displaystyle {\frac{{x+1}}{{x-3}}}$">.
+<BR>
+Et on tape pour d&#233;finir la fonction <I>f'</I> &#224; partir de <TT>dfx</TT>:
+<DIV ALIGN="CENTER">
+<code> f1:=unapply(dfx,x);</code>
+
+</DIV>
+On tape  pour calculer <I>f''</I>(<I>x</I>) :
+<DIV ALIGN="CENTER">
+<code> ddfx:=diff(dfx)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 1/(x-3)+1/(x-3)+(x+1)*(-(1/((x-3)^2)))</code>
+
+</DIV>
+ou pour avoir une &#233;criture factoris&#233;e, on tape directement :
+<DIV ALIGN="CENTER">
+<code> ddfx:=factor(diff(dfx))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>(x-7)/((x-3)^2)</code>
+
+</DIV>
+Donc <!-- MATH
+ $\displaystyle f''(x)= \frac{x-7}{(x-3)^2}$
+ -->
+<I>f''</I>(<I>x</I>) = <IMG
+ WIDTH="59" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle {\frac{{x-7}}{{(x-3)^2}}}$">
+<BR>
+Et on tape pour d&#233;finir la fonction <I>f''</I> &#224; partir de <TT>ddfx</TT>:
+<DIV ALIGN="CENTER">
+<code> f2:=unapply(ddfx,x);</code>
+
+</DIV>
+Cette fa&#231;on de faire &#224; l'avantage de d&#233;finir la fonction <I>f</I>2 = <I>f''</I> &#224; 
+partir d'une expression simplifi&#233;e ou factoris&#233;e.
+<BR><B>Attention !!!</B> On ne peut pas &#233;crire par exemple :
+<BR><TT>g(x):=normal(diff(f(x)))</TT> pour d&#233;finir la fonction <I>g</I> = <I>f'</I> mais on doit 
+&#233;crire <TT>g:=unapply(normal(diff(f(x))),x)</TT> car sinon il y a confusion 
+entre <I>x</I> variable de d&#233;rivation et <I>x</I> variable de la fonction <I>g</I>.
+
+<P>
+</LI>
+<LI>On tape pour avoir la limite de <I>f'</I> en - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"> :
+<DIV ALIGN="CENTER">
+<code> limit(f1(x),x,-infinity)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> +infinity</code>
+
+</DIV>
+On tape pour avoir la limite de <I>f'</I> en 3<SUP>-</SUP> :
+<DIV ALIGN="CENTER">
+<code> limit(f1(x),x,3,-1)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> -infinity</code>
+
+</DIV>
+</LI>
+<LI><I>f'</I> est continue et d&#233;croissante  de + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"> &#224; - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$"> sur 
+<!-- MATH
+ $]-\infty;3[$
+ -->
+] - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">;3[ puisque <I>f''</I>(<I>x</I>) &lt; 0 sur <!-- MATH
+ $]-\infty;3[$
+ -->
+] - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">;3[. Il existe donc <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$"> 
+unique dans <!-- MATH
+ $]-\infty;3[$
+ -->
+] - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">;3[ tel que <!-- MATH
+ $f'(\alpha)=0$
+ -->
+<I>f'</I>(<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$">) = 0.
+<BR>
+On tape pour avoir une valeur approch&#233;e de <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$"> :
+<DIV ALIGN="CENTER">
+<code> assume(x&lt;3);fsolve(f1(x),x)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> x,0.776592890991</code>
+
+</DIV>
+Puis, on tape pour enlever l'hypoth&#232;se sur <I>x</I> :
+<DIV ALIGN="CENTER">
+<code> purge(x)</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> f1(0.7)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 0.0937786881525</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> f1(0.8)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> -0.0297244578175</code>
+
+</DIV>
+On a <I>f</I>1(0.7) &gt; 0 et <I>f</I>1(0.8) &lt; 0 donc <!-- MATH
+ $0.7<\alpha<0;8$
+ -->
+0.7 &lt; <IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$"> &lt; 0;8.
+</LI>
+<LI>Puisque <I>f''</I>(7) = 0, on tape pour avoir le minimum de <I>f'</I> sur <!-- MATH
+ $]3;+\infty[$
+ -->
+]3; + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">[ :
+<DIV ALIGN="CENTER">
+<code> f1(7)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> ln(4)+2</code>
+
+</DIV>
+Le minimum de <I>f'</I> sur <!-- MATH
+ $]3;+\infty[$
+ -->
+]3; + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">[ est donc positif.
+<BR>
+Donc  <I>f'</I>(<I>x</I>) &gt; 0 si <!-- MATH
+ $x \in\ ]-\infty;\alpha[\  \cup \ ]3;+\infty[\$
+ -->
+<I>x</I> <IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \in$"> &nbsp;] - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">;<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$">[&nbsp; <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \cup$"> &nbsp;]3; + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">[&nbsp; 
+et <I>f'</I>(<I>x</I>) &lt; 0 si <!-- MATH
+ $x \in\ ]\alpha;3[$
+ -->
+<I>x</I> <IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \in$"> &nbsp;]<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$">;3[.
+<BR>
+Donc <I>f</I> est croissante sur <!-- MATH
+ $\ ]-\infty;\alpha[\   \cup \ ]3;+\infty[\$
+ -->
+&nbsp;] - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">;<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$">[&nbsp; <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$ \cup$"> &nbsp;]3; + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">[&nbsp; et 
+est d&#233;croissante sur <!-- MATH
+ $\ ]\alpha;3[$
+ -->
+&nbsp;]<IMG
+ WIDTH="16" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \alpha$">;3[.
+</LI>
+<LI>On cherche les limites de <I>f</I> en - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">, + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">, et en 3.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<code> limit(f(x),x,-infinity)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> -infinity</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> limit(f(x),x,+infinity)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> +infinity</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> limit(f(x),x,3)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> -infinity</code>
+
+</DIV>
+On trace les graphes de <I>f</I> et des deux droites <I>x</I> = - 1 et <I>x</I> = 2, on tape :
+<DIV ALIGN="CENTER">
+<code> plofunc(f(x),x);droite(x=1);droite(x=2)</code>
+
+</DIV>
+On obtient le trac&#233; du graphe de <I>f</I> et le trac&#233; des droites
+<I>x</I> = - 1 et <I>x</I> = 2.
+</LI>
+<LI>On tape pour trouver l'aire en <I>cm</I><SUP>2</SUP> :
+<DIV ALIGN="CENTER">
+<code> integrate(f(x),x,-1,2)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 8*ln(4)-12+15/4</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> normal(8*ln(4)-12+15/4))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 8*ln(4)-33/4</code>
+
+</DIV>
+On tape si on veut faire l'int&#233;gration par parties :
+<DIV ALIGN="CENTER">
+<code> ibpu((x+1)*ln(abs(x-3)),ln(abs(x-3)))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> [((x^2)/2+x)*ln(abs(x-3)),(-x^2-2*x)/(2*x-6)]</code>
+
+</DIV>
+On tape pour terminer l'int&#233;gration :
+<DIV ALIGN="CENTER">
+<code> A:=ibpu([((x^2)/2+x)*ln(abs(x-3)),(-x^2-2*x)/(2*x-6)],0)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> (-x^2-10*x)/4-15*1/2*ln(abs(x-3))+((x^2)/2+x)*ln(abs(x-3))</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> preval(A,-1,2)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 8*ln(4)-9/4-6)</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> normal(8*ln(4)-9/4-6))</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 8*ln(4)-33/4</code>
+
+</DIV>
+Donc l'aire cherch&#233;e vaut  <!-- MATH
+ $(8*\ln(4)-33/4) cm^2$
+ -->
+(8*ln(4) - 33/4)<I>cm</I><SUP>2</SUP>;
+</LI>
+</OL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html596"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html590"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html584"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html592"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html594"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html597"
+  HREF="node38.html">Exercice 2</A>
+<B> monter:</B> <A NAME="tex2html591"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html585"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique</A>
+ &nbsp; <B>  <A NAME="tex2html593"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html595"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

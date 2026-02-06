@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La liste ou les coordonn&#233;es d'un vecteur</TITLE>
+<META NAME="description" CONTENT="La liste ou les coordonn&#233;es d'un vecteur">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node609.html">
+<LINK REL="previous" HREF="node559.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node565.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11217"
+  HREF="node565.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11211"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11205"
+  HREF="node563.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11213"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11215"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11218"
+  HREF="node565.html">Les diff&#233;rentes listes</A>
+<B> monter:</B> <A NAME="tex2html11212"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11206"
+  HREF="node563.html">Diff&#233;rence de deux ensembles</A>
+ &nbsp; <B>  <A NAME="tex2html11214"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11216"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009380000000000000000"></A><A NAME="14447"></A>
+<BR>
+La liste ou les coordonn&#233;es d'un vecteur
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html11219"
+  HREF="node565.html">Les diff&#233;rentes listes</A>
+<LI><A NAME="tex2html11220"
+  HREF="node566.html">Acc&#232;s &#224; un &#233;l&#233;ment ou &#224; une sous-liste d'une liste : <TT>at []</TT></A>
+<UL>
+<LI><A NAME="tex2html11221"
+  HREF="node567.html">Acc&#232;s &#224; un &#233;l&#233;ment</A>
+<LI><A NAME="tex2html11222"
+  HREF="node568.html">Extraire une sous-liste</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html11223"
+  HREF="node569.html">Extraire une sous-liste d'une liste : <TT>mid</TT></A>
+<LI><A NAME="tex2html11224"
+  HREF="node570.html">Avoir le premier &#233;l&#233;ment d'une liste : <TT>head</TT></A>
+<LI><A NAME="tex2html11225"
+  HREF="node571.html">Supprimer un &#233;l&#233;ment dans une liste : <TT>suppress</TT></A>
+<LI><A NAME="tex2html11226"
+  HREF="node572.html">Avoir la liste priv&#233;e de son premier &#233;l&#233;ment : <TT>tail</TT></A>
+<LI><A NAME="tex2html11227"
+  HREF="node573.html">Avoir la liste permut&#233;e : <TT>revlist</TT></A>
+<LI><A NAME="tex2html11228"
+  HREF="node574.html">Avoir la liste permut&#233;e &#224; partir de son n-i&#232;me &#233;l&#233;ment : <TT>rotate</TT></A>
+<LI><A NAME="tex2html11229"
+  HREF="node575.html">Avoir la liste permut&#233;e &#224; partir de son n-i&#232;me &#233;l&#233;ment : <TT>shift</TT></A>
+<LI><A NAME="tex2html11230"
+  HREF="node576.html">Modifier un &#233;l&#233;ment d'une liste : <TT>subsop</TT></A>
+<LI><A NAME="tex2html11231"
+  HREF="node577.html">Transformer une liste en s&#233;quence : <TT>op makesuite</TT></A>
+<LI><A NAME="tex2html11232"
+  HREF="node578.html">Transformer une s&#233;quence en liste : <TT>makevector []</TT></A>
+<LI><A NAME="tex2html11233"
+  HREF="node579.html">Longueur d'une liste : <TT>size nops length</TT></A>
+<LI><A NAME="tex2html11234"
+  HREF="node580.html">Longueur d'une liste de listes : <TT>sizes</TT></A>
+<LI><A NAME="tex2html11235"
+  HREF="node581.html">Concat&#233;nation de 2 listes ou d'une liste et d'un &#233;l&#233;ment: <TT>concat augment</TT></A>
+<LI><A NAME="tex2html11236"
+  HREF="node582.html">Rajouter un &#233;l&#233;ment &#224; la fin d'une liste : <TT>append</TT></A>
+<LI><A NAME="tex2html11237"
+  HREF="node583.html">Rajouter un &#233;l&#233;ment au d&#233;but d'une liste : <TT>prepend</TT></A>
+<LI><A NAME="tex2html11238"
+  HREF="node584.html">Trier : <TT>sort</TT></A>
+<LI><A NAME="tex2html11239"
+  HREF="node585.html">Trier une liste selon l'ordre croissant : <TT>SortA</TT></A>
+<LI><A NAME="tex2html11240"
+  HREF="node586.html">Trier une liste selon l'ordre d&#233;croissant : <TT>SortD</TT></A>
+<LI><A NAME="tex2html11241"
+  HREF="node587.html">S&#233;lectionner des &#233;l&#233;ments d'une liste : <TT>select</TT></A>
+<LI><A NAME="tex2html11242"
+  HREF="node588.html">Supprimer des &#233;l&#233;ments d'une liste : <TT>remove</TT></A>
+<LI><A NAME="tex2html11243"
+  HREF="node589.html">Tester si un &#233;l&#233;ment est dans une liste : <TT>member</TT></A>
+<LI><A NAME="tex2html11244"
+  HREF="node590.html">Tester si un &#233;l&#233;ment est dans une liste : <TT>contains</TT></A>
+<LI><A NAME="tex2html11245"
+  HREF="node591.html">Compter les &#233;l&#233;ments d'une liste ou d'une matrice v&#233;rifiant une propri&#233;t&#233; : <TT>count</TT></A>
+<LI><A NAME="tex2html11246"
+  HREF="node592.html">Nombre d'&#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT></A>
+<LI><A NAME="tex2html11247"
+  HREF="node593.html">Nombre d'&#233;l&#233;ments inf&#233;rieurs &#224; une valeur : <TT>count_inf</TT></A>
+<LI><A NAME="tex2html11248"
+  HREF="node594.html">Nombre d'&#233;l&#233;ments sup&#233;rieurs &#224; une valeur : <TT>count_sup</TT></A>
+<LI><A NAME="tex2html11249"
+  HREF="node595.html">Somme des &#233;l&#233;ments d'une liste : <TT>sum add</TT></A>
+<LI><A NAME="tex2html11250"
+  HREF="node596.html">Somme cumul&#233;e des &#233;l&#233;ments d'une liste : <TT>cumSum</TT></A>
+<LI><A NAME="tex2html11251"
+  HREF="node597.html">Produit indic&#233; : <TT>product mul</TT></A>
+<UL>
+<LI><A NAME="tex2html11252"
+  HREF="node598.html">Produit des valeurs d'une expression : <TT>product</TT></A>
+<LI><A NAME="tex2html11253"
+  HREF="node599.html">Produit des &#233;l&#233;ments d'une liste : <TT>product</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html11254"
+  HREF="node600.html">Appliquer une fonction d'une variable aux &#233;l&#233;ments d'une liste : <TT>map apply of</TT></A>
+<LI><A NAME="tex2html11255"
+  HREF="node601.html">Appliquer une fonction de plusieurs variables &#224; un polyn&#244;me 
+donné au format interne :<TT>map</TT></A>
+<LI><A NAME="tex2html11256"
+  HREF="node602.html">Appliquer une fonction de 2 variables aux &#233;l&#233;ments de 2 listes : <TT>zip</TT></A>
+<LI><A NAME="tex2html11257"
+  HREF="node603.html">Faire une liste de z&#233;ros : <TT>newList</TT></A>
+<LI><A NAME="tex2html11258"
+  HREF="node604.html">Faire une liste avec une fonction : <TT>makelist</TT></A>
+<LI><A NAME="tex2html11259"
+  HREF="node605.html">Faire une liste al&#233;atoire : <TT>randvector</TT></A>
+<LI><A NAME="tex2html11260"
+  HREF="node606.html">Liste des diff&#233;rences de termes cons&#233;cutifs : <TT>deltalist</TT></A>
+<LI><A NAME="tex2html11261"
+  HREF="node607.html">Faire une matrice avec une liste : <TT>list2mat</TT></A>
+<LI><A NAME="tex2html11262"
+  HREF="node608.html">Faire une liste avec une matrice : <TT>mat2list</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

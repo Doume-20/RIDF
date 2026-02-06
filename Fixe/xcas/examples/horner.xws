@@ -1,0 +1,66 @@
+// fltk 7Fl_Tile 32 63 1061 555 25
+[
+// fltk N4xcas7EditeurE 32 63 1061 348 25
+437 ,
+// l=liste des coeffs par ordre decroissant, a point ou on evalue, cf. aussi horner
+hornerl(l,a):= { 
+  local s,val,lq; 
+  s:=size(l);  
+  lq:=[];  
+  val:=0;  
+  for (j:=0;j<(s-1);j:=j+1) { 
+    val:=val*a+l[j];  
+    lq:=append(lq,val);  
+  };  
+  val:=val*a+l[s-1];  
+  return([val,lq]);  
+}:;
+
+hornerp(p,a,x):={ 
+  local l,val,lh; 
+  l:=e2r(p,x);  
+  lh:=hornerl(l,a);  
+  p:=r2e(lh[1],x);  
+  val:=lh[0];  
+  return([val,p]);  
+}:;
+,
+// fltk N4xcas10Log_OutputE 32 411 1061 154 25
+// Parsing hornerl£// Warning: j  declared as global variable(s) compiling hornerl££// Parsing hornerp£// Warning: hornerl  declared as global variable(s) compiling hornerp££
+,
+// fltk N4xcas8EquationE 32 565 1061 53 16
+"Done","Done"
+]
+,
+// fltk 7Fl_Tile 32 620 1061 84 25
+[
+// fltk N4xcas19Multiline_Input_tabE 32 620 1061 30 25
+hornerl([1,2,3],4)
+,
+// fltk N4xcas10Log_OutputE 32 650 1061 1 25
+
+,
+// fltk N4xcas8EquationE 32 651 1061 53 16
+[27,[1,6]]
+]
+,
+// fltk 7Fl_Tile 32 706 1061 84 25
+[
+// fltk N4xcas19Multiline_Input_tabE 32 706 1061 30 25
+hornerp(x^2+2*x+3,4,x)
+,
+// fltk N4xcas10Log_OutputE 32 736 1061 1 25
+
+,
+// fltk N4xcas8EquationE 32 737 1061 53 16
+[27,x+6]
+]
+,
+// fltk 7Fl_Tile 32 792 1061 31 25
+[
+// fltk N4xcas19Multiline_Input_tabE 32 792 1061 30 25
+
+,
+// fltk N4xcas10Log_OutputE 32 822 1061 1 25
+// Parsing hornerl£// Warning: j  declared as global variable(s) compiling hornerl££// Parsing hornerp£// Warning: hornerl  declared as global variable(s) compiling hornerp££
+]

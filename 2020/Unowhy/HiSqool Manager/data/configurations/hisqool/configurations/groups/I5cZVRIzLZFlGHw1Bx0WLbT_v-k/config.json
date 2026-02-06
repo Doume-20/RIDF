@@ -1,0 +1,705 @@
+{
+  "conf/application/windows/Audacity-Windows": {
+    "description": "Installation de l'application Audacity Windows",
+    "payload": {
+      "id": 117,
+      "name": "Audacity Windows",
+      "description": "Application Audacity Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/audacity-paq_2.3.3.jar",
+      "size": 22316460,
+      "digest": "MD5:764a81746f935ac47555eab9539b2648"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Biblio-Manuels-Windows": {
+    "description": "Installation de l'application Biblio Manuels Windows",
+    "payload": {
+      "id": 80,
+      "name": "Biblio Manuels Windows",
+      "description": "Application Biblio Manuels Windows",
+      "url": "https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.4.3b.jar",
+      "size": 47313053,
+      "digest": "MD5:b69bc551fcb06d00eed5c035372549d1"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Biblio-Manuels-Windows-3.5.0": {
+    "description": "Installation de l'application Biblio Manuels Windows 3.5.0",
+    "payload": {
+      "id": 187,
+      "name": "Biblio Manuels Windows 3.5.0",
+      "description": "Windows application Biblio Manuels Windows, version=3.5.0",
+      "url": "https://conf.idf.hisqool.com/payloads/bibliomanuels_3.5.0.jar",
+      "size": 47333359,
+      "digest": "MD5:417cc8722476e148adc8f5046c9215ed",
+      "metadata": {
+        "versionName": "3.5.0",
+        "applicationLabel": "Biblio Manuels Windows"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Code-with-Mu-1.0.3": {
+    "description": "Installation de l'application Code with Mu 1.0.3",
+    "payload": {
+      "id": 202,
+      "name": "Code with Mu 1.0.3",
+      "description": "Windows application Code with Mu, version=1.0.3",
+      "url": "https://conf.idf.hisqool.com/payloads/mu_1.0.3.jar",
+      "size": 79762965,
+      "digest": "MD5:b13d7eec8e2547de129339cfddc0418d",
+      "metadata": {
+        "versionName": "1.0.3",
+        "applicationLabel": "Code with Mu"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/EduAnat2-2.0.0": {
+    "description": "Installation de l'application \u00c9duAnat2 2.0.0",
+    "payload": {
+      "id": 225,
+      "name": "\u00c9duAnat2 2.0.0",
+      "description": "Windows application \u00c9duAnat2, version=2.0.0",
+      "url": "https://conf.idf.hisqool.com/payloads/eduanat2_2.0.0.jar",
+      "size": 32857540,
+      "digest": "MD5:ed1cae41f5ca553d19e3f594ecc0fed0",
+      "metadata": {
+        "versionName": "2.0.0",
+        "applicationLabel": "\u00c9duAnat2"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Educadhoc-Windows": {
+    "description": "Installation de l'application Educadhoc Windows",
+    "payload": {
+      "id": 85,
+      "name": "Educadhoc Windows",
+      "description": "Application Educadhoc Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/educadhoc_8.0.18.jar",
+      "size": 188142746,
+      "digest": "MD5:a4aae326fba147928694701aa0b3484d"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/EduPython-3.0": {
+    "description": "Installation de l'application EduPython 3.0",
+    "payload": {
+      "id": 207,
+      "name": "EduPython 3.0",
+      "description": "Windows application EduPython, version=3.0",
+      "url": "https://conf.idf.hisqool.com/payloads/EduPython_3.0.jar",
+      "size": 457848968,
+      "digest": "MD5:6cb67927751d8fb7ce6a101c2c27ecdd",
+      "metadata": {
+        "versionName": "3.0",
+        "applicationLabel": "EduPython"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Espace-Langues-Windows": {
+    "description": "Installation de l'application Espace Langues Windows",
+    "payload": {
+      "id": 118,
+      "name": "Espace Langues Windows",
+      "description": "Application Espace Langues Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/espacelangues-paq_1.5.9.jar",
+      "size": 66165059,
+      "digest": "MD5:1aa903e789f91f350a78a3237180504f"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/GenieGen-1.2.3.2": {
+    "description": "Installation de l'application G\u00e9nieGen 1.2.3.2",
+    "payload": {
+      "id": 224,
+      "name": "G\u00e9nieGen 1.2.3.2",
+      "description": "Windows application G\u00e9nieGen, version=1.2.3.2",
+      "url": "https://conf.idf.hisqool.com/payloads/geniegen_1.2.3.2.jar",
+      "size": 3320241,
+      "digest": "MD5:c7b7dc0de7fe11fc223d531afa8304d1",
+      "metadata": {
+        "versionName": "1.2.3.2",
+        "applicationLabel": "G\u00e9nieGen"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/GeoGebra-Windows": {
+    "description": "Installation de l'application GeoGebra Windows",
+    "payload": {
+      "id": 139,
+      "name": "GeoGebra Windows",
+      "description": "Application GeoGebra Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/geogebra_6.0.5.jar",
+      "size": 67497708,
+      "digest": "MD5:9e95214c4cb9ea77b7097c407aa257f4"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/GIMP-Windows": {
+    "description": "Installation de l'application GIMP Windows",
+    "payload": {
+      "id": 136,
+      "name": "GIMP Windows",
+      "description": "Application GIMP Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/gimp-paq_2.10.18.jar",
+      "size": 179232139,
+      "digest": "MD5:210e2d59d7fa6cde5f3484ef883450dc"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Gnuplot-5.4.1": {
+    "description": "Installation de l'application Gnuplot 5.4.1",
+    "payload": {
+      "id": 221,
+      "name": "Gnuplot 5.4.1",
+      "description": "Windows application Gnuplot, version=5.4.1",
+      "url": "https://conf.idf.hisqool.com/payloads/gnuplot_5.4.1.jar",
+      "size": 31116607,
+      "digest": "MD5:34c84c25199377fa484f5bbe691b1921",
+      "metadata": {
+        "versionName": "5.4.1",
+        "applicationLabel": "Gnuplot"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Google-Earth-Pro-7.3.3": {
+    "description": "Installation de l'application Google Earth Pro 7.3.3",
+    "payload": {
+      "id": 227,
+      "name": "Google Earth Pro 7.3.3",
+      "description": "Windows application Google Earth Pro, version=7.3.3",
+      "url": "https://conf.idf.hisqool.com/payloads/googleearthpro_7.3.3.jar",
+      "size": 66018371,
+      "digest": "MD5:9728bc3b731aea49a5f230bfe18fcc04",
+      "metadata": {
+        "versionName": "7.3.3",
+        "applicationLabel": "Google Earth Pro"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/LeLivreScolaire-2.2": {
+    "description": "Installation de l'application LeLivreScolaire 2.2",
+    "payload": {
+      "id": 230,
+      "name": "LeLivreScolaire 2.2",
+      "description": "Windows application LeLivreScolaire, version=2.2",
+      "url": "https://conf.idf.hisqool.com/payloads/lelivrescolaire_2.2.jar",
+      "size": 87555089,
+      "digest": "MD5:98eb607466e708251c05948ee77cb28b",
+      "metadata": {
+        "versionName": "2.2",
+        "applicationLabel": "LeLivreScolaire"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Le-Livre-Scolaire-Windows": {
+    "description": "Installation de l'application Le Livre Scolaire Windows",
+    "payload": {
+      "id": 86,
+      "name": "Le Livre Scolaire Windows",
+      "description": "Application Le Livre Scolaire Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/lelivrescolaire_2.0.3.jar",
+      "size": 81834055,
+      "digest": "MD5:9c5d2a40c9230c331d2337b8d70ea274"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/LibManuels-3.7.4": {
+    "description": "Installation de l'application LibManuels 3.7.4",
+    "payload": {
+      "id": 226,
+      "name": "LibManuels 3.7.4",
+      "description": "Windows application LibManuels, version=3.7.4",
+      "url": "https://conf.idf.hisqool.com/payloads/libmanuels_3.7.4.jar",
+      "size": 62372168,
+      "digest": "MD5:7f33af032867d05703ed4f557e95e42e",
+      "metadata": {
+        "versionName": "3.7.4",
+        "applicationLabel": "LibManuels"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Lib-Manuels-Windows": {
+    "description": "Installation de l'application Lib Manuels Windows",
+    "payload": {
+      "id": 79,
+      "name": "Lib Manuels Windows",
+      "description": "Application Lib Manuels Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/libmanuels_3.5.jar",
+      "size": 59511415,
+      "digest": "MD5:047572f9d64a3b29925a66bb9a391581"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Manuels-Numeriques-Bertrand-Lacoste-Windows": {
+    "description": "Installation de l'application Manuels Num\u00e9riques Bertrand Lacoste Windows",
+    "payload": {
+      "id": 119,
+      "name": "Manuels Num\u00e9riques Bertrand Lacoste Windows",
+      "description": "Application Manuels Num\u00e9riques Bertrand Lacoste Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/manuelsnumeriques-paq_2.1.17.jar",
+      "size": 42667160,
+      "digest": "MD5:fbe3b402868b0c153f55e9defec85f42"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Mesurim-3.4.4": {
+    "description": "Installation de l'application Mesurim 3.4.4",
+    "payload": {
+      "id": 222,
+      "name": "Mesurim 3.4.4",
+      "description": "Windows application Mesurim, version=3.4.4",
+      "url": "https://conf.idf.hisqool.com/payloads/mesurim_3.4.4.jar",
+      "size": 36372852,
+      "digest": "MD5:31b22d4117d7fe9970d7655b743a6995",
+      "metadata": {
+        "versionName": "3.4.4",
+        "applicationLabel": "Mesurim"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/MuseScore-3.6.2": {
+    "description": "Installation de l'application MuseScore 3.6.2",
+    "payload": {
+      "id": 190,
+      "name": "MuseScore 3.6.2",
+      "description": "Windows application MuseScore, version=3.6.2",
+      "url": "https://conf.idf.hisqool.com/payloads/musescore_3.6.2.jar",
+      "size": 111276727,
+      "digest": "MD5:b43ed5a6cb2527e75877f28dc5a6dc8a",
+      "metadata": {
+        "versionName": "3.6.2",
+        "applicationLabel": "MuseScore"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/NotePad++-Windows": {
+    "description": "Installation de l'application NotePad++ Windows",
+    "payload": {
+      "id": 121,
+      "name": "NotePad++ Windows",
+      "description": "Application NotePad++ Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/notepad-paq_notepad-7-8-1.exe.jar",
+      "size": 3940858,
+      "digest": "MD5:299b4340586a1d5aee1c32349f719297"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Openshot-2.5.1": {
+    "description": "Installation de l'application Openshot 2.5.1",
+    "payload": {
+      "id": 206,
+      "name": "Openshot 2.5.1",
+      "description": "Windows application Openshot, version=2.5.1",
+      "url": "https://conf.idf.hisqool.com/payloads/openshot_2.5.1.jar",
+      "size": 136448240,
+      "digest": "MD5:ca96f44d6e552327d75945f4dcb6a568",
+      "metadata": {
+        "versionName": "2.5.1",
+        "applicationLabel": "Openshot"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Paint.net-Windows": {
+    "description": "Installation de l'application Paint.net Windows",
+    "payload": {
+      "id": 137,
+      "name": "Paint.net Windows",
+      "description": "Application Paint.net Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/paintdotnet-paq_4.2.10.jar",
+      "size": 15988450,
+      "digest": "MD5:2361cc31a95c574e9ffefd7d33fb8a16"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/PhotoFiltre-7.2.1": {
+    "description": "Installation de l'application PhotoFiltre 7.2.1",
+    "payload": {
+      "id": 223,
+      "name": "PhotoFiltre 7.2.1",
+      "description": "Windows application PhotoFiltre, version=7.2.1",
+      "url": "https://conf.idf.hisqool.com/payloads/photofiltre_7.2.1.jar",
+      "size": 5884873,
+      "digest": "MD5:0e2d32ba67d525e4bf2828fd36c7888c",
+      "metadata": {
+        "versionName": "7.2.1",
+        "applicationLabel": "PhotoFiltre"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Pronote-0.2.7": {
+    "description": "Installation de l'application Pronote 0.2.7",
+    "payload": {
+      "id": 234,
+      "name": "Pronote 0.2.7",
+      "description": "Windows application Pronote, version=0.2.7",
+      "url": "https://conf.idf.hisqool.com/payloads/pronote_0.2.7.jar",
+      "size": 146651472,
+      "digest": "MD5:7d54d43f3eda6e8b3c2389f8fcba8187",
+      "metadata": {
+        "versionName": "0.2.7",
+        "applicationLabel": "Pronote"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Python-Windows": {
+    "description": "Installation de l'application Python Windows",
+    "payload": {
+      "id": 138,
+      "name": "Python Windows",
+      "description": "Application Python Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/python-paq_3.8.2.jar",
+      "size": 27356308,
+      "digest": "MD5:c84ea3f80218ef2c822d9371a218831d"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/SimClimat-1.0.4": {
+    "description": "Installation de l'application SimClimat 1.0.4",
+    "payload": {
+      "id": 231,
+      "name": "SimClimat 1.0.4",
+      "description": "Windows application SimClimat, version=1.0.4",
+      "url": "https://conf.idf.hisqool.com/payloads/simclimat_1.0.4.jar",
+      "size": 154489752,
+      "digest": "MD5:3c5d34c7db33dfe6aec99bb843d92a5e",
+      "metadata": {
+        "versionName": "1.0.4",
+        "applicationLabel": "SimClimat"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Stellarium-0.20.4.3": {
+    "description": "Installation de l'application Stellarium 0.20.4.3",
+    "payload": {
+      "id": 205,
+      "name": "Stellarium 0.20.4.3",
+      "description": "Windows application Stellarium, version=0.20.4.3",
+      "url": "https://conf.idf.hisqool.com/payloads/stellarium_0.20.4.3.jar",
+      "size": 266857798,
+      "digest": "MD5:7f7d04c81988548b98309a48838b1d79",
+      "metadata": {
+        "versionName": "0.20.4.3",
+        "applicationLabel": "Stellarium"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Tectoglob3D-1.47": {
+    "description": "Installation de l'application Tectoglob3D 1.47",
+    "payload": {
+      "id": 208,
+      "name": "Tectoglob3D 1.47",
+      "description": "Windows application Tectoglob3D, version=1.47",
+      "url": "https://conf.idf.hisqool.com/payloads/tectoglob_1.47.jar",
+      "size": 145755064,
+      "digest": "MD5:c2af8c62ba34a0b0f270d635afc2ce3b",
+      "metadata": {
+        "versionName": "1.47",
+        "applicationLabel": "Tectoglob3D"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/TexMaker-Latex-5.0.4": {
+    "description": "Installation de l'application TexMaker - Latex 5.0.4",
+    "payload": {
+      "id": 232,
+      "name": "TexMaker - Latex 5.0.4",
+      "description": "Windows application TexMaker - Latex, version=5.0.4",
+      "url": "https://conf.idf.hisqool.com/payloads/texmaker_5.0.4.jar",
+      "size": 64285173,
+      "digest": "MD5:cc45bc7d3276a9c985ab47255fac0d09",
+      "metadata": {
+        "versionName": "5.0.4",
+        "applicationLabel": "TexMaker - Latex"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Thunderbird-78.10.0": {
+    "description": "Installation de l'application Thunderbird 78.10.0",
+    "payload": {
+      "id": 233,
+      "name": "Thunderbird 78.10.0",
+      "description": "Windows application Thunderbird, version=78.10.0",
+      "url": "https://conf.idf.hisqool.com/payloads/thunderbird_78.10.0.jar",
+      "size": 52453533,
+      "digest": "MD5:6a6ce4d29909b62d86163bd6e0b0d8f9",
+      "metadata": {
+        "versionName": "78.10.0",
+        "applicationLabel": "Thunderbird"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/TI-Connect-CE-3.4.1": {
+    "description": "Installation de l'application TI Connect CE 3.4.1",
+    "payload": {
+      "id": 220,
+      "name": "TI Connect CE 3.4.1",
+      "description": "Windows application TI Connect CE, version=3.4.1",
+      "url": "https://conf.idf.hisqool.com/payloads/ticonnect_3.4.1.jar",
+      "size": 81445590,
+      "digest": "MD5:8a3d823c66f861f84e5ff1b4646a8157",
+      "metadata": {
+        "versionName": "3.4.1",
+        "applicationLabel": "TI Connect CE"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/VLC-Windows": {
+    "description": "Installation de l'application VLC Windows",
+    "payload": {
+      "id": 120,
+      "name": "VLC Windows",
+      "description": "Application VLC Windows",
+      "url": "https://idf.hisqool.com/conf/payloads/vlc-paq_3.0.8.jar",
+      "size": 40762840,
+      "digest": "MD5:b78408942aef407236b76805f935bcd1"
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/network/all/wifi_eleves": {
+    "description": "Configuration du r\u00e9seau wifi_eleves",
+    "payload": {
+      "id": 17,
+      "name": "Wifi",
+      "description": "Wifi network configuration - windows only for now",
+      "url": "https://idf.hisqool.com/conf/payloads/mdmwifi_1.0.0.jar",
+      "size": 45632,
+      "digest": "MD5:887338bde5fe021252e8907aaea41e07"
+    },
+    "when": "true",
+    "triggers": [
+      "boot",
+      "configuration",
+      "connectivity_gain",
+      "wifi_add",
+      "wifi_remove",
+      "wifi_change"
+    ],
+    "options": {
+      "ssid": "wifi_eleves",
+      "proxy": {
+        "type": "none"
+      },
+      "hidden": false,
+      "password": "@bascan78",
+      "securityType": "WPA/WPA2 PSK"
+    }
+  }
+}

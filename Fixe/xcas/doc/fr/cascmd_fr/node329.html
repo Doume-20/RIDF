@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Substituer une valeur &#224; une variable : subst substituer</TITLE>
+<META NAME="description" CONTENT="Substituer une valeur &#224; une variable : subst substituer">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node330.html">
+<LINK REL="previous" HREF="node328.html">
+<LINK REL="up" HREF="node313.html">
+<LINK REL="next" HREF="node330.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7767"
+  HREF="node330.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7761"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7755"
+  HREF="node328.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7763"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7765"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7768"
+  HREF="node330.html">Substituer une valeur &#224;</A>
+<B> monter:</B> <A NAME="tex2html7762"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7756"
+  HREF="node328.html">Simplifier &#224; l'aide de</A>
+ &nbsp; <B>  <A NAME="tex2html7764"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7766"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0091316000000000000000"></A><A NAME="7559"></A><A NAME="7560"></A><A NAME="sec:subst"></A>
+<BR>
+Substituer une valeur &#224; une variable : <TT>subst substituer</TT>
+</H2>
+<TT>subst</TT> a deux ou trois arguments : une expression dependant d'un 
+param&#232;tre et une &#233;galit&#233; (param&#232;tre=valeur de substitution) ou
+une expression dependant d'un param&#232;tre , le param&#232;tre et la valeur de substitution.
+
+<UL>
+<LI><TT>subst</TT> effectue la substitution demand&#233;e dans l'expression &#224; condition
+que le param&#232;tre ne soit pas affect&#233; car <TT>subst</TT> &#233;value tout d'abord 
+l'expression et remplace donc le param&#232;tre (si il a &#233;t&#233; affect&#233;) 
+par sa valeur sans tenir compte de la valeur de substitution donn&#233; par le 
+deuxi&#232;me param&#232;tre.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subst(a<code>^</code>2+1,a=2)</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>subst(a<code>^</code>2+1,a,2)</TT>
+</DIV>
+On obtient si la variable <TT>a</TT> n'est pas affect&#233;e :
+<DIV ALIGN="CENTER">
+<TT>5</TT>
+</DIV>
+Si la variable <TT>a</TT> est affect&#233;e, il faut taper auparavant 
+<TT>purge(a)</TT> pour obtenir <TT>5</TT>.
+<BR>
+Lorsque l'on veut substituer plusieurs variables, pour eviter de faire 
+plusieurs substitutions &#224; la suite, on met comme deuxi&#232;me argument la
+ liste de ces variables et comme troisi&#232;me argument la liste de les valeurs 
+de substitution ( ou encore on met comme deuxi&#232;me argument la liste form&#233;e 
+de (nom de variables <TT>=</TT> valeur de substitution).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subst(a<code>^</code>2+b,[a,b],[2,1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>subst(a<code>^</code>2+b,[a=2,b=1])</TT>
+</DIV>
+On obtient si les variables <TT>a</TT> et <TT>b</TT> ne sont pas affect&#233;es :
+<DIV ALIGN="CENTER">
+<TT>2<code>^</code>2+1</TT>
+</DIV> 
+
+<P>
+</LI>
+<LI><TT>subst</TT> permet aussi d'effectuer des changements de variables dans une 
+int&#233;grale mais <TT>subst</TT> ne g&#232;re les changements de variable dans une 
+integrale que si le changement de variable est de la forme <TT>x=f(u)</TT>. Dans 
+ce cas il faut quoter l'int&#233;grale pour que celle-ci ne 
+soit pas calcul&#233;e si on utilise <TT>integrate</TT> ou bien il faut utiliser 
+la commande <TT>Int</TT>. Dans les deux cas il faut sp&#233;cifier le nom 
+de la variable d'int&#233;gration m&#234;me si celle-ci est <TT>x</TT>. 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subst('integrate(sin(x<code>^</code>2)*x,x,0,pi/2)',x=sqrt(t))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>subst(Int(sin(x<code>^</code>2)*x,x,0,pi/2),x=sqrt(t))</TT>
+</DIV>
+On obtient
+<DIV ALIGN="CENTER">
+<TT>integrate(sin(t)*sqrt(t)*1/2*1/t*sqrt(t),t,0,(pi/2)<code>^</code>2)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>subst('integrate(sin(x<code>^</code>2)*x,x)',x=sqrt(t))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>subst(Int(sin(x<code>^</code>2)*x,x),x=sqrt(t))</TT>
+</DIV>
+On obtient
+<DIV ALIGN="CENTER">
+<TT>integrate(sin(t)*sqrt(t)*1/2*1/t*sqrt(t),t)</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7767"
+  HREF="node330.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7761"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7755"
+  HREF="node328.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7763"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7765"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7768"
+  HREF="node330.html">Substituer une valeur &#224;</A>
+<B> monter:</B> <A NAME="tex2html7762"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7756"
+  HREF="node328.html">Simplifier &#224; l'aide de</A>
+ &nbsp; <B>  <A NAME="tex2html7764"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7766"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

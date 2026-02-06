@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Nombre de racines sur ]a;&nbsp;b] : sturmab</TITLE>
+<META NAME="description" CONTENT="Nombre de racines sur ]a;&nbsp;b] : sturmab">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node479.html">
+<LINK REL="previous" HREF="node477.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node479.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9966"
+  HREF="node479.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9960"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9954"
+  HREF="node477.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9962"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9964"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9967"
+  HREF="node479.html">Suites de Sturm :</A>
+<B> monter:</B> <A NAME="tex2html9961"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9955"
+  HREF="node477.html">Suites de Sturm et</A>
+ &nbsp; <B>  <A NAME="tex2html9963"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9965"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092616000000000000000"></A><A NAME="12318"></A>
+<BR>
+Nombre de racines sur ]<I>a</I>;&nbsp;<I>b</I>] : <TT>sturmab</TT>
+</H2>
+<TT>sturmab</TT> a quatre param&#232;tres : une expression polyn&#244;miale 
+<I>P</I>, le nom de la variable et deux nombres <I>a</I> et <I>b</I>.
+
+<UL>
+<LI>si <I>a</I> et <I>b</I> sont r&#233;els,
+<TT>sturmab</TT> renvoie soit un nombre strictement positif qui
+est le nombre de changements de signe de <I>P</I> sur ]<I>a</I>;&nbsp;<I>b</I>],
+soit 0 si <I>P</I> reste de signe constant positif sur ]<I>a</I>;&nbsp;<I>b</I>],
+soit -1 si <I>P</I> reste de signe constant n&#233;gatif sur ]<I>a</I>;&nbsp;<I>b</I>].
+Ainsi, <TT>sturmab</TT> permet d'avoir le nombre de racines sur [<I>a</I>, <I>b</I>[
+du polyn&#244;me <I>P</I>/<I>G</I> avec <!-- MATH
+ $G=\mbox{gcd}(P,\mbox{diff}(P))$
+ -->
+<I>G</I> = gcd(<I>P</I>,diff(<I>P</I>)).
+
+<P>
+</LI>
+<LI>si <I>a</I> ou <I>b</I> est complexe,
+le nombre de racines complexes &#224; 
+l'int&#233;rieur du rectangle de sommets oppos&#233;s <I>a</I> et <I>b</I>.
+</LI>
+</UL> 
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmab(x<code>^</code>2*(x<code>^</code>3+2),x,-2,0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmab(x<code>^</code>3-1,x,-2-i,5+3i</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmab(x<code>^</code>3-1,x,-i,5+3i</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+<B>Attention!!!!</B>
+<BR> <I>P</I> doit &#234;tre donn&#233; par son expression symbolique et, si on tape :
+<BR><TT>sturmab([1,0,0,2,0,0],x,-2,0)</TT>,
+<BR>
+on obtient :
+<BR><TT>Bad argument type</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9966"
+  HREF="node479.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9960"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9954"
+  HREF="node477.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9962"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9964"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9967"
+  HREF="node479.html">Suites de Sturm :</A>
+<B> monter:</B> <A NAME="tex2html9961"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9955"
+  HREF="node477.html">Suites de Sturm et</A>
+ &nbsp; <B>  <A NAME="tex2html9963"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9965"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

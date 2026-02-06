@@ -1,0 +1,767 @@
+2024-12-09 07:46:18.910: 2024-12-09 8:46:18 [4628] INFO [NestFactory] Starting Nest application...
+2024-12-09 07:46:19.005: 2024-12-09 8:46:19 [4628] INFO [ConfigurationService] Application data folder: C:\Program Files\Unowhy\HiSqool Manager\data +104ms
+2024-12-09 07:46:19.020: 2024-12-09 8:46:19 [4628] INFO [ConfigurationService] User data folder: C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +2ms
+2024-12-09 07:46:19.020: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] HttpModule dependencies initialized +12ms
+2024-12-09 07:46:19.036: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] ConfigurationModule dependencies initialized +9ms
+2024-12-09 07:46:19.045: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] CommonModule dependencies initialized +5ms
+2024-12-09 07:46:19.052: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] StatusModule dependencies initialized +10ms
+2024-12-09 07:46:19.052: 2024-12-09 8:46:19 [4628] INFO [CleanerService] Starting cleaning service... +3ms
+2024-12-09 07:46:19.068: 2024-12-09 8:46:19 [4628] INFO [CommandService] Connecting to MQTT... +19ms
+2024-12-09 07:46:19.083: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] DeviceConfigurationModule dependencies initialized +24ms
+2024-12-09 07:46:19.099: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] CleanerModule dependencies initialized +1ms
+2024-12-09 07:46:19.099: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] MqttModule dependencies initialized +3ms
+2024-12-09 07:46:19.099: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] WatcherModule dependencies initialized +2ms
+2024-12-09 07:46:19.099: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] EnvModule dependencies initialized +1ms
+2024-12-09 07:46:19.099: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] SchedulerModule dependencies initialized +1ms
+2024-12-09 07:46:19.099: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] PayloadModule dependencies initialized +3ms
+2024-12-09 07:46:19.114: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] ScriptorModule dependencies initialized +1ms
+2024-12-09 07:46:19.114: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] ProjectionModule dependencies initialized +1ms
+2024-12-09 07:46:19.114: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] LockModule dependencies initialized +10ms
+2024-12-09 07:46:19.130: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] GlobalModule dependencies initialized +8ms
+2024-12-09 07:46:19.130: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] AppModule dependencies initialized +1ms
+2024-12-09 07:46:19.130: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] CommandModule dependencies initialized +1ms
+2024-12-09 07:46:19.130: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] DeviceFactsModule dependencies initialized +1ms
+2024-12-09 07:46:19.130: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] ExecutorModule dependencies initialized +1ms
+2024-12-09 07:46:19.177: 2024-12-09 8:46:19 [4628] INFO [InstanceLoader] InstallerModule dependencies initialized +42ms
+2024-12-09 07:46:32.506: 2024-12-09 8:46:32 [4628] INFO [InstanceLoader] DeviceInformationModule dependencies initialized +13333ms
+2024-12-09 07:46:32.725: 2024-12-09 8:46:32 [4628] INFO [HiSqoolManager] Starting HiSqool Manager false +218ms
+2024-12-09 07:46:32.725: 2024-12-09 8:46:32 [4628] INFO [ConfigurationService] Configuration file is C:\snapshot\hisqool\hisqool\front\hisqoolmanager\config\idf.json +2ms
+2024-12-09 07:46:33.256: 2024-12-09 8:46:33 [4628] INFO [HiSqoolManager] Listening on port 7654... +530ms
+2024-12-09 07:46:33.256: 2024-12-09 8:46:33 [4628] INFO [DeviceConfigurationService] Starting with saved configuration +0ms
+2024-12-09 07:46:33.256: 2024-12-09 8:46:33 [4628] INFO [DeviceConfigurationService] Emitting configuration with 14 units +1ms
+2024-12-09 07:46:33.256: 2024-12-09 8:46:33 [4628] INFO [PayloadDispatcher] Got 14 payloads of which 14 are valid +1ms
+2024-12-09 07:46:33.256: 2024-12-09 8:46:33 [4628] INFO [PayloadDispatcher] Got 14 items. 14 in, 0 out +1ms
+2024-12-09 07:46:33.272: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] AppController {}: +16ms
+2024-12-09 07:46:33.272: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {, GET} route +2ms
+2024-12-09 07:46:33.272: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/halamadridynadamas, GET} route +1ms
+2024-12-09 07:46:33.272: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/stop, GET} route +0ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] MqttController {/mqtt}: +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/mqtt, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/mqtt/topic/*, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/mqtt/restart, GET} route +0ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] WatcherController {/watcher}: +0ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/watcher, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/watcher/payloads, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/watcher/payloads/:id, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/watcher/payloads/:id/restart, GET} route +0ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/watcher/configuration/*, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/watcher/restart/*, GET} route +1ms
+2024-12-09 07:46:33.287: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] DeviceConfigurationController {/device-configuration}: +0ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/device-configuration, GET} route +16ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] DeviceInformationController {/device-information}: +0ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/device-information, GET} route +1ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] CommandController {/commands}: +1ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/commands, POST} route +1ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] ExecutorController {/executor}: +0ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/executor, GET} route +1ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/executor/event, POST} route +1ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RoutesResolver] DeviceFactsController {/facts}: +0ms
+2024-12-09 07:46:33.303: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts, GET} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts/delete/:name, GET} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts/all, GET} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts/:name, GET} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts/send, GET} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts, POST} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts, PATCH} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [RouterExplorer] Mapped {/facts/:name, DELETE} route +1ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [NestApplication] Nest application successfully started +6ms
+2024-12-09 07:46:33.319: 2024-12-09 8:46:33 [4628] INFO [HiSqoolManager] Name of service DeviceFactsService... +2ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2337] Received payload Inventaire de l’équipement Windows. current status=state=Ok, error=None, active=true +35ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2337] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1098] Received payload Génération des rapports sur l’état de l’équipement 1.1.0. current status=state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1098] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 545] Received payload Certificat RIDF 1.1. current status=state=Ok, error=None, active=true +0ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 545] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Received payload Microsoft Visual C++ 2015-2019 Redistributable x64 14.29.30133. current status=state=Empty, error=None, active=true +2ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 320] payload is new. Downloading from https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar +0ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 359] Received payload Microsoft Office 1.0.0. current status=state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 359] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 130] Received payload LGPO Windows. current status=state=Ok, error=None, active=true +0ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 130] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Received payload .Net 6 Runtime 6.0.6. current status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] payload is new. Downloading from https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar +0ms
+2024-12-09 07:46:33.365: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1146] Received payload Protection de l’équipement 1.3.0. current status=state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1146] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Received payload Utilitaires de gestion Unowhy Windows 0.9.101. current status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] payload is new. Downloading from https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar +0ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 173] Received payload Nettoyage post déploiement. current status=state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 173] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 179] Received payload Blocage du service de réinitialisation Windows. current status=state=Ok, error=None, active=true +0ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 179] Same payload as before emitting current status: state=Ok, error=None, active=true +0ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2401] Received payload Device-Preparation 3.2.2 (Windows). current status=state=Ok, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2401] Same payload as before emitting current status: state=Ok, error=None, active=true +0ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Received payload Drive monlycee.net 3.12.1.20241004. current status=state=Empty, error=None, active=true +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] payload is new. Downloading from https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar +1ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Empty, error=None, active=true +0ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Received payload Agent de contrôle Unowhy Windows 1.2.16. current status=state=Empty, error=None, active=true +2ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] payload is new. Downloading from https://idfconf.s3.gra.io.cloud.ovh.net/payloads/windows_manager_1.2.16_24041940.jar +0ms
+2024-12-09 07:46:33.381: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Todo, error=None, active=true +4ms
+2024-12-09 07:46:33.397: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Downloading, error=None, active=true +2ms
+2024-12-09 07:46:33.397: 2024-12-09 8:46:33 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar... +3ms
+2024-12-09 07:46:33.397: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Todo, error=None, active=true +7ms
+2024-12-09 07:46:33.397: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Downloading, error=None, active=true +2ms
+2024-12-09 07:46:33.412: 2024-12-09 8:46:33 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar... +2ms
+2024-12-09 07:46:33.412: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Todo, error=None, active=true +4ms
+2024-12-09 07:46:33.418: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Downloading, error=None, active=true +2ms
+2024-12-09 07:46:33.418: 2024-12-09 8:46:33 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar... +3ms
+2024-12-09 07:46:33.418: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Todo, error=None, active=true +3ms
+2024-12-09 07:46:33.418: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Downloading, error=None, active=true +2ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar... +2ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Todo, error=None, active=true +3ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [PayloadDispatcher] Emitting 9 entries ["conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0","conf/application/windows/Inventaire-de-l-equipement-windows","conf/application/windows/LGPO-Windows","conf/application/windows/Microsoft-Office-1.0.0","conf/application/windows/Protection-de-l'equipement-1.3.0","conf/other/cleanafterinstall","conf/other/disablerecovery","conf/application/windows/Device-Preparation-3.2.2-(Windows)"] +2ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing for execution configuration with 9 keys +0ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got 9 configurations. 9 in, 0 out +1ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Certificat-RIDF-1.1... +1ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> configuration... +1ms
+2024-12-09 07:46:33.428: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2024-12-09 07:46:33.444: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +17ms
+2024-12-09 07:46:33.444: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.444: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> configuration... +1ms
+2024-12-09 07:46:33.444: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +2ms
+2024-12-09 07:46:33.460: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +4ms
+2024-12-09 07:46:33.460: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:33.460: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> configuration... +2ms
+2024-12-09 07:46:33.460: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload... +1ms
+2024-12-09 07:46:33.475: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +16ms
+2024-12-09 07:46:33.475: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/LGPO-Windows... +0ms
+2024-12-09 07:46:33.475: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +2ms
+2024-12-09 07:46:33.475: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +1ms
+2024-12-09 07:46:33.506: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +23ms
+2024-12-09 07:46:33.506: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Microsoft-Office-1.0.0... +0ms
+2024-12-09 07:46:33.506: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +2ms
+2024-12-09 07:46:33.506: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +1ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +11ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Protection-de-l'equipement-1.3.0... +1ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> configuration... +1ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload... +2ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +3ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/other/cleanafterinstall... +0ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +2ms
+2024-12-09 07:46:33.522: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +1ms
+2024-12-09 07:46:33.538: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +12ms
+2024-12-09 07:46:33.538: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/other/disablerecovery... +1ms
+2024-12-09 07:46:33.538: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2024-12-09 07:46:33.538: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +1ms
+2024-12-09 07:46:33.553: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +12ms
+2024-12-09 07:46:33.553: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Device-Preparation-3.2.2-(Windows)... +1ms
+2024-12-09 07:46:33.553: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> configuration... +1ms
+2024-12-09 07:46:33.553: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2401\payload... +1ms
+2024-12-09 07:46:33.569: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +6ms
+2024-12-09 07:46:33.569: 2024-12-09 8:46:33 [4628] INFO [WatcherService] Received a list of 14 payloads +1ms
+2024-12-09 07:46:33.569: 2024-12-09 8:46:33 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Downloading, error=None, active=true +2ms
+2024-12-09 07:46:33.569: 2024-12-09 8:46:33 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/windows_manager_1.2.16_24041940.jar... +2ms
+2024-12-09 07:46:33.569: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:33.569: 2024-12-09 8:46:33 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +22ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [JS] We are programmging on name conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 with schedule: 30 minutes +0ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0, immediate=true +3ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [JS] Scheduling result: true +2ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [JS] We are programmging on name conf/application/windows/Inventaire-de-l-equipement-windows with schedule: 300 minutes +1ms
+2024-12-09 07:46:33.600: 2024-12-09 8:46:33 [4628] INFO [SchedulerService] Adding schedule: name inventory, interval=18000000, unit=conf/application/windows/Inventaire-de-l-equipement-windows, immediate=true +1ms
+2024-12-09 07:46:33.616: 2024-12-09 8:46:33 [4628] INFO [JS] Scheduling result: true +2ms
+2024-12-09 07:46:33.616: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:33.616: 2024-12-09 8:46:33 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-09 07:46:33.616: 2024-12-09 8:46:33 [4628] INFO [JS] Getting GPO version... +1ms
+2024-12-09 07:46:33.616: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:33.616: 2024-12-09 8:46:33 [4628] INFO [JS] Checking that the unit needs to be performed +2ms
+2024-12-09 07:46:33.631: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +20ms
+2024-12-09 07:46:33.631: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:33.647: 2024-12-09 8:46:33 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-09 07:46:33.647: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:33.647: 2024-12-09 8:46:33 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [Runner] Checking if runner needs to be performed... +28ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [JS] Checking conf/application/windows/Device-Preparation-3.2.2-(Windows) (configuration) +1ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [Runner] Runner doesn't need to be performed +6ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [Runner] Runner doesn't need to be performed +1ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [Runner] Performing runner... +3ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [JS] Performing security operation... +1ms
+2024-12-09 07:46:33.678: 2024-12-09 8:46:33 [4628] INFO [JS] Security spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload\Execute.ps1 +1ms
+2024-12-09 07:46:33.694: 2024-12-09 8:46:33 [4628] INFO [Runner] Performing runner... +10ms
+2024-12-09 07:46:33.694: 2024-12-09 8:46:33 [4628] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2024-12-09 07:46:33.725: 2024-12-09 8:46:33 [4628] INFO [Runner] Performing runner... +29ms
+2024-12-09 07:46:33.725: 2024-12-09 8:46:33 [4628] INFO [JS] Applying conf/application/windows/Device-Preparation-3.2.2-(Windows) (configuration) +1ms
+2024-12-09 07:46:33.725: 2024-12-09 8:46:33 [4628] INFO [JS] Apply policy - Executing file (Execute.ps1)... +2ms
+2024-12-09 07:46:33.725: 2024-12-09 8:46:33 [4628] INFO [JS] Apply policy - Arguments: [] +1ms
+2024-12-09 07:46:33.741: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +10ms
+2024-12-09 07:46:33.741: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Inventaire-de-l-equipement-windows (2337) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Inventaire-de-l-equipement-windows.json +5ms
+2024-12-09 07:46:33.772: 2024-12-09 8:46:33 [4628] INFO [JS] Current GPO version: 1.5 +29ms
+2024-12-09 07:46:33.772: 2024-12-09 8:46:33 [4628] INFO [Runner] Runner doesn't need to be performed +0ms
+2024-12-09 07:46:33.788: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2024-12-09 07:46:33.881: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +103ms
+2024-12-09 07:46:33.881: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.881: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +7ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-09 07:46:33.897: 2024-12-09 8:46:33 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload... +2ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [Runner] Creating configuration unit runner object... +38ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Inventaire-de-l-equipement-windows... +2ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Inventaire-de-l-equipement-windows... +3ms
+2024-12-09 07:46:33.944: 2024-12-09 8:46:33 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +153ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.100: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [RequestPerformerService] Got response 200. +5ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [RequestPerformerService] Response content length is 93313406  +0ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Inventaire-de-l-equipement-windows... +3ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.116: 2024-12-09 8:46:34 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:34.131: 2024-12-09 8:46:34 [4628] INFO [RequestPerformerService] Got response 200. +3ms
+2024-12-09 07:46:34.131: 2024-12-09 8:46:34 [4628] INFO [RequestPerformerService] Response content length is 27389196  +1ms
+2024-12-09 07:46:34.303: 2024-12-09 8:46:34 [4628] INFO [RequestPerformerService] Got response 200. +180ms
+2024-12-09 07:46:34.303: 2024-12-09 8:46:34 [4628] INFO [RequestPerformerService] Response content length is 20332000  +1ms
+2024-12-09 07:46:34.975: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Got 10 items. 10 in, 0 out +660ms
+2024-12-09 07:46:34.975: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +1ms
+2024-12-09 07:46:34.975: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +4ms
+2024-12-09 07:46:34.975: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +3ms
+2024-12-09 07:46:34.975: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +3ms
+2024-12-09 07:46:34.975: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +3ms
+2024-12-09 07:46:34.990: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +3ms
+2024-12-09 07:46:34.990: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +3ms
+2024-12-09 07:46:34.990: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/UBw5Po_aPWpfGBCHANv7E0RpfO8 +2ms
+2024-12-09 07:46:34.990: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/tpCMMl0yKy1MF5hEbs3IzVizp7A +3ms
+2024-12-09 07:46:34.990: 2024-12-09 8:46:34 [4628] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/iBF17npTZnssp11fBmkqAnH2b3s +3ms
+2024-12-09 07:46:35.006: 2024-12-09 8:46:35 [4628] INFO [KeyedObservableCollector] Sending 10 items +3ms
+2024-12-09 07:46:35.490: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:a38d0d7d50d4bd628cfb90f3686d4386 for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +497ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:0cccc52c4129cec4373a78722565948d for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +3ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +1ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:51ebe9841df0d7ce693e9c77c8f384f3 for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +1ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +1ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/UBw5Po_aPWpfGBCHANv7E0RpfO8 +2ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/tpCMMl0yKy1MF5hEbs3IzVizp7A +1ms
+2024-12-09 07:46:35.506: 2024-12-09 8:46:35 [4628] INFO [MQTTObserver] Received digest MD5:e0d6434f44600767e16fcc016bebdb5d for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/iBF17npTZnssp11fBmkqAnH2b3s +1ms
+2024-12-09 07:46:35.646: 2024-12-09 8:46:35 [4628] INFO [RequestPerformerService] Got response 200. +135ms
+2024-12-09 07:46:35.646: 2024-12-09 8:46:35 [4628] INFO [RequestPerformerService] Response content length is 94297003  +1ms
+2024-12-09 07:46:35.756: 2024-12-09 8:46:35 [4628] INFO [RequestPerformerService] Got response 200. +104ms
+2024-12-09 07:46:35.756: 2024-12-09 8:46:35 [4628] INFO [RequestPerformerService] Response content length is 24943789  +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.7: false +250ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16: context.platform==='win32' +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0: context.platform==='win32' +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool-1.2.0: false +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Inventaire-de-l-equipement-windows: context.platform==='win32' +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +0ms
+2024-12-09 07:46:36.006: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133: context.platform==='win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/.Net-6-Runtime-6.0.6: context.platform==='win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Protection-de-l'equipement-1.3.0: context.platform==='win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Utilitaires-de-gestion-Unowhy-Windows-0.9.101: context.platform==='win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +0ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Device-Preparation-3.2.2-(Windows): context.platform==='win32' +0ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2024-12-09 07:46:36.021: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-09 07:46:36.037: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +1ms
+2024-12-09 07:46:36.037: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-09 07:46:36.037: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Drive-monlycee.net-3.12.1.20241004: context.platform==='win32' +1ms
+2024-12-09 07:46:36.037: 2024-12-09 8:46:36 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [JS] Apply policy - Code: 0 +7893ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [Runner] Running result: true +0ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [JS] We are triggering +0ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:46:43.925: 2024-12-09 8:46:43 [4628] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:46:43.941: 2024-12-09 8:46:43 [4628] INFO [JS] We are triggering +1ms
+2024-12-09 07:46:43.941: 2024-12-09 8:46:43 [4628] INFO [Runner] Performing runner... +0ms
+2024-12-09 07:46:43.941: 2024-12-09 8:46:43 [4628] INFO [JS] Performing facts gathering and upload... +2ms
+2024-12-09 07:46:43.941: 2024-12-09 8:46:43 [4628] INFO [Runner] Performing runner... +1ms
+2024-12-09 07:46:43.941: 2024-12-09 8:46:43 [4628] INFO [JS] Run inventory script... +1ms
+2024-12-09 07:46:43.957: 2024-12-09 8:46:43 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Device-Preparation-3.2.2-(Windows) (2401) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Device-Preparation-3.2.2-(Windows).json +18ms
+2024-12-09 07:46:44.894: 2024-12-09 8:46:44 [4628] INFO [Runner] Running result: true +943ms
+2024-12-09 07:46:44.909: 2024-12-09 8:46:44 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Protection-de-l'equipement-1.3.0 (1146) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Protection-de-l'equipement-1.3.0.json +2ms
+2024-12-09 07:46:48.299: 2024-12-09 8:46:48 [4628] INFO [JS] Getting installed applications... +3393ms
+2024-12-09 07:46:48.752: 2024-12-09 8:46:48 [4628] INFO [JS] GUID package: 52191d55-a6aa-4d53-9830-fded6eb78582 +457ms
+2024-12-09 07:46:48.768: 2024-12-09 8:46:48 [4628] INFO [JS] GUID package: ca4da4f5-769b-441b-895f-b788fe565522 +20ms
+2024-12-09 07:46:48.799: 2024-12-09 8:46:48 [4628] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +19ms
+2024-12-09 07:46:50.252: 2024-12-09 8:46:50 [4628] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +1454ms
+2024-12-09 07:46:50.252: 2024-12-09 8:46:50 [4628] INFO [Runner] Running result: false +1ms
+2024-12-09 07:46:50.252: 2024-12-09 8:46:50 [4628] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2024-12-09 07:46:53.485: 2024-12-09 8:46:53 [4628] INFO [JS] Getting apps result: 0 +3238ms
+2024-12-09 07:46:53.485: 2024-12-09 8:46:53 [4628] INFO [JS] Computing device facts... +1ms
+2024-12-09 07:46:57.374: 2024-12-09 8:46:57 [4628] INFO [JS] Version of current package: 1.0 +3877ms
+2024-12-09 07:46:57.421: 2024-12-09 8:46:57 [4628] INFO [JS] Version of current package: 1.1 +52ms
+2024-12-09 07:46:57.437: 2024-12-09 8:46:57 [4628] INFO [JS] Version of current package: 1.1 +19ms
+2024-12-09 07:47:05.715: 2024-12-09 8:47:05 [4628] INFO [JS] Version of update package: 1.0 +8270ms
+2024-12-09 07:47:05.715: 2024-12-09 8:47:05 [4628] INFO [JS] Your package is up to date +1ms
+2024-12-09 07:47:05.715: 2024-12-09 8:47:05 [4628] INFO [Runner] Runner doesn't need to be performed +0ms
+2024-12-09 07:47:05.715: 2024-12-09 8:47:05 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +2ms
+2024-12-09 07:47:05.747: 2024-12-09 8:47:05 [4628] INFO [JS] Version of update package: 1.1 +29ms
+2024-12-09 07:47:05.747: 2024-12-09 8:47:05 [4628] INFO [JS] Your package is up to date +0ms
+2024-12-09 07:47:05.747: 2024-12-09 8:47:05 [4628] INFO [Runner] Runner doesn't need to be performed +1ms
+2024-12-09 07:47:05.747: 2024-12-09 8:47:05 [4628] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +1ms
+2024-12-09 07:47:06.153: 2024-12-09 8:47:06 [4628] WARN [JS] Error while processing update version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload\ridfcerauthority.ppkg').version +398ms
+2024-12-09 07:47:06.153: 2024-12-09 8:47:06 [4628] INFO [JS] Upgrading the package ... +1ms
+2024-12-09 07:47:06.153: 2024-12-09 8:47:06 [4628] INFO [Runner] Performing runner... +1ms
+2024-12-09 07:47:06.153: 2024-12-09 8:47:06 [4628] INFO [JS] Removing package, GUID=ca4da4f5-769b-441b-895f-b788fe565522... +1ms
+2024-12-09 07:47:12.541: 2024-12-09 8:47:12 [4628] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload\ridfcerauthority.ppkg, args=-QuietInstall... +6386ms
+2024-12-09 07:47:22.882: 2024-12-09 8:47:22 [4628] INFO [JS] Setting legacy facts... +10344ms
+2024-12-09 07:47:22.882: 2024-12-09 8:47:22 [4628] INFO [JS] Saving facts... +1ms
+2024-12-09 07:47:22.897: 2024-12-09 8:47:22 [4628] INFO [JS] Uploading facts... +3ms
+2024-12-09 07:47:25.787: 2024-12-09 8:47:25 [4628] ERROR [JS] Error while setting facts: Error: Request failed with status code 400 +2897ms
+2024-12-09 07:47:25.787: 2024-12-09 8:47:25 [4628] INFO [Runner] Running result: false +0ms
+2024-12-09 07:47:25.787: 2024-12-09 8:47:25 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +2ms
+2024-12-09 07:47:25.787: 2024-12-09 8:47:25 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +1ms
+2024-12-09 07:47:25.803: 2024-12-09 8:47:25 [4628] INFO [Runner] Creating configuration unit runner object... +3ms
+2024-12-09 07:47:33.581: 2024-12-09 8:47:33 [4628] INFO [CleanerService] Received payload list: 1098, 320, 2337, 545, 359, 130, 1100, 1146, 2163, 173, 179, 2401, 2334, 2082 +7777ms
+2024-12-09 07:47:33.581: 2024-12-09 8:47:33 [4628] INFO [CleanerService] Current payload list: 1098, 1100, 1146, 130, 173, 179, 2082, 2163, 2334, 2337, 2401, 320, 359, 545 +3ms
+2024-12-09 07:47:33.581: 2024-12-09 8:47:33 [4628] INFO [CleanerService] Payloads to delete:  +1ms
+2024-12-09 07:47:51.623: 2024-12-09 8:47:51 [4628] INFO [JS] Result: 0 +18050ms
+2024-12-09 07:47:51.623: 2024-12-09 8:47:51 [4628] INFO [JS] Stdout: Remove old script
+2024-12-09 07:47:51.623: Download latest script
+2024-12-09 07:47:51.623: Set script execution policy
+2024-12-09 07:47:51.623: Execute script
+2024-12-09 07:47:51.623: ..System BIOS
+2024-12-09 07:47:51.623: ..Regional Options
+2024-12-09 07:47:51.623: ..Processor Information
+2024-12-09 07:47:51.623: ..Ram Information
+2024-12-09 07:47:51.623: ..Logical Disks
+2024-12-09 07:47:51.623: ..Network Configuration
+2024-12-09 07:47:51.623: Activities : 
+2024-12-09 07:47:51.623: True
+2024-12-09 07:47:51.623: OK : True
+2024-12-09 07:47:51.623: Processing activities
+2024-12-09 07:47:51.623: Remove script +0ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [JS] Stderr:  +0ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [Runner] Running result: true +0ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [JS] We are triggering +1ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [Runner] Performing runner... +1ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [JS] Performing facts gathering and upload... +1ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Inventaire-de-l-equipement-windows (2337) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Inventaire-de-l-equipement-windows.json +2ms
+2024-12-09 07:47:51.638: 2024-12-09 8:47:51 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload... +2ms
+2024-12-09 07:47:51.654: 2024-12-09 8:47:51 [4628] INFO [Runner] Creating configuration unit runner object... +14ms
+2024-12-09 07:47:55.403: 2024-12-09 8:47:55 [4628] INFO [JS] Getting installed applications... +3741ms
+2024-12-09 07:47:58.917: 2024-12-09 8:47:58 [4628] INFO [JS] Getting apps result: 0 +3529ms
+2024-12-09 07:47:58.933: 2024-12-09 8:47:58 [4628] INFO [JS] Computing device facts... +0ms
+2024-12-09 07:48:17.880: 2024-12-09 8:48:17 [4628] INFO [JS] Setting legacy facts... +18950ms
+2024-12-09 07:48:17.880: 2024-12-09 8:48:17 [4628] INFO [JS] Saving facts... +0ms
+2024-12-09 07:48:17.880: 2024-12-09 8:48:17 [4628] INFO [JS] Uploading facts... +3ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] ERROR [JS] Error while setting facts: Error: Request failed with status code 400 +1391ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] INFO [Runner] Running result: false +1ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] INFO [Runner] Checking if runner needs to be performed... +0ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] INFO [JS] We are triggering +1ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] INFO [Runner] Performing runner... +1ms
+2024-12-09 07:48:19.270: 2024-12-09 8:48:19 [4628] INFO [JS] Run inventory script... +0ms
+2024-12-09 07:48:19.286: 2024-12-09 8:48:19 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +16ms
+2024-12-13 08:30:23.467: 2024-12-13 9:30:23 [4628] INFO [SchedulerService] Triggering scheduled job facts with unit conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +348124181ms
+2024-12-13 08:30:23.467: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.467: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2024-12-13 08:30:23.467: 2024-12-13 9:30:23 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +2ms
+2024-12-13 08:30:23.489: 2024-12-13 9:30:23 [4628] INFO [Runner] Creating configuration unit runner object... +17ms
+2024-12-13 08:30:23.489: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.489: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2024-12-13 08:30:23.489: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.497: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.497: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.497: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.499: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:23.499: 2024-12-13 9:30:23 [4628] INFO [SchedulerService] Triggering scheduled job inventory with unit conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:30:23.499: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:23.499: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:23.499: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:23.499: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:30:23.504: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:30:23.504: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:23.504: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:23.504: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:23.504: 2024-12-13 9:30:23 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:30:23.513: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Download closed upstream +7ms
+2024-12-13 08:30:23.544: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Downloaded, error=None, active=true +34ms
+2024-12-13 08:30:23.544: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2163\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2163\payload... +3ms
+2024-12-13 08:30:23.544: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Got disposed. +5ms
+2024-12-13 08:30:23.560: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Download closed upstream +11ms
+2024-12-13 08:30:23.560: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Downloaded, error=None, active=true +2ms
+2024-12-13 08:30:23.560: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload... +2ms
+2024-12-13 08:30:23.560: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Got disposed. +3ms
+2024-12-13 08:30:23.575: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Download closed upstream +3ms
+2024-12-13 08:30:23.575: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Downloaded, error=None, active=true +2ms
+2024-12-13 08:30:23.575: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload... +5ms
+2024-12-13 08:30:23.575: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Got disposed. +2ms
+2024-12-13 08:30:23.575: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Download closed upstream +3ms
+2024-12-13 08:30:23.591: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Downloaded, error=None, active=true +4ms
+2024-12-13 08:30:23.591: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload... +2ms
+2024-12-13 08:30:23.591: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Got disposed. +2ms
+2024-12-13 08:30:23.591: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Download closed upstream +3ms
+2024-12-13 08:30:23.591: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Downloaded, error=None, active=true +3ms
+2024-12-13 08:30:23.607: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2334\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2334\payload... +6ms
+2024-12-13 08:30:23.607: 2024-12-13 9:30:23 [4628] INFO [RequestPerformerService] Got disposed. +3ms
+2024-12-13 08:30:23.732: 2024-12-13 9:30:23 [4628] ERROR [PayloadDownloader] [PAYLOAD 2163] Error while unziping file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2163\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2163\payload: Error: FILE_ENDED +123ms
+2024-12-13 08:30:23.764: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Error, error=Format, active=true +31ms
+2024-12-13 08:30:23.764: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Error Format. Waiting 30 seconds before retrying... +4ms
+2024-12-13 08:30:23.764: 2024-12-13 9:30:23 [4628] ERROR [PayloadDownloader] [PAYLOAD 1100] Error while unziping file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload: Error: FILE_ENDED +4ms
+2024-12-13 08:30:23.764: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Error, error=Format, active=true +3ms
+2024-12-13 08:30:23.779: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Error Format. Waiting 30 seconds before retrying... +5ms
+2024-12-13 08:30:23.779: 2024-12-13 9:30:23 [4628] ERROR [PayloadDownloader] [PAYLOAD 320] Error while unziping file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload: Error: FILE_ENDED +3ms
+2024-12-13 08:30:23.779: 2024-12-13 9:30:23 [4628] ERROR [PayloadDownloader] [PAYLOAD 2082] Error while unziping file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload: Error: FILE_ENDED +3ms
+2024-12-13 08:30:23.779: 2024-12-13 9:30:23 [4628] ERROR [PayloadDownloader] [PAYLOAD 2334] Error while unziping file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2334\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2334\payload: Error: FILE_ENDED +3ms
+2024-12-13 08:30:23.779: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Error, error=Format, active=true +2ms
+2024-12-13 08:30:23.811: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Error Format. Waiting 30 seconds before retrying... +33ms
+2024-12-13 08:30:23.827: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Error, error=Format, active=true +2ms
+2024-12-13 08:30:23.827: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Error Format. Waiting 30 seconds before retrying... +2ms
+2024-12-13 08:30:23.827: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Error, error=Format, active=true +4ms
+2024-12-13 08:30:23.827: 2024-12-13 9:30:23 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Error Format. Waiting 30 seconds before retrying... +3ms
+2024-12-13 08:30:25.379: 2024-12-13 9:30:25 [4628] INFO [JS] Result: 0 +1555ms
+2024-12-13 08:30:25.379: 2024-12-13 9:30:25 [4628] INFO [JS] Stdout: Remove old script
+2024-12-13 08:30:25.379: Download latest script
+2024-12-13 08:30:25.379: Set script execution policy
+2024-12-13 08:30:25.379: Execute script
+2024-12-13 08:30:25.379: ..System BIOS
+2024-12-13 08:30:25.379: ..Regional Options
+2024-12-13 08:30:25.379: ..Processor Information
+2024-12-13 08:30:25.379: ..Ram Information
+2024-12-13 08:30:25.379: ..Logical Disks
+2024-12-13 08:30:25.379: ..Network Configuration
+2024-12-13 08:30:25.379: Activities : 
+2024-12-13 08:30:25.379: True
+2024-12-13 08:30:25.379: OK : True
+2024-12-13 08:30:25.379: Processing activities
+2024-12-13 08:30:25.379: Remove script +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [JS] Stderr: Invoke-RestMethod : La connexion sous-jacente a �t� ferm�e: Le serveur a ferm� une connexion qui devait �tre maintenue 
+2024-12-13 08:30:25.395: active.
+2024-12-13 08:30:25.395: Au caract�re C:\Program Files\Unowhy\HiSqool Manager\inventory.ps1:436 : 10
+2024-12-13 08:30:25.395: + $upload= Invoke-RestMethod -Uri $actdest -Method Post -InFile Upload. ...
+2024-12-13 08:30:25.395: +          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-13 08:30:25.395:     + CategoryInfo          : InvalidOperation : (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebEx 
+2024-12-13 08:30:25.395:    ception
+2024-12-13 08:30:25.395:     + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+2024-12-13 08:30:25.395:   +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [Runner] Running result: true +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [JS] We are triggering +0ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [Runner] Performing runner... +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [JS] Performing facts gathering and upload... +1ms
+2024-12-13 08:30:25.395: 2024-12-13 9:30:25 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Inventaire-de-l-equipement-windows (2337) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Inventaire-de-l-equipement-windows.json +2ms
+2024-12-13 08:30:25.408: 2024-12-13 9:30:25 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload... +2ms
+2024-12-13 08:30:25.442: 2024-12-13 9:30:25 [4628] INFO [Runner] Creating configuration unit runner object... +34ms
+2024-12-13 08:30:25.489: 2024-12-13 9:30:25 [4628] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload\ridfcerauthority.ppkg' -QuietInstall +59ms
+2024-12-13 08:30:25.489: 2024-12-13 9:30:25 [4628] INFO [Runner] Running result: false +1ms
+2024-12-13 08:30:25.505: 2024-12-13 9:30:25 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Certificat-RIDF-1.1 (545) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Certificat-RIDF-1.1.json +2ms
+2024-12-13 08:30:30.727: 2024-12-13 9:30:30 [4628] INFO [JS] Getting installed applications... +5225ms
+2024-12-13 08:30:34.538: 2024-12-13 9:30:34 [4628] INFO [JS] Getting apps result: 0 +3811ms
+2024-12-13 08:30:34.538: 2024-12-13 9:30:34 [4628] INFO [JS] Computing device facts... +0ms
+2024-12-13 08:30:39.950: 2024-12-13 9:30:39 [4628] INFO [JS] Setting legacy facts... +5413ms
+2024-12-13 08:30:39.950: 2024-12-13 9:30:39 [4628] INFO [JS] Saving facts... +1ms
+2024-12-13 08:30:39.950: 2024-12-13 9:30:39 [4628] INFO [JS] Uploading facts... +3ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com +7ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] INFO [Runner] Running result: false +0ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] INFO [JS] We are triggering +1ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] INFO [Runner] Performing runner... +0ms
+2024-12-13 08:30:39.965: 2024-12-13 9:30:39 [4628] INFO [JS] Run inventory script... +1ms
+2024-12-13 08:30:39.981: 2024-12-13 9:30:39 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +17ms
+2024-12-13 08:30:43.168: 2024-12-13 9:30:43 [4628] INFO [JS] Result: 0 +3182ms
+2024-12-13 08:30:43.168: 2024-12-13 9:30:43 [4628] INFO [JS] Stdout: Remove old script
+2024-12-13 08:30:43.168: Download latest script
+2024-12-13 08:30:43.168: Set script execution policy
+2024-12-13 08:30:43.168: Execute script
+2024-12-13 08:30:43.168: Remove script +1ms
+2024-12-13 08:30:43.168: 2024-12-13 9:30:43 [4628] INFO [JS] Stderr: Invoke-WebRequest : Le nom distant n'a pas pu �tre r�solu: 'inventory.idfexchg.unowhy.com'
+2024-12-13 08:30:43.168: Au caract�re C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload\Execute.ps1:4 : 1
+2024-12-13 08:30:43.168: + Invoke-WebRequest "https://inventory.idfexchg.unowhy.com/static/inven ...
+2024-12-13 08:30:43.168: + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-12-13 08:30:43.168:     + CategoryInfo          : InvalidOperation : (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], WebEx 
+2024-12-13 08:30:43.168:    ception
+2024-12-13 08:30:43.168:     + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+2024-12-13 08:30:43.168:  
+2024-12-13 08:30:43.168: .\inventory.ps1 : Le terme �.\inventory.ps1� n'est pas reconnu comme nom d'applet de commande, fonction, fichier de 
+2024-12-13 08:30:43.168: script ou programme ex�cutable. V�rifiez l'orthographe du nom, ou si un chemin d'acc�s existe, v�rifiez que le chemin 
+2024-12-13 08:30:43.168: d'acc�s est correct et r�essayez.
+2024-12-13 08:30:43.168: Au caract�re C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload\Execute.ps1:8 : 1
+2024-12-13 08:30:43.168: + .\inventory.ps1
+2024-12-13 08:30:43.168: + ~~~~~~~~~~~~~~~
+2024-12-13 08:30:43.168:     + CategoryInfo          : ObjectNotFound: (.\inventory.ps1:String) [], CommandNotFoundException
+2024-12-13 08:30:43.168:     + FullyQualifiedErrorId : CommandNotFoundException
+2024-12-13 08:30:43.168:   +0ms
+2024-12-13 08:30:43.168: 2024-12-13 9:30:43 [4628] INFO [Runner] Running result: true +0ms
+2024-12-13 08:30:43.168: 2024-12-13 9:30:43 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Inventaire-de-l-equipement-windows (2337) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Inventaire-de-l-equipement-windows.json +2ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Error, error=Format, active=true +10600ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar... +3ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Error, error=Format, active=true +3ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar... +3ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net. +4ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] ERROR [RequestPerformerService] Error while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2163\payload.jarf91f1f512dd3d4c6.new: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net +0ms
+2024-12-13 08:30:53.777: 2024-12-13 9:30:53 [4628] WARN [PayloadDownloader] Received Error [Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net] while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar: ENOTFOUND
+2024-12-13 08:30:53.777: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net
+2024-12-13 08:30:53.777:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +1ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Error, error=Network, active=true +2ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got disposed. +2ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Error, error=Network, active=true +0ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Error Network. Waiting 60 seconds before retrying... +2ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net. +2ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] ERROR [RequestPerformerService] Error while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload.jara889843c29ecb28b.new: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net +1ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] WARN [PayloadDownloader] Received Error [Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net] while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar: ENOTFOUND
+2024-12-13 08:30:53.792: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net
+2024-12-13 08:30:53.792:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +1ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Error, error=Network, active=true +1ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got disposed. +2ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Error, error=Network, active=true +1ms
+2024-12-13 08:30:53.792: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Error Network. Waiting 60 seconds before retrying... +2ms
+2024-12-13 08:30:53.839: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Error, error=Format, active=true +33ms
+2024-12-13 08:30:53.839: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar... +2ms
+2024-12-13 08:30:53.839: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Downloading, error=None, active=true +3ms
+2024-12-13 08:30:53.839: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/windows_manager_1.2.16_24041940.jar... +3ms
+2024-12-13 08:30:53.839: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Error, error=Format, active=true +2ms
+2024-12-13 08:30:53.839: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar... +3ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net. +5ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] ERROR [RequestPerformerService] Error while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload.jarffd020b788de366e.new: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net +0ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] WARN [PayloadDownloader] Received Error [Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net] while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar: ENOTFOUND
+2024-12-13 08:30:53.855: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net
+2024-12-13 08:30:53.855:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +1ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Error, error=Network, active=true +2ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got disposed. +1ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Error, error=Network, active=true +1ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Error Network. Waiting 60 seconds before retrying... +2ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net. +2ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] ERROR [RequestPerformerService] Error while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/windows_manager_1.2.16_24041940.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload.jarbf1d4ca684a22423.new: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net +0ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] WARN [PayloadDownloader] Received Error [Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net] while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/windows_manager_1.2.16_24041940.jar: ENOTFOUND
+2024-12-13 08:30:53.855: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net
+2024-12-13 08:30:53.855:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +1ms
+2024-12-13 08:30:53.855: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Error, error=Network, active=true +2ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got disposed. +2ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Error, error=Network, active=true +1ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Error Network. Waiting 60 seconds before retrying... +2ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net. +1ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] ERROR [RequestPerformerService] Error while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2334\payload.jarcf91e5ecb96805ed.new: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net +1ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] WARN [PayloadDownloader] Received Error [Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net] while downloading https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar: ENOTFOUND
+2024-12-13 08:30:53.870: Error: getaddrinfo ENOTFOUND idfconf.s3.gra.io.cloud.ovh.net
+2024-12-13 08:30:53.870:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +1ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Error, error=Network, active=true +1ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [RequestPerformerService] Got disposed. +2ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Error, error=Network, active=true +1ms
+2024-12-13 08:30:53.870: 2024-12-13 9:30:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Error Network. Waiting 60 seconds before retrying... +2ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [KeyedObservableCollector] Got 10 items. 0 in, 0 out +17696ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [KeyedObservableCollector] Sending 10 items +1ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:a38d0d7d50d4bd628cfb90f3686d4386 for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +1ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:0cccc52c4129cec4373a78722565948d for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +2ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:51ebe9841df0d7ce693e9c77c8f384f3 for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +1ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +1ms
+2024-12-13 08:31:11.575: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2024-12-13 08:31:11.590: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +1ms
+2024-12-13 08:31:11.590: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/UBw5Po_aPWpfGBCHANv7E0RpfO8 +2ms
+2024-12-13 08:31:11.590: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/tpCMMl0yKy1MF5hEbs3IzVizp7A +2ms
+2024-12-13 08:31:11.590: 2024-12-13 9:31:11 [4628] INFO [MQTTObserver] Received digest MD5:e0d6434f44600767e16fcc016bebdb5d for https://idfconf.s3.gra.io.cloud.ovh.net/configurations/groups/iBF17npTZnssp11fBmkqAnH2b3s +1ms
+2024-12-13 08:31:11.637: 2024-12-13 9:31:11 [4628] INFO [KeyedObservableCollector] Got 10 items. 0 in, 0 out +43ms
+2024-12-13 08:31:11.637: 2024-12-13 9:31:11 [4628] INFO [KeyedObservableCollector] Sending 10 items +1ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.7: false +1037ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16: context.platform==='win32' +1ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +0ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +1ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0: context.platform==='win32' +0ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool-1.2.0: false +0ms
+2024-12-13 08:31:12.668: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Inventaire-de-l-equipement-windows: context.platform==='win32' +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +0ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +0ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133: context.platform==='win32' +0ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/.Net-6-Runtime-6.0.6: context.platform==='win32' +0ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Protection-de-l'equipement-1.3.0: context.platform==='win32' +0ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Utilitaires-de-gestion-Unowhy-Windows-0.9.101: context.platform==='win32' +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +0ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Device-Preparation-3.2.2-(Windows): context.platform==='win32' +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +1ms
+2024-12-13 08:31:12.684: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2024-12-13 08:31:12.700: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-13 08:31:12.700: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +1ms
+2024-12-13 08:31:12.700: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: false +1ms
+2024-12-13 08:31:12.700: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Drive-monlycee.net-3.12.1.20241004: context.platform==='win32' +1ms
+2024-12-13 08:31:12.700: 2024-12-13 9:31:12 [4628] INFO [DeviceConfigurationService]   => result: true +0ms
+2024-12-13 08:31:53.799: 2024-12-13 9:31:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2163] Persisting status=state=Error, error=Network, active=true +41101ms
+2024-12-13 08:31:53.799: 2024-12-13 9:31:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/sqoolctl-paq_0.9.101.jar... +3ms
+2024-12-13 08:31:53.814: 2024-12-13 9:31:53 [4628] INFO [PayloadDownloader] [PAYLOAD 1100] Persisting status=state=Error, error=Network, active=true +12ms
+2024-12-13 08:31:53.814: 2024-12-13 9:31:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar... +2ms
+2024-12-13 08:31:53.877: 2024-12-13 9:31:53 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Error, error=Network, active=true +61ms
+2024-12-13 08:31:53.877: 2024-12-13 9:31:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar... +2ms
+2024-12-13 08:31:53.877: 2024-12-13 9:31:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Downloading, error=None, active=true +3ms
+2024-12-13 08:31:53.877: 2024-12-13 9:31:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/windows_manager_1.2.16_24041940.jar... +2ms
+2024-12-13 08:31:53.877: 2024-12-13 9:31:53 [4628] INFO [PayloadDownloader] [PAYLOAD 2334] Persisting status=state=Error, error=Network, active=true +3ms
+2024-12-13 08:31:53.877: 2024-12-13 9:31:53 [4628] INFO [RequestPerformerService] starting fetch for url https://idfconf.s3.gra.io.cloud.ovh.net/payloads/drivemonlycee_3.12.1.20241004.jar... +2ms
+2024-12-13 08:31:54.033: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Got response 200. +150ms
+2024-12-13 08:31:54.033: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Response content length is 94297003  +1ms
+2024-12-13 08:31:54.173: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Got response 200. +139ms
+2024-12-13 08:31:54.173: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Response content length is 27389196  +1ms
+2024-12-13 08:31:54.173: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Got response 200. +5ms
+2024-12-13 08:31:54.173: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Response content length is 20332000  +1ms
+2024-12-13 08:31:54.173: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Got response 200. +1ms
+2024-12-13 08:31:54.189: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Response content length is 93313406  +1ms
+2024-12-13 08:31:54.455: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Got response 200. +268ms
+2024-12-13 08:31:54.455: 2024-12-13 9:31:54 [4628] INFO [RequestPerformerService] Response content length is 24943789  +3ms
+2024-12-13 08:32:14.979: 2024-12-13 9:32:14 [4628] INFO [RequestPerformerService] Download finished undefined. +20529ms
+2024-12-13 08:32:14.979: 2024-12-13 9:32:14 [4628] INFO [RequestPerformerService] Digest: expected=6e3a5406a52018e61e57c836fdfafcba, actual=6e3a5406a52018e61e57c836fdfafcba. +2ms
+2024-12-13 08:32:17.166: 2024-12-13 9:32:17 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Downloaded, error=None, active=true +2190ms
+2024-12-13 08:32:17.182: 2024-12-13 9:32:17 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload... +5ms
+2024-12-13 08:32:17.182: 2024-12-13 9:32:17 [4628] INFO [RequestPerformerService] Got disposed. +9ms
+2024-12-13 08:32:17.182: 2024-12-13 9:32:17 [4628] INFO [RequestPerformerService] Complete. +2ms
+2024-12-13 08:32:18.900: 2024-12-13 9:32:18 [4628] INFO [PayloadDownloader] [PAYLOAD 2082] Persisting status=state=Ok, error=None, active=true +1706ms
+2024-12-13 08:32:18.900: 2024-12-13 9:32:18 [4628] INFO [PayloadDispatcher] Emitting 10 entries ["conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16","conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0","conf/application/windows/Inventaire-de-l-equipement-windows","conf/application/windows/LGPO-Windows","conf/application/windows/Microsoft-Office-1.0.0","conf/application/windows/Protection-de-l'equipement-1.3.0","conf/other/cleanafterinstall","conf/other/disablerecovery","conf/application/windows/Device-Preparation-3.2.2-(Windows)"] +9ms
+2024-12-13 08:32:18.900: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Processing for execution configuration with 10 keys +1ms
+2024-12-13 08:32:18.900: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Got 10 configurations. 1 in, 0 out +1ms
+2024-12-13 08:32:18.900: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16... +1ms
+2024-12-13 08:32:18.916: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16 -> configuration... +2ms
+2024-12-13 08:32:18.916: 2024-12-13 9:32:18 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2082\payload... +4ms
+2024-12-13 08:32:18.947: 2024-12-13 9:32:18 [4628] INFO [Runner] Creating configuration unit runner object... +34ms
+2024-12-13 08:32:18.947: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> configuration... +2ms
+2024-12-13 08:32:18.947: 2024-12-13 9:32:18 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2024-12-13 08:32:18.963: 2024-12-13 9:32:18 [4628] INFO [Runner] Creating configuration unit runner object... +14ms
+2024-12-13 08:32:18.963: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> configuration... +2ms
+2024-12-13 08:32:18.963: 2024-12-13 9:32:18 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +2ms
+2024-12-13 08:32:18.978: 2024-12-13 9:32:18 [4628] INFO [Runner] Creating configuration unit runner object... +3ms
+2024-12-13 08:32:18.978: 2024-12-13 9:32:18 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> configuration... +2ms
+2024-12-13 08:32:18.978: 2024-12-13 9:32:18 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload... +2ms
+2024-12-13 08:32:18.994: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +17ms
+2024-12-13 08:32:18.994: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +1ms
+2024-12-13 08:32:18.994: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +1ms
+2024-12-13 08:32:19.041: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +49ms
+2024-12-13 08:32:19.041: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +2ms
+2024-12-13 08:32:19.056: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2024-12-13 08:32:19.056: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +11ms
+2024-12-13 08:32:19.056: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> configuration... +1ms
+2024-12-13 08:32:19.072: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload... +1ms
+2024-12-13 08:32:19.072: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +6ms
+2024-12-13 08:32:19.072: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +1ms
+2024-12-13 08:32:19.072: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2024-12-13 08:32:19.088: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +13ms
+2024-12-13 08:32:19.088: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2024-12-13 08:32:19.088: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +2ms
+2024-12-13 08:32:19.103: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +15ms
+2024-12-13 08:32:19.103: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> configuration... +1ms
+2024-12-13 08:32:19.103: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2401\payload... +2ms
+2024-12-13 08:32:19.119: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +6ms
+2024-12-13 08:32:19.119: 2024-12-13 9:32:19 [4628] INFO [WatcherService] Received a list of 14 payloads +1ms
+2024-12-13 08:32:19.119: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +3ms
+2024-12-13 08:32:19.119: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +5ms
+2024-12-13 08:32:19.119: 2024-12-13 9:32:19 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +35ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [JS] Checking if programming or tiggering with trigger configuration... +0ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [JS] We are programmging on name conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 with schedule: 30 minutes +1ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0, immediate=true +3ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [JS] Scheduling result: true +4ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2024-12-13 08:32:19.166: 2024-12-13 9:32:19 [4628] INFO [JS] We are programmging on name conf/application/windows/Inventaire-de-l-equipement-windows with schedule: 300 minutes +1ms
+2024-12-13 08:32:19.181: 2024-12-13 9:32:19 [4628] INFO [SchedulerService] Adding schedule: name inventory, interval=18000000, unit=conf/application/windows/Inventaire-de-l-equipement-windows, immediate=true +1ms
+2024-12-13 08:32:19.181: 2024-12-13 9:32:19 [4628] INFO [JS] Scheduling result: true +2ms
+2024-12-13 08:32:19.181: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +0ms
+2024-12-13 08:32:19.181: 2024-12-13 9:32:19 [4628] INFO [JS] Checking that the unit needs to be performed +2ms
+2024-12-13 08:32:19.181: 2024-12-13 9:32:19 [4628] INFO [JS] Getting GPO version... +1ms
+2024-12-13 08:32:19.181: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +2ms
+2024-12-13 08:32:19.197: 2024-12-13 9:32:19 [4628] INFO [JS] Checking that the unit needs to be performed +3ms
+2024-12-13 08:32:19.244: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +52ms
+2024-12-13 08:32:19.244: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-13 08:32:19.244: 2024-12-13 9:32:19 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-13 08:32:19.244: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +1ms
+2024-12-13 08:32:19.244: 2024-12-13 9:32:19 [4628] INFO [JS] Checking that the unit needs to be performed +1ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [Runner] Checking if runner needs to be performed... +21ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [JS] Checking conf/application/windows/Device-Preparation-3.2.2-(Windows) (configuration) +1ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [Runner] Runner doesn't need to be performed +4ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [Runner] Runner doesn't need to be performed +1ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [Runner] Performing runner... +3ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [JS] Performing security operation... +1ms
+2024-12-13 08:32:19.275: 2024-12-13 9:32:19 [4628] INFO [JS] Security spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload\Execute.ps1 +0ms
+2024-12-13 08:32:19.291: 2024-12-13 9:32:19 [4628] INFO [Runner] Performing runner... +7ms
+2024-12-13 08:32:19.291: 2024-12-13 9:32:19 [4628] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2024-12-13 08:32:19.322: 2024-12-13 9:32:19 [4628] INFO [Runner] Performing runner... +35ms
+2024-12-13 08:32:19.322: 2024-12-13 9:32:19 [4628] INFO [JS] Applying conf/application/windows/Device-Preparation-3.2.2-(Windows) (configuration) +1ms
+2024-12-13 08:32:19.337: 2024-12-13 9:32:19 [4628] INFO [JS] Apply policy - Executing file (Execute.ps1)... +2ms
+2024-12-13 08:32:19.337: 2024-12-13 9:32:19 [4628] INFO [JS] Apply policy - Arguments: [] +1ms
+2024-12-13 08:32:19.337: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +10ms
+2024-12-13 08:32:19.353: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Inventaire-de-l-equipement-windows (2337) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Inventaire-de-l-equipement-windows.json +2ms
+2024-12-13 08:32:19.353: 2024-12-13 9:32:19 [4628] INFO [JS] Current GPO version: 1.5 +14ms
+2024-12-13 08:32:19.369: 2024-12-13 9:32:19 [4628] INFO [Runner] Runner doesn't need to be performed +1ms
+2024-12-13 08:32:19.369: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +1ms
+2024-12-13 08:32:19.712: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +351ms
+2024-12-13 08:32:19.712: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2024-12-13 08:32:19.712: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +4ms
+2024-12-13 08:32:19.728: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +15ms
+2024-12-13 08:32:19.744: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +57ms
+2024-12-13 08:32:19.790: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:32:19.790: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:32:19.790: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +2ms
+2024-12-13 08:32:19.790: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +3ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Inventaire-de-l-equipement-windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:32:19.806: 2024-12-13 9:32:19 [4628] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2337\payload... +2ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [Runner] Creating configuration unit runner object... +32ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Device-Preparation-3.2.2-(Windows) -> conf/application/windows/Inventaire-de-l-equipement-windows... +0ms
+2024-12-13 08:32:19.837: 2024-12-13 9:32:19 [4628] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Agent-de-controle-Unowhy-Windows-1.2.16 -> conf/application/windows/Inventaire-de-l-equipement-windows... +1ms
+2024-12-13 08:32:21.587: 2024-12-13 9:32:21 [4628] INFO [Runner] Performing runner... +1ms
+2024-12-13 08:32:24.102: 2024-12-13 9:32:24 [4628] INFO [RequestPerformerService] Download finished undefined. +1210ms
+2024-12-13 08:32:24.102: 2024-12-13 9:32:24 [4628] INFO [RequestPerformerService] Digest: expected=0780ddd82e1ad3043ab8c52a3d8afa23, actual=0780ddd82e1ad3043ab8c52a3d8afa23. +1ms
+2024-12-13 08:32:24.117: 2024-12-13 9:32:24 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Persisting status=state=Downloaded, error=None, active=true +3ms
+2024-12-13 08:32:24.117: 2024-12-13 9:32:24 [4628] INFO [PayloadDownloader] [PAYLOAD 320] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload... +3ms
+2024-12-13 08:32:24.117: 2024-12-13 9:32:24 [4628] INFO [RequestPerformerService] Got disposed. +6ms
+2024-12-13 08:32:24.117: 2024-12-13 9:32:24 [4628] INFO [RequestPerformerService] Complete. +0ms

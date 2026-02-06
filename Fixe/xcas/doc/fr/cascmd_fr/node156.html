@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Codage des r&#233;els et des d&#233;cimaux</TITLE>
+<META NAME="description" CONTENT="Codage des r&#233;els et des d&#233;cimaux">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node159.html">
+<LINK REL="previous" HREF="node155.html">
+<LINK REL="up" HREF="node155.html">
+<LINK REL="next" HREF="node157.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4651"
+  HREF="node157.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4645"
+  HREF="node155.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4639"
+  HREF="node155.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4647"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4649"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4652"
+  HREF="node157.html">Un exemple : codage</A>
+<B> monter:</B> <A NAME="tex2html4646"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4640"
+  HREF="node155.html">Calcul num&#233;rique</A>
+ &nbsp; <B>  <A NAME="tex2html4648"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4650"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00710000000000000000">
+Codage des r&#233;els et des d&#233;cimaux</A>
+</H1>
+Voici comment sont cod&#233;es les nombres r&#233;els lorsque le nombre de chiffres 
+significatifs demand&#233;s est inf&#233;rieur ou &#233;gal &#224; 16 (par exemple
+<TT>Digits:=15</TT>).
+<BR>
+On &#233;crit  <I>d</I>, un nombre r&#233;el ou d&#233;cimal, sous la forme :
+<BR><!-- MATH
+ $d=2^\alpha*(1+m)$
+ -->
+<I>d</I> = 2<SUP><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$\scriptstyle \alpha$"></SUP>*(1 + <I>m</I>) avec 0 &lt; <I>m</I> &lt; 1 et <!-- MATH
+ $-2^{10}<\alpha\geq2^{10}$
+ -->
+-2<SUP>10</SUP> &lt; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 2<SUP>10</SUP>.
+<BR>
+On utilse 64 bits pour repr&#233;senter ce nombre :
+
+<UL>
+<LI>le premier bit pour le signe de <I>d</I> (0 pour '+' et 1 pour '-'),
+</LI>
+<LI>les 11 bits suivant sont pour cod&#233;s l'exposant 
+(on code <!-- MATH
+ $\alpha+2^{10}-1$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> +2<SUP>10</SUP> - 1), 
+</LI>
+<LI>les 52 derniers sont pour cod&#233;s la mantisse <I>m</I>.
+<BR></LI>
+</UL>
+Codage de 2<SUP><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$\scriptstyle \alpha$"></SUP> :
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 0 est cod&#233; 011 1111 1111
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 1 est cod&#233; 100 0000 0000
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 4 est cod&#233; 100 0000 0011
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 5 est cod&#233; 100 0000 0100
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = - 1 est cod&#233; 011 1111 1110
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = - 4 est cod&#233; 011 1111 1011
+<BR><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = - 5 est cod&#233; 011 1111 1010
+<BR><!-- MATH
+ $\alpha=2^{10}$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 2<SUP>10</SUP> est cod&#233; 111 1111 1111
+<BR><!-- MATH
+ $\alpha=2^{-10}-1$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> = 2<SUP>-10</SUP> - 1 est cod&#233; 000 0000 0000.
+
+<P>
+<B>Remarque</B>
+<BR><!-- MATH
+ $2^{-52}=0.2220446049250313e-15$
+ -->
+2<SUP>-52</SUP> = 0.2220446049250313<I>e</I> - 15
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html4653"
+  HREF="node157.html">Un exemple : codage de  3.1 et de 3</A>
+<LI><A NAME="tex2html4654"
+  HREF="node158.html">Diff&#233;rence de codage entre (3.1-3) et 0.1</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4651"
+  HREF="node157.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4645"
+  HREF="node155.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4639"
+  HREF="node155.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4647"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4649"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4652"
+  HREF="node157.html">Un exemple : codage</A>
+<B> monter:</B> <A NAME="tex2html4646"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4640"
+  HREF="node155.html">Calcul num&#233;rique</A>
+ &nbsp; <B>  <A NAME="tex2html4648"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4650"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

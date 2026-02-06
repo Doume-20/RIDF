@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;velopper et simplifier</TITLE>
+<META NAME="description" CONTENT="D&#233;velopper et simplifier">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html202"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html196"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html190"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html198"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html200"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html203"
+  HREF="node11.html">Les fonctions</A>
+<B> monter:</B> <A NAME="tex2html197"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html191"
+  HREF="node9.html">Les expressions</A>
+ &nbsp; <B>  <A NAME="tex2html199"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html201"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00025000000000000000"></A>
+<A NAME="186"></A>
+<A NAME="187"></A>
+<BR>
+D&#233;velopper et simplifier
+</H2>
+En-dehors des r&#232;gles de la section pr&#233;c&#233;dente,
+il n'y a pas de simplification syst&#233;matique. 
+Il y a deux raisons &#224; cela. La premi&#232;re est que les 
+simplifications non triviales sont parfois
+co&#251;teuses en temps, et le choix d'en faire ou non est laiss&#233; 
+&#224; l'utilisateur&nbsp;;
+la deuxi&#232;me est qu'il y a en g&#233;n&#233;ral plusieurs mani&#232;res de
+simplifier une m&#234;me expression, selon l'usage que l'on veut en
+faire. 
+Les principales commandes pour transformer une expression 
+sont les suivantes&nbsp;:
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><A NAME="1581"></A>
+<code>expand</code>&nbsp;: d&#233;veloppe une expression en tenant compte 
+uniquement de la distributivit&#233; de la multiplication sur l'addition et
+du d&#233;veloppement des puissances enti&#232;res.
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><A NAME="1582"></A>
+<A NAME="1583"></A>
+<code>normal</code> et <code>ratnormal</code>&nbsp;: 
+d'un bon rapport temps d'ex&#233;cution-simplification, elles
+&#233;crivent une fraction rationnelle (rapport de deux polyn&#244;mes)
+sous forme de fraction irr&#233;ductible d&#233;velopp&#233;e; <code>normal</code>
+tient compte des nombres alg&#233;briques (par exemple comme <code>sqrt(2)</code>)
+mais pas <code>ratnormal</code>. Les deux ne tiennent pas compte des relations
+entre fonctions transcendantes (par exemple comme <code>sin</code> et <code>cos</code>).
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><A NAME="1584"></A>
+<code>factor</code>&nbsp;: un peu plus lente que les pr&#233;c&#233;dentes, elle
+&#233;crit une fraction sous forme irr&#233;ductible factoris&#233;e.
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><A NAME="1585"></A>
+<code>simplify</code>&nbsp;: elle essaie de se ramener &#224;
+des variables alg&#233;briquement ind&#233;pendantes avant d'appliquer
+<code>normal</code>. Ceci est plus co&#251;teux en temps et "aveugle" (on
+ne contr&#244;le pas les r&#233;&#233;critures interm&#233;diaires).
+Les simplifications faisant intervenir des extensions
+alg&#233;briques (par exemple des racines carr&#233;es) 
+n&#233;cessitent parfois deux appels et/ou des hypoth&#232;ses (<code>assume</code>)
+pour enlever des valeurs absolues avant d'obtenir la simplification
+souhait&#233;e.
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD><A NAME="1586"></A>
+<code>tsimplify</code> essaie de se ramener &#224; des variables 
+alg&#233;briquement ind&#233;pendantes mais sans appliquer <code>normal</code>
+ensuite.
+</DD>
+</DL>
+Dans le menu <code>Expression</code> du bandeau sup&#233;rieur, les sous-menus sont
+des menus de r&#233;&#233;criture et contiennent d'autres fonctions, pour des 
+transformations plus ou moins sp&#233;cialis&#233;es.  
+<PRE>
+b:=sqrt(1-a^2)/sqrt(1-a)
+ratnormal(b)
+normal(b)
+tsimplify(b)
+simplify(b)
+simplify(simplify(b))
+assume(a&lt;1)
+simplify(b)   
+simplify(simplify(b))
+</PRE>
+<A NAME="1587"></A>
+La fonction <code>convert</code> permet de passer d'une expression &#224; une
+autre &#233;quivalente, sous un format qui est sp&#233;cifi&#233; par le
+deuxi&#232;me argument. 
+<PRE>
+convert(exp(i*x),sincos)
+convert(1/(x^4-1),partfrac)
+convert(series(sin(x),x=0,6),polynom)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Transformations</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>simplify</code></TD>
+<TD ALIGN="LEFT">simplifier</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tsimplify</code></TD>
+<TD ALIGN="LEFT">simplifier (moins puissant)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>normal</code></TD>
+<TD ALIGN="LEFT">forme normale</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ratnormal</code></TD>
+<TD ALIGN="LEFT">forme normale (moins puissant)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>expand</code></TD>
+<TD ALIGN="LEFT">d&#233;velopper</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>factor</code></TD>
+<TD ALIGN="LEFT">factoriser</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>assume</code></TD>
+<TD ALIGN="LEFT">rajout d'hypoth&#232;ses</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>convert</code></TD>
+<TD ALIGN="LEFT">transformer en un format sp&#233;cifi&#233;</TD>
+</TR>
+</TABLE>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html202"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html196"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html190"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html198"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html200"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html203"
+  HREF="node11.html">Les fonctions</A>
+<B> monter:</B> <A NAME="tex2html197"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html191"
+  HREF="node9.html">Les expressions</A>
+ &nbsp; <B>  <A NAME="tex2html199"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html201"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

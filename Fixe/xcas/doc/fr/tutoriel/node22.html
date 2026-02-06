@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Polyn&#244;mes et fractions rationnelles</TITLE>
+<META NAME="description" CONTENT="Polyn&#244;mes et fractions rationnelles">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node23.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html377"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html371"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html365"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html373"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html375"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html378"
+  HREF="node23.html">Trigonom&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html372"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html366"
+  HREF="node21.html">Arithm&#233;tique des entiers</A>
+ &nbsp; <B>  <A NAME="tex2html374"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html376"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00042000000000000000"></A>
+<A NAME="500"></A>
+<A NAME="501"></A>
+<BR>
+Polyn&#244;mes et fractions rationnelles
+</H2>
+Les fonctions de traitement des polyn&#244;mes sont dans le menu 
+<code>Cmds-&gt;Polynômes</code>. 
+
+<P>
+On utilise <code>normal</code> ou <code>expand</code> 
+pour d&#233;velopper, ou plus g&#233;n&#233;ralement mettre une fraction 
+sous forme irr&#233;ductible, et <code>factor</code> pour
+factoriser. 
+<A NAME="1673"></A>
+<A NAME="1674"></A>
+Le r&#233;sultat d&#233;pend du corps de nombres dans lequel on
+se place. Par d&#233;faut il s'agit des rationnels si les coefficients
+sont exacts ou des réels sinon. Pour les complexes 
+(exacts ou approchées), il
+faut activer l'option <code>Complexe</code> &#224; partir du bouton rappelant la configuration <code> Config:...</code>. On peut aussi d&#233;clarer les 
+coefficients comme des
+entiers modulo <I>p</I> pour travailler dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \mathbb {Z}$"> (commande <code>%</code>) 
+ou dans un corps
+fini (défini par la commande <code>GF</code>). Ex&#233;cutez les
+commandes suivantes avant et apr&#232;s avoir activ&#233; l'option
+<code>Complexe</code>.
+<PRE>
+P:=x^4-1
+factor(P)
+gcd(P,x^3-1)
+divis(P)
+propfrac(x^4/P)
+partfrac(4/P)
+Q:=(x^4+1)%3
+factor(Q)
+G:=GF(2,8,['a','G'])
+factor(G(a^3)*x^2+1)
+genpoly(5,3,x)
+genpoly(2,3,x)
+genpoly(2*y+5,3,x)
+</PRE>
+<A NAME="1675"></A>
+<A NAME="1676"></A>
+<A NAME="1677"></A>
+<A NAME="1678"></A>
+<A NAME="1679"></A>
+<A NAME="1680"></A>
+<A NAME="1681"></A>
+<A NAME="1682"></A>
+<A NAME="1683"></A>
+<A NAME="1684"></A>
+<A NAME="1685"></A>
+<A NAME="1686"></A>
+<A NAME="1687"></A>
+<A NAME="1688"></A> 
+<A NAME="1689"></A>
+<A NAME="1690"></A>
+<A NAME="522"></A>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Polyn&#244;mes</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>normal</code></TD>
+<TD ALIGN="LEFT">forme normale (d&#233;velopp&#233;e et r&#233;duite)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>expand</code></TD>
+<TD ALIGN="LEFT">forme d&#233;velopp&#233;e</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ptayl</code></TD>
+<TD ALIGN="LEFT">forme de Taylor</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>peval</code> ou <code>horner</code></TD>
+<TD ALIGN="LEFT">&#233;valuation en un point par l'algorithme de Horner</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>genpoly</code></TD>
+<TD ALIGN="LEFT">polyn&#244;me d&#233;fini par sa valeur en un point</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>canonical_form</code></TD>
+<TD ALIGN="LEFT">trin&#244;me sous forme canonique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>coeff</code></TD>
+<TD ALIGN="LEFT">(liste des) coefficient(s)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>poly2symb</code></TD>
+<TD ALIGN="LEFT">de l'expression alg&#233;brique &#224; la forme symbolique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>symb2poly</code></TD>
+<TD ALIGN="LEFT">de la forme symbolique &#224; l'expression alg&#233;brique</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>pcoeff</code></TD>
+<TD ALIGN="LEFT">polyn&#244;me d&#233;crit par ses racines</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>degree</code></TD>
+<TD ALIGN="LEFT">degr&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>lcoeff</code></TD>
+<TD ALIGN="LEFT">coefficient du terme de plus haut degr&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>valuation</code></TD>
+<TD ALIGN="LEFT">degr&#233; du mon&#244;me de plus bas degr&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tcoeff</code></TD>
+<TD ALIGN="LEFT">coefficient du terme de plus bas degr&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>factor</code></TD>
+<TD ALIGN="LEFT">d&#233;composition en facteurs premiers</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>factors</code></TD>
+<TD ALIGN="LEFT">liste des facteurs premiers</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>divis</code></TD>
+<TD ALIGN="LEFT">liste des diviseurs</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>collect</code></TD>
+<TD ALIGN="LEFT">factorisation sur les entiers</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>froot</code></TD>
+<TD ALIGN="LEFT">racines avec leurs multiplicit&#233;s</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>proot</code></TD>
+<TD ALIGN="LEFT">valeurs approch&#233;es des racines</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>sturmab</code></TD>
+<TD ALIGN="LEFT">nombre de racines dans un intervalle</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>getNum</code></TD>
+<TD ALIGN="LEFT">num&#233;rateur d'une fraction rationnelle</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>getDenom</code></TD>
+<TD ALIGN="LEFT">d&#233;nominateur d'une fraction rationnelle</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>propfrac</code></TD>
+<TD ALIGN="LEFT">isole partie enti&#232;re et fraction propre</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>partfrac</code></TD>
+<TD ALIGN="LEFT">d&#233;composition en &#233;l&#233;ments simples</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>quo</code></TD>
+<TD ALIGN="LEFT">quotient de la division euclidienne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>rem</code></TD>
+<TD ALIGN="LEFT">reste de la division euclidienne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>gcd</code></TD>
+<TD ALIGN="LEFT">plus grand diviseur commun</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>lcm</code></TD>
+<TD ALIGN="LEFT">plus petit multiple commun</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>egcd</code></TD>
+<TD ALIGN="LEFT">identit&#233; de Bezout</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>divpc</code></TD>
+<TD ALIGN="LEFT">division suivant les puissances croissantes</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>randpoly</code></TD>
+<TD ALIGN="LEFT">polyn&#244;me al&#233;atoire</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cyclotomic</code></TD>
+<TD ALIGN="LEFT">polyn&#244;mes cyclotomiques</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>lagrange</code></TD>
+<TD ALIGN="LEFT">polyn&#244;mes de Lagrange</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>hermite</code></TD>
+<TD ALIGN="LEFT">polyn&#244;mes de Hermite</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>laguerre</code></TD>
+<TD ALIGN="LEFT">polyn&#244;mes de Laguerre</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tchebyshev1</code></TD>
+<TD ALIGN="LEFT">polyn&#244;mes de Tchebyshev</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tchebyshev2</code></TD>
+<TD ALIGN="LEFT">polyn&#244;mes de Tchebyshev</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1691"></A>
+<A NAME="532"></A>
+<A NAME="1692"></A>
+<A NAME="534"></A>
+<A NAME="1693"></A>
+<A NAME="536"></A>
+<A NAME="1694"></A>
+<A NAME="1695"></A>
+<A NAME="1696"></A>
+<A NAME="540"></A>
+<A NAME="1697"></A>
+<A NAME="542"></A>
+<A NAME="1698"></A>
+<A NAME="544"></A>
+<A NAME="1699"></A>
+<A NAME="546"></A>
+<A NAME="1700"></A>
+<A NAME="548"></A>
+<A NAME="1701"></A>
+<A NAME="550"></A>
+<A NAME="1702"></A> 
+<A NAME="552"></A>
+<A NAME="1703"></A>
+<A NAME="554"></A>
+<A NAME="1704"></A>
+<A NAME="556"></A>
+<A NAME="1705"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html377"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html371"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html365"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html373"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html375"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html378"
+  HREF="node23.html">Trigonom&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html372"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html366"
+  HREF="node21.html">Arithm&#233;tique des entiers</A>
+ &nbsp; <B>  <A NAME="tex2html374"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html376"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+2021-09-16 20:31:41 [5224] INFO [Runner] Running result: true +1ms
+2021-09-16 18:31:41.190: 2021-09-16 20:31:41 [5224] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2021-09-16 18:31:41.190: 2021-09-16 20:31:41 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +1ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [Runner] Creating configuration unit runner object... +3ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +2ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [SchedulerService] Identical schedule existing. Doing nothing +0ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [JS] Scheduling result: undefined +1ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-16 18:31:41.206: 2021-09-16 20:31:41 [5224] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2021-09-16 18:31:43.268: 2021-09-16 20:31:43 [5224] INFO [JS] User name: AzureAD\paulpeyrot +2054ms
+2021-09-16 18:31:43.268: 2021-09-16 20:31:43 [5224] INFO [JS] User : paulpeyrot +0ms
+2021-09-16 18:31:43.268: 2021-09-16 20:31:43 [5224] INFO [JS] User profile: C:\Users\paulpeyrot +0ms
+2021-09-16 18:31:43.268: 2021-09-16 20:31:43 [5224] INFO [JS] Version 6.0.5 of application already up to date +2ms
+2021-09-16 18:31:43.268: 2021-09-16 20:31:43 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-16 18:31:43.268: 2021-09-16 20:31:43 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/GeoGebra-Windows (139) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_GeoGebra-Windows.json +1ms
+2021-09-16 18:31:46.860: 2021-09-16 20:31:46 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +3599ms
+2021-09-16 18:31:46.876: 2021-09-16 20:31:46 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:31:46.876: 2021-09-16 20:31:46 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:31:46.876: 2021-09-16 20:31:46 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:31:48.891: 2021-09-16 20:31:48 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '8dac98da-8b8d-468c-94f0-dacc43930496').version +2011ms
+2021-09-16 18:31:48.891: 2021-09-16 20:31:48 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:31:48.891: 2021-09-16 20:31:48 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:31:48.891: 2021-09-16 20:31:48 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\225\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:31:49.079: 2021-09-16 20:31:49 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'e89266ec-30ec-4a0e-b7c4-7ae34a541fb6').version +191ms
+2021-09-16 18:31:49.079: 2021-09-16 20:31:49 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:31:49.079: 2021-09-16 20:31:49 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:31:49.079: 2021-09-16 20:31:49 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\202\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:31:50.625: 2021-09-16 20:31:50 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '0642f63e-c58e-4b3a-a5a2-0b04044373d4').version +1536ms
+2021-09-16 18:31:50.625: 2021-09-16 20:31:50 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:31:50.625: 2021-09-16 20:31:50 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:31:50.625: 2021-09-16 20:31:50 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\224\payload\application.ppkg, args=-QuietInstall... +2ms
+2021-09-16 18:31:50.859: 2021-09-16 20:31:50 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '58103a8a-46f4-4fd9-ab24-2fb342750f07').version +236ms
+2021-09-16 18:31:50.859: 2021-09-16 20:31:50 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:31:50.859: 2021-09-16 20:31:50 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:31:50.859: 2021-09-16 20:31:50 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\207\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:31:51.372: 2021-09-16 20:31:51 [5224] INFO [JS] Result: 0 +503ms
+2021-09-16 18:31:51.372: 2021-09-16 20:31:51 [5224] INFO [JS] Stdout:  +0ms
+2021-09-16 18:31:51.372: 2021-09-16 20:31:51 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-16 18:31:51.372: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +0ms
+2021-09-16 18:31:51.372: 2021-09-16 20:31:51 [5224] INFO [Runner] Running result: true +0ms
+2021-09-16 18:31:51.380: 2021-09-16 20:31:51 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +2ms
+2021-09-16 18:31:51.382: 2021-09-16 20:31:51 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +2ms
+2021-09-16 18:31:51.392: 2021-09-16 20:31:51 [5224] INFO [Runner] Creating configuration unit runner object... +11ms
+2021-09-16 18:31:51.392: 2021-09-16 20:31:51 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 18:31:51.392: 2021-09-16 20:31:51 [5224] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe +1ms
+2021-09-16 18:31:57.277: 2021-09-16 20:31:57 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '105da565-d050-4a60-9c4f-556c6bdb5775').version +5888ms
+2021-09-16 18:31:57.285: 2021-09-16 20:31:57 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:31:57.287: 2021-09-16 20:31:57 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:31:57.287: 2021-09-16 20:31:57 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\230\payload\application.ppkg, args=-QuietInstall... +2ms
+2021-09-16 18:31:57.590: 2021-09-16 20:31:57 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'e95ff137-4888-481f-97cc-e0302d8ee23b').version +301ms
+2021-09-16 18:31:57.590: 2021-09-16 20:31:57 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:31:57.590: 2021-09-16 20:31:57 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:31:57.590: 2021-09-16 20:31:57 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\222\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:31:57.823: 2021-09-16 20:31:57 [5224] INFO [JS] Version of current package: 1.04 +233ms
+2021-09-16 18:31:58.215: 2021-09-16 20:31:58 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +389ms
+2021-09-16 18:31:58.215: 2021-09-16 20:31:58 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:31:58.217: 2021-09-16 20:31:58 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:31:58.217: 2021-09-16 20:31:58 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\226\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:31:58.612: 2021-09-16 20:31:58 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'ccbc3b16-8263-4997-a512-65f19dc1cb8a').version +393ms
+2021-09-16 18:31:58.612: 2021-09-16 20:31:58 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:31:58.612: 2021-09-16 20:31:58 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:31:58.612: 2021-09-16 20:31:58 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\227\payload\application.ppkg, args=-QuietInstall... +1ms

@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour &#233;valuer une expression : eval</TITLE>
+<META NAME="description" CONTENT="Pour &#233;valuer une expression : eval">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node315.html">
+<LINK REL="previous" HREF="node313.html">
+<LINK REL="up" HREF="node313.html">
+<LINK REL="next" HREF="node315.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7557"
+  HREF="node315.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7551"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7545"
+  HREF="node313.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7553"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7555"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7558"
+  HREF="node315.html">Pour &#233;valuer une expression</A>
+<B> monter:</B> <A NAME="tex2html7552"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7546"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+ &nbsp; <B>  <A NAME="tex2html7554"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7556"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009131000000000000000"></A><A NAME="7114"></A><A NAME="sec:evalgeo"></A>
+<BR>
+Pour &#233;valuer une expression : <TT>eval</TT>
+</H2>
+<TT>eval</TT> sert &#224; &#233;valuer une expression.
+<BR> <TT>eval</TT> a un ou deux argument(s) : une expression et &#233;ventuellement le 
+niveau souhait&#233; de l'&#233;valuation.
+<BR>
+Il faut savoir que <TT>Xcas</TT> &#233;value toujours les expressions, sans avoir 
+besoin de la commande <TT>eval</TT> : le niveau d'&#233;valuation est indiqu&#233; dans 
+la case <TT>eval</TT> de la <TT>Configuration du CAS</TT> du menu <TT>Cfg</TT> et vaut 
+par d&#233;faut vaut 25.
+<BR>
+La commande <TT>eval</TT> est surtout utile lorsqu'on veut &#233;valuer une 
+sous-expression  dans l'&#233;diteur d'&#233;quations.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>a:=2</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>eval(2+3*a)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>2+3*a</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>8</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>purge(r);purge(p);a:=1+i*r</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>r:=p+1;p:=-4;</TT>
+</DIV>
+on peut alors avoir diff&#233;rentes &#233;valuation de <TT>a</TT> selon le niveau
+d&#233;valuation demand&#233; :
+
+<UL>
+<LI>on tape :
+<DIV ALIGN="CENTER">
+<TT>a</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1-3*i</TT>
+</DIV>
+</LI>
+<LI>on tape :
+<DIV ALIGN="CENTER">
+<TT>eval(a,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1+(i)*r</TT>
+</DIV>
+</LI>
+<LI>on tape :
+<DIV ALIGN="CENTER">
+<TT>eval(a,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1+(i)*(p+1)</TT>
+</DIV>
+</LI>
+<LI>on tape :
+<DIV ALIGN="CENTER">
+<TT>eval(a,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1-3*i</TT>
+</DIV>
+</LI>
+</UL> 
+<B>Remarque</B>
+<BR>
+Pour les objets g&#233;om&#233;triques, en plus de l'&#233;valuation exacte (au niveau 
+25 par d&#233;vaut), <TT>Xcas</TT> 
+rajoute une &#233;valuation num&#233;rique (au niveau 1) au moment de l'affichage 
+pour pouvoir repr&#233;senter les objets g&#233;om&#233;triques dependant de 
+param&#232;tres d&#233;finis par <TT>assume</TT> ou par une affectation num&#233;rique. 
+
+<P>
+Voici diff&#233;rents exemples :
+
+<UL>
+<LI>On tape :
+<PRE>
+purge(r);
+R:=point(1+i*r);
+r:=-3;
+</PRE>
+Le niveau correspondant &#224; <TT>R:=point(1+i*r);</TT> affichera dans tous les cas
+le point et sa l&#233;gende car l'&#233;valuation num&#233;rique pour l'affichage de ce 
+niveau est faite au moment de l'affichage donc apr&#232;s que <TT>r</TT> ait
+&#233;t&#233; d&#233;fini.
+</LI>
+<LI>On tape :
+<PRE>
+purge(r);
+purge(p);
+R:=point(1+i*r);
+r:=p+1;
+p:=-4;
+</PRE>
+Le point <TT>R</TT> n'apparait pas car l'&#233;valuation num&#233;rique au moment de 
+l'affichage n'est faite qu'au niveau 1. Ainsi <TT>r</TT> est remplac&#233; par 
+<TT>p</TT> mais <TT>p</TT> n'est pas remplac&#233; donc la commande 
+<TT>R:=point(1+i*r);</TT> n'affiche rien.
+
+<P>
+</LI>
+<LI>On tape
+<PRE>
+purge(r);
+R:=point(1+i*r):;
+r:=-3;
+eval(R,1);
+</PRE>
+La commande <TT>eval(R,1)</TT> renvoie <TT>point(1+(i)*r)</TT> et dessine le point 
+<TT>R</TT> et sa l&#233;gende. En effet la r&#233;ponse est &#233;valu&#233;e formellement
+au niveau 1 ce qui donne la r&#233;ponse <TT>point(1+i*r)</TT> puis pour la 
+repr&#233;sentation graphique, <TT>point(1+i*r)</TT> est &#233;valu&#233; num&#233;riquement 
+(sans toucher aux l&#233;gendes) ce qui permet d'afficher le point.
+La l&#233;gende n' apparait pas, lorsqu'on &#233;value un objet g&#233;om&#233;trique, mais ici, lorsqu'on fait <TT>eval(R,1)</TT>, <TT>R</TT> est &#233;valu&#233; en un objet 
+g&#233;om&#233;trique, mais l'objet g&#233;om&#233;trique lui-m&#234;me n'est pas &#233;valu&#233;.
+Donc <TT>eval(R,1)</TT> dessine le point <TT>R</TT> et sa l&#233;gende.
+</LI>
+<LI>On tape
+<PRE>
+purge(r);
+purge(p);
+R:=point(1+i*r):;
+r:=p+1;
+p:=-4;
+eval(R,1);
+</PRE>
+La commande <TT>eval(R,1)</TT> renvoie <TT>point(1+(i)*r)</TT>, mais ne dessine pas 
+le point <TT>R</TT>. En effet la r&#233;ponse est &#233;valu&#233;e formellement au 
+niveau 1 ce qui donne la r&#233;ponse <TT>point(1+i*r)</TT> puis pour la 
+repr&#233;sentation graphique, <TT>point(1+i*r)</TT> est &#233;valu&#233; num&#233;riquement 
+au niveau 1 ce qui ne permet pas d'afficher le point.
+
+<P>
+</LI>
+<LI>On tape :
+<PRE>
+purge(r);
+R:=point(1+i*r):;
+r:=-3;
+eval(R,2);
+</PRE>
+La commande <TT>eval(R,2)</TT> renvoie <TT>point(1,-3)</TT> et le dessin du point 
+<TT>R</TT> sans sa l&#233;gende. En effet, quand on fait <TT>eval(R,2)</TT>, alors 
+<TT>R</TT> est &#233;valu&#233; en un objet g&#233;om&#233;trique, et cet l'objet 
+g&#233;om&#233;trique est lui-m&#234;me &#233;valu&#233; et donc la l&#233;gende  disparait.
+</LI>
+<LI>On tape :
+<PRE>
+purge(r);
+purge(p);
+R:=point(1+i*r):;
+r:=p+1;
+p:=-4;
+eval(R,2);
+</PRE>
+La commande <TT>eval(R,2)</TT> renvoie <TT>point(1,p+1)</TT> et le dessin du point 
+<TT>R</TT> sans sa l&#233;gende. En effet, quand on fait <TT>eval(R,2)</TT>, alors 
+<TT>R</TT> est &#233;valu&#233; en un objet g&#233;om&#233;trique, et cet l'objet 
+g&#233;om&#233;trique est lui-m&#234;me &#233;valu&#233; et donc la l&#233;gende  disparait.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7557"
+  HREF="node315.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7551"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7545"
+  HREF="node313.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7553"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7555"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7558"
+  HREF="node315.html">Pour &#233;valuer une expression</A>
+<B> monter:</B> <A NAME="tex2html7552"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7546"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+ &nbsp; <B>  <A NAME="tex2html7554"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7556"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

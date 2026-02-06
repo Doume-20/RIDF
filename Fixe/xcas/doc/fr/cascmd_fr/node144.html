@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Surface 3D en param&#233;trique : plotparam paramplot DrawParm courbe_parametrique</TITLE>
+<META NAME="description" CONTENT="Surface 3D en param&#233;trique : plotparam paramplot DrawParm courbe_parametrique">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node143.html">
+<LINK REL="up" HREF="node142.html">
+<LINK REL="next" HREF="node145.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4457"
+  HREF="node145.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4451"
+  HREF="node142.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4447"
+  HREF="node143.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4453"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4455"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4458"
+  HREF="node145.html">Courbe en polaire :</A>
+<B> monter:</B> <A NAME="tex2html4452"
+  HREF="node142.html">Courbe et surface en</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4448"
+  HREF="node143.html">Courbe 2D en param&#233;trique</A>
+ &nbsp; <B>  <A NAME="tex2html4454"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4456"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION006152000000000000000"></A><A NAME="3010"></A><A NAME="3011"></A><A NAME="3012"></A><A NAME="3013"></A>
+<BR>
+Surface 3D en param&#233;trique : <TT>plotparam paramplot DrawParm courbe_parametrique</TT>
+</H2>
+<TT>plotparam</TT> a deux arguments principaux et &#233;ventuellement
+les sauts d'&#233;chantillonnage des variables avec <TT>ustep=</TT> et <TT>vstep=</TT>, 
+c'est &#224; dire le pas en <I>u</I> et en <I>v</I> que l'on choisi pour le graphe.
+<BR>
+Les deux arguments principaux de <TT>plotparam</TT> sont : une liste de trois 
+expressions de deux variables et la liste des deux variables.
+<BR><TT>plotparam([f(u,v),g(u,v),h(u,v)],[u,v])</TT> trace la surface d&#233;finie par le
+premier argument soit <!-- MATH
+ $x=f(u,v),y=g(u,v),z=h(u,v)$
+ -->
+<I>x</I> = <I>f</I> (<I>u</I>, <I>v</I>), <I>y</I> = <I>g</I>(<I>u</I>, <I>v</I>), <I>z</I> = <I>h</I>(<I>u</I>, <I>v</I>)).
+<BR>
+On peut faire tourner ce graphique selon 
+l'axe des <TT>x</TT>, l'axe des <TT>y</TT> ou l'axe des <TT>z</TT>. Pour cela, il faut 
+cliquer avec la souris dans la fen&#234;tre graphique  en dehors du 
+parall&#233;l&#233;pip&#233;de servant &#224; la repr&#233;sentation, puis faire bouger la 
+souris  (sans relacher son bouton) ou utiliser les  touches <TT>x</TT>, <TT>X</TT>, 
+<TT>y</TT>, <TT>Y</TT>, <TT>z</TT> et <TT>Z</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotparam([v*cos(u),v*sin(u),v],[u,v]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le c&#244;ne <!-- MATH
+ $x=v*\cos(u),y=v*\sin(u),z=v$
+ -->
+<I>x</I> = <I>v</I>*cos(<I>u</I>), <I>y</I> = <I>v</I>*sin(<I>u</I>), <I>z</I> = <I>v</I></TT>
+</DIV>
+Pour n'avoir qu'une portion de surface on peut indiquer l'intervalle de 
+variation dans le deuxi&#232;me et le trois&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotparam([v*cos(u),v*sin(u),v],[u=0..pi,v=0..3]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Une portion du c&#244;ne <!-- MATH
+ $x=v*\cos(u),y=v*\sin(u),z=v$
+ -->
+<I>x</I> = <I>v</I>*cos(<I>u</I>), <I>y</I> = <I>v</I>*sin(<I>u</I>), <I>z</I> = <I>v</I></TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotparam([v*cos(u),v*sin(u),v],[u=0..pi,v=0..3], ustep=0.5,vstep=0.5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Une portion du c&#244;ne <!-- MATH
+ $x=v*\cos(u),y=v*\sin(u),z=v$
+ -->
+<I>x</I> = <I>v</I>*cos(<I>u</I>), <I>y</I> = <I>v</I>*sin(<I>u</I>), <I>z</I> = <I>v</I></TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si vous voulez l'impression ou la traduction en Latex, il faut utiliser :
+<BR><TT>M<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Exporter/Imprimer<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Print(with Latex)</TT>. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4457"
+  HREF="node145.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4451"
+  HREF="node142.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4447"
+  HREF="node143.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4453"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4455"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4458"
+  HREF="node145.html">Courbe en polaire :</A>
+<B> monter:</B> <A NAME="tex2html4452"
+  HREF="node142.html">Courbe et surface en</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4448"
+  HREF="node143.html">Courbe 2D en param&#233;trique</A>
+ &nbsp; <B>  <A NAME="tex2html4454"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4456"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

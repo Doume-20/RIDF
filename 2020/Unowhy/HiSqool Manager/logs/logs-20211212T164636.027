@@ -1,0 +1,84 @@
+2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-12 16:46:07.399: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +0ms
+2021-12-12 16:46:07.399: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-12 16:46:07.510: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +114ms
+2021-12-12 16:46:07.512: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-12 16:46:07.512: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +2ms
+2021-12-12 16:46:07.512: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService]   => result: false +2ms
+2021-12-12 16:46:07.512: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +0ms
+2021-12-12 16:46:07.512: 2021-12-12 17:46:07 [5384] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-12-12 16:46:23.870: 2021-12-12 17:46:23 [5384] INFO [JS] Result: 0 +16359ms
+2021-12-12 16:46:23.870: 2021-12-12 17:46:23 [5384] INFO [JS] Stdout: 1.1.4.21090425 +0ms
+2021-12-12 16:46:23.870: 2021-12-12 17:46:23 [5384] INFO [JS] Stderr:  +1ms
+2021-12-12 16:46:23.870: 2021-12-12 17:46:23 [5384] INFO [JS] Build number of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe is 21090425 +1ms
+2021-12-12 16:46:23.870: 2021-12-12 17:46:23 [5384] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe +2ms
+2021-12-12 16:46:26.592: 2021-12-12 17:46:26 [5384] INFO [JS] Getting apps result: 0 +2641ms
+2021-12-12 16:46:26.592: 2021-12-12 17:46:26 [5384] INFO [JS] Setting facts... +2ms
+2021-12-12 16:46:26.608: 2021-12-12 17:46:26 [5384] INFO [JS] Uploading facts... +10ms
+2021-12-12 16:46:27.311: 2021-12-12 17:46:27 [5384] INFO [JS] Uploading facts result:  +701ms
+2021-12-12 16:46:27.326: 2021-12-12 17:46:27 [5384] INFO [Runner] Running result: true +2ms
+2021-12-12 16:46:27.326: 2021-12-12 17:46:27 [5384] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2021-12-12 16:46:27.326: 2021-12-12 17:46:27 [5384] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +5ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [Runner] Creating configuration unit runner object... +86ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +0ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [SchedulerService] Identical schedule existing. Doing nothing +0ms
+2021-12-12 16:46:27.420: 2021-12-12 17:46:27 [5384] INFO [JS] Scheduling result: undefined +4ms
+2021-12-12 16:46:27.436: 2021-12-12 17:46:27 [5384] INFO [Runner] Runner doesn't need to be performed +3ms
+2021-12-12 16:46:27.436: 2021-12-12 17:46:27 [5384] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2021-12-12 16:46:29.779: 2021-12-12 17:46:29 [5384] INFO [Runner] Runner doesn't need to be performed +2ms
+2021-12-12 16:46:29.779: 2021-12-12 17:46:29 [5384] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (360) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +2ms
+2021-12-12 16:46:30.997: 2021-12-12 17:46:30 [5384] INFO [JS] Result: 0 +1208ms
+2021-12-12 16:46:30.997: 2021-12-12 17:46:31 [5384] INFO [JS] Stdout: Custom shell possible: True +1ms
+2021-12-12 16:46:30.997: 2021-12-12 17:46:31 [5384] INFO [JS] Stderr: #< CLIXML
+2021-12-12 16:46:30.997: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2021-12-12T17:46:29.2324594+01:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">6260</U32><U32 N="NativeThreadId">12676</U32><U32 N="ManagedThreadId">10</U32></Props></Obj></Objs> +1ms
+2021-12-12 16:46:32.809: 2021-12-12 17:46:32 [5384] INFO [JS] GUID package: 10108c63-247d-41bd-92fa-2e15beeb2c93 +1812ms
+2021-12-12 16:46:33.246: 2021-12-12 17:46:33 [5384] INFO [JS] GUID package: f7639fd5-22e3-42bd-9806-a3aafb44760a +431ms
+2021-12-12 16:46:33.934: 2021-12-12 17:46:33 [5384] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +685ms
+2021-12-12 16:46:34.184: 2021-12-12 17:46:34 [5384] INFO [JS] GUID package: 52191d55-a6aa-4d53-9830-fded6eb78582 +256ms
+2021-12-12 16:46:34.465: 2021-12-12 17:46:34 [5384] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +276ms
+2021-12-12 16:46:34.527: 2021-12-12 17:46:34 [5384] INFO [JS] Result: 0 +62ms
+2021-12-12 16:46:34.527: 2021-12-12 17:46:34 [5384] INFO [JS] Stdout: 1.1.4.21090425 +1ms
+2021-12-12 16:46:34.527: 2021-12-12 17:46:34 [5384] INFO [JS] Stderr:  +1ms
+2021-12-12 16:46:34.527: 2021-12-12 17:46:34 [5384] INFO [JS] Build number of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe is 21090425 +1ms
+2021-12-12 16:46:34.527: 2021-12-12 17:46:34 [5384] INFO [JS] New version 21090425 <=>  21090425 Installed +1ms
+2021-12-12 16:46:34.527: 2021-12-12 17:46:34 [5384] INFO [JS] Current version is up to date +0ms
+2021-12-12 16:46:34.543: 2021-12-12 17:46:34 [5384] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-12-12 16:46:34.558: 2021-12-12 17:46:34 [5384] INFO [JS] GUID package: 105da565-d050-4a60-9c4f-556c6bdb5775 +29ms
+2021-12-12 16:46:35.136: 2021-12-12 17:46:35 [5384] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2021-12-12 16:46:35.136: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2021-12-12 16:46:35.136: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-12 16:46:35.136: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-12 16:46:35.136: Arguments=
+2021-12-12 16:46:35.136: ArgumentsExpanded=
+2021-12-12 16:46:35.136: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-12-12 16:46:35.136: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-12-12 16:46:35.136: RunStyle=1
+2021-12-12 16:46:35.136: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-12 16:46:35.136: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-12 16:46:35.136: HotKey=0 (None)
+2021-12-12 16:46:35.136: Description=HiSqool
+2021-12-12 16:46:35.136: 
+2021-12-12 16:46:35.136: The command completed successfully. +570ms
+2021-12-12 16:46:35.136: 2021-12-12 17:46:35 [5384] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +0ms
+2021-12-12 16:46:35.589: 2021-12-12 17:46:35 [5384] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2021-12-12 16:46:35.589: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2021-12-12 16:46:35.589: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-12 16:46:35.589: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-12 16:46:35.589: Arguments=
+2021-12-12 16:46:35.589: ArgumentsExpanded=
+2021-12-12 16:46:35.589: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-12-12 16:46:35.589: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-12-12 16:46:35.589: RunStyle=1
+2021-12-12 16:46:35.589: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-12 16:46:35.589: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-12 16:46:35.589: HotKey=0 (None)
+2021-12-12 16:46:35.589: Description=HiSqool
+2021-12-12 16:46:35.589: 
+2021-12-12 16:46:35.589: The command completed successfully. +457ms
+2021-12-12 16:46:35.605: 2021-12-12 17:46:35 [5384] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-12-12 16:46:36.027: 2021-12-12 17:46:36 [5384] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +431ms
+2021-12-12 16:46:36.027: 2021-12-12 17:46:36 [5384] INFO [JS] Actions to perform: 1 +1ms
+2021-12-12 16:46:36.027: 2021-12-12 17:46:36 [5384] INFO [Runner] Performing runner... +1ms

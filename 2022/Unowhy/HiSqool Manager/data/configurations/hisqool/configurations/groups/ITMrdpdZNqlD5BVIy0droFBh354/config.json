@@ -1,0 +1,87 @@
+{
+  "conf/application/windows/cortex-xdr": {
+    "description": "Antivirus Cortex Xdr",
+    "payload": {
+      "id": 3605,
+      "name": "Cortex-Xdr 8.8.0.10622 (Windows)",
+      "description": "Cortex XDR 8.8.0.10622",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Cortex-Xdr/8.8.0.10622/package.jar",
+      "size": 58156223,
+      "digest": "MD5:fe9959b616e560bc5b5902fc68f9905e",
+      "metadata": {
+        "software": {
+          "id": "Cortex-Xdr",
+          "version": "8.8.0.10622"
+        },
+        "definition": {
+          "Id": "Cortex-Xdr",
+          "Name": "Cortex XDR",
+          "Level": "Infrastructure",
+          "Factory": {
+            "Build": {
+              "Step": "791811",
+              "Workflow": "326382"
+            },
+            "Commit": {
+              "Id": "7d4c353e114ca537ba073bf85e49312537a8806e",
+              "Name": "master"
+            }
+          },
+          "Release": "8.8.0.10622",
+          "Version": "8.8.0.10622"
+        },
+        "versionName": "8.8.0.10622",
+        "applicationLabel": "Cortex XDR"
+      }
+    },
+    "when": "(context.platform==='win32') && (/^(IFP4|IFP3)/.test(context.deviceId))",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Preparation-de-l'equipement-3.2.1": {
+    "description": "Installation de l'application Pr\u00e9paration de l\u2019\u00e9quipement 3.2.1",
+    "payload": {
+      "id": 2279,
+      "name": "Pr\u00e9paration de l\u2019\u00e9quipement 3.2.1",
+      "description": "Pr\u00e9paration de l\u2019ordinateur",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/desktop-preparation-paq_3.2.1.jar",
+      "size": 4078,
+      "digest": "MD5:975cb24e3b3b29c52d4c3e3d5e40ca2b",
+      "metadata": {
+        "packageVersion": "3.2.1"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Protection-de-l'equipement-1.5.0": {
+    "description": "Installation de l'application Protection de l\u2019\u00e9quipement 1.5.0",
+    "payload": {
+      "id": 2275,
+      "name": "Protection de l\u2019\u00e9quipement 1.5.0",
+      "description": "S\u00e9curisation de l\u2019ordinateur",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/desktop-security-paq_1.5.0.jar",
+      "size": 3894,
+      "digest": "MD5:470924481b34c31c28cf13ed0703c461",
+      "metadata": {
+        "packageVersion": "1.5.0"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  }
+}

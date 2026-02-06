@@ -1,0 +1,25 @@
+2022-06-13 17:36:58 [4976] INFO [MQTTObserver] Received digest MD5:7806e5dd5b95eecd239dbe3a89c64fb3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +84856ms
+2022-06-13 21:40:31.441: 2022-06-13 23:40:31 [4976] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +21813152ms
+2022-06-13 21:40:31.472: 2022-06-13 23:40:31 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +34ms
+2022-06-13 21:40:31.644: 2022-06-13 23:40:31 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +164ms
+2022-06-13 21:40:32.409: 2022-06-13 23:40:32 [4976] INFO [Runner] Creating configuration unit runner object... +763ms
+2022-06-13 21:40:32.425: 2022-06-13 23:40:32 [4976] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-06-13 21:40:32.441: 2022-06-13 23:40:32 [4976] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +40ms
+2022-06-13 21:40:32.456: 2022-06-13 23:40:32 [4976] INFO [JS] We are triggering +1ms
+2022-06-13 21:40:32.487: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +28ms
+2022-06-13 21:40:32.487: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +7ms
+2022-06-13 21:40:32.503: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +4ms
+2022-06-13 21:40:32.503: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +4ms
+2022-06-13 21:40:32.503: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms
+2022-06-13 21:40:32.503: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +6ms
+2022-06-13 21:40:32.503: 2022-06-13 23:40:32 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool_hidden_prod -> __/conf/agents/facts... +2ms
+2022-06-13 21:40:32.519: 2022-06-13 23:40:32 [4976] INFO [Runner] Performing runner... +4ms
+2022-06-13 21:40:32.566: 2022-06-13 23:40:32 [4976] INFO [JS] Performing facts gathering and upload... +50ms
+2022-06-13 21:40:38.129: 2022-06-13 23:40:38 [4976] INFO [JS] Getting installed applications... +5564ms
+2022-06-13 21:40:39.186: 2022-06-13 23:40:39 [4976] INFO [JS] Getting apps result: 0 +1057ms
+2022-06-13 21:40:39.202: 2022-06-13 23:40:39 [4976] INFO [JS] Setting facts... +5ms
+2022-06-13 21:40:39.218: 2022-06-13 23:40:39 [4976] INFO [JS] Uploading facts... +18ms
+2022-06-13 21:40:39.264: 2022-06-13 23:40:39 [4976] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com
+2022-06-13 21:40:39.264:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +41ms
+2022-06-13 21:40:39.264: 2022-06-13 23:40:39 [4976] INFO [Runner] Running result: false +0ms
+2022-06-13 21:40:39.264: 2022-06-13 23:40:39 [4976] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms

@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ex&#233;cution pas &#224; pas et mise au point d'un programme.</TITLE>
+<META NAME="description" CONTENT="Ex&#233;cution pas &#224; pas et mise au point d'un programme.">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node86.html">
+<LINK REL="previous" HREF="node84.html">
+<LINK REL="up" HREF="casinter.html">
+<LINK REL="next" HREF="node86.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1399"
+  HREF="node86.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1393"
+  HREF="casinter.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1387"
+  HREF="node84.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1395"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1397"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1400"
+  HREF="node86.html">L'&#233;cran de dessin tortue</A>
+<B> monter:</B> <A NAME="tex2html1394"
+  HREF="casinter.html">L'interface Xcas de giac</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1388"
+  HREF="node84.html">L'&#233;cran DispG et l'instruction</A>
+ &nbsp; <B>  <A NAME="tex2html1396"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1398"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000210000000000000000"></A><A NAME="1462"></A>
+<BR>
+Ex&#233;cution pas &#224; pas et mise au point d'un programme.
+</H1>
+La commande <TT>debug</TT> permet de lancer un programme en mode
+d'ex&#233;cution pas &#224; pas. Elle ouvre une fen&#234;tre permettant
+de diriger l'ex&#233;cution du programme pass&#233; en argument.
+Par exemple, on entre le programme&nbsp;:
+<PRE>
+carres(n):={
+  local j,k;
+  k:=0;
+  for (j:=1;j&lt;n+1;j++) {
+    k:=k+j^2;
+  }
+  return k;
+}
+</PRE>
+On tape pour debugger le programme <TT>carres</TT> ci-dessus&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>debug(carres(5))</TT>
+
+</DIV>
+cela ouvre la fen&#234;tre du debugger.
+En cliquant sur le bouton <TT>sst</TT> on peut ex&#233;cuter pas &#224; pas
+le programme en visualisant l'&#233;volution des valeurs des variables
+locales et des param&#232;tres du programme. Cela permet de d&#233;tecter
+la grande majorit&#233; des erreurs qui font qu'un programme ne fait
+pas ce que l'on souhaite. Pour des programmes plus longs, 
+le debugger permet de controler
+assez finement l'ex&#233;cution du programme en placant par exemple
+des points d'arr&#234;t.
+Plus pr&#233;cis&#233;ment, la fen&#234;tre du debugger contient&nbsp;:
+
+<UL>
+<LI>un &#233;cran o&#249; se trouve le programme,
+</LI>
+<LI>une ligne de commandes rep&#233;r&#233;e par <TT>eval</TT> dans laquelle on peut
+faire un calcul, &#233;crire une commande <TT>watch</TT> par exemple ou modifier un 
+param&#232;tre,
+</LI>
+<LI>une ligne d'&#233;tat, o&#249; est affich&#233; le r&#233;sultat de la
+  derni&#232;re &#233;valuation, le nom du programme debuggu&#233;, ses
+  arguments, la liste des points d'arr&#234;t et le num&#233;ro de la ligne 
+ex&#233;cut&#233;e,
+</LI>
+<LI>7 boutons <TT>sst dans cont tuer rmwtch voir break</TT>&nbsp;:
+
+<OL>
+<LI><TT>sst</TT> permet de passer &#224; l'instruction suivante,
+</LI>
+<LI><TT>dans</TT> permet d'entrer dans un sous-programme pour qu'il soit 
+ex&#233;cut&#233; pas &#224; pas,
+</LI>
+<LI><TT>cont</TT> pour continuer l'ex&#233;cution jusqu'au point d'arr&#234;t suivant,
+</LI>
+<LI><TT>tuer</TT> pour arr&#234;ter pr&#233;matur&#233;ment l'ex&#233;cution
+du programme et donc fermer l'&#233;cran du debugger.
+</LI>
+<LI><TT>rmwatch</TT> permet d'enlever une variable de la liste des variables 
+affich&#233;es automatiquement (cf. <TT>voir</TT>)
+</LI>
+<LI><TT>voir</TT> permet de demander l'affichage automatique du contenu
+de variables lors du d&#233;roulement  du programme,
+</LI>
+<LI><TT>break</TT> permet de marquer un point d'arr&#234;t pour que l'ex&#233;cution 
+se fasse d'un seul coup jusqu'au point d'arr&#234;t,
+</LI>
+</OL>
+</LI>
+<LI>un &#233;cran o&#249; va s'afficher les valeurs des variables locales
+et des param&#232;tres (par d&#233;faut) ou les valeurs des variables
+que l'on a demand&#233;es de voir 
+gr&#226;ce au bouton <TT>voir</TT> ou &#224; la commande <TT>watch</TT>, 
+</LI>
+</UL>
+
+<P>
+Pour mettre au point un programme, on peut aussi utiliser la commande 
+<TT>print</TT> qui permet de r&#233;aliser un affichage en cours de programmme.
+Cet affichage s'&#233;crira alors en bleu.
+On tape par exemple dans un &#233;diteur de programmes :
+<PRE>
+carres(n):={
+  local j;
+  for (j:=1;j&lt;n+1;j++) {
+    print(j^2);
+  }
+  return n^2;
+}
+</PRE>
+Puis on compile ce programme en cliquant sur <TT>OK</TT>.
+
+<P>
+On tape ensuite dans une ligne de commandes :
+<TT>carres(5)</TT>
+<BR>
+On obtient &#233;crit en bleu dans la zone interm&#233;diaire :
+<BR><TT>1
+<BR>
+4
+<BR>
+9
+<BR>
+16
+<BR>
+25</TT>
+<BR>
+et dans la zone r&#233;ponse, le r&#233;sultat &#233;crit en noir :
+<BR><TT>25</TT>
+
+<P>
+Cette m&#233;thode est toutefois plus rudimentaire que l'utilisation de la
+commande <TT>debug</TT> car il faut ajouter une commande print &#224; chaque
+endroit du programme o&#249; on veut avoir un affichage, il faut recompiler
+le programme, et il n'est pas possible d'agir directement sur le
+d&#233;roulement du programme.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1399"
+  HREF="node86.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1393"
+  HREF="casinter.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1387"
+  HREF="node84.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1395"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1397"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1400"
+  HREF="node86.html">L'&#233;cran de dessin tortue</A>
+<B> monter:</B> <A NAME="tex2html1394"
+  HREF="casinter.html">L'interface Xcas de giac</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1388"
+  HREF="node84.html">L'&#233;cran DispG et l'instruction</A>
+ &nbsp; <B>  <A NAME="tex2html1396"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1398"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

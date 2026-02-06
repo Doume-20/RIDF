@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'&#233;cart-type de la population : stddevp, stdDev, ecart_type_population</TITLE>
+<META NAME="description" CONTENT="L'&#233;cart-type de la population : stddevp, stdDev, ecart_type_population">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node768.html">
+<LINK REL="previous" HREF="node766.html">
+<LINK REL="up" HREF="node764.html">
+<LINK REL="next" HREF="node768.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14289"
+  HREF="node768.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14283"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14277"
+  HREF="node766.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14285"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14287"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14290"
+  HREF="node768.html">La variance : variance</A>
+<B> monter:</B> <A NAME="tex2html14284"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14278"
+  HREF="node766.html">L'&#233;cart-type : stddev ecart_type</A>
+ &nbsp; <B>  <A NAME="tex2html14286"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14288"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001013000000000000000"></A><A NAME="20073"></A><A NAME="20074"></A><A NAME="20075"></A>
+<BR>
+L'&#233;cart-type de la population : <TT>stddevp, stdDev, ecart_type_population</TT>
+</H2>
+<TT>stddevp</TT> (ou <TT>stdDev</TT>) a comme argument une (ou deux) liste(s) :
+<BR><TT>stddevp(l)</TT> calcule l'&#233;cart-type num&#233;rique de la population dont est 
+issu l'&#233;chantillon d&#233;crit 
+par les  &#233;l&#233;ments de la  liste <TT>l</TT>, de longueur <TT>n</TT>, donn&#233;e en 
+argument (<TT>size(l)=n</TT>) :
+<BR><TT>stddevp(l)<code>^</code>2=n/(n-1)* stddev(l)<code>^</code>2</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>stddevp(A)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(13)</TT>
+</DIV>
+En effet :
+<TT>n=size(A)=12</TT> et <TT>12/11*stddev(A)<code>^</code>2=12/11*143/12=13</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>stddevp([[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[sqrt(2),sqrt(2)]</TT>
+</DIV>
+ 
+<BR><TT>stddevp(l1,l2)</TT> calcule l'&#233;cart-type num&#233;rique de la population dont 
+est issu l'&#233;chantillon d&#233;crit par les &#233;l&#233;ments d'une 
+liste <TT>l1</TT> pond&#233;r&#233;e par une autre liste <TT>l2</TT> donn&#233;e comme
+ deuxi&#232;me argument.
+<BR>
+On a :
+<BR><TT>stddevp(l1,l2)<code>^</code>2=n/(n-1)* stddev(l1,l2)<code>^</code>2</TT> si <TT>n</TT> est la
+taille de l'&#233;chantillon c'est &#224; dire si <TT>n</TT> est la somme de la liste 
+<TT>l2</TT> (<TT>sum(l2)=n</TT>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>stddevp(A,A)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(22/3)</TT>
+</DIV>
+En effet <TT>sum(A)=66</TT> et
+ <!-- MATH
+ $\displaystyle \frac{22}{3}=\frac{66}{65}*\frac{65}{9}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img541.png"
+ ALT="$\displaystyle {\frac{{22}}{{3}}}$"> = <IMG
+ WIDTH="26" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img542.png"
+ ALT="$\displaystyle {\frac{{66}}{{65}}}$">*<IMG
+ WIDTH="25" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.png"
+ ALT="$\displaystyle {\frac{{65}}{{9}}}$">
+<B>Remarque</B>
+<TT>stddev</TT> est l'&#233;cart type apr&#232;s division par <TT>n</TT> (taille de 
+l'&#233;chantillon) alors que <TT>stddevp</TT> et son synonyme <TT>stdDev</TT> (nom de 
+commande TI) est divis&#233; par 
+<TT>n-1</TT> et donne l'estimateur non biais&#233; de l'&#233;cart-type d'une population
+&#224; partir de l'&#233;cart-type calcul&#233; avec un &#233;chantillon (la division
+par <TT>n-1</TT> permet de supprimer le biais).
+<BR>
+Pour la variance nous ne donnons qu'une commande (division par <TT>n</TT>),
+mais il est tr&#232;s facile de d&#233;finir une "variance d'&#233;chantillon"
+en prenant le carr&#233; de l'&#233;cart-type <TT>stddevp</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14289"
+  HREF="node768.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14283"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14277"
+  HREF="node766.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14285"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14287"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14290"
+  HREF="node768.html">La variance : variance</A>
+<B> monter:</B> <A NAME="tex2html14284"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14278"
+  HREF="node766.html">L'&#233;cart-type : stddev ecart_type</A>
+ &nbsp; <B>  <A NAME="tex2html14286"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14288"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

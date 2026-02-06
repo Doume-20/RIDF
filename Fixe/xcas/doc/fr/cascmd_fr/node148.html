@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Trac&#233; de solutions d'&#233;quation diff&#233;rentielle : plotode odeplot</TITLE>
+<META NAME="description" CONTENT="Trac&#233; de solutions d'&#233;quation diff&#233;rentielle : plotode odeplot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node149.html">
+<LINK REL="previous" HREF="node147.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node149.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4513"
+  HREF="node149.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4507"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4501"
+  HREF="node147.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4509"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4511"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4514"
+  HREF="node149.html">Trac&#233; interactif des solutions</A>
+<B> monter:</B> <A NAME="tex2html4508"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4502"
+  HREF="node147.html">Le champ des tangentes</A>
+ &nbsp; <B>  <A NAME="tex2html4510"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4512"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006190000000000000000"></A><A NAME="3128"></A><A NAME="3129"></A>
+<BR>
+Trac&#233; de solutions d'&#233;quation diff&#233;rentielle : 
+<TT>plotode odeplot</TT>
+</H1><A NAME="29609"></A><A NAME="29610"></A>
+
+<UL>
+<LI><TT>plotode(f(t,y),[t,y],[t0,y0])</TT> 
+trace en fonction du temps la solution <I>y</I>(<I>t</I>) de 
+l'&#233;quation diff&#233;rentielle <I>y'</I> = <I>f</I> (<I>t</I>, <I>y</I>) passant par le point
+<TT>(t0,y0)</TT>, o&#249; <I>f</I> (<I>t</I>, <I>y</I>) d&#233;signe une expression d&#233;pendant 
+de la variable de temps <I>t</I> et de la variable <I>y</I>. 
+</LI>
+<LI>Par d&#233;faut, <I>t</I> varie dans les 2 directions. On peut 
+sp&#233;cifier la plage du temps par le param&#232;tre optionnel
+<TT>t=tmin..tmax</TT>.
+</LI>
+<LI>Lorsque <I>y</I> = (<I>X</I>, <I>Y</I>) est un vecteur de longueur 2 et <I>f</I> &#224; valeurs 
+dans <!-- MATH
+ ${\mathbb{R}}^2$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>2</SUP>, on peut &#233;galement repr&#233;senter dans l'espace (<I>t</I>, <I>X</I>, <I>Y</I>) ou dans 
+le plan (<I>X</I>, <I>Y</I>) la solution d'une &#233;quation diff&#233;rentielle 
+<I>y'</I> = <I>f</I> (<I>t</I>, <I>y</I>) c'est &#224; dire <!-- MATH
+ $[X',Y']=[f(t,X,Y)$
+ -->
+[<I>X'</I>, <I>Y'</I>] = [<I>f</I> (<I>t</I>, <I>X</I>, <I>Y</I>).
+Pour cela, il suffit de remplacer <I>y</I> par le noms des variables <I>X</I>, <I>Y</I>
+et la valeur initiale par les deux valeurs initiales des
+variables au temps <I>t</I><SUB>0</SUB>.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotode(sin(t*y),[t,y],[0,1]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+Le graphe de la solution de y'=sin(t,y) 
+passant par le point (0,1) est trac&#233; 
+</DIV>
+On tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>S:=odeplot([h-0.3*h*p, 0.3*h*p-p], [t,h,p],[0,0.3,0.7])</TT>
+
+</DIV>
+On obtient le graphe dans l'espace de la solution de
+<P><!-- MATH
+ \begin{displaymath}
+[h,p]'=[h-0.3 h p, 0.3 h p-p] \quad [h,p](0)=[0.3,0.7]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+[<I>h</I>, <I>p</I>]' = [<I>h</I> - 0.3<I>hp</I>, 0.3<I>hp</I> - <I>p</I>]&nbsp;&nbsp;&nbsp;&nbsp;[<I>h</I>, <I>p</I>](0) = [0.3, 0.7]
+</DIV><P></P>
+Pour avoir le graphe dans le plan, on ajoute l'option <TT>plan</TT> ou <TT>plane</TT>
+<DIV ALIGN="CENTER">
+<TT>S:=odeplot([h-0.3*h*p, 0.3*h*p-p], [t,h,p],[0,0.3,0.7],plan)</TT>
+
+</DIV>
+Pour visualiser les valeurs de la solution, se reporter
+&#224; la section <A HREF="node165.html#sec:odesolve">4.3.5</A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4513"
+  HREF="node149.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4507"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4501"
+  HREF="node147.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4509"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4511"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4514"
+  HREF="node149.html">Trac&#233; interactif des solutions</A>
+<B> monter:</B> <A NAME="tex2html4508"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4502"
+  HREF="node147.html">Le champ des tangentes</A>
+ &nbsp; <B>  <A NAME="tex2html4510"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4512"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

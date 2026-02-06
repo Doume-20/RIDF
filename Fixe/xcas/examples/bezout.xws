@@ -1,0 +1,72 @@
+// fltk 7Fl_Tile 34 61 824 322
+[
+// fltk N4xcas7EditeurE 34 61 824 321
+734 ,
+pgcd(a,b):={
+  local r; 
+  while (b!=0){
+   r:=irem(a,b);
+   a:=b;
+   b:=r;
+  } 
+  return(a);
+};
+pgcdr(a,b):={
+  if (b==0) 
+    return(a);
+  else 
+    return(pgcdr(b,irem(a,b)));
+};
+
+bezout(a,b):={
+  //renvoie la liste [u,v,d] telle que a*u+b*v=d=pgcd(a,b) (fct iterative)
+  local la,lb,lr,q,lb2;
+  la:=[1,0,eval(a)];
+  lb:=[0,1,eval(b)];
+  lb2:=eval(b);
+  while (lb2 !=0){
+    q:=iquo(la[2],lb2);
+    lr:=la+(-q)*lb;
+    la:=lb;
+    lb:=lr;
+    lb2:=lb[2];
+  }
+  return(la);
+};
+
+bezoutr(a,b):={
+  //renvoie la liste [u,v,d] telle que a*u+b*v=d=pgcd(a,b) (fct recursive)
+  local lb,q,r;
+  if (b!=0) {
+    q:=iquo(a,b);
+    r:=irem(a,b);
+    lb:=bezoutr(b,r);
+    return([lb[1],lb[0]+(-q)*lb[1],lb[2]]);
+  } else 
+  return([1,0,a]);
+}
+,
+// fltk N4xcas10Log_OutputE 34 382 824 1
+
+]
+,
+// fltk 7Fl_Tile 34 385 824 74
+[
+// fltk N4xcas19Multiline_Input_tabE 34 385 824 30
+bezout(15,20)
+,
+// fltk N4xcas10Log_OutputE 34 415 824 1
+
+,
+// fltk N4xcas8EquationE 34 416 824 43
+[-1,1,5]
+]
+,
+// fltk 7Fl_Tile 34 461 824 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 461 824 30
+
+,
+// fltk N4xcas10Log_OutputE 34 491 824 1
+
+]

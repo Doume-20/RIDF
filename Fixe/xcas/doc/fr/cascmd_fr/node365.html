@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Deriv&#233;es et deriv&#233;es partielles d'ordre 1 : diff derive deriver</TITLE>
+<META NAME="description" CONTENT="Deriv&#233;es et deriv&#233;es partielles d'ordre 1 : diff derive deriver">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node366.html">
+<LINK REL="previous" HREF="node364.html">
+<LINK REL="up" HREF="node364.html">
+<LINK REL="next" HREF="node366.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8292"
+  HREF="node366.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8286"
+  HREF="node364.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8280"
+  HREF="node364.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8288"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8290"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8293"
+  HREF="node366.html">Deriv&#233;e et deriv&#233;e partielle</A>
+<B> monter:</B> <A NAME="tex2html8287"
+  HREF="node364.html">Deriv&#233;es et deriv&#233;es partielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8281"
+  HREF="node364.html">Deriv&#233;es et deriv&#233;es partielles</A>
+ &nbsp; <B>  <A NAME="tex2html8289"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8291"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009185100000000000000">
+Deriv&#233;es et deriv&#233;es partielles d'ordre 1 : <TT>diff derive deriver</TT></A>
+</H3>
+Pour d&#233;river une fois :
+<BR><TT>diff</TT> (ou <TT>derive</TT>) a deux arguments : une expression  
+et une variable (resp une liste contenant le nom des variables) 
+(voir fonctions de plusieurs variables paragraphe <A HREF="node725.html#sec:plusvar">6.51</A>).
+<BR><TT>diff</TT> renvoie la d&#233;riv&#233;e de l'expression  par rapport &#224; la variable 
+ donn&#233;e comme deuxi&#232;me param&#232;tre, tr&#233;s utile pour calculer des 
+d&#233;riv&#233;es partielles!) (resp renvoie une liste contenant les d&#233;riv&#233;es
+par rapport aux variables de l'argument ).
+<BR>
+Exemples :
+
+<UL>
+<LI>Soit &#224; calculer :
+<P><!-- MATH
+ \begin{displaymath}
+\frac {\partial (x.y^2.z^3+x.y.z)}{\partial z}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="144" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img211.png"
+ ALT="$\displaystyle {\frac{{\partial (x.y^2.z^3+x.y.z)}}{{\partial z}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>diff(x*y <code>^</code>2*z<code>^</code>3+x*y*z,z)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*y<code>^</code>2*3*z<code>^</code>2+x*y</TT>
+</DIV>
+</LI>
+<LI>Soit &#224; calculer les 3 deriv&#233;es partielles premi&#232;res de <!-- MATH
+ $x*y^2*z^3+x*y*z$
+ -->
+<I>x</I>*<I>y</I><SUP>2</SUP>*<I>z</I><SUP>3</SUP> + <I>x</I>*<I>y</I>*<I>z</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>diff(x*y<code>^</code>2*z<code>^</code>3+x*y,[x,y,z])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[y<code>^</code>2*z<code>^</code>3+y*z, x*2*y*z<code>^</code>3+x*z, x*y<code>^</code>2*3*z<code>^</code>2+x*y]</TT>
+</DIV>
+</LI>
+<LI>Soit &#224; calculer :
+<P><!-- MATH
+ \begin{displaymath}
+\frac {\partial^3 (x.y^2.z^3+x.y.z)}{\partial y\partial^2 z}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="152" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$\displaystyle {\frac{{\partial^3 (x.y^2.z^3+x.y.z)}}{{\partial y\partial^2 z}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>diff(x*y <code>^</code>2*z<code>^</code>3+x*y*z,y,z$2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*2*y*3*2*z</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,52 @@
+2021-09-15 7:17:32 [7780] INFO [JS] Version of current package: 2.4 +22ms
+2021-09-15 05:17:32.887: 2021-09-15 7:17:32 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'f7639fd5-22e3-42bd-9806-a3aafb44760a').version +511ms
+2021-09-15 05:17:32.887: 2021-09-15 7:17:32 [7780] INFO [JS] Installing the package ... +0ms
+2021-09-15 05:17:32.887: 2021-09-15 7:17:32 [7780] INFO [Runner] Performing runner... +0ms
+2021-09-15 05:17:32.887: 2021-09-15 7:17:32 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\262\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-15 05:17:38.182: 2021-09-15 7:17:38 [7780] INFO [KeyedObservableCollector] Got 8 items. 1 in, 0 out +5286ms
+2021-09-15 05:17:38.182: 2021-09-15 7:17:38 [7780] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/I5cZVRIzLZFlGHw1Bx0WLbT_v-k +1ms
+2021-09-15 05:17:38.182: 2021-09-15 7:17:38 [7780] INFO [KeyedObservableCollector] Sending 8 items +2ms
+2021-09-15 05:17:38.182: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:7e97819874a9301f46867ca754ef8d7a for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +2ms
+2021-09-15 05:17:38.182: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:5238da14c9ec49ed27d246f3309a7e9b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +3ms
+2021-09-15 05:17:38.198: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +4ms
+2021-09-15 05:17:38.198: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +2ms
+2021-09-15 05:17:38.198: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2021-09-15 05:17:38.198: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2021-09-15 05:17:38.198: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2021-09-15 05:17:38.229: 2021-09-15 7:17:38 [7780] INFO [KeyedObservableCollector] Got 8 items. 0 in, 0 out +37ms
+2021-09-15 05:17:38.245: 2021-09-15 7:17:38 [7780] INFO [KeyedObservableCollector] Sending 8 items +1ms
+2021-09-15 05:17:38.245: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Received digest MD5:eae9d82df7a93ffe3f1a070fd4629724 for https://idf.hisqool.com/conf/configurations/groups/I5cZVRIzLZFlGHw1Bx0WLbT_v-k +2ms
+2021-09-15 05:17:38.276: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/configurations/groups/I5cZVRIzLZFlGHw1Bx0WLbT_v-k... +35ms
+2021-09-15 05:17:38.463: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] Got response 200. +186ms
+2021-09-15 05:17:38.463: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] Response content length is 22024  +1ms
+2021-09-15 05:17:38.479: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] Download finished undefined. +13ms
+2021-09-15 05:17:38.479: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] Digest: expected=eae9d82df7a93ffe3f1a070fd4629724, actual=eae9d82df7a93ffe3f1a070fd4629724. +1ms
+2021-09-15 05:17:38.479: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] Complete. +1ms
+2021-09-15 05:17:38.479: 2021-09-15 7:17:38 [7780] INFO [RequestPerformerService] Got disposed. +5ms
+2021-09-15 05:17:38.510: 2021-09-15 7:17:38 [7780] INFO [MQTTObserver] Fetched [https://idf.hisqool.com/conf/configurations/groups/I5cZVRIzLZFlGHw1Bx0WLbT_v-k] -> [C:\Program Files\Unowhy\HiSqool Manager\data\configurations\hisqool\configurations\groups\I5cZVRIzLZFlGHw1Bx0WLbT_v-k\config.json]. digest=[md5:eae9d82df7a93ffe3f1a070fd4629724] +27ms
+2021-09-15 05:17:38.510: 2021-09-15 7:17:38 [7780] INFO [KeyedObservableCollector] Sending 8 items +1ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [JS] Version of update package: 4.02 +180ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [JS] Your package is up to date +0ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (261) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [JS] Version of update package: 8.19 +2ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [JS] Your package is up to date +0ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-15 05:17:38.698: 2021-09-15 7:17:38 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (182) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +4ms
+2021-09-15 05:17:38.713: 2021-09-15 7:17:38 [7780] INFO [JS] Version of update package: 1.1 +10ms
+2021-09-15 05:17:38.713: 2021-09-15 7:17:38 [7780] INFO [JS] Your package is up to date +0ms
+2021-09-15 05:17:38.713: 2021-09-15 7:17:38 [7780] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-15 05:17:38.713: 2021-09-15 7:17:38 [7780] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +1ms
+2021-09-15 05:17:38.744: 2021-09-15 7:17:38 [7780] INFO [JS] Version of update package: 2.4 +21ms
+2021-09-15 05:17:38.744: 2021-09-15 7:17:38 [7780] INFO [JS] Your package is up to date +1ms
+2021-09-15 05:17:38.744: 2021-09-15 7:17:38 [7780] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-15 05:17:38.744: 2021-09-15 7:17:38 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (181) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +2ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +781ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-09-15 05:17:39.525: 2021-09-15 7:17:39 [7780] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +1ms

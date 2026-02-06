@@ -1,0 +1,206 @@
+// fltk 7Fl_Tile 45 -15 1022 87 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -15 1022 31 26
+restart;
+,
+// fltk N4xcas10Log_OutputE 45 16 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 17 1022 55 16
+[]
+]
+,
+// fltk 7Fl_Tile 45 74 1022 185 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 74 1022 34 26
+P:= (X)->2*X^3-X^2-X-3;
+,
+// fltk N4xcas10Log_OutputE 45 108 1022 82 26
+// Success££// End defining P£
+,
+// fltk N4xcas8EquationE 45 190 1022 69 16
+ (X)->2*X^3-X^2-X-3
+]
+,
+// fltk 7Fl_Tile 45 261 1022 146 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 261 1022 35 26
+P1:=function_diff(P):; gcd(P(X),P1(X))
+,
+// fltk N4xcas10Log_OutputE 45 296 1022 56 26
+// Success££
+,
+// fltk N4xcas8EquationE 45 352 1022 55 16
+"Done",1
+]
+,
+// fltk 7Fl_Tile 45 409 1022 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 409 1022 30 26
+P est sqrfree dans Q[X], on vérifie que P reste sqrfree modulo 5
+,
+// fltk N4xcas10Log_OutputE 45 439 1022 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 442 1022 90 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 442 1022 34 26
+gcd(P(X) mod 5,P1(X) mod 5);
+,
+// fltk N4xcas10Log_OutputE 45 476 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 477 1022 55 16
+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 534 1022 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 534 1022 30 26
+On calcule les racines de P modulo 5 en testant toutes les valeurs
+,
+// fltk N4xcas10Log_OutputE 45 564 1022 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 567 1022 88 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 567 1022 32 26
+res:=NULL:; for (j:=-2;j<3;j:=j+1) { res:=res,P(j mod 5); } ;
+,
+// fltk N4xcas10Log_OutputE 45 599 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 600 1022 55 16
+"Done",-1 % 5,0 % 5,-3,-3,-3
+]
+,
+// fltk 7Fl_Tile 45 657 1022 62 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 657 1022 61 26
+Donc -1 est racine modulo 5. £Comme lcoeff(P)=2, et le coeff de degre 0 de P est 3, il faut remonter au-dela de 2*2*3=12
+,
+// fltk N4xcas10Log_OutputE 45 718 1022 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 721 1022 89 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 721 1022 33 26
+p1:=-1; P(p1)
+,
+// fltk N4xcas10Log_OutputE 45 754 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 755 1022 55 16
+-1,-5
+]
+,
+// fltk 7Fl_Tile 45 812 1022 90 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 812 1022 34 26
+1/P1(p1 mod 5)
+,
+// fltk N4xcas10Log_OutputE 45 846 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 847 1022 55 16
+-2 % 5
+]
+,
+// fltk 7Fl_Tile 45 904 1022 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 904 1022 30 26
+Newton p_{k+1}=p_k-5^k*[P(p_k)/5^k] * inv(P'(p_k) mod 5)
+,
+// fltk N4xcas10Log_OutputE 45 934 1022 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 937 1022 92 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 937 1022 36 26
+p2:=p1-5*(-5/5)*(-2)
+,
+// fltk N4xcas10Log_OutputE 45 973 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 974 1022 55 16
+-11
+]
+,
+// fltk 7Fl_Tile 45 1031 1022 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 1031 1022 30 26
+On vérifie bien que P(p2) est nul mod 25
+,
+// fltk N4xcas10Log_OutputE 45 1061 1022 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 1064 1022 90 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 1064 1022 34 26
+P(p2) mod 25
+,
+// fltk N4xcas10Log_OutputE 45 1098 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 1099 1022 55 16
+0 % 25
+]
+,
+// fltk 7Fl_Tile 45 1156 1022 88 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 1156 1022 32 26
+f:=lcoeff(P(X),X)*(X-p2)
+,
+// fltk N4xcas10Log_OutputE 45 1188 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 1189 1022 55 16
+2*(X+11)
+]
+,
+// fltk 7Fl_Tile 45 1246 1022 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 1246 1022 30 26
+On teste la division de P par f ecrit en representation symétrique modulo 25
+,
+// fltk N4xcas10Log_OutputE 45 1276 1022 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 1279 1022 85 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 1279 1022 29 26
+f1:=(f%25)%0
+,
+// fltk N4xcas10Log_OutputE 45 1308 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 1309 1022 55 16
+2*X-3
+]
+,
+// fltk 7Fl_Tile 45 1366 1022 89 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 1366 1022 33 26
+rem(P(X),f1)
+,
+// fltk N4xcas10Log_OutputE 45 1399 1022 1 26
+
+,
+// fltk N4xcas8EquationE 45 1400 1022 55 16
+0
+]
+,
+// fltk 7Fl_Tile 45 1457 1022 30 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 1457 1022 29 26
+
+,
+// fltk N4xcas10Log_OutputE 45 1486 1022 1 26
+
+]

@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transform&#233;e de Laplace et transform&#233;e de Laplace inverse : laplace ilaplace</TITLE>
+<META NAME="description" CONTENT="Transform&#233;e de Laplace et transform&#233;e de Laplace inverse : laplace ilaplace">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node750.html">
+<LINK REL="up" HREF="node749.html">
+<LINK REL="next" HREF="node752.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13976"
+  HREF="node752.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13970"
+  HREF="node749.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13966"
+  HREF="node750.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13972"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13974"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13977"
+  HREF="node752.html">Transform&#233;e en z et</A>
+<B> monter:</B> <A NAME="tex2html13971"
+  HREF="node749.html">Les &#233;quations diff&#233;rentielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13967"
+  HREF="node750.html">&#201;quations diff&#233;rentielles : desolve</A>
+ &nbsp; <B>  <A NAME="tex2html13973"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13975"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009542000000000000000"></A><A NAME="19608"></A><A NAME="19609"></A><A NAME="sec:lap"></A>
+<BR>
+Transform&#233;e de Laplace et transform&#233;e de Laplace inverse : <TT>laplace ilaplace</TT>
+</H2>
+<TT>laplace</TT> et <TT>ilaplace</TT> ont 1, 2 ou 3 arguments :
+<BR>
+l'expression que l'on transforme et &#233;ventuellement le nom de 2 variables.
+<BR>
+L'expression est une expression de la variable courante 
+(ici <I>x</I>) ou l'expression que l'on transforme est une expression de la variable
+donn&#232;e comme deuxi&#232;me argument.
+<BR><TT>laplace</TT> est la transform&#233;e de Laplace de l'expression donn&#233;e comme
+ argument et <TT>ilaplace</TT> est la transform&#233;e de Laplace inverse de 
+l'expression donn&#233;e comme argument. Le r&#233;sultat de <TT>laplace</TT> et 
+<TT>ilaplace</TT> est une expression de variable le troisi&#232;me argument ou par 
+d&#233;faut le second argument ou par d&#233;faut  <I>x</I>.
+<BR>
+<P>
+On utilise la transform&#233;e de Laplace (<TT>laplace</TT>) et la transform&#233;e
+de Laplace inverse (<TT>ilaplace</TT>) pour r&#233;soudre des &#233;quations 
+diff&#233;rentielles lin&#233;aires &#224; coefficients constants, par exemple :
+<P><!-- MATH
+ \begin{displaymath}
+y \prime \prime +p. y \prime+q. y \ =\ f(x)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I><IMG
+ WIDTH="14" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img515.png"
+ ALT="$\displaystyle \prime{^\prime}$"> + <I>p</I>.<I>y</I><IMG
+ WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img516.png"
+ ALT="$\displaystyle \prime$"> + <I>q</I>.<I>y</I>&nbsp; = &nbsp;<I>f</I> (<I>x</I>)
+</DIV><P></P> <P><!-- MATH
+ \begin{displaymath}
+y(0)=a \ y\prime(0)=b
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I>(0) = <I>a</I>&nbsp;<I>y</I><IMG
+ WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img516.png"
+ ALT="$\displaystyle \prime$">(0) = <I>b</I>
+</DIV><P></P>
+En notant <!-- MATH
+ ${\mathcal{L}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img517.png"
+ ALT="$ \mathcal {L}$"> la transform&#233;e de Laplace, on a les relations 
+suivantes :
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\mathcal{L}}(y)(x)&=&\int_0^{+\infty}e^{-x.u}y(u)du \\
+{\mathcal{L}}^{-1}(g)(x)&=&\frac{1}{2i\pi}\int_C e^{z.x}g(z)dz
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="47" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.png"
+ ALT="$\displaystyle \int_{0}^{{+\infty}}$"><I>e</I><SUP>-x.u</SUP><I>y</I>(<I>u</I>)<I>du</I></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$"><SUP>-1</SUP>(<I>g</I>)(<I>x</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="33" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img519.png"
+ ALT="$\displaystyle {\frac{{1}}{{2i\pi}}}$"><IMG
+ WIDTH="26" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img520.png"
+ ALT="$\displaystyle \int_{C}^{}$"><I>e</I><SUP>z.x</SUP><I>g</I>(<I>z</I>)<I>dz</I></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+o&#249; <I>C</I> est une courbe ferm&#233;e contenant les p&#244;les de <TT>g</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>laplace(sin(x))</TT>
+</DIV>
+ici on ne pr&#233;cise pas la variable, alors l'expression que l'on transforme 
+L'expression (ici sin(<I>x</I>)) est une expression de la variable courante 
+(ici <I>x</I>) et la transform&#233;e sera aussi une fonction de la variable <I>x</I>.
+<BR>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>1/((-x)<code>^</code>2+1)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>laplace(sin(t),t)</TT>
+</DIV>
+ici on pr&#233;cise le nom de la variable de la fonction que l'on transforme (ici 
+<I>t</I>) et ce nom de variable sera utilis&#233; pour la transform&#233;e de Laplace.
+<BR>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>1/((-t)<code>^</code>2+1)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>laplace(sin(t),t,s)</TT>
+</DIV>
+ici on pr&#233;cise le nom de la variable de la fonction que l'on transforme (ici
+<I>t</I>) et le nom de la variable que l'on d&#233;sire avoir pour la transform&#233;e de 
+Laplace (ici <I>s</I>).
+<BR>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>1/((-s)<code>^</code>2+1)</TT>
+</DIV>
+On utilise les propri&#233;t&#233;s suivantes :
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\mathcal{L}}(y')(x) &=&-y(0)+x.{\mathcal{L}}(y)(x) \\
+{\mathcal{L}}(y'')(x) &=&-y'(0)+x.{\mathcal{L}}(y')(x) \\
+ &=& -y'(0)-x.y(0)+x^2.{\mathcal{L}}(y)(x)
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y'</I>)(<I>x</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>- <I>y</I>(0) + <I>x</I>.<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>)</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y''</I>)(<I>x</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>- <I>y'</I>(0) + <I>x</I>.<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y'</I>)(<I>x</I>)</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>- <I>y'</I>(0) - <I>x</I>.<I>y</I>(0) + <I>x</I><SUP>2</SUP>.<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>)</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+On a donc si <!-- MATH
+ $y \prime \prime(x) +p. y \prime(x)+q. y(x) \ =\ f(x)$
+ -->
+<I>y</I><IMG
+ WIDTH="14" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img521.png"
+ ALT="$ \prime{^\prime}$">(<I>x</I>) + <I>p</I>.<I>y</I><IMG
+ WIDTH="9" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img509.png"
+ ALT="$ \prime$">(<I>x</I>) + <I>q</I>.<I>y</I>(<I>x</I>)&nbsp; = &nbsp;<I>f</I> (<I>x</I>) :
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\mathcal{L}}(f)(x) &=&{\mathcal{L}}(y''+p.y'+q.y)(x) \\
+&=& -y'(0)-x.y(0)+x^2.{\mathcal{L}}(y)(x)-p.y(0)+p.x.{\mathcal{L}}(y)(x))+q.{\mathcal{L}}(y)(x) \\
+&=& (x^2+p.x+q).{\mathcal{L}}(y)(x)-y'(0)-(x+p).y(0)
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>f</I> )(<I>x</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y''</I> + <I>p</I>.<I>y'</I> + <I>q</I>.<I>y</I>)(<I>x</I>)</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>- <I>y'</I>(0) - <I>x</I>.<I>y</I>(0) + <I>x</I><SUP>2</SUP>.<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>) - <I>p</I>.<I>y</I>(0) + <I>p</I>.<I>x</I>.<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>)) + <I>q</I>.<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>)</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP>(<I>x</I><SUP>2</SUP> + <I>p</I>.<I>x</I> + <I>q</I>).<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>y</I>)(<I>x</I>) - <I>y'</I>(0) - (<I>x</I> + <I>p</I>).<I>y</I>(0)</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+soit, si <I>a</I> = <I>y</I>(0) et <I>b</I> = <I>y'</I>(0) :
+<BR><P><!-- MATH
+ \begin{displaymath}
+{\mathcal{L}}aplace(f)(x)=(x^2+p.x+q).{\mathcal{L}}aplace(y)(x)-(x+p).a-b
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$"><I>aplace</I>(<I>f</I> )(<I>x</I>) = (<I>x</I><SUP>2</SUP> + <I>p</I>.<I>x</I> + <I>q</I>).<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$"><I>aplace</I>(<I>y</I>)(<I>x</I>) - (<I>x</I> + <I>p</I>).<I>a</I> - <I>b</I>
+</DIV><P></P>
+La solution est alors :
+<P><!-- MATH
+ \begin{displaymath}
+y(x)=
+{\mathcal{L}}^{-1}(({\mathcal{L}}(f)(x)+(x+p).a +b)/(x^2+p.x+q))
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I>(<I>x</I>) = <IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$"><SUP>-1</SUP>((<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$\displaystyle \mathcal {L}$">(<I>f</I> )(<I>x</I>) + (<I>x</I> + <I>p</I>).<I>a</I> + <I>b</I>)/(<I>x</I><SUP>2</SUP> + <I>p</I>.<I>x</I> + <I>q</I>))
+</DIV><P></P>
+Exemple :
+<BR>
+R&#233;soudre :
+<P><!-- MATH
+ \begin{displaymath}
+y\prime \prime -6. y\prime+9. y \ =\ x. e^{3. x},
+\quad  y(0)=c\_0, \quad y\prime(0)=c\_1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I><IMG
+ WIDTH="14" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img515.png"
+ ALT="$\displaystyle \prime{^\prime}$"> -6.<I>y</I><IMG
+ WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img516.png"
+ ALT="$\displaystyle \prime$"> +9.<I>y</I>&nbsp; = &nbsp;<I>x</I>.<I>e</I><SUP>3.x</SUP>,&nbsp;&nbsp;&nbsp;&nbsp;<I>y</I>(0) = <I>c</I><IMG
+ WIDTH="13" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img522.png"
+ ALT="$\displaystyle \_$">0,&nbsp;&nbsp;&nbsp;&nbsp;<I>y</I><IMG
+ WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img516.png"
+ ALT="$\displaystyle \prime$">(0) = <I>c</I><IMG
+ WIDTH="13" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img522.png"
+ ALT="$\displaystyle \_$">1
+</DIV><P></P>
+Ici, <!-- MATH
+ $p=-6,\ q=9$
+ -->
+<I>p</I> = - 6,&nbsp;<I>q</I> = 9.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>laplace(x*exp(3*x))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1/(x<code>^</code> 2-6*x+9)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ilaplace((1/(x<code>^</code>2-6*x+9)+(x-6)*c_0+c_1)/(x<code>^</code>2-6*x+9))</TT>
+</DIV>
+On obtient 
+<DIV ALIGN="CENTER">
+<TT>(216*x<code>^</code>3-3888*x*c_0+1296*x*c_1+1296*c_0)*exp(3*x)/1296</TT>
+</DIV>
+apr&#232;s simplification et factorisation (commande <TT>factor</TT>) la solution 
+<I>y</I> s'&#233;crit :
+<DIV ALIGN="CENTER">
+<TT>(-18*c_0*x+6*c_0+x<code>^</code>3+6*x*c_1)*exp(3*x)/6</TT>
+</DIV>
+On peut bien s&#251;r taper directement :
+<DIV ALIGN="CENTER">
+<TT>desolve(y''-6*y'+9*y=x*exp(3*x),y)</TT>
+</DIV>
+On obtient bien :
+<DIV ALIGN="CENTER">
+<TT>exp(3*x)*(-18*c_0*x+6*c_0+x<code>^</code>3+6*x*c_1)/6</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13976"
+  HREF="node752.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13970"
+  HREF="node749.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13966"
+  HREF="node750.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13972"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13974"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13977"
+  HREF="node752.html">Transform&#233;e en z et</A>
+<B> monter:</B> <A NAME="tex2html13971"
+  HREF="node749.html">Les &#233;quations diff&#233;rentielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13967"
+  HREF="node750.html">&#201;quations diff&#233;rentielles : desolve</A>
+ &nbsp; <B>  <A NAME="tex2html13973"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13975"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

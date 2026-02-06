@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La moyenne : mean moyenne</TITLE>
+<META NAME="description" CONTENT="La moyenne : mean moyenne">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node766.html">
+<LINK REL="previous" HREF="node764.html">
+<LINK REL="up" HREF="node764.html">
+<LINK REL="next" HREF="node766.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14261"
+  HREF="node766.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14255"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14249"
+  HREF="node764.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14257"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14259"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14262"
+  HREF="node766.html">L'&#233;cart-type : stddev ecart_type</A>
+<B> monter:</B> <A NAME="tex2html14256"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14250"
+  HREF="node764.html">Les fonctions de Xcas</A>
+ &nbsp; <B>  <A NAME="tex2html14258"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14260"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001011000000000000000"></A><A NAME="20020"></A> <A NAME="20021"></A>
+<BR>
+La moyenne : <TT>mean moyenne</TT>
+</H2>
+<TT>mean</TT> calcule la moyenne num&#233;rique des &#233;l&#233;ments d'une 
+liste (ou de chaque colonne d'une matrice).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mean(A)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>11/2</TT>
+</DIV>
+En effet (0+1+...+11)=66 et 66/12=11/2
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mean([[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,3]</TT>
+</DIV>
+En effet (1+3)/2=2 et (2+4)/2=3.
+<BR><TT>mean</TT> calcule la moyenne num&#233;rique des &#233;l&#233;ments d'une 
+liste (respectivement de chaque  colonne d'une matrice) pond&#233;r&#233;e par une liste (respectivement
+ matrice) de m&#234;me taille donn&#233;e comme deuxi&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mean(A,A)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>23/3</TT>
+</DIV>
+En effet : 1*1+2*2+..11*11=23*12*11/6=23*2*11 et 1+2+..11=66 donc:
+<BR><TT>mean(A,A)</TT>=23*2*11/66=23/3
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mean([[1,2],[3,4]],[[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[5/2,10/3]</TT>
+</DIV>
+En effet : (1*1+3*3)/(1+3)=5/2 et (2*2+4*4)/(2+4)=10/3
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;gression puissance : power_regression</TITLE>
+<META NAME="description" CONTENT="R&#233;gression puissance : power_regression">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node799.html">
+<LINK REL="previous" HREF="node797.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node799.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14741"
+  HREF="node799.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14735"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14729"
+  HREF="node797.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14737"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14739"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14742"
+  HREF="node799.html">Graphe de la r&#233;gression</A>
+<B> monter:</B> <A NAME="tex2html14736"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14730"
+  HREF="node797.html">Graphe de la r&#233;gression</A>
+ &nbsp; <B>  <A NAME="tex2html14738"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14740"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010217000000000000000"></A><A NAME="20897"></A>
+<BR>
+R&#233;gression puissance : <TT>power_regression</TT>
+</H2>
+Pour approcher les donn&#233;es par une fonction puissance d'&#233;quation
+<I>y</I> = <I>bx</I><SUP>m</SUP>, on utilise  <TT>power_regression</TT> qui renvoie le couple (<I>m</I>, <I>b</I>).
+<BR><TT>power_regression</TT> a les m&#234;mes arguments que <TT>covariance</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(power_regression([[1,1],[2,4],[3,9],[4,16]]))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(power_regression([1,2,3,4],[1,4,9,16]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(2.0,1.0)</TT>
+</DIV>
+c'est donc la fonction puissance d'&#233;quation <I>y</I> = <I>x</I><SUP>2</SUP> 
+qui approche au mieux les donn&#233;es.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>X:=[1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Y:=[1.6,2.15,2.65,3.12,3.56,3.99,4.4,4.8,5.18,</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>5.58,5.92,6.27,6.62,7.06,7.3]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>power_regression(X,Y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.732351031846,1.59615829535</TT>
+</DIV>
+c'est donc la fonction puissance d'&#233;quation 
+<!-- MATH
+ $y=1.6*x^{0.73}$
+ -->
+<I>y</I> = 1.6*<I>x</I><SUP>0.73</SUP> qui approche au mieux les donn&#233;es.
+<BR>
+On v&#233;rifie en tapant :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>linear_regression(ln(X),ln(Y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.732351031846,0.467599676658</TT>
+</DIV>
+On a bien :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>e<code>^</code>0.467599676658=1.59615829535</TT>
+</DIV>
+donc 
+<BR><!-- MATH
+ $\ln(y)=\ln(1.59615829535)+\ln(x)*0.732351031846$
+ -->
+ln(<I>y</I>) = ln(1.59615829535) + ln(<I>x</I>)*0.732351031846
+<BR><!-- MATH
+ $\ln(y)=0.467599676659+\ln(x)*0.732351031846$
+ -->
+ln(<I>y</I>) = 0.467599676659 + ln(<I>x</I>)*0.732351031846.
+et le coefficient de corr&#233;lation est :
+<DIV ALIGN="CENTER">
+<TT>correlation(ln(X),ln(Y))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.999969474543</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

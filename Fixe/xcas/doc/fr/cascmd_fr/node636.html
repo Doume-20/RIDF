@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Produit de Hadamard : hadamard product</TITLE>
+<META NAME="description" CONTENT="Produit de Hadamard : hadamard product">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node637.html">
+<LINK REL="previous" HREF="node635.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node637.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12313"
+  HREF="node637.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12307"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12301"
+  HREF="node635.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12309"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12311"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12314"
+  HREF="node637.html">Produit de Hadamard (version</A>
+<B> monter:</B> <A NAME="tex2html12308"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12302"
+  HREF="node635.html">El&#233;vation d'une matrice &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html12310"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12312"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009438000000000000000"></A><A NAME="16346"></A><A NAME="16347"></A><A NAME="sec:product2"></A><A NAME="sec:hadam"></A>
+<BR>
+Produit de Hadamard : <TT>hadamard product</TT>
+</H2>
+Voir aussi <TT>.*</TT> pour les listes (cf <A HREF="node614.html#sec:hadal">6.39.5</A>)
+<BR><TT>hadamard</TT> (ou <TT>product</TT>) a comme arguments deux matrices <I>A</I> et <I>B</I> 
+de m&#234;me ordre.
+<BR><TT>product</TT> est une fonction plus g&#233;n&#233;rale (voir aussi <A HREF="node599.html#sec:product">6.38.31</A>
+et <A HREF="node634.html#sec:product1">6.43.6</A>).
+<BR><TT>hadamard</TT> (ou <TT>product</TT>) renvoie la matrice constitu&#233;e par le 
+produit terme &#224; terme des &#233;l&#233;ments de  <I>A</I> et <I>B</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>hadamard([[1, 2],[3,4]],[[5, 6],[7, 8]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[5,12],[21,32]]</TT>
+</DIV>
+Si on tape :
+<DIV ALIGN="CENTER">
+<TT>hadamard([1,2],[3,4])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>hadamard([[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>5*sqrt(5)</TT>
+</DIV>
+Ici [1,2],[3,4] n'est pas consid&#233;r&#233; comme 2 vecteurs (car le produit de 
+Hadamard ne marche que sur des matrices) mais comme une matrice &#224; 2 lignes.
+<BR><TT>hadamard</TT> calcule prend le produit des normes des vecteurs colonnes et des
+vecteurs ligneset renvoie le plus petit des 2 :
+<BR><!-- MATH
+ $\sqrt{1+4}*\sqrt{9+16}=5\sqrt 5$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img413.png"
+ ALT="$ \sqrt{{1+4}}$">*<IMG
+ WIDTH="67" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img414.png"
+ ALT="$ \sqrt{{9+16}}$"> = 5<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.png"
+ ALT="$ \sqrt{5}$"> qui est plus petit que 
+<!-- MATH
+ $\sqrt{1+9}**\sqrt{4+16}=10\sqrt 2$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.png"
+ ALT="$ \sqrt{{1+9}}$">**<IMG
+ WIDTH="67" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img416.png"
+ ALT="$ \sqrt{{4+16}}$"> = 10<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \sqrt{2}$">.
+<BR>
+Mais si on tape :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>product([1,2],[3,4])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>product([[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,8]</TT>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12313"
+  HREF="node637.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12307"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12301"
+  HREF="node635.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12309"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12311"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12314"
+  HREF="node637.html">Produit de Hadamard (version</A>
+<B> monter:</B> <A NAME="tex2html12308"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12302"
+  HREF="node635.html">El&#233;vation d'une matrice &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html12310"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12312"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

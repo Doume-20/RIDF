@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Deriv&#233;e et deriv&#233;e partielle d'ordre n : diff derive deriver</TITLE>
+<META NAME="description" CONTENT="Deriv&#233;e et deriv&#233;e partielle d'ordre n : diff derive deriver">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node365.html">
+<LINK REL="up" HREF="node364.html">
+<LINK REL="next" HREF="node367.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8304"
+  HREF="node367.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8298"
+  HREF="node364.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8294"
+  HREF="node365.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8300"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8302"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8305"
+  HREF="node367.html">Int&#233;gration</A>
+<B> monter:</B> <A NAME="tex2html8299"
+  HREF="node364.html">Deriv&#233;es et deriv&#233;es partielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8295"
+  HREF="node365.html">Deriv&#233;es et deriv&#233;es partielles</A>
+ &nbsp; <B>  <A NAME="tex2html8301"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8303"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009185200000000000000"></A><A NAME="8706"></A>
+<BR>
+Deriv&#233;e et deriv&#233;e partielle d'ordre <I>n</I> : <TT>diff derive deriver</TT>
+</H3>
+Lorsque <TT>derive</TT> (ou <TT>diff</TT>) a plus de deux arguments,
+ ce sont : une expression  et le nom des variables par rapport 
+auxquelles il faut d&#233;river cette expression (le nom des variables est 
+&#233;ventuellement suivi de $<I>n</I> pour indiquer le nombre <I>n</I> de fois que l'on 
+veut d&#233;river) .
+<BR><TT>diff</TT> renvoie la d&#233;riv&#233;e de l'expression  par rapport aux  variables
+ donn&#233;es apr&#232;s le premier param&#232;tre (utile pour calculer des 
+d&#233;riv&#233;es partielles de tous les ordres).
+<BR>
+Donc pour d&#233;river <I>n</I> fois :
+<BR><TT>diff</TT> (ou <TT>derive</TT>) a <I>n</I> + 1 arguments : une expression et le nom de 
+la variable qui sera r&#233;p&#233;t&#233; <I>n</I> fois. Pour avoir une &#233;criture plus 
+facile on &#233;crira plut&#244;t le nom de la variable suivi de $<I>n</I> pour indiquer 
+que l'on veut d&#233;river <I>n</I> fois (en effet <TT>x$3=(x,x,x)</TT>).
+Par exemple pour  d&#233;river <TT>exp(x*y)</TT> 1 fois par 
+rapport &#224; <I>x</I> et 2 fois par rapport &#224; <I>y</I>, on met comme arguments 
+l'expression, puis, les noms des variables &#233;ventuellement suivi de $ pour 
+indiquer le nombre de fois que l'on veut d&#233;river et on tape 
+<TT>diff(exp(x*y),x,y$2)</TT> qui est &#233;quivalent &#224; <TT>diff(exp(x*y),x,y,y)</TT>
+(en effet <TT>y$2=(y,y)</TT>).
+<BR><B>Exemples</B>
+
+<UL>
+<LI>Soit &#224; calculer :
+<P><!-- MATH
+ \begin{displaymath}
+\frac {\partial^2 (x.y^2.z^3+x.y.z)}{\partial x\partial z}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="151" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img213.png"
+ ALT="$\displaystyle {\frac{{\partial^2 (x.y^2.z^3+x.y.z)}}{{\partial x\partial z}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>diff(x*y <code>^</code>2*z<code>^</code>3+x*y*z,x,z)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>y<code>^</code>2*3*z<code>^</code>2+y</TT>
+</DIV>
+</LI>
+<LI>Soit &#224; calculer :
+<P><!-- MATH
+ \begin{displaymath}
+\frac {\partial^3 (x.y^2.z^3+x.y.z)}{\partial x\partial^2 z}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="152" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img214.png"
+ ALT="$\displaystyle {\frac{{\partial^3 (x.y^2.z^3+x.y.z)}}{{\partial x\partial^2 z}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>diff(x*y <code>^</code>2*z<code>^</code>3+x*y*z,x,z,z)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>diff(x*y <code>^</code>2*z<code>^</code>3+x*y*z,x,z$2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>y<code>^</code>2*3*2*z</TT>
+</DIV>
+</LI>
+<LI>Soit &#224; calculer la d&#233;riv&#233;e troisi&#232;me de :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{1}{x^2+2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="56" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.png"
+ ALT="$\displaystyle {\frac{{1}}{{x^2+2}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(diff((1)/(x<code>^</code>2+2),x,x,x))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>normal(diff((1)/(x<code>^</code>2+2),x$3))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(-24*x<code>^</code>3+48*x)/(x<code>^</code>8+8*x<code>^</code>6+24*x<code>^</code>4+32*x<code>^</code>2+16)</TT>
+</DIV>
+</LI>
+</UL>
+<B>Remarque</B>
+<BR>
+Bien voir la diff&#233;rence entre <TT>diff(expr,x,y)</TT> et <TT>diff(expr,[x,y])</TT> :
+<BR><TT>diff</TT><!-- MATH
+ $(expr,x,y)$
+ -->
+(<I>expr</I>, <I>x</I>, <I>y</I>) renvoie <!-- MATH
+ $\displaystyle \frac{\partial^2(expr)}{\partial x\partial y}$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img216.png"
+ ALT="$\displaystyle {\frac{{\partial^2(expr)}}{{\partial x\partial y}}}$"> et 
+<BR><TT>diff</TT><!-- MATH
+ $(expr,[x,y])$
+ -->
+(<I>expr</I>,[<I>x</I>, <I>y</I>]) renvoie <!-- MATH
+ $\displaystyle[\frac{\partial(expr)}{\partial x},\frac{\partial (expr)}{\partial y}]$
+ -->
+[<IMG
+ WIDTH="67" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img217.png"
+ ALT="$\displaystyle {\frac{{\partial(expr)}}{{\partial x}}}$">,<IMG
+ WIDTH="67" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img218.png"
+ ALT="$\displaystyle {\frac{{\partial (expr)}}{{\partial y}}}$">] 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8304"
+  HREF="node367.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8298"
+  HREF="node364.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8294"
+  HREF="node365.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8300"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8302"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8305"
+  HREF="node367.html">Int&#233;gration</A>
+<B> monter:</B> <A NAME="tex2html8299"
+  HREF="node364.html">Deriv&#233;es et deriv&#233;es partielles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8295"
+  HREF="node365.html">Deriv&#233;es et deriv&#233;es partielles</A>
+ &nbsp; <B>  <A NAME="tex2html8301"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8303"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

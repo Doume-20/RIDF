@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;finir une droite orient&#233;e en 3D : line droite</TITLE>
+<META NAME="description" CONTENT="D&#233;finir une droite orient&#233;e en 3D : line droite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1039.html">
+<LINK REL="previous" HREF="node1037.html">
+<LINK REL="up" HREF="node1036.html">
+<LINK REL="next" HREF="node1039.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18555"
+  HREF="node1039.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18549"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18543"
+  HREF="node1037.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18551"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18553"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18556"
+  HREF="node1039.html">La demi-droite en 3D:</A>
+<B> monter:</B> <A NAME="tex2html18550"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18544"
+  HREF="node1037.html">D&#233;finir une droite 3D</A>
+ &nbsp; <B>  <A NAME="tex2html18552"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18554"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001342000000000000000"></A><A NAME="27040"></A><A NAME="27041"></A><A NAME="sec:axe3"></A>
+<BR>
+D&#233;finir une droite orient&#233;e en 3D : <TT>line droite</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node929.html#sec:axe2">9.10.1</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>droite</TT>, en g&#233;om&#233;trie 3D, a comme argument deux points ou 
+deux &#233;quations de plans : <TT>a*x+by+cz+d=0</TT> et <TT>a'*x+b'y+c'z+d'=0</TT>.
+<BR><B>Attention</B> l'ordre des arguments que l'on donne &#224; droite est important 
+et un ordre diff&#233;rent change l'orientation !
+<BR>
+Si la droite est d&#233;finie par deux points, ces points orientent la droite 
+selon leur position dans les arguments. Par exemple <TT>droite(A,B)</TT> d&#233;finit
+une droite orient&#233;e par le vecteur <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$">.
+<BR>
+Si la droite est d&#233;finie par deux 
+&#233;quations, on &#233;crit ces &#233;quations sous la forme
+"membre_de_gauche-membre_de_droite=0" pour avoir les &#233;quations sous la
+forme <TT>a*x+by+c=0</TT> et <TT>a'*x+b'y+c'z+d'=0</TT>. Alors, le vecteur orientant 
+la droite est le produit vectoriel des 2 vecteurs normaux aux 2 plans definis 
+par les deux &#233;quations c'est &#224; dire le vecteur orientant est
+<TT>cross([a,b,c],[a',b',c'])</TT>.
+Par exemple <TT>droite(x=2*y,y=3*z)</TT> est orient&#233;e par 
+<TT>cross([1,-2,0],[0,1,-3])</TT>=<TT>[6,3,1]</TT> et
+<BR><TT>droite(y=3*z,x=2*y)</TT> est orient&#233;e par 
+<TT>cross([0,1,-3],[1,-2,0])</TT>=<TT>[-6,-3,-1]</TT> .
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18555"
+  HREF="node1039.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18549"
+  HREF="node1036.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18543"
+  HREF="node1037.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18551"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18553"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18556"
+  HREF="node1039.html">La demi-droite en 3D:</A>
+<B> monter:</B> <A NAME="tex2html18550"
+  HREF="node1036.html">Les lignes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18544"
+  HREF="node1037.html">D&#233;finir une droite 3D</A>
+ &nbsp; <B>  <A NAME="tex2html18552"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18554"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

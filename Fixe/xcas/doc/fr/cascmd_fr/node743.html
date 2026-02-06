@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;duction de Gauss d'une matrice : ref</TITLE>
+<META NAME="description" CONTENT="R&#233;duction de Gauss d'une matrice : ref">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node744.html">
+<LINK REL="previous" HREF="node742.html">
+<LINK REL="up" HREF="node741.html">
+<LINK REL="next" HREF="node744.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13866"
+  HREF="node744.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13860"
+  HREF="node741.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13854"
+  HREF="node742.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13862"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13864"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13867"
+  HREF="node744.html">R&#233;duction de Gauss-Jordan :</A>
+<B> monter:</B> <A NAME="tex2html13861"
+  HREF="node741.html">Les syst&#232;mes lin&#233;aires</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13855"
+  HREF="node742.html">Matrice d'un syst&#232;me :</A>
+ &nbsp; <B>  <A NAME="tex2html13863"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13865"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009532000000000000000"></A><A NAME="19095"></A><A NAME="ref"></A> <A NAME="sec:ref"></A>
+<BR>
+R&#233;duction de Gauss d'une matrice : <TT>ref</TT>
+</H2>
+<TT>ref</TT> permet de r&#233;soudre un syst&#232;me d'&#233;quations lin&#233;aires 
+que l'on &#233;crit sous forme matricielle :
+ <DIV ALIGN="CENTER">
+<TT>A*X=B</TT>
+</DIV>
+Le param&#232;tre de <TT>ref</TT> est la  "matrice augment&#233;e" du syst&#232;me (celle 
+form&#233;e par la matrice <TT>A</TT> du syst&#232;me et ayant comme dernier vecteur 
+colonne le second membre <TT>B</TT>).
+<BR>
+Le r&#233;sultat est une matrice <TT>[A1,B1]</TT> : <TT>A1</TT> a des z&#233;ros 
+au dessous de sa diagonale et les solutions de :
+<DIV ALIGN="CENTER">
+<TT>A1*X=B1</TT>
+</DIV>
+sont les m&#234;mes que celles de :  
+<DIV ALIGN="CENTER">
+<TT>A*X=B</TT>
+</DIV>
+Par exemple, soit &#224; r&#233;soudre le syst&#232;me :
+<P><!-- MATH
+ \begin{displaymath}
+\left \{
+\begin{array}{lcr} 3x + y & = &-2 \\3x +2y & =& 2 \end{array}\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img497.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{lcr} 3x + y &amp; = &amp;-2 \\  3x +2y &amp; =&amp; 2 \end{array}}\right.$"><IMG
+ WIDTH="146" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img498.png"
+ ALT="$\displaystyle \begin{array}{lcr} 3x + y &amp; = &amp;-2 \\  3x +2y &amp; =&amp; 2 \end{array}$">
+</DIV><P></P>
+On tape  :
+<DIV ALIGN="CENTER">
+<TT>ref([[3,1,-2],[3,2,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,1/3,-2/3],[0,1,4]]</TT>
+</DIV>
+cela signifie donc que :
+<BR> <I>y</I> = 4 et donc <I>x</I> = - 2 sont solutions du syst&#232;me.
+
+<P>
+<B>Remarque</B>
+<BR>
+Lorsque le nombre de colonnes est &#233;gal au nombre de lignes +1
+<TT>ref</TT>  ne divise pas par le pivot de la derniere colonne, par exemple, on 
+tape :
+<DIV ALIGN="CENTER">
+<TT>ref([[1,1,0,0,-a1],[0,1,1,0,-a2],[0,0,1,1,-a3],[1,0,0,1,-a4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,1,0,0,-a1],[0,1,1,0,-a2],[0,0,1,1,-a3],[0,0,0,0,a1-a2+a3-a4]]</TT>
+</DIV>
+Ainsi on peut savoir que si <TT>a1-a2+a3-a4</TT> n'est pas nul, il n'y a pas de 
+solution. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13866"
+  HREF="node744.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13860"
+  HREF="node741.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13854"
+  HREF="node742.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13862"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13864"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13867"
+  HREF="node744.html">R&#233;duction de Gauss-Jordan :</A>
+<B> monter:</B> <A NAME="tex2html13861"
+  HREF="node741.html">Les syst&#232;mes lin&#233;aires</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13855"
+  HREF="node742.html">Matrice d'un syst&#232;me :</A>
+ &nbsp; <B>  <A NAME="tex2html13863"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13865"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

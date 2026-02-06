@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Comment s&#233;lectionner</TITLE>
+<META NAME="description" CONTENT="Comment s&#233;lectionner">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node75.html">
+<LINK REL="previous" HREF="node73.html">
+<LINK REL="up" HREF="node72.html">
+<LINK REL="next" HREF="node75.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3408"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3402"
+  HREF="node72.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3396"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3404"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3406"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3409"
+  HREF="node75.html">Comment &#233;diter une cha&#238;ne</A>
+<B> monter:</B> <A NAME="tex2html3403"
+  HREF="node72.html">L'&#233;diteur d'&#233;quation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3397"
+  HREF="node73.html">Comment &#233;diter une &#233;quation</A>
+ &nbsp; <B>  <A NAME="tex2html3405"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3407"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00522000000000000000">
+Comment s&#233;lectionner</A>
+</H2>
+On peut s&#233;lectionner directement avec la souris ou avec les fl&#232;ches  
+du bloc des fl&#232;ches de direction.
+<BR>
+On peut aussi consid&#233;rer une expression comme un arbre et parcourir 
+cet arbre &#224; l'aide des fl&#232;ches de direction.
+<BR>
+Quand une expression est s&#233;lectionn&#233;e on peut :
+
+<UL>
+<LI>monter dans l'arbre en selectionnant le p&#232;re avec la fl&#232;che vers 
+le haut,
+</LI>
+<LI>descendre dans l'arbre en selectionnant le fils gauche avec la fl&#232;che 
+vers le bas,
+</LI>
+<LI>selectionner le fr&#232;re droit ou gauche avec la fl&#232;che vers la droite
+ou vers la gauche,
+</LI>
+<LI>&#233;changer l'expression avec son fr&#232;re avec <TT>Ctrl</TT> et la fl&#232;che 
+vers la droite ou vers la gauche,
+<BR></LI>
+<LI>supprimer un op&#233;rateur ou le nom d'une commande en s&#233;lectionnant
+l'expression et en tapant : <TT>backspace</TT>.
+ Il faut noter qu'un deuxi&#232;me <TT>backspace</TT> effacera les arguments
+</LI>
+</UL>
+<B>Exemple</B>
+On clique dans l'&#233;cran de l'&#233;diteur d'&#233;quation et on tape <TT>x+1</TT> puis 
+fl&#232;che vers le
+ haut pour s&#233;lectionner <TT>x+1</TT>, puis <TT>*</TT> et on tape <TT>x+2</TT> puis 
+fl&#232;che vers le haut pour s&#233;lectionner <TT>x+2</TT> puis <TT>*</TT> et on tape 
+<TT>x-1</TT> puis fl&#232;che vers le haut pour s&#233;lectionner <TT>x-1</TT>.
+<BR>
+On a alors dans l'&#233;cran de l'&#233;diteur d'&#233;quation l'expression 
+<TT>(x+1)*((x+2)*(x-1))</TT>.
+Puis on s&#233;lectionne le tout et on appuie sur <TT>eval</TT> (menu 
+<TT>Expression<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Autres</TT> ou bouton <TT>eval</TT> du clavier
+si on a choisit <TT>Montrer-&gt; Clavier</TT> dans le menu <TT>Cfg</TT>) pour avoir 
+les 3 facteurs sur le m&#234;me plan (l'arbre n'est plus binaire).
+<BR>
+Donc maintenant on obtient :
+<BR><TT>(x+1)*(x+2)*(x-1)</TT>. 
+<BR>
+On peut ensuite soit 
+
+<UL>
+<LI>s&#233;lectionner <TT>(x+1)*(x+2)</TT> avec la souris puis on 
+s&#233;lectionne la commande <TT>normal</TT> du menu <TT>Calc</TT> sous-menu 
+<TT>R&#233;ecriture</TT>.
+<BR>
+On obtient alors <TT>(x<code>^</code>2+3<SUP> . </SUP> x+2)<SUP> . </SUP> (x+2)</TT>.
+</LI>
+<LI>s&#233;lectionner <TT>x+1</TT>, puis <TT>Ctrl</TT> et la fl&#232;che vers la droite,
+pour &#233;changer  <TT>x+1</TT> et <TT>x+2</TT>.
+<BR>
+Donc maintenant on obtient :
+<BR><TT>(x+2)*(x+1)*(x-1)</TT>. 
+<BR>
+On peut ensuite s&#233;lectionner <TT>(x+1)*(x-1)</TT> avec la souris puis on 
+s&#233;lectionne la commande <TT>normal</TT> du menu <TT>Calc</TT> sous-menu 
+<TT>R&#233;ecriture</TT>.
+<BR>
+On obtient alors <TT>(x+2)*(x<code>^</code>2-1)</TT>.
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3408"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3402"
+  HREF="node72.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3396"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3404"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3406"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3409"
+  HREF="node75.html">Comment &#233;diter une cha&#238;ne</A>
+<B> monter:</B> <A NAME="tex2html3403"
+  HREF="node72.html">L'&#233;diteur d'&#233;quation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3397"
+  HREF="node73.html">Comment &#233;diter une &#233;quation</A>
+ &nbsp; <B>  <A NAME="tex2html3405"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3407"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

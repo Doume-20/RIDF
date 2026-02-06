@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer le format interne dense r&#233;cursif en une &#233;criture polyn&#244;miale : poly2symb r2e</TITLE>
+<META NAME="description" CONTENT="Transformer le format interne dense r&#233;cursif en une &#233;criture polyn&#244;miale : poly2symb r2e">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node433.html">
+<LINK REL="previous" HREF="node431.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node433.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9305"
+  HREF="node433.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9299"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9293"
+  HREF="node431.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9301"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9303"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9306"
+  HREF="node433.html">Transformer le format interne</A>
+<B> monter:</B> <A NAME="tex2html9300"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9294"
+  HREF="node431.html">Les polyn&#244;mes &#224; plusieurs</A>
+ &nbsp; <B>  <A NAME="tex2html9302"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9304"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009253000000000000000"></A><A NAME="10739"></A><A NAME="10740"></A>
+<BR>
+Transformer le format interne dense  r&#233;cursif en une &#233;criture polyn&#244;miale : <TT>poly2symb r2e</TT>
+</H2>
+<TT>r2e</TT> ou  <TT>poly2symb</TT> a comme argument la liste
+des coefficients par puissances d&#233;croissantes d'un polyn&#244;me et un nom de 
+variable formelle (par d&#233;faut <TT>x</TT>) (resp la liste r&#233;cursive (c'est le 
+format interne dense r&#233;cursif) des coefficients par puissances 
+d&#233;croissantes d'un polyn&#244;me et la s&#233;quence 
+des variables formelles tel que <TT>x,y,z</TT> (par exemple 
+<!-- MATH
+ $\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$">[[1,0],[2,3]],<!-- MATH
+ $\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$"><!-- MATH
+ $\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$">4,0<!-- MATH
+ $\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$">,5<!-- MATH
+ $\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$"><!-- MATH
+ $\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$"> repr&#233;sente le polyn&#244;me <!-- MATH
+ $x(yz+2z+3)+4yz+5$
+ -->
+<I>x</I>(<I>yz</I> + 2<I>z</I> + 3) + 4<I>yz</I> + 5)
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>r2e([1,0,-1],x)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>r2e([1,0,-1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>poly2symb([1,0,-1],x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*x-1</TT>
+</DIV>
+Ou on peut aussi taper :
+<DIV ALIGN="CENTER">
+<TT>r2e(%%%{1,[2]%%%}+%%%{-1,[0]%%%},[x])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>2-1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>r2e([1,0,-1],x)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>r2e([1,0,-1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>poly2symb([1,0,-1],x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*x-1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(poly2symb([[[1,0],[2,3]],[[4,0],5]],x,y,z))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>normal(r2e([[[1,0],[2,3]],[[4,0],5]],x,y,z))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x*y*z+2*x*z+3*x+4*y*z+5</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si en deuxi&#232;me argument on met une valeur <I>a</I> (resp <I>a</I>, <I>b</I>, <I>c</I>), on obtient la 
+valeur du polyn&#244;me en <I>x</I> = <I>a</I> (resp en <I>x</I> = <I>a</I>, <I>y</I> = <I>b</I> et <I>z</I> = <I>c</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>poly2symb([[[1,0],[2,3]],[[4,0],5]],1,1,1)</TT>
+</DIV>
+On obtient car <!-- MATH
+ $1+2+3+4+5=15$
+ -->
+1 + 2 + 3 + 4 + 5 = 15 :
+<DIV ALIGN="CENTER">
+<TT>15</TT>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9305"
+  HREF="node433.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9299"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9293"
+  HREF="node431.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9301"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9303"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9306"
+  HREF="node433.html">Transformer le format interne</A>
+<B> monter:</B> <A NAME="tex2html9300"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9294"
+  HREF="node431.html">Les polyn&#244;mes &#224; plusieurs</A>
+ &nbsp; <B>  <A NAME="tex2html9302"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9304"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

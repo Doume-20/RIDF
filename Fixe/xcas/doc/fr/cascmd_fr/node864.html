@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La boucle : while et tantque</TITLE>
+<META NAME="description" CONTENT="La boucle : while et tantque">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node865.html">
+<LINK REL="previous" HREF="node863.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node865.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15764"
+  HREF="node865.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15758"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15752"
+  HREF="node863.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15760"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15762"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15765"
+  HREF="node865.html">Modifier l'ordre d'ex&#233;cution des</A>
+<B> monter:</B> <A NAME="tex2html15759"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15753"
+  HREF="node863.html">La boucle : repeat</A>
+ &nbsp; <B>  <A NAME="tex2html15761"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15763"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011422000000000000000"></A><A NAME="22775"></A><A NAME="22776"></A><A NAME="22777"></A><A NAME="22778"></A>
+<BR>
+La boucle : <TT>while</TT> et <TT>tantque</TT>
+</H2>
+<TT>while</TT> et <TT>tantque</TT> permettent de faire plusieurs fois des
+instructions.
+<BR><TT>while</TT> est suivi d'un bool&#233;en mis entre des parenth&#232;ses et d'un bloc 
+d'instructions. <TT>while</TT> permet de faire plusieurs fois ce bloc 
+d'instructions tant que la valeur de ce bool&#233;en est vraie.
+<BR><TT>fantque</TT> est suivi d'un bool&#233;en, de <TT>faire</TT> d'instructions puis de
+<TT>fantque</TT>. <TT>fantque</TT> permet de faire tant que la valeur de ce 
+bool&#233;en est vraie plusieurs fois les instructions 
+situ&#232;es entre <TT>faire</TT> et <TT>fantque</TT>.
+<BR>
+On tape :
+<PRE>
+somwhile(eps):={
+local s,j;
+s:=0;
+j:=1;
+while (1/j&gt;=eps){
+ s:=s+1/j;
+ j:=j+1;
+}
+return s;
+}
+</PRE>
+Ou on tape :
+<PRE>
+somtantque(eps):={
+local s,j;
+s:=0;
+j:=1;
+tantque 1/j&gt;=eps faire
+ s:=s+1/j;
+ j:=j+1;
+ftantque
+retourne s;
+}
+</PRE>
+puis :
+<DIV ALIGN="CENTER">
+<TT>somwhile(0.2)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>somantque(0.2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>137/60</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+On peut aussi &#233;crire un <TT>while</TT> avec un <TT>for</TT> :
+<BR><TT>while (&lt;condition&gt;)&lt;instructions&gt;</TT> est &#233;quivalent &#224; :
+<BR><TT>for (;&lt;condition&gt;;)&lt;instructions&gt;</TT> 
+<BR>
+On aurait donc pu &#233;crire :
+<PRE>
+somwhilefor(eps):={
+local s,j;
+s:=0;
+j:=1;
+for (;1/j&gt;=eps;){
+ s:=s+1/j;
+ j:=j+1;
+}
+return s;
+}
+</PRE>
+ou encore
+<PRE>
+somforwhile(eps):={
+local s,j;
+s:=0;
+for (j:=1;1/j&gt;=eps;j++){
+ s:=s+1/j;
+}
+return s;
+}
+</PRE>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>somwhile(0.1);somforwhile(0.1);somwhilefor(0.1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>7129/2520,7129/2520,7129/2520</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

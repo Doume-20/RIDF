@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le ni&#232;me nombre de Bernoulli : bernoulli</TITLE>
+<META NAME="description" CONTENT="Le ni&#232;me nombre de Bernoulli : bernoulli">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node265.html">
+<LINK REL="previous" HREF="node263.html">
+<LINK REL="up" HREF="node255.html">
+<LINK REL="next" HREF="node265.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6802"
+  HREF="node265.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6796"
+  HREF="node255.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6790"
+  HREF="node263.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6798"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6800"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6803"
+  HREF="node265.html">Accès aux fonctions de</A>
+<B> monter:</B> <A NAME="tex2html6797"
+  HREF="node255.html">Les rationnels</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6791"
+  HREF="node263.html">Transformer une fraction continue</A>
+ &nbsp; <B>  <A NAME="tex2html6799"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6801"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00999000000000000000"></A><A NAME="6020"></A>
+<BR>
+Le <!-- MATH
+ $n^{i\`eme}$
+ -->
+<I>n</I><SUP>i&#232;me</SUP> nombre de Bernoulli : <TT>bernoulli</TT>
+</H2>
+<TT>bernoulli</TT> a comme argument un entier <I>n</I>.
+<BR><TT>bernoulli</TT> renvoie le <!-- MATH
+ $n^{i\`eme}$
+ -->
+<I>n</I><SUP>i&#232;me</SUP> nombre de Bernoulli <I>B</I>(<I>n</I>).
+<BR>
+On a :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{t}{e^t-1}=\sum_{n=0}^{+\infty} \frac{B(n)}{n!}t^n
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="52" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.png"
+ ALT="$\displaystyle {\frac{{t}}{{e^t-1}}}$"> = <IMG
+ WIDTH="30" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.png"
+ ALT="$\displaystyle \sum_{{n=0}}^{{+\infty}}$"><IMG
+ WIDTH="47" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.png"
+ ALT="$\displaystyle {\frac{{B(n)}}{{n!}}}$"><I>t</I><SUP>n</SUP>
+</DIV><P></P>
+On rappelle que les polyn&#244;mes de Bernoulli <I>B</I><SUB>k</SUB> sont d&#233;finis par :
+<P><!-- MATH
+ \begin{displaymath}
+B_0=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>B</I><SUB>0</SUB> = 1
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+B_k{'}(x)=kB_{k-1}(x)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>B</I><SUB>k</SUB>'(<I>x</I>) = <I>kB</I><SUB>k-1</SUB>(<I>x</I>)
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\int_0^1B_k(x)dx=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="29" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img131.png"
+ ALT="$\displaystyle \int_{0}^{1}$"><I>B</I><SUB>k</SUB>(<I>x</I>)<I>dx</I> = 0
+</DIV><P></P>
+On a alors :
+<BR><!-- MATH
+ $B(n)=B_n(0)$
+ -->
+<I>B</I>(<I>n</I>) = <I>B</I><SUB>n</SUB>(0)
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>bernoulli(6)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1/42</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Quotient euclidien : Quo</TITLE>
+<META NAME="description" CONTENT="Quotient euclidien : Quo">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node533.html">
+<LINK REL="previous" HREF="node531.html">
+<LINK REL="up" HREF="node531.html">
+<LINK REL="next" HREF="node533.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10758"
+  HREF="node533.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10752"
+  HREF="node531.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10746"
+  HREF="node531.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10754"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10756"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10759"
+  HREF="node533.html">Reste euclidien : Rem</A>
+<B> monter:</B> <A NAME="tex2html10753"
+  HREF="node531.html">Le calcul modulaire comme</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10747"
+  HREF="node531.html">Le calcul modulaire comme</A>
+ &nbsp; <B>  <A NAME="tex2html10755"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10757"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009331000000000000000"></A><A NAME="13496"></A>
+<BR>
+Quotient  euclidien : <TT>Quo</TT>
+</H2>
+<TT>Quo</TT> est la forme inerte de <TT>quo</TT>.
+<BR><TT>Quo</TT> renvoie <TT>quo</TT>, le quotient  de la division euclidienne de deux 
+polyn&#244;mes  sans l'&#233;valuer.
+<BR>
+On utilise <TT>Quo</TT> et <TT>mod</TT>  pour calculer en mode <TT>Maple</TT> le 
+quotient de la division euclidienne de deux  polyn&#244;mes &#224; coefficients dans 
+<!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">.
+<BR>
+On tape, en mode <TT>Xcas</TT> :
+<DIV ALIGN="CENTER">
+<TT>Quo((x<code>^</code>3+x<code>^</code>2+1) mod 13,(2*x<code>^</code>2+4) mod 13)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>quo((x<code>^</code>3+x<code>^</code>2+1)%13,(2*x<code>^</code>2+4)%13)</TT>
+</DIV>
+puis en utilisant <TT>eval(ans())</TT>, on obtient :
+<DIV ALIGN="CENTER">
+<TT>(-6%13)*x+-6%13</TT>
+</DIV>
+<B>Attention</B> <TT>Quo</TT> est surtout utile en mode <TT>Maple</TT>.
+<BR>
+On tape, en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>Quo(x<code>^</code>3+x<code>^</code>2+1,2*x<code>^</code>2+4) mod 13</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(-6)*x-6</TT>
+</DIV>
+On tape, en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>Quo(x<code>^</code>2+2*x,x<code>^</code>2+6*x+5) mod 5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

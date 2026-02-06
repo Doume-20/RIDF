@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les niveaux</TITLE>
+<META NAME="description" CONTENT="Les niveaux">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html293"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html287"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html283"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html289"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html291"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html294"
+  HREF="node10.html">Votre espace de travail</A>
+<B> monter:</B> <A NAME="tex2html288"
+  HREF="node5.html">Pour commencer</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html284"
+  HREF="node8.html">Un premier calcul</A>
+ &nbsp; <B>  <A NAME="tex2html290"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html292"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00044000000000000000">
+Les niveaux</A>
+</H2>
+Les niveaux sont constitu&#233;s :
+
+<UL>
+<LI>soit une ligne de commandes : dans cette ligne on tape des commandes de 
+<TT>Xcas</TT> separ&#233;es par <TT>;</TT> ou par <TT>,</TT> et on les ex&#233;cute en tapant 
+<TT>Enter</TT>. Il apparait alors un emplacement pour les affichages 
+interm&#233;diaires (si il y en a) 
+et un emplacement pour la r&#233;ponse qui peut &#234;tre, selon la nature de la 
+commande, un &#233;diteur d'expressions ou une fen&#234;tre graphique. 
+Lorsqu'on met dans la m&#234;me ligne de commandes, plusieurs commandes separ&#233;es
+par une virgule ou un point virgule, c'est la nature de la derni&#232;re commande 
+qui d&#233;termine la nature de la sortie. On peut par exemple&#233;crire :
+<DIV ALIGN="CENTER">
+<TT>carre(0,1),0</TT>
+</DIV>
+pour ne pas avoir une sortie graphique mais pour avoir une sortie texte. La 
+r&#233;ponse donnera alors la liste des coordonn&#233;es des sommets du carr&#233;.
+On pourra remarquer que l'&#233;cran d'une sortie graphique est identique &#224; une 
+figure de g&#233;om&#233;trie en mode <TT>Rep&#232;re</TT>.
+</LI>
+<LI>soit un &#233;diteur d'expressions ou d'expressions, qui permet de saisir 
+des expressions math&#233;matiques en affichage 2-d c'est &#224; dire sans 
+parenth&#232;ses (cf. la section <A HREF="node47.html#sec:eqw">11</A>),
+</LI>
+<LI>soit un niveau de g&#233;om&#233;trie 2D, son &#233;cran, ses menus et boutons 
+et ses lignes de  commandes,
+</LI>
+<LI>soit un niveau de g&#233;om&#233;trie 3D, son &#233;cran, ses menus et boutons 
+et ses lignes de commandes,
+</LI>
+<LI>soit un niveau de dessin tortue (logo), son &#233;cran, son &#233;diteur de 
+programmes, ses menus et boutons et ses lignes de commandes,
+</LI>
+<LI>soit un tableur, ses menus et boutons et son &#233;cran graphique 2D,
+</LI>
+<LI>soit un &#233;diteur de programmes, ses menus et boutons,
+</LI>
+<LI>soit un commentaire,
+</LI>
+<LI>soit un regroupement de ces niveaux en un groupe.
+</LI>
+</UL>
+Le niveau actif est celui o&#249; se trouve le curseur et le niveau 
+s&#233;lectionn&#233; est obtenu quand on clique sur son num&#233;ro, num&#233;ro qui 
+s'&#233;crit alors sur fond noir.
+
+<P>
+On peut effacer ou d&#233;placer un niveau ou un groupe de niveaux
+dans une session, ou encore le recopier dans une autre session.
+On peut &#224; tout moment ins&#233;rer un nouveau niveau  ou un groupe de niveaux
+ou encore modifier l'entr&#233;e d'un niveau : <TT>Enter</TT> valide alors le 
+changement de commandes de ce niveau et positionne le curseur sur l'entr&#233;e 
+suivante, mais les niveaux suivants ne seront pas recalcul&#233;s. Il est 
+toutefois possible apr&#232;s une modification de r&#233;ex&#233;cuter, soit tous les 
+niveaux, soit les niveaux situ&#233;s apr&#232;s la modification (menu <TT>Edit</TT> 
+puis <TT>Executer session</TT>  ou <TT>Executer en_dessous</TT>).
+
+<P>
+<B>Remarques</B>
+<BR>
+Dans une figure de g&#233;om&#233;trie, il est important de revalider les commandes,
+apr&#232;s toutes modifications, d&#232;s le premier niveau modifi&#233; car dans une 
+figure de g&#233;om&#233;trie, la validation d'un niveau entraine la validation des 
+niveaux suivants sauf si on a cliqu&#233; sur <TT>Step</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html293"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html287"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html283"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html289"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html291"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html294"
+  HREF="node10.html">Votre espace de travail</A>
+<B> monter:</B> <A NAME="tex2html288"
+  HREF="node5.html">Pour commencer</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html284"
+  HREF="node8.html">Un premier calcul</A>
+ &nbsp; <B>  <A NAME="tex2html290"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html292"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

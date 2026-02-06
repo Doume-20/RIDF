@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>PGCD dans /p[x] : Gcd</TITLE>
+<META NAME="description" CONTENT="PGCD dans /p[x] : Gcd">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node535.html">
+<LINK REL="previous" HREF="node533.html">
+<LINK REL="up" HREF="node531.html">
+<LINK REL="next" HREF="node535.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10786"
+  HREF="node535.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10780"
+  HREF="node531.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10774"
+  HREF="node533.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10782"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10784"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10787"
+  HREF="node535.html">Factorisation dans /p[x] :</A>
+<B> monter:</B> <A NAME="tex2html10781"
+  HREF="node531.html">Le calcul modulaire comme</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10775"
+  HREF="node533.html">Reste euclidien : Rem</A>
+ &nbsp; <B>  <A NAME="tex2html10783"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10785"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009333000000000000000"></A><A NAME="13570"></A>
+<BR>
+PGCD dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>Gcd</TT>
+</H2>
+<TT>Gcd</TT> est la forme inerte de <TT>gcd</TT>.
+<BR><TT>Gcd</TT> renvoie le <TT>gcd</TT>  (greatest common divisor) de deux polyn&#244;mes
+(ou d'une liste de polyn&#244;mes ou d'une suite de polyn&#244;mes)
+sans l'&#233;valuer. 
+<BR>
+On utilise <TT>Gcd</TT> et <TT>mod</TT>  pour calculer en mode <TT>Maple</TT> le 
+PGCD des deux  polyn&#244;mes &#224; coefficients dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> lorsque <I>p</I> est 
+premier (voir aussi <A HREF="node469.html#sec:gcd">6.26.7</A>).
+<BR>
+On tape  en mode <TT>Xcas</TT> :
+<DIV ALIGN="CENTER">
+<TT>Gcd((2*x<code>^</code>2+5,5*x<code>^</code>2+2*x-3)%13)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>gcd((2*x<code>^</code>2+5)%13,(5*x<code>^</code>2+2*x-3)%13)</TT>
+</DIV>
+puis avec <TT>eval(ans())</TT> on obtient :
+<DIV ALIGN="CENTER">
+<TT>(1%13)*x+2%13</TT>
+</DIV>
+<B>Attention</B> <TT>Gcd</TT> est surtout utile en mode <TT>Maple</TT>.
+<BR>
+On tape alors en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>Gcd(2*x<code>^</code>2+5,5*x<code>^</code>2+2*x-3) mod 13</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1*x+2</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Gcd(x<code>^</code>2+2*x,x<code>^</code>2+6*x+5) mod 5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1*x</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

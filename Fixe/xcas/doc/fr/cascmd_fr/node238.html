@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Test de primalit&#233; : is_prime isprime isPrime</TITLE>
+<META NAME="description" CONTENT="Test de primalit&#233; : is_prime isprime isPrime">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node239.html">
+<LINK REL="previous" HREF="node237.html">
+<LINK REL="up" HREF="node221.html">
+<LINK REL="next" HREF="node239.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6428"
+  HREF="node239.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6422"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6416"
+  HREF="node237.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6424"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6426"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6429"
+  HREF="node239.html">Nombre pseudo-premier apr&#232;s n</A>
+<B> monter:</B> <A NAME="tex2html6423"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6417"
+  HREF="node237.html">Test de pseudo-primalit&#233; :</A>
+ &nbsp; <B>  <A NAME="tex2html6425"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6427"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009717000000000000000"></A><A NAME="5246"></A><A NAME="5247"></A><A NAME="5248"></A><A NAME="5249"></A>
+<BR>
+Test de primalit&#233; : <TT>is_prime isprime isPrime</TT>
+</H2>
+<TT>is_prime(n)</TT>  renvoie <TT>1</TT> (vrai) ou <TT>0</TT> (faux).
+selon que est premier ou non. <TT>isprime</TT> ou <TT>isPrime</TT> renvoie <TT>true</TT>
+ou <TT>false</TT>. Utiliser la commande <TT>pari("isprime",n,1)</TT>
+pour obtenir un certificat de primalit&#233; (voir la documentation
+de PARI/GP, depuis le menu <TT>Aide-&gt;Manuels-&gt;PARI-GP)</TT>) et
+<TT>pari("isprime",n,2)</TT> ou <TT>is_prime(n)</TT> pour utiliser le test APRCL.
+
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>is_prime(100003)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>isprime(100003)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>true</TT>
+</DIV>
+On tape :                    
+<DIV ALIGN="CENTER">
+<TT>is_prime(98569898989987)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>is_prime(14)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>isprime(14)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>false</TT>
+</DIV>
+Pour obtenir un certificat de primalit&#233; pour <!-- MATH
+ $n=9856989898997789789$
+ -->
+<I>n</I> = 9856989898997789789, 
+on tape :
+<DIV ALIGN="CENTER">
+<TT>pari("isprime",9856989898997789789,1)</TT>
+</DIV>
+On obtient les coefficients prouvant la primalit&#233; par le test
+"p-1" de Selfridge-Pocklington-Lehmer&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>[[2,2,1],[19,2,1],[941,2,1],[1873,2,1],[94907,2,1]]</TT>
+
+</DIV>
+sinon, on tape :
+<DIV ALIGN="CENTER">
+<TT>pari("isprime",9856989898997789789,2)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>is_prime(9856989898997789789)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6428"
+  HREF="node239.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6422"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6416"
+  HREF="node237.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6424"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6426"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6429"
+  HREF="node239.html">Nombre pseudo-premier apr&#232;s n</A>
+<B> monter:</B> <A NAME="tex2html6423"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6417"
+  HREF="node237.html">Test de pseudo-primalit&#233; :</A>
+ &nbsp; <B>  <A NAME="tex2html6425"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6427"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

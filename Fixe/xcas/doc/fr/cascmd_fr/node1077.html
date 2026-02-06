@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite 3D : coordinates coordonnees</TITLE>
+<META NAME="description" CONTENT="Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite 3D : coordinates coordonnees">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1078.html">
+<LINK REL="previous" HREF="node1076.html">
+<LINK REL="up" HREF="node1073.html">
+<LINK REL="next" HREF="node1078.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19119"
+  HREF="node1078.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19113"
+  HREF="node1073.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19107"
+  HREF="node1076.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19115"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19117"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19120"
+  HREF="node1078.html">L'&#233;quation cart&#233;sienne d'un objet</A>
+<B> monter:</B> <A NAME="tex2html19114"
+  HREF="node1073.html">Les mesures</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19108"
+  HREF="node1076.html">La cote d'un point</A>
+ &nbsp; <B>  <A NAME="tex2html19116"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19118"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013114000000000000000"></A><A NAME="28018"></A><A NAME="28019"></A><A NAME="sec:coordonnees3"></A>
+<BR>
+Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite 3D : <TT>coordinates coordonnees</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node978.html#sec:coordonnees2">9.16.4</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>coordonnees</TT>, en g&#233;om&#233;trie 3D, est une fonction ayant 
+comme argument un point ou un vecteur ou une droite 3D. 
+<BR><TT>coordonnees</TT> renvoie la liste de l'abscisse, de l'ordonn&#233;e et de la cote
+du point ou du vecteur ou renvoie une matrice de 2 lignes qui donnent 
+l'abscisse, l'ordonn&#233;e et la cote de 2 points de la droite orient&#233;e.
+<BR>
+On a :
+
+<UL>
+<LI>si le point <TT>A</TT> a pour coordonn&#233;es cart&#233;siennes 
+<!-- MATH
+ $(x_A,y_A,z_A)$
+ -->
+(<I>x</I><SUB>A</SUB>, <I>y</I><SUB>A</SUB>, <I>z</I><SUB>A</SUB>),
+<BR> <TT>coordonnees(A)</TT> renvoie <!-- MATH
+ $[x_A,y_A,z_A]$
+ -->
+[<I>x</I><SUB>A</SUB>, <I>y</I><SUB>A</SUB>, <I>z</I><SUB>A</SUB>], 
+</LI>
+<LI>si le point <TT>B</TT> a pour coordonn&#233;es cart&#233;siennes 
+<!-- MATH
+ $(x_B,y_B,z_B)$
+ -->
+(<I>x</I><SUB>B</SUB>, <I>y</I><SUB>B</SUB>, <I>z</I><SUB>B</SUB>),
+<BR> <TT>coordonnees(vecteur(A,B))</TT> ou <TT>B-A</TT> renvoie
+<BR><!-- MATH
+ $[x_B-x_A,y_B-y_A,z_B-z_A]$
+ -->
+[<I>x</I><SUB>B</SUB> - <I>x</I><SUB>A</SUB>, <I>y</I><SUB>B</SUB> - <I>y</I><SUB>A</SUB>, <I>z</I><SUB>B</SUB> - <I>z</I><SUB>A</SUB>] 
+<BR>
+car <TT>B-A</TT> d&#233;signe les coordonn&#233;es du 
+vecteur <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$">,
+</LI>
+<LI>si le vecteur <TT>V</TT> a pour coordonn&#233;es cart&#233;siennes 
+<!-- MATH
+ $(x_V,y_V,z_V)$
+ -->
+(<I>x</I><SUB>V</SUB>, <I>y</I><SUB>V</SUB>, <I>z</I><SUB>V</SUB>),
+<BR> <TT>coordonnees(V)</TT> ou <TT>coordonnees(vecteur(A,V))</TT> renvoie 
+<BR><!-- MATH
+ $[x_V,y_V,z_V]$
+ -->
+[<I>x</I><SUB>V</SUB>, <I>y</I><SUB>V</SUB>, <I>z</I><SUB>V</SUB>],
+</LI>
+<LI>si une droite <TT>d</TT> est d&#233;finie par deux points <TT>A</TT> et <TT>B</TT>,
+<BR><TT>coordonnees(d)</TT> renvoie <TT>[coordonnees(A),coordonnees(B)]</TT>,
+</LI>
+<LI>si une droite <TT>d</TT> est d&#233;finie par son &#233;quation,
+<BR><TT>coordonnees(d)</TT> renvoie <TT>[coordonnees(A),coordonnees(B)]</TT> o&#249; <TT>A</TT>
+et <TT>B</TT>  sont deux points de la droite <TT>d</TT>, le vecteur <TT>AB</TT> ayant 
+m&#234;me orientation que <TT>d</TT>.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(point([1,2,3]))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(point(1,2,3))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,3]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur(point([1,2,3]),point([2,4,7])))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur(point(1,2,3),point(2,4,7)))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur([1,2,3],[2,4,7])))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur([1,2,4])))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur([1,2,3],vecteur([1,2,4])))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>point([2,4,7])-point([1,2,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,4]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>d:=droite(point(-1,1,0),point(1,2,3))</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>coordonnees(d)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,1,0],[1,2,3]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>d:=droite(x-2*y+3=0,6*x+3*y-5*z+3=0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>coordonnees(d)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,1,0],[9,6,15]]</TT>
+</DIV>
+<B>Attention</B>
+<BR><TT>coordonnees</TT> peut aussi avoir comme argument une s&#233;quence ou une liste
+de points. <TT>coordonnees</TT> renvoie alors la s&#233;quence ou la liste des
+listes des coordonn&#233;es de ces points, par exemple :
+<BR><TT>coordonnees(point([0,1,2]),point([1,2,4]))</TT> 
+<BR>
+renvoie la s&#233;quence :
+<BR><TT>[0,1,2],[1,2,4]</TT>
+<BR>
+et
+<BR><TT>coordonnees([point([0,1,2]),point([1,2,4])])</TT>
+<BR>
+renvoie la matrice :
+<BR><TT>[[0,1,2],[1,2,4]]</TT> mais
+<BR><TT>coordonnees([1,2,4])</TT>
+<BR>
+renvoie la matrice :
+<BR><TT>[[1,0],[2,0],[4,0]]</TT>
+<BR>
+car <TT>[1,2,4]</TT> est consid&#233;r&#233; comme la liste de
+3 points d'affixe  <TT>1</TT>, <TT>2</TT> et <TT>4</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html19119"
+  HREF="node1078.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19113"
+  HREF="node1073.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19107"
+  HREF="node1076.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19115"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19117"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19120"
+  HREF="node1078.html">L'&#233;quation cart&#233;sienne d'un objet</A>
+<B> monter:</B> <A NAME="tex2html19114"
+  HREF="node1073.html">Les mesures</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19108"
+  HREF="node1076.html">La cote d'un point</A>
+ &nbsp; <B>  <A NAME="tex2html19116"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19118"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

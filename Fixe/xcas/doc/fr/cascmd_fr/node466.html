@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Reste euclidien : rem</TITLE>
+<META NAME="description" CONTENT="Reste euclidien : rem">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node467.html">
+<LINK REL="previous" HREF="node465.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node467.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9798"
+  HREF="node467.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9792"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9786"
+  HREF="node465.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9794"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9796"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9799"
+  HREF="node467.html">Reste euclidien : Rem</A>
+<B> monter:</B> <A NAME="tex2html9793"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9787"
+  HREF="node465.html">Quotient euclidien : Quo</A>
+ &nbsp; <B>  <A NAME="tex2html9795"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9797"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009264000000000000000"></A><A NAME="11770"></A>
+<BR>
+Reste euclidien : <TT>rem</TT>
+</H2>
+<TT>rem</TT> donne le reste de la division euclidienne de deux 
+polyn&#244;mes (division selon les puissances d&#233;croissantes).
+<BR>
+On peut donner les polyn&#244;mes soit par la liste de leurs coefficients selon 
+les puissances d&#233;croissantes, soit sous leurs formes symboliques et dans ce 
+cas la variable doit &#234;tre rajout&#233;e comme troisi&#232;me argument (par d&#233;faut
+la variable est <TT>x</TT>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rem(x<code>^</code>3-1,x<code>^</code>2-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x-1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rem(t<code>^</code>3-1,t<code>^</code>2-1,t)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>t-1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rem(x<code>^</code>2+2x+1,x+3)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>rem(t<code>^</code>2+2t+1,t+3,t)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4</TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>rem([1,2,1],[1,3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT><!-- MATH
+ $\talloblong 4\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$">4<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$"></TT>
+</DIV>
+c'est &#224; dire le polyn&#244;me <TT>poly1[4]</TT> ou encore le polyn&#244;me <TT>4</TT>.
+<BR>
+On tape pour avoir le reste de <I>x</I><SUP>3</SUP> + 2<I>x</I> + 4 par <I>x</I><SUP>2</SUP> + <I>x</I> + 2 :
+<DIV ALIGN="CENTER">
+<TT>rem(x<code>^</code>3+2x+4,x<code>^</code>2+x+2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x+6</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>rem([1,0,2,4],[1,1,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT><!-- MATH
+ $\talloblong 1,6\talloblong$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$">1, 6<IMG
+ WIDTH="13" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \talloblong$"></TT>
+</DIV>
+c'est &#224; dire le polyn&#244;me <TT>poly1[1,6]</TT> ou encore le polyn&#244;me 
+<TT>x+6</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rem(t<code>^</code>3+2t+4,t<code>^</code>2+t+2,t)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>t+6</TT>
+</DIV>
+On tape si on ne met pas la variable <I>t</I> comme dernier argument :
+<DIV ALIGN="CENTER">
+<TT>rem(t<code>^</code>3+2t+4,t<code>^</code>2+t+2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9798"
+  HREF="node467.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9792"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9786"
+  HREF="node465.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9794"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9796"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9799"
+  HREF="node467.html">Reste euclidien : Rem</A>
+<B> monter:</B> <A NAME="tex2html9793"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9787"
+  HREF="node465.html">Quotient euclidien : Quo</A>
+ &nbsp; <B>  <A NAME="tex2html9795"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9797"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

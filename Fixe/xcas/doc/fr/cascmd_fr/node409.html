@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les coefficients de Fourier : fourier_an et fourier_bn ou fourier_cn</TITLE>
+<META NAME="description" CONTENT="Les coefficients de Fourier : fourier_an et fourier_bn ou fourier_cn">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node413.html">
+<LINK REL="previous" HREF="node408.html">
+<LINK REL="up" HREF="node408.html">
+<LINK REL="next" HREF="node410.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8945"
+  HREF="node410.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8939"
+  HREF="node408.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8933"
+  HREF="node408.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8941"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8943"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8946"
+  HREF="node410.html">fourier_an</A>
+<B> monter:</B> <A NAME="tex2html8940"
+  HREF="node408.html">Transform&#233;e de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8934"
+  HREF="node408.html">Transform&#233;e de Fourier</A>
+ &nbsp; <B>  <A NAME="tex2html8942"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8944"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009231000000000000000"></A> <A NAME="10037"></A>
+<BR>
+Les coefficients de Fourier : <TT>fourier_an</TT> et <TT>fourier_bn</TT> ou <TT>fourier_cn</TT>
+</H2>
+Si la fonction <I>f</I> est continue par morceaux sur <!-- MATH
+ $\mathbb{R}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$">, et est 
+p&#233;riodique de p&#233;riode <I>T</I>, alors aux points de continuit&#233; de <I>f</I> on a :
+<BR> <P><!-- MATH
+ \begin{displaymath}
+f(x)=\frac{a_0}{2}+\sum _{n=1}^{+\infty} a_n \cos(\frac{2\pi nx}{T})+b_n \sin(\frac{2\pi nx}{T})
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>f</I> (<I>x</I>) = <IMG
+ WIDTH="25" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.png"
+ ALT="$\displaystyle {\frac{{a_0}}{{2}}}$"> + <IMG
+ WIDTH="30" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.png"
+ ALT="$\displaystyle \sum_{{n=1}}^{{+\infty}}$"><I>a</I><SUB>n</SUB>cos(<IMG
+ WIDTH="48" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$\displaystyle {\frac{{2\pi nx}}{{T}}}$">) + <I>b</I><SUB>n</SUB>sin(<IMG
+ WIDTH="48" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$\displaystyle {\frac{{2\pi nx}}{{T}}}$">)
+</DIV><P></P>
+ou 
+ <P><!-- MATH
+ \begin{displaymath}
+f(x)=\sum _{n=-\infty}^{+\infty} c_n e^\frac{2i\pi nx}{T}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>f</I> (<I>x</I>) = <IMG
+ WIDTH="47" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.png"
+ ALT="$\displaystyle \sum_{{n=-\infty}}^{{+\infty}}$"><I>c</I><SUB>n</SUB><I>e</I><SUP><IMG
+ WIDTH="8" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$\scriptstyle {\frac{}{}}$"></SUP>2<I>i</I><IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$\displaystyle \pi$"><I>nxT</I>
+</DIV><P></P>
+o&#249; les coefficients <I>a</I><SUB>n</SUB>,&nbsp;<I>b</I><SUB>n</SUB>, <I>n</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <I>N</I>, (ou <I>c</I><SUB>n</SUB>, <I>n</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <I>Z</I>) sont les 
+coefficients de Fourier de <I>f</I> et se calculent avec les fonctions :
+<BR><TT>fourier_an</TT> et <TT>fourier_bn</TT> ou <TT>fourier_cn</TT>.  
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html8947"
+  HREF="node410.html"><TT>fourier_an</TT></A>
+<LI><A NAME="tex2html8948"
+  HREF="node411.html"><TT>fourier_bn</TT></A>
+<LI><A NAME="tex2html8949"
+  HREF="node412.html"><TT>fourier_cn</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

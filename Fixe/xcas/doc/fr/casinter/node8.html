@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Un premier calcul</TITLE>
+<META NAME="description" CONTENT="Un premier calcul">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html281"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html275"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html269"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html277"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html279"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html282"
+  HREF="node9.html">Les niveaux</A>
+<B> monter:</B> <A NAME="tex2html276"
+  HREF="node5.html">Pour commencer</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html270"
+  HREF="node7.html">Le d&#233;marrage</A>
+ &nbsp; <B>  <A NAME="tex2html278"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html280"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00043000000000000000"></A><A NAME="sec:calc"></A>
+<BR>
+Un premier calcul
+</H2>
+On suppose qu'au d&#233;marrage vous avez choisi <TT>Xcas</TT> ou que vous avez 
+cr&#233;&#233; une ligne de commandes en tapant <TT>Alt+n</TT>.
+<BR>
+Si on veut  utiliser une commande de <TT>Xcas</TT>, il suffit de la taper
+dans une ligne de commandes puis de valider avec la touche <TT>Enter</TT>.
+<BR><B>Attention!!!!</B> Dans la suite <TT>Enter</TT> sera sous-entendu.
+<BR>
+On tape par exemple :
+<DIV ALIGN="CENTER">
+<TT>1+2</TT>
+
+</DIV>
+On obtient :
+
+<UL>
+<LI>en dessous la r&#233;ponse <TT>3</TT> dans un &#233;diteur d&#233;quations,
+</LI>
+<LI>la cr&#233;ation d'un niveau de num&#233;ro 2. 
+</LI>
+</UL>
+On tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>100!</TT>
+
+</DIV>
+On obtient :
+
+<UL>
+<LI>la r&#233;ponse dans un &#233;diteur d'expressions poss&#233;dant une  barre de 
+scroll horizontale  situ&#233;e  sous la r&#233;ponse qui permet de lire la valeur 
+exacte de 100!,
+</LI>
+<LI>la cr&#233;ation d'un niveau de num&#233;ro 3. 
+</LI>
+</UL>
+ 
+<BR>
+On tape maintenant&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>expand((1+x)<code>^</code>90)</TT>
+
+</DIV>
+On obtient :
+
+<UL>
+<LI>la r&#233;ponse dans un &#233;diteur d&#233;quations poss&#233;dant une  barre de 
+scroll horizontale situ&#233;e  sous le r&#233;ponse et une  barre de scroll 
+verticale situ&#233;e &#224; droite de la r&#233;ponse qui permet de lire le 
+r&#233;sultat,
+</LI>
+<LI>la cr&#233;ation d'un niveau de num&#233;ro 4, 
+</LI>
+<LI>la cr&#233;ation d'une barre de scroll verticale pour la session situ&#233;e 
+&#224; droite de la barre de scroll verticale permettant de lire le 
+d&#233;veloppement de <!-- MATH
+ $(1+x)^{90}$
+ -->
+(1 + <I>x</I>)<SUP>90</SUP>.
+</LI>
+</UL>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="493" HEIGHT="367" ALIGN="BOTTOM" BORDER="0"
+ SRC="./windowinter.png"
+ ALT="Image windowinter">
+</DIV>
+<B>Remarques</B>&nbsp;:
+
+<UL>
+<LI>Si vous avez choisi <TT>expand</TT> &#224; partir du  
+menu <TT>Expression <!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Rationnel</TT> une aide succincte sur 
+<TT>expand</TT> s'affiche dans la ligne des messages (touche <TT>msg</TT> du clavier 
+obtenu avec le bouton <TT>Kbd</TT>), et si dans la configuration g&#233;n&#233;rale vous
+avez coch&#233; <TT>Aide HTML auto</TT> une aide plus compl&#232;te peut
+s'afficher dans le navigateur (Mozilla par d&#233;faut sous Linux et
+Internet Explorer par d&#233;faut sous Windows).
+Par contre, si vous avez cliqu&#233; sur <TT>expand</TT> dans le 
+bandeau, seule l'aide succincte apparait. 
+Pour voir ce bandeau il faut avoir choisi 
+<TT>Cfg<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Montrer<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Bandeau</TT>, 
+ou en cliquant sur la touche <TT>cmds</TT> du clavier obtenu avec le bouton
+<TT>Kbd</TT>. <TT>expand</TT> se trouve en cliquant sur <TT>Expression</TT> puis sur 
+<TT>Rationnel</TT>.
+</LI>
+<LI>Si le temps de calcul est sup&#233;rieur &#224;
+0.1s, ce temps s'affiche en bleu dans la zone interm&#233;diaire
+reserv&#233;e aux affichages de programmes.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html281"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html275"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html269"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html277"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html279"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html282"
+  HREF="node9.html">Les niveaux</A>
+<B> monter:</B> <A NAME="tex2html276"
+  HREF="node5.html">Pour commencer</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html270"
+  HREF="node7.html">Le d&#233;marrage</A>
+ &nbsp; <B>  <A NAME="tex2html278"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html280"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

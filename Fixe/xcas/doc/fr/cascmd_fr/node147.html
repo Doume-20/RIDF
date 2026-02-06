@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le champ des tangentes : plotfield fieldplot</TITLE>
+<META NAME="description" CONTENT="Le champ des tangentes : plotfield fieldplot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node148.html">
+<LINK REL="previous" HREF="node146.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node148.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4499"
+  HREF="node148.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4493"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4487"
+  HREF="node146.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4495"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4497"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4500"
+  HREF="node148.html">Trac&#233; de solutions d'&#233;quation</A>
+<B> monter:</B> <A NAME="tex2html4494"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4488"
+  HREF="node146.html">Trac&#233; d'une suite r&#233;currente</A>
+ &nbsp; <B>  <A NAME="tex2html4496"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4498"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006180000000000000000"></A><A NAME="3087"></A><A NAME="3088"></A>
+<BR>
+Le champ des tangentes : <TT>plotfield
+    fieldplot</TT>
+</H1><A NAME="29607"></A>
+
+<UL>
+<LI>Soit <I>f</I> (<I>t</I>, <I>y</I>) une expression dependant de deux variables <I>t</I> et <I>y</I>, alors
+<TT>plotfield(f(t,y),[t,y])</TT> trace le 
+champ des tangentes de l'&#233;quation diff&#233;rentielle 
+<I>y'</I> = <I>f</I> (<I>t</I>, <I>y</I>) o&#249; <I>y</I> repr&#233;sente une variable r&#233;elle et <I>t</I> est
+repr&#233;sent&#233; en abscisse,
+
+<P>
+</LI>
+<LI>Soit <I>V</I> est un vecteur 2D de coordonn&#233;es deux expressions d&#233;pendant
+de 2 variables <I>x</I>, <I>y</I> mais ind&#233;pendant du temps, alors
+<TT>plotfield(V,[x,y])</TT> trace le champ de vecteurs,
+</LI>
+<LI>Les plages de valeurs de <I>t</I>, <I>y</I> ou de <I>x</I>, <I>y</I> peuvent &#234;tre
+sp&#233;cifi&#233;es par <TT>t=tmin..tmax</TT>, <TT>x=xmin..xmax</TT>, 
+<TT>y=ymin..ymax</TT> &#224; la place du nom de variable seul.
+
+<P>
+</LI>
+<LI>On peut sp&#233;cifier le cadrage en mettant par exemple :
+<BR><TT>plotfield(f(t,y),[t=tmin..tmax,y=ymin..ymax])</TT>
+
+<P>
+</LI>
+<LI>On peut sp&#233;cifier  que  le 
+champ des tangentes soit, dans un rep&#232;re orthonorm&#233;, de norme 1 avec 
+l'option <TT>normalize</TT>. Sans l'option <TT>normalize</TT> le point de contact est
+l'origine du vecteur tangent et avec l'option <TT>normalize</TT> le point de 
+contact se trouve au milieu des tangentes.
+</LI>
+<LI>On peut aussi sp&#233;cifier la valeur des pas en <I>t</I> et en <I>y</I> avec
+<TT>xstep=...</TT> et <TT>ystep=...</TT>.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfield(4*sin(t*y),[t=0..2,y=-3..7]) </TT>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Des segments de pente 4*sin(t*y) sont 
+trac&#233;s en diff&#233;rents points. Ces segments repr&#233;sentent les vecteurs tangents dirig&#233;s selon les <I>t</I> croissants et dont l'origine est le point de contact</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfield(4*sin(t*y),[t=0..2,y=-3..7],normalize, xstep=0.7,ystep=0.7)) </TT>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Des segments de longueur 1 et de pente 4*sin(t*y) qui repr&#233;sentent les tangentes au point situ&#233; en leur milieu. Ces points espac&#233;s de 0.7</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfield(5*[-y,x],[x=-1..1,y=-1..1])</TT>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Des  vecteurs [- <I>y</I>, <I>x</I>] sont 
+trac&#233;s aux points (<I>x</I>, <I>y</I>). Ces vecteurs repr&#233;sentent des vecteurs tangents en leur origine aux courbes solutions du syst&#232;me <!-- MATH
+ $x(t)'=-y,y(t)'=x$
+ -->
+<I>x</I>(<I>t</I>)' = - <I>y</I>, <I>y</I>(<I>t</I>)' = <I>x</I>. Ils sont dirig&#233;s selon les <I>t</I> croissants.</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfield(5*[-y,x],[x=-1..1,y=-1..1])</TT>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Des segments de longueur 1 et de pente - <I>y</I>/<I>x</I> qui repr&#233;sentent les tangentes au point situ&#233; en leur milieu aux courbes solutions du syst&#232;me <!-- MATH
+ $x(t)'=-y,y(t)'=x$
+ -->
+<I>x</I>(<I>t</I>)' = - <I>y</I>, <I>y</I>(<I>t</I>)' = <I>x</I>.</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4499"
+  HREF="node148.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4493"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4487"
+  HREF="node146.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4495"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4497"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4500"
+  HREF="node148.html">Trac&#233; de solutions d'&#233;quation</A>
+<B> monter:</B> <A NAME="tex2html4494"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4488"
+  HREF="node146.html">Trac&#233; d'une suite r&#233;currente</A>
+ &nbsp; <B>  <A NAME="tex2html4496"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4498"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

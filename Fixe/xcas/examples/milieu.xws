@@ -1,0 +1,210 @@
+// fltk 7Fl_Tile 26 61 911 97 20
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 61 911 96 20
+Soit un quadrilatere quelconque ABCD et M,N,P,Q les milieux respectifs de AB, BC, CD, DA.£Quelle est la nature du quadrilatere MNPQ ?£Trouver une condition necessaire et suffisante pour que le quadrilatere MNPQ soit un losange ? £soit un rectangle? soit un carre?
+,
+// fltk N4xcas10Log_OutputE 26 157 911 1 20
+
+]
+,
+// fltk 7Fl_Tile 26 160 911 411 20
+[
+// fltk N4xcas6FigureE 26 160 911 410 20
+// fltk N4xcas12History_PackE 28 -271 284 841 20
+[
+// fltk 7Fl_Tile 50 -271 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -271 262 30 20
+A:=point(-1.991,0.989,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 50 -241 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -240 262 27 14
+point(-1.991,0.989)
+]
+,
+// fltk 7Fl_Tile 50 -211 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -211 262 30 20
+B:=point(1.03,1.978,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 50 -181 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -180 262 27 14
+point(1.03,1.978)
+]
+,
+// fltk 7Fl_Tile 50 -151 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -151 262 30 20
+C:=point(3.035,-0.961,'affichage'=0)+2.307-0.741*i
+,
+// fltk N4xcas10Log_OutputE 50 -121 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -120 262 27 14
+point(5.342,-1.702)
+]
+,
+// fltk 7Fl_Tile 50 -91 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -91 262 30 20
+D:=point(1.002,-2.005,'affichage'=0)-5.466+0.137*i
+,
+// fltk N4xcas10Log_OutputE 50 -61 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -60 262 27 14
+point(-4.464,-1.868)
+]
+,
+// fltk 7Fl_Tile 50 -31 262 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -31 262 30 20
+quadrilatere(A,B,C,D,affichage=rouge)
+,
+// fltk N4xcas10Log_OutputE 50 -1 262 1 20
+
+,
+// fltk 9Fl_Scroll 50 0 262 49 14
+[
+// fltk N4xcas10Gen_OutputE 50 0 884 27 14
+polygone(point(-1.991,0.989),point(1.03,1.978),point(5.342,-1.702),point(-4.464,-1.868),point(-1.991,0.989))
+,
+// fltk 12Fl_Scrollbar 50 169 262 20 14
+[]
+,
+// fltk 12Fl_Scrollbar 312 140 16 29 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 51 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 51 262 30 20
+M:=milieu(A,B)
+,
+// fltk N4xcas10Log_OutputE 50 81 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 82 262 27 14
+point(-0.4805,1.4835)
+]
+,
+// fltk 7Fl_Tile 50 111 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 111 262 30 20
+N:=milieu(C,B)
+,
+// fltk N4xcas10Log_OutputE 50 141 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 142 262 27 14
+point(3.186,0.138)
+]
+,
+// fltk 7Fl_Tile 50 171 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 171 262 30 20
+P:=milieu(C,D)
+,
+// fltk N4xcas10Log_OutputE 50 201 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 202 262 27 14
+point(0.439,-1.785)
+]
+,
+// fltk 7Fl_Tile 50 231 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 231 262 30 20
+Q:=milieu(A,D)
+,
+// fltk N4xcas10Log_OutputE 50 261 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 262 262 27 14
+point(-3.2275,-0.4395)
+]
+,
+// fltk 7Fl_Tile 50 291 262 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 291 262 30 20
+segment(A,C,affichage=vert)
+,
+// fltk N4xcas10Log_OutputE 50 321 262 1 20
+
+,
+// fltk 9Fl_Scroll 50 322 262 49 14
+[
+// fltk N4xcas10Gen_OutputE 50 322 411 27 14
+polygone(point(-1.991,0.989),point(5.342,-1.702))
+,
+// fltk 12Fl_Scrollbar 50 351 262 20 14
+[]
+,
+// fltk 12Fl_Scrollbar 312 322 16 29 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 373 262 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 373 262 30 20
+segment(B,D,affichage=vert)
+,
+// fltk N4xcas10Log_OutputE 50 403 262 1 20
+
+,
+// fltk 9Fl_Scroll 50 404 262 49 14
+[
+// fltk N4xcas10Gen_OutputE 50 404 401 27 14
+polygone(point(1.03,1.978),point(-4.464,-1.868))
+,
+// fltk 12Fl_Scrollbar 50 433 262 20 14
+[]
+,
+// fltk 12Fl_Scrollbar 312 404 16 29 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 455 262 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 455 262 30 20
+quadrilatere(M,N,P,Q)
+,
+// fltk N4xcas10Log_OutputE 50 485 262 1 20
+
+,
+// fltk 9Fl_Scroll 50 486 262 49 14
+[
+// fltk N4xcas10Gen_OutputE 50 486 954 27 14
+polygone(point(-0.4805,1.4835),point(3.186,0.138),point(0.439,-1.785),point(-3.2275,-0.4395),point(-0.4805,1.4835))
+,
+// fltk 12Fl_Scrollbar 50 515 262 20 14
+[]
+,
+// fltk 12Fl_Scrollbar 312 486 16 29 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 537 262 31 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 537 262 30 20
+
+,
+// fltk N4xcas10Log_OutputE 50 567 262 1 20
+
+]
+]
+// fltk N4xcas5Geo2dE 330 186 487 384 20
+-6.0027,6.0027,-5,5,[pnt(pnt[-1.991+0.989*i,0,"A"]),pnt(pnt[1.03+1.978*i,0,"B"]),pnt(pnt[5.342-1.702*i,0,"C"]),pnt(pnt[-4.464-1.868*i,0,"D"]),pnt(pnt[group[-1.991+0.989*i,1.03+1.978*i,5.342-1.702*i,-4.464-1.868*i,-1.991+0.989*i],1]),pnt(pnt[-0.4805+1.4835*i,0,"M"]),pnt(pnt[3.186+0.138*i,0,"N"]),pnt(pnt[0.439-1.785*i,0,"P"]),pnt(pnt[-3.2275-0.4395*i,0,"Q"]),pnt(pnt[group[-1.991+0.989*i,5.342-1.702*i],2]),pnt(pnt[group[1.03+1.978*i,-4.464-1.868*i],2]),pnt(pnt[group[-0.4805+1.4835*i,3.186+0.138*i,0.439-1.785*i,-3.2275-0.4395*i,-0.4805+1.4835*i],0])],-5,5,1,0,0,0,1,1,1,0,1,2.5
+
+,
+// fltk N4xcas10Log_OutputE 26 570 911 1 20
+
+]

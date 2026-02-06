@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Valeurs d'une suite r&#233;currente ou d'un syst&#232;me de suites r&#233;currentes : rsolve</TITLE>
+<META NAME="description" CONTENT="Valeurs d'une suite r&#233;currente ou d'un syst&#232;me de suites r&#233;currentes : rsolve">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node337.html">
+<LINK REL="previous" HREF="node335.html">
+<LINK REL="up" HREF="node333.html">
+<LINK REL="next" HREF="node337.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7867"
+  HREF="node337.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7861"
+  HREF="node333.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7855"
+  HREF="node335.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7863"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7865"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7868"
+  HREF="node337.html">Tableau de valeurs et</A>
+<B> monter:</B> <A NAME="tex2html7862"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7856"
+  HREF="node335.html">Valeurs d'une suite r&#233;currente</A>
+ &nbsp; <B>  <A NAME="tex2html7864"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7866"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009143000000000000000"></A><A NAME="7822"></A> <A NAME="sec:rsolve"></A>
+<BR>
+Valeurs d'une suite r&#233;currente ou d'un syst&#232;me de suites r&#233;currentes : <TT>rsolve</TT>
+</H2>
+Voir aussi <TT>seqsolve</TT> <A HREF="node335.html#sec:seqsolve">6.14.2</A>.
+<BR><TT>rsolve</TT> a comme argument la ou les relation(s) de r&#233;currence, 
+le nom des variables utilis&#233;es et les valeurs de d&#233;part de la suite.
+
+<P>
+La relation de r&#233;currence doit comporter une partie homog&#232;ne
+lin&#233;aire, la partie non homog&#232;ne doit &#234;tre une combinaison
+lin&#233;aire de produit de polyn&#244;me en <I>n</I> par une suite
+g&#233;om&#233;trique en <I>n</I>.
+<TT>rsolve</TT> renvoie alors une matrice dont les lignes sont les valeurs de la 
+suite en fonctions de <I>n</I>.
+
+<P>
+<B>Remarques</B>
+<BR>
+Contrairement &#224; <TT>seqsolve</TT>, <TT>rsolve</TT> est plus mall&#233;able car
+avec <TT>rsolve</TT> :
+
+<UL>
+<LI>la suite ne d&#233;bute pas forc&#233;ment par <TT>u(0)</TT>, 
+</LI>
+<LI>on peut donner plusieurs valeurs de d&#233;part par exemple 
+<TT>u(0)&#94;2=1</TT>, c'est pourquoi <TT>rsolve</TT> renvoie une liste,
+</LI>
+<LI>on &#233;crit la relation de r&#233;currence comme en math&#233;matiques.
+</LI>
+</UL>
+<B>Exemples</B> :
+
+<UL>
+<LI>Valeurs de la suite  <!-- MATH
+ $u_0=3, \ u_{n+1}=2u_{n}+n$
+ -->
+<I>u</I><SUB>0</SUB> = 3,&nbsp;<I>u</I><SUB>n+1</SUB> = 2<I>u</I><SUB>n</SUB> + <I>n</I>
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve(u(n+1)=2u(n)+n,u(n),u(0)=3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-1+4*2&#94;(n+1-1)-n]</TT>
+</DIV> 
+</LI>
+<LI>Valeurs de la suite <!-- MATH
+ $u_1^2=1, \  u_{n+1}=2u_{n}+n$
+ -->
+<I>u</I><SUB>1</SUB><SUP>2</SUP> = 1,&nbsp;<I>u</I><SUB>n+1</SUB> = 2<I>u</I><SUB>n</SUB> + <I>n</I>
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve(u(n+1)=2u(n)+n,u(n),u(1)&#94;2=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1-(-3)/2*2&#94;(n+1-1)-n,-1-(-1)/2*2&#94;(n+1-1)-n]]</TT>
+</DIV> 
+</LI>
+<LI>Valeurs de la suite <!-- MATH
+ $u_0=3, \ u_{n+1}=2u_{n}+n3^n$
+ -->
+<I>u</I><SUB>0</SUB> = 3,&nbsp;<I>u</I><SUB>n+1</SUB> = 2<I>u</I><SUB>n</SUB> + <I>n</I>3<SUP>n</SUP>
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve(u(n+1)=2u(n)+(n)*3&#94;n,u(n),u(0)=3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-3*3&#94;(n+1-1)+6*2&#94;(n+1-1)+n*3&#94;(n+1-1)]</TT>
+</DIV> 
+</LI>
+<LI>Valeurs de la suite <!-- MATH
+ $u_0=0,u_1=1, \ u_{n+1}=u_n+u_{n-1}$
+ -->
+<I>u</I><SUB>0</SUB> = 0, <I>u</I><SUB>1</SUB> = 1,&nbsp;<I>u</I><SUB>n+1</SUB> = <I>u</I><SUB>n</SUB> + <I>u</I><SUB>n-1</SUB> pour <I>n</I> &gt; 0.
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve(u(n+1)=u(n)+u(n-1),u(n),u(0)=0,u(1)=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(5+sqrt(5))/10*((sqrt(5)+1)/2)&#94;(n+1-1-1)+(5-sqrt(5))/10*((-sqrt(5)+1)/2)&#94;(n+1-1-1)]</TT>
+</DIV> 
+</LI>
+<LI>Valeurs de la suite <!-- MATH
+ $u_0=0,u_1=1, \ u_{n+1}=2*u_n+u_{n-1}+n$
+ -->
+<I>u</I><SUB>0</SUB> = 0, <I>u</I><SUB>1</SUB> = 1,&nbsp;<I>u</I><SUB>n+1</SUB> = 2*<I>u</I><SUB>n</SUB> + <I>u</I><SUB>n-1</SUB> + <I>n</I> pour <I>n</I> &gt; 0.
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve(u(n+1)=2*u(n)+u(n-1)+n,u(n),u(0)=0,u(1)=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-1)/2-(-2-3*sqrt(2))/8*(sqrt(2)+1)&#94;(n+1-1)-(-2+3*sqrt(2))/8*(-sqrt(2)+1)&#94;(n+1-1)-1/2*n]</TT>
+</DIV>
+Ou on  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve([u(n+1)=2*u(n)+v(n)+n,v(n+1)=u(n)],[u(n),v(n)],u(0)=0,v(0)=1) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[(-1)/2-(-2-3*sqrt(2))/8*(sqrt(2)+1)&#94;(n+1-1)-(-2+3*sqrt(2))/8*(-sqrt(2)+1)&#94;(n+1-1)-1/2*n,-(-4+sqrt(2))/8*(sqrt(2)+1)&#94;(n+1-1)-(-4-sqrt(2))/8*(-sqrt(2)+1)&#94;(n+1-1)-1/2*n]]</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Valeurs de la suite <!-- MATH
+ $u_0=0,v_0=1, \ u_{n+1}=u_n+v_n, v_{n+1}=u_n-v_n,$
+ -->
+<I>u</I><SUB>0</SUB> = 0, <I>v</I><SUB>0</SUB> = 1,&nbsp;<I>u</I><SUB>n+1</SUB> = <I>u</I><SUB>n</SUB> + <I>v</I><SUB>n</SUB>, <I>v</I><SUB>n+1</SUB> = <I>u</I><SUB>n</SUB> - <I>v</I><SUB>n</SUB>, pour <I>n</I> &gt; 0.
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve([u(n+1)=u(n)+v(n),v(n+1)=u(n)-v(n)],[u(n),v(n)],[u(0)=0,v(0)=1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1/2*2&#94;((n-1)/2)+1/2*(-(sqrt(2)))&#94;(n-1),(-1+sqrt(2))/2*2&#94;((n-1)/2)+(-1-sqrt(2))/2*(-(sqrt(2)))&#94;(n-1)]]</TT>
+</DIV> 
+</LI>
+<LI>Valeurs de la suite <!-- MATH
+ $u_0=2,v_0=0, \ u_{n+1}=4*v_n+n+1, v_{n+1}=u_n,$
+ -->
+<I>u</I><SUB>0</SUB> = 2, <I>v</I><SUB>0</SUB> = 0,&nbsp;<I>u</I><SUB>n+1</SUB> = 4*<I>v</I><SUB>n</SUB> + <I>n</I> + 1, <I>v</I><SUB>n+1</SUB> = <I>u</I><SUB>n</SUB>, pour <I>n</I> &gt; 0.
+<BR>
+On  tape : 
+<DIV ALIGN="CENTER">
+<TT>rsolve([u(n+1)=4*v(n)+n+1,v(n+1)=u(n)],[u(n),v(n)],[u(0)=2,v(0)=0])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[(-8)/9+2*2&#94;(n+1-1)-(-8)/9*(-1)&#94;(n+1-1)*2&#94;(n+1-1)-1/3*n,(-5)/9+2&#94;(n+1-1)-4/9*(-1)&#94;(n+1-1)*2&#94;(n+1-1)-1/3*n]]</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7867"
+  HREF="node337.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7861"
+  HREF="node333.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7855"
+  HREF="node335.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7863"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7865"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7868"
+  HREF="node337.html">Tableau de valeurs et</A>
+<B> monter:</B> <A NAME="tex2html7862"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7856"
+  HREF="node335.html">Valeurs d'une suite r&#233;currente</A>
+ &nbsp; <B>  <A NAME="tex2html7864"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7866"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

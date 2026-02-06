@@ -1,0 +1,213 @@
+// fltk N4xcas6FigureE 34 -314 824 373
+// fltk N4xcas12History_PackE 36 -562 254 621
+[
+// fltk 7Fl_Tile 61 -562 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -562 229 30
+C:=cercle(0,1)
+,
+// fltk N4xcas10Log_OutputE 61 -532 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -531 229 19
+cercle(point(0),1)
+]
+,
+// fltk 7Fl_Tile 61 -510 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -510 229 30
+A:=point(1,0)
+,
+// fltk N4xcas10Log_OutputE 61 -480 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -479 229 19
+point(1)
+]
+,
+// fltk 7Fl_Tile 61 -458 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -458 229 30
+a:=point(-1,0,affichage=quadrant2)
+,
+// fltk N4xcas10Log_OutputE 61 -428 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -427 229 19
+point(-1)
+]
+,
+// fltk 7Fl_Tile 61 -406 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -406 229 30
+assume(x=[-1/2,-1.0,1.0])
+,
+// fltk N4xcas10Log_OutputE 61 -376 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -375 229 19
+parameter(x,-1.0,1.0,-0.5)
+]
+,
+// fltk 7Fl_Tile 61 -354 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -354 229 30
+H:=point(x,0,affichage=quadrant2)
+,
+// fltk N4xcas10Log_OutputE 61 -324 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -323 229 19
+point(x)
+]
+,
+// fltk 7Fl_Tile 61 -302 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -302 229 30
+D:=perpendiculaire(H,droite(A,a),affichage=quadrant3)
+,
+// fltk N4xcas10Log_OutputE 61 -272 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -271 229 19
+polygone(point(x),point(x-2*i))
+]
+,
+// fltk 7Fl_Tile 61 -250 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -250 229 30
+I:=inter(D,C):;
+,
+// fltk N4xcas10Log_OutputE 61 -220 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -219 229 19
+"Done"
+]
+,
+// fltk 7Fl_Tile 61 -198 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -198 229 30
+M:=I[0]
+,
+// fltk N4xcas10Log_OutputE 61 -168 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -167 229 19
+point(x+(-i)*sqrt(1-(-x)^2))
+]
+,
+// fltk 7Fl_Tile 61 -146 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -146 229 30
+m:=I[1]
+,
+// fltk N4xcas10Log_OutputE 61 -116 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -115 229 19
+point(x+(i)*sqrt(1-(-x)^2))
+]
+,
+// fltk 7Fl_Tile 61 -94 229 66
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -94 229 30
+triangle(A,M,m,affichage=rempli+rouge)
+,
+// fltk N4xcas10Log_OutputE 61 -64 229 1
+
+,
+// fltk 9Fl_Scroll 61 -63 229 35
+[
+// fltk N4xcas10Gen_OutputE 61 -63 501 19
+polygone(point(1),point(x+(-i)*sqrt(1-(-x)^2)),point(x+(i)*sqrt(1-(-x)^2)),point(1))
+,
+// fltk 12Fl_Scrollbar 61 331 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 312 16 19
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -26 229 50
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -26 229 30
+evalf(aire(A,M,m))
+,
+// fltk N4xcas10Log_OutputE 61 4 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 5 229 19
+-1.29903810568
+]
+,
+// fltk 7Fl_Tile 61 26 229 31
+[
+// fltk N4xcas19Multiline_Input_tabE 61 26 229 30
+
+,
+// fltk N4xcas10Log_OutputE 61 56 229 1
+
+]
+]
+// fltk N4xcas8GeometryE 308 -289 429 348
+-5,5,-4.0443,4.0443,[pnt(pnt[cercle(pnt[group[-1,1],0,2*pi]),0,"C"]),pnt(pnt[1,0,"A"]),pnt(pnt[-1,268435456,"a"]),parameter(x,-1.0,1.0,-0.5),pnt(pnt[x,268435456,"H"]),pnt(pnt[line[x,x-2*i],536870912,"D"]),"Done",pnt(pnt[x+(-i)*sqrt(1-(-x)^2),0,"M"]),pnt(pnt[x+(i)*sqrt(1-(-x)^2),0,"m"]),pnt(pnt[group[1,x+(-i)*sqrt(1-(-x)^2),x+(i)*sqrt(1-(-x)^2),1],1073741825]),-1.29903810568],-5,5,1,0,0,0,1,1,1
+
+,
+// fltk 7Fl_Tile 34 61 824 88
+[
+// fltk N4xcas19Multiline_Input_tabE 34 61 824 30
+normal(aire(A,M,m))
+,
+// fltk N4xcas10Log_OutputE 34 91 824 1
+
+,
+// fltk N4xcas8EquationE 34 92 824 57
+(x-1)*sqrt(-x^2+1)
+]
+,
+// fltk 7Fl_Tile 34 151 824 151
+[
+// fltk N4xcas19Multiline_Input_tabE 34 151 824 30
+f(x):=sqrt(1-x^2)*(1-x)
+,
+// fltk N4xcas10Log_OutputE 34 181 824 64
+// Parsing f£// Success compiling f££
+,
+// fltk N4xcas8EquationE 34 245 824 57
+ (x)->sqrt(1-x^2)*(1-x)
+]
+,
+// fltk 7Fl_Tile 34 304 824 98
+[
+// fltk N4xcas19Multiline_Input_tabE 34 304 824 30
+solve(diff(f(x))=0,x)
+,
+// fltk N4xcas10Log_OutputE 34 334 824 1
+
+,
+// fltk N4xcas8EquationE 34 335 824 67
+[-1,1,(-1)/2]
+]
+,
+// fltk 7Fl_Tile 34 404 824 74
+[
+// fltk N4xcas19Multiline_Input_tabE 34 404 824 30
+normal(subst(rotation(A,pi/3,m)-M,x=-1/2))
+,
+// fltk N4xcas10Log_OutputE 34 434 824 1
+
+,
+// fltk N4xcas8EquationE 34 435 824 43
+0
+]
+,
+// fltk 7Fl_Tile 34 480 824 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 480 824 30
+
+,
+// fltk N4xcas10Log_OutputE 34 510 824 1
+
+]

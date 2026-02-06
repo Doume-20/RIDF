@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Quotient and remainder : quorem</TITLE>
+<META NAME="description" CONTENT="Quotient and remainder : quorem">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node519.html">
+<LINK REL="previous" HREF="node517.html">
+<LINK REL="up" HREF="node511.html">
+<LINK REL="next" HREF="node519.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10557"
+  HREF="node519.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10551"
+  HREF="node511.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10545"
+  HREF="node517.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10553"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10555"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10558"
+  HREF="node519.html">Division dans /p ou</A>
+<B> monter:</B> <A NAME="tex2html10552"
+  HREF="node511.html">Le calcul modulaire dans</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10546"
+  HREF="node517.html">Remainder : rem</A>
+ &nbsp; <B>  <A NAME="tex2html10554"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10556"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009327000000000000000"></A><A NAME="13193"></A>
+<BR>
+Quotient and remainder : <TT>quorem</TT>
+</H2>
+<TT>quorem</TT> a comme arguments deux polyn&#244;mes <I>A</I> et <I>B</I> &#224; 
+coefficients dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">. <I>A</I> et <I>B</I> peuvent &#234;tre donn&#233;s par une 
+expression polyn&#244;miale symbolique (de <I>x</I> ou du nom de variable donn&#233; comme
+troisi&#232;me argument) ou par la liste de leur coefficients.
+<BR><TT>quorem</TT> renvoie la
+liste du  quotient et du reste de la division euclidienne de <I>A</I> par <I>B</I> dans 
+ <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] (voir aussi <A HREF="node234.html#sec:iquorem">6.7.13</A> et <A HREF="node468.html#sec:quorem">6.26.6</A>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quorem(5%13,2% 13)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>quorem((5,2)% 13)</TT>
+</DIV>
+et puisque 2* - 4 = 5 - 13 
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-4%13,0]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quorem((x<code>^</code>3+x<code>^</code>2+1)%13,(2*x<code>^</code>2+4)%13)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>quorem((x<code>^</code>3+x<code>^</code>2+1,2*x<code>^</code>2+4)%13)</TT>
+</DIV>
+puisque <!-- MATH
+ $\displaystyle x^3+x^2+1=(2x^2+4)(\frac{x+1}{2})+\frac{5x-4}{4}$
+ -->
+<I>x</I><SUP>3</SUP> + <I>x</I><SUP>2</SUP> +1 = (2<I>x</I><SUP>2</SUP> +4)(<IMG
+ WIDTH="48" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img391.png"
+ ALT="$\displaystyle {\frac{{x+1}}{{2}}}$">) + <IMG
+ WIDTH="57" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img392.png"
+ ALT="$\displaystyle {\frac{{5x-4}}{{4}}}$">
+<BR>
+et que <!-- MATH
+ $-3*4=-6*2=1 \ \bmod 13$
+ -->
+-3*4 = - 6*2 = 1&nbsp; mod 13
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-6%13)*x+-6%13,(-2%13)*x+-1%13]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

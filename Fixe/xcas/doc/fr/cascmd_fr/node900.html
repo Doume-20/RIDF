@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour ne pas afficher le nom de l'objet</TITLE>
+<META NAME="description" CONTENT="Pour ne pas afficher le nom de l'objet">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node901.html">
+<LINK REL="previous" HREF="node899.html">
+<LINK REL="up" HREF="node899.html">
+<LINK REL="next" HREF="node901.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16431"
+  HREF="node901.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16425"
+  HREF="node899.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16419"
+  HREF="node899.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16427"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16429"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16432"
+  HREF="node901.html">Mettre de la couleur</A>
+<B> monter:</B> <A NAME="tex2html16426"
+  HREF="node899.html">Les commandes d'affichage :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16420"
+  HREF="node899.html">Les commandes d'affichage :</A>
+ &nbsp; <B>  <A NAME="tex2html16428"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16430"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION001235100000000000000">
+Pour ne pas afficher le nom de l'objet</A>
+</H3><A NAME="30575"></A>
+<TT>hidden_name</TT> est une valeur de param&#232;tre de la commande <TT>affichage</TT>
+qui permet de ne pas afficher le nom de l'objet.
+On tape (ici la commande <TT>affichage</TT> est locale au point <TT>A</TT>) :
+<DIV ALIGN="CENTER">
+<TT>affichage(A:=point(1+i),hidden_name);B:=point(-1); D:=droite(A,B)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>A est dessin&#233; sans son nom et B et la droite A,B sont dessin&#233;s avec leur nom</TT>
+</DIV>
+On tape (ici la commande <TT>affichage</TT> est locale):
+<DIV ALIGN="CENTER">
+<TT>A:=point(1+i);B:=point(-1);affichage(D:=droite(A,B),hidden_name)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Les points A et B et leurs noms et la droite A,B dessin&#233;e sans son nom</TT>
+</DIV>
+<B>Attention</B> NE PAS mettre <TT>affichage(hidden_name)</TT> comme commande 
+globale car apr&#232;s, aucun nom sera visible, et seule la commande 
+<TT>affichage(0)</TT> remettra l'affichage par d&#233;faut.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,197 @@
+// fltk 7Fl_Tile 34 -316 824 312
+[
+// fltk N4xcas7EditeurE 34 -316 824 311
+720 ,
+sapin(n):={
+  crayon vert;
+  si n<=1 alors return; fsi;
+  triangle_plein(10*n,10*n);
+  tourne_gauche ;
+  triangle_plein(10*n,10*n);
+  saute 8*n;
+  tourne_droite;
+  sapin(4/5*n);
+  pas_de_cote -8*n;
+};
+
+sap(n):={
+  triangle_plein(5*n,5*n);
+  tourne_gauche ;
+  triangle_plein(5*n,5*n);
+  saute 4*n;
+  triangle_plein(4*n,4*n);
+  tourne_droite ;
+  triangle_plein(4*n,4*n);
+  pas_de_cote -4*n;
+};
+
+sapins(n):={
+  si n<=1 alors return; fsi;
+  sap(n);
+  saute 10*n;
+  sapins(n-2);
+};
+
+sapins2(n):={
+  si n<=1 alors crayon jaune; disque 10; crayon vert; return; fsi;
+  crayon vert;
+  sap(n);
+  tourne_gauche 30;
+  saute 10*n;
+  tourne_droite 30;
+  sapins2(n-2);
+  tourne_droite 30;
+  saute 10*n;
+  tourne_gauche 30;
+  sap(n);
+};,
+// fltk N4xcas10Log_OutputE 34 -5 824 1
+
+]
+,
+// fltk N4xcas4LogoE 34 -2 824 501
+// fltk N4xcas12History_PackE 34 -2 186 506
+[
+// fltk 7Fl_Tile 49 -2 171 71
+[
+// fltk N4xcas19Multiline_Input_tabE 49 -2 171 23
+efface 
+,
+// fltk N4xcas10Log_OutputE 49 21 171 1
+
+,
+// fltk 9Fl_Scroll 49 22 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 22 194 25
+[150.0,150.0,0.0,83,0,""]
+,
+// fltk 12Fl_Scrollbar 49 53 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 22 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 71 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 71 171 30
+pas_de_cote 100
+,
+// fltk N4xcas10Log_OutputE 49 101 171 1
+
+,
+// fltk 9Fl_Scroll 49 102 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 102 194 25
+[150.0,250.0,0.0,83,0,""]
+,
+// fltk 12Fl_Scrollbar 49 133 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 102 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 151 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 151 171 30
+saute -150
+,
+// fltk N4xcas10Log_OutputE 49 181 171 1
+
+,
+// fltk 9Fl_Scroll 49 182 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 182 174 25
+[0.0,250.0,0.0,83,0,""]
+,
+// fltk 12Fl_Scrollbar 49 213 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 182 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 231 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 231 171 30
+sapins2(10)
+,
+// fltk N4xcas10Log_OutputE 49 261 171 1
+
+,
+// fltk 9Fl_Scroll 49 262 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 262 279 25
+[519.615242271,250,0.0,4183,0,""]
+,
+// fltk 12Fl_Scrollbar 49 293 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 262 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 311 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 311 171 30
+tourne_droite 180
+,
+// fltk N4xcas10Log_OutputE 49 341 171 1
+
+,
+// fltk 9Fl_Scroll 49 342 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 342 299 25
+[519.615242271,250,180.0,4183,0,""]
+,
+// fltk 12Fl_Scrollbar 49 373 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 342 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 391 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 391 171 30
+sapins2(10)
+,
+// fltk N4xcas10Log_OutputE 49 421 171 1
+
+,
+// fltk 9Fl_Scroll 49 422 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 422 341 25
+[-1.18342835531e-13,250,180.0,4183,0,""]
+,
+// fltk 12Fl_Scrollbar 49 453 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 422 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 471 171 31
+[
+// fltk N4xcas19Multiline_Input_tabE 49 471 171 30
+
+,
+// fltk N4xcas10Log_OutputE 49 501 171 1
+
+]
+]
+// fltk N4xcas7EditeurE 652 -2 206 501
+83 ,
+efface ;
+pas_de_cote 100;
+saute -150;
+sapins2(10);
+tourne_droite 180;
+sapins2(10);

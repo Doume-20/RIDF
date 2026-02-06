@@ -1,0 +1,378 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<meta name="author" content="IREM/Xcas">
+<meta name="description" content="Xcas">
+<meta name="keywords" content="libre giac xcas
+enseignement lycee algorithmique seconde mathematiques">
+<link rel="icon" type="image/png" href="http://www-fourier.ujf-grenoble.fr/~parisse/logo.png" />
+<title> Algorithmique avec Xcas </title>
+
+</head><body>
+<b>Table des matières</b>
+<a href="#exemples">Exemples</a>,
+<a href="#tutoriels">Tutoriels</a>,
+<a href="#algorithmes">Algorithmes</a>,
+<a href="#compare">Comparaisons</a>,
+<a href="#remarques">Remarques</a>,
+<br>
+<b>Vers:</b>
+<a href="irem.html">Site p&eacute;dagogique</a>,
+<a href="install_fr">Installation</a>,
+<a href="giac_fr.html#fonctions">Fonctionnalités</a>,
+<a href="http://xcas.e.ujf-grenoble.fr/XCAS/">Forum</a>,
+<a href="giac_fr.html">
+Projet Giac/xcas</a>,
+<a href="http://vds1100.sivit.org/giac/giac_online/xcasenligne.html">
+Xcas en ligne version 2 beta</a>,
+<a href="giac_compile_fr.html">
+Code source</a>,
+<a href="giac_fr.html#doc">
+Documentation</a>,
+<a href="giac.html#thanks">
+Remerciements</a>
+
+<hr>
+<h1>Algorithmique avec Xcas</h1>
+<h2> <a name="exemples">Exemples en ligne</a></h2>
+<ul>
+  <li>
+  <a
+  href="xcasfr.html#+//Pour%20ex%C3%A9cuter%20les%20commandes,%20cliquez%20sur%20le%20bouton%20Exec%20a%20droite%20de%20Historique&+//%20Ligne%20de%20commande,%20utiliser%20des%20.%20pour%20s%C3%A9parer%20partie%20enti%C3%A8re%20et%20d%C3%A9cimale,%20expliciter%20les%20multiplications,%20attention%20aux%20parenth%C3%A8ses&+1.2%3b%202*3+4%3b%202*(3+4)&+2*x+y%3b%202*(x+y)&+//%20Variables,%20l%27affectation%20se%20fait%20avec%20:=&+a:=2&+2*a+5&+a:=2%3b%20type(a)&+a:=2.3%3b%20type(a)&+a:=%22bonjour%22%3b%20type(a)&+//%20Un%20test&+a:=1%3b%20si%20a%3e0%20alors%20%22positif%22%3b%20sinon%20%22negatif%22%3b%20fsi%3b&+//%20Une%20boucle%20d%C3%A9finie%20(affichage%20dans%20la%20console%20tout%20en%20bas)&+pour%20j%20de%201%20jusque%2010%20faire%20print(j+%22%20au%20carre%20vaut%20%22+j^2)%3b%20fpour%3b&+//%20Une%20boucle%20tantque,%20illustrant%20la%20pr%C3%A9cision%20des%20tests%20avec%20des%20nombres%20approch%C3%A9s.&+j:=1.0%3b%20tantque%20j-1!=j%20faire%20j=2*j%3b%20ftantque%3b%20j%3b&+//%20Cr%C3%A9ation%20d%27une%20fonction%20simple,%20par%20exemple%20le%20milieu%20de%202%20points.%20On%20construit%20d%27abord%20le%20milieu%20de%20mani%C3%A8re%20interactive&+A:=point(1,2)%3b%20B:=point(-2,-2)&+Ax:=abscisse(A)%3b%20Ay:=ordonnee(A)&+Bx:=abscisse(B)%3b%20By:=ordonnee(B)&+A%3bB%3bM:=point((Ax+Bx)/2,(Ay+By)/2)&+//%20On%20regroupe%20ces%20instructions%20dans%20une%20fonction&+fonction%20Milieu(A,B)%0a%20var%20Ax,Ay,Bx,By%3b%0a%20Ax:=abscisse(A)%3b%20Ay:=ordonnee(A)%3b%0a%20Bx:=abscisse(B)%3b%20By:=ordonnee(B)%3b%20%0a%20retourne%20point((Ax+Bx)/2,(Ay+By)/2)%3b%0affonction:%3b&+A%3bB%3bM:=Milieu(A,B)&">
+  Variables,
+  types, affectation, test, boucle, fonction</a>
+  </li>
+  <li> Seconde
+  <a
+  href="xcasfr.html#+f(x):=si%20x%3C0%20alors%20-x^2-3%20sinon%20x^2+1%20fsi%3b&+//%20On%20commence%20par%20faire%20un%20tableau%20de%20valeurs&+L:=NULL%3b%20%0apour%20x%20de%20-3%20jusque%203%20pas%200.5%20faire%0a%20L:=L,[x,f(x)]%3b%0afpour%3b&+polygone_ouvert(L)&+//Observer%20le%20saut%20a%20la%20discontinuit%C3%A9.%20Il%20faudrait%20faire%202%20trac%C3%A9s,%20on%20a%20donc%20interet%20a%20faire%20une%20fonction%20et%20l%27appeler%20deux%20fois.&+fonction%20tabval(f,xmin,xmax,dx)%0a%20var%20x,L%3b%0a%20L:=NULL%3b%0a%20pour%20x%20de%20xmin%20jusque%20xmax%20pas%20dx%20faire%0a%20%20L:=L,[x,f(x)]%3b%0a%20fpour%3b%0a%20retourne%20L%3b%0affonction:%3b&+polygone_ouvert(tabval(f,-3,-0.1,0.1))%3b%0apolygone_ouvert(tabval(f,0.1,3,0.1))%3b&">
+  trac&eacute; de courbe d&eacute;finie par morceaux</a>
+  </li>
+  <li> Seconde
+  <a
+  href="xcasfr.html#+A:=point(-2,3)%3b%20B:=point(1,-1)%3b%20%0aD:=droite(A,B)&+fonction%20eqdroite(A,B)%0a%20var%20Ax,Ay,Bx,By,m%3b%0a%20Ax,Ay:=coordonnees(A)%3b%0a%20Bx,By:=coordonnees(B)%3b%0a%20si%20Ax=Bx%20alors%20return%20%22x=%22+Ax%3b%20fsi%3b%0a%20m:=(By-Ay)/(Bx-Ax)%3b%0a%20//%20m*Ax+p=Ay%0a%20retourne%20%22y=%22+m+%22*x+%22+(Ay-m*Ax)%3b%0affonction:%3b&+eqdroite(A,B)%3b%20equation(D)&">Equation
+  d'une droite</a>
+  </li>
+  <li> Seconde
+  <a
+  href="xcasfr.html#+echantillon:=ranv(100,2)&+//%20Algorithme%20de%20calcul%20de%20la%20fr%C3%A9quence%20de%20valeur%20dans%20echantillon&+fonction%20freq(echantillon,valeur)%0a%20var%20j,total%3b%0a%20total:=0%3b%0a%20pour%20j%20de%201%20jusque%20dim(echantillon)%20faire%0a%20%20%20si%20echantillon(j)=valeur%20alors%20%0a%20%20%20%20total:=total+1%3b%20%0a%20%20%20fsi%3b%0a%20fpour%3b%0a%20retourne%20total/dim(echantillon)%3b%0affonction:%3b&+freq(echantillon,1)%3b%20freq(echantillon,0)&+//%20Intervalle%20de%20fluctuation%20d%20une%20fr%C3%A9quence,%20ici%200.4.%20On%20tire%20100%20%C3%A9chantillons%20de%20N=200%20valeurs%20selon%20la%20loi%20binomiale%20et%20on%20renvoie%20la%20fr%C3%A9quence%20de%201.&+f:=0.4%3b%20N:=200&+echantillon:=ranv(100,binomial,N,f)/N&+count(x-%3e1/sqrt(N)%3eabs(x-f),echantillon)&">
+  fr&eacute;quence dans un &eacute;chantillon</a>
+  </li>
+  <li> Premi&egrave;re
+  <a
+  href="xcasfr.html#+fonction%20resolution2(a%2Cb%2Cc)%0A%20var%20delta%3B%0A%20delta%3A%3Db%5E2-4*a*c%3B%0A%20si%20delta%3C0%20alors%20retourne%20%22pas%20de%20racines%22%3B%20fsi%3B%0A%20si%20delta%3D0%20alors%20retourne%20-b%2F(2*a)%3B%20fsi%3B%0A%20delta%3A%3Dsqrt(delta)%3B%0A%20retourne%20(-b-delta)%2F(2*a)%2C(-b%2Bdelta)%2F(2*a)%3B%0Affonction%3A%3B&+resolution2(1%2C2%2C3)&+resolution2(1%2C2%2C1)&+resolution2(1%2C1%2C-1)&">
+  Second degr&eacute;</a>
+  </li>
+  <li> Premi&egrave;re
+  <a
+  href="http://www-fourier.ujf-grenoble.fr/%7eparisse/xcasfr.html#+//%20calcul%20des%20premiers%20termes%20d%27une%20suite%20donnee%20par%20une%20expression&+u(n)%3A%3D1%2Fn&+s%3A%3Dseq(u(n)%2Cn%2C1%2C10)&+seq(point(n%2Cu(n))%2Cn%2C1%2C10)&+//%20calcul%20des%20premiers%20termes%20d%27une%20suite%20recurrente%20u_{n+1}=f(u_n)&+fonction%20ntermes(f%2Cu0%2CN)%0A%20var%20n%2Cu%3B%0A%20u%3A%3D%5Bu0%5D%3B%0A%20pour%20n%20de%201%20jusque%20N%20faire%0A%20%20u%5Bn%5D%3A%3Df(u%5Bn-1%5D)%3B%0A%20fpour%3B%0A%20retourne%20u%3B%20%2F%2F%20retourne%20u%5BN%5D%20pour%20le%20dernier%20terme%0Affonction%3A%3B&+f(x)%3A%3D1%2F2*(x%2B2%2Fx)&+ntermes(f%2C1.0%2C1)&+U%3A%3Dntermes(f%2C1.0%2C5)&+ntermes(f%2C1%2C5)&+seq(point(n%2CU%5Bn%5D)%2Cn%2C0%2Csize(U)-1)&">
+  Suites</a>
+  </li>
+  <li> Premi&egrave;re
+  <a
+  href="xcasfr.html#+//%20simulation%20de%20n%20tirages%20au%20hasard%20avec%20probabilite%20p%20de%20succes&+fonction%20tirages(n%2Cp)%0A%20var%20total%2Cj%2Ch%3B%0A%20total%3A%3D0%3B%0A%20pour%20j%20de%201%20jusque%20n%20faire%0A%20%20h%3A%3Drand(0%2C1)%3B%0A%20%20si%20h%3C%3Dp%20alors%20total%3A%3Dtotal%2B1%3B%20fsi%3B%0A%20fpour%3B%0A%20retourne%20total%3B%0Affonction%3A%3B&+tirages(10%2C0.4)&+//%20histogramme%20de%201000%20tirages%20et%20comparaison%20avec%20l%27histogramme%20de%20la%20loi%20binomiale&+s%3A%3Dseq(tirages(10%2C0.4)%2C1000)&+histogramme(s%2C-0.5%2C1%2Ccouleur%3Dred)%3B%20%0Ahistogramme(binomial%2C10%2C0.4)&+histogram(binomial%2C100%2C0.16))&+//%20calcul%20de%20l%20intervalle%20de%20confiance%20centre%20pour%20la%20loi%20binomiale&+n%3A%3D100%3A%3B%20p%3A%3D0.16%3A%3B%20%0Abinomial_icdf(n%2Cp%2C0.025)%2C%0Abinomial_icdf(n%2Cp%2C0.975)&+//%20programme%20de%20calcul%20de%20l%27intervalle%20de%20confiance%20a%20partir%20de%20la%20loi%20binomiale&+fonction%20confiance(n%2Cp%2Cseuil)%0A%20var%20k%2Ctotal%3B%0A%20total%3A%3D0%3B%0A%20pour%20k%20de%200%20jusque%20n%20faire%0A%20%20total%3A%3Dtotal%2Bbinomial(n%2Cp%2Ck)%3B%0A%20%20si%20total%3E%3Dseuil%20alors%20retourne%20k%3B%20fsi%3B%0A%20fpour%3B%0Affonction%3A%3B&+confiance(100%2C.16%2C0.025)&+confiance(100%2C.16%2C0.975)&+//%20comparaison%20avec%20[p-1/sqrt(n),p+1/sqrt(n)]&+n%3A%3D30%3Bplotfunc(%0A%5Bbinomial_icdf(30%2Cp%2C0.025)%2Fn%2C%0Abinomial_icdf(30%2Cp%2C0.975)%2Fn%2C%0Ap-sqrt(1%2Fn)%2Cp%2Bsqrt(1%2Fn)%5D%2C%0Ap%3D0..1%2Ccolor%3D%5Bred%2Cred%2Cblack%2Cblack%5D)%3B&+//%20loi%20geometrique%20tronquee%20(renvoie%20le%201er%20succes%20ou%200)&+fonction%20geo(n%2Cp)%0A%20var%20k%2Ct%3B%0A%20pour%20k%20de%201%20jusque%20n%20faire%0A%20%20t%3A%3Dalea(0%2C1)%3B%0A%20%20si%20t%3C%3Dp%20alors%20retourne%20k%3B%20fsi%3B%0A%20fpour%3B%0A%20retourner%200%3B%0Affonction%3A%3B&+geo(10%2C.4)&+s%3A%3Dseq(geo(10%2C.4)%2C1000)&+histogramme(s%2C-0.5%2C1%2Ccouleur%3Dred)%3B%20%0Ahistogramme(geometric%2C0.4)&">
+  Loi binomiale et g&eacute;om&eacute;trique tronqu&eacute;e
+  </a>
+</li>
+<li> Premi&egrave;re
+<a
+href="http://www-fourier.ujf-grenoble.fr/%7eparisse/xcasfr.html#+//%20Triangle%20de%20Pascal%20pour%20trouver%20les%20coefficients%20binomiaux&+fonction%20pascal(n)%0A%20var%20tableau%2Cj%2Ck%3B%0A%20tableau%3A%3Dmatrix(n%2Cn)%3B%0A%20pour%20j%20de%200%20jusque%20n-1%20faire%0A%20%20tableau%5Bj%2C0%5D%3A%3D1%3B%0A%20%20pour%20k%20de%201%20jusque%20j%20faire%0A%20%20%20%20tableau%5Bj%2Ck%5D%3A%3Dtableau%5Bj-1%2Ck-1%5D%2Btableau%5Bj-1%2Ck%5D%3B%0A%20%20fpour%3B%0A%20fpour%3B%0Aretourne%20tableau%3B%0Affonction%3A%3B&+pascal(6)&">
+Triangle de Pascal</a>
+</li>
+<li>
+Terminale
+<a
+href="xcasfr.html#+//%20recherche%20d%27une%20racine%20de%20f%20entre%20a%20et%20b%20par%20dichotomie,%20avec%20precision%20eps&+fonction%20dicho(f%2Ca%2Cb%2Ceps)%0A%20var%20c%2Cniter%3B%0A%20si%20f(a)*f(b)%3E%3D0%20alors%20retourne%20%22erreur%3A%20pas%20de%20changement%20de%20signe%22%3B%20fsi%3B%0A%20tantque%20abs(b-a)%3Eeps%20faire%0A%20%20%20c%3D(a%2Bb)%2F2%3B%0A%20%20%20si%20f(a)*f(c)%3E0%20alors%20a%3Dc%3B%20sinon%20b%3Dc%3B%20fsi%3B%0A%20ftantque%0A%20retourne%20c%3B%0Affonction%3A%3B&+f(x)%3A%3Dcos(x)-x%3B%20&+plot(f(x)%2Cx%2C0%2C2)&+dicho(f%2C0.0%2C1.0%2C1e-8)&">
+Dichotomie
+</a>
+</li>
+<li>
+Terminale
+<a
+href="http://www-fourier.ujf-grenoble.fr/%7eparisse/xcasfr.html#+//%20calcul%20approche%20d%27integrale&+f(x)%3A%3Dsin(x)&+plot(f(x)%2Cx%2C0%2C1)%3B%20droite(y%3D0)%3B&+fonction%20rect(f%2Ca%2Cb%2CN)%0A%20var%20S%3B%0A%20S%3A%3D0.0%3B%0A%20h%3A%3D(b-a)%2FN%3B%0A%20pour%20j%20de%201%20jusque%20N%20faire%0A%20%20S%3A%3DS%2Bf(a%2Bj*h)%3B%0A%20fpour%3B%0A%20retourne%20S*h%3B%0Affonction%3A%3B&+rect(f%2C0%2C1%2C100)&+int(f(x)%2Cx%2C0%2C1.0)&+//%20pour%20le%20point%20milieu%20on%20remplace%20f(a+j*h)%20par%20f(a-h/2+j*h)&+fonction%20pointmilieu(f%2Ca%2Cb%2CN)%0A%20var%20S%3B%0A%20S%3A%3D0.0%3B%0A%20h%3A%3D(b-a)%2FN%3B%0A%20pour%20j%20de%201%20jusque%20N%20faire%0A%20%20S%3A%3DS%2Bf(a-h%2F2%2Bj*h)%3B%0A%20fpour%3B%0A%20retourne%20S*h%3B%0Affonction%3A%3B&+pointmilieu(f%2C0%2C1%2C100)&+//%20Observer%20la%20precision%20bien%20meilleure,%20pour%20un%20cout%20de%20calcul%20quasi-identique.%20Intuitivement%20le%20rectangle%20correspondant%20approche%20mieux%20la%20fonction.&+plot(f(x)%2Cx%2C0%2C1)%3B%0Arectangle(0%2C1%2Cf(1)%2Ccolor%3Dred)%3B%20%0Arectangle(0%2C1%2Cf(1%2F2)%2Ccolor%3Dgreen)&">
+Calcul approch&eacute; d'int&eacute;grales.
+</a>
+</li>
+</ul>
+
+<h2><a name="tutoriels">Tutoriels</a></h2>
+Pour ceux qui envisagent d'utiliser Xcas, voici quelques documents 
+pour démarrer en algorithmique au lycée :
+<ul>
+<li>
+<a href="giac/factorielle.htm">Un programme avec Xcas</a>. 
+Tutoriel sous forme d'une animation flash, il
+est conseill&eacute; de la visualiser en plein-ecran 
+(raccourci clavier F11 avec Firefox).
+</li>
+<li>
+<a href="irem/algobac.pdf">Algorithmes au bac S</a> par Ren&eacute;e De Graeve (<a href="irem/algobac.tex">source LaTeX</a>).
+</li>
+<li>
+<a href="http://revue.sesamath.net/spip.php?article241">Algorithmique 
+en seconde avec Xcas</a> par J.P. Branchard, R. De Graeve et B. Parisse,
+qui introduit la notion de fonction à 
+partir de script de construction géométrique, 
+aussi disponible au format <a href="irem/matice.pdf">PDF</a>.
+</li>
+<li>
+<a href="irem/algo2.pdf">Algorithmique 
+avec Xcas</a> par B. Parisse, qui commence par
+la notion de ligne de commande pour arriver progressivement
+aux fonctions. Une variante, compl&eacute;t&eacute;e pour les
+candidats <a href="agregint.html">&agrave; l'agr&eacute;gration interne</a>.
+</li>
+<li>
+<a href="irem/algojeucor.pdf">Des jeux pour une introduction à l'algorithmique en seconde</a> 
+par R. De Graeve, qui propose d'introduire la notion d'algorithmique
+par des jeux.
+</li>
+<li>
+<a href="wwwmaths.univ-bpclermont.fr/irem/recherche/Algo/Lac_algoXCAS.pdf">
+Algorithmique sous XCAS</a> par Philippe Lac
+</li>
+<li>
+<a href="http://mathematiques.ac-bordeaux.fr/profplus/formation/2009/cpt_rdu_prog_sec/cpt_rdu_prog_sec.html">documents Xcas sur le nouveau programme
+de seconde</a> (acad&eacute;mie de Bordeaux)
+</li>
+<li>
+<a href="http://www.ac-grenoble.fr/maths/guppy/pages/fiches/algo/sommaire.php">
+page algorithmique acad&eacute;mie de Grenoble</a>
+</li>
+<li>
+<a href="http://irem.univ-lille1.fr/activites/spip.php?rubrique47">page
+algorithmique 2nde de l'IREM de Lille</a> (voir aussi la page 1ere).
+</li>
+<li>
+<a href="http://maths.spip.ac-rouen.fr/spip.php?article286">page
+algorithmique acad&eacute;mie de Rouen</a>
+</li>
+<li>
+IREM de Lyon
+<a href="http://math.univ-lyon1.fr/irem/spip.php?rubrique73">
+page algorithmique</a>,
+<a href="http://math.univ-lyon1.fr/irem/spip.php?article491">
+documents 2012</a>,
+</li>
+<li>
+<a href="http://maths.ac-creteil.fr/spip/spip.php?page=imprimer&id_article=435">
+Animations sur le nouveau programme de seconde - Octobre 2009
+</a> (Creteil, tableur, scilab, Xcas)
+</li>
+<li> aide-m&eacute;moire Hachette Declic 2nde
+<a href="http://www.decliclycee-prof.hachette-education.com/pdf/Declic2nde_Logiciel.pdf">Scratch, Scilab, Xcas</a>
+</li>
+<li>
+<A HREF="http://www.maths.ac-aix-marseille.fr/spip/IMG/pdf/Presentation_algorithmique_calcul_formel.pdf">Algorithmique et calcul formel lyc&eacute;e</A>
+(Stage 2011 Aix-Marseille)
+</li>
+</ul>
+
+<h2> <a name="algorithmes">Algorithmes</a></h2>
+Pour aller plus loin
+<ul>
+<li>
+le <a href="giac/casrouge.pdf">manuel d'algorithmique de Xcas</a> 
+(menu Aide-&gt;Manuels-&gt;Programmation) 
+contient ce que peut etre un langage naturel en algorithmique et 
+diverses traductions (dont TI et Xcas), ainsi que des exemples de 
+programmes dont certains sont sans doute pertinents en seconde. 
+</li>
+<li>
+<a href="irem/Algocas.pdf">Correction Xcas</a> du stage algorithmique
+de l'IREM de Grenoble, contient des exemples de programme sur
+des th&egrave;mes divers (arithm&eacute;tique, tortue logo...)
+</li>
+<li>
+<A HREF="http://www.fil.univ-lille1.fr/~wegrzyno/Stage_IREM_2011/Index/accueil.html">Stage IREM de Lille 2011</A>
+</li>
+<li>
+On pourra
+aussi trouver de nombreuses idées de programmes dans la variante
+de Logo implémenté dans Xcas, cf. le
+ <a href="http://www-fourier.ujf-grenoble.fr/%7Eparisse/giac/doc/fr/castor/castor.html">manuel Logo Xcas</a>.
+</li>
+<li>
+Le document
+ <a href="http://download.tuxfamily.org/tehessinmath/les%20pdf/irem10juin09.pdf">algorithmique au lycée</a> par Guillaume Connan, 
+contient des algorithmes d'arithmétique, analyse, etc. traduits
+en Xcas et en Caml
+</li>
+<li> Vous pouvez aussi consulter le
+<a href="http://eduscol.education.fr/D0015/Doc_ress_algo_v25.pdf">document ressource officiel</a>,
+</li>
+<li>
+Enfin, le <a href="http://xcas.e.ujf-grenoble.fr/XCAS/">forum de Xcas</a> 
+est ouvert pour les discussions relatives
+à ce nouveau programme.
+</li>
+</ul>
+
+<h2><a name="compare">Comparaison</a></h2>
+<ul>
+  <li> <b>Python</b><br>
+  Il y a pas mal de similitudes entre les deux languages: ils sont tous les deux non typés et
+  interprétés, avec une syntaxe dérivée du C, et des conteneurs (listes, chaines) simples à 
+  utiliser. On passe assez facilement de l'un à l'autre. Voici toutefois quelques différences :
+  <ul>
+    <li> La division des entiers est la division euclidienne en Python,
+    alors qu'elle renvoie un rationnel en Xcas. L'utilisation des
+    rationnels est nettement moins naturelle en Python qu'en Xcas
+    <br><tt>from fraction import *</tt><br><tt>a=Fraction(1,2)</tt>
+    </li>
+    <li>
+    La notation <tt>^</tt> pour la puissance n'est pas admise en Python
+    (elle se note <tt>**</tt>, notation également admise en Xcas).
+    </li>
+    <li> la librairie de base mathématique Python est beaucoup moins
+    complète que celle de Xcas. Ceci a des avantages et des
+    inconvénients, par exemple programmer un algorithme
+    de PGCD en Python peut paraitre plus intéressant puisque
+    la fonction n'existe pas de base.
+    Par contre, on peut programmer des algorithmes mathématiquement plus intéressant
+    en Xcas sans trop d'efforts, puisque les outils de base sont là,
+    c'est surtout le cas en géométrie, mais aussi en
+    arithm&eacute;tique
+    (par exemple liste des diviseurs d'un entier, PGCD, Bezout,
+    nombres premiers ...).
+    </li>
+    <li>
+    Python ne propose pas de fin de bloc (boucle, test) explicite, 
+    c'est l'indentation qui joue ce role.
+    </li>
+    <li>
+    les listes/tableaux sont pass&eacute;s par r&eacute;f&eacute;rence
+    en Python, et par valeur en Xcas (sauf utilisation explicite de
+    <tt>=<</tt>).
+    Donc en Python, si vous &eacute;crivez <tt>l=[1,2,3]</tt>
+    puis <tt>l1=l</tt> puis <tt>l1[0]=5</tt> vous modifiez la liste 
+    <tt>l</tt> (<tt>l[0]</tt> vaut 5).
+    </li>
+    <li>
+    La syntaxe de la boucle définie est plus simple en Xcas qu'en Python, qui nécessite
+    de définir une liste. Python ne dispose pas de boucle "répéter jusqu'à".
+    </li>
+    <li>
+    Les variables locales doivent être déclarées explicitement en Xcas (sinon un warning apparait),
+    elles sont implicites en Python (ce sont les variables globales qui doivent être déclarées). Ceci peut amener a des erreurs difficiles &agrave; 
+    d&eacute;tecter
+    si on fait une faute de frappe, remplacant un nom de variable locale
+    par un nom de variable globale affect&eacute;.
+    </li>
+    <li>
+    L'aide de Xcas est enti&egrave;rement en francais.
+    </li>
+    <li>
+    Xcas permet d'utiliser des mots-clef en français pour les boucles, tests 
+    et pour les instructions de base.
+    </li>
+  </ul>
+</li>
+<li><b>TI</b><br>
+Xcas propose un mode de syntaxe compatible avec les TI
+(89, 92, voyage 200, nspire cas). 
+Le langage de Xcas est toutefois plus
+complet: il est fonctionnel. Il n'y a pas de distinction entre fonction et programme en Xcas,
+et pas de limitation à l'usage des entrées/sorties dans une fonction (ni de limitation
+sur les entrées/sorties des TI nspire).
+D'autre part, la mise au point d'un programme est facilitée en Xcas par le débogueur interactif.
+</li>
+<li><b>Casio</b><br>
+Les possibilités de programmation des Casio Classpad sont limitées, il n'est pas possible
+de définir une fonction non algébrique, et l'exécution d'un programme ne peut se faire
+dans l'environnement de calcul Main. Pour ces raisons, je déconseille fortement l'utilisation
+du Classpad pour l'enseignement de l'algorithmique. Les autres modèles Casio sont
+encore moins performants, mais ce sont des calculatrices bon marché.
+</li>
+<li>
+pour une comparaison plus compl&egrave;te, 
+cf. la page algorithmique 
+<A HREF="http://emmanuel.ostenne.free.fr/mepirem/wiki/?n=Prof.Algorithmique">
+d'Emmanuel Ostenne</A>
+</li>
+<li>
+<b>Javascript</b>
+Les deux langages sont tr&egrave;s proches. On peut d'ailleurs utiliser la
+syntaxe javascript des structures de base dans Xcas. Le principal
+avantage
+de Javascript est qu'on peut ex&eacute;cuter et mettre au point un programme dans
+n'importe quel navigateur. Une particularit&eacute; de Javascript
+est que les entiers sont repr&eacute;sent&eacute;s par des nombres
+flottants, comme sur les calculatrices non formelles.
+</li>
+</ul>
+
+<h2><a name="remarques">Remarques</a></h2>
+Le programme de seconde qui devrait entrer en vigueur en 2017
+modifie l'enseignement de l'algorithmique.  Quelques remarques :
+<ul>
+<li>Les premiers
+objectifs à atteindre avant de faire des programmes pourraient etre
+de
+<ul>
+<li>faire la différence entre différents types: entiers,
+flottants, noms de variables (à
+une ou plusieurs lettres), chaines de caractères et peut-etre
+  listes ou/et tableaux. Attention au s&eacute;parateur <tt>.</tt>
+  entre partie enti&egrave;re et d&eacute;cimale.
+</li>
+<li>comprendre la multiplication implicite, non implicite,
+les priorités entre opérations et l'usage
+des parenthèses pour écrire une expression
+syntaxiquement correcte. Savoir utiliser la virgule pour séparer
+les arguments d'une fonction existante. 
+Savoir utiliser les crochets pour indicier
+dans une chaine de caractères (ou dans un tableau),
+</li>
+<li>faire la différence entre égalité dans une
+équation, affectation et test d'égalité
+</li>
+<li> faire la différence entre fonction et expression 
+(à relier éventuellement
+au chapitre Fonctions du programme de seconde), Savoir définir
+une fonction par une formule algébrique.
+</li>
+<li>
+Savoir définir une fonction avec un test (par exemple valeur
+absolue, le minimum ou le maximum de 2 valeurs, etc.).
+</li>
+<li>
+La définition d'une fonction par une boucle devrait se faire
+ensuite (en particulier pour les boucles
+"tant que" avec un test d'arret), en meme temps que la notion
+d'arguments, de variables locales et de valeur de retour d'une fonction. 
+La récursivité trouverait bien sa place
+en Terminale S lors de l'étude de la récurrence.
+<br>
+<tt>facto(n):={ res:=1; pour j de 1 jusque n faire res:=res*j; fpour; }</tt>
+<br>
+</li>
+</ul>
+</li>
+<li>
+Enseigner l'algorithmique <b>devant les machines</b> 
+nécessite d'avoir acquis de l'expérience avec le langage. 
+Sinon, la séance se transforme vite en une 
+foret d'élèves bloqués et 
+attendant que le prof vienne, et celui-ci risque de bloquer sur une erreur 
+stupide difficile à repérer parce qu'il sera stressé 
+par les demandes des autres élèves bloqués.
+En particulier, <b>il ne suffit pas d'etre capable de comprendre 
+une fonction déjà écrite ni meme d'écrire soi-meme une petite fonction</b>,
+il faut avoir suffisament de recul pour repérer rapidement les erreurs
+de syntaxe d'une part, mais surtout les erreurs à l'exécution. Il est
+alors important de savoir utiliser un déboggueur
+(qui peut etre extremement simple à mettre en oeuvre, dans Xcas on
+écrit simplement debug( suivi de la commande à débugguer), d'autant
+qu'il peut
+aussi servir à montrer le déroulement d'un algorithme
+pas à pas pour aider des élèves à le comprendre.
+</li>
+<li>
+A l'avenir, on peut espérer remplacer les calculatrices
+par des tablettes ou smartphones
+</li>
+ </ul>
+Nous ajouterons ici des ressources au fur et à mesure que
+nous en recevrons, n'hesitez pas à nous en envoyer!
+
+</body></html>

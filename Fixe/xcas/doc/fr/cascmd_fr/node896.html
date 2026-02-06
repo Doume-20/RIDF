@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les commandes d'attributs</TITLE>
+<META NAME="description" CONTENT="Les commandes d'attributs">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node897.html">
+<LINK REL="previous" HREF="node895.html">
+<LINK REL="up" HREF="node894.html">
+<LINK REL="next" HREF="node897.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16371"
+  HREF="node897.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16365"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16359"
+  HREF="node895.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16367"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16369"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16372"
+  HREF="node897.html">Les param&#232;tres optionnels d'attributs</A>
+<B> monter:</B> <A NAME="tex2html16366"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16360"
+  HREF="node895.html">G&#233;n&#233;ralit&#233;s sur les attributs</A>
+ &nbsp; <B>  <A NAME="tex2html16368"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16370"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001232000000000000000">
+Les commandes d'attributs</A>
+</H2>
+Les attributs des objets graphiques peuvent &#234;tre d&#233;finis par des commandes 
+qui sont :
+
+<UL>
+<LI><TT>legend</TT> ou <TT>legende</TT>,
+</LI>
+<LI><TT>display</TT> ou <TT>affichage</TT> ou <TT>color</TT> ou  <TT>couleur</TT> 
+</LI>
+</UL>
+Les param&#232;tres de ces commandes sont 
+<TT>objet_graphique,nom_de_l'attribut=valeur1+valeur2+...</TT> et les valeurs 
+de cet attribut sont valables uniquement pour l'objet graphique sp&#233;cifi&#233;.
+<BR>
+Par exemple :
+<TT>legende(point(1+i),"A",rouge,quadrant3,epaisseur_point_2)</TT> 
+<BR><TT>affichage(point(1+i),rouge+epaisseur_point_6+point_carre)</TT>
+<BR><TT>affichage(point(1+i,legend="A"),rouge+epaisseur_point_2+point_carre)</TT>
+
+<P>
+<B>Remarque</B>
+<BR>
+Si la commande <TT>display(..)</TT> ou <TT>affichage(...)</TT> est tap&#233;e dans une 
+ligne de commandes, on peut utiliser ces commandes avec comme  param&#232;tre 
+<TT>valeur1+valeur2+...</TT> et 
+alors la commande est globale pour tous les objets d&#233;finis ensuite dans cette
+ligne de commandes. Il faut &#233;viter d'utiliser ces commandes de cette 
+fa&#231;on dans un &#233;cran de g&#233;om&#233;trie, car les attributs sont d&#233;j&#224; 
+d&#233;finis globalement dans <TT>cfg</TT> et le bouton des attributs.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

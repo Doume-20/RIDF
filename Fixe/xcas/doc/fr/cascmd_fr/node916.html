@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le point en g&#233;om&#233;trie plane : point</TITLE>
+<META NAME="description" CONTENT="Le point en g&#233;om&#233;trie plane : point">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node917.html">
+<LINK REL="previous" HREF="node915.html">
+<LINK REL="up" HREF="node914.html">
+<LINK REL="next" HREF="node917.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16667"
+  HREF="node917.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16661"
+  HREF="node914.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16655"
+  HREF="node915.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16663"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16665"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16668"
+  HREF="node917.html">D&#233;finir au hasard un</A>
+<B> monter:</B> <A NAME="tex2html16662"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16656"
+  HREF="node915.html">Les points et les</A>
+ &nbsp; <B>  <A NAME="tex2html16664"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16666"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001292000000000000000"></A><A NAME="24063"></A><A NAME="sec:point2"></A>
+<BR>
+Le point en g&#233;om&#233;trie plane : <TT>point</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1029.html#sec:point3">10.3.1</A> <TT>point</TT> en g&#233;om&#233;trie 3D.
+<BR>
+Pour obtenir un point il suffit d'&#234;tre en mode <TT>point</TT> et de cliquer avec
+la souris (bouton gauche) pour qu'un point s'affiche avec un nom.
+<BR>
+Ce nom est cr&#233;e automatiquement : <TT>A</TT> puis <TT>B</TT> etc...
+<BR>
+On peut aussi utiliser la commande <TT>point</TT> :
+<BR><TT>point</TT> a comme argument un nombre complexe ou un couple de 2 
+nombres r&#233;els.
+<BR><B>Attention</B> 
+<BR>
+Si <TT>a,b</TT> est un couple de 2 nombres complexes, <TT>point(a,b)</TT> renvoie le 
+point d'affixe <TT>a+i*b</TT>.
+<BR><TT>point</TT> renvoie et dessine le point ayant pour 
+affixe son argument. Ce point  aura la forme choisie par la commande 
+<TT>affichage</TT> : par d&#233;faut il aura la forme d'une croix et il aura la forme
+d'un point si on a tape <TT>affichage(point_point)</TT>.  
+On tape :
+<DIV ALIGN="CENTER">
+<TT>point(1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point d'affixe 1+i est trac&#233; avec une croix</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(-2,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point d'affixe -2+i est trac&#233; avec une croix et est not&#233; A</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>point(-2,i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Les 2 points d'affixe -2 et i sont trac&#233;s avec une croix</TT>
+</DIV>
+<B>Remarque</B>
+Lorqu'on fait une affectation par exemple <TT>A:=point(-2+i)</TT> cela a pour 
+effet de stocker le <TT>point(-2+i)</TT> dans la variable <TT>A</TT>, (si on n'est 
+pas dans un niveau de g&#233;om&#233;trie d'ouvrir un &#233;cran graphique ) de dessiner
+le point avec une croix et de lui mettre comme l&#233;gende le nom qui est situ&#233;
+&#224; gauche de <TT>:=</TT> ici <TT>A</TT>.
+<BR>
+Si on fait plusieurs affectations avec un seul signe <TT>:=</TT> par exemple :
+<BR><TT>A,B:=point(-2+i),point(2+i)</TT> la variable <TT>A</TT> contient le
+<TT>point(-2+i)</TT>, la variable <TT>B</TT> contient <TT>point(-2+i)</TT> mais
+les deux points auront le m&#234;me nom : <TT>A,B</TT> et on ne pourra pas deplacer 
+ces points en mode <TT>pointeur</TT>. Pour &#233;viter cela on doit 
+taper :
+<BR><TT>L:=point(-2+i),point(2+i):;A:=L[0];B:=L[1]</TT>
+<BR><B>Autre exemple</B>
+<BR><TT>L:=point(-2,i):;A:=L[0];B:=L[1]</TT> d&#233;finit le point <TT>A</TT>
+d'affixe -2 et  le point <TT>B</TT> d'affixe i.
+<BR><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16667"
+  HREF="node917.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16661"
+  HREF="node914.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16655"
+  HREF="node915.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16663"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16665"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16668"
+  HREF="node917.html">D&#233;finir au hasard un</A>
+<B> monter:</B> <A NAME="tex2html16662"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16656"
+  HREF="node915.html">Les points et les</A>
+ &nbsp; <B>  <A NAME="tex2html16664"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16666"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

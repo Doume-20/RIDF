@@ -1,0 +1,233 @@
+2021-09-21 10:43:54 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 (271) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Charte-sur-la-protection-des-donnees-1.0.16.0.json +2ms
+2021-09-21 08:43:54.124: 2021-09-21 10:43:54 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-09-21 08:43:54.142: 2021-09-21 10:43:54 [5224] INFO [Runner] Creating configuration unit runner object... +14ms
+2021-09-21 08:43:54.144: 2021-09-21 10:43:54 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-21 08:43:54.144: 2021-09-21 10:43:54 [5224] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-09-21 08:43:54.144: {
+2021-09-21 08:43:54.144:   "platform": "win32",
+2021-09-21 08:43:54.144:   "deviceId": "IFP052046109",
+2021-09-21 08:43:54.144:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-09-21 08:43:54.144:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-09-21 08:43:54.144:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-09-21 08:43:54.144:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-09-21 08:43:54.144:   "versionCode": 21090427,
+2021-09-21 08:43:54.144:   "trigger": "configuration",
+2021-09-21 08:43:54.144:   "metadata": {
+2021-09-21 08:43:54.144:     "packageVersion": "1.0.16.0",
+2021-09-21 08:43:54.144:     "componentParameters": {
+2021-09-21 08:43:54.144:       "AppX": "Hisqool.Legal.GDPR",
+2021-09-21 08:43:54.144:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-09-21 08:43:54.144:       "DesktopShortcut": "Charte de protection*",
+2021-09-21 08:43:54.144:       "ProvisioningPackage": "Hisqool GDPR",
+2021-09-21 08:43:54.144:       "InstallationDirectory": "hisqool.gdpr",
+2021-09-21 08:43:54.144:       "UninstallationDirectory": "hisqool.gdpr",
+2021-09-21 08:43:54.144:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-09-21 08:43:54.144:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-09-21 08:43:54.144:     },
+2021-09-21 08:43:54.144:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-09-21 08:43:54.144:   }
+2021-09-21 08:43:54.144: } +1ms
+2021-09-21 08:43:54.144: 2021-09-21 10:43:54 [5224] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-09-21 08:43:54.154: 2021-09-21 10:43:54 [5224] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +10ms
+2021-09-21 08:43:54.318: 2021-09-21 10:43:54 [5224] INFO [JS] Result: 0 +158ms
+2021-09-21 08:43:54.318: 2021-09-21 10:43:54 [5224] INFO [JS] Stdout: 1.1.4.21090425 +2ms
+2021-09-21 08:43:54.318: 2021-09-21 10:43:54 [5224] INFO [JS] Stderr:  +1ms
+2021-09-21 08:43:54.318: 2021-09-21 10:43:54 [5224] INFO [JS] Build number of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe is 21090425 +1ms
+2021-09-21 08:43:54.327: 2021-09-21 10:43:54 [5224] INFO [JS] New version 21090425 <=>  21090425 Installed +1ms
+2021-09-21 08:43:54.327: 2021-09-21 10:43:54 [5224] INFO [JS] Current version is up to date +1ms
+2021-09-21 08:43:54.329: 2021-09-21 10:43:54 [5224] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +3ms
+2021-09-21 08:43:54.735: 2021-09-21 10:43:54 [5224] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2021-09-21 08:43:54.735: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2021-09-21 08:43:54.735: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-21 08:43:54.735: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-21 08:43:54.735: Arguments=
+2021-09-21 08:43:54.735: ArgumentsExpanded=
+2021-09-21 08:43:54.735: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-09-21 08:43:54.735: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-09-21 08:43:54.735: RunStyle=1
+2021-09-21 08:43:54.735: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-21 08:43:54.735: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-21 08:43:54.735: HotKey=0 (None)
+2021-09-21 08:43:54.735: Description=HiSqool
+2021-09-21 08:43:54.735: 
+2021-09-21 08:43:54.735: The command completed successfully. +409ms
+2021-09-21 08:43:54.743: 2021-09-21 10:43:54 [5224] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +0ms
+2021-09-21 08:43:55.022: 2021-09-21 10:43:55 [5224] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2021-09-21 08:43:55.022: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2021-09-21 08:43:55.022: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-21 08:43:55.022: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-21 08:43:55.022: Arguments=
+2021-09-21 08:43:55.022: ArgumentsExpanded=
+2021-09-21 08:43:55.022: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-09-21 08:43:55.022: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-09-21 08:43:55.022: RunStyle=1
+2021-09-21 08:43:55.022: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-21 08:43:55.022: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-21 08:43:55.022: HotKey=0 (None)
+2021-09-21 08:43:55.022: Description=HiSqool
+2021-09-21 08:43:55.022: 
+2021-09-21 08:43:55.022: The command completed successfully. +283ms
+2021-09-21 08:43:55.022: 2021-09-21 10:43:55 [5224] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-09-21 08:43:55.254: 2021-09-21 10:43:55 [5224] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +227ms
+2021-09-21 08:43:55.256: 2021-09-21 10:43:55 [5224] INFO [JS] Actions to perform: 1 +1ms
+2021-09-21 08:43:55.256: 2021-09-21 10:43:55 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-21 08:43:55.256: 2021-09-21 10:43:55 [5224] INFO [JS] Running installer... +1ms
+2021-09-21 08:43:55.256: 2021-09-21 10:43:55 [5224] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +1ms
+2021-09-21 08:43:56.063: 2021-09-21 10:43:56 [5224] INFO [JS] Finishing Installation +802ms
+2021-09-21 08:43:56.065: 2021-09-21 10:43:56 [5224] INFO [JS] Result: 0 +1ms
+2021-09-21 08:43:56.065: 2021-09-21 10:43:56 [5224] INFO [JS] Stdout: Package installation failed, error code = -2147024713 (800700B7)
+2021-09-21 08:43:56.065: 
+2021-09-21 08:43:56.065: 
+2021-09-21 08:43:56.065: IsInstalled     : False
+2021-09-21 08:43:56.065: PackageID       : 10108c63-247d-41bd-92fa-2e15beeb2c93
+2021-09-21 08:43:56.065: PackageName     : Educadhoc
+2021-09-21 08:43:56.065: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\85\payload\educadhoc.ppkg
+2021-09-21 08:43:56.065: Description     : 
+2021-09-21 08:43:56.065: Rank            : 0
+2021-09-21 08:43:56.065: Altitude        : 5000
+2021-09-21 08:43:56.065: Version         : 8.0
+2021-09-21 08:43:56.065: OwnerType       : ITAdmin
+2021-09-21 08:43:56.065: Notes           : 
+2021-09-21 08:43:56.065: LastInstallTime : 14/09/2021 20:59:37
+2021-09-21 08:43:56.065: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-21 08:43:56.065:                   	Category:InitialCustomization
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:OOBE successfully configured.
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   7__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   8__ProvisioningCommands_DeviceContext_CommandFiles_7.provxml
+2021-09-21 08:43:56.065:                   	Category:Content
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   9__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-21 08:43:56.065:                   	Category:Scripts
+2021-09-21 08:43:56.065:                   	LastResult:Success
+2021-09-21 08:43:56.065:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.065:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065:                   
+2021-09-21 08:43:56.065: 
+2021-09-21 08:43:56.065: 
+2021-09-21 08:43:56.065:  +1ms
+2021-09-21 08:43:56.065: 2021-09-21 10:43:56 [5224] INFO [JS] Stderr:  +1ms
+2021-09-21 08:43:56.065: 2021-09-21 10:43:56 [5224] INFO [Runner] Running result: true +1ms
+2021-09-21 08:43:56.065: 2021-09-21 10:43:56 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (85) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +2ms
+2021-09-21 08:43:56.369: 2021-09-21 10:43:56 [5224] INFO [JS] Install Result: 0 +305ms
+2021-09-21 08:43:56.377: 2021-09-21 10:43:56 [5224] INFO [JS] Install Stdout: 
+2021-09-21 08:43:56.377: 
+2021-09-21 08:43:56.377: IsInstalled     : False
+2021-09-21 08:43:56.377: PackageID       : cb17c373-bdce-42ab-9630-aaa143e0273b
+2021-09-21 08:43:56.377: PackageName     : Gnuplot
+2021-09-21 08:43:56.377: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\221\payload\application.ppkg
+2021-09-21 08:43:56.377: Description     : 
+2021-09-21 08:43:56.377: Rank            : 0
+2021-09-21 08:43:56.377: Altitude        : 5000
+2021-09-21 08:43:56.377: Version         : 4.1
+2021-09-21 08:43:56.377: OwnerType       : ITAdmin
+2021-09-21 08:43:56.377: Notes           : 
+2021-09-21 08:43:56.377: LastInstallTime : 17/09/2021 10:16:18
+2021-09-21 08:43:56.377: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-21 08:43:56.377:                   	Category:InitialCustomization
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:OOBE successfully configured.
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-21 08:43:56.377:                   	Category:Content
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-21 08:43:56.377:                   	Category:Content
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-21 08:43:56.377:                   	Category:Content
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-21 08:43:56.377:                   	Category:Content
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-21 08:43:56.377:                   	Category:Content
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-21 08:43:56.377:                   	Category:Content
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-21 08:43:56.377:                   	Category:Scripts
+2021-09-21 08:43:56.377:                   	LastResult:Success
+2021-09-21 08:43:56.377:                   	Message:Provisioning succeeded
+2021-09-21 08:43:56.377:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377:                   
+2021-09-21 08:43:56.377: 
+2021-09-21 08:43:56.377: 
+2021-09-21 08:43:56.377:  +1ms
+2021-09-21 08:43:56.377: 2021-09-21 10:43:56 [5224] INFO [JS] Install Stderr:  +1ms
+2021-09-21 08:43:56.379: 2021-09-21 10:43:56 [5224] INFO [JS] Finishing Installation +0ms
+2021-09-21 08:43:56.379: 2021-09-21 10:43:56 [5224] INFO [Runner] Running result: true +1ms
+2021-09-21 08:43:56.379: 2021-09-21 10:43:56 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Gnuplot-5.4.1 (221) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Gnuplot-5.4.1.json +1ms
+2021-09-21 08:43:56.379: 2021-09-21 10:43:56 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\221\payload... +2ms
+2021-09-21 08:43:56.399: 2021-09-21 10:43:56 [5224] INFO [Runner] Creating configuration unit runner object... +13ms
+2021-09-21 08:43:56.399: 2021-09-21 10:43:56 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-21 08:43:56.399: 2021-09-21 10:43:56 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-21 08:43:57.925: 2021-09-21 10:43:57 [5224] INFO [JS] Finishing Installation +1524ms

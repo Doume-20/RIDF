@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Intervalles d&#233;finis par leur centre : center2interval</TITLE>
+<META NAME="description" CONTENT="Intervalles d&#233;finis par leur centre : center2interval">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node549.html">
+<LINK REL="up" HREF="node546.html">
+<LINK REL="next" HREF="node551.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11014"
+  HREF="node551.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11008"
+  HREF="node546.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11004"
+  HREF="node549.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11010"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11012"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11015"
+  HREF="node551.html">Les s&#233;quences</A>
+<B> monter:</B> <A NAME="tex2html11009"
+  HREF="node546.html">Les intervalles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11005"
+  HREF="node549.html">Centre d'un intervalle :</A>
+ &nbsp; <B>  <A NAME="tex2html11011"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11013"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009354000000000000000"></A><A NAME="14099"></A>
+<BR>
+Intervalles d&#233;finis par leur centre : <TT>center2interval</TT>
+</H2>
+<TT>center2interval</TT> a comme argument un vecteur <TT>V</TT> de  r&#233;els
+et &#233;ventuellement un r&#233;el comme deuxi&#232;me argument (par d&#233;faut 
+<TT>(3*V[0]-V[1])/2</TT>).
+<BR><TT>center2interval</TT> renvoie un vecteur d'intervalles ayant pour centres 
+les r&#233;els de l'argument : ces intervalles sont d&#233;finis  en 
+commen&#231;ant par la valeur donn&#233;e par le deuxi&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>center2interval([3,5,8],2)</TT>
+</DIV>
+Ou on tape car la valeur par d&#233;faut vaut (3*3-5)/2=2 :
+<DIV ALIGN="CENTER">
+<TT>center2interval([3,5,8])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2..4,4..6,6..10]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>center2interval([3,5,8],2.5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2.5..3.5,3.5..6.5,6.5..9.5]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,90 @@
+    	NumberOfFailures:0 (0x0)
+                  
+                  7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+                  	Category:Scripts
+                  	LastResult:Success
+2021-09-17 08:16:54.661:                   	Message:Provisioning succeeded
+2021-09-17 08:16:54.661:                   	NumberOfFailures:0 (0x0)
+2021-09-17 08:16:54.661:                   
+2021-09-17 08:16:54.661:                   
+2021-09-17 08:16:54.661: 
+2021-09-17 08:16:54.661: 
+2021-09-17 08:16:54.661:  +1ms
+2021-09-17 08:16:54.661: 2021-09-17 10:16:54 [5224] INFO [JS] Install Stderr:  +0ms
+2021-09-17 08:16:54.661: 2021-09-17 10:16:54 [5224] INFO [JS] Finishing Installation +0ms
+2021-09-17 08:16:54.661: 2021-09-17 10:16:54 [5224] INFO [Runner] Running result: true +0ms
+2021-09-17 08:16:54.710: 2021-09-17 10:16:54 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Gnuplot-5.4.1 (221) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Gnuplot-5.4.1.json +2ms
+2021-09-17 08:17:03.112: 2021-09-17 10:17:03 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\223\payload\application.ppkg' -QuietInstall +8452ms
+2021-09-17 08:17:03.112: 2021-09-17 10:17:03 [5224] INFO [Runner] Running result: false +0ms
+2021-09-17 08:17:03.112: 2021-09-17 10:17:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/PhotoFiltre-7.2.1 (223) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_PhotoFiltre-7.2.1.json +2ms
+2021-09-17 08:17:03.175: 2021-09-17 10:17:03 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\234\payload\application.ppkg' -QuietInstall +62ms
+2021-09-17 08:17:03.175: 2021-09-17 10:17:03 [5224] INFO [Runner] Running result: false +1ms
+2021-09-17 08:17:03.175: 2021-09-17 10:17:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Pronote-0.2.7 (234) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Pronote-0.2.7.json +2ms
+2021-09-17 08:17:03.268: 2021-09-17 10:17:03 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg' -QuietInstall +86ms
+2021-09-17 08:17:03.268: 2021-09-17 10:17:03 [5224] INFO [Runner] Running result: false +1ms
+2021-09-17 08:17:03.268: 2021-09-17 10:17:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (261) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2021-09-17 08:17:03.315: 2021-09-17 10:17:03 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\231\payload\application.ppkg' -QuietInstall +48ms
+2021-09-17 08:17:03.315: 2021-09-17 10:17:03 [5224] INFO [Runner] Running result: false +1ms
+2021-09-17 08:17:03.315: 2021-09-17 10:17:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/SimClimat-1.0.4 (231) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_SimClimat-1.0.4.json +3ms
+2021-09-17 08:17:25.345: 2021-09-17 10:17:25 [5224] INFO [CommandService] Got command facts:set +22032ms
+2021-09-17 08:17:25.345: 2021-09-17 10:17:25 [5224] INFO [CommandService] Got command facts:set +4ms
+2021-09-17 08:17:25.350: 2021-09-17 10:17:25 [5224] INFO [CommandService] Got command units:trigger +3ms
+2021-09-17 08:17:25.350: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> login... +0ms
+2021-09-17 08:17:25.350: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> login... +1ms
+2021-09-17 08:17:25.355: 2021-09-17 10:17:25 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2021-09-17 08:17:25.385: 2021-09-17 10:17:25 [5224] INFO [Runner] Creating configuration unit runner object... +29ms
+2021-09-17 08:17:25.385: 2021-09-17 10:17:25 [5224] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-09-17 08:17:25.385: 2021-09-17 10:17:25 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-17 08:17:25.390: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> login... +2ms
+2021-09-17 08:17:25.390: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> login... +0ms
+2021-09-17 08:17:25.390: 2021-09-17 10:17:25 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-09-17 08:17:25.405: 2021-09-17 10:17:25 [5224] INFO [Runner] Creating configuration unit runner object... +13ms
+2021-09-17 08:17:25.407: 2021-09-17 10:17:25 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-17 08:17:25.407: 2021-09-17 10:17:25 [5224] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-09-17 08:17:25.407: {
+2021-09-17 08:17:25.407:   "platform": "win32",
+2021-09-17 08:17:25.407:   "deviceId": "IFP052046109",
+2021-09-17 08:17:25.407:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-09-17 08:17:25.407:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-09-17 08:17:25.407:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-09-17 08:17:25.407:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-09-17 08:17:25.407:   "versionCode": 21090427,
+2021-09-17 08:17:25.407:   "trigger": "login",
+2021-09-17 08:17:25.407:   "metadata": {
+2021-09-17 08:17:25.407:     "packageVersion": "1.0.16.0",
+2021-09-17 08:17:25.407:     "componentParameters": {
+2021-09-17 08:17:25.407:       "AppX": "Hisqool.Legal.GDPR",
+2021-09-17 08:17:25.407:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-09-17 08:17:25.407:       "DesktopShortcut": "Charte de protection*",
+2021-09-17 08:17:25.407:       "ProvisioningPackage": "Hisqool GDPR",
+2021-09-17 08:17:25.407:       "InstallationDirectory": "hisqool.gdpr",
+2021-09-17 08:17:25.407:       "UninstallationDirectory": "hisqool.gdpr",
+2021-09-17 08:17:25.407:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-09-17 08:17:25.407:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-09-17 08:17:25.407:     },
+2021-09-17 08:17:25.407:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-09-17 08:17:25.407:   }
+2021-09-17 08:17:25.407: } +1ms
+2021-09-17 08:17:25.409: 2021-09-17 10:17:25 [5224] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-09-17 08:17:25.409: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> login... +2ms
+2021-09-17 08:17:25.409: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> login... +1ms
+2021-09-17 08:17:25.409: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> login... +1ms
+2021-09-17 08:17:25.409: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +0ms
+2021-09-17 08:17:25.409: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> login... +1ms
+2021-09-17 08:17:25.415: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> login... +0ms
+2021-09-17 08:17:25.415: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +1ms
+2021-09-17 08:17:25.415: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +0ms
+2021-09-17 08:17:25.415: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +1ms
+2021-09-17 08:17:25.417: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Audacity-Windows -> login... +0ms
+2021-09-17 08:17:25.417: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows-3.5.0 -> login... +1ms
+2021-09-17 08:17:25.417: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Code-with-Mu-1.0.3 -> login... +0ms
+2021-09-17 08:17:25.417: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/EduAnat2-2.0.0 -> login... +1ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/EduPython-3.0 -> login... +0ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Espace-Langues-Windows -> login... +1ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/GenieGen-1.2.3.2 -> login... +0ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/GeoGebra-Windows -> login... +1ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/GIMP-Windows -> login... +0ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Gnuplot-5.4.1 -> login... +0ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Google-Earth-Pro-7.3.3 -> login... +1ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LeLivreScolaire-2.2 -> login... +0ms
+2021-09-17 08:17:25.419: 2021-09-17 10:17:25 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LibManuels-3.7.4 -> login... +1ms

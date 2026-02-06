@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Densit&#233; de probabilit&#233; de la loi de Student : student</TITLE>
+<META NAME="description" CONTENT="Densit&#233; de probabilit&#233; de la loi de Student : student">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node823.html">
+<LINK REL="previous" HREF="node821.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node823.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15102"
+  HREF="node823.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15096"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15090"
+  HREF="node821.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15098"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15100"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15103"
+  HREF="node823.html">Fonction de r&#233;partition de</A>
+<B> monter:</B> <A NAME="tex2html15097"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15091"
+  HREF="node821.html">Compl&#233;ment &#224; 1 de</A>
+ &nbsp; <B>  <A NAME="tex2html15099"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15101"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010411000000000000000"></A><A NAME="21523"></A>
+<BR>
+Densit&#233; de probabilit&#233; de la loi de Student : <TT>student</TT>
+</H2>
+<TT>student(n,x)</TT> est la densit&#233; de probabilit&#233; de la loi de Student ayant <I>n</I> degr&#233;s de libert&#233;.
+<BR><TT>student(n,x)</TT>, est &#233;gale &#224; :
+<!-- MATH
+ $\displaystyle \frac{\Gamma(\frac{n+1}{2})}{\Gamma(\frac{n}{2})\sqrt{n\pi}}{\left (1+\frac{x^2}{n}\right )}^\frac{-n-1}{2}$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img563.png"
+ ALT="$\displaystyle {\frac{{\Gamma(\frac{n+1}{2})}}{{\Gamma(\frac{n}{2})\sqrt{n\pi}}}}$"><IMG
+ WIDTH="19" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img564.png"
+ ALT="$\displaystyle \left(\vphantom{1+\frac{x^2}{n}}\right.$">1 + <IMG
+ WIDTH="26" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img565.png"
+ ALT="$\displaystyle {\frac{{x^2}}{{n}}}$"><IMG
+ WIDTH="4" HEIGHT="5" ALIGN="BOTTOM" BORDER="0"
+ SRC="img566.png"
+ ALT="$\displaystyle \left.\vphantom{1+\frac{x^2}{n}}\right)^{{\frac}}_{{}}$">-<I>n</I>-12 
+<BR>
+o&#249; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$"> est d&#233;finie pour <I>x</I> &gt; 0 par 
+<!-- MATH
+ $\Gamma(x)=\int_0^\infty e^{-t}t^{x-1} dt$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$">(<I>x</I>) = <IMG
+ WIDTH="31" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$ \int_{0}^{\infty}$"><I>e</I><SUP>-t</SUP><I>t</I><SUP>x-1</SUP><I>dt</I>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>student(2,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Gamma(3/2)*sqrt(11/2)<code>^</code>-1*2/(sqrt(2*pi)*11)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(student(2,3))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.0274101222343</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

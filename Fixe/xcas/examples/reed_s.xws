@@ -1,0 +1,447 @@
+// fltk 7Fl_Tile 44 61 814 95
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 61 814 94
+Definition du corps fini a 256 elements, a son generateur et zero son neutre,£on donne la caracteristique, puis la dimension du corps, puis le nom de variable£du polynome (representation polynomiale des elements du corps) puis£le nom du corps (pour un affichage plus compact), ce nom est non evalue
+,
+// fltk N4xcas10Log_OutputE 44 155 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 158 814 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 158 814 30
+purge(a)
+,
+// fltk N4xcas10Log_OutputE 44 188 814 1
+
+,
+// fltk N4xcas8EquationE 44 189 814 43
+"a not assigned"
+]
+,
+// fltk 7Fl_Tile 44 234 814 78
+[
+// fltk N4xcas19Multiline_Input_tabE 44 234 814 34
+G:=GF(2,8,['a','G']);
+,
+// fltk N4xcas10Log_OutputE 44 268 814 1
+
+,
+// fltk N4xcas8EquationE 44 269 814 43
+GF(2,a^8-a^6-a^4-a^3-a^2-a-1,[a,G],undef)
+]
+,
+// fltk 7Fl_Tile 44 314 814 71
+[
+// fltk N4xcas19Multiline_Input_tabE 44 314 814 27
+A:=G(a);
+,
+// fltk N4xcas10Log_OutputE 44 341 814 1
+
+,
+// fltk N4xcas8EquationE 44 342 814 43
+G(a)
+]
+,
+// fltk 7Fl_Tile 44 387 814 73
+[
+// fltk N4xcas19Multiline_Input_tabE 44 387 814 29
+zero:=G(0);
+,
+// fltk N4xcas10Log_OutputE 44 416 814 1
+
+,
+// fltk N4xcas8EquationE 44 417 814 43
+G(0)
+]
+,
+// fltk 7Fl_Tile 44 462 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 462 814 30
+Les elements du corps fini sont les A^k et zero
+,
+// fltk N4xcas10Log_OutputE 44 492 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 495 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 495 814 30
+On se fixe ici le nombre maximal d'erreurs que l'on peut corriger
+,
+// fltk N4xcas10Log_OutputE 44 525 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 528 814 72
+[
+// fltk N4xcas19Multiline_Input_tabE 44 528 814 28
+t:=2;
+,
+// fltk N4xcas10Log_OutputE 44 556 814 1
+
+,
+// fltk N4xcas8EquationE 44 557 814 43
+2
+]
+,
+// fltk 7Fl_Tile 44 602 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 602 814 30
+Polynome generateur du code
+,
+// fltk N4xcas10Log_OutputE 44 632 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 635 814 137
+[
+// fltk N4xcas19Multiline_Input_tabE 44 635 814 33
+g:=product(x-A^k,k,1 ,2*t);normal(g)
+,
+// fltk N4xcas10Log_OutputE 44 668 814 1
+
+,
+// fltk N4xcas8EquationE 44 669 814 103
+(G(a)+x)*(G(a^2)+x)*(G(a^3)+x)*(G(a^4)+x),x^4+G(a^4+a^3+a^2+a)*x^3+G(a^7+a^6+a^4+a^3)*x^2+G(a^5+1)*x+G(a^5+a+1)
+]
+,
+// fltk 7Fl_Tile 44 774 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 774 814 30
+Message a coder [1,5,2,1] represente par le polynome correspondant par f
+,
+// fltk N4xcas10Log_OutputE 44 804 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 807 814 76
+[
+// fltk N4xcas19Multiline_Input_tabE 44 807 814 32
+l:=[1,5,2,1]; L:=poly2symb(A^l,x)
+,
+// fltk N4xcas10Log_OutputE 44 839 814 1
+
+,
+// fltk N4xcas8EquationE 44 840 814 43
+[1,5,2,1],G(a)+(G(a^2)+(G(a^5)+G(a)*x)*x)*x
+]
+,
+// fltk 7Fl_Tile 44 885 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 885 814 30
+On ajoute en fin de message 2*t zeros
+,
+// fltk N4xcas10Log_OutputE 44 915 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 918 814 84
+[
+// fltk N4xcas19Multiline_Input_tabE 44 918 814 30
+l1:=normal(L*x^(2*t))
+,
+// fltk N4xcas10Log_OutputE 44 948 814 1
+
+,
+// fltk N4xcas8EquationE 44 949 814 53
+G(a)*x^7+G(a^5)*x^6+G(a^2)*x^5+G(a)*x^4
+]
+,
+// fltk 7Fl_Tile 44 1004 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 1004 814 30
+puis on fait la division euclidienne par le polynome generateur du code
+,
+// fltk N4xcas10Log_OutputE 44 1034 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 1037 814 85
+[
+// fltk N4xcas19Multiline_Input_tabE 44 1037 814 31
+g1:=rem(l1,g);
+,
+// fltk N4xcas10Log_OutputE 44 1068 814 1
+
+,
+// fltk N4xcas8EquationE 44 1069 814 53
+G(a^7+a^5+a^4+a)+G(a^7+a^2)*x^3+G(a^7+a^6+a^2)*x^2+G(a^7+a^6+a^4+a+1)*x
+]
+,
+// fltk 7Fl_Tile 44 1124 814 77
+[
+// fltk N4xcas19Multiline_Input_tabE 44 1124 814 33
+rem(l1-g1,g);
+,
+// fltk N4xcas10Log_OutputE 44 1157 814 1
+
+,
+// fltk N4xcas8EquationE 44 1158 814 43
+0
+]
+,
+// fltk 7Fl_Tile 44 1203 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 1203 814 30
+On ajoute (ou retranche c'est pareil) g1 a l1, r1 est divisible par g, on transmet r1
+,
+// fltk N4xcas10Log_OutputE 44 1233 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 1236 814 82
+[
+// fltk N4xcas19Multiline_Input_tabE 44 1236 814 28
+r1:=l1+g1;
+,
+// fltk N4xcas10Log_OutputE 44 1264 814 1
+
+,
+// fltk N4xcas8EquationE 44 1265 814 53
+G(a)*x^7+G(a^5)*x^6+G(a^2)*x^5+G(a)*x^4+G(a^7+a^5+a^4+a)+G(a^7+a^2)*x^3+G(a^7+a^6+a^2)*x^2+G(a^7+a^6+a^4+a+1)*x
+]
+,
+// fltk 7Fl_Tile 44 1320 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 1320 814 30
+Ici on rajoute 1 ou 2 erreurs pour tester la correction d'erreurs
+,
+// fltk N4xcas10Log_OutputE 44 1350 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 1353 814 114
+[
+// fltk N4xcas19Multiline_Input_tabE 44 1353 814 30
+r2:=r1+A^5*x+A*x^4
+,
+// fltk N4xcas10Log_OutputE 44 1383 814 1
+
+,
+// fltk N4xcas8EquationE 44 1384 814 83
+G(a)*x^7+G(a^5)*x^6+G(a^2)*x^5+G(a)*x^4+G(a^7+a^5+a^4+a)+G(a^7+a^2)*x^3+G(a^7+a^6+a^2)*x^2+G(a^7+a^6+a^4+a+1)*x+G(a^5)*x+G(a)*x^4
+]
+,
+// fltk 7Fl_Tile 44 1469 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 1469 814 30
+Calcul du polynome syndrome 
+,
+// fltk N4xcas10Log_OutputE 44 1499 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 1502 814 84
+[
+// fltk N4xcas19Multiline_Input_tabE 44 1502 814 30
+s:=sum(horner(r2,A^(1+k))*x^k,k,0,2*t-1)
+,
+// fltk N4xcas10Log_OutputE 44 1532 814 1
+
+,
+// fltk N4xcas8EquationE 44 1533 814 53
+G(a^6+a^5)+G(a^5+a^4+a^3+a^2+a)*x+G(a^4+a^3)*x^2+G(a^7+a^6+a^5+a^3+a^2+1)*x^3
+]
+,
+// fltk 7Fl_Tile 44 1588 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 1588 814 30
+Programme pour calculer le polynome localisateur
+,
+// fltk N4xcas10Log_OutputE 44 1618 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 1621 814 336
+[
+// fltk N4xcas7EditeurE 44 1621 814 335
+505 ,
+gf_bez(s,t):={ // s polynome syndrome, t entier
+  local q,R0,R1,R2,v0,v1,v2; // R0=x^2t, R1=s, on ne calcule pas les u
+  R0:=x^(2*t); 
+  R1:=s;
+  v0:=0;
+  v1:=1;
+  for (;degree(R1)>=t;){
+    q:=quo(R0,R1,x);
+    R2:=R0-q*R1;
+    v2:=v0-q*v1;
+    R0:=R1;
+    R1:=R2;
+    v0:=v1;
+    v1:=v2;
+  }
+  return v1,R1; // c'est le polynome localisateur et w
+};
+
+
+test_zero(loc,inva):={ 
+  local pos,k;
+  pos:=NULL; 
+  for (k:=0;k<255;k++){ 
+    if (horner(loc,inva^k)==G(0)) 
+      pos:=pos,k;
+  }
+  return pos;
+}
+,
+// fltk N4xcas10Log_OutputE 44 1956 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 1959 814 149
+[
+// fltk N4xcas19Multiline_Input_tabE 44 1959 814 35
+(loc,w):=gf_bez(s,t):; normal(loc),normal(w)
+,
+// fltk N4xcas10Log_OutputE 44 1994 814 1
+
+,
+// fltk N4xcas8EquationE 44 1995 814 113
+"Done",G(a^7+a^6+a^5+a^4+a^2+a)*x^2+G(a^7+a^6+a^5+a^4)*x+G(a^7+a^6+a^5+a^3+a),G(a^6+a^2+1)+G(a^5+a^2)*x
+]
+,
+// fltk 7Fl_Tile 44 2110 814 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2110 814 30
+inva:=1/A;
+,
+// fltk N4xcas10Log_OutputE 44 2140 814 1
+
+,
+// fltk N4xcas8EquationE 44 2141 814 43
+G(a^7+a^5+a^3+a^2+a+1)
+]
+,
+// fltk 7Fl_Tile 44 2186 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 2186 814 30
+On verifie que le polynome localisateur s'annule en (1/a)^position_erreur
+,
+// fltk N4xcas10Log_OutputE 44 2216 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 2219 814 74
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2219 814 30
+horner(loc,inva);
+,
+// fltk N4xcas10Log_OutputE 44 2249 814 1
+
+,
+// fltk N4xcas8EquationE 44 2250 814 43
+G(0)
+]
+,
+// fltk 7Fl_Tile 44 2295 814 78
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2295 814 34
+horner(loc,inva^4);
+,
+// fltk N4xcas10Log_OutputE 44 2329 814 1
+
+,
+// fltk N4xcas8EquationE 44 2330 814 43
+G(0)
+]
+,
+// fltk 7Fl_Tile 44 2375 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 2375 814 30
+On cherche la position de toutes les racines du poly localisateur
+,
+// fltk N4xcas10Log_OutputE 44 2405 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 2408 814 97
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2408 814 30
+pos:=test_zero(loc,inva);
+,
+// fltk N4xcas10Log_OutputE 44 2438 814 24
+Evaluation time: 0.26£
+,
+// fltk N4xcas8EquationE 44 2462 814 43
+1,4
+]
+,
+// fltk 7Fl_Tile 44 2507 814 31
+[
+// fltk N4xcas23Comment_Multiline_InputE 44 2507 814 30
+Calcul des corrections a effectuer en positions 1 et 4
+,
+// fltk N4xcas10Log_OutputE 44 2537 814 1
+
+]
+,
+// fltk 7Fl_Tile 44 2540 814 92
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2540 814 28
+lprime:=diff(loc)
+,
+// fltk N4xcas10Log_OutputE 44 2568 814 1
+
+,
+// fltk N4xcas8EquationE 44 2569 814 63
+-G(a^7+a^5+a^4+a^3+1)*(G(a^6+a^3+a+1)-G(a^7+a^6+a^5+a^4+a+1)*x)-G(a^7+a^6+a^5+a^4+a+1)*(G(a^7+a^6+a^5+a^4+a^3+a^2+a+1)+G(a^7+a^5+a^4+a^3+1)*x)
+]
+,
+// fltk 7Fl_Tile 44 2634 814 76
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2634 814 32
+k:=pos[0];
+,
+// fltk N4xcas10Log_OutputE 44 2666 814 1
+
+,
+// fltk N4xcas8EquationE 44 2667 814 43
+1
+]
+,
+// fltk 7Fl_Tile 44 2712 814 77
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2712 814 33
+horner(w,inva^k)/horner(lprime,inva^k);
+,
+// fltk N4xcas10Log_OutputE 44 2745 814 1
+
+,
+// fltk N4xcas8EquationE 44 2746 814 43
+G(a^5)
+]
+,
+// fltk 7Fl_Tile 44 2791 814 76
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2791 814 32
+k:=pos[1];
+,
+// fltk N4xcas10Log_OutputE 44 2823 814 1
+
+,
+// fltk N4xcas8EquationE 44 2824 814 43
+4
+]
+,
+// fltk 7Fl_Tile 44 2869 814 77
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2869 814 33
+horner(w,inva^k)/horner(lprime,inva^k);
+,
+// fltk N4xcas10Log_OutputE 44 2902 814 1
+
+,
+// fltk N4xcas8EquationE 44 2903 814 43
+G(a)
+]
+,
+// fltk 7Fl_Tile 44 2948 814 39
+[
+// fltk N4xcas19Multiline_Input_tabE 44 2948 814 38
+
+,
+// fltk N4xcas10Log_OutputE 44 2986 814 1
+
+]

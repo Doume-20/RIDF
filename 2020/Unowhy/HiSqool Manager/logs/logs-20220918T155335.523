@@ -1,0 +1,57 @@
+2022-09-18 17:53:32 [4852] INFO [ConfigurationRunner] Got 4 configurations. 0 in, 4 out +1ms
+2022-09-18 15:53:32.361: 2022-09-18 17:53:32 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +2ms
+2022-09-18 15:53:32.361: 2022-09-18 17:53:32 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> configuration... +1ms
+2022-09-18 15:53:32.361: 2022-09-18 17:53:32 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2022-09-18 15:53:32.375: 2022-09-18 17:53:32 [4852] INFO [Runner] Creating configuration unit runner object... +14ms
+2022-09-18 15:53:32.422: 2022-09-18 17:53:32 [4852] INFO [Runner] Checking if runner needs to be performed... +45ms
+2022-09-18 15:53:32.426: 2022-09-18 17:53:32 [4852] INFO [JS] Checking that the unit needs to be performed +2ms
+2022-09-18 15:53:32.463: 2022-09-18 17:53:32 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> configuration... +37ms
+2022-09-18 15:53:32.466: 2022-09-18 17:53:32 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload... +2ms
+2022-09-18 15:53:32.542: 2022-09-18 17:53:32 [4852] INFO [Runner] Creating configuration unit runner object... +77ms
+2022-09-18 15:53:32.544: 2022-09-18 17:53:32 [4852] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-09-18 15:53:32.546: 2022-09-18 17:53:32 [4852] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-09-18 15:53:34.177: 2022-09-18 17:53:34 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +1630ms
+2022-09-18 15:53:34.177: 2022-09-18 17:53:34 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +30ms
+2022-09-18 15:53:34.319: 2022-09-18 17:53:34 [4852] INFO [Runner] Creating configuration unit runner object... +113ms
+2022-09-18 15:53:34.319: 2022-09-18 17:53:34 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-18 15:53:34.329: 2022-09-18 17:53:34 [4852] INFO [WatcherService] Received a list of 12 payloads +3ms
+2022-09-18 15:53:34.329: 2022-09-18 17:53:34 [4852] INFO [PayloadDownloader] [PAYLOAD 179] Persisting status=state=Downloading, error=None, active=true +2ms
+2022-09-18 15:53:34.329: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/disablerecovery_1.0.0.jar... +4ms
+2022-09-18 15:53:34.602: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +265ms
+2022-09-18 15:53:34.602: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 33989  +1ms
+2022-09-18 15:53:34.602: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +3ms
+2022-09-18 15:53:34.602: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 80874641  +0ms
+2022-09-18 15:53:34.612: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +13ms
+2022-09-18 15:53:34.612: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 66833251  +1ms
+2022-09-18 15:53:34.763: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +146ms
+2022-09-18 15:53:34.763: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 43024  +1ms
+2022-09-18 15:53:34.763: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Download finished undefined. +2ms
+2022-09-18 15:53:34.763: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Digest: expected=1881272ba0e962b2388826671df2a66b, actual=1881272ba0e962b2388826671df2a66b. +1ms
+2022-09-18 15:53:34.771: 2022-09-18 17:53:34 [4852] INFO [PayloadDownloader] [PAYLOAD 179] Persisting status=state=Downloaded, error=None, active=true +3ms
+2022-09-18 15:53:34.773: 2022-09-18 17:53:34 [4852] INFO [PayloadDownloader] [PAYLOAD 179] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +2ms
+2022-09-18 15:53:34.854: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got disposed. +82ms
+2022-09-18 15:53:34.854: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Complete. +1ms
+2022-09-18 15:53:34.854: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +2ms
+2022-09-18 15:53:34.854: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 32742  +1ms
+2022-09-18 15:53:34.865: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +5ms
+2022-09-18 15:53:34.865: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 3742235  +0ms
+2022-09-18 15:53:34.873: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +7ms
+2022-09-18 15:53:34.873: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 168931842  +0ms
+2022-09-18 15:53:34.966: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got response 200. +98ms
+2022-09-18 15:53:34.966: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Response content length is 43905510  +1ms
+2022-09-18 15:53:34.984: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Download finished undefined. +13ms
+2022-09-18 15:53:34.986: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Digest: expected=b029d24b814bc8f60fb79b9fe260b461, actual=b029d24b814bc8f60fb79b9fe260b461. +1ms
+2022-09-18 15:53:34.986: 2022-09-18 17:53:34 [4852] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Downloaded, error=None, active=true +3ms
+2022-09-18 15:53:34.986: 2022-09-18 17:53:34 [4852] INFO [PayloadDownloader] [PAYLOAD 173] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2022-09-18 15:53:34.994: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Got disposed. +3ms
+2022-09-18 15:53:34.996: 2022-09-18 17:53:34 [4852] INFO [RequestPerformerService] Complete. +2ms
+2022-09-18 15:53:35.257: 2022-09-18 17:53:35 [4852] INFO [RequestPerformerService] Download finished undefined. +262ms
+2022-09-18 15:53:35.260: 2022-09-18 17:53:35 [4852] INFO [RequestPerformerService] Digest: expected=53675164bb5e6d8c20287960bae5bde4, actual=53675164bb5e6d8c20287960bae5bde4. +1ms
+2022-09-18 15:53:35.260: 2022-09-18 17:53:35 [4852] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Downloaded, error=None, active=true +3ms
+2022-09-18 15:53:35.260: 2022-09-18 17:53:35 [4852] INFO [PayloadDownloader] [PAYLOAD 130] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2022-09-18 15:53:35.318: 2022-09-18 17:53:35 [4852] INFO [RequestPerformerService] Got disposed. +58ms
+2022-09-18 15:53:35.320: 2022-09-18 17:53:35 [4852] INFO [RequestPerformerService] Complete. +2ms
+2022-09-18 15:53:35.523: 2022-09-18 17:53:35 [4852] INFO [PayloadDownloader] [PAYLOAD 179] Persisting status=state=Ok, error=None, active=true +201ms
+2022-09-18 15:53:35.523: 2022-09-18 17:53:35 [4852] INFO [PayloadDispatcher] Emitting 5 entries ["__/conf/agents/facts","conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/sqoolctl","conf/other/disablerecovery","__/unowhy/manager/windows"] +2ms
+2022-09-18 15:53:35.523: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Processing for execution configuration with 5 keys +0ms
+2022-09-18 15:53:35.523: 2022-09-18 17:53:35 [4852] INFO [ConfigurationRunner] Got 5 configurations. 1 in, 0 out +1ms

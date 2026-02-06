@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La couleur</TITLE>
+<META NAME="description" CONTENT="La couleur">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node63.html">
+<LINK REL="previous" HREF="node61.html">
+<LINK REL="up" HREF="node57.html">
+<LINK REL="next" HREF="node63.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1069"
+  HREF="node63.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1063"
+  HREF="node57.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1057"
+  HREF="node61.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1065"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1067"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1070"
+  HREF="node63.html">Les attributs des lignes</A>
+<B> monter:</B> <A NAME="tex2html1064"
+  HREF="node57.html">La g&#233;om&#233;trie plane (2D)</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1058"
+  HREF="node61.html">Comment d&#233;placer des objets</A>
+ &nbsp; <B>  <A NAME="tex2html1066"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1068"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000165000000000000000"></A><A NAME="968"></A>
+<BR>
+La couleur
+</H2>
+La couleur des prochains objets cr&#233;&#233;s se choisit en cliquant sur le bouton 
+des attributs ou sur le bouton couleur qui permet de choisir parmi la palette 
+des couleurs. Les couleurs de la palette sont numerot&#233;es de 0 &#224; 255 et les
+couleurs de l'arc en ciel sont numerot&#233;es de 256 &#224; 381. Pour voir les 
+couleurs de l'arc en ciel il suffit d'ex&#233;cuter le programme suivant :
+<PRE>
+ciel():={
+local j,C;
+C:=[];
+for (j:=256;j&lt;382;j++){
+C:=append(C,carre(j,j+1,couleur=j+rempli));
+}
+C;
+}
+</PRE>
+Pour voir l'arc en ciel, on tape <TT>ciel()</TT> et le num&#233;ro d'une couleur est 
+alors &#233;gal &#224; son abscisse et pour voir la couleur de num&#233;ro 300, on tape
+<TT>ciel()[300-256]</TT>.  
+
+<P>
+On peut aussi choisir la couleur d'un objet particulier en mettant dans sa 
+d&#233;finition un param&#232;tre suppl&#233;mentaire qui sera par exemple 
+<TT>affichage=rouge</TT> ou <TT>affichage=1</TT>.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer exp(n*ln(x)) en puissance : exp2pow</TITLE>
+<META NAME="description" CONTENT="Transformer exp(n*ln(x)) en puissance : exp2pow">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node428.html">
+<LINK REL="previous" HREF="node426.html">
+<LINK REL="up" HREF="node419.html">
+<LINK REL="next" HREF="node428.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9205"
+  HREF="node428.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9199"
+  HREF="node419.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9193"
+  HREF="node426.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9201"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9203"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9206"
+  HREF="node428.html">&#201;crire avec des exponentielles</A>
+<B> monter:</B> <A NAME="tex2html9200"
+  HREF="node419.html">Les Exponentielles et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9194"
+  HREF="node426.html">Transformer une puissance en</A>
+ &nbsp; <B>  <A NAME="tex2html9202"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9204"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009248000000000000000"></A><A NAME="10698"></A>
+<BR>
+Transformer exp(n*ln(x)) en puissance : <TT>exp2pow</TT>
+</H2>
+<TT>exp2pow</TT> permet de transformer une expression de la forme <!-- MATH
+ $\exp(n*\ln(x))$
+ -->
+exp(<I>n</I>*ln(<I>x</I>))
+ en une puissance de <I>x</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>exp2pow(exp(n*ln(x)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>n</TT>
+</DIV>
+Bien voir la diff&#233;rence avec <TT>lncollect</TT> :
+<BR><TT>lncollect(exp(n*ln(x))) = exp(n*log(x))</TT>
+<BR><TT>lncollect(exp(2*ln(x))) = exp(2*log(x))</TT>
+<BR><TT>exp2pow(exp(2*ln(x)))= x<code>^</code>2 </TT>
+<BR>
+Mais :
+<BR><TT>lncollect(exp(ln(x)+ln(x))) = x<code>^</code>2</TT>
+<BR><TT>exp2pow(exp(ln(x)+ln(x))) = x<code>^</code>(1+1)</TT>
+<BR>
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Courbe 2D en param&#233;trique</TITLE>
+<META NAME="description" CONTENT="Courbe 2D en param&#233;trique">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node144.html">
+<LINK REL="previous" HREF="node142.html">
+<LINK REL="up" HREF="node142.html">
+<LINK REL="next" HREF="node144.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4445"
+  HREF="node144.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4439"
+  HREF="node142.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4433"
+  HREF="node142.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4441"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4443"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4446"
+  HREF="node144.html">Surface 3D en param&#233;trique</A>
+<B> monter:</B> <A NAME="tex2html4440"
+  HREF="node142.html">Courbe et surface en</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4434"
+  HREF="node142.html">Courbe et surface en</A>
+ &nbsp; <B>  <A NAME="tex2html4442"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4444"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION006151000000000000000">
+Courbe 2D en param&#233;trique</A>
+</H2>
+<TT>plotparam(f(t)+i*g(t),t)</TT> 
+(resp <TT>plotparam(f(t)+i*g(t),t=t1..t2)</TT>)
+trace la repr&#233;sentation param&#233;trique de la courbe d&#233;finie par 
+<!-- MATH
+ $x=f(t),y=g(t)$
+ -->
+<I>x</I> = <I>f</I> (<I>t</I>), <I>y</I> = <I>g</I>(<I>t</I>) (resp par  <!-- MATH
+ $x=f(t),y=g(t)$
+ -->
+<I>x</I> = <I>f</I> (<I>t</I>), <I>y</I> = <I>g</I>(<I>t</I>) et <!-- MATH
+ $t1 \geq t\geq t2$
+ -->
+<I>t</I>1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> <I>t</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> <I>t</I>2).
+<BR>
+Si on ne pr&#233;cise pas les bornes de l'intervalle de variation du param&#232;tre
+ce sont les valeurs de <TT>t-</TT> et <TT>t+</TT> (cf <A HREF="node35.html#sec:configgeo">1.6.2</A>) qui 
+seront ces bornes.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotparam(cos(x)+i*sin(x),x) </TT>
+</DIV>
+ou 
+<DIV ALIGN="CENTER">
+<TT>plotparam([cos(x),sin(x)],x) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le dessin du cercle unit&#233;</TT>
+</DIV>
+On peut p&#233;ciser les bornes de l'intervalle de 
+variation du param&#232;tre.
+<BR>
+On tape si dans la configuration du graphique <TT>t</TT> va de -4 &#224; 1 :
+<DIV ALIGN="CENTER">
+<TT>plotparam(sin(t)+i*cos(t))</TT>
+</DIV>
+ou encore :
+<DIV ALIGN="CENTER">
+<TT>plotparam(sin(t)+i*cos(t),t=-4..1) </TT>
+</DIV>
+ou encore :
+<DIV ALIGN="CENTER">
+<TT>plotparam(sin(x)+i*cos(x),x=-4..1) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le dessin de l'arc du cercle unit&#233; allant de -4 &#224; 1</TT>
+</DIV>
+On peut rajouter un param&#232;tre pour indiquer le saut d'&#233;chantillonnage du 
+param&#232;tre <I>t</I> avec <TT>tstep=</TT> c'est &#224; dire le pas en <I>t</I> que l'on 
+veut utiliser pour faire le graphe.
+<BR>
+On tape si dans la configuration du graphique <TT>t</TT> va de -4 &#224; 1 :
+<DIV ALIGN="CENTER">
+<TT>plotparam(sin(t)+i*cos(t),t,tstep=0.5)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>plotparam(sin(t)+i*cos(t),t=-4..1,tstep=0.5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+Le dessin grossier de l'arc du cercle unit&#233; allant de -4 &#224; 1
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4445"
+  HREF="node144.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4439"
+  HREF="node142.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4433"
+  HREF="node142.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4441"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4443"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4446"
+  HREF="node144.html">Surface 3D en param&#233;trique</A>
+<B> monter:</B> <A NAME="tex2html4440"
+  HREF="node142.html">Courbe et surface en</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4434"
+  HREF="node142.html">Courbe et surface en</A>
+ &nbsp; <B>  <A NAME="tex2html4442"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4444"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,3019 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Calcul formel et Math&#233;matiques
+avec
+Xcas</TITLE>
+<META NAME="description" CONTENT="Calcul formel et Math&#233;matiques
+avec
+Xcas">
+<META NAME="keywords" CONTENT="casref_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casref_fr.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png"> 
+<A NAME="tex2html3"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8"
+  HREF="node1.html">Index</A>
+ &nbsp; <B>  <A NAME="tex2html4"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1 ALIGN=CENTER>Calcul formel 
+<BR>
+et 
+<BR>
+Math&#233;matiques
+<BR>
+avec
+<BR><TT>Xcas</TT></H1>
+<P ALIGN=CENTER><STRONG>Ren&#233;e De Graeve</STRONG>
+<BR><I>Ma&#238;tre de Conf&#233;rence &#224; Grenoble I</I>
+</P>
+<HR>
+<DIV ALIGN="CENTER"><B>
+Remerciements</B></DIV>
+
+<P>
+<BR>
+<BR>
+<BR>
+
+<P>
+Je  remercie:
+ 
+<UL>
+<LI>Bernard Parisse pour ses pr&#233;cieux conseils et ses remarques sur ce texte,
+
+<P>
+</LI>
+</UL>
+
+<P>
+
+<P>
+&#169; 2002, 2006 Ren&#233;e De Graeve, <code>renee.degraeve@wanadoo.fr</code>
+<BR>
+La copie, la traduction et la redistribution de ce document sur support &#233;lectronique
+ou papier sont autoris&#233;s pour un usage non commercial uniquement.
+L'utilisation de ce document &#224; des fins commerciales est interdite
+sans l'accord &#233;crit du d&#233;tenteur du copyright.
+Cette documentation est fournie en l'&#233;tat, sans garantie d'aucune
+sorte. En aucun cas le d&#233;tenteur du copyright ne pourra &#234;tre tenu
+pour responsable de dommages r&#233;sultant de l'utilisation de ce
+document.
+<BR>
+<P>
+Ce document est disponible &#224; l'adresse Internet suivante :
+<BR><code>http://www-fourier.ujf-grenoble.fr/~parisse/casflan.pdf</code>
+<DIV ALIGN="CENTER"><B>
+Pr&#233;face</B></DIV>
+
+<P>
+<BR>
+<BR>
+<BR>
+
+<P>
+Bernard Parisse
+<BR>
+Ma&#238;tre de Conf&#233;rences &#224; l'Universit&#233; de Grenoble I
+<BR>
+D&#233;veloppeur du logiciel de calcul formel <TT>giac</TT> et de son interface 
+<TT>Xcas</TT>.
+La version &#224; jour se r&#233;cup&#232;re sur ;
+<BR><TT>http://www-fourier.ujf-grenoble.fr/<IMG
+ WIDTH="6" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.png"
+ ALT="$ \tilde{{ }}$">parisse/giac.html</TT>
+
+<P>
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html9"
+  HREF="node1.html">Index</A>
+<LI><A NAME="tex2html10"
+  HREF="node2.html">Table des mati&#232;res</A>
+<LI><A NAME="tex2html11"
+  HREF="node3.html">Pour commencer</A>
+<UL>
+<LI><A NAME="tex2html12"
+  HREF="node4.html">Style de l'index et notations</A>
+<UL>
+<LI><A NAME="tex2html13"
+  HREF="node5.html">Notes concernant l'index de ce manuel</A>
+<LI><A NAME="tex2html14"
+  HREF="node6.html">Remarques concernant les notations</A>
+</UL>
+<LI><A NAME="tex2html15"
+  HREF="node7.html">La librairie <TT>giac</TT> et de ses interfaces sous Unix</A>
+<UL>
+<LI><A NAME="tex2html16"
+  HREF="node8.html">Interface <TT>Xcas</TT></A>
+<LI><A NAME="tex2html17"
+  HREF="node9.html">Interface en ligne de commande</A>
+<LI><A NAME="tex2html18"
+  HREF="node10.html">Interface <TT>texmacs</TT></A>
+<LI><A NAME="tex2html19"
+  HREF="node11.html">Interface <TT>emacs</TT></A>
+<LI><A NAME="tex2html20"
+  HREF="node12.html">Utilisation dans un programme ou un module <TT>C++</TT></A>
+<LI><A NAME="tex2html21"
+  HREF="node13.html">Savoir avec quelle version on travaille : <TT>version giac</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html22"
+  HREF="node14.html">L'interface <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html23"
+  HREF="node15.html">Mise en route de l'interface <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html24"
+  HREF="node16.html">Sous Unix</A>
+<LI><A NAME="tex2html25"
+  HREF="node17.html">Sous Windows</A>
+<LI><A NAME="tex2html26"
+  HREF="node18.html">Sous MacOS</A>
+</UL>
+<LI><A NAME="tex2html27"
+  HREF="node19.html">Les diff&#233;rents  niveaux d'entr&#233;e</A>
+<LI><A NAME="tex2html28"
+  HREF="node20.html">Que voit-on  au d&#233;marrage ?</A>
+<LI><A NAME="tex2html29"
+  HREF="node21.html">Les menus</A>
+<UL>
+<LI><A NAME="tex2html30"
+  HREF="node22.html">Le menu <TT>Fich</TT></A>
+<LI><A NAME="tex2html31"
+  HREF="node23.html">Le menu <TT>Edit</TT></A>
+<LI><A NAME="tex2html32"
+  HREF="node24.html">Le menu <TT>Cfg</TT></A>
+<LI><A NAME="tex2html33"
+  HREF="node25.html">Le menu <TT>Aide</TT></A>
+<LI><A NAME="tex2html34"
+  HREF="node26.html">Les menus des commandes de calcul</A>
+<UL>
+<LI><A NAME="tex2html35"
+  HREF="node27.html">D&#233;scription des menus des commandes de calcul</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html36"
+  HREF="node28.html">Comment bien g&#233;rer son espace de travail</A>
+<UL>
+<LI><A NAME="tex2html37"
+  HREF="node29.html">Pour s&#233;lectionner ou d&#233;s&#233;lectionner un niveau</A>
+<LI><A NAME="tex2html38"
+  HREF="node30.html">Pour remplir les niveaux</A>
+</UL>
+<LI><A NAME="tex2html39"
+  HREF="node31.html">Les diff&#233;rentes configurations</A>
+<UL>
+<LI><A NAME="tex2html40"
+  HREF="node32.html">Configuration du Cas</A>
+<LI><A NAME="tex2html41"
+  HREF="node33.html">Configuration du graphique avec le menu <TT>Cfg<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Configuration graphique</TT></A>
+<LI><A NAME="tex2html42"
+  HREF="node34.html">Configuration g&#233;n&#233;rale</A>
+</UL>
+<LI><A NAME="tex2html43"
+  HREF="node35.html">Les diff&#233;rentes configurations avec les commandes</A>
+<UL>
+<LI><A NAME="tex2html44"
+  HREF="node36.html">Le fichier <TT>.xcasrc</TT></A>
+<LI><A NAME="tex2html45"
+  HREF="node37.html">La configuration g&#233;n&#233;rale et la fonction : <TT>widget_size</TT></A>
+<LI><A NAME="tex2html46"
+  HREF="node38.html">La configuration du cas avec la fonction : <TT>cas_setup</TT></A>
+<LI><A NAME="tex2html47"
+  HREF="node39.html">Nombres de chiffres significatifs : <TT>Digits DIGITS</TT></A>
+<LI><A NAME="tex2html48"
+  HREF="node40.html">Choix du mode de langage <TT>Xcas</TT> ou Maple ou MuPad ou TI89 : <TT>maple_mode</TT></A>
+<LI><A NAME="tex2html49"
+  HREF="node41.html">Choix de l'unit&#233; d'angle : <TT>angle_radian</TT></A>
+<LI><A NAME="tex2html50"
+  HREF="node42.html">Choix du mode approximatif ou exact : <TT>approx_mode</TT></A>
+<LI><A NAME="tex2html51"
+  HREF="node43.html">Choix du mode r&#233;el ou complexe : <TT>complex_mode</TT></A>
+<LI><A NAME="tex2html52"
+  HREF="node44.html">Variables r&#233;elles ou complexes : <TT>complex_variables</TT></A>
+</UL>
+<LI><A NAME="tex2html53"
+  HREF="node45.html">L'aide</A>
+<UL>
+<LI><A NAME="tex2html54"
+  HREF="node46.html">Aide g&#233;n&#233;rale</A>
+<LI><A NAME="tex2html55"
+  HREF="node47.html">Aide sur une fonction : <TT>findhelp</TT> ou <TT>?</TT></A>
+</UL>
+<LI><A NAME="tex2html56"
+  HREF="node48.html">Sauver et imprimer</A>
+<UL>
+<LI><A NAME="tex2html57"
+  HREF="node49.html">Pour sauver une session</A>
+<LI><A NAME="tex2html58"
+  HREF="node50.html">Pour sauver un tableur</A>
+<LI><A NAME="tex2html59"
+  HREF="node51.html">Pour sauver un programme</A>
+<LI><A NAME="tex2html60"
+  HREF="node52.html">Pour imprimer</A>
+</UL>
+<LI><A NAME="tex2html61"
+  HREF="node53.html">Traduction Latex</A>
+<UL>
+<LI><A NAME="tex2html62"
+  HREF="node54.html">Traduction Latex d'une entr&#233;e : <TT>latex TeX</TT></A>
+<LI><A NAME="tex2html63"
+  HREF="node55.html">Imprimer la session ou/et la convertir en un fichier Latex</A>
+<LI><A NAME="tex2html64"
+  HREF="node56.html">Traduction Latex d'un &#233;cran de g&#233;om&#233;trie</A>
+<LI><A NAME="tex2html65"
+  HREF="node57.html">Traduction Latex de l'&#233;cran <TT>DispG</TT></A>
+<LI><A NAME="tex2html66"
+  HREF="node58.html">Traduction Latex de l'&#233;cran <TT>3D</TT> : <TT>graph3d2tex</TT></A>
+</UL>
+<LI><A NAME="tex2html67"
+  HREF="node59.html">Traduction Mathml</A>
+<UL>
+<LI><A NAME="tex2html68"
+  HREF="node60.html">Traduction Mathml d'une expression : <TT>mathml</TT></A>
+<LI><A NAME="tex2html69"
+  HREF="node61.html">Traduction Mathml du tableur </A>
+</UL>
+<LI><A NAME="tex2html70"
+  HREF="node62.html">Traduction de fichiers Maple en fichier <TT>Xcas</TT> ou Mupad</A>
+<UL>
+<LI><A NAME="tex2html71"
+  HREF="node63.html">Fichier Maple traduit en fichier <TT>Xcas</TT> : <TT>maple2xcas</TT></A>
+<LI><A NAME="tex2html72"
+  HREF="node64.html">Fichier Maple traduit en fichier Mupad : <TT>maple2mupad</TT></A>
+</UL>
+<LI><A NAME="tex2html73"
+  HREF="node65.html">Traduction d'un fichier Mupad en un fichier <TT>Xcas</TT> ou Maple </A>
+<UL>
+<LI><A NAME="tex2html74"
+  HREF="node66.html">Fichier Mupad traduit en fichier <TT>Xcas</TT> : <TT>mupad2xcas</TT></A>
+<LI><A NAME="tex2html75"
+  HREF="node67.html">Fichier Mupad traduit en fichier Maple : <TT>mupad2maple</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html76"
+  HREF="node68.html">Saisie</A>
+<UL>
+<LI><A NAME="tex2html77"
+  HREF="node69.html">Pour &#233;crire un commentaire : <TT>Alt+c</TT></A>
+<LI><A NAME="tex2html78"
+  HREF="node70.html">L'&#233;diteur d'&#233;quation</A>
+<UL>
+<LI><A NAME="tex2html79"
+  HREF="node71.html">Comment &#233;diter une &#233;quation</A>
+<LI><A NAME="tex2html80"
+  HREF="node72.html">Comment s&#233;lectionner</A>
+<LI><A NAME="tex2html81"
+  HREF="node73.html">Comment &#233;diter une cha&#238;ne de caract&#232;res</A>
+<LI><A NAME="tex2html82"
+  HREF="node74.html">Utilit&#233; de l'&#233;diteur d'&#233;quation</A>
+</UL>
+<LI><A NAME="tex2html83"
+  HREF="node75.html">Les &#233;diteurs de matrices et les tableurs</A>
+<UL>
+<LI><A NAME="tex2html84"
+  HREF="node76.html">Les sauvegardes d'un tableur</A>
+<LI><A NAME="tex2html85"
+  HREF="node77.html">Les menus d'un tableur</A>
+<LI><A NAME="tex2html86"
+  HREF="node78.html">La configuration d'un tableur</A>
+<LI><A NAME="tex2html87"
+  HREF="node79.html">Les boutons d'un tableur</A>
+</UL>
+<LI><A NAME="tex2html88"
+  HREF="node80.html">Les commandes d'effacement</A>
+<UL>
+<LI><A NAME="tex2html89"
+  HREF="node81.html">Effacer dans le tableur</A>
+<LI><A NAME="tex2html90"
+  HREF="node82.html">Effacer l'&#233;cran <TT>DispG</TT> de g&#233;om&#233;trie : <TT>ClrGraph ClrDraw</TT></A>
+<LI><A NAME="tex2html91"
+  HREF="node83.html">Effacer les &#233;crans de g&#233;om&#233;trie : <TT>erase</TT></A>
+<LI><A NAME="tex2html92"
+  HREF="node84.html">Effacer une ligne de commande : touche <TT>esc</TT></A>
+<LI><A NAME="tex2html93"
+  HREF="node85.html">Effacer les noms des variables d'une seule lettre minuscule : <TT>rm_a_z</TT></A>
+<LI><A NAME="tex2html94"
+  HREF="node86.html">Effacer toutes les variables : <TT>rm_all_vars</TT></A>
+</UL>
+<LI><A NAME="tex2html95"
+  HREF="node87.html">Les variables</A>
+<UL>
+<LI><A NAME="tex2html96"
+  HREF="node88.html">Le nom des variables et la variable <TT>CST</TT></A>
+<LI><A NAME="tex2html97"
+  HREF="node89.html">L'affectation : <TT>:= =&gt; sto Store</TT></A>
+<LI><A NAME="tex2html98"
+  HREF="node90.html">L'affectation par référence dans une variable (contenant un &#233;l&#233;ment d'une liste ou d'une matrice : <TT>=&lt; </TT></A>
+<LI><A NAME="tex2html99"
+  HREF="node91.html">L'incr&#233;mentation d'une variable : <TT>+= -= *= /=</TT></A>
+<LI><A NAME="tex2html100"
+  HREF="node92.html">Archiver et d&#233;sarchiver des variables et leur contenu : <TT>archive unarchive</TT></A>
+<LI><A NAME="tex2html101"
+  HREF="node93.html">Copier sans l'&#233;valuer le contenu d'une variable : <TT>CopyVar</TT></A>
+<LI><A NAME="tex2html102"
+  HREF="node94.html">Faire une hypoth&#232;se sur une variable : <TT>assume</TT></A>
+<LI><A NAME="tex2html103"
+  HREF="node95.html">Connaitre les hypoth&#232;ses faites sur une variable : <TT>about</TT></A>
+<LI><A NAME="tex2html104"
+  HREF="node96.html">Effacer le contenu d'une variable : <TT>purge DelVar</TT></A>
+<LI><A NAME="tex2html105"
+  HREF="node97.html">Effacer le contenu de toutes les variables : <TT>restart</TT></A>
+<LI><A NAME="tex2html106"
+  HREF="node98.html">Acc&#232;s aux r&#233;ponses : <TT>ans(n)</TT></A>
+<LI><A NAME="tex2html107"
+  HREF="node99.html">Pour ne pas afficher la r&#233;ponse : <TT>nodisp :;</TT></A>
+<LI><A NAME="tex2html108"
+  HREF="node100.html">Acc&#232;s aux questions : <TT>quest(n)</TT></A>
+</UL>
+<LI><A NAME="tex2html109"
+  HREF="node101.html">Les r&#233;pertoires</A>
+<UL>
+<LI><A NAME="tex2html110"
+  HREF="node102.html">Comment cr&#233;er un r&#233;p&#233;rtoire sur v&#244;tre disque dur</A>
+<LI><A NAME="tex2html111"
+  HREF="node103.html">Comment sauver un fichier dans un r&#233;p&#233;rtoire de v&#244;tre disque dur</A>
+<LI><A NAME="tex2html112"
+  HREF="node104.html">Comment cr&#233;er un r&#233;p&#233;rtoire de travail : <TT>NewFold</TT></A>
+<LI><A NAME="tex2html113"
+  HREF="node105.html">Comment aller dans un r&#233;p&#233;rtoire de travail : <TT>SetFold</TT></A>
+<LI><A NAME="tex2html114"
+  HREF="node106.html">Nom du r&#233;p&#233;rtoire en cours : <TT>GetFold</TT></A>
+<LI><A NAME="tex2html115"
+  HREF="node107.html">Effacer un r&#233;p&#233;rtoire vide : <TT>DelFold</TT></A>
+<LI><A NAME="tex2html116"
+  HREF="node108.html">Comment connaitre les variables et les r&#233;p&#233;rtoires cr&#233;&#233;s : <TT>VARS</TT></A>
+<LI><A NAME="tex2html117"
+  HREF="node109.html">Lire un fichier depuis <TT>Xcas</TT> : <TT>read</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html118"
+  HREF="node110.html">Le graphique</A>
+<UL>
+<LI><A NAME="tex2html119"
+  HREF="node111.html">L'&#233;cran graphique et ses boutons</A>
+<LI><A NAME="tex2html120"
+  HREF="node112.html">La configuration de l'&#233;cran graphique</A>
+<LI><A NAME="tex2html121"
+  HREF="node113.html">Configuration graphique avec <TT>cfg</TT></A>
+<LI><A NAME="tex2html122"
+  HREF="node114.html">Pour transformer un  graphique en un fichier Latex</A>
+<LI><A NAME="tex2html123"
+  HREF="node115.html">Menu Maths, sous-menu Graphe : Dessiner s&#233;lection</A>
+<LI><A NAME="tex2html124"
+  HREF="node116.html">Graphe d'une fonction : <TT>plotfunc funcplot DrawFunc Graph</TT></A>
+<UL>
+<LI><A NAME="tex2html125"
+  HREF="node117.html">Graphe en 2D</A>
+<LI><A NAME="tex2html126"
+  HREF="node118.html">Graphe en 3D</A>
+<LI><A NAME="tex2html127"
+  HREF="node119.html">Graphe "3D" avec les couleurs de l'arc en ciel</A>
+<LI><A NAME="tex2html128"
+  HREF="node120.html">Graphe en "4D"</A>
+</UL>
+<LI><A NAME="tex2html129"
+  HREF="node121.html">Graphe 2D pour compatibilit&#233; Maple : <TT>plot graphe</TT></A>
+<LI><A NAME="tex2html130"
+  HREF="node122.html">Surface 3D pour compatibilit&#233; Maple <TT>plot3d graphe3d</TT></A>
+<LI><A NAME="tex2html131"
+  HREF="node123.html">Graphe d'une droite et les tangentes &#224; un graphe</A>
+<UL>
+<LI><A NAME="tex2html132"
+  HREF="node124.html">Trac&#233; d'une droite : <TT>line droite</TT></A>
+<LI><A NAME="tex2html133"
+  HREF="node125.html">Trac&#233; d'une droite horizontale en 2D : <TT>LineHorz</TT></A>
+<LI><A NAME="tex2html134"
+  HREF="node126.html">Trac&#233; d'une droite verticale en 2D : <TT>LineVert</TT></A>
+<LI><A NAME="tex2html135"
+  HREF="node127.html">Tangente &#224; un graphe en 2D : <TT>LineTan droite_tangente</TT></A>
+<LI><A NAME="tex2html136"
+  HREF="node128.html">Tangente en un point d'un graphe en 2D : <TT>tangent tangente</TT></A>
+<LI><A NAME="tex2html137"
+  HREF="node129.html">Trac&#233; d'une droite donnée par un point et sa pente : <TT>DrawSlp</TT></A>
+<LI><A NAME="tex2html138"
+  HREF="node130.html">Pente d'une droite : <TT>slope pente</TT></A>
+<LI><A NAME="tex2html139"
+  HREF="node131.html">Intersection d'un graphe en 2D  avec les axes</A>
+</UL>
+<LI><A NAME="tex2html140"
+  HREF="node132.html">Repr&#233;sentation graphique d'in&#233;quations &#224; 2 variables : <TT>plotinequation inequationplot</TT></A>
+<LI><A NAME="tex2html141"
+  HREF="node133.html">Repr&#233;sentation graphique de l'aire sous une courbe : <TT>plotarea areaplot</TT></A>
+<LI><A NAME="tex2html142"
+  HREF="node134.html">Lignes de niveaux : <TT>plotcontour contourplot 
+<BR>
+DrwCtour</TT></A>
+<LI><A NAME="tex2html143"
+  HREF="node135.html">Graphe d'une fonction par niveaux de couleurs : <TT>plotdensity densityplot</TT></A>
+<LI><A NAME="tex2html144"
+  HREF="node136.html">Courbe en implicite : <TT>plotimplicit implicitplot</TT></A>
+<UL>
+<LI><A NAME="tex2html145"
+  HREF="node137.html">Courbe implicite en 2D</A>
+<LI><A NAME="tex2html146"
+  HREF="node138.html">Surface implicite en 3D</A>
+</UL>
+<LI><A NAME="tex2html147"
+  HREF="node139.html">Courbe et surface en param&#233;trique : <TT>plotparam paramplot DrawParm courbe_parametrique</TT></A>
+<UL>
+<LI><A NAME="tex2html148"
+  HREF="node140.html">Courbe 2D en param&#233;trique</A>
+<LI><A NAME="tex2html149"
+  HREF="node141.html">Surface 3D en param&#233;trique : <TT>plotparam paramplot DrawParm courbe_parametrique</TT></A>
+</UL>
+<LI><A NAME="tex2html150"
+  HREF="node142.html">Courbe en polaire : <TT>plotpolar polarplot DrawPol courbe_polaire</TT></A>
+<LI><A NAME="tex2html151"
+  HREF="node143.html">Trac&#233; d'une suite r&#233;currente : <TT>plotseq seqplot graphe_suite</TT></A>
+<LI><A NAME="tex2html152"
+  HREF="node144.html">Le champ des tangentes : <TT>plotfield
+    fieldplot</TT></A>
+<LI><A NAME="tex2html153"
+  HREF="node145.html">Trac&#233; de solutions d'&#233;quation diff&#233;rentielle : 
+<TT>plotode odeplot</TT></A>
+<LI><A NAME="tex2html154"
+  HREF="node146.html">Trac&#233; interactif des solutions d'&#233;quation diff&#233;rentielle : <TT>interactive_plotode interactive_odeplot</TT></A>
+<LI><A NAME="tex2html155"
+  HREF="node147.html">Trac&#233; interactif des solutions d'&#233;quation diff&#233;rentielle dans un niveau de g&#233;om&#233;trie : <TT>plotfield fieldplot</TT> et <TT>plotode odeplot</TT></A>
+<LI><A NAME="tex2html156"
+  HREF="node148.html">Faire une animation en 2D, 3D ou "4D"</A>
+<UL>
+<LI><A NAME="tex2html157"
+  HREF="node149.html">Animation d'un graphe 2D&nbsp;:<TT>animate</TT></A>
+<LI><A NAME="tex2html158"
+  HREF="node150.html">Animation d'un graphe 3D&nbsp;:<TT>animate3d</TT></A>
+<LI><A NAME="tex2html159"
+  HREF="node151.html">Animation d'une s&#233;quence d'objets graphiques&nbsp;:<TT>animation</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html160"
+  HREF="node152.html">Calcul num&#233;rique</A>
+<UL>
+<LI><A NAME="tex2html161"
+  HREF="node153.html">Codage des r&#233;els et des d&#233;cimaux</A>
+<UL>
+<LI><A NAME="tex2html162"
+  HREF="node154.html">Un exemple : codage de  3.1 et de 3</A>
+<LI><A NAME="tex2html163"
+  HREF="node155.html">Diff&#233;rence de codage entre (3.1-3) et 0.1</A>
+</UL>
+<LI><A NAME="tex2html164"
+  HREF="node156.html">&#201;valuation des r&#233;els : <TT>evalf approx</TT> et <TT>Digits</TT></A>
+<LI><A NAME="tex2html165"
+  HREF="node157.html">Quelques fonctions</A>
+<UL>
+<LI><A NAME="tex2html166"
+  HREF="node158.html">Solution approch&#233;e d'une &#233;quation : <TT>newton</TT></A>
+<LI><A NAME="tex2html167"
+  HREF="node159.html">Calcul approch&#233; du nombre dérivé : <TT>nDeriv</TT></A>
+<LI><A NAME="tex2html168"
+  HREF="node160.html">Calcul approch&#233; d'int&#232;grales : <TT>romberg nInt</TT></A>
+<LI><A NAME="tex2html169"
+  HREF="node161.html">Solution approch&#233;e de y'=f(t,y) : <TT>    odesolve</TT></A>
+<LI><A NAME="tex2html170"
+  HREF="node162.html">Solution approch&#233;e du syst&#232;me v'=f(t,v) : <TT>    odesolve</TT></A>
+</UL>
+<LI><A NAME="tex2html171"
+  HREF="node163.html">R&#233;solution d'&#233;quations avec <TT>nSolve</TT></A>
+<LI><A NAME="tex2html172"
+  HREF="node164.html">R&#233;solution d'&#233;quations avec <TT>fsolve</TT></A>
+<UL>
+<LI><A NAME="tex2html173"
+  HREF="node165.html"><TT>fsolve</TT> avec l'option <TT>bisection_solver</TT></A>
+<LI><A NAME="tex2html174"
+  HREF="node166.html"><TT>fsolve</TT> avec l'option <TT>brent_solver</TT></A>
+<LI><A NAME="tex2html175"
+  HREF="node167.html"><TT>fsolve</TT> avec l'option <TT>falsepos_solver</TT></A>
+<LI><A NAME="tex2html176"
+  HREF="node168.html"><TT>fsolve</TT> avec l'option <TT>newton_solver</TT></A>
+<LI><A NAME="tex2html177"
+  HREF="node169.html"><TT>fsolve</TT> avec l'option <TT>secant_solver</TT></A>
+<LI><A NAME="tex2html178"
+  HREF="node170.html"><TT>fsolve</TT> avec l'option <TT>steffenson_solver</TT></A>
+</UL>
+<LI><A NAME="tex2html179"
+  HREF="node171.html">R&#233;solution des syst&#232;mes d'&#233;quations avec <TT>fsolve</TT></A>
+<UL>
+<LI><A NAME="tex2html180"
+  HREF="node172.html"><TT>fsolve</TT> avec l'option <TT>dnewton_solver</TT></A>
+<LI><A NAME="tex2html181"
+  HREF="node173.html"><TT>fsolve</TT> avec l'option <TT>hybrid_solver</TT></A>
+<LI><A NAME="tex2html182"
+  HREF="node174.html"><TT>fsolve</TT> avec l'option <TT>hybrids_solver</TT></A>
+<LI><A NAME="tex2html183"
+  HREF="node175.html"><TT>fsolve</TT> avec l'option <TT>newtonj_solver</TT></A>
+<LI><A NAME="tex2html184"
+  HREF="node176.html"><TT>fsolve</TT> avec l'option <TT>hybridj_solver</TT></A>
+<LI><A NAME="tex2html185"
+  HREF="node177.html"><TT>fsolve</TT> avec l'option <TT>hybridsj_solver</TT></A>
+</UL>
+<LI><A NAME="tex2html186"
+  HREF="node178.html">Racines num&#233;riques d'un polyn&#244;me : <TT>proot</TT></A>
+<LI><A NAME="tex2html187"
+  HREF="node179.html">Factorisation num&#233;rique d'une matrice : <TT>cholesky qr lu svd</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html188"
+  HREF="node180.html">Les unit&#233;s et les constantes physiques</A>
+<UL>
+<LI><A NAME="tex2html189"
+  HREF="node181.html">Les unit&#233;s</A>
+<UL>
+<LI><A NAME="tex2html190"
+  HREF="node182.html">La notation des unit&#233;s</A>
+<LI><A NAME="tex2html191"
+  HREF="node183.html">Les calculs avec des unit&#233;s</A>
+<LI><A NAME="tex2html192"
+  HREF="node184.html">Les changements d'unit&#233;s en unit&#233;s MKSA : <TT>mksa</TT></A>
+<LI><A NAME="tex2html193"
+  HREF="node185.html">Les conversions d'unit&#233;s : <TT>convert convertir</TT></A>
+<LI><A NAME="tex2html194"
+  HREF="node186.html">Mise en facteur d'une unit&#233; : <TT>ufactor</TT></A>
+<LI><A NAME="tex2html195"
+  HREF="node187.html">Simplifier une unit&#233; : <TT>usimplify</TT></A>
+<LI><A NAME="tex2html196"
+  HREF="node188.html">Les pr&#233;fixes disponibles pour les noms d'unit&#233;s</A>
+</UL>
+<LI><A NAME="tex2html197"
+  HREF="node189.html">Les constantes physiques</A>
+<UL>
+<LI><A NAME="tex2html198"
+  HREF="node190.html">La notation des constantes physiques</A>
+<LI><A NAME="tex2html199"
+  HREF="node191.html">Biblioth&#232;que des  constantes physiques</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html200"
+  HREF="node192.html">Les fonctions de calcul formel</A>
+<UL>
+<LI><A NAME="tex2html201"
+  HREF="node193.html">Les constantes symboliques : <TT>e pi infinity i</TT></A>
+<LI><A NAME="tex2html202"
+  HREF="node194.html">Les bool&#233;ens</A>
+<UL>
+<LI><A NAME="tex2html203"
+  HREF="node195.html">Les valeurs d'un bool&#233;en : <TT>true false</TT></A>
+<LI><A NAME="tex2html204"
+  HREF="node196.html">Les tests : <TT>==, !=, &gt;, &gt;=, &lt;, &lt;=</TT></A>
+<LI><A NAME="tex2html205"
+  HREF="node197.html">Les op&#233;rateurs bool&#233;ens : <TT>or xor and not</TT></A>
+<LI><A NAME="tex2html206"
+  HREF="node198.html">Transformer une expression en liste : <TT>exp2list</TT></A>
+</UL>
+<LI><A NAME="tex2html207"
+  HREF="node199.html">&#201;valuation des bool&#233;ens : <TT>evalb</TT></A>
+<LI><A NAME="tex2html208"
+  HREF="node200.html">Les op&#233;rateurs bit &#224; bit</A>
+<UL>
+<LI><A NAME="tex2html209"
+  HREF="node201.html">Les op&#233;rateurs <TT>bitor, bitxor, bitand</TT></A>
+<LI><A NAME="tex2html210"
+  HREF="node202.html">Distance de Hamming bit à bit : <TT>hamdist</TT></A>
+</UL>
+<LI><A NAME="tex2html211"
+  HREF="node203.html">Les cha&#238;nes de caract&#232;res</A>
+<UL>
+<LI><A NAME="tex2html212"
+  HREF="node204.html">&#201;criture d'une cha&#238;ne ou d'un caract&#232;re : <TT>"</TT></A>
+<LI><A NAME="tex2html213"
+  HREF="node205.html">D&#233;but milieu et fin d'une cha&#238;ne : <TT>head mid tail</TT></A>
+<LI><A NAME="tex2html214"
+  HREF="node206.html">Concat&#233;nation d'une suite de mots : <TT>cumSum</TT></A>
+<LI><A NAME="tex2html215"
+  HREF="node207.html">Le code ASCII d'un caract&#232;re : <TT>ord</TT></A>
+<LI><A NAME="tex2html216"
+  HREF="node208.html">Le code ASCII d'une cha&#238;ne : <TT>asc</TT></A>
+<LI><A NAME="tex2html217"
+  HREF="node209.html">La cha&#238;ne associ&#233;e &#224; une suite d'ASCII : <TT>char</TT></A>
+<LI><A NAME="tex2html218"
+  HREF="node210.html">Rep&#233;rer un caract&#232;re dans une cha&#238;ne : <TT>inString</TT></A>
+<LI><A NAME="tex2html219"
+  HREF="node211.html">Concat&#233;ner des objets en une cha&#238;ne : <TT>cat</TT></A>
+<LI><A NAME="tex2html220"
+  HREF="node212.html">Concat&#233;ner des objets en une cha&#238;ne : <TT>+</TT></A>
+<LI><A NAME="tex2html221"
+  HREF="node213.html">Pour transformer un nombre entier en une cha&#238;ne : <TT>cat +</TT></A>
+<LI><A NAME="tex2html222"
+  HREF="node214.html">Pour transformer une cha&#238;ne en un nombre : <TT>expr</TT></A>
+</UL>
+<LI><A NAME="tex2html223"
+  HREF="node215.html">&#201;criture en base b d'un entier</A>
+<UL>
+<LI><A NAME="tex2html224"
+  HREF="node216.html">Transformer un entier en la liste des coefficients de son &#233;criture en base b : <TT>convert convertir</TT></A>
+<LI><A NAME="tex2html225"
+  HREF="node217.html">Transformer la liste des coefficients d' une &#233;criture en base b en un entier : <TT>convert convertir</TT></A>
+</UL>
+<LI><A NAME="tex2html226"
+  HREF="node218.html">Les entiers (et les entiers de Gauss)</A>
+<UL>
+<LI><A NAME="tex2html227"
+  HREF="node219.html">La factorielle : <TT>factorial</TT></A>
+<LI><A NAME="tex2html228"
+  HREF="node220.html">Le PGCD : <TT>gcd igcd</TT></A>
+<LI><A NAME="tex2html229"
+  HREF="node221.html">Le PGCD : <TT>Gcd</TT></A>
+<LI><A NAME="tex2html230"
+  HREF="node222.html">Le PGCD d'une liste d'entiers : <TT>lgcd</TT></A>
+<LI><A NAME="tex2html231"
+  HREF="node223.html">Le PPCM : <TT>lcm</TT></A>
+<LI><A NAME="tex2html232"
+  HREF="node224.html">Factoriser un entier : <TT>ifactor factoriser_entier</TT></A>
+<LI><A NAME="tex2html233"
+  HREF="node225.html">Liste des facteurs d'un entier : <TT>ifactors facteurs_premiers</TT></A>
+<LI><A NAME="tex2html234"
+  HREF="node226.html">Matrice des facteurs d'un entier : <TT>maple_ifactors</TT></A>
+<LI><A NAME="tex2html235"
+  HREF="node227.html">Liste des diviseurs d'un entier : <TT>idivis divisors</TT></A>
+<LI><A NAME="tex2html236"
+  HREF="node228.html">Quotient entier de la division euclidienne : <TT>iquo intDiv</TT></A>
+<LI><A NAME="tex2html237"
+  HREF="node229.html">Reste entier de la division euclidienne : <TT>irem remain smod mods mod %</TT></A>
+<LI><A NAME="tex2html238"
+  HREF="node230.html">Le quotient et le reste de la division euclidienne : <TT>iquorem</TT></A>
+<LI><A NAME="tex2html239"
+  HREF="node231.html">Test de parit&#233; : <TT>even est_pair</TT></A>
+<LI><A NAME="tex2html240"
+  HREF="node232.html">Test de non parit&#233; : <TT>odd est_impair</TT></A>
+<LI><A NAME="tex2html241"
+  HREF="node233.html">Test de pseudo-primalit&#233; : <TT>is_pseudoprime</TT></A>
+<LI><A NAME="tex2html242"
+  HREF="node234.html">Test de primalit&#233; : <TT>is_prime isprime isPrime</TT></A>
+<LI><A NAME="tex2html243"
+  HREF="node235.html">Nombre pseudo-premier apr&#232;s <TT>n</TT> : <TT>nextprime</TT></A>
+<LI><A NAME="tex2html244"
+  HREF="node236.html">Nombre pseudo-premier avant <TT>n</TT> : <TT>prevprime</TT></A>
+<LI><A NAME="tex2html245"
+  HREF="node237.html">Le <TT>n</TT>-i&#232;me nombre premier : <TT>ithprime</TT></A>
+<LI><A NAME="tex2html246"
+  HREF="node238.html">Identit&#233; de B&#233;zout : <TT>iegcd igcdex bezout_entiers</TT></A>
+<LI><A NAME="tex2html247"
+  HREF="node239.html">R&#233;solution de au+bv=c dans <!-- MATH
+ ${\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>iabcuv</TT></A>
+<LI><A NAME="tex2html248"
+  HREF="node240.html">Reste chinois : <TT>ichinrem, ichrem</TT></A>
+<LI><A NAME="tex2html249"
+  HREF="node241.html">Reste chinois pour des listes d'entiers: <TT>chrem</TT></A>
+<LI><A NAME="tex2html250"
+  HREF="node242.html">R&#233;solution de <I>a</I><SUP>2</SUP> + <I>b</I><SUP>2</SUP> = <I>p</I> dans <!-- MATH
+ ${\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>pa2b2</TT></A>
+<LI><A NAME="tex2html251"
+  HREF="node243.html">Indicatrice d'Euler : <TT>euler Phi</TT></A>
+<LI><A NAME="tex2html252"
+  HREF="node244.html">Symbole de Legendre : <TT>legendre_symbol</TT></A>
+<LI><A NAME="tex2html253"
+  HREF="node245.html">Symbole de Jacobi : <TT>jacobi_symbol</TT></A>
+</UL>
+<LI><A NAME="tex2html254"
+  HREF="node246.html">Analyse combinatoire</A>
+<UL>
+<LI><A NAME="tex2html255"
+  HREF="node247.html">La factorielle : <TT>factorial  !</TT></A>
+<LI><A NAME="tex2html256"
+  HREF="node248.html">Les coefficients binomiaux : <TT>binomial comb nCr</TT></A>
+<LI><A NAME="tex2html257"
+  HREF="node249.html">Les arrangements : <TT>perm nPr</TT></A>
+<LI><A NAME="tex2html258"
+  HREF="node250.html">Les nombres entiers al&#233;atoires : <TT>rand hasard</TT></A>
+</UL>
+<LI><A NAME="tex2html259"
+  HREF="node251.html">Les rationnels</A>
+<UL>
+<LI><A NAME="tex2html260"
+  HREF="node252.html">Transformer un nombre d&#233;cimal en rationnel : <TT>float2rational exact</TT></A>
+<LI><A NAME="tex2html261"
+  HREF="node253.html">Partie enti&#232;re et fractionnaire : <TT>propfrac propFrac</TT></A>
+<LI><A NAME="tex2html262"
+  HREF="node254.html">Num&#233;rateur d'une fraction apr&#232;s simplification : <TT>numer</TT>, <TT>getNum</TT></A>
+<LI><A NAME="tex2html263"
+  HREF="node255.html">D&#233;nominateur d'une fraction  apr&#232;s simplification : <TT>denom getDenom</TT></A>
+<LI><A NAME="tex2html264"
+  HREF="node256.html">Num&#233;rateur et d&#233;nominateur d'une fraction : <TT>f2nd fxnd</TT></A>
+<LI><A NAME="tex2html265"
+  HREF="node257.html">Simplification d'un couple : <TT>simp2</TT></A>
+<LI><A NAME="tex2html266"
+  HREF="node258.html">D&#233;veloppement en fraction continue d'un r&#233;el : <TT>dfc</TT></A>
+<LI><A NAME="tex2html267"
+  HREF="node259.html">Transformer une fraction continue en un r&#233;el : <TT>dfc2f</TT></A>
+<LI><A NAME="tex2html268"
+  HREF="node260.html">Le <!-- MATH
+ $n^{i\`eme}$
+ -->
+<I>n</I><SUP>i&#232;me</SUP> nombre de Bernoulli : <TT>bernoulli</TT></A>
+<LI><A NAME="tex2html269"
+  HREF="node261.html">Accès aux fonctions de PARI/GP: commande <TT>pari</TT></A>
+</UL>
+<LI><A NAME="tex2html270"
+  HREF="node262.html">Les r&#233;els</A>
+<UL>
+<LI><A NAME="tex2html271"
+  HREF="node263.html">&#201;valuer un r&#233;el et nombre de digits : <TT>evalf</TT> et <TT>Digits</TT>, <TT>DIGITS</TT>)</A>
+<LI><A NAME="tex2html272"
+  HREF="node264.html">Les fonctions infix&#233;es de base sur les r&#233;els : <TT>+,-,*,/,^</TT></A>
+<LI><A NAME="tex2html273"
+  HREF="node265.html">Les fonctions prefix&#233;es de base sur les r&#233;els : <TT>rdiv</TT></A>
+<LI><A NAME="tex2html274"
+  HREF="node266.html">La fonction racine n-i&#232;me : <TT>root</TT></A>
+<LI><A NAME="tex2html275"
+  HREF="node267.html">La fonction <I>erf</I> : <TT>erf</TT></A>
+<LI><A NAME="tex2html276"
+  HREF="node268.html">La fonction <I>erfc</I> : <TT>erfc</TT></A>
+<LI><A NAME="tex2html277"
+  HREF="node269.html">La fonction <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$"> : <TT>Gamma</TT></A>
+<LI><A NAME="tex2html278"
+  HREF="node270.html">La fonction <IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$"> : <TT>Beta</TT></A>
+<LI><A NAME="tex2html279"
+  HREF="node271.html">Les derivées de la fonction DiGamma : <TT>Psi</TT></A>
+<LI><A NAME="tex2html280"
+  HREF="node272.html">La fonction <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \zeta$"> : <TT>Zeta</TT></A>
+<LI><A NAME="tex2html281"
+  HREF="node273.html">Les fonctions de Airy : <TT>Airy_Ai</TT> et <TT>Airy_Bi</TT></A>
+</UL>
+<LI><A NAME="tex2html282"
+  HREF="node274.html">Les permutations</A>
+<UL>
+<LI><A NAME="tex2html283"
+  HREF="node275.html">Permutation aléatoire : <TT>randperm</TT></A>
+<LI><A NAME="tex2html284"
+  HREF="node276.html">Permutation pr&#233;c&#233;dente : <TT>prevperm</TT></A>
+<LI><A NAME="tex2html285"
+  HREF="node277.html">Permutation suivante : <TT>nextperm</TT></A>
+<LI><A NAME="tex2html286"
+  HREF="node278.html">Décomposition en cycles : <TT>permu2cycles</TT></A>
+<LI><A NAME="tex2html287"
+  HREF="node279.html">Produit de cycles : <TT>cycles2permu</TT></A>
+<LI><A NAME="tex2html288"
+  HREF="node280.html">Transformer un cycle en permutation : <TT>cycle2perm</TT></A>
+<LI><A NAME="tex2html289"
+  HREF="node281.html">Transformer une permutation en une matrice : <TT>permu2mat</TT></A>
+<LI><A NAME="tex2html290"
+  HREF="node282.html">Reconnaitre une permutation : <TT>is_permu</TT></A>
+<LI><A NAME="tex2html291"
+  HREF="node283.html">Reconnaitre un cycle : <TT>is_cycle</TT></A>
+<LI><A NAME="tex2html292"
+  HREF="node284.html">Composition de deux permutations : <TT>p1op2</TT></A>
+<LI><A NAME="tex2html293"
+  HREF="node285.html">Produit d'un cycle et d'une permutation : <TT>c1op2</TT></A>
+<LI><A NAME="tex2html294"
+  HREF="node286.html">Produit d'une permutation et d'un cycle : <TT>p1oc2</TT></A>
+<LI><A NAME="tex2html295"
+  HREF="node287.html">Produit de deux cycles : <TT>c1oc2</TT></A>
+<LI><A NAME="tex2html296"
+  HREF="node288.html">Signature d'une permutation : <TT>signature</TT></A>
+<LI><A NAME="tex2html297"
+  HREF="node289.html">Inverse d'une permutation : <TT>perminv</TT></A>
+<LI><A NAME="tex2html298"
+  HREF="node290.html">Inverse d'un cycle : <TT>cycleinv</TT></A>
+<LI><A NAME="tex2html299"
+  HREF="node291.html">Ordre d'une permutation : <TT>permuorder</TT></A>
+<LI><A NAME="tex2html300"
+  HREF="node292.html">Groupe engendré par deux permutations : <TT>groupermu</TT></A>
+</UL>
+<LI><A NAME="tex2html301"
+  HREF="node293.html">Les complexes</A>
+<UL>
+<LI><A NAME="tex2html302"
+  HREF="node294.html">Les fonctions de base sur les complexes : <TT>+,-,*,/,^</TT></A>
+<LI><A NAME="tex2html303"
+  HREF="node295.html">La partie r&#233;elle d'un nombre complexe : <TT>re real</TT></A>
+<LI><A NAME="tex2html304"
+  HREF="node296.html">La partie imaginaire d'un nombre complexe : <TT>im imag</TT></A>
+<LI><A NAME="tex2html305"
+  HREF="node297.html">&#201;criture des complexes sous la forme <TT>re(z)+i*im(z)</TT> : <TT>evalc</TT></A>
+<LI><A NAME="tex2html306"
+  HREF="node298.html">Le module d'un nombre complexe : <TT>abs</TT></A>
+<LI><A NAME="tex2html307"
+  HREF="node299.html">L'argument d'un nombre complexe : <TT>arg</TT></A>
+<LI><A NAME="tex2html308"
+  HREF="node300.html">Le nombre complexe normalis&#233; : <TT>normalize unitV</TT></A>
+<LI><A NAME="tex2html309"
+  HREF="node301.html">Le nombre complexe conjugu&#233; : <TT>conj</TT></A>
+<LI><A NAME="tex2html310"
+  HREF="node302.html">Multiplier par le complexe conjugu&#233; : <TT>mult_c_conjugate multiplier_conjugue_complexe</TT></A>
+<LI><A NAME="tex2html311"
+  HREF="node303.html">Le barycentre de nombres complexes : <TT>barycenter barycentre</TT></A>
+</UL>
+<LI><A NAME="tex2html312"
+  HREF="node304.html">Les expressions alg&#233;briques</A>
+<UL>
+<LI><A NAME="tex2html313"
+  HREF="node305.html">Pour &#233;valuer une expression : <TT>eval</TT></A>
+<LI><A NAME="tex2html314"
+  HREF="node306.html">Pour &#233;valuer une expression en mode Maple: <TT>evala</TT></A>
+<LI><A NAME="tex2html315"
+  HREF="node307.html">Pour ne pas &#233;valuer une expression : <TT>quote hold ou '</TT></A>
+<LI><A NAME="tex2html316"
+  HREF="node308.html">Pour forcer &#224; &#233;valuer une expression : <TT>unquote</TT></A>
+<LI><A NAME="tex2html317"
+  HREF="node309.html">Distributivit&#233; : <TT>expand fdistrib developper</TT></A>
+<LI><A NAME="tex2html318"
+  HREF="node310.html">Forme canonique : <TT>canonical_form</TT></A>
+<LI><A NAME="tex2html319"
+  HREF="node311.html">Multiplier par la quantit&#233; conjugu&#233;e : <TT>mult_conjugate multiplier_conjugue</TT></A>
+<LI><A NAME="tex2html320"
+  HREF="node312.html">S&#233;paration des variables : <TT>split</TT></A>
+<LI><A NAME="tex2html321"
+  HREF="node313.html">Factorisation : <TT>factor factoriser</TT></A>
+<LI><A NAME="tex2html322"
+  HREF="node314.html">Factorisation dans <!-- MATH
+ $\mathcal C$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \mathcal {C}$"> : <TT>cFactor cfactor factoriser_sur_C</TT></A>
+<LI><A NAME="tex2html323"
+  HREF="node315.html">Z&#233;ros d'une expression : <TT>zeros</TT></A>
+<LI><A NAME="tex2html324"
+  HREF="node316.html">Z&#233;ros complexe d'une expression : <TT>cZeros</TT></A>
+<LI><A NAME="tex2html325"
+  HREF="node317.html">D&#233;velopper et simplifier : <TT>normal</TT></A>
+<LI><A NAME="tex2html326"
+  HREF="node318.html">Simplifier : <TT>simplify simplifier</TT></A>
+<LI><A NAME="tex2html327"
+  HREF="node319.html">Simplifier &#224; l'aide de fractions rationnelles : <TT>ratnormal</TT></A>
+<LI><A NAME="tex2html328"
+  HREF="node320.html">Substituer une valeur &#224; une variable : <TT>subst substituer</TT></A>
+<LI><A NAME="tex2html329"
+  HREF="node321.html">Substituer une valeur &#224; une variable (compatibilit&#233; Maple et Mupad) : <TT>subs</TT></A>
+<LI><A NAME="tex2html330"
+  HREF="node322.html">&#201;valuer une primitive : <TT>preval</TT></A>
+<LI><A NAME="tex2html331"
+  HREF="node323.html">Sous-expression d'une expression : <TT>part</TT></A>
+</UL>
+<LI><A NAME="tex2html332"
+  HREF="node324.html">Valeurs de <I>u</I><SUB>n</SUB></A>
+<UL>
+<LI><A NAME="tex2html333"
+  HREF="node325.html">Tableau de valeurs des termes d'une suite : <TT>tablefunc
+<BR>
+table_fonction</TT></A>
+<LI><A NAME="tex2html334"
+  HREF="node326.html">Valeurs d'une suite r&#233;currente ou d'un syst&#232;me de suites r&#233;currentes : <TT>seqsolve</TT></A>
+<LI><A NAME="tex2html335"
+  HREF="node327.html">Valeurs d'une suite r&#233;currente ou d'un syst&#232;me de suites r&#233;currentes : <TT>rsolve</TT></A>
+<LI><A NAME="tex2html336"
+  HREF="node328.html">Tableau de valeurs et graphe d'une suite r&#233;currente : <TT>tableseq table_suite</TT> et <TT>plotseq graphe_suite</TT></A>
+</UL>
+<LI><A NAME="tex2html337"
+  HREF="node329.html">Les fonctions infix&#233;es ou op&#233;rateur</A>
+<UL>
+<LI><A NAME="tex2html338"
+  HREF="node330.html">Les op&#233;rateurs usuels :<TT>+, -, *, /, ^</TT></A>
+<LI><A NAME="tex2html339"
+  HREF="node331.html">Les autres op&#233;rateurs de <TT>Xcas</TT></A>
+<LI><A NAME="tex2html340"
+  HREF="node332.html">D&#233;finition d'un op&#233;rateur:  <TT>user_operator</TT></A>
+</UL>
+<LI><A NAME="tex2html341"
+  HREF="node333.html">Les fonctions et les expressions de variables symboliques</A>
+<UL>
+<LI><A NAME="tex2html342"
+  HREF="node334.html">Diff&#233;rence entre fonction et expression</A>
+<LI><A NAME="tex2html343"
+  HREF="node335.html">Transformer une expression en une fonction : <TT>unapply</TT></A>
+<LI><A NAME="tex2html344"
+  HREF="node336.html">Sommet et feuille d'une expression : <TT>sommet feuille op</TT></A>
+</UL>
+<LI><A NAME="tex2html345"
+  HREF="node337.html">Les fonctions</A>
+<UL>
+<LI><A NAME="tex2html346"
+  HREF="node338.html">Les fonctions ayant plusieurs usages</A>
+<UL>
+<LI><A NAME="tex2html347"
+  HREF="node339.html"><TT>+</TT> et <TT>-</TT></A>
+<LI><A NAME="tex2html348"
+  HREF="node340.html"><TT>*</TT></A>
+<LI><A NAME="tex2html349"
+  HREF="node341.html"><TT>/</TT></A>
+</UL>
+<LI><A NAME="tex2html350"
+  HREF="node342.html">Les fonctions usuelles</A>
+<LI><A NAME="tex2html351"
+  HREF="node343.html">D&#233;finition d'une fonction</A>
+<UL>
+<LI><A NAME="tex2html352"
+  HREF="node344.html">D&#233;finition d'une fonction de <!-- MATH
+ $\mathbb{R}^p$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p</SUP> dans <!-- MATH
+ $\mathbb{R}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"></A>
+<LI><A NAME="tex2html353"
+  HREF="node345.html">D&#233;finition d'une fonction de <!-- MATH
+ $\mathbb{R}^p$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p</SUP> dans <!-- MATH
+ $\mathbb{R}^q$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>q</SUP></A>
+<LI><A NAME="tex2html354"
+  HREF="node346.html">D&#233;finition d'une fonction de <!-- MATH
+ $\mathbb{R}^{p-1}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p-1</SUP> dans <!-- MATH
+ $\mathbb{R}^q$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>q</SUP> &#224; partir d'une fonction de <!-- MATH
+ $\mathbb{R}^p$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p</SUP> dans <!-- MATH
+ $\mathbb{R}^q$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>q</SUP></A>
+</UL>
+<LI><A NAME="tex2html355"
+  HREF="node347.html">Composition de fonctions : <TT>@</TT></A>
+<LI><A NAME="tex2html356"
+  HREF="node348.html">Puissance <I>n</I>-i&#232;me de composition d'une fonction : <TT>@@</TT></A>
+<LI><A NAME="tex2html357"
+  HREF="node349.html">Definir une fonction avec l'historique : <TT>as_function_of</TT></A>
+</UL>
+<LI><A NAME="tex2html358"
+  HREF="node350.html">D&#233;rivation et variation</A>
+<UL>
+<LI><A NAME="tex2html359"
+  HREF="node351.html">Fonction d&#233;riv&#233;e d'une fonction : <TT>function_diff fonction_derivee</TT></A>
+<LI><A NAME="tex2html360"
+  HREF="node352.html">Longueur d'un arc de courbe : <TT>arcLen</TT></A>
+<LI><A NAME="tex2html361"
+  HREF="node353.html">Maximum et minimum d'une expression : <TT>fMax fMin</TT></A>
+<LI><A NAME="tex2html362"
+  HREF="node354.html">Tableau de valeurs et graphe : <TT>tablefunc table_fonction</TT> et <TT>plotfunc</TT></A>
+<LI><A NAME="tex2html363"
+  HREF="node355.html">Deriv&#233;es et deriv&#233;es partielles : <TT>diff derive deriver</TT></A>
+<UL>
+<LI><A NAME="tex2html364"
+  HREF="node356.html">Deriv&#233;es et deriv&#233;es partielles d'ordre 1 : <TT>diff derive deriver</TT></A>
+<LI><A NAME="tex2html365"
+  HREF="node357.html">Deriv&#233;e et deriv&#233;e partielle d'ordre <I>n</I> : <TT>diff derive deriver</TT></A>
+</UL>
+</UL>
+<LI><A NAME="tex2html366"
+  HREF="node358.html">Int&#233;gration</A>
+<UL>
+<LI><A NAME="tex2html367"
+  HREF="node359.html">Primitive et intégrale d&#233;finie : <TT>integrate int Int integrer integration</TT></A>
+<LI><A NAME="tex2html368"
+  HREF="node360.html">Primitive et intégrale d&#233;finie : <TT>risch</TT></A>
+<LI><A NAME="tex2html369"
+  HREF="node361.html">Somme indic&#233;e finie et infinie et primitive discr&#232;te : <TT>sum</TT></A>
+<LI><A NAME="tex2html370"
+  HREF="node362.html">Somme de Riemann : <TT>sum_riemann</TT></A>
+<LI><A NAME="tex2html371"
+  HREF="node363.html">Int&#233;gration par parties : <TT>ibpdv integrer_par_parties_u</TT> et <TT>ibpu integrer_par_parties_dv</TT></A>
+<UL>
+<LI><A NAME="tex2html372"
+  HREF="node364.html"><TT>ibpdv</TT></A>
+<LI><A NAME="tex2html373"
+  HREF="node365.html"><TT>ibpu</TT></A>
+</UL>
+<LI><A NAME="tex2html374"
+  HREF="node366.html">Changement de variables : <TT>subst substituer</TT></A>
+</UL>
+<LI><A NAME="tex2html375"
+  HREF="node367.html">Limites</A>
+<UL>
+<LI><A NAME="tex2html376"
+  HREF="node368.html">Limites : <TT>limit limite</TT></A>
+<LI><A NAME="tex2html377"
+  HREF="node369.html">Limite et int&#233;grale</A>
+</UL>
+<LI><A NAME="tex2html378"
+  HREF="node370.html">R&#233;&#233;crire des expressions transcendantes et trigonom&#233;triques</A>
+<UL>
+<LI><A NAME="tex2html379"
+  HREF="node371.html">D&#233;velopper une expression transcendante et trigonom&#233;trique : <TT>texpand tExpand developper_transcendant</TT></A>
+<LI><A NAME="tex2html380"
+  HREF="node372.html">Rassembler les termes de m&#234;me nature : <TT>combine</TT></A>
+</UL>
+<LI><A NAME="tex2html381"
+  HREF="node373.html">Les expressions trigonom&#233;triques</A>
+<UL>
+<LI><A NAME="tex2html382"
+  HREF="node374.html">Les diff&#233;rentes fonctions trigonom&#233;triques</A>
+<LI><A NAME="tex2html383"
+  HREF="node375.html">D&#233;velopper une expression trigonométriques : <TT>trigexpand</TT></A>
+<LI><A NAME="tex2html384"
+  HREF="node376.html">Lin&#233;ariser une  expression trigonom&#233;trique : <TT>tlin lineariser_trigo</TT></A>
+<LI><A NAME="tex2html385"
+  HREF="node377.html">Rassembler les sinus et les cosinus de m&#234;me angle : <TT>tcollect tCollect rassembler_trigo</TT></A>
+<LI><A NAME="tex2html386"
+  HREF="node378.html">Simplifier : <TT>simplify simplifier</TT></A>
+<LI><A NAME="tex2html387"
+  HREF="node379.html">Transformer les arccos en arcsin : <TT>acos2asin</TT></A>
+<LI><A NAME="tex2html388"
+  HREF="node380.html">Transformer les arccos en arctan : <TT>acos2atan</TT></A>
+<LI><A NAME="tex2html389"
+  HREF="node381.html">Transformer les arcsin en arccos : <TT>asin2acos</TT></A>
+<LI><A NAME="tex2html390"
+  HREF="node382.html">Transformer les arcsin en arctan : <TT>asin2atan</TT></A>
+<LI><A NAME="tex2html391"
+  HREF="node383.html">Transformer les arctan en arcsin : <TT>atan2asin</TT></A>
+<LI><A NAME="tex2html392"
+  HREF="node384.html">Transformer les arctan en arccos : <TT>atan2acos</TT></A>
+<LI><A NAME="tex2html393"
+  HREF="node385.html">Transformer les exponentielles complexes en sin et en cos : <TT>sincos exp2trig</TT></A>
+<LI><A NAME="tex2html394"
+  HREF="node386.html">Transformer tan(x) en sin(x)/cos(x) : <TT>tan2sincos</TT></A>
+<LI><A NAME="tex2html395"
+  HREF="node387.html">Transformer sin(x) en cos(x)*tan(x) : <TT>sin2costan</TT></A>
+<LI><A NAME="tex2html396"
+  HREF="node388.html">Transformer cos(x) en sin(x)/tan(x) : <TT>cos2sintan</TT></A>
+<LI><A NAME="tex2html397"
+  HREF="node389.html">Transformer tan(x) avec sin(2x) et cos(2x) : <TT>tan2sincos2</TT></A>
+<LI><A NAME="tex2html398"
+  HREF="node390.html">Transformer tan(x) avec cos(2x) et sin(2x) : <TT>tan2cossin2</TT></A>
+<LI><A NAME="tex2html399"
+  HREF="node391.html">Transformer une expression trigonom&#233;trique en fonction de tan(x/2) : <TT>halftan</TT></A>
+<LI><A NAME="tex2html400"
+  HREF="node392.html">Transformer les expressions trigonom&#232;triques et hyperboliques en tan(x/2) et en exp(x): <TT>halftan_hyp2exp</TT></A>
+<LI><A NAME="tex2html401"
+  HREF="node393.html">Transformer avec des fonctions trigonométriques inverses en logarithmes : <TT>atrig2ln</TT></A>
+<LI><A NAME="tex2html402"
+  HREF="node394.html">Transformer une expression trigonométrique en des exponentielles complexes: <TT>trig2exp</TT></A>
+<LI><A NAME="tex2html403"
+  HREF="node395.html">Simplifier en privil&#233;giant les sinus : <TT>trigsin</TT></A>
+<LI><A NAME="tex2html404"
+  HREF="node396.html">Simplifier en privil&#233;giant les cosinus : <TT>trigcos</TT></A>
+<LI><A NAME="tex2html405"
+  HREF="node397.html">Simplifier en privil&#233;giant les tangentes : <TT>trigtan</TT></A>
+<LI><A NAME="tex2html406"
+  HREF="node398.html">R&#233;ecriture d'une expression avec diff&#233;rentes options : <TT>convert convertir</TT></A>
+</UL>
+<LI><A NAME="tex2html407"
+  HREF="node399.html">Transform&#233;e de Fourier</A>
+<UL>
+<LI><A NAME="tex2html408"
+  HREF="node400.html">Les coefficients de Fourier : <TT>fourier_an</TT> et <TT>fourier_bn</TT> ou <TT>fourier_cn</TT></A>
+<UL>
+<LI><A NAME="tex2html409"
+  HREF="node401.html"><TT>fourier_an</TT></A>
+<LI><A NAME="tex2html410"
+  HREF="node402.html"><TT>fourier_bn</TT></A>
+<LI><A NAME="tex2html411"
+  HREF="node403.html"><TT>fourier_cn</TT></A>
+</UL>
+<LI><A NAME="tex2html412"
+  HREF="node404.html">Transform&#233;e de Fourier discr&#232;te</A>
+<UL>
+<LI><A NAME="tex2html413"
+  HREF="node405.html">Les propri&#233;tes</A>
+<LI><A NAME="tex2html414"
+  HREF="node406.html">O&#249; interviennent ces sommes ?</A>
+</UL>
+<LI><A NAME="tex2html415"
+  HREF="node407.html">La transform&#233;e de Fourier rapide : <TT>fft</TT></A>
+<LI><A NAME="tex2html416"
+  HREF="node408.html">L'inverse de la transform&#233;e de Fourier rapide : <TT>ifft</TT></A>
+<LI><A NAME="tex2html417"
+  HREF="node409.html">Un <B>exercice</B> utilisant <TT>fft</TT></A>
+</UL>
+<LI><A NAME="tex2html418"
+  HREF="node410.html">Les Exponentielles et les Logarithmes</A>
+<UL>
+<LI><A NAME="tex2html419"
+  HREF="node411.html">Transformer les fonctions hyperboliques en exponentielles : <TT>hyp2exp</TT></A>
+<LI><A NAME="tex2html420"
+  HREF="node412.html">D&#233;velopper les exponentielles : <TT>expexpand</TT></A>
+<LI><A NAME="tex2html421"
+  HREF="node413.html">D&#233;velopper les logarithmes : <TT>lnexpand</TT></A>
+<LI><A NAME="tex2html422"
+  HREF="node414.html">Lin&#233;ariser les exponentielles : <TT>lin lineariser</TT></A>
+<LI><A NAME="tex2html423"
+  HREF="node415.html">Regrouper les log : <TT>lncollect</TT></A>
+<LI><A NAME="tex2html424"
+  HREF="node416.html">Transformer une puissance en produit de puissances : <TT>powexpand</TT></A>
+<LI><A NAME="tex2html425"
+  HREF="node417.html">Transformer une puissance en une exponentielle : <TT>pow2exp</TT></A>
+<LI><A NAME="tex2html426"
+  HREF="node418.html">Transformer exp(n*ln(x)) en puissance : <TT>exp2pow</TT></A>
+<LI><A NAME="tex2html427"
+  HREF="node419.html">&#201;crire avec des exponentielles complexes : <TT>tsimplify</TT></A>
+</UL>
+<LI><A NAME="tex2html428"
+  HREF="node420.html">Les polyn&#244;mes</A>
+<UL>
+<LI><A NAME="tex2html429"
+  HREF="node421.html">Les polyn&#244;mes &#224; une variable <TT>poly1[...]</TT></A>
+<LI><A NAME="tex2html430"
+  HREF="node422.html">Les polyn&#244;mes &#224; plusieurs variables</A>
+<LI><A NAME="tex2html431"
+  HREF="node423.html">Transformer une liste en un polyn&#244;me : <TT>r2e poly2symb</TT></A>
+<LI><A NAME="tex2html432"
+  HREF="node424.html">Transformer un polyn&#244;me en une liste : <TT>e2r symb2poly</TT></A>
+<LI><A NAME="tex2html433"
+  HREF="node425.html">Coefficients d'un polyn&#244;me : <TT>coeff coeffs</TT></A>
+<LI><A NAME="tex2html434"
+  HREF="node426.html">Degr&#233; d'un polyn&#244;me : <TT>degree</TT></A>
+<LI><A NAME="tex2html435"
+  HREF="node427.html">Valuation d'un polyn&#244;me : <TT>valuation ldegree</TT></A>
+<LI><A NAME="tex2html436"
+  HREF="node428.html">Coefficient du terme de plus haut degr&#233; d'un polyn&#244;me : <TT>lcoeff</TT></A>
+<LI><A NAME="tex2html437"
+  HREF="node429.html">Coefficient du terme de plus bas degr&#233; d'un polyn&#244;me :
+<TT>tcoeff</TT></A>
+<LI><A NAME="tex2html438"
+  HREF="node430.html">&#201;valuation d'un polyn&#244;me : <TT>peval polyEval</TT></A>
+<LI><A NAME="tex2html439"
+  HREF="node431.html">Mise en facteur de <I>x</I><SUP>n</SUP> dans un polyn&#244;me : <TT>factor_xn</TT></A>
+<LI><A NAME="tex2html440"
+  HREF="node432.html">PGCD des coefficients d'un polyn&#244;me : <TT>content</TT></A>
+<LI><A NAME="tex2html441"
+  HREF="node433.html">Partie primitive d'un polyn&#244;me : <TT>primpart</TT></A>
+<LI><A NAME="tex2html442"
+  HREF="node434.html">Factorisation sur les entiers : <TT>collect</TT></A>
+<LI><A NAME="tex2html443"
+  HREF="node435.html">Factorisation : <TT>factor factoriser</TT></A>
+<LI><A NAME="tex2html444"
+  HREF="node436.html">Factorisation sans facteur carr&#233; : <TT>sqrfree</TT></A>
+<LI><A NAME="tex2html445"
+  HREF="node437.html">Liste des facteurs : <TT>factors</TT></A>
+<LI><A NAME="tex2html446"
+  HREF="node438.html">&#201;valuer un polyn&#244;me : <TT>horner</TT></A>
+<LI><A NAME="tex2html447"
+  HREF="node439.html">&#201;criture selon les puissances de (x-a) : <TT>ptayl</TT></A>
+<LI><A NAME="tex2html448"
+  HREF="node440.html">Calcul avec les racines exactes d'un polyn&#244;me : <TT>rootof</TT></A>
+<LI><A NAME="tex2html449"
+  HREF="node441.html">Racines exactes d'un polyn&#244;me : <TT>roots</TT></A>
+<LI><A NAME="tex2html450"
+  HREF="node442.html">Coefficients d'un polyn&#244;me d&#233;fini par ses racines : <TT>pcoeff pcoef</TT></A>
+<LI><A NAME="tex2html451"
+  HREF="node443.html">Troncature d'ordre <I>n</I> : <TT>truncate</TT></A>
+<LI><A NAME="tex2html452"
+  HREF="node444.html">Convertir un d&#233;veloppement limit&#233; en polyn&#244;me : <TT>convert convertir</TT></A>
+<LI><A NAME="tex2html453"
+  HREF="node445.html">Polyn&#244;mes al&#233;atoires : <TT>randpoly randPoly</TT></A>
+<LI><A NAME="tex2html454"
+  HREF="node446.html">Changer l'ordre des variables : <TT>reorder</TT></A>
+<LI><A NAME="tex2html455"
+  HREF="node447.html">Listee al&#233;atoire : <TT>ranm</TT></A>
+<LI><A NAME="tex2html456"
+  HREF="node448.html">Interpolation de Lagrange : <TT>lagrange interp</TT></A>
+<LI><A NAME="tex2html457"
+  HREF="node449.html">Les splines naturelles: <TT>spline</TT></A>
+</UL>
+<LI><A NAME="tex2html458"
+  HREF="node450.html">Arithm&#233;tique des polyn&#244;mes</A>
+<UL>
+<LI><A NAME="tex2html459"
+  HREF="node451.html">Liste des diviseurs : <TT>divis</TT></A>
+<LI><A NAME="tex2html460"
+  HREF="node452.html">Quotient euclidien : <TT>quo</TT></A>
+<LI><A NAME="tex2html461"
+  HREF="node453.html">Quotient euclidien : <TT>Quo</TT></A>
+<LI><A NAME="tex2html462"
+  HREF="node454.html">Reste euclidien : <TT>rem</TT></A>
+<LI><A NAME="tex2html463"
+  HREF="node455.html">Reste euclidien : <TT>Rem</TT></A>
+<LI><A NAME="tex2html464"
+  HREF="node456.html">Quotient et reste euclidien : <TT>quorem divide</TT></A>
+<LI><A NAME="tex2html465"
+  HREF="node457.html">PGCD de polyn&#244;mes par l'algorithme d'Euclide : <TT>gcd,igcd</TT></A>
+<LI><A NAME="tex2html466"
+  HREF="node458.html">PGCD de deux polyn&#244;mes par l'algorithme d'Euclide : <TT>Gcd</TT></A>
+<LI><A NAME="tex2html467"
+  HREF="node459.html">Choisir l'algorithme du PGCD de deux polyn&#244;mes : <TT>ezgcd heugcd modgcd psrgcd</TT></A>
+<LI><A NAME="tex2html468"
+  HREF="node460.html">PPCM de deux polyn&#244;mes : <TT>lcm</TT></A>
+<LI><A NAME="tex2html469"
+  HREF="node461.html">Idendit&#233; de B&#233;zout : <TT>egcd gcdex</TT></A>
+<LI><A NAME="tex2html470"
+  HREF="node462.html">R&#233;solution polyn&#244;miale de au+bv=c : <TT>abcuv</TT></A>
+<LI><A NAME="tex2html471"
+  HREF="node463.html">Les restes chinois : <TT>chinrem</TT></A>
+<LI><A NAME="tex2html472"
+  HREF="node464.html">Polyn&#244;me cyclotomique : <TT>cyclotomic</TT></A>
+<LI><A NAME="tex2html473"
+  HREF="node465.html">Suites de Sturm et nombre de de changements de signe de <I>P</I> sur ]<I>a</I>;&nbsp;<I>b</I>] : <TT>sturm</TT></A>
+<LI><A NAME="tex2html474"
+  HREF="node466.html">Nombre de racines sur ]<I>a</I>;&nbsp;<I>b</I>] : <TT>sturmab</TT></A>
+<LI><A NAME="tex2html475"
+  HREF="node467.html">Suites de Sturm : <TT>sturmseq</TT></A>
+<LI><A NAME="tex2html476"
+  HREF="node468.html">Matrice de Sylvester de deux polyn&#244;mes : <TT>sylvester</TT></A>
+<LI><A NAME="tex2html477"
+  HREF="node469.html">R&#233;sultant de deux polyn&#244;mes : <TT>resultant</TT></A>
+</UL>
+<LI><A NAME="tex2html478"
+  HREF="node470.html">Polyn&#244;mes orthogonaux</A>
+<UL>
+<LI><A NAME="tex2html479"
+  HREF="node471.html">Polyn&#244;me de Legendre : <TT>legendre</TT></A>
+<LI><A NAME="tex2html480"
+  HREF="node472.html">Polyn&#244;me de Hermite : <TT>hermite</TT></A>
+<LI><A NAME="tex2html481"
+  HREF="node473.html">Polyn&#244;me de Laguerre : <TT>laguerre</TT></A>
+<LI><A NAME="tex2html482"
+  HREF="node474.html">Polyn&#244;me de Tchebychev de 1-i&#232;re esp&#232;ce : <TT>tchebyshev1</TT></A>
+<LI><A NAME="tex2html483"
+  HREF="node475.html">Polyn&#244;me de Tchebychev de 2-i&#232;me esp&#232;ce : <TT>tchebyshev2</TT></A>
+</UL>
+<LI><A NAME="tex2html484"
+  HREF="node476.html">Base et r&#233;duction de Gr&#246;bner</A>
+<UL>
+<LI><A NAME="tex2html485"
+  HREF="node477.html">Base de Gr&#246;bner : <TT>gbasis</TT></A>
+<LI><A NAME="tex2html486"
+  HREF="node478.html">R&#233;duction par rapport à une base de Gr&#246;bner : <TT>greduce</TT></A>
+<LI><A NAME="tex2html487"
+  HREF="node479.html">Construire un polyn&#244;me de n variables : <TT>genpoly</TT></A>
+</UL>
+<LI><A NAME="tex2html488"
+  HREF="node480.html">Les fractions rationnelles </A>
+<UL>
+<LI><A NAME="tex2html489"
+  HREF="node481.html">Num&#233;rateur : <TT>getNum</TT></A>
+<LI><A NAME="tex2html490"
+  HREF="node482.html">Num&#233;rateur apr&#232;s simplification : <TT>numer</TT></A>
+<LI><A NAME="tex2html491"
+  HREF="node483.html">D&#233;nominateur : <TT>getDenom</TT></A>
+<LI><A NAME="tex2html492"
+  HREF="node484.html">D&#233;nominateur apr&#232;s simplification : <TT>denom</TT></A>
+<LI><A NAME="tex2html493"
+  HREF="node485.html">Num&#233;rateur et d&#233;nominateur : <TT>f2nd fxnd</TT></A>
+<LI><A NAME="tex2html494"
+  HREF="node486.html">Simplifier : <TT>simp2</TT></A>
+<LI><A NAME="tex2html495"
+  HREF="node487.html">R&#233;duire au m&#234;me d&#233;nominateur : <TT>comDenom</TT></A>
+<LI><A NAME="tex2html496"
+  HREF="node488.html">Partie enti&#232;re et fractionnaire : <TT>propfrac</TT></A>
+<LI><A NAME="tex2html497"
+  HREF="node489.html">D&#233;composition en &#233;l&#233;ments simples : <TT>partfrac</TT></A>
+<LI><A NAME="tex2html498"
+  HREF="node490.html">D&#233;composition en &#233;l&#233;ments simples sur C : <TT>cpartfrac</TT></A>
+</UL>
+<LI><A NAME="tex2html499"
+  HREF="node491.html">Racines exactes d'un polyn&#244;me</A>
+<UL>
+<LI><A NAME="tex2html500"
+  HREF="node492.html">Encadrement exact des racines complexes d'un polyn&#244;me : <TT>complexroot</TT></A>
+<LI><A NAME="tex2html501"
+  HREF="node493.html">Encadrement exact des racines r&#233;elles d'un polyn&#244;me : <TT>realroot</TT></A>
+<LI><A NAME="tex2html502"
+  HREF="node494.html">Valeurs exactes des racines rationnelles d'un polyn&#244;me : <TT>rationalroot</TT></A>
+<LI><A NAME="tex2html503"
+  HREF="node495.html">Valeurs exactes des racines complexes rationnelles d'un polyn&#244;me : <TT>crationalroot</TT></A>
+</UL>
+<LI><A NAME="tex2html504"
+  HREF="node496.html">Fraction rationnelle, ses racines et ses p&#244;les exacts</A>
+<UL>
+<LI><A NAME="tex2html505"
+  HREF="node497.html">Racines et p&#244;les exacts d'une fraction rationnelle : <TT>froot</TT></A>
+<LI><A NAME="tex2html506"
+  HREF="node498.html">Coefficients d'une fraction rationnelle d&#233;finie par ses racines et ses p&#244;les : <TT>fcoeff</TT></A>
+</UL>
+<LI><A NAME="tex2html507"
+  HREF="node499.html">Le calcul modulaire dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>]</A>
+<UL>
+<LI><A NAME="tex2html508"
+  HREF="node500.html">D&#233;velopper et r&#233;duire : <TT>normal</TT></A>
+<LI><A NAME="tex2html509"
+  HREF="node501.html">Addition dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>+</TT></A>
+<LI><A NAME="tex2html510"
+  HREF="node502.html">Soustraction dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou  <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>-</TT></A>
+<LI><A NAME="tex2html511"
+  HREF="node503.html">Multiplication dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou  <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>*</TT></A>
+<LI><A NAME="tex2html512"
+  HREF="node504.html">Quotient : <TT>quo</TT></A>
+<LI><A NAME="tex2html513"
+  HREF="node505.html">Remainder : <TT>rem</TT></A>
+<LI><A NAME="tex2html514"
+  HREF="node506.html">Quotient and remainder : <TT>quorem</TT></A>
+<LI><A NAME="tex2html515"
+  HREF="node507.html">Division dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> ou <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>/</TT></A>
+<LI><A NAME="tex2html516"
+  HREF="node508.html">Puissance dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> et dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>^</TT></A>
+<LI><A NAME="tex2html517"
+  HREF="node509.html">Calcul de <!-- MATH
+ $a^n\ \bmod \ p$
+ -->
+<I>a</I><SUP>n</SUP>&nbsp; mod&nbsp;<I>p</I> ou de <!-- MATH
+ $A(x)^n \bmod \P(x),p$
+ -->
+<I>A</I>(<I>x</I>)<SUP>n</SUP> mod&#182;(<I>x</I>), <I>p</I>:
+  <TT>powmod powermod</TT></A>
+<LI><A NAME="tex2html518"
+  HREF="node510.html">Inverse dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>inv</TT> ou <TT>/</TT></A>
+<LI><A NAME="tex2html519"
+  HREF="node511.html">Transformer un entier en sa fraction modulo <I>p</I> : <TT>fracmod  iratrecon</TT></A>
+<LI><A NAME="tex2html520"
+  HREF="node512.html">PGCD dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>gcd</TT></A>
+<LI><A NAME="tex2html521"
+  HREF="node513.html">Factorisation dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>factor factoriser</TT></A>
+<LI><A NAME="tex2html522"
+  HREF="node514.html">D&#233;terminant d'une matrice de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>det</TT></A>
+<LI><A NAME="tex2html523"
+  HREF="node515.html">Inverse d'une matrice de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>inv inverse</TT></A>
+<LI><A NAME="tex2html524"
+  HREF="node516.html">R&#233;solution d'un syst&#232;me lin&#233;aire de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>rref</TT></A>
+<LI><A NAME="tex2html525"
+  HREF="node517.html">Construction d'un corps de Galois : <TT>GF</TT></A>
+<LI><A NAME="tex2html526"
+  HREF="node518.html">Factorisation d'un polyn&#244;me &#224; coefficients dans un corps de Galois : <TT>factor</TT></A>
+</UL>
+<LI><A NAME="tex2html527"
+  HREF="node519.html">Le calcul modulaire comme Maple dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>]</A>
+<UL>
+<LI><A NAME="tex2html528"
+  HREF="node520.html">Quotient  euclidien : <TT>Quo</TT></A>
+<LI><A NAME="tex2html529"
+  HREF="node521.html">Reste  euclidien : <TT>Rem</TT></A>
+<LI><A NAME="tex2html530"
+  HREF="node522.html">PGCD dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>Gcd</TT></A>
+<LI><A NAME="tex2html531"
+  HREF="node523.html">Factorisation dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[x]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>x</I>] : <TT>Factor</TT></A>
+<LI><A NAME="tex2html532"
+  HREF="node524.html">D&#233;terminant d'une matrice de Z/pZ : <TT>Det</TT></A>
+<LI><A NAME="tex2html533"
+  HREF="node525.html">Inverse d'une matrice de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>Inverse</TT></A>
+<LI><A NAME="tex2html534"
+  HREF="node526.html">R&#233;solution d'un syst&#232;me lin&#233;aire de <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>Rref</TT></A>
+</UL>
+<LI><A NAME="tex2html535"
+  HREF="node527.html">D&#233;veloppements limit&#233;s et asymptotiques</A>
+<UL>
+<LI><A NAME="tex2html536"
+  HREF="node528.html">Division selon les puissances croissantes : <TT>divpc</TT></A>
+<LI><A NAME="tex2html537"
+  HREF="node529.html">D&#233;veloppement limit&#233; : <TT>taylor</TT></A>
+<LI><A NAME="tex2html538"
+  HREF="node530.html">D&#233;veloppement limit&#233; : <TT>series</TT></A>
+<LI><A NAME="tex2html539"
+  HREF="node531.html">R&#233;sidu d'une expression en un point : <TT>residue</TT></A>
+<LI><A NAME="tex2html540"
+  HREF="node532.html">D&#233;veloppement de Pad&#233;: <TT>pade</TT></A>
+</UL>
+<LI><A NAME="tex2html541"
+  HREF="node533.html">Les intervalles</A>
+<UL>
+<LI><A NAME="tex2html542"
+  HREF="node534.html">D&#233;finition d'un intervalle : <TT>a1..a2</TT></A>
+<LI><A NAME="tex2html543"
+  HREF="node535.html">Pour acc&#233;der aux bornes d'un intervalle : <TT>left  gauche right droit</TT></A>
+<LI><A NAME="tex2html544"
+  HREF="node536.html">Centre d'un intervalle : <TT>interval2center</TT></A>
+<LI><A NAME="tex2html545"
+  HREF="node537.html">Intervalles d&#233;finis par leur centre : <TT>center2interval</TT></A>
+</UL>
+<LI><A NAME="tex2html546"
+  HREF="node538.html">Les s&#233;quences</A>
+<UL>
+<LI><A NAME="tex2html547"
+  HREF="node539.html">D&#233;finition : <TT>seq[]  ()</TT></A>
+<LI><A NAME="tex2html548"
+  HREF="node540.html">Concat&#233;ner deux s&#233;quences : <TT>,</TT></A>
+<LI><A NAME="tex2html549"
+  HREF="node541.html">Pour acc&#233;der &#224; un &#233;l&#233;ment d'une s&#233;quence : <TT>[]</TT></A>
+<LI><A NAME="tex2html550"
+  HREF="node542.html">Pour extraire une sous-s&#233;quence d'une s&#233;quence : <TT>[]</TT></A>
+<LI><A NAME="tex2html551"
+  HREF="node543.html">Pour fabriquer une s&#233;quence ou une liste : <TT>seq $</TT></A>
+<LI><A NAME="tex2html552"
+  HREF="node544.html">Pour transformer une s&#233;quence en liste : <TT>[] nop</TT></A>
+<LI><A NAME="tex2html553"
+  HREF="node545.html">L'effet de l'op&#233;rateur <TT>+</TT> sur deux s&#233;quences</A>
+</UL>
+<LI><A NAME="tex2html554"
+  HREF="node546.html">Les ensembles</A>
+<UL>
+<LI><A NAME="tex2html555"
+  HREF="node547.html">D&#233;finition : <TT>set[]</TT></A>
+<LI><A NAME="tex2html556"
+  HREF="node548.html">Union de deux ensembles ou de deux listes : <TT>union</TT></A>
+<LI><A NAME="tex2html557"
+  HREF="node549.html">Intersection de deux ensembles, de deux listes : <TT>intersect</TT></A>
+<LI><A NAME="tex2html558"
+  HREF="node550.html">Diff&#233;rence de deux ensembles ou de deux listes : <TT>minus</TT></A>
+</UL>
+<LI><A NAME="tex2html559"
+  HREF="node551.html">La liste ou les coordonn&#233;es d'un vecteur</A>
+<UL>
+<LI><A NAME="tex2html560"
+  HREF="node552.html">Les diff&#233;rentes listes</A>
+<LI><A NAME="tex2html561"
+  HREF="node553.html">Acc&#232;s &#224; un &#233;l&#233;ment ou &#224; une sous-liste d'une liste : <TT>at []</TT></A>
+<UL>
+<LI><A NAME="tex2html562"
+  HREF="node554.html">Acc&#232;s &#224; un &#233;l&#233;ment</A>
+<LI><A NAME="tex2html563"
+  HREF="node555.html">Extraire une sous-liste</A>
+</UL>
+<LI><A NAME="tex2html564"
+  HREF="node556.html">Extraire une sous-liste d'une liste : <TT>mid</TT></A>
+<LI><A NAME="tex2html565"
+  HREF="node557.html">Avoir le premier &#233;l&#233;ment d'une liste : <TT>head</TT></A>
+<LI><A NAME="tex2html566"
+  HREF="node558.html">Supprimer un &#233;l&#233;ment dans une liste : <TT>suppress</TT></A>
+<LI><A NAME="tex2html567"
+  HREF="node559.html">Avoir la liste priv&#233;e de son premier &#233;l&#233;ment : <TT>tail</TT></A>
+<LI><A NAME="tex2html568"
+  HREF="node560.html">Avoir la liste permut&#233;e : <TT>revlist</TT></A>
+<LI><A NAME="tex2html569"
+  HREF="node561.html">Avoir la liste permut&#233;e &#224; partir de son n-i&#232;me &#233;l&#233;ment : <TT>rotate</TT></A>
+<LI><A NAME="tex2html570"
+  HREF="node562.html">Avoir la liste permut&#233;e &#224; partir de son n-i&#232;me &#233;l&#233;ment : <TT>shift</TT></A>
+<LI><A NAME="tex2html571"
+  HREF="node563.html">Modifier un &#233;l&#233;ment d'une liste : <TT>subsop</TT></A>
+<LI><A NAME="tex2html572"
+  HREF="node564.html">Transformer une liste en s&#233;quence : <TT>op makesuite</TT></A>
+<LI><A NAME="tex2html573"
+  HREF="node565.html">Transformer une s&#233;quence en liste : <TT>makevector []</TT></A>
+<LI><A NAME="tex2html574"
+  HREF="node566.html">Longueur d'une liste : <TT>size nops length</TT></A>
+<LI><A NAME="tex2html575"
+  HREF="node567.html">Longueur d'une liste de listes : <TT>sizes</TT></A>
+<LI><A NAME="tex2html576"
+  HREF="node568.html">Concat&#233;nation de 2 listes ou d'une liste et d'un &#233;l&#233;ment: <TT>concat augment</TT></A>
+<LI><A NAME="tex2html577"
+  HREF="node569.html">Rajouter un &#233;l&#233;ment &#224; la fin d'une liste : <TT>append</TT></A>
+<LI><A NAME="tex2html578"
+  HREF="node570.html">Rajouter un &#233;l&#233;ment au d&#233;but d'une liste : <TT>prepend</TT></A>
+<LI><A NAME="tex2html579"
+  HREF="node571.html">Trier : <TT>sort</TT></A>
+<LI><A NAME="tex2html580"
+  HREF="node572.html">Trier une liste selon l'ordre croissant : <TT>SortA</TT></A>
+<LI><A NAME="tex2html581"
+  HREF="node573.html">Trier une liste selon l'ordre d&#233;croissant : <TT>SortD</TT></A>
+<LI><A NAME="tex2html582"
+  HREF="node574.html">S&#233;lectionner des &#233;l&#233;ments d'une liste : <TT>select</TT></A>
+<LI><A NAME="tex2html583"
+  HREF="node575.html">Supprimer des &#233;l&#233;ments d'une liste : <TT>remove</TT></A>
+<LI><A NAME="tex2html584"
+  HREF="node576.html">Tester si un &#233;l&#233;ment est dans une liste : <TT>member</TT></A>
+<LI><A NAME="tex2html585"
+  HREF="node577.html">Tester si un &#233;l&#233;ment est dans une liste : <TT>contains</TT></A>
+<LI><A NAME="tex2html586"
+  HREF="node578.html">Compter les &#233;l&#233;ments d'une liste ou d'une matrice v&#233;rifiant une propri&#233;t&#233; : <TT>count</TT></A>
+<LI><A NAME="tex2html587"
+  HREF="node579.html">Nombre d'&#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT></A>
+<LI><A NAME="tex2html588"
+  HREF="node580.html">Nombre d'&#233;l&#233;ments inf&#233;rieurs &#224; une valeur : <TT>count_inf</TT></A>
+<LI><A NAME="tex2html589"
+  HREF="node581.html">Nombre d'&#233;l&#233;ments sup&#233;rieurs &#224; une valeur : <TT>count_sup</TT></A>
+<LI><A NAME="tex2html590"
+  HREF="node582.html">Somme des &#233;l&#233;ments d'une liste : <TT>sum add</TT></A>
+<LI><A NAME="tex2html591"
+  HREF="node583.html">Somme cumul&#233;e des &#233;l&#233;ments d'une liste : <TT>cumSum</TT></A>
+<LI><A NAME="tex2html592"
+  HREF="node584.html">Produit indic&#233; : <TT>product mul</TT></A>
+<UL>
+<LI><A NAME="tex2html593"
+  HREF="node585.html">Produit des valeurs d'une expression : <TT>product</TT></A>
+<LI><A NAME="tex2html594"
+  HREF="node586.html">Produit des &#233;l&#233;ments d'une liste : <TT>product</TT></A>
+</UL>
+<LI><A NAME="tex2html595"
+  HREF="node587.html">Appliquer une fonction d'une variable aux &#233;l&#233;ments d'une liste : <TT>map apply of</TT></A>
+<LI><A NAME="tex2html596"
+  HREF="node588.html">Appliquer une fonction de 2 variables aux &#233;l&#233;ments de 2 listes : <TT>zip</TT></A>
+<LI><A NAME="tex2html597"
+  HREF="node589.html">Faire une liste de z&#233;ros : <TT>newList</TT></A>
+<LI><A NAME="tex2html598"
+  HREF="node590.html">Faire une liste avec une fonction : <TT>makelist</TT></A>
+<LI><A NAME="tex2html599"
+  HREF="node591.html">Faire une liste al&#233;atoire : <TT>randvector</TT></A>
+<LI><A NAME="tex2html600"
+  HREF="node592.html">Liste des diff&#233;rences de termes cons&#233;cutifs : <TT>deltalist</TT></A>
+<LI><A NAME="tex2html601"
+  HREF="node593.html">Faire une matrice avec une liste : <TT>list2mat</TT></A>
+<LI><A NAME="tex2html602"
+  HREF="node594.html">Faire une liste avec une matrice : <TT>mat2list</TT></A>
+</UL>
+<LI><A NAME="tex2html603"
+  HREF="node595.html">Fonctions utiles pour les vecteurs et les composantes d'un vecteur</A>
+<UL>
+<LI><A NAME="tex2html604"
+  HREF="node596.html">Les normes d'un vecteur : <TT>maxnorm l1norm l2norm norm</TT></A>
+<LI><A NAME="tex2html605"
+  HREF="node597.html">Pour normaliser les composantes d'un vecteur : <TT>normalize unitV</TT></A>
+<LI><A NAME="tex2html606"
+  HREF="node598.html">Somme terme &#224; terme de deux listes : <TT>+ .+</TT></A>
+<LI><A NAME="tex2html607"
+  HREF="node599.html">Diff&#233;rence terme &#224; terme de deux listes : <TT>- .-</TT></A>
+<LI><A NAME="tex2html608"
+  HREF="node600.html">Produit terme &#224; terme de deux listes : <TT>.*</TT></A>
+<LI><A NAME="tex2html609"
+  HREF="node601.html">Quotient terme &#224; terme de deux listes : <TT>./</TT></A>
+<LI><A NAME="tex2html610"
+  HREF="node602.html">Le produit scalaire : <TT>scalar_product * dotprod dot dotP scalar_Product produit_scalaire</TT></A>
+<LI><A NAME="tex2html611"
+  HREF="node603.html">Le produit vectoriel : <TT>cross crossP crossproduct</TT></A>
+</UL>
+<LI><A NAME="tex2html612"
+  HREF="node604.html">Fonctions utiles pour les statistiques : <TT>mean moyenne, variance, stddev ecart_type, stddevp  ecart_type_population, median, quantile, quartiles, boxwhisker, moustache</TT></A>
+<LI><A NAME="tex2html613"
+  HREF="node605.html">Les tableaux indic&#233;s par des cha&#238;nes : <TT>table</TT></A>
+<LI><A NAME="tex2html614"
+  HREF="node606.html">Les matrices particuli&#232;res</A>
+<UL>
+<LI><A NAME="tex2html615"
+  HREF="node607.html">Matrice identit&#233; : <TT>idn identity</TT></A>
+<LI><A NAME="tex2html616"
+  HREF="node608.html">Matrice de z&#233;ros : <TT>newMat matrix</TT></A>
+<LI><A NAME="tex2html617"
+  HREF="node609.html">Matrice al&#233;atoire : <TT>ranm randMat randmatrix</TT></A>
+<LI><A NAME="tex2html618"
+  HREF="node610.html">Diagonale d'une matrice ou matrice d'une diagonale : <TT>diag BlockDiagonal</TT></A>
+<LI><A NAME="tex2html619"
+  HREF="node611.html">Bloc de Jordan : <TT>JordanBlock</TT></A>
+<LI><A NAME="tex2html620"
+  HREF="node612.html">Matrice de Hilbert : <TT>hilbert</TT></A>
+<LI><A NAME="tex2html621"
+  HREF="node613.html">Matrice de Vandermonde : <TT>vandermonde</TT></A>
+</UL>
+<LI><A NAME="tex2html622"
+  HREF="node614.html">Cr&#233;ation et arithm&#233;tique des matrices</A>
+<UL>
+<LI><A NAME="tex2html623"
+  HREF="node615.html">Pour &#233;valuer une matrice : <TT>evalm</TT></A>
+<LI><A NAME="tex2html624"
+  HREF="node616.html">Addition et soustraction de deux matrices : <TT>+ - .+ .-</TT></A>
+<LI><A NAME="tex2html625"
+  HREF="node617.html">Multiplication de deux matrices : <TT>* &amp;*</TT></A>
+<LI><A NAME="tex2html626"
+  HREF="node618.html">Addition des &#233;l&#233;ments d'une m&#234;me colonne d'une matrice : <TT>sum</TT></A>
+<LI><A NAME="tex2html627"
+  HREF="node619.html">Somme cumul&#233;e des &#233;l&#233;ments d'une m&#234;me colonne d'une matrice : <TT>cumSum</TT></A>
+<LI><A NAME="tex2html628"
+  HREF="node620.html">Multiplication des &#233;l&#233;ments d'une m&#234;me colonne d'une matrice : <TT>product</TT></A>
+<LI><A NAME="tex2html629"
+  HREF="node621.html">El&#233;vation d'une matrice &#224; une puissance enti&#232;re : ^ &amp;^</A>
+<LI><A NAME="tex2html630"
+  HREF="node622.html">Produit de Hadamard : <TT>hadamard product</TT></A>
+<LI><A NAME="tex2html631"
+  HREF="node623.html">Produit de Hadamard (version infix&#233;e): <TT>.*</TT></A>
+<LI><A NAME="tex2html632"
+  HREF="node624.html">Division de Hadamard (version infix&#233;e): <TT>./</TT></A>
+<LI><A NAME="tex2html633"
+  HREF="node625.html">Puissance de Hadamard (version infix&#233;e): <TT>.^</TT></A>
+<LI><A NAME="tex2html634"
+  HREF="node626.html">Extraire un ou des &#233;l&#233;ment(s) d'une matrice : <TT>at</TT></A>
+<LI><A NAME="tex2html635"
+  HREF="node627.html">Modifier un &#233;l&#233;ment ou une ligne d'une matrice contenue dans une variable : <TT>=&lt;</TT></A>
+<LI><A NAME="tex2html636"
+  HREF="node628.html">Modifier un &#233;l&#233;ment ou une ligne d'une matrice : <TT>subsop</TT></A>
+<LI><A NAME="tex2html637"
+  HREF="node629.html">Extraire des lignes ou des colonnes d'une matrice (compatibilit&#233; Maple) : <TT>row col</TT></A>
+<LI><A NAME="tex2html638"
+  HREF="node630.html">Supprimer des lignes ou des colonnes d'une matrice : <TT>delrows delcols</TT></A>
+<LI><A NAME="tex2html639"
+  HREF="node631.html">Extraire une sous-matrice d'une matrice (compatibilit&#233; TI) : <TT>subMat</TT></A>
+<LI><A NAME="tex2html640"
+  HREF="node632.html">Ajouter une ligne &#224; une autre : <TT>rowAdd</TT></A>
+<LI><A NAME="tex2html641"
+  HREF="node633.html">Multiplier une ligne par une expression : <TT>mRow</TT></A>
+<LI><A NAME="tex2html642"
+  HREF="node634.html">Ajouter <I>k</I> fois une ligne &#224; une autre : <TT>mRowAdd</TT></A>
+<LI><A NAME="tex2html643"
+  HREF="node635.html">&#201;changer deux lignes : <TT>rowSwap</TT></A>
+<LI><A NAME="tex2html644"
+  HREF="node636.html">Faire une matrice avec une liste de matrices : <TT>blockmatrix</TT></A>
+<LI><A NAME="tex2html645"
+  HREF="node637.html">Faire une matrice avec deux matrices : <TT>semi_augment</TT></A>
+<LI><A NAME="tex2html646"
+  HREF="node638.html">Faire une matrice avec deux matrices : <TT>augment concat</TT></A>
+<LI><A NAME="tex2html647"
+  HREF="node639.html">Faire une matrice avec une fonction : <TT>makemat</TT></A>
+<LI><A NAME="tex2html648"
+  HREF="node640.html">D&#233;finir une matrice : <TT>matrix</TT></A>
+<LI><A NAME="tex2html649"
+  HREF="node641.html">Rajouter une colonne &#224; une matrice : <TT>border</TT></A>
+<LI><A NAME="tex2html650"
+  HREF="node642.html">Compter les &#233;l&#233;ments d'une matrice v&#233;rifiant une propri&#233;t&#233; : <TT>count</TT></A>
+<LI><A NAME="tex2html651"
+  HREF="node643.html">Compter les &#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT></A>
+<LI><A NAME="tex2html652"
+  HREF="node644.html">Compter les &#233;l&#233;ments plus petits qu'une valeur donn&#233;e : 
+<BR><TT>count_inf</TT></A>
+<LI><A NAME="tex2html653"
+  HREF="node645.html">Compter les &#233;l&#233;ments plus grands qu'une valeur donn&#233;e : <TT>count_sup</TT></A>
+<LI><A NAME="tex2html654"
+  HREF="node646.html">Fonctions utiles pour les colonnes d'une matrice : <TT>mean</TT> ou <TT>moyenne</TT>, <TT>stddev</TT> ou <TT>ecart_type</TT>, <TT>variance</TT>, <TT>median</TT>, <TT>quantile</TT>, <TT>quartiles</TT>, <TT>boxwhisker</TT> ou <TT>moustache</TT></A>
+<LI><A NAME="tex2html655"
+  HREF="node647.html">Dimension d'une matrice : <TT>dim</TT></A>
+<LI><A NAME="tex2html656"
+  HREF="node648.html">Nombre de lignes : <TT>rowdim rowDim nrows</TT></A>
+<LI><A NAME="tex2html657"
+  HREF="node649.html">Nombre de colonnes : <TT>coldim colDim ncols</TT></A>
+</UL>
+<LI><A NAME="tex2html658"
+  HREF="node650.html">Alg&#232;bre lin&#233;aire</A>
+<UL>
+<LI><A NAME="tex2html659"
+  HREF="node651.html">Transpos&#233;e d'une matrice : <TT>tran transpose</TT></A>
+<LI><A NAME="tex2html660"
+  HREF="node652.html">Inverse d'une matrice : <TT>inv inverse /</TT></A>
+<LI><A NAME="tex2html661"
+  HREF="node653.html">Trace d'une matrice : <TT>trace</TT></A>
+<LI><A NAME="tex2html662"
+  HREF="node654.html">D&#233;terminant d'une matrice : <TT>det</TT></A>
+<LI><A NAME="tex2html663"
+  HREF="node655.html">D&#233;terminant d'une matrice creuse : <TT>det_minor</TT></A>
+<LI><A NAME="tex2html664"
+  HREF="node656.html">Rang d'une matrice : <TT>rank</TT></A>
+<LI><A NAME="tex2html665"
+  HREF="node657.html">Matrice adjointe : <TT>trn</TT></A>
+<LI><A NAME="tex2html666"
+  HREF="node658.html">Matrice &#233;quivalente : <TT>changebase</TT></A>
+<LI><A NAME="tex2html667"
+  HREF="node659.html">Base d'un sous espace vectoriel : <TT>basis</TT></A>
+<LI><A NAME="tex2html668"
+  HREF="node660.html">Base de l'intersection de deux sous espaces vectoriels : <TT>ibasis</TT></A>
+<LI><A NAME="tex2html669"
+  HREF="node661.html">Image d'une application lin&#233;aire : <TT>image</TT></A>
+<LI><A NAME="tex2html670"
+  HREF="node662.html">Noyau d'une application lin&#233;aire : <TT>kernel nullspace ker</TT></A>
+<LI><A NAME="tex2html671"
+  HREF="node663.html">Noyau d'une application lin&#233;aire : <TT>Nullspace</TT></A>
+<LI><A NAME="tex2html672"
+  HREF="node664.html">Espace engendr&#233; par les colonnes d'une matrice : <TT>colspace</TT></A>
+<LI><A NAME="tex2html673"
+  HREF="node665.html">Espace engendr&#233; par les lignes d'une matrice : <TT>rowspace</TT></A>
+</UL>
+<LI><A NAME="tex2html674"
+  HREF="node666.html">Programmation lin&#233;aire</A>
+<UL>
+<LI><A NAME="tex2html675"
+  HREF="node667.html">La commande <TT>Xcas</TT> : <TT>simplex_reduce</TT></A>
+<LI><A NAME="tex2html676"
+  HREF="node668.html">&#201;criture matricielle et algorithme du simplexe</A>
+<LI><A NAME="tex2html677"
+  HREF="node669.html">Premier cas&nbsp;: 3 arguments</A>
+<LI><A NAME="tex2html678"
+  HREF="node670.html">Deuxi&#232;me cas: un argument</A>
+<LI><A NAME="tex2html679"
+  HREF="node671.html">Passage de la forme standard &#224; la forme canonique</A>
+</UL>
+<LI><A NAME="tex2html680"
+  HREF="node672.html">Les diff&#233;rentes norme d'une matrice</A>
+<UL>
+<LI><A NAME="tex2html681"
+  HREF="node673.html">Norme <I>l</I><SUP>2</SUP> d'une matrice : <TT>nomm l2norm</TT></A>
+<LI><A NAME="tex2html682"
+  HREF="node674.html">Norme <I>l</I><SUP><IMG
+ WIDTH="18" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$\scriptstyle \infty$"></SUP> d'une matrice : <TT>maxnorm</TT></A>
+<LI><A NAME="tex2html683"
+  HREF="node675.html">Norme d'une matrice avec la norme des lignes : <TT>rownorm rowNorm</TT></A>
+<LI><A NAME="tex2html684"
+  HREF="node676.html">Norme d'une matrice avec la norme des colonnes : <TT>colnorm colNorm</TT></A>
+</UL>
+<LI><A NAME="tex2html685"
+  HREF="node677.html">R&#233;duction des matrices</A>
+<UL>
+<LI><A NAME="tex2html686"
+  HREF="node678.html">Valeurs propres : <TT>eigenvals</TT></A>
+<LI><A NAME="tex2html687"
+  HREF="node679.html">Matrice de Jordan : <TT>egvl eigenvalues eigVl</TT></A>
+<LI><A NAME="tex2html688"
+  HREF="node680.html">Vecteurs propres : <TT>egv eigenvectors eigenvects eigVc</TT></A>
+<LI><A NAME="tex2html689"
+  HREF="node681.html">Matrice de Jordan rationnelle : <TT>rat_jordan</TT></A>
+<LI><A NAME="tex2html690"
+  HREF="node682.html">Matrice de passage et matrice de Jordan : <TT>jordan</TT></A>
+<LI><A NAME="tex2html691"
+  HREF="node683.html">Polyn&#244;me caract&#233;ristique : <TT>pcar</TT></A>
+<LI><A NAME="tex2html692"
+  HREF="node684.html">Polyn&#244;me caract&#233;ristique d'une matrice creuse de grande dimension: <TT>pcar_hessenberg</TT></A>
+<LI><A NAME="tex2html693"
+  HREF="node685.html">Polyn&#244;me minimal : <TT>pmin</TT></A>
+<LI><A NAME="tex2html694"
+  HREF="node686.html">Comatrice : <TT>adjoint_matrix</TT></A>
+<LI><A NAME="tex2html695"
+  HREF="node687.html">Matrice compagnon d'un polyn&#244;me : <TT>companion</TT></A>
+<LI><A NAME="tex2html696"
+  HREF="node688.html">R&#233;duction de Hessenberg d'une matrice : <TT>hessenberg</TT></A>
+<LI><A NAME="tex2html697"
+  HREF="node689.html">Forme normale de Hermite : <TT>ihermite</TT></A>
+<LI><A NAME="tex2html698"
+  HREF="node690.html">Forme normale de Smith : <TT>ismith</TT></A>
+</UL>
+<LI><A NAME="tex2html699"
+  HREF="node691.html">Les isom&#233;tries</A>
+<UL>
+<LI><A NAME="tex2html700"
+  HREF="node692.html">Reconnaitre une isom&#233;trie : <TT>isom</TT></A>
+<LI><A NAME="tex2html701"
+  HREF="node693.html">Trouver la matrice d'une isom&#233;trie : <TT>mkisom</TT></A>
+</UL>
+<LI><A NAME="tex2html702"
+  HREF="node694.html">Factorisation des matrices</A>
+<UL>
+<LI><A NAME="tex2html703"
+  HREF="node695.html">D&#233;composition de Cholesky : <TT>cholesky</TT></A>
+<LI><A NAME="tex2html704"
+  HREF="node696.html">D&#233;composition QR : <TT>qr</TT></A>
+<LI><A NAME="tex2html705"
+  HREF="node697.html">D&#233;composition QR (compatible TI) : <TT>QR</TT></A>
+<LI><A NAME="tex2html706"
+  HREF="node698.html">D&#233;composition LU : <TT>lu</TT></A>
+<LI><A NAME="tex2html707"
+  HREF="node699.html">D&#233;composition LU (compatible TI): <TT>LU</TT></A>
+<LI><A NAME="tex2html708"
+  HREF="node700.html">Singular value decomposition : <TT>svd</TT></A>
+<LI><A NAME="tex2html709"
+  HREF="node701.html">Recherche d'une base de vecteurs courts d'un réseau : <TT>lll</TT></A>
+</UL>
+<LI><A NAME="tex2html710"
+  HREF="node702.html">Les formes quadratiques</A>
+<UL>
+<LI><A NAME="tex2html711"
+  HREF="node703.html">Matrice d'une forme quadratique : <TT>q2a</TT></A>
+<LI><A NAME="tex2html712"
+  HREF="node704.html">Transformer une matrice en une forme quadratique : <TT>a2q</TT></A>
+<LI><A NAME="tex2html713"
+  HREF="node705.html">M&#233;thode de Gauss : <TT>gauss</TT></A>
+<LI><A NAME="tex2html714"
+  HREF="node706.html">Proc&#233;d&#233; de Gramschmidt : <TT>gramschmidt</TT></A>
+<LI><A NAME="tex2html715"
+  HREF="node707.html">Trac&#233; d'une conique : <TT>conic conique</TT></A>
+<LI><A NAME="tex2html716"
+  HREF="node708.html">R&#233;duction d'une conique : <TT>reduced_conic conique_reduite</TT></A>
+<LI><A NAME="tex2html717"
+  HREF="node709.html">Trac&#233; d'une quadrique : <TT>quadrique</TT></A>
+<LI><A NAME="tex2html718"
+  HREF="node710.html">R&#233;duction d'une quadrique : <TT>reduced_quadric quadrique_reduite</TT></A>
+</UL>
+<LI><A NAME="tex2html719"
+  HREF="node711.html">Les expressions de plusieurs variables</A>
+<UL>
+<LI><A NAME="tex2html720"
+  HREF="node712.html">Le gradient : <TT>derive deriver diff grad</TT></A>
+<LI><A NAME="tex2html721"
+  HREF="node713.html">Le Laplacien : <TT>laplacian</TT></A>
+<LI><A NAME="tex2html722"
+  HREF="node714.html">La matrice hessienne : <TT>hessian</TT></A>
+<LI><A NAME="tex2html723"
+  HREF="node715.html">La divergence : <TT>divergence</TT></A>
+<LI><A NAME="tex2html724"
+  HREF="node716.html">Le rotationnel : <TT>curl</TT></A>
+<LI><A NAME="tex2html725"
+  HREF="node717.html">Le potentiel : <TT>potential</TT></A>
+<LI><A NAME="tex2html726"
+  HREF="node718.html">Champ &#224; flux conservatif : <TT>vpotential</TT></A>
+</UL>
+<LI><A NAME="tex2html727"
+  HREF="node719.html">Équations</A>
+<UL>
+<LI><A NAME="tex2html728"
+  HREF="node720.html">Écrire  une &#233;quation : <TT>equal</TT></A>
+<LI><A NAME="tex2html729"
+  HREF="node721.html">Transformer une &#233;quation en diff&#232;rence : <TT>equal2diff</TT></A>
+<LI><A NAME="tex2html730"
+  HREF="node722.html">Transformer une &#233;quation en une liste : <TT>equal2list</TT></A>
+<LI><A NAME="tex2html731"
+  HREF="node723.html">Pour avoir le membre de gauche d'une &#233;quation : <TT>left  gauche lhs</TT></A>
+<LI><A NAME="tex2html732"
+  HREF="node724.html">Pour avoir le membre de droite d'une &#233;quation : <TT>right  droit rhs</TT></A>
+<LI><A NAME="tex2html733"
+  HREF="node725.html">R&#233;solution d'&#233;quations : <TT>solve resoudre</TT></A>
+<LI><A NAME="tex2html734"
+  HREF="node726.html">R&#233;solution d'&#233;quations dans <!-- MATH
+ $\mathcal C$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \mathcal {C}$"> : <TT>csolve cSolve resoudre_dans_C</TT></A>
+</UL>
+<LI><A NAME="tex2html735"
+  HREF="node727.html">Les syst&#232;mes lin&#233;aires</A>
+<UL>
+<LI><A NAME="tex2html736"
+  HREF="node728.html">Matrice d'un syst&#232;me : <TT>syst2mat</TT></A>
+<LI><A NAME="tex2html737"
+  HREF="node729.html">R&#233;duction de Gauss d'une matrice : <TT>ref</TT></A>
+<LI><A NAME="tex2html738"
+  HREF="node730.html">R&#233;duction de Gauss-Jordan : <TT>rref gaussjord</TT></A>
+<LI><A NAME="tex2html739"
+  HREF="node731.html">R&#233;solution de A*X=B : <TT>simult</TT></A>
+<LI><A NAME="tex2html740"
+  HREF="node732.html">&#201;tape de la r&#233;duction de Gauss-Jordan d'une matrice : <TT>pivot</TT></A>
+<LI><A NAME="tex2html741"
+  HREF="node733.html">R&#233;solution d'un syst&#232;me lin&#233;aire : <TT>linsolve resoudre_systeme_lineaire</TT></A>
+<LI><A NAME="tex2html742"
+  HREF="node734.html">R&#233;solution d'une r&#233;currence lin&#233;aire : <TT>reverse_rsolve</TT></A>
+</UL>
+<LI><A NAME="tex2html743"
+  HREF="node735.html">Les &#233;quations diff&#233;rentielles</A>
+<UL>
+<LI><A NAME="tex2html744"
+  HREF="node736.html">&#201;quations diff&#233;rentielles : <TT>desolve deSolve dsolve</TT></A>
+<LI><A NAME="tex2html745"
+  HREF="node737.html">Transform&#233;e de Laplace et transform&#233;e de Laplace inverse : <TT>laplace ilaplace</TT></A>
+</UL>
+<LI><A NAME="tex2html746"
+  HREF="node738.html">Autres fonctions</A>
+<UL>
+<LI><A NAME="tex2html747"
+  HREF="node739.html">N&#233;gliger les petites valeurs : <TT>epsilon2zero</TT></A>
+<LI><A NAME="tex2html748"
+  HREF="node740.html">Liste des variables : <TT>lname indets</TT></A>
+<LI><A NAME="tex2html749"
+  HREF="node741.html">Liste des variables et des expressions : <TT>lvar</TT></A>
+<LI><A NAME="tex2html750"
+  HREF="node742.html">Liste des variables et des expressions alg&#233;briques : <TT>algvar</TT></A>
+<LI><A NAME="tex2html751"
+  HREF="node743.html">Test de la pr&#233;sence d'une variable dans une expression : <TT>has</TT></A>
+<LI><A NAME="tex2html752"
+  HREF="node744.html">&#201;valuation num&#233;rique : <TT>evalf</TT></A>
+<LI><A NAME="tex2html753"
+  HREF="node745.html">Approximation rationnelle : <TT>float2rational exact</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html754"
+  HREF="node746.html">Les fonctions de statistique</A>
+<UL>
+<LI><A NAME="tex2html755"
+  HREF="node747.html">Les fonctions de <TT>Xcas</TT> de statistique &#224; 1 variable</A>
+<UL>
+<LI><A NAME="tex2html756"
+  HREF="node748.html">La moyenne : <TT>mean moyenne</TT></A>
+<LI><A NAME="tex2html757"
+  HREF="node749.html">L'&#233;cart-type : <TT>stddev ecart_type</TT></A>
+<LI><A NAME="tex2html758"
+  HREF="node750.html">L'&#233;cart-type de la population : <TT>stddevp, stdDev, ecart_type_population</TT></A>
+<LI><A NAME="tex2html759"
+  HREF="node751.html">La variance : <TT>variance</TT></A>
+<LI><A NAME="tex2html760"
+  HREF="node752.html">La m&#233;diane : <TT>median</TT></A>
+<LI><A NAME="tex2html761"
+  HREF="node753.html">Diff&#233;rentes valeurs statistiques : <TT>quartiles</TT></A>
+<LI><A NAME="tex2html762"
+  HREF="node754.html">Le premier quartile : <TT>quartile1</TT></A>
+<LI><A NAME="tex2html763"
+  HREF="node755.html">Le troisi&#232;me quartile : <TT>quartile3</TT></A>
+<LI><A NAME="tex2html764"
+  HREF="node756.html">Les d&#233;ciles : <TT>quantile</TT></A>
+<LI><A NAME="tex2html765"
+  HREF="node757.html">Le regroupement en classes : <TT>classes</TT></A>
+<LI><A NAME="tex2html766"
+  HREF="node758.html">Regroupement de termes : <TT>accumulate_head_tail</TT></A>
+<LI><A NAME="tex2html767"
+  HREF="node759.html">La boite &#224; moustaches : <TT>boxwhisker moustache</TT></A>
+<LI><A NAME="tex2html768"
+  HREF="node760.html">L'histogramme : <TT>histogram</TT></A>
+<LI><A NAME="tex2html769"
+  HREF="node761.html">Les fr&#233;quences cumul&#233;es : <TT>cumulated_frequencies</TT></A>
+<LI><A NAME="tex2html770"
+  HREF="node762.html">Pour dessiner un diagramme en batons : <TT>diagramme_batons</TT></A>
+<LI><A NAME="tex2html771"
+  HREF="node763.html">Pour dessiner un diagramme en camembert : <TT>camembert</TT></A>
+</UL>
+<LI><A NAME="tex2html772"
+  HREF="node764.html">Les fonctions statistiques &#224; 2 variables</A>
+<UL>
+<LI><A NAME="tex2html773"
+  HREF="node765.html">La covariance : <TT>covariance</TT></A>
+<LI><A NAME="tex2html774"
+  HREF="node766.html">La corr&#233;lation : <TT>correlation</TT></A>
+<LI><A NAME="tex2html775"
+  HREF="node767.html">Covariance et corr&#233;lation : <TT>covariance_correlation</TT></A>
+<LI><A NAME="tex2html776"
+  HREF="node768.html">Le nuage de points : <TT>scatterplot nuage_points</TT></A>
+<LI><A NAME="tex2html777"
+  HREF="node769.html">Ligne polygonale : <TT>polygonplot ligne_polygonale</TT></A>
+<LI><A NAME="tex2html778"
+  HREF="node770.html">Ligne polygonale : <TT>listplot plotlist</TT></A>
+<LI><A NAME="tex2html779"
+  HREF="node771.html">Ligne polygonale et nuage de points : <TT>polygonscatterplot ligne_polygonale_pointee</TT></A>
+<LI><A NAME="tex2html780"
+  HREF="node772.html">Interpolation lin&#233;aire : <TT>linear_interpolate</TT></A>
+<LI><A NAME="tex2html781"
+  HREF="node773.html">R&#233;gression lin&#233;aire : <TT>linear_regression</TT></A>
+<LI><A NAME="tex2html782"
+  HREF="node774.html">Graphe de la r&#233;gression lin&#233;aire : 
+<TT>linear_regression_plot</TT></A>
+<LI><A NAME="tex2html783"
+  HREF="node775.html">R&#233;gression exponentielle : <TT>exponential_regression</TT></A>
+<LI><A NAME="tex2html784"
+  HREF="node776.html">Graphe de la r&#233;gression exponentielle : 
+<TT>exponential_regression_plot</TT></A>
+<LI><A NAME="tex2html785"
+  HREF="node777.html">R&#233;gression logarithmique : <TT>logarithmic_regression</TT></A>
+<LI><A NAME="tex2html786"
+  HREF="node778.html">Graphe de la r&#233;gression logarithmique : 
+<TT>logarithmic_regression_plot</TT></A>
+<LI><A NAME="tex2html787"
+  HREF="node779.html">R&#233;gression polyn&#244;miale : <TT>polynomial_regression</TT></A>
+<LI><A NAME="tex2html788"
+  HREF="node780.html">Graphe de la r&#233;gression polynomiale :
+ <TT>polynomial_regression_plot</TT></A>
+<LI><A NAME="tex2html789"
+  HREF="node781.html">R&#233;gression puissance : <TT>power_regression</TT></A>
+<LI><A NAME="tex2html790"
+  HREF="node782.html">Graphe de la r&#233;gression puissance :
+ <TT>power_regression_plot</TT></A>
+<LI><A NAME="tex2html791"
+  HREF="node783.html">R&#233;gression logistique : <TT>logistic_regression</TT></A>
+<LI><A NAME="tex2html792"
+  HREF="node784.html">Graphe de la r&#233;gression logistique :
+ <TT>logistic_regression_plot</TT></A>
+</UL>
+<LI><A NAME="tex2html793"
+  HREF="node785.html">Les fonctions al&#233;atoires de <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html794"
+  HREF="node786.html">Pour initialiser les nombres al&#233;atoires : <TT>srand randseed RandSeed</TT></A>
+<LI><A NAME="tex2html795"
+  HREF="node787.html">Tirage &#233;quir&#233;parti <TT>rand hasard</TT></A>
+<UL>
+<LI><A NAME="tex2html796"
+  HREF="node788.html">Tirage &#233;quir&#233;parti sur <!-- MATH
+ $[0,1,..,2^{32}[$
+ -->
+[0, 1,.., 2<SUP>32</SUP>[ : <TT>rand() hasard()</TT></A>
+<LI><A NAME="tex2html797"
+  HREF="node789.html">Tirage al&#233;atoire &#233;quir&#233;parti sur l'intervalle [a;b[ : <TT>rand(a,b) hasard(a,b) rand(a..b)() hasard(a..b)()</TT></A>
+<LI><A NAME="tex2html798"
+  HREF="node790.html">Tirage al&#233;atoire d'entiers &#233;quir&#233;partis sur [0,..,n[ : <TT>rand(n) hasard(n)</TT></A>
+</UL>
+<LI><A NAME="tex2html799"
+  HREF="node791.html">Tirage al&#233;atoire sans remise de p objets parmi n : <TT>rand hasard</TT></A>
+<LI><A NAME="tex2html800"
+  HREF="node792.html">Tirage selon une loi normale : <TT>randnorm randNorm</TT></A>
+<LI><A NAME="tex2html801"
+  HREF="node793.html">Matrice al&#233;atoire : <TT>ranm randmatrix randMat</TT></A>
+</UL>
+<LI><A NAME="tex2html802"
+  HREF="node794.html">Les fonctions de r&#233;partition et leurs inverses</A>
+<UL>
+<LI><A NAME="tex2html803"
+  HREF="node795.html">Probabilit&#233; que <I>X</I> &#233;gale <I>k</I> lorsque <!-- MATH
+ $X \in \mathcal{B}(n,p)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \mathcal {B}$">(<I>n</I>, <I>p</I>) : <TT>binomial</TT></A>
+<LI><A NAME="tex2html804"
+  HREF="node796.html">Fonction de r&#233;partition de la loi  binomiale : <TT>binomial_cdf</TT></A>
+<LI><A NAME="tex2html805"
+  HREF="node797.html">Fonction de r&#233;partition inverse binomiale : <TT>binomial_icdf</TT></A>
+<LI><A NAME="tex2html806"
+  HREF="node798.html">Probabilit&#233; pour que <I>X</I> &#233;gale <I>k</I> lorsque <!-- MATH
+ $X\in \mathcal P(\mu)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \mathcal {P}$">(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$">) : <TT>poisson</TT></A>
+<LI><A NAME="tex2html807"
+  HREF="node799.html">Fonction  de r&#233;partition de Poisson  : <TT>poisson_cdf</TT></A>
+<LI><A NAME="tex2html808"
+  HREF="node800.html">Fonction de r&#233;partition inverse de Poisson  : <TT>poisson_icdf</TT></A>
+<LI><A NAME="tex2html809"
+  HREF="node801.html">Densit&#233; de probabilit&#233; de la loi normale : <TT>normald</TT></A>
+<LI><A NAME="tex2html810"
+  HREF="node802.html">Fonction de r&#233;partition de la loi  normale : <TT>normal_cdf normald_cdf</TT></A>
+<LI><A NAME="tex2html811"
+  HREF="node803.html">Fonction de r&#233;partition inverse normale : <TT>normal_icdf normald_icdf</TT></A>
+<LI><A NAME="tex2html812"
+  HREF="node804.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi normale : <TT>UTPN</TT></A>
+<LI><A NAME="tex2html813"
+  HREF="node805.html">Densit&#233; de probabilit&#233; de la loi de Student : <TT>student</TT></A>
+<LI><A NAME="tex2html814"
+  HREF="node806.html">Fonction de r&#233;partition de la loi de Student : <TT>student_cdf</TT></A>
+<LI><A NAME="tex2html815"
+  HREF="node807.html">Fonction de r&#233;partition inverse de Student : <TT>student_icdf</TT></A>
+<LI><A NAME="tex2html816"
+  HREF="node808.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi de Student : <TT>UTPT</TT></A>
+<LI><A NAME="tex2html817"
+  HREF="node809.html">Densit&#233; de probabilit&#233; de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare</TT></A>
+<LI><A NAME="tex2html818"
+  HREF="node810.html">Fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare_cdf</TT></A>
+<LI><A NAME="tex2html819"
+  HREF="node811.html">Fonction inverse de la fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare_icdf</TT></A>
+<LI><A NAME="tex2html820"
+  HREF="node812.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>UTPC</TT></A>
+<LI><A NAME="tex2html821"
+  HREF="node813.html">Densit&#233; de probabilit&#233; de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher snedecor</TT></A>
+<LI><A NAME="tex2html822"
+  HREF="node814.html">La fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_cdf snedecor_cdf</TT></A>
+<LI><A NAME="tex2html823"
+  HREF="node815.html">Inverse de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_icdf snedecor_icdf</TT></A>
+<LI><A NAME="tex2html824"
+  HREF="node816.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>UTPF</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html825"
+  HREF="node817.html">Les fonctions de programmation</A>
+<UL>
+<LI><A NAME="tex2html826"
+  HREF="node818.html">La forme d'une fonction, d'un programme et d'un script</A>
+<UL>
+<LI><A NAME="tex2html827"
+  HREF="node819.html">Le choix de l'&#233;diteur</A>
+<LI><A NAME="tex2html828"
+  HREF="node820.html">La forme d'une fonction</A>
+<LI><A NAME="tex2html829"
+  HREF="node821.html">La forme d'un programme</A>
+<LI><A NAME="tex2html830"
+  HREF="node822.html">La forme d'un script</A>
+</UL>
+<LI><A NAME="tex2html831"
+  HREF="node823.html">Ex&#233;cuter une fonction  pas &#224; pas</A>
+<LI><A NAME="tex2html832"
+  HREF="node824.html">La s&#233;quence d'instructions</A>
+<LI><A NAME="tex2html833"
+  HREF="node825.html">Les instructions de base</A>
+<UL>
+<LI><A NAME="tex2html834"
+  HREF="node826.html">Les commentaires : <TT>comment //</TT></A>
+<LI><A NAME="tex2html835"
+  HREF="node827.html">Les entr&#233;es : <TT>input</TT></A>
+<LI><A NAME="tex2html836"
+  HREF="node828.html">Fonction testant si une touche est press&#233;e : <TT>getKey</TT></A>
+<LI><A NAME="tex2html837"
+  HREF="node829.html">Fonction testant le type de son argument: <TT>type</TT></A>
+<LI><A NAME="tex2html838"
+  HREF="node830.html">Fonction testant le type de son argument: <TT>getType</TT></A>
+<LI><A NAME="tex2html839"
+  HREF="node831.html">Fonction testant le type de son argument: <TT>compare</TT></A>
+<LI><A NAME="tex2html840"
+  HREF="node832.html">Les sorties : <TT>print Disp ClrIO</TT></A>
+<LI><A NAME="tex2html841"
+  HREF="node833.html">Les sorties de <I>a</I><SUP>b</SUP> : <TT>printpow</TT></A>
+<LI><A NAME="tex2html842"
+  HREF="node834.html">Sortie dans une petite fen&#234;tre : <TT>output Output</TT></A>
+<LI><A NAME="tex2html843"
+  HREF="node835.html">Les affectations infix&#233;es : <TT>=&gt; := =&lt;</TT></A>
+<LI><A NAME="tex2html844"
+  HREF="node836.html">L'affectation par copie : <TT>copy</TT></A>
+<LI><A NAME="tex2html845"
+  HREF="node837.html">Les diff&#233;rences entre  <TT>:=</TT>, <TT>=&lt;</TT> et <TT>copy</TT></A>
+<LI><A NAME="tex2html846"
+  HREF="node838.html">Les instructions <TT>copy</TT> et <TT>=&lt;</TT> dans un programme </A>
+<LI><A NAME="tex2html847"
+  HREF="node839.html">L'affectation prefix&#233;e : <TT>sto Store</TT></A>
+<LI><A NAME="tex2html848"
+  HREF="node840.html">L'affectation d'une &#233;galit&#233; : <TT>assign</TT></A>
+<LI><A NAME="tex2html849"
+  HREF="node841.html">L'instruction conditionnelle : <TT>if else</TT></A>
+<LI><A NAME="tex2html850"
+  HREF="node842.html">L'instruction conditionnelle : <TT>switch</TT></A>
+<LI><A NAME="tex2html851"
+  HREF="node843.html">La boucle : <TT>for</TT></A>
+<LI><A NAME="tex2html852"
+  HREF="node844.html">La fonction : <TT>seq</TT></A>
+<LI><A NAME="tex2html853"
+  HREF="node845.html">La boucle : <TT>while</TT></A>
+<LI><A NAME="tex2html854"
+  HREF="node846.html">Modifier l'ordre d'ex&#233;cution des instructions : <TT>label goto</TT></A>
+</UL>
+<LI><A NAME="tex2html855"
+  HREF="node847.html">Les autres instructions</A>
+<UL>
+<LI><A NAME="tex2html856"
+  HREF="node848.html">Pour lire les entr&#233;es &#224; partir d'un fichier : <TT>read</TT></A>
+<LI><A NAME="tex2html857"
+  HREF="node849.html">Pour &#233;crire des variables et leur contenu dans un fichier : <TT>write</TT></A>
+<LI><A NAME="tex2html858"
+  HREF="node850.html">Pour &#233;crire des sorties dans un fichier : <TT>fopen fprint fclose</TT></A>
+<LI><A NAME="tex2html859"
+  HREF="node851.html">Pour utiliser une cha&#238;ne comme nom de variable ou comme nom de fonction : <TT>#</TT></A>
+<LI><A NAME="tex2html860"
+  HREF="node852.html">Pour utiliser une cha&#238;ne comme un nombre : <TT>expr</TT></A>
+<LI><A NAME="tex2html861"
+  HREF="node853.html">Pour utiliser une cha&#238;ne comme nom de commande : <TT>expr</TT></A>
+<LI><A NAME="tex2html862"
+  HREF="node854.html">&#201;valuer une expression sous la forme d'une cha&#238;ne : <TT>string</TT></A>
+</UL>
+<LI><A NAME="tex2html863"
+  HREF="node855.html">D'autres instructions utiles</A>
+<UL>
+<LI><A NAME="tex2html864"
+  HREF="node856.html">D&#233;finir une fonction ayant un nombre variable d'arguments : <TT>args</TT></A>
+<LI><A NAME="tex2html865"
+  HREF="node857.html">Pour sortir d'une boucle : <TT>break</TT></A>
+<LI><A NAME="tex2html866"
+  HREF="node858.html">Pour ne pas faire la fin d'une boucle : <TT>continue</TT></A>
+<LI><A NAME="tex2html867"
+  HREF="node859.html">Ouvrir l'&#232;cran <TT>DispG</TT> depuis un programme : <TT>DispG</TT></A>
+</UL>
+<LI><A NAME="tex2html868"
+  HREF="node860.html">Le debuggeur</A>
+<UL>
+<LI><A NAME="tex2html869"
+  HREF="node861.html">Ouvrir le d&#233;buggeur : <TT>debug</TT></A>
+<LI><A NAME="tex2html870"
+  HREF="node862.html">Avoir un arr&#234;t momentan&#233; : <TT>Pause</TT></A>
+<LI><A NAME="tex2html871"
+  HREF="node863.html">Intercepter une erreur : <TT>try..catch</TT></A>
+<LI><A NAME="tex2html872"
+  HREF="node864.html">G&#233;n&#233;rer une erreur : <TT>throw error ERROR</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html873"
+  HREF="node865.html">Les fonctions de géométrie 2D</A>
+<UL>
+<LI><A NAME="tex2html874"
+  HREF="node866.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html875"
+  HREF="node867.html">Les fonctions de base</A>
+<UL>
+<LI><A NAME="tex2html876"
+  HREF="node868.html">Effacer l'&#233;cran  <TT>DispG</TT> : <TT>erase</TT></A>
+<LI><A NAME="tex2html877"
+  HREF="node869.html">Effacer les axes : <TT>switch_axes</TT></A>
+<LI><A NAME="tex2html878"
+  HREF="node870.html">Effacer les points d&#233;finis par <TT>TX</TT> et <TT>TY</TT></A>
+<LI><A NAME="tex2html879"
+  HREF="node871.html">Avoir du papier point&#233; : <TT>papier_pointe dot_paper</TT></A>
+<LI><A NAME="tex2html880"
+  HREF="node872.html">Changer les param&#232;tres de la fen&#234;tre graphique : <TT>xyztrange</TT></A>
+</UL>
+<LI><A NAME="tex2html881"
+  HREF="node873.html">Les attributs des objets graphiques</A>
+<UL>
+<LI><A NAME="tex2html882"
+  HREF="node874.html">G&#233;n&#233;ralit&#233;s sur les attributs</A>
+<LI><A NAME="tex2html883"
+  HREF="node875.html">Les commandes d'attributs</A>
+<LI><A NAME="tex2html884"
+  HREF="node876.html">Les param&#232;tres optionnels d'attributs</A>
+<LI><A NAME="tex2html885"
+  HREF="node877.html">Mettre une l&#233;gende : <TT>legende</TT></A>
+<LI><A NAME="tex2html886"
+  HREF="node878.html">Les commandes d'affichage : <TT>display color affichage couleur</TT></A>
+<UL>
+<LI><A NAME="tex2html887"
+  HREF="node879.html">Pour ne pas afficher le nom de l'objet</A>
+<LI><A NAME="tex2html888"
+  HREF="node880.html">Mettre de la couleur</A>
+<LI><A NAME="tex2html889"
+  HREF="node881.html">Pour dessiner une figure pleine</A>
+<LI><A NAME="tex2html890"
+  HREF="node882.html">Les diff&#233;rents affichages de points</A>
+<LI><A NAME="tex2html891"
+  HREF="node883.html">Les diff&#233;rents formes d'affichage des lignes</A>
+<LI><A NAME="tex2html892"
+  HREF="node884.html">Les diff&#233;rentes &#233;paisseurs d'affichage des lignes</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html893"
+  HREF="node885.html">Comment d&#233;finir un objet g&#233;om&#233;trique sans le tracer : <TT>nodisp</TT></A>
+<LI><A NAME="tex2html894"
+  HREF="node886.html">Comment d&#233;finir et tracer sans nom, un objet g&#233;om&#233;trique</A>
+<LI><A NAME="tex2html895"
+  HREF="node887.html">Comment d&#233;finir et tracer un objet g&#233;om&#233;trique avec son nom</A>
+<LI><A NAME="tex2html896"
+  HREF="node888.html">Comment lire et cr&#233;er une image</A>
+<UL>
+<LI><A NAME="tex2html897"
+  HREF="node889.html">Qu'est-ce qu'une image ?</A>
+<LI><A NAME="tex2html898"
+  HREF="node890.html">Pour lire une image : <TT>readrgb</TT></A>
+<LI><A NAME="tex2html899"
+  HREF="node891.html">Pour  cr&#233;er une image : <TT>writergb</TT></A>
+</UL>
+<LI><A NAME="tex2html900"
+  HREF="node892.html">Comment faire une d&#233;monstration : <TT>assume</TT></A>
+<LI><A NAME="tex2html901"
+  HREF="node893.html">Les points en g&#233;om&#233;trie plane</A>
+<UL>
+<LI><A NAME="tex2html902"
+  HREF="node894.html">Les points et les nombres complexes</A>
+<LI><A NAME="tex2html903"
+  HREF="node895.html">Le point en g&#233;om&#233;trie plane : <TT>point</TT></A>
+<LI><A NAME="tex2html904"
+  HREF="node896.html">D&#233;finir au hasard un point 2D : <TT>point2d</TT></A>
+<LI><A NAME="tex2html905"
+  HREF="node897.html">Un des points d'intersection de deux objets g&#233;om&#233;triques : <TT>single_inter inter_unique line_inter inter_droite</TT></A>
+<LI><A NAME="tex2html906"
+  HREF="node898.html">Les points d'intersection de deux objets g&#233;om&#233;triques : <TT>inter</TT></A>
+<LI><A NAME="tex2html907"
+  HREF="node899.html">Orthocentre d'un triangle : <TT>orthocenter orthocentre</TT></A>
+<LI><A NAME="tex2html908"
+  HREF="node900.html">Le milieu d'un segment : <TT>midpoint milieu</TT></A>
+<LI><A NAME="tex2html909"
+  HREF="node901.html">L'isobarycentre de <I>n</I> points : <TT>isobarycenter isobarycentre</TT></A>
+<LI><A NAME="tex2html910"
+  HREF="node902.html">Point d&#233;fini comme barycentre de <I>n</I> points : <TT>barycenter barycentre</TT></A>
+<LI><A NAME="tex2html911"
+  HREF="node903.html">Le centre d'un cercle : <TT>centre center</TT></A>
+<LI><A NAME="tex2html912"
+  HREF="node904.html">Les sommets d'un polygone : <TT>vertices vertices_abc sommets sommets_abc</TT></A>
+<LI><A NAME="tex2html913"
+  HREF="node905.html">Les sommets d'un polygone : <TT>vertices_abca sommets_abca</TT></A>
+<LI><A NAME="tex2html914"
+  HREF="node906.html">Un point sur un objet g&#233;om&#233;trique : <TT>element</TT></A>
+</UL>
+<LI><A NAME="tex2html915"
+  HREF="node907.html">Les droites en g&#233;om&#233;trie plane </A>
+<UL>
+<LI><A NAME="tex2html916"
+  HREF="node908.html">La droite et la droite orient&#233;e en g&#233;om&#233;trie plane : <TT>line droite</TT></A>
+<LI><A NAME="tex2html917"
+  HREF="node909.html">La demi-droite en g&#233;om&#233;trie plane : <TT>half_line demi_droite</TT></A>
+<LI><A NAME="tex2html918"
+  HREF="node910.html">Le segment en g&#233;om&#233;trie plane : <TT>segment</TT></A>
+<LI><A NAME="tex2html919"
+  HREF="node911.html">Le segment : <TT>Line</TT></A>
+<LI><A NAME="tex2html920"
+  HREF="node912.html">Le vecteur en g&#233;om&#233;trie plane : <TT>vecteur</TT></A>
+<LI><A NAME="tex2html921"
+  HREF="node913.html">Les droites parall&#232;les : <TT>parallel parallele</TT></A>
+<LI><A NAME="tex2html922"
+  HREF="node914.html">Les droites perpendiculaires en 2D : <TT>perpendicular perpendiculaire</TT></A>
+<LI><A NAME="tex2html923"
+  HREF="node915.html">Les tangentes &#224; un objet g&#233;om&#233;trique plan : <TT>tangent</TT></A>
+<LI><A NAME="tex2html924"
+  HREF="node916.html">La m&#233;diane d'un triangle issue d'un sommet : <TT>median_line mediane</TT></A>
+<LI><A NAME="tex2html925"
+  HREF="node917.html">La hauteur d'un triangle issue d'un sommet : <TT>altitude hauteur</TT></A>
+<LI><A NAME="tex2html926"
+  HREF="node918.html">La m&#233;diatrice d'un segment : <TT>perpen_bisector mediatrice</TT></A>
+<LI><A NAME="tex2html927"
+  HREF="node919.html">La bissectrice int&#233;rieure d'un angle : <TT>bisector bissectrice</TT></A>
+<LI><A NAME="tex2html928"
+  HREF="node920.html">La bissectrice ext&#233;rieur d'un angle : <TT>exbisector exbissectrice</TT></A>
+</UL>
+<LI><A NAME="tex2html929"
+  HREF="node921.html">Les triangles</A>
+<UL>
+<LI><A NAME="tex2html930"
+  HREF="node922.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html931"
+  HREF="node923.html">Le triangle quelconque : <TT>triangle</TT></A>
+<LI><A NAME="tex2html932"
+  HREF="node924.html">Le triangle isoc&#232;le : <TT>isoceles_triangle triangle_isocele</TT></A>
+<LI><A NAME="tex2html933"
+  HREF="node925.html">Le triangle rectangle : <TT>right_triangle triangle_rectangle</TT></A>
+<LI><A NAME="tex2html934"
+  HREF="node926.html">Le triangle &#233;quilat&#232;ral : <TT>equilateral_triangle triangle_equilateral</TT></A>
+</UL>
+<LI><A NAME="tex2html935"
+  HREF="node927.html">Les quadrilat&#232;res</A>
+<UL>
+<LI><A NAME="tex2html936"
+  HREF="node928.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html937"
+  HREF="node929.html">Le carr&#233; : <TT>square carre</TT></A>
+<LI><A NAME="tex2html938"
+  HREF="node930.html">Le losange : <TT>rhombus losange</TT></A>
+<LI><A NAME="tex2html939"
+  HREF="node931.html">Le rectangle : <TT>rectangle</TT></A>
+<LI><A NAME="tex2html940"
+  HREF="node932.html">Le parall&#233;logramme : <TT>parallelogram parallelogramme</TT></A>
+<LI><A NAME="tex2html941"
+  HREF="node933.html">Le quadrilat&#232;re : <TT>quadrilateral quadrilatere</TT></A>
+</UL>
+<LI><A NAME="tex2html942"
+  HREF="node934.html">Les polygones</A>
+<UL>
+<LI><A NAME="tex2html943"
+  HREF="node935.html">L'hexagone : <TT>hexagon hexagone</TT></A>
+<LI><A NAME="tex2html944"
+  HREF="node936.html">Les polygones r&#233;guliers : <TT>isopolygon isopolygone</TT></A>
+<LI><A NAME="tex2html945"
+  HREF="node937.html">Le polygone : <TT>polygon polygone</TT></A>
+<LI><A NAME="tex2html946"
+  HREF="node938.html">La ligne polygonale : <TT>open_polygon polygone_ouvert</TT></A>
+<LI><A NAME="tex2html947"
+  HREF="node939.html">L'enveloppe convexe de points du plan: <TT>convexhull</TT></A>
+</UL>
+<LI><A NAME="tex2html948"
+  HREF="node940.html">Les cercles</A>
+<UL>
+<LI><A NAME="tex2html949"
+  HREF="node941.html">Le cercle : <TT>circle cercle</TT></A>
+<LI><A NAME="tex2html950"
+  HREF="node942.html">Les arcs de cercle : <TT>arc</TT></A>
+<LI><A NAME="tex2html951"
+  HREF="node943.html">Le cercle (compatibilit&#233; TI): <TT>Circle</TT></A>
+<LI><A NAME="tex2html952"
+  HREF="node944.html">Le cercle inscrit : <TT>incircle inscrit</TT></A>
+<LI><A NAME="tex2html953"
+  HREF="node945.html">Le cercle circonscrit : <TT>circumcircle circonscrit</TT></A>
+<LI><A NAME="tex2html954"
+  HREF="node946.html">Le cercle exinscrit : <TT>excircle exinscrit</TT></A>
+<LI><A NAME="tex2html955"
+  HREF="node947.html">Puissance d'un point par rapport &#224; un cercle : <TT>powerpc puissance</TT></A>
+<LI><A NAME="tex2html956"
+  HREF="node948.html">Axe radical de deux cercles : <TT>radical_axis axe_radical</TT></A>
+</UL>
+<LI><A NAME="tex2html957"
+  HREF="node949.html">Les coniques</A>
+<UL>
+<LI><A NAME="tex2html958"
+  HREF="node950.html">L'ellipse : <TT>ellipse</TT></A>
+<LI><A NAME="tex2html959"
+  HREF="node951.html">L'hyperbole : <TT>hyperbola hyperbole</TT></A>
+<LI><A NAME="tex2html960"
+  HREF="node952.html">La parabole : <TT>parabola parabole</TT></A>
+</UL>
+<LI><A NAME="tex2html961"
+  HREF="node953.html">Les mesures</A>
+<UL>
+<LI><A NAME="tex2html962"
+  HREF="node954.html">L'affixe d'un point ou d'un vecteur : <TT>affix affixe</TT></A>
+<LI><A NAME="tex2html963"
+  HREF="node955.html">L'abscisse d'un point ou d'un  vecteur : <TT>abscissa abscisse</TT></A>
+<LI><A NAME="tex2html964"
+  HREF="node956.html">L'ordonn&#233;e d'un point ou d'un  vecteur : <TT>ordinate ordonnee</TT></A>
+<LI><A NAME="tex2html965"
+  HREF="node957.html">Les coordonn&#233;es d'un point, d'un  vecteur ou d'une droite : <TT>coordinates coordonnees</TT></A>
+<LI><A NAME="tex2html966"
+  HREF="node958.html">L'&#233;quation cart&#233;sienne d'un objet g&#233;om&#233;trique : <TT>equation</TT></A>
+<LI><A NAME="tex2html967"
+  HREF="node959.html">L'&#233;quation param&#233;trique d'un objet g&#233;om&#233;trique : <TT>parameq</TT></A>
+<LI><A NAME="tex2html968"
+  HREF="node960.html">La longueur d'un segment: <TT>distance longueur</TT></A>
+<LI><A NAME="tex2html969"
+  HREF="node961.html">Le carr&#233; de la longueur d'un segment : <TT>distance2 longueur2</TT></A>
+<LI><A NAME="tex2html970"
+  HREF="node962.html">La mesure d'un angle : <TT>angle</TT></A>
+<LI><A NAME="tex2html971"
+  HREF="node963.html">Le rayon d'un cercle : <TT>radius rayon</TT></A>
+<LI><A NAME="tex2html972"
+  HREF="node964.html">La longueur d'un vecteur : <TT>abs</TT></A>
+<LI><A NAME="tex2html973"
+  HREF="node965.html">L'angle d'un vecteur avec Ox : <TT>arg</TT></A>
+<LI><A NAME="tex2html974"
+  HREF="node966.html">Pour normaliser un nombre complexe : <TT>normalize</TT></A>
+<LI><A NAME="tex2html975"
+  HREF="node967.html">Aire d'un polygone : <TT>area aire</TT></A>
+</UL>
+<LI><A NAME="tex2html976"
+  HREF="node968.html">Les transformations</A>
+<UL>
+<LI><A NAME="tex2html977"
+  HREF="node969.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html978"
+  HREF="node970.html">La translation : <TT>translation</TT></A>
+<LI><A NAME="tex2html979"
+  HREF="node971.html">La sym&#233;trie droite et la sym&#233;trie point : <TT>reflection symetrie</TT></A>
+<LI><A NAME="tex2html980"
+  HREF="node972.html">La rotation : <TT>rotation</TT></A>
+<LI><A NAME="tex2html981"
+  HREF="node973.html">L'homoth&#233;tie : <TT>homothety homothetie</TT></A>
+<LI><A NAME="tex2html982"
+  HREF="node974.html">La similitude : <TT>similarity similitude</TT></A>
+<LI><A NAME="tex2html983"
+  HREF="node975.html">L'inversion : <TT>inversion</TT></A>
+<LI><A NAME="tex2html984"
+  HREF="node976.html">La projection orthogonale : <TT>projection</TT></A>
+</UL>
+<LI><A NAME="tex2html985"
+  HREF="node977.html">Les propri&#233;t&#233;s</A>
+<UL>
+<LI><A NAME="tex2html986"
+  HREF="node978.html">Savoir si 1 point est sur un objet graphique : <TT>is_element est_element</TT></A>
+<LI><A NAME="tex2html987"
+  HREF="node979.html">Savoir si 3 points sont align&#233;s : <TT>is_collinear est_aligne</TT></A>
+<LI><A NAME="tex2html988"
+  HREF="node980.html">Savoir si 4 points sont cocycliques : <TT>is_cocyclic est_cocyclique</TT></A>
+<LI><A NAME="tex2html989"
+  HREF="node981.html">Savoir si on a un triangle &#233;quilat&#233;ral : <TT>is_equilateral est_equilateral</TT></A>
+<LI><A NAME="tex2html990"
+  HREF="node982.html">Savoir si on a un triangle isoc&#233;le : <TT>is_isoceles est_isocele</TT></A>
+<LI><A NAME="tex2html991"
+  HREF="node983.html">Savoir si on a un triangle rectangle ou si on a un rectangle : <TT>est_rectangle</TT></A>
+<LI><A NAME="tex2html992"
+  HREF="node984.html">Savoir si on a un carr&#233; : <TT>is_square est_carre</TT></A>
+<LI><A NAME="tex2html993"
+  HREF="node985.html">Savoir si on a un losange : <TT>is_rhombus est_losange</TT></A>
+<LI><A NAME="tex2html994"
+  HREF="node986.html">Savoir si on a un parall&#233;logramme : <TT>is_parallelogram est_parallelogramme</TT></A>
+<LI><A NAME="tex2html995"
+  HREF="node987.html">Savoir si 2 droites sont parall&#232;les : <TT>is_parallel est_parallele</TT></A>
+<LI><A NAME="tex2html996"
+  HREF="node988.html">Savoir si 2 droites 2D sont perpendiculaires : <TT>is_perpendicular est_perpendiculaire</TT></A>
+<LI><A NAME="tex2html997"
+  HREF="node989.html">Savoir si 2 cercles sont orthogonaux : <TT>is_orthogonal est_orthogonal</TT></A>
+<LI><A NAME="tex2html998"
+  HREF="node990.html">Savoir si des &#233;l&#233;ments sont conjugu&#233;s : <TT>is_conjugate est_conjugue</TT></A>
+<LI><A NAME="tex2html999"
+  HREF="node991.html">Ces droites sont en faisceau ? <TT>is_harmonic_line_bundle est_faisceau_droite</TT></A>
+<LI><A NAME="tex2html1000"
+  HREF="node992.html">Ces cercles sont-ils en faisceau : <TT>is_harmonic_circle_bundle est_faisceau_cercle</TT></A>
+</UL>
+<LI><A NAME="tex2html1001"
+  HREF="node993.html">La division harmonique, p&#244;les et polaires</A>
+<UL>
+<LI><A NAME="tex2html1002"
+  HREF="node994.html">Point divisant un segment dans le rapport <I>k</I> : <TT>division_point point_div</TT></A>
+<LI><A NAME="tex2html1003"
+  HREF="node995.html">Le birapport de 4 points align&#233;s : <TT>cross_ratio birapport</TT></A>
+<LI><A NAME="tex2html1004"
+  HREF="node996.html">Division harmonique : <TT>harmonic_division div_harmonique</TT></A>
+<LI><A NAME="tex2html1005"
+  HREF="node997.html">Le conjugu&#233; harmonique : <TT>harmonic_conjugate conj_harmonique</TT></A>
+<LI><A NAME="tex2html1006"
+  HREF="node998.html">P&#244;le et polaire : <TT>pole</TT> et <TT>polar polaire</TT></A>
+<LI><A NAME="tex2html1007"
+  HREF="node999.html">Polaire r&#233;ciproque: <TT>reciprocation polaire_reciproque</TT></A>
+</UL>
+<LI><A NAME="tex2html1008"
+  HREF="node1000.html">Les lieux et les enveloppes</A>
+<UL>
+<LI><A NAME="tex2html1009"
+  HREF="node1001.html">Les lieux : <TT>locus lieu</TT></A>
+<LI><A NAME="tex2html1010"
+  HREF="node1002.html">Les enveloppes : <TT>envelope enveloppe</TT></A>
+<LI><A NAME="tex2html1011"
+  HREF="node1003.html">La trace d'un objet g&#233;om&#233;trique: <TT>trace</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html1012"
+  HREF="node1004.html">Les fonctions de géométrie 3D</A>
+<UL>
+<LI><A NAME="tex2html1013"
+  HREF="node1005.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html1014"
+  HREF="node1006.html">Les angles d'Euler</A>
+<LI><A NAME="tex2html1015"
+  HREF="node1007.html">Les points</A>
+<UL>
+<LI><A NAME="tex2html1016"
+  HREF="node1008.html">D&#233;finir un point 3D : <TT>point</TT></A>
+<LI><A NAME="tex2html1017"
+  HREF="node1009.html">D&#233;finir un point 3D au hasard : <TT>point3d</TT></A>
+<LI><A NAME="tex2html1018"
+  HREF="node1010.html">Un des points d'intersection de deux objets g&#233;om&#233;triques : <TT>single_inter line_inter inter_unique inter_droite</TT></A>
+<LI><A NAME="tex2html1019"
+  HREF="node1011.html">Les points d'intersection de deux objets g&#233;om&#233;triques : <TT>inter</TT></A>
+<LI><A NAME="tex2html1020"
+  HREF="node1012.html">Le milieu d'un segment : <TT>midpoint milieu</TT></A>
+<LI><A NAME="tex2html1021"
+  HREF="node1013.html">L'isobarycentre de <I>n</I> points : <TT>isobarycenter isobarycentre</TT></A>
+<LI><A NAME="tex2html1022"
+  HREF="node1014.html">Point d&#233;fini comme barycentre de <I>n</I> points : <TT>barycenter barycentre</TT></A>
+</UL>
+<LI><A NAME="tex2html1023"
+  HREF="node1015.html">Les lignes</A>
+<UL>
+<LI><A NAME="tex2html1024"
+  HREF="node1016.html">D&#233;finir une droite 3D : <TT>line droite</TT></A>
+<LI><A NAME="tex2html1025"
+  HREF="node1017.html">D&#233;finir une droite orient&#233;e en 3D : <TT>line droite</TT></A>
+<LI><A NAME="tex2html1026"
+  HREF="node1018.html">La demi-droite en 3D: <TT>half_line demi_droite</TT></A>
+<LI><A NAME="tex2html1027"
+  HREF="node1019.html">Le segment en 3D : <TT>segment</TT></A>
+<LI><A NAME="tex2html1028"
+  HREF="node1020.html">Le vecteur en 3D : <TT>vecteur</TT></A>
+<LI><A NAME="tex2html1029"
+  HREF="node1021.html">Plan et droites parall&#232;les : <TT>parallel parallele</TT></A>
+<LI><A NAME="tex2html1030"
+  HREF="node1022.html">Plans (ou droites) perpendiculaires : <TT>perpendicular perpendiculaire</TT></A>
+<LI><A NAME="tex2html1031"
+  HREF="node1023.html">Droite orthogonale &#224; un plan et plan orthogonal &#224; une droite : <TT>orthogonal</TT></A>
+<LI><A NAME="tex2html1032"
+  HREF="node1024.html">La perpendiculaire commune &#224; deux droites 3D : <TT>common_perpendicular perpendicu- laire_commune</TT></A>
+</UL>
+<LI><A NAME="tex2html1033"
+  HREF="node1025.html">Les plans</A>
+<UL>
+<LI><A NAME="tex2html1034"
+  HREF="node1026.html">Le plan : <TT>plane plan</TT></A>
+<LI><A NAME="tex2html1035"
+  HREF="node1027.html">Le plan m&#233;diateur : <TT>perpen_bisector mediatrice</TT></A>
+<LI><A NAME="tex2html1036"
+  HREF="node1028.html">Le plan tangent : <TT>tangent</TT></A>
+<LI><A NAME="tex2html1037"
+  HREF="node1029.html">Plan orthogonal &#224; une droite : <TT>orthogonal</TT></A>
+<LI><A NAME="tex2html1038"
+  HREF="node1030.html">Plan perpendiculaire &#224; un plan : <TT>perpendicular  perpendiculaire</TT></A>
+</UL>
+<LI><A NAME="tex2html1039"
+  HREF="node1031.html">Les triangles dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html1040"
+  HREF="node1032.html">Le triangle quelconque dans l'espace: <TT>triangle</TT></A>
+<LI><A NAME="tex2html1041"
+  HREF="node1033.html">Le triangle isoc&#232;le dans l'espace : <TT>isoceles_triangle triangle_isocele</TT></A>
+<LI><A NAME="tex2html1042"
+  HREF="node1034.html">Le triangle rectangle dans l'espace : <TT>triangle_rectangle</TT></A>
+<LI><A NAME="tex2html1043"
+  HREF="node1035.html">Le triangle &#233;quilat&#232;ral dans l'espace : <TT>equilateral_triangle triangle_equilateral</TT></A>
+</UL>
+<LI><A NAME="tex2html1044"
+  HREF="node1036.html">Les quadrilat&#232;res dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html1045"
+  HREF="node1037.html">Le carr&#233; dans l'espace : <TT>square carre</TT></A>
+<LI><A NAME="tex2html1046"
+  HREF="node1038.html">Le losange dans l'espace : <TT>rhombus losange</TT></A>
+<LI><A NAME="tex2html1047"
+  HREF="node1039.html">Le rectangle dans l'espace : <TT>rectangle</TT></A>
+<LI><A NAME="tex2html1048"
+  HREF="node1040.html">Le parall&#233;logramme dans l'espace : <TT>parallelogram parallelogramme</TT></A>
+<LI><A NAME="tex2html1049"
+  HREF="node1041.html">Les quadrilat&#232;res quelconques dans l'espace : <TT>quadrilateral quadrilatere</TT></A>
+</UL>
+<LI><A NAME="tex2html1050"
+  HREF="node1042.html">Les polygones dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html1051"
+  HREF="node1043.html">L'hexagone : <TT>hexagon hexagone</TT></A>
+<LI><A NAME="tex2html1052"
+  HREF="node1044.html">Les polygones r&#233;guliers dans l'espace : <TT>isopolygon isopolygone</TT></A>
+<LI><A NAME="tex2html1053"
+  HREF="node1045.html">Les polygones quelconques dans l'espace : <TT>polygon polygone</TT></A>
+<LI><A NAME="tex2html1054"
+  HREF="node1046.html">Ligne polygonale dans l'espace : <TT>open_polygon polygone_ouvert</TT></A>
+</UL>
+<LI><A NAME="tex2html1055"
+  HREF="node1047.html">Les cercles dans l'espace : <TT>circle cercle</TT></A>
+<LI><A NAME="tex2html1056"
+  HREF="node1048.html">Les coniques dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html1057"
+  HREF="node1049.html">L'ellipse dans l'espace : <TT>ellipse</TT></A>
+<LI><A NAME="tex2html1058"
+  HREF="node1050.html">L'hyperbole dans l'espace : <TT>hyperbola hyperbole</TT></A>
+<LI><A NAME="tex2html1059"
+  HREF="node1051.html">La parabole dans l'espace : <TT>parabola parabole</TT></A>
+</UL>
+<LI><A NAME="tex2html1060"
+  HREF="node1052.html">Les mesures</A>
+<UL>
+<LI><A NAME="tex2html1061"
+  HREF="node1053.html">L'abscisse d'un point 3D : <TT>abscissa abscisse</TT></A>
+<LI><A NAME="tex2html1062"
+  HREF="node1054.html">L'ordonn&#233;e d'un point 3D : <TT>ordinate ordonnee</TT></A>
+<LI><A NAME="tex2html1063"
+  HREF="node1055.html">La cote d'un point 3D : <TT>cote</TT></A>
+<LI><A NAME="tex2html1064"
+  HREF="node1056.html">Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite 3D : <TT>coordinates coordonnees</TT></A>
+<LI><A NAME="tex2html1065"
+  HREF="node1057.html">L'&#233;quation cart&#233;sienne d'un objet g&#233;om&#233;trique : <TT>equation</TT></A>
+<LI><A NAME="tex2html1066"
+  HREF="node1058.html">L'&#233;quation param&#233;trique d'un objet g&#233;om&#233;trique : <TT>parameq</TT></A>
+<LI><A NAME="tex2html1067"
+  HREF="node1059.html">La longueur d'un segment: <TT>distance longueur</TT></A>
+<LI><A NAME="tex2html1068"
+  HREF="node1060.html">Le carr&#233; de la longueur d'un segment : <TT>distance2 longueur2</TT></A>
+<LI><A NAME="tex2html1069"
+  HREF="node1061.html">La mesure d'un angle : <TT>angle</TT></A>
+</UL>
+<LI><A NAME="tex2html1070"
+  HREF="node1062.html">Les propri&#233;t&#233;s</A>
+<UL>
+<LI><A NAME="tex2html1071"
+  HREF="node1063.html">Savoir si 1 objet g&#233;om&#233;trique est sur un objet graphique : <TT>is_element est_element</TT></A>
+<LI><A NAME="tex2html1072"
+  HREF="node1064.html">Savoir si des points ou /et des droites sont coplanaires : <TT>is_coplanar est_coplanaire</TT></A>
+<LI><A NAME="tex2html1073"
+  HREF="node1065.html">Savoir si droites ou /et plans sont parall&#232;les <TT>is_parallel est_parallele</TT></A>
+<LI><A NAME="tex2html1074"
+  HREF="node1066.html">Savoir si des droites ou/et plans sont perpendiculaires 
+<BR><TT>is_perpendicular est_perpendiculaire</TT></A>
+<LI><A NAME="tex2html1075"
+  HREF="node1067.html">Orthogonalit&#233; de 2 droites ou 2 sph&#232;res : <TT>is_orthogonal est_orthogonal</TT></A>
+<LI><A NAME="tex2html1076"
+  HREF="node1068.html">Savoir si 3 points sont align&#233;s : <TT>is_collinear est_aligne</TT></A>
+<LI><A NAME="tex2html1077"
+  HREF="node1069.html">Savoir si 4 points sont cocycliques : <TT>is_cocyclic est_cocyclique</TT></A>
+<LI><A NAME="tex2html1078"
+  HREF="node1070.html">Savoir si 5 points sont cospheriques : <TT>est_cospherique</TT></A>
+<LI><A NAME="tex2html1079"
+  HREF="node1071.html">Savoir si on a un triangle &#233;quilat&#233;ral : <TT>is_equilateral est_equilateral</TT></A>
+<LI><A NAME="tex2html1080"
+  HREF="node1072.html">Savoir si on a un triangle isoc&#233;le : <TT>is_isoceles est_isocele</TT></A>
+<LI><A NAME="tex2html1081"
+  HREF="node1073.html">Savoir si on a un triangle rectangle ou si on a un rectangle : <TT>est_rectangle</TT></A>
+<LI><A NAME="tex2html1082"
+  HREF="node1074.html">Savoir si on a un carr&#233; : <TT>is_square est_carre</TT></A>
+<LI><A NAME="tex2html1083"
+  HREF="node1075.html">Savoir si on a un losange : <TT>is_rhombus est_losange</TT></A>
+<LI><A NAME="tex2html1084"
+  HREF="node1076.html">Savoir si on a un parall&#233;logramme : <TT>is_parallelogram est_parallelogramme</TT></A>
+</UL>
+<LI><A NAME="tex2html1085"
+  HREF="node1077.html">Les transformations</A>
+<UL>
+<LI><A NAME="tex2html1086"
+  HREF="node1078.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html1087"
+  HREF="node1079.html">La translation : <TT>translation</TT></A>
+<LI><A NAME="tex2html1088"
+  HREF="node1080.html">La sym&#233;trie par rapport &#224; un plan, une droite ou un point : <TT>reflection symetrie</TT></A>
+<LI><A NAME="tex2html1089"
+  HREF="node1081.html">La rotation : <TT>rotation</TT></A>
+<LI><A NAME="tex2html1090"
+  HREF="node1082.html">L'homoth&#233;tie : <TT>homothety homothetie</TT></A>
+<LI><A NAME="tex2html1091"
+  HREF="node1083.html">La similitude : <TT>similarity similitude</TT></A>
+<LI><A NAME="tex2html1092"
+  HREF="node1084.html">L'inversion : <TT>inversion</TT></A>
+<LI><A NAME="tex2html1093"
+  HREF="node1085.html">La projection orthogonale : <TT>projection</TT></A>
+</UL>
+<LI><A NAME="tex2html1094"
+  HREF="node1086.html">Les surfaces</A>
+<UL>
+<LI><A NAME="tex2html1095"
+  HREF="node1087.html">Le c&#244;ne : <TT>cone</TT></A>
+<LI><A NAME="tex2html1096"
+  HREF="node1088.html">Le demi-c&#244;ne : <TT>half_cone demi_cone</TT></A>
+<LI><A NAME="tex2html1097"
+  HREF="node1089.html">Le cylindre : <TT>cylinder cylindre</TT></A>
+<LI><A NAME="tex2html1098"
+  HREF="node1090.html">La sph&#232;re : <TT>sphere</TT></A>
+<LI><A NAME="tex2html1099"
+  HREF="node1091.html">Surface d&#233;finie par une fonction : <TT>funcplot</TT></A>
+<LI><A NAME="tex2html1100"
+  HREF="node1092.html">Surface d&#233;finie par une &#233;quation param&#233;trique : <TT>paramplot</TT></A>
+</UL>
+<LI><A NAME="tex2html1101"
+  HREF="node1093.html">Les solides</A>
+<UL>
+<LI><A NAME="tex2html1102"
+  HREF="node1094.html">Le cube : <TT>cube</TT></A>
+<LI><A NAME="tex2html1103"
+  HREF="node1095.html">Le t&#233;tra&#232;dre : <TT>tetrahedron pyramid tetraedre pyramide</TT></A>
+<LI><A NAME="tex2html1104"
+  HREF="node1096.html">Le parall&#233;l&#233;pip&#232;de : <TT>parallelepiped parallelepipede</TT></A>
+<LI><A NAME="tex2html1105"
+  HREF="node1097.html">Le prisme : <TT>prism prisme</TT></A>
+<LI><A NAME="tex2html1106"
+  HREF="node1098.html">Les poly&#232;dres : <TT>polyhedron polyedre</TT></A>
+<LI><A NAME="tex2html1107"
+  HREF="node1099.html">Les faces : <TT>faces</TT></A>
+<LI><A NAME="tex2html1108"
+  HREF="node1100.html">Les ar&#234;tes : <TT>line_segments aretes</TT></A>
+</UL>
+<LI><A NAME="tex2html1109"
+  HREF="node1101.html">Les solides de Platon</A>
+<UL>
+<LI><A NAME="tex2html1110"
+  HREF="node1102.html">: <TT>centered_tetrahedron tetraedre_centre</TT></A>
+<LI><A NAME="tex2html1111"
+  HREF="node1103.html">: <TT>centered_cube cube_centre</TT></A>
+<LI><A NAME="tex2html1112"
+  HREF="node1104.html">L'octa&#232;dre : <TT>octahedron octaedre</TT></A>
+<LI><A NAME="tex2html1113"
+  HREF="node1105.html">Le dodecaèdre : <TT>dodecahedron dodecaedre</TT></A>
+<LI><A NAME="tex2html1114"
+  HREF="node1106.html">L'icosaèdre : <TT>icosahedron icosaedre</TT></A>
+</UL>
+<LI><A NAME="tex2html1115"
+  HREF="node1107.html">Figures et preuves d''exercices avec <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html1116"
+  HREF="node1108.html">Exercice 1</A>
+<LI><A NAME="tex2html1117"
+  HREF="node1109.html">Exercice 2</A>
+<LI><A NAME="tex2html1118"
+  HREF="node1110.html">Exercice 3 prolongement de l'exercice 2</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html1119"
+  HREF="node1111.html">Utilisation de  <TT>giac</TT> &#224; l'int&#233;rieur d'un programme</A>
+<UL>
+<LI><A NAME="tex2html1120"
+  HREF="node1112.html">Utilisation dans un programme  <TT>C++</TT></A>
+<LI><A NAME="tex2html1121"
+  HREF="node1113.html">Pour d&#233;finir de nouvelles fonctions de <TT>giac</TT></A>
+<UL>
+<LI><A NAME="tex2html1122"
+  HREF="node1114.html">Le type <TT>gen</TT></A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html1123"
+  HREF="node1115.html">&#192; propos de ce document...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

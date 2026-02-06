@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Point d&#233;fini comme barycentre de n points : barycenter barycentre</TITLE>
+<META NAME="description" CONTENT="Point d&#233;fini comme barycentre de n points : barycenter barycentre">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node924.html">
+<LINK REL="previous" HREF="node922.html">
+<LINK REL="up" HREF="node914.html">
+<LINK REL="next" HREF="node924.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16765"
+  HREF="node924.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16759"
+  HREF="node914.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16753"
+  HREF="node922.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16761"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16763"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16766"
+  HREF="node924.html">Le centre d'un cercle</A>
+<B> monter:</B> <A NAME="tex2html16760"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16754"
+  HREF="node922.html">L'isobarycentre de n points</A>
+ &nbsp; <B>  <A NAME="tex2html16762"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16764"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001299000000000000000"></A><A NAME="24240"></A><A NAME="24241"></A><A NAME="sec:barycentre2"></A>
+<BR>
+Point d&#233;fini comme barycentre de <I>n</I> points : <TT>barycenter barycentre</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1035.html#sec:barycentre3">10.3.7</A> pour la g&#233;om&#233;trie 3D et <A HREF="node312.html#sec:baryc">6.12.10</A>.
+<BR><TT>barycentre</TT> ou <TT>barycenter</TT>, en g&#233;om&#233;trie plane, a comme 
+argument deux listes de m&#234;me longueur (resp une matrice ayant deux colonnes) 
+la premi&#232;re liste (resp colonne) contient des points <I>A</I><SUB>j</SUB> ou des nombres 
+complexes <I>a</I><SUB>j</SUB> repr&#233;sentant l'affixe de ces points, la deuxi&#232;me liste 
+(resp colonne) contient des coefficients r&#233;els <IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$">.
+<BR><TT>barycentre</TT> ou <TT>barycenter</TT> renvoie et trace le point qui est le 
+barycentre des points <I>A</I><SUB>j</SUB> d'affixes <I>a</I><SUB>j</SUB> affect&#233;s des coefficients r&#233;els
+<IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$"> lorsque <!-- MATH
+ $\sum \alpha_j \neq 0$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$ \sum$"><IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$"> <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> 0.
+<BR>
+Si <!-- MATH
+ $\sum \alpha_j = 0$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$ \sum$"><IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$"> = 0, <TT>barycentre</TT> ou <TT>barycenter</TT> renvoie une 
+erreur.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>barycentre([1+i,1-i],[1,1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>barycentre([point(1,1),point(1,-1)],[1,1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>barycentre([[1+i,1],[1-i,1]])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>barycentre([[point(1,1),1],[point(1,-1),1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point d'affixe i est trac&#233; avec une croix</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16765"
+  HREF="node924.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16759"
+  HREF="node914.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16753"
+  HREF="node922.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16761"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16763"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16766"
+  HREF="node924.html">Le centre d'un cercle</A>
+<B> monter:</B> <A NAME="tex2html16760"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16754"
+  HREF="node922.html">L'isobarycentre de n points</A>
+ &nbsp; <B>  <A NAME="tex2html16762"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16764"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

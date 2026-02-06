@@ -1,0 +1,97 @@
+2021-10-21 22:09:38 [11080] INFO [JS] There are 0 components to uninstall +5ms
+2021-10-21 20:09:38.769: 2021-10-21 22:09:38 [11080] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-10-21 20:09:38.769: 2021-10-21 22:09:38 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 (271) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Charte-sur-la-protection-des-donnees-1.0.16.0.json +3ms
+2021-10-21 20:09:38.769: 2021-10-21 22:09:38 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-10-21 20:09:38.784: 2021-10-21 22:09:38 [11080] INFO [Runner] Creating configuration unit runner object... +14ms
+2021-10-21 20:09:38.784: 2021-10-21 22:09:38 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:09:38.784: 2021-10-21 22:09:38 [11080] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-10-21 20:09:38.784: {
+2021-10-21 20:09:38.784:   "platform": "win32",
+2021-10-21 20:09:38.784:   "deviceId": "IFP052046109",
+2021-10-21 20:09:38.784:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-10-21 20:09:38.784:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-10-21 20:09:38.784:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-10-21 20:09:38.784:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-10-21 20:09:38.784:   "versionCode": 21093040,
+2021-10-21 20:09:38.784:   "trigger": "configuration",
+2021-10-21 20:09:38.784:   "metadata": {
+2021-10-21 20:09:38.784:     "packageVersion": "1.0.16.0",
+2021-10-21 20:09:38.784:     "componentParameters": {
+2021-10-21 20:09:38.784:       "AppX": "Hisqool.Legal.GDPR",
+2021-10-21 20:09:38.784:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-10-21 20:09:38.784:       "DesktopShortcut": "Charte de protection*",
+2021-10-21 20:09:38.784:       "ProvisioningPackage": "Hisqool GDPR",
+2021-10-21 20:09:38.784:       "InstallationDirectory": "hisqool.gdpr",
+2021-10-21 20:09:38.784:       "UninstallationDirectory": "hisqool.gdpr",
+2021-10-21 20:09:38.784:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-10-21 20:09:38.784:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-10-21 20:09:38.784:     },
+2021-10-21 20:09:38.784:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-10-21 20:09:38.784:   }
+2021-10-21 20:09:38.784: } +1ms
+2021-10-21 20:09:38.784: 2021-10-21 22:09:38 [11080] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-10-21 20:09:38.784: 2021-10-21 22:09:38 [11080] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +2ms
+2021-10-21 20:09:42.596: 2021-10-21 22:09:42 [11080] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '52191d55-a6aa-4d53-9830-fded6eb78582').version +3805ms
+2021-10-21 20:09:42.596: 2021-10-21 22:09:42 [11080] INFO [JS] Installing the package ... +1ms
+2021-10-21 20:09:42.596: 2021-10-21 22:09:42 [11080] INFO [Runner] Performing runner... +1ms
+2021-10-21 20:09:42.611: 2021-10-21 22:09:42 [11080] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-10-21 20:09:44.142: 2021-10-21 22:09:44 [11080] INFO [JS] GUID package: f7639fd5-22e3-42bd-9806-a3aafb44760a +1538ms
+2021-10-21 20:09:45.595: 2021-10-21 22:09:45 [11080] INFO [JS] Version of update package: 1.1 +1444ms
+2021-10-21 20:09:45.595: 2021-10-21 22:09:45 [11080] INFO [JS] Your package is up to date +1ms
+2021-10-21 20:09:45.595: 2021-10-21 22:09:45 [11080] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-10-21 20:09:45.595: 2021-10-21 22:09:45 [11080] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +2ms
+2021-10-21 20:09:45.735: 2021-10-21 22:09:45 [11080] INFO [JS] Version of update package: 9.14 +148ms
+2021-10-21 20:09:45.735: 2021-10-21 22:09:45 [11080] INFO [JS] Upgrading the package ... +1ms
+2021-10-21 20:09:45.751: 2021-10-21 22:09:45 [11080] INFO [Runner] Performing runner... +0ms
+2021-10-21 20:09:45.751: 2021-10-21 22:09:45 [11080] INFO [JS] Removing package, GUID=10108c63-247d-41bd-92fa-2e15beeb2c93... +1ms
+2021-10-21 20:09:45.782: 2021-10-21 22:09:45 [11080] INFO [JS] Result: 0 +37ms
+2021-10-21 20:09:45.782: 2021-10-21 22:09:45 [11080] INFO [JS] Stdout: 1.1.4.21090425 +0ms
+2021-10-21 20:09:45.782: 2021-10-21 22:09:45 [11080] INFO [JS] Stderr:  +1ms
+2021-10-21 20:09:45.782: 2021-10-21 22:09:45 [11080] INFO [JS] Build number of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe is 21090425 +38ms
+2021-10-21 20:09:45.829: 2021-10-21 22:09:45 [11080] INFO [JS] New version 21090425 <=>  21090425 Installed +1ms
+2021-10-21 20:09:45.829: 2021-10-21 22:09:45 [11080] INFO [JS] Current version is up to date +0ms
+2021-10-21 20:09:45.829: 2021-10-21 22:09:45 [11080] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-10-21 20:09:46.438: 2021-10-21 22:09:46 [11080] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2021-10-21 20:09:46.438: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2021-10-21 20:09:46.438: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-10-21 20:09:46.438: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-10-21 20:09:46.438: Arguments=
+2021-10-21 20:09:46.438: ArgumentsExpanded=
+2021-10-21 20:09:46.438: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-10-21 20:09:46.438: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-10-21 20:09:46.438: RunStyle=1
+2021-10-21 20:09:46.438: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-10-21 20:09:46.438: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-10-21 20:09:46.438: HotKey=0 (None)
+2021-10-21 20:09:46.438: Description=HiSqool
+2021-10-21 20:09:46.438: 
+2021-10-21 20:09:46.438: The command completed successfully. +611ms
+2021-10-21 20:09:46.438: 2021-10-21 22:09:46 [11080] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-10-21 20:09:46.782: 2021-10-21 22:09:46 [11080] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2021-10-21 20:09:46.782: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2021-10-21 20:09:46.782: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-10-21 20:09:46.782: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-10-21 20:09:46.782: Arguments=
+2021-10-21 20:09:46.782: ArgumentsExpanded=
+2021-10-21 20:09:46.782: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-10-21 20:09:46.782: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-10-21 20:09:46.782: RunStyle=1
+2021-10-21 20:09:46.782: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-10-21 20:09:46.782: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-10-21 20:09:46.782: HotKey=0 (None)
+2021-10-21 20:09:46.782: Description=HiSqool
+2021-10-21 20:09:46.782: 
+2021-10-21 20:09:46.782: The command completed successfully. +341ms
+2021-10-21 20:09:46.782: 2021-10-21 22:09:46 [11080] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-10-21 20:09:47.047: 2021-10-21 22:09:47 [11080] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +264ms
+2021-10-21 20:09:47.047: 2021-10-21 22:09:47 [11080] INFO [JS] Actions to perform: 1 +0ms
+2021-10-21 20:09:47.047: 2021-10-21 22:09:47 [11080] INFO [Runner] Performing runner... +0ms
+2021-10-21 20:09:47.047: 2021-10-21 22:09:47 [11080] INFO [JS] Running installer... +2ms
+2021-10-21 20:09:47.063: 2021-10-21 22:09:47 [11080] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +1ms
+2021-10-21 20:09:47.110: 2021-10-21 22:09:47 [11080] INFO [JS] Result: 0 +51ms
+2021-10-21 20:09:47.110: 2021-10-21 22:09:47 [11080] INFO [JS] Stdout:  +1ms
+2021-10-21 20:09:47.110: 2021-10-21 22:09:47 [11080] INFO [JS] Stderr: #< CLIXML
+2021-10-21 20:09:47.110: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">Get-ItemProperty : Impossible de trouver le chemin d'acc�s �HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding�, car il n'existe _x000D__x000A_</S><S S="Error">pas._x000D__x000A_</S><S S="Error">Au caract�re Ligne:1 : 2_x000D__x000A_</S><S S="Error">+ (Get-ItemProperty -Path HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding -Nam ..._x000D__x000A_</S><S S="Error">+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_x000D__x000A_</S><S S="Error">    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding:String) [Get-ItemProperty], It _x000D__x000A_</S><S S="Error">   emNotFoundException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand_x000D__x000A_</S><S S="Error"> _x000D__x000A_</S></Objs> +1ms
+2021-10-21 20:09:47.110: 2021-10-21 22:09:47 [11080] INFO [JS] isCustomShellPossible: true +1ms
+2021-10-21 20:09:47.110: 2021-10-21 22:09:47 [11080] INFO [JS] hasApiEnabledDeviceManager: true +0ms
+2021-10-21 20:09:47.110: 2021-10-21 22:09:47 [11080] INFO [JS] hasSqoolCtl: true +1ms

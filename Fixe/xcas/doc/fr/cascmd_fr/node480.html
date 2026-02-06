@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice de Sylvester de deux polyn&#244;mes : sylvester</TITLE>
+<META NAME="description" CONTENT="Matrice de Sylvester de deux polyn&#244;mes : sylvester">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node481.html">
+<LINK REL="previous" HREF="node479.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node481.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9994"
+  HREF="node481.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9988"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9982"
+  HREF="node479.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9990"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9992"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9995"
+  HREF="node481.html">R&#233;sultant de deux polyn&#244;mes</A>
+<B> monter:</B> <A NAME="tex2html9989"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9983"
+  HREF="node479.html">Suites de Sturm :</A>
+ &nbsp; <B>  <A NAME="tex2html9991"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9993"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092618000000000000000"></A><A NAME="12386"></A>
+<BR>
+Matrice de Sylvester de deux polyn&#244;mes : <TT>sylvester</TT>
+</H2>
+<TT>sylvester</TT> a comme arguments deux polyn&#244;mes.
+<BR><TT>sylvester</TT> renvoie la matrice <I>S</I> de Sylvester des deux polyn&#244;mes.
+<BR>
+Pour deux polyn&#244;mes <!-- MATH
+ $A(x)=\sum_{i=0}^{i=n} a_ix^i$
+ -->
+<I>A</I>(<I>x</I>) = <IMG
+ WIDTH="47" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img359.png"
+ ALT="$ \sum_{{i=0}}^{{i=n}}$"><I>a</I><SUB>i</SUB><I>x</I><SUP>i</SUP> et 
+<!-- MATH
+ $B(x)=\sum_{i=0}^{i=m}b_ix^i$
+ -->
+<I>B</I>(<I>x</I>) = <IMG
+ WIDTH="51" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img360.png"
+ ALT="$ \sum_{{i=0}}^{{i=m}}$"><I>b</I><SUB>i</SUB><I>x</I><SUP>i</SUP>, la  matrice <TT>S</TT> de Sylvester est une matrice
+carr&#233;e de dimensiom <TT>m+n</TT> dont les <TT>m=degree(B(x))</TT> premi&#232;res 
+lignes sont  compos&#233;es &#224; partir des coefficients de <I>A</I>(<I>x</I>) :
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccccccc}
+s_{11}=a_n & s_{12}=a_{n-1}& \cdots & s_{1(n+1)}=a_0 & 0 & \cdots & 0\\
+s_{21}=0 & s_{22}=a_{n}& \cdots & s_{2(n+1)}=a_1 & s_{2(n+2)}=a_0 & \cdots & 0\\
+\vdots &\vdots &\vdots &\ddots &\vdots &\ddots &\vdots\\
+s_{m1}=0 & s_{m2}=0& \cdots & s_{m(n+1)}=a_{m-1} & s_{m(n+2)}=a_{m-2} & \cdots&a_0 
+\end{array}\right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="21" HEIGHT="113" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccccccc}
+s_{11}=a_n &amp; s_{12}=a_{n-1...
+...ots &amp; s_{m(n+1)}=a_{m-1} &amp; s_{m(n+2)}=a_{m-2} &amp; \cdots&amp;a_0
+\end{array}}\right.$"><IMG
+ WIDTH="552" HEIGHT="113" ALIGN="MIDDLE" BORDER="0"
+ SRC="img362.png"
+ ALT="$\displaystyle \begin{array}{ccccccc}
+s_{11}=a_n &amp; s_{12}=a_{n-1}&amp; \cdots &amp; s_{1...
+...}=0&amp; \cdots &amp; s_{m(n+1)}=a_{m-1} &amp; s_{m(n+2)}=a_{m-2} &amp; \cdots&amp;a_0
+\end{array}$"><IMG
+ WIDTH="21" HEIGHT="113" ALIGN="MIDDLE" BORDER="0"
+ SRC="img363.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccccccc}
+s_{11}=a_n &amp; s_{12}=a_{n-1...
+...ots &amp; s_{m(n+1)}=a_{m-1} &amp; s_{m(n+2)}=a_{m-2} &amp; \cdots&amp;a_0
+\end{array}}\right)$">
+</DIV><P></P>
+et les <TT>n=degree(A(x))</TT> lignes  suivantes sont compos&#233;es de la m&#234;me 
+fa&#231;on &#224; partir des coefficients de <TT>B(x)</TT> :
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccccccc}
+s_{(m+1)1}=b_m & s_{(m+1)2}=b_{m-1}& \cdots & s_{(m+1)(m+1)}=b_0 & 0 & \cdots & 0\\
+\vdots &\vdots &\vdots &\ddots &\vdots &\ddots &\vdots\\
+s_{(m+n)1}=0 & s_{(m+n)2}=0& \cdots & s_{(m+n)(m+1)}=b_{n-1}  & b_{n-2}  &\cdots&b_0 
+\end{array}\right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="22" HEIGHT="93" ALIGN="MIDDLE" BORDER="0"
+ SRC="img364.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccccccc}
+s_{(m+1)1}=b_m &amp; s_{(m+1)2...
+...}=0&amp; \cdots &amp; s_{(m+n)(m+1)}=b_{n-1} &amp; b_{n-2} &amp;\cdots&amp;b_0
+\end{array}}\right.$"><IMG
+ WIDTH="562" HEIGHT="91" ALIGN="MIDDLE" BORDER="0"
+ SRC="img365.png"
+ ALT="$\displaystyle \begin{array}{ccccccc}
+s_{(m+1)1}=b_m &amp; s_{(m+1)2}=b_{m-1}&amp; \cdot...
+..._{(m+n)2}=0&amp; \cdots &amp; s_{(m+n)(m+1)}=b_{n-1} &amp; b_{n-2} &amp;\cdots&amp;b_0
+\end{array}$"><IMG
+ WIDTH="22" HEIGHT="93" ALIGN="MIDDLE" BORDER="0"
+ SRC="img366.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccccccc}
+s_{(m+1)1}=b_m &amp; s_{(m+1)2...
+...}=0&amp; \cdots &amp; s_{(m+n)(m+1)}=b_{n-1} &amp; b_{n-2} &amp;\cdots&amp;b_0
+\end{array}}\right)$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sylvester(x<code>^</code>3-p*x+q,3*x<code>^</code>2-p,x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0,-p,q,0],[0,1,0,-p,q],[3,0,-p,0,0], [0,3,0,-p,0],[0,0,3,0,-p]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>det([[1,0,-p,q,0],[0,1,0,-p,q],[3,0,-p,0,0], [0,3,0,-p,0],[0,0,3,0,-p]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-4*p<code>^</code>3-27*q<code>^</code>2</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

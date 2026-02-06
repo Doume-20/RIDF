@@ -1,0 +1,106 @@
+2020-10-07 13:25:50 [4908] INFO [JS] Getting installed applications... +333ms
+2020-10-07 11:25:54.170: 2020-10-07 13:25:54 [4908] INFO [JS] Getting apps result: 0 +3243ms
+2020-10-07 11:25:54.170: 2020-10-07 13:25:54 [4908] INFO [JS] Setting facts... +1ms
+2020-10-07 11:25:54.185: 2020-10-07 13:25:54 [4908] INFO [JS] Uploading facts... +1ms
+2020-10-07 11:25:54.185: 2020-10-07 13:25:54 [4908] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com idf.hisqool.com:443
+2020-10-07 11:25:54.185:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26) +5ms
+2020-10-07 11:25:54.185: 2020-10-07 13:25:54 [4908] INFO [Runner] Running result: false +0ms
+2020-10-07 11:25:54.185: 2020-10-07 13:25:54 [4908] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2020-10-07 11:55:50.582: 2020-10-07 13:55:50 [4908] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +1796389ms
+2020-10-07 11:55:50.582: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +2ms
+2020-10-07 11:55:50.582: 2020-10-07 13:55:50 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +6ms
+2020-10-07 11:55:50.582: 2020-10-07 13:55:50 [4908] INFO [Runner] Creating configuration unit runner object... +4ms
+2020-10-07 11:55:50.597: 2020-10-07 13:55:50 [4908] INFO [Runner] Checking if runner needs to be performed... +2ms
+2020-10-07 11:55:50.597: 2020-10-07 13:55:50 [4908] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2020-10-07 11:55:50.597: 2020-10-07 13:55:50 [4908] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +2ms
+2020-10-07 11:55:50.597: 2020-10-07 13:55:50 [4908] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +2ms
+2020-10-07 11:55:50.597: 2020-10-07 13:55:50 [4908] INFO [SchedulerService] Identical schedule existing. Doing nothing +2ms
+2020-10-07 11:55:50.597: 2020-10-07 13:55:50 [4908] INFO [JS] Scheduling result: undefined +2ms
+2020-10-07 11:55:50.613: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +3ms
+2020-10-07 11:55:50.613: 2020-10-07 13:55:50 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +4ms
+2020-10-07 11:55:50.644: 2020-10-07 13:55:50 [4908] INFO [Runner] Creating configuration unit runner object... +27ms
+2020-10-07 11:55:50.644: 2020-10-07 13:55:50 [4908] INFO [Runner] Checking if runner needs to be performed... +3ms
+2020-10-07 11:55:50.644: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +2ms
+2020-10-07 11:55:50.644: 2020-10-07 13:55:50 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +1ms
+2020-10-07 11:55:50.660: 2020-10-07 13:55:50 [4908] INFO [Runner] Creating configuration unit runner object... +19ms
+2020-10-07 11:55:50.675: 2020-10-07 13:55:50 [4908] INFO [Runner] Checking if runner needs to be performed... +1ms
+2020-10-07 11:55:50.675: 2020-10-07 13:55:50 [4908] INFO [JS] Checking that the unit needs to be performed +1ms
+2020-10-07 11:55:50.675: 2020-10-07 13:55:50 [4908] INFO [JS] Getting GPO version... +1ms
+2020-10-07 11:55:50.675: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +1ms
+2020-10-07 11:55:50.675: 2020-10-07 13:55:50 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2020-10-07 11:55:50.691: 2020-10-07 13:55:50 [4908] INFO [Runner] Creating configuration unit runner object... +10ms
+2020-10-07 11:55:50.691: 2020-10-07 13:55:50 [4908] INFO [Runner] Checking if runner needs to be performed... +1ms
+2020-10-07 11:55:50.691: 2020-10-07 13:55:50 [4908] INFO [JS] Checking that the unit needs to be performed +3ms
+2020-10-07 11:55:50.691: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +1ms
+2020-10-07 11:55:50.691: 2020-10-07 13:55:50 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\2\payload... +2ms
+2020-10-07 11:55:50.707: 2020-10-07 13:55:50 [4908] INFO [Runner] Creating configuration unit runner object... +17ms
+2020-10-07 11:55:50.707: 2020-10-07 13:55:50 [4908] INFO [Runner] Checking if runner needs to be performed... +1ms
+2020-10-07 11:55:50.707: 2020-10-07 13:55:50 [4908] INFO [Runner] Runner doesn't need to be performed +1ms
+2020-10-07 11:55:50.722: 2020-10-07 13:55:50 [4908] INFO [Runner] Performing runner... +1ms
+2020-10-07 11:55:50.722: 2020-10-07 13:55:50 [4908] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2020-10-07 11:55:50.738: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +29ms
+2020-10-07 11:55:50.785: 2020-10-07 13:55:50 [4908] INFO [JS] Current GPO version: 1.5 +43ms
+2020-10-07 11:55:50.785: 2020-10-07 13:55:50 [4908] INFO [Runner] Runner doesn't need to be performed +1ms
+2020-10-07 11:55:50.800: 2020-10-07 13:55:50 [4908] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +3ms
+2020-10-07 11:55:51.441: 2020-10-07 13:55:51 [4908] INFO [Runner] Runner doesn't need to be performed +2ms
+2020-10-07 11:55:51.441: 2020-10-07 13:55:51 [4908] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (2) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +2ms
+2020-10-07 11:55:51.581: 2020-10-07 13:55:51 [4908] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +2ms
+2020-10-07 11:55:51.706: 2020-10-07 13:55:51 [4908] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2020-10-07 11:55:51.706: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2020-10-07 11:55:51.706: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 11:55:51.706: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 11:55:51.706: Arguments=
+2020-10-07 11:55:51.706: ArgumentsExpanded=
+2020-10-07 11:55:51.706: WorkingDirectory=
+2020-10-07 11:55:51.706: WorkingDirectoryExpanded=
+2020-10-07 11:55:51.706: RunStyle=1
+2020-10-07 11:55:51.706: IconLocation=,0
+2020-10-07 11:55:51.706: IconLocationExpanded=,0
+2020-10-07 11:55:51.706: HotKey=0 (None)
+2020-10-07 11:55:51.706: Description=
+2020-10-07 11:55:51.706: 
+2020-10-07 11:55:51.706: The command completed successfully. +111ms
+2020-10-07 11:55:51.706: 2020-10-07 13:55:51 [4908] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2020-10-07 11:55:51.784: 2020-10-07 13:55:51 [4908] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2020-10-07 11:55:51.784: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2020-10-07 11:55:51.784: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 11:55:51.784: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 11:55:51.784: Arguments=
+2020-10-07 11:55:51.784: ArgumentsExpanded=
+2020-10-07 11:55:51.784: WorkingDirectory=
+2020-10-07 11:55:51.784: WorkingDirectoryExpanded=
+2020-10-07 11:55:51.784: RunStyle=1
+2020-10-07 11:55:51.784: IconLocation=,0
+2020-10-07 11:55:51.784: IconLocationExpanded=,0
+2020-10-07 11:55:51.784: HotKey=0 (None)
+2020-10-07 11:55:51.784: Description=
+2020-10-07 11:55:51.784: 
+2020-10-07 11:55:51.784: The command completed successfully. +78ms
+2020-10-07 11:55:51.784: 2020-10-07 13:55:51 [4908] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2020-10-07 11:55:51.862: 2020-10-07 13:55:51 [4908] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: 0. 
+2020-10-07 11:55:51.862: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk]
+2020-10-07 11:55:51.862: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 11:55:51.862: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2020-10-07 11:55:51.862: Arguments=
+2020-10-07 11:55:51.862: ArgumentsExpanded=
+2020-10-07 11:55:51.862: WorkingDirectory=
+2020-10-07 11:55:51.862: WorkingDirectoryExpanded=
+2020-10-07 11:55:51.862: RunStyle=1
+2020-10-07 11:55:51.862: IconLocation=,0
+2020-10-07 11:55:51.862: IconLocationExpanded=,0
+2020-10-07 11:55:51.862: HotKey=0 (None)
+2020-10-07 11:55:51.862: Description=
+2020-10-07 11:55:51.862: 
+2020-10-07 11:55:51.862: The command completed successfully. +78ms
+2020-10-07 11:55:51.862: 2020-10-07 13:55:51 [4908] INFO [JS] Missing value: 0 +1ms
+2020-10-07 11:55:51.862: 2020-10-07 13:55:51 [4908] INFO [Runner] Runner doesn't need to be performed +1ms
+2020-10-07 11:55:51.862: 2020-10-07 13:55:51 [4908] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +2ms
+2020-10-07 11:55:55.361: 2020-10-07 13:55:55 [4908] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +3494ms
+2020-10-07 11:55:55.361: 2020-10-07 13:55:55 [4908] INFO [Runner] Running result: false +1ms
+2020-10-07 11:55:55.361: 2020-10-07 13:55:55 [4908] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2020-10-07 12:25:50.583: 2020-10-07 14:25:50 [4908] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +1795213ms
+2020-10-07 12:25:50.583: 2020-10-07 14:25:50 [4908] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +3ms
+2020-10-07 12:25:50.583: 2020-10-07 14:25:50 [4908] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +5ms
+2020-10-07 12:25:50.598: 2020-10-07 14:25:50 [4908] INFO [Runner] Creating configuration unit runner object... +7ms
+2020-10-07 12:25:50.598: 2020-10-07 14:25:50 [4908] INFO [Runner] Checking if runner needs to be performed... +2ms
+2020-10-07 12:25:50.598: 2020-10-07 14:25:50 [4908] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +3ms

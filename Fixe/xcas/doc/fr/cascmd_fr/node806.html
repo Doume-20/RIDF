@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Tirage al&#233;atoire &#233;quir&#233;parti sur l'intervalle [a;b[ : rand(a,b) hasard(a,b) rand(a..b)() hasard(a..b)()</TITLE>
+<META NAME="description" CONTENT="Tirage al&#233;atoire &#233;quir&#233;parti sur l'intervalle [a;b[ : rand(a,b) hasard(a,b) rand(a..b)() hasard(a..b)()">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node807.html">
+<LINK REL="previous" HREF="node805.html">
+<LINK REL="up" HREF="node804.html">
+<LINK REL="next" HREF="node807.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14862"
+  HREF="node807.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14856"
+  HREF="node804.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14850"
+  HREF="node805.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14858"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14860"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14863"
+  HREF="node807.html">Tirage al&#233;atoire d'entiers &#233;quir&#233;partis</A>
+<B> monter:</B> <A NAME="tex2html14857"
+  HREF="node804.html">Tirage &#233;quir&#233;parti rand alea</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14851"
+  HREF="node805.html">Tirage &#233;quir&#233;parti sur [0,</A>
+ &nbsp; <B>  <A NAME="tex2html14859"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14861"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION001032200000000000000">
+Tirage al&#233;atoire &#233;quir&#233;parti sur l'intervalle [a;b[ : <TT>rand(a,b) hasard(a,b) rand(a..b)() hasard(a..b)()</TT></A>
+</H3>
+Si <TT>a</TT> et <TT>b</TT> sont des r&#233;els <TT>rand(a,b)</TT> d&#233;signe un nombre d&#233;cimal
+ al&#233;atoire compris dans l'intervalle [<I>a</I>;<I>b</I>[.
+<BR>
+Donc, <TT>rand(a,b)</TT> ou (<TT>hasard(a,b)</TT>) renvoie au hasard, et de fa&#231;on 
+&#233;quiprobable, un nombre d&#233;cimal de [<I>a</I>;<I>b</I>[.
+<BR>
+Pour avoir, au hasard et de fa&#231;on &#233;quiprobable, un nombre d&#233;cimal de [0;1[, 
+on tape :
+<DIV ALIGN="CENTER">
+<TT>rand(0,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.391549611697</TT>
+</DIV>
+Pour avoir, au hasard et de fa&#231;on &#233;quiprobable, un nombre d&#233;cimal de [0;0.5[, 
+on tape :
+<DIV ALIGN="CENTER">
+<TT>rand(0,0.5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.303484437987</TT>
+</DIV>
+Pour avoir, au hasard et de fa&#231;on &#233;quiprobable, un nombre d&#233;cimal de ] - 0.5;0], 
+on tape :
+<DIV ALIGN="CENTER">
+<TT>rand(0,-0.5)</TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>rand(-0.5,0)</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>-0.20047219703</TT>
+</DIV>
+
+<P>
+Si <TT>a</TT> et <TT>b</TT> sont des r&#233;els <TT>rand(a..b)</TT> ou <TT>alea(a..b)</TT> ou 
+<TT>hasard(a..b)</TT> d&#233;signe une fonction qui est un  g&#233;n&#233;rateur de nombres al&#233;atoires 
+compris dans l'intervalle [<I>a</I>;<I>b</I>[.
+<BR>
+Donc, <TT>rand(a..b)()</TT> renvoie au hasard, et de fa&#231;on &#233;quiprobable, un
+ nombre d&#233;cimal de [<I>a</I>;<I>b</I>[.
+<BR>
+Pour avoir, au hasard et de fa&#231;on &#233;quiprobable, un nombre d&#233;cimal de [0;1[, 
+on tape :
+<DIV ALIGN="CENTER">
+<TT>rand(0..1)()</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.391549611697</TT>
+</DIV>
+Pour avoir, au hasard et de fa&#231;on &#233;quiprobable, plusieurs nombres 
+al&#233;atoires d&#233;cimaux compris dans l'intervalle [1;2[, 
+on tape :
+<DIV ALIGN="CENTER">
+<TT>r:=rand(1..2)</TT>
+</DIV>
+puis il suffit de taper <TT>r()</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>r()</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.14160255529</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14862"
+  HREF="node807.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14856"
+  HREF="node804.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14850"
+  HREF="node805.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14858"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14860"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14863"
+  HREF="node807.html">Tirage al&#233;atoire d'entiers &#233;quir&#233;partis</A>
+<B> monter:</B> <A NAME="tex2html14857"
+  HREF="node804.html">Tirage &#233;quir&#233;parti rand alea</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14851"
+  HREF="node805.html">Tirage &#233;quir&#233;parti sur [0,</A>
+ &nbsp; <B>  <A NAME="tex2html14859"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14861"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

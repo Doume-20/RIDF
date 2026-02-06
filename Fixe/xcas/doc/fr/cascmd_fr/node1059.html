@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le losange dans l'espace : rhombus losange</TITLE>
+<META NAME="description" CONTENT="Le losange dans l'espace : rhombus losange">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1060.html">
+<LINK REL="previous" HREF="node1058.html">
+<LINK REL="up" HREF="node1057.html">
+<LINK REL="next" HREF="node1060.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18857"
+  HREF="node1060.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18851"
+  HREF="node1057.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18845"
+  HREF="node1058.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18853"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18855"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18858"
+  HREF="node1060.html">Le rectangle dans l'espace</A>
+<B> monter:</B> <A NAME="tex2html18852"
+  HREF="node1057.html">Les quadrilat&#232;res dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18846"
+  HREF="node1058.html">Le carr&#233; dans l'espace</A>
+ &nbsp; <B>  <A NAME="tex2html18854"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18856"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001372000000000000000"></A><A NAME="27597"></A><A NAME="27598"></A> <A NAME="sec:losange3"></A>
+<BR>
+Le losange dans l'espace : <TT>rhombus losange</TT>
+</H2>
+<B>Voir aussi :</B>  <A HREF="node951.html#sec:losange2">9.12.3</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>losange</TT>, en g&#233;om&#233;trie 3D, peut avoir de trois &#224; cinq 
+arguments.
+<BR>
+Les arguments sont :
+
+<UL>
+<LI>si il a trois arguments ce sont : 2 points (les 2 premiers sommets du 
+losange) et le troisi&#232;me argument est soit un point <I>P</I>, soit une liste 
+form&#233;e par un point <I>P</I> et un nombre r&#233;el <I>a</I>. Le point <I>P</I> d&#233;finit le 
+plan du losange et l'orientation de ce plan.
+<BR>
+On a :
+<BR>- <TT>losange(A,B,P)</TT> renvoie et  trace dans le plan <I>ABP</I>, le losange <I>ABCD</I> 
+tel que :
+<BR><!-- MATH
+ $\overrightarrow{AB},\overrightarrow{AD})=\overrightarrow{AB},\overrightarrow{AP})$
+ -->
+<IMG
+ WIDTH="165" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img609.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AD})=\overrightarrow{AB},\overrightarrow{AP})$">, mais sans d&#233;finir les points <I>C</I> et <I>D</I>.
+<BR>- <TT>losange(A,B,[P,a])</TT> renvoie et trace dans le plan <I>ABP</I>, le losange <I>ABCD</I>
+ tel que :
+<BR><!-- MATH
+ $\overrightarrow{AB},\overrightarrow{AD})=a$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img586.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AD})=a$"> radians (ou degr&#233;s), mais sans 
+d&#233;finir les points <I>C</I> et <I>D</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>P:=point(0,0,3)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>losange(A,B,P)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le losange de sommets <I>A</I>, <I>B</I> et d'angle <I>A</I> &#233;gal &#224; <I>BAP</I>, dans le plan <I>ABP</I></TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>P:=point(0,0,3)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>losange(A,B,[P,pi/3])</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>Le losange de sommets <I>A</I>, <I>B</I> et d'angle <I>A</I> &#233;gal &#224; pi/3, dans le plan <I>ABP</I></TT>
+</DIV>
+</LI>
+<LI>si il a quatre ou cinq arguments, les derniers param&#232;tres sont les 
+noms  des variables qui serviront &#224; d&#233;finir les derniers sommets.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>losange(A,B,[P,pi/3],C,D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le losange de sommets <I>A</I>, <I>B</I>, <I>C</I>, <I>D</I> et d'angle <I>A</I> &#233;gal &#224; pi/3, dans le plan <I>ABP</I></TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>simplify(coordonnees(C))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-3*sqrt(6)+18)/4,(-3*sqrt(6)+18)/4,(3*sqrt(6)+9)/2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>simplify(coordonnees(D))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-3*sqrt(6)+6)/4,(-3*sqrt(6)+6)/4,(3*sqrt(6)+3)/2]</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18857"
+  HREF="node1060.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18851"
+  HREF="node1057.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18845"
+  HREF="node1058.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18853"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18855"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18858"
+  HREF="node1060.html">Le rectangle dans l'espace</A>
+<B> monter:</B> <A NAME="tex2html18852"
+  HREF="node1057.html">Les quadrilat&#232;res dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18846"
+  HREF="node1058.html">Le carr&#233; dans l'espace</A>
+ &nbsp; <B>  <A NAME="tex2html18854"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18856"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

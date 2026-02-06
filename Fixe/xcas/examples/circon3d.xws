@@ -1,0 +1,282 @@
+// fltk 7Fl_Tile 32 73 994 41 30
+[
+// fltk N4xcas19Multiline_Input_tabE 32 73 994 40 30
+
+,
+// fltk N4xcas10Log_OutputE 32 113 994 1 30
+
+]
+,
+// fltk 7Fl_Tile 32 116 994 425 30
+[
+// fltk N4xcas6FigureE 32 116 994 424 30
+// fltk N4xcas12History_PackE 34 -847 312 1387 30
+[
+// fltk 7Fl_Tile 62 -847 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -847 284 40 30
+A:=point(0.675,-2.135,0.291,'affichage'=point_width_5)
+,
+// fltk N4xcas10Log_OutputE 62 -807 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -806 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -806 450 37 14
+pnt(pnt[[0.675,-2.135,0.291],2097152,"A"])
+,
+// fltk 12Fl_Scrollbar 62 292 268 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 330 255 16 53 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -735 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -735 284 40 30
+B:=point(-0.611,0.861,1.175,'affichage'=point_width_5)
+,
+// fltk N4xcas10Log_OutputE 62 -695 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -694 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -694 450 37 14
+pnt(pnt[[-0.611,0.861,1.175],2097152,"B"])
+,
+// fltk 12Fl_Scrollbar 62 292 268 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 330 255 16 53 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -623 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -623 284 40 30
+C:=point(-0.063,1.307,-1.51,'affichage'=point_width_5)
+,
+// fltk N4xcas10Log_OutputE 62 -583 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -582 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -582 446 37 14
+pnt(pnt[[-0.063,1.307,-1.51],2097152,"C"])
+,
+// fltk 12Fl_Scrollbar 62 292 268 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 330 255 16 53 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -511 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -511 284 40 30
+D:=point(0.024,-0.526,-1.19,'affichage'=point_width_5)+[0.348,-1.218,-1.164]
+,
+// fltk N4xcas10Log_OutputE 62 -471 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -470 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -470 459 37 14
+pnt(pnt[[0.372,-1.744,-2.354],2097152,"D"])
+,
+// fltk 12Fl_Scrollbar 62 292 268 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 330 255 16 53 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -399 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -399 284 40 30
+E:=mediatrice(A,B,'affichage'=point_width_5)
+,
+// fltk N4xcas10Log_OutputE 62 -359 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -358 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -358 724 37 14
+pnt(pnt[hyperplan([[-1.286,2.996,0.884],[0.032,-0.637,0.733]]),0,"E"])
+,
+// fltk 12Fl_Scrollbar 62 190 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 151 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -287 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -287 284 40 30
+F:=mediatrice(B,C,'affichage'=point_width_5)
+,
+// fltk N4xcas10Log_OutputE 62 -247 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -246 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -246 743 37 14
+pnt(pnt[hyperplan([[0.548,0.446,-2.685],[-0.337,1.084,-0.1675]]),0,"F"])
+,
+// fltk 12Fl_Scrollbar 62 194 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 155 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -175 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -175 284 40 30
+G:=mediatrice(C,D,'affichage'=point_width_5)
+,
+// fltk N4xcas10Log_OutputE 62 -135 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -134 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -134 769 37 14
+pnt(pnt[hyperplan([[0.435,-3.051,-0.844],[0.1545,-0.2185,-1.932]]),0,"G"])
+,
+// fltk 12Fl_Scrollbar 62 194 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 155 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 -63 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 -63 284 40 30
+g:=inter_unique(E,F,affichage=vert+line_width_3)
+,
+// fltk N4xcas10Log_OutputE 62 -23 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 -22 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 -22 1388 37 14
+pnt(pnt[line[[0.172964103977,-0.274899406645,-0.289142013551],[-8.26555989602,-3.24337740664,-2.50450601355]],131074,"g"])
+,
+// fltk 12Fl_Scrollbar 62 507 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 468 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 49 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 49 284 40 30
+f:=inter_unique(E,G,affichage=vert+line_width_3)
+,
+// fltk N4xcas10Log_OutputE 62 89 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 90 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 90 1335 37 14
+pnt(pnt[line[[-1.1442991634,-1.12566273967,0.67792403157],[-0.975839163402,-1.82650673967,3.29825003157]],131074,"f"])
+,
+// fltk 12Fl_Scrollbar 62 129 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 90 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 161 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 161 284 40 30
+J:=inter_unique(f,g,affichage=point_width_5+bleu)
+,
+// fltk N4xcas10Log_OutputE 62 201 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 202 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 202 800 37 14
+pnt(pnt[[-1.23015332596,-0.768483737527,-0.657502148812],2097156,"J"])
+,
+// fltk 12Fl_Scrollbar 62 241 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 202 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 273 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 273 284 40 30
+longueur(A,J);longueur(B,J),longueur(C,J),longueur(D,J)
+,
+// fltk N4xcas10Log_OutputE 62 313 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 314 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 314 670 37 14
+2.52915642405,2.52915642405,2.52915642405,2.52915642405
+,
+// fltk 12Fl_Scrollbar 62 353 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 314 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 385 284 110 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 385 284 40 30
+sphere(J,longueur(A,J),affichage=jaune+rempli)
+,
+// fltk N4xcas10Log_OutputE 62 425 284 1 30
+
+,
+// fltk 9Fl_Scroll 62 426 284 69 14
+[
+// fltk N4xcas10Gen_OutputE 62 426 1124 37 14
+pnt(pnt[hypersphere([-1.23015332596,-0.768483737527,-0.657502148812],2.52915642405),1073741827])
+,
+// fltk 12Fl_Scrollbar 62 465 284 30 14
+[]
+,
+// fltk 12Fl_Scrollbar 346 426 16 39 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 62 497 284 41 30
+[
+// fltk N4xcas19Multiline_Input_tabE 62 497 284 40 30
+
+,
+// fltk N4xcas10Log_OutputE 62 537 284 1 30
+
+]
+]
+// fltk N4xcas5Geo3dE 364 152 542 388 30
+-5,5,-5,5,[pnt(pnt[[0.675,-2.135,0.291],2097152,"A"]),pnt(pnt[[-0.611,0.861,1.175],2097152,"B"]),pnt(pnt[[-0.063,1.307,-1.51],2097152,"C"]),pnt(pnt[[0.372,-1.744,-2.354],2097152,"D"]),pnt(pnt[hyperplan([[-1.286,2.996,0.884],[0.032,-0.637,0.733]]),0,"E"]),pnt(pnt[hyperplan([[0.548,0.446,-2.685],[-0.337,1.084,-0.1675]]),0,"F"]),pnt(pnt[hyperplan([[0.435,-3.051,-0.844],[0.1545,-0.2185,-1.932]]),0,"G"]),pnt(pnt[line[[0.172964103977,-0.274899406645,-0.289142013551],[-8.26555989602,-3.24337740664,-2.50450601355]],131074,"g"]),pnt(pnt[line[[-1.1442991634,-1.12566273967,0.67792403157],[-0.975839163402,-1.82650673967,3.29825003157]],131074,"f"]),pnt(pnt[[-1.23015332596,-0.768483737527,-0.657502148812],2097156,"J"]),2.52915642405,2.52915642405,2.52915642405,2.52915642405,pnt(pnt[hypersphere([-1.23015332596,-0.768483737527,-0.657502148812],2.52915642405),1073741827])],-5,5,0.33845,-0.4262,-0.661,-0.51661,1,1,1,2097152,1,2.5,0
+
+,
+// fltk N4xcas10Log_OutputE 32 540 994 1 30
+
+]

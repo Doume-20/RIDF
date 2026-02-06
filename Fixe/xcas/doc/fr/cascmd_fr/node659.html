@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compter les &#233;l&#233;ments plus grands qu'une valeur donn&#233;e : count_sup</TITLE>
+<META NAME="description" CONTENT="Compter les &#233;l&#233;ments plus grands qu'une valeur donn&#233;e : count_sup">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node660.html">
+<LINK REL="previous" HREF="node658.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node660.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12635"
+  HREF="node660.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12629"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12623"
+  HREF="node658.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12631"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12633"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12636"
+  HREF="node660.html">Fonctions utiles pour les</A>
+<B> monter:</B> <A NAME="tex2html12630"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12624"
+  HREF="node658.html">Compter les &#233;l&#233;ments plus</A>
+ &nbsp; <B>  <A NAME="tex2html12632"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12634"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094331000000000000000"></A><A NAME="17086"></A>
+<BR>
+Compter les &#233;l&#233;ments plus grands qu'une valeur donn&#233;e : <TT>count_sup</TT>
+</H2><A NAME="30241"></A><A NAME="30242"></A>
+<TT>count_sup</TT> a deux ou trois param&#232;tres : une nombre et une 
+matrice (ou liste) r&#233;elle et &#233;ventuellement un param&#232;tre 
+optionnel <TT>row</TT> ou <TT>col</TT>.
+<BR><TT>count_sup</TT> renvoie le nombre d'&#233;l&#233;ments de la matrice (ou 
+liste) qui sont strictement sup&#233;rieurs au premier argument.
+<BR>
+Si il y a <TT>row</TT> (resp <TT>col</TT>) comme troisi&#232;me param&#232;tre 
+<TT>count_sup</TT> agit sur chaque ligne (resp colonne) de la matrice et renvoie 
+une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_sup(12,[[2,12,45],[3,7,78]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_sup(12,[[2,12,45],[3,7,78]],row)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_sup(12,[[2,12,45],[3,7,78]],col)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0,0,2]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les points et les nombres complexes</TITLE>
+<META NAME="description" CONTENT="Les points et les nombres complexes">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node916.html">
+<LINK REL="previous" HREF="node914.html">
+<LINK REL="up" HREF="node914.html">
+<LINK REL="next" HREF="node916.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16653"
+  HREF="node916.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16647"
+  HREF="node914.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16641"
+  HREF="node914.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16649"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16651"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16654"
+  HREF="node916.html">Le point en g&#233;om&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html16648"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16642"
+  HREF="node914.html">Les points en g&#233;om&#233;trie</A>
+ &nbsp; <B>  <A NAME="tex2html16650"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16652"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001291000000000000000"></A><A NAME="sec:pointa2"></A>
+<BR>
+Les points et les nombres complexes
+</H2>
+L'affixe d'un point en g&#233;om&#233;trie plane est un nombre complexe.
+<BR>
+La commande <TT>point</TT> a comme argument un nombre complexe <I>c</I> (ou un couple 
+de 2 nombres <I>a</I>, <I>b</I>) et renvoie
+le point d'affixe <I>c</I> (ou d'affixe <I>a</I> + <I>ib</I>) trac&#233; dans un &#233;cran graphique.
+<BR>
+Certaines fonctions peuvent admettre comme argument soit un point, soit un 
+nombre complexe, mais quelquefois le r&#233;sultat n'est pas le m&#234;me.
+<BR><B>Exemples</B>
+<BR><TT>re(1+2*i)</TT> renvoie <TT>1</TT> 
+<BR>
+Si <TT>A:=point(1+2*i)</TT>, <TT>re(A)</TT> renvoie un point d'affixe <TT>1</TT>, 
+et <TT>im(A)</TT> renvoie un point d'affixe <TT>2*i</TT> 
+<BR><TT>cercle(1,1+i)</TT> renvoie le cercle de centre le point d'affixe 1 et de
+ rayon &#233;gal &#224; <IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \sqrt{2}$">=<TT>abs(1+i)</TT>,
+<BR><TT>cercle(1,point(1+i))</TT> renvoie le cercle de diam&#232;tre le point d'affixe 
+1 et le point d'affixe (1+i)
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les diff&#233;rents niveaux d'entr&#233;e</TITLE>
+<META NAME="description" CONTENT="Les diff&#233;rents niveaux d'entr&#233;e">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node20.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2574"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2568"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2562"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2570"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2572"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2575"
+  HREF="node20.html">Que voit-on au d&#233;marrage</A>
+<B> monter:</B> <A NAME="tex2html2569"
+  HREF="node14.html">L'interface Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2563"
+  HREF="node18.html">Sous MacOS</A>
+ &nbsp; <B>  <A NAME="tex2html2571"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2573"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00420000000000000000">
+Les diff&#233;rents  niveaux d'entr&#233;e</A>
+</H1>
+Cette interface va vous permettre d'ouvrir plusieurs sessions de 
+calculs : ces sessions ont plusieurs niveaux d'entr&#233;e, sont ind&#233;pendantes 
+les unes des autres et peuvent &#234;tre pli&#233;e ou d&#233;pli&#233;e.
+<BR>
+Chaque session peut contenir des niveaux d'entr&#233;e num&#233;rot&#233;s qui 
+contiendront :
+
+<UL>
+<LI>soit une ligne de commandes pour ex&#233;cuter des commandes de <TT>Xcas</TT>
+ou  pour ex&#233;cuter des programmes avec un emplacement pour les sorties 
+interm&#233;diaires qui seront &#233;crites en bleu et un emplacement 
+pour la r&#233;ponse (que l'on obtient si on a valid&#233; la commande avec 
+<TT>Enter</TT>). L'emplacement pour la r&#233;ponse est un 
+&#233;diteur d'&#233;quations, ou un &#233;cran graphique selon la nature de la  commande ( 
+commande renvoyant une expression ou un graphique). Lorsqu'on a plusieurs 
+commandes separ&#233;es par un point virgule ou par une virgule c'est la nature de
+la derni&#232;re commande qui d&#233;termine la nature de la sortie.
+<BR>
+Les instructions 
+<TT>print</TT> d'un programme ou l'&#233;valuation du temps d'un long calcul
+seront &#233;crites en bleu. L'&#233;valuation du temps est 
+approximatif, si vous voulez plus de pr&#233;cision sur votre temps de calcul, 
+il faut utiliser la commande <TT>time</TT><A NAME="191"></A>.
+<BR>
+On tape par exemple :
+<BR><TT>time(factor(x<code>^</code>10-1))</TT>
+<BR>
+On obtient :
+<BR><TT>0.00406</TT>
+<BR>
+Vous remarquerez alors : <TT>Evaluation time : 2.03</TT> en bleu. 
+C'est parce que
+ pour pouvoir avoir le temps de calcul avec plus de pr&#233;cision la commande  
+<TT>factor(x<code>^</code>10-1)</TT> a &#233;t&#233; &#233;x&#233;cut&#233;e 500 fois.
+<BR>
+On a aussi <TT>time()</TT> sans argument, qui renvoie le temps de calcul depuis 
+le d&#233;but de la session, on tape :
+<BR><TT>time()</TT>
+<BR>
+On obtient par exemple :
+<BR><TT>2.37</TT>
+
+<P>
+</LI>
+<LI>soit un &#233;diteur d'&#233;quations, 
+</LI>
+<LI>soit un niveau de g&#233;om&#233;trie 2D, son &#233;cran graphique, ses menus, ses boutons et ses lignes de
+commandes,
+</LI>
+<LI>soit un niveau de g&#233;om&#233;trie 3D, son &#233;cran graphique, ses menus, ses boutons et ses lignes de
+commandes,
+</LI>
+<LI>soit un niveau de dessin tortue, son &#233;cran graphique, son &#233;diteur de programmes et 
+ses lignes de commandes,
+</LI>
+<LI>soit un tableur et son &#233;cran graphique,
+</LI>
+<LI>soit un &#233;diteur de programmes,
+</LI>
+<LI>soit un commentaire,
+</LI>
+<LI>soit un regroupement de ces niveaux en un groupe.
+</LI>
+</UL>
+Au sein d'une m&#234;me session, les  diff&#233;rents niveaux d'entr&#233;e ne sont pas 
+ind&#233;pendants, par exemple, une variable d&#233;finie dans une ligne de commandes
+pourra &#234;tre utilis&#233;e en g&#233;om&#233;trie ou dans le tableur.
+<BR>
+L'ensemble de toutes ces sessions constitue votre espace de travail.
+<BR>
+Le niveau actif est celui o&#249; se trouve le curseur et le niveau selectionn&#233;
+est obtenu quand on clique sur son num&#233;ro, num&#233;ro qui s&#233;crit alors sur 
+fond noir.
+<BR>
+On peut d&#233;placer un niveau ou un groupe de niveau
+dans une session, ou le recopier dans une autre session.
+<BR>
+Vous pouvez , &#224; tout moment ins&#233;rer un nouveau niveau ou encore changer 
+l'entr&#233;e d'un niveau : <TT>Enter</TT> valide le changement de ce niveau et 
+s&#233;lectionne l'entr&#233;e suivante, mais attention les niveaux suivants
+ne seront pas recalcul&#233;s. Il est toutefois possible apr&#232;s une modification
+de r&#233;ex&#233;cuter, soit tous les niveaux, soit les niveaux situ&#233;s 
+apr&#232;s la modification (menu <TT>Edit</TT> puis <TT>Executer session</TT> ou 
+<TT>Executer en-dessous</TT>).
+<BR>
+Il faut savoir qu'il suffit de faire :
+
+<UL>
+<LI><TT>Alt+c</TT> pour ouvrir un niveau de type ligne de commentaires,
+</LI>
+<LI><TT>Alt+e</TT> pour ouvrir un niveau de type &#233;diteur d'&#233;xpressions,
+</LI>
+<LI><TT>Alt+n</TT> pour ouvrir un niveau de type ligne de 
+commandes,
+</LI>
+<LI><TT>Alt+t</TT> pour ouvrir  un niveau de type tableur,
+</LI>
+<LI><TT>Alt+p</TT> pour ouvrir un niveau  de type &#233;diteur de 
+programmes.
+</LI>
+<LI><TT>Alt+g</TT> pour ouvrir un niveau de type &#233;cran de 
+g&#233;om&#233;trie plane,
+</LI>
+<LI><TT>Alt+h</TT> pour ouvrir un niveau  de type &#233;cran de 
+g&#233;om&#233;trie 3D.
+</LI>
+<LI><TT>Alt+d</TT> pour ouvrir un niveau  de type &#233;cran de 
+dessin tortue,
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2574"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2568"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2562"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2570"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2572"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2575"
+  HREF="node20.html">Que voit-on au d&#233;marrage</A>
+<B> monter:</B> <A NAME="tex2html2569"
+  HREF="node14.html">L'interface Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2563"
+  HREF="node18.html">Sous MacOS</A>
+ &nbsp; <B>  <A NAME="tex2html2571"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2573"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

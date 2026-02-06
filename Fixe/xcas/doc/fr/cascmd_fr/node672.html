@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice &#233;quivalente : changebase</TITLE>
+<META NAME="description" CONTENT="Matrice &#233;quivalente : changebase">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node673.html">
+<LINK REL="previous" HREF="node671.html">
+<LINK REL="up" HREF="node664.html">
+<LINK REL="next" HREF="node673.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12830"
+  HREF="node673.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12824"
+  HREF="node664.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12818"
+  HREF="node671.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12826"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12828"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12831"
+  HREF="node673.html">Base d'un sous espace</A>
+<B> monter:</B> <A NAME="tex2html12825"
+  HREF="node664.html">Alg&#232;bre lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12819"
+  HREF="node671.html">Matrice adjointe : trn</A>
+ &nbsp; <B>  <A NAME="tex2html12827"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12829"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009448000000000000000"></A><A NAME="17364"></A>
+<BR>
+Matrice &#233;quivalente : <TT>changebase</TT>
+</H2>
+<TT>changebase</TT> a comme argument une matrice <I>A</I> et une matrice de changement de base <I>P</I>.
+<BR><TT>changebase</TT> renvoie la matrice <I>B</I> telle que <!-- MATH
+ $B=P^{-1}AP$
+ -->
+<I>B</I> = <I>P</I><SUP>-1</SUP><I>AP</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>changebase([[1,2],[3,4]],[[1,0],[0,1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,2],[3,4]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>changebase([[1,1],[0,1]],[[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-5,-8],[9/2,7]]</TT>
+</DIV>
+En effet :
+<BR> <P><!-- MATH
+ \begin{displaymath}
+{\left[\begin{array}{rr} 1 & 2\\3&4\end{array}\right]}^{-1}*\left[\begin{array}{rr}1 & 1\\0&1\end{array}\right]*\left[\begin{array}{rr}1 & 2\\3&4\end{array}\right]=\left[\begin{array}{rr}-5 & -8\\\frac{9}{2}&7\end{array}\right]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="15" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img417.png"
+ ALT="$\displaystyle \left[\vphantom{\begin{array}{rr} 1 &amp; 2\\  3&amp;4\end{array}}\right.$"><IMG
+ WIDTH="54" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.png"
+ ALT="$\displaystyle \begin{array}{rr} 1 &amp; 2\\  3&amp;4\end{array}$"><IMG
+ WIDTH="33" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img419.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{rr} 1 &amp; 2\\  3&amp;4\end{array}}\right]^{{{-1}}}_{{}}$">*<IMG
+ WIDTH="16" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img420.png"
+ ALT="$\displaystyle \left[\vphantom{\begin{array}{rr}1 &amp; 1\\  0&amp;1\end{array}}\right.$"><IMG
+ WIDTH="53" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img421.png"
+ ALT="$\displaystyle \begin{array}{rr}1 &amp; 1\\  0&amp;1\end{array}$"><IMG
+ WIDTH="16" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img422.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{rr}1 &amp; 1\\  0&amp;1\end{array}}\right]$">*<IMG
+ WIDTH="15" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img417.png"
+ ALT="$\displaystyle \left[\vphantom{\begin{array}{rr} 1 &amp; 2\\  3&amp;4\end{array}}\right.$"><IMG
+ WIDTH="54" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.png"
+ ALT="$\displaystyle \begin{array}{rr} 1 &amp; 2\\  3&amp;4\end{array}$"><IMG
+ WIDTH="15" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img423.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{rr}1 &amp; 2\\  3&amp;4\end{array}}\right]$"> = <IMG
+ WIDTH="16" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img424.png"
+ ALT="$\displaystyle \left[\vphantom{\begin{array}{rr}-5 &amp; -8\\  \frac{9}{2}&amp;7\end{array}}\right.$"><IMG
+ WIDTH="81" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img425.png"
+ ALT="$\displaystyle \begin{array}{rr}-5 &amp; -8\\  \frac{9}{2}&amp;7\end{array}$"><IMG
+ WIDTH="16" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img426.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{rr}-5 &amp; -8\\  \frac{9}{2}&amp;7\end{array}}\right]$">
+</DIV><P></P>.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

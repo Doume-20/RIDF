@@ -1,0 +1,701 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les splines naturelles: spline</TITLE>
+<META NAME="description" CONTENT="Les splines naturelles: spline">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node460.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node462.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9709"
+  HREF="node462.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9703"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9699"
+  HREF="node460.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9705"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9707"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9710"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> monter:</B> <A NAME="tex2html9704"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9700"
+  HREF="node460.html">Interpolation de Lagrange :</A>
+ &nbsp; <B>  <A NAME="tex2html9706"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9708"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092532000000000000000"></A><A NAME="11580"></A>
+<BR>
+Les splines naturelles: <TT>spline</TT>
+</H2>
+<B>D&#233;finition</B>
+<BR>
+Soit une subdivision <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$ \sigma_{n}^{}$"> de l'intervalle [<I>a</I>, <I>b</I>]&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+a=x_0,\quad x_1,\quad...,\quad x_n=b
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>a</I> = <I>x</I><SUB>0</SUB>,&nbsp;&nbsp;&nbsp;&nbsp;<I>x</I><SUB>1</SUB>,&nbsp;&nbsp;&nbsp;&nbsp;...,&nbsp;&nbsp;&nbsp;&nbsp;<I>x</I><SUB>n</SUB> = <I>b</I>
+</DIV><P></P>
+On dit que <I>s</I> est une fonction spline de degr&#233; <I>l</I> si <I>s</I> est une 
+ application de [<I>a</I>, <I>b</I>] dans <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"> v&#233;rifiant&nbsp;:
+
+<UL>
+<LI><I>s</I> admet des d&#233;riv&#233;es continues jusqu'&#224; l'ordre <I>l</I> - 1,
+</LI>
+<LI><I>s</I> restreint &#224; chaque  intervalle de la subdivision est un polyn&#244;me 
+de degr&#233; inf&#233;rieur ou &#233;gal &#224; <I>l</I>.
+</LI>
+</UL>
+
+<P>
+<B>Th&#233;or&#232;me</B>
+<BR>
+L'ensemble des fonctions splines de degr&#233; <I>l</I> sur <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$ \sigma_{n}^{}$"> est un
+ <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$">-espace vectoriel de dimension <I>n</I> + <I>l</I>.
+<BR>
+En effet :
+<BR>
+Sur [<I>a</I>, <I>x</I><SUB>1</SUB>], <I>s</I> est un polyn&#244;me <I>A</I> de degr&#233; inf&#233;rieur ou &#233;gal &#224; 
+<I>l</I>, donc sur [<I>a</I>, <I>x</I><SUB>1</SUB>], <!-- MATH
+ $s=A(x)=a_0+a_1x+...a_lx^l$
+ -->
+<I>s</I> = <I>A</I>(<I>x</I>) = <I>a</I><SUB>0</SUB> + <I>a</I><SUB>1</SUB><I>x</I> + ...<I>a</I><SUB>l</SUB><I>x</I><SUP>l</SUP> et <I>A</I> est une combinaison 
+lin&#233;aire de <!-- MATH
+ $1,x,...x^l$
+ -->
+1, <I>x</I>,...<I>x</I><SUP>l</SUP>.
+<BR>
+Sur [<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>], <I>s</I> est un polyn&#244;me <I>B</I> de degr&#233; inf&#233;rieur ou &#233;gal &#224;
+<I>l</I>, donc sur [<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>], <!-- MATH
+ $s=B(x)=b_0+b_1x+...b_lx^l$
+ -->
+<I>s</I> = <I>B</I>(<I>x</I>) = <I>b</I><SUB>0</SUB> + <I>b</I><SUB>1</SUB><I>x</I> + ...<I>b</I><SUB>l</SUB><I>x</I><SUP>l</SUP>.
+<BR>
+Puisque <I>s</I> admet des d&#233;riv&#233;es continues jusqu'&#224; l'ordre <I>l</I> - 1 on doit 
+avoir :
+<P><!-- MATH
+ \begin{displaymath}
+\forall 0 \leq j \leq l-1, \quad  B^{(j)}(x_1)-A^{(j)}(x_1)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>l</I> - 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>B</I><SUP>(j)</SUP>(<I>x</I><SUB>1</SUB>) - <I>A</I><SUP>(j)</SUP>(<I>x</I><SUB>1</SUB>) = 0
+</DIV><P></P>
+donc <!-- MATH
+ $B(x)-A(x)=\alpha_1(x-x_1)^l$
+ -->
+<I>B</I>(<I>x</I>) - <I>A</I>(<I>x</I>) = <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$ \alpha_{1}^{}$">(<I>x</I> - <I>x</I><SUB>1</SUB>)<SUP>l</SUP> ou encore <!-- MATH
+ $B(x)=A(x)+\alpha_1(x-x_1)^l$
+ -->
+<I>B</I>(<I>x</I>) = <I>A</I>(<I>x</I>) + <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$ \alpha_{1}^{}$">(<I>x</I> - <I>x</I><SUB>1</SUB>)<SUP>l</SUP>.
+<BR>
+Soit la fonction :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\mbox{q}_1(x)  \mbox{ = }
+\left\{
+\begin{array}{rcl}
+0 & \mbox{sur} & [a,x_1] \\
+(x-x_1)^l  & \mbox{sur} & [x_1,b]\\
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+q<SUB>1</SUB>(<I>x</I>) = <IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img347.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+0 &amp; \mbox{sur} &amp; [a,x_1] \\
+(x-x_1)^l &amp; \mbox{sur} &amp; [x_1,b]\\
+\end{array}
+}\right.$"><IMG
+ WIDTH="185" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img348.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+0 &amp; \mbox{sur} &amp; [a,x_1] \\
+(x-x_1)^l &amp; \mbox{sur} &amp; [x_1,b]\\
+\end{array}$">
+</DIV><P></P>
+Donc :
+<BR><!-- MATH
+ $s|_{[a,x_2]}=a_0+a_1x+...a_lx^l+\alpha_1q_1(x)$
+ -->
+<I>s</I>|<SUB>[a, x<SUB>2</SUB>]</SUB> = <I>a</I><SUB>0</SUB> + <I>a</I><SUB>1</SUB><I>x</I> + ...<I>a</I><SUB>l</SUB><I>x</I><SUP>l</SUP> + <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$ \alpha_{1}^{}$"><I>q</I><SUB>1</SUB>(<I>x</I>).
+
+<P>
+Sur [<I>x</I><SUB>2</SUB>, <I>x</I><SUB>3</SUB>], <I>s</I> est un polyn&#244;me <I>C</I> de degr&#233; inf&#233;rieur ou &#233;gal &#224;
+<I>l</I>, donc sur [<I>x</I><SUB>2</SUB>, <I>x</I><SUB>3</SUB>], <!-- MATH
+ $s=C(x)=c_0+c_1x+...c_lx^l$
+ -->
+<I>s</I> = <I>C</I>(<I>x</I>) = <I>c</I><SUB>0</SUB> + <I>c</I><SUB>1</SUB><I>x</I> + ...<I>c</I><SUB>l</SUB><I>x</I><SUP>l</SUP>.
+<BR>
+Puisque <I>s</I> admet des d&#233;riv&#233;es continues jusqu'&#224; l'ordre <I>l</I> - 1 on doit 
+avoir :
+<P><!-- MATH
+ \begin{displaymath}
+\forall 0 \leq j \leq l-1, \quad  C^{(j)}(x_2)-B^{(j)}(x_2)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>l</I> - 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>C</I><SUP>(j)</SUP>(<I>x</I><SUB>2</SUB>) - <I>B</I><SUP>(j)</SUP>(<I>x</I><SUB>2</SUB>) = 0
+</DIV><P></P>
+donc <!-- MATH
+ $C(x)-B(x)=\alpha_2(x-x_2)^l$
+ -->
+<I>C</I>(<I>x</I>) - <I>B</I>(<I>x</I>) = <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.png"
+ ALT="$ \alpha_{2}^{}$">(<I>x</I> - <I>x</I><SUB>2</SUB>)<SUP>l</SUP> ou encore <!-- MATH
+ $C(x)=B(x)+\alpha_2(x-x_2)^l$
+ -->
+<I>C</I>(<I>x</I>) = <I>B</I>(<I>x</I>) + <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.png"
+ ALT="$ \alpha_{2}^{}$">(<I>x</I> - <I>x</I><SUB>2</SUB>)<SUP>l</SUP>.
+<BR>
+Soit la fonction :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\mbox{q}_2(x)  \mbox{ = }
+\left\{
+\begin{array}{rcl}
+0 & \mbox{sur} & [a,x_2] \\
+(x-x_2)^l  & \mbox{sur} & [x_2,b]\\
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+q<SUB>2</SUB>(<I>x</I>) = <IMG
+ WIDTH="20" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img350.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+0 &amp; \mbox{sur} &amp; [a,x_2] \\
+(x-x_2)^l &amp; \mbox{sur} &amp; [x_2,b]\\
+\end{array}
+}\right.$"><IMG
+ WIDTH="185" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img351.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+0 &amp; \mbox{sur} &amp; [a,x_2] \\
+(x-x_2)^l &amp; \mbox{sur} &amp; [x_2,b]\\
+\end{array}$">
+</DIV><P></P>
+Donc :
+<!-- MATH
+ $s|_{[a,x_3]}=a_0+a_1x+...a_lx^l+\alpha_1q_1(x)+\alpha_2q_2(x)$
+ -->
+<I>s</I>|<SUB>[a, x<SUB>3</SUB>]</SUB> = <I>a</I><SUB>0</SUB> + <I>a</I><SUB>1</SUB><I>x</I> + ...<I>a</I><SUB>l</SUB><I>x</I><SUP>l</SUP> + <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$ \alpha_{1}^{}$"><I>q</I><SUB>1</SUB>(<I>x</I>) + <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.png"
+ ALT="$ \alpha_{2}^{}$"><I>q</I><SUB>2</SUB>(<I>x</I>)
+<BR>
+Et ainsi de suite, on d&#233;finit les fonctions :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\forall 1 \leq j \leq n-1, \mbox{q}_j(x)  \mbox{ = }
+\left\{
+\begin{array}{rcl}
+0 & \mbox{sur} & [a,x_j] \\
+(x-x_j)^l  & \mbox{sur} & [x_j,b]\\
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>n</I> - 1,q<SUB>j</SUB>(<I>x</I>) = <IMG
+ WIDTH="20" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img352.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+0 &amp; \mbox{sur} &amp; [a,x_j] \\
+(x-x_j)^l &amp; \mbox{sur} &amp; [x_j,b]\\
+\end{array}
+}\right.$"><IMG
+ WIDTH="184" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img353.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+0 &amp; \mbox{sur} &amp; [a,x_j] \\
+(x-x_j)^l &amp; \mbox{sur} &amp; [x_j,b]\\
+\end{array}$">
+</DIV><P></P>
+ainsi,
+<BR><!-- MATH
+ $s|_{[a,b]}=a_0+a_1x+...a_lx^l+\alpha_1q_1(x)+....+\alpha_{n-1}q_{n-1}(x)$
+ -->
+<I>s</I>|<SUB>[a, b]</SUB> = <I>a</I><SUB>0</SUB> + <I>a</I><SUB>1</SUB><I>x</I> + ...<I>a</I><SUB>l</SUB><I>x</I><SUP>l</SUP> + <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$ \alpha_{1}^{}$"><I>q</I><SUB>1</SUB>(<I>x</I>) + .... + <IMG
+ WIDTH="42" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img354.png"
+ ALT="$ \alpha_{{n-1}}^{}$"><I>q</I><SUB>n-1</SUB>(<I>x</I>) 
+et
+<BR><I>s</I> est une combinaison lin&#233;aire des <I>n</I> + <I>l</I> fonctions ind&#233;pendantes
+<!-- MATH
+ $1,x,..x^l,q_1,..q_{n-1}$
+ -->
+1, <I>x</I>,..<I>x</I><SUP>l</SUP>, <I>q</I><SUB>1</SUB>,..<I>q</I><SUB>n-1</SUB>.
+
+<P>
+<B>Interpolation avec des fonctions splines</B>
+<BR>
+On peut demander d'interpoler une fonction <I>f</I> sur <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$ \sigma_{n}^{}$"> par une fonction
+spline <I>s</I> de degr&#233; <I>l</I>,
+ce qui va imposer &#224; <I>s</I> de v&#233;rifier <!-- MATH
+ $s(x_k)=y_k=f(x_k)$
+ -->
+<I>s</I>(<I>x</I><SUB>k</SUB>) = <I>y</I><SUB>k</SUB> = <I>f</I> (<I>x</I><SUB>k</SUB>) pour tout 
+<!-- MATH
+ $0\geq k\geq n$
+ -->
+0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> <I>k</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> <I>n</I>. On a donc <I>n</I> + 1 conditions, il reste donc <I>l</I> - 1 degr&#233;s de 
+libert&#233;. On peut donc encore imposer <I>l</I> - 1 conditions suppl&#233;mentaires qui
+seront des conditions sur les deriv&#233;es de <I>s</I> en <I>a</I> et <I>b</I>.
+Il existe alors 
+trois types d'interpolation (interpolation d'Hermite, interpolation naturelle,
+interpolation p&#233;riodique) qui sont obtenues en rajoutant trois types de 
+contraintes. On peut montrer que pour chacun de ces types d'interpolation la 
+solution au probl&#232;me d'interpolation est unique.
+
+<P>
+Supposons <I>l</I> impair, <I>l</I> = 2<I>m</I> - 1, il y a donc 2<I>m</I> - 2 degr&#233;s de
+libert&#233;. On rajoute les contraintes suivantes :
+
+<UL>
+<LI>Interpolation d'Hermite
+<P><!-- MATH
+ \begin{displaymath}
+\forall 1\leq j\leq m-1, \quad s^{(j)}(a)=f^{(j)}(a),
+s^{(j)}(b)=f^{(j)}(b)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>m</I> - 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>s</I><SUP>(j)</SUP>(<I>a</I>) = <I>f</I><SUP>(j)</SUP>(<I>a</I>), <I>s</I><SUP>(j)</SUP>(<I>b</I>) = <I>f</I><SUP>(j)</SUP>(<I>b</I>)
+</DIV><P></P>
+</LI>
+<LI>Interpolation naturelle
+<P><!-- MATH
+ \begin{displaymath}
+\forall m \leq j \leq 2m-2, \quad s^{(j)}(a)=s^{(j)}(b)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$"><I>m</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> 2<I>m</I> - 2,&nbsp;&nbsp;&nbsp;&nbsp;<I>s</I><SUP>(j)</SUP>(<I>a</I>) = <I>s</I><SUP>(j)</SUP>(<I>b</I>) = 0
+</DIV><P></P>
+</LI>
+<LI>Interpolation p&#233;riodique
+<P><!-- MATH
+ \begin{displaymath}
+\forall 1\leq j\leq 2m-2, \quad s^{(j)}(a)=s^{(j)}(b)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> 2<I>m</I> - 2,&nbsp;&nbsp;&nbsp;&nbsp;<I>s</I><SUP>(j)</SUP>(<I>a</I>) = <I>s</I><SUP>(j)</SUP>(<I>b</I>)
+</DIV><P></P>
+</LI>
+</UL>
+
+<P>
+Supposons <I>l</I> pair, <I>l</I> = 2<I>m</I>, il y a donc 2<I>m</I> - 1 degr&#233;s de
+libert&#233;. On rajoute les contraintes suivantes :
+
+<UL>
+<LI>Interpolation d'Hermite
+<P><!-- MATH
+ \begin{displaymath}
+\forall 1\leq j\leq m-1, \quad s^{(j)}(a)=f^{(j)}(a),
+s^{(j)}(b)=f^{(j)}(b)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>m</I> - 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>s</I><SUP>(j)</SUP>(<I>a</I>) = <I>f</I><SUP>(j)</SUP>(<I>a</I>), <I>s</I><SUP>(j)</SUP>(<I>b</I>) = <I>f</I><SUP>(j)</SUP>(<I>b</I>)
+</DIV><P></P>
+et
+<P><!-- MATH
+ \begin{displaymath}
+s^{(m)}(a)=f^{(m)}(a)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>s</I><SUP>(m)</SUP>(<I>a</I>) = <I>f</I><SUP>(m)</SUP>(<I>a</I>)
+</DIV><P></P> 
+</LI>
+<LI>Interpolation naturelle
+<P><!-- MATH
+ \begin{displaymath}
+\forall m \leq j \leq 2m-2, \quad s^{(j)}(a)=s^{(j)}(b)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$"><I>m</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> 2<I>m</I> - 2,&nbsp;&nbsp;&nbsp;&nbsp;<I>s</I><SUP>(j)</SUP>(<I>a</I>) = <I>s</I><SUP>(j)</SUP>(<I>b</I>) = 0
+</DIV><P></P>
+et
+<P><!-- MATH
+ \begin{displaymath}
+s^{(2m-1)}(a)=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>s</I><SUP>(2m-1)</SUP>(<I>a</I>) = 0
+</DIV><P></P> 
+</LI>
+<LI>Interpolation p&#233;riodique
+<P><!-- MATH
+ \begin{displaymath}
+\forall 1\leq j\leq 2m-1, \quad s^{(j)}(a)=s^{(j)}(b)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$">1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>j</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> 2<I>m</I> - 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>s</I><SUP>(j)</SUP>(<I>a</I>) = <I>s</I><SUP>(j)</SUP>(<I>b</I>)
+</DIV><P></P>
+</LI>
+</UL>
+Une spline naturelle de degr&#233; donn&#233; passant par des points
+donn&#233;s est une fonction spline v&#233;rifiant l'interpolation naturelle.
+
+<P>
+L'instruction <TT>spline</TT> calcule une spline naturelle de degr&#233; donn&#233; 
+passant par des points dont les listes des abscisses par ordre croissant et 
+des ordonn&#233;es sont pass&#233;es en argument. Elle renvoie la fonction
+spline sous forme d'une liste de polyn&#244;mes, chaque polyn&#244;me
+&#233;tant valide dans un intervalle. On donne dans l'ordre croissant
+la liste des abscisses, la liste des ordonn&#233;es,
+le nom de variables souhait&#233; pour les polyn&#244;mes et le degr&#233;.
+
+<P>
+Par exemple, on veut une spline naturelle de degr&#233; 3, passant par
+les points <!-- MATH
+ $x_0=0,y_0=1$
+ -->
+<I>x</I><SUB>0</SUB> = 0, <I>y</I><SUB>0</SUB> = 1, <!-- MATH
+ $x_1=1,y_1=3$
+ -->
+<I>x</I><SUB>1</SUB> = 1, <I>y</I><SUB>1</SUB> = 3 et <!-- MATH
+ $x_2=2, y_2=0$
+ -->
+<I>x</I><SUB>2</SUB> = 2, <I>y</I><SUB>2</SUB> = 0, on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>spline([0,1,2],[1,3,0],x,3)</TT>
+
+</DIV>
+On obtient une liste de deux polyn&#244;mes fonction de <I>x</I>&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+[ -5*x^3/4+13*x/4+1, \quad 5*(x-1)^3/4-15*(x-1)^2/4+(x-1)/-2+3 ]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+[- 5*<I>x</I><SUP>3</SUP>/4 + 13*<I>x</I>/4 + 1,&nbsp;&nbsp;&nbsp;&nbsp;5*(<I>x</I> - 1)<SUP>3</SUP>/4 - 15*(<I>x</I> - 1)<SUP>2</SUP>/4 + (<I>x</I> - 1)/ - 2 + 3]
+</DIV><P></P>
+valables respectivement sur les intervalles [0, 1] et [1, 2].
+
+<P>
+Par exemple, on veut une spline naturelle de degr&#233; 4, passant par
+les points <!-- MATH
+ $x_0=0,y_0=1$
+ -->
+<I>x</I><SUB>0</SUB> = 0, <I>y</I><SUB>0</SUB> = 1, <!-- MATH
+ $x_1=1,y_1=3$
+ -->
+<I>x</I><SUB>1</SUB> = 1, <I>y</I><SUB>1</SUB> = 3, <!-- MATH
+ $x_2=2, y_2=0$
+ -->
+<I>x</I><SUB>2</SUB> = 2, <I>y</I><SUB>2</SUB> = 0 et <!-- MATH
+ $x_3=3, y_3=-1$
+ -->
+<I>x</I><SUB>3</SUB> = 3, <I>y</I><SUB>3</SUB> = - 1, 
+on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>spline([0,1,2,3],[1,3,0,-1],x,4)</TT>
+
+</DIV>
+On obtient une liste de trois polyn&#244;mes fonction de <I>x</I>&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+[(-62*x^4+304*x)/121+1,
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+[(- 62*<I>x</I><SUP>4</SUP> + 304*<I>x</I>)/121 + 1,
+</DIV><P></P> 
+<P><!-- MATH
+ \begin{displaymath}
+(201*(x-1)^4-248*(x-1)^3-372*(x-1)^2+56*(x-1))/121+3,
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(201*(<I>x</I> - 1)<SUP>4</SUP> -248*(<I>x</I> - 1)<SUP>3</SUP> -372*(<I>x</I> - 1)<SUP>2</SUP> + 56*(<I>x</I> - 1))/121 + 3,
+</DIV><P></P> 
+<P><!-- MATH
+ \begin{displaymath}
+(-139*(x-2)^4+556*(x-2)^3+90*(x-2)^2+-628*(x-2))/121]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(- 139*(<I>x</I> - 2)<SUP>4</SUP> +556*(<I>x</I> - 2)<SUP>3</SUP> +90*(<I>x</I> - 2)<SUP>2</SUP> + - 628*(<I>x</I> - 2))/121]
+</DIV><P></P>
+valables respectivement sur les intervalles [0, 1], [1, 2] et [2, 3].
+
+<P>
+Par exemple, pour avoir l'interpolation naturelle de cos sur 
+<!-- MATH
+ $[0,\pi/2,3\pi/2]$
+ -->
+[0,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/2, 3<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/2], on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>spline([0,pi/2,3*pi/2],cos([0,pi/2,3*pi/2]),x,3)</TT>
+
+</DIV>
+On obtient&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+[((3*\pi^3+(-7*\pi^2)*x+4*x^3)*1/3)/(\pi^3),
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+[((3*<IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.png"
+ ALT="$\displaystyle \pi^{3}_{}$"> + (- 7*<IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$\displaystyle \pi^{2}_{}$">)*<I>x</I> + 4*<I>x</I><SUP>3</SUP>)*1/3)/(<IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.png"
+ ALT="$\displaystyle \pi^{3}_{}$">),
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+((15*\pi^3+(-46*\pi^2)*x+36*\pi*x^2-8*x^3)*1/12)/(\pi^3)]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+((15*<IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.png"
+ ALT="$\displaystyle \pi^{3}_{}$"> + (- 46*<IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$\displaystyle \pi^{2}_{}$">)*<I>x</I> + 36*<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$\displaystyle \pi$">*<I>x</I><SUP>2</SUP> -8*<I>x</I><SUP>3</SUP>)*1/12)/(<IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.png"
+ ALT="$\displaystyle \pi^{3}_{}$">)]
+</DIV><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9709"
+  HREF="node462.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9703"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9699"
+  HREF="node460.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9705"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9707"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9710"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> monter:</B> <A NAME="tex2html9704"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9700"
+  HREF="node460.html">Interpolation de Lagrange :</A>
+ &nbsp; <B>  <A NAME="tex2html9706"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9708"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

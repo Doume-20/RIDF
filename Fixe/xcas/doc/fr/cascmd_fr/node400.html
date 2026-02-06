@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer une expression trigonom&#233;trique en fonction de tan(x/2) : halftan</TITLE>
+<META NAME="description" CONTENT="Transformer une expression trigonom&#233;trique en fonction de tan(x/2) : halftan">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node401.html">
+<LINK REL="previous" HREF="node399.html">
+<LINK REL="up" HREF="node382.html">
+<LINK REL="next" HREF="node401.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8811"
+  HREF="node401.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8805"
+  HREF="node382.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8799"
+  HREF="node399.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8807"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8809"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8812"
+  HREF="node401.html">Transformer les expressions trigonom&#232;triques</A>
+<B> monter:</B> <A NAME="tex2html8806"
+  HREF="node382.html">Les expressions trigonom&#233;triques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8800"
+  HREF="node399.html">Transformer tan(x) avec cos(2x)</A>
+ &nbsp; <B>  <A NAME="tex2html8808"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8810"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092218000000000000000"></A><A NAME="9847"></A>
+<BR>
+Transformer une expression trigonom&#233;trique en fonction de tan(x/2) : <TT>halftan</TT>
+</H2>
+<TT>halftan</TT> a comme argument une expression trigonom&#233;trique.
+<BR><TT>halftan</TT> transforme les <!-- MATH
+ $\sin(x),\ \cos(x)$
+ -->
+sin(<I>x</I>),&nbsp;cos(<I>x</I>) et tan(<I>x</I>) contenus dans 
+l'expression en fonction de <!-- MATH
+ $\tan(\frac{x}{2})$
+ -->
+tan(<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img262.png"
+ ALT="$ {\frac{{x}}{{2}}}$">).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>halftan(sin(2*x)/(1+cos(2*x)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*tan(2*x/2)/((tan(2*x/2))<code>^</code>2+1)/</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>(1+(1-(tan(2*x/2))<code>^</code>2)/((tan(2*x/2))<code>^</code>2+1))</TT>
+</DIV>
+Et, apr&#232;s simplification avec <TT>simplify(ans())</TT>, on obtient :
+<DIV ALIGN="CENTER">
+<TT>tan(x)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>halftan(sin(x)<code>^</code>2+cos(x)<code>^</code>2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(2*tan(x/2)/((tan(x/2))<code>^</code>2+1))<code>^</code>2+</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>((1-(tan(x/2))<code>^</code>2)/((tan(x/2))<code>^</code>2+1))<code>^</code>2</TT>
+</DIV>
+On obtient, apr&#232;s simplification avec <TT>normal(ans())</TT> :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

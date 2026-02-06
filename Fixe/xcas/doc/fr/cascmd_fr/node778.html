@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fr&#233;quences cumul&#233;es : cumulated_frequencies</TITLE>
+<META NAME="description" CONTENT="Les fr&#233;quences cumul&#233;es : cumulated_frequencies">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node779.html">
+<LINK REL="previous" HREF="node777.html">
+<LINK REL="up" HREF="node764.html">
+<LINK REL="next" HREF="node779.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14443"
+  HREF="node779.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14437"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14431"
+  HREF="node777.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14439"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14441"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14444"
+  HREF="node779.html">Pour dessiner un diagramme</A>
+<B> monter:</B> <A NAME="tex2html14438"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14432"
+  HREF="node777.html">L'histogramme : histogram</A>
+ &nbsp; <B>  <A NAME="tex2html14440"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14442"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010114000000000000000"></A><A NAME="20325"></A>
+<BR>
+Les fr&#233;quences cumul&#233;es : <TT>cumulated_frequencies</TT>
+</H2>
+<TT>cumulated_frequencies</TT> a comme argument une matrice
+dont la premi&#232;re colonne repr&#233;sente les diff&#233;rentes valeurs prises,
+soit sous forme  discr&#233;tes <I>b</I><SUB>j</SUB>
+(les <I>b</I><SUB>j</SUB> sont &#233;quir&#233;parties selon <TT>class_size</TT> d&#233;fini 
+avec la configuration graphique) soit
+sous fome d'intervalles <!-- MATH
+ $a_{j-1}..a_j$
+ -->
+<I>a</I><SUB>j-1</SUB>..<I>a</I><SUB>j</SUB>.
+<BR>
+Les colonnes suivantes sont alors soit les effectifs <I>n</I><SUB>j</SUB>, soit les
+ fr&#233;quences <I>f</I><SUB>j</SUB> des valeurs <I>b</I><SUB>j</SUB> ou des classes <!-- MATH
+ $a_{j-1}..a_j$
+ -->
+<I>a</I><SUB>j-1</SUB>..<I>a</I><SUB>j</SUB>.
+<BR>
+On peut mettre plusieus effectis correspondant &#224; plusieurs s&#233;ries de 
+m&#234;mes valeurs afin de pouvoir les comparer.
+<BR>
+Les lignes sont donc: 
+<BR><!-- MATH
+ $[a_{j-1}..a_j,n_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>..<I>a</I><SUB>j</SUB>, <I>n</I><SUB>j</SUB>] ou  <!-- MATH
+ $[a_{j-1}..a_j,f_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>..<I>a</I><SUB>j</SUB>, <I>f</I><SUB>j</SUB>] ou <!-- MATH
+ $[a_{j-1}..a_j,n1_j,n2_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>..<I>a</I><SUB>j</SUB>, <I>n</I>1<SUB>j</SUB>, <I>n</I>2<SUB>j</SUB>] ou
+<!-- MATH
+ $[a_{j-1}..a_j,f1_j,f2_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>..<I>a</I><SUB>j</SUB>, <I>f</I>1<SUB>j</SUB>, <I>f</I>2<SUB>j</SUB>] ou [<I>b</I><SUB>j</SUB>, <I>n</I><SUB>j</SUB>] ou  [<I>b</I><SUB>j</SUB>, <I>f</I><SUB>j</SUB>] etc...
+<BR><TT>cumulated_frequencies</TT> permet de visualiser le diagramme des 
+fr&#233;quences cumul&#233;es : ce sont les segments de droites qui joignent les 
+points d'abscisse <I>a</I><SUB>j</SUB> et d'ordonn&#233;e <!-- MATH
+ $f_1+..+f_j$
+ -->
+<I>f</I><SUB>1</SUB> + .. + <I>f</I><SUB>j</SUB> (<I>a</I><SUB>j</SUB> est la borne 
+sup&#233;rieure d'une classe, <I>f</I><SUB>j</SUB> est la fr&#233;quence de la classe 
+<!-- MATH
+ $[a_{j-1};a_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>;<I>a</I><SUB>j</SUB>] et donc  <!-- MATH
+ $f_1+..+f_j$
+ -->
+<I>f</I><SUB>1</SUB> + .. + <I>f</I><SUB>j</SUB> est la  fr&#233;quence cumul&#233;e de <I>a</I><SUB>j</SUB>)
+<BR>
+Si on a des valeurs discr&#233;tes elles sont consid&#233;r&#233;es 
+comme &#233;tant le centre de la classe.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cumulated_frequencies([[1.5..1.65,50],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[1.65..1.7,20],[1.7..1.8,30]])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>cumulated_frequencies([[1.5..1.65,0.5],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[1.65..1.7,0.2],[1.7..1.8,0.3]])</TT>
+</DIV>
+La fen&#234;tre graphique s'ouvre automatiquement et on obtient le diagramme 
+cumulatif des fr&#233;quences de :
+<BR><TT>[[1.5..1.65,50],[1.65..1.7,20],[1.7..1.8,30]]</TT> 
+<BR>&#224; condition d'avoir 
+d&#233;fini correctement la configuration du graphique (menu <TT>Cfg</TT>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cumulated_frequencies([[1.5..1.65,50,30],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[1.65..1.7,20,50],[1.7..1.8,30,20]])</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cumulated_frequencies([[1.5..1.65,0.5,0.3],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[1.65..1.7,0.2,0.5],[1.7..1.8,0.3,0.2]])</TT>
+</DIV>
+La fen&#234;tre graphique s'ouvre automatiquement et on obtient les diagrammes 
+cumulatifs des fr&#233;quences, avec des couleurs diff&#233;rentes, de :
+<BR><TT>[[1.5..1.65,50],[1.65..1.7,20],[1.7..1.8,30]]</TT> et de 
+<BR><TT>[[1.5..1.65,30],[1.65..1.7,50],[1.7..1.8,20]]</TT>
+<BR>&#224; condition d'avoir d&#233;fini correctement la configuration du graphique 
+(menu <TT>Cfg</TT>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14443"
+  HREF="node779.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14437"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14431"
+  HREF="node777.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14439"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14441"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14444"
+  HREF="node779.html">Pour dessiner un diagramme</A>
+<B> monter:</B> <A NAME="tex2html14438"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14432"
+  HREF="node777.html">L'histogramme : histogram</A>
+ &nbsp; <B>  <A NAME="tex2html14440"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14442"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

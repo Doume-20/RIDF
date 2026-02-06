@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Cr&#233;ation et arithm&#233;tique des matrices</TITLE>
+<META NAME="description" CONTENT="Cr&#233;ation et arithm&#233;tique des matrices">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node664.html">
+<LINK REL="previous" HREF="node620.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node629.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12166"
+  HREF="node629.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12160"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12154"
+  HREF="node627.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12162"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12164"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12167"
+  HREF="node629.html">Pour &#233;valuer une matrice</A>
+<B> monter:</B> <A NAME="tex2html12161"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12155"
+  HREF="node627.html">Matrice de Vandermonde :</A>
+ &nbsp; <B>  <A NAME="tex2html12163"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12165"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009430000000000000000">
+Cr&#233;ation et arithm&#233;tique des matrices</A>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html12168"
+  HREF="node629.html">Pour &#233;valuer une matrice : <TT>evalm</TT></A>
+<LI><A NAME="tex2html12169"
+  HREF="node630.html">Addition et soustraction de deux matrices : <TT>+ - .+ .-</TT></A>
+<LI><A NAME="tex2html12170"
+  HREF="node631.html">Multiplication de deux matrices : <TT>* &amp;*</TT></A>
+<LI><A NAME="tex2html12171"
+  HREF="node632.html">Addition des &#233;l&#233;ments d'une m&#234;me colonne d'une matrice : <TT>sum</TT></A>
+<LI><A NAME="tex2html12172"
+  HREF="node633.html">Somme cumul&#233;e des &#233;l&#233;ments d'une m&#234;me colonne d'une matrice : <TT>cumSum</TT></A>
+<LI><A NAME="tex2html12173"
+  HREF="node634.html">Multiplication des &#233;l&#233;ments d'une m&#234;me colonne d'une matrice : <TT>product</TT></A>
+<LI><A NAME="tex2html12174"
+  HREF="node635.html">El&#233;vation d'une matrice &#224; une puissance enti&#232;re : ^ &amp;^</A>
+<LI><A NAME="tex2html12175"
+  HREF="node636.html">Produit de Hadamard : <TT>hadamard product</TT></A>
+<LI><A NAME="tex2html12176"
+  HREF="node637.html">Produit de Hadamard (version infix&#233;e): <TT>.*</TT></A>
+<LI><A NAME="tex2html12177"
+  HREF="node638.html">Division de Hadamard (version infix&#233;e): <TT>./</TT></A>
+<LI><A NAME="tex2html12178"
+  HREF="node639.html">Puissance de Hadamard (version infix&#233;e): <TT>.^</TT></A>
+<LI><A NAME="tex2html12179"
+  HREF="node640.html">Extraire un ou des &#233;l&#233;ment(s) d'une matrice : <TT>at</TT></A>
+<LI><A NAME="tex2html12180"
+  HREF="node641.html">Modifier un &#233;l&#233;ment ou une ligne d'une matrice contenue dans une variable : <TT>=&lt;</TT></A>
+<LI><A NAME="tex2html12181"
+  HREF="node642.html">Modifier un &#233;l&#233;ment ou une ligne d'une matrice : <TT>subsop</TT></A>
+<LI><A NAME="tex2html12182"
+  HREF="node643.html">Extraire des lignes ou des colonnes d'une matrice (compatibilit&#233; Maple) : <TT>row col</TT></A>
+<LI><A NAME="tex2html12183"
+  HREF="node644.html">Supprimer des lignes ou des colonnes d'une matrice : <TT>delrows delcols</TT></A>
+<LI><A NAME="tex2html12184"
+  HREF="node645.html">Extraire une sous-matrice d'une matrice (compatibilit&#233; TI) : <TT>subMat</TT></A>
+<LI><A NAME="tex2html12185"
+  HREF="node646.html">Ajouter une ligne &#224; une autre : <TT>rowAdd</TT></A>
+<LI><A NAME="tex2html12186"
+  HREF="node647.html">Multiplier une ligne par une expression : <TT>mRow</TT></A>
+<LI><A NAME="tex2html12187"
+  HREF="node648.html">Ajouter <I>k</I> fois une ligne &#224; une autre : <TT>mRowAdd</TT></A>
+<LI><A NAME="tex2html12188"
+  HREF="node649.html">&#201;changer deux lignes : <TT>rowSwap</TT></A>
+<LI><A NAME="tex2html12189"
+  HREF="node650.html">Faire une matrice avec une liste de matrices : <TT>blockmatrix</TT></A>
+<LI><A NAME="tex2html12190"
+  HREF="node651.html">Faire une matrice avec deux matrices : <TT>semi_augment</TT></A>
+<LI><A NAME="tex2html12191"
+  HREF="node652.html">Faire une matrice avec deux matrices : <TT>augment concat</TT></A>
+<LI><A NAME="tex2html12192"
+  HREF="node653.html">Faire une matrice avec une fonction : <TT>makemat</TT></A>
+<LI><A NAME="tex2html12193"
+  HREF="node654.html">D&#233;finir une matrice : <TT>matrix</TT></A>
+<LI><A NAME="tex2html12194"
+  HREF="node655.html">Rajouter une colonne &#224; une matrice : <TT>border</TT></A>
+<LI><A NAME="tex2html12195"
+  HREF="node656.html">Compter les &#233;l&#233;ments d'une matrice v&#233;rifiant une propri&#233;t&#233; : <TT>count</TT></A>
+<LI><A NAME="tex2html12196"
+  HREF="node657.html">Compter les &#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT></A>
+<LI><A NAME="tex2html12197"
+  HREF="node658.html">Compter les &#233;l&#233;ments plus petits qu'une valeur donn&#233;e : 
+<BR><TT>count_inf</TT></A>
+<LI><A NAME="tex2html12198"
+  HREF="node659.html">Compter les &#233;l&#233;ments plus grands qu'une valeur donn&#233;e : <TT>count_sup</TT></A>
+<LI><A NAME="tex2html12199"
+  HREF="node660.html">Fonctions utiles pour les colonnes d'une matrice : <TT>mean</TT> ou <TT>moyenne</TT>, <TT>stddev</TT> ou <TT>ecart_type</TT>, <TT>variance</TT>, <TT>median</TT>, <TT>quantile</TT>, <TT>quartiles</TT>, <TT>boxwhisker</TT> ou <TT>moustache</TT></A>
+<LI><A NAME="tex2html12200"
+  HREF="node661.html">Dimension d'une matrice : <TT>dim</TT></A>
+<LI><A NAME="tex2html12201"
+  HREF="node662.html">Nombre de lignes : <TT>rowdim rowDim nrows</TT></A>
+<LI><A NAME="tex2html12202"
+  HREF="node663.html">Nombre de colonnes : <TT>coldim colDim ncols</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

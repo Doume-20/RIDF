@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le langage</TITLE>
+<META NAME="description" CONTENT="Le langage">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node33.html">
+<LINK REL="previous" HREF="node31.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node33.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html519"
+  HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html513"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html507"
+  HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html515"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html517"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html520"
+  HREF="node33.html">Quelques exemples</A>
+<B> monter:</B> <A NAME="tex2html514"
+  HREF="node31.html">Programmation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html508"
+  HREF="node31.html">Programmation</A>
+ &nbsp; <B>  <A NAME="tex2html516"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html518"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00061000000000000000">
+Le langage</A>
+</H2>
+<TT>Xcas</TT> permet d'&#233;crire des  programmes, comme n'importe quel 
+langage de programmation. Voici ses
+principales caract&#233;ristiques.
+<A NAME="766"></A>
+<A NAME="767"></A>
+<A NAME="768"></A>
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>C'est un langage fonctionnel. L'argument d'une fonction peut &#234;tre
+une autre fonction. Si c'est le cas, on peut soit donner le nom de la
+fonction argument dans la commande, soit sa d&#233;finition&nbsp;: par exemple
+<code>function_diff(f)</code> ou bien <code>function_diff(x-&gt;x^2)</code>.
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>Il n'y a pas de distinction entre programme et fonction&nbsp;: 
+une fonction renvoie la valeur de la derni&#232;re instruction 
+&#233;valu&#233;e ou ce qui suit le mot r&#233;serv&#233; <code>return</code>.
+Comme pour tous les environnements de calcul, programmer
+consiste &#224; &#233;tendre <TT>Xcas</TT> en lui rajoutant les fonctions
+souhait&#233;es. Structurer la programmation consiste &#224; hi&#233;rarchiser
+les diff&#233;rentes fonctions qui s'appellent entre elles.
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>Le langage est non typ&#233;. On distingue seulement les 
+variables globales, qui ne sont pas d&#233;clar&#233;es, 
+et les variables locales, 
+d&#233;clar&#233;es en d&#233;but de fonction.
+</DD>
+</DL>
+<A NAME="772"></A>
+Dans un programme, lorsqu'on appelle une variable munie d'un indice qui n'est 
+pas affectée à une liste, séquence ou matrice, 
+c'est une table qui est cr&#233;&#233;e, et non une liste.
+Une table est un conteneur d'objets analogue aux listes et aux
+s&#233;quences. La diff&#233;rence est qu'elle peut &#234;tre indic&#233;e
+par autre chose qu'un entier, par exemple
+une cha&#238;ne de caract&#232;res...&nbsp;
+Si <code>a</code> est une variable formelle, la commande <code>a[4]:=2</code>
+cr&#233;e une table <code>a</code>.
+<BR>
+Pour que <code>a</code> soit une liste, il faut d'abord affecter <code>a</code>
+ &#224; une liste par exemple <code>a:=[0$10]</code>
+(si la taille de la liste est connue) ou <code>a:=[]</code> puis 
+<code>a[4]:=2</code>.
+M&#234;me si le langage est non typ&#233;, il est donc 
+recommand&#233; d'initialiser
+les variables avant de les utiliser.
+
+La syntaxe de d&#233;claration d'une fonction est la suivante. 
+<PRE>
+nom_fonction(var1,var2,...):={
+local var_loc1, var_loc2,... ;
+  instruction1;
+  instruction2;
+  ...
+}
+</PRE>
+La syntaxe  est soit avec des mots clef en 
+fran&#231;ais soit celle du langage C++.
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Instructions en fan&#231;ais</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT">affectation</TD>
+<TD ALIGN="LEFT"><code> a:=2;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">entrée expression</TD>
+<TD ALIGN="LEFT"><code> saisir("a=",a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">entrée chaine</TD>
+<TD ALIGN="LEFT"><code> saisir_chaine("a=",a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">sortie</TD>
+<TD ALIGN="LEFT"><code> afficher("a=",a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">valeur retourn&#233;e</TD>
+<TD ALIGN="LEFT"><code> retourne(a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">arr&#234;t dans boucle</TD>
+<TD ALIGN="LEFT"><code> break;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">alternative</TD>
+<TD ALIGN="LEFT"><code> si &lt;condition&gt; alors &lt;inst&gt; fsi;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT"><code> si &lt;condition&gt; alors &lt;inst1&gt; sinon &lt;inst2&gt; fsi;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle pour</TD>
+<TD ALIGN="LEFT"><code> pour j de a jusque b faire &lt;inst&gt; fpour;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT"><code> pour j de a jusque b pas p faire &lt;inst&gt; fpour;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle r&#233;p&#233;ter</TD>
+<TD ALIGN="LEFT"><code> repeter &lt;inst&gt; jusqua &lt;condition&gt;;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle tantque</TD>
+<TD ALIGN="LEFT"><code> tantque &lt;condition&gt; faire &lt;inst&gt; ftantque;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle faire</TD>
+<TD ALIGN="LEFT"><code> faire &lt;inst1&gt; si &lt;condition&gt; break;&lt;inst2&gt;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT"><code> ffaire;</code></TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Instructions comme en C++</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT">affectation</TD>
+<TD ALIGN="LEFT"><code> a:=2;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">entrée expression</TD>
+<TD ALIGN="LEFT"><code> input("a=",a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">entrée chaine</TD>
+<TD ALIGN="LEFT"><code> textinput("a=",a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">sortie</TD>
+<TD ALIGN="LEFT"><code> print("a=",a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">valeur retourn&#233;e</TD>
+<TD ALIGN="LEFT"><code> return(a);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">arr&#234;t dans boucle</TD>
+<TD ALIGN="LEFT"><code> break;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">alternative</TD>
+<TD ALIGN="LEFT"><code> if (&lt;condition&gt;) {&lt;inst&gt;};</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT"><code> if (&lt;condition&gt;) {&lt;inst1&gt;} else {&lt;inst2&gt;};</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle pour</TD>
+<TD ALIGN="LEFT"><code> for (j:= a;j&lt;=b;j++) {&lt;inst&gt;};</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT"><code> for (j:= a;j&lt;=b;j:=j+p) {&lt;inst&gt;};</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle r&#233;p&#233;ter</TD>
+<TD ALIGN="LEFT"><code> repeat &lt;inst&gt; until &lt;condition&gt;;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle tantque</TD>
+<TD ALIGN="LEFT"><code> while (&lt;condition&gt;) {&lt;inst&gt;};</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT">boucle faire</TD>
+<TD ALIGN="LEFT"><code> do &lt;inst1&gt; if (&lt;condition&gt;) break;&lt;inst2&gt; od;</code></TD>
+</TR>
+</TABLE>
+</DIV>
+Pour les tests, une condition est un bool&#233;en,
+r&#233;sultat d'une expression logique, utilisant les
+op&#233;rateurs habituels.
+<A NAME="792"></A>
+<A NAME="1763"></A>
+<A NAME="1764"></A>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Op&#233;rateurs logiques</B></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>==</code></TD>
+<TD ALIGN="LEFT">teste l'&#233;galit&#233;</TD>
+<TD ALIGN="LEFT"><code>!=</code></TD>
+<TD ALIGN="LEFT">teste la diff&#233;rence</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>&lt;</code></TD>
+<TD ALIGN="LEFT">teste la stricte inf&#233;riorit&#233;</TD>
+<TD ALIGN="LEFT"><code>&gt;</code></TD>
+<TD ALIGN="LEFT">teste la stricte sup&#233;riorit&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>&lt;=</code></TD>
+<TD ALIGN="LEFT">teste l'inf&#233;riorit&#233; ou l'&#233;galit&#233;</TD>
+<TD ALIGN="LEFT"><code>&gt;=</code></TD>
+<TD ALIGN="LEFT">teste la sup&#233;riorit&#233; ou l'&#233;galit&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>&amp;&amp;, et </code></TD>
+<TD ALIGN="LEFT">op&#233;rateur bool&#233;en infix&#233; et</TD>
+<TD ALIGN="LEFT"><code>||, ou</code></TD>
+<TD ALIGN="LEFT">op&#233;rateur bool&#233;en infix&#233; ou</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>vrai</code></TD>
+<TD ALIGN="LEFT">est le bool&#233;en true ou 1</TD>
+<TD ALIGN="LEFT"><code>faux</code></TD>
+<TD ALIGN="LEFT">est le bool&#233;en false ou 0</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>non, !</code></TD>
+<TD ALIGN="LEFT">inverse logique</TD>
+<TD ALIGN="LEFT"><code></code></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="803"></A>
+<A NAME="804"></A>
+<A NAME="805"></A>
+<A NAME="806"></A>
+<A NAME="1765"></A>
+<A NAME="1766"></A>
+<A NAME="1767"></A>
+<A NAME="810"></A>
+
+<P>
+Attention, <code>i</code> d&#233;signe <IMG
+ WIDTH="38" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ \sqrt{{-1}}$"> et ne peut pas &#234;tre
+utilis&#233; comme variable de boucle.
+L'instruction <code>break;</code> permet de sortir d'une boucle
+et <code>continue;</code> de passer imm&#233;diatement &#224; l'it&#233;ration
+suivante.
+<A NAME="1768"></A>
+<A NAME="1769"></A>
+De nombreuses variantes sont reconnues en particulier en mode 
+de compatibilit&#233; avec Maple, Mupad et les TI89/Voyage 200.
+<A NAME="814"></A>
+On peut capturer des erreurs d'ex&#233;cution par
+<PRE>
+try {bloc_erreurs_capturees} 
+catch (variable)
+    {bloc_execute_si_erreur}
+</PRE>
+Par exemple :
+<PRE>
+try{A:=idn(2)*idn(3)} 
+catch(erreur) 
+{print("l'erreur est "+erreur)}
+</PRE><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html519"
+  HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html513"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html507"
+  HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html515"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html517"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html520"
+  HREF="node33.html">Quelques exemples</A>
+<B> monter:</B> <A NAME="tex2html514"
+  HREF="node31.html">Programmation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html508"
+  HREF="node31.html">Programmation</A>
+ &nbsp; <B>  <A NAME="tex2html516"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html518"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

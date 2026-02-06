@@ -1,0 +1,75 @@
+2021-09-14 21:28:13 [7780] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +5ms
+2021-09-14 19:28:13.779: 2021-09-14 21:28:13 [7780] INFO [JS] We are triggering +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +4ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +1ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.795: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> __/conf/agents/facts... +1ms
+2021-09-14 19:28:13.810: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +2ms
+2021-09-14 19:28:13.810: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +1ms
+2021-09-14 19:28:13.810: 2021-09-14 21:28:13 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +0ms
+2021-09-14 19:28:13.810: 2021-09-14 21:28:13 [7780] INFO [Runner] Performing runner... +0ms
+2021-09-14 19:28:13.810: 2021-09-14 21:28:13 [7780] INFO [JS] Performing facts gathering and upload... +2ms
+2021-09-14 19:28:18.059: 2021-09-14 21:28:18 [7780] INFO [JS] Getting installed applications... +4252ms
+2021-09-14 19:28:18.856: 2021-09-14 21:28:18 [7780] INFO [JS] Getting apps result: 0 +796ms
+2021-09-14 19:28:18.856: 2021-09-14 21:28:18 [7780] INFO [JS] Setting facts... +1ms
+2021-09-14 19:28:18.856: 2021-09-14 21:28:18 [7780] INFO [JS] Uploading facts... +2ms
+2021-09-14 19:28:19.059: 2021-09-14 21:28:19 [7780] INFO [JS] Uploading facts result:  +201ms
+2021-09-14 19:28:19.059: 2021-09-14 21:28:19 [7780] INFO [Runner] Running result: true +1ms
+2021-09-14 19:28:19.074: 2021-09-14 21:28:19 [7780] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +4ms
+2021-09-15 05:17:14.953: 2021-09-15 7:17:14 [7780] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +35335884ms
+2021-09-15 05:17:14.953: 2021-09-15 7:17:14 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +1ms
+2021-09-15 05:17:14.953: 2021-09-15 7:17:14 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +3ms
+2021-09-15 05:17:15.130: 2021-09-15 7:17:15 [7780] INFO [Runner] Creating configuration unit runner object... +173ms
+2021-09-15 05:17:15.130: 2021-09-15 7:17:15 [7780] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-15 05:17:15.130: 2021-09-15 7:17:15 [7780] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2021-09-15 05:17:15.130: 2021-09-15 7:17:15 [7780] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2021-09-15 05:17:15.130: 2021-09-15 7:17:15 [7780] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +5ms
+2021-09-15 05:17:15.146: 2021-09-15 7:17:15 [7780] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2021-09-15 05:17:15.146: 2021-09-15 7:17:15 [7780] INFO [JS] Scheduling result: undefined +1ms
+2021-09-15 05:17:15.146: 2021-09-15 7:17:15 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +1ms
+2021-09-15 05:17:15.146: 2021-09-15 7:17:15 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2021-09-15 05:17:15.239: 2021-09-15 7:17:15 [7780] INFO [Runner] Creating configuration unit runner object... +96ms
+2021-09-15 05:17:15.255: 2021-09-15 7:17:15 [7780] INFO [Runner] Checking if runner needs to be performed... +6ms
+2021-09-15 05:17:15.255: 2021-09-15 7:17:15 [7780] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-09-15 05:17:15.255: 2021-09-15 7:17:15 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> configuration... +2ms
+2021-09-15 05:17:15.271: 2021-09-15 7:17:15 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\262\payload... +3ms
+2021-09-15 05:17:15.318: 2021-09-15 7:17:15 [7780] INFO [Runner] Creating configuration unit runner object... +57ms
+2021-09-15 05:17:15.318: 2021-09-15 7:17:15 [7780] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-09-15 05:17:15.318: 2021-09-15 7:17:15 [7780] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-15 05:17:15.364: 2021-09-15 7:17:15 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> configuration... +36ms
+2021-09-15 05:17:15.364: 2021-09-15 7:17:15 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +3ms
+2021-09-15 05:17:15.427: 2021-09-15 7:17:15 [7780] INFO [Runner] Creating configuration unit runner object... +58ms
+2021-09-15 05:17:15.427: 2021-09-15 7:17:15 [7780] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-09-15 05:17:15.427: 2021-09-15 7:17:15 [7780] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-09-15 05:17:15.427: {
+2021-09-15 05:17:15.427:   "platform": "win32",
+2021-09-15 05:17:15.427:   "deviceId": "IFP052046109",
+2021-09-15 05:17:15.427:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-09-15 05:17:15.427:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-09-15 05:17:15.427:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-09-15 05:17:15.427:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-09-15 05:17:15.427:   "versionCode": 21090427,
+2021-09-15 05:17:15.427:   "trigger": "configuration",
+2021-09-15 05:17:15.427:   "metadata": {
+2021-09-15 05:17:15.427:     "packageVersion": "1.0.16.0",
+2021-09-15 05:17:15.427:     "componentParameters": {
+2021-09-15 05:17:15.427:       "AppX": "Hisqool.Legal.GDPR",
+2021-09-15 05:17:15.427:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-09-15 05:17:15.427:       "DesktopShortcut": "Charte de protection*",
+2021-09-15 05:17:15.427:       "ProvisioningPackage": "Hisqool GDPR",
+2021-09-15 05:17:15.427:       "InstallationDirectory": "hisqool.gdpr",
+2021-09-15 05:17:15.427:       "UninstallationDirectory": "hisqool.gdpr",
+2021-09-15 05:17:15.427:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-09-15 05:17:15.427:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-09-15 05:17:15.427:     },
+2021-09-15 05:17:15.427:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-09-15 05:17:15.427:   }
+2021-09-15 05:17:15.427: } +4ms
+2021-09-15 05:17:15.427: 2021-09-15 7:17:15 [7780] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +4ms
+2021-09-15 05:17:15.443: 2021-09-15 7:17:15 [7780] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +3ms
+2021-09-15 05:17:15.443: 2021-09-15 7:17:15 [7780] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +5ms

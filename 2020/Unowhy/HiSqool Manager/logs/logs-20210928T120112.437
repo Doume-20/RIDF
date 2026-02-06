@@ -1,0 +1,59 @@
+2021-09-28 13:58:45 [5224] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-09-28 11:58:45.870: 2021-09-28 13:58:45 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2021-09-28 11:58:45.870: 2021-09-28 13:58:45 [5224] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-09-28 11:58:45.870: 2021-09-28 13:58:45 [5224] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +1ms
+2021-09-28 11:58:45.870: 2021-09-28 13:58:45 [5224] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-09-28 11:58:53.022: 2021-09-28 13:58:53 [5224] INFO [CleanerService] Received payload list: 111, 280, 271, 130, 170, 173, 179, 2, 279, 182, 262, 181, 356 +7159ms
+2021-09-28 11:58:53.024: 2021-09-28 13:58:53 [5224] INFO [CleanerService] Current payload list: 111, 130, 170, 173, 179, 181, 182, 2, 262, 271, 279, 280, 356 +5ms
+2021-09-28 11:58:53.024: 2021-09-28 13:58:53 [5224] INFO [CleanerService] Payloads to delete:  +1ms
+2021-09-28 12:00:57.613: 2021-09-28 14:00:57 [5224] INFO [RequestPerformerService] Download finished undefined. +124585ms
+2021-09-28 12:00:57.613: 2021-09-28 14:00:57 [5224] INFO [RequestPerformerService] Digest: expected=4b83890aa6aafca2ce449b963cca617a, actual=4b83890aa6aafca2ce449b963cca617a. +1ms
+2021-09-28 12:00:57.613: 2021-09-28 14:00:57 [5224] INFO [RequestPerformerService] Complete. +1ms
+2021-09-28 12:00:57.613: 2021-09-28 14:00:57 [5224] INFO [PayloadDownloader] [PAYLOAD 182] Persisting status=state=Downloaded, error=None, active=true +2ms
+2021-09-28 12:00:57.613: 2021-09-28 14:00:57 [5224] INFO [PayloadDownloader] [PAYLOAD 182] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\182\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\182\payload... +2ms
+2021-09-28 12:00:57.629: 2021-09-28 14:00:57 [5224] INFO [RequestPerformerService] Got disposed. +5ms
+2021-09-28 12:01:02.493: 2021-09-28 14:01:02 [5224] INFO [PayloadDownloader] [PAYLOAD 182] Persisting status=state=Ok, error=None, active=true +4863ms
+2021-09-28 12:01:02.493: 2021-09-28 14:01:02 [5224] INFO [PayloadDispatcher] Emitting 13 entries ["__/conf/agents/facts","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0","conf/application/windows/Educadhoc-Windows","conf/application/windows/HiSqool","conf/application/windows/Le-Livre-Scolaire-Windows","conf/application/windows/LGPO-Windows","conf/application/windows/Lib-Manuels","conf/application/windows/sqoolctl","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows"] +4ms
+2021-09-28 12:01:02.493: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Processing for execution configuration with 13 keys +0ms
+2021-09-28 12:01:02.493: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Got 13 configurations. 1 in, 0 out +1ms
+2021-09-28 12:01:02.502: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +5ms
+2021-09-28 12:01:02.504: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> logout... +1ms
+2021-09-28 12:01:02.504: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> configuration... +1ms
+2021-09-28 12:01:02.504: 2021-09-28 14:01:02 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\262\payload... +3ms
+2021-09-28 12:01:02.534: 2021-09-28 14:01:02 [5224] INFO [Runner] Creating configuration unit runner object... +27ms
+2021-09-28 12:01:02.534: 2021-09-28 14:01:02 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-28 12:01:02.534: 2021-09-28 14:01:02 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-28 12:01:02.926: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> logout... +389ms
+2021-09-28 12:01:02.926: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Educadhoc-Windows... +1ms
+2021-09-28 12:01:02.926: 2021-09-28 14:01:02 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> configuration... +12ms
+2021-09-28 12:01:02.942: 2021-09-28 14:01:02 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\182\payload... +4ms
+2021-09-28 12:01:03.159: 2021-09-28 14:01:03 [5224] INFO [Runner] Creating configuration unit runner object... +213ms
+2021-09-28 12:01:03.159: 2021-09-28 14:01:03 [5224] INFO [Runner] Checking if runner needs to be performed... +3ms
+2021-09-28 12:01:03.169: 2021-09-28 14:01:03 [5224] INFO [JS] Checking that the unit needs to be performed +8ms
+2021-09-28 12:01:03.239: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> logout... +67ms
+2021-09-28 12:01:03.239: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> configuration... +1ms
+2021-09-28 12:01:03.239: 2021-09-28 14:01:03 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\181\payload... +2ms
+2021-09-28 12:01:03.249: 2021-09-28 14:01:03 [5224] INFO [Runner] Creating configuration unit runner object... +13ms
+2021-09-28 12:01:03.249: 2021-09-28 14:01:03 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-28 12:01:03.257: 2021-09-28 14:01:03 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-28 12:01:03.330: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +77ms
+2021-09-28 12:01:03.330: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> configuration... +1ms
+2021-09-28 12:01:03.338: 2021-09-28 14:01:03 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\356\payload... +2ms
+2021-09-28 12:01:03.359: 2021-09-28 14:01:03 [5224] INFO [Runner] Creating configuration unit runner object... +20ms
+2021-09-28 12:01:03.359: 2021-09-28 14:01:03 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-28 12:01:03.361: 2021-09-28 14:01:03 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-28 12:01:03.490: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> logout... +130ms
+2021-09-28 12:01:03.492: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +1ms
+2021-09-28 12:01:03.492: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +0ms
+2021-09-28 12:01:03.492: 2021-09-28 14:01:03 [5224] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +1ms
+2021-09-28 12:01:03.492: 2021-09-28 14:01:03 [5224] INFO [WatcherService] Received a list of 13 payloads +1ms
+2021-09-28 12:01:07.710: 2021-09-28 14:01:07 [5224] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +4223ms
+2021-09-28 12:01:07.781: 2021-09-28 14:01:07 [5224] INFO [JS] GUID package: f7639fd5-22e3-42bd-9806-a3aafb44760a +69ms
+2021-09-28 12:01:07.830: 2021-09-28 14:01:07 [5224] INFO [JS] GUID package: 76c308b8-e50d-464f-b10d-7bf546eaeb93 +44ms
+2021-09-28 12:01:07.852: 2021-09-28 14:01:07 [5224] INFO [JS] GUID package: 10108c63-247d-41bd-92fa-2e15beeb2c93 +24ms
+2021-09-28 12:01:11.820: 2021-09-28 14:01:11 [5224] INFO [JS] Version of current package: 3.92 +3969ms
+2021-09-28 12:01:11.850: 2021-09-28 14:01:11 [5224] INFO [JS] Version of current package: 8.19 +25ms
+2021-09-28 12:01:11.870: 2021-09-28 14:01:11 [5224] INFO [JS] Version of current package: 2.4 +25ms
+2021-09-28 12:01:12.437: 2021-09-28 14:01:12 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +561ms
+2021-09-28 12:01:12.437: 2021-09-28 14:01:12 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-28 12:01:12.437: 2021-09-28 14:01:12 [5224] INFO [Runner] Performing runner... +1ms

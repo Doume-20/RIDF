@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;solution d'&#233;quations avec nSolve</TITLE>
+<META NAME="description" CONTENT="R&#233;solution d'&#233;quations avec nSolve">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node167.html">
+<LINK REL="previous" HREF="node160.html">
+<LINK REL="up" HREF="node155.html">
+<LINK REL="next" HREF="node167.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4794"
+  HREF="node167.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4788"
+  HREF="node155.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4782"
+  HREF="node165.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4790"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4792"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4795"
+  HREF="node167.html">R&#233;solution d'&#233;quations avec fsolve</A>
+<B> monter:</B> <A NAME="tex2html4789"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4783"
+  HREF="node165.html">Solution approch&#233;e du syst&#232;me</A>
+ &nbsp; <B>  <A NAME="tex2html4791"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4793"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00740000000000000000"></A><A NAME="3705"></A>
+<BR>
+R&#233;solution d'&#233;quations avec <TT>nSolve</TT>
+</H1>
+<TT>nSolve</TT> permet de r&#233;soudre num&#233;riquement des &#233;quations non 
+polynomiales : <I>f</I> (<I>x</I>) = 0 pour <!-- MATH
+ $x \in ]a,b[$
+ -->
+<I>x</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> ]<I>a</I>, <I>b</I>[ (<TT>nSolve</TT> est une commande 
+compatible <TT>ti</TT>).
+<BR>
+Les param&#232;tres de <TT>nSsolve</TT> sont <TT>f(x)=0</TT>, <TT>x</TT>, ou <TT>x=x0</TT>
+o&#249;  <TT>x0</TT> est un point de ]<I>a</I>, <I>b</I>[.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>nSolve((cos(x))=x,x)</TT>
+</DIV>
+On obtient soit :
+<DIV ALIGN="CENTER">
+<TT>0.739085133215</TT>
+</DIV>
+soit une solution complexe :
+<DIV ALIGN="CENTER">
+<TT>-9.10998745394-2.95017086176*i</TT>
+</DIV>
+En effet, si on ne pr&#233;cise pas la valeur qui d&#233;marre
+l'it&#233;ration, <TT>Xcas</TT>
+ d&#233;marre l'it&#233;ration avec une valeur al&#233;atoire r&#233;elle ou complexe.
+<BR>
+On v&#233;rifie : 
+<BR><TT>cos(-9.10998745394-2.95017086176*i)=-9.10998745394-2.95017086176*i</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>nSolve((cos(x))=x,x=0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.739085133215</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

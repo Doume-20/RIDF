@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Appliquer une fonction de 2 variables aux &#233;l&#233;ments de 2 listes : zip</TITLE>
+<META NAME="description" CONTENT="Appliquer une fonction de 2 variables aux &#233;l&#233;ments de 2 listes : zip">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node603.html">
+<LINK REL="previous" HREF="node601.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node603.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11793"
+  HREF="node603.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11787"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11781"
+  HREF="node601.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11789"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11791"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11794"
+  HREF="node603.html">Faire une liste de</A>
+<B> monter:</B> <A NAME="tex2html11788"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11782"
+  HREF="node601.html">Appliquer une fonction de</A>
+ &nbsp; <B>  <A NAME="tex2html11790"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11792"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093834000000000000000"></A><A NAME="15568"></A>
+<BR>
+Appliquer une fonction de 2 variables aux &#233;l&#233;ments de 2 listes : <TT>zip</TT>
+</H2>
+<TT>zip</TT> sert &#224; appliquer une fonction de 2 variables aux 
+&#233;l&#233;ments de 2 listes.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>zip('sum',[a,b,c,d],[1,2,3,4])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[a+1,b+2,c+3,d+4]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>zip((x,y)-&gt;x<code>^</code>2+y<code>^</code>2,[4,2,1],[3,5,1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>f:=(x,y)-&gt;x<code>^</code>2+y<code>^</code>2</TT>
+</DIV>
+puis,
+<DIV ALIGN="CENTER">
+<TT>zip(f,[4,2,1],[3,5,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[25,29,2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>f:=(x,y)-&gt;[x<code>^</code>2+y<code>^</code>2,x+y]</TT>
+</DIV>
+puis,
+<DIV ALIGN="CENTER">
+<TT>zip(f,[4,2,1],[3,5,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[25,7],[29,7],[2,2]]</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

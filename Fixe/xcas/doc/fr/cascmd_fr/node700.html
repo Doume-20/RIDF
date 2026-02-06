@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Comatrice : adjoint_matrix</TITLE>
+<META NAME="description" CONTENT="Comatrice : adjoint_matrix">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node701.html">
+<LINK REL="previous" HREF="node699.html">
+<LINK REL="up" HREF="node691.html">
+<LINK REL="next" HREF="node701.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13238"
+  HREF="node701.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13232"
+  HREF="node691.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13226"
+  HREF="node699.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13234"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13236"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13239"
+  HREF="node701.html">Matrice compagnon d'un polyn&#244;me</A>
+<B> monter:</B> <A NAME="tex2html13233"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13227"
+  HREF="node699.html">Polyn&#244;me minimal : pmin</A>
+ &nbsp; <B>  <A NAME="tex2html13235"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13237"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009479000000000000000"></A><A NAME="18055"></A>
+<BR>
+Comatrice : <TT>adjoint_matrix</TT>
+</H2>
+La comatrice de <I>A</I> est une matrice <I>B</I> telle que <!-- MATH
+ $A* B=\det(A)* I$
+ -->
+<I>A</I>*<I>B</I> = det(<I>A</I>)*<I>I</I>.
+<BR><TT>adjoint_matrix </TT> a comme argument  une matrice carr&#233;e <I>A</I> d'ordre <I>n</I>.
+<BR><TT>adjoint_matrix </TT> renvoie une liste compos&#233;e des coefficients du
+ polyn&#244;me  caract&#233;ristique <I>P</I> de <I>A</I>, d'une liste contenant les coefficients matriciels d'un polyn&#244;me <I>Q</I> tel que <I>Q</I>(<I>x</I>) soit la comatrice de <I>A</I> - <I>x</I>*<I>I</I> au signe pr&#232;s si <I>n</I> est pair! 
+<BR>
+On a :
+<BR><!-- MATH
+ $P(x)=(-1)^n* \det(A-x* I)$
+ -->
+<I>P</I>(<I>x</I>) = (- 1)<SUP>n</SUP>*det(<I>A</I> - <I>x</I>*<I>I</I>) et <!-- MATH
+ $P(A)-P(x)* I=(A-x* I)* Q(x)$
+ -->
+<I>P</I>(<I>A</I>) - <I>P</I>(<I>x</I>)*<I>I</I> = (<I>A</I> - <I>x</I>*<I>I</I>)*<I>Q</I>(<I>x</I>)
+<BR>
+En effet le polyn&#244;me &#224; coefficients matriciels <!-- MATH
+ $P(A)-P(x)* I$
+ -->
+<I>P</I>(<I>A</I>) - <I>P</I>(<I>x</I>)*<I>I</I> est divisible
+ par <I>A</I> - <I>x</I>*<I>I</I> car il s'annule pour <I>x</I> = <I>A</I> :
+<BR><I>P</I>(<I>A</I>) = 0, on a donc <!-- MATH
+ $\ P(A)-P(x)* I\ =\ -P(x)* I\ =\ (A-x* I)* Q(x)$
+ -->
+&nbsp;<I>P</I>(<I>A</I>) - <I>P</I>(<I>x</I>)*<I>I</I>&nbsp; = &nbsp; - <I>P</I>(<I>x</I>)*<I>I</I>&nbsp; = &nbsp;(<I>A</I> - <I>x</I>*<I>I</I>)*<I>Q</I>(<I>x</I>).
+<BR><I>Q</I>(<I>x</I>) est donc la comatrice de <I>A</I> - <I>x</I>*<I>I</I> au signe pr&#232;s si <I>n</I> est pair, 
+puisque :
+<BR><!-- MATH
+ $(A-x* I)* Q(x)= -P(x)* I=(-1)^{n+1}* \det(A-x* I)$
+ -->
+(<I>A</I> - <I>x</I>*<I>I</I>)*<I>Q</I>(<I>x</I>) = - <I>P</I>(<I>x</I>)*<I>I</I> = (- 1)<SUP>n+1</SUP>*det(<I>A</I> - <I>x</I>*<I>I</I>).
+<BR>
+On a alors <!-- MATH
+ $Q(x)\ =\ I* x^{n-1}+...+B_0$
+ -->
+<I>Q</I>(<I>x</I>)&nbsp; = &nbsp;<I>I</I>*<I>x</I><SUP>n-1</SUP> + ... + <I>B</I><SUB>0</SUB> o&#249; <I>B</I><SUB>0</SUB> = est la comatrice de <I>A</I> (au signe pr&#232;s si <I>n</I> est pair!) puisque <I>Q</I>(0) = <I>B</I><SUB>0</SUB> et <!-- MATH
+ $A* Q(0)=(-1)^{n+1}\det(A)$
+ -->
+<I>A</I>*<I>Q</I>(0) = (- 1)<SUP>n+1</SUP>det(<I>A</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>adjoint_matrix([[4,1,-2],[1,2,-1],[2,1,0]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,-6,12,-8],[[[1,0,0],[0,1,0],[0,0,1]],[[-2,1,-2], [1,-4,-1],[2,1,-6]],[[1,-2,3],[-2,4,2],[-3,-2,7]]]]</TT>
+</DIV>
+Donc le polyn&#244;me caract&#233;ristique est :
+<BR><!-- MATH
+ $x^3-6*x^2+12*x-8$
+ -->
+<I>x</I><SUP>3</SUP> -6*<I>x</I><SUP>2</SUP> + 12*<I>x</I> - 8
+<BR>
+Le d&#233;terminant de <I>A</I> est &#233;gal &#224; - <I>P</I>(0) donc &#224; 8
+<BR>
+La comatrice de <I>A</I> est &#233;gale &#224; <I>Q</I>(0) donc &#224; :
+<BR><!-- MATH
+ $[[1,-2,3],[-2,4,2],[-3,-2,7]]$
+ -->
+[[1, - 2, 3],[- 2, 4, 2],[- 3, - 2, 7]]
+<BR>
+L'inverse de <I>A</I> est donc :
+<BR><!-- MATH
+ $1/8*[[1,-2,3],[-2,4,2],[-3,-2,7]]$
+ -->
+1/8*[[1, - 2, 3],[- 2, 4, 2],[- 3, - 2, 7]]
+<BR>
+La comatrice de <I>A</I> - <I>x</I>*<I>I</I> est donc :
+<BR><!-- MATH
+ $[[x^2-2x+1,x-2,-2x+3],[x-2,x^2-4x+4,-x+2],[2x-3,x-2,x^2-6x+7]]$
+ -->
+[[<I>x</I><SUP>2</SUP> -2<I>x</I> + 1, <I>x</I> - 2, -2<I>x</I> + 3],[<I>x</I> - 2, <I>x</I><SUP>2</SUP> -4<I>x</I> + 4, - <I>x</I> + 2],[2<I>x</I> - 3, <I>x</I> - 2, <I>x</I><SUP>2</SUP> - 6<I>x</I> + 7]]
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>adjoint_matrix([[4,1],[1,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,-6,7],[[[1,0],[0,1]],[[-2,1],[1,-4]]]]</TT>
+</DIV>
+Donc le polyn&#244;me caract&#233;ristique est :
+<BR><I>x</I><SUP>2</SUP> - 6*<I>x</I> + 7
+<BR>
+Le d&#233;terminant de <I>A</I> est &#233;gal &#224; + <I>P</I>(0) donc &#224; 7
+<BR>
+La comatrice de <I>A</I> est &#233;gale &#224; <I>Q</I>(0) donc &#224; :
+<BR><!-- MATH
+ $-[[-2,1],[1,-4]]$
+ -->
+- [[- 2, 1],[1, - 4]].
+<BR>
+L'inverse de <I>A</I> est donc :
+<BR><!-- MATH
+ $-1/7*[[-2,1],[1,-4]]$
+ -->
+-1/7*[[- 2, 1],[1, - 4]].
+<BR>
+La comatrice de <I>A</I> - <I>x</I>*<I>I</I> est donc :
+<BR><!-- MATH
+ $-[[x-2,1],[1,x-4]]$
+ -->
+- [[<I>x</I> - 2, 1],[1, <I>x</I> - 4]].
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13238"
+  HREF="node701.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13232"
+  HREF="node691.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13226"
+  HREF="node699.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13234"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13236"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13239"
+  HREF="node701.html">Matrice compagnon d'un polyn&#244;me</A>
+<B> monter:</B> <A NAME="tex2html13233"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13227"
+  HREF="node699.html">Polyn&#244;me minimal : pmin</A>
+ &nbsp; <B>  <A NAME="tex2html13235"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13237"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

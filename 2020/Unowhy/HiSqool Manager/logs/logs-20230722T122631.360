@@ -1,0 +1,479 @@
+2023-07-22 12:24:38.817: 2023-07-22 14:24:38 [11448] INFO [NestFactory] Starting Nest application...
+2023-07-22 12:24:38.953: 2023-07-22 14:24:38 [11448] INFO [ConfigurationService] Application data folder: C:\Program Files\Unowhy\HiSqool Manager\data +135ms
+2023-07-22 12:24:38.953: 2023-07-22 14:24:38 [11448] INFO [ConfigurationService] User data folder: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +1ms
+2023-07-22 12:24:38.961: 2023-07-22 14:24:38 [11448] INFO [InstanceLoader] HttpModule dependencies initialized +8ms
+2023-07-22 12:24:38.965: 2023-07-22 14:24:38 [11448] INFO [InstanceLoader] ConfigurationModule dependencies initialized +2ms
+2023-07-22 12:24:38.977: 2023-07-22 14:24:38 [11448] INFO [InstanceLoader] CommonModule dependencies initialized +12ms
+2023-07-22 12:24:38.977: 2023-07-22 14:24:38 [11448] INFO [EnslavementService] Connecting to MQTT for enslavement request... +3ms
+2023-07-22 12:24:38.981: 2023-07-22 14:24:38 [11448] INFO [InstanceLoader] EnslavementModule dependencies initialized +4ms
+2023-07-22 12:24:39.001: 2023-07-22 14:24:38 [11448] INFO [InstanceLoader] StatusModule dependencies initialized +18ms
+2023-07-22 12:24:39.009: 2023-07-22 14:24:39 [11448] INFO [CleanerService] Starting cleaning service... +6ms
+2023-07-22 12:24:39.033: 2023-07-22 14:24:39 [11448] INFO [CommandService] Connecting to MQTT... +26ms
+2023-07-22 12:24:39.037: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] DeviceConfigurationModule dependencies initialized +3ms
+2023-07-22 12:24:39.037: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] CleanerModule dependencies initialized +1ms
+2023-07-22 12:24:39.037: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] MqttModule dependencies initialized +2ms
+2023-07-22 12:24:39.041: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] WatcherModule dependencies initialized +1ms
+2023-07-22 12:24:39.041: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] EnvModule dependencies initialized +0ms
+2023-07-22 12:24:39.041: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] SchedulerModule dependencies initialized +1ms
+2023-07-22 12:24:39.041: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] PayloadModule dependencies initialized +1ms
+2023-07-22 12:24:39.045: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] ScriptorModule dependencies initialized +2ms
+2023-07-22 12:24:39.045: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] ProjectionModule dependencies initialized +1ms
+2023-07-22 12:24:39.045: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] LockModule dependencies initialized +1ms
+2023-07-22 12:24:39.129: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] GlobalModule dependencies initialized +81ms
+2023-07-22 12:24:39.129: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] AppModule dependencies initialized +2ms
+2023-07-22 12:24:39.133: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] CommandModule dependencies initialized +3ms
+2023-07-22 12:24:39.133: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] DeviceFactsModule dependencies initialized +1ms
+2023-07-22 12:24:39.137: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] ExecutorModule dependencies initialized +2ms
+2023-07-22 12:24:39.269: 2023-07-22 14:24:39 [11448] INFO [InstanceLoader] InstallerModule dependencies initialized +132ms
+2023-07-22 12:25:18.017: 2023-07-22 14:25:18 [11448] INFO [InstanceLoader] DeviceInformationModule dependencies initialized +38749ms
+2023-07-22 12:25:18.125: 2023-07-22 14:25:18 [11448] INFO [HiSqoolManager] Starting HiSqool Manager false +107ms
+2023-07-22 12:25:18.128: 2023-07-22 14:25:18 [11448] INFO [ConfigurationService] Configuration file is C:\snapshot\hisqool\front\hisqoolmanager\config\idf.json +3ms
+2023-07-22 12:25:29.953: 2023-07-22 14:25:29 [11448] INFO [HiSqoolManager] Listening on port 7654... +11825ms
+2023-07-22 12:25:29.954: 2023-07-22 14:25:29 [11448] INFO [DeviceConfigurationService] Starting with saved configuration +1ms
+2023-07-22 12:25:29.956: 2023-07-22 14:25:29 [11448] INFO [DeviceConfigurationService] Emitting configuration with 18 units +2ms
+2023-07-22 12:25:29.957: 2023-07-22 14:25:29 [11448] INFO [PayloadDispatcher] Got 18 payloads of which 18 are valid +1ms
+2023-07-22 12:25:29.958: 2023-07-22 14:25:29 [11448] INFO [PayloadDispatcher] Got 18 items. 18 in, 0 out +0ms
+2023-07-22 12:25:29.982: 2023-07-22 14:25:29 [11448] INFO [RoutesResolver] AppController {}: +26ms
+2023-07-22 12:25:29.984: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {, GET} route +2ms
+2023-07-22 12:25:29.985: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/halamadridynadamas, GET} route +1ms
+2023-07-22 12:25:29.987: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/stop, GET} route +2ms
+2023-07-22 12:25:29.988: 2023-07-22 14:25:29 [11448] INFO [RoutesResolver] MqttController {/mqtt}: +1ms
+2023-07-22 12:25:29.990: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/mqtt, GET} route +2ms
+2023-07-22 12:25:29.993: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/mqtt/topic/*, GET} route +3ms
+2023-07-22 12:25:29.995: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/mqtt/restart, GET} route +2ms
+2023-07-22 12:25:29.996: 2023-07-22 14:25:29 [11448] INFO [RoutesResolver] WatcherController {/watcher}: +1ms
+2023-07-22 12:25:29.998: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/watcher, GET} route +1ms
+2023-07-22 12:25:29.999: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/watcher/payloads, GET} route +2ms
+2023-07-22 12:25:30.001: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/watcher/payloads/:id, GET} route +1ms
+2023-07-22 12:25:30.002: 2023-07-22 14:25:29 [11448] INFO [RouterExplorer] Mapped {/watcher/payloads/:id/restart, GET} route +2ms
+2023-07-22 12:25:30.003: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/watcher/configuration/*, GET} route +1ms
+2023-07-22 12:25:30.005: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/watcher/restart/*, GET} route +1ms
+2023-07-22 12:25:30.005: 2023-07-22 14:25:30 [11448] INFO [RoutesResolver] DeviceConfigurationController {/device-configuration}: +1ms
+2023-07-22 12:25:30.007: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/device-configuration, GET} route +2ms
+2023-07-22 12:25:30.008: 2023-07-22 14:25:30 [11448] INFO [RoutesResolver] DeviceInformationController {/device-information}: +1ms
+2023-07-22 12:25:30.010: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/device-information, GET} route +1ms
+2023-07-22 12:25:30.011: 2023-07-22 14:25:30 [11448] INFO [RoutesResolver] CommandController {/commands}: +1ms
+2023-07-22 12:25:30.013: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/commands, POST} route +2ms
+2023-07-22 12:25:30.013: 2023-07-22 14:25:30 [11448] INFO [RoutesResolver] ExecutorController {/executor}: +1ms
+2023-07-22 12:25:30.015: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/executor, GET} route +1ms
+2023-07-22 12:25:30.016: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/executor/event, POST} route +1ms
+2023-07-22 12:25:30.017: 2023-07-22 14:25:30 [11448] INFO [RoutesResolver] DeviceFactsController {/facts}: +1ms
+2023-07-22 12:25:30.039: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts, GET} route +22ms
+2023-07-22 12:25:30.040: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts/delete/:name, GET} route +2ms
+2023-07-22 12:25:30.042: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts/all, GET} route +2ms
+2023-07-22 12:25:30.044: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts/:name, GET} route +1ms
+2023-07-22 12:25:30.045: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts/send, GET} route +2ms
+2023-07-22 12:25:30.047: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts, POST} route +1ms
+2023-07-22 12:25:30.052: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts, PATCH} route +5ms
+2023-07-22 12:25:30.059: 2023-07-22 14:25:30 [11448] INFO [RouterExplorer] Mapped {/facts/:name, DELETE} route +7ms
+2023-07-22 12:25:30.074: 2023-07-22 14:25:30 [11448] INFO [NestApplication] Nest application successfully started +15ms
+2023-07-22 12:25:30.082: 2023-07-22 14:25:30 [11448] INFO [HiSqoolManager] Name of service DeviceFactsService... +8ms
+2023-07-22 12:25:30.447: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1096] Received payload Acceptation des conditions sur Windows 0.9.5. current status=state=Ok, error=None, active=true +365ms
+2023-07-22 12:25:30.448: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1096] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.449: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1101] Received payload HiSqool 1.1.8. current status=state=Ok, error=None, active=true +2ms
+2023-07-22 12:25:30.450: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1101] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.451: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1098] Received payload Génération des rapports sur l’état de l’équipement 1.1.0. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.452: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1098] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.455: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1100] Received payload .Net 6 Runtime 6.0.6. current status=state=Ok, error=None, active=true +2ms
+2023-07-22 12:25:30.456: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1100] Same payload as before emitting current status: state=Ok, error=None, active=true +2ms
+2023-07-22 12:25:30.457: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 991] Received payload Lib Manuels Windows 5.0.0. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.458: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 991] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.459: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 359] Received payload Microsoft Office 1.0.0. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.460: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 359] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.461: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1146] Received payload Protection de l’équipement 1.3.0. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.462: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1146] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.464: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 130] Received payload LGPO Windows. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.464: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 130] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.466: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1027] Received payload LeLivreScolaire 4.0.6. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.466: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1027] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.468: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 986] Received payload Educadhoc 9.0.19. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.468: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 986] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.470: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 320] Received payload Microsoft Visual C++ 2015-2019 Redistributable x64 14.29.30133. current status=state=Ok, error=None, active=true +16ms
+2023-07-22 12:25:30.486: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 320] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.487: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 984] Received payload Biblio Manuels Windows 3.11.0. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.488: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 984] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.489: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 173] Received payload Nettoyage post déploiement. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.490: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 173] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.491: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1468] Received payload Windows MDM Agent 1.2.13. current status=state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.492: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1468] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.493: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1467] Received payload sqoolctl 0.9.85. current status=state=Ok, error=None, active=true +2ms
+2023-07-22 12:25:30.494: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1467] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.523: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 179] Received payload Blocage du service de réinitialisation Windows. current status=state=Ok, error=None, active=true +28ms
+2023-07-22 12:25:30.523: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 179] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.526: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 545] Received payload Certificat RIDF 1.1. current status=state=Ok, error=None, active=true +2ms
+2023-07-22 12:25:30.527: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 545] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.529: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1] Received payload Noop. current status=state=Ok, error=None, active=true +2ms
+2023-07-22 12:25:30.530: 2023-07-22 14:25:30 [11448] INFO [PayloadDownloader] [PAYLOAD 1] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2023-07-22 12:25:30.537: 2023-07-22 14:25:30 [11448] INFO [PayloadDispatcher] Emitting 18 entries ["conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.5","conf/application/windows/Biblio-Manuels-Windows-3.11.0","conf/application/windows/Certificat-RIDF-1.1","conf/application/windows/Educadhoc-9.0.19","conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0","conf/application/windows/HiSqool-1.1.8","conf/application/windows/LeLivreScolaire-4.0.6","conf/application/windows/LGPO-Windows","conf/application/windows/Lib-Manuels-Windows-5.0.0","conf/application/windows/Microsoft-Office-1.0.0","conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133","conf/application/windows/.Net-6-Runtime-6.0.6","conf/application/windows/Protection-de-l'equipement-1.3.0","conf/application/windows/sqoolctl-0.9.85","conf/application/windows/Windows-MDM-Agent-1.2.13","conf/other/cleanafterinstall","conf/other/disablerecovery","__noop"] +7ms
+2023-07-22 12:25:30.538: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing for execution configuration with 18 keys +1ms
+2023-07-22 12:25:30.539: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got 18 configurations. 18 in, 0 out +1ms
+2023-07-22 12:25:30.540: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.5... +1ms
+2023-07-22 12:25:30.543: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.5 -> configuration... +3ms
+2023-07-22 12:25:30.552: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1096\payload... +10ms
+2023-07-22 12:25:30.595: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +43ms
+2023-07-22 12:25:30.596: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Biblio-Manuels-Windows-3.11.0... +1ms
+2023-07-22 12:25:30.619: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows-3.11.0 -> configuration... +23ms
+2023-07-22 12:25:30.622: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload... +2ms
+2023-07-22 12:25:30.654: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +32ms
+2023-07-22 12:25:30.655: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Certificat-RIDF-1.1... +1ms
+2023-07-22 12:25:30.660: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> configuration... +5ms
+2023-07-22 12:25:30.662: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2023-07-22 12:25:30.680: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +19ms
+2023-07-22 12:25:30.682: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Educadhoc-9.0.19... +1ms
+2023-07-22 12:25:30.683: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-9.0.19 -> configuration... +1ms
+2023-07-22 12:25:30.685: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\986\payload... +3ms
+2023-07-22 12:25:30.701: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +15ms
+2023-07-22 12:25:30.702: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:30.704: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> configuration... +2ms
+2023-07-22 12:25:30.706: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +2ms
+2023-07-22 12:25:30.712: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +6ms
+2023-07-22 12:25:30.713: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/HiSqool-1.1.8... +1ms
+2023-07-22 12:25:30.715: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool-1.1.8 -> configuration... +1ms
+2023-07-22 12:25:30.717: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload... +3ms
+2023-07-22 12:25:30.732: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +16ms
+2023-07-22 12:25:30.733: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/LeLivreScolaire-4.0.6... +1ms
+2023-07-22 12:25:30.735: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LeLivreScolaire-4.0.6 -> configuration... +2ms
+2023-07-22 12:25:30.738: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1027\payload... +2ms
+2023-07-22 12:25:30.757: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +20ms
+2023-07-22 12:25:30.758: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/LGPO-Windows... +1ms
+2023-07-22 12:25:30.760: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +2ms
+2023-07-22 12:25:30.763: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +3ms
+2023-07-22 12:25:30.839: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +75ms
+2023-07-22 12:25:30.840: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Lib-Manuels-Windows-5.0.0... +1ms
+2023-07-22 12:25:30.842: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels-Windows-5.0.0 -> configuration... +2ms
+2023-07-22 12:25:30.844: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\991\payload... +2ms
+2023-07-22 12:25:30.896: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +53ms
+2023-07-22 12:25:30.897: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Microsoft-Office-1.0.0... +1ms
+2023-07-22 12:25:30.899: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +1ms
+2023-07-22 12:25:30.901: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2023-07-22 12:25:30.915: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +15ms
+2023-07-22 12:25:30.916: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133... +1ms
+2023-07-22 12:25:30.918: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133 -> configuration... +2ms
+2023-07-22 12:25:30.920: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload... +2ms
+2023-07-22 12:25:30.949: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +28ms
+2023-07-22 12:25:30.950: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/.Net-6-Runtime-6.0.6... +2ms
+2023-07-22 12:25:30.952: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/.Net-6-Runtime-6.0.6 -> configuration... +2ms
+2023-07-22 12:25:30.955: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload... +2ms
+2023-07-22 12:25:30.972: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +17ms
+2023-07-22 12:25:30.974: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Protection-de-l'equipement-1.3.0... +2ms
+2023-07-22 12:25:30.975: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> configuration... +1ms
+2023-07-22 12:25:30.986: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload... +11ms
+2023-07-22 12:25:30.993: 2023-07-22 14:25:30 [11448] INFO [Runner] Creating configuration unit runner object... +7ms
+2023-07-22 12:25:30.994: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/sqoolctl-0.9.85... +1ms
+2023-07-22 12:25:30.995: 2023-07-22 14:25:30 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl-0.9.85 -> configuration... +1ms
+2023-07-22 12:25:30.998: 2023-07-22 14:25:30 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1467\payload... +3ms
+2023-07-22 12:25:31.053: 2023-07-22 14:25:31 [11448] INFO [Runner] Creating configuration unit runner object... +56ms
+2023-07-22 12:25:31.055: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Windows-MDM-Agent-1.2.13... +2ms
+2023-07-22 12:25:31.057: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Windows-MDM-Agent-1.2.13 -> configuration... +2ms
+2023-07-22 12:25:31.061: 2023-07-22 14:25:31 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1468\payload... +4ms
+2023-07-22 12:25:31.139: 2023-07-22 14:25:31 [11448] INFO [Runner] Creating configuration unit runner object... +77ms
+2023-07-22 12:25:31.140: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/other/cleanafterinstall... +1ms
+2023-07-22 12:25:31.141: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +1ms
+2023-07-22 12:25:31.143: 2023-07-22 14:25:31 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2023-07-22 12:25:31.158: 2023-07-22 14:25:31 [11448] INFO [Runner] Creating configuration unit runner object... +15ms
+2023-07-22 12:25:31.159: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/other/disablerecovery... +1ms
+2023-07-22 12:25:31.160: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2023-07-22 12:25:31.184: 2023-07-22 14:25:31 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +25ms
+2023-07-22 12:25:31.200: 2023-07-22 14:25:31 [11448] INFO [Runner] Creating configuration unit runner object... +15ms
+2023-07-22 12:25:31.201: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Processing configuraiton unit with name __noop... +2ms
+2023-07-22 12:25:31.203: 2023-07-22 14:25:31 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __noop -> configuration... +1ms
+2023-07-22 12:25:31.205: 2023-07-22 14:25:31 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1\payload... +2ms
+2023-07-22 12:25:31.210: 2023-07-22 14:25:31 [11448] INFO [Runner] Creating configuration unit runner object... +5ms
+2023-07-22 12:25:31.211: 2023-07-22 14:25:31 [11448] INFO [WatcherService] Received a list of 18 payloads +2ms
+2023-07-22 12:25:31.213: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:25:31.214: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the onboarding unit needs to be performed +1ms
+2023-07-22 12:25:31.216: 2023-07-22 14:25:31 [11448] INFO [JS] Onboarding spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1096\payload\FixShell.ps1 +1ms
+2023-07-22 12:25:31.248: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +31ms
+2023-07-22 12:25:31.249: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:25:31.294: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +44ms
+2023-07-22 12:25:31.295: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:25:31.355: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +59ms
+2023-07-22 12:25:31.356: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:25:31.427: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +70ms
+2023-07-22 12:25:31.428: 2023-07-22 14:25:31 [11448] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2023-07-22 12:25:31.429: 2023-07-22 14:25:31 [11448] INFO [JS] We are programmging on name conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 with schedule: 30 minutes +0ms
+2023-07-22 12:25:31.433: 2023-07-22 14:25:31 [11448] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0, immediate=true +3ms
+2023-07-22 12:25:31.436: 2023-07-22 14:25:31 [11448] INFO [JS] Scheduling result: true +3ms
+2023-07-22 12:25:31.437: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:25:31.438: 2023-07-22 14:25:31 [11448] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\HiSqool.exe +1ms
+2023-07-22 12:25:31.464: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +23ms
+2023-07-22 12:25:31.465: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:25:31.536: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +71ms
+2023-07-22 12:25:31.538: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:25:31.540: 2023-07-22 14:25:31 [11448] INFO [JS] Getting GPO version... +1ms
+2023-07-22 12:25:31.541: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +2ms
+2023-07-22 12:25:31.543: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:25:31.637: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +94ms
+2023-07-22 12:25:31.639: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:25:31.714: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +74ms
+2023-07-22 12:25:31.715: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:25:31.759: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +43ms
+2023-07-22 12:25:31.761: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +32ms
+2023-07-22 12:25:31.850: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +58ms
+2023-07-22 12:25:31.850: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:25:31.852: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:25:31.877: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +23ms
+2023-07-22 12:25:31.882: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +3ms
+2023-07-22 12:25:31.884: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:25:31.885: 2023-07-22 14:25:31 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:25:31.887: 2023-07-22 14:25:31 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:25:32.073: 2023-07-22 14:25:32 [11448] INFO [Runner] Checking if runner needs to be performed... +187ms
+2023-07-22 12:25:32.075: 2023-07-22 14:25:32 [11448] INFO [JS] ### Inside NOOP check() +1ms
+2023-07-22 12:25:32.085: 2023-07-22 14:25:32 [11448] INFO [Runner] Runner doesn't need to be performed +10ms
+2023-07-22 12:25:32.135: 2023-07-22 14:25:32 [11448] INFO [Runner] Performing runner... +49ms
+2023-07-22 12:25:32.136: 2023-07-22 14:25:32 [11448] INFO [JS] Performing security operation... +1ms
+2023-07-22 12:25:32.137: 2023-07-22 14:25:32 [11448] INFO [JS] Security spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload\Execute.ps1 +1ms
+2023-07-22 12:25:32.209: 2023-07-22 14:25:32 [11448] INFO [Runner] Performing runner... +71ms
+2023-07-22 12:25:32.210: 2023-07-22 14:25:32 [11448] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2023-07-22 12:25:32.322: 2023-07-22 14:25:32 [11448] INFO [Runner] Performing runner... +111ms
+2023-07-22 12:25:32.323: 2023-07-22 14:25:32 [11448] INFO [JS] ### Inside NOOP perform() +1ms
+2023-07-22 12:25:32.325: 2023-07-22 14:25:32 [11448] INFO [JS] ==> deviceId: IFP052046109 +1ms
+2023-07-22 12:25:32.326: 2023-07-22 14:25:32 [11448] INFO [JS] ==> platform: win32 +1ms
+2023-07-22 12:25:32.327: 2023-07-22 14:25:32 [11448] INFO [JS] ==> basePath: C:\Program Files\Unowhy\HiSqool Manager +1ms
+2023-07-22 12:25:32.328: 2023-07-22 14:25:32 [11448] INFO [JS] ==> dataPath: C:\Program Files\Unowhy\HiSqool Manager\data +1ms
+2023-07-22 12:25:32.329: 2023-07-22 14:25:32 [11448] INFO [JS] ==> userPath: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +1ms
+2023-07-22 12:25:32.330: 2023-07-22 14:25:32 [11448] INFO [JS] ### No options passed +1ms
+2023-07-22 12:25:32.335: 2023-07-22 14:25:32 [11448] INFO [Runner] Running result: true +4ms
+2023-07-22 12:25:32.337: 2023-07-22 14:25:32 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +2ms
+2023-07-22 12:25:32.340: 2023-07-22 14:25:32 [11448] INFO [ConfigurationRunner] Writing execution result of __noop (1) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\__noop.json +3ms
+2023-07-22 12:25:33.183: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.5 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +843ms
+2023-07-22 12:25:33.184: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows-3.11.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +2ms
+2023-07-22 12:25:33.185: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +7ms
+2023-07-22 12:25:33.193: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-9.0.19 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.194: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.196: 2023-07-22 14:25:33 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +2ms
+2023-07-22 12:25:33.199: 2023-07-22 14:25:33 [11448] INFO [Runner] Creating configuration unit runner object... +3ms
+2023-07-22 12:25:33.201: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool-1.1.8 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.201: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LeLivreScolaire-4.0.6 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.202: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2023-07-22 12:25:33.203: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels-Windows-5.0.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.204: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.205: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.206: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/.Net-6-Runtime-6.0.6 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.206: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.208: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl-0.9.85 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.209: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Windows-MDM-Agent-1.2.13 -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.209: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +0ms
+2023-07-22 12:25:33.210: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.211: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __noop -> conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.212: 2023-07-22 14:25:33 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:25:33.213: 2023-07-22 14:25:33 [11448] INFO [JS] Checking if programming or tiggering with trigger conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0... +1ms
+2023-07-22 12:25:33.215: 2023-07-22 14:25:33 [11448] INFO [JS] We are triggering +1ms
+2023-07-22 12:25:33.216: 2023-07-22 14:25:33 [11448] INFO [Runner] Performing runner... +1ms
+2023-07-22 12:25:33.217: 2023-07-22 14:25:33 [11448] INFO [JS] Performing facts gathering and upload... +1ms
+2023-07-22 12:25:33.461: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.5 -> configuration... +244ms
+2023-07-22 12:25:33.462: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows-3.11.0 -> configuration... +0ms
+2023-07-22 12:25:33.463: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> configuration... +1ms
+2023-07-22 12:25:33.463: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-9.0.19 -> configuration... +1ms
+2023-07-22 12:25:33.464: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 -> configuration... +0ms
+2023-07-22 12:25:33.464: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool-1.1.8 -> configuration... +1ms
+2023-07-22 12:25:33.465: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LeLivreScolaire-4.0.6 -> configuration... +1ms
+2023-07-22 12:25:33.466: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +0ms
+2023-07-22 12:25:33.467: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels-Windows-5.0.0 -> configuration... +1ms
+2023-07-22 12:25:33.468: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +1ms
+2023-07-22 12:25:33.468: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133 -> configuration... +1ms
+2023-07-22 12:25:33.469: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/.Net-6-Runtime-6.0.6 -> configuration... +0ms
+2023-07-22 12:25:33.470: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Protection-de-l'equipement-1.3.0 -> configuration... +1ms
+2023-07-22 12:25:33.470: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl-0.9.85 -> configuration... +1ms
+2023-07-22 12:25:33.471: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Windows-MDM-Agent-1.2.13 -> configuration... +0ms
+2023-07-22 12:25:33.472: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +1ms
+2023-07-22 12:25:33.472: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2023-07-22 12:25:33.473: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __noop -> configuration... +0ms
+2023-07-22 12:25:33.475: 2023-07-22 14:25:33 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1\payload... +2ms
+2023-07-22 12:25:33.479: 2023-07-22 14:25:33 [11448] INFO [Runner] Creating configuration unit runner object... +4ms
+2023-07-22 12:25:33.483: 2023-07-22 14:25:33 [11448] INFO [JS] Current GPO version: 1.5 +5ms
+2023-07-22 12:25:33.485: 2023-07-22 14:25:33 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:33.487: 2023-07-22 14:25:33 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2023-07-22 12:25:33.489: 2023-07-22 14:25:33 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2023-07-22 12:25:33.618: 2023-07-22 14:25:33 [11448] INFO [Runner] Creating configuration unit runner object... +129ms
+2023-07-22 12:25:36.690: 2023-07-22 14:25:36 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 4294901760 (Unknown system error -4294901760): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload\RecoveryDisable_1.0.0.ppkg').packageId.Guid +3073ms
+2023-07-22 12:25:36.692: 2023-07-22 14:25:36 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:36.694: 2023-07-22 14:25:36 [11448] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +2ms
+2023-07-22 12:25:36.776: 2023-07-22 14:25:36 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +82ms
+2023-07-22 12:25:36.792: 2023-07-22 14:25:36 [11448] INFO [Runner] Creating configuration unit runner object... +16ms
+2023-07-22 12:25:36.803: 2023-07-22 14:25:36 [11448] INFO [Runner] Running result: true +10ms
+2023-07-22 12:25:36.807: 2023-07-22 14:25:36 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Protection-de-l'equipement-1.3.0 (1146) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Protection-de-l'equipement-1.3.0.json +3ms
+2023-07-22 12:25:36.812: 2023-07-22 14:25:36 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload... +5ms
+2023-07-22 12:25:36.815: 2023-07-22 14:25:36 [11448] INFO [Runner] Creating configuration unit runner object... +3ms
+2023-07-22 12:25:36.852: 2023-07-22 14:25:36 [11448] WARN [JS] Error while installing application: Error: Command failed with exit code 4294901760 (Unknown system error -4294901760): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +38ms
+2023-07-22 12:25:36.854: 2023-07-22 14:25:36 [11448] INFO [Runner] Running result: false +74ms
+2023-07-22 12:25:36.931: 2023-07-22 14:25:36 [11448] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +3ms
+2023-07-22 12:25:36.933: 2023-07-22 14:25:36 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +3ms
+2023-07-22 12:25:36.948: 2023-07-22 14:25:36 [11448] INFO [Runner] Creating configuration unit runner object... +13ms
+2023-07-22 12:25:36.983: 2023-07-22 14:25:36 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 4294901760 (Unknown system error -4294901760): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1027\payload\lelivrescolaire.ppkg').packageId.Guid +36ms
+2023-07-22 12:25:36.984: 2023-07-22 14:25:36 [11448] WARN [JS] Error while parsing the GUID for the ppkg file +79ms
+2023-07-22 12:25:37.066: 2023-07-22 14:25:37 [11448] INFO [Runner] Runner doesn't need to be performed +0ms
+2023-07-22 12:25:37.068: 2023-07-22 14:25:37 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LeLivreScolaire-4.0.6 (1027) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LeLivreScolaire-4.0.6.json +2ms
+2023-07-22 12:25:37.072: 2023-07-22 14:25:37 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1027\payload... +3ms
+2023-07-22 12:25:37.106: 2023-07-22 14:25:37 [11448] INFO [Runner] Creating configuration unit runner object... +34ms
+2023-07-22 12:25:37.349: 2023-07-22 14:25:37 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 4294901760 (Unknown system error -4294901760): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload\bibliomanuels.ppkg').packageId.Guid +244ms
+2023-07-22 12:25:37.351: 2023-07-22 14:25:37 [11448] WARN [JS] Error while parsing the GUID for the ppkg file +1ms
+2023-07-22 12:25:37.352: 2023-07-22 14:25:37 [11448] INFO [Runner] Runner doesn't need to be performed +0ms
+2023-07-22 12:25:37.354: 2023-07-22 14:25:37 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows-3.11.0 (984) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows-3.11.0.json +2ms
+2023-07-22 12:25:37.356: 2023-07-22 14:25:37 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload... +2ms
+2023-07-22 12:25:37.376: 2023-07-22 14:25:37 [11448] INFO [Runner] Creating configuration unit runner object... +20ms
+2023-07-22 12:25:37.379: 2023-07-22 14:25:37 [11448] INFO [JS] Result: 4294901760 +3ms
+2023-07-22 12:25:37.380: 2023-07-22 14:25:37 [11448] INFO [JS] Stdout:  +0ms
+2023-07-22 12:25:37.420: 2023-07-22 14:25:37 [11448] INFO [JS] Stderr: W i n d o w s   P o w e r S h e l l   s ' e s t   a r r � t �   a v e c   l ' e r r e u r   s u i v a n t e � :    
+2023-07-22 12:25:37.420:    U n e   e x c e p t i o n   d e   t y p e   ' S y s t e m . O u t O f M e m o r y E x c e p t i o n '   a   � t �   l e v � e .  
+2023-07-22 12:25:37.420:   +1ms
+2023-07-22 12:25:37.421: 2023-07-22 14:25:37 [11448] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe +1ms
+2023-07-22 12:25:38.022: 2023-07-22 14:25:38 [11448] INFO [JS] Current version is 0.9.85. +1ms
+2023-07-22 12:25:38.023: 2023-07-22 14:25:38 [11448] INFO [Runner] Runner doesn't need to be performed +2ms
+2023-07-22 12:25:38.025: 2023-07-22 14:25:38 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/sqoolctl-0.9.85 (1467) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_sqoolctl-0.9.85.json +2ms
+2023-07-22 12:25:38.028: 2023-07-22 14:25:38 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1467\payload... +3ms
+2023-07-22 12:25:38.089: 2023-07-22 14:25:38 [11448] INFO [Runner] Creating configuration unit runner object... +61ms
+2023-07-22 12:25:39.922: 2023-07-22 14:25:39 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 2 (Unknown system error -2): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg').packageId.Guid +1836ms
+2023-07-22 12:25:39.923: 2023-07-22 14:25:39 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:39.925: 2023-07-22 14:25:39 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +2ms
+2023-07-22 12:25:39.927: 2023-07-22 14:25:39 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2023-07-22 12:25:39.939: 2023-07-22 14:25:39 [11448] INFO [Runner] Creating configuration unit runner object... +11ms
+2023-07-22 12:25:40.039: 2023-07-22 14:25:40 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 2 (Unknown system error -2): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload\dotnetruntime6.ppkg').packageId.Guid +99ms
+2023-07-22 12:25:40.040: 2023-07-22 14:25:40 [11448] WARN [JS] Error while parsing the GUID for the ppkg file +1ms
+2023-07-22 12:25:40.041: 2023-07-22 14:25:40 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:40.043: 2023-07-22 14:25:40 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/.Net-6-Runtime-6.0.6 (1100) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_.Net-6-Runtime-6.0.6.json +2ms
+2023-07-22 12:25:40.046: 2023-07-22 14:25:40 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1100\payload... +2ms
+2023-07-22 12:25:40.130: 2023-07-22 14:25:40 [11448] INFO [Runner] Creating configuration unit runner object... +85ms
+2023-07-22 12:25:40.239: 2023-07-22 14:25:40 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 2 (Unknown system error -2): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\991\payload\libmanuels.ppkg').packageId.Guid +109ms
+2023-07-22 12:25:40.241: 2023-07-22 14:25:40 [11448] WARN [JS] Error while parsing the GUID for the ppkg file +0ms
+2023-07-22 12:25:40.242: 2023-07-22 14:25:40 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:40.245: 2023-07-22 14:25:40 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels-Windows-5.0.0 (991) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels-Windows-5.0.0.json +2ms
+2023-07-22 12:25:40.247: 2023-07-22 14:25:40 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\991\payload... +2ms
+2023-07-22 12:25:40.266: 2023-07-22 14:25:40 [11448] INFO [Runner] Creating configuration unit runner object... +20ms
+2023-07-22 12:25:40.648: 2023-07-22 14:25:40 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 2 (Unknown system error -2): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload\ridfcerauthority.ppkg').packageId.Guid +382ms
+2023-07-22 12:25:40.650: 2023-07-22 14:25:40 [11448] WARN [JS] Error while parsing the GUID for the ppkg file +1ms
+2023-07-22 12:25:40.651: 2023-07-22 14:25:40 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:40.654: 2023-07-22 14:25:40 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Certificat-RIDF-1.1 (545) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Certificat-RIDF-1.1.json +3ms
+2023-07-22 12:25:40.657: 2023-07-22 14:25:40 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2023-07-22 12:25:40.670: 2023-07-22 14:25:40 [11448] INFO [Runner] Creating configuration unit runner object... +13ms
+2023-07-22 12:25:41.255: 2023-07-22 14:25:41 [11448] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HISQOO~1\sqoolctl\sqoolctl.exe +586ms
+2023-07-22 12:25:41.457: 2023-07-22 14:25:41 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 255 (Unknown system error -255): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload\application.ppkg').packageId.Guid +200ms
+2023-07-22 12:25:41.458: 2023-07-22 14:25:41 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:41.460: 2023-07-22 14:25:41 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133 (320) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133.json +2ms
+2023-07-22 12:25:41.463: 2023-07-22 14:25:41 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\320\payload... +3ms
+2023-07-22 12:25:41.479: 2023-07-22 14:25:41 [11448] INFO [Runner] Creating configuration unit runner object... +15ms
+2023-07-22 12:25:41.481: 2023-07-22 14:25:41 [11448] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 255 (Unknown system error -255): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\986\payload\educadhoc.ppkg').packageId.Guid +3ms
+2023-07-22 12:25:41.483: 2023-07-22 14:25:41 [11448] WARN [JS] Error while parsing the GUID for the ppkg file +1ms
+2023-07-22 12:25:41.484: 2023-07-22 14:25:41 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:41.531: 2023-07-22 14:25:41 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-9.0.19 (986) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-9.0.19.json +47ms
+2023-07-22 12:25:41.558: 2023-07-22 14:25:41 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\986\payload... +26ms
+2023-07-22 12:25:41.577: 2023-07-22 14:25:41 [11448] INFO [Runner] Creating configuration unit runner object... +19ms
+2023-07-22 12:25:47.324: 2023-07-22 14:25:47 [11448] INFO [JS] Result: 0 +5747ms
+2023-07-22 12:25:47.325: 2023-07-22 14:25:47 [11448] INFO [JS] Stdout: 1.1.8.22101762 +1ms
+2023-07-22 12:25:47.326: 2023-07-22 14:25:47 [11448] INFO [JS] Stderr:  +1ms
+2023-07-22 12:25:47.327: 2023-07-22 14:25:47 [11448] INFO [JS] New version null <=>  1.1.8.22101762 Installed +1ms
+2023-07-22 12:25:47.329: 2023-07-22 14:25:47 [11448] INFO [JS] Current version is up to date +1ms
+2023-07-22 12:25:47.331: 2023-07-22 14:25:47 [11448] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\Shortcut.exe... +1ms
+2023-07-22 12:25:47.751: 2023-07-22 14:25:47 [11448] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2023-07-22 12:25:47.751: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2023-07-22 12:25:47.751: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2023-07-22 12:25:47.751: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2023-07-22 12:25:47.751: Arguments=
+2023-07-22 12:25:47.751: ArgumentsExpanded=
+2023-07-22 12:25:47.751: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2023-07-22 12:25:47.751: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2023-07-22 12:25:47.751: RunStyle=1
+2023-07-22 12:25:47.751: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2023-07-22 12:25:47.751: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2023-07-22 12:25:47.751: HotKey=0 (None)
+2023-07-22 12:25:47.751: Description=HiSqool
+2023-07-22 12:25:47.751: 
+2023-07-22 12:25:47.751: The command completed successfully. +418ms
+2023-07-22 12:25:47.754: 2023-07-22 14:25:47 [11448] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\Shortcut.exe... +2ms
+2023-07-22 12:25:48.008: 2023-07-22 14:25:48 [11448] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk /a:q +253ms
+2023-07-22 12:25:48.012: 2023-07-22 14:25:48 [11448] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\Shortcut.exe... +4ms
+2023-07-22 12:25:48.454: 2023-07-22 14:25:48 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:48.477: 2023-07-22 14:25:48 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Windows-MDM-Agent-1.2.13 (1468) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Windows-MDM-Agent-1.2.13.json +24ms
+2023-07-22 12:25:48.484: 2023-07-22 14:25:48 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1468\payload... +7ms
+2023-07-22 12:25:48.563: 2023-07-22 14:25:48 [11448] INFO [Runner] Creating configuration unit runner object... +79ms
+2023-07-22 12:25:48.577: 2023-07-22 14:25:48 [11448] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +13ms
+2023-07-22 12:25:48.579: 2023-07-22 14:25:48 [11448] INFO [JS] Actions to perform: 0 +1ms
+2023-07-22 12:25:48.581: 2023-07-22 14:25:48 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:25:48.585: 2023-07-22 14:25:48 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool-1.1.8 (1101) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool-1.1.8.json +4ms
+2023-07-22 12:25:48.590: 2023-07-22 14:25:48 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload... +5ms
+2023-07-22 12:25:48.608: 2023-07-22 14:25:48 [11448] INFO [Runner] Creating configuration unit runner object... +19ms
+2023-07-22 12:25:48.803: 2023-07-22 14:25:48 [11448] INFO [JS] Getting installed applications... +194ms
+2023-07-22 12:25:50.851: 2023-07-22 14:25:50 [11448] INFO [JS] Result: 0 +2048ms
+2023-07-22 12:25:50.852: 2023-07-22 14:25:50 [11448] INFO [JS] Stdout: 0.9.85.0 +0ms
+2023-07-22 12:25:50.854: 2023-07-22 14:25:50 [11448] INFO [JS] Stderr:  +1ms
+2023-07-22 12:25:50.855: 2023-07-22 14:25:50 [11448] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe +1ms
+2023-07-22 12:25:54.517: 2023-07-22 14:25:54 [11448] INFO [JS] Result: 0 +3660ms
+2023-07-22 12:25:54.521: 2023-07-22 14:25:54 [11448] INFO [JS] Stdout: 1.1.8.22101762 +4ms
+2023-07-22 12:25:54.525: 2023-07-22 14:25:54 [11448] INFO [JS] Stderr:  +3ms
+2023-07-22 12:25:54.529: 2023-07-22 14:25:54 [11448] INFO [JS] SqoolCtl version 0.9.85.0 +1ms
+2023-07-22 12:25:54.532: 2023-07-22 14:25:54 [11448] INFO [JS] HiSqool version 1.1.8.22101762 +3ms
+2023-07-22 12:25:54.539: 2023-07-22 14:25:54 [11448] INFO [JS] Evaluating the onboarding script +6ms
+2023-07-22 12:25:54.544: 2023-07-22 14:25:54 [11448] INFO [JS] Onboarded users: paul.peyrot@monlycee.net +3ms
+2023-07-22 12:25:54.546: 2023-07-22 14:25:54 [11448] INFO [JS] Onboarding spawn: C:\Program Files\Unowhy\HiSqool Manager\sqoolctl\sqoolctl.exe asuser --modern --wait --hidden C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1096\payload\EvaluateAction.ps1 -Users paul.peyrot@monlycee.net +1ms
+2023-07-22 12:25:59.028: 2023-07-22 14:25:59 [11448] INFO [JS] Getting apps result: 0 +4482ms
+2023-07-22 12:25:59.031: 2023-07-22 14:25:59 [11448] INFO [JS] Computing device facts... +2ms
+2023-07-22 12:26:02.999: 2023-07-22 14:26:02 [11448] INFO [Runner] Runner doesn't need to be performed +3967ms
+2023-07-22 12:26:03.001: 2023-07-22 14:26:03 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.5 (1096) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows-0.9.5.json +2ms
+2023-07-22 12:26:03.003: 2023-07-22 14:26:03 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1096\payload... +3ms
+2023-07-22 12:26:03.019: 2023-07-22 14:26:03 [11448] INFO [Runner] Creating configuration unit runner object... +15ms
+2023-07-22 12:26:05.996: 2023-07-22 14:26:05 [11448] INFO [JS] Setting legacy facts... +2977ms
+2023-07-22 12:26:05.998: 2023-07-22 14:26:05 [11448] INFO [JS] Saving facts... +1ms
+2023-07-22 12:26:06.004: 2023-07-22 14:26:06 [11448] INFO [JS] Uploading facts... +6ms
+2023-07-22 12:26:06.229: 2023-07-22 14:26:06 [11448] INFO [JS] Uploading facts result:  +224ms
+2023-07-22 12:26:06.230: 2023-07-22 14:26:06 [11448] INFO [Runner] Running result: true +1ms
+2023-07-22 12:26:06.230: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +0ms
+2023-07-22 12:26:06.231: 2023-07-22 14:26:06 [11448] INFO [JS] ### Inside NOOP check() +1ms
+2023-07-22 12:26:06.232: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +0ms
+2023-07-22 12:26:06.234: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:26:06.235: 2023-07-22 14:26:06 [11448] INFO [JS] Getting GPO version... +1ms
+2023-07-22 12:26:06.237: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:26:06.238: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.276: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +38ms
+2023-07-22 12:26:06.277: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:26:06.278: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.279: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +1ms
+2023-07-22 12:26:06.280: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.319: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +38ms
+2023-07-22 12:26:06.320: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.372: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +50ms
+2023-07-22 12:26:06.373: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.394: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +18ms
+2023-07-22 12:26:06.396: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:26:06.457: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +60ms
+2023-07-22 12:26:06.458: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.532: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +49ms
+2023-07-22 12:26:06.533: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.618: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +83ms
+2023-07-22 12:26:06.619: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.739: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +120ms
+2023-07-22 12:26:06.740: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +1ms
+2023-07-22 12:26:06.833: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +91ms
+2023-07-22 12:26:06.835: 2023-07-22 14:26:06 [11448] INFO [JS] Checking that the unit needs to be performed +2ms
+2023-07-22 12:26:06.999: 2023-07-22 14:26:06 [11448] INFO [Runner] Checking if runner needs to be performed... +163ms
+2023-07-22 12:26:07.004: 2023-07-22 14:26:07 [11448] INFO [Runner] Checking if runner needs to be performed... +3ms
+2023-07-22 12:26:07.006: 2023-07-22 14:26:07 [11448] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1101\payload\HiSqool.exe +2ms
+2023-07-22 12:26:07.025: 2023-07-22 14:26:07 [11448] INFO [Runner] Checking if runner needs to be performed... +18ms
+2023-07-22 12:26:07.026: 2023-07-22 14:26:07 [11448] INFO [JS] Checking that the onboarding unit needs to be performed +1ms
+2023-07-22 12:26:07.028: 2023-07-22 14:26:07 [11448] INFO [JS] Onboarding spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1096\payload\FixShell.ps1 +1ms
+2023-07-22 12:26:07.039: 2023-07-22 14:26:07 [11448] INFO [Runner] Performing runner... +10ms
+2023-07-22 12:26:07.041: 2023-07-22 14:26:07 [11448] INFO [JS] ### Inside NOOP perform() +2ms
+2023-07-22 12:26:07.043: 2023-07-22 14:26:07 [11448] INFO [JS] ==> deviceId: IFP052046109 +1ms
+2023-07-22 12:26:07.044: 2023-07-22 14:26:07 [11448] INFO [JS] ==> platform: win32 +1ms
+2023-07-22 12:26:07.045: 2023-07-22 14:26:07 [11448] INFO [JS] ==> basePath: C:\Program Files\Unowhy\HiSqool Manager +1ms
+2023-07-22 12:26:07.047: 2023-07-22 14:26:07 [11448] INFO [JS] ==> dataPath: C:\Program Files\Unowhy\HiSqool Manager\data +0ms
+2023-07-22 12:26:07.048: 2023-07-22 14:26:07 [11448] INFO [JS] ==> userPath: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +1ms
+2023-07-22 12:26:07.049: 2023-07-22 14:26:07 [11448] INFO [JS] ### No options passed +1ms
+2023-07-22 12:26:07.057: 2023-07-22 14:26:07 [11448] INFO [Runner] Performing runner... +7ms
+2023-07-22 12:26:07.058: 2023-07-22 14:26:07 [11448] INFO [JS] Performing security operation... +1ms
+2023-07-22 12:26:07.060: 2023-07-22 14:26:07 [11448] INFO [JS] Security spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1146\payload\Execute.ps1 +1ms
+2023-07-22 12:26:07.071: 2023-07-22 14:26:07 [11448] INFO [Runner] Performing runner... +11ms
+2023-07-22 12:26:07.072: 2023-07-22 14:26:07 [11448] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2023-07-22 12:26:07.362: 2023-07-22 14:26:07 [11448] INFO [Runner] Running result: true +289ms
+2023-07-22 12:26:07.370: 2023-07-22 14:26:07 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0 (1098) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Generation-des-rapports-sur-l'etat-de-l'equipement-1.1.0.json +8ms
+2023-07-22 12:26:07.374: 2023-07-22 14:26:07 [11448] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1098\payload... +4ms
+2023-07-22 12:26:07.378: 2023-07-22 14:26:07 [11448] INFO [Runner] Creating configuration unit runner object... +3ms
+2023-07-22 12:26:07.380: 2023-07-22 14:26:07 [11448] INFO [ConfigurationRunner] Writing execution result of __noop (1) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\__noop.json +3ms
+2023-07-22 12:26:07.396: 2023-07-22 14:26:07 [11448] INFO [JS] Current GPO version: 1.5 +15ms
+2023-07-22 12:26:07.457: 2023-07-22 14:26:07 [11448] INFO [Runner] Runner doesn't need to be performed +1ms
+2023-07-22 12:26:07.459: 2023-07-22 14:26:07 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2023-07-22 12:26:10.916: 2023-07-22 14:26:10 [11448] INFO [JS] Current version is 0.9.85. +1ms
+2023-07-22 12:26:11.007: 2023-07-22 14:26:10 [11448] INFO [Runner] Runner doesn't need to be performed +89ms
+2023-07-22 12:26:11.009: 2023-07-22 14:26:11 [11448] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/sqoolctl-0.9.85 (1467) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_sqoolctl-0.9.85.json +2ms
+2023-07-22 12:26:31.225: 2023-07-22 14:26:31 [11448] INFO [CleanerService] Received payload list: 1096, 1101, 1098, 1100, 991, 359, 130, 1146, 1027, 986, 320, 984, 173, 1468, 1467, 179, 545, 1 +20217ms
+2023-07-22 12:26:31.358: 2023-07-22 14:26:31 [11448] INFO [CleanerService] Current payload list: 1, 1027, 1096, 1098, 1100, 1101, 1146, 130, 1467, 1468, 173, 179, 320, 359, 545, 984, 986, 991 +130ms
+2023-07-22 12:26:31.360: 2023-07-22 14:26:31 [11448] INFO [CleanerService] Payloads to delete:  +2ms

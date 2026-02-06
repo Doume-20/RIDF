@@ -1,0 +1,88 @@
+2022-01-15 12:04:47 [5228] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +1ms
+2022-01-15 11:04:47.818: 2022-01-15 12:04:47 [5228] INFO [DeviceConfigurationService]   => result: false +0ms
+2022-01-15 11:04:50.224: 2022-01-15 12:04:50 [5228] INFO [JS] Getting installed applications... +2412ms
+2022-01-15 11:04:51.380: 2022-01-15 12:04:51 [5228] INFO [JS] Getting apps result: 0 +1150ms
+2022-01-15 11:04:51.395: 2022-01-15 12:04:51 [5228] INFO [JS] Setting facts... +10ms
+2022-01-15 11:04:51.395: 2022-01-15 12:04:51 [5228] INFO [JS] Uploading facts... +2ms
+2022-01-15 11:04:51.630: 2022-01-15 12:04:51 [5228] INFO [JS] Uploading facts result:  +237ms
+2022-01-15 11:04:51.630: 2022-01-15 12:04:51 [5228] INFO [Runner] Running result: true +1ms
+2022-01-15 11:04:51.630: 2022-01-15 12:04:51 [5228] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2022-01-15 11:05:13.892: 2022-01-15 12:05:13 [5228] INFO [CommandService] Got command facts:set +22248ms
+2022-01-15 11:05:13.892: 2022-01-15 12:05:13 [5228] INFO [CommandService] Got command facts:set +4ms
+2022-01-15 11:05:13.892: 2022-01-15 12:05:13 [5228] INFO [CommandService] Got command units:trigger +9ms
+2022-01-15 11:05:13.892: 2022-01-15 12:05:13 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> login... +1ms
+2022-01-15 11:05:13.892: 2022-01-15 12:05:13 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> login... +0ms
+2022-01-15 11:05:13.908: 2022-01-15 12:05:13 [5228] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2022-01-15 11:05:13.955: 2022-01-15 12:05:13 [5228] INFO [Runner] Creating configuration unit runner object... +58ms
+2022-01-15 11:05:13.970: 2022-01-15 12:05:13 [5228] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-01-15 11:05:13.970: 2022-01-15 12:05:13 [5228] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-01-15 11:05:13.970: 2022-01-15 12:05:13 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> login... +1ms
+2022-01-15 11:05:13.970: 2022-01-15 12:05:13 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> login... +1ms
+2022-01-15 11:05:13.970: 2022-01-15 12:05:13 [5228] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [Runner] Creating configuration unit runner object... +69ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [JS] Checking that the unit needs to be performed. Params:
+2022-01-15 11:05:14.048: {
+2022-01-15 11:05:14.048:   "platform": "win32",
+2022-01-15 11:05:14.048:   "deviceId": "IFP052046109",
+2022-01-15 11:05:14.048:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2022-01-15 11:05:14.048:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2022-01-15 11:05:14.048:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2022-01-15 11:05:14.048:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2022-01-15 11:05:14.048:   "versionCode": 21093040,
+2022-01-15 11:05:14.048:   "trigger": "login",
+2022-01-15 11:05:14.048:   "metadata": {
+2022-01-15 11:05:14.048:     "packageVersion": "1.0.16.0",
+2022-01-15 11:05:14.048:     "componentParameters": {
+2022-01-15 11:05:14.048:       "AppX": "Hisqool.Legal.GDPR",
+2022-01-15 11:05:14.048:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2022-01-15 11:05:14.048:       "DesktopShortcut": "Charte de protection*",
+2022-01-15 11:05:14.048:       "ProvisioningPackage": "Hisqool GDPR",
+2022-01-15 11:05:14.048:       "InstallationDirectory": "hisqool.gdpr",
+2022-01-15 11:05:14.048:       "UninstallationDirectory": "hisqool.gdpr",
+2022-01-15 11:05:14.048:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2022-01-15 11:05:14.048:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2022-01-15 11:05:14.048:     },
+2022-01-15 11:05:14.048:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2022-01-15 11:05:14.048:   }
+2022-01-15 11:05:14.048: } +4ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> login... +2ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> login... +1ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> login... +1ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +1ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> login... +1ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> login... +1ms
+2022-01-15 11:05:14.048: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +1ms
+2022-01-15 11:05:14.064: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +6ms
+2022-01-15 11:05:14.064: 2022-01-15 12:05:14 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +3ms
+2022-01-15 11:05:14.064: 2022-01-15 12:05:14 [5228] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2022-01-15 11:05:14.064: 127.0.0.1 - - [15/Jan/2022:11:05:14 +0000] "POST /commands HTTP/1.1" 200 29 "-" "-"
+2022-01-15 11:05:14.111: 2022-01-15 12:05:14 [5228] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +38ms
+2022-01-15 11:05:15.448: 2022-01-15 12:05:15 [5228] INFO [CommandService] Got command facts:set +1323ms
+2022-01-15 11:05:15.448: 2022-01-15 12:05:15 [5228] INFO [CommandService] Got command facts:set +6ms
+2022-01-15 11:05:15.448: 2022-01-15 12:05:15 [5228] INFO [CommandService] Got command units:trigger +4ms
+2022-01-15 11:05:15.448: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +1ms
+2022-01-15 11:05:15.448: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> logout... +0ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> logout... +0ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> logout... +0ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +1ms
+2022-01-15 11:05:15.463: 2022-01-15 12:05:15 [5228] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +0ms
+2022-01-15 11:05:15.463: 127.0.0.1 - - [15/Jan/2022:11:05:15 +0000] "POST /commands HTTP/1.1" 200 30 "-" "-"
+2022-01-15 11:05:16.197: 2022-01-15 12:05:16 [5228] INFO [JS] Result: 0 +733ms
+2022-01-15 11:05:16.197: 2022-01-15 12:05:16 [5228] INFO [JS] Stdout: Custom shell possible: True +2ms
+2022-01-15 11:05:16.197: 2022-01-15 12:05:16 [5228] INFO [JS] Stderr: #< CLIXML
+2022-01-15 11:05:16.197: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2022-01-15T12:05:16.025948+01:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">9876</U32><U32 N="NativeThreadId">6000</U32><U32 N="ManagedThreadId">10</U32></Props></Obj></Objs> +1ms
+2022-01-15 11:05:17.775: 2022-01-15 12:05:17 [5228] INFO [JS] Result: 2 +1574ms
+2022-01-15 11:05:17.775: 2022-01-15 12:05:17 [5228] INFO [JS] Stdout: Current logged in user: @{Username=AzureAD\paulpeyrot}
+2022-01-15 11:05:17.775: Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583
+2022-01-15 11:05:17.775: Custom shell enabled: False
+2022-01-15 11:05:17.775: Custom shell command:  +1ms
+2022-01-15 11:05:17.775: 2022-01-15 12:05:17 [5228] INFO [JS] Stderr: #< CLIXML
+2022-01-15 11:05:17.775: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Current logged in user: @{Username=AzureAD\paulpeyrot}</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Current logged in user: @{Username=AzureAD\paulpeyrot}</ToString><Props><S N="Message">Current logged in user: @{Username=AzureAD\paulpeyrot}</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2022-01-15T12:05:17.6816662+01:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">10168</U32><U32 N="NativeThreadId">460</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="information" RefId="5"><TNRef RefId="1" /><ToString>Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583</ToString><Props><Obj N="MessageData" RefId="6"><TNRef RefId="2" /><ToString>Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583</ToString><Props><S N="Message">Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2022-01-15T12:05:17.7129079+01:00</DT><Obj N="Tags" RefId="7"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">10168</U32><U32 N="NativeThreadId">460</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="information" RefId="8"><TNRef RefId="1" /><ToString>Custom shell enabled: False</ToString><Props><Obj N="MessageData" RefId="9"><TNRef RefId="2" /><ToString>Custom shell enabled: False</ToString><Props><S N="Message">Custom shell enabled: False</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2022-01-15T12:05:17.7129079+01:00</DT><Obj N="Tags" RefId="10"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">10168</U32><U32 N="NativeThreadId">460</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="information" RefId="11"><TNRef RefId="1" /><ToString>Custom shell command: </ToString><Props><Obj N="MessageData" RefId="12"><TNRef RefId="2" /><ToString>Custom shell command: </ToString><Props><S N="Message">Custom shell command: </S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2022-01-15T12:05:17.728529+01:00</DT><Obj N="Tags" RefId="13"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">10168</U32><U32 N="NativeThreadId">460</U32><U32 N="ManagedThreadId">9</U32></Props></Obj></Objs> +0ms

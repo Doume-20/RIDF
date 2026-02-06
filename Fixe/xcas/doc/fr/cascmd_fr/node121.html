@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Graphe en 3D</TITLE>
+<META NAME="description" CONTENT="Graphe en 3D">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node122.html">
+<LINK REL="previous" HREF="node120.html">
+<LINK REL="up" HREF="node119.html">
+<LINK REL="next" HREF="node122.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4131"
+  HREF="node122.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4125"
+  HREF="node119.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4119"
+  HREF="node120.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4127"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4129"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4132"
+  HREF="node122.html">Graphe "3D" avec les</A>
+<B> monter:</B> <A NAME="tex2html4126"
+  HREF="node119.html">Graphe d'une fonction :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4120"
+  HREF="node120.html">Graphe en 2D</A>
+ &nbsp; <B>  <A NAME="tex2html4128"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4130"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00662000000000000000"></A><A NAME="sec:plotfunc3"></A>
+<BR>
+Graphe en 3D
+</H2>
+<TT>plotfunc</TT> a deux arguments principaux et &#233;ventuellement
+le saut d'&#233;chantillonnage des variables (<TT>xstep=</TT> et <TT>ystep=</TT>) c'est 
+&#224; dire le pas en <I>x</I> et en <I>y</I> que l'on choisi pour le graphe. On peut aussi 
+sp&#233;cifier le nombre de points d'&#233;chantillonnage de la fonction &#224; repr&#233;senter en
+utilisant <code>nstep</code>.
+<BR>
+Les deux arguments principaux de <TT>plotfunc</TT> sont : une expression de deux 
+variables  ou une liste de plusieurs expressions de deux 
+variables et la liste des deux variables.
+<BR><TT>plotfunc</TT> trace la (ou les) surfaces d&#233;finie par le premier argument.
+<BR>
+On peut faire tourner ce graphique selon l'axe des <TT>x</TT>, l'axe des <TT>y</TT> 
+ou l'axe des <TT>z</TT>. Pour cela, il faut 
+cliquer avec la souris dans la fen&#234;tre graphique en dehors du 
+parall&#233;l&#233;pip&#233;de servant &#224; la repr&#233;sentation, puis faire bouger la 
+souris  (sans relacher son bouton) ou  utiliser les  touches 
+<TT>x</TT>, <TT>X</TT>, <TT>y</TT>, <TT>Y</TT>, <TT>z</TT> et <TT>Z</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc( x<code>^</code>2+y<code>^</code>2,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Un graphique en 3D repr&#233;sentant z=x<code>^</code>2+y<code>^</code>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x*y,[x,y]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+La surface z=x*y
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc([x*y-10,x*y,x*y+10],[x,y]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+Les surfaces z=x*y-10, z=x*y et z=x*y+10
+</DIV>
+Pour n'avoir qu'une portion de surface on peut indiquer l'intervalle de 
+variation dans le deuxi&#232;me et le trois&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x*sin(y),[x=0..2,y=-pi..pi]) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Une portion de  surface <I>z</I> = <I>x</I>*<I>y</I></TT>
+</DIV>
+
+<P>
+On peut rajouter un param&#232;tre pour indiquer le saut 
+d'&#233;chantillonnage en <I>x</I> et en <I>y</I> c'est &#224; dire le pas en <I>x</I> et en <I>y</I> que
+l'on veut utiliser pour faire le graphe, en utilisant<code>xstep</code> et 
+<code>ystep</code>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x*sin(y),[x=0..2,y=-pi..pi],xstep=1,ystep=0.5) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Une portion de  surface <I>z</I> = <I>x</I>*<I>y</I></TT>
+</DIV>
+On peut aussi sp&#233;cifier le nombre de points d'&#233;chantillonage de la
+fonction &#224; repr&#233;senter en utilisant <code>nstep</code> &#224; la place de <code>xstep</code> et
+<code>ystep</code>. 
+Par exemple, on tape&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>plotfunc(x*sin(y),[x=0..2,y=-pi..pi],nstep=300)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Une portion de  surface <I>z</I> = <I>x</I>*<I>y</I></TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si vous voulez l'impression ou la traduction en Latex, il faut utiliser :
+<BR><TT>M<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Exporter/Imprimer<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Print(with Latex)</TT>. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4131"
+  HREF="node122.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4125"
+  HREF="node119.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4119"
+  HREF="node120.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4127"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4129"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4132"
+  HREF="node122.html">Graphe "3D" avec les</A>
+<B> monter:</B> <A NAME="tex2html4126"
+  HREF="node119.html">Graphe d'une fonction :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4120"
+  HREF="node120.html">Graphe en 2D</A>
+ &nbsp; <B>  <A NAME="tex2html4128"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4130"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

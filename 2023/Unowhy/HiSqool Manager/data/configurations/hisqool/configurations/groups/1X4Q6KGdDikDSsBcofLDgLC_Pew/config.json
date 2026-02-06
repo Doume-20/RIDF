@@ -1,0 +1,47 @@
+{
+  "conf/application/windows/Etape-2-Droits-d'administration-1.0": {
+    "description": "Installation de l'application Etape 2 - Droits d'administration 1.0",
+    "payload": {
+      "id": 432,
+      "name": "Handover-Application (Windows)",
+      "description": "\u00c9tape 2 - Droits d'administration",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Handover-Application/1.1.0/package.jar",
+      "size": 21040905,
+      "digest": "MD5:58b87b48701b6ddde305c343bf32a7c9",
+      "metadata": {
+        "software": {
+          "id": "Handover-Application",
+          "version": "1.1.0"
+        },
+        "definition": {
+          "Id": "Handover-Application",
+          "Name": "\u00c9tape 2 - Droits d'administration",
+          "Level": "Configuration",
+          "Factory": {
+            "Build": {
+              "Step": "829169",
+              "Workflow": "337762"
+            },
+            "Commit": {
+              "Id": "88c893dc7da9cada0719757c317ef2df9ac45e95",
+              "Name": "master"
+            }
+          },
+          "Release": "1.1.0",
+          "Version": "1.1.0",
+          "AllowLogonTrigger": false,
+          "AllowOptionRefresh": false
+        },
+        "versionName": "1.1.0",
+        "applicationLabel": "\u00c9tape 2 - Droits d'administration"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  }
+}

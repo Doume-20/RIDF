@@ -1,0 +1,19 @@
+Calling giac from python:
+Frederic Han has written a python plugin connecting python to giac
+http://www.math.jussieu.fr/~han/xcas/giacpy
+It supports multiprecision floats, the Gnu Scienfic Library and can currently display 2-d objects using qcas.
+
+Installation: get the exe file corresponding to your version of Python
+http://www.math.jussieu.fr/~han/xcas/giacpy/win32/
+Extract the archive in your Python installation Lib/site-packages directory (default install directory).
+If you do not have write access to the system Python install directory, look at the exemple.py file (assumes that the plugin has been unarchived in a directory known as M:) and adapt to your situation.
+
+Example of commands: run the python interpreter, then
+from giacpy import *
+ifactor(2**128+1)
+x=giac('x')
+f=factor(x**10-1)
+d=plot(sin(x))
+d.qcas()
+help("giacpy")
+normal.help()

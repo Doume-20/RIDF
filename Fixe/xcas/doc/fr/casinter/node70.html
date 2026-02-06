@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Attributs</TITLE>
+<META NAME="description" CONTENT="Attributs">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="previous" HREF="node69.html">
+<LINK REL="up" HREF="node68.html">
+<LINK REL="next" HREF="node71.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1182"
+  HREF="node71.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1176"
+  HREF="node68.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1172"
+  HREF="node69.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1178"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1180"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1183"
+  HREF="node71.html">Le tableur</A>
+<B> monter:</B> <A NAME="tex2html1177"
+  HREF="node68.html">Comment modifier des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1173"
+  HREF="node69.html">Déplacement</A>
+ &nbsp; <B>  <A NAME="tex2html1179"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1181"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000173200000000000000"></A> <A NAME="sec:attributs3d"></A>
+<BR>
+Attributs
+</H3>
+Comme en g&#233;om&#233;trie 2-d, on peut modifier les attributs de couleur et
+de type de trac&#233; en cliquant avec le bouton droit de la souris sur
+l'objet ce qui ouvre une boite de dialogue pr&#233;sentant les diverses
+possibilit&#233;s. On peut aussi modifier directement en ligne de commande
+la couleur et le type de trac&#233; d'un objet avec l'option
+<code>affichage=</code>, par exemple&nbsp;
+<DIV ALIGN="CENTER">
+<code>plan(z=0,affichage=cyan+rempli)</code>
+
+</DIV>
+On peut imposer le plaquage d'une image sur une surface
+(sph&#232;re, polygone, surface d&#233;finie par plotfunc ou plotparam,
+quadrique, ...) avec l'option <code>gl_texture=</code> suivi du nom de
+fichier d'une image. Par exemple, 
+<DIV ALIGN="CENTER">
+<code>sphere([0,0,0],2,gl_texture="terre.jpg")</code>
+
+</DIV>
+
+<P>
+On peut modifier les attributs mat&#233;riels pour la visualisation par des
+spots lumineux en indiquant des options <code>gl_material=</code>&nbsp;:
+
+<UL>
+<LI><code>gl_material=[gl_front,gl_ambient,[r,g,b,a]]</code>
+<BR>
+modifie
+les propri&#233;t&#233;s du mat&#233;riau relativement &#224; la lumi&#232;re ``ambiante''
+(utiliser <code>gl_diffuse</code>, <code>gl_specular</code> ou <code>gl_emission</code>
+&#224; la place de <code>gl_ambient</code> pour les propri&#233;t&#233;s du mat&#233;riau vis-&#224;-vis
+de la lumi&#232;re diffuse, sp&#233;culaire ou intrins&#232;que) en
+donnant des valeurs pour les composantes rouges (r=red), vertes (g=green) et
+bleus (b=blue) et de transparence (a=alpha) qui doivent &#234;tre comprises
+entre 0 et 1. 
+</LI>
+<LI><code>gl_material=[gl_front,gl_shininess,n]</code>
+<BR>
+permet de r&#233;fl&#233;chir plus ou moins la lumi&#232;re
+incidente sur l'objet (avec en g&#233;n&#233;ral la couleur de la lumi&#232;re incidente).
+La valeur de <I>n</I> doit &#234;tre comprise entre 0 et 128, elle d&#233;finit par
+la formule <!-- MATH
+ $\cos(\theta)^n$
+ -->
+cos(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="$ \theta$">)<SUP>n</SUP> l'att&#233;nuation de la r&#233;flexion sp&#233;culaire
+en fonction de l'angle <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="$ \theta$"> entre la direction de 
+la lumi&#232;re incidente r&#233;fl&#233;chie
+et la direction de visualisation.
+</LI>
+</UL>
+Par d&#233;faut, s'il n'y a aucun attribut mat&#233;riel sp&#233;cifi&#233;, le mat&#233;riau suit les
+valeurs correspondant &#224; sa couleur. Sinon, les propri&#233;t&#233;s d'un
+mat&#233;riau sont modifi&#233;es &#224; partir des valeurs
+<code>0.2,0.2,0.2,1</code> pour la lumi&#232;re ambiante, 
+<code>0.8,0.8,0.8,1</code> pour la lumi&#232;re diffuse,
+<code>0,0,0,1</code> pour la lumi&#232;re sp&#233;culaire et intrins&#232;que (&#233;mission).
+L'exposant <code>gl_shininess</code> est positionn&#233; &#224; 50.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1182"
+  HREF="node71.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1176"
+  HREF="node68.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1172"
+  HREF="node69.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1178"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1180"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1183"
+  HREF="node71.html">Le tableur</A>
+<B> monter:</B> <A NAME="tex2html1177"
+  HREF="node68.html">Comment modifier des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1173"
+  HREF="node69.html">Déplacement</A>
+ &nbsp; <B>  <A NAME="tex2html1179"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1181"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

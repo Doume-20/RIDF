@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compter les &#233;l&#233;ments ayant une valeur donn&#233;e : count_eq</TITLE>
+<META NAME="description" CONTENT="Compter les &#233;l&#233;ments ayant une valeur donn&#233;e : count_eq">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node658.html">
+<LINK REL="previous" HREF="node656.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node658.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12607"
+  HREF="node658.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12601"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12595"
+  HREF="node656.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12603"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12605"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12608"
+  HREF="node658.html">Compter les &#233;l&#233;ments plus</A>
+<B> monter:</B> <A NAME="tex2html12602"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12596"
+  HREF="node656.html">Compter les &#233;l&#233;ments d'une</A>
+ &nbsp; <B>  <A NAME="tex2html12604"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12606"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094329000000000000000"></A><A NAME="17025"></A>
+<BR>
+Compter les &#233;l&#233;ments ayant une valeur donn&#233;e : <TT>count_eq</TT>
+</H2><A NAME="30235"></A><A NAME="30236"></A>
+<TT>count_eq</TT> a deux ou trois param&#232;tres : un r&#233;el et une 
+matrice (ou une liste) r&#233;elle et &#233;ventuellement un param&#232;tre 
+optionnel <TT>row</TT> ou <TT>col</TT>.
+<BR><TT>count_eq</TT> renvoie le nombre d'&#233;l&#233;ments de la matrice (ou de la liste)
+ qui sont &#233;gaux au premier argument.
+<BR>
+Si il y a <TT>row</TT> (resp <TT>col</TT>) comme troisi&#232;me param&#232;tre 
+<TT>count_eq</TT> agit sur chaque ligne (resp colonne) de la matrice et renvoie 
+une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[[2,12,45],[3,7,78]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[[2,12,45],[3,7,78]],row)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>count_eq(12,[[2,12,45],[3,7,78]],col)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,0]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

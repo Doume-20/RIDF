@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Graphe de la r&#233;gression logistique : logistic_regression_plot</TITLE>
+<META NAME="description" CONTENT="Graphe de la r&#233;gression logistique : logistic_regression_plot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node800.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node802.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14781"
+  HREF="node802.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14775"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14771"
+  HREF="node800.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14777"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14779"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14782"
+  HREF="node802.html">Les fonctions al&#233;atoires de</A>
+<B> monter:</B> <A NAME="tex2html14776"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14772"
+  HREF="node800.html">R&#233;gression logistique : logistic_regression</A>
+ &nbsp; <B>  <A NAME="tex2html14778"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14780"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010220000000000000000"></A><A NAME="21016"></A>
+<BR>
+Graphe de la r&#233;gression logistique :
+ <TT>logistic_regression_plot</TT>
+</H2><A NAME="30423"></A><A NAME="30424"></A>
+Lorsque on connait les valeurs de <I>f'</I>(<I>x</I>) en <!-- MATH
+ $x=x_0,x_0+1....x_0+n$
+ -->
+<I>x</I> = <I>x</I><SUB>0</SUB>, <I>x</I><SUB>0</SUB> +1....<I>x</I><SUB>0</SUB> + <I>n</I>, pour 
+tracer le graphe de la deriv&#233;e <I>y'</I>(<I>x</I>) d'une fonction logistique <I>y</I>(<I>x</I>), 
+solution de l'&#233;quation 
+<!-- MATH
+ $y'/y=a*y+b$
+ -->
+<I>y'</I>/<I>y</I> = <I>a</I>*<I>y</I> + <I>b</I> (<I>a</I> &lt; 0 et <I>b</I> &gt; 0) v&#233;rifiant <!-- MATH
+ $y_0=y(x_0)$
+ -->
+<I>y</I><SUB>0</SUB> = <I>y</I>(<I>x</I><SUB>0</SUB>) et tel que <I>y'</I>(<I>x</I>) 
+approche au mieux  les diff&#233;rentes valeurs de <I>f'</I>(<I>x</I>), on utilise  
+<TT>logistic_regression_plot</TT>.
+<BR><TT>logistic_regression_plot</TT> a les m&#234;mes arguments que 
+<TT>logistic_regression</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>logistic_regression_plot([1,2,4,6,8,7,5],0,2.0)</TT>
+</DIV>
+On obtient avec &#233;crit en bleu les valeurs renvoy&#233;es par:
+<DIV ALIGN="CENTER">
+<TT>Le graphe de la fonction solution de <!-- MATH
+ $y'/y=a*y+b$
+ -->
+<I>y'</I>/<I>y</I> = <I>a</I>*<I>y</I> + <I>b</I> avec <!-- MATH
+ $y'(0)=1,y'(1)=2,y'(3)=4...y'(6)=5$
+ -->
+<I>y'</I>(0) = 1, <I>y'</I>(1) = 2, <I>y'</I>(3) = 4...<I>y'</I>(6) = 5, <I>y</I>(0) = 2</TT>
+</DIV>
+car c'est la fonction logistique qui approche au mieux les donn&#233;es.
+<B>Remarque</B>
+On remarquera que l'&#233;quation de la courbe represent&#233;e ainsi que la valeur 
+du coefficient de corr&#233;lation des donn&#233;es sont &#233;crits en bleu.
+<BR>
+Si on veut avoir l'&#233;quation et/ou le carr&#233; du coefficient de corr&#233;lation 
+sur le dessin il faut rajouter comme dernier argument, l'option <TT>equation</TT> 
+et/ou <TT>correlation</TT>. Par exemple,
+ <TT>logistic_regression_plot([1,2,4,6,8,7,5],0,2.0,correlation)</TT>
+et <TT>R2=0.658961299812</TT> s'inscrit sur le graphe.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14781"
+  HREF="node802.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14775"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14771"
+  HREF="node800.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14777"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14779"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14782"
+  HREF="node802.html">Les fonctions al&#233;atoires de</A>
+<B> monter:</B> <A NAME="tex2html14776"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14772"
+  HREF="node800.html">R&#233;gression logistique : logistic_regression</A>
+ &nbsp; <B>  <A NAME="tex2html14778"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14780"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

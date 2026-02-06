@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'&#233;diteur d'expressions.</TITLE>
+<META NAME="description" CONTENT="L'&#233;diteur d'expressions.">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node48.html">
+<LINK REL="previous" HREF="node46.html">
+<LINK REL="up" HREF="casinter.html">
+<LINK REL="next" HREF="node48.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html843"
+  HREF="node48.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html837"
+  HREF="casinter.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html831"
+  HREF="node46.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html839"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html841"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html844"
+  HREF="node48.html">Les graphiques</A>
+<B> monter:</B> <A NAME="tex2html838"
+  HREF="casinter.html">L'interface Xcas de giac</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html832"
+  HREF="node46.html">Les lignes de commandes</A>
+ &nbsp; <B>  <A NAME="tex2html840"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html842"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000140000000000000000"></A> <A NAME="sec:eqw"></A>
+<BR>
+L'&#233;diteur d'expressions.
+</H1>
+Un &#233;diteur d'expressions se cr&#233;e avant le niveau actif avec le raccourci 
+clavier <TT>Alt+e</TT> ou bien en utilisant le menu <TT>Expression</TT>,
+ puis <TT>Nouvelle expression</TT>.
+Notez que Le clavier scientifique apparait automatiquement si vous
+ajoutez un &#233;diteur d'expressions. Il permet de saisir facilement
+des int&#233;grales (<IMG
+ WIDTH="16" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \int$">), limites, sommes (<IMG
+ WIDTH="23" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \sum$">).
+
+<P>
+Vous pouvez alors &#233;crire comme sur le papier vos formules : il suffit de 
+mettre les expressions en surbrillance au lieu de mettre des
+parenth&#232;ses.
+<BR> 
+<BR><B>1ier Exemple</B>
+<BR>
+On veut &#233;crire&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+\left(\frac{x+1}{x+2}\right) \cdot \left(3+\frac{4}{x} \right)^5
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{x+1}{x+2}}\right.$"><IMG
+ WIDTH="48" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$\displaystyle {\frac{{x+1}}{{x+2}}}$"><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{x+1}{x+2}}\right)$"><SUP> . </SUP><IMG
+ WIDTH="19" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$\displaystyle \left(\vphantom{3+\frac{4}{x} }\right.$">3 + <IMG
+ WIDTH="18" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle {\frac{{4}}{{x}}}$"><IMG
+ WIDTH="27" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$\displaystyle \left.\vphantom{3+\frac{4}{x} }\right)^{5}_{}$">
+</DIV><P></P>
+On ouvre un &#233;diteur d'expression (<TT>Alt+e</TT>)
+puis on tape
+
+<UL>
+<LI><!-- MATH
+ $x+1 \ \uparrow$
+ -->
+<I>x</I> + 1&nbsp; <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> (on met <I>x</I> + 1 en surbrillance soit a
+vec la fl&#232;che vers le haut soit en le s&#233;lectionnant avec la souris)
+</LI>
+<LI><code>/</code> (symbole pour la division) puis <!-- MATH
+ $x+2 \ \uparrow \ \uparrow$
+ -->
+<I>x</I> + 2&nbsp; <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> &nbsp; <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> 
+</LI>
+<LI>* 3 <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> + 4 <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> / x
+</LI>
+<LI><!-- MATH
+ $\uparrow \ \uparrow \ \uparrow$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> &nbsp; <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> &nbsp; <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> <code>^</code> 5
+</LI>
+</UL>
+Vous pouvez maintenant gr&#226;ce aux fl&#232;ches de d&#233;placements parcourir 
+l'arbre associ&#233; &#224; cette expression :
+
+<UL>
+<LI><IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$"> permet de mettre en surbrillance la partie s&#233;lectionn&#233;e (un 
+membre d'une expression), l'op&#233;rateur qui concerne cette 
+partie et les autres membres de cette expression,
+</LI>
+<LI><!-- MATH
+ $\downarrow$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \downarrow$"> permet de mettre en surbrillance le membre de droite de 
+ l'expression s&#233;lectionn&#233;e
+</LI>
+<LI><!-- MATH
+ $\rightarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \rightarrow$"> ou <!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ \leftarrow$"> permettent de mettre en surbrillance l'autre 
+membre d'une expression que celui s&#233;lectionn&#233;
+(le membre de droite si le membre de gauche est s&#233;lectionn&#233; et
+vice versa).
+</LI>
+<LI>Ctrl-<!-- MATH
+ $\rightarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \rightarrow$"> ou Ctrl-<!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ \leftarrow$"> permettent d'&#233;changer
+la s&#233;lection avec le fr&#232;re droit ou gauche.
+</LI>
+</UL>
+ 
+<BR><B>2i&#232;me Exemple</B>
+<BR>
+Pour saisir :
+<P><!-- MATH
+ \begin{displaymath}
+\int_0^{+\infty} \frac{1}{1+x^2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="47" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$\displaystyle \int_{0}^{{+\infty}}$"><IMG
+ WIDTH="56" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$\displaystyle {\frac{{1}}{{1+x^2}}}$">
+</DIV><P></P>
+on tape
+
+<UL>
+<LI>la touche <IMG
+ WIDTH="16" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$ \int$"> du clavier scientifique ou <TT>Ctrl-S</TT> au
+clavier ce qui saisit une int&#233;grale ind&#233;finie,
+</LI>
+<LI>la touche <code>,</code> pour passer &#224; une int&#233;grale d&#233;finie (pour
+faire l'inverse on s&#233;lectionnerait chaque borne puis on taperait sur
+la touche d'effacement Backspace),
+</LI>
+<LI><!-- MATH
+ $\downarrow$
+ -->
+<IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \downarrow$">, on remplace 0 par la fonction en tapant
+<code>1/(1+x^2)</code> puis <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \uparrow$">,
+</LI>
+<LI><!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ \leftarrow$"> pour s&#233;lectionner la borne sup&#233;rieure,
+</LI>
+<LI>la touche <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="$ \infty$"> du clavier scientifique pour remplacer le 1,
+</LI>
+<LI>la touche Enter permet alors de calculer l'int&#233;grale.
+</LI>
+</UL>
+
+<P>
+Les autres touches sp&#233;ciales dans l'&#233;diteur d'expressions sont&nbsp;:
+
+<UL>
+<LI><code>,</code>: si une s&#233;quence est s&#233;lectionn&#233;e, ajoute un &#233;l&#233;ment
+initialis&#233; &#224; 0 &#224; la s&#233;quence et s&#233;lectionne ce 0. S'il y a une
+s&#233;lection autre qu'une s&#233;quence, 
+cr&#233;e une s&#233;quence de taille 2 dont
+le premier &#233;lement est la s&#233;quence, initialise &#224; 0 le 2&#232;me &#233;l&#233;ment
+de la s&#233;quence et le s&#233;lectionne. Il suffit alors de taper la valeur
+du dernier &#233;l&#233;ment de la s&#233;quence pour remplacer le 0. On peut
+&#233;changer un &#233;l&#233;ment s&#233;lectionn&#233; dans une s&#233;quence avec son voisin avec les
+touches Ctrl-<!-- MATH
+ $\rightarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \rightarrow$"> ou Ctrl-<!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="$ \leftarrow$">.
+</LI>
+<LI><code>(</code>: si une s&#233;quence est s&#233;lectionn&#233;e, cr&#233;e une fonction
+utilisateur appliqu&#233;e &#224; la s&#233;quence et initialis&#233;e &#224; <code>f</code>, il suffit
+de taper le nom de la fonction utilisateur pour remplacer <code>f</code>.
+Si un vecteur est s&#233;lectionn&#233;, il est remplac&#233; par une s&#233;quence.
+</LI>
+<LI><code>[</code>: permet de transformer une s&#233;quence en vecteur. Si un
+vecteur est s&#233;lectionn&#233;, cr&#233;e un indice de vecteur, le nom de variable
+est initialis&#233; &#224; <code>m</code> et s&#233;lectionn&#233;, il suffit de taper le nom
+de variable pour remplacer <code>m</code>.
+</LI>
+<LI>les touches en combinaison avec la touche control
+
+<UL>
+<LI>A: s&#233;lectionne tout
+</LI>
+<LI>C: copie la s&#233;lection vers le presse-papier (&#224; la windows)
+</LI>
+<LI>V: recopie du presse-papier (&#224; la windows)
+</LI>
+<LI>T: traduit la s&#233;lection en L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X et recopie dans le
+presse-papier (on peut aussi voir le r&#233;sultat en cliquant sur
+le bouton <code>Msg</code>)
+</LI>
+<LI>E: &#233;value la s&#233;lection (<code>eval</code>)
+</LI>
+<LI>F: factorise la s&#233;lection (<code>factor</code>)
+</LI>
+<LI>N: normalise la s&#233;lection (<code>normal</code>)
+</LI>
+<LI>P: d&#233;composition en &#233;l&#233;ments simples (<code>partfrac</code>)
+</LI>
+<LI>I (ou touche Tab) 
+compl&#232;te la saisie en cherchant une fonction dans l'index
+dont le nom commence par les m&#234;mes lettres
+</LI>
+<LI>S: saisie d'une int&#233;grale
+</LI>
+<LI>L: saisie d'une limite
+</LI>
+<LI>D: saisie d'une d&#233;riv&#233;e
+</LI>
+<LI>Z: undo 
+</LI>
+<LI>Y: redo
+</LI>
+</UL>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html843"
+  HREF="node48.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html837"
+  HREF="casinter.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html831"
+  HREF="node46.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html839"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html841"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html844"
+  HREF="node48.html">Les graphiques</A>
+<B> monter:</B> <A NAME="tex2html838"
+  HREF="casinter.html">L'interface Xcas de giac</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html832"
+  HREF="node46.html">Les lignes de commandes</A>
+ &nbsp; <B>  <A NAME="tex2html840"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html842"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

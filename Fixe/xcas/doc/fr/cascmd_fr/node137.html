@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Lignes de niveaux : plotcontour contourplot DrwCtour</TITLE>
+<META NAME="description" CONTENT="Lignes de niveaux : plotcontour contourplot DrwCtour">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node138.html">
+<LINK REL="previous" HREF="node136.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node138.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4359"
+  HREF="node138.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4353"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4347"
+  HREF="node136.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4355"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4357"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4360"
+  HREF="node138.html">Graphe d'une fonction par</A>
+<B> monter:</B> <A NAME="tex2html4354"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4348"
+  HREF="node136.html">Repr&#233;sentation graphique de l'aire</A>
+ &nbsp; <B>  <A NAME="tex2html4356"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4358"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006120000000000000000"></A><A NAME="2837"></A><A NAME="2838"></A><A NAME="2839"></A><A NAME="sec:plotcontour"></A>
+<BR>
+Lignes de niveaux : <TT>plotcontour contourplot 
+<BR>
+DrwCtour</TT>
+</H1>
+<TT>plotcontour(f(x,y),[x,y])</TT> (ou <TT>DrwCtour(f(x,y),[x,y])</TT> ou 
+<BR>
+encore <TT>contourplot(f(x,y),[x,y])</TT>)
+trace les 6 lignes de niveaux <I>z</I> = - 10, <I>z</I> = - 8,.., <I>z</I> = 0, <I>z</I> = 2,.., <I>z</I> = 10 de la
+surface d&#233;finie par <I>z</I> = <I>f</I> (<I>x</I>, <I>y</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotcontour(x<code>^</code>2+y<code>^</code>2,[x=-3..3,y=-3..3],[1,2,3], affichage=[vert,rouge,noir]+[rempli$3])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le graphe des trois ellipses x<code>^</code>2-y<code>^</code>2=n pour n=1,2,3; les zones comprises entre ces ellipses sont remplies avec la couleur verte,rouge ou noire </TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotcontour(x<code>^</code>2-y<code>^</code>2,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le graphe des six hyperboles x<code>^</code>2-y<code>^</code>2=n pour n=-10,-8,..10</TT>
+</DIV>
+
+<P>
+Pour visualiser la surface, on tape (<TT>plotfunc(f(x,y),[x,y])</TT> trace la 
+repr&#233;sentation graphique de <I>z</I> = <I>f</I> (<I>x</I>, <I>y</I>), voir <A HREF="node121.html#sec:plotfunc3">3.6.2</A>):
+<DIV ALIGN="CENTER">
+<TT>plotfunc( x<code>^</code>2-y<code>^</code>2,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Un graphique en 3D repr&#233;sentant z=x<code>^</code>2+y<code>^</code>2</TT>
+</DIV>
+On peut faire tourner ce graphique selon l'axe des <TT>x</TT>, l'axe des <TT>y</TT> 
+ou l'axe des <TT>z</TT>. Pour cela, il faut 
+cliquer avec la souris dans la fen&#234;tre graphique  en dehors du 
+parall&#233;l&#233;pip&#233;de servant &#224; la repr&#233;sentation, puis faire bouger la 
+souris (sans relacher son bouton) ou utiliser aux touches 
+<TT>x</TT>, <TT>X</TT>, <TT>y</TT>, <TT>Y</TT>, <TT>z</TT> et <TT>Z</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4359"
+  HREF="node138.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4353"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4347"
+  HREF="node136.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4355"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4357"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4360"
+  HREF="node138.html">Graphe d'une fonction par</A>
+<B> monter:</B> <A NAME="tex2html4354"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4348"
+  HREF="node136.html">Repr&#233;sentation graphique de l'aire</A>
+ &nbsp; <B>  <A NAME="tex2html4356"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4358"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

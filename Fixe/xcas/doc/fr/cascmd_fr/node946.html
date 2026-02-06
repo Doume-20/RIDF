@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le triangle rectangle : right_triangle triangle_rectangle</TITLE>
+<META NAME="description" CONTENT="Le triangle rectangle : right_triangle triangle_rectangle">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node947.html">
+<LINK REL="previous" HREF="node945.html">
+<LINK REL="up" HREF="node942.html">
+<LINK REL="next" HREF="node947.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17101"
+  HREF="node947.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17095"
+  HREF="node942.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17089"
+  HREF="node945.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17097"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17099"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17102"
+  HREF="node947.html">Le triangle &#233;quilat&#232;ral :</A>
+<B> monter:</B> <A NAME="tex2html17096"
+  HREF="node942.html">Les triangles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17090"
+  HREF="node945.html">Le triangle isoc&#232;le :</A>
+ &nbsp; <B>  <A NAME="tex2html17098"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17100"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012114000000000000000"></A><A NAME="24764"></A><A NAME="24765"></A><A NAME="sec:trianglerect2"></A>
+<BR>
+Le triangle rectangle : <TT>right_triangle triangle_rectangle</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1055.html#sec:trianglerect3">10.6.3</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>triangle_rectangle</TT>, en g&#233;om&#233;trie plane, a trois ou quatre
+arguments.
+<BR>
+Description des arguments :
+
+<UL>
+<LI>si il a trois arguments, ce sont : 2 points <I>A</I> et <I>B</I> 
+(ou 2 nombres complexes repr&#233;sentant l'affixe de ces points)
+ et un r&#233;el <I>k</I> non nul.
+<BR><TT>triangle_rectangle(A,B,k)</TT> renvoie et trace le triangle <I>ABC</I> rectangle 
+en <I>A</I> : ce triangle est direct si <I>k</I> &gt; 0, indirect si <I>k</I> &lt; 0 et est
+tel que <I>AC</I> = | <I>k</I>|*<I>AB</I>. 
+<BR>
+Ainsi si l'angle  <!-- MATH
+ $(\overrightarrow{BC},\overrightarrow{BA})=\beta$
+ -->
+(<IMG
+ WIDTH="108" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img585.png"
+ ALT="$ \overrightarrow{BC},\overrightarrow{BA})=\beta$"> radians 
+(ou degr&#233;s), on a <!-- MATH
+ $\tan(\beta)=k$
+ -->
+tan(<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">) = <I>k</I>.
+<BR>
+On remarquera que si <I>C</I> est le transform&#233; de <I>B</I> dans la similitude de 
+centre <I>A</I> de rapport | <I>k</I>| et d'angle <!-- MATH
+ $(k/|k|)*\pi/2$
+ -->
+(<I>k</I>/| <I>k</I>|)*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/2.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>triangle_rectangle(i,-i,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le triangle rectangle de sommets i, -i, 4+i</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>triangle_rectangle(i,-i,-2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le triangle rectangle de sommets i, -i, -4+i</TT>
+</DIV>
+</LI>
+<LI>si il a quatre arguments, le dernier argument est le nom d'une 
+variable qui servira &#224; d&#233;finir le troisi&#232;me sommet.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>triangle_rectangle(i,-i,2,D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le triangle rectangle de sommets i, -i, 4+i</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(affixe(D))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4+i</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17101"
+  HREF="node947.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17095"
+  HREF="node942.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17089"
+  HREF="node945.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17097"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17099"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17102"
+  HREF="node947.html">Le triangle &#233;quilat&#232;ral :</A>
+<B> monter:</B> <A NAME="tex2html17096"
+  HREF="node942.html">Les triangles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17090"
+  HREF="node945.html">Le triangle isoc&#232;le :</A>
+ &nbsp; <B>  <A NAME="tex2html17098"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17100"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

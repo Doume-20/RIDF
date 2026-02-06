@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;sultant de deux polyn&#244;mes : resultant</TITLE>
+<META NAME="description" CONTENT="R&#233;sultant de deux polyn&#244;mes : resultant">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node480.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node482.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10006"
+  HREF="node482.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10000"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9996"
+  HREF="node480.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10002"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10004"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10007"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+<B> monter:</B> <A NAME="tex2html10001"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9997"
+  HREF="node480.html">Matrice de Sylvester de</A>
+ &nbsp; <B>  <A NAME="tex2html10003"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10005"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092619000000000000000"></A><A NAME="12441"></A>
+<BR>
+R&#233;sultant de deux polyn&#244;mes : <TT>resultant</TT>
+</H2>
+<TT>resultant</TT> a comme arguments deux polyn&#244;mes.
+<BR><TT>resultant</TT> renvoie le r&#233;sultant des deux polyn&#244;mes.
+<BR>
+Le r&#233;sultant est le dernier reste non nul de l'algorithme d'Euclide et c'est
+aussi le d&#233;terminant de la matrice <I>S</I> de Sylvester.
+<BR>
+Pour les deux polyn&#244;mes <!-- MATH
+ $A(x)=\sum_{i=0}^{i=n} a_ix^i$
+ -->
+<I>A</I>(<I>x</I>) = <IMG
+ WIDTH="47" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img359.png"
+ ALT="$ \sum_{{i=0}}^{{i=n}}$"><I>a</I><SUB>i</SUB><I>x</I><SUP>i</SUP> et 
+<!-- MATH
+ $B(x)=\sum_{i=0}^{i=m}b_ix^i$
+ -->
+<I>B</I>(<I>x</I>) = <IMG
+ WIDTH="51" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img360.png"
+ ALT="$ \sum_{{i=0}}^{{i=m}}$"><I>b</I><SUB>i</SUB><I>x</I><SUP>i</SUP>, la  matrice <I>S</I> de Sylvester est une matrice 
+carr&#233;e de dimensiom <I>m</I> + <I>n</I> dont les <I>m</I> premi&#232;res lignes sont  compos&#233;es &#224;
+partir des coefficients de <I>A</I>(<I>x</I>) :
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccccccc}
+s_{11}=a_n & s_{12}=a_{n-1}& \cdots & s_{1(n+1)}=a_0 & 0 & \cdots & 0\\
+s_{21}=0 & s_{22}=a_{n}& \cdots & s_{2(n+1)}=a_1 & s_{2(n+2)}=a_0 & \cdots & 0\\
+\vdots &\vdots &\vdots &\ddots &\vdots &\ddots &\vdots\\
+s_{m1}=0 & s_{m2}=0& \cdots & s_{m(n+1)}=a_{m-1} & s_{m(n+2)}=a_{m-2} & \cdots&a_0 
+\end{array}\right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="21" HEIGHT="113" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccccccc}
+s_{11}=a_n &amp; s_{12}=a_{n-1...
+...ots &amp; s_{m(n+1)}=a_{m-1} &amp; s_{m(n+2)}=a_{m-2} &amp; \cdots&amp;a_0
+\end{array}}\right.$"><IMG
+ WIDTH="552" HEIGHT="113" ALIGN="MIDDLE" BORDER="0"
+ SRC="img362.png"
+ ALT="$\displaystyle \begin{array}{ccccccc}
+s_{11}=a_n &amp; s_{12}=a_{n-1}&amp; \cdots &amp; s_{1...
+...}=0&amp; \cdots &amp; s_{m(n+1)}=a_{m-1} &amp; s_{m(n+2)}=a_{m-2} &amp; \cdots&amp;a_0
+\end{array}$"><IMG
+ WIDTH="21" HEIGHT="113" ALIGN="MIDDLE" BORDER="0"
+ SRC="img363.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccccccc}
+s_{11}=a_n &amp; s_{12}=a_{n-1...
+...ots &amp; s_{m(n+1)}=a_{m-1} &amp; s_{m(n+2)}=a_{m-2} &amp; \cdots&amp;a_0
+\end{array}}\right)$">
+</DIV><P></P>
+et les <I>n</I> lignes  suivantes sont compos&#233;es de la m&#234;me fa&#231;on &#224; partir des coefficients de <I>B</I>(<I>x</I>) :
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccccccc}
+s_{(m+1)1}=b_m & s_{(m+1)2}=b_{m-1}& \cdots & s_{(m+1)(m+1)}=b_0 & 0 & \cdots & 0\\
+\vdots &\vdots &\vdots &\ddots &\vdots &\ddots &\vdots\\
+s_{(m+n)1}=0 & s_{(m+n)2}=0& \cdots & s_{(m+n)(m+1)}=b_{n-1}  & b_{n-2}  &\cdots&b_0 
+\end{array}\right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="22" HEIGHT="93" ALIGN="MIDDLE" BORDER="0"
+ SRC="img364.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccccccc}
+s_{(m+1)1}=b_m &amp; s_{(m+1)2...
+...}=0&amp; \cdots &amp; s_{(m+n)(m+1)}=b_{n-1} &amp; b_{n-2} &amp;\cdots&amp;b_0
+\end{array}}\right.$"><IMG
+ WIDTH="562" HEIGHT="91" ALIGN="MIDDLE" BORDER="0"
+ SRC="img365.png"
+ ALT="$\displaystyle \begin{array}{ccccccc}
+s_{(m+1)1}=b_m &amp; s_{(m+1)2}=b_{m-1}&amp; \cdot...
+..._{(m+n)2}=0&amp; \cdots &amp; s_{(m+n)(m+1)}=b_{n-1} &amp; b_{n-2} &amp;\cdots&amp;b_0
+\end{array}$"><IMG
+ WIDTH="22" HEIGHT="93" ALIGN="MIDDLE" BORDER="0"
+ SRC="img366.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccccccc}
+s_{(m+1)1}=b_m &amp; s_{(m+1)2...
+...}=0&amp; \cdots &amp; s_{(m+n)(m+1)}=b_{n-1} &amp; b_{n-2} &amp;\cdots&amp;b_0
+\end{array}}\right)$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>resultant(x<code>^</code>3-p*x+q,3*x<code>^</code>2-p,x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-4*p<code>^</code>3-27*q<code>^</code>2</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+On a : discriminant(P)=resultant(P,P').
+
+<P>
+<B>Un exemple d'utilisation du r&#233;sultant</B>
+<BR>
+Soient 2 points fixes <I>F</I>1 et <I>F</I>2 et un point variable <I>A</I> sur le cercle de 
+centre <I>F</I>1 et de rayon 2<I>a</I>.
+On veut trouver l'&#233;quation cart&#233;sienne du lieu des points <I>M</I> intersection de
+<I>F</I>1<I>A</I> et de la m&#233;diatrice de <I>F</I>2<I>A</I> : on a <!-- MATH
+ $MF1+MF2=MF1+MA=F1A=2a$
+ -->
+<I>MF</I>1 + <I>MF</I>2 = <I>MF</I>1 + <I>MA</I> = <I>F</I>1<I>A</I> = 2<I>a</I> donc <I>M</I> 
+d&#233;crit une ellipse de foyers <I>F</I>1 et <I>F</I>2 et de grand axe 2<I>a</I>.
+<BR>
+Choisisons comme rep&#232;re orthonorm&#233; celui de centre <I>F</I>1 et d'axe <I>Ox</I> 
+port&#233; par le vecteur <!-- MATH
+ $\overrightarrow{F1F2}$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img367.png"
+ ALT="$ \overrightarrow{F1F2}$">. On a :
+<BR><!-- MATH
+ $A= (2a\cos(\theta);2a\sin(\theta))$
+ -->
+<I>A</I> = (2<I>a</I> cos(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$">);2<I>a</I> sin(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$">)) o&#249; <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$"> est l'angle (<I>Ox</I>, <I>OA</I>).
+On choisit comme param&#232;tre <!-- MATH
+ $t=\tan(\theta/2)$
+ -->
+<I>t</I> = tan(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$">/2) pour que les coordonn&#233;es de 
+<I>A</I> soient une fonction rationnelle du param&#232;tre <I>t</I>. On a donc :
+<BR><!-- MATH
+ $\displaystyle A=(ax;ay)=(2a\frac{1-t^2}{1+t^2};2a\frac{2t}{1+t^2})$
+ -->
+<I>A</I> = (<I>ax</I>;<I>ay</I>) = (2<I>a</I><IMG
+ WIDTH="52" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.png"
+ ALT="$\displaystyle {\frac{{1-t^2}}{{1+t^2}}}$">;2<I>a</I><IMG
+ WIDTH="52" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img370.png"
+ ALT="$\displaystyle {\frac{{2t}}{{1+t^2}}}$">)
+<BR>
+On pose <I>F</I>1<I>F</I>2 = 2<I>c</I> et on note <I>I</I> le milieu de <I>AF</I>2. On a :
+<BR><I>F</I>2 = (2<I>c</I>, 0) et 
+<BR><!-- MATH
+ $\displaystyle I=(c+ax/2;ay/2)=(c+a\frac{1-t^2}{1+t^2};a\frac{2t1-t^2}{1+t^2})$
+ -->
+<I>I</I> = (<I>c</I> + <I>ax</I>/2;<I>ay</I>/2) = (<I>c</I> + <I>a</I><IMG
+ WIDTH="52" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.png"
+ ALT="$\displaystyle {\frac{{1-t^2}}{{1+t^2}}}$">;<I>a</I><IMG
+ WIDTH="67" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img371.png"
+ ALT="$\displaystyle {\frac{{2t1-t^2}}{{1+t^2}}}$">)
+<BR><I>IM</I> est perpendiculaire &#224; <I>AF</I>2 donc <I>M</I> = (<I>x</I>;<I>y</I>) v&#233;rifie l'&#233;quation 
+<I>eq</I>1 = 0 avec :
+<BR><!-- MATH
+ $eq1:=(x-ix)*(ax-2*c)+(y-iy)*ay$
+ -->
+<I>eq</I>1 : = (<I>x</I> - <I>ix</I>)*(<I>ax</I> - 2*<I>c</I>) + (<I>y</I> - <I>iy</I>)*<I>ay</I>
+<BR><I>M</I> = (<I>x</I>;<I>y</I>) est sur <I>F</I>1<I>A</I> donc <I>M</I> v&#233;rifie l'&#233;quation <I>eq</I>2 = 0 avec :
+<BR><!-- MATH
+ $eq2:=y/x-ay/ax$
+ -->
+<I>eq</I>2 : = <I>y</I>/<I>x</I> - <I>ay</I>/<I>ax</I>
+<BR>
+On a :
+<BR><TT>resultant(eq1,eq2,t)</TT> est un polyn&#244;me <I>eq</I>3 en <I>x</I> et <I>y</I>, <I>eq</I>3 est 
+ind&#233;pendant de <I>t</I> et il existe des polyn&#244;mes en <I>t</I>, <I>U</I> et <I>V</I> tels que :
+<!-- MATH
+ $U(t)*eq1+V(t)*eq2=eq3$
+ -->
+<I>U</I>(<I>t</I>)*<I>eq</I>1 + <I>V</I>(<I>t</I>)*<I>eq</I>2 = <I>eq</I>3.
+<BR>
+On tape :
+<BR><TT>ax:=2*a*(1-t<code>^</code>2)/(1+t<code>^</code>2);ay:=2*a*2*t/(1+t<code>^</code>2);</TT>
+<BR><TT>ix:=(ax+2*c)/2; iy:=(ay/2)</TT>
+<BR><TT>eq1:=(x-ix)*(ax-2*c)+(y-iy)*ay</TT>
+<BR><TT>eq2:=y/x-ay/ax</TT>
+<BR><TT>factor(resultant(eq1,eq2,t))</TT>
+<BR>
+On obtient comme r&#233;sultant :
+<BR><TT>-(64<SUP> . </SUP>(x<code>^</code>2+y<code>^</code>2)<SUP> . </SUP>(x<code>^</code>2<SUP> . </SUP>a<code>^</code>2-x<code>^</code>2<SUP> . </SUP>c<code>^</code>2+-2<SUP> . </SUP>x<SUP> . </SUP>a<code>^</code>2<SUP> . </SUP>c+2<SUP> . </SUP>x<SUP> . </SUP>c<code>^</code>3-a<code>^</code>4+
+<BR>
+2<SUP> . </SUP>a<code>^</code>2<SUP> . </SUP>c<code>^</code>2+a<code>^</code>2<SUP> . </SUP> y<code>^</code>2-c<code>^</code>4))</TT>
+<BR>
+Le facteur <TT>-64<SUP> . </SUP>(x<code>^</code>2+y<code>^</code>2)</TT> ne s'annule jamais donc 
+l'&#233;quation du lieu est :
+<P><!-- MATH
+ \begin{displaymath}
+x^2a^2-x^2c^2+-2xa^2c+2xc^3-a^4+2a^2c^2+a^2y^2-c^4=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>2</SUP><I>a</I><SUP>2</SUP> - <I>x</I><SUP>2</SUP><I>c</I><SUP>2</SUP> + -2<I>xa</I><SUP>2</SUP><I>c</I> + 2<I>xc</I><SUP>3</SUP> - <I>a</I><SUP>4</SUP> +2<I>a</I><SUP>2</SUP><I>c</I><SUP>2</SUP> + <I>a</I><SUP>2</SUP><I>y</I><SUP>2</SUP> - <I>c</I><SUP>4</SUP> = 0
+</DIV><P></P>
+En prenant l'origine du rep&#232;re en <I>O</I> milieu de <I>F</I>1<I>F</I>2, on retrouve 
+l'&#233;quation cart&#233;sienne de l'ellipse. Pour faire ce changement d'origine, 
+on a <!-- MATH
+ $\overrightarrow{F1M}=\overrightarrow{F1O}+\overrightarrow{OM}$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img372.png"
+ ALT="$ \overrightarrow{F1M}=\overrightarrow{F1O}+\overrightarrow{OM}$">, donc on 
+tape :
+<BR><TT>normal(subst(x<code>^</code>2<SUP> . </SUP>a<code>^</code>2-x<code>^</code>2<SUP> . </SUP>c<code>^</code>2+-2<SUP> . </SUP> x<SUP> . </SUP>a<code>^</code>2<SUP> . </SUP>c+2<SUP> . </SUP>x<SUP> . </SUP>c<code>^</code>3-a<code>^</code>4+
+<BR>
+2<SUP> . </SUP>a<code>^</code>2<SUP> . </SUP>c<code>^</code>2+a<code>^</code>2<SUP> . </SUP>y<code>^</code>2-c<code>^</code>4,[x,y]=[c+X,Y]))</TT>
+<BR>
+On obtient :
+<BR><TT>-c<code>^</code>2*X<code>^</code>2+c<code>^</code>2*a<code>^</code>2+X<code>^</code>2*a<code>^</code>2-a<code>^</code>4+a<code>^</code>2*Y<code>^</code>2</TT>
+<BR>
+ou encore si on pose <!-- MATH
+ $b^2=a^2-c^2$
+ -->
+<I>b</I><SUP>2</SUP> = <I>a</I><SUP>2</SUP> - <I>c</I><SUP>2</SUP> 
+<BR><TT>normal(subst(-c<code>^</code>2*X<code>^</code>2+c<code>^</code>2*a<code>^</code>2+X<code>^</code>2*a<code>^</code>2-a<code>^</code>4+a<code>^</code>2*Y<code>^</code>2,c<code>^</code>2=a<code>^</code>2-b<code>^</code>2))</TT>
+<BR>
+On obtient :
+<BR><TT>-a<code>^</code>2*b<code>^</code>2+a<code>^</code>2*Y<code>^</code>2+b<code>^</code>2*X<code>^</code>2</TT>
+<BR>
+c'est &#224; dire apr&#232;s division par <I>a</I><SUP>2</SUP><I>b</I><SUP>2</SUP>, <I>M</I> v&#233;rifie l'&#233;quation :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{X^2}{a^2}+\frac{Y^2}{b^2}=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="31" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img373.png"
+ ALT="$\displaystyle {\frac{{X^2}}{{a^2}}}$"> + <IMG
+ WIDTH="30" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img374.png"
+ ALT="$\displaystyle {\frac{{Y^2}}{{b^2}}}$"> = 1
+</DIV><P></P>
+
+<P>
+<B>Un autre exemple d'utilisation du r&#233;sultant</B>
+<BR>
+Soient 2 points fixes <I>F</I>1 et <I>F</I>2 et un point variable <I>A</I> sur le cercle de 
+centre <I>F</I>1 et de rayon 2<I>a</I>.
+On veut trouver l'&#233;quation cart&#233;sienne de l'enveloppe de la m&#233;diatrice <I>D</I>
+de <I>F</I>2<I>A</I> (on sait que la m&#233;diatrice de <I>F</I>2<I>A</I> est tangente &#224; l'ellipse de 
+foyers <I>F</I>1 et <I>F</I>2 et de grand axe 2<I>a</I>).
+<BR>
+Choisisons comme rep&#232;re orthonorm&#233; celui de centre <I>F</I>1 et d'axe <I>Ox</I> 
+port&#233; par le vecteur <!-- MATH
+ $\overrightarrow{F1F2}$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img367.png"
+ ALT="$ \overrightarrow{F1F2}$">. On a :
+<BR><!-- MATH
+ $A= (2a\cos(\theta);2a\sin(\theta))$
+ -->
+<I>A</I> = (2<I>a</I> cos(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$">);2<I>a</I> sin(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$">)) o&#249; <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$"> est l'angle (<I>Ox</I>, <I>OA</I>).
+On choisit comme param&#232;tre <!-- MATH
+ $t=\tan(\theta/2)$
+ -->
+<I>t</I> = tan(<IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img368.png"
+ ALT="$ \theta$">/2) pour que les coordonn&#233;es de 
+<I>A</I> soient une fonction rationnelle du param&#232;tre <I>t</I>. On a donc :
+<BR><!-- MATH
+ $\displaystyle A=(ax;ay)=(2a\frac{1-t^2}{1+t^2};2a\frac{2t}{1+t^2})$
+ -->
+<I>A</I> = (<I>ax</I>;<I>ay</I>) = (2<I>a</I><IMG
+ WIDTH="52" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.png"
+ ALT="$\displaystyle {\frac{{1-t^2}}{{1+t^2}}}$">;2<I>a</I><IMG
+ WIDTH="52" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img370.png"
+ ALT="$\displaystyle {\frac{{2t}}{{1+t^2}}}$">)
+<BR>
+On pose <I>F</I>1<I>F</I>2 = 2<I>c</I> et on note <I>I</I> le milieu de <I>AF</I>2. On a :
+<BR><I>F</I>2 = (2<I>c</I>, 0) et 
+<BR><!-- MATH
+ $\displaystyle I=(c+ax/2;ay/2)=(c+a\frac{1-t^2}{1+t^2};a\frac{2t1-t^2}{1+t^2})$
+ -->
+<I>I</I> = (<I>c</I> + <I>ax</I>/2;<I>ay</I>/2) = (<I>c</I> + <I>a</I><IMG
+ WIDTH="52" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.png"
+ ALT="$\displaystyle {\frac{{1-t^2}}{{1+t^2}}}$">;<I>a</I><IMG
+ WIDTH="67" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img371.png"
+ ALT="$\displaystyle {\frac{{2t1-t^2}}{{1+t^2}}}$">)
+<BR><I>D</I> est perpendiculaire &#224; <I>AF</I>2 donc <I>D</I> a pour &#233;quation :
+<I>eq</I>1 = 0 avec :
+<BR><!-- MATH
+ $eq1:=(x-ix)*(ax-2*c)+(y-iy)*ay$
+ -->
+<I>eq</I>1 : = (<I>x</I> - <I>ix</I>)*(<I>ax</I> - 2*<I>c</I>) + (<I>y</I> - <I>iy</I>)*<I>ay</I>
+<BR>
+L'enveloppe de <I>D</I> est donc le lieu de <I>M</I> intersection de <I>D</I> et de <I>D'</I> 
+d'&#233;quation <I>eq</I>2 = 0 avec <!-- MATH
+ $eq2:=diff(eq1,t)$
+ -->
+<I>eq</I>2 : = <I>diff</I> (<I>eq</I>1, <I>t</I>).
+<BR>
+On tape :
+<BR><TT>ax:=2*a*(1-t<code>^</code>2)/(1+t<code>^</code>2);ay:=2*a*2*t/(1+t<code>^</code>2);</TT>
+<BR><TT>ix:=(ax+2*c)/2; iy:=(ay/2)</TT>
+<BR><TT>eq1:=normal((x-ix)*(ax-2*c)+(y-iy)*ay)</TT>
+<BR><TT>eq2:=normal(diff(eq1,t))</TT>
+<BR><TT>factor(resultant(eq1,eq2,t))</TT>
+<BR>
+On obtient comme r&#233;sultant :
+<BR><TT>(-(64<SUP> . </SUP> a<code>^</code>2))<SUP> . </SUP>(x<code>^</code>2+y<code>^</code>2)<SUP> . </SUP>(x<code>^</code>2<SUP> . </SUP>a<code>^</code>2-x<code>^</code>2<SUP> . </SUP>c<code>^</code>2+-2<SUP> . </SUP>x<SUP> . </SUP>a<code>^</code>2<SUP> . </SUP>c+2<SUP> . </SUP>x<SUP> . </SUP>c<code>^</code>3- 
+<BR>
+a<code>^</code>4+2<SUP> . </SUP>a<code>^</code>2<SUP> . </SUP>c<code>^</code>2+a<code>^</code>2<SUP> . </SUP>y<code>^</code>2-c<code>^</code>4)</TT>
+<BR>
+Le facteur <TT>-64<SUP> . </SUP>(x<code>^</code>2+y<code>^</code>2)</TT> ne s'annule jamais donc l'&#233;quation du 
+lieu est :
+<BR><!-- MATH
+ $x^2a^2-x^2c^2+-2xa^2c+2xc^3-a^4+2a^2c^2+a^2y^2-c^4=0$
+ -->
+<I>x</I><SUP>2</SUP><I>a</I><SUP>2</SUP> - <I>x</I><SUP>2</SUP><I>c</I><SUP>2</SUP> + -2<I>xa</I><SUP>2</SUP><I>c</I> + 2<I>xc</I><SUP>3</SUP> - <I>a</I><SUP>4</SUP> +2<I>a</I><SUP>2</SUP><I>c</I><SUP>2</SUP> + <I>a</I><SUP>2</SUP><I>y</I><SUP>2</SUP> - <I>c</I><SUP>4</SUP> = 0
+<BR>
+En prenant l'origine du rep&#232;re en <I>O</I> milieu de <I>F</I>1<I>F</I>2, on retrouve comme
+pr&#233;c&#233;demment l'&#233;quation cart&#233;sienne de l'ellipse :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{X^2}{a^2}+\frac{Y^2}{b^2}=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="31" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img373.png"
+ ALT="$\displaystyle {\frac{{X^2}}{{a^2}}}$"> + <IMG
+ WIDTH="30" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img374.png"
+ ALT="$\displaystyle {\frac{{Y^2}}{{b^2}}}$"> = 1
+</DIV><P></P> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10006"
+  HREF="node482.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10000"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9996"
+  HREF="node480.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10002"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10004"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10007"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+<B> monter:</B> <A NAME="tex2html10001"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9997"
+  HREF="node480.html">Matrice de Sylvester de</A>
+ &nbsp; <B>  <A NAME="tex2html10003"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10005"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

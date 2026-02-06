@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les polyn&#244;mes</TITLE>
+<META NAME="description" CONTENT="Les polyn&#244;mes">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node462.html">
+<LINK REL="previous" HREF="node419.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node430.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9231"
+  HREF="node430.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9225"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9219"
+  HREF="node428.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9227"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9229"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9232"
+  HREF="node430.html">Les polyn&#244;mes &#224; une</A>
+<B> monter:</B> <A NAME="tex2html9226"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9220"
+  HREF="node428.html">&#201;crire avec des exponentielles</A>
+ &nbsp; <B>  <A NAME="tex2html9228"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9230"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009250000000000000000">
+Les polyn&#244;mes</A>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html9233"
+  HREF="node430.html">Les polyn&#244;mes &#224; une variable <TT>poly1[...]</TT></A>
+<LI><A NAME="tex2html9234"
+  HREF="node431.html">Les polyn&#244;mes &#224; plusieurs variables</A>
+<LI><A NAME="tex2html9235"
+  HREF="node432.html">Transformer le format interne dense  r&#233;cursif en une &#233;criture polyn&#244;miale : <TT>poly2symb r2e</TT></A>
+<LI><A NAME="tex2html9236"
+  HREF="node433.html">Transformer le format interne creux distribu&#233; du polyn&#244;me en une &#233;criture polyn&#244;miale : <TT>poly2symb r2e</TT></A>
+<LI><A NAME="tex2html9237"
+  HREF="node434.html">Transformer un polyn&#244;me en une liste (format interne r&#233;cursif dense) : <TT>e2r symb2poly</TT></A>
+<LI><A NAME="tex2html9238"
+  HREF="node435.html">Transformer un polyn&#244;me au format interne : <TT>e2r symb2poly</TT></A>
+<LI><A NAME="tex2html9239"
+  HREF="node436.html">Transformer un polyn&#244;me au format interne en une liste et r&#233;ciproquement : <TT>convert</TT></A>
+<LI><A NAME="tex2html9240"
+  HREF="node437.html">Coefficients d'un polyn&#244;me : <TT>coeff coeffs</TT></A>
+<LI><A NAME="tex2html9241"
+  HREF="node438.html">Degr&#233; d'un polyn&#244;me : <TT>degree</TT></A>
+<LI><A NAME="tex2html9242"
+  HREF="node439.html">Valuation d'un polyn&#244;me : <TT>valuation ldegree</TT></A>
+<LI><A NAME="tex2html9243"
+  HREF="node440.html">Coefficient du terme de plus haut degr&#233; d'un polyn&#244;me : <TT>lcoeff</TT></A>
+<LI><A NAME="tex2html9244"
+  HREF="node441.html">Coefficient du terme de plus bas degr&#233; d'un polyn&#244;me :
+<TT>tcoeff</TT></A>
+<LI><A NAME="tex2html9245"
+  HREF="node442.html">&#201;valuation d'un polyn&#244;me : <TT>peval polyEval</TT></A>
+<LI><A NAME="tex2html9246"
+  HREF="node443.html">Mise en facteur de <I>x</I><SUP>n</SUP> dans un polyn&#244;me : <TT>factor_xn</TT></A>
+<LI><A NAME="tex2html9247"
+  HREF="node444.html">PGCD des coefficients d'un polyn&#244;me : <TT>content</TT></A>
+<LI><A NAME="tex2html9248"
+  HREF="node445.html">Partie primitive d'un polyn&#244;me : <TT>primpart</TT></A>
+<LI><A NAME="tex2html9249"
+  HREF="node446.html">Factorisation sur les entiers : <TT>collect</TT></A>
+<LI><A NAME="tex2html9250"
+  HREF="node447.html">Factorisation : <TT>factor factoriser</TT></A>
+<LI><A NAME="tex2html9251"
+  HREF="node448.html">Factorisation sans facteur carr&#233; : <TT>sqrfree</TT></A>
+<LI><A NAME="tex2html9252"
+  HREF="node449.html">Liste des facteurs : <TT>factors</TT></A>
+<LI><A NAME="tex2html9253"
+  HREF="node450.html">&#201;valuer un polyn&#244;me : <TT>horner</TT></A>
+<LI><A NAME="tex2html9254"
+  HREF="node451.html">&#201;criture selon les puissances de (x-a) : <TT>ptayl</TT></A>
+<LI><A NAME="tex2html9255"
+  HREF="node452.html">Calcul avec les racines exactes d'un polyn&#244;me : <TT>rootof</TT></A>
+<LI><A NAME="tex2html9256"
+  HREF="node453.html">Racines exactes d'un polyn&#244;me : <TT>roots</TT></A>
+<LI><A NAME="tex2html9257"
+  HREF="node454.html">Coefficients d'un polyn&#244;me d&#233;fini par ses racines : <TT>pcoeff pcoef</TT></A>
+<LI><A NAME="tex2html9258"
+  HREF="node455.html">Troncature d'ordre <I>n</I> : <TT>truncate</TT></A>
+<LI><A NAME="tex2html9259"
+  HREF="node456.html">Convertir un d&#233;veloppement limit&#233; en polyn&#244;me : <TT>convert convertir</TT></A>
+<LI><A NAME="tex2html9260"
+  HREF="node457.html">Polyn&#244;mes al&#233;atoires : <TT>randpoly randPoly</TT></A>
+<LI><A NAME="tex2html9261"
+  HREF="node458.html">Changer l'ordre des variables : <TT>reorder</TT></A>
+<LI><A NAME="tex2html9262"
+  HREF="node459.html">Listee al&#233;atoire : <TT>ranm</TT></A>
+<LI><A NAME="tex2html9263"
+  HREF="node460.html">Interpolation de Lagrange : <TT>lagrange interp</TT></A>
+<LI><A NAME="tex2html9264"
+  HREF="node461.html">Les splines naturelles: <TT>spline</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

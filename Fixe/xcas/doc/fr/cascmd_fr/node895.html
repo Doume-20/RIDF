@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>G&#233;n&#233;ralit&#233;s sur les attributs</TITLE>
+<META NAME="description" CONTENT="G&#233;n&#233;ralit&#233;s sur les attributs">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node896.html">
+<LINK REL="previous" HREF="node894.html">
+<LINK REL="up" HREF="node894.html">
+<LINK REL="next" HREF="node896.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16357"
+  HREF="node896.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16351"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16345"
+  HREF="node894.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16353"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16355"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16358"
+  HREF="node896.html">Les commandes d'attributs</A>
+<B> monter:</B> <A NAME="tex2html16352"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16346"
+  HREF="node894.html">Les attributs des objets</A>
+ &nbsp; <B>  <A NAME="tex2html16354"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16356"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001231000000000000000">
+G&#233;n&#233;ralit&#233;s sur les attributs</A>
+</H2>
+Les attributs des objets graphiques peuvent &#234;tre d&#233;finis par des commandes 
+ou avec des param&#232;tres optionnels qui sont soit globaux soit locaux.
+<BR>
+Certains arguments optionnels, comme <TT>titre, labels</TT>, sont globaux, ils
+sont mis au d&#233;but d'une ligne de commandes ayant comme derni&#232;re instruction
+une instruction graphique et sont applicables &#224; toutes les instructions 
+graphiques de cette ligne de commandes. Par 
+exemple : <TT>titre="le point A et son conjugu&#233;";A:=point(1+i);B:=point(1-i)</TT>.
+Ils sont d&#233;scrits ci-apr&#232;s.
+<BR>
+Certains noms comme <TT>affichage, couleur, legende</TT> peuvent &#234;tre des 
+noms de commandes ou des noms de param&#232;tres optionnels :
+
+<UL>
+<LI>Les commandes s'appliquent &#224; l'objet graphique mis comme 
+argument ou, s'il n'y a pas d'arguments, modifient les attributs par d&#233;faut 
+qui seront utilis&#233;s pour les instructions graphiques qui suivent.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>couleur(rouge)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1 et toutes les commandes graphiques sans param&#232;tre optionnel de couleur seront dessin&#233;es en rouge</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>couleur(triangle(-1-i,1,1+i),bleu)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le triangle(-1-i,1,1+i) est dessin&#233; en bleu</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Il y a deux sortes d'attributs: les attributs globaux qui sont partag&#233;s
+par toutes les commandes graphiques affich&#233;es dans un m&#234;me &#233;cran 
+graphique et les attributs individuels.
+<BR>
+On tape (attribut individuel):
+<DIV ALIGN="CENTER">
+<TT>triangle(0,1,1+i,couleur=bleu)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le triangle(0,1,1+i) dessin&#233; en bleu</TT>
+</DIV>
+On tape (attribut global):
+<DIV ALIGN="CENTER">
+<TT>titre="medianes";triangle(-1-i,1,1+i);mediane(-1-i,1,1+i);mediane(1,-1-i,1+i);mediane(1+i,1,-1-i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le titre "medianes" pour le triangle(0,1,1+i) et ses m&#233;dianes</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16357"
+  HREF="node896.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16351"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16345"
+  HREF="node894.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16353"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16355"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16358"
+  HREF="node896.html">Les commandes d'attributs</A>
+<B> monter:</B> <A NAME="tex2html16352"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16346"
+  HREF="node894.html">Les attributs des objets</A>
+ &nbsp; <B>  <A NAME="tex2html16354"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16356"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

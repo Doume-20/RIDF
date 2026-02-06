@@ -1,0 +1,104 @@
+// fltk 7Fl_Tile 34 291 948 322
+[
+// fltk N4xcas7EditeurE 34 291 948 321
+1073 ,
+potence:= (a,b,n)-> 
+{ local L1,L2; 
+  b0:=b;  
+  b:=iquo(a,b0);  
+  a:=irem(a,b0);  
+  L1:=[b];  
+  L2:=[a];  
+  for (k:=1;(k<=n) && (a!=0);k:=k+1) { 
+      b:=iquo(a*10,b0);  
+      a:=irem(a*10,b0);  
+      L2:=append(L2,a);  
+      L1:=append(L1,b);  
+    };  
+  return([L1,L2]);  
+};
+division:= (a,b,n,t)-> 
+{ local L1,L2,p,q,r; 
+  L1:=[iquo(a,b)];  
+  r:=irem(a,b);  
+  for (k:=1;(k<=n) && (r!=0);k:=k+1) { 
+      q:=iquo(r+10^t);  
+      if (q==0) { 
+          p:=1;  
+        } 
+       else { 
+          p:=floor((ln(q))/(ln(10))+1);  
+        }; ;  
+      for (j:=p+1;j<=t;j:=j+1) { 
+          L1:=append(L1,0);  
+        };  
+      L1:=append(L1,q);  
+      r:=irem(r*10^t,b);  
+    };  
+  return(L1,r);  
+};
+rationnel:= (l1,l2)-> 
+{ local pui,s1,s2,n,p,np,pui; 
+  pui:=10;  
+  s2:=size(l2);  
+  n:=l2[0];  
+  for (k:=1;k<s2;k:=k+1) { 
+      pui:=pui*10;  
+      n:=n*10+l2[k];  
+    };  
+  p:=n/(pui-1);  
+  np:=l1[0];  
+  s1:=size(l1);  
+  pui:=1;  
+  for (k:=1;k<s1;k:=k+1) { 
+      pui:=pui*10;  
+      np:=np+(l1[k])/pui;  
+    };  
+  return(np+p/pui);  
+};
+,
+// fltk N4xcas10Log_OutputE 34 612 948 1
+
+]
+,
+// fltk 7Fl_Tile 34 615 948 74
+[
+// fltk N4xcas19Multiline_Input_tabE 34 615 948 30
+evalf(57/13)
+,
+// fltk N4xcas10Log_OutputE 34 645 948 1
+
+,
+// fltk N4xcas8EquationE 34 646 948 43
+4.38461538462
+]
+,
+// fltk 7Fl_Tile 34 691 948 52
+[
+// fltk N4xcas23Comment_Multiline_InputE 34 691 948 51
+On voit en ligne 1 les chiffres du quotient, en ligne 2 les "restes" (a gauche de la barre verticale de la potence),£on demande 10 chiffres significatifs, on voit la periodicite des restes
+,
+// fltk N4xcas10Log_OutputE 34 742 948 1
+
+]
+,
+// fltk 7Fl_Tile 34 745 948 114
+[
+// fltk N4xcas19Multiline_Input_tabE 34 745 948 30
+potence(57,13,10)
+,
+// fltk N4xcas10Log_OutputE 34 775 948 1
+
+,
+// fltk N4xcas8EquationE 34 776 948 83
+[[4,3,8,4,6,1,5,3,8,4,6],[5,11,6,8,2,7,5,11,6,8,2]]
+]
+,
+// fltk 7Fl_Tile 34 861 948 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 861 948 30
+
+,
+// fltk N4xcas10Log_OutputE 34 891 948 1
+
+]

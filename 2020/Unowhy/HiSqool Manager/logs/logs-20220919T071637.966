@@ -1,0 +1,60 @@
+2022-09-19 9:16:28 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_5.0.0.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\991\payload.jarb09e0a00dfd2340e.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +5ms
+2022-09-19 07:16:28.461: 2022-09-19 9:16:28 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:16:28.461:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:16:28.461:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:16:28.461:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:16:28.477:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:16:28.477:     at net.js:673:12
+2022-09-19 07:16:28.477:     at TCP.done (_tls_wrap.js:563:7) +2ms
+2022-09-19 07:16:28.477: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Error, error=Network, active=true +32ms
+2022-09-19 07:16:28.492: 2022-09-19 9:16:28 [4852] INFO [RequestPerformerService] Got disposed. +2ms
+2022-09-19 07:16:28.508: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:16:28.508: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Error Network. Waiting 30 seconds before retrying... +2ms
+2022-09-19 07:16:28.508: 2022-09-19 9:16:28 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/educadhoc_9.0.19.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\986\payload.jar78cad7ab55bb5afa.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +4ms
+2022-09-19 07:16:28.508: 2022-09-19 9:16:28 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:16:28.508:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:16:28.508:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:16:28.508:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:16:28.508:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:16:28.508:     at net.js:673:12
+2022-09-19 07:16:28.508:     at TCP.done (_tls_wrap.js:563:7) +2ms
+2022-09-19 07:16:28.508: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Error, error=Network, active=true +3ms
+2022-09-19 07:16:28.524: 2022-09-19 9:16:28 [4852] INFO [RequestPerformerService] Got disposed. +2ms
+2022-09-19 07:16:28.524: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:16:28.524: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Error Network. Waiting 30 seconds before retrying... +3ms
+2022-09-19 07:16:34.343: 2022-09-19 9:16:34 [4852] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg' -QuietInstall +5816ms
+2022-09-19 07:16:34.343: 2022-09-19 9:16:34 [4852] INFO [Runner] Running result: false +1ms
+2022-09-19 07:16:34.343: 2022-09-19 9:16:34 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +2ms
+2022-09-19 07:16:36.279: 2022-09-19 9:16:36 [4852] INFO [JS] Getting installed applications... +1943ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [KeyedObservableCollector] Got 10 items. 0 in, 0 out +617ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [KeyedObservableCollector] Sending 10 items +1ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:dde471f7f11b13043f2fb1e8586dbe29 for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +2ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:5238da14c9ec49ed27d246f3309a7e9b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +2ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +2ms
+2022-09-19 07:16:36.904: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2022-09-19 07:16:36.920: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +1ms
+2022-09-19 07:16:36.920: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2022-09-19 07:16:36.920: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +2ms
+2022-09-19 07:16:36.920: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/4TfPRFdCflq27KQ4qnK03RAMvus +2ms
+2022-09-19 07:16:36.920: 2022-09-19 9:16:36 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/QODDUA2_GlkI74Ov0Us8PkndMLg +2ms
+2022-09-19 07:16:36.935: 2022-09-19 9:16:36 [4852] INFO [KeyedObservableCollector] Got 10 items. 0 in, 0 out +21ms
+2022-09-19 07:16:36.935: 2022-09-19 9:16:36 [4852] INFO [KeyedObservableCollector] Sending 10 items +0ms
+2022-09-19 07:16:37.951: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1008ms
+2022-09-19 07:16:37.951: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +2ms
+2022-09-19 07:16:37.951: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2022-09-19 07:16:37.951: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-09-19 07:16:37.951: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows-3.11.0: context.platform==='win32' +0ms
+2022-09-19 07:16:37.951: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +4ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-9.0.19: context.platform==='win32' +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LeLivreScolaire-4.0.6: context.platform==='win32' +0ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +0ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels-Windows-5.0.0: context.platform==='win32' +0ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +0ms
+2022-09-19 07:16:37.966: 2022-09-19 9:16:37 [4852] INFO [DeviceConfigurationService]   => result: true +1ms

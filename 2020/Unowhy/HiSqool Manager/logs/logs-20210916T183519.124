@@ -1,0 +1,120 @@
+2021-09-16 20:35:02 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/TexMaker-Latex-5.0.4 (232) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_TexMaker-Latex-5.0.4.json +4ms
+2021-09-16 18:35:02.097: 2021-09-16 20:35:02 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\232\payload... +3ms
+2021-09-16 18:35:02.107: 2021-09-16 20:35:02 [5224] INFO [Runner] Creating configuration unit runner object... +13ms
+2021-09-16 18:35:02.107: 2021-09-16 20:35:02 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 18:35:02.115: 2021-09-16 20:35:02 [5224] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-09-16 18:35:02.390: 2021-09-16 20:35:02 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '58103a8a-46f4-4fd9-ab24-2fb342750f07').version +280ms
+2021-09-16 18:35:02.390: 2021-09-16 20:35:02 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:35:02.398: 2021-09-16 20:35:02 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:35:02.400: 2021-09-16 20:35:02 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\207\payload\application.ppkg, args=-QuietInstall... +2ms
+2021-09-16 18:35:04.533: 2021-09-16 20:35:04 [5224] INFO [JS] GUID package: 2be2a1dd-777f-45dc-8cb8-882f7f36439d +2135ms
+2021-09-16 18:35:07.283: 2021-09-16 20:35:07 [5224] INFO [JS] Install Result: 0 +2748ms
+2021-09-16 18:35:07.283: 2021-09-16 20:35:07 [5224] INFO [JS] Install Stdout: 
+2021-09-16 18:35:07.283: 
+2021-09-16 18:35:07.283: IsInstalled     : False
+2021-09-16 18:35:07.283: PackageID       : 3152267f-0e7e-45bb-9570-b793d506a6d6
+2021-09-16 18:35:07.283: PackageName     : Tectoglob3D
+2021-09-16 18:35:07.283: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\208\payload\application.ppkg
+2021-09-16 18:35:07.283: Description     : 
+2021-09-16 18:35:07.283: Rank            : 0
+2021-09-16 18:35:07.283: Altitude        : 5000
+2021-09-16 18:35:07.283: Version         : 1.47
+2021-09-16 18:35:07.283: OwnerType       : ITAdmin
+2021-09-16 18:35:07.283: Notes           : 
+2021-09-16 18:35:07.283: LastInstallTime : 15/09/2021 11:26:28
+2021-09-16 18:35:07.283: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-16 18:35:07.283:                   	Category:InitialCustomization
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:OOBE successfully configured.
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   7__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   8__ProvisioningCommands_DeviceContext_CommandFiles_7.provxml
+2021-09-16 18:35:07.283:                   	Category:Content
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   9__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-16 18:35:07.283:                   	Category:Scripts
+2021-09-16 18:35:07.283:                   	LastResult:Success
+2021-09-16 18:35:07.283:                   	Message:Provisioning succeeded
+2021-09-16 18:35:07.283:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283:                   
+2021-09-16 18:35:07.283: 
+2021-09-16 18:35:07.283: 
+2021-09-16 18:35:07.283:  +0ms
+2021-09-16 18:35:07.283: 2021-09-16 20:35:07 [5224] INFO [JS] Install Stderr:  +0ms
+2021-09-16 18:35:07.283: 2021-09-16 20:35:07 [5224] INFO [JS] Finishing Installation +0ms
+2021-09-16 18:35:07.283: 2021-09-16 20:35:07 [5224] INFO [Runner] Running result: true +0ms
+2021-09-16 18:35:07.283: 2021-09-16 20:35:07 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Tectoglob3D-1.47 (208) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Tectoglob3D-1.47.json +2ms
+2021-09-16 18:35:07.291: 2021-09-16 20:35:07 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\208\payload... +2ms
+2021-09-16 18:35:07.301: 2021-09-16 20:35:07 [5224] INFO [Runner] Creating configuration unit runner object... +11ms
+2021-09-16 18:35:07.303: 2021-09-16 20:35:07 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 18:35:07.303: 2021-09-16 20:35:07 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-16 18:35:08.152: 2021-09-16 20:35:08 [5224] INFO [JS] GUID package: 253191fb-2d92-4b35-87ed-4d3d18115876 +853ms
+2021-09-16 18:35:09.608: 2021-09-16 20:35:09 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'e95ff137-4888-481f-97cc-e0302d8ee23b').version +1451ms
+2021-09-16 18:35:09.608: 2021-09-16 20:35:09 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:35:09.608: 2021-09-16 20:35:09 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:35:09.608: 2021-09-16 20:35:09 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\222\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:35:11.508: 2021-09-16 20:35:11 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '105da565-d050-4a60-9c4f-556c6bdb5775').version +1899ms
+2021-09-16 18:35:11.508: 2021-09-16 20:35:11 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:35:11.508: 2021-09-16 20:35:11 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:35:11.508: 2021-09-16 20:35:11 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\230\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:35:12.185: 2021-09-16 20:35:12 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '0642f63e-c58e-4b3a-a5a2-0b04044373d4').version +673ms
+2021-09-16 18:35:12.185: 2021-09-16 20:35:12 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:35:12.185: 2021-09-16 20:35:12 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:35:12.185: 2021-09-16 20:35:12 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\224\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:35:13.720: 2021-09-16 20:35:13 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\226\payload\application.ppkg' -QuietInstall +1533ms
+2021-09-16 18:35:13.720: 2021-09-16 20:35:13 [5224] INFO [Runner] Running result: false +0ms
+2021-09-16 18:35:13.720: 2021-09-16 20:35:13 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LibManuels-3.7.4 (226) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LibManuels-3.7.4.json +2ms
+2021-09-16 18:35:18.771: 2021-09-16 20:35:18 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'cb17c373-bdce-42ab-9630-aaa143e0273b').version +5047ms
+2021-09-16 18:35:18.771: 2021-09-16 20:35:18 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:35:18.771: 2021-09-16 20:35:18 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:35:18.771: 2021-09-16 20:35:18 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\221\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:35:19.122: 2021-09-16 20:35:19 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '9ff58fa2-cb54-40fc-ab02-067dfdf1696c').version +345ms
+2021-09-16 18:35:19.124: 2021-09-16 20:35:19 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:35:19.124: 2021-09-16 20:35:19 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:35:19.124: 2021-09-16 20:35:19 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\234\payload\application.ppkg, args=-QuietInstall... +1ms

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer un nombre d&#233;cimal en rationnel : float2rational exact</TITLE>
+<META NAME="description" CONTENT="Transformer un nombre d&#233;cimal en rationnel : float2rational exact">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node257.html">
+<LINK REL="previous" HREF="node255.html">
+<LINK REL="up" HREF="node255.html">
+<LINK REL="next" HREF="node257.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6690"
+  HREF="node257.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6684"
+  HREF="node255.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6678"
+  HREF="node255.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6686"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6688"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6691"
+  HREF="node257.html">Partie enti&#232;re et fractionnaire</A>
+<B> monter:</B> <A NAME="tex2html6685"
+  HREF="node255.html">Les rationnels</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6679"
+  HREF="node255.html">Les rationnels</A>
+ &nbsp; <B>  <A NAME="tex2html6687"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6689"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00991000000000000000"></A><A NAME="5707"></A><A NAME="5708"></A><A NAME="5709"></A>
+<BR>
+Transformer un nombre d&#233;cimal en rationnel : <TT>float2rational exact</TT>
+</H2>
+<TT>float2rational</TT>  ou <TT>exact</TT> a comme param&#232;tre un nombre 
+d&#233;cimal <TT>d</TT> et renvoie un nombre rationnel <TT>q</TT> qui approche <TT>d</TT> 
+&#224; moins de <TT>epsilon</TT>. On
+d&#233;finit <TT>epsilon</TT> dans la configuration du <TT>cas</TT> (menu <TT>Cfg</TT>) ou 
+avec la commande <TT>cas_setup</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>float2rational(0.3670520231)</TT>
+</DIV>
+On obtient pour <TT>epsilon=1e-10</TT>:
+<DIV ALIGN="CENTER">
+<TT>127/346</TT>
+</DIV>
+Essayez d'entrer:
+<DIV ALIGN="CENTER">
+<TT>123/12+57/21</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>363/28</TT>
+</DIV>
+Puis :
+<DIV ALIGN="CENTER">
+<TT>evalf(363/28)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>12.9642857143</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>float2rational(12.9642857143)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>363/28</TT>
+</DIV>
+Si on m&#233;lange les deux repr&#233;sentations par exemple :
+<DIV ALIGN="CENTER">
+<TT>1/2+0.7</TT>
+</DIV>
+On obtient
+<DIV ALIGN="CENTER">
+<TT>1.2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>1/2+float2rational(0.7)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>6/5</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

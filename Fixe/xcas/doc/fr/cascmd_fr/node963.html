@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les arcs de cercle : arc</TITLE>
+<META NAME="description" CONTENT="Les arcs de cercle : arc">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node964.html">
+<LINK REL="previous" HREF="node962.html">
+<LINK REL="up" HREF="node961.html">
+<LINK REL="next" HREF="node964.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17352"
+  HREF="node964.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17346"
+  HREF="node961.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17340"
+  HREF="node962.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17348"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17350"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17353"
+  HREF="node964.html">Le cercle (compatibilit&#233; TI):</A>
+<B> monter:</B> <A NAME="tex2html17347"
+  HREF="node961.html">Les cercles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17341"
+  HREF="node962.html">Le cercle : circle</A>
+ &nbsp; <B>  <A NAME="tex2html17349"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17351"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012142000000000000000"></A><A NAME="25208"></A><A NAME="sec:arc"></A>
+<BR>
+Les arcs de cercle : <TT>arc</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node962.html#sec:cercle">9.14.1</A> pour cercles et arcs de cercle.
+<BR><TT>arc</TT> a de trois &#224; cinq arguments : deux points <TT>A,B</TT> (ou 
+deux nombres complexes <TT>a,b</TT>) et un nombre r&#233;el <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> repr&#233;sentant
+la mesure de l'arc <TT>AB</TT> en radians (<!-- MATH
+ $-2*\pi \leq \alpha \leq 2*\pi$
+ -->
+-2*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> 2*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">).
+le quatri&#232;me et le cinqui&#232;me ne sont pas obligatoires et sont des noms de
+variables qui contiendront le centre et le rayon du cercle qui porte l'arc.
+<BR>
+L'arc <TT>AB</TT> est donc port&#233; par le cercle de centre :
+<!-- MATH
+ $(a+b)/2+i*(b-a)/(2*\tan(\alpha/2))$
+ -->
+(<I>a</I> + <I>b</I>)/2 + <I>i</I>*(<I>b</I> - <I>a</I>)/(2*tan(<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">/2)).
+<BR><TT>arc(A,B,<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">)</TT> est l'arc d'o&#249; l'on voit le segment <TT>AB</TT> sous 
+l'angle <!-- MATH
+ $-\pi+\alpha/2$
+ -->
+- <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> + <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">/2 si <!-- MATH
+ $2\pi>\alpha$
+ -->
+2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> &gt; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">&gt;0, ou sous 
+l'angle <!-- MATH
+ $\pi+\alpha/2$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> + <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">/2 si <!-- MATH
+ $-2\pi<\alpha$
+ -->
+-2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> &lt; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">&lt;0.
+<BR>
+Pour avoir l'arc capable <TT>AB</TT> de mesure <IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$"> c'est &#224; dire l'arc 
+d'o&#249; l'on voit le segment <TT>AB</TT> sous l'angle <!-- MATH
+ $-\pi<\beta<\pi$
+ -->
+- <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> &lt; <IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$"> &lt; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> il faut 
+taper :
+<BR><TT>arc(A,B,2*(-pi+<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">))</TT> si <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> &gt; <IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">&gt;0 ou 
+<BR><TT>arc(A,B,2*(pi+<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">))</TT> si <!-- MATH
+ $-\pi<\beta$
+ -->
+- <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> &lt; <IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">&lt;0 .
+<BR><B>Attention</B>
+Le signe de <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> donne le sens de parcours de l'arc <TT>AB</TT> par exemple,
+<TT>arc(A,B,3*pi/2)</TT> et <TT>arc((A,B,-pi/2)</TT> forment un cercle complet.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>arc(1,i,pi/2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>L'arc (1,i) du cercle de centre 0 et de rayon 1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>arc(1,i,pi/2,C,r)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>L'arc (1,i) du cercle de centre C=point(0) et de rayon r=1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>arc(2,2*i,pi,C,r)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le demi-cercle de centre C=point(1+i), de rayon r=sqrt(2) et allant du point(2) au point(2*i) dans le sens +</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Lorsque <TT>cercle</TT> a quatre arguments, <TT>cercle</TT> dessine aussi un arc de
+cercle (cf <A HREF="node962.html#sec:cercle">9.14.1</A>).
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17352"
+  HREF="node964.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17346"
+  HREF="node961.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17340"
+  HREF="node962.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17348"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17350"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17353"
+  HREF="node964.html">Le cercle (compatibilit&#233; TI):</A>
+<B> monter:</B> <A NAME="tex2html17347"
+  HREF="node961.html">Les cercles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17341"
+  HREF="node962.html">Le cercle : circle</A>
+ &nbsp; <B>  <A NAME="tex2html17349"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17351"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

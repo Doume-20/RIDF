@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Quelques exemples</TITLE>
+<META NAME="description" CONTENT="Quelques exemples">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node34.html">
+<LINK REL="previous" HREF="node32.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node34.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html533"
+  HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html527"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html521"
+  HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html529"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html531"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html534"
+  HREF="node34.html">Style de programmation</A>
+<B> monter:</B> <A NAME="tex2html528"
+  HREF="node31.html">Programmation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html522"
+  HREF="node32.html">Le langage</A>
+ &nbsp; <B>  <A NAME="tex2html530"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html532"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00062000000000000000">
+Quelques exemples</A>
+</H2>
+Pour &#233;crire un programme, il est conseill&#233; d'ouvrir
+un &#233;diteur de programme avec le menu <code>Prg-&gt;Nouveau programme</code>. Le menu
+<code>Prg</code> de l'&#233;diteur permet d'entrer facilement les structures
+de programmation. On peut ensuite sauvegarder le texte du programme
+ind&#233;pendamment de la session de travail pour l'utiliser ensuite
+dans une autre session de travail.
+
+<P>
+Voici un programme qui donne le quotient et le 
+reste de la division euclidienne de 2 entiers en utilisant les fonctions 
+<code>iquo</code> qui renvoie le quotient et <code>irem</code> 
+qui renvoie le reste (c'est la fonction <code>iquorem</code> de <TT>Xcas</TT>).
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>idiv2</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>idiv2(a,b):={</code></TD>
+<TD ALIGN="LEFT"><code>idiv2(a,b):={</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code> local q,r;</code></TD>
+<TD ALIGN="LEFT"><code>  local q,r;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  if (b!=0) {</code></TD>
+<TD ALIGN="LEFT"><code>  si b!=0 alors</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    q:=iquo(a,b);</code></TD>
+<TD ALIGN="LEFT"><code>     q:=iquo(a,b);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    r:=irem(a,b);}</code></TD>
+<TD ALIGN="LEFT"><code>     r:=irem(a,b);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  else {</code></TD>
+<TD ALIGN="LEFT"><code>  sinon</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    q:=0;</code></TD>
+<TD ALIGN="LEFT"><code>     q:=0;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    r:=a;</code></TD>
+<TD ALIGN="LEFT"><code>     r:=a;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  }</code></TD>
+<TD ALIGN="LEFT"><code>  fsi</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  return [q,r];</code></TD>
+<TD ALIGN="LEFT"><code>  retourne [q,r];</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>}</code></TD>
+<TD ALIGN="LEFT"><code>}</code></TD>
+</TR>
+</TABLE>
+</DIV>
+Saisissez cette fonction <TT>idiv2</TT> dans un &#233;diteur de programme, testez-la
+(bouton <code>OK</code>) puis sauvegardez par exemple sous le nom
+<code>idiv2.cxx</code>. Vous pouvez utiliser cette fonction 
+dans une ligne de commande, en tapant par exemple <code>idiv2(25,15)</code>.
+Vous pourrez utiliser cette fonction dans une autre session <TT>Xcas</TT>, 
+en utilisant la commande
+<code>read("idiv2.cxx")</code> ou en l'ouvrant depuis un
+&#233;diteur de programme (et en le validant par OK).
+
+<P>
+Voici maintenant deux versions du calcul du PGCD de deux entiers, une
+version it&#233;rative, puis une version r&#233;cursive.
+<A NAME="831"></A>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>pgcd_iteratif</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>pgcdi(a,b):={</code></TD>
+<TD ALIGN="LEFT"><code>pgcdi(a,b):={</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code> local r;</code></TD>
+<TD ALIGN="LEFT"><code>  local r;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  while (b!=0) {</code></TD>
+<TD ALIGN="LEFT"><code>  tantque b!=0 faire</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    r:=irem(a,b);</code></TD>
+<TD ALIGN="LEFT"><code>     r:=irem(a,b);</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    a:=b;</code></TD>
+<TD ALIGN="LEFT"><code>     a:=b;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>    b:=r;</code></TD>
+<TD ALIGN="LEFT"><code>     b:=r;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  }</code></TD>
+<TD ALIGN="LEFT"><code>  ftantque</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>  return a;</code></TD>
+<TD ALIGN="LEFT"><code>  retourne a;</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>}:;</code></TD>
+<TD ALIGN="LEFT"><code>}:;</code></TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="840"></A>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>pgcd_recursif</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>pgcdr(a,b):={</code></TD>
+<TD ALIGN="LEFT"><code>pgcdr(a,b):={</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code> if (b!=0) return a;</code></TD>
+<TD ALIGN="LEFT"><code> si b!=0 alors retourne a;fsi</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code> return pgcdr(b,irem(a,b));</code></TD>
+<TD ALIGN="LEFT"><code> retourne pgcdr(b,irem(a,b));</code></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>}:;</code></TD>
+<TD ALIGN="LEFT"><code>}:;</code></TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+Il arrive parfois qu'un programme ne fonctionne pas du premier coup 
+comme pr&#233;vu (!)  
+Il est alors possible de l'ex&#233;cuter en mode pas-&#224;-pas pour le mettre 
+au point, avec la 
+<A NAME="1770"></A>
+commande <code>debug</code>. Pour plus de d&#233;tails consulter le menu
+<code>Aide-&gt;Interface</code>. Par exemple, pour le programme <code>idiv2</code>,
+on lance la mise au point en tapant :
+<BR><code>debug(idiv2(25,15))</code>
+<BR>
+Le débuggueur affiche automatiquement la valeur des paramètres <code>a,b</code> puis
+des variables locales <code>q,r</code> lors de l'exécution instruction par 
+instruction avec le bouton <code>sst</code>.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html533"
+  HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html527"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html521"
+  HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html529"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html531"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html534"
+  HREF="node34.html">Style de programmation</A>
+<B> monter:</B> <A NAME="tex2html528"
+  HREF="node31.html">Programmation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html522"
+  HREF="node32.html">Le langage</A>
+ &nbsp; <B>  <A NAME="tex2html530"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html532"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

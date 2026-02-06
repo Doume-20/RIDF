@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Savoir si on a un triangle isoc&#233;le : is_isoceles est_isocele</TITLE>
+<META NAME="description" CONTENT="Savoir si on a un triangle isoc&#233;le : is_isoceles est_isocele">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1004.html">
+<LINK REL="previous" HREF="node1002.html">
+<LINK REL="up" HREF="node998.html">
+<LINK REL="next" HREF="node1004.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17944"
+  HREF="node1004.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17938"
+  HREF="node998.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17932"
+  HREF="node1002.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17940"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17942"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17945"
+  HREF="node1004.html">Savoir si on a</A>
+<B> monter:</B> <A NAME="tex2html17939"
+  HREF="node998.html">Les propri&#233;t&#233;s</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17933"
+  HREF="node1002.html">Savoir si on a</A>
+ &nbsp; <B>  <A NAME="tex2html17941"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17943"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012185000000000000000"></A><A NAME="26244"></A><A NAME="26245"></A><A NAME="sec:estisocele2"></A>
+<BR>
+Savoir si on a un triangle isoc&#233;le : <TT>is_isoceles est_isocele</TT>
+</H2>
+<B>Voir aussi :</B>  <A HREF="node1093.html#sec:estisocele3">10.12.10</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>est_isocele</TT> est une fonction bool&#233;enne ayant comme 
+argument trois points ou un objet g&#233;om&#233;trique.
+<BR><TT>est_isocele</TT> vaut 1 (resp 2, 3) si les trois points forment un 
+triangle isoc&#233;le ou si l'objet g&#233;om&#233;trique est un triangle isoc&#233;le dont
+l'angle portant les deux cot&#233;s &#233;gaux est d&#233;sign&#233; par le premier (resp 
+second, troisi&#232;me) argument, ou vaut 4 si les trois points forment un 
+triangle &#233;quilat&#233;ral, ou si l'objet g&#233;om&#233;trique est un triangle 
+&#233;quilat&#233;ral, et vaut 0 sinon.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>est_isocele(1,1+i,i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>T:=triangle_isocele(0,1,pi/4);est_isocele(T)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>T:=triangle_isocele(0,1,pi/4,C);est_isocele(T[0])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+En effet <TT>T[0]</TT> d&#233;signe un triangle car <TT>T</TT> est une liste compos&#233;e 
+du triangle et de son sommet <TT>C</TT>.
+<BR>
+On tape <TT>affixe(C)</TT> et on obtient <TT>(sqrt(2))/2+((i)*sqrt(2))/2</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>est_isocele(1+i,-1+i,-i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17944"
+  HREF="node1004.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17938"
+  HREF="node998.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17932"
+  HREF="node1002.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17940"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17942"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17945"
+  HREF="node1004.html">Savoir si on a</A>
+<B> monter:</B> <A NAME="tex2html17939"
+  HREF="node998.html">Les propri&#233;t&#233;s</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17933"
+  HREF="node1002.html">Savoir si on a</A>
+ &nbsp; <B>  <A NAME="tex2html17941"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17943"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

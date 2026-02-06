@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Configuration du Cas</TITLE>
+<META NAME="description" CONTENT="Configuration du Cas">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node35.html">
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="up" HREF="node33.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2794"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2788"
+  HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2782"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2790"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2792"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2795"
+  HREF="node35.html">Configuration du graphique avec</A>
+<B> monter:</B> <A NAME="tex2html2789"
+  HREF="node33.html">Les diff&#233;rentes configurations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2783"
+  HREF="node33.html">Les diff&#233;rentes configurations</A>
+ &nbsp; <B>  <A NAME="tex2html2791"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2793"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00461000000000000000"></A><A NAME="sec:configcas"></A><A NAME="610"></A>
+<BR>
+Configuration du Cas
+</H2>
+
+<UL>
+<LI><TT>Prog style</TT> si on veut programmer en un autre langage : on peut 
+choisir <TT>maple</TT>, <TT>mupad</TT> ou <TT>ti89/92</TT>,
+</LI>
+<LI><TT>eval</TT>&nbsp;: nombre maximum d'&#233;valuations r&#233;cursives en mode interactif. Par exemple,
+si on ex&#233;cute dans l'ordre <code>a:=b+1</code> et <code>b:=5</code> puis on &#233;value <code>a</code>, la valeur
+renvoy&#233;e sera <code>b+1</code> si <code>eval</code> vaut 1 et <code>6</code> si <code>eval</code> est plus grand que 1.
+</LI>
+<LI><TT>prog</TT>&nbsp;: comme ci-dessus mais lorsqu'un programme est ex&#233;cut&#233;. On utilise en principe
+le niveau 1 d'&#233;valuation &#224; l'int&#233;rieur d'un programme.
+</LI>
+<LI><TT>recurs</TT> pour d&#233;terminer le nombre maximum d'appels r&#233;cursifs :
+par defaut c'est 50. Il n'y a pas de limite impos&#233;e par l'interface de 
+<TT>Xcas</TT>, par contre si on met une borne trop &#233;lev&#233;e, c'est la pile du 
+programme qui risque de d&#233;border en provoquant un segmentation fault. 
+Le moment o&#249; cela se produit d&#233;pend de la fonction, car la pile est aussi 
+utilis&#233;e pour les appels r&#233;cursifs des fonctions C++ de giac,
+</LI>
+<LI><TT>debug</TT>&nbsp;: affiche des informations interm&#233;diaires (en bleu) sur les algorithmes
+utilis&#233;s par giac en fonction du niveau (0 = pas d'info).
+</LI>
+<LI><TT>maxiter</TT>&nbsp;: nombre maximal d'it&#233;rations pour la m&#233;thode de Newton
+</LI>
+<LI><TT>Flottants</TT> on peut choisr <TT>Standard Scientific Engineer</TT> pour que l'affichage des nombres d&#233;cimaux se fasse selon :
+
+<UL>
+<LI>la notation standard : <TT>150.12</TT> sera not&#233; <TT>150.12</TT>,
+</LI>
+<LI>la notation scientifique : <TT>150.12</TT> sera not&#233; <TT>1.501200000000e+02</TT>,
+</LI>
+<LI>la notation des ing&#233;nieurs : <TT>150.12</TT> sera not&#233; <TT>150.12e0</TT>,
+</LI>
+</UL>
+</LI>
+<LI><TT>Chiffres</TT> pour d&#233;t&#233;rminer le nombre de chiffres 
+significatifs. Si on choisit moins de 14 chiffres, les calculs sont quand 
+m&#234;me faits avec 14 chiffres mais l'affichage n'en montre que ce que l'on 
+demande.
+</LI>
+<LI><TT>epsilon</TT> d&#233;termine la valeur de <TT>epsilon</TT> utilis&#233;e dans 
+<TT>epsilon2zero</TT>,
+</LI>
+<LI><TT>proba</TT>&nbsp;: si cette valeur est non nulle, Giac peut utiliser des 
+algorithmes non d&#233;terministes et renvoyer une r&#233;ponse qui a alors une 
+probabilit&#233; d'&#234;tre fausse inf&#233;rieure &#224; la valeur donn&#233;e. C'est par exemple le 
+cas pour le calcul du d&#233;terminant d'une grande matrice &#224; coefficients entiers.
+</LI>
+<LI><TT>approx</TT> on coche cette case si on veut travailler en mode 
+num&#233;rique : si cette case n'est pas coch&#233;e on travaille en mode exact ou 
+formel. Lorsqu'on travaille en mode exact on peut avoir une &#233;valuation 
+num&#233;rique en tapant sur la touche num ou en utilisant la commande <TT>evalf</TT>
+ou encore en mettant des nombres decimaux (par exemple 1.0/2=0.5 alors que 1/2 
+est inchang&#233;),
+</LI>
+<LI><TT>taches</TT> pour faire du parallelisme, dans le futur..., 
+</LI>
+<LI><TT>Base (Entiers)</TT> pour travailler en base 10, 16 ou 8, 
+</LI>
+<LI><TT>radian</TT> est l'unit&#233; d'angle si cette case est coch&#233;e, sinon 
+l'unit&#233; d'angle est le  degr&#233;,
+</LI>
+<LI><TT>puissance croissante</TT> pour que l'affichage des polyn&#244;mes se fasse selon
+les puissances croissantes apr&#232;s l'utilisation de commandes comme 
+<TT>normal</TT> ou <TT>simplify</TT>,
+</LI>
+<LI><TT>Complex</TT> on coche cette case pour travailler en mode complexe : si 
+cette case n'est pas coch&#233;e on travaille en mode r&#233;el. Certaines commandes 
+cependant sont ind&#233;pendante du mode choisi comme <TT>cpartfrac</TT>, 
+<TT>csolve</TT> ou <TT>cFactor</TT>,
+</LI>
+<LI><TT>Variables_complexes</TT> on coche cette case pour travailler avec des 
+variables formelles complexes : si cette case n'est pas coch&#233;e les variables 
+formelles sont r&#233;elles (si la variable <TT>a</TT> n'est pas 
+affect&#233;e  <TT>re(a)=conj(a)=a</TT> et <TT>im(a)=0</TT>). Mais attention dans 
+<TT>csolve</TT> l'inconnue est toujours consid&#233;r&#233;e comme une variable formelle
+complexe et dans <TT>solve</TT> l'inconnue est consid&#233;r&#233;e comme une variable 
+formelle complexe seulement si l'equation &#224; r&#233;soudre contient <TT>i</TT> ou 
+bien si on est en mode  complexe,
+</LI>
+<LI><TT>puissance croissante</TT>&nbsp;: affiche les d&#233;veloppements de polyn&#244;mes selon les
+puissances croissantes ou d&#233;croissantes
+</LI>
+<LI><TT>All_trig_sol</TT>&nbsp;: renvoie toutes les solutions d'une &#233;quation trigonom&#233;trique
+(par exemple <code>solve(cos(x)=0)</code>) &#224; l'aide de variables enti&#232;res ou seulement les
+solutions principales.
+</LI>
+<LI><TT>Sqrt</TT>&nbsp;: si coch&#233;, 
+<TT>factor</TT> factorise les polyn&#244;mes du second degr&#233;, m&#234;me si les facteurs ne sont
+pas dans le corps de base des coefficients.
+</LI>
+<LI><TT>Appliquer</TT> pour avoir cette configuration,
+</LI>
+<LI><TT>Sauver</TT> pour avoir cette configuration par d&#233;faut,
+</LI>
+<LI><TT>Annuler</TT> pour revenir &#224; l'ancienne configuration.
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2794"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2788"
+  HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2782"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2790"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2792"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2795"
+  HREF="node35.html">Configuration du graphique avec</A>
+<B> monter:</B> <A NAME="tex2html2789"
+  HREF="node33.html">Les diff&#233;rentes configurations</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2783"
+  HREF="node33.html">Les diff&#233;rentes configurations</A>
+ &nbsp; <B>  <A NAME="tex2html2791"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2793"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

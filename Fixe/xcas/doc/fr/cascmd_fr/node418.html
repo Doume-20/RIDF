@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Un exercice utilisant fft</TITLE>
+<META NAME="description" CONTENT="Un exercice utilisant fft">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node417.html">
+<LINK REL="up" HREF="node408.html">
+<LINK REL="next" HREF="node419.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9070"
+  HREF="node419.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9064"
+  HREF="node408.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9060"
+  HREF="node417.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9066"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9068"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9071"
+  HREF="node419.html">Les Exponentielles et les</A>
+<B> monter:</B> <A NAME="tex2html9065"
+  HREF="node408.html">Transform&#233;e de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9061"
+  HREF="node417.html">L'inverse de la transform&#233;e</A>
+ &nbsp; <B>  <A NAME="tex2html9067"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9069"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009235000000000000000">
+Un <B>exercice</B> utilisant <TT>fft</TT></A>
+</H2>
+Voici un relev&#233; des temp&#233;ratures <I>T</I>, en degr&#233; Celsius, au temps <I>t</I> :
+<BR><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">t</TD>
+<TD ALIGN="RIGHT">0</TD>
+<TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="RIGHT">9</TD>
+<TD ALIGN="RIGHT">12</TD>
+<TD ALIGN="RIGHT">15</TD>
+<TD ALIGN="RIGHT">19</TD>
+<TD ALIGN="RIGHT">21</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">T</TD>
+<TD ALIGN="RIGHT">11</TD>
+<TD ALIGN="RIGHT">10</TD>
+<TD ALIGN="RIGHT">17</TD>
+<TD ALIGN="RIGHT">24</TD>
+<TD ALIGN="RIGHT">32</TD>
+<TD ALIGN="RIGHT">26</TD>
+<TD ALIGN="RIGHT">23</TD>
+<TD ALIGN="RIGHT">19</TD>
+</TR>
+</TABLE>
+<BR>
+Quelle est la temp&#233;rature &#224; 13h45 ?
+<BR>
+On a <I>N</I> = 8 = 2*<I>m</I>.
+<BR>
+Le polyn&#244;me d'interpolation est :
+<BR><!-- MATH
+ $p(t)=1/2p_{-m}(\exp(-2i\pi mt/24)+\exp(2i\pi mt/24))+\sum_{k=-m+1}^{m-1}p_k \exp(2i\pi kt/24)$
+ -->
+<I>p</I>(<I>t</I>) = 1/2<I>p</I><SUB>-m</SUB>(exp(- 2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"><I>mt</I>/24) + exp(2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"><I>mt</I>/24)) + <IMG
+ WIDTH="81" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img332.png"
+ ALT="$ \sum_{{k=-m+1}}^{{m-1}}$"><I>p</I><SUB>k</SUB>exp(2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"><I>kt</I>/24) 
+<BR>
+et on a 
+<!-- MATH
+ $p_k=1/N*\sum_{k=j}^{N-1}T_k \exp(2i\pi k/N)$
+ -->
+<I>p</I><SUB>k</SUB> = 1/<I>N</I>*<IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.png"
+ ALT="$ \sum_{{k=j}}^{{N-1}}$"><I>T</I><SUB>k</SUB>exp(2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"><I>k</I>/<I>N</I>)
+<BR>
+On tape :
+<BR><TT>q:=1/8*fft([11,10,17,24,32,26,23,19])</TT>
+<BR>
+On obtient :
+<BR><TT>[20,-4.5+1.7*i,0.37+0.88*i,-0.77+0.22*i,0.5,
+<BR>-0.77-0.22*i,0.38-0.88*i,-4.5-1.7*i]</TT>
+<BR>
+ou avec plus de d&#233;cimales :
+<BR><I>p</I><SUB>0</SUB> = 20.25,
+<BR> <!-- MATH
+ $p_1=-4.48115530061+1.72227182413*i=\overline{p_{-1}}$
+ -->
+<I>p</I><SUB>1</SUB> = - 4.48115530061 + 1.72227182413*<I>i</I> = <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.png"
+ ALT="$ \overline{{p_{-1}}}$">,
+<BR><!-- MATH
+ $p_2=0.375+0.875*i=\overline{p_{-2}}$
+ -->
+<I>p</I><SUB>2</SUB> = 0.375 + 0.875*<I>i</I> = <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img335.png"
+ ALT="$ \overline{{p_{-2}}}$">,
+<BR><!-- MATH
+ $p_3=-0.768844699385+0.222271824132*i=\overline{p_{-3}}$
+ -->
+<I>p</I><SUB>3</SUB> = - 0.768844699385 + 0.222271824132*<I>i</I> = <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img336.png"
+ ALT="$ \overline{{p_{-3}}}$">,
+<BR> <!-- MATH
+ $p_{-4}=0.5$
+ -->
+<I>p</I><SUB>-4</SUB> = 0.5
+car on a :
+<BR><!-- MATH
+ $q=[q_0,...q_{N-1}]=[p_0,..p_{\frac{N}{2}-1},p_{-\frac{N}{2}},..,p_{-1}]=\frac{1}{N}F_N([y_0,..y_{N-1}])={\tt\frac{1}{N}fft(y)}$
+ -->
+<I>q</I> = [<I>q</I><SUB>0</SUB>,...<I>q</I><SUB>N-1</SUB>] = [<I>p</I><SUB>0</SUB>,..<I>p</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$">-1</SUB>, <I>p</I><SUB>-<IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB>,.., <I>p</I><SUB>-1</SUB>] = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><I>F</I><SUB>N</SUB>([<I>y</I><SUB>0</SUB>,..<I>y</I><SUB>N-1</SUB>]) = <IMG
+ WIDTH="65" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img337.png"
+ ALT="$ \tt\frac{1}{N}fft(y)$">
+<BR>
+On calcule la valeur <I>T</I>0 du polyn&#244;me d'interpolation au point 
+<!-- MATH
+ $t0=13,75=13+3/4=55/4$
+ -->
+<I>t</I>0 = 13, 75 = 13 + 3/4 = 55/4.
+<BR>
+On a :
+<BR><TT>q:=[20.25,-4.48115530061+1.72227182413*i,-0.375+0.875*i,
+<BR>-0.768844699385+0.222271824132*i,0.5,
+<BR>-0.768844699385-0.222271824132*i,
+<BR>-0.375-0.875*i,-4.48115530061-1.72227182413*i]</TT>
+<BR>
+On pose :
+<BR><TT>pp:=[q[4],q[5],q[6],q[7],q[0],q[1],q[2],q[3]]</TT>
+<BR>
+On a <!-- MATH
+ $p_k=pp[k+4]$
+ -->
+<I>p</I><SUB>k</SUB> = <I>pp</I>[<I>k</I> + 4] pour <I>k</I> = - 4...3
+<BR>
+On tape :
+<BR><TT>t0(j):=exp(2*i*pi*(13+3/4)/24*j)</TT>
+<BR><TT>T0:=1/2*pp[0]*(t0(4)+t0(-4))+sum(pp[j+4]*t0(j),j,-3,3)</TT>
+<BR><TT>evalf(sincos(T0))</TT>
+<BR>
+On obtient :
+<BR><TT>29.4863181684</TT>
+<BR>
+On pr&#233;voit donc une temp&#233;rature de 29.49 degr&#233;s Celsius.
+<BR>
+On tape :
+<BR><TT>q1:=[q[4]/2,q[3],q[2],q[1],q[0]/2]</TT>
+<BR><TT>a:=t0(1)</TT> (ou <TT>a:=-exp(i*pi*7/48)</TT>)
+<BR><TT>g(x):=r2e(q1,x)</TT>
+<BR><TT>evalf(2*re(g(a)))</TT>
+<BR>
+ou encore
+<BR><TT>2.0*re(q[0]/2+q[1]*t0(1)+q[2]*t0(2)+q[3]*t0(3)+q[4]/2*t0(4))</TT>
+<BR>
+On obtient :
+<BR><TT>29.4863181684</TT>
+<BR><B>Remarque</B>
+<BR>
+Si on utilise le polyn&#244;me d'interpolation de Lagrange (on interpole par un 
+polyn&#244;me non p&#233;riodique).
+<BR>
+On tape :
+<BR><TT>l1:=[0,3,6,9,12,15,18,21]</TT>
+<BR><TT>l2:=[11,10,17,24,32,26,23,19]</TT>
+<BR><TT>subst(lagrange(l1,l2,13+3/4),x=13+3/4)</TT>
+<BR>
+On obtient :
+<BR><!-- MATH
+ ${\tt\displaystyle \frac{8632428959}{286654464}\simeq 30.1144061688}$
+ -->
+<IMG
+ WIDTH="238" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img338.png"
+ ALT="$ \tt\displaystyle \frac{8632428959}{286654464}\simeq 30.1144061688$">
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9070"
+  HREF="node419.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9064"
+  HREF="node408.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9060"
+  HREF="node417.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9066"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9068"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9071"
+  HREF="node419.html">Les Exponentielles et les</A>
+<B> monter:</B> <A NAME="tex2html9065"
+  HREF="node408.html">Transform&#233;e de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9061"
+  HREF="node417.html">L'inverse de la transform&#233;e</A>
+ &nbsp; <B>  <A NAME="tex2html9067"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9069"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

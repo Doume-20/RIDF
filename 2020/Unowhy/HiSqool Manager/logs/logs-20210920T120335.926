@@ -1,0 +1,212 @@
+2021-09-20 14:03:27 [5224] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +642ms
+2021-09-20 12:03:27.351: 2021-09-20 14:03:27 [5224] INFO [Runner] Running result: false +0ms
+2021-09-20 12:03:27.351: 2021-09-20 14:03:27 [5224] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2021-09-20 12:03:28.944: 2021-09-20 14:03:28 [5224] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\79\payload\libmanuels.ppkg' -QuietInstall +1598ms
+2021-09-20 12:03:28.960: 2021-09-20 14:03:28 [5224] INFO [Runner] Running result: false +1ms
+2021-09-20 12:03:28.960: 2021-09-20 14:03:28 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels-Windows (79) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels-Windows.json +2ms
+2021-09-20 12:03:30.022: 2021-09-20 14:03:30 [5224] INFO [JS] Version of current package: 1.1 +1070ms
+2021-09-20 12:03:31.584: 2021-09-20 14:03:31 [5224] INFO [JS] Version of current package: 5.0 +1562ms
+2021-09-20 12:03:31.912: 2021-09-20 14:03:31 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +320ms
+2021-09-20 12:03:31.912: 2021-09-20 14:03:31 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-20 12:03:31.912: 2021-09-20 14:03:31 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-20 12:03:31.912: 2021-09-20 14:03:31 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-20 12:03:32.037: 2021-09-20 14:03:32 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '0642f63e-c58e-4b3a-a5a2-0b04044373d4').version +129ms
+2021-09-20 12:03:32.037: 2021-09-20 14:03:32 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-20 12:03:32.037: 2021-09-20 14:03:32 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-20 12:03:32.037: 2021-09-20 14:03:32 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\224\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-20 12:03:32.224: 2021-09-20 14:03:32 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'e89266ec-30ec-4a0e-b7c4-7ae34a541fb6').version +174ms
+2021-09-20 12:03:32.224: 2021-09-20 14:03:32 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-20 12:03:32.224: 2021-09-20 14:03:32 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-20 12:03:32.224: 2021-09-20 14:03:32 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\202\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-20 12:03:32.943: 2021-09-20 14:03:32 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '8dac98da-8b8d-468c-94f0-dacc43930496').version +716ms
+2021-09-20 12:03:32.943: 2021-09-20 14:03:32 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-20 12:03:32.943: 2021-09-20 14:03:32 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-20 12:03:32.943: 2021-09-20 14:03:32 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\225\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-20 12:03:32.974: 2021-09-20 14:03:32 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'cb17c373-bdce-42ab-9630-aaa143e0273b').version +28ms
+2021-09-20 12:03:32.974: 2021-09-20 14:03:32 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-20 12:03:32.974: 2021-09-20 14:03:32 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-20 12:03:32.974: 2021-09-20 14:03:32 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\221\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-20 12:03:33.615: 2021-09-20 14:03:33 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '58103a8a-46f4-4fd9-ab24-2fb342750f07').version +639ms
+2021-09-20 12:03:33.615: 2021-09-20 14:03:33 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-20 12:03:33.615: 2021-09-20 14:03:33 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-20 12:03:33.615: 2021-09-20 14:03:33 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\207\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-20 12:03:34.833: 2021-09-20 14:03:34 [5224] INFO [JS] Result: 2 +1229ms
+2021-09-20 12:03:34.833: 2021-09-20 14:03:34 [5224] INFO [JS] Stdout: Current logged in user: @{Username=}
+2021-09-20 12:03:34.833: Current logged in user SID: 
+2021-09-20 12:03:34.833: Custom shell enabled: False
+2021-09-20 12:03:34.833: Custom shell command:  +1ms
+2021-09-20 12:03:34.848: 2021-09-20 14:03:34 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-20 12:03:34.848: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">new-object : Constructeur introuvable. Impossible de trouver un constructeur appropri� pour le type _x000D__x000A_</S><S S="Error">System.Security.principal.NTAccount._x000D__x000A_</S><S S="Error">Au caract�re C:\Program Files\Unowhy\HiSqool _x000D__x000A_</S><S S="Error">Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1:15 : 22_x000D__x000A_</S><S S="Error">+ ... oggedSid = (new-object System.Security.principal.NTAccount($CurrentLo ..._x000D__x000A_</S><S S="Error">+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_x000D__x000A_</S><S S="Error">    + CategoryInfo          : ObjectNotFound: (:) [New-Object], PSArgumentException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : CannotFindAppropriateCtor,Microsoft.PowerShell.Commands.NewObjectCommand_x000D__x000A_</S><S S="Error"> _x000D__x000A_</S><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Current logged in user: @{Username=}</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Current logged in user: @{Username=}</ToString><Props><S N="Message">Current logged in user: @{Username=}</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-20T14:03:32.7246688+02:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">2620</U32><U32 N="NativeThreadId">7008</U32><U32 N="ManagedThreadId">10</U32></Props></Obj><Obj S="information" RefId="5"><TNRef RefId="1" /><ToString>Current logged in user SID: </ToString><Props><Obj N="MessageData" RefId="6"><TNRef RefId="2" /><ToString>Current logged in user SID: </ToString><Props><S N="Message">Current logged in user SID: </S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-20T14:03:33.9898882+02:00</DT><Obj N="Tags" RefId="7"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">2620</U32><U32 N="NativeThreadId">7008</U32><U32 N="ManagedThreadId">10</U32></Props></Obj><Obj S="information" RefId="8"><TNRef RefId="1" /><ToString>Custom shell enabled: False</ToString><Props><Obj N="MessageData" RefId="9"><TNRef RefId="2" /><ToString>Custom shell enabled: False</ToString><Props><S N="Message">Custom shell enabled: False</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-20T14:03:34.5209664+02:00</DT><Obj N="Tags" RefId="10"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">2620</U32><U32 N="NativeThreadId">7008</U32><U32 N="ManagedThreadId">10</U32></Props></Obj><Obj S="information" RefId="11"><TNRef RefId="1" /><ToString>Custom shell command: </ToString><Props><Obj N="MessageData" RefId="12"><TNRef RefId="2" /><ToString>Custom shell command: </ToString><Props><S N="Message">Custom shell command: </S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-20T14:03:34.552206+02:00</DT><Obj N="Tags" RefId="13"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">2620</U32><U32 N="NativeThreadId">7008</U32><U32 N="ManagedThreadId">10</U32></Props></Obj></Objs> +1ms
+2021-09-20 12:03:35.348: 2021-09-20 14:03:35 [5224] INFO [JS] Finishing Installation +510ms
+2021-09-20 12:03:35.348: 2021-09-20 14:03:35 [5224] INFO [JS] Result: 0 +1ms
+2021-09-20 12:03:35.364: 2021-09-20 14:03:35 [5224] INFO [JS] Stdout: Package installation failed, error code = -2147024713 (800700B7)
+2021-09-20 12:03:35.364: 
+2021-09-20 12:03:35.364: 
+2021-09-20 12:03:35.364: IsInstalled     : False
+2021-09-20 12:03:35.364: PackageID       : 10108c63-247d-41bd-92fa-2e15beeb2c93
+2021-09-20 12:03:35.364: PackageName     : Educadhoc
+2021-09-20 12:03:35.364: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\85\payload\educadhoc.ppkg
+2021-09-20 12:03:35.364: Description     : 
+2021-09-20 12:03:35.364: Rank            : 0
+2021-09-20 12:03:35.364: Altitude        : 5000
+2021-09-20 12:03:35.364: Version         : 8.0
+2021-09-20 12:03:35.364: OwnerType       : ITAdmin
+2021-09-20 12:03:35.364: Notes           : 
+2021-09-20 12:03:35.364: LastInstallTime : 14/09/2021 20:59:37
+2021-09-20 12:03:35.364: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-20 12:03:35.364:                   	Category:InitialCustomization
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:OOBE successfully configured.
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   7__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   8__ProvisioningCommands_DeviceContext_CommandFiles_7.provxml
+2021-09-20 12:03:35.364:                   	Category:Content
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   9__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-20 12:03:35.364:                   	Category:Scripts
+2021-09-20 12:03:35.364:                   	LastResult:Success
+2021-09-20 12:03:35.364:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.364:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364:                   
+2021-09-20 12:03:35.364: 
+2021-09-20 12:03:35.364: 
+2021-09-20 12:03:35.364:  +1ms
+2021-09-20 12:03:35.364: 2021-09-20 14:03:35 [5224] INFO [JS] Stderr:  +0ms
+2021-09-20 12:03:35.364: 2021-09-20 14:03:35 [5224] INFO [Runner] Running result: true +0ms
+2021-09-20 12:03:35.364: 2021-09-20 14:03:35 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (85) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +2ms
+2021-09-20 12:03:35.489: 2021-09-20 14:03:35 [5224] INFO [JS] Finishing Installation +122ms
+2021-09-20 12:03:35.489: 2021-09-20 14:03:35 [5224] INFO [JS] Result: 0 +1ms
+2021-09-20 12:03:35.489: 2021-09-20 14:03:35 [5224] INFO [JS] Stdout: Package installation failed, error code = -2147024713 (800700B7)
+2021-09-20 12:03:35.489: 
+2021-09-20 12:03:35.489: 
+2021-09-20 12:03:35.489: IsInstalled     : False
+2021-09-20 12:03:35.489: PackageID       : 76c308b8-e50d-464f-b10d-7bf546eaeb93
+2021-09-20 12:03:35.489: PackageName     : LeLivreScolaire
+2021-09-20 12:03:35.489: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\86\payload\lelivrescolaire.ppkg
+2021-09-20 12:03:35.489: Description     : 
+2021-09-20 12:03:35.489: Rank            : 0
+2021-09-20 12:03:35.489: Altitude        : 5000
+2021-09-20 12:03:35.489: Version         : 2.3
+2021-09-20 12:03:35.489: OwnerType       : ITAdmin
+2021-09-20 12:03:35.489: Notes           : 
+2021-09-20 12:03:35.489: LastInstallTime : 14/09/2021 20:59:47
+2021-09-20 12:03:35.489: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-20 12:03:35.489:                   	Category:InitialCustomization
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:OOBE successfully configured.
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   10__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-20 12:03:35.489:                   	Category:Scripts
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   7__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   8__ProvisioningCommands_DeviceContext_CommandFiles_7.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   9__ProvisioningCommands_DeviceContext_CommandFiles_8.provxml
+2021-09-20 12:03:35.489:                   	Category:Content
+2021-09-20 12:03:35.489:                   	LastResult:Success
+2021-09-20 12:03:35.489:                   	Message:Provisioning succeeded
+2021-09-20 12:03:35.489:                   	NumberOfFailures:0 (0x0)
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489:                   
+2021-09-20 12:03:35.489: 
+2021-09-20 12:03:35.489: 
+2021-09-20 12:03:35.489:  +1ms
+2021-09-20 12:03:35.489: 2021-09-20 14:03:35 [5224] INFO [JS] Stderr:  +1ms
+2021-09-20 12:03:35.489: 2021-09-20 14:03:35 [5224] INFO [Runner] Running result: true +0ms
+2021-09-20 12:03:35.489: 2021-09-20 14:03:35 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (86) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +2ms
+2021-09-20 12:03:35.926: 2021-09-20 14:03:35 [5224] INFO [JS] Result: 0 +438ms

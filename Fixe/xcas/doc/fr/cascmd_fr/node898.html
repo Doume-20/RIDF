@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Mettre une l&#233;gende : legende</TITLE>
+<META NAME="description" CONTENT="Mettre une l&#233;gende : legende">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node899.html">
+<LINK REL="previous" HREF="node897.html">
+<LINK REL="up" HREF="node894.html">
+<LINK REL="next" HREF="node899.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16399"
+  HREF="node899.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16393"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16387"
+  HREF="node897.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16395"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16397"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16400"
+  HREF="node899.html">Les commandes d'affichage :</A>
+<B> monter:</B> <A NAME="tex2html16394"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16388"
+  HREF="node897.html">Les param&#232;tres optionnels d'attributs</A>
+ &nbsp; <B>  <A NAME="tex2html16396"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16398"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001234000000000000000"></A><A NAME="23526"></A>
+<BR>
+Mettre une l&#233;gende : <TT>legende</TT>
+</H2>
+<A NAME="30568"></A><A NAME="30569"></A><A NAME="30570"></A><A NAME="30571"></A>
+<TT>legende</TT> a deux ou trois param&#232;tres :
+
+<UL>
+<LI>le 1er param&#232;tre est un point (ou son affixe) ou une liste de 2 
+entiers. Cet argument permet de savoir o&#249; l'on doit mettre la 
+l&#233;gende : soit &#224; partir du point soit &#224; partir de la position en pixels 
+donn&#233;e par la liste de 2 coordonn&#233;es enti&#232;res (en partant du coin en haut
+&#224; gauche et les y dirig&#233;s vers le bas).
+</LI>
+<LI>le 2i&#232;me param&#232;tre
+est la l&#233;gende (soit une cha&#238;ne de caract&#232;res, soit le nom d'une 
+variable : dans ce cas <TT>legende</TT> affiche le contenu de la variable),
+</LI>
+<LI>&#233;ventuellement un  3i&#232;me param&#232;tre pour indiquer le quadrant dans 
+lequel il faut mettre la l&#233;gende et dont la valeur est :
+<TT>quadrant1,quadrant2,quadrant3,quadrant4</TT> (par d&#233;faut c'est 
+<TT>quadrant1</TT>). 
+</LI>
+</UL>
+<TT>legende</TT> met la cha&#238;ne de caract&#232;res &#224; cet endroit donn&#233;.
+situ&#233; en haut &#224; gauche et les <I>y</I> sont dirig&#233;s vers le bas). 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legende(1+i,"bonjour")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point 1+i et "bonjour" &#233;crit &#224; partir du point 1+i dans le premier quadrant</TT>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legende(1+i,"bonjour",quadrant4)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>legende(1+i,quadrant4,"bonjour")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point 1+i et "bonjour" &#233;crit dans le quatri&#232;me quadrant du point 1+i</TT>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legende([30,20],"bonjour")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>"bonjour" &#233;crit &#224; partir du point en pixels x=30 et y=20</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legende([30,20],"bonjour",quadrant4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>"bonjour" &#233;crit &#224; partir du point en pixels x=30 et y=20
+ dans le quatri&#232;me quadrant</TT>
+</DIV>
+Pour mettre une l&#233;gende &#224; un angle voir <A HREF="node983.html#sec:angle2">9.16.9</A>
+<B>Attention</B><A NAME="30572"></A><A NAME="30573"></A>
+<BR>
+Le nom <TT>legend</TT>  (ou <TT>legende</TT>) peut servir de param&#232;tre 
+global pour mettre en l&#233;gende le nom des unit&#233;s sur les axes. Dans ce 
+cas, <TT>legende</TT>) est suivi de <TT>=</TT> puis d'un vecteur compos&#233; de 2 
+chaines qui sont le nom des unit&#233;s (on met une chaine vide si on ne veut plus
+avoir l'unit&#233;).
+Le nom  <TT>legend</TT>  (ou <TT>legende</TT>) peut aussi servir de 
+param&#232;tre local qui sera le param&#232;tre 
+optionnel d'une commande <TT>point</TT> ou d'une commande tra&#231;ant un polygone 
+(<TT>triangle...polygone</TT>). Dans ce cas, la l&#233;gende s'inscrit au niveau du 
+point ou au niveau du milieu du c&#244;t&#233; reliant le dernier au premier sommet 
+du polygone. Le nom du param&#232;tre optionnel (ici unit&#233;).
+Le nom  <TT>legend</TT> ou <TT>legende</TT>) est suivi de 
+<TT>=</TT> puis de la l&#233;gende (soit une chaine de caract&#232;res, soit un nom de 
+variable contenant une chaine de caract&#232;res) est le param&#232;tre que l'on 
+passe comme argument suppl&#233;mentaire dans les commandes graphiques.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>legende=["mn","kg"]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-6<I>mn</I>&nbsp;6<I>mn</I> selon l'axe des <I>x</I> et -5<I>kg</I>&nbsp;5<I>kg</I> selon l'axe des <I>y</I></TT>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>point(1+i,legende="bonjour")</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>a:="bonjour";point(1+i,legende=a)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point 1+i et "bonjour" &#233;crit au point 1+i</TT>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>polygone(-1,-i,1,2*i,legende="P")</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>a:="P";polygone(-1,-i,1,2*i,legende=P)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le polygone -1,-i,1,2*i et "P" &#233;crit au point -1/2+i</TT>
+
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16399"
+  HREF="node899.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16393"
+  HREF="node894.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16387"
+  HREF="node897.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16395"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16397"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16400"
+  HREF="node899.html">Les commandes d'affichage :</A>
+<B> monter:</B> <A NAME="tex2html16394"
+  HREF="node894.html">Les attributs des objets</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16388"
+  HREF="node897.html">Les param&#232;tres optionnels d'attributs</A>
+ &nbsp; <B>  <A NAME="tex2html16396"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16398"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,71 @@
+2021-09-15 11:28:24 [7780] INFO [JS] User name:  +218ms
+2021-09-15 09:28:24.711: 2021-09-15 11:28:24 [7780] INFO [JS] User : undefined +0ms
+2021-09-15 09:28:24.711: 2021-09-15 11:28:24 [7780] ERROR [Runner] Error while running configuration: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined +2ms
+2021-09-15 09:28:24.711: 2021-09-15 11:28:24 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/GeoGebra-Windows (139) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_GeoGebra-Windows.json +1ms
+2021-09-15 09:28:24.804: 2021-09-15 11:28:24 [7780] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2021-09-15 09:28:24.804: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2021-09-15 09:28:24.804: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-15 09:28:24.804: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-09-15 09:28:24.804: Arguments=
+2021-09-15 09:28:24.804: ArgumentsExpanded=
+2021-09-15 09:28:24.804: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-09-15 09:28:24.804: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-09-15 09:28:24.804: RunStyle=1
+2021-09-15 09:28:24.804: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-15 09:28:24.804: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-09-15 09:28:24.804: HotKey=0 (None)
+2021-09-15 09:28:24.804: Description=HiSqool
+2021-09-15 09:28:24.804: 
+2021-09-15 09:28:24.804: The command completed successfully. +94ms
+2021-09-15 09:28:24.804: 2021-09-15 11:28:24 [7780] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-09-15 09:28:24.945: 2021-09-15 11:28:24 [7780] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +135ms
+2021-09-15 09:28:24.945: 2021-09-15 11:28:24 [7780] INFO [JS] Actions to perform: 1 +1ms
+2021-09-15 09:28:24.945: 2021-09-15 11:28:24 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 09:28:24.945: 2021-09-15 11:28:24 [7780] INFO [JS] Running installer... +1ms
+2021-09-15 09:28:24.945: 2021-09-15 11:28:24 [7780] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +1ms
+2021-09-15 09:28:25.070: 2021-09-15 11:28:25 [7780] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +115ms
+2021-09-15 09:28:25.335: 2021-09-15 11:28:25 [7780] INFO [JS] GUID package: 8dac98da-8b8d-468c-94f0-dacc43930496 +267ms
+2021-09-15 09:28:25.429: 2021-09-15 11:28:25 [7780] INFO [JS] GUID package: 0642f63e-c58e-4b3a-a5a2-0b04044373d4 +97ms
+2021-09-15 09:28:25.945: 2021-09-15 11:28:25 [7780] INFO [JS] GUID package: cb17c373-bdce-42ab-9630-aaa143e0273b +519ms
+2021-09-15 09:28:25.991: 2021-09-15 11:28:25 [7780] INFO [JS] GUID package: e95ff137-4888-481f-97cc-e0302d8ee23b +46ms
+2021-09-15 09:28:26.648: 2021-09-15 11:28:26 [7780] INFO [JS] GUID package: da2870c6-4410-412a-a8c2-4058176be8f6 +652ms
+2021-09-15 09:28:26.866: 2021-09-15 11:28:26 [7780] INFO [JS] GUID package: e89266ec-30ec-4a0e-b7c4-7ae34a541fb6 +217ms
+2021-09-15 09:28:27.616: 2021-09-15 11:28:27 [7780] INFO [JS] GUID package: ccbc3b16-8263-4997-a512-65f19dc1cb8a +754ms
+2021-09-15 09:28:27.991: 2021-09-15 11:28:27 [7780] INFO [JS] GUID package: da2870c6-4410-412a-a8c2-4058176be8f6 +370ms
+2021-09-15 09:28:28.631: 2021-09-15 11:28:28 [7780] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +646ms
+2021-09-15 09:28:29.350: 2021-09-15 11:28:29 [7780] INFO [JS] GUID package: ea30de95-ba19-4b7c-99a5-7424712ed0fe +710ms
+2021-09-15 09:28:29.756: 2021-09-15 11:28:29 [7780] INFO [JS] GUID package: bb88e3ea-5ef9-4cae-8fb0-18e39ac61be3 +416ms
+2021-09-15 09:28:29.865: 2021-09-15 11:28:29 [7780] INFO [JS] GUID package: 9ff58fa2-cb54-40fc-ab02-067dfdf1696c +100ms
+2021-09-15 09:28:30.256: 2021-09-15 11:28:30 [7780] INFO [JS] GUID package: 2be2a1dd-777f-45dc-8cb8-882f7f36439d +398ms
+2021-09-15 09:28:30.412: 2021-09-15 11:28:30 [7780] INFO [JS] GUID package: 58103a8a-46f4-4fd9-ab24-2fb342750f07 +151ms
+2021-09-15 09:28:30.615: 2021-09-15 11:28:30 [7780] INFO [JS] GUID package: 1b858297-521d-411a-9a43-6806ad17a6a3 +203ms
+2021-09-15 09:28:30.959: 2021-09-15 11:28:30 [7780] INFO [JS] GUID package: 253191fb-2d92-4b35-87ed-4d3d18115876 +342ms
+2021-09-15 09:28:31.052: 2021-09-15 11:28:31 [7780] INFO [JS] GUID package: 4d914676-b5e0-44d9-96ad-3397dfca8bdd +87ms
+2021-09-15 09:28:31.115: 2021-09-15 11:28:31 [7780] INFO [JS] GUID package: 3152267f-0e7e-45bb-9570-b793d506a6d6 +66ms
+2021-09-15 09:28:31.521: 2021-09-15 11:28:31 [7780] INFO [JS] GUID package: 2e0da9d2-01ee-4633-b468-58ba74ecee91 +414ms
+2021-09-15 09:28:32.896: 2021-09-15 11:28:32 [7780] WARN [JS] Error while processing installation GUID: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\230\payload\application.ppkg').packageId.Guid +1361ms
+2021-09-15 09:28:32.896: 2021-09-15 11:28:32 [7780] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-15 09:28:32.896: 2021-09-15 11:28:32 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LeLivreScolaire-2.2 (230) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LeLivreScolaire-2.2.json +1ms
+2021-09-15 09:28:33.270: 2021-09-15 11:28:33 [7780] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\79\payload\libmanuels.ppkg' -QuietInstall +381ms
+2021-09-15 09:28:33.270: 2021-09-15 11:28:33 [7780] INFO [Runner] Running result: false +0ms
+2021-09-15 09:28:33.270: 2021-09-15 11:28:33 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels-Windows (79) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels-Windows.json +2ms
+2021-09-15 09:28:33.286: 2021-09-15 11:28:33 [7780] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +2ms
+2021-09-15 09:28:33.286: 2021-09-15 11:28:33 [7780] INFO [Runner] Running result: false +0ms
+2021-09-15 09:28:33.286: 2021-09-15 11:28:33 [7780] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2021-09-15 09:28:36.113: 2021-09-15 11:28:36 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +2834ms
+2021-09-15 09:28:36.113: 2021-09-15 11:28:36 [7780] INFO [JS] Installing the package ... +0ms
+2021-09-15 09:28:36.113: 2021-09-15 11:28:36 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 09:28:36.113: 2021-09-15 11:28:36 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-15 09:28:37.097: 2021-09-15 11:28:37 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '8dac98da-8b8d-468c-94f0-dacc43930496').version +973ms
+2021-09-15 09:28:37.097: 2021-09-15 11:28:37 [7780] INFO [JS] Installing the package ... +0ms
+2021-09-15 09:28:37.097: 2021-09-15 11:28:37 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 09:28:37.097: 2021-09-15 11:28:37 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\225\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-15 09:28:37.129: 2021-09-15 11:28:37 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'e95ff137-4888-481f-97cc-e0302d8ee23b').version +29ms
+2021-09-15 09:28:37.129: 2021-09-15 11:28:37 [7780] INFO [JS] Installing the package ... +1ms
+2021-09-15 09:28:37.129: 2021-09-15 11:28:37 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 09:28:37.129: 2021-09-15 11:28:37 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\222\payload\application.ppkg, args=-QuietInstall... +0ms
+2021-09-15 09:28:37.191: 2021-09-15 11:28:37 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'cb17c373-bdce-42ab-9630-aaa143e0273b').version +62ms
+2021-09-15 09:28:37.191: 2021-09-15 11:28:37 [7780] INFO [JS] Installing the package ... +1ms
+2021-09-15 09:28:37.191: 2021-09-15 11:28:37 [7780] INFO [Runner] Performing runner... +0ms
+2021-09-15 09:28:37.191: 2021-09-15 11:28:37 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\221\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-15 09:28:37.253: 2021-09-15 11:28:37 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '0642f63e-c58e-4b3a-a5a2-0b04044373d4').version +70ms

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Substituer une valeur &#224; une variable (compatibilit&#233; Maple et Mupad) : subs</TITLE>
+<META NAME="description" CONTENT="Substituer une valeur &#224; une variable (compatibilit&#233; Maple et Mupad) : subs">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node331.html">
+<LINK REL="previous" HREF="node329.html">
+<LINK REL="up" HREF="node313.html">
+<LINK REL="next" HREF="node331.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7781"
+  HREF="node331.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7775"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7769"
+  HREF="node329.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7777"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7779"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7782"
+  HREF="node331.html">&#201;valuer une primitive :</A>
+<B> monter:</B> <A NAME="tex2html7776"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7770"
+  HREF="node329.html">Substituer une valeur &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html7778"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7780"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0091317000000000000000"></A><A NAME="7617"></A><A NAME="sec:subs"></A>
+<BR>
+Substituer une valeur &#224; une variable (compatibilit&#233; Maple et Mupad) : <TT>subs</TT>
+</H2>
+En <TT>Maple</TT> et en <TT>Mupad</TT> la commande synonyme de <TT>subst</TT> 
+est <TT>subs</TT>, mais l'ordre des param&#232;tres de <TT>subs</TT> n'est pas le m&#234;me
+en <TT>Maple</TT> et en <TT>Mupad</TT>.
+<BR>
+Ainsi les  arguments de <TT>subs</TT> sont :
+
+<UL>
+<LI>En mode <TT>Maple</TT>, la fonction  <TT>subs</TT> a deux arguments : une 
+&#233;galit&#233; (param&#232;tre=valeur de substitution) et une expression 
+d&#233;pendant du param&#232;tre.
+<BR>
+Pour faire plusieurs substitutions, <TT>subs</TT> a deux arguments : une liste 
+d&#233;galit&#233; (param&#232;tre=valeur de substitution) et une expression 
+d&#233;pendant de ces param&#232;tres.
+<BR></LI>
+<LI>En mode <TT>Mupad</TT> ou  <TT>Xcas</TT> ou <TT>TI</TT>, la fonction <TT>subs</TT> a deux ou trois 
+arguments : une expression d&#233;pendant d'un param&#232;tre et une &#233;galit&#233; 
+(param&#232;tre=valeur de substitution) ou une expression d&#233;pendant d'un 
+param&#232;tre, le param&#232;tre et la valeur de substitution.
+<BR>
+Pour faire plusieurs substitutions, la fonction <TT>subs</TT> a deux ou trois 
+arguments : une expression d&#233;pendant de param&#232;tres et une liste 
+d'&#233;galit&#233; (param&#232;tre=valeur de substitution) ou une expression 
+d&#233;pendant de param&#232;tres, la liste des param&#232;tres et la liste des valeurs
+ de substitution.
+<BR></LI>
+</UL>
+<TT>subs</TT> effectue la substitution demand&#233;e dans l'expression &#224; condition
+que le param&#232;tre ne soit pas affect&#233; car <TT>subs</TT> &#233;value tout d'abord 
+l'expression et remplace donc le param&#232;tre par sa valeur sans tenir compte 
+de la valeur de substitution donn&#233;e par le deuxi&#232;me param&#232;tre.
+<BR>
+On tape en mode Maple :
+<DIV ALIGN="CENTER">
+<TT>subs(a=2,a<code>^</code>2+1)</TT>
+</DIV>
+On obtient (si la variable <TT>a</TT> n'est pas affect&#233;e, sinon il faut taper 
+auparavant <TT>purge(a)</TT>):
+<DIV ALIGN="CENTER">
+<TT>5</TT>
+</DIV>
+Lorsque l'on veut substituer plusieurs variables :
+<BR>
+On tape, en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>subs([a=2,b=1],a<code>^</code>2+b)</TT>
+</DIV>
+On obtient (si les variables <TT>a</TT> et <TT>b</TT> ne sont pas affect&#233;es, sinon 
+il faut taper auparavant <TT>purge(a,b)</TT>):
+<DIV ALIGN="CENTER">
+<TT>2<code>^</code>2+1</TT>
+</DIV>
+On tape, en mode <TT>Mupad</TT> ou  <TT>Xcas</TT> ou <TT>TI</TT> :
+<DIV ALIGN="CENTER">
+<TT>subs(a<code>^</code>2+1,a=2)</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>subs(a<code>^</code>2+1,a,2)</TT>
+</DIV>
+On obtient (si la variable <TT>a</TT> n'est pas affect&#233;e, sinon il faut taper 
+auparavant <TT>purge(a)</TT>) :
+<DIV ALIGN="CENTER">
+<TT>5</TT>
+</DIV>
+Lorsque l'on veut substituer plusieurs variables :
+<BR>
+On tape, dans les modes <TT>Mupad Xcas TI</TT>  :
+<DIV ALIGN="CENTER">
+<TT>subs(a<code>^</code>2+b,[a=2,b=1])</TT>
+</DIV>
+ou on tape
+<DIV ALIGN="CENTER">
+<TT>subs(a<code>^</code>2+b,[a,b],[2,1])</TT>
+</DIV>
+On obtient (si les variables <TT>a</TT> et <TT>b</TT> ne sont pas affect&#233;es, sinon 
+il faut taper auparavant <TT>purge(a,b)</TT>):
+<DIV ALIGN="CENTER">
+<TT>2<code>^</code>2+1</TT>
+</DIV> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7781"
+  HREF="node331.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7775"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7769"
+  HREF="node329.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7777"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7779"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7782"
+  HREF="node331.html">&#201;valuer une primitive :</A>
+<B> monter:</B> <A NAME="tex2html7776"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7770"
+  HREF="node329.html">Substituer une valeur &#224;</A>
+ &nbsp; <B>  <A NAME="tex2html7778"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7780"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

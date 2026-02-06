@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les expressions</TITLE>
+<META NAME="description" CONTENT="Les expressions">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html188"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html182"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html176"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html184"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html186"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html189"
+  HREF="node10.html">D&#233;velopper et simplifier</A>
+<B> monter:</B> <A NAME="tex2html183"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html177"
+  HREF="node8.html">Les variables</A>
+ &nbsp; <B>  <A NAME="tex2html185"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html187"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00024000000000000000"></A>
+<A NAME="177"></A>
+<BR>
+Les expressions
+</H2>
+Une expression est une combinaison de nombres et de variables
+reli&#233;s entre eux par des op&#233;rations&nbsp;: par exemple 
+<code>x^2+2*x+c</code>. 
+
+<P>
+Lorsqu'on valide une commande, <TT>Xcas</TT>
+remplace les variables par leur valeur si elles en ont une,
+et ex&#233;cute les op&#233;rations. 
+<PRE>
+(a-2)*x^2+a*x+1
+a:=2
+(a-2)*x^2+a*x+1
+</PRE>
+<A NAME="181"></A>
+Certaines op&#233;rations de simplification sont ex&#233;cut&#233;es
+automatiquement lors d'une &#233;valuation&nbsp;:
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>les op&#233;rations sur les entiers et sur les 
+fractions, y compris la mise
+sous forme irr&#233;ductible
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>les simplifications triviales comme <I>x</I> + 0 = <I>x</I>,
+<I>x</I> - <I>x</I> = 0, <I>x</I><SUP>1</SUP> = <I>x</I>...
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>quelques formes trigonom&#233;triques comme 
+<!-- MATH
+ $\cos(-x)=\cos(x)$
+ -->
+cos(- <I>x</I>) = cos(<I>x</I>), <!-- MATH
+ $\cos(\pi/4)=\sqrt{2}/2$
+ -->
+cos(<IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \pi$">/4) = <IMG
+ WIDTH="26" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \sqrt{{2}}$">/2, <!-- MATH
+ $\tan(\pi/4)=1$
+ -->
+tan(<IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \pi$">/4) = 1...
+</DD>
+</DL>
+Nous verrons dans la section suivante comment obtenir plus de simplifications.
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

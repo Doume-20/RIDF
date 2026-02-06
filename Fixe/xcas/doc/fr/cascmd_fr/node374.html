@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>ibpu</TITLE>
+<META NAME="description" CONTENT="ibpu">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node373.html">
+<LINK REL="up" HREF="node372.html">
+<LINK REL="next" HREF="node375.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8424"
+  HREF="node375.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8418"
+  HREF="node372.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8414"
+  HREF="node373.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8420"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8422"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8425"
+  HREF="node375.html">Changement de variables :</A>
+<B> monter:</B> <A NAME="tex2html8419"
+  HREF="node372.html">Int&#233;gration par parties :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8415"
+  HREF="node373.html">ibpdv</A>
+ &nbsp; <B>  <A NAME="tex2html8421"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8423"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009195200000000000000"></A><A NAME="9255"></A>
+<BR>
+<TT>ibpu</TT>
+</H3>
+<TT>ibpu</TT> permet de chercher une primitive (ou de calculer une 
+int&#233;grale d&#233;finie) d'une  expression de la forme <!-- MATH
+ $u(x).v'(x)$
+ -->
+<I>u</I>(<I>x</I>).<I>v'</I>(<I>x</I>).
+<BR><TT>ibpu</TT> a deux param&#232;tres pour les primitives et cinq param&#232;tres pour 
+les int&#233;grales d&#233;finies : 
+
+<UL>
+<LI>soit une expression de la forme 
+<!-- MATH
+ $u(x).v'(x)$
+ -->
+<I>u</I>(<I>x</I>).<I>v'</I>(<I>x</I>) et <I>u</I>(<I>x</I>) (ou une liste de deux expressions <!-- MATH
+ $[F(x), u(x)*v'(x)]$
+ -->
+[<I>F</I>(<I>x</I>), <I>u</I>(<I>x</I>)*<I>v'</I>(<I>x</I>)] 
+et <I>u</I>(<I>x</I>)),
+</LI>
+<LI>soit une expression de la forme 
+<I>g</I>(<I>x</I>) et 0 (ou une liste de deux expressions <!-- MATH
+ $[F(x), g(x)]$
+ -->
+[<I>F</I>(<I>x</I>), <I>g</I>(<I>x</I>)] 
+et 0).
+</LI>
+<LI>pour les int&#233;grales d&#233;finies, il faut rajouter trois autres 
+param&#232;tres : le nom de la variable et les bornes. 
+</LI>
+</UL>
+Lorsque <TT>ibpu</TT> a 2 arguments <TT>ibpu</TT> renvoie :
+<TT>ibpu</TT> renvoie :
+
+<UL>
+<LI>si <!-- MATH
+ $u(x) \neq 0$
+ -->
+<I>u</I>(<I>x</I>) <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> 0, une liste form&#233;e de <I>u</I>(<I>x</I>).<I>v</I>(<I>x</I>) et de <!-- MATH
+ $-v(x).u'(x)$
+ -->
+- <I>v</I>(<I>x</I>).<I>u'</I>(<I>x</I>) 
+(ou une liste form&#233;e de <!-- MATH
+ $F(x)+u(x).v(x)$
+ -->
+<I>F</I>(<I>x</I>) + <I>u</I>(<I>x</I>).<I>v</I>(<I>x</I>) et de <!-- MATH
+ $-v(x).u'(x)$
+ -->
+- <I>v</I>(<I>x</I>).<I>u'</I>(<I>x</I>)),
+</LI>
+<LI>si le deuxi&#232;me argument est nul, une primitive de
+ <I>g</I>(<I>x</I>) (le premier argument) 
+(ou <I>F</I>(<I>x</I>)+une primitive de <I>g</I>(<I>x</I>)):
+<BR><TT>ibpu(g(x),0)</TT> renvoie <TT>G(x)</TT> o&#249; <TT>diff(G(x))=g(x)</TT> ou
+<BR> <TT>ibpu([F(x),g(x)],0)</TT> renvoie <TT>F(x)+G(x)</TT> o&#249; <TT>diff(G(x))=g(x)</TT>.
+</LI>
+</UL>
+c'est &#224; dire <TT>ibpu</TT> renvoie les termes que l'on doit calculer quand on 
+fait une int&#233;gration par parties, en faisant &#233;ventuellement plusieurs 
+<TT>ibpu</TT> &#224; la suite.
+<BR>
+Ainsi, lorsque l'on vient d'utiliser la commande <TT>ibpu(u(x)*v'(x),u(x))</TT>, 
+il reste &#224; calculer l'int&#233;grale du deuxi&#232;me terme puis &#224; faire la somme 
+avec le premier terme pour obtenir une primitive de <!-- MATH
+ $u(x).v'(x)$
+ -->
+<I>u</I>(<I>x</I>).<I>v'</I>(<I>x</I>). Pour cela, 
+on peut utiliser &#224; nouveau la commande <TT>ibpu</TT> avec comme 
+premier param&#232;tre  la liste obtenue et comme deuxi&#232;me param&#232;tre  un 
+nouveau <I>u</I>(<I>x</I>) (ou 0 pour terminer l'int&#233;gration).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ibpu(ln(x),ln(x)) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[x.ln(x),-1]</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>ibpu([x.ln(x),-1],0) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-x+x.ln(x)</TT>
+</DIV>
+
+<P>
+Lorsque <TT>ibpu</TT> a 5 arguments <TT>ibpu(u(x)*v'(x),u(x),x,a,b)</TT> ou
+<TT>ibpu([F(x),u(x)*v'(x),u(x),x,a,b)</TT> renvoie :
+
+<UL>
+<LI>si <!-- MATH
+ $u(x) \neq 0$
+ -->
+<I>u</I>(<I>x</I>) <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> 0, une liste form&#233;e de <!-- MATH
+ $u(b).v(b)-u(a).v(a)$
+ -->
+<I>u</I>(<I>b</I>).<I>v</I>(<I>b</I>) - <I>u</I>(<I>a</I>).<I>v</I>(<I>a</I>) et 
+de <!-- MATH
+ $-v(x).u'(x)$
+ -->
+- <I>v</I>(<I>x</I>).<I>u'</I>(<I>x</I>) (ou une liste form&#233;e de <!-- MATH
+ $F(b)+u(b).v(b)-F(a)-u(a).v(a)$
+ -->
+<I>F</I>(<I>b</I>) + <I>u</I>(<I>b</I>).<I>v</I>(<I>b</I>) - <I>F</I>(<I>a</I>) - <I>u</I>(<I>a</I>).<I>v</I>(<I>a</I>) et 
+de <!-- MATH
+ $-v(x).u'(x)$
+ -->
+- <I>v</I>(<I>x</I>).<I>u'</I>(<I>x</I>)),
+</LI>
+<LI>si le deuxi&#232;me argument est nul, <TT>ibpu(g(x),0,x,a,b)</TT>
+renvoie <I>G</I>(<I>b</I>) - <I>G</I>(<I>a</I>) o&#249; <I>G</I>(<I>x</I>) une primitive de 
+<I>g</I>(<I>x</I>) (le premier argument) (ou <TT>ibpu([F(x),g(x)],0,x,a,b)</TT>
+renvoie <!-- MATH
+ $F(x)+G(b)-G(a)$
+ -->
+<I>F</I>(<I>x</I>) + <I>G</I>(<I>b</I>) - <I>G</I>(<I>a</I>) o&#249; <I>G</I>(<I>x</I>) est une primitive de 
+<I>g</I>(<I>x</I>)) de fa&#231;on &#224; pouvoir faire plusieurs <TT>ibpu</TT> &#224; la suite.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ibpu(ln(x),ln(x),x,2,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3*ln(3)-2*ln(2),-1]</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>ibpu([3*ln(3)-2*ln(2),-1],0,x,2,3) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-1+3*ln(3)-2*ln(2)</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Lorsque le premier param&#232;tre de <TT>ibpu</TT> est une liste de deux 
+&#233;l&#233;ments, <TT>ibpu</TT> n'agit que sur le dernier &#233;l&#233;ment de cette liste 
+et ajoute le terme int&#233;gr&#233; au premier &#233;l&#233;ment de la liste (de fa&#231;on &#224; 
+pouvoir faire plusieurs <TT>ibpu</TT> &#224; la suite).
+<BR>
+<P>
+On a par exemple :
+<BR><TT>ibpu((log(x))<code>^</code>2,log(x)) = [x*(log(x))<code>^</code>2,-(2*log(x))]</TT>
+<BR>
+il reste &#224; int&#233;grer <TT>-(2*log(x))</TT>, on utilise <TT>ibpu(ans(),log(x))</TT> 
+ou on tape:
+<BR><TT>ibpu([x*(log(x))<code>^</code>2,-(2*log(x))],log(x))</TT>
+<BR>
+On obtient :
+<BR><TT>[x*(log(x))<code>^</code>2+x*(-(2*log(x))),2]</TT>
+<BR>
+et il reste &#224; int&#233;grer <TT>2</TT>, on utilise <TT>ibpu(ans(),0)</TT> :
+<BR><TT>ibpu([x*(log(x))<code>^</code>2+x*(-(2*log(x))),2],0)</TT>.
+<BR>
+On obtient :
+<TT>x*(log(x))<code>^</code>2+x*(-(2*log(x)))+2*x</TT>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8424"
+  HREF="node375.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8418"
+  HREF="node372.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8414"
+  HREF="node373.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8420"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8422"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8425"
+  HREF="node375.html">Changement de variables :</A>
+<B> monter:</B> <A NAME="tex2html8419"
+  HREF="node372.html">Int&#233;gration par parties :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8415"
+  HREF="node373.html">ibpdv</A>
+ &nbsp; <B>  <A NAME="tex2html8421"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8423"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

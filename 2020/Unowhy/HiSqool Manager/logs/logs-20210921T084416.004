@@ -1,0 +1,185 @@
+2021-09-21 10:44:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LibManuels-3.7.4 (226) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LibManuels-3.7.4.json +2ms
+2021-09-21 08:44:03.040: 2021-09-21 10:44:03 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\226\payload... +1ms
+2021-09-21 08:44:03.060: 2021-09-21 10:44:03 [5224] INFO [Runner] Creating configuration unit runner object... +19ms
+2021-09-21 08:44:03.060: 2021-09-21 10:44:03 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-21 08:44:03.060: 2021-09-21 10:44:03 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-21 08:44:03.313: 2021-09-21 10:44:03 [5224] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\79\payload\libmanuels.ppkg' -QuietInstall +253ms
+2021-09-21 08:44:03.313: 2021-09-21 10:44:03 [5224] INFO [Runner] Running result: false +1ms
+2021-09-21 08:44:03.323: 2021-09-21 10:44:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels-Windows (79) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels-Windows.json +4ms
+2021-09-21 08:44:03.323: 2021-09-21 10:44:03 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg' -QuietInstall +1ms
+2021-09-21 08:44:03.323: 2021-09-21 10:44:03 [5224] INFO [Runner] Running result: false +0ms
+2021-09-21 08:44:03.323: 2021-09-21 10:44:03 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (261) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2021-09-21 08:44:03.323: 2021-09-21 10:44:03 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload... +2ms
+2021-09-21 08:44:03.393: 2021-09-21 10:44:03 [5224] INFO [Runner] Creating configuration unit runner object... +70ms
+2021-09-21 08:44:03.393: 2021-09-21 10:44:03 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-21 08:44:03.401: 2021-09-21 10:44:03 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-21 08:44:03.474: 2021-09-21 10:44:03 [5224] INFO [JS] Result: 0 +78ms
+2021-09-21 08:44:03.474: 2021-09-21 10:44:03 [5224] INFO [JS] Stdout: Custom shell possible: True +1ms
+2021-09-21 08:44:03.482: 2021-09-21 10:44:03 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-21 08:44:03.482: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2021-09-21T10:44:02.4142207+02:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">5884</U32><U32 N="NativeThreadId">13776</U32><U32 N="ManagedThreadId">9</U32></Props></Obj></Objs> +1ms
+2021-09-21 08:44:06.901: 2021-09-21 10:44:06 [5224] INFO [JS] Install Result: 0 +3417ms
+2021-09-21 08:44:06.901: 2021-09-21 10:44:06 [5224] INFO [JS] Install Stdout: 
+2021-09-21 08:44:06.901: 
+2021-09-21 08:44:06.901: IsInstalled     : False
+2021-09-21 08:44:06.901: PackageID       : 1b858297-521d-411a-9a43-6806ad17a6a3
+2021-09-21 08:44:06.901: PackageName     : Thunderbird
+2021-09-21 08:44:06.901: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\233\payload\application.ppkg
+2021-09-21 08:44:06.901: Description     : 
+2021-09-21 08:44:06.901: Rank            : 0
+2021-09-21 08:44:06.901: Altitude        : 5000
+2021-09-21 08:44:06.901: Version         : 10.0
+2021-09-21 08:44:06.901: OwnerType       : ITAdmin
+2021-09-21 08:44:06.901: Notes           : 
+2021-09-21 08:44:06.901: LastInstallTime : 17/09/2021 10:15:25
+2021-09-21 08:44:06.901: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-21 08:44:06.901:                   	Category:Content
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-21 08:44:06.901:                   	Category:Content
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-21 08:44:06.901:                   	Category:Content
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-21 08:44:06.901:                   	Category:Content
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   4__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-21 08:44:06.901:                   	Category:Content
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   5__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-21 08:44:06.901:                   	Category:Content
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   6__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-21 08:44:06.901:                   	Category:Scripts
+2021-09-21 08:44:06.901:                   	LastResult:Success
+2021-09-21 08:44:06.901:                   	Message:Provisioning succeeded
+2021-09-21 08:44:06.901:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901:                   
+2021-09-21 08:44:06.901: 
+2021-09-21 08:44:06.901: 
+2021-09-21 08:44:06.901:  +0ms
+2021-09-21 08:44:06.901: 2021-09-21 10:44:06 [5224] INFO [JS] Install Stderr:  +1ms
+2021-09-21 08:44:06.901: 2021-09-21 10:44:06 [5224] INFO [JS] Finishing Installation +1ms
+2021-09-21 08:44:06.901: 2021-09-21 10:44:06 [5224] INFO [Runner] Running result: true +1ms
+2021-09-21 08:44:06.909: 2021-09-21 10:44:06 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Thunderbird-78.10.0 (233) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Thunderbird-78.10.0.json +2ms
+2021-09-21 08:44:06.909: 2021-09-21 10:44:06 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\233\payload... +1ms
+2021-09-21 08:44:06.922: 2021-09-21 10:44:06 [5224] INFO [Runner] Creating configuration unit runner object... +18ms
+2021-09-21 08:44:06.930: 2021-09-21 10:44:06 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-21 08:44:06.932: 2021-09-21 10:44:06 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-21 08:44:09.086: 2021-09-21 10:44:09 [5224] INFO [JS] GUID package: cb17c373-bdce-42ab-9630-aaa143e0273b +2160ms
+2021-09-21 08:44:09.116: 2021-09-21 10:44:09 [5224] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +30ms
+2021-09-21 08:44:09.349: 2021-09-21 10:44:09 [5224] INFO [JS] GUID package: 2e0da9d2-01ee-4633-b468-58ba74ecee91 +230ms
+2021-09-21 08:44:11.803: 2021-09-21 10:44:11 [5224] INFO [JS] GUID package: da2870c6-4410-412a-a8c2-4058176be8f6 +2455ms
+2021-09-21 08:44:11.843: 2021-09-21 10:44:11 [5224] INFO [JS] GUID package: da2870c6-4410-412a-a8c2-4058176be8f6 +38ms
+2021-09-21 08:44:12.116: 2021-09-21 10:44:12 [5224] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +273ms
+2021-09-21 08:44:12.440: 2021-09-21 10:44:12 [5224] INFO [JS] Result: 2 +319ms
+2021-09-21 08:44:12.440: 2021-09-21 10:44:12 [5224] INFO [JS] Stdout: Current logged in user: @{Username=AzureAD\paulpeyrot}
+2021-09-21 08:44:12.440: Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583
+2021-09-21 08:44:12.440: Custom shell enabled: False
+2021-09-21 08:44:12.440: Custom shell command:  +0ms
+2021-09-21 08:44:12.440: 2021-09-21 10:44:12 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-21 08:44:12.440: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Current logged in user: @{Username=AzureAD\paulpeyrot}</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Current logged in user: @{Username=AzureAD\paulpeyrot}</ToString><Props><S N="Message">Current logged in user: @{Username=AzureAD\paulpeyrot}</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-21T10:44:08.6818888+02:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">14088</U32><U32 N="NativeThreadId">10228</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="information" RefId="5"><TNRef RefId="1" /><ToString>Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583</ToString><Props><Obj N="MessageData" RefId="6"><TNRef RefId="2" /><ToString>Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583</ToString><Props><S N="Message">Current logged in user SID: S-1-12-1-2983311543-1112210292-3304056505-1757544583</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-21T10:44:09.9149754+02:00</DT><Obj N="Tags" RefId="7"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">14088</U32><U32 N="NativeThreadId">10228</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="information" RefId="8"><TNRef RefId="1" /><ToString>Custom shell enabled: False</ToString><Props><Obj N="MessageData" RefId="9"><TNRef RefId="2" /><ToString>Custom shell enabled: False</ToString><Props><S N="Message">Custom shell enabled: False</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-21T10:44:10.9149846+02:00</DT><Obj N="Tags" RefId="10"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">14088</U32><U32 N="NativeThreadId">10228</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="information" RefId="11"><TNRef RefId="1" /><ToString>Custom shell command: </ToString><Props><Obj N="MessageData" RefId="12"><TNRef RefId="2" /><ToString>Custom shell command: </ToString><Props><S N="Message">Custom shell command: </S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\1e68611e23914c466c5a04c69a52378e.ps1</S><DT N="TimeGenerated">2021-09-21T10:44:11.8639936+02:00</DT><Obj N="Tags" RefId="13"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">14088</U32><U32 N="NativeThreadId">10228</U32><U32 N="ManagedThreadId">9</U32></Props></Obj></Objs> +1ms
+2021-09-21 08:44:12.541: 2021-09-21 10:44:12 [5224] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +103ms
+2021-09-21 08:44:14.481: 2021-09-21 10:44:14 [5224] INFO [JS] Install Result: 0 +1933ms
+2021-09-21 08:44:14.483: 2021-09-21 10:44:14 [5224] INFO [JS] Install Stdout: 
+2021-09-21 08:44:14.483: 
+2021-09-21 08:44:14.483: IsInstalled     : False
+2021-09-21 08:44:14.483: PackageID       : 0642f63e-c58e-4b3a-a5a2-0b04044373d4
+2021-09-21 08:44:14.483: PackageName     : G�nieGen
+2021-09-21 08:44:14.483: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\224\payload\application.ppkg
+2021-09-21 08:44:14.483: Description     : 
+2021-09-21 08:44:14.483: Rank            : 0
+2021-09-21 08:44:14.483: Altitude        : 5000
+2021-09-21 08:44:14.483: Version         : 2.4
+2021-09-21 08:44:14.483: OwnerType       : ITAdmin
+2021-09-21 08:44:14.483: Notes           : 
+2021-09-21 08:44:14.483: LastInstallTime : 17/09/2021 10:14:25
+2021-09-21 08:44:14.483: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-21 08:44:14.483:                   	Category:InitialCustomization
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:OOBE successfully configured.
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   7__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   8__ProvisioningCommands_DeviceContext_CommandFiles_7.provxml
+2021-09-21 08:44:14.483:                   	Category:Content
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   9__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-21 08:44:14.483:                   	Category:Scripts
+2021-09-21 08:44:14.483:                   	LastResult:Success
+2021-09-21 08:44:14.483:                   	Message:Provisioning succeeded
+2021-09-21 08:44:14.483:                   	NumberOfFailures:0 (0x0)
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483:                   
+2021-09-21 08:44:14.483: 
+2021-09-21 08:44:14.483: 
+2021-09-21 08:44:14.483:  +1ms
+2021-09-21 08:44:14.483: 2021-09-21 10:44:14 [5224] INFO [JS] Install Stderr:  +0ms
+2021-09-21 08:44:14.483: 2021-09-21 10:44:14 [5224] INFO [JS] Finishing Installation +1ms
+2021-09-21 08:44:14.483: 2021-09-21 10:44:14 [5224] INFO [Runner] Running result: true +1ms
+2021-09-21 08:44:14.491: 2021-09-21 10:44:14 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/GenieGen-1.2.3.2 (224) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_GenieGen-1.2.3.2.json +2ms
+2021-09-21 08:44:14.493: 2021-09-21 10:44:14 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\224\payload... +2ms
+2021-09-21 08:44:16.004: 2021-09-21 10:44:16 [5224] INFO [Runner] Creating configuration unit runner object... +1525ms

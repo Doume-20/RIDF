@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les tableaux indic&#233;s par des cha&#238;nes : table</TITLE>
+<META NAME="description" CONTENT="Les tableaux indic&#233;s par des cha&#238;nes : table">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node620.html">
+<LINK REL="previous" HREF="node618.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node620.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12035"
+  HREF="node620.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12029"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12023"
+  HREF="node618.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12031"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12033"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12036"
+  HREF="node620.html">Les matrices particuli&#232;res</A>
+<B> monter:</B> <A NAME="tex2html12030"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12024"
+  HREF="node618.html">Fonctions utiles pour les</A>
+ &nbsp; <B>  <A NAME="tex2html12032"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12034"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009410000000000000000"></A><A NAME="16060"></A>
+<BR>
+Les tableaux indic&#233;s par des cha&#238;nes : <TT>table</TT>
+</H1>
+Une table est une liste indic&#233;e par quelque chose de plus g&#233;n&#233;ral que des
+entiers.
+<BR>
+Une table peut &#234;tre utilis&#233;e, par exemple, pour stocker des num&#232;ros de 
+t&#233;l&#233;phone indic&#233;s par des noms.
+<BR>
+Dans  <TT>Xcas</TT>, les indices d'une table peuvent &#234;tre n'importe quels objets
+de <TT>Xcas</TT>. L'acc&#233;s se fait par un algorithme qui trie par <TT>type</TT> puis
+utilise l'ordre de chaque type (par exemple &lt; pour le type num&#233;rique, 
+l'ordre lexicographique pour les chaines etc...).
+<BR><TT>table</TT> a comme argument une liste ou une s&#233;quence d'&#233;galit&#233; de la 
+forme <TT>nom_de_l'index=valeur_de_l'&#233;l&#233;ment</TT>.
+<BR><TT>table</TT> renvoie cette table.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>T:=table(3=-10,"a"=10,"b"=20,"c"=30,"d"=40)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>T["b"]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>20</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>T[3]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-10</TT>
+</DIV>
+<B>Exemple</B>
+On veut coder les lettres "a","b",.."z" par 1,2,....26.
+<BR>
+On tape :
+<BR><TT>alphab:="abcdefghijklmnopqrstuvwxyz";</TT>
+<BR>
+puis :
+<BR><TT>code:=table(seq(alphab[j]=j+1,j=0..25));</TT>
+<BR>
+On tape 
+<TT>code["c"]</TT>
+<BR>
+On obtient <TT>3</TT>
+<BR>
+ou bien on &#233;crit une fonction :
+<PRE>
+Code(a):={
+local code,alphab,j;
+alphab:="abcdefghijklmnopqrstuvwxyz";
+code:=table(seq(alphab[j]=j+1,j=0..25));
+return code(a);
+};
+</PRE>
+On tape 
+<TT>Code("c")</TT>
+<BR>
+On obtient <TT>3</TT>
+<BR><B>Remarque</B>
+<BR>
+Si on fait une affectation du type <TT>T[n]:= ...</TT> o&#249; <TT>T</TT> est le nom 
+d'une variable et <TT>n</TT> un entier
+
+<UL>
+<LI>si la variable <TT>T</TT> contient une liste ou une s&#233;quence, alors le 
+<I>n</I>-i&#232;me &#233;l&#233;ment de  <TT>T</TT> est modifi&#233;,
+</LI>
+<LI>si la variable <TT>T</TT> n'est pas assign&#233;e, une table <TT>T</TT>
+est cr&#233;&#233;e avec une entr&#233;e (correspondant &#224; l'indice <I>n</I>). Notez
+qu'apr&#232;s cette assignation <TT>T</TT> n'est pas une liste, bien que <I>n</I>
+soit un entier.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12035"
+  HREF="node620.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12029"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12023"
+  HREF="node618.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12031"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12033"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12036"
+  HREF="node620.html">Les matrices particuli&#232;res</A>
+<B> monter:</B> <A NAME="tex2html12030"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12024"
+  HREF="node618.html">Fonctions utiles pour les</A>
+ &nbsp; <B>  <A NAME="tex2html12032"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12034"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

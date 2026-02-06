@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;gression exponentielle : exponential_regression</TITLE>
+<META NAME="description" CONTENT="R&#233;gression exponentielle : exponential_regression">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node793.html">
+<LINK REL="previous" HREF="node791.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node793.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14657"
+  HREF="node793.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14651"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14645"
+  HREF="node791.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14653"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14655"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14658"
+  HREF="node793.html">Graphe de la r&#233;gression</A>
+<B> monter:</B> <A NAME="tex2html14652"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14646"
+  HREF="node791.html">Graphe de la r&#233;gression</A>
+ &nbsp; <B>  <A NAME="tex2html14654"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14656"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010211000000000000000"></A><A NAME="20742"></A>
+<BR>
+R&#233;gression exponentielle : <TT>exponential_regression</TT>
+</H2>
+Pour approcher les donn&#233;es par une fonction exponnentielle d'&#233;quation 
+<!-- MATH
+ $y=be^{mx}=ba^x$
+ -->
+<I>y</I> = <I>be</I><SUP>mx</SUP> = <I>ba</I><SUP>x</SUP>, on utilise  <TT>exponential_regression</TT> qui 
+renvoie le couple (<I>a</I>, <I>b</I>).
+<BR><TT>exponential_regression</TT> a les m&#234;mes arguments que <TT>covariance</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>exponential_regression([[1,1],[2,4],[3,9],[4,16]])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(exponential_regression([1,2,3,4],[1,4,9,16]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2.49146187923,0.5</TT>
+</DIV>
+c'est donc la fonction exponentielle d'&#233;quation <!-- MATH
+ $y=0.5*(2.49146187923)^x$
+ -->
+<I>y</I> = 0.5*(2.49146187923)<SUP>x</SUP>
+qui approche au mieux les donn&#233;es.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>X:=[0,1,2,3,4,5,6,7,8,9,10]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Y:=[7.3,9.53,12.47,16.3,21.24,27.73,36.22,47.31,</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>61.78,80.68,105]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>exponential_regression(X,Y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.30568684451,7.30853268031</TT>
+</DIV>
+c'est donc la fonction exponentielle d'&#233;quation <!-- MATH
+ $y=7.3*(1.3)^x$
+ -->
+<I>y</I> = 7.3*(1.3)<SUP>x</SUP> 
+qui approche au mieux les donn&#233;es.
+On v&#233;rifie en tapant :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>e<code>^</code>[linear_regression(X,ln(Y))]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.30568684451,7.30853268031</TT>
+</DIV>
+et
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

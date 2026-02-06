@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Factorisation sur les entiers : collect</TITLE>
+<META NAME="description" CONTENT="Factorisation sur les entiers : collect">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node447.html">
+<LINK REL="previous" HREF="node445.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node447.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9501"
+  HREF="node447.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9495"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9489"
+  HREF="node445.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9497"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9499"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9502"
+  HREF="node447.html">Factorisation : factor factoriser</A>
+<B> monter:</B> <A NAME="tex2html9496"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9490"
+  HREF="node445.html">Partie primitive d'un polyn&#244;me</A>
+ &nbsp; <B>  <A NAME="tex2html9498"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9500"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092517000000000000000"></A><A NAME="11163"></A>
+<BR>
+Factorisation sur les entiers : <TT>collect</TT>
+</H2>
+<TT>collect</TT> a comme param&#232;tre un polyn&#244;me ou une liste de 
+polyn&#244;mes et &#233;ventuellement <TT>sqrt(n)</TT>.
+<BR><TT>collect</TT> factorise  le polyn&#244;me (ou les polyn&#244;mes de la liste) sur les
+entiers lorsque les coefficients du polyn&#244;me sont entiers ou sur 
+<!-- MATH
+ $\mathbb Q(\sqrt(n))$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.png"
+ ALT="$ \mathbb {Q}$">(<IMG
+ WIDTH="29" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img340.png"
+ ALT="$ \sqrt{(}$"><I>n</I>)), si les  coefficients du polyn&#244;me sont dans
+ <!-- MATH
+ $\mathbb Q(\sqrt(n))$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.png"
+ ALT="$ \mathbb {Q}$">(<IMG
+ WIDTH="29" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img340.png"
+ ALT="$ \sqrt{(}$"><I>n</I>)) ou si <TT>sqrt(n)</TT> est le  second argument.
+<BR>.
+Exemples :
+<BR>
+<UL>
+<LI>Factoriser sur les entiers : 
+<P><!-- MATH
+ \begin{displaymath}
+x^2-4
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>2</SUP> - 4
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>collect(x<code>^</code>2-4)</TT>
+</DIV>
+On trouve en mode r&#233;el :
+<DIV ALIGN="CENTER">
+<TT>(x-2)*(x+2)</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Factoriser sur les entiers : 
+<P><!-- MATH
+ \begin{displaymath}
+x^2+4
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>2</SUP> + 4
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>collect(x<code>^</code>2+4)</TT>
+</DIV>
+On obtient en mode r&#233;el :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>2+4</TT>
+</DIV>
+On obtient en mode complexe :
+<DIV ALIGN="CENTER">
+<TT>(x+2*i)*(x-2*i)</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Factoriser sur les entiers : 
+<P><!-- MATH
+ \begin{displaymath}
+x^2-2
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>2</SUP> - 2
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>collect(x<code>^</code>2-2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>2-2</TT>
+</DIV>
+Mais si on tape :
+<DIV ALIGN="CENTER">
+<TT>collect(sqrt(2)*(x<code>^</code>2-2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(2)*(x-sqrt(2))*(x+sqrt(2))</TT>
+</DIV>
+</LI>
+<LI>Factorier sur les entiers : 
+<P><!-- MATH
+ \begin{displaymath}
+x^3-2x^2+1 \mbox{et} x^2-x
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I><SUP>3</SUP> -2<I>x</I><SUP>2</SUP> +1et<I>x</I><SUP>2</SUP> - <I>x</I>
+</DIV><P></P>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>collect([x<code>^</code>3-2*x<code>^</code>2+1,x<code>^</code>2-x])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(x-1)*(x<code>^</code>2-x-1),x*(x-1)]</TT>
+</DIV>
+Mais si on tape :
+ <DIV ALIGN="CENTER">
+<TT>collect((x<code>^</code>3-2*x<code>^</code>2+1)*sqrt(5))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>((19*sqrt(5)-10)*((sqrt(5)+15)*x+7*sqrt(5)-5)* ((sqrt(5)+25)*x-13*sqrt(5)-15)*(x-1))/6820</TT>
+</DIV>
+Ou si on tape :
+ <DIV ALIGN="CENTER">
+<TT>collect(x<code>^</code>3-2*x<code>^</code>2+1,sqrt(5))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>((2*sqrt(5)-19)*((sqrt(5)+25)*x-13*sqrt(5)-15)*(-x+1)*((sqrt(5)+15)*x+7*sqrt(5)-5))/6820</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9501"
+  HREF="node447.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9495"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9489"
+  HREF="node445.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9497"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9499"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9502"
+  HREF="node447.html">Factorisation : factor factoriser</A>
+<B> monter:</B> <A NAME="tex2html9496"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9490"
+  HREF="node445.html">Partie primitive d'un polyn&#244;me</A>
+ &nbsp; <B>  <A NAME="tex2html9498"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9500"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Trier : sort</TITLE>
+<META NAME="description" CONTENT="Trier : sort">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node585.html">
+<LINK REL="previous" HREF="node583.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node585.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11541"
+  HREF="node585.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11535"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11529"
+  HREF="node583.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11537"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11539"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11542"
+  HREF="node585.html">Trier une liste selon</A>
+<B> monter:</B> <A NAME="tex2html11536"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11530"
+  HREF="node583.html">Rajouter un &#233;l&#233;ment au</A>
+ &nbsp; <B>  <A NAME="tex2html11538"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11540"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093818000000000000000"></A><A NAME="14803"></A>
+<BR>
+Trier : <TT>sort</TT>
+</H2>
+<TT>sort</TT> a comme argument une liste ou une expression.
+<BR>
+<UL>
+<LI>Pour une liste, <TT>sort</TT> renvoie la liste tri&#233;e selon l'ordre 
+croissant.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sort([3,4,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,3,4]</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Pour une expression, <TT>sort</TT> trie et collecte les termes &#233;gaux 
+dans les sommes et produits.
+<BR>
+On tape :  
+<DIV ALIGN="CENTER">
+<TT>sort(exp(2*ln(x))+x*y-x+y*x+2*x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*x*y+exp(2*ln(x))+x</TT>
+</DIV>
+On tape :  
+<DIV ALIGN="CENTER">
+<TT>simplifier(exp(2*ln(x))+x*y-x+y*x+2*x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>2+2*x*y+x</TT>
+</DIV>
+</LI>
+</UL>
+<B>Remarque</B>
+<BR><TT>sort</TT> accepte un 
+2-i&#232;me argument apr&#232;s une liste qui est la fonction de tri, par
+exemple (x,y)-&gt;x&gt;y pour avoir la liste tri&#233;e selon l'ordre d&#233;croissant.
+<BR><B>Attention</B> 
+La fonction de tri <I>f</I> doit d&#233;finir un ordre strict faible c'est &#224; dire
+que 
+
+<UL>
+<LI><I>f</I> (<I>x</I>, <I>y</I>) est un fonction renvoyant 0 (faux) ou 1 (vrai) qui est
+toujours d&#233;finie (<I>f</I> doit renvoyer 0 si 2 &#233;l&#233;ments ne sont
+pas comparables) et doit v&#233;rifier&nbsp;:
+</LI>
+<LI><I>f</I> doit d&#233;finir une 
+relation transitive (si <I>f</I> (<I>x</I>, <I>y</I>) et <I>f</I> (<I>y</I>, <I>z</I>) sont vrais alors
+<I>f</I> (<I>x</I>, <I>z</I>) est vrai)
+</LI>
+<LI>on ne peut pas avoir
+<I>f</I> (<I>x</I>, <I>y</I>) et <I>f</I> (<I>y</I>, <I>x</I>) vrai en m&#234;me temps (antisym&#233;trie
+<B>non r&#233;flexive</B>)
+</LI>
+<LI><I>f</I> ne d&#233;finit pas forc&#233;ment une relation
+d'ordre total, on peut avoir <I>f</I> (<I>x</I>, <I>y</I>) et <I>f</I> (<I>y</I>, <I>x</I>) simultan&#233;ment
+faux.
+Si on d&#233;finit la relation <I>E</I> par <I>xEy</I> est vrai lorsque 
+<I>f</I> (<I>x</I>, <I>y</I>) et <I>f</I> (<I>y</I>, <I>x</I>) sont simultan&#233;ment faux
+alors <I>E</I> doit &#234;tre une relation d'&#233;quivalence.
+</LI>
+</UL>
+Sinon l'algorithme employ&#233;  risque de boucler....
+Par exemple, on ne peut pas mettre comme
+fonction de tri : <TT>(x,y)-&gt;x[1]&gt;=y[1]</TT>. 
+
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sort([3,4,2],(x,y)-&gt;x&gt;y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[4,3,2]</TT>
+</DIV>
+<TT>sort</TT> ne trie pas des listes de listes, il faut donc lui passer
+une fonction de tri, par exemple par ordre d&#233;croissant de la 2i&#232;me
+colonne ou de la premi&#232;re en cas d'&#233;galit&#233;. On tape :
+<DIV ALIGN="CENTER">
+<TT>sort([[1,2],[2,3],[4,3]],(x,y)-&gt;when(x[1]==y[1],x[0]&gt;y[0],x[1]&gt;y[1]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,3],[2,3],[1,2]] </TT>
+</DIV>
+<B>Attention</B> 
+Dans l'exemple pr&#233;c&#233;dent,
+
+<UL>
+<LI>on ne peut pas mettre comme
+fonction de tri
+ <TT>(x,y)-&gt;x[1]&gt;=y[1]</TT> car l'ordre n'est pas strict 
+</LI>
+<LI>on peut mettre comme fonction de tri
+ <TT>f:=(x,y)-&gt;x[1]&gt;y[1]</TT> bien que l'ordre ne soit pas total. 
+</LI>
+</UL>
+Soient :
+<BR><TT>L1:=[[1,2],[2,3],[4,3]]</TT>
+<BR><TT>L2:=[[1,2],[4,3],[2,3]]</TT>
+<BR>
+Dans ce cas <TT>sort(L1,(x,y)-&gt;x[1]&gt;y[1])</TT> et
+<TT>sort(L2,(x,y)-&gt;x[1]&gt;y[1])</TT> renvoient des r&#233;ponses
+diff&#233;rentes parce que l'ordre n'est pas total et que
+<TT>[2,3]</TT> et <TT>[4,3]</TT> sont consid&#233;r&#233;s comme &#233;quivalents.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11541"
+  HREF="node585.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11535"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11529"
+  HREF="node583.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11537"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11539"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11542"
+  HREF="node585.html">Trier une liste selon</A>
+<B> monter:</B> <A NAME="tex2html11536"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11530"
+  HREF="node583.html">Rajouter un &#233;l&#233;ment au</A>
+ &nbsp; <B>  <A NAME="tex2html11538"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11540"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

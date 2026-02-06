@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Solution approch&#233;e du syst&#232;me v'=f(t,v) : odesolve</TITLE>
+<META NAME="description" CONTENT="Solution approch&#233;e du syst&#232;me v'=f(t,v) : odesolve">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node164.html">
+<LINK REL="up" HREF="node160.html">
+<LINK REL="next" HREF="node166.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4780"
+  HREF="node166.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4774"
+  HREF="node160.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4770"
+  HREF="node164.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4776"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4778"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4781"
+  HREF="node166.html">R&#233;solution d'&#233;quations avec nSolve</A>
+<B> monter:</B> <A NAME="tex2html4775"
+  HREF="node160.html">Quelques fonctions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4771"
+  HREF="node164.html">Solution approch&#233;e de y'=f(t,y)</A>
+ &nbsp; <B>  <A NAME="tex2html4777"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4779"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00735000000000000000"></A><A NAME="3662"></A> <A NAME="sec:odesolve"></A>
+<BR>
+Solution approch&#233;e du syst&#232;me v'=f(t,v) : <TT>    odesolve</TT>
+</H2>
+
+<UL>
+<LI>Si <I>v</I> est un vecteur
+de variables <!-- MATH
+ $[x1,..,xn]$
+ -->
+[<I>x</I>1,.., <I>xn</I>] et si <I>f</I> est donn&#233; par
+un vecteur  de coordonn&#233;es les expressions
+<TT>[e1,...,en]</TT> d&#233;pendant de <I>t</I> et des <TT>xi</TT>,
+si la valeur initiale de <I>v</I> en <TT>t0</TT>
+est le vecteur  de coordonn&#233;es <!-- MATH
+ $[x10,...,xn0]$
+ -->
+[<I>x</I>10,..., <I>xn</I>0] alors l'instruction
+<DIV ALIGN="CENTER">
+<TT>odesolve([e1,..,en],t=t0..t1,[x1,...,xn],
+[x10,...,xn0])</TT> 
+
+</DIV>
+renverra une valeur approch&#233;e
+de <I>v</I> au temps <I>t</I> = <I>t</I>1. Le param&#232;tre
+optionnel <TT>curve</TT> permet d'avoir les valeurs 
+interm&#233;diaires sous forme d'une liste de couples [<I>t</I>, <I>v</I>(<I>t</I>)] calcul&#233;s.
+
+<P>
+Pour r&#233;soudre le syst&#232;me :
+<BR><!-- MATH
+ $x'(t)=-y(t)$
+ -->
+<I>x'</I>(<I>t</I>) = - <I>y</I>(<I>t</I>)
+<BR><!-- MATH
+ $y'(t)=x(t)$
+ -->
+<I>y'</I>(<I>t</I>) = <I>x</I>(<I>t</I>)
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve([-y,x],t=0..pi,[x,y],[0,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-1.79045146764e-15,-1]</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Si <I>f</I> est une fonction de 
+<!-- MATH
+ $\mathbb R \times \mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$">&#215;<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP> dans <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP>.
+<BR><TT>odesolve(t0..t1,(t,v)-&gt;f(t,v),v0)</TT> ou
+<BR><TT>odesolve(t0..t1,f,v0)</TT>
+<BR>
+calcule de fa&#231;on approch&#233;e la valeur de 
+<I>v</I>(<I>t</I>1) lorsque le vecteur  de coordonn&#233;es <I>v</I>(<I>t</I>)
+de <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP> est la  solution de
+<!-- MATH
+ $v'(t)=f(t,v(t))$
+ -->
+<I>v'</I>(<I>t</I>) = <I>f</I> (<I>t</I>, <I>v</I>(<I>t</I>)) qui v&#233;rifie <I>v</I>(<I>t</I>0) = <I>v</I>0.
+<BR>
+Le param&#232;tre
+optionnel <TT>curve</TT> permet d'avoir les valeurs 
+interm&#233;diaires sous forme d'une liste de couples [<I>t</I>, <I>v</I>(<I>t</I>)] calcul&#233;s.
+
+<P>
+Pour r&#233;soudre le syst&#232;me :
+<BR><!-- MATH
+ $x'(t)=-y(t)$
+ -->
+<I>x'</I>(<I>t</I>) = - <I>y</I>(<I>t</I>)
+<BR><!-- MATH
+ $y'(t)=x(t)$
+ -->
+<I>y'</I>(<I>t</I>) = <I>x</I>(<I>t</I>)
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve(0..pi,(t,v)-&gt;[-v[1],v[0]],[0,1])</TT>
+</DIV>
+Ou on d&#233;finit la fonction :
+<DIV ALIGN="CENTER">
+<TT>f(t,v):=[-v[1],v[0]]</TT>
+</DIV>
+puis on tape :
+<DIV ALIGN="CENTER">
+<TT>odesolve(0..pi,f,[0,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-1.79045146764e-15,-1]</TT>
+</DIV>
+On d&#233;finit la fonction :
+<DIV ALIGN="CENTER">
+<TT>f(t,v):=[-v[1],v[0]]</TT>
+</DIV>
+puis on tape :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>odesolve(0..pi/4,f,[0,1],curve)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0.1781,[-0.177159948386,0.984182072936]], [0.3781,[-0.369155338156,0.929367707805]], [0.5781,[-0.54643366953,0.837502384954]], [0.7781,[-0.701927414872,0.712248484906]]]</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4780"
+  HREF="node166.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4774"
+  HREF="node160.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4770"
+  HREF="node164.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4776"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4778"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4781"
+  HREF="node166.html">R&#233;solution d'&#233;quations avec nSolve</A>
+<B> monter:</B> <A NAME="tex2html4775"
+  HREF="node160.html">Quelques fonctions</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4771"
+  HREF="node164.html">Solution approch&#233;e de y'=f(t,y)</A>
+ &nbsp; <B>  <A NAME="tex2html4777"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4779"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

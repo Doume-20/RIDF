@@ -1,0 +1,96 @@
+OfFailures:0 (0x0)
+                  
+                  1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+                  	Category:Content
+                  	LastResult:Success
+                  	Message:Provisioning succeeded
+                  	NumberOfFailures:0 (0x0)
+2022-01-23 10:17:19.202:                   
+2022-01-23 10:17:19.202:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2022-01-23 10:17:19.202:                   	Category:Content
+2022-01-23 10:17:19.202:                   	LastResult:Success
+2022-01-23 10:17:19.202:                   	Message:Provisioning succeeded
+2022-01-23 10:17:19.202:                   	NumberOfFailures:0 (0x0)
+2022-01-23 10:17:19.202:                   
+2022-01-23 10:17:19.202:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2022-01-23 10:17:19.202:                   	Category:Content
+2022-01-23 10:17:19.202:                   	LastResult:Success
+2022-01-23 10:17:19.202:                   	Message:Provisioning succeeded
+2022-01-23 10:17:19.202:                   	NumberOfFailures:0 (0x0)
+2022-01-23 10:17:19.202:                   
+2022-01-23 10:17:19.202:                   4__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2022-01-23 10:17:19.202:                   	Category:Scripts
+2022-01-23 10:17:19.202:                   	LastResult:Success
+2022-01-23 10:17:19.202:                   	Message:Provisioning succeeded
+2022-01-23 10:17:19.202:                   	NumberOfFailures:0 (0x0)
+2022-01-23 10:17:19.202:                   
+2022-01-23 10:17:19.202:                   
+2022-01-23 10:17:19.202: 
+2022-01-23 10:17:19.202: 
+2022-01-23 10:17:19.202:  +0ms
+2022-01-23 10:17:19.202: 2022-01-23 11:17:19 [5400] INFO [JS] Install Stderr:  +1ms
+2022-01-23 10:17:19.202: 2022-01-23 11:17:19 [5400] INFO [JS] Finishing Installation +0ms
+2022-01-23 10:17:19.202: 2022-01-23 11:17:19 [5400] INFO [Runner] Running result: true +1ms
+2022-01-23 10:17:19.202: 2022-01-23 11:17:19 [5400] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +2ms
+2022-01-23 10:17:21.030: 2022-01-23 11:17:21 [5400] INFO [CommandService] Got command facts:set +1844ms
+2022-01-23 10:17:21.038: 2022-01-23 11:17:21 [5400] INFO [CommandService] Got command facts:set +7ms
+2022-01-23 10:17:21.042: 2022-01-23 11:17:21 [5400] INFO [CommandService] Got command units:trigger +3ms
+2022-01-23 10:17:21.042: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> login... +1ms
+2022-01-23 10:17:21.042: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> login... +0ms
+2022-01-23 10:17:21.046: 2022-01-23 11:17:21 [5400] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +1ms
+2022-01-23 10:17:21.066: 2022-01-23 11:17:21 [5400] INFO [Runner] Creating configuration unit runner object... +20ms
+2022-01-23 10:17:21.066: 2022-01-23 11:17:21 [5400] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-01-23 10:17:21.070: 2022-01-23 11:17:21 [5400] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-01-23 10:17:21.070: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> login... +1ms
+2022-01-23 10:17:21.070: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> login... +1ms
+2022-01-23 10:17:21.074: 2022-01-23 11:17:21 [5400] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +1ms
+2022-01-23 10:17:21.086: 2022-01-23 11:17:21 [5400] INFO [Runner] Creating configuration unit runner object... +15ms
+2022-01-23 10:17:21.090: 2022-01-23 11:17:21 [5400] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-01-23 10:17:21.090: 2022-01-23 11:17:21 [5400] INFO [JS] Checking that the unit needs to be performed. Params:
+2022-01-23 10:17:21.090: {
+2022-01-23 10:17:21.090:   "platform": "win32",
+2022-01-23 10:17:21.090:   "deviceId": "IFP052046109",
+2022-01-23 10:17:21.090:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2022-01-23 10:17:21.090:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2022-01-23 10:17:21.090:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2022-01-23 10:17:21.090:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2022-01-23 10:17:21.090:   "versionCode": 21093040,
+2022-01-23 10:17:21.090:   "trigger": "login",
+2022-01-23 10:17:21.090:   "metadata": {
+2022-01-23 10:17:21.090:     "packageVersion": "1.0.16.0",
+2022-01-23 10:17:21.090:     "componentParameters": {
+2022-01-23 10:17:21.090:       "AppX": "Hisqool.Legal.GDPR",
+2022-01-23 10:17:21.090:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2022-01-23 10:17:21.090:       "DesktopShortcut": "Charte de protection*",
+2022-01-23 10:17:21.090:       "ProvisioningPackage": "Hisqool GDPR",
+2022-01-23 10:17:21.090:       "InstallationDirectory": "hisqool.gdpr",
+2022-01-23 10:17:21.090:       "UninstallationDirectory": "hisqool.gdpr",
+2022-01-23 10:17:21.090:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2022-01-23 10:17:21.090:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2022-01-23 10:17:21.090:     },
+2022-01-23 10:17:21.090:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2022-01-23 10:17:21.090:   }
+2022-01-23 10:17:21.090: } +1ms
+2022-01-23 10:17:21.094: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> login... +2ms
+2022-01-23 10:17:21.094: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> login... +0ms
+2022-01-23 10:17:21.094: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> login... +1ms
+2022-01-23 10:17:21.094: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +1ms
+2022-01-23 10:17:21.094: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> login... +0ms
+2022-01-23 10:17:21.094: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> login... +1ms
+2022-01-23 10:17:21.098: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +1ms
+2022-01-23 10:17:21.098: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +2ms
+2022-01-23 10:17:21.098: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +1ms
+2022-01-23 10:17:21.102: 2022-01-23 11:17:21 [5400] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2022-01-23 10:17:21.110: 127.0.0.1 - - [23/Jan/2022:10:17:21 +0000] "POST /commands HTTP/1.1" 200 29 "-" "-"
+2022-01-23 10:17:21.118: 2022-01-23 11:17:21 [5400] INFO [CommandService] Got command facts:set +16ms
+2022-01-23 10:17:21.142: 2022-01-23 11:17:21 [5400] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +19ms
+2022-01-23 10:17:21.182: 2022-01-23 11:17:21 [5400] INFO [CommandService] Got command facts:set +41ms
+2022-01-23 10:17:21.186: 2022-01-23 11:17:21 [5400] INFO [CommandService] Got command units:trigger +3ms
+2022-01-23 10:17:21.190: 2022-01-23 11:17:21 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> boot... +3ms
+2022-01-23 10:17:21.194: 2022-01-23 11:17:21 [5400] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +4ms
+2022-01-23 10:17:21.314: 2022-01-23 11:17:21 [5400] INFO [Runner] Creating configuration unit runner object... +122ms
+2022-01-23 10:17:21.318: 2022-01-23 11:17:21 [5400] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-01-23 10:17:21.318: 2022-01-23 11:17:21 [5400] INFO [JS] Checking if programming or tiggering with trigger boot... +1ms
+2022-01-23 10:17:21.318: 2022-01-23 11:17:21 [5400] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +0ms
+2022-01-23 10:17:21.322: 2022-01-23 11:17:21 [5400] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2022-01-23 10:17:21.322: 2022-01-23 11:17:21 [5400] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms

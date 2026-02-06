@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fonction testant si une touche est press&#233;e : getKey</TITLE>
+<META NAME="description" CONTENT="Fonction testant si une touche est press&#233;e : getKey">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node846.html">
+<LINK REL="previous" HREF="node844.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node846.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15498"
+  HREF="node846.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15492"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15486"
+  HREF="node844.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15494"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15496"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15499"
+  HREF="node846.html">Fonction testant le type</A>
+<B> monter:</B> <A NAME="tex2html15493"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15487"
+  HREF="node844.html">Les entr&#233;es : input,</A>
+ &nbsp; <B>  <A NAME="tex2html15495"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15497"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001143000000000000000"></A><A NAME="21920"></A>
+<BR>
+Fonction testant si une touche est press&#233;e : <TT>getKey</TT>
+</H2>
+<TT>getKey</TT> est une fonction qui n'a pas d'argument et qui renvoie le
+ code <TT>ASCII</TT> de la touche press&#233;e dans l'&#233;cran <TT>xterm</TT> de la
+fen&#234;tre du terminal ou <TT>0</TT> si aucune touche n'est press&#233;e dans cet 
+&#233;cran .
+<BR>
+On tape :
+<PRE>
+testkey():={
+local a;
+while (1==1) {
+a:=getKey();
+if (a!=0) break;
+}
+return a;
+}
+</PRE>
+puis:
+<DIV ALIGN="CENTER">
+<TT>testkey()</TT>
+</DIV>
+puis:
+<DIV ALIGN="CENTER">
+<TT>A</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>65</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

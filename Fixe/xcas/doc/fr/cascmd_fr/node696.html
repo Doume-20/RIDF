@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice de passage et matrice de Jordan : jordan</TITLE>
+<META NAME="description" CONTENT="Matrice de passage et matrice de Jordan : jordan">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node697.html">
+<LINK REL="previous" HREF="node695.html">
+<LINK REL="up" HREF="node691.html">
+<LINK REL="next" HREF="node697.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13182"
+  HREF="node697.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13176"
+  HREF="node691.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13170"
+  HREF="node695.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13178"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13180"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13183"
+  HREF="node697.html">Polyn&#244;me caract&#233;ristique : pcar</A>
+<B> monter:</B> <A NAME="tex2html13177"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13171"
+  HREF="node695.html">Matrice de Jordan rationnelle</A>
+ &nbsp; <B>  <A NAME="tex2html13179"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13181"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009475000000000000000"></A><A NAME="17903"></A>
+<BR>
+Matrice de passage et matrice de Jordan : <TT>jordan</TT>
+</H2>
+<TT>jordan</TT> a comme argument une matrice <I>A</I> d'ordre <I>n</I>.
+<BR><TT>jordan</TT> renvoie 
+
+<UL>
+<LI>en mode <TT>Xcas</TT>, <TT>Mupad</TT> ou <TT>TI</TT>
+<BR>
+une s&#233;quencee compos&#233;e de
+deux matrices : une matrice de changement de base <I>P</I> de colonnes les vecteurs 
+propres et caract&#233;ristiques de <I>A</I>, suivie de la matrice de 
+Jordan <I>J</I> associ&#233;e &#224; <I>A</I> dans la nouvelle base,
+</LI>
+<LI>en mode <TT>Maple</TT>
+<BR>
+la matrice de Jordan <I>J</I> associ&#233;e &#224; <I>A</I> dans la nouvelle base. On peut 
+cependant obtenir la matrice de changement de base <I>P</I>, dans une variable 
+pass&#233;e en second argument, par exemple 
+<DIV ALIGN="CENTER">
+<TT>jordan([[1,0,0],[0,1,1],[1,1,-1]],'P')</TT>
+
+</DIV>
+</LI>
+</UL>
+On a :
+<BR><!-- MATH
+ $J=P^{-1}AP$
+ -->
+<I>J</I> = <I>P</I><SUP>-1</SUP><I>AP</I>.
+<BR><B>Remarques</B>
+<TT>rat_jordan</TT> renvoie :
+
+<UL>
+<LI>La syntaxe <TT>Maple</TT> est aussi valable dans les autres modes, par exemple, en mode <TT>Xcas</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[4,1,1],[1,4,1],[1,1,4]],'P')</TT>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,-1,1/2],[1,0,-1],[1,1,1/2]]</TT>
+
+</DIV>
+puis <TT>P</TT> renvoie :
+<DIV ALIGN="CENTER">
+<TT>[[6,0,0],[0,3,0],[0,0,3]]</TT>
+
+</DIV>,
+</LI>
+<LI>Lorsque <I>A</I> est sym&#233;trique et a des valeurs propres d'ordre multiple,
+<TT>Xcas</TT> renvoie des vecteurs propres orthogonaux (pas forc&#233;ment norm&#233;s 
+i.e. <TT>tran(P)*P</TT> est une matrice diagonale ayant pour diagonale le carr&#233; 
+de la norme des vecteurs propres.   
+par exemple :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[4,1,1],[1,4,1],[1,1,4]])</TT>
+
+</DIV>
+renvoie :
+<DIV ALIGN="CENTER">
+<TT>[[1,-1,1/2],[1,0,-1],[1,1,1/2]],[[6,0,0],[0,3,0],[0,0,3]]</TT>
+
+</DIV>
+</LI>
+</UL>
+On tape en mode <TT>Xcas</TT>, <TT>Mupad</TT> et <TT>TI</TT> :
+<DIV ALIGN="CENTER">
+<TT>jordan([[1,0,0],[0,1,1],[1,1,-1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0,0],[0,1,1],[1,1,-1]],[[-1,0,0],[1,1,1],[0,-sqrt(2)-1,sqrt(2)-1]],[[1,0,0],[0,-(sqrt(2)),0],[0,0,sqrt(2)]]</TT>
+</DIV>
+On tape en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>jordan([[1,0,0],[0,1,1],[1,1,-1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0,0],[0,-(sqrt(2)),0],[0,0,sqrt(2)]]</TT>
+</DIV>
+On tape en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>jordan([[1,0,0],[0,1,1],[1,1,-1]],'P')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0,0],[0,-(sqrt(2)),0],[0,0,sqrt(2)]]</TT>
+</DIV>
+puis on tape :
+<DIV ALIGN="CENTER">
+<TT>P)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,0,0],[1,1,1],[0,-sqrt(2)-1,sqrt(2)-1]]</TT>
+</DIV>
+On tape en mode <TT>Xcas</TT>, <TT>Mupad</TT> et <TT>TI</TT>:
+<DIV ALIGN="CENTER">
+<TT>jordan([[4,1,-2],[1,2,-1],[2,1,0]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[[1,2,1],[0,1,0],[1,2,0]],[[2,1,0],[0,2,1],[0,0,2]]]</TT>
+</DIV>
+En mode complexe et en mode <TT>Xcas</TT>, <TT>Mupad</TT> et <TT>TI</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>jordan([[2,0,0],[0,2,-1],[2,1,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0,0],[-2,-1,-1],[0,-i,i]],[[2,0,0],[0,2-i,0],[0,0,2+i]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13182"
+  HREF="node697.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13176"
+  HREF="node691.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13170"
+  HREF="node695.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13178"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13180"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13183"
+  HREF="node697.html">Polyn&#244;me caract&#233;ristique : pcar</A>
+<B> monter:</B> <A NAME="tex2html13177"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13171"
+  HREF="node695.html">Matrice de Jordan rationnelle</A>
+ &nbsp; <B>  <A NAME="tex2html13179"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13181"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

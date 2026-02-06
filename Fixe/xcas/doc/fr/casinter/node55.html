@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Rotation animée du point de vue</TITLE>
+<META NAME="description" CONTENT="Rotation animée du point de vue">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node56.html">
+<LINK REL="previous" HREF="node54.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node56.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html966"
+  HREF="node56.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html960"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html954"
+  HREF="node54.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html962"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html964"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html967"
+  HREF="node56.html">Les lumières des graphes</A>
+<B> monter:</B> <A NAME="tex2html961"
+  HREF="node51.html">Graphes dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html955"
+  HREF="node54.html">Comment modifier le plan</A>
+ &nbsp; <B>  <A NAME="tex2html963"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html965"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000153400000000000000"></A> <A NAME="sec:anim3d"></A>
+<BR>
+Rotation anim&#233;e du point de vue
+</H3>
+Xcas permet d'effectuer une animation par rotation du point de vue
+autour d'un axe passant par l'origine du rep&#232;re. L'angle de rotation varie
+d'un tour en un nombre de pas configurable, de m&#234;me que l'intervalle
+de temps entre 2 images successives. Tous ces param&#232;tres sont
+configurables dans l'&#233;cran que l'on fait apparaitre en
+cliquant sur <code>cfg</code> en bas &#224; droite du graphe 3-d, &#224; la ligne
+commen&#231;ant par <code>Anim</code>, plus pr&#233;cis&#233;ment&nbsp;:
+
+<UL>
+<LI><code>Anim</code>: est un entier qui indique le type d'animation,
+la mise &#224; 1 du bit 8 de cet entier indique que la rotation s'effectue sur
+le point de vue, la mise &#224; 1 des bits 0 &#224; 7 de cet entier 
+indique que la rotation s'effectue
+sur les spots 0 &#224; 7. La valeur par d&#233;faut est 256, c'est-&#224;-dire que
+seul le point de vue change. La valeur 255 permet de simuler
+une rotation de tous les spots illuminant un objet. La valeur 1
+permet de simuler une rotation du spot 1 illuminant un objet, par
+exemple si cet objet est une sph&#232;re centr&#233;e en l'origine
+repr&#233;sentant la Terre, 
+on peut simuler la rotation apparente du Soleil 
+pendant une journ&#233;e en prenant pour axe l'axe de rotation de la sph&#232;re.
+</LI>
+<LI><code>t</code>: intervalle de temps entre 2 images
+</LI>
+<LI><code>n</code>: nombre d'images g&#233;n&#233;r&#233;es en un tour
+</LI>
+<LI><code>x</code>, <code>y</code>, <code>z</code>: coordonn&#233;es de l'axe de rotation.
+Ces valeurs peuvent &#234;tre programm&#233;es par l'instruction
+<code>gl_rotation_axis=[x,y,z]</code> o&#249; <code>x,y,z</code> sont
+des valeurs num&#233;riques.
+</LI>
+<LI><code>d</code>: normalement 0, peut servir &#224; changer le num&#233;ro
+d'image d'une <code>animation</code> entre 2 images d'une animation 
+de rotation.
+</LI>
+</UL>
+Le lancement de l'animation de rotation se fait par le <code>M</code>
+du graphe, sous-menu 3-d ou par le raccourci clavier r.
+
+<P>
+<B>Attention</B>
+<BR>
+Il ne faut pas confondre ce type d'animation avec les animations
+obtenus par les instructions <code>animate</code>, <code>animate3d</code>
+ou <code>animation</code>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html966"
+  HREF="node56.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html960"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html954"
+  HREF="node54.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html962"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html964"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html967"
+  HREF="node56.html">Les lumières des graphes</A>
+<B> monter:</B> <A NAME="tex2html961"
+  HREF="node51.html">Graphes dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html955"
+  HREF="node54.html">Comment modifier le plan</A>
+ &nbsp; <B>  <A NAME="tex2html963"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html965"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

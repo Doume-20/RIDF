@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Encadrement exact des racines complexes d'un polyn&#244;me : complexroot</TITLE>
+<META NAME="description" CONTENT="Encadrement exact des racines complexes d'un polyn&#244;me : complexroot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node505.html">
+<LINK REL="previous" HREF="node503.html">
+<LINK REL="up" HREF="node503.html">
+<LINK REL="next" HREF="node505.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10344"
+  HREF="node505.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10338"
+  HREF="node503.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10332"
+  HREF="node503.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10340"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10342"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10345"
+  HREF="node505.html">Encadrement exact des racines</A>
+<B> monter:</B> <A NAME="tex2html10339"
+  HREF="node503.html">Racines exactes d'un polyn&#244;me</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10333"
+  HREF="node503.html">Racines exactes d'un polyn&#244;me</A>
+ &nbsp; <B>  <A NAME="tex2html10341"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10343"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009301000000000000000"></A><A NAME="12910"></A>
+<BR>
+Encadrement exact des racines complexes d'un polyn&#244;me : <TT>complexroot</TT>
+</H2>
+<TT>complexroot</TT> a 2 ou 4 arguments : un polyn&#244;me et un nombre 
+r&#232;el <IMG
+ WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img389.png"
+ ALT="$ \epsilon$"> et &#233;ventuellement deux complexes <!-- MATH
+ $\alpha,\beta$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">,<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">.
+
+<UL>
+<LI>Si <TT>complexroot</TT> a 2 arguments, <TT>complexroot</TT> renvoie la liste 
+des vecteurs de coordonn&#233;es la valeur des racines complexes et exactes du 
+polyn&#244;me et leur multiplicit&#233; ou de coordonn&#233;es un intervalle (les bornes
+de l'intervalle sont les sommets oppos&#233;s d'un rectangle de c&#244;t&#233;s 
+parall&#232;les aux axes et contenant une racine complexe du polyn&#244;me) et la 
+multiplicit&#233; de cette racine.
+<BR>
+Si l'intervalle est <!-- MATH
+ $[a_1+ib_1,a_2+ib_2]$
+ -->
+[<I>a</I><SUB>1</SUB> + <I>ib</I><SUB>1</SUB>, <I>a</I><SUB>2</SUB> + <I>ib</I><SUB>2</SUB>] on a <!-- MATH
+ $|a_1-a_2|<\epsilon$
+ -->
+| <I>a</I><SUB>1</SUB> - <I>a</I><SUB>2</SUB>| &lt; <IMG
+ WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img389.png"
+ ALT="$ \epsilon$"> et 
+<!-- MATH
+ $|b_1-b_2|<\epsilon$
+ -->
+| <I>b</I><SUB>1</SUB> - <I>b</I><SUB>2</SUB>| &lt; <IMG
+ WIDTH="11" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img389.png"
+ ALT="$ \epsilon$"> et la racine <I>a</I> + <I>ib</I> v&#233;rifie 
+<!-- MATH
+ $a_1\leq a \leq a_2$
+ -->
+<I>a</I><SUB>1</SUB> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>a</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>a</I><SUB>2</SUB> et <!-- MATH
+ $b_1\leq b \leq b_2$
+ -->
+<I>b</I><SUB>1</SUB> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I><SUB>2</SUB>.
+</LI>
+<LI>Si <TT>complexroot</TT> a 4 arguments, <TT>complexroot</TT> ne renvoie que les 
+racines situ&#233;es dans le rectangle de c&#244;t&#233;s parall&#232;les aux axes et de 
+sommets oppos&#233;s <!-- MATH
+ $\alpha,\beta$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">,<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">.
+</LI>
+</UL>
+On tape pour avoir les racines de <I>x</I><SUP>3</SUP> + 1 :
+<DIV ALIGN="CENTER">
+<TT>complexroot(x<code>^</code>3+1,0.1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,1],[[(4-7*i)/8,(8-13*i)/16],1],[[(8+13*i)/16,(4+7*i)/8],1]]</TT>
+</DIV>
+Donc pour <I>x</I><SUP>3</SUP> + 1 :
+<BR>-1 est une racine de multiplicit&#233; 1,
+<BR>
+1/2i*<I>b</I> est une racine de multiplicit&#233; 1 avec  <!-- MATH
+ $-7/8\leq b \leq -13/16$
+ -->
+-7/8 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> - 13/16,
+<BR>
+1/2i*<I>c</I> est racine de multiplicit&#233;1 avec  <!-- MATH
+ $13/1\leq c \leq 7/8$
+ -->
+13/1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>c</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> 7/8.
+<BR>
+On tape pour avoir les racines de <I>x</I><SUP>3</SUP> + 1 dans le rectangle de sommets 
+oppos&#233;s -1, 1 + 2*<I>i</I> :
+<DIV ALIGN="CENTER">
+<TT>complexroot(x<code>^</code>3+1,0.1,-1,1+2*i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,1],[[(8+13*i)/16,(4+7*i)/8],1]]</TT>
+</DIV> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10344"
+  HREF="node505.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10338"
+  HREF="node503.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10332"
+  HREF="node503.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10340"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10342"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10345"
+  HREF="node505.html">Encadrement exact des racines</A>
+<B> monter:</B> <A NAME="tex2html10339"
+  HREF="node503.html">Racines exactes d'un polyn&#244;me</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10333"
+  HREF="node503.html">Racines exactes d'un polyn&#244;me</A>
+ &nbsp; <B>  <A NAME="tex2html10341"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10343"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

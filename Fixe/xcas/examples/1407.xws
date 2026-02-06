@@ -1,0 +1,309 @@
+// fltk N4xcas6FigureE 34 61 824 373
+// fltk N4xcas12History_PackE 36 87 307 1325
+[
+// fltk 7Fl_Tile 61 87 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 87 282 30
+A:=point((-3)/2,2,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 117 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 118 282 25
+point(-3/2,4/2)
+]
+,
+// fltk 7Fl_Tile 61 145 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 145 282 30
+B:=point(-5/2,-1,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 175 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 176 282 25
+point(-5/2,-1)
+]
+,
+// fltk 7Fl_Tile 61 203 282 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 203 282 30
+AB:=segment(A,B,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 233 282 1
+
+,
+// fltk 9Fl_Scroll 61 234 282 47
+[
+// fltk N4xcas10Gen_OutputE 61 234 320 25
+polygone(point(-3/2,4/2),point(-5/2,-1))
+,
+// fltk 12Fl_Scrollbar 61 265 282 16
+[]
+,
+// fltk 12Fl_Scrollbar 343 234 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 283 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 283 282 30
+C:=point(2,-1/2,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 313 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 314 282 25
+point(4/2,1/-2)
+]
+,
+// fltk 7Fl_Tile 61 341 282 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 341 282 30
+BC:=segment(B,C,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 371 282 1
+
+,
+// fltk 9Fl_Scroll 61 372 282 47
+[
+// fltk N4xcas10Gen_OutputE 61 372 320 25
+polygone(point(-5/2,-1),point(4/2,1/-2))
+,
+// fltk 12Fl_Scrollbar 61 403 282 16
+[]
+,
+// fltk 12Fl_Scrollbar 343 372 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 421 282 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 421 282 30
+CA:=segment(C,A,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 451 282 1
+
+,
+// fltk 9Fl_Scroll 61 452 282 47
+[
+// fltk N4xcas10Gen_OutputE 61 452 329 25
+polygone(point(4/2,1/-2),point(-3/2,4/2))
+,
+// fltk 12Fl_Scrollbar 61 168 282 16
+[]
+,
+// fltk 12Fl_Scrollbar 343 137 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 501 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 501 282 30
+c:=A+1/3*(B-A)
+,
+// fltk N4xcas10Log_OutputE 61 531 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 532 282 25
+point(-11/6,6/6)
+]
+,
+// fltk 7Fl_Tile 61 559 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 559 282 30
+a:=B+1/3*(C-B)
+,
+// fltk N4xcas10Log_OutputE 61 589 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 590 282 25
+point(-1,-5/6)
+]
+,
+// fltk 7Fl_Tile 61 617 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 617 282 30
+b:=C+1/3*(A-C)
+,
+// fltk N4xcas10Log_OutputE 61 647 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 648 282 25
+point(5/6,1/3)
+]
+,
+// fltk 7Fl_Tile 61 675 282 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 675 282 30
+d:=segment(A,a,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 705 282 1
+
+,
+// fltk 9Fl_Scroll 61 706 282 47
+[
+// fltk N4xcas10Gen_OutputE 61 706 320 25
+polygone(point(-3/2,4/2),point(-1,-5/6))
+,
+// fltk 12Fl_Scrollbar 61 212 282 16
+[]
+,
+// fltk 12Fl_Scrollbar 343 181 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 755 282 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 755 282 30
+f:=segment(B,b,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 785 282 1
+
+,
+// fltk 9Fl_Scroll 61 786 282 47
+[
+// fltk N4xcas10Gen_OutputE 61 786 314 25
+polygone(point(-5/2,-1),point(5/6,1/3))
+,
+// fltk 12Fl_Scrollbar 61 141 282 16
+[]
+,
+// fltk 12Fl_Scrollbar 343 110 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 835 282 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 835 282 30
+g:=segment(C,c,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 61 865 282 1
+
+,
+// fltk 9Fl_Scroll 61 866 282 47
+[
+// fltk N4xcas10Gen_OutputE 61 866 339 25
+polygone(point(4/2,1/-2),point(-11/6,6/6))
+,
+// fltk 12Fl_Scrollbar 61 129 282 16
+[]
+,
+// fltk 12Fl_Scrollbar 343 98 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 915 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 915 282 30
+K:=inter_unique(d,f)
+,
+// fltk N4xcas10Log_OutputE 61 945 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 946 282 25
+point(-15/14,-3/7)
+]
+,
+// fltk 7Fl_Tile 61 973 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 973 282 30
+I:=inter_unique(f,g)
+,
+// fltk N4xcas10Log_OutputE 61 1003 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1004 282 25
+point(5/14,1/7)
+]
+,
+// fltk 7Fl_Tile 61 1031 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1031 282 30
+J:=inter_unique(g,d)
+,
+// fltk N4xcas10Log_OutputE 61 1061 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1062 282 25
+point(-9/7,11/14)
+]
+,
+// fltk 7Fl_Tile 61 1089 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1089 282 30
+barycentre([A,2],[B,1],[C,4])-I
+,
+// fltk N4xcas10Log_OutputE 61 1119 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1120 282 25
+0
+]
+,
+// fltk 7Fl_Tile 61 1147 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1147 282 30
+barycentre([B,2],[C,1],[A,4])-J
+,
+// fltk N4xcas10Log_OutputE 61 1177 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1178 282 25
+0
+]
+,
+// fltk 7Fl_Tile 61 1205 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1205 282 30
+milieu(C,J)-I
+,
+// fltk N4xcas10Log_OutputE 61 1235 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1236 282 25
+0
+]
+,
+// fltk 7Fl_Tile 61 1263 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1263 282 30
+normal(aire(B,K,J),aire(I,J,K),aire(A,B,J),aire(A,I,J))
+,
+// fltk N4xcas10Log_OutputE 61 1293 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1294 282 25
+13/14,13/14,13/14,-13/14
+]
+,
+// fltk 7Fl_Tile 61 1321 282 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1321 282 30
+normal(aire(A,B,C)/aire(I,J,K))
+,
+// fltk N4xcas10Log_OutputE 61 1351 282 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 1352 282 25
+7
+]
+,
+// fltk 7Fl_Tile 61 1379 282 31
+[
+// fltk N4xcas19Multiline_Input_tabE 61 1379 282 30
+
+,
+// fltk N4xcas10Log_OutputE 61 1409 282 1
+
+]
+]
+// fltk N4xcas8GeometryE 365 87 372 347
+-3.535,3.535,-3.2974,3.2974,[pnt(pnt[(-3+4*i)/2,0,"A"]),pnt(pnt[(-5-2*i)/2,0,"B"]),pnt(pnt[group[(-3+4*i)/2,(-5-2*i)/2],0,"AB"]),pnt(pnt[(4-i)/2,0,"C"]),pnt(pnt[group[(-5-2*i)/2,(4-i)/2],0,"BC"]),pnt(pnt[group[(4-i)/2,(-3+4*i)/2],0,"CA"]),pnt(pnt[(-11+6*i)/6,0,"c"]),pnt(pnt[(-5+6*i)/(-6*i),0,"a"]),pnt(pnt[(2-5*i)/(-6*i),0,"b"]),pnt(pnt[group[(-3+4*i)/2,(-5+6*i)/(-6*i)],0,"d"]),pnt(pnt[group[(-5-2*i)/2,(2-5*i)/(-6*i)],0,"f"]),pnt(pnt[group[(4-i)/2,(-11+6*i)/6],0,"g"]),pnt(pnt[(-6+15*i)/(-14*i),0,"K"]),pnt(pnt[(2-5*i)/(-14*i),0,"I"]),pnt(pnt[(-18+11*i)/14,0,"J"]),0,0,0,13/14,13/14,13/14,-13/14,7],-3.535,3.535,1,0,0,0,0.5,0.5,1
+

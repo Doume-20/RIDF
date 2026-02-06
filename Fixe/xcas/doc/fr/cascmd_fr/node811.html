@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions de r&#233;partition et leurs inverses</TITLE>
+<META NAME="description" CONTENT="Les fonctions de r&#233;partition et leurs inverses">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node802.html">
+<LINK REL="up" HREF="node763.html">
+<LINK REL="next" HREF="node812.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14926"
+  HREF="node812.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14920"
+  HREF="node763.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14916"
+  HREF="node810.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14922"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14924"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14927"
+  HREF="node812.html">Probabilit&#233; que X &#233;gale</A>
+<B> monter:</B> <A NAME="tex2html14921"
+  HREF="node763.html">Les fonctions de statistique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14917"
+  HREF="node810.html">Matrice al&#233;atoire : ranm</A>
+ &nbsp; <B>  <A NAME="tex2html14923"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14925"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001040000000000000000">
+Les fonctions de r&#233;partition et leurs inverses</A>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html14928"
+  HREF="node812.html">Probabilit&#233; que <I>X</I> &#233;gale <I>k</I> lorsque <!-- MATH
+ $X \in \mathcal{B}(n,p)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \mathcal {B}$">(<I>n</I>, <I>p</I>) : <TT>binomial</TT></A>
+<LI><A NAME="tex2html14929"
+  HREF="node813.html">Fonction de r&#233;partition de la loi  binomiale : <TT>binomial_cdf</TT></A>
+<LI><A NAME="tex2html14930"
+  HREF="node814.html">Fonction de r&#233;partition inverse binomiale : <TT>binomial_icdf</TT></A>
+<LI><A NAME="tex2html14931"
+  HREF="node815.html">Probabilit&#233; pour que <I>X</I> &#233;gale <I>k</I> lorsque <!-- MATH
+ $X\in \mathcal P(\mu)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \mathcal {P}$">(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$">) : <TT>poisson</TT></A>
+<LI><A NAME="tex2html14932"
+  HREF="node816.html">Fonction  de r&#233;partition de Poisson  : <TT>poisson_cdf</TT></A>
+<LI><A NAME="tex2html14933"
+  HREF="node817.html">Fonction de r&#233;partition inverse de Poisson  : <TT>poisson_icdf</TT></A>
+<LI><A NAME="tex2html14934"
+  HREF="node818.html">Densit&#233; de probabilit&#233; de la loi normale : <TT>normald</TT></A>
+<LI><A NAME="tex2html14935"
+  HREF="node819.html">Fonction de r&#233;partition de la loi  normale : <TT>normal_cdf normald_cdf</TT></A>
+<LI><A NAME="tex2html14936"
+  HREF="node820.html">Fonction de r&#233;partition inverse normale : <TT>normal_icdf normald_icdf</TT></A>
+<LI><A NAME="tex2html14937"
+  HREF="node821.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi normale : <TT>UTPN</TT></A>
+<LI><A NAME="tex2html14938"
+  HREF="node822.html">Densit&#233; de probabilit&#233; de la loi de Student : <TT>student</TT></A>
+<LI><A NAME="tex2html14939"
+  HREF="node823.html">Fonction de r&#233;partition de la loi de Student : <TT>student_cdf</TT></A>
+<LI><A NAME="tex2html14940"
+  HREF="node824.html">Fonction de r&#233;partition inverse de Student : <TT>student_icdf</TT></A>
+<LI><A NAME="tex2html14941"
+  HREF="node825.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi de Student : <TT>UTPT</TT></A>
+<LI><A NAME="tex2html14942"
+  HREF="node826.html">Densit&#233; de probabilit&#233; de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare</TT></A>
+<LI><A NAME="tex2html14943"
+  HREF="node827.html">Fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare_cdf</TT></A>
+<LI><A NAME="tex2html14944"
+  HREF="node828.html">Fonction inverse de la fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare_icdf</TT></A>
+<LI><A NAME="tex2html14945"
+  HREF="node829.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>UTPC</TT></A>
+<LI><A NAME="tex2html14946"
+  HREF="node830.html">Densit&#233; de probabilit&#233; de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher snedecor</TT></A>
+<LI><A NAME="tex2html14947"
+  HREF="node831.html">La fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_cdf snedecor_cdf</TT></A>
+<LI><A NAME="tex2html14948"
+  HREF="node832.html">Inverse de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_icdf snedecor_icdf</TT></A>
+<LI><A NAME="tex2html14949"
+  HREF="node833.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>UTPF</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;solution d'&#233;quations</TITLE>
+<META NAME="description" CONTENT="R&#233;solution d'&#233;quations">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html317"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html311"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html305"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html313"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html315"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html318"
+  HREF="node19.html">Equations diff&#233;rentielles</A>
+<B> monter:</B> <A NAME="tex2html312"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html306"
+  HREF="node17.html">Primitives et int&#233;grales</A>
+ &nbsp; <B>  <A NAME="tex2html314"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html316"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00034000000000000000"></A>
+<A NAME="414"></A>
+<BR>
+R&#233;solution d'&#233;quations
+</H2>
+Comme pour les int&#233;grales on distingue&nbsp;:
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>la r&#233;solution exacte qui renvoie toutes les solutions 
+lorsque c'est possible (par exemple pour certaines &#233;quations polynomiales
+ou s'y ramenant)
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>la r&#233;solution approch&#233;e qui calcule par un algorithme it&#233;ratif
+une valeur proche d'une des solutions.
+</DD>
+</DL>
+<A NAME="417"></A>
+<A NAME="418"></A>
+La r&#233;solution exacte s'effectue &#224; l'aide de <code>solve</code>, dont le
+premier argument est une &#233;quation. Le membre de droite est
+suppos&#233; nul s'il n'est pas pr&#233;cis&#233;. Par 
+d&#233;faut <code>solve</code> ne retourne pas les solutions complexes. 
+Pour les obtenir, il faut activer l'option <code>Complex</code> &#224;
+partir du bouton rouge sur fond gris <code>cas</code> (en bas &#224; gauche). 
+Ex&#233;cutez les commandes suivantes
+avant et apr&#232;s avoir activ&#233; l'option <code>Complex</code>. 
+<A NAME="1649"></A>
+<PRE>
+solve(x^2-a*x+2,x)
+solve(x^2+2,x)
+solve(x^3=1,x)
+</PRE>
+Les racines exactes sont calcul&#233;es pour les polyn&#244;mes de
+degr&#233; 1 et 2 (les formules de Cardan et Ferrari pour les degr&#233;s
+3 et 4 ne sont pas utilis&#233;es, car les solutions obtenues
+ne sont pas facilement maniables). En degr&#233; sup&#233;rieur,
+la fonction <code>solve</code> affiche un message d'erreur et renvoie
+une liste vide.
+
+<P>
+Pour les &#233;quations trigonom&#233;triques, les solutions principales
+sont renvoy&#233;es. Pour obtenir toutes les solutions, il faut activer
+l'option <code>All_trig_sol</code>. Comparer les commandes suivantes avec et
+sans cette option.
+<PRE>
+solve(cos(x),x)
+solve(cos(x)+sin(x),x)
+</PRE>
+
+<P>
+La fonction <code>solve</code> peut aussi r&#233;soudre des syst&#232;mes
+d'&#233;quations. Le premier argument est la liste des &#233;quations, le
+second est la liste des variables.
+<A NAME="424"></A>
+<PRE>
+solve([x^2+y-2,x+y^2-2],[x,y])
+</PRE>
+
+<P>
+<A NAME="1650"></A>
+La fonction de r&#233;solution approch&#233;e est <code>fsolve</code>. Elle
+propose en option diff&#233;rents algorithmes
+(menus <code>Calc-&gt;Num_solve_eq </code> et <code>Calc-&gt;Num_solve_syst</code>).
+ Le plus c&#233;l&#232;bre est
+l'algorithme de Newton, qui a de multiples variantes. Le principe
+g&#233;n&#233;ral de tous ces algorithmes est de calculer les termes
+successifs d'une suite qui converge vers une solution de l'&#233;quation
+ou du syst&#232;me propos&#233;. Il faut pour cela choisir selon les cas
+un point de d&#233;part, ou un intervalle de recherche.
+<PRE>
+fsolve((x^5+2*x+1)=0,x,1,newton_solver)
+newton(x^5+2*x+1,x,1.0)
+newton(x^5+2*x+1,x,1+i)
+newton(x^5+2*x+1,x,-1+i)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Equations</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>solve(eq,x)</code></TD>
+<TD ALIGN="LEFT">r&#233;solution exacte d'une &#233;quation</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>solve([eq1,eq2],[x,y])</code></TD>
+<TD ALIGN="LEFT">r&#233;solution exacte d'un syst&#232;me</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>fsolve(eq,x)</code></TD>
+<TD ALIGN="LEFT">r&#233;solution approch&#233;e d'une &#233;quation</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>fsolve([eq1,eq2],[x,y])</code></TD>
+<TD ALIGN="LEFT">r&#233;solution approch&#233;e d'un syst&#232;me</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>newton</code></TD>
+<TD ALIGN="LEFT">m&#233;thode de Newton</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>linsolve</code></TD>
+<TD ALIGN="LEFT">syst&#232;me lin&#233;aire</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>proot</code></TD>
+<TD ALIGN="LEFT">racines approch&#233;es d'un polyn&#244;me</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1651"></A>
+<A NAME="1652"></A>
+<A NAME="1653"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html317"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html311"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html305"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html313"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html315"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html318"
+  HREF="node19.html">Equations diff&#233;rentielles</A>
+<B> monter:</B> <A NAME="tex2html312"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html306"
+  HREF="node17.html">Primitives et int&#233;grales</A>
+ &nbsp; <B>  <A NAME="tex2html314"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html316"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

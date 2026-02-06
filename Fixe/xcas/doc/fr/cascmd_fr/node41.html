@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Nombres de chiffres significatifs : Digits DIGITS</TITLE>
+<META NAME="description" CONTENT="Nombres de chiffres significatifs : Digits DIGITS">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node42.html">
+<LINK REL="previous" HREF="node40.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node42.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2899"
+  HREF="node42.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2893"
+  HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2887"
+  HREF="node40.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2895"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2897"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2900"
+  HREF="node42.html">Choix du mode de</A>
+<B> monter:</B> <A NAME="tex2html2894"
+  HREF="node37.html">Les diff&#233;rentes configurations avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2888"
+  HREF="node40.html">La configuration du cas</A>
+ &nbsp; <B>  <A NAME="tex2html2896"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2898"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00474000000000000000"></A><A NAME="793"></A><A NAME="794"></A>
+<BR>
+Nombres de chiffres significatifs : <TT>Digits DIGITS</TT>
+</H2>
+<TT>Digits</TT> ou <TT>DIGITS</TT> est le nom d'une variable qui contient
+le nombre de chiffres de l'affichage.
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Digits</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>12</TT>
+</DIV>
+si dans la configuration du CAS il y a 12 dans la case <TT>Chiffres</TT>.
+<BR>
+<P>
+On peut changer la valeur de la case <TT>Chiffres</TT> de la configuration du CAS
+en affectant une valeur &#224; <TT>Digits</TT> ou <TT>DIGITS</TT>.
+<TT>Digits</TT> ou <TT>DIGITS</TT> permet donc de sp&#233;cifier le nombre de 
+chiffres significatifs de l'affichage, pour cela on doit taper <TT>Digits</TT> 
+puis <TT>:=</TT> et un nombre entier entre 1 et 1000.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Digits:=3</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=3</TT>
+</DIV>
+pour avoir 3 chiffres &#224; l'affichage :
+Puis, on tape :
+<DIV ALIGN="CENTER">
+<TT>1.0/3</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.333</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>4.0/3</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.33</TT>
+</DIV>
+
+<P>
+IL y a deux cas &#224; distinguer :
+
+<UL>
+<LI>La valeur de <TT>Digits</TT> ou <TT>DIGITS</TT> est inf&#233;rieure &#224; 14, 
+<TT>Xcas</TT> travaille alors avec des flottants machines c'est &#224; dire que les 
+d&#233;cimaux ont environ 14 chiffres significatifs car ils sont represent&#233;s en 
+binaire sur 52 bits et donc les calculs seront les m&#234;mes quelque soit <TT>n</TT>
+inf&#233;rieur &#224; 14, seul l'affichage sera diff&#233;rent. En effet si 
+<TT>Digits:=n</TT> ou <TT>DIGITS:=n</TT> avec <TT>n</TT> inf&#233;rieur &#224; 14 
+l'affichage sera fait avec <TT>n</TT> chiffres significatifs.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Digits:=5</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=5</TT>
+</DIV>
+puis, on tape :
+<DIV ALIGN="CENTER">
+<TT>a:=4.0/3</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.3333</TT>
+</DIV>
+Mais, si on tape :
+<DIV ALIGN="CENTER">
+<TT>b:=a-1.333333333</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3.3333e-10</TT>
+</DIV>
+ce qui prouve que <TT>Xcas</TT> travaille avec <TT>a=1.33333333333333</TT>.
+
+<P>
+</LI>
+<LI>La valeur <TT>n</TT> de <TT>Digits</TT> ou <TT>DIGITS</TT> est sup&#233;rieure &#224; 
+14, <TT>Xcas</TT> travaille avec des flottants en multi-pr&#233;cision c'est &#224; dire
+que les d&#233;cimaux auront environ <TT>n</TT> chiffres significatifs. Donc si 
+on tape <TT>Digits:=n</TT> ou <TT>DIGITS:=n</TT> avec <TT>n</TT> sup&#233;rieur &#224; 14 
+l'affichage et les calculs se feront avec <TT>n</TT> chiffres significatifs.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Digits:=20</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=20</TT>
+</DIV>
+puis, on tape :
+<DIV ALIGN="CENTER">
+<TT>c:=4.0/3</TT>
+</DIV>
+On obtient 21 chiffres significatifs:
+<DIV ALIGN="CENTER">
+<TT>1.33333333333333333333</TT>
+</DIV>
+0n tape :
+<DIV ALIGN="CENTER">
+<TT>c-1.33333333333333333333</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.000000000000000000000</TT>
+</DIV>
+Dans ce cas les calculs correspondent &#224; l'affichage.
+<BR><B>Exemples</B>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Digits:=5</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=5</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>evalf((pi)<code>^</code>4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>97.409</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>evalf((pi)<code>^</code>4-97.409)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>9.1034e-05</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>evalf((pi)<code>^</code>4-97.40909103)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4.0018e-09</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Digits:=20</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=20</TT>
+</DIV>
+puis
+On tape 
+<DIV ALIGN="CENTER">
+<TT>evalf((pi)<code>^</code>4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.974090910340024372345e2</TT>
+</DIV>
+puis
+<DIV ALIGN="CENTER">
+<TT>evalf((pi)<code>^</code>4-97.40909103)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4.001776687801e-09</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2899"
+  HREF="node42.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2893"
+  HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2887"
+  HREF="node40.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2895"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2897"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2900"
+  HREF="node42.html">Choix du mode de</A>
+<B> monter:</B> <A NAME="tex2html2894"
+  HREF="node37.html">Les diff&#233;rentes configurations avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2888"
+  HREF="node40.html">La configuration du cas</A>
+ &nbsp; <B>  <A NAME="tex2html2896"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2898"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

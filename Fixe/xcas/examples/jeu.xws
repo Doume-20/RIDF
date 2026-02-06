@@ -1,0 +1,77 @@
+// fltk 7Fl_Tile 34 53 936 248
+[
+// fltk N4xcas7EditeurE 34 53 936 246
+777 ,
+essai(pos,nmax):={
+  local n,j;
+  for (j:=1;j<=nmax;j++){
+    if (choosebox("commande",[avance,recule,tourne_droite,tourne_gauche,fin],n)==undef)
+      break;
+    if (n==5){ break; }
+    if (n==1) { avance; }
+    if (n==2) { recule; }   
+    if (n==3) { tourne_droite; }   
+    if (n==4) { tourne_gauche; }    
+    if (position==pos){
+      ecris " Bravo!";
+      return j;
+    }
+  }
+  return j;
+};
+
+
+croix():={
+  crayon vert;
+  repete(4,avance,recule,tourne_droite);
+  crayon bleu;
+};
+
+
+jeu():={
+  local hx,hy,p;
+  efface;
+  hx:=hasard(29)-15;
+  hy:=hasard(25)-15;
+  saute(hx*10);
+  tourne_gauche(90);
+  saute(hy*10);
+  croix();
+  p:=position;
+  saute(-hy*10);
+  tourne_gauche(-90);
+  saute(-hx*10);
+  essai(p,3+abs(hx)+abs(hy)); 
+  // mettre +1 au lieu de +3 pour optimum
+};
+,
+// fltk N4xcas10Log_OutputE 34 299 936 2
+
+]
+,
+// fltk N4xcas4LogoE 34 303 936 295
+// fltk N4xcas12History_PackE 34 303 214 91
+[
+// fltk 7Fl_Tile 49 303 199 56
+[
+// fltk N4xcas19Multiline_Input_tabE 49 303 199 30
+jeu()
+,
+// fltk N4xcas10Log_OutputE 49 333 199 1
+
+,
+// fltk N4xcas10Gen_OutputE 49 334 199 25
+15
+]
+,
+// fltk 7Fl_Tile 49 361 199 31
+[
+// fltk N4xcas19Multiline_Input_tabE 49 361 199 30
+
+,
+// fltk N4xcas10Log_OutputE 49 391 199 1
+
+]
+]
+// fltk N4xcas7EditeurE 736 303 234 295
+0 ,

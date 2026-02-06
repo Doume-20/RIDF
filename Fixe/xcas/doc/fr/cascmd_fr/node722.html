@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;duction d'une conique : reduced_conic conique_reduite</TITLE>
+<META NAME="description" CONTENT="R&#233;duction d'une conique : reduced_conic conique_reduite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node723.html">
+<LINK REL="previous" HREF="node721.html">
+<LINK REL="up" HREF="node716.html">
+<LINK REL="next" HREF="node723.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13557"
+  HREF="node723.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13551"
+  HREF="node716.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13545"
+  HREF="node721.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13553"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13555"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13558"
+  HREF="node723.html">Trac&#233; d'une quadrique :</A>
+<B> monter:</B> <A NAME="tex2html13552"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13546"
+  HREF="node721.html">Trac&#233; d'une conique :</A>
+ &nbsp; <B>  <A NAME="tex2html13554"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13556"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009506000000000000000"></A><A NAME="18556"></A><A NAME="18557"></A>
+<BR>
+R&#233;duction d'une conique : <TT>reduced_conic conique_reduite</TT>
+</H2> 
+<TT>conique_reduite</TT> a un ou deux arguments : l'expression d'une 
+conique et le vecteur de composantes les variables utilis&#233;es si il est 
+diff&#233;rent de <TT>[x,y]</TT>.
+<BR><TT>conique_reduite</TT> renvoie une liste d'&#233;l&#233;ments :
+
+<UL>
+<LI>l'origine de la conique,
+</LI>
+<LI>la matrice d'un rep&#232;re dans lequel
+ la conique est r&#233;duite,
+</LI>
+<LI>0 ou 1 pour savoir si la conique est d&#233;g&#233;n&#233;r&#233;e
+ou pas,
+</LI>
+<LI>l'&#233;quation r&#233;duite de la conique dans ce rep&#232;re,
+</LI>
+<LI>un vecteur contenant son &#233;quation param&#233;trique ou ses &#233;quations 
+param&#233;triques lorsque la conique est compos&#233;e de plusieurs nappes.
+<BR></LI>
+</UL>  
+On tape :
+<DIV ALIGN="CENTER">
+<TT>conique_reduite(2*x<code>^</code>2+2*x*y+2*y<code>^</code>2+5*x+3,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-5/3,5/6],[[-1/(sqrt(2)),1/(sqrt(2))],[-1/(sqrt(2)), -1/(sqrt(2))]],1,3*x<code>^</code>2+y<code>^</code>2+-7/6,[[(-10+5*i)/6+ (1/(sqrt(2))+(i)/(sqrt(2)))*((sqrt(14)*cos(`&nbsp;t`))/6+ ((i)*sqrt(42)*sin(t))/6),t,0,2*pi,(2*pi)/60]]]</TT>
+</DIV>
+La conique n'est pas d&#233;g&#233;n&#233;r&#233;e et a pour &#233;quation r&#233;duite :
+<P><!-- MATH
+ \begin{displaymath}
+3x^2+y^2-7/6=0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+3<I>x</I><SUP>2</SUP> + <I>y</I><SUP>2</SUP> - 7/6 = 0
+</DIV><P></P>
+dans le rep&#232;re d'origine <!-- MATH
+ $-5/3+5*i/6$
+ -->
+-5/3 + 5*<I>i</I>/6 et d'axes parall&#232;les
+ aux vecteurs (- 1, 1) et (- 1, - 1).
+<BR>
+Son &#233;quation param&#233;trique est :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\displaystyle \frac{-10+5*i}{6}+
+\frac{(1+i)}{\sqrt 2}*\frac{(\sqrt{14}*cos(t)+i*\sqrt{42}*sin(t))}{6}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="92" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img469.png"
+ ALT="$\displaystyle {\frac{{-10+5*i}}{{6}}}$"> + <IMG
+ WIDTH="58" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img470.png"
+ ALT="$\displaystyle {\frac{{(1+i)}}{{\sqrt 2}}}$">*<IMG
+ WIDTH="251" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img471.png"
+ ALT="$\displaystyle {\frac{{(\sqrt{14}*cos(t)+i*\sqrt{42}*sin(t))}}{{6}}}$">
+</DIV><P></P>
+et por le dessin, le param&#232;tre <I>t</I> varie de 0 &#224; 2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> avec un pas
+<TT>tstep</TT>=2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/60.
+
+<P>
+<B>Remarque</B> :
+<BR>
+Lorsque la conique est d&#233;g&#233;n&#233;r&#233;e en 1 ou 2 droite(s), chaque droite 
+n'est pas donn&#233; par son &#233;quation param&#233;trique mais par la liste 
+constitu&#233;e par un vecteur normal &#224; la droite et un point de la droite.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>conique_reduite(x<code>^</code>2-y<code>^</code>2+3*x+y+2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[(-3)/2,1/2],[[1,0],[0,1]],0,x<code>^</code>2-y<code>^</code>2, [[(-1+2*i)/(1-i),(1+2*i)/(1-i)], [(-1+2*i)/(1-i),(-1)/(1-i)]]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13557"
+  HREF="node723.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13551"
+  HREF="node716.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13545"
+  HREF="node721.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13553"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13555"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13558"
+  HREF="node723.html">Trac&#233; d'une quadrique :</A>
+<B> monter:</B> <A NAME="tex2html13552"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13546"
+  HREF="node721.html">Trac&#233; d'une conique :</A>
+ &nbsp; <B>  <A NAME="tex2html13554"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13556"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

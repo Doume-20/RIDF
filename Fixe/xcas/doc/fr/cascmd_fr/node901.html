@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Mettre de la couleur</TITLE>
+<META NAME="description" CONTENT="Mettre de la couleur">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node902.html">
+<LINK REL="previous" HREF="node900.html">
+<LINK REL="up" HREF="node899.html">
+<LINK REL="next" HREF="node902.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16445"
+  HREF="node902.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16439"
+  HREF="node899.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16433"
+  HREF="node900.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16441"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16443"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16446"
+  HREF="node902.html">Pour dessiner une figure</A>
+<B> monter:</B> <A NAME="tex2html16440"
+  HREF="node899.html">Les commandes d'affichage :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16434"
+  HREF="node900.html">Pour ne pas afficher</A>
+ &nbsp; <B>  <A NAME="tex2html16442"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16444"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION001235200000000000000">
+Mettre de la couleur</A>
+</H3><A NAME="30576"></A><A NAME="30577"></A><A NAME="30578"></A><A NAME="30579"></A><A NAME="30580"></A><A NAME="30581"></A><A NAME="30582"></A><A NAME="30583"></A>
+<A NAME="30584"></A><A NAME="30585"></A><A NAME="30586"></A><A NAME="30587"></A><A NAME="30588"></A><A NAME="30589"></A>
+Un entier entre 0 et 255 (ou un nom de couleur) repr&#233;sente une 
+couleur de la palette des couleurs que l'on peut voir avec le bouton des 
+couleurs de l'&#233;cran de g&#233;om&#233;trie et, un entier entre 256 et 381 
+repr&#233;sente les couleurs de l'arc en ciel. Pour voir les 
+couleurs de l'arc en ciel il suffit d'ex&#233;cuter le programme suivant&nbsp;:
+<PRE>
+arcenciel():={
+local j,C;
+C:=[];
+for (j:=256;j&lt;382;j++){
+C:=append(C,carre(j,j+1,couleur=j+rempli));
+}
+C;
+}
+</PRE>
+Pour voir l'arc en ciel, on tape <TT>a:=arcenciel():;</TT>, puis <TT>a</TT>
+pour voir toutes les couleurs (le num&#233;ro d'une couleur
+est alors &#233;gal &#224; son abscisse) ou par exemple <TT>a[300-256]</TT>
+pour voir la couleur de num&#233;ro 300. 
+
+<P>
+Autre m&#233;thode, on tape&nbsp;: 
+<BR><TT>ciel():={ local j; for (j:=0;j&lt;126;j++) carre(j,(j+1),affichage=rempli+256+j);}</TT>
+puis,
+<BR><TT>ClrGraph;ciel()</TT> et on ouvre la fen&#234;tre <TT>DispG</TT> avec le menu 
+<TT>Cfg</TT> sous menu <TT>Montrer</TT> puis <TT>DispG</TT>.
+On regle <TT>cfg</TT> de cette fen&#234;tre en prenant <TT>WX-=-1</TT>, <TT>WX+=127</TT>,
+<TT>WY-=0</TT> et <TT>WY+=1</TT> et on voit ainsi les 126 couleurs 
+de l'arc en ciel !
+
+<P>
+La commande <TT>couleur</TT> ou <TT>affichage</TT> avec comme 
+param&#232;tre un entier entre 0 et 381 (ou un nom de couleur) permet de 
+tracer un objet g&#233;om&#233;trique avec la couleur sp&#233;cifi&#233;e.
+<BR><TT>couleur</TT> ou <TT>affichage</TT> a un argument (resp deux arguments) : le nom 
+de la couleur ou l'entier d&#233;signant cette couleur (noir=0, rouge=1, vert=2, 
+jaune=3, bleu=4) (resp l'objet g&#233;om&#233;trique ou une l&#233;gende et le nom de la couleur ou le num&#233;ro de la couleur).
+<BR><B>Attention</B><A NAME="30590"></A><A NAME="30591"></A><A NAME="30592"></A><A NAME="30593"></A>
+<BR>
+Le nom  <TT>couleur</TT> ou <TT>affichage</TT> ou display ou <TT>color</TT> peut 
+aussi servir de param&#232;tre optionnel 
+d'une commande graphique. Dans ce cas, le nom du param&#232;tre optionnel (ici
+<TT>couleur</TT> ou <TT>affichage</TT> ou <TT>color</TT>) est suivi de <TT>=</TT> puis de
+la valeur de l'entier d&#233;signant la couleur, est 
+le param&#232;tre que l'on passe comme argument suppl&#233;mentaire
+dans les commandes graphiques.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>couleur(segment(0,1+i),rouge)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>segment(0,1+i,couleur=rouge)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le segment(0,1+i) est dessin&#233; en rouge</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>couleur(point(1+i),2)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>point(1+i, couleur=2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point 1+i apparait avec une croix (x) verte</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>affichage(rouge)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>apr&#232;s cette instruction, les dessins resultant de commandes graphiques se feront en rouge</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>couleur(legende(1+i,"AA"),rouge)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>legende(1+i,"AA",couleur=rouge)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point(1+i) dessin&#233; en rouge a comme l&#233;gende rouge AA</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16445"
+  HREF="node902.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16439"
+  HREF="node899.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16433"
+  HREF="node900.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16441"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16443"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16446"
+  HREF="node902.html">Pour dessiner une figure</A>
+<B> monter:</B> <A NAME="tex2html16440"
+  HREF="node899.html">Les commandes d'affichage :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16434"
+  HREF="node900.html">Pour ne pas afficher</A>
+ &nbsp; <B>  <A NAME="tex2html16442"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16444"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

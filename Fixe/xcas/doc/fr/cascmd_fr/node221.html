@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les entiers (et les entiers de Gauss)</TITLE>
+<META NAME="description" CONTENT="Les entiers (et les entiers de Gauss)">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node250.html">
+<LINK REL="previous" HREF="node218.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node222.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6162"
+  HREF="node222.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6156"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6150"
+  HREF="node220.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6158"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6160"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6163"
+  HREF="node222.html">La factorielle : factorial</A>
+<B> monter:</B> <A NAME="tex2html6157"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6151"
+  HREF="node220.html">Transformer la liste des</A>
+ &nbsp; <B>  <A NAME="tex2html6159"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6161"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00970000000000000000">
+Les entiers (et les entiers de Gauss)</A>
+</H1>
+Dans tout ce paragraphe, on peut utiliser des entiers de Gauss (nombres 
+complexes de la forme <I>a</I> + <I>i</I>*<I>b</I> avec <I>a</I> et <I>b</I> dans <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">), &#224; la place
+ des entiers dans les diff&#233;rentes fonctions. 
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html6164"
+  HREF="node222.html">La factorielle : <TT>factorial</TT></A>
+<LI><A NAME="tex2html6165"
+  HREF="node223.html">Le PGCD : <TT>gcd igcd</TT></A>
+<LI><A NAME="tex2html6166"
+  HREF="node224.html">Le PGCD : <TT>Gcd</TT></A>
+<LI><A NAME="tex2html6167"
+  HREF="node225.html">Le PGCD d'une liste d'entiers : <TT>lgcd</TT></A>
+<LI><A NAME="tex2html6168"
+  HREF="node226.html">Le PPCM : <TT>lcm</TT></A>
+<LI><A NAME="tex2html6169"
+  HREF="node227.html">Factoriser un entier : <TT>ifactor factoriser_entier</TT></A>
+<LI><A NAME="tex2html6170"
+  HREF="node228.html">Liste des facteurs d'un entier : <TT>ifactors facteurs_premiers</TT></A>
+<LI><A NAME="tex2html6171"
+  HREF="node229.html">Matrice des facteurs d'un entier : <TT>maple_ifactors</TT></A>
+<LI><A NAME="tex2html6172"
+  HREF="node230.html">Liste des diviseurs d'un entier : <TT>idivis divisors</TT></A>
+<LI><A NAME="tex2html6173"
+  HREF="node231.html">Quotient entier infix&#233; de la division euclidienne : <TT>div</TT></A>
+<LI><A NAME="tex2html6174"
+  HREF="node232.html">Quotient entier de la division euclidienne : <TT>iquo intDiv</TT></A>
+<LI><A NAME="tex2html6175"
+  HREF="node233.html">Reste entier de la division euclidienne : <TT>irem remain smod mods mod %</TT></A>
+<LI><A NAME="tex2html6176"
+  HREF="node234.html">Le quotient et le reste de la division euclidienne : <TT>iquorem</TT></A>
+<LI><A NAME="tex2html6177"
+  HREF="node235.html">Test de parit&#233; : <TT>even est_pair</TT></A>
+<LI><A NAME="tex2html6178"
+  HREF="node236.html">Test de non parit&#233; : <TT>odd est_impair</TT></A>
+<LI><A NAME="tex2html6179"
+  HREF="node237.html">Test de pseudo-primalit&#233; : <TT>is_pseudoprime</TT></A>
+<LI><A NAME="tex2html6180"
+  HREF="node238.html">Test de primalit&#233; : <TT>is_prime isprime isPrime</TT></A>
+<LI><A NAME="tex2html6181"
+  HREF="node239.html">Nombre pseudo-premier apr&#232;s <TT>n</TT> : <TT>nextprime</TT></A>
+<LI><A NAME="tex2html6182"
+  HREF="node240.html">Nombre pseudo-premier avant <TT>n</TT> : <TT>prevprime</TT></A>
+<LI><A NAME="tex2html6183"
+  HREF="node241.html">Le <TT>n</TT>-i&#232;me nombre premier : <TT>ithprime</TT></A>
+<LI><A NAME="tex2html6184"
+  HREF="node242.html">Identit&#233; de B&#233;zout : <TT>iegcd igcdex bezout_entiers</TT></A>
+<LI><A NAME="tex2html6185"
+  HREF="node243.html">R&#233;solution de au+bv=c dans <!-- MATH
+ ${\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>iabcuv</TT></A>
+<LI><A NAME="tex2html6186"
+  HREF="node244.html">Reste chinois : <TT>ichinrem, ichrem</TT></A>
+<LI><A NAME="tex2html6187"
+  HREF="node245.html">Reste chinois pour des listes d'entiers: <TT>chrem</TT></A>
+<LI><A NAME="tex2html6188"
+  HREF="node246.html">R&#233;solution de <I>a</I><SUP>2</SUP> + <I>b</I><SUP>2</SUP> = <I>p</I> dans <!-- MATH
+ ${\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> : <TT>pa2b2</TT></A>
+<LI><A NAME="tex2html6189"
+  HREF="node247.html">Indicatrice d'Euler : <TT>euler Phi</TT></A>
+<LI><A NAME="tex2html6190"
+  HREF="node248.html">Symbole de Legendre : <TT>legendre_symbol</TT></A>
+<LI><A NAME="tex2html6191"
+  HREF="node249.html">Symbole de Jacobi : <TT>jacobi_symbol</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

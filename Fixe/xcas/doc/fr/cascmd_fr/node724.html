@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>R&#233;duction d'une quadrique : reduced_quadric quadrique_reduite</TITLE>
+<META NAME="description" CONTENT="R&#233;duction d'une quadrique : reduced_quadric quadrique_reduite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node723.html">
+<LINK REL="up" HREF="node716.html">
+<LINK REL="next" HREF="node725.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13583"
+  HREF="node725.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13577"
+  HREF="node716.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13573"
+  HREF="node723.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13579"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13581"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13584"
+  HREF="node725.html">Les expressions de plusieurs</A>
+<B> monter:</B> <A NAME="tex2html13578"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13574"
+  HREF="node723.html">Trac&#233; d'une quadrique :</A>
+ &nbsp; <B>  <A NAME="tex2html13580"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13582"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009508000000000000000"></A><A NAME="18597"></A><A NAME="18598"></A>
+<BR>
+R&#233;duction d'une quadrique : <TT>reduced_quadric quadrique_reduite</TT>
+</H2> 
+<TT>quadrique_reduite</TT> a  un ou deux arguments : l'expression d'une 
+quadrique et le vecteur de composantes les variables utilis&#233;es si il est 
+diff&#233;rent de <TT>[x,y,z]</TT>.
+<BR><TT>quadrique_reduite</TT> renvoie  une liste d'&#233;l&#233;ments :
+
+<UL>
+<LI>l'origine,
+</LI>
+<LI>la matrice d'un rep&#232;re dans lequel la quadrique est r&#233;duite,
+</LI>
+<LI>0 ou 1 (0 si la quadrique est d&#233;g&#233;n&#233;r&#233;e),
+</LI>
+<LI>l'&#233;quation r&#233;duite de la quadrique dans ce rep&#232;re,
+</LI>
+<LI>un vecteur contenant son &#233;quation param&#233;trique 
+ou ses &#233;quations param&#233;triques si la quadrique est compos&#233;e de plusieurs 
+nappes.  
+</LI>
+</UL>
+<B>Attention !</B> les &#233;quations param&#233;triques sont &#233;crites &#224; l'aide des
+variables <TT>u,v</TT> : ces variables doivent donc &#234;tre libres (<TT>purge</TT>
+<TT>u,v</TT> avant d'appeler  <TT>quadrique_reduite</TT>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quadrique_reduite(7*x<code>^</code>2+4*y<code>^</code>2+4*z<code>^</code>2+ 4*x*y-4*x*z-2*y*z-4*x+5*y+4*z-18)</TT>
+</DIV>
+On obtient une liste contenant :
+<BR>
+<UL>
+<LI>L'origine du rep&#232;re (centre de sym&#233;trie de la quadrique) :
+<DIV ALIGN="CENTER">
+<TT>[11/27,(-26)/27,(-29)/54],</TT>
+</DIV>
+</LI>
+<LI>La matrice de passage :
+<DIV ALIGN="CENTER">
+<TT>[[(sqrt(6))/3,(sqrt(5))/5,(-(sqrt(30)))/15], [(sqrt(6))/6,0,(sqrt(30))/6], [(-(sqrt(6)))/6,(2*sqrt(5))/5,(sqrt(30))/30]],</TT>
+</DIV>
+</LI>
+<LI>1 donc la quadrique n'est pas d&#233;g&#233;n&#233;r&#233;e 
+</LI>
+<LI>l'&#233;quation r&#233;duite de la quadrique dans ce rep&#232;re :
+<DIV ALIGN="CENTER">
+<TT>0,9*x<code>^</code>2+3*y<code>^</code>2+3*z<code>^</code>2+(-602)/27,</TT>
+</DIV> 
+</LI>
+<LI>l'&#233;quation param&#233;trique de la quadrique (dans le premier rep&#232;re),
+de param&#232;tres [u,v]  :
+<DIV ALIGN="CENTER">
+<TT>[[(sqrt(6)*sqrt(602/243)*sin(u)*cos(v))/3+ 
+(sqrt(5)*sqrt(602/81)*sin(u)*sin(v))/5+ 
+((-(sqrt(30)))*sqrt(602/81)*cos(u))/15+11/27, 
+(sqrt(6)*sqrt(602/243)*sin(u)*cos(v))/6+ 
+(sqrt(30)*sqrt(602/81)*cos(u))/6+(-26)/27, 
+((-(sqrt(6)))*sqrt(602/243)*sin(u)*cos(v))/6+ 
+(2*sqrt(5)*sqrt(602/81)*sin(u)*sin(v))/5+ 
+(sqrt(30)*sqrt(602/81)*cos(u))/30+(-29)/54], 
+u=(0 .. pi),v=(0 .. (2*pi)),ustep=(pi/20),
+vstep=((2*pi)/20)]]</TT>
+</DIV>
+</LI>
+</UL>
+Donc la quadrique est un ellipso&#239;de eta pour &#233;quation :
+<BR><P><!-- MATH
+ \begin{displaymath}
+9*x^2+3*y^2+3*z^2+(-602)/27
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+9*<I>x</I><SUP>2</SUP> +3*<I>y</I><SUP>2</SUP> +3*<I>z</I><SUP>2</SUP> + (- 602)/27
+</DIV><P></P>
+dans le rep&#232;re d'origine <!-- MATH
+ $[11/27,(-26)/27,(-29)/54]$
+ -->
+[11/27,(- 26)/27,(- 29)/54] 
+<BR>
+de matrice de passage <TT>P</TT> est :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\left[
+\begin{array}{ccc}
+\displaystyle \frac{\sqrt 6}{3} & \displaystyle\frac{\sqrt 5}{5} & \displaystyle-\frac{\sqrt{30}}{15}\\
+\displaystyle \frac{\sqrt 6}{6} & 0 & \displaystyle \frac{\sqrt{30}}{6}\\
+\displaystyle -\frac{\sqrt 6}{6} & \displaystyle \frac{2\sqrt{5}}{5} & \displaystyle \frac{\sqrt{30}}{30}\
+\end{array}
+\right]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="18" HEIGHT="136" ALIGN="MIDDLE" BORDER="0"
+ SRC="img472.png"
+ ALT="$\displaystyle \left[\vphantom{
+\begin{array}{ccc}
+\displaystyle \frac{\sqrt 6}{...
+... \frac{2\sqrt{5}}{5} &amp; \displaystyle \frac{\sqrt{30}}{30}\
+\end{array}}\right.$"><IMG
+ WIDTH="178" HEIGHT="136" ALIGN="MIDDLE" BORDER="0"
+ SRC="img473.png"
+ ALT="$\displaystyle \begin{array}{ccc}
+\displaystyle \frac{\sqrt 6}{3} &amp; \displaystyl...
+...laystyle \frac{2\sqrt{5}}{5} &amp; \displaystyle \frac{\sqrt{30}}{30}\
+\end{array}$"><IMG
+ WIDTH="18" HEIGHT="136" ALIGN="MIDDLE" BORDER="0"
+ SRC="img474.png"
+ ALT="$\displaystyle \left.\vphantom{
+\begin{array}{ccc}
+\displaystyle \frac{\sqrt 6}{...
+... \frac{2\sqrt{5}}{5} &amp; \displaystyle \frac{\sqrt{30}}{30}\
+\end{array}}\right]$">
+</DIV><P></P>
+Son &#233;quation param&#233;trique est :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{l}
+x =\displaystyle \frac{\sqrt 6\sqrt\frac{602}{243}\sin(u)\cos(v)}{3}+\frac{\sqrt 5\sqrt\frac{602}{81}\sin(u)\sin(v)}{5}-\frac{\sqrt{30}\sqrt\frac{602}{81}\cos(u)}{15}+\frac{11}{27}\\
+y =\displaystyle \frac{\sqrt 6\sqrt\frac{602}{243}\sin(u)\cos(v)}{6}+\frac{\sqrt{30}\sqrt\frac{602}{81}\cos(u))}{6}-\frac{26}{27}\\
+z =\displaystyle \frac{-\sqrt 6\sqrt\frac{602}{243}*\sin(u)\cos(v)}{6}+\frac{2\sqrt 5\sqrt\frac{602}{81}\sin(u)\sin(v)}{5}+\frac{\sqrt{30}\sqrt\frac{602}{81}\cos(u)}{30}-\frac{29}{54}
+\end{array}
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="22" HEIGHT="171" ALIGN="MIDDLE" BORDER="0"
+ SRC="img475.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{l}
+x =\displaystyle \frac{\sqrt 6...
+...frac{\sqrt{30}\sqrt\frac{602}{81}\cos(u)}{30}-\frac{29}{54}
+\end{array}}\right.$"><IMG
+ WIDTH="618" HEIGHT="169" ALIGN="MIDDLE" BORDER="0"
+ SRC="img476.png"
+ ALT="$\displaystyle \begin{array}{l}
+x =\displaystyle \frac{\sqrt 6\sqrt\frac{602}{24...
+...v)}{5}+\frac{\sqrt{30}\sqrt\frac{602}{81}\cos(u)}{30}-\frac{29}{54}
+\end{array}$">
+</DIV><P></P>
+<B>Remarque</B> :
+<BR>
+Lorsque la quadrique est d&#233;g&#233;n&#233;r&#233;e en 1 ou 2 plan(s), chaque plan 
+n'est pas donn&#233; par son &#233;quation param&#233;trique mais par la liste 
+constitu&#233;e par un vecteur normal au plan et un point du plan.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quadrique_reduite(x<code>^</code>2-y<code>^</code>2+3*x+y+2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[(-3)/2,1/2,0],[[1,0,0],[0,1,0],[0,0,-1]],0,x<code>^</code>2-y<code>^</code>2, [hyperplan([1,1,0],[(-3)/2,1/2,0]), hyperplan([1,-1,0],[(-3)/2,1/2,0])]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13583"
+  HREF="node725.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13577"
+  HREF="node716.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13573"
+  HREF="node723.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13579"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13581"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13584"
+  HREF="node725.html">Les expressions de plusieurs</A>
+<B> monter:</B> <A NAME="tex2html13578"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13574"
+  HREF="node723.html">Trac&#233; d'une quadrique :</A>
+ &nbsp; <B>  <A NAME="tex2html13580"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13582"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Primitives et int&#233;grales</TITLE>
+<META NAME="description" CONTENT="Primitives et int&#233;grales">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node18.html">
+<LINK REL="previous" HREF="node16.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node18.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html303"
+  HREF="node18.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html297"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html291"
+  HREF="node16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html299"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html301"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html304"
+  HREF="node18.html">R&#233;solution d'&#233;quations</A>
+<B> monter:</B> <A NAME="tex2html298"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html292"
+  HREF="node16.html">Limites et d&#233;veloppements limit&#233;s</A>
+ &nbsp; <B>  <A NAME="tex2html300"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html302"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00033000000000000000">
+Primitives et int&#233;grales</A>
+</H2>
+<A NAME="1647"></A>
+<A NAME="397"></A>
+<A NAME="398"></A>
+<A NAME="399"></A>
+La fonction <code>int</code> calcule une primitive d'une expressionpar rapport &#224; 
+<I>x</I> ou par rapport &#224; la variable donn&#233;e en argument. Si
+l'expression comporte plusieurs variables, il vaut pr&#233;ciser la
+variable d'int&#233;gration. Si on ajoute deux arguments <I>a</I> et <I>b</I> 
+apr&#232;s la variable d'int&#233;gration, on calcule l'int&#233;grale sur
+l'intervalle [<I>a</I>, <I>b</I>]. Eventuellement les
+bornes de l'int&#233;grale peuvent &#234;tre des expressions, ce qui permet
+de calculer des int&#233;grales multiples.
+<PRE>
+int(x^2-1)
+int(x^2-1,x,-1,1)
+int(x*y,x)
+int(x*y,y,0,x)
+int(int(x*y,y,0,x),x,0,1)
+</PRE>
+Pour calculer une int&#233;grale, un logiciel de calcul formel recherche 
+une primitive puis l'&#233;value entre les bornes, afin d'obtenir
+une valeur exacte. Dans certains cas, il est inutile de calculer
+une primitive, soit parce qu'il n'en existe pas qui s'exprime
+avec les fonctions &#233;l&#233;mentaires, soit 
+parce qu'un calcul num&#233;rique est plus adapt&#233; (par exemple si 
+le temps de calcul de la primitive est trop long, si la fonction
+pr&#233;sente des singularit&#233;s dans l'intervalle d'int&#233;gration, etc...).
+Dans ce cas, on demande une valeur approch&#233;e en utilisant
+<code>evalf</code>, ou bien on utilise directement 
+la fonction <code>romberg</code>, qui est
+appel&#233;e par <code>evalf</code>.
+<A NAME="1648"></A>
+<PRE>
+int(exp(-x^2))
+int(exp(-x^2),x,0,10)
+evalf(int(exp(-x^2),x,0,10))
+romberg(exp(-x^2),x,0,10)
+ans()/sqrt(pi))
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Int&#233;grales</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>int(E)</code></TD>
+<TD ALIGN="LEFT">primitive d'une expression</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>int(E,x,a,b)</code></TD>
+<TD ALIGN="LEFT">int&#233;grale exacte</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>romberg(E,x,a,b)</code></TD>
+<TD ALIGN="LEFT">int&#233;grale approch&#233;e</TD>
+</TR>
+</TABLE>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html303"
+  HREF="node18.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html297"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html291"
+  HREF="node16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html299"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html301"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html304"
+  HREF="node18.html">R&#233;solution d'&#233;quations</A>
+<B> monter:</B> <A NAME="tex2html298"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html292"
+  HREF="node16.html">Limites et d&#233;veloppements limit&#233;s</A>
+ &nbsp; <B>  <A NAME="tex2html300"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html302"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

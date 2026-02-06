@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Style de programmation</TITLE>
+<META NAME="description" CONTENT="Style de programmation">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html545"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html539"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html535"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html541"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html543"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html546"
+  HREF="node35.html">Des exercices corrig&#233;s avec</A>
+<B> monter:</B> <A NAME="tex2html540"
+  HREF="node31.html">Programmation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html536"
+  HREF="node33.html">Quelques exemples</A>
+ &nbsp; <B>  <A NAME="tex2html542"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html544"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00063000000000000000"></A>
+<A NAME="851"></A>
+<BR>
+Style de programmation
+</H2>
+<TT>Xcas</TT> est interpr&#233;t&#233; et non compil&#233;.
+Plus que le nombre de lignes du programme, c'est le nombre
+d'instructions r&#233;ellement ex&#233;cut&#233;es qui influence le temps de calcul.
+En r&#232;gle g&#233;n&#233;rale, il est plus rapide de cr&#233;er des listes
+ou des s&#233;quences que de programmer des boucles. 
+Voici quelques mani&#232;res de calculer
+5000!&nbsp;: comparez leurs temps d'ex&#233;cution.
+<PRE>
+5000!
+product([n$(n=1..5000)])
+product(cumSum([1$5000]))
+f:=1; (f:=f*n)$(n=2..5000):;f
+f:=1; for(n:=1;n&lt;=5000;n++) {f:=f*n}
+f:=1;n:=1; while(n&lt;5000) {n:=n+1; f:=f*n}
+f:=1; (f:=f*n)$(n=2..5000)
+</PRE>
+La rapidit&#233; d'ex&#233;cution est parfois contradictoire avec la
+clart&#233; du programme, et on doit accepter des compromis. Dans une
+utilisation courante, le temps de calcul n'est pas r&#233;ellement un enjeu&nbsp;: 
+on utilise en g&#233;n&#233;ral les langages
+interpr&#233;t&#233;s comme <TT>Xcas</TT> pour tester des algorithmes et r&#233;aliser des
+maquettes. Les applications en vraie grandeur sont cod&#233;es dans des
+langages compil&#233;s comme C++ (en utilisant par exemple la librarie
+<code>giac</code> pour les fonctions de calcul formel).
+
+<P>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer un entier en sa fraction modulo p : fracmod iratrecon</TITLE>
+<META NAME="description" CONTENT="Transformer un entier en sa fraction modulo p : fracmod iratrecon">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node524.html">
+<LINK REL="previous" HREF="node522.html">
+<LINK REL="up" HREF="node511.html">
+<LINK REL="next" HREF="node524.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10627"
+  HREF="node524.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10621"
+  HREF="node511.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10615"
+  HREF="node522.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10623"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10625"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10628"
+  HREF="node524.html">PGCD dans /p[x] :</A>
+<B> monter:</B> <A NAME="tex2html10622"
+  HREF="node511.html">Le calcul modulaire dans</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10616"
+  HREF="node522.html">Inverse dans /p :</A>
+ &nbsp; <B>  <A NAME="tex2html10624"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10626"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093212000000000000000"></A><A NAME="13300"></A><A NAME="13301"></A>
+<BR>
+Transformer un entier en sa fraction modulo <I>p</I> : <TT>fracmod  iratrecon</TT>
+</H2>
+<TT>fracmod</TT> (ou <TT>iratrecon</TT> pour compatibilit&#233; Maple) a deux 
+arguments, un entier <TT>n</TT> (ou une expression
+ enti&#232;re) et un nombre entier <TT>p</TT>.
+<BR><TT>fracmod</TT> renvoie une fraction <TT>a/b</TT> v&#233;rifiant :
+<P><!-- MATH
+ \begin{displaymath}
+-\frac{\sqrt{p}}{2} < a \leq \frac{\sqrt{p}}{2}, \quad
+ 0 \leq b < \frac{\sqrt{p}}{2}, \quad 
+ n \times b =a \pmod p
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+- <IMG
+ WIDTH="32" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img394.png"
+ ALT="$\displaystyle {\frac{{\sqrt{p}}}{{2}}}$"> &lt; <I>a</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <IMG
+ WIDTH="32" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img394.png"
+ ALT="$\displaystyle {\frac{{\sqrt{p}}}{{2}}}$">,&nbsp;&nbsp;&nbsp;&nbsp;0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>b</I> &lt; <IMG
+ WIDTH="32" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img394.png"
+ ALT="$\displaystyle {\frac{{\sqrt{p}}}{{2}}}$">,&nbsp;&nbsp;&nbsp;&nbsp;<I>n</I>&#215;<I>b</I> = <I>a</I>(mod <I>p</I>)
+</DIV><P></P>
+En d'autres termes <!-- MATH
+ $n=a/b\pmod p$
+ -->
+<I>n</I> = <I>a</I>/<I>b</I>(mod <I>p</I>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fracmod(3,13) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-1/4</TT>
+</DIV>
+En effet : <!-- MATH
+ $3*-4=-12=1\ (\bmod\ 13)$
+ -->
+3* -4 = - 12 = 1&nbsp;( mod&nbsp;13) donc <!-- MATH
+ $3=-1/4\%13$
+ -->
+3 = - 1/4%13.
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fracmod(13,121) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-4/9</TT>
+</DIV>
+En effet : <!-- MATH
+ $13\times-9=-117=4\ (\bmod\ 121)$
+ -->
+13&#215; -9 = - 117 = 4&nbsp;( mod&nbsp;121) donc <!-- MATH
+ $13=-4/9\%13$
+ -->
+13 = - 4/9%13.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

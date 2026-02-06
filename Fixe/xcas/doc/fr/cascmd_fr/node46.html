@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Variables r&#233;elles ou complexes : complex_variables</TITLE>
+<META NAME="description" CONTENT="Variables r&#233;elles ou complexes : complex_variables">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node45.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node47.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2967"
+  HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2961"
+  HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2957"
+  HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2963"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2965"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2968"
+  HREF="node47.html">L'aide</A>
+<B> monter:</B> <A NAME="tex2html2962"
+  HREF="node37.html">Les diff&#233;rentes configurations avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2958"
+  HREF="node45.html">Choix du mode r&#233;el</A>
+ &nbsp; <B>  <A NAME="tex2html2964"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2966"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00479000000000000000"></A><A NAME="989"></A>
+<BR>
+Variables r&#233;elles ou complexes : <TT>complex_variables</TT>
+</H2>
+<TT>complex_variables</TT> permet de sp&#233;cifier si on veut travailler
+ avec des variables formelles r&#233;elles (dans ce cas par exemple <TT>re(A)=A</TT>) ou complexes.
+<BR>
+Si on veut travailler avec des variables formelles complexes, on tape :
+<DIV ALIGN="CENTER">
+<TT>complex_variables:=1</TT>
+</DIV>
+Si on veut travailler avec des variables formelles r&#233;elles, on tape :
+<DIV ALIGN="CENTER">
+<TT>complex_variables:=0</TT>
+</DIV>
+On peut aussi cocher ou d&#233;cocher <TT>Variables_ complexes</TT> dans l'&#233;cran 
+de la <TT>Configuration du CAS</TT> du menu <TT>Cfg</TT>.
+<BR><B>Attention !!!</B>
+<BR>
+Dans <TT>csolve</TT> l'inconnue est toujours consid&#233;r&#233;e comme une variable 
+formelle complexe et dans <TT>solve</TT> l'inconnue est consid&#233;r&#233;e comme une 
+variable formelle complexe seulement si l'equation &#224; r&#233;soudre contient 
+<TT>i</TT> et si on est en mode complexe.
+<BR>
+On tape en mode complexe (<TT>Complexe</TT> est coch&#233; et <TT>Variables_complexes</TT> est d&#233;coch&#233;) :
+<DIV ALIGN="CENTER">
+<TT>solve(re(r*exp(-(i)*t))-1,r)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[` x`+(i)*1/(sin(t))*(-` x`*cos(t)+1)]</TT>
+</DIV>
+cela veut dire que la solution <TT>r</TT> est un nombre complexe qui vaut 
+<TT>` x`+(i)*1/(sin(t))*(-` x`*cos(t)+1)</TT> o&#249; <TT>'x'</TT> est arbitraire.
+<BR>
+On tape en mode complexe  (<TT>Complexe</TT> est coch&#233; et <TT>Variables_complexes</TT> est d&#233;coch&#233;) :
+<DIV ALIGN="CENTER">
+<TT>solve(expand(re(r*exp(-(i)*t))-1),r)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1/(cos(t))]</TT>
+</DIV>
+car <TT>(expand(re(r*exp(-(i)*t))-1)</TT> renvoie une expression qui ne contient 
+pas de <TT>i</TT> donc <TT>solve</TT> consid&#232;re <TT>r</TT> comme une variable 
+r&#233;elle.
+<BR><B>R&#232;gle</B> Pour ne pas se tromper, lorqu'on veut des solutions complexes, il
+faut utiliser <TT>csolve</TT>.
+<BR>
+On tape en mode complexe ou r&#233;el :
+<DIV ALIGN="CENTER">
+<TT>csolve(re(r*exp(-(i)*t))-1,r)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[` x`+(i)*1/(sin(t))*(-` x`*cos(t)+1)]</TT>
+</DIV>
+cela veut dire que la solution <TT>r</TT> est un nombre complexe qui vaut 
+<TT>` x`+(i)*1/(sin(t))*(-` x`*cos(t)+1)</TT> o&#249; <TT>'x'</TT> est arbitraire.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2967"
+  HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2961"
+  HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2957"
+  HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2963"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2965"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2968"
+  HREF="node47.html">L'aide</A>
+<B> monter:</B> <A NAME="tex2html2962"
+  HREF="node37.html">Les diff&#233;rentes configurations avec</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2958"
+  HREF="node45.html">Choix du mode r&#233;el</A>
+ &nbsp; <B>  <A NAME="tex2html2964"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2966"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,55 @@
+potence(a,b,n):={
+ local L1,L2;
+ b0:=b;
+ b:=iquo(a,b0);
+ a:=irem(a,b0);
+ L1:=[b];
+ L2:=[a];
+ for (k:=1;k<=n and a!=0;k++){
+    b:=iquo(a*10,b0);
+    a:=irem(a*10,b0);
+    L2:=append(L2,a);
+    L1:=append(L1,b);
+ };
+ return([L1,L2]);
+};
+division(a,b,n,t):={
+local L1,L2,p,q,r;
+L1:=[iquo(a,b)];
+r:=irem(a,b);
+for (k:=1;k<=n and r!=0;k++) {
+q:=iquo(r+10^t);
+//10^(p-1)<= q <10^p
+if (q==0) {p:=1} else {p:=floor(ln(q)/ln(10)+1)};
+//on complete par des zeros pour avoir un paquet de t decimales
+for (j:=p+1;j<=t;j++){
+L1:=append(L1,0);
+}
+L1:=append(L1,q);
+r:=irem(r*10^t,b);
+}
+return(L1,r);
+};
+rationnel(l1,l2):={
+//l1 et l2 sont non vides
+local pui,s1,s2,n,p,np,pui;
+pui:=10;
+s2:=size(l2);
+n:=l2[0];
+for (k:=1;k<s2;k++){
+pui:=pui*10;
+n:=n*10+l2[k];
+}
+// 0.123123...=123/999 
+p:=n/(pui-1);
+//np partie non periodique
+np:=l1[0];
+s1:=size(l1);
+pui:=1;
+for (k:=1;k<s1;k++){
+pui:=pui*10;
+np:=np+l1[k]/pui;
+}
+//pui=10^(s1-1) 
+return(np+p/pui);
+};

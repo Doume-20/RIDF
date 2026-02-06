@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le parall&#233;logramme dans l'espace : parallelogram parallelogramme</TITLE>
+<META NAME="description" CONTENT="Le parall&#233;logramme dans l'espace : parallelogram parallelogramme">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1062.html">
+<LINK REL="previous" HREF="node1060.html">
+<LINK REL="up" HREF="node1057.html">
+<LINK REL="next" HREF="node1062.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18885"
+  HREF="node1062.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18879"
+  HREF="node1057.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18873"
+  HREF="node1060.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18881"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18883"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18886"
+  HREF="node1062.html">Les quadrilat&#232;res quelconques dans</A>
+<B> monter:</B> <A NAME="tex2html18880"
+  HREF="node1057.html">Les quadrilat&#232;res dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18874"
+  HREF="node1060.html">Le rectangle dans l'espace</A>
+ &nbsp; <B>  <A NAME="tex2html18882"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18884"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001374000000000000000"></A><A NAME="27724"></A><A NAME="27725"></A><A NAME="sec:parallelo3"></A>
+<BR>
+Le parall&#233;logramme dans l'espace : <TT>parallelogram parallelogramme</TT>
+</H2>
+<B>Voir aussi :</B>  <A HREF="node953.html#sec:parallelo2">9.12.5</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>parallelogramme</TT>, en g&#233;om&#233;trie 3D, a trois arguments ou 
+quatre arguments.
+<BR>
+Les arguments sont :
+<BR>- si il a trois arguments ce sont : trois points les sommets <I>A</I>, <I>B</I>, <I>C</I> du 
+parall&#233;logramme <I>ABCD</I>.
+<BR><TT>parallelogramme(A,B,C)</TT> renvoie et trace dans le plan <I>ABC</I>, le 
+parall&#233;logramme <I>ABCD</I> tel que : 
+<!-- MATH
+ $\overrightarrow{AD}=\overrightarrow{BC}$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img589.png"
+ ALT="$ \overrightarrow{AD}=\overrightarrow{BC}$">
+mais sans d&#233;finir le point  <I>D</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=point(0,0,0)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=point(3,3,3)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>C:=point(0,0,3)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>parallelogramme(A,B,C)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le parall&#233;logramme ABCD</TT>
+</DIV>
+- si il a quatre arguments le dernier param&#232;tre est le nom  d'une 
+variable qui servira &#224; d&#233;finir le sommet manquant.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>parallelogramme(A,B,C,D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le parall&#233;logramme ABCD et le point D</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(D)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-3,-3,0]</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

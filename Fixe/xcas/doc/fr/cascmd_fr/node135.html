@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Repr&#233;sentation graphique d'in&#233;quations &#224; 2 variables : plotinequation inequationplot</TITLE>
+<META NAME="description" CONTENT="Repr&#233;sentation graphique d'in&#233;quations &#224; 2 variables : plotinequation inequationplot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node136.html">
+<LINK REL="previous" HREF="node126.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node136.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4331"
+  HREF="node136.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4325"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4319"
+  HREF="node134.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4327"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4329"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4332"
+  HREF="node136.html">Repr&#233;sentation graphique de l'aire</A>
+<B> monter:</B> <A NAME="tex2html4326"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4320"
+  HREF="node134.html">Intersection d'un graphe en</A>
+ &nbsp; <B>  <A NAME="tex2html4328"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4330"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006100000000000000000"></A><A NAME="2775"></A><A NAME="2776"></A>
+<BR>
+Repr&#233;sentation graphique d'in&#233;quations &#224; 2 variables : <TT>plotinequation inequationplot</TT>
+</H1>
+<TT>plotinequation([f1(x,y)&lt;a1,..,fk(x,y)&lt;ak],[x=x1..x2,y=y1..y2])</TT>
+trace la surface du plan d&#233;finie par les in&#233;quations &#224; 2 variables :
+<P><!-- MATH
+ \begin{displaymath}
+f1(x,y)<a1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>f</I>1(<I>x</I>, <I>y</I>) &lt; <I>a</I>1
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+...
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+...
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+fk(x,y)<ak
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>fk</I>(<I>x</I>, <I>y</I>) &lt; <I>ak</I>
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+x1<x<x2
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>x</I>1 &lt; <I>x</I> &lt; <I>x</I>2
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+y1<y<y2
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>y</I>1 &lt; <I>y</I> &lt; <I>y</I>2
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotinequation(x<code>^</code>2-y<code>^</code>2&lt;3, [x=-2..2,y=-2..2],xstep=0.1,ystep=0.1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>la partie contenant l'origine et d&#233;limit&#233;e par l'hyperbole x<code>^</code>2-y<code>^</code>2=3 est remplie</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotinequation([x+y&gt;3,x<code>^</code>2&lt;y], [x-2..2,y=-1..10],xstep=0.2,ystep=0.2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le morceau du plan d&#233;finit par -2&lt;x&lt;2,y&lt;10,x+y&gt;3,y&gt;x<code>^</code>2 est rempli</TT>
+</DIV>
+<B>Attention</B>
+<BR>
+Si on ne met pas les bornes pour <I>x</I> et <I>y</I> ce sont les valeurs de 
+<TT>X-,X+,Y-,Y+</TT> mises dans la configuration g&#233;n&#233;rale du graphique 
+(<TT>Cfg<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Configuration graphique</TT>) qui
+seront prises en compte.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

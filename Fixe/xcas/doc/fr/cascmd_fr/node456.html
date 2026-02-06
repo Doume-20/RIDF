@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Convertir un d&#233;veloppement limit&#233; en polyn&#244;me : convert convertir</TITLE>
+<META NAME="description" CONTENT="Convertir un d&#233;veloppement limit&#233; en polyn&#244;me : convert convertir">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node457.html">
+<LINK REL="previous" HREF="node455.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node457.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9641"
+  HREF="node457.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9635"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9629"
+  HREF="node455.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9637"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9639"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9642"
+  HREF="node457.html">Polyn&#244;mes al&#233;atoires : randpoly</A>
+<B> monter:</B> <A NAME="tex2html9636"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9630"
+  HREF="node455.html">Troncature d'ordre n :</A>
+ &nbsp; <B>  <A NAME="tex2html9638"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9640"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092527000000000000000"></A><A NAME="11455"></A><A NAME="11456"></A>
+<BR>
+Convertir un d&#233;veloppement limit&#233; en polyn&#244;me : <TT>convert convertir</TT>
+</H2><A NAME="30028"></A><A NAME="sec:convertpoly"></A><TT>convert</TT>, avec l'option <TT>polynom</TT>, permet de convertir un 
+d&#233;veloppement de Taylor en  un polyn&#244;me.
+<BR><TT>convert</TT> est utile pour transformer un d&#233;veloppement limit&#233; en 
+polyn&#244;me : par exemple pour faire le trac&#233; d'une fonction et de ses 
+polyn&#244;mes de Taylor. 
+<BR><TT>convert</TT> a deux arguments : un d&#233;veloppement de Taylor d'ordre <I>n</I> 
+et l'option <TT>polynom</TT>.
+<BR><TT>convert</TT> renvoie le polyn&#244;me de Taylor d'ordre <I>n</I> tronqu&#233; &#224; 
+l'ordre <I>n</I> (on supprime le reste).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>convert(taylor(sin(x)),polynom)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x+1/-6*x<code>^</code>3+1/120*<code>x^</code>5+x<code>^</code>6*0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>convert(series(sin(x),x=0,6),polynom)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x+1/-6*x<code>^</code>3+1/120*<code>x^</code>5+x<code>^</code>7*0</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

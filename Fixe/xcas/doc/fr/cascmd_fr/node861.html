@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La boucle : for pour fpour</TITLE>
+<META NAME="description" CONTENT="La boucle : for pour fpour">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node862.html">
+<LINK REL="previous" HREF="node860.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node862.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15722"
+  HREF="node862.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15716"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15710"
+  HREF="node860.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15718"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15720"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15723"
+  HREF="node862.html">La fonction : seq</A>
+<B> monter:</B> <A NAME="tex2html15717"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15711"
+  HREF="node860.html">L'instruction conditionnelle : switch</A>
+ &nbsp; <B>  <A NAME="tex2html15719"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15721"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011419000000000000000"></A><A NAME="22687"></A><A NAME="22688"></A><A NAME="22689"></A><A NAME="22690"></A><A NAME="22691"></A><A NAME="22692"></A>
+<BR>
+La boucle : <TT>for pour fpour</TT>
+</H2>
+<TT>for</TT> et <TT>pour</TT> se sert d'une variable d'incr&#233;mentation par
+exemple <TT>j</TT> (doit &#234;tre d&#233;clar&#233;e comme variable locale).
+<BR>
+Avec <TT>for</TT>, on pr&#233;cise entre des parenth&#232;ses et en les s&#233;parant par 
+un point virgule, la valeur de d&#233;part, la condition d'arr&#234;t
+et la fa&#231;on dont on incr&#233;mente cette variable d'incr&#233;mentation, puis on
+met un bloc d'instructions
+<BR>
+Par exemple :
+<BR><TT>for (j:=3;j&lt;20;j:=j+3) {.....}</TT>
+<BR><TT>for</TT> permet de faire plusieurs fois un bloc d'instructions selon
+la valeur de la variable d'incr&#233;mentation.
+<BR>
+Avec <TT>pour</TT>,  on pr&#233;cise avec les mots <TT>de</TT>, <TT>jusque</TT> et 
+<TT>pas</TT>, la valeur de d&#233;part, la condition d'arr&#234;t et la fa&#231;on dont 
+on incr&#233;mente cette variable d'incr&#233;mentation, puis on met les instructions 
+&#224; effectuer entre <TT>faire</TT> et <TT>fpour</TT>
+<BR>
+Par exemple :
+<BR><TT>pour j de 3 jusque 19 pas 3 faire .....fpour</TT>
+<BR><TT>pour</TT> permet de faire plusieurs des instructions selon
+la valeur de la variable d'incr&#233;mentation.
+<BR>
+<P>
+<B>Attention</B>
+<BR>
+Ne pas choisir <TT>i</TT> comme variable d'incr&#233;mentation car
+<TT>i</TT> repr&#233;sente un nombre complexe !!!
+<BR>
+On tape :
+<PRE>
+somfor(n):={
+local j,s:=0;
+for (j:=1;j&lt;=n;j++){
+   s:=s+1/j;
+} 
+return s;
+}
+</PRE>
+<PRE>
+sompour(n):={
+local j,s:=0;
+pour j de 1 jusque n faire
+   s:=s+1/j;
+fpour 
+retourne s;
+}
+</PRE>
+puis:
+<DIV ALIGN="CENTER">
+<TT>somfor(5)</TT>
+</DIV>
+ou 
+<DIV ALIGN="CENTER">
+<TT>sompour(5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>137/60</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15722"
+  HREF="node862.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15716"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15710"
+  HREF="node860.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15718"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15720"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15723"
+  HREF="node862.html">La fonction : seq</A>
+<B> monter:</B> <A NAME="tex2html15717"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15711"
+  HREF="node860.html">L'instruction conditionnelle : switch</A>
+ &nbsp; <B>  <A NAME="tex2html15719"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15721"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

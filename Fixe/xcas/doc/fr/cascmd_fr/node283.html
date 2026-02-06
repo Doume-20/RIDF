@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les permutations</TITLE>
+<META NAME="description" CONTENT="Les permutations">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node302.html">
+<LINK REL="previous" HREF="node266.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node284.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7080"
+  HREF="node284.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7074"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7068"
+  HREF="node282.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7076"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7078"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7081"
+  HREF="node284.html">Permutation aléatoire : randperm</A>
+<B> monter:</B> <A NAME="tex2html7075"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7069"
+  HREF="node282.html">Les fonctions de Airy</A>
+ &nbsp; <B>  <A NAME="tex2html7077"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7079"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009110000000000000000">
+Les permutations</A>
+</H1>
+Une permutation <I>p</I> de longueur <I>n</I> est une bijection de [0..<I>n</I> - 1] sur 
+[0..<I>n</I> - 1] et est repr&#233;sent&#233;e par la liste :
+ <!-- MATH
+ $[p(0),p(1),p(2)...p(n-1)]$
+ -->
+[<I>p</I>(0), <I>p</I>(1), <I>p</I>(2)...<I>p</I>(<I>n</I> - 1)].
+<BR>
+Par exemple, la permutation <I>p</I> repr&#233;sent&#233;e par [1, 3, 2, 0] est 
+l'application de [0, 1, 2, 3] sur  [0, 1, 2, 3] d&#233;finie par :
+<!-- MATH
+ $p(0)=1,\ p(1)=3,\ p(2)=2,\  p(3)=0$
+ -->
+<I>p</I>(0) = 1,&nbsp;<I>p</I>(1) = 3,&nbsp;<I>p</I>(2) = 2,&nbsp;<I>p</I>(3) = 0.
+<BR>
+Un cycle <I>c</I> d'ordre <I>p</I> est  repr&#233;sent&#233; par la  liste 
+<!-- MATH
+ $[(a_0,...,a_{p-1}]$
+ -->
+[(<I>a</I><SUB>0</SUB>,..., <I>a</I><SUB>p-1</SUB>] (<!-- MATH
+ $0\leq p\leq n-1$
+ -->
+0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>p</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>n</I> - 1); c'est une permutation telle que :
+<BR><!-- MATH
+ $c(a_i)=a_{i+1}$
+ -->
+<I>c</I>(<I>a</I><SUB>i</SUB>) = <I>a</I><SUB>i+1</SUB> pour <!-- MATH
+ $(i=0..p-2)$
+ -->
+(<I>i</I> = 0..<I>p</I> - 2), <!-- MATH
+ $c(a_{p-1})=a_0$
+ -->
+<I>c</I>(<I>a</I><SUB>p-1</SUB>) = <I>a</I><SUB>0</SUB> et
+ <!-- MATH
+ $c(a_i)=a_i (i=p+1..n)$
+ -->
+<I>c</I>(<I>a</I><SUB>i</SUB>) = <I>a</I><SUB>i</SUB>(<I>i</I> = <I>p</I> + 1..<I>n</I>). 
+<BR>
+Un cycle <I>c</I> est  repr&#233;sent&#233; par la  liste et une d&#233;composition en 
+cycles par une liste de listes.
+<BR>
+Par exemple, le cycle <I>c</I> repr&#233;sent&#233; par la  liste [3, 2, 1] est la 
+permutation <I>c</I> d&#233;finie par  <!-- MATH
+ $c(3)=2,\ c(2)=1,\ c(1)=3,\ c(0)=0$
+ -->
+<I>c</I>(3) = 2,&nbsp;<I>c</I>(2) = 1,&nbsp;<I>c</I>(1) = 3,&nbsp;<I>c</I>(0) = 0 (qui est
+ repr&#233;sent&#233; en tant que permutation par la liste [0, 3, 1, 2]).
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html7082"
+  HREF="node284.html">Permutation aléatoire : <TT>randperm</TT></A>
+<LI><A NAME="tex2html7083"
+  HREF="node285.html">Permutation pr&#233;c&#233;dente : <TT>prevperm</TT></A>
+<LI><A NAME="tex2html7084"
+  HREF="node286.html">Permutation suivante : <TT>nextperm</TT></A>
+<LI><A NAME="tex2html7085"
+  HREF="node287.html">Décomposition en cycles : <TT>permu2cycles</TT></A>
+<LI><A NAME="tex2html7086"
+  HREF="node288.html">Produit de cycles : <TT>cycles2permu</TT></A>
+<LI><A NAME="tex2html7087"
+  HREF="node289.html">Transformer un cycle en permutation : <TT>cycle2perm</TT></A>
+<LI><A NAME="tex2html7088"
+  HREF="node290.html">Transformer une permutation en une matrice : <TT>permu2mat</TT></A>
+<LI><A NAME="tex2html7089"
+  HREF="node291.html">Reconnaitre une permutation : <TT>is_permu</TT></A>
+<LI><A NAME="tex2html7090"
+  HREF="node292.html">Reconnaitre un cycle : <TT>is_cycle</TT></A>
+<LI><A NAME="tex2html7091"
+  HREF="node293.html">Composition de deux permutations : <TT>p1op2</TT></A>
+<LI><A NAME="tex2html7092"
+  HREF="node294.html">Produit d'un cycle et d'une permutation : <TT>c1op2</TT></A>
+<LI><A NAME="tex2html7093"
+  HREF="node295.html">Produit d'une permutation et d'un cycle : <TT>p1oc2</TT></A>
+<LI><A NAME="tex2html7094"
+  HREF="node296.html">Produit de deux cycles : <TT>c1oc2</TT></A>
+<LI><A NAME="tex2html7095"
+  HREF="node297.html">Signature d'une permutation : <TT>signature</TT></A>
+<LI><A NAME="tex2html7096"
+  HREF="node298.html">Inverse d'une permutation : <TT>perminv</TT></A>
+<LI><A NAME="tex2html7097"
+  HREF="node299.html">Inverse d'un cycle : <TT>cycleinv</TT></A>
+<LI><A NAME="tex2html7098"
+  HREF="node300.html">Ordre d'une permutation : <TT>permuorder</TT></A>
+<LI><A NAME="tex2html7099"
+  HREF="node301.html">Groupe engendré par deux permutations : <TT>groupermu</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+2022-09-18 17:54:41 [4852] INFO [JS] GUID package: 52191d55-a6aa-4d53-9830-fded6eb78582 +246ms
+2022-09-18 15:54:45.738: 2022-09-18 17:54:45 [4852] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +3992ms
+2022-09-18 15:54:45.738: 2022-09-18 17:54:45 [4852] INFO [Runner] Running result: false +1ms
+2022-09-18 15:54:45.738: 2022-09-18 17:54:45 [4852] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2022-09-18 15:54:51.486: 2022-09-18 17:54:51 [4852] INFO [JS] Version of current package:  +5737ms
+2022-09-18 15:54:51.486: 2022-09-18 17:54:51 [4852] INFO [JS] Installing the package ... +1ms
+2022-09-18 15:54:51.486: 2022-09-18 17:54:51 [4852] INFO [Runner] Performing runner... +1ms
+2022-09-18 15:54:51.486: 2022-09-18 17:54:51 [4852] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-09-18 15:54:51.783: 2022-09-18 17:54:51 [4852] INFO [JS] Version of current package: 1.1 +307ms
+2022-09-18 15:54:51.830: 2022-09-18 17:54:51 [4852] INFO [JS] Version of current package: 1.1 +34ms
+2022-09-18 15:55:03.614: 2022-09-18 17:55:03 [4852] INFO [JS] Version of update package: 1.1 +11795ms
+2022-09-18 15:55:03.614: 2022-09-18 17:55:03 [4852] INFO [JS] Your package is up to date +0ms
+2022-09-18 15:55:03.629: 2022-09-18 17:55:03 [4852] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-09-18 15:55:03.629: 2022-09-18 17:55:03 [4852] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +2ms
+2022-09-18 15:55:03.661: 2022-09-18 17:55:03 [4852] INFO [JS] Version of update package: 1.1 +34ms
+2022-09-18 15:55:03.661: 2022-09-18 17:55:03 [4852] INFO [JS] Your package is up to date +0ms
+2022-09-18 15:55:03.661: 2022-09-18 17:55:03 [4852] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-09-18 15:55:03.661: 2022-09-18 17:55:03 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Certificat-RIDF-1.1 (545) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Certificat-RIDF-1.1.json +2ms
+2022-09-19 07:16:27.973: 2022-09-19 9:16:27 [4852] INFO [CleanerService] Received payload list: 111, 360, 279, 545, 986, 984, 1027, 130, 991, 359, 173, 179 +55284313ms
+2022-09-19 07:16:27.989: 2022-09-19 9:16:27 [4852] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +7ms
+2022-09-19 07:16:27.989: 2022-09-19 9:16:27 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +2ms
+2022-09-19 07:16:27.989: 2022-09-19 9:16:27 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:27 [4852] INFO [Runner] Creating configuration unit runner object... +12ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:27 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:27 [4852] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +2ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:28 [4852] INFO [JS] We are triggering +1ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +1ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +1ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2022-09-19 07:16:28.004: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> __/conf/agents/facts... +46ms
+2022-09-19 07:16:28.051: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +1ms
+2022-09-19 07:16:28.051: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +2ms
+2022-09-19 07:16:28.051: 2022-09-19 9:16:28 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +1ms
+2022-09-19 07:16:28.067: 2022-09-19 9:16:28 [4852] INFO [Runner] Performing runner... +1ms
+2022-09-19 07:16:28.067: 2022-09-19 9:16:28 [4852] INFO [JS] Performing facts gathering and upload... +3ms
+2022-09-19 07:16:28.258: 2022-09-19 9:16:28 [4852] INFO [CleanerService] Current payload list: 1027, 111, 130, 173, 179, 271, 279, 280, 359, 360, 521, 545, 593, 984, 986, 991 +189ms
+2022-09-19 07:16:28.258: 2022-09-19 9:16:28 [4852] INFO [CleanerService] Payloads to delete: 271, 280, 521, 593 +1ms
+2022-09-19 07:16:28.289: 2022-09-19 9:16:28 [4852] INFO [CleanerService] Deleting unused payload: 271... +44ms
+2022-09-19 07:16:28.305: 2022-09-19 9:16:28 [4852] INFO [CleanerService] Deleting unused payload: 280... +13ms
+2022-09-19 07:16:28.320: 2022-09-19 9:16:28 [4852] INFO [CleanerService] Deleting unused payload: 521... +16ms
+2022-09-19 07:16:28.336: 2022-09-19 9:16:28 [4852] INFO [CleanerService] Deleting unused payload: 593... +8ms
+2022-09-19 07:16:28.367: 2022-09-19 9:16:28 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_4.0.6.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1027\payload.jar5016eb45cb15b04a.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +40ms
+2022-09-19 07:16:28.383: 2022-09-19 9:16:28 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:16:28.383:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:16:28.383:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:16:28.383:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:16:28.383:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:16:28.383:     at net.js:673:12
+2022-09-19 07:16:28.383:     at TCP.done (_tls_wrap.js:563:7) +3ms
+2022-09-19 07:16:28.383: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Error, error=Network, active=true +3ms
+2022-09-19 07:16:28.430: 2022-09-19 9:16:28 [4852] INFO [RequestPerformerService] Got disposed. +48ms
+2022-09-19 07:16:28.430: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:16:28.430: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Error Network. Waiting 30 seconds before retrying... +6ms
+2022-09-19 07:16:28.445: 2022-09-19 9:16:28 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.11.0.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload.jarb3f7693e2a3776ec.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +5ms
+2022-09-19 07:16:28.445: 2022-09-19 9:16:28 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-19 07:16:28.445:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-19 07:16:28.445:     at IncomingMessage.emit (events.js:376:20)
+2022-09-19 07:16:28.445:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-19 07:16:28.445:     at TLSSocket.emit (events.js:388:22)
+2022-09-19 07:16:28.445:     at net.js:673:12
+2022-09-19 07:16:28.445:     at TCP.done (_tls_wrap.js:563:7) +3ms
+2022-09-19 07:16:28.445: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:16:28.445: 2022-09-19 9:16:28 [4852] INFO [RequestPerformerService] Got disposed. +3ms
+2022-09-19 07:16:28.445: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:16:28.461: 2022-09-19 9:16:28 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Error Network. Waiting 30 seconds before retrying... +7ms

@@ -1,0 +1,76 @@
+2022-02-02 21:25:19 [5400] INFO [JS] Uploading facts... +4ms
+2022-02-02 20:25:19.322: 2022-02-02 21:25:19 [5400] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com
+2022-02-02 20:25:19.322:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +28ms
+2022-02-02 20:25:19.322: 2022-02-02 21:25:19 [5400] INFO [Runner] Running result: false +0ms
+2022-02-02 20:25:19.338: 2022-02-02 21:25:19 [5400] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2022-02-02 20:25:35.952: 2022-02-02 21:25:35 [5400] INFO [CommandService] Got command facts:set +16628ms
+2022-02-02 20:25:36.108: 2022-02-02 21:25:35 [5400] INFO [CommandService] Got command facts:set +5ms
+2022-02-02 20:25:36.108: 2022-02-02 21:25:36 [5400] INFO [CommandService] Got command facts:set +151ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [CommandService] Got command facts:set +3ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [CommandService] Got command units:trigger +2ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> logout... +0ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +0ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> logout... +0ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +1ms
+2022-02-02 20:25:36.124: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +0ms
+2022-02-02 20:25:36.140: 127.0.0.1 - - [02/Feb/2022:20:25:36 +0000] "POST /commands HTTP/1.1" 200 30 "-" "-"
+2022-02-02 20:25:36.140: 2022-02-02 21:25:36 [5400] INFO [CommandService] Got command units:trigger +9ms
+2022-02-02 20:25:36.140: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> login... +1ms
+2022-02-02 20:25:36.140: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> login... +0ms
+2022-02-02 20:25:36.140: 2022-02-02 21:25:36 [5400] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2022-02-02 20:25:36.155: 2022-02-02 21:25:36 [5400] INFO [Runner] Creating configuration unit runner object... +18ms
+2022-02-02 20:25:36.155: 2022-02-02 21:25:36 [5400] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-02-02 20:25:36.155: 2022-02-02 21:25:36 [5400] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-02 20:25:36.171: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> login... +1ms
+2022-02-02 20:25:36.171: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> login... +0ms
+2022-02-02 20:25:36.171: 2022-02-02 21:25:36 [5400] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +1ms
+2022-02-02 20:25:36.186: 2022-02-02 21:25:36 [5400] INFO [Runner] Creating configuration unit runner object... +17ms
+2022-02-02 20:25:36.186: 2022-02-02 21:25:36 [5400] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-02 20:25:36.186: 2022-02-02 21:25:36 [5400] INFO [JS] Checking that the unit needs to be performed. Params:
+2022-02-02 20:25:36.186: {
+2022-02-02 20:25:36.186:   "platform": "win32",
+2022-02-02 20:25:36.186:   "deviceId": "IFP052046109",
+2022-02-02 20:25:36.186:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2022-02-02 20:25:36.186:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2022-02-02 20:25:36.186:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2022-02-02 20:25:36.186:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2022-02-02 20:25:36.186:   "versionCode": 21093040,
+2022-02-02 20:25:36.186:   "trigger": "login",
+2022-02-02 20:25:36.186:   "metadata": {
+2022-02-02 20:25:36.186:     "packageVersion": "1.0.16.0",
+2022-02-02 20:25:36.186:     "componentParameters": {
+2022-02-02 20:25:36.186:       "AppX": "Hisqool.Legal.GDPR",
+2022-02-02 20:25:36.186:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2022-02-02 20:25:36.186:       "DesktopShortcut": "Charte de protection*",
+2022-02-02 20:25:36.186:       "ProvisioningPackage": "Hisqool GDPR",
+2022-02-02 20:25:36.186:       "InstallationDirectory": "hisqool.gdpr",
+2022-02-02 20:25:36.186:       "UninstallationDirectory": "hisqool.gdpr",
+2022-02-02 20:25:36.186:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2022-02-02 20:25:36.186:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2022-02-02 20:25:36.186:     },
+2022-02-02 20:25:36.186:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2022-02-02 20:25:36.186:   }
+2022-02-02 20:25:36.186: } +2ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> login... +2ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> login... +0ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> login... +1ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> login... +1ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> login... +0ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> login... +1ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> login... +0ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> login... +1ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> login... +0ms
+2022-02-02 20:25:36.202: 2022-02-02 21:25:36 [5400] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2022-02-02 20:25:36.202: 127.0.0.1 - - [02/Feb/2022:20:25:36 +0000] "POST /commands HTTP/1.1" 200 29 "-" "-"
+2022-02-02 20:25:36.249: 2022-02-02 21:25:36 [5400] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +26ms
+2022-02-02 20:25:48.838: 2022-02-02 21:25:48 [5400] INFO [JS] Result: 0 +12590ms
+2022-02-02 20:25:48.838: 2022-02-02 21:25:48 [5400] INFO [JS] Stdout: Custom shell possible: True +1ms
+2022-02-02 20:25:48.838: 2022-02-02 21:25:48 [5400] INFO [JS] Stderr: #< CLIXML

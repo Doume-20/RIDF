@@ -1,0 +1,180 @@
+// fltk 7Fl_Tile 26 -39 911 163 20
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -39 911 162 20
+Soient 4 points MNPQ. et un point A . On considere :£le symetrique B du point A par rapport a M,£le symetrique C du point B par rapport a N, £le symetrique D du point C par rapport a P,£le symetrique E du point D par rapport a Q.£Peut-on choisir A pour que A et E soient confondus?£Peut-on choisir Q pour que A et E soient confondus?
+,
+// fltk N4xcas10Log_OutputE 26 123 911 1 20
+
+]
+,
+// fltk 7Fl_Tile 26 126 911 411 20
+[
+// fltk N4xcas6FigureE 26 126 911 410 20
+// fltk N4xcas12History_PackE 28 -201 284 737 20
+[
+// fltk 7Fl_Tile 50 -201 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -201 262 30 20
+M:=point(-2.378,1.927,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 50 -171 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -170 262 27 14
+point(-2.378,1.927)
+]
+,
+// fltk 7Fl_Tile 50 -141 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -141 262 30 20
+N:=point(-0.382,2.812,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 50 -111 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -110 262 27 14
+point(-0.382,2.812)
+]
+,
+// fltk 7Fl_Tile 50 -81 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -81 262 30 20
+P:=point(1.737,1.197,'affichage'=0)
+,
+// fltk N4xcas10Log_OutputE 50 -51 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 -50 262 27 14
+point(1.737,1.197)
+]
+,
+// fltk 7Fl_Tile 50 -21 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 -21 262 30 20
+Q:=point(-2.625,0.624,'affichage'=0)+1.06-1.458*i
+,
+// fltk N4xcas10Log_OutputE 50 9 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 10 262 27 14
+point(-1.565,-0.834)
+]
+,
+// fltk 7Fl_Tile 50 39 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 39 262 30 20
+A:=point(-2.995,2.499,'affichage'=0)-0.517-2.734*i
+,
+// fltk N4xcas10Log_OutputE 50 69 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 70 262 27 14
+point(-3.512,-0.235)
+]
+,
+// fltk 7Fl_Tile 50 99 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 99 262 30 20
+B:=symetrie(M,A)
+,
+// fltk N4xcas10Log_OutputE 50 129 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 130 262 27 14
+point(-1.244,4.089)
+]
+,
+// fltk 7Fl_Tile 50 159 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 159 262 30 20
+C:=symetrie(N,B)
+,
+// fltk N4xcas10Log_OutputE 50 189 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 190 262 27 14
+point(0.48,1.535)
+]
+,
+// fltk 7Fl_Tile 50 219 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 219 262 30 20
+D:=symetrie(P,C)
+,
+// fltk N4xcas10Log_OutputE 50 249 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 250 262 27 14
+point(2.994,0.859)
+]
+,
+// fltk 7Fl_Tile 50 279 262 58 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 279 262 30 20
+E:=symetrie(Q,D)
+,
+// fltk N4xcas10Log_OutputE 50 309 262 1 20
+
+,
+// fltk N4xcas10Gen_OutputE 50 310 262 27 14
+point(-6.124,-2.527)
+]
+,
+// fltk 7Fl_Tile 50 339 262 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 339 262 30 20
+polygone_ouvert(A,B,C,D,E)
+,
+// fltk N4xcas10Log_OutputE 50 369 262 1 20
+
+,
+// fltk 9Fl_Scroll 50 370 262 49 14
+[
+// fltk N4xcas10Gen_OutputE 50 370 884 27 14
+polygone(point(-3.512,-0.235),point(-1.244,4.089),point(0.48,1.535),point(2.994,0.859),point(-6.124,-2.527))
+,
+// fltk 12Fl_Scrollbar 50 399 262 20 14
+[]
+,
+// fltk 12Fl_Scrollbar 312 370 16 29 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 421 262 80 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 421 262 30 20
+polygone(M,N,P,Q,couleur=rouge)
+,
+// fltk N4xcas10Log_OutputE 50 451 262 1 20
+
+,
+// fltk 9Fl_Scroll 50 452 262 49 14
+[
+// fltk N4xcas10Gen_OutputE 50 452 1093 27 14
+polygone(point(-2.378,1.927),point(-0.382,2.812),point(1.737,1.197),point(-1.565,-0.834),point('affichage'=rouge),point(-2.378,1.927))
+,
+// fltk 12Fl_Scrollbar 50 481 262 20 14
+[]
+,
+// fltk 12Fl_Scrollbar 312 452 16 29 14
+[]
+]
+]
+,
+// fltk 7Fl_Tile 50 503 262 31 20
+[
+// fltk N4xcas19Multiline_Input_tabE 50 503 262 30 20
+
+,
+// fltk N4xcas10Log_OutputE 50 533 262 1 20
+
+]
+]
+// fltk N4xcas5Geo2dE 330 152 487 384 20
+-8.4038,3.6016,-5,5,[pnt(pnt[-2.378+1.927*i,0,"M"]),pnt(pnt[-0.382+2.812*i,0,"N"]),pnt(pnt[1.737+1.197*i,0,"P"]),pnt(pnt[-1.565-0.834*i,0,"Q"]),pnt(pnt[-3.512-0.235*i,0,"A"]),pnt(pnt[-1.244+4.089*i,0,"B"]),pnt(pnt[0.48+1.535*i,0,"C"]),pnt(pnt[2.994+0.859*i,0,"D"]),pnt(pnt[-6.124-2.527*i,0,"E"]),pnt(pnt[group[-3.512-0.235*i,-1.244+4.089*i,0.48+1.535*i,2.994+0.859*i,-6.124-2.527*i],0]),pnt(pnt[group[-2.378+1.927*i,-0.382+2.812*i,1.737+1.197*i,-1.565-0.834*i,'affichage'=rouge,-2.378+1.927*i],1])],-5,5,1,0,0,0,1,1,0,0,1,2.5
+
+,
+// fltk N4xcas10Log_OutputE 26 536 911 1 20
+
+]

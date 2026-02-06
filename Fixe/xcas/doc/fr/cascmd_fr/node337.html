@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Tableau de valeurs et graphe d'une suite r&#233;currente : tableseq table_suite et plotseq graphe_suite</TITLE>
+<META NAME="description" CONTENT="Tableau de valeurs et graphe d'une suite r&#233;currente : tableseq table_suite et plotseq graphe_suite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node336.html">
+<LINK REL="up" HREF="node333.html">
+<LINK REL="next" HREF="node338.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7879"
+  HREF="node338.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7873"
+  HREF="node333.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7869"
+  HREF="node336.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7875"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7877"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7880"
+  HREF="node338.html">Les fonctions infix&#233;es ou</A>
+<B> monter:</B> <A NAME="tex2html7874"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7870"
+  HREF="node336.html">Valeurs d'une suite r&#233;currente</A>
+ &nbsp; <B>  <A NAME="tex2html7876"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7878"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009144000000000000000"></A><A NAME="7904"></A><A NAME="7905"></A><A NAME="7906"></A><A NAME="7907"></A>
+<BR>
+Tableau de valeurs et graphe d'une suite r&#233;currente : <TT>tableseq table_suite</TT> et <TT>plotseq graphe_suite</TT>
+</H2>
+<TT>tableseq</TT> ou <TT>table_suite</TT> est une commande qui s'utilise &#224; 
+l'int&#233;rieur d'un tableur (que l'on ouvre avec <TT>Alt+t</TT>) et qui .
+<BR>
+remplit une colonne avec <!-- MATH
+ ${\tt u_0, \ u_{n+1}=f(u_{n})}$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.png"
+ ALT="$ \tt u_0, \ u_{n+1}=f(u_{n})$"> (r&#233;currence sur un 
+terme) ou plus g&#233;n&#233;rallement 
+<!-- MATH
+ $u_0,...,u_k, \ \ u_{n+k+1}=f(u_n,u_{n+1},...,u_{n+k})$
+ -->
+<I>u</I><SUB>0</SUB>,..., <I>u</I><SUB>k</SUB>,&nbsp; <I>u</I><SUB>n+k+1</SUB> = <I>f</I> (<I>u</I><SUB>n</SUB>, <I>u</I><SUB>n+1</SUB>,..., <I>u</I><SUB>n+k</SUB>).
+<TT>tableseq</TT> ou <TT>table_suite</TT> remplit une colonne &#224; partir de la 
+cellule s&#233;lectionn&#233;e ou &#224; partir de
+<TT>0</TT> si c'est le nom de la colonne qui est s&#233;lectionn&#233;e.
+<BR>
+Voir aussi <TT>plotseq</TT> (section <A HREF="node146.html#sec:plotseq">3.17</A>) pour la repr&#233;sentation 
+graphique des suites r&#233;currentes.
+
+<P>
+<B>Exemples</B> :
+
+<UL>
+<LI>Affichage des valeurs de la suite <!-- MATH
+ $u_0=3.5, \ u_n=\sin(u_{n-1})$
+ -->
+<I>u</I><SUB>0</SUB> = 3.5,&nbsp;<I>u</I><SUB>n</SUB> = sin(<I>u</I><SUB>n-1</SUB>)
+<BR>
+On ouvre un tableur avec <TT>Alt+t</TT>.
+<BR>
+Puis, on s&#233;lectionne une case du tableur (par exemple  <TT>B0</TT>) et pour 
+avoir les valeurs de <!-- MATH
+ $u_0=3.5, \ u_n=\sin(u_{n-1})$
+ -->
+<I>u</I><SUB>0</SUB> = 3.5,&nbsp;<I>u</I><SUB>n</SUB> = sin(<I>u</I><SUB>n-1</SUB>), on tape, 
+dans la ligne de commande du tableur : 
+<DIV ALIGN="CENTER">
+<TT>tableseq(sin(u),u,4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>une colonne contenant sin(n), n, 3.5 
+et une formule evalf(subst(B$0,B$1,B2))</TT>
+
+</DIV>
+Les valeurs de la suite
+<!-- MATH
+ ${\tt u_0=4,\ u_n=sin(u_{n-1})}$
+ -->
+<IMG
+ WIDTH="181" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.png"
+ ALT="$ \tt u_0=4,\ u_n=sin(u_{n-1})$"> s'affichent dans la colonne <TT>B</TT>.
+<BR>
+<P>
+</LI>
+<LI>Affichage des valeurs de la suite de Fibonacci
+<!-- MATH
+ $u_0=1, u_1=1 \ u_{n+2}=u_n+u_{n+1}$
+ -->
+<I>u</I><SUB>0</SUB> = 1, <I>u</I><SUB>1</SUB> = 1&nbsp;<I>u</I><SUB>n+2</SUB> = <I>u</I><SUB>n</SUB> + <I>u</I><SUB>n+1</SUB>
+<BR>
+Apr&#232;s avoir selectionn&#233; <TT>B0</TT>, on tape, dans la ligne de 
+commande du tableur :
+<DIV ALIGN="CENTER">
+<TT>tableseq(x+y,[x,y],[1,1])</TT>
+</DIV>
+On obtient, les premiers termes de la suite de Fibonacci :
+<DIV ALIGN="CENTER"><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT"><TT>
+ligne </TT></TD>
+<TD ALIGN="LEFT"><TT>B</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+x+y </TT></TD>
+<TD></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+1 </TT></TD>
+<TD ALIGN="LEFT"><TT> x</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+2 </TT></TD>
+<TD ALIGN="LEFT"><TT> y</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+3 </TT></TD>
+<TD ALIGN="LEFT"><TT> 1</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+4 </TT></TD>
+<TD ALIGN="LEFT"><TT> 1</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+5 </TT></TD>
+<TD ALIGN="LEFT"><TT> 2</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+.. </TT></TD>
+<TD ALIGN="LEFT"><TT>..</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+7 </TT></TD>
+<TD ALIGN="LEFT"><TT> 5</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+
+.. </TT></TD>
+<TD ALIGN="LEFT"><TT>..</TT></TD>
+</TR>
+</TABLE>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7879"
+  HREF="node338.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7873"
+  HREF="node333.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7869"
+  HREF="node336.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7875"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7877"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7880"
+  HREF="node338.html">Les fonctions infix&#233;es ou</A>
+<B> monter:</B> <A NAME="tex2html7874"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7870"
+  HREF="node336.html">Valeurs d'une suite r&#233;currente</A>
+ &nbsp; <B>  <A NAME="tex2html7876"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7878"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

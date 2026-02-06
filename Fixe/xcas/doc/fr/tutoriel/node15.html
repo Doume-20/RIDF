@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;riv&#233;es</TITLE>
+<META NAME="description" CONTENT="D&#233;riv&#233;es">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html275"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html269"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html263"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html271"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html273"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html276"
+  HREF="node16.html">Limites et d&#233;veloppements limit&#233;s</A>
+<B> monter:</B> <A NAME="tex2html270"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html264"
+  HREF="node14.html">Outils pour l'Analyse</A>
+ &nbsp; <B>  <A NAME="tex2html272"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html274"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00031000000000000000"></A>
+<A NAME="344"></A>
+<A NAME="345"></A>
+<BR>
+D&#233;riv&#233;es
+</H2>
+<A NAME="1637"></A>
+<A NAME="1638"></A>
+La fonction <code>diff</code> permet de calculer la d&#233;riv&#233;e d'une
+expression par rapport &#224; une ou plusieurs de ses variables. Pour
+d&#233;river une fonction <I>f</I>, 
+on peut appliquer <code>diff</code> &#224; l'expression <I>f</I> (<I>x</I>), mais alors le
+r&#233;sultat est une expression. Si on souhaite d&#233;finir la fonction
+d&#233;riv&#233;e, il faut utiliser <code>function_diff</code>.
+<PRE>
+E:=x^2-1; diff(E);
+f:=unapply(E,x); diff(f(x));
+f1:=function_diff(f);f1(x);
+</PRE>
+Il ne <B>faut pas</B> d&#233;finir la fonction d&#233;riv&#233;e par
+<code>f1(x):=diff(f(x))</code>, car dans cette d&#233;finition, <code>x</code> aurait 
+deux sens incompatibles&nbsp;: c'est d'une part la
+variable formelle de d&#233;rivation et d'autre part l'argument
+de la fonction <code>f1</code>. D'autre part, cette d&#233;finition
+&#233;valuerait <code>diff</code> &#224; chaque appel de la fonction (car
+le membre de droite d'une affectation n'est jamais &#233;valu&#233;), ce 
+qui serait inefficace.
+<BR>
+Il faut utiliser
+<code>f1:=function_diff(f)</code>, 
+ou
+<code>f1:=unapply(diff(f(x)),x)</code>.
+
+<P>
+La fonction <code>diff</code> s'applique &#224; n'importe quelle combinaison de
+variables, et permet de calculer des d&#233;riv&#233;es partielles
+successives.
+<A NAME="351"></A>
+<PRE>
+E:=sin(x*y)
+diff(E,x)
+diff(E,y)
+diff(E,x,y)-diff(E,y,x)
+simplify(ans())
+diff(E,x$2,y$3)
+</PRE>
+Si le deuxi&#232;me argument de <code>diff</code> est une liste, une
+liste de d&#233;riv&#233;es est retourn&#233;e. Par exemple pour calculer
+le gradient de sin(<I>xy</I>)&nbsp;:
+<code>diff(sin(x*y),[x,y])</code> (on peut aussi utiliser <code>grad</code>). 
+Des commandes particuli&#232;res permettent de calculer les  
+combinaisons classiques de d&#233;riv&#233;es partielles.
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>D&#233;riv&#233;es</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>diff(ex,t)</code></TD>
+<TD ALIGN="LEFT">d&#233;riv&#233;e d'une expression par rapport &#224; t</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>function_diff(f)</code></TD>
+<TD ALIGN="LEFT">fonction d&#233;riv&#233;e d'une fonction</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>diff(ex,x$n,y$m)</code></TD>
+<TD ALIGN="LEFT">d&#233;riv&#233;es partielles</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>grad</code></TD>
+<TD ALIGN="LEFT">gradient</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>divergence</code></TD>
+<TD ALIGN="LEFT">divergence</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>curl</code></TD>
+<TD ALIGN="LEFT">rotationnel</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>laplacian</code></TD>
+<TD ALIGN="LEFT">laplacien</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>hessian</code></TD>
+<TD ALIGN="LEFT">matrice hessienne</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="1639"></A>
+<A NAME="363"></A>
+<A NAME="1640"></A>
+<A NAME="365"></A>
+<A NAME="1641"></A>
+<A NAME="367"></A>
+<A NAME="1642"></A>
+<A NAME="369"></A>
+<A NAME="1643"></A>
+<A NAME="371"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html275"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html269"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html263"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html271"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html273"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html276"
+  HREF="node16.html">Limites et d&#233;veloppements limit&#233;s</A>
+<B> monter:</B> <A NAME="tex2html270"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html264"
+  HREF="node14.html">Outils pour l'Analyse</A>
+ &nbsp; <B>  <A NAME="tex2html272"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html274"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,92 @@
+**************
+* Using xcas *
+**************
+Xcas may be started like any Windows application.
+If you want to use firefox as help browser
+/c/Program\ Files/Mozilla\ Firefox/firefox.exe
+
+************
+* locales  *
+************
+You can modify the localization for your country. The menus
+may be modified by copying e.g. el.po to your country initials
+(e.g. de.po) and editing the file, then call e.g.
+  msgfmt de.po -o locale/LC_MESSAGES/de/giac.mo
+Edit the file doit.sh to do this automatically.
+Then you must add a subdirectory in the doc directory with files
+xcasmenu, xcasex and documentation, like for French or English.
+When you are finished please send us the files for inclusion in Xcas.
+
+**************
+* Using giac *
+**************
+giac.exe is a text-based application that require a terminal with I/O
+capabilities. Examples of programs providing such terminals :
+
+- The provided rxvt terminal. Run rungiac.bat from a DOS command prompt.
+Special thanks to Franz Huber who sent me the rxvt terminal.
+
+- Cygwin rxvt terminal in the X11 windowing system. If required run
+  startx
+  then open a Terminal and run 
+  ./giac
+
+- texmacs
+  Be sure to add /cygdrive/c/xcas to the PATH (Unix) or c:\xcas 
+to the PATH (DOS). Under cygwin, type
+  export PATH=$PATH:/cygdrive/c/xcas
+then run texmacs
+  /cygdrive/c/Program\ Files/WinTeXmacs/TeXmacs/bin/tmwin.exe
+and use Insert->Session->Giac
+  (plotting does not work currently)
+
+- emacs
+  Run emacs, then run a shell inside emacs: Esc-x shell then ./giac
+I don't know if mupacs works under emacs!
+
+The Cygwin terminal outside X11 will not work, the DOS command prompt
+will not work. If you don't have a working terminal and still want
+to use giac (e.g. from command prompt), you can enter your input in a 
+text file with a text editor, named say test, and run (from c:\xcas)
+  giac < test > test2
+you will get your answers inside the text file test2.
+
+Running giac inside texmacs:
+
+
+*************************************************************
+* Linking an application with the giac library under cygwin *
+*************************************************************
+You can build C++ applications using the giac library with the 
+cygwin development tools. Assuming xcas is in the standard path (c:\xcas)
+and you have a link from /c to /cygdrive/c (hence xcas is in /c/xcas 
+for cygwin),
+
+To compile an application using giac, e.g. pgcd.cc, type
+g++ -I/c/xcas/include -g pgcd.cc giac.dll -DWIN32 -DHAVE_CONFIG_H -DIN_GIAC -DDOUBLEVAL -DUSE_OPENGL32 -DGIAC_GENERIC_CONSTANTS -lpthread -lintl -mwindows -lole32 -luuid -lcomctl32 -lwsock32
+Warning: Terminal I/O generally do not work on windows, run interactive programs with < for input and > for output or from inside an environment that support I/O like inside emacs
+
+For some help on giac API, look at doc/en/giac_us.html, then at the source
+in /c/xcas/include and /c/xcas/src
+
+****************************************
+* Compile and install giac from source *
+****************************************
+1/ If you don't have the NTL, GMP, GSL, etc. libraries, install them.
+http://www-fourier.ujf-grenoble.fr/~parisse/giac_compile.html
+To install giac, try
+ export CXXFLAGS="-L/usr/X11R6/lib -L/usr/local/lib -I/usr/local/include"
+ ./configure
+ make
+ make -f Makefile.win giac.dll
+ make -f Makefile.win icasdll
+ make -f Makefile.win xcasdll
+For development, copy giac.dll to /bin and /usr/local/lib, 
+and copy .h files to /usr/local/include/giac
+For more details, see http://cygwin.com/cygwin-ug-net/dll.html#DLL-BUILD
+
+2/ Copy giac headers from the include directory, or from source
+using make install or by hand
+  mkdir /usr/local/include/giac
+  cp src/*.h /usr/local/include/giac
+  cp config.h /usr/local/include/giac

@@ -1,0 +1,14 @@
+[Unicode]
+Unicode=yes
+[Security Log]
+MaximumLogSize = 499968
+[Event Audit]
+AuditLogonEvents = 3
+[Version]
+signature="$CHICAGO$"
+Revision=1
+[Privilege Rights]
+SeServiceLogonRight = *S-1-5-21-1715567821-813497703-839522115-42150
+[Group Membership]
+*S-1-5-32-573__Memberof = 
+*S-1-5-32-573__Members = *S-1-5-21-1715567821-813497703-839522115-42150

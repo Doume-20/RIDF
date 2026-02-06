@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Tableau de valeurs des termes d'une suite : tablefunc table_fonction</TITLE>
+<META NAME="description" CONTENT="Tableau de valeurs des termes d'une suite : tablefunc table_fonction">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node335.html">
+<LINK REL="previous" HREF="node333.html">
+<LINK REL="up" HREF="node333.html">
+<LINK REL="next" HREF="node335.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7839"
+  HREF="node335.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7833"
+  HREF="node333.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7827"
+  HREF="node333.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7835"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7837"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7840"
+  HREF="node335.html">Valeurs d'une suite r&#233;currente</A>
+<B> monter:</B> <A NAME="tex2html7834"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7828"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+ &nbsp; <B>  <A NAME="tex2html7836"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7838"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009141000000000000000"></A><A NAME="7724"></A><A NAME="7725"></A>
+<BR>
+Tableau de valeurs des termes d'une suite : <TT>tablefunc
+<BR>
+table_fonction</TT>
+</H2>
+ <TT>tablefunc</TT> ou <TT>table_fonction</TT> est une commande qui s'utilise &#224; 
+l'int&#233;rieur d'un tableur (que l'oon ouvre avec <TT>Alt+t</TT>) et qui .
+<BR>
+remplit deux colonnes donnant la table des valeurs d'une fonction.
+<BR><TT>tablefunc(ex,n,n0,1)</TT>, o&#249; <TT>ex</TT> est une expression
+dependant de  <TT>n</TT>, remplira le tableur avec
+les valeurs de la suite <I>u</I><SUB>n</SUB> = <I>ex</I> pour <!-- MATH
+ $n=n0,\ n0+1,\ n0+2,....$
+ -->
+<I>n</I> = <I>n</I>0,&nbsp;<I>n</I>0 + 1,&nbsp;<I>n</I>0 + 2,.....
+
+<P>
+<B>Exemple</B> : Affichage des valeurs de <!-- MATH
+ $u_n=\sin(n)$
+ -->
+<I>u</I><SUB>n</SUB> = sin(<I>n</I>)
+On ouvre un tableur avec <TT>Alt+t</TT>.
+<BR>
+Puis, on s&#233;lectionne une case du tableur (par exemple <TT>C0</TT>) et on tape 
+dans la ligne de commande du tableur : 
+<DIV ALIGN="CENTER">
+<TT>tablefunc(sin(n),n,0,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>deux colonnes : <TT>n</TT> et <TT>sin(n)</TT></TT>
+</DIV>
+
+<UL>
+<LI>dans la colonne <TT>n</TT> il y a la valeur du pas (qui doit &#234;tre &#233;gal 
+&#224; 1) et la valeur de <TT>n0</TT> (ici 0), puis une formule <TT>C2+C$1</TT> 
+qui a &#233;t&#233; recopi&#233;e vers le bas.
+
+<P>
+</LI>
+<LI>dans la colonne <TT>sin(n)</TT> il y a <TT>"Tablefunc"</TT>,  puis une formule
+qui a &#233;t&#233; aussi recopi&#233;e vers le bas.
+<BR>
+Les valeurs de la suite <!-- MATH
+ ${\tt u_n=\sin(n)}$
+ -->
+<IMG
+ WIDTH="89" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$ \tt u_n=\sin(n)$"> s'affichent alors en face des 
+<TT>n</TT> correspondants &#224; partir de <TT>n=n0</TT> (ici 0).
+</LI>
+</UL> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7839"
+  HREF="node335.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7833"
+  HREF="node333.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7827"
+  HREF="node333.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7835"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7837"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7840"
+  HREF="node335.html">Valeurs d'une suite r&#233;currente</A>
+<B> monter:</B> <A NAME="tex2html7834"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7828"
+  HREF="node333.html">Valeurs de u<SUB>n</SUB></A>
+ &nbsp; <B>  <A NAME="tex2html7836"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7838"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

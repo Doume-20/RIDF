@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Champ &#224; flux conservatif : vpotential</TITLE>
+<META NAME="description" CONTENT="Champ &#224; flux conservatif : vpotential">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node731.html">
+<LINK REL="up" HREF="node725.html">
+<LINK REL="next" HREF="node733.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13700"
+  HREF="node733.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13694"
+  HREF="node725.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13690"
+  HREF="node731.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13696"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13698"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13701"
+  HREF="node733.html">Équations</A>
+<B> monter:</B> <A NAME="tex2html13695"
+  HREF="node725.html">Les expressions de plusieurs</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13691"
+  HREF="node731.html">Le potentiel : potential</A>
+ &nbsp; <B>  <A NAME="tex2html13697"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13699"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009517000000000000000"></A><A NAME="18831"></A>
+<BR>
+Champ &#224; flux conservatif : <TT>vpotential</TT>
+</H2>
+<TT>vpotential</TT> a deux arguments : un vecteur <!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$"> 
+de <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP> d&#233;pendant 
+de <I>n</I> variables et le vecteur constitu&#233; du nom de ces variables.
+<BR><TT>vpotential</TT> renvoie un vecteur <!-- MATH
+ $\overrightarrow{U}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img493.png"
+ ALT="$ \overrightarrow{U}$"> tel que 
+<!-- MATH
+ $\overrightarrow{Rot}(\overrightarrow{U})=\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img494.png"
+ ALT="$ \overrightarrow{Rot}(\overrightarrow{U})=\overrightarrow{V}$"> si bien s&#251;r,
+ cela est possible ! On dit alors que <!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$"> est un champ &#224; flux 
+conservatif ou un champ sol&#233;no&#239;dal.
+<BR>
+La solution g&#233;n&#233;rale est la somme d'une solution particuli&#232;re et du 
+gradient d'une fonction arbitraire, <TT>Xcas</TT> renvoie le vecteur solution 
+particuli&#232;re de premi&#232;re composante nulle.
+<BR>
+On sait qu'un vecteur <!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$"> est un  rotationnel si et seulement si sa divergence
+ est nulle : autrement dit si <TT>divergence(V)=0</TT>.
+<BR>
+En &#233;lectro-magn&#233;tisme on a :
+<BR><!-- MATH
+ $\overrightarrow{V}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img491.png"
+ ALT="$ \overrightarrow{V}$">= <!-- MATH
+ $\overrightarrow{B}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img495.png"
+ ALT="$ \overrightarrow{B}$">= le champ magn&#233;tique et 
+<BR><!-- MATH
+ $\overrightarrow{U}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img493.png"
+ ALT="$ \overrightarrow{U}$">= <!-- MATH
+ $\overrightarrow{A}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img496.png"
+ ALT="$ \overrightarrow{A}$">= le potentiel vecteur.
+<BR><TT>vpotential</TT> est la fonction r&#233;ciproque de <TT>curl</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>vpotential([2*x*y+3,x<code>^</code>2-4*z,-2*y*z],[x,y,z]) </TT>
+</DIV>
+On obtient :&nbsp;
+<DIV ALIGN="CENTER">
+<TT>[0,(-(2*y))*z*x,-x<code>^</code>3/3-(-(4*z))*x+3*y]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

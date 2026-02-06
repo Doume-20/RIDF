@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;composition LU : lu</TITLE>
+<META NAME="description" CONTENT="D&#233;composition LU : lu">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node713.html">
+<LINK REL="previous" HREF="node711.html">
+<LINK REL="up" HREF="node708.html">
+<LINK REL="next" HREF="node713.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13411"
+  HREF="node713.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13405"
+  HREF="node708.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13399"
+  HREF="node711.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13407"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13409"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13412"
+  HREF="node713.html">D&#233;composition LU (compatible TI):</A>
+<B> monter:</B> <A NAME="tex2html13406"
+  HREF="node708.html">Factorisation des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13400"
+  HREF="node711.html">D&#233;composition QR (compatible TI)</A>
+ &nbsp; <B>  <A NAME="tex2html13408"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13410"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009494000000000000000"></A><A NAME="18336"></A>
+<BR>
+D&#233;composition LU : <TT>lu</TT>
+</H2>
+<TT>lu</TT> a comme argument une matrice carr&#233;e <I>A</I> d'ordre <I>n</I> 
+(num&#233;rique ou symbolique).
+<BR><TT>lu(A)</TT> renvoie une permutation <I>p</I> de 0..<I>n</I> - 1, une matrice
+ triangulaire inf&#233;rieure <I>L</I> avec des 1 sur sa diagonale et une matrice 
+triangulaire sup&#233;rieure <I>U</I>.
+<BR>
+Ces matrices sont telles que :
+
+<UL>
+<LI><I>P</I>*<I>A</I> = <I>L</I>*<I>U</I>, o&#249; <I>P</I> est la matrice de permutation associ&#233;e &#224; <I>p</I> 
+( que l'on peut calculer avec <TT>P:=permu2mat(p)</TT>),
+</LI>
+<LI>l'&#233;quation <I>A</I>*<I>x</I> = <I>B</I> &#233;quivaut &#224; :
+<BR><P><!-- MATH
+ \begin{displaymath}
+L*U*x=P*B=p(B) \mbox{ where } p(B)=[b_{p(0)},b_{p(1)}..b_{p(n-1)}],
+\quad  B=[b_0,b_1..b_{n-1}]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>L</I>*<I>U</I>*<I>x</I> = <I>P</I>*<I>B</I> = <I>p</I>(<I>B</I>) where <I>p</I>(<I>B</I>) = [<I>b</I><SUB>p(0)</SUB>, <I>b</I><SUB>p(1)</SUB>..<I>b</I><SUB>p(n-1)</SUB>],&nbsp;&nbsp;&nbsp;&nbsp;<I>B</I> = [<I>b</I><SUB>0</SUB>, <I>b</I><SUB>1</SUB>..<I>b</I><SUB>n-1</SUB>]
+</DIV><P></P>
+</LI>
+</UL>
+On peut aussi d&#233;finir &#224; partir de <I>p</I> la matrice de permutation <I>P</I><SUB>n</SUB> 
+par :
+<BR><!-- MATH
+ $P_n[i, p(i)]=1$
+ -->
+<I>P</I><SUB>n</SUB>[<I>i</I>, <I>p</I>(<I>i</I>)] = 1 et
+<BR><!-- MATH
+ $P_n[i, j]=0$
+ -->
+<I>P</I><SUB>n</SUB>[<I>i</I>, <I>j</I>] = 0 si <!-- MATH
+ $j \ \neq\ p(i)$
+ -->
+<I>j</I>&nbsp; <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> &nbsp;<I>p</I>(<I>i</I>).
+<BR>
+C'est la matrice obtenue en permutant, selon la permutation <I>p</I>, les lignes de 
+la matrice unit&#233;.
+<BR>
+On peut utiliser la fonction <TT>permu2mat</TT> :<A NAME="18348"></A>
+<TT>permu2mat(p)</TT> renvoie la matrice <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img467.png"
+ ALT="$ \tt P$"> d'ordre <I>n</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>(p,L,U):=lu([[3,5],[4,5]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0],[[1,0],[0.75,1]],[[4,5],[0,1.25]]</TT>
+</DIV>
+On a,  en effet,  <I>n</I> = 2 donc :
+<BR><P><!-- MATH
+ \begin{displaymath}
+P[0,p(0)]=P_2[0,1]=1, \quad  P[1,p(1)]=P_2[1,0]=1, \quad
+P=[[0,1],[1,0]]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>P</I>[0, <I>p</I>(0)] = <I>P</I><SUB>2</SUB>[0, 1] = 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>P</I>[1, <I>p</I>(1)] = <I>P</I><SUB>2</SUB>[1, 0] = 1,&nbsp;&nbsp;&nbsp;&nbsp;<I>P</I> = [[0, 1],[1, 0]]
+</DIV><P></P>
+V&#233;rification :
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>permu2mat(p)*A; L*U</TT>
+</DIV>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>[[4.0,5.0],[3.0,5.0]],[[4.0,5.0],[3.0,5.0]]</TT>
+</DIV>
+Il faut noter que la permutation est diff&#233;rente lorsque les donn&#233;es sont 
+exactes (le choix du pivot est plus simple).
+On tape :
+<DIV ALIGN="CENTER">
+<TT>lu([[1,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0],[[1,0],[3,1]],[[1,2],[0,-2]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>lu([[1.0,2],[3,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,0],[[1,0],[0.333333333333,1]],[[3,4], [0,0.666666666667]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13411"
+  HREF="node713.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13405"
+  HREF="node708.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13399"
+  HREF="node711.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13407"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13409"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13412"
+  HREF="node713.html">D&#233;composition LU (compatible TI):</A>
+<B> monter:</B> <A NAME="tex2html13406"
+  HREF="node708.html">Factorisation des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13400"
+  HREF="node711.html">D&#233;composition QR (compatible TI)</A>
+ &nbsp; <B>  <A NAME="tex2html13408"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13410"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

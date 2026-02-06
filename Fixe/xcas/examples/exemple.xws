@@ -1,0 +1,85 @@
+// fltk 7Fl_Tile 34 86 1031 349
+[
+// fltk N4xcas7EditeurE 34 86 1031 348
+637 ,
+idiv2(a,b):={ 
+ local (q:=0),(r:=a);
+ if (b!=0) {
+   q:=iquo(a,b);
+   r:=irem(a,b);
+ }
+ return [q,r];
+};
+
+testif(a,b):={
+  if ((a==10) or (a<b)){
+    b:=b-a;
+  }
+  else {
+    a:=a-b;
+  }
+  return [a,b];
+};
+
+testfor1(a,b):={
+  local s:=0;
+  for (j:=a;j<=b;j++){
+    s:=s+1/j^2;
+  }
+  return(s);
+};
+
+testfor2(a,b):={
+  local s:=0;
+  for (j:=b;j>=a;j--){
+    s:=s+1/j^2;
+  }
+  return s;
+};
+
+testwhile(a,b):={
+  while ((a==10) or (a<b)){
+    b:=b-a;
+  }
+  return [a,b];
+};
+
+pgcd(a,b):={
+ local r;
+ while (b!=0) {
+   r:=irem(a,b);
+   a:=b;
+   b:=r;
+ }
+ return(a);
+};
+
+pgcdr(a,b):={
+  if (b==0) return(a);
+  else return pgcdr(b,irem(a,b));
+};
+,
+// fltk N4xcas10Log_OutputE 34 434 1031 1
+
+]
+,
+// fltk 7Fl_Tile 34 437 1031 74
+[
+// fltk N4xcas19Multiline_Input_tabE 34 437 1031 30
+idiv2(25,7)
+,
+// fltk N4xcas10Log_OutputE 34 467 1031 1
+
+,
+// fltk N4xcas8EquationE 34 468 1031 43
+[3,4]
+]
+,
+// fltk 7Fl_Tile 34 513 1031 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 513 1031 30
+
+,
+// fltk N4xcas10Log_OutputE 34 543 1031 1
+
+]

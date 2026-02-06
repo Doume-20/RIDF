@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'affectation par référence dans une variable (contenant un &#233;l&#233;ment d'une liste ou d'une matrice : =&lt; </TITLE>
+<META NAME="description" CONTENT="L'affectation par référence dans une variable (contenant un &#233;l&#233;ment d'une liste ou d'une matrice : =&lt; ">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node93.html">
+<LINK REL="previous" HREF="node91.html">
+<LINK REL="up" HREF="node89.html">
+<LINK REL="next" HREF="node93.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3678"
+  HREF="node93.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3672"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3666"
+  HREF="node91.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3674"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3676"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3679"
+  HREF="node93.html">L'incr&#233;mentation d'une variable :</A>
+<B> monter:</B> <A NAME="tex2html3673"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3667"
+  HREF="node91.html">L'affectation : := =&gt;</A>
+ &nbsp; <B>  <A NAME="tex2html3675"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3677"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00553000000000000000"></A><A NAME="1708"></A><A NAME="sec:progref"></A>
+<BR>
+L'affectation par r&#233;f&#233;rence dans une variable (contenant un &#233;l&#233;ment d'une liste ou d'une matrice : <TT>=&lt; </TT>
+</H2>
+On peut utiliser l'op&#233;rateur infix&#233; <TT>=&lt;</TT> pour stocker par r&#233;f&#233;rence le 
+deuxi&#232;me argument dans une variable (d&#233;signant un &#233;l&#233;ment d'une liste ou 
+d'une matrice) donn&#233;e comme premier argument.
+<BR>
+Voir aussi <A HREF="node856.html#sec:copie">8.4.14</A> et <A HREF="node855.html#sec:diffaffectation">8.4.13</A>.
+On tape  :
+<DIV ALIGN="CENTER">
+<TT>a:=[1,2,3,4,5]</TT>
+</DIV>
+Pour changer la valeur de <TT>a[1]</TT> il est pr&#233;f&#233;rable de le faire par 
+r&#233;f&#233;rence c'est &#224; dire sans faire de recopie, on tape :
+<DIV ALIGN="CENTER">
+<TT>a[1]=&lt;5</TT>
+</DIV>
+Dans un programme, il est pr&#233;f&#233;rable d'utiliser l'op&#233;rateur infix&#233; 
+<TT>=&lt;</TT> pour changer un &#233;l&#233;ment d'une liste ou 
+d'une matrice contenue dans une variable .
+ <B>Exemple</B>
+<BR>
+On cherche pour tout <!-- MATH
+ $n\in {\mathbb{N}}$
+ -->
+<I>n</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="$ \mathbb {N}$">, la liste des nombres entiers <I>k</I> v&#233;rifiant 
+0 &lt; <I>k</I> &lt; 2<SUP>n</SUP> et dont la somme des chiffres, dans l'&#233;criture en base 2, est 
+&#233;gale &#224;  <I>p</I> ou qui s'&#233;crivent en base 2 avec des 0 et <I>p</I> 1.
+<BR>
+On sait que <TT>convert(k,base,2)</TT> renvoie la liste de 0 et de 1 de 
+l'&#233;criture en base 2 de <I>k</I> en commen&#231;ant par le chiffre des unit&#233;s. On
+a,  par exemple :
+<BR><TT>convert(2,base,2)=[0,1]</TT>.
+<BR>
+On connait la longueur de la liste r&#233;sultat qui est <TT>comb(n,p)</TT> puisque
+il peut y avoir <I>n</I> chiffres et que parmi ces <I>n</I> chiffres il doit y avoir 
+<I>p</I> 1. On peut donc initialiser la liste par :
+<BR><TT>L:=makelist(0,1,comb(n,p));</TT>.
+<BR>
+On peut aussi vouloir initialiser la liste <TT>L</TT> par la liste vide et dans 
+ce cas il faut mettre  <TT>L:=[0$0]</TT> et ne pas mettre <TT>L:=[]</TT>. La 
+diff&#233;rence est subtile : <TT>[0$0]</TT> est une liste qui est cr&#233;e lors de 
+chaque ex&#233;cution du programme alors que apr&#232;s la compilation du programme,
+<TT>L:=[]</TT> fait pointer <TT>L</TT> sur la liste  <TT>[]</TT> et cette liste sera 
+modifi&#233;e par les diff&#233;rents <TT>L[k]=&lt;j</TT> en <TT>LR</TT> et restera modifi&#233;e
+en fin d'ex&#233;cution ce qui fait que si on effectue une autre ex&#233;cution du 
+programme<TT>L</TT> est initialis&#233;e par <TT>LR</TT> car elle pointe sur la liste  
+<TT>LR</TT>.
+<BR>
+On tape :
+<PRE>
+truc(p,n):={
+local j,k,L;
+L:=makelist(0,1,comb(n,p));
+k:=0;
+for (j:=2^p-1;j&lt;=2^n-2^(n-1-p);j++){
+if (sum(convert(j,base,2))==p){
+L[k]=&lt;j;
+k:=k+1;
+};
+}
+return L;
+}
+:;
+</PRE>
+ Puis : <TT>J:=truc(10,17):;J[0];J[10]</TT>
+renvoie : <TT>Done,1023,2046</TT>
+<BR><TT>convert(1023,base,2)</TT> renvoie <TT>[1,1,1,1,1,1,1,1,1,1]</TT>
+<BR><TT>convert(2046,base,2)</TT> renvoie <TT>[0,1,1,1,1,1,1,1,1,1,1]</TT>
+<BR>
+Comme la liste J a pour longueur <TT>comb(17,10)=19448</TT>
+si on met dans le programme <TT>L[k]:=j;</TT> au lieu de <TT>L[k]=&lt;j;</TT>,
+<TT>Xcas</TT> effectue 19448 recopie de cette liste ce qui allonge l'execution du 
+programme....
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3678"
+  HREF="node93.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3672"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3666"
+  HREF="node91.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3674"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3676"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3679"
+  HREF="node93.html">L'incr&#233;mentation d'une variable :</A>
+<B> monter:</B> <A NAME="tex2html3673"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3667"
+  HREF="node91.html">L'affectation : := =&gt;</A>
+ &nbsp; <B>  <A NAME="tex2html3675"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3677"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

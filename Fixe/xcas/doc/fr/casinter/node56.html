@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les lumières des graphes 3-d</TITLE>
+<META NAME="description" CONTENT="Les lumières des graphes 3-d">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="previous" HREF="node55.html">
+<LINK REL="up" HREF="node51.html">
+<LINK REL="next" HREF="node57.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html978"
+  HREF="node57.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html972"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html968"
+  HREF="node55.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html974"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html976"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html979"
+  HREF="node57.html">La g&#233;om&#233;trie plane (2D)</A>
+<B> monter:</B> <A NAME="tex2html973"
+  HREF="node51.html">Graphes dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html969"
+  HREF="node55.html">Rotation animée du point</A>
+ &nbsp; <B>  <A NAME="tex2html975"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html977"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000153500000000000000"></A> <A NAME="sec:lumieres"></A>
+<BR>
+Les lumi&#232;res des graphes 3-d
+</H3>
+Dans la configuration d'un graphe 3-d (bouton cfg en bas &#224; droite
+de la figure), on peut cocher l'option <code>Lights</code>. Dans ce cas,
+au lieu de visualiser des objets &#233;mettant une couleur intrins&#232;que,
+on va &#233;clairer les objets avec un ou plusieurs spots lumineux. Ces
+spots sont num&#233;rot&#233;s de 1 &#224; 8 et peuvent &#234;tre configur&#233;s avec les
+boutons l1 &#224; l8. Nous allons d&#233;crire bri&#232;vement dans cette section ce
+type de visualisation, le lecteur souhaitant appronfondir pourra
+se r&#233;f&#233;rer &#224; la documentation d'OpenGL.
+
+<P>
+Il y a 2 types de spot: positionnel si <I>w</I> = 1 et directionnel si <I>w</I> = 0
+(pour une lumi&#232;re &#224; l'infini, par exemple du Soleil). Chaque objet
+a des propri&#233;t&#233;s vis-&#224;-vis de trois type de lumi&#232;re: ambiante (sans
+direction privil&#233;gi&#233;e), diffuse (&#233;mise dans la direction spot-objet,
+diffus&#233;e dans toutes les directions,
+&#233;ventuellement att&#233;nu&#233;e selon la distance spot-objet et l'angle entre
+la direction du spot et la direction spot-objet), sp&#233;culaire (r&#233;&#233;mise
+pr&#233;f&#233;rentiellement dans la direction objet-spot). De plus un objet
+peut lui-m&#234;me &#233;mettre de la lumi&#232;re (propri&#233;t&#233;s d'&#233;mission).
+
+<P>
+
+<OL>
+<LI>Caract&#233;ristique g&#233;om&#233;triques&nbsp;:
+<BR>
+les param&#232;tres <I>x</I>, <I>y</I>, <I>z</I> permettent
+de d&#233;finir la position du spot si <I>w</I> vaut 1 ou sa direction si <I>w</I>
+vaut 0.
+Les param&#232;tre <!-- MATH
+ $x\rightarrow, y\rightarrow, z\rightarrow$
+ -->
+<I>x</I> <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \rightarrow$"> , <I>y</I> <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \rightarrow$"> , <I>z</I> <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$ \rightarrow$"> d&#233;finissent
+la direction du spot si <I>w</I> vaut 1.
+
+<P>
+</LI>
+<LI>Caract&#233;ristiques de la lumi&#232;re&nbsp;:
+<BR>
+chaque spot fournit
+
+<UL>
+<LI>de la lumi&#232;re
+ambiante (ind&#233;pendante de l'angle entre la direction spot-objet et
+objet-position de l'oeil, renvoy&#233;e par le mat&#233;riau selon ses
+propri&#233;t&#233;s relativement &#224; la lumi&#232;re ambiante), 
+</LI>
+<LI>de la lumi&#232;re diffuse, renvoy&#233;e dans toutes les directions
+sans pr&#233;f&#233;rence, en fonction des
+propri&#233;t&#233;s de lumi&#232;re diffuse du mat&#233;riau, avec un
+coefficient d'att&#233;nuation d&#233;pendant du cosinus de l'angle 
+<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$ \beta$"> entre la direction spot-objet (si <I>w</I> = 1) ou
+direction du spot (si <I>w</I> = 0) et la normale &#224; l'objet,
+</LI>
+<LI>de la lumi&#232;re sp&#233;culaire, permettant
+d'&#233;muler une r&#233;flexion sur un miroir ou un aspect laqu&#233;, 
+cette lumi&#232;re sera renvoy&#233;e 
+par l'objet en fonction de ses propri&#233;t&#233;s sp&#233;culaires,
+pr&#233;f&#233;rentiellement dans la direction d'&#233;mission, plus pr&#233;cis&#233;ment
+en fonction du cosinus de <IMG
+ WIDTH="14" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$ \gamma$">, 
+l'angle entre le sym&#233;trique de la direction d'&#233;mission avec la normale
+&#224; l'objet avec la direction
+objet-oeil, le cosinus est &#233;lev&#233; &#224; la puissance d&#233;finie par le param&#232;tre 
+``gl_shininess'' de l'objet. 
+</LI>
+</UL>
+On d&#233;finit pour chaque type de lumi&#232;re ses 4 composantes (r: red=rouge, g:
+green=vert, b: blue=bleu, a: alpha=transparence) par un r&#233;el compris
+entre 0 et 1 (maximum). Par exemple, pour voir une sc&#232;ne en lumi&#232;re
+bleue, on mettrait 0 sur les canaux r et g et 1 sur le canal b.
+On utilise en g&#233;n&#233;ral les m&#234;mes valeurs pour la lumi&#232;re diffuse et
+sp&#233;culaire, 1,1,1,1 pour les propri&#233;t&#233;s sp&#233;culaires d'un
+objet de type miroir, et des valeurs correspondant &#224; la couleur
+pour les propri&#233;t&#233;s d'&#233;mission et de diffusion d'un objet.
+
+<P>
+</LI>
+<LI>Caract&#233;ristique d'&#233;mission du spot&nbsp;: 
+
+<UL>
+<LI><code>exp</code> est un entier, c'est un coefficient permettant de r&#233;gler
+l'att&#233;nuation de la lumi&#232;re. Plus pr&#233;cis&#233;ment il s'agit de
+l'exposant du cosinus de l'angle <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ \alpha$"> entre la direction du spot
+et la direction spot-objet &#233;clair&#233;, 
+il n'y a pas d'att&#233;nuation si <I>w</I> = 0), on utilise 0 ou 1 ou plus selon
+que l'on souhaite un spot moins ou plus focalis&#233;, 
+</LI>
+<LI><code>cutoff</code> permet de r&#233;gler l'angle <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="$ \theta$"> du c&#244;ne (d'axe
+la direction du spot) o&#249; le spot
+envoie de la lumi&#232;re, il vaut 180 si le spot est isotrope 
+(&#233;met identiquement dans toutes les directions) 
+ou une valeur entre 0 et 90 en degr&#233;s sinon, dans ce cas aucune
+lumi&#232;re n'est re&#231;ue si l'angle <IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ \alpha$"> est sup&#233;rieur &#224; <IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="$ \theta$">.
+</LI>
+<LI>les coefficients <code>att0</code> &#224; <code>att2</code> permettent d'att&#233;nuer
+la lumi&#232;re d'un spot positionnel
+en fonction de la distance <I>d</I> spot-objet, en la multipliant par
+<P><!-- MATH
+ \begin{displaymath}
+\frac{1}{a_0+a_1 d +a_2 d^2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="127" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$\displaystyle {\frac{{1}}{{a_0+a_1 d +a_2 d^2}}}$">
+</DIV><P></P>
+</LI>
+</UL>
+</LI>
+</OL>
+
+<P>
+Finalement, sur chaque canal de couleur, la luminosit&#233; est obtenue par
+la formule&nbsp;:
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+l &=&o_e+ o_a \sum_{j=1}^8 l_{a,j} + o_s \sum_{j=1}^8 l_{s,j}
+ \cos(\gamma_j)^S + \\
+ &  & +  o_d \sum_{j=1}^8 l_{d,j} 
+\cos(\alpha_j)^{e_j} \cos(\beta_j) \frac{1}{a_{0,j}+a_{1,j}
+  d_j+a_{2,j} d_j^2}
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><I>l</I></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><I>o</I><SUB>e</SUB> + <I>o</I><SUB>a</SUB><IMG
+ WIDTH="30" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\displaystyle \sum_{{j=1}}^{8}$"><I>l</I><SUB>a, j</SUB> + <I>o</I><SUB>s</SUB><IMG
+ WIDTH="30" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\displaystyle \sum_{{j=1}}^{8}$"><I>l</I><SUB>s, j</SUB>cos(<IMG
+ WIDTH="20" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$\displaystyle \gamma_{j}^{}$">)<SUP>S</SUP> +</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP>+ <I>o</I><SUB>d</SUB><IMG
+ WIDTH="30" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\displaystyle \sum_{{j=1}}^{8}$"><I>l</I><SUB>d, j</SUB>cos(<IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$\displaystyle \alpha_{j}^{}$">)<SUP>e<SUB>j</SUB></SUP>cos(<IMG
+ WIDTH="21" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$\displaystyle \beta_{j}^{}$">)<IMG
+ WIDTH="164" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$\displaystyle {\frac{{1}}{{a_{0,j}+a_{1,j}
+d_j+a_{2,j} d_j^2}}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+o&#249;&nbsp;:
+
+<UL>
+<LI><!-- MATH
+ $o_e,o_a,o_d,o_s$
+ -->
+<I>o</I><SUB>e</SUB>, <I>o</I><SUB>a</SUB>, <I>o</I><SUB>d</SUB>, <I>o</I><SUB>s</SUB> d&#233;signent la valeur pour le canal de couleur
+de l'objet en &#233;mission, ambiante, diffuse, sp&#233;culaire et <I>S</I> d&#233;signe
+l'exposant ``shininess''de l'objet
+</LI>
+<LI><!-- MATH
+ $l_{a,j},l_{d,j},l_{s,j}$
+ -->
+<I>l</I><SUB>a, j</SUB>, <I>l</I><SUB>d, j</SUB>, <I>l</I><SUB>s, j</SUB> d&#233;signent la valeur pour le canal de couleur
+du spot <I>j</I> en ambiant, diffuse, sp&#233;culaire
+</LI>
+<LI><!-- MATH
+ $a_{0,j}, a_{1,j}, a_{2,j}$
+ -->
+<I>a</I><SUB>0, j</SUB>, <I>a</I><SUB>1, j</SUB>, <I>a</I><SUB>2, j</SUB> d&#233;signent les coefficients
+  d'att&#233;nuation du spot <I>j</I>, remplac&#233;s par 1,0,0 si <I>w</I> = 0 (pas
+d'att&#233;nuation)
+</LI>
+<LI><I>d</I><SUB>j</SUB> est la distance du spot <I>j</I> &#224; l'objet
+</LI>
+<LI><IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \alpha_{j}^{}$"> est l'angle entre la direction du spot <I>j</I> et du
+segment reliant le spot <I>j</I> et la facette de l'objet, sauf si <IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \alpha_{j}^{}$"> est
+sup&#233;rieur &#224; l'angle de cutoff du spot <I>j</I> (<!-- MATH
+ $\alpha_j=\pi/2$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \alpha_{j}^{}$"> = <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="$ \pi$">/2), 
+ou si <I>w</I> = 0 (<!-- MATH
+ $\alpha_j=0$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \alpha_{j}^{}$"> = 0, pas d'att&#233;nuation directionnelle).
+</LI>
+<LI><IMG
+ WIDTH="21" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \beta_{j}^{}$"> est l'angle entre le segment spot <I>j</I>-objet et
+la normale &#224; la facette de l'objet (si <I>w</I> = 0 on remplace spot <I>j</I>-objet par
+direction du spot)
+</LI>
+<LI><IMG
+ WIDTH="20" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$ \gamma_{j}^{}$"> est l'angle entre le sym&#233;trique de la direction 
+du spot par rapport &#224; la normale &#224; la facette de l'objet 
+et le segment objet-oeil
+</LI>
+</UL>
+Si on ne coche pas l'option Blend (pas de transparence), les objets
+situ&#233;s devant d'autres objets les masquent compl&#232;tement.
+Si on coche l'option Blend, la valeur du canal a (alpha=transparence)
+est utilis&#233;e pour composer la luminance des objets pr&#233;c&#233;dents avec
+celle de l'objet repr&#233;sent&#233; ensuite.
+Enfin, l'option Gouraud permet de lisser la repr&#233;sentation des
+surfaces par des facettes (ce sont des facettes quadrangulaires
+sauf pour les surfaces implicites qui sont triangul&#233;es).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html978"
+  HREF="node57.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html972"
+  HREF="node51.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html968"
+  HREF="node55.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html974"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html976"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html979"
+  HREF="node57.html">La g&#233;om&#233;trie plane (2D)</A>
+<B> monter:</B> <A NAME="tex2html973"
+  HREF="node51.html">Graphes dans l'espace</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html969"
+  HREF="node55.html">Rotation animée du point</A>
+ &nbsp; <B>  <A NAME="tex2html975"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html977"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La droite et la droite orient&#233;e en g&#233;om&#233;trie plane : line droite</TITLE>
+<META NAME="description" CONTENT="La droite et la droite orient&#233;e en g&#233;om&#233;trie plane : line droite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node930.html">
+<LINK REL="previous" HREF="node928.html">
+<LINK REL="up" HREF="node928.html">
+<LINK REL="next" HREF="node930.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16860"
+  HREF="node930.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16854"
+  HREF="node928.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16848"
+  HREF="node928.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16856"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16858"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16861"
+  HREF="node930.html">La demi-droite en g&#233;om&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html16855"
+  HREF="node928.html">Les droites en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16849"
+  HREF="node928.html">Les droites en g&#233;om&#233;trie</A>
+ &nbsp; <B>  <A NAME="tex2html16857"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16859"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012101000000000000000"></A><A NAME="24442"></A><A NAME="24443"></A><A NAME="sec:droite2"></A>
+<BR>
+La droite et la droite orient&#233;e en g&#233;om&#233;trie plane : <TT>line droite</TT>
+</H2><A NAME="30659"></A><A NAME="30660"></A>
+<B>Voir aussi :</B> <A HREF="node127.html#sec:droite">3.9.1</A> et<A HREF="node1037.html#sec:droite3">10.4.1</A> pour la g&#233;om&#233;trie
+3D.
+<BR><TT>droite</TT>, en g&#233;om&#233;trie plane, a comme argument deux points (ou
+deux nombres complexes repr&#233;sentant l'affixe de ces points) ou une liste de 
+deux points (ou de deux complexes) ou  a comme argument un point et 
+<TT>pente=m</TT> ou encore une &#233;quation de droite de la forme a*x+by+c=0.
+<BR><TT>droite</TT> renvoie et trace la droite d&#233;finie par les deux arguments.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(0,1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La droite d'&#233;quation y=x est trac&#233;e</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(1+i,pente=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La droite d'&#233;quation y=x est trac&#233;e</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>droite(y-x=0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>La droite d'&#233;quation y=x est trac&#233;e</TT>
+</DIV>
+<B>Remarque : l'orientation de la droite</B>
+<BR><A NAME="sec:axe2"></A><B>Voir aussi :</B> <A HREF="node1038.html#sec:axe3">10.4.2</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>droite</TT> d&#233;finit une droite orient&#233;e :
+
+<UL>
+<LI>Lorsque la droite est donn&#233;e par deux points, son orientation
+est d&#233;finie par l'ordre des points donn&#233;s en argument.
+Par exemple <TT>droite(A,B)</TT> d&#233;finit une droite orient&#233;e par le vecteur 
+<!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$">.
+<BR></LI>
+<LI>Lorsque c'est une &#233;quation qui d&#233;finit la droite on &#233;crit 
+l'&#233;quation sous la forme :"membre_de_gauche-membre_de_droite=0" pour 
+avoir une &#233;quation de la droite de la forme <TT>a*x+by+c=0</TT> et alors le 
+vecteur orientant la droite est
+<TT>[b,-a]</TT> ou encore son orientation
+est d&#233;finie par le produit vectoriel 3D de son vecteur normal (de cote 0) et 
+de [0,0,1]. Par exemple <TT>droite(y=2*x)</TT> est orient&#233;e par <TT>[1,2]</TT> car 
+son &#233;quation est <TT>-2*x+y=0</TT> et
+<TT>cross([-2,1,0],[0,0,1])</TT>=<TT>[1,2,0]</TT>. 
+</LI>
+<LI>Lorsque la droite est donn&#233;e par un point et sa pente, son orientation
+est d&#233;finie par le vecteur d'origine le point et de m&#234;me pente.
+</LI>
+</UL>
+<B>Attention</B>
+<BR>
+Si on veut tracer la droite en couleur en utilisant un argument 
+suppl&#233;mentaire par exemple,
+<TT>couleur=1</TT>, il faut imp&#233;rativement que cet argument soit le 
+troisi&#232;me argument : donc si la droite est d&#233;finie par une liste il faut 
+transformer cette liste en une s&#233;quence avec <TT>op</TT>, par exemple, on tape :
+<PRE>
+A:=point(0,0);
+B:=point(2,1);
+C1:=cercle(A,B-A);
+C2:=cercle(B,A-B);
+droite(op(inter(C1,C2)),couleur=1)
+</PRE>
+alors que <TT>droite(inter(C1,C2),'couleur'=1</TT> vous r&#233;pondra 
+<TT>"Invalid dimension"</TT>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16860"
+  HREF="node930.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16854"
+  HREF="node928.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16848"
+  HREF="node928.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16856"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16858"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16861"
+  HREF="node930.html">La demi-droite en g&#233;om&#233;trie</A>
+<B> monter:</B> <A NAME="tex2html16855"
+  HREF="node928.html">Les droites en g&#233;om&#233;trie</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16849"
+  HREF="node928.html">Les droites en g&#233;om&#233;trie</A>
+ &nbsp; <B>  <A NAME="tex2html16857"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16859"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

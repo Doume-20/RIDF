@@ -1,0 +1,171 @@
+2021-09-16 20:34:17 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '2e0da9d2-01ee-4633-b468-58ba74ecee91').version +4418ms
+2021-09-16 18:34:17.592: 2021-09-16 20:34:17 [5224] INFO [JS] Installing the package ... +1ms
+2021-09-16 18:34:17.594: 2021-09-16 20:34:17 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:34:17.594: 2021-09-16 20:34:17 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\231\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:34:18.117: 2021-09-16 20:34:18 [5224] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +523ms
+2021-09-16 18:34:18.119: 2021-09-16 20:34:18 [5224] INFO [JS] Installing the package ... +0ms
+2021-09-16 18:34:18.119: 2021-09-16 20:34:18 [5224] INFO [Runner] Performing runner... +0ms
+2021-09-16 18:34:18.119: 2021-09-16 20:34:18 [5224] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-09-16 18:34:18.494: 2021-09-16 20:34:18 [5224] INFO [JS] Version of update package: 4.3 +378ms
+2021-09-16 18:34:18.502: 2021-09-16 20:34:18 [5224] INFO [JS] Your package is up to date +1ms
+2021-09-16 18:34:18.502: 2021-09-16 20:34:18 [5224] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-16 18:34:18.504: 2021-09-16 20:34:18 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows (80) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows.json +2ms
+2021-09-16 18:34:19.353: 2021-09-16 20:34:19 [5224] INFO [JS] Install Result: 0 +850ms
+2021-09-16 18:34:19.353: 2021-09-16 20:34:19 [5224] INFO [JS] Install Stdout: 
+2021-09-16 18:34:19.353: 
+2021-09-16 18:34:19.353: IsInstalled     : False
+2021-09-16 18:34:19.353: PackageID       : 4d914676-b5e0-44d9-96ad-3397dfca8bdd
+2021-09-16 18:34:19.353: PackageName     : OpenShot
+2021-09-16 18:34:19.353: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\206\payload\application.ppkg
+2021-09-16 18:34:19.353: Description     : 
+2021-09-16 18:34:19.353: Rank            : 0
+2021-09-16 18:34:19.353: Altitude        : 5000
+2021-09-16 18:34:19.353: Version         : 2.52
+2021-09-16 18:34:19.353: OwnerType       : ITAdmin
+2021-09-16 18:34:19.353: Notes           : 
+2021-09-16 18:34:19.353: LastInstallTime : 15/09/2021 11:27:53
+2021-09-16 18:34:19.353: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-16 18:34:19.353:                   	Category:InitialCustomization
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:OOBE successfully configured.
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-16 18:34:19.353:                   	Category:Content
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-16 18:34:19.353:                   	Category:Content
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-16 18:34:19.353:                   	Category:Content
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-16 18:34:19.353:                   	Category:Content
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-16 18:34:19.353:                   	Category:Content
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-16 18:34:19.353:                   	Category:Content
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-16 18:34:19.353:                   	Category:Scripts
+2021-09-16 18:34:19.353:                   	LastResult:Success
+2021-09-16 18:34:19.353:                   	Message:Provisioning succeeded
+2021-09-16 18:34:19.353:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353:                   
+2021-09-16 18:34:19.353: 
+2021-09-16 18:34:19.353: 
+2021-09-16 18:34:19.353:  +0ms
+2021-09-16 18:34:19.361: 2021-09-16 20:34:19 [5224] INFO [JS] Install Stderr:  +5ms
+2021-09-16 18:34:19.363: 2021-09-16 20:34:19 [5224] INFO [JS] Finishing Installation +0ms
+2021-09-16 18:34:19.363: 2021-09-16 20:34:19 [5224] INFO [Runner] Running result: true +1ms
+2021-09-16 18:34:19.363: 2021-09-16 20:34:19 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Openshot-2.5.1 (206) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Openshot-2.5.1.json +1ms
+2021-09-16 18:34:19.363: 2021-09-16 20:34:19 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\206\payload... +2ms
+2021-09-16 18:34:19.383: 2021-09-16 20:34:19 [5224] INFO [Runner] Creating configuration unit runner object... +12ms
+2021-09-16 18:34:19.383: 2021-09-16 20:34:19 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 18:34:19.383: 2021-09-16 20:34:19 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-16 18:34:21.656: 2021-09-16 20:34:21 [5224] INFO [JS] Version of update package: 1.1 +2275ms
+2021-09-16 18:34:21.656: 2021-09-16 20:34:21 [5224] INFO [JS] Your package is up to date +1ms
+2021-09-16 18:34:21.656: 2021-09-16 20:34:21 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-16 18:34:21.665: 2021-09-16 20:34:21 [5224] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +2ms
+2021-09-16 18:34:22.031: 2021-09-16 20:34:22 [5224] INFO [JS] Version of update package: 5.0 +370ms
+2021-09-16 18:34:22.031: 2021-09-16 20:34:22 [5224] INFO [JS] Your package is up to date +0ms
+2021-09-16 18:34:22.031: 2021-09-16 20:34:22 [5224] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-09-16 18:34:22.039: 2021-09-16 20:34:22 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows-3.5.0 (187) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows-3.5.0.json +2ms
+2021-09-16 18:34:22.817: 2021-09-16 20:34:22 [5224] INFO [JS] GUID package: 58103a8a-46f4-4fd9-ab24-2fb342750f07 +779ms
+2021-09-16 18:34:24.041: 2021-09-16 20:34:24 [5224] INFO [JS] Install Result: 0 +1227ms
+2021-09-16 18:34:24.041: 2021-09-16 20:34:24 [5224] INFO [JS] Install Stdout: 
+2021-09-16 18:34:24.041: 
+2021-09-16 18:34:24.041: IsInstalled     : False
+2021-09-16 18:34:24.041: PackageID       : 2be2a1dd-777f-45dc-8cb8-882f7f36439d
+2021-09-16 18:34:24.041: PackageName     : MuseScore
+2021-09-16 18:34:24.041: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\190\payload\application.ppkg
+2021-09-16 18:34:24.041: Description     : 
+2021-09-16 18:34:24.041: Rank            : 0
+2021-09-16 18:34:24.041: Altitude        : 5000
+2021-09-16 18:34:24.041: Version         : 2.548021805
+2021-09-16 18:34:24.041: OwnerType       : ITAdmin
+2021-09-16 18:34:24.041: Notes           : 
+2021-09-16 18:34:24.041: LastInstallTime : 15/09/2021 11:26:05
+2021-09-16 18:34:24.041: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-09-16 18:34:24.041:                   	Category:InitialCustomization
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:OOBE successfully configured.
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-09-16 18:34:24.041:                   	Category:Content
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-09-16 18:34:24.041:                   	Category:Content
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-09-16 18:34:24.041:                   	Category:Content
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-09-16 18:34:24.041:                   	Category:Content
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-09-16 18:34:24.041:                   	Category:Content
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-09-16 18:34:24.041:                   	Category:Content
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-09-16 18:34:24.041:                   	Category:Scripts
+2021-09-16 18:34:24.041:                   	LastResult:Success
+2021-09-16 18:34:24.041:                   	Message:Provisioning succeeded
+2021-09-16 18:34:24.041:                   	NumberOfFailures:0 (0x0)
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041:                   
+2021-09-16 18:34:24.041: 
+2021-09-16 18:34:24.041: 
+2021-09-16 18:34:24.041:  +0ms
+2021-09-16 18:34:24.041: 2021-09-16 20:34:24 [5224] INFO [JS] Install Stderr:  +0ms
+2021-09-16 18:34:24.049: 2021-09-16 20:34:24 [5224] INFO [JS] Finishing Installation +0ms
+2021-09-16 18:34:24.049: 2021-09-16 20:34:24 [5224] INFO [Runner] Running result: true +0ms
+2021-09-16 18:34:24.051: 2021-09-16 20:34:24 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/MuseScore-3.6.2 (190) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_MuseScore-3.6.2.json +2ms
+2021-09-16 18:34:24.051: 2021-09-16 20:34:24 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\190\payload... +2ms
+2021-09-16 18:34:24.061: 2021-09-16 20:34:24 [5224] INFO [Runner] Creating configuration unit runner object... +11ms
+2021-09-16 18:34:24.061: 2021-09-16 20:34:24 [5224] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-09-16 18:34:24.061: 2021-09-16 20:34:24 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-16 18:34:26.170: 2021-09-16 20:34:26 [5224] INFO [JS] GUID package: 0642f63e-c58e-4b3a-a5a2-0b04044373d4 +2102ms
+2021-09-16 18:34:26.707: 2021-09-16 20:34:26 [5224] INFO [JS] GUID package: 105da565-d050-4a60-9c4f-556c6bdb5775 +538ms

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour donner &#224; un point des coordonn&#233;es symboliques</TITLE>
+<META NAME="description" CONTENT="Pour donner &#224; un point des coordonn&#233;es symboliques">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="previous" HREF="node63.html">
+<LINK REL="up" HREF="node57.html">
+<LINK REL="next" HREF="node65.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1095"
+  HREF="node65.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1089"
+  HREF="node57.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1085"
+  HREF="node63.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1091"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1093"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1096"
+  HREF="node65.html">La g&#233;om&#233;trie 3D</A>
+<B> monter:</B> <A NAME="tex2html1090"
+  HREF="node57.html">La g&#233;om&#233;trie plane (2D)</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1086"
+  HREF="node63.html">Les attributs des lignes</A>
+ &nbsp; <B>  <A NAME="tex2html1092"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1094"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000167000000000000000"></A><A NAME="987"></A>
+<A NAME="988"></A><A NAME="989"></A>
+<BR>
+Pour donner &#224; un point des coordonn&#233;es symboliques
+</H2>
+<TT>Xcas</TT> permet de faire des d&#233;monstrations de 
+g&#233;om&#233;trie analytique&nbsp;: 
+pour cela il faut pouvoir &#224; la fois faire les calculs 
+n&#233;cessaires avec des points &#224; coordonn&#233;es symboliques et faire 
+une figure en donnant une valeur &#224; ces coordonn&#233;es symboliques.
+
+<UL>
+<LI>Premi&#232;re m&#233;thode&nbsp;: on cr&#233;e des curseurs symboliques (un par param&#232;tre)
+&#224; l'aide du menu <TT>Edit-&gt;Ajouter parametre</TT> de la figure
+ou du menu <TT>Geo</TT> de la barre de menu principal.
+Par exemple cr&#233;ez deux curseurs symboliques <TT>a</TT> et <TT>b</TT>
+en donnant comme valeurs initiales 2.1 et 2.5.
+<TT>A:=point(a+i*b)</TT> : 
+la figure se fera avec <TT>A:=point(2.1+i*3.5)</TT> mais 
+les calculs se feront en fonction des param&#232;tres formels <TT>a</TT> et <TT>b</TT> 
+avec <TT>A:=point(a+i*b)</TT>.
+</LI>
+<LI>Deuxi&#232;me m&#233;thode&nbsp;:
+on suppose que l'on a d&#233;fini, par exemple,
+<TT>A:=point(2.1+i*3.5)</TT>. Puis, si on est en mode <TT>point</TT> ou en mode 
+<TT>Pointer</TT> et uniquement dans ces 2  modes, &#224; l'aide du bouton droit de la
+souris on fait apparaitre l'&#233;cran de configuration des attributs du point 
+<TT>A</TT> o&#249; figure la rubrique <TT>symb</TT>. On coche <TT>symb</TT> avec la souris 
+et cela a pour effet de d&#233;finir automatiquement le point avec les 
+coordonn&#233;es symboliques <TT>(Ax,Ay)</TT>. 
+<BR><B>Attention</B> la rubrique <TT>symb</TT> n'apparait que  dans l'&#233;cran de 
+configuration des attributs d'un point non symbolique : autrement dit si on a 
+d&#233;fini un point avec des coordonn&#233;es symboliques, il faut
+modifier directement les lignes de commandes pour revenir &#224;
+un point &#224; coordonn&#233;es non symboliques.
+</LI>
+</UL>
+On remarque que <TT>Xcas</TT> g&#233;n&#232;re des commandes <TT>assume</TT> sur
+les param&#232;tres formels utilis&#233;s. Lorsqu'un calcul exact est effectu&#233;,
+les valeurs formelles des param&#232;tres sont utilis&#233;s, lorsqu'un calcul
+approch&#233; est effectu&#233;, les param&#232;tres formels sont remplac&#233;s
+par leur valeur num&#233;rique.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1095"
+  HREF="node65.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1089"
+  HREF="node57.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1085"
+  HREF="node63.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1091"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1093"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1096"
+  HREF="node65.html">La g&#233;om&#233;trie 3D</A>
+<B> monter:</B> <A NAME="tex2html1090"
+  HREF="node57.html">La g&#233;om&#233;trie plane (2D)</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1086"
+  HREF="node63.html">Les attributs des lignes</A>
+ &nbsp; <B>  <A NAME="tex2html1092"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1094"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

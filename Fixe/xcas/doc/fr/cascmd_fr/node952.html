@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le rectangle : rectangle</TITLE>
+<META NAME="description" CONTENT="Le rectangle : rectangle">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node953.html">
+<LINK REL="previous" HREF="node951.html">
+<LINK REL="up" HREF="node948.html">
+<LINK REL="next" HREF="node953.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17189"
+  HREF="node953.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17183"
+  HREF="node948.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17177"
+  HREF="node951.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17185"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17187"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17190"
+  HREF="node953.html">Le parall&#233;logramme : parallelogram</A>
+<B> monter:</B> <A NAME="tex2html17184"
+  HREF="node948.html">Les quadrilat&#232;res</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17178"
+  HREF="node951.html">Le losange : rhombus</A>
+ &nbsp; <B>  <A NAME="tex2html17186"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17188"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012124000000000000000"></A><A NAME="24913"></A><A NAME="sec:rectangle2"></A>
+<BR>
+Le rectangle : <TT>rectangle</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1060.html#sec:rectangle3">10.7.3</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>rectangle</TT>, en g&#233;om&#233;trie plane, peut avoir de trois &#224; 
+cinq arguments.
+<BR>
+Description des arguments :
+
+<UL>
+<LI>si il a trois arguments ce sont : deux points (ou deux
+nombres complexes repr&#233;sentant l'affixe de ces points) et un nombre r&#233;el
+<I>k</I> non nul.
+<BR><TT>rectangle(A,B,k)</TT> renvoie et trace le rectangle <I>ABCD</I> tel que :
+<BR><I>AD</I> = | <I>k</I>|*<I>AB</I> et <!-- MATH
+ $(\overrightarrow{AB},\overrightarrow{AD})=(k/|k|)*\pi/2$
+ -->
+(<IMG
+ WIDTH="193" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img588.png"
+ ALT="$ \overrightarrow{AB},\overrightarrow{AD})=(k/\vert k\vert)*\pi/2$">, 
+<BR>
+c'est &#224; dire tel que :
+<BR><!-- MATH
+ $affixe(D)=affixe(A)+k*\exp(i*\pi/2)*(affixe(B)-affixe(A))$
+ -->
+<I>affixe</I>(<I>D</I>) = <I>affixe</I>(<I>A</I>) + <I>k</I>*exp(<I>i</I>*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/2)*(<I>affixe</I>(<I>B</I>) - <I>affixe</I>(<I>A</I>))
+mais sans d&#233;finir les points  <I>C</I> et <I>D</I>.
+<BR><B>Remarque</B> Si <I>k</I> est complexe, on a :
+<BR><!-- MATH
+ $affixe(D)=affixe(A)+k*\exp(i*\pi/2)*(affixe(B)-affixe(A))$
+ -->
+<I>affixe</I>(<I>D</I>) = <I>affixe</I>(<I>A</I>) + <I>k</I>*exp(<I>i</I>*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/2)*(<I>affixe</I>(<I>B</I>) - <I>affixe</I>(<I>A</I>)) et on peut ainsi se
+retrouver avec le trac&#233; d'un parall&#233;logramme.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rectangle(0,1+i,1/2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le rectangle de sommets 0,1+i,1/2+3*i/2,-1/2+i/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rectangle(0,1+i,-1/2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le rectangle de sommets 0,1+i,3/2+i/2,1/2-i/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rectangle(0,1,1+i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le parall&#233;logramme de sommets 0,1,i,-1+i car <!-- MATH
+ $-1+i=(1+i)*\exp(i*\pi/2)$
+ -->
+-1 + <I>i</I> = (1 + <I>i</I>)*exp(<I>i</I>*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/2)</TT>
+</DIV>
+</LI>
+<LI>si il a cinq arguments les 2 derniers param&#232;tres sont les noms de deux 
+variables qui serviront &#224; d&#233;finir les 2 derniers sommets.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rectangle(0,1+i,-1/2,G,H)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le rectangle de sommets 0,1+i,3/2+i/2,1/2-i/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(affixe(G))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(3+i)/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(affixe(H))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(1-i)/2</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17189"
+  HREF="node953.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17183"
+  HREF="node948.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17177"
+  HREF="node951.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17185"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17187"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17190"
+  HREF="node953.html">Le parall&#233;logramme : parallelogram</A>
+<B> monter:</B> <A NAME="tex2html17184"
+  HREF="node948.html">Les quadrilat&#232;res</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17178"
+  HREF="node951.html">Le losange : rhombus</A>
+ &nbsp; <B>  <A NAME="tex2html17186"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17188"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

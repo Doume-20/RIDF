@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Appliquer une fonction de plusieurs variables &#224; un polyn&#244;me donné au format interne :map</TITLE>
+<META NAME="description" CONTENT="Appliquer une fonction de plusieurs variables &#224; un polyn&#244;me donné au format interne :map">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node602.html">
+<LINK REL="previous" HREF="node600.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node602.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11779"
+  HREF="node602.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11773"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11767"
+  HREF="node600.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11775"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11777"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11780"
+  HREF="node602.html">Appliquer une fonction de</A>
+<B> monter:</B> <A NAME="tex2html11774"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11768"
+  HREF="node600.html">Appliquer une fonction d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11776"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11778"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093833000000000000000"></A><A NAME="15553"></A>
+<BR>
+Appliquer une fonction de plusieurs variables &#224; un polyn&#244;me 
+donn&#233; au format interne :<TT>map</TT>
+</H2>
+Le polyn&#244;me <!-- MATH
+ $x^2+2xy+y^2$
+ -->
+<I>x</I><SUP>2</SUP> +2<I>xy</I> + <I>y</I><SUP>2</SUP> s'&#233;crit au format interne  :
+<BR><TT>%%%{1,[2,0]%%%}+%%%{2,[1,1]%%%}+%%%{1,[0,2]%%%}</TT>
+<BR>
+On peut transformer <!-- MATH
+ $x^2+2xy+y^2$
+ -->
+<I>x</I><SUP>2</SUP> +2<I>xy</I> + <I>y</I><SUP>2</SUP> au format interne avec la commande 
+<TT>symb2poly</TT> (voir <A HREF="node435.html#sec:interne">6.25.6</A>). Par exemple <TT>p:=symb2poly((x+y)<code>^</code>2,[x,y])</TT> renvoie
+<TT>%%%{1,[2,0]%%%}+%%%{2,[1,1]%%%}+%%%{1,[0,2]%%%}</TT>
+<BR>
+Pour un polyn&#244;me de <I>n</I> variables, <I>f</I> va agir sur les coefficients de
+chaque mon&#244;me du polyn&#244;me.
+<BR>
+Pour agir sur un mon&#244;me de <I>n</I> variables, <I>f</I> doit &#234;tre une fonction de 
+<I>n</I> + 1 variables, on consid&#232;re que ces variables repr&#233;sentent le coefficient,
+l'exposant de la premi&#232;re variable,...,l'exposant de la <I>n</I>-i&#232;me variable 
+et <I>f</I> transforme le coefficient de ce mon&#244;me.
+<BR>
+Par exemple, si le mon&#244;me est 5<I>x</I><SUP>2</SUP><I>y</I><SUP>3</SUP>, au format interne il s'&#233;crit :
+<TT>%%%{5,[2,3]%%%}</TT> 
+<BR>
+et si <I>f</I> est d&#233;dfinie par :
+<BR><TT>f(a,b,c):=a*(2*b+3*c)</TT>
+<BR>
+alors 
+<BR><TT>map(%%%{5,[2,3]%%%},f)</TT> renvoie le mon&#244;me 
+<!-- MATH
+ $f(5,2,3)x^2y^3=65x^2y^3$
+ -->
+<I>f</I> (5, 2, 3)<I>x</I><SUP>2</SUP><I>y</I><SUP>3</SUP> = 65<I>x</I><SUP>2</SUP><I>y</I><SUP>3</SUP> &#233;crit au format interne, c'est &#224; dire
+<TT>%%%{65,[2,3]%%%}</TT> 
+<BR>
+On tape :
+<BR><TT>map(%%%{5,[2,3]%%%},(a,b,c)-&gt;a*(2b+3c))</TT>
+<BR>
+On obtient :
+<BR><TT>%%%{65,[2,3]%%%}</TT> 
+<BR>
+On tape :
+<BR><TT>map(%%%{1,[2,0]%%%}+%%%{2,[1,1]%%%}+%%%{1,[0,2]%%%},(a,b,c)-&gt;a*(b+2c))</TT>
+<BR>
+On obtient :
+<BR><TT>%%%{2,[2,0]%%%}+%%%{6,[1,1]%%%}+%%%{4,[0,2]%%%}</TT>
+car si <I>f</I> est la fonction <!-- MATH
+ $(a,b,c)->a*(b+2c)$
+ -->
+(<I>a</I>, <I>b</I>, <I>c</I>) - &gt; <I>a</I>*(<I>b</I> + 2<I>c</I>) alors <!-- MATH
+ $f(1,2,0)=2,f(2,1,1)=6, f(1,0,2)=4$
+ -->
+<I>f</I> (1, 2, 0) = 2, <I>f</I> (2, 1, 1) = 6, <I>f</I> (1, 0, 2) = 4<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11779"
+  HREF="node602.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11773"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11767"
+  HREF="node600.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11775"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11777"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11780"
+  HREF="node602.html">Appliquer une fonction de</A>
+<B> monter:</B> <A NAME="tex2html11774"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11768"
+  HREF="node600.html">Appliquer une fonction d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11776"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11778"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

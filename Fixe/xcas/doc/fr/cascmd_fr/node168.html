@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>fsolve avec l'option bisection_solver</TITLE>
+<META NAME="description" CONTENT="fsolve avec l'option bisection_solver">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node169.html">
+<LINK REL="previous" HREF="node167.html">
+<LINK REL="up" HREF="node167.html">
+<LINK REL="next" HREF="node169.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4828"
+  HREF="node169.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4822"
+  HREF="node167.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4816"
+  HREF="node167.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4824"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4826"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4829"
+  HREF="node169.html">fsolve avec l'option brent_solver</A>
+<B> monter:</B> <A NAME="tex2html4823"
+  HREF="node167.html">R&#233;solution d'&#233;quations avec fsolve</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4817"
+  HREF="node167.html">R&#233;solution d'&#233;quations avec fsolve</A>
+ &nbsp; <B>  <A NAME="tex2html4825"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4827"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00751000000000000000">
+<TT>fsolve</TT> avec l'option <TT>bisection_solver</TT></A>
+</H2><A NAME="29629"></A>
+ Cet algorithme de dichotomie est le plus simple mais aussi le plus lent. Il
+permet d'encadrer le z&#233;ro d'une fonction sur un intervalle. &#192; chaque it&#233;ration, on coupe l'intervalle en deux, on calcule la valeur au point milieu et,
+le signe de la fonction en ce point nous dit sur quel morceau de l'intervalle on doit recommencer l'iteration.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fsolve((cos(x))=x,x,-1.. 1,bisection_solver)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0.739085078239,0.739085137844]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fsolve((cos(x))=x,x,0,bisection_solver)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Bad Argument Type</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

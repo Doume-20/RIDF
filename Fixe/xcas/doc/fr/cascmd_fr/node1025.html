@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions de géométrie 3D</TITLE>
+<META NAME="description" CONTENT="Les fonctions de géométrie 3D">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1132.html">
+<LINK REL="previous" HREF="node886.html">
+<LINK REL="up" HREF="cascmd_fr.html">
+<LINK REL="next" HREF="node1026.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18253"
+  HREF="node1026.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18247"
+  HREF="cascmd_fr.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18241"
+  HREF="node1024.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18249"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18251"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18254"
+  HREF="node1026.html">G&#233;n&#233;ralit&#233;s</A>
+<B> monter:</B> <A NAME="tex2html18248"
+  HREF="cascmd_fr.html">Calcul formel et Math&#233;matiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18242"
+  HREF="node1024.html">La trace d'un objet</A>
+ &nbsp; <B>  <A NAME="tex2html18250"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18252"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001300000000000000000">
+Les fonctions de g&#233;om&#233;trie 3D</A>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html18255"
+  HREF="node1026.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html18256"
+  HREF="node1027.html">Les angles d'Euler</A>
+<LI><A NAME="tex2html18257"
+  HREF="node1028.html">Les points</A>
+<UL>
+<LI><A NAME="tex2html18258"
+  HREF="node1029.html">D&#233;finir un point 3D : <TT>point</TT></A>
+<LI><A NAME="tex2html18259"
+  HREF="node1030.html">D&#233;finir un point 3D au hasard : <TT>point3d</TT></A>
+<LI><A NAME="tex2html18260"
+  HREF="node1031.html">Un des points d'intersection de deux objets g&#233;om&#233;triques : <TT>single_inter line_inter inter_unique inter_droite</TT></A>
+<LI><A NAME="tex2html18261"
+  HREF="node1032.html">Les points d'intersection de deux objets g&#233;om&#233;triques : <TT>inter</TT></A>
+<LI><A NAME="tex2html18262"
+  HREF="node1033.html">Le milieu d'un segment : <TT>midpoint milieu</TT></A>
+<LI><A NAME="tex2html18263"
+  HREF="node1034.html">L'isobarycentre de <I>n</I> points : <TT>isobarycenter isobarycentre</TT></A>
+<LI><A NAME="tex2html18264"
+  HREF="node1035.html">Point d&#233;fini comme barycentre de <I>n</I> points : <TT>barycenter barycentre</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18265"
+  HREF="node1036.html">Les lignes</A>
+<UL>
+<LI><A NAME="tex2html18266"
+  HREF="node1037.html">D&#233;finir une droite 3D : <TT>line droite</TT></A>
+<LI><A NAME="tex2html18267"
+  HREF="node1038.html">D&#233;finir une droite orient&#233;e en 3D : <TT>line droite</TT></A>
+<LI><A NAME="tex2html18268"
+  HREF="node1039.html">La demi-droite en 3D: <TT>half_line demi_droite</TT></A>
+<LI><A NAME="tex2html18269"
+  HREF="node1040.html">Le segment en 3D : <TT>segment</TT></A>
+<LI><A NAME="tex2html18270"
+  HREF="node1041.html">Le vecteur en 3D : <TT>vecteur</TT></A>
+<LI><A NAME="tex2html18271"
+  HREF="node1042.html">Plan et droites parall&#232;les : <TT>parallel parallele</TT></A>
+<LI><A NAME="tex2html18272"
+  HREF="node1043.html">Plans (ou droites) perpendiculaires : <TT>perpendicular perpendiculaire</TT></A>
+<LI><A NAME="tex2html18273"
+  HREF="node1044.html">Droite orthogonale &#224; un plan et plan orthogonal &#224; une droite : <TT>orthogonal</TT></A>
+<LI><A NAME="tex2html18274"
+  HREF="node1045.html">La perpendiculaire commune &#224; deux droites 3D : <TT>common_perpendicular perpendicu- laire_commune</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18275"
+  HREF="node1046.html">Les plans</A>
+<UL>
+<LI><A NAME="tex2html18276"
+  HREF="node1047.html">Le plan : <TT>plane plan</TT></A>
+<LI><A NAME="tex2html18277"
+  HREF="node1048.html">Le plan m&#233;diateur : <TT>perpen_bisector mediatrice</TT></A>
+<LI><A NAME="tex2html18278"
+  HREF="node1049.html">Le plan tangent : <TT>tangent</TT></A>
+<LI><A NAME="tex2html18279"
+  HREF="node1050.html">Plan orthogonal &#224; une droite : <TT>orthogonal</TT></A>
+<LI><A NAME="tex2html18280"
+  HREF="node1051.html">Plan perpendiculaire &#224; un plan : <TT>perpendicular  perpendiculaire</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18281"
+  HREF="node1052.html">Les triangles dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html18282"
+  HREF="node1053.html">Le triangle quelconque dans l'espace: <TT>triangle</TT></A>
+<LI><A NAME="tex2html18283"
+  HREF="node1054.html">Le triangle isoc&#232;le dans l'espace : <TT>isoceles_triangle triangle_isocele</TT></A>
+<LI><A NAME="tex2html18284"
+  HREF="node1055.html">Le triangle rectangle dans l'espace : <TT>triangle_rectangle</TT></A>
+<LI><A NAME="tex2html18285"
+  HREF="node1056.html">Le triangle &#233;quilat&#232;ral dans l'espace : <TT>equilateral_triangle triangle_equilateral</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18286"
+  HREF="node1057.html">Les quadrilat&#232;res dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html18287"
+  HREF="node1058.html">Le carr&#233; dans l'espace : <TT>square carre</TT></A>
+<LI><A NAME="tex2html18288"
+  HREF="node1059.html">Le losange dans l'espace : <TT>rhombus losange</TT></A>
+<LI><A NAME="tex2html18289"
+  HREF="node1060.html">Le rectangle dans l'espace : <TT>rectangle</TT></A>
+<LI><A NAME="tex2html18290"
+  HREF="node1061.html">Le parall&#233;logramme dans l'espace : <TT>parallelogram parallelogramme</TT></A>
+<LI><A NAME="tex2html18291"
+  HREF="node1062.html">Les quadrilat&#232;res quelconques dans l'espace : <TT>quadrilateral quadrilatere</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18292"
+  HREF="node1063.html">Les polygones dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html18293"
+  HREF="node1064.html">L'hexagone : <TT>hexagon hexagone</TT></A>
+<LI><A NAME="tex2html18294"
+  HREF="node1065.html">Les polygones r&#233;guliers dans l'espace : <TT>isopolygon isopolygone</TT></A>
+<LI><A NAME="tex2html18295"
+  HREF="node1066.html">Les polygones quelconques dans l'espace : <TT>polygon polygone</TT></A>
+<LI><A NAME="tex2html18296"
+  HREF="node1067.html">Ligne polygonale dans l'espace : <TT>open_polygon polygone_ouvert</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18297"
+  HREF="node1068.html">Les cercles dans l'espace : <TT>circle cercle</TT></A>
+<LI><A NAME="tex2html18298"
+  HREF="node1069.html">Les coniques dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html18299"
+  HREF="node1070.html">L'ellipse dans l'espace : <TT>ellipse</TT></A>
+<LI><A NAME="tex2html18300"
+  HREF="node1071.html">L'hyperbole dans l'espace : <TT>hyperbola hyperbole</TT></A>
+<LI><A NAME="tex2html18301"
+  HREF="node1072.html">La parabole dans l'espace : <TT>parabola parabole</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18302"
+  HREF="node1073.html">Les mesures</A>
+<UL>
+<LI><A NAME="tex2html18303"
+  HREF="node1074.html">L'abscisse d'un point 3D : <TT>abscissa abscisse</TT></A>
+<LI><A NAME="tex2html18304"
+  HREF="node1075.html">L'ordonn&#233;e d'un point 3D : <TT>ordinate ordonnee</TT></A>
+<LI><A NAME="tex2html18305"
+  HREF="node1076.html">La cote d'un point 3D : <TT>cote</TT></A>
+<LI><A NAME="tex2html18306"
+  HREF="node1077.html">Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite 3D : <TT>coordinates coordonnees</TT></A>
+<LI><A NAME="tex2html18307"
+  HREF="node1078.html">L'&#233;quation cart&#233;sienne d'un objet g&#233;om&#233;trique : <TT>equation</TT></A>
+<LI><A NAME="tex2html18308"
+  HREF="node1079.html">L'&#233;quation param&#233;trique d'un objet g&#233;om&#233;trique : <TT>parameq</TT></A>
+<LI><A NAME="tex2html18309"
+  HREF="node1080.html">La longueur d'un segment: <TT>distance longueur</TT></A>
+<LI><A NAME="tex2html18310"
+  HREF="node1081.html">Le carr&#233; de la longueur d'un segment : <TT>distance2 longueur2</TT></A>
+<LI><A NAME="tex2html18311"
+  HREF="node1082.html">La mesure d'un angle : <TT>angle</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18312"
+  HREF="node1083.html">Les propri&#233;t&#233;s</A>
+<UL>
+<LI><A NAME="tex2html18313"
+  HREF="node1084.html">Savoir si 1 objet g&#233;om&#233;trique est sur un objet graphique : <TT>is_element est_element</TT></A>
+<LI><A NAME="tex2html18314"
+  HREF="node1085.html">Savoir si des points ou /et des droites sont coplanaires : <TT>is_coplanar est_coplanaire</TT></A>
+<LI><A NAME="tex2html18315"
+  HREF="node1086.html">Savoir si droites ou /et plans sont parall&#232;les <TT>is_parallel est_parallele</TT></A>
+<LI><A NAME="tex2html18316"
+  HREF="node1087.html">Savoir si des droites ou/et plans sont perpendiculaires 
+<BR><TT>is_perpendicular</TT> <TT>est_perpendiculaire</TT></A>
+<LI><A NAME="tex2html18317"
+  HREF="node1088.html">Orthogonalit&#233; de 2 droites ou 2 sph&#232;res : <TT>is_orthogonal est_orthogonal</TT></A>
+<LI><A NAME="tex2html18318"
+  HREF="node1089.html">Savoir si 3 points sont align&#233;s : <TT>is_collinear est_aligne</TT></A>
+<LI><A NAME="tex2html18319"
+  HREF="node1090.html">Savoir si 4 points sont cocycliques : <TT>is_cocyclic est_cocyclique</TT></A>
+<LI><A NAME="tex2html18320"
+  HREF="node1091.html">Savoir si 5 points sont cospheriques : <TT>est_cospherique</TT></A>
+<LI><A NAME="tex2html18321"
+  HREF="node1092.html">Savoir si on a un triangle &#233;quilat&#233;ral : <TT>is_equilateral est_equilateral</TT></A>
+<LI><A NAME="tex2html18322"
+  HREF="node1093.html">Savoir si on a un triangle isoc&#233;le : <TT>is_isoceles est_isocele</TT></A>
+<LI><A NAME="tex2html18323"
+  HREF="node1094.html">Savoir si on a un triangle rectangle ou si on a un rectangle : <TT>est_rectangle</TT></A>
+<LI><A NAME="tex2html18324"
+  HREF="node1095.html">Savoir si on a un carr&#233; : <TT>is_square est_carre</TT></A>
+<LI><A NAME="tex2html18325"
+  HREF="node1096.html">Savoir si on a un losange : <TT>is_rhombus est_losange</TT></A>
+<LI><A NAME="tex2html18326"
+  HREF="node1097.html">Savoir si on a un parall&#233;logramme : <TT>is_parallelogram est_parallelogramme</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18327"
+  HREF="node1098.html">Les transformations</A>
+<UL>
+<LI><A NAME="tex2html18328"
+  HREF="node1099.html">G&#233;n&#233;ralit&#233;s</A>
+<LI><A NAME="tex2html18329"
+  HREF="node1100.html">La translation : <TT>translation</TT></A>
+<LI><A NAME="tex2html18330"
+  HREF="node1101.html">La sym&#233;trie par rapport &#224; un plan, une droite ou un point : <TT>reflection symetrie</TT></A>
+<LI><A NAME="tex2html18331"
+  HREF="node1102.html">La rotation : <TT>rotation</TT></A>
+<LI><A NAME="tex2html18332"
+  HREF="node1103.html">L'homoth&#233;tie : <TT>homothety homothetie</TT></A>
+<LI><A NAME="tex2html18333"
+  HREF="node1104.html">La similitude : <TT>similarity similitude</TT></A>
+<LI><A NAME="tex2html18334"
+  HREF="node1105.html">L'inversion : <TT>inversion</TT></A>
+<LI><A NAME="tex2html18335"
+  HREF="node1106.html">La projection orthogonale : <TT>projection</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18336"
+  HREF="node1107.html">Les surfaces</A>
+<UL>
+<LI><A NAME="tex2html18337"
+  HREF="node1108.html">Le c&#244;ne : <TT>cone</TT></A>
+<LI><A NAME="tex2html18338"
+  HREF="node1109.html">Le demi-c&#244;ne : <TT>half_cone demi_cone</TT></A>
+<LI><A NAME="tex2html18339"
+  HREF="node1110.html">Le cylindre : <TT>cylinder cylindre</TT></A>
+<LI><A NAME="tex2html18340"
+  HREF="node1111.html">La sph&#232;re : <TT>sphere</TT></A>
+<LI><A NAME="tex2html18341"
+  HREF="node1112.html">Surface d&#233;finie par une fonction : <TT>funcplot</TT></A>
+<LI><A NAME="tex2html18342"
+  HREF="node1113.html">Surface d&#233;finie par une &#233;quation param&#233;trique : <TT>paramplot</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18343"
+  HREF="node1114.html">Les solides</A>
+<UL>
+<LI><A NAME="tex2html18344"
+  HREF="node1115.html">Le cube : <TT>cube</TT></A>
+<LI><A NAME="tex2html18345"
+  HREF="node1116.html">Le t&#233;tra&#232;dre : <TT>tetrahedron pyramid tetraedre pyramide</TT></A>
+<LI><A NAME="tex2html18346"
+  HREF="node1117.html">Le parall&#233;l&#233;pip&#232;de : <TT>parallelepiped parallelepipede</TT></A>
+<LI><A NAME="tex2html18347"
+  HREF="node1118.html">Le prisme : <TT>prism prisme</TT></A>
+<LI><A NAME="tex2html18348"
+  HREF="node1119.html">Les poly&#232;dres : <TT>polyhedron polyedre</TT></A>
+<LI><A NAME="tex2html18349"
+  HREF="node1120.html">Les faces : <TT>faces</TT></A>
+<LI><A NAME="tex2html18350"
+  HREF="node1121.html">Les ar&#234;tes : <TT>line_segments aretes</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18351"
+  HREF="node1122.html">Les solides de Platon</A>
+<UL>
+<LI><A NAME="tex2html18352"
+  HREF="node1123.html">: <TT>centered_tetrahedron tetraedre_centre</TT></A>
+<LI><A NAME="tex2html18353"
+  HREF="node1124.html">: <TT>centered_cube cube_centre</TT></A>
+<LI><A NAME="tex2html18354"
+  HREF="node1125.html">L'octa&#232;dre : <TT>octahedron octaedre</TT></A>
+<LI><A NAME="tex2html18355"
+  HREF="node1126.html">Le dodecaèdre : <TT>dodecahedron dodecaedre</TT></A>
+<LI><A NAME="tex2html18356"
+  HREF="node1127.html">L'icosaèdre : <TT>icosahedron icosaedre</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html18357"
+  HREF="node1128.html">Figures et preuves d''exercices avec <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html18358"
+  HREF="node1129.html">Exercice 1</A>
+<LI><A NAME="tex2html18359"
+  HREF="node1130.html">Exercice 2</A>
+<LI><A NAME="tex2html18360"
+  HREF="node1131.html">Exercice 3 prolongement de l'exercice 2</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

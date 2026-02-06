@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Traduction Latex d'un &#233;cran de g&#233;om&#233;trie</TITLE>
+<META NAME="description" CONTENT="Traduction Latex d'un &#233;cran de g&#233;om&#233;trie">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node59.html">
+<LINK REL="previous" HREF="node57.html">
+<LINK REL="up" HREF="node55.html">
+<LINK REL="next" HREF="node59.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3142"
+  HREF="node59.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3136"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3130"
+  HREF="node57.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3138"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3140"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3143"
+  HREF="node59.html">Traduction Latex de l'&#233;cran</A>
+<B> monter:</B> <A NAME="tex2html3137"
+  HREF="node55.html">Traduction Latex</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3131"
+  HREF="node57.html">Imprimer la session ou/et</A>
+ &nbsp; <B>  <A NAME="tex2html3139"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3141"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION004103000000000000000"></A><A NAME="1166"></A><A NAME="1167"></A><A NAME="sec:latexgeo"></A>
+<BR>
+Traduction Latex d'un &#233;cran de g&#233;om&#233;trie
+</H2>
+
+<P>
+<B>Voir aussi :</B> <A HREF="node117.html#sec:latexgeo23">3.4</A> et <A HREF="node60.html#sec:latex3d">1.10.5</A>
+On veut traduire en Latex toutes les sorties graphiques r&#233;alis&#233;es depuis le
+dernier <TT>erase()</TT>  c'est &#224; dire toutes celles faites 
+ &#224; partir des lignes de commandes et celles faites dans les &#233;crans de 
+g&#233;om&#233;trie.
+<BR>
+On utilise pour cela la fonction <TT>graph2tex</TT>.
+<BR>
+On tape par exemple dans une ligne de commandes :
+<DIV ALIGN="CENTER">
+<TT>graph2tex("truc.tex")</TT>
+</DIV>
+On obtient alors les graphiques sauv&#233;s en un fichier Latex 
+<TT>truc.tex</TT>  qui pourra &#234;tre compil&#233; et visualis&#233; seul, ou encore 
+&#234;tre ins&#233;r&#233; dans un fichier Latex.
+<BR>
+Ou encore, si on veut la traduction Latex d'un seul &#233;cran de g&#233;om&#233;trie,
+on appuie sur le bouton <TT>Save</TT> de cet &#233;cran de g&#233;om&#233;trie, on
+donne un nom de fichier par exemple <TT>truc.cas</TT>. Puis, on choisit
+dans le menu <TT>Fich</TT> de cet &#233;cran de g&#233;om&#233;trie, le sous-menu 
+<TT>Imprimer</TT> puis, <TT>Pre-visualisation (Latex)</TT>, cela
+cr&#233;e les  fichiers <TT>truc.tex</TT>, <TT>truc.dvi</TT>, <TT>truc.ps</TT> et
+<TT>truc.png</TT> ou  &#233;ventuellement si on veut imprimer, on choisit  
+<TT>Vers Imprimante (Latex)</TT>.
+<BR>
+On obtient alors l'&#233;cran de g&#233;om&#233;trie sauv&#233; en un fichier Latex 
+<TT>truc.tex</TT>  qui pourra &#234;tre compil&#233; et visualis&#233; seul, ou encore 
+&#234;tre ins&#233;r&#233; dans un fichier Latex, &#224; condition d'enlever l'en-t&#234;te 
+<code>\documentclass{article}...\begin{document}</code>, d'enlever &#224; la fin 
+<code>\end{document}</code> et de rajouter <code>\usepackage{pstricks}</code>  
+dans l'en-t&#234;te du fichier dans lequel on l'ins&#232;re.
+<BR>
+Ou encore, on veut traduire en Latex une seule sortie graphique ou un seul 
+dessin ou un seul graphique fait dans un des &#233;crans de g&#233;om&#233;trie et on 
+voudrait l'int&#233;grer dans un texte Latex ou l'imprimer seul. Mais, on a 
+d&#233;j&#224; fait d'autres graphiques, soit &#224; l'aide de commandes qui renvoient 
+des sorties graphiques, soit dans diff&#233;rents &#233;crans de g&#233;om&#233;trie, 
+alors, pour avoir la traduction Latex du dessin que vous voulez, il faut  
+utiliser la commande <TT>erase()</TT> cela n'effacera pas vos graphiques, 
+mais cela aura pour effet de 
+ne traduire en Latex que les trac&#233;s futurs. Donc on tape <TT>erase()</TT>, puis 
+on revalide ce que l'on veut traduire en Latex, puis on tape par exemple :
+<DIV ALIGN="CENTER">
+<TT>graph2tex("truc1.tex")</TT>
+</DIV>
+
+<P>
+Pour traduire en Latex et imprimer un seul graphique on peut aussi se servir du
+menu <TT>Exporter/Imprimer</TT> du bouton  <TT>M</TT> de cet &#233;cran graphique :
+<BR><TT>M<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$"> Exporter/Imprimer<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Imprimer(en Latex)</TT>,
+<BR>
+Ou encore, on peut s&#233;lectionner le niveau de l'&#233;cran graphique que l'on 
+veut imprimer et utiliser le  menu de la session :
+<BR><TT>Fich<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Imprimer<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Imprime selection (latex)</TT>. 
+<BR>
+Dans ces deux cas l'&#233;cran est sauv&#233; selon 4 formats, sous 
+les noms <TT>session0.tex</TT>, <TT>session0.dvi</TT>, <TT>session0.ps</TT> et 
+<TT>session0.png</TT>
+(ou encore  sous les noms <TT>session&lt;numero&gt;.tex/dvi/ps/png</TT>) (sauf si vous 
+avez donn&#233; un autre nom ce qui est conseill&#233; !).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3142"
+  HREF="node59.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3136"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3130"
+  HREF="node57.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3138"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3140"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3143"
+  HREF="node59.html">Traduction Latex de l'&#233;cran</A>
+<B> monter:</B> <A NAME="tex2html3137"
+  HREF="node55.html">Traduction Latex</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3131"
+  HREF="node57.html">Imprimer la session ou/et</A>
+ &nbsp; <B>  <A NAME="tex2html3139"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3141"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

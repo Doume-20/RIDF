@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Transformer un polyn&#244;me au format interne : e2r symb2poly</TITLE>
+<META NAME="description" CONTENT="Transformer un polyn&#244;me au format interne : e2r symb2poly">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node436.html">
+<LINK REL="previous" HREF="node434.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node436.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9347"
+  HREF="node436.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9341"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9335"
+  HREF="node434.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9343"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9345"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9348"
+  HREF="node436.html">Transformer un polyn&#244;me au</A>
+<B> monter:</B> <A NAME="tex2html9342"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9336"
+  HREF="node434.html">Transformer un polyn&#244;me en</A>
+ &nbsp; <B>  <A NAME="tex2html9344"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9346"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009256000000000000000"></A><A NAME="10913"></A><A NAME="10914"></A><A NAME="sec:interne"></A>
+<BR>
+Transformer un polyn&#244;me au format interne : <TT>e2r symb2poly</TT>
+</H2>
+<TT>e2r</TT> ou <TT>symb2poly</TT> a comme argument polyn&#244;me d'une ou 
+plusieurs variables, donn&#233; avec une &#233;criture polyn&#244;miale et la liste de 
+ces variables formelles.
+<BR><TT>e2r</TT> ou <TT>symb2poly</TT> transforme cette &#233;criture polyn&#244;miale, 
+en l'&#233;criture au format interne selon la liste de variables donn&#233;e
+en deuxi&#232;me argument.
+<BR><B>Attention</B> Si le deuxi&#232;me argument n'est pas une liste, le r&#233;sultat est
+la liste des coefficients de la premi&#232;re variable, coefficients qui sont 
+eux-m&#234;mes des polyn&#244;mes qui seront donn&#233;s sous la forme 
+la liste des coefficients de la deuxi&#232;me variable etc...
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>e2r(x<code>^</code>2-1,[x])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>symb2poly(x<code>^</code>2-1,[x])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>%%%{1,[2]%%%}+%%%{-1,[0]%%%}</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>e2r(x<code>^</code>2-x*y+y, [x,y])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>symb2poly(x<code>^</code>2-x*y+2*y, [x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>%%%{1,[2,0]%%%}+%%%{-1,[1,1]%%%}+%%%{2,[0,1]%%%}</TT>
+</DIV>
+ce qui signifie que le coefficient du terme <I>x</I><SUP>2</SUP><I>y</I><SUP>0</SUP> est 1, celui du terme
+<I>x</I><SUP>1</SUP><I>y</I><SUP>1</SUP> est -1 et celui du terme <I>x</I><SUP>0</SUP><I>y</I><SUP>1</SUP> est 2.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>symb2poly(x<code>^</code>2*y<code>^</code>2-x<code>^</code>2+2x*y+4y<code>^</code>2-y+3,[x,y])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>e2r(x<code>^</code>2*y<code>^</code>2-x<code>^</code>2+2x*y+4y<code>^</code>2-y+3,x,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>%%%{1,[2,2]%%%}+%%%{-1,[2,0]%%%}+%%%{2,[1,1]%%%}+ %%%{4,[0,2]%%%}+%%%{-1,[0,1]%%%}+%%%{3,[0,0]%%%}</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9347"
+  HREF="node436.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9341"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9335"
+  HREF="node434.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9343"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9345"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9348"
+  HREF="node436.html">Transformer un polyn&#244;me au</A>
+<B> monter:</B> <A NAME="tex2html9342"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9336"
+  HREF="node434.html">Transformer un polyn&#244;me en</A>
+ &nbsp; <B>  <A NAME="tex2html9344"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9346"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

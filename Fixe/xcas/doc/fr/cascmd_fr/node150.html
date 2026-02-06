@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Trac&#233; interactif des solutions d'&#233;quation diff&#233;rentielle dans un niveau de g&#233;om&#233;trie : plotfield fieldplot et plotode odeplot</TITLE>
+<META NAME="description" CONTENT="Trac&#233; interactif des solutions d'&#233;quation diff&#233;rentielle dans un niveau de g&#233;om&#233;trie : plotfield fieldplot et plotode odeplot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node151.html">
+<LINK REL="previous" HREF="node149.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node151.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4541"
+  HREF="node151.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4535"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4529"
+  HREF="node149.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4537"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4539"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4542"
+  HREF="node151.html">Faire une animation en</A>
+<B> monter:</B> <A NAME="tex2html4536"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4530"
+  HREF="node149.html">Trac&#233; interactif des solutions</A>
+ &nbsp; <B>  <A NAME="tex2html4538"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4540"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION006210000000000000000"></A><A NAME="3180"></A><A NAME="3181"></A><A NAME="3182"></A><A NAME="3183"></A>
+<BR>
+Trac&#233; interactif des solutions d'&#233;quation diff&#233;rentielle dans un niveau de g&#233;om&#233;trie : <TT>plotfield fieldplot</TT> et <TT>plotode odeplot</TT>
+</H1>
+Dans un niveau de g&#233;om&#233;trie, le menu <TT>Graphe-&gt;Slopefield/Ode(2d)</TT> ouvre
+une boite de dialogues qui demande :
+
+<UL>
+<LI>si on veut que soit trac&#233; le champ des tangentes,
+</LI>
+<LI>si on veut que ces tangentes soient normalis&#233;es dans un rep&#232;re 
+orthonorm&#233;,
+</LI>
+<LI>la valeur de <I>y'</I>,
+</LI>
+<LI>le nom des variables,
+</LI>
+<LI>les diff&#233;rentes valeurs de cadrage et de pas.
+</LI>
+</UL>
+Lorsqu'on appuie sur <TT>OK</TT>, l'&#233;cran de g&#233;om&#233;trie est en mode 
+<TT>plotode</TT> et si l'on a coch&#233; <TT>Field</TT>, le champ des tangentes apparait
+et la commande correspondante s'inscrit au niveau suivant de l'&#233;cran de 
+g&#233;om&#233;trie, par exemple :
+<DIV ALIGN="CENTER">
+<TT>plotfield(sin(t*y),[t=-5.7..5.7,y=-5.7..5.7],normalize, xstep=0.7,ystep=0.7)</TT>
+</DIV>
+Si on a coch&#233; <TT>Field</TT> et <TT>||=1</TT>, et que <!-- MATH
+ $y'=\sin(t*y)$
+ -->
+<I>y'</I> = sin(<I>t</I>*<I>y</I>).
+<BR>
+Ensuite, il suffit de cliquer en diff&#233;rents points de l&#233;cran de 
+g&#233;om&#233;trie pour avoir les trac&#233;s des solutions passant par ces points et 
+les commandes correspondantes stock&#233;es dans une variable, par exemple :
+<DIV ALIGN="CENTER">
+<TT>A:=plotode(sin(t*y),[t,y],point(-2.863,1.327),plan)</TT>
+</DIV>
+Pour terminer, il suffit de changer de mode, par exemple passer en mode 
+<TT>Repere</TT>. Il faut noter que le mode <TT>plotode</TT> n'est pas accessible 
+directement : on doit r&#233;ouvrir la boite de dialogue avec le menu 
+<TT>Graphe-&gt;Slopefield/Ode(2d)</TT>.
+<BR>
+Si on trouve que le champ des tangentes est g&#233;nant, on peut le supprimer 
+facilement en supprimant le niveau correspondant &#224; sa commande.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4541"
+  HREF="node151.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4535"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4529"
+  HREF="node149.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4537"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4539"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4542"
+  HREF="node151.html">Faire une animation en</A>
+<B> monter:</B> <A NAME="tex2html4536"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4530"
+  HREF="node149.html">Trac&#233; interactif des solutions</A>
+ &nbsp; <B>  <A NAME="tex2html4538"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4540"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

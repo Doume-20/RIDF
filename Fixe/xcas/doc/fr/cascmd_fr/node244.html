@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Reste chinois : ichinrem, ichrem</TITLE>
+<META NAME="description" CONTENT="Reste chinois : ichinrem, ichrem">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node245.html">
+<LINK REL="previous" HREF="node243.html">
+<LINK REL="up" HREF="node221.html">
+<LINK REL="next" HREF="node245.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6512"
+  HREF="node245.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6506"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6500"
+  HREF="node243.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6508"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6510"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6513"
+  HREF="node245.html">Reste chinois pour des</A>
+<B> monter:</B> <A NAME="tex2html6507"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6501"
+  HREF="node243.html">R&#233;solution de au+bv=c dans</A>
+ &nbsp; <B>  <A NAME="tex2html6509"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6511"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009723000000000000000"></A><A NAME="5382"></A><A NAME="5383"></A>
+<BR>
+Reste chinois : <TT>ichinrem, ichrem</TT>
+</H2>
+<TT>ichinrem([a,p],[b,q])</TT> ou <TT>ichrem([a,p],[b,q])</TT> d&#233;signe 
+une liste <TT>[c,lcm(p,q)]</TT> form&#233;e de deux entiers.
+<BR>
+Le premier nombre <TT>c</TT> est tel que 
+<P><!-- MATH
+ \begin{displaymath}
+\forall k \in \mathbb Z, \quad d=c+ k \times \mbox{lcm}(p,q)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \forall$"><I>k</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.png"
+ ALT="$\displaystyle \in$"> <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$\displaystyle \mathbb {Z}$">,&nbsp;&nbsp;&nbsp;&nbsp;<I>d</I> = <I>c</I> + <I>k</I>&#215;lcm(<I>p</I>, <I>q</I>)
+</DIV><P></P>
+l
+v&#233;rifie
+<P><!-- MATH
+ \begin{displaymath}
+d=a \pmod  p, \quad d=b \pmod q
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>d</I> = <I>a</I>(mod <I>p</I>),&nbsp;&nbsp;&nbsp;&nbsp;<I>d</I> = <I>b</I>(mod <I>q</I>)
+</DIV><P></P>
+Si <TT>p</TT> et <TT>q</TT> sont premiers entre eux, il existe toujours une solution 
+<TT>d</TT>  et toutes les solutions sont alors congrues modulo <TT>p*q</TT>   
+<BR><B>Exemples</B> : 
+<BR>
+Trouver les solutions de :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left \{ \begin{array}{rl} x=&3\ (\bmod\ 5)\\
+x=&9\ (\bmod\ 13) \end{array}\right.}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="163" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img83.png"
+ ALT="$\displaystyle \tt\left \{ \begin{array}{rl} x=&amp;3\ (\bmod\ 5)\\
+x=&amp;9\ (\bmod\ 13) \end{array}\right.$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ichinrem([3,5],[9,13])</TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>ichrem([3,5],[9,13])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-17,65] </TT>
+</DIV>
+ce qui veut dire que <TT>x=-17 (mod 65)</TT>
+<BR>
+On peut aussi taper :
+<DIV ALIGN="CENTER">
+<TT>ichrem(3%5,9%13)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-17%65 </TT>
+</DIV>
+Trouver les solutions de :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left \{ \begin{array}{rl} x=&3\ (\bmod\ 5)\\
+x=&4\ (\bmod\ 7) \\
+x=&1\ (\bmod\ 9)\end{array}\right.}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="157" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.png"
+ ALT="$\displaystyle \tt\left \{ \begin{array}{rl} x=&amp;3\ (\bmod\ 5)\\
+x=&amp;4\ (\bmod\ 7) \\
+x=&amp;1\ (\bmod\ 9)\end{array}\right.$">
+</DIV><P></P>
+On tape tout d'abord :
+<DIV ALIGN="CENTER">
+<TT>tmp:=ichinrem([3,5],[4,7])</TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>tmp:=ichrem([3,5],[4,7])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-17,35] </TT>
+</DIV>
+puis on tape 
+<DIV ALIGN="CENTER">
+<TT>ichinrem([1,9],tmp)</TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>ichrem([1,9],tmp)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-17,315] </TT>
+</DIV>
+ce qui veut dire que <TT>x=-17 (mod 315)</TT>
+<BR>
+On peut aussi taper directement :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>ichinrem([3%5,4%7,1%9])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-17%315 </TT>
+</DIV>
+
+<P>
+<B>Remarque</B>
+<BR><TT>ichrem</TT> (ou <TT>ichinrem</TT>)  peut aussi &#234;tre utiliser pour trouver les 
+coefficients de polyn&#244;mes qui sont connus modulo plusieurs entiers, par 
+exemple trouver
+<I>ax</I> + <I>b</I> modulo <!-- MATH
+ $315=5 \times 7 \times 9$
+ -->
+315 = 5&#215;7&#215;9 tel que :
+<BR><P><!-- MATH
+ \begin{displaymath}
+{\tt\left \{ \begin{array}{rl} a=&3\ (\bmod\ 5)\\
+a=&4\ (\bmod\ 7) \\
+a=&1\ (\bmod\ 9) \end{array}\right.},
+\quad
+{\tt\left \{ \begin{array}{rl} b=&1\ (\bmod\ 5)\\
+b=&2\ (\bmod\ 7) \\
+b=&3\ (\bmod\ 9) \end{array}\right.}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="156" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.png"
+ ALT="$\displaystyle \tt\left \{ \begin{array}{rl} a=&amp;3\ (\bmod\ 5)\\
+a=&amp;4\ (\bmod\ 7) \\
+a=&amp;1\ (\bmod\ 9) \end{array}\right.$">,&nbsp;&nbsp;&nbsp;&nbsp;<IMG
+ WIDTH="155" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.png"
+ ALT="$\displaystyle \tt\left \{ \begin{array}{rl} b=&amp;1\ (\bmod\ 5)\\
+b=&amp;2\ (\bmod\ 7) \\
+b=&amp;3\ (\bmod\ 9) \end{array}\right.$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ichrem((3x+1)%5,(4x+2)%7,(x+3)%9)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(-17%315&#215; x+156%315 </TT>
+</DIV>
+ce qui veut dire que <TT>a=-17 (mod 315)</TT> et <TT>b=156 (mod 315)</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6512"
+  HREF="node245.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6506"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6500"
+  HREF="node243.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6508"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6510"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6513"
+  HREF="node245.html">Reste chinois pour des</A>
+<B> monter:</B> <A NAME="tex2html6507"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6501"
+  HREF="node243.html">R&#233;solution de au+bv=c dans</A>
+ &nbsp; <B>  <A NAME="tex2html6509"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6511"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

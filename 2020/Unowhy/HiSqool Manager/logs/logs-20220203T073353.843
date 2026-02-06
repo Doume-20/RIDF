@@ -1,0 +1,50 @@
+2022-02-02 21:26:00 [5400] INFO [JS] Stderr: #< CLIXML
+2022-02-02 20:26:00.805: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">Get-ItemProperty : Impossible de trouver le chemin d'acc�s �HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding�, car il n'existe _x000D__x000A_</S><S S="Error">pas._x000D__x000A_</S><S S="Error">Au caract�re Ligne:1 : 2_x000D__x000A_</S><S S="Error">+ (Get-ItemProperty -Path HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding -Nam ..._x000D__x000A_</S><S S="Error">+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_x000D__x000A_</S><S S="Error">    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding:String) [Get-ItemProperty], It _x000D__x000A_</S><S S="Error">   emNotFoundException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand_x000D__x000A_</S><S S="Error"> _x000D__x000A_</S></Objs> +1ms
+2022-02-02 20:26:00.805: 2022-02-02 21:26:00 [5400] INFO [JS] isCustomShellPossible: true +1ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] hasApiEnabledDeviceManager: true +0ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] hasSqoolCtl: true +0ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] hasOnboardingEnabledHiSqool: true +1ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] hasViewedGDPR: true +1ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] hasAcceptedGDPR: true +1ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] isShellRestrictionActive: false +1ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] isInUserSession: true +0ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] isENTUser: true +0ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] isUserExempt: false +0ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] currentUserLogin: paul.peyrot@monlycee.net +0ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] isRescueModeInstalled: true +2ms
+2022-02-02 20:26:00.821: 2022-02-02 21:26:00 [5400] INFO [JS] hisqoolLaunchNeeded: false +1ms
+2022-02-02 20:26:00.837: 2022-02-02 21:26:00 [5400] INFO [JS] isActivationScriptNeeded: false +2ms
+2022-02-02 20:26:00.837: 2022-02-02 21:26:00 [5400] INFO [JS] isDisabled: false +2ms
+2022-02-02 20:26:00.837: 2022-02-02 21:26:00 [5400] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-02-02 20:26:00.837: 2022-02-02 21:26:00 [5400] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows (280) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows.json +3ms
+2022-02-03 07:33:44.765: 2022-02-03 8:33:44 [5400] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +40063921ms
+2022-02-03 07:33:44.765: 2022-02-03 8:33:44 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:44.781: 2022-02-03 8:33:44 [5400] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +3ms
+2022-02-03 07:33:44.994: 2022-02-03 8:33:44 [5400] INFO [Runner] Creating configuration unit runner object... +217ms
+2022-02-03 07:33:44.994: 2022-02-03 8:33:44 [5400] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +13ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [JS] We are triggering +2ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +0ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +0ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.009: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +0ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +0ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> __/conf/agents/facts... +1ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +0ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [Runner] Performing runner... +1ms
+2022-02-03 07:33:45.025: 2022-02-03 8:33:45 [5400] INFO [JS] Performing facts gathering and upload... +1ms
+2022-02-03 07:33:53.828: 2022-02-03 8:33:53 [5400] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +8796ms
+2022-02-03 07:33:53.828: 2022-02-03 8:33:53 [5400] INFO [KeyedObservableCollector] Sending 9 items +3ms
+2022-02-03 07:33:53.828: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:796258c812433c8a5df6d4b8fe54d144 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +2ms
+2022-02-03 07:33:53.828: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +6ms
+2022-02-03 07:33:53.828: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:7e3fb14071d24528fb23856f56cc3d8a for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-02-03 07:33:53.843: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +5ms
+2022-02-03 07:33:53.843: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2022-02-03 07:33:53.843: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +1ms
+2022-02-03 07:33:53.843: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2022-02-03 07:33:53.843: 2022-02-03 8:33:53 [5400] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +6ms

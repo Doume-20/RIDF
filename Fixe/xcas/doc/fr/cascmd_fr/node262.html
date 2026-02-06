@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;veloppement en fraction continue d'un r&#233;el : dfc</TITLE>
+<META NAME="description" CONTENT="D&#233;veloppement en fraction continue d'un r&#233;el : dfc">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node263.html">
+<LINK REL="previous" HREF="node261.html">
+<LINK REL="up" HREF="node255.html">
+<LINK REL="next" HREF="node263.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6774"
+  HREF="node263.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6768"
+  HREF="node255.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6762"
+  HREF="node261.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6770"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6772"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6775"
+  HREF="node263.html">Transformer une fraction continue</A>
+<B> monter:</B> <A NAME="tex2html6769"
+  HREF="node255.html">Les rationnels</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6763"
+  HREF="node261.html">Simplification d'un couple :</A>
+ &nbsp; <B>  <A NAME="tex2html6771"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6773"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00997000000000000000"></A><A NAME="5869"></A><A NAME="sec:convertdfc"></A>
+<BR>
+D&#233;veloppement en fraction continue d'un r&#233;el : <TT>dfc</TT>
+</H2><A NAME="29743"></A>
+<TT>dfc</TT> a comme argument un nombre r&#233;el ou 
+ fractionnaire ou d&#233;cimal  <TT>a</TT> et un entier <TT>n</TT> (ou un r&#233;el 
+<TT>epsilon</TT>).
+<BR><TT>dfc</TT> renvoie une liste repr&#233;sentant le d&#233;veloppement en fractions 
+continues de <TT>a</TT> d'ordre <TT>n</TT> (ou de pr&#233;cision <TT>epsilon</TT> c'est &#224;
+dire le d&#233;veloppement en fractions continues qui approche <TT>a</TT> ou 
+<TT>evalf(a)</TT> &#224; moins de <TT>epsilon</TT>, par d&#233;faut <TT>epsilon</TT> est 
+&#233;gal &#224; la valeur du <TT>epsilon</TT> d&#233;finit dans la configuration du 
+<TT>cas</TT> &#224; l'aide du menu 
+<TT>Cfg<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Configuration du CAS</TT>).
+<BR>
+On peut aussi utiliser <TT>convert</TT> avec l'option <TT>confrac</TT> : dans ce cas
+la valeur de <TT>epsilon</TT> est &#233;gal &#224; la valeur du <TT>epsilon</TT> d&#233;finit 
+dans la configuration du <TT>CAS</TT> &#224; l'aide du menu 
+<TT>Cfg<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Configuration du CAS</TT> (voir <A HREF="node407.html#sec:convert">6.22.25</A>).
+<BR><B>Remarques</B> 
+<BR>
+Si le dernier &#233;l&#233;ment de la liste r&#233;sultat est une liste il repr&#233;sente 
+la p&#233;riode et si le dernier &#233;l&#233;ment de la liste r&#233;sultat n'est pas entier, il repr&#233;sente le reste <I>r</I> (<!-- MATH
+ $a=a0+1/....+1/an+1/r$
+ -->
+<I>a</I> = <I>a</I>0 + 1/.... + 1/<I>an</I> + 1/<I>r</I>).
+<BR>
+Si on a  <TT>dfc(a)=[a0,a1,a2,[b0,b1]</TT> cela veut dire que :
+<BR><!-- MATH
+ $\displaystyle a=a0+\frac{1}{a1+\frac{1}{a2+\frac{1}{b0+\frac{1}{b1+\frac{1}{b0+...}}}}}$
+ -->
+<I>a</I> = <I>a</I>0 + <IMG
+ WIDTH="158" HEIGHT="95" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.png"
+ ALT="$\displaystyle {\frac{{1}}{{a1+\frac{1}{a2+\frac{1}{b0+\frac{1}{b1+\frac{1}{b0+...}}}}}}}$"> 
+<BR>
+Si on a  <TT>dfc(a)=[a0,a1,a2,r]</TT> cela veut dire que :
+<BR><!-- MATH
+ $\displaystyle a=a0+\frac{1}{a1+\frac{1}{a2+\frac{1}{r}}}$
+ -->
+<I>a</I> = <I>a</I>0 + <IMG
+ WIDTH="85" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.png"
+ ALT="$\displaystyle {\frac{{1}}{{a1+\frac{1}{a2+\frac{1}{r}}}}}$">
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dfc(sqrt(2),5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,[2]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dfc(evalf(sqrt(2)),1e-9)</TT>
+</DIV>
+Ou : 
+<DIV ALIGN="CENTER">
+<TT>dfc(sqrt(2),1e-9)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,2,2,2,2,2,2,2,2,2,2,2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>convert(sqrt(2),confrac,'dev')</TT>
+</DIV>
+On obtient si dans la configuration du <TT>cas</TT> <TT>epsilon=1e-9</TT> :
+<DIV ALIGN="CENTER">
+<TT>[1,2,2,2,2,2,2,2,2,2,2,2,2]</TT>
+</DIV>
+et <TT>dev</TT> contient <TT>[1,2,2,2,2,2,2,2,2,2,2,2,2]</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dfc(9976/6961,5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,3,4,5,43/7]</TT>
+</DIV>
+En effet
+on tape :
+<BR><TT>1+1/(2+1/(3+1/(4+1/(5+7/43))))</TT> 
+<BR>
+et on obtient :
+<BR><TT>9976/6961</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>convert(9976/6961,confrac,'l')</TT>
+</DIV>
+On obtient si dans la configuration du <TT>cas</TT> <TT>epsilon=1e-9</TT> :
+<DIV ALIGN="CENTER">
+<TT>[1,2,3,4,5,6,7]</TT>
+</DIV>
+et <TT>l</TT> contient <TT>[1,2,3,4,5,6,7]</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dfc(pi,5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,7,15,1,292,(-113*pi+355)/(33102*pi-103993)]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dfc(evalf(pi),5)</TT>
+</DIV>
+On obtient (si on travaille avec 12 chiffres significatifs) :
+<DIV ALIGN="CENTER">
+<TT>[3,7,15,1,292,1.57581843574]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>dfc(evalf(pi),1e-9)</TT>
+</DIV>
+Ou :
+<DIV ALIGN="CENTER">
+<TT>dfc(pi,1e-9)</TT>
+</DIV>
+Ou (si <TT>epsilon=1e-9</TT> dans la configuration du <TT>cas</TT>) :
+<DIV ALIGN="CENTER">
+<TT>convert(pi,confrac,'ll')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,7,15,1,292]</TT>
+</DIV> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6774"
+  HREF="node263.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6768"
+  HREF="node255.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6762"
+  HREF="node261.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6770"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6772"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6775"
+  HREF="node263.html">Transformer une fraction continue</A>
+<B> monter:</B> <A NAME="tex2html6769"
+  HREF="node255.html">Les rationnels</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6763"
+  HREF="node261.html">Simplification d'un couple :</A>
+ &nbsp; <B>  <A NAME="tex2html6771"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6773"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

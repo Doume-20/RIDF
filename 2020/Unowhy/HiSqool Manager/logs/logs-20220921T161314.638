@@ -1,0 +1,84 @@
+2022-09-21 18:12:36 [4852] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-09-21 16:12:36.098: 2022-09-21 18:12:36 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +5ms
+2022-09-21 16:12:36.099: 2022-09-21 18:12:36 [4852] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> __/conf/agents/facts... +1ms
+2022-09-21 16:12:36.101: 2022-09-21 18:12:36 [4852] INFO [WatcherService] Received a list of 14 payloads +1ms
+2022-09-21 16:12:41.306: 2022-09-21 18:12:41 [4852] INFO [JS] Result: 0 +5205ms
+2022-09-21 16:12:41.307: 2022-09-21 18:12:41 [4852] INFO [JS] Stdout: 0.9.8.0 +0ms
+2022-09-21 16:12:41.308: 2022-09-21 18:12:41 [4852] INFO [JS] Stderr:  +0ms
+2022-09-21 16:12:41.309: 2022-09-21 18:12:41 [4852] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe +0ms
+2022-09-21 16:12:41.803: 2022-09-21 18:12:41 [4852] INFO [JS] Getting apps result: 0 +492ms
+2022-09-21 16:12:41.809: 2022-09-21 18:12:41 [4852] INFO [JS] Setting facts... +5ms
+2022-09-21 16:12:41.838: 2022-09-21 18:12:41 [4852] INFO [JS] Uploading facts... +2ms
+2022-09-21 16:12:44.195: 2022-09-21 18:12:44 [4852] INFO [Runner] Performing runner... +0ms
+2022-09-21 16:12:47.605: 2022-09-21 18:12:47 [4852] INFO [JS] Version of current package: 1.0 +3405ms
+2022-09-21 16:12:47.970: 2022-09-21 18:12:47 [4852] INFO [JS] Uploading facts result:  +367ms
+2022-09-21 16:12:47.970: 2022-09-21 18:12:47 [4852] INFO [Runner] Running result: true +1ms
+2022-09-21 16:12:47.980: 2022-09-21 18:12:47 [4852] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2022-09-21 16:12:47.980: 2022-09-21 18:12:47 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [Runner] Creating configuration unit runner object... +11ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +0ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +0ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2022-09-21 16:12:47.991: 2022-09-21 18:12:47 [4852] INFO [JS] Scheduling result: undefined +0ms
+2022-09-21 16:12:47.999: 2022-09-21 18:12:47 [4852] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-09-21 16:12:48.001: 2022-09-21 18:12:48 [4852] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +4ms
+2022-09-21 16:12:48.001: 2022-09-21 18:12:48 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2022-09-21 16:12:48.001: 2022-09-21 18:12:48 [4852] INFO [Runner] Creating configuration unit runner object... +3ms
+2022-09-21 16:12:48.011: 2022-09-21 18:12:48 [4852] INFO [Runner] Checking if runner needs to be performed... +4ms
+2022-09-21 16:12:48.011: 2022-09-21 18:12:48 [4852] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +1ms
+2022-09-21 16:12:48.011: 2022-09-21 18:12:48 [4852] INFO [JS] We are triggering +0ms
+2022-09-21 16:12:48.011: 2022-09-21 18:12:48 [4852] INFO [Runner] Performing runner... +0ms
+2022-09-21 16:12:48.011: 2022-09-21 18:12:48 [4852] INFO [JS] Performing facts gathering and upload... +1ms
+2022-09-21 16:12:49.011: 2022-09-21 18:12:49 [4852] INFO [JS] Result: 0 +994ms
+2022-09-21 16:12:49.011: 2022-09-21 18:12:49 [4852] INFO [JS] Stdout: 1.1.5 +1ms
+2022-09-21 16:12:49.013: 2022-09-21 18:12:49 [4852] INFO [JS] Stderr:  +1ms
+2022-09-21 16:12:49.013: 2022-09-21 18:12:49 [4852] INFO [JS] SqoolCtl version 0.9.8.0 +1ms
+2022-09-21 16:12:49.013: 2022-09-21 18:12:49 [4852] INFO [JS] HiSqool version 1.1.5 +1ms
+2022-09-21 16:12:49.013: 2022-09-21 18:12:49 [4852] INFO [JS] SqoolCtl is too old +1ms
+2022-09-21 16:12:49.013: 2022-09-21 18:12:49 [4852] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-09-21 16:12:49.013: 2022-09-21 18:12:49 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows-0.9.4 (983) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows-0.9.4.json +2ms
+2022-09-21 16:12:49.021: 2022-09-21 18:12:49 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\983\payload... +3ms
+2022-09-21 16:12:49.033: 2022-09-21 18:12:49 [4852] INFO [Runner] Creating configuration unit runner object... +15ms
+2022-09-21 16:12:49.033: 2022-09-21 18:12:49 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-09-21 16:12:49.033: 2022-09-21 18:12:49 [4852] INFO [JS] Checking that the onboarding unit needs to be performed +1ms
+2022-09-21 16:12:49.033: 2022-09-21 18:12:49 [4852] INFO [JS] Onboarding spawn: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\983\payload\FixShell.ps1 +1ms
+2022-09-21 16:12:50.349: 2022-09-21 18:12:50 [4852] INFO [JS] Version of current package: 3.110 +1307ms
+2022-09-21 16:12:51.766: 2022-09-21 18:12:51 [4852] INFO [JS] Version of current package: 4.06 +1422ms
+2022-09-21 16:12:51.928: 2022-09-21 18:12:51 [4852] INFO [JS] Version of current package: 9.19 +155ms
+2022-09-21 16:12:52.334: 2022-09-21 18:12:52 [4852] INFO [JS] Version of current package: 5.0 +134ms
+2022-09-21 16:12:52.534: 2022-09-21 18:12:52 [4852] INFO [JS] Version of current package: 1.1 +195ms
+2022-09-21 16:12:52.719: 2022-09-21 18:12:52 [4852] INFO [JS] Version of current package: 1.1 +183ms
+2022-09-21 16:13:00.184: 2022-09-21 18:13:00 [4852] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +7467ms
+2022-09-21 16:13:00.184: 2022-09-21 18:13:00 [4852] INFO [Runner] Running result: false +1ms
+2022-09-21 16:13:00.184: 2022-09-21 18:13:00 [4852] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2022-09-21 16:13:02.838: 2022-09-21 18:13:02 [4852] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/sqoolctl-paq_0.9.48.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\1021\payload.jara7764eaaece70bd6.new: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close +2654ms
+2022-09-21 16:13:02.846: 2022-09-21 18:13:02 [4852] WARN [PayloadDownloader] Received Error while downloading Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close: Error [ERR_STREAM_PREMATURE_CLOSE]: Premature close
+2022-09-21 16:13:02.846:     at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+2022-09-21 16:13:02.846:     at IncomingMessage.emit (events.js:376:20)
+2022-09-21 16:13:02.846:     at TLSSocket.socketCloseListener (_http_client.js:432:11)
+2022-09-21 16:13:02.846:     at TLSSocket.emit (events.js:388:22)
+2022-09-21 16:13:02.846:     at net.js:673:12
+2022-09-21 16:13:02.846:     at TCP.done (_tls_wrap.js:563:7) +3ms
+2022-09-21 16:13:02.848: 2022-09-21 18:13:02 [4852] INFO [PayloadDownloader] [PAYLOAD 1021] Persisting status=state=Error, error=Network, active=true +4ms
+2022-09-21 16:13:02.848: 2022-09-21 18:13:02 [4852] INFO [RequestPerformerService] Got disposed. +3ms
+2022-09-21 16:13:02.848: 2022-09-21 18:13:02 [4852] INFO [PayloadDownloader] [PAYLOAD 1021] Persisting status=state=Error, error=Network, active=true +1ms
+2022-09-21 16:13:02.856: 2022-09-21 18:13:02 [4852] INFO [PayloadDownloader] [PAYLOAD 1021] Error Network. Waiting 30 seconds before retrying... +4ms
+2022-09-21 16:13:12.289: 2022-09-21 18:13:12 [4852] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HISQOO~1\sqoolctl\sqoolctl.exe +9436ms
+2022-09-21 16:13:12.846: 2022-09-21 18:13:12 [4852] INFO [JS] Version of update package: 1.0 +551ms
+2022-09-21 16:13:12.846: 2022-09-21 18:13:12 [4852] INFO [JS] Your package is up to date +0ms
+2022-09-21 16:13:12.846: 2022-09-21 18:13:12 [4852] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-09-21 16:13:12.846: 2022-09-21 18:13:12 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +3ms
+2022-09-21 16:13:12.854: 2022-09-21 18:13:12 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2022-09-21 16:13:12.862: 2022-09-21 18:13:12 [4852] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-09-21 16:13:12.862: 2022-09-21 18:13:12 [4852] INFO [Runner] Checking if runner needs to be performed... +0ms
+2022-09-21 16:13:12.862: 2022-09-21 18:13:12 [4852] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-09-21 16:13:13.120: 2022-09-21 18:13:13 [4852] INFO [JS] Getting installed applications... +254ms
+2022-09-21 16:13:14.614: 2022-09-21 18:13:14 [4852] INFO [JS] Version of update package: 3.110 +1495ms
+2022-09-21 16:13:14.614: 2022-09-21 18:13:14 [4852] INFO [JS] Your package is up to date +1ms
+2022-09-21 16:13:14.614: 2022-09-21 18:13:14 [4852] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-09-21 16:13:14.622: 2022-09-21 18:13:14 [4852] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows-3.11.0 (984) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows-3.11.0.json +2ms
+2022-09-21 16:13:14.622: 2022-09-21 18:13:14 [4852] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\984\payload... +2ms
+2022-09-21 16:13:14.638: 2022-09-21 18:13:14 [4852] INFO [Runner] Creating configuration unit runner object... +15ms
+2022-09-21 16:13:14.638: 2022-09-21 18:13:14 [4852] INFO [Runner] Checking if runner needs to be performed... +1ms

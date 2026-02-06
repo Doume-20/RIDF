@@ -1,0 +1,61 @@
+2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.791: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.791: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.791: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +0ms
+2022-05-20 06:35:01.791: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +0ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +0ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +1ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [Runner] Performing runner... +0ms
+2022-05-20 06:35:01.807: 2022-05-20 8:35:01 [4976] INFO [JS] Performing facts gathering and upload... +12ms
+2022-05-20 06:35:16.399: 2022-05-20 8:35:16 [4976] INFO [JS] Getting installed applications... +14589ms
+2022-05-20 06:35:17.477: 2022-05-20 8:35:17 [4976] INFO [JS] Getting apps result: 0 +1069ms
+2022-05-20 06:35:17.477: 2022-05-20 8:35:17 [4976] INFO [JS] Setting facts... +1ms
+2022-05-20 06:35:17.477: 2022-05-20 8:35:17 [4976] INFO [JS] Uploading facts... +1ms
+2022-05-20 06:35:17.492: 2022-05-20 8:35:17 [4976] ERROR [JS] Error while setting facts: Error: getaddrinfo ENOTFOUND idf.hisqool.com
+2022-05-20 06:35:17.492:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +15ms
+2022-05-20 06:35:17.492: 2022-05-20 8:35:17 [4976] INFO [Runner] Running result: false +0ms
+2022-05-20 06:35:17.492: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [CommandService] Got command facts:set +444ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [CommandService] Got command units:trigger +4ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +1ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +1ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> logout... +1ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +1ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> logout... +1ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> logout... +1ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> logout... +0ms
+2022-05-20 06:35:17.945: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> logout... +0ms
+2022-05-20 06:35:17.961: 2022-05-20 8:35:17 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> logout... +1ms
+2022-05-20 06:35:17.961: 127.0.0.1 - - [20/May/2022:06:35:17 +0000] "POST /commands HTTP/1.1" 200 25 "-" "-"
+2022-05-20 06:35:23.467: 2022-05-20 8:35:23 [4976] INFO [MQTTObserver] Received digest MD5:7806e5dd5b95eecd239dbe3a89c64fb3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +5509ms
+2022-05-20 06:35:23.483: 2022-05-20 8:35:23 [4976] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0... +17ms
+2022-05-20 06:35:23.578: 2022-05-20 8:35:23 [4976] INFO [RequestPerformerService] Got response 200. +90ms
+2022-05-20 06:35:23.578: 2022-05-20 8:35:23 [4976] INFO [RequestPerformerService] Response content length is 12037  +1ms
+2022-05-20 06:35:23.606: 2022-05-20 8:35:23 [4976] INFO [RequestPerformerService] Download finished undefined. +29ms
+2022-05-20 06:35:23.608: 2022-05-20 8:35:23 [4976] INFO [RequestPerformerService] Digest: expected=7806e5dd5b95eecd239dbe3a89c64fb3, actual=176b24d598316bd11b4d2c80a5a38bb1. +3ms
+2022-05-20 06:35:23.608: 2022-05-20 8:35:23 [4976] ERROR [RequestPerformerService] Error while downloading https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\hisqool\configurations\groups\I2wtMgAsLCNCS5N00QtmmuOtLB0\config.jsone626e7c7a41b78cf.new: Error: Bad digest. Excpecting 7806e5dd5b95eecd239dbe3a89c64fb3, got 176b24d598316bd11b4d2c80a5a38bb1 +1ms
+2022-05-20 06:35:23.608: 2022-05-20 8:35:23 [4976] INFO [RequestPerformerService] Got disposed. +2ms
+2022-05-20 06:35:23.608: 2022-05-20 8:35:23 [4976] INFO [MQTTObserver] Error Error: Bad digest. Excpecting 7806e5dd5b95eecd239dbe3a89c64fb3, got 176b24d598316bd11b4d2c80a5a38bb1. Waiting 4000 milliseconds before retrying... +2ms
+2022-05-20 06:35:27.620: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] starting fetch for url https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0... +4006ms
+2022-05-20 06:35:27.761: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] Got response 200. +147ms
+2022-05-20 06:35:27.761: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] Response content length is 6483  +0ms
+2022-05-20 06:35:27.771: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] Download finished undefined. +7ms
+2022-05-20 06:35:27.771: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] Digest: expected=7806e5dd5b95eecd239dbe3a89c64fb3, actual=7806e5dd5b95eecd239dbe3a89c64fb3. +1ms
+2022-05-20 06:35:27.782: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] Got disposed. +6ms
+2022-05-20 06:35:27.782: 2022-05-20 8:35:27 [4976] INFO [RequestPerformerService] Complete. +3ms
+2022-05-20 06:35:27.800: 2022-05-20 8:35:27 [4976] INFO [MQTTObserver] Fetched [https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0] -> [C:\Program Files\Unowhy\HiSqool Manager\data\configurations\hisqool\configurations\groups\I2wtMgAsLCNCS5N00QtmmuOtLB0\config.json]. digest=[md5:7806e5dd5b95eecd239dbe3a89c64fb3] +16ms
+2022-05-20 06:35:27.802: 2022-05-20 8:35:27 [4976] INFO [KeyedObservableCollector] Sending 9 items +1ms
+2022-05-20 06:35:28.812: 2022-05-20 8:35:28 [4976] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1011ms
+2022-05-20 06:35:28.814: 2022-05-20 8:35:28 [4976] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-05-20 06:35:28.814: 2022-05-20 8:35:28 [4976] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +0ms
+2022-05-20 06:35:28.814: 2022-05-20 8:35:28 [4976] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-05-20 06:35:28.814: 2022-05-20 8:35:28 [4976] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +1ms

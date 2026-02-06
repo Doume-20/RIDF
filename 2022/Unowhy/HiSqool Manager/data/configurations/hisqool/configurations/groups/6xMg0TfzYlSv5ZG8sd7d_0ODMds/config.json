@@ -1,0 +1,52 @@
+{
+  "conf/application/windows/Pronote-Client": {
+    "description": "Installation de l'application Pronote-Client",
+    "payload": {
+      "id": 2552,
+      "name": "Pronote-Client (Windows)",
+      "description": "Pronote Client",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Pronote-Client/2025.2.6/package.jar",
+      "size": 262961567,
+      "digest": "MD5:64faffb91adb944a7c503592f1364596",
+      "metadata": {
+        "software": {
+          "id": "Pronote-Client",
+          "version": "2025.2.6"
+        },
+        "definition": {
+          "Id": "Pronote-Client",
+          "Name": "Pronote Client",
+          "Level": "Application",
+          "Factory": {
+            "Build": {
+              "Step": "844390",
+              "Workflow": "342478"
+            },
+            "Commit": {
+              "Id": "040fccbe3c4b975ed9eaf92308c195ecb895e315",
+              "Name": "master"
+            }
+          },
+          "Release": "2025.2.6",
+          "Version": "2025.2.6",
+          "Uninstall": {
+            "Name": "Uninstaller template (do not use)",
+            "Parameters": {
+              "Application": "INDEX EDUCATION - Client PRONOTE 2025",
+              "InstallShieldScript": "[InstallShield Silent]\r\nVersion=v7.00\r\nFile=Response File\r\n[File Transfer]\r\nOverwrittenReadOnly=NoToAll\r\n[{AA47B6FE-306E-408D-8699-C10F6FFD32DF}-DlgOrder]\r\nDlg0={AA47B6FE-306E-408D-8699-C10F6FFD32DF}-MessageBox-0\r\nCount=2\r\nDlg1={AA47B6FE-306E-408D-8699-C10F6FFD32DF}-SdFinish-0\r\n[{AA47B6FE-306E-408D-8699-C10F6FFD32DF}-MessageBox-0]\r\nResult=6\r\n[{AA47B6FE-306E-408D-8699-C10F6FFD32DF}-SdFinish-0]\r\nResult=1\r\nbOpt1=0\r\nbOpt2=0\r\n"
+            }
+          }
+        },
+        "versionName": "2025.2.6",
+        "applicationLabel": "Pronote Client"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  }
+}

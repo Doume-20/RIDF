@@ -1,0 +1,48 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.EventLog" ],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "EventLog",
+        "Args": {
+          "source": "sqoolmsr",
+          "logName": "Application",
+          "restrictedToMinimumLevel": "Warning"
+        }
+      }
+    ],
+    "Properties": {
+      "Application": "sqoolmsr"
+    }
+  },
+  "AppIdentifier": {
+    "IgnoreDirectories": [ "C:\\Windows\\SystemApps" ],
+    "IgnoreExplorerWindowClassNames": [
+      // Used in Alt+Tab
+      "XamlExplorerHostIslandWindow",
+      // Used in Alt+Tab
+      "ForegroundStaging",
+      // Used in Start menu
+      "Shell_SecondaryTrayWnd",
+      // Used in System tray icons popup
+      "Shell_TrayWnd",
+      // Used in System tray icons popup
+      "TopLevelWindowForOverflowXamlIsland",
+      // Used in widget Task bar
+      "ApplicationManager_DesktopShellWindow"
+    ],
+    "IgnoreAppNames": [ "Microsoft® Windows® Operating System" ]
+  },
+  "Fact": {
+    "MinUploadPeriodSeconds": 3600
+  }
+}

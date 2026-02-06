@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'instruction conditionnelle : if else, si alors sinon fsi</TITLE>
+<META NAME="description" CONTENT="L'instruction conditionnelle : if else, si alors sinon fsi">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node860.html">
+<LINK REL="previous" HREF="node858.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node860.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15694"
+  HREF="node860.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15688"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15682"
+  HREF="node858.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15690"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15692"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15695"
+  HREF="node860.html">L'instruction conditionnelle : switch</A>
+<B> monter:</B> <A NAME="tex2html15689"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15683"
+  HREF="node858.html">L'affectation d'une &#233;galit&#233; :</A>
+ &nbsp; <B>  <A NAME="tex2html15691"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15693"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011417000000000000000"></A><A NAME="22607"></A><A NAME="22608"></A><A NAME="22609"></A><A NAME="22610"></A><A NAME="22611"></A><A NAME="22612"></A>
+<BR>
+L'instruction conditionnelle : <TT>if else, si alors sinon fsi</TT>
+</H2>
+<TT>if</TT> est suivi d'un bool&#233;en entre des parenth&#232;ses.
+<BR><TT>if</TT> permet de faire, ou de ne pas faire, un bloc d'instructions, selon la 
+valeur de ce bool&#233;en.
+<BR><TT>if</TT> utilis&#233; avec <TT>else</TT> permet de choisir de faire, soit un bloc 
+d'instructions, soit un autre bloc d'instructions , selon la valeur du 
+bool&#233;en.
+<BR><TT>si</TT> est suivi d'un bool&#233;en et de <TT>alors</TT>.
+<BR>
+Selon la valeur de ce bool&#233;en <TT>si</TT> permet de faire, ou de ne pas faire, 
+les instructions situ&#233;es entre <TT>alors</TT> et <TT>fsi</TT>.
+<BR>
+Selon la valeur de ce bool&#233;en <TT>si</TT> utilis&#233; avec <TT>sinon</TT> permet de 
+choisir de faire, soit  
+les instructions situ&#233;es entre <TT>alors</TT> et <TT>sinon</TT>, soit les 
+instructions situ&#233;es entre <TT>sinon</TT> et <TT>fsi</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>a:=3;b:=2;</TT>
+</DIV>
+puis :
+<DIV ALIGN="CENTER">
+<TT>if (a&gt;b) {a:=a+5;b:=a-b;}</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>6</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>a:=3;b:=2;</TT>
+</DIV>
+puis :
+<DIV ALIGN="CENTER">
+<TT>si a&gt;b alors a:=a+5;b:=a-b;fsi</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>6</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>maxi(a,b):={if (a&gt;b) {return a;} else {return b;}}</TT>
+</DIV>
+puis :
+<DIV ALIGN="CENTER">
+<TT>maxi(2,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>maxi(a,b):={si a&gt;b alors retourne a; sinon retourne b;fsi}</TT>
+</DIV>
+puis :
+<DIV ALIGN="CENTER">
+<TT>maxi(2,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15694"
+  HREF="node860.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15688"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15682"
+  HREF="node858.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15690"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15692"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15695"
+  HREF="node860.html">L'instruction conditionnelle : switch</A>
+<B> monter:</B> <A NAME="tex2html15689"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15683"
+  HREF="node858.html">L'affectation d'une &#233;galit&#233; :</A>
+ &nbsp; <B>  <A NAME="tex2html15691"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15693"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

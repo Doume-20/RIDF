@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Calcul avec les racines exactes d'un polyn&#244;me : rootof</TITLE>
+<META NAME="description" CONTENT="Calcul avec les racines exactes d'un polyn&#244;me : rootof">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node453.html">
+<LINK REL="previous" HREF="node451.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node453.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9585"
+  HREF="node453.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9579"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9573"
+  HREF="node451.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9581"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9583"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9586"
+  HREF="node453.html">Racines exactes d'un polyn&#244;me</A>
+<B> monter:</B> <A NAME="tex2html9580"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9574"
+  HREF="node451.html">&#201;criture selon les puissances</A>
+ &nbsp; <B>  <A NAME="tex2html9582"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9584"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092523000000000000000"></A><A NAME="11366"></A>
+<BR>
+Calcul avec les racines exactes d'un polyn&#244;me : <TT>rootof</TT>
+</H2>
+Soient <I>P</I> et <I>Q</I> deux polyn&#244;mes donn&#233;s par la liste de leurs coefficients
+alors, <TT>rootof(P,Q)</TT> d&#233;signe la valeur <I>P</I>(<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">) o&#249; <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> est la 
+plus grande racine (en norme) de <I>Q</I>.
+<BR>
+On peut alors faire des calculs avec cette valeur.
+<BR><B>Exemple</B>
+<BR>
+Soit <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$"> la plus grande racine de <!-- MATH
+ $Q(x)=x^4+10x^2+1$
+ -->
+<I>Q</I>(<I>x</I>) = <I>x</I><SUP>4</SUP> +10<I>x</I><SUP>2</SUP> + 1.
+
+<UL>
+<LI>Calculer 
+<!-- MATH
+ $\displaystyle \frac{1}{\alpha}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img341.png"
+ ALT="$\displaystyle {\frac{{1}}{{\alpha}}}$"> o&#249; on tape :
+<DIV ALIGN="CENTER">
+<TT>normal(1/rootof([1,0],[1,0,10,0,1])) </TT>
+</DIV>
+car <I>P</I>(<I>x</I>) = <I>x</I> est repr&#233;sent&#233; par [1,0].
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>rootof([[-1,0,-10,0],[1,0,10,0,1]])</TT>
+</DIV>
+ce qui veut dire que :
+<BR><!-- MATH
+ $\displaystyle \frac{1}{\alpha}=-(\alpha)^3-10.\alpha$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img341.png"
+ ALT="$\displaystyle {\frac{{1}}{{\alpha}}}$"> = - (<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img342.png"
+ ALT="$\displaystyle \alpha$">)<SUP>3</SUP> -10.<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img342.png"
+ ALT="$\displaystyle \alpha$">
+<BR></LI>
+<LI>Calculer  <!-- MATH
+ $(\alpha)^2$
+ -->
+(<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">)<SUP>2</SUP>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>normal(rootof([1,0],[1,0,10,0,1])<code>^</code>2)</TT>
+</DIV>
+car <I>P</I>(<I>x</I>) = <I>x</I> est repr&#233;sent&#233; par [1,0], et pour avoir <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img343.png"
+ ALT="$ \alpha^{2}_{}$">, on
+&#233;l&#232;ve <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">=<TT>rootof([1,0],[1,0,10,0,1])</TT> au carr&#233;.
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-5-2*sqrt(6)</TT>
+</DIV>
+or :
+<DIV ALIGN="CENTER">
+<TT>normal(rootof([1,0,0],[1,0,10,0,1])<code>^</code>2)</TT>
+</DIV>
+car <I>P</I>(<I>x</I>) = <I>x</I><SUP>2</SUP> est repr&#233;sent&#233; par [1,0,0], pour avoir <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img343.png"
+ ALT="$ \alpha^{2}_{}$"> 
+directement.
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-5-2*sqrt(6)</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

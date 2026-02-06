@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La commande Xcas : simplex_reduce</TITLE>
+<META NAME="description" CONTENT="La commande Xcas : simplex_reduce">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node682.html">
+<LINK REL="previous" HREF="node680.html">
+<LINK REL="up" HREF="node680.html">
+<LINK REL="next" HREF="node682.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12959"
+  HREF="node682.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12953"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12947"
+  HREF="node680.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12955"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12957"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12960"
+  HREF="node682.html">&#201;criture matricielle et algorithme</A>
+<B> monter:</B> <A NAME="tex2html12954"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12948"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+ &nbsp; <B>  <A NAME="tex2html12956"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12958"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009451000000000000000">
+La commande <TT>Xcas</TT> : <TT>simplex_reduce</TT></A>
+</H2>
+<B>Cas le plus simple</B>
+<BR>
+La fonction 
+<TT>simplex_reduce</TT> effectue la r&#233;duction par l'algorithme du simplexe pour
+trouver :
+<P><!-- MATH
+ \begin{displaymath}
+\mbox{max}(c.x) \quad \mbox{ avec } A.x \leq b,\ x \geq 0,\ b\geq 0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+max(<I>c</I>.<I>x</I>)&nbsp;&nbsp;&nbsp;&nbsp; avec <I>A</I>.<I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$\displaystyle \leq$"> <I>b</I>,&nbsp;<I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img427.png"
+ ALT="$\displaystyle \geq$"> 0,&nbsp;<I>b</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img427.png"
+ ALT="$\displaystyle \geq$"> 0
+</DIV><P></P>
+o&#249; <I>c</I>, <I>x</I> sont des vecteurs de <!-- MATH
+ $\mathbb R^n$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>n</SUP>, <I>b</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 
+est un vecteur de <!-- MATH
+ $\mathbb R^p$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$"><SUP>p</SUP> et
+<I>A</I> est une matrice de <I>p</I> lignes et de <I>n</I> colonnes.
+
+<P>
+<TT>simplex_reduce</TT> a comme argument <TT>A,b,c</TT> et
+renvoie  <TT>max(c.x)</TT>, la solution augment&#233;e de <TT>x</TT>
+et la matrice r&#233;duite.
+<BR><B>Exemple</B>
+<BR>
+Chercher <P><!-- MATH
+ \begin{displaymath}
+\mbox{max}(X+2Y)  \mbox{ lorsque }
+\left\{
+\begin{array}{rcl}
+(X,Y) & \geq & 0 \\
+-3X +2Y  & \leq & 3\\
+X +Y  & \leq & 4
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+max(<I>X</I> + 2<I>Y</I>) lorsque <IMG
+ WIDTH="22" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img428.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+(X,Y) &amp; \geq &amp; 0 \\
+-3X +2Y &amp; \leq &amp; 3\\
+X +Y &amp; \leq &amp; 4
+\end{array}
+}\right.$"><IMG
+ WIDTH="156" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img429.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+(X,Y) &amp; \geq &amp; 0 \\
+-3X +2Y &amp; \leq &amp; 3\\
+X +Y &amp; \leq &amp; 4
+\end{array}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>simplex_reduce([[-3,2],[1,1]],[3,4],[1,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>7,[1,3,0,0],[[0,1,1/5,3/5,3],[1,0,(-1)/5,2/5,1], [0,0,1/5,8/5,7]]</TT>
+</DIV>
+Ce qui veut dire que le maximum de <TT>X+2Y</TT> sous ces conditions
+est <TT>7</TT>, il est obtenu pour <TT>X=1,Y=3</TT> 
+car <TT>[1,3,0,0]</TT> est la solution augment&#233;e et la matrice 
+r&#233;duite est :
+<BR><TT>[[0,1,1/5,3/5,3],[1,0,(-1)/5,2/5,1], [0,0,1/5,8/5,7]]</TT>.
+
+<P>
+<B>Un cas plus compliqu&#233; qui se ram&#232;ne au cas simple</B>
+<BR><TT>simplex_reduce</TT> oblige &#224; r&#233;&#233;crire les contraintes impliquant une 
+seule variable pour qu'elles soient  sous la forme <!-- MATH
+ $x_k \geq 0$
+ -->
+<I>x</I><SUB>k</SUB> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0, puis &#224;
+&#233;liminer les variables sans contraintes puis &#224; ajouter des variables afin 
+d'avoir comme contraintes : toutes les composantes des
+&#233;l&#233;ments du simplexe sont positives.
+Par exemple, si on part du probl&#232;me :
+<P><!-- MATH
+ \begin{displaymath}
+\mbox{min}(2x+y-z+4)  \mbox{ lorsque }
+\left\{
+\begin{array}{rcl}
+x & \leq & 1 \\
+y & \geq & 2 \\
+x+3y-z & = & 2 \\
+2x-y+z & \leq & 8\\
+-x+y & \leq & 5
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+min(2<I>x</I> + <I>y</I> - <I>z</I> + 4) lorsque <IMG
+ WIDTH="22" HEIGHT="125" ALIGN="MIDDLE" BORDER="0"
+ SRC="img430.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+x &amp; \leq &amp; 1 \\
+y &amp; \geq &amp;...
+...x+3y-z &amp; = &amp; 2 \\
+2x-y+z &amp; \leq &amp; 8\\
+-x+y &amp; \leq &amp; 5
+\end{array}
+}\right.$"><IMG
+ WIDTH="154" HEIGHT="125" ALIGN="MIDDLE" BORDER="0"
+ SRC="img431.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+x &amp; \leq &amp; 1 \\
+y &amp; \geq &amp; 2 \\
+x+3y-z &amp; = &amp; 2 \\
+2x-y+z &amp; \leq &amp; 8\\
+-x+y &amp; \leq &amp; 5
+\end{array}$">
+</DIV><P></P>
+on pose <I>x</I> = 1 - <I>X</I>, <I>y</I> = <I>Y</I> + 2, <I>z</I> = 5 - <I>X</I> + 3<I>Y</I>
+le  probl&#232;me devient
+chercher le minimum de <!-- MATH
+ $(-2X+Y-(5-X+3Y)+8)$
+ -->
+(- 2<I>X</I> + <I>Y</I> - (5 - <I>X</I> + 3<I>Y</I>) + 8) lorsque
+<P><!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+X & \geq & 0 \\
+Y & \geq & 0 \\
+2(1-X)-(Y+2)+ 5-X+3Y & \leq & 8\\
+-(1-X) +(Y+2)  & \leq & 5
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="22" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp;...
+...-X)-(Y+2)+ 5-X+3Y &amp; \leq &amp; 8\\
+-(1-X) +(Y+2) &amp; \leq &amp; 5
+\end{array}
+}\right.$"><IMG
+ WIDTH="332" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img433.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+2(1-X)-(Y+2)+ 5-X+3Y &amp; \leq &amp; 8\\
+-(1-X) +(Y+2) &amp; \leq &amp; 5
+\end{array}$">
+</DIV><P></P>
+donc chercher le minimum de&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+(-X-2Y+3) \mbox{ lorsque }
+\left\{
+\begin{array}{rcl}
+X & \geq & 0 \\
+Y & \geq & 0 \\
+-3X+2Y & \leq & 3\\
+X +Y  & \leq & 4
+\end{array} 
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+(- <I>X</I> - 2<I>Y</I> + 3) lorsque <IMG
+ WIDTH="22" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img434.png"
+ ALT="$\displaystyle \left\{\vphantom{
+\begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+-3X+2Y &amp; \leq &amp; 3\\
+X +Y &amp; \leq &amp; 4
+\end{array}
+}\right.$"><IMG
+ WIDTH="156" HEIGHT="105" ALIGN="MIDDLE" BORDER="0"
+ SRC="img435.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+X &amp; \geq &amp; 0 \\
+Y &amp; \geq &amp; 0 \\
+-3X+2Y &amp; \leq &amp; 3\\
+X +Y &amp; \leq &amp; 4
+\end{array}$">
+</DIV><P></P>
+ce qui revient &#224; chercher le maximum de <!-- MATH
+ $-(-X-2Y+3)=X+2Y-3$
+ -->
+- (- <I>X</I> - 2<I>Y</I> + 3) = <I>X</I> + 2<I>Y</I> - 3
+sous les m&#234;mes conditions, on est donc ramen&#233; au probl&#232;me
+pr&#233;c&#233;dent (le maximum est donc de 7-3=4).
+
+<P>
+<B>Cas g&#233;n&#233;ral</B>
+<BR>
+Tous les cas ne se ram&#232;nent pas directement au cas simple ci-dessus.
+On verra plus loin comment les traiter, cela n&#233;cessitera d'utiliser
+une autre forme d'appel de <TT>simplex_reduce</TT>, que l'on peut
+d'ailleurs aussi utiliser dans le cas simple de la mani&#232;re
+suivante&nbsp;:
+si <TT>A</TT> a <I>p</I> lignes et <I>n</I> colonnes et si on d&#233;finit :
+<DIV ALIGN="CENTER">
+<TT>B:=augment(A,idn(p));</TT> <TT>C:=border(B,b);</TT> 
+<BR><TT>d:=append(-c,0$(p+1));</TT> <TT>D:=augment(C,[d]);</TT>
+
+</DIV>
+<TT>simplex_reduce</TT> accepte aussi en argument <TT>D</TT>.
+<BR>
+Pour l'exemple pr&#233;c&#233;dent, on tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[[-3,2],[1,1]];B:=augment(A,idn(2)); C:=border(B,[3,4]);
+D:=augment(C,[[-1,-2,0,0,0]])</TT>
+</DIV>
+On a <TT>C=[[-3,2,1,0,3],[1,1,0,1,4]]</TT>
+<BR>
+et <TT>D=[[-3,2,1,0,3],[1,1,0,1,4],[-1,-2,0,0,0]]</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>simplex_reduce(D)</TT>
+</DIV>
+On obtient le m&#234;me r&#233;sultat que pr&#233;c&#233;demment.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12959"
+  HREF="node682.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12953"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12947"
+  HREF="node680.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12955"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12957"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12960"
+  HREF="node682.html">&#201;criture matricielle et algorithme</A>
+<B> monter:</B> <A NAME="tex2html12954"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12948"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+ &nbsp; <B>  <A NAME="tex2html12956"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12958"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

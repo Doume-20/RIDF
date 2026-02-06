@@ -1,0 +1,55 @@
+2021-10-21 22:07:54 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2021-10-21 20:07:54.148: 2021-10-21 22:07:54 [11080] INFO [Runner] Creating configuration unit runner object... +15ms
+2021-10-21 20:07:54.148: 2021-10-21 22:07:54 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:54.148: 2021-10-21 22:07:54 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:07:54.164: 2021-10-21 22:07:54 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2021-10-21 20:07:54.164: 2021-10-21 22:07:54 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +2ms
+2021-10-21 20:07:54.179: 2021-10-21 22:07:54 [11080] INFO [Runner] Creating configuration unit runner object... +17ms
+2021-10-21 20:07:54.179: 2021-10-21 22:07:54 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:54.179: 2021-10-21 22:07:54 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:07:54.226: 2021-10-21 22:07:54 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +42ms
+2021-10-21 20:07:54.226: 2021-10-21 22:07:54 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +2ms
+2021-10-21 20:07:54.242: 2021-10-21 22:07:54 [11080] INFO [Runner] Creating configuration unit runner object... +17ms
+2021-10-21 20:07:54.242: 2021-10-21 22:07:54 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:54.242: 2021-10-21 22:07:54 [11080] INFO [WatcherService] Received a list of 14 payloads +5ms
+2021-10-21 20:07:54.258: 2021-10-21 22:07:54 [11080] INFO [Runner] Runner doesn't need to be performed +2ms
+2021-10-21 20:07:54.258: 2021-10-21 22:07:54 [11080] INFO [Runner] Performing runner... +8ms
+2021-10-21 20:07:54.258: 2021-10-21 22:07:54 [11080] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2021-10-21 20:07:54.320: 2021-10-21 22:07:54 [11080] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +60ms
+2021-10-21 20:07:54.351: 2021-10-21 22:07:54 [11080] INFO [JS] Result: 0 +30ms
+2021-10-21 20:07:54.351: 2021-10-21 22:07:54 [11080] INFO [JS] Stdout:  +1ms
+2021-10-21 20:07:54.367: 2021-10-21 22:07:54 [11080] INFO [JS] Stderr: #< CLIXML
+2021-10-21 20:07:54.367: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +1ms
+2021-10-21 20:07:54.367: 2021-10-21 22:07:54 [11080] INFO [Runner] Running result: true +3ms
+2021-10-21 20:07:54.367: 2021-10-21 22:07:54 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +2ms
+2021-10-21 20:07:54.367: 2021-10-21 22:07:54 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +2ms
+2021-10-21 20:07:54.398: 2021-10-21 22:07:54 [11080] INFO [Runner] Creating configuration unit runner object... +38ms
+2021-10-21 20:07:54.414: 2021-10-21 22:07:54 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:07:54.414: 2021-10-21 22:07:54 [11080] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe +2ms
+2021-10-21 20:07:54.461: 2021-10-21 22:07:54 [11080] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +51ms
+2021-10-21 20:07:54.492: 2021-10-21 22:07:54 [11080] INFO [JS] Current GPO version: 1.5 +22ms
+2021-10-21 20:07:54.492: 2021-10-21 22:07:54 [11080] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-10-21 20:07:54.492: 2021-10-21 22:07:54 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +1ms
+2021-10-21 20:07:55.601: 2021-10-21 22:07:55 [11080] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-10-21 20:07:55.616: 2021-10-21 22:07:55 [11080] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (360) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +2ms
+2021-10-21 20:07:56.226: 2021-10-21 22:07:56 [11080] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-10-21 20:07:56.226: 2021-10-21 22:07:56 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/sqoolctl (279) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_sqoolctl.json +2ms
+2021-10-21 20:07:58.600: 2021-10-21 22:07:58 [11080] INFO [RequestPerformerService] Download finished undefined. +2365ms
+2021-10-21 20:07:58.600: 2021-10-21 22:07:58 [11080] INFO [RequestPerformerService] Digest: expected=be4bc82eaae75e5773ca16bfd47303c5, actual=be4bc82eaae75e5773ca16bfd47303c5. +2ms
+2021-10-21 20:07:58.600: 2021-10-21 22:07:58 [11080] INFO [PayloadDownloader] [PAYLOAD 433] Persisting status=state=Downloaded, error=None, active=true +5ms
+2021-10-21 20:07:58.600: 2021-10-21 22:07:58 [11080] INFO [PayloadDownloader] [PAYLOAD 433] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload... +3ms
+2021-10-21 20:07:58.616: 2021-10-21 22:07:58 [11080] INFO [RequestPerformerService] Got disposed. +11ms
+2021-10-21 20:07:58.616: 2021-10-21 22:07:58 [11080] INFO [RequestPerformerService] Complete. +4ms
+2021-10-21 20:08:04.739: 2021-10-21 22:08:04 [11080] INFO [JS] Version of update package: 2.4 +6113ms
+2021-10-21 20:08:04.739: 2021-10-21 22:08:04 [11080] INFO [JS] Your package is up to date +1ms
+2021-10-21 20:08:04.739: 2021-10-21 22:08:04 [11080] INFO [Runner] Runner doesn't need to be performed +2ms
+2021-10-21 20:08:04.739: 2021-10-21 22:08:04 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (181) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +6ms
+2021-10-21 20:08:04.754: 2021-10-21 22:08:04 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\181\payload... +19ms
+2021-10-21 20:08:04.785: 2021-10-21 22:08:04 [11080] INFO [Runner] Creating configuration unit runner object... +27ms
+2021-10-21 20:08:04.785: 2021-10-21 22:08:04 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:08:04.785: 2021-10-21 22:08:04 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-10-21 20:08:04.879: 2021-10-21 22:08:04 [11080] INFO [JS] Version of update package: 1.0 +90ms
+2021-10-21 20:08:04.879: 2021-10-21 22:08:04 [11080] INFO [JS] Your package is up to date +1ms
+2021-10-21 20:08:04.879: 2021-10-21 22:08:04 [11080] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-10-21 20:08:04.879: 2021-10-21 22:08:04 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +3ms
+2021-10-21 20:08:04.895: 2021-10-21 22:08:04 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms

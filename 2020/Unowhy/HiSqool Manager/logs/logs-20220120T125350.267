@@ -1,0 +1,78 @@
+2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +4ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +1ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +2ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +1ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.751: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2022-01-20 12:53:38.751: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +2ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +1ms
+2022-01-20 12:53:38.767: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-01-20 12:53:42.167: 2022-01-20 13:53:42 [5284] INFO [JS] Result: 0 +3401ms
+2022-01-20 12:53:42.167: 2022-01-20 13:53:42 [5284] INFO [JS] Stdout: 1.1.4.21090425 +0ms
+2022-01-20 12:53:42.167: 2022-01-20 13:53:42 [5284] INFO [JS] Stderr:  +1ms
+2022-01-20 12:53:42.183: 2022-01-20 13:53:42 [5284] INFO [JS] Build number of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe is 21090425 +1ms
+2022-01-20 12:53:42.183: 2022-01-20 13:53:42 [5284] INFO [JS] Getting file version of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe +1ms
+2022-01-20 12:53:43.676: 2022-01-20 13:53:43 [5284] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-01-20 12:53:43.691: 2022-01-20 13:53:43 [5284] INFO [ConfigurationRunner] Writing execution result of __/unowhy/manager/windows (360) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___unowhy_manager_windows.json +5ms
+2022-01-20 12:53:45.706: 2022-01-20 13:53:45 [5284] INFO [JS] GUID package: f7639fd5-22e3-42bd-9806-a3aafb44760a +2016ms
+2022-01-20 12:53:45.753: 2022-01-20 13:53:45 [5284] INFO [JS] GUID package: 105da565-d050-4a60-9c4f-556c6bdb5775 +47ms
+2022-01-20 12:53:45.831: 2022-01-20 13:53:45 [5284] INFO [JS] GUID package: 10108c63-247d-41bd-92fa-2e15beeb2c93 +87ms
+2022-01-20 12:53:45.878: 2022-01-20 13:53:45 [5284] INFO [JS] Result: 0 +36ms
+2022-01-20 12:53:45.878: 2022-01-20 13:53:45 [5284] INFO [JS] Stdout: Custom shell possible: True +1ms
+2022-01-20 12:53:45.878: 2022-01-20 13:53:45 [5284] INFO [JS] Stderr: #< CLIXML
+2022-01-20 12:53:45.878: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: True</ToString><Props><S N="Message">Custom shell possible: True</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2022-01-20T13:53:44.2071155+01:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">9340</U32><U32 N="NativeThreadId">10876</U32><U32 N="ManagedThreadId">10</U32></Props></Obj></Objs> +0ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] Result: 0 +293ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] Stdout: 1.1.4.21090425 +1ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] Stderr:  +1ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] Build number of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe is 21090425 +1ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] New version 21090425 <=>  21090425 Installed +1ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] Current version is up to date +1ms
+2022-01-20 12:53:46.175: 2022-01-20 13:53:46 [5284] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +2ms
+2022-01-20 12:53:46.331: 2022-01-20 13:53:46 [5284] INFO [JS] Getting installed applications... +146ms
+2022-01-20 12:53:46.378: 2022-01-20 13:53:46 [5284] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +49ms
+2022-01-20 12:53:46.909: 2022-01-20 13:53:46 [5284] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2022-01-20 12:53:46.909: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2022-01-20 12:53:46.909: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2022-01-20 12:53:46.909: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2022-01-20 12:53:46.909: Arguments=
+2022-01-20 12:53:46.909: ArgumentsExpanded=
+2022-01-20 12:53:46.909: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2022-01-20 12:53:46.909: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2022-01-20 12:53:46.909: RunStyle=1
+2022-01-20 12:53:46.909: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2022-01-20 12:53:46.909: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2022-01-20 12:53:46.909: HotKey=0 (None)
+2022-01-20 12:53:46.909: Description=HiSqool
+2022-01-20 12:53:46.909: 
+2022-01-20 12:53:46.909: The command completed successfully. +528ms
+2022-01-20 12:53:46.909: 2022-01-20 13:53:46 [5284] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2022-01-20 12:53:47.346: 2022-01-20 13:53:47 [5284] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2022-01-20 12:53:47.346: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2022-01-20 12:53:47.346: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2022-01-20 12:53:47.346: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2022-01-20 12:53:47.346: Arguments=
+2022-01-20 12:53:47.346: ArgumentsExpanded=
+2022-01-20 12:53:47.346: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2022-01-20 12:53:47.346: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2022-01-20 12:53:47.346: RunStyle=1
+2022-01-20 12:53:47.346: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2022-01-20 12:53:47.346: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2022-01-20 12:53:47.346: HotKey=0 (None)
+2022-01-20 12:53:47.346: Description=HiSqool
+2022-01-20 12:53:47.346: 
+2022-01-20 12:53:47.346: The command completed successfully. +439ms
+2022-01-20 12:53:47.346: 2022-01-20 13:53:47 [5284] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2022-01-20 12:53:47.643: 2022-01-20 13:53:47 [5284] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +292ms
+2022-01-20 12:53:47.768: 2022-01-20 13:53:47 [5284] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +122ms
+2022-01-20 12:53:47.768: 2022-01-20 13:53:47 [5284] INFO [JS] Actions to perform: 1 +1ms
+2022-01-20 12:53:47.768: 2022-01-20 13:53:47 [5284] INFO [Runner] Performing runner... +1ms
+2022-01-20 12:53:47.768: 2022-01-20 13:53:47 [5284] INFO [JS] Running installer... +4ms
+2022-01-20 12:53:47.768: 2022-01-20 13:53:47 [5284] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +2ms
+2022-01-20 12:53:47.924: 2022-01-20 13:53:47 [5284] INFO [JS] GUID package: 52191d55-a6aa-4d53-9830-fded6eb78582 +151ms
+2022-01-20 12:53:50.267: 2022-01-20 13:53:50 [5284] INFO [RequestPerformerService] Download finished undefined. +2338ms

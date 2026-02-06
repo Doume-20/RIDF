@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fonction de r&#233;partition inverse de Poisson : poisson_icdf</TITLE>
+<META NAME="description" CONTENT="Fonction de r&#233;partition inverse de Poisson : poisson_icdf">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node818.html">
+<LINK REL="previous" HREF="node816.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node818.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15032"
+  HREF="node818.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15026"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15020"
+  HREF="node816.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15028"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15030"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15033"
+  HREF="node818.html">Densit&#233; de probabilit&#233; de</A>
+<B> monter:</B> <A NAME="tex2html15027"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15021"
+  HREF="node816.html">Fonction de r&#233;partition de</A>
+ &nbsp; <B>  <A NAME="tex2html15029"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15031"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001046000000000000000"></A><A NAME="21402"></A>
+<BR>
+Fonction de r&#233;partition inverse de Poisson  : <TT>poisson_icdf</TT>
+</H2>
+Lorsqu'une variable al&#233;atoire <I>X</I> suit une loi de Poisson de param&#232;tre 
+<TT>mu</TT>, c'est &#224; dire de moyenne <TT>mu</TT> et d'&#233;cart-type <TT>mu</TT>,
+<BR><TT>poisson_icdf(mu,t)</TT>= <I>h</I> &#233;quivaut &#224; 
+<BR><!-- MATH
+ $Proba(X\leq h)=$
+ -->
+<I>Proba</I>(<I>X</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>h</I>) =<TT>t= poisson_cdf(mu,h)</TT> avec <!-- MATH
+ $X\in \mathcal P(mu)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \mathcal {P}$">(<I>mu</I>).
+<BR><TT>poisson_icdf(mu,t)</TT> est l'inverse de la fonction de r&#233;partition de 
+la loi de Poisson de param&#232;tre <TT>mu</TT>,
+On tape :
+<DIV ALIGN="CENTER">
+<TT>poisson_icdf(10.0,0.975)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.125110035721</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

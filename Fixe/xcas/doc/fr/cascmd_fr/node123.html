@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Graphe en "4D"</TITLE>
+<META NAME="description" CONTENT="Graphe en "4D"">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node122.html">
+<LINK REL="up" HREF="node119.html">
+<LINK REL="next" HREF="node124.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4157"
+  HREF="node124.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4151"
+  HREF="node119.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4147"
+  HREF="node122.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4153"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4155"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4158"
+  HREF="node124.html">Graphe 2D pour compatibilit&#233;</A>
+<B> monter:</B> <A NAME="tex2html4152"
+  HREF="node119.html">Graphe d'une fonction :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4148"
+  HREF="node122.html">Graphe "3D" avec les</A>
+ &nbsp; <B>  <A NAME="tex2html4154"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4156"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00664000000000000000"></A><A NAME="sec:plotfunc4"></A>
+<BR>
+Graphe en "4D"
+</H2>
+<TT>plotfunc</TT> permet aussi de repr&#233;senter une expression <TT>E</TT>
+&#224; valeur dans <!-- MATH
+ $\mathbb{C}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \mathbb {C}$"> mais non imaginaire pur : on repr&#233;sente 
+<TT>abs(E)</TT> selon <I>Oz</I> et <TT>arg(E)</TT> par une couleur. Cela permet de 
+visualiser les points ayant m&#234;me argument.
+<BR>
+Si <TT>E</TT> est imaginaire pur c'est <TT>E/i</TT> qui est represent&#233; en 
+d&#233;grad&#233; (cf <A HREF="node122.html#sec:plotfunc3d">3.6.3</A>)
+Les deux arguments principaux de <TT>plotfunc</TT> sont alors  une expression de 
+deux variables &#224; valeur dans  <!-- MATH
+ $\mathbb{C}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \mathbb {C}$"> et la liste des noms des deux 
+variables.
+<BR>
+On peut aussi sp&#233;cifier le nombre de points d'&#233;chantillonnage de la
+fonction &#224; repr&#233;senter en utilisant <code>nstep</code> et demander un affichage en 
+une forme pleine (<TT>affichage=rempli</TT>.
+<BR><TT>plotfunc</TT> trace la  surface aux couleurs de l'arc en ciel d&#233;finie par le
+module du premier argument soit <TT>z=abs(E)</TT>, chaque couleur est une 
+valeur de <TT>arg(E)</TT>.
+<BR>
+On peut faire tourner ce graphique selon 
+l'axe des <TT>x</TT>, l'axe des <TT>y</TT> ou l'axe des <TT>z</TT>. Pour cela, il faut 
+cliquer avec la souris dans la fen&#234;tre graphique  en dehors du 
+parall&#233;l&#233;pip&#233;de servant &#224; la repr&#233;sentation, puis faire bouger la 
+souris  (sans relacher son bouton) ou utiliser les  touches <TT>x</TT>, <TT>X</TT>, 
+<TT>y</TT>, <TT>Y</TT>, <TT>z</TT> et <TT>Z</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc((x+i*y)<code>^</code>2,[x,y])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Un graphique en 3D color&#233; repr&#233;sentant z=abs((x+i*y)<code>^</code>2 et permettant de visualiser les points ayant m&#234;me argument</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc((x+i*y)<code>^</code>2,[x,y],affichage=rempli)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+La surface pr&#233;cedente selon une forme pleine aux couleur de l'arc en ciel
+</DIV>
+Pour n'avoir qu'une portion de surface on peut indiquer l'intervalle de 
+variation dans le deuxi&#232;me et le trois&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>plotfunc((x+i*y)<code>^</code>2,[x=-1..1,y=-2..2], nstep=900, affichage=rempli)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+La portion de la surface pr&#233;cedente selon une forme pleine aux couleur de l'arc en ciel avec x entre -1 et 1, y entre -2 et 2 et avec 900 points d'&#233;chantillonnage
+</DIV>
+<B>Remarque</B>
+<BR>
+Si vous voulez l'impression ou la traduction en Latex, il faut utiliser :
+<BR><TT>M<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Exporter/Imprimer<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Print(with Latex)</TT>. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4157"
+  HREF="node124.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4151"
+  HREF="node119.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4147"
+  HREF="node122.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4153"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4155"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4158"
+  HREF="node124.html">Graphe 2D pour compatibilit&#233;</A>
+<B> monter:</B> <A NAME="tex2html4152"
+  HREF="node119.html">Graphe d'une fonction :</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4148"
+  HREF="node122.html">Graphe "3D" avec les</A>
+ &nbsp; <B>  <A NAME="tex2html4154"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4156"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

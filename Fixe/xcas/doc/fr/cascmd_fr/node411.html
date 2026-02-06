@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>fourier_bn</TITLE>
+<META NAME="description" CONTENT="fourier_bn">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node412.html">
+<LINK REL="previous" HREF="node410.html">
+<LINK REL="up" HREF="node409.html">
+<LINK REL="next" HREF="node412.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8976"
+  HREF="node412.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8970"
+  HREF="node409.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8964"
+  HREF="node410.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8972"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8974"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8977"
+  HREF="node412.html">fourier_cn</A>
+<B> monter:</B> <A NAME="tex2html8971"
+  HREF="node409.html">Les coefficients de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8965"
+  HREF="node410.html">fourier_an</A>
+ &nbsp; <B>  <A NAME="tex2html8973"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8975"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009231200000000000000"></A><A NAME="10080"></A><A NAME="sec:fourier_bn"></A>
+<BR>
+<TT>fourier_bn</TT>
+</H3>
+<TT>fourier_bn</TT> a quatre ou cinq param&#232;tres : une expression 
+<I>ex</I> dependant d'une variable, le nom de la variable (par exemple <I>x</I>), la 
+p&#233;riode <I>T</I>, un entier <I>n</I> et <I>a</I> (<I>a</I> vaut 0 par d&#233;faut).
+<BR><TT>fourier_bn(ex,x,T,n,a)</TT> renvoie le coefficient de Fourier <I>b</I><SUB>n</SUB> d'une 
+fonction de variable <I>x</I> d&#233;finie sur [<I>a</I>, <I>a</I> + <I>T</I>[ par <I>f</I> (<I>x</I>) = <I>ex</I> et p&#233;riodique 
+de p&#233;riode <I>T</I>.
+<BR>
+Si <I>f</I> est continue par morceaux <TT>fourier_bn(ex,x,T,n,a)</TT> renvoie :
+<BR><!-- MATH
+ $\displaystyle b_n=\frac{2}{T}\int_a^{a+T}f(x)\sin(\frac{2\pi nx}{T})dx$
+ -->
+<I>b</I><SUB>n</SUB> = <IMG
+ WIDTH="21" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.png"
+ ALT="$\displaystyle {\frac{{2}}{{T}}}$"><IMG
+ WIDTH="50" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$\displaystyle \int_{a}^{{a+T}}$"><I>f</I> (<I>x</I>)sin(<IMG
+ WIDTH="48" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$\displaystyle {\frac{{2\pi nx}}{{T}}}$">)<I>dx</I>
+<BR>
+Si l'on veut que les calculs soient simplifi&#233;s il faut dire que <I>n</I> est un entier en tapant <TT>assume(n,integer)</TT>.
+<BR><B>Examples</B> 
+
+<UL>
+<LI>Soit la fonction <I>f</I>, de p&#233;riode <I>T</I> = 2, d&#233;finie sur [- 1;1[ par 
+<I>f</I> (<I>x</I>) = <I>x</I><SUP>2</SUP>.
+<BR>
+On tape, pour avoir son coefficient <I>b</I><SUB>n</SUB> (<I>n</I> <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> 0) :
+ <DIV ALIGN="CENTER">
+<TT>assume(n,integer);fourier_bn(x<code>^</code>2,x,2,n,-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+</LI>
+<LI>Soit la fonction <I>f</I>, de p&#233;riode <I>T</I> = 2, d&#233;finie sur [- 1;1[ par 
+<I>f</I> (<I>x</I>) = <I>x</I><SUP>3</SUP>.
+<BR>
+On tape, pour avoir son coefficient <I>b</I><SUB>1</SUB> :
+ <DIV ALIGN="CENTER">
+<TT>fourier_bn(x<code>^</code>3,x,2,1,-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(2*pi<code>^</code>2-12)/pi<code>^</code>3</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

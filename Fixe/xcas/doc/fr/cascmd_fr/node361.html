@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Longueur d'un arc de courbe : arcLen</TITLE>
+<META NAME="description" CONTENT="Longueur d'un arc de courbe : arcLen">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node362.html">
+<LINK REL="previous" HREF="node360.html">
+<LINK REL="up" HREF="node359.html">
+<LINK REL="next" HREF="node362.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8236"
+  HREF="node362.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8230"
+  HREF="node359.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8224"
+  HREF="node360.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8232"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8234"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8237"
+  HREF="node362.html">Maximum et minimum d'une</A>
+<B> monter:</B> <A NAME="tex2html8231"
+  HREF="node359.html">D&#233;rivation et variation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8225"
+  HREF="node360.html">Fonction d&#233;riv&#233;e d'une fonction</A>
+ &nbsp; <B>  <A NAME="tex2html8233"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8235"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009182000000000000000"></A><A NAME="8571"></A>
+<BR>
+Longueur d'un arc de courbe : <TT>arcLen</TT>
+</H2>
+<TT>arcLen</TT> a quatre param&#232;tres : une expression <I>ex</I> (resp une 
+liste de 2 expressions [<I>ex</I>1, <I>ex</I>2]), le nom d'un param&#232;tre et deux valeurs 
+<I>a</I> et <I>b</I> de ce param&#232;tre.
+<BR><TT>arcLen</TT> calcule la longueur de l'arc de courbe d&#233;finie par l'&#233;quation
+<I>y</I> = <I>f</I> (<I>x</I>) = <I>ex</I> (resp par <!-- MATH
+ $x=ex1,y=ex2$
+ -->
+<I>x</I> = <I>ex</I>1, <I>y</I> = <I>ex</I>2) pour les valeurs du param&#232;tre 
+comprises entre <I>a</I> et <I>b</I>.
+<BR>
+On a donc <TT>arcLen(f(x),x,a,b)=</TT> :
+<BR><TT>integrate(sqrt(diff(f(x),x)<code>^</code>2+1),x,a,b)</TT>
+<BR>
+ou 
+<BR><TT>integrate(sqrt(diff(x(t),t)<code>^</code>2+diff(y(t),t)<code>^</code>2),t,a,b)</TT>.
+<BR><B>Exemples</B>
+
+<UL>
+<LI>Calculer la longueur de l'arc de parabole <I>y</I> = <I>x</I><SUP>2</SUP> pour <I>x</I> allant de 0 
+&#224; <I>x</I> = 1.
+<BR>
+On tape
+<DIV ALIGN="CENTER">
+<TT>arcLen(x<code>^</code>2,x,0,1)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>arcLen([t,t<code>^</code>2,t,0,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-1/4*log(sqrt(5)-2)-(-(sqrt(5)))/2</TT>
+</DIV> 
+</LI>
+<LI>Calculer la longueur de l'arc de la courbe <!-- MATH
+ $y=\cosh(x)$
+ -->
+<I>y</I> = cosh(<I>x</I>) pour <I>x</I> allant 
+de 0 &#224; <I>x</I> = ln(2).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>arcLen(cosh(x),x,0,log(2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3/4</TT>
+</DIV>
+</LI>
+<LI>Calculer la longueur de l'arc de cercle <!-- MATH
+ $x=\cos(t),y=\sin(t)$
+ -->
+<I>x</I> = cos(<I>t</I>), <I>y</I> = sin(<I>t</I>) pour <I>t</I> 
+allant de 0 &#224; <I>t</I> = 2*<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">.
+<BR>
+On tape 
+<DIV ALIGN="CENTER">
+<TT>arcLen([cos(t),sin(t)],t,0,2*pi)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*pi</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8236"
+  HREF="node362.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8230"
+  HREF="node359.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8224"
+  HREF="node360.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8232"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8234"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8237"
+  HREF="node362.html">Maximum et minimum d'une</A>
+<B> monter:</B> <A NAME="tex2html8231"
+  HREF="node359.html">D&#233;rivation et variation</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8225"
+  HREF="node360.html">Fonction d&#233;riv&#233;e d'une fonction</A>
+ &nbsp; <B>  <A NAME="tex2html8233"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8235"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

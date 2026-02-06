@@ -1,0 +1,67 @@
+2022-03-28 19:54:50 [4928] INFO [JS] Uploading facts result:  +260ms
+2022-03-28 17:54:50.539: 2022-03-28 19:54:50 [4928] INFO [Runner] Running result: true +0ms
+2022-03-28 17:54:50.539: 2022-03-28 19:54:50 [4928] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +4ms
+2022-03-28 17:54:52.975: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:5dd3f91a9c1ec69aa743ef6693d8c6f3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +2441ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +1ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:7e3fb14071d24528fb23856f56cc3d8a for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +1ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +1ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +1ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +1ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +1ms
+2022-03-28 17:54:52.991: 2022-03-28 19:54:52 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +1ms
+2022-03-28 17:54:53.054: 2022-03-28 19:54:53 [4928] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +56ms
+2022-03-28 17:54:53.054: 2022-03-28 19:54:53 [4928] INFO [KeyedObservableCollector] Sending 9 items +0ms
+2022-03-28 17:54:53.054: 2022-03-28 19:54:53 [4928] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +13ms
+2022-03-28 17:54:53.054: 2022-03-28 19:54:53 [4928] INFO [KeyedObservableCollector] Sending 9 items +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1002ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: false +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +0ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-28 17:54:54.069: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +0ms
+2022-03-28 17:54:54.084: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-03-28 17:54:54.084: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +0ms
+2022-03-28 17:54:54.084: 2022-03-28 19:54:54 [4928] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-04-05 13:42:37.315: 2022-04-05 15:42:37 [4928] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +676063241ms
+2022-04-05 13:42:37.315: 2022-04-05 15:42:37 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +2ms
+2022-04-05 13:42:37.444: 2022-04-05 15:42:37 [4928] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +128ms
+2022-04-05 13:42:37.777: 2022-04-05 15:42:37 [4928] INFO [Runner] Creating configuration unit runner object... +326ms
+2022-04-05 13:42:37.788: 2022-04-05 15:42:37 [4928] INFO [Runner] Checking if runner needs to be performed... +6ms
+2022-04-05 13:42:37.788: 2022-04-05 15:42:37 [4928] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2022-04-05 13:42:37.788: 2022-04-05 15:42:37 [4928] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2022-04-05 13:42:37.872: 2022-04-05 15:42:37 [4928] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +6ms
+2022-04-05 13:42:37.872: 2022-04-05 15:42:37 [4928] INFO [SchedulerService] Identical schedule existing. Doing nothing +2ms
+2022-04-05 13:42:37.872: 2022-04-05 15:42:37 [4928] INFO [JS] Scheduling result: undefined +1ms
+2022-04-05 13:42:37.872: 2022-04-05 15:42:37 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +1ms
+2022-04-05 13:42:37.872: 2022-04-05 15:42:37 [4928] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2022-04-05 13:42:39.065: 2022-04-05 15:42:39 [4928] INFO [Runner] Creating configuration unit runner object... +1192ms
+2022-04-05 13:42:39.065: 2022-04-05 15:42:39 [4928] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-04-05 13:42:39.096: 2022-04-05 15:42:39 [4928] INFO [JS] Checking that the unit needs to be performed +20ms

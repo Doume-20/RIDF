@@ -1,0 +1,190 @@
+2021-12-09 11:00:23 [5384] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload\application.ppkg' -QuietInstall +5914ms
+2021-12-09 10:00:23.814: 2021-12-09 11:00:23 [5384] INFO [Runner] Running result: false +1ms
+2021-12-09 10:00:23.816: 2021-12-09 11:00:23 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (433) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2021-12-09 10:00:23.818: 2021-12-09 11:00:23 [5384] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload... +2ms
+2021-12-09 10:00:23.833: 2021-12-09 11:00:23 [5384] INFO [Runner] Creating configuration unit runner object... +14ms
+2021-12-09 10:00:23.834: 2021-12-09 11:00:23 [5384] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-12-09 10:00:23.834: 2021-12-09 11:00:23 [5384] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-12-09 10:00:25.112: 2021-12-09 11:00:25 [5384] INFO [JS] Result: 0 +1277ms
+2021-12-09 10:00:25.114: 2021-12-09 11:00:25 [5384] INFO [JS] Stdout: 1.1.4.21090425 +0ms
+2021-12-09 10:00:25.114: 2021-12-09 11:00:25 [5384] INFO [JS] Stderr:  +1ms
+2021-12-09 10:00:25.114: 2021-12-09 11:00:25 [5384] INFO [JS] Build number of c:\Progra~1\Unowhy\HiSqool\HiSqool.exe is 21090425 +1ms
+2021-12-09 10:00:25.118: 2021-12-09 11:00:25 [5384] INFO [JS] New version 21090425 <=>  21090425 Installed +0ms
+2021-12-09 10:00:25.118: 2021-12-09 11:00:25 [5384] INFO [JS] Current version is up to date +1ms
+2021-12-09 10:00:25.122: 2021-12-09 11:00:25 [5384] INFO [JS] Checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +2ms
+2021-12-09 10:00:25.519: 2021-12-09 11:00:25 [5384] INFO [JS] Result of checking shortcut C:\Users\Public\Desktop\Hi Sqool.lnk: 0. 
+2021-12-09 10:00:25.519: [C:\Users\Public\Desktop\Hi Sqool.lnk]
+2021-12-09 10:00:25.519: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-09 10:00:25.519: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-09 10:00:25.519: Arguments=
+2021-12-09 10:00:25.519: ArgumentsExpanded=
+2021-12-09 10:00:25.519: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-12-09 10:00:25.519: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-12-09 10:00:25.519: RunStyle=1
+2021-12-09 10:00:25.519: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-09 10:00:25.519: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-09 10:00:25.519: HotKey=0 (None)
+2021-12-09 10:00:25.519: Description=HiSqool
+2021-12-09 10:00:25.519: 
+2021-12-09 10:00:25.519: The command completed successfully. +398ms
+2021-12-09 10:00:25.519: 2021-12-09 11:00:25 [5384] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +0ms
+2021-12-09 10:00:25.833: 2021-12-09 11:00:25 [5384] INFO [JS] Result of checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk: 0. 
+2021-12-09 10:00:25.833: [C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Hi Sqool.lnk]
+2021-12-09 10:00:25.833: TargetPath=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-09 10:00:25.833: TargetPathExpanded=C:\Program Files\Unowhy\HiSqool\HiSqool.exe
+2021-12-09 10:00:25.833: Arguments=
+2021-12-09 10:00:25.833: ArgumentsExpanded=
+2021-12-09 10:00:25.833: WorkingDirectory=c:\Progra~1\Unowhy\HiSqool
+2021-12-09 10:00:25.833: WorkingDirectoryExpanded=c:\Progra~1\Unowhy\HiSqool
+2021-12-09 10:00:25.833: RunStyle=1
+2021-12-09 10:00:25.833: IconLocation=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-09 10:00:25.833: IconLocationExpanded=c:\Progra~1\Unowhy\HiSqool\HiSqool.exe,0
+2021-12-09 10:00:25.833: HotKey=0 (None)
+2021-12-09 10:00:25.833: Description=HiSqool
+2021-12-09 10:00:25.833: 
+2021-12-09 10:00:25.833: The command completed successfully. +314ms
+2021-12-09 10:00:25.838: 2021-12-09 11:00:25 [5384] INFO [JS] Checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk with C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe... +1ms
+2021-12-09 10:00:26.058: 2021-12-09 11:00:26 [5384] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +224ms
+2021-12-09 10:00:26.063: 2021-12-09 11:00:26 [5384] INFO [JS] Actions to perform: 1 +1ms
+2021-12-09 10:00:26.065: 2021-12-09 11:00:26 [5384] INFO [Runner] Performing runner... +1ms
+2021-12-09 10:00:26.068: 2021-12-09 11:00:26 [5384] INFO [JS] Running installer... +1ms
+2021-12-09 10:00:26.068: 2021-12-09 11:00:26 [5384] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +2ms
+2021-12-09 10:00:31.927: 2021-12-09 11:00:31 [5384] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +5855ms
+2021-12-09 10:00:32.724: 2021-12-09 11:00:32 [5384] INFO [JS] GUID package: 52191d55-a6aa-4d53-9830-fded6eb78582 +799ms
+2021-12-09 10:00:39.397: 2021-12-09 11:00:39 [5384] INFO [JS] GUID package: d0fc2ec8-57da-4e9f-bc1a-c35828a76d83 +6678ms
+2021-12-09 10:00:41.115: 2021-12-09 11:00:41 [5384] INFO [JS] Install Result: 0 +1725ms
+2021-12-09 10:00:41.131: 2021-12-09 11:00:41 [5384] INFO [JS] Install Stdout: 
+2021-12-09 10:00:41.131: 
+2021-12-09 10:00:41.131: IsInstalled     : False
+2021-12-09 10:00:41.131: PackageID       : 10108c63-247d-41bd-92fa-2e15beeb2c93
+2021-12-09 10:00:41.131: PackageName     : Educadhoc
+2021-12-09 10:00:41.131: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload\application.ppkg
+2021-12-09 10:00:41.131: Description     : 
+2021-12-09 10:00:41.131: Rank            : 0
+2021-12-09 10:00:41.131: Altitude        : 5000
+2021-12-09 10:00:41.131: Version         : 9.14
+2021-12-09 10:00:41.131: OwnerType       : ITAdmin
+2021-12-09 10:00:41.131: Notes           : 
+2021-12-09 10:00:41.131: LastInstallTime : 21/10/2021 22:10:15
+2021-12-09 10:00:41.131: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   4__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   5__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   6__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-12-09 10:00:41.131:                   	Category:Content
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-12-09 10:00:41.131:                   	Category:Scripts
+2021-12-09 10:00:41.131:                   	LastResult:Success
+2021-12-09 10:00:41.131:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.131:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131:                   
+2021-12-09 10:00:41.131: 
+2021-12-09 10:00:41.131: 
+2021-12-09 10:00:41.131:  +1ms
+2021-12-09 10:00:41.131: 2021-12-09 11:00:41 [5384] INFO [JS] Install Stderr:  +1ms
+2021-12-09 10:00:41.131: 2021-12-09 11:00:41 [5384] INFO [JS] Finishing Installation +1ms
+2021-12-09 10:00:41.131: 2021-12-09 11:00:41 [5384] INFO [Runner] Running result: true +1ms
+2021-12-09 10:00:41.131: 2021-12-09 11:00:41 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (394) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +2ms
+2021-12-09 10:00:41.131: 2021-12-09 11:00:41 [5384] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload... +2ms
+2021-12-09 10:00:41.146: 2021-12-09 11:00:41 [5384] INFO [Runner] Creating configuration unit runner object... +13ms
+2021-12-09 10:00:41.146: 2021-12-09 11:00:41 [5384] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-12-09 10:00:41.146: 2021-12-09 11:00:41 [5384] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-12-09 10:00:41.506: 2021-12-09 11:00:41 [5384] INFO [JS] Install Result: 0 +355ms
+2021-12-09 10:00:41.506: 2021-12-09 11:00:41 [5384] INFO [JS] Install Stdout: 
+2021-12-09 10:00:41.506: 
+2021-12-09 10:00:41.506: IsInstalled     : False
+2021-12-09 10:00:41.506: PackageID       : f7639fd5-22e3-42bd-9806-a3aafb44760a
+2021-12-09 10:00:41.506: PackageName     : BiblioManuels
+2021-12-09 10:00:41.506: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload\application.ppkg
+2021-12-09 10:00:41.506: Description     : 
+2021-12-09 10:00:41.506: Rank            : 0
+2021-12-09 10:00:41.506: Altitude        : 5000
+2021-12-09 10:00:41.506: Version         : 3.92
+2021-12-09 10:00:41.506: OwnerType       : ITAdmin
+2021-12-09 10:00:41.506: Notes           : 
+2021-12-09 10:00:41.506: LastInstallTime : 05/10/2021 10:45:08
+2021-12-09 10:00:41.506: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-12-09 10:00:41.506:                   	Category:Content
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-12-09 10:00:41.506:                   	Category:Content
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-12-09 10:00:41.506:                   	Category:Content
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-12-09 10:00:41.506:                   	Category:Content
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   4__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-12-09 10:00:41.506:                   	Category:Content
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   5__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-12-09 10:00:41.506:                   	Category:Content
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   6__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-12-09 10:00:41.506:                   	Category:Scripts
+2021-12-09 10:00:41.506:                   	LastResult:Success
+2021-12-09 10:00:41.506:                   	Message:Provisioning succeeded
+2021-12-09 10:00:41.506:                   	NumberOfFailures:0 (0x0)
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506:                   
+2021-12-09 10:00:41.506: 
+2021-12-09 10:00:41.506: 
+2021-12-09 10:00:41.506:  +0ms
+2021-12-09 10:00:41.506: 2021-12-09 11:00:41 [5384] INFO [JS] Install Stderr:  +0ms
+2021-12-09 10:00:41.506: 2021-12-09 11:00:41 [5384] INFO [JS] Finishing Installation +0ms

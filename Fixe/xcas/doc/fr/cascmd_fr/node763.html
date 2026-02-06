@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions de statistique</TITLE>
+<META NAME="description" CONTENT="Les fonctions de statistique">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node834.html">
+<LINK REL="previous" HREF="node195.html">
+<LINK REL="up" HREF="cascmd_fr.html">
+<LINK REL="next" HREF="node764.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14147"
+  HREF="node764.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14141"
+  HREF="cascmd_fr.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14135"
+  HREF="node762.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14143"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14145"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14148"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> monter:</B> <A NAME="tex2html14142"
+  HREF="cascmd_fr.html">Calcul formel et Math&#233;matiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14136"
+  HREF="node762.html">Approximation rationnelle : float2rational</A>
+ &nbsp; <B>  <A NAME="tex2html14144"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14146"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001000000000000000000"></A><A NAME="sec:stat"></A>
+<BR>
+Les fonctions de statistique
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html14149"
+  HREF="node764.html">Les fonctions de <TT>Xcas</TT> de statistique &#224; 1 variable</A>
+<UL>
+<LI><A NAME="tex2html14150"
+  HREF="node765.html">La moyenne : <TT>mean moyenne</TT></A>
+<LI><A NAME="tex2html14151"
+  HREF="node766.html">L'&#233;cart-type : <TT>stddev ecart_type</TT></A>
+<LI><A NAME="tex2html14152"
+  HREF="node767.html">L'&#233;cart-type de la population : <TT>stddevp, stdDev, ecart_type_population</TT></A>
+<LI><A NAME="tex2html14153"
+  HREF="node768.html">La variance : <TT>variance</TT></A>
+<LI><A NAME="tex2html14154"
+  HREF="node769.html">La m&#233;diane : <TT>median</TT></A>
+<LI><A NAME="tex2html14155"
+  HREF="node770.html">Diff&#233;rentes valeurs statistiques : <TT>quartiles</TT></A>
+<LI><A NAME="tex2html14156"
+  HREF="node771.html">Le premier quartile : <TT>quartile1</TT></A>
+<LI><A NAME="tex2html14157"
+  HREF="node772.html">Le troisi&#232;me quartile : <TT>quartile3</TT></A>
+<LI><A NAME="tex2html14158"
+  HREF="node773.html">Les d&#233;ciles : <TT>quantile</TT></A>
+<LI><A NAME="tex2html14159"
+  HREF="node774.html">Le regroupement en classes : <TT>classes</TT></A>
+<LI><A NAME="tex2html14160"
+  HREF="node775.html">Regroupement de termes : <TT>accumulate_head_tail</TT></A>
+<LI><A NAME="tex2html14161"
+  HREF="node776.html">La boite &#224; moustaches : <TT>boxwhisker moustache</TT></A>
+<LI><A NAME="tex2html14162"
+  HREF="node777.html">L'histogramme : <TT>histogram</TT></A>
+<LI><A NAME="tex2html14163"
+  HREF="node778.html">Les fr&#233;quences cumul&#233;es : <TT>cumulated_frequencies</TT></A>
+<LI><A NAME="tex2html14164"
+  HREF="node779.html">Pour dessiner un diagramme en batons : <TT>diagramme_batons</TT></A>
+<LI><A NAME="tex2html14165"
+  HREF="node780.html">Pour dessiner un diagramme en camembert : <TT>camembert</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html14166"
+  HREF="node781.html">Les fonctions statistiques &#224; 2 variables</A>
+<UL>
+<LI><A NAME="tex2html14167"
+  HREF="node782.html">La covariance : <TT>covariance</TT></A>
+<LI><A NAME="tex2html14168"
+  HREF="node783.html">La corr&#233;lation : <TT>correlation</TT></A>
+<LI><A NAME="tex2html14169"
+  HREF="node784.html">Covariance et corr&#233;lation : <TT>covariance_correlation</TT></A>
+<LI><A NAME="tex2html14170"
+  HREF="node785.html">Le nuage de points : <TT>scatterplot nuage_points</TT></A>
+<LI><A NAME="tex2html14171"
+  HREF="node786.html">Ligne polygonale : <TT>polygonplot ligne_polygonale</TT></A>
+<LI><A NAME="tex2html14172"
+  HREF="node787.html">Ligne polygonale : <TT>listplot plotlist</TT></A>
+<LI><A NAME="tex2html14173"
+  HREF="node788.html">Ligne polygonale et nuage de points : <TT>polygonscatterplot ligne_polygonale_pointee</TT></A>
+<LI><A NAME="tex2html14174"
+  HREF="node789.html">Interpolation lin&#233;aire : <TT>linear_interpolate</TT></A>
+<LI><A NAME="tex2html14175"
+  HREF="node790.html">R&#233;gression lin&#233;aire : <TT>linear_regression</TT></A>
+<LI><A NAME="tex2html14176"
+  HREF="node791.html">Graphe de la r&#233;gression lin&#233;aire : 
+<TT>linear_regression_plot</TT></A>
+<LI><A NAME="tex2html14177"
+  HREF="node792.html">R&#233;gression exponentielle : <TT>exponential_regression</TT></A>
+<LI><A NAME="tex2html14178"
+  HREF="node793.html">Graphe de la r&#233;gression exponentielle : 
+<TT>exponential_regression_plot</TT></A>
+<LI><A NAME="tex2html14179"
+  HREF="node794.html">R&#233;gression logarithmique : <TT>logarithmic_regression</TT></A>
+<LI><A NAME="tex2html14180"
+  HREF="node795.html">Graphe de la r&#233;gression logarithmique : 
+<TT>logarithmic_regression_plot</TT></A>
+<LI><A NAME="tex2html14181"
+  HREF="node796.html">R&#233;gression polyn&#244;miale : <TT>polynomial_regression</TT></A>
+<LI><A NAME="tex2html14182"
+  HREF="node797.html">Graphe de la r&#233;gression polynomiale :
+ <TT>polynomial_regression_plot</TT></A>
+<LI><A NAME="tex2html14183"
+  HREF="node798.html">R&#233;gression puissance : <TT>power_regression</TT></A>
+<LI><A NAME="tex2html14184"
+  HREF="node799.html">Graphe de la r&#233;gression puissance :
+ <TT>power_regression_plot</TT></A>
+<LI><A NAME="tex2html14185"
+  HREF="node800.html">R&#233;gression logistique : <TT>logistic_regression</TT></A>
+<LI><A NAME="tex2html14186"
+  HREF="node801.html">Graphe de la r&#233;gression logistique :
+ <TT>logistic_regression_plot</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html14187"
+  HREF="node802.html">Les fonctions al&#233;atoires de <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html14188"
+  HREF="node803.html">Pour initialiser les nombres al&#233;atoires : <TT>srand randseed RandSeed</TT></A>
+<LI><A NAME="tex2html14189"
+  HREF="node804.html">Tirage &#233;quir&#233;parti <TT>rand alea hasard</TT></A>
+<UL>
+<LI><A NAME="tex2html14190"
+  HREF="node805.html">Tirage &#233;quir&#233;parti sur <!-- MATH
+ $[0,1,..,2^{32}[$
+ -->
+[0, 1,.., 2<SUP>32</SUP>[ : <TT>rand() alea() hasard()</TT></A>
+<LI><A NAME="tex2html14191"
+  HREF="node806.html">Tirage al&#233;atoire &#233;quir&#233;parti sur l'intervalle [a;b[ : <TT>rand(a,b) hasard(a,b) rand(a..b)() hasard(a..b)()</TT></A>
+<LI><A NAME="tex2html14192"
+  HREF="node807.html">Tirage al&#233;atoire d'entiers &#233;quir&#233;partis sur [0,..,n[ : <TT>rand(n) alea(n) hasard(n)</TT></A>
+</UL>
+<LI><A NAME="tex2html14193"
+  HREF="node808.html">Tirage al&#233;atoire sans remise de p objets parmi n : <TT>rand alea hasard</TT></A>
+<LI><A NAME="tex2html14194"
+  HREF="node809.html">Tirage selon une loi normale : <TT>randnorm randNorm</TT></A>
+<LI><A NAME="tex2html14195"
+  HREF="node810.html">Matrice al&#233;atoire : <TT>ranm randmatrix randMat</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html14196"
+  HREF="node811.html">Les fonctions de r&#233;partition et leurs inverses</A>
+<UL>
+<LI><A NAME="tex2html14197"
+  HREF="node812.html">Probabilit&#233; que <I>X</I> &#233;gale <I>k</I> lorsque <!-- MATH
+ $X \in \mathcal{B}(n,p)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \mathcal {B}$">(<I>n</I>, <I>p</I>) : <TT>binomial</TT></A>
+<LI><A NAME="tex2html14198"
+  HREF="node813.html">Fonction de r&#233;partition de la loi  binomiale : <TT>binomial_cdf</TT></A>
+<LI><A NAME="tex2html14199"
+  HREF="node814.html">Fonction de r&#233;partition inverse binomiale : <TT>binomial_icdf</TT></A>
+<LI><A NAME="tex2html14200"
+  HREF="node815.html">Probabilit&#233; pour que <I>X</I> &#233;gale <I>k</I> lorsque <!-- MATH
+ $X\in \mathcal P(\mu)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \mathcal {P}$">(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$">) : <TT>poisson</TT></A>
+<LI><A NAME="tex2html14201"
+  HREF="node816.html">Fonction  de r&#233;partition de Poisson  : <TT>poisson_cdf</TT></A>
+<LI><A NAME="tex2html14202"
+  HREF="node817.html">Fonction de r&#233;partition inverse de Poisson  : <TT>poisson_icdf</TT></A>
+<LI><A NAME="tex2html14203"
+  HREF="node818.html">Densit&#233; de probabilit&#233; de la loi normale : <TT>normald</TT></A>
+<LI><A NAME="tex2html14204"
+  HREF="node819.html">Fonction de r&#233;partition de la loi  normale : <TT>normal_cdf normald_cdf</TT></A>
+<LI><A NAME="tex2html14205"
+  HREF="node820.html">Fonction de r&#233;partition inverse normale : <TT>normal_icdf normald_icdf</TT></A>
+<LI><A NAME="tex2html14206"
+  HREF="node821.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi normale : <TT>UTPN</TT></A>
+<LI><A NAME="tex2html14207"
+  HREF="node822.html">Densit&#233; de probabilit&#233; de la loi de Student : <TT>student</TT></A>
+<LI><A NAME="tex2html14208"
+  HREF="node823.html">Fonction de r&#233;partition de la loi de Student : <TT>student_cdf</TT></A>
+<LI><A NAME="tex2html14209"
+  HREF="node824.html">Fonction de r&#233;partition inverse de Student : <TT>student_icdf</TT></A>
+<LI><A NAME="tex2html14210"
+  HREF="node825.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi de Student : <TT>UTPT</TT></A>
+<LI><A NAME="tex2html14211"
+  HREF="node826.html">Densit&#233; de probabilit&#233; de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare</TT></A>
+<LI><A NAME="tex2html14212"
+  HREF="node827.html">Fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare_cdf</TT></A>
+<LI><A NAME="tex2html14213"
+  HREF="node828.html">Fonction inverse de la fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>chisquare_icdf</TT></A>
+<LI><A NAME="tex2html14214"
+  HREF="node829.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi du <IMG
+ WIDTH="23" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \chi^{2}_{}$"> : <TT>UTPC</TT></A>
+<LI><A NAME="tex2html14215"
+  HREF="node830.html">Densit&#233; de probabilit&#233; de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher snedecor</TT></A>
+<LI><A NAME="tex2html14216"
+  HREF="node831.html">La fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_cdf snedecor_cdf</TT></A>
+<LI><A NAME="tex2html14217"
+  HREF="node832.html">Inverse de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_icdf snedecor_icdf</TT></A>
+<LI><A NAME="tex2html14218"
+  HREF="node833.html">Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>UTPF</TT></A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,136 @@
+// fltk 7Fl_Tile 45 -659 1048 113 25
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -659 1048 112 25
+sv=insolation en %age (a multiplier par l'inverse de la distance Terre-Soleil au carré)£1/distance Terre-Soleil est proportionnel à (1+excentricite*cos(theta))£lat=latitude, varphi=longitude+t/24*2*pi, theta=angle terre-soleil/perihelie,£theta0=angle hiver/perihelie, obliquite
+,
+// fltk N4xcas10Log_OutputE 45 -547 1048 1 25
+
+]
+,
+// fltk 7Fl_Tile 45 -544 1048 59 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -544 1048 59 25
+ex:=0.0167; theta0:=evalf(-15/365.*2*pi); £obliquite:=evalf(23.45/360*2*pi); rad2deg:=evalf(pi/180)
+]
+,
+// fltk 7Fl_Tile 45 -483 1048 84 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -483 1048 84 25
+rho2(theta):=(1+ex*cos(theta))^2;£sv(lat,varphi,theta):= -(cos(lat)*cos(varphi)*cos(theta - theta0)*cos(obliquite) + cos(lat)*sin(varphi)*sin(theta-theta0) + £sin(lat)*cos(theta -theta0)*sin(obliquite))
+]
+,
+// fltk 7Fl_Tile 45 -397 1048 30 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -397 1048 30 25
+sv_hiver:=rho2(theta0)*sv(lat*rad2deg,varphi*rad2deg,theta0)
+]
+,
+// fltk 7Fl_Tile 45 -365 1048 30 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -365 1048 30 25
+sv_ete:=rho2(theta0+pi)*sv(lat*rad2deg,varphi*rad2deg,evalf(theta0+pi))
+]
+,
+// fltk 7Fl_Tile 45 -333 1048 65 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -333 1048 65 25
+title="Insolation_au_solstice_hiver_(1=1364W/m^2)";£plotdensity(sv_hiver,[varphi=0..360,lat=-90..90],z=0..1.1,xstep=10,ystep=5)
+]
+,
+// fltk 7Fl_Tile 45 -266 1048 61 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -266 1048 61 25
+title="Insolation au solstice d_ete (1=1364W/m^2)";£plotdensity(sv_ete,[varphi=-180..180,lat=-90..90],z=0..1.1,xstep=10,ystep=5)
+]
+,
+// fltk 7Fl_Tile 45 -203 1048 72 25
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -203 1048 71 25
+lever/coucher Soleil:£cos(varphi)*cos(theta - theta0)*cos(obliquite) + sin(varphi)*sin(theta-theta0) = £-sin(lat)/cos(lat)*cos(theta -theta0)*sin(obliquite)
+,
+// fltk N4xcas10Log_OutputE 45 -132 1048 1 25
+
+]
+,
+// fltk 7Fl_Tile 45 -129 1048 470 25
+[
+// fltk N4xcas7EditeurE 45 -129 1048 338 25
+660 ,
+lever_coucher(theta,obliquite,lat):={
+  local A,B,C,D,phi0;
+  lat:=evalf(lat);
+  theta:=evalf(theta);
+  if (type(lat)!=DOM_FLOAT or type(theta)!=DOM_FLOAT)
+    return 'lever_coucher'(theta,obliquite,lat);
+  A:=cos(theta)*cos(obliquite);
+  B:=sin(theta) ;
+  C:=sqrt(A*A+B*B);
+  if (abs(lat-pi/2)<1e-2){
+    lat:=1.56;
+  }
+  if (abs(lat+pi/2)<1e-2){
+    lat:=-1.56;
+  }
+  D:=-tan(lat)*cos(theta)*sin(obliquite);
+  if (C<abs(D)){
+    if (D<0){
+      return 0,0;
+    }
+    else {
+      return 0,2*pi;
+    }
+  }
+  // A*cos(phi)+B*sin(phi)=D donc C*cos(phi-phi0)=D
+  phi0:=arg(A+i*B);
+  // phi=phi0+/-acos(D/C)
+  C:=acos(D/C);
+  return phi0+C,evalf(phi0+2*pi-C);
+}:;,
+// fltk N4xcas10Log_OutputE 45 209 1048 79 25
+// Parsing lever_coucher£// Warning: lever_coucher  declared as global variable(s) compiling lever_coucher£lever_coucher: recursive definition£
+,
+// fltk N4xcas8EquationE 45 288 1048 53 16
+"Done"
+]
+,
+// fltk 7Fl_Tile 45 343 1048 30 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 343 1048 30 25
+[l,c]:=lever_coucher(0,obliquite,1.5); evalf((c-l)*24/2/pi)
+]
+,
+// fltk 7Fl_Tile 45 375 1048 30 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 375 1048 30 25
+[l,c]:=lever_coucher(pi,obliquite,pi/4); evalf((c-l)*24/2/pi)
+]
+,
+// fltk 7Fl_Tile 45 407 1048 30 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 407 1048 30 25
+insol0:=unapply(rho2(theta)*integrate(sv(lat,varphi,theta),varphi),theta,lat,varphi)
+]
+,
+// fltk 7Fl_Tile 45 439 1048 121 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 439 1048 121 25
+insol(theta,lat):={ local l,c; £[l,c]:=lever_coucher(theta-theta0,obliquite,lat); £return (insol0(theta,lat,c)-insol0(theta,lat,l))*2/pi;£}:;
+]
+,
+// fltk 7Fl_Tile 45 562 1048 30 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 562 1048 30 25
+insol(0,-pi/2)
+]
+,
+// fltk 7Fl_Tile 45 594 1048 56 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 594 1048 56 25
+title="Insolation journaliere mois par mois (1=moyenne)";£plotdensity(insol(Theta*pi/6,Lat*pi/180),[Theta=0..12,Lat=-90..90],z=0..2,xstep=0.2,ystep=3)
+]
+,
+// fltk 7Fl_Tile 45 652 1048 40 25
+[
+// fltk N4xcas19Multiline_Input_tabE 45 652 1048 40 25
+
+]

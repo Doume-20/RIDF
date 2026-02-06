@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Configuration graphique avec cfg</TITLE>
+<META NAME="description" CONTENT="Configuration graphique avec cfg">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node117.html">
+<LINK REL="previous" HREF="node115.html">
+<LINK REL="up" HREF="node113.html">
+<LINK REL="next" HREF="node117.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4057"
+  HREF="node117.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4051"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4045"
+  HREF="node115.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4053"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4055"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4058"
+  HREF="node117.html">Pour transformer un graphique</A>
+<B> monter:</B> <A NAME="tex2html4052"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4046"
+  HREF="node115.html">La configuration de l'&#233;cran</A>
+ &nbsp; <B>  <A NAME="tex2html4054"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4056"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00630000000000000000"></A><A NAME="2330"></A><A NAME="sec:bcfg"></A>
+<BR>
+Configuration graphique avec <TT>cfg</TT>
+</H1>
+Le bouton <TT>cfg</TT> permet de r&#233;gler la fen&#234;tre graphique.
+<BR>
+<UL>
+<LI><TT>WX-,...,WZ</TT> d&#233;signent les coordonn&#233;es de ce qui est visible,
+</LI>
+<LI><TT>Pixels</TT> en 2D, permet de d&#233;finir les valeurs de
+<TT>X-tick</TT> et de <TT>Y-tick</TT> en prenant comme unit&#233; le pixel,
+</LI>
+<LI><TT>X-tick, Y-tick</TT> pour modifier l'&#233;cartement des graduations mises 
+sur les axes x et y, l'unit&#233; est le pixel si <TT>Pixels</TT> a &#233;t&#233; coch&#233;
+ou sinon l'unit&#233; depent des unit&#233;s d&#233;finies par <TT>WX-,WX+,WY-,WY+</TT>,
+</LI>
+<LI><TT>ry,rz,rx</TT> en 3D, sont les valeurs en degr&#233;s des angles d'Euler : 
+ces valeurs permettent
+de retrouver facilement la position que l'on a choisie  pour le rep&#232;re (cf 
+<A HREF="node1027.html#sec:euler">10.2</A>),  
+</LI>
+<LI><TT>Montrer les noms</TT> pour voir les noms des points ou des objets 
+g&#233;om&#233;trique ou ne pas les voir,
+</LI>
+<LI><TT>Autoname</TT> il faut mettre une lettre. Ainsi, au fur et &#224; mesure que 
+l'on clique dans l'&#233;cran de g&#233;om&#233;trie, les noms des points 
+seront d&#233;finis automatiquement en commen&#231;ant par cette lettre en sautant 
+les points d&#233;j&#224; d&#233;finis,
+</LI>
+<LI><TT>Montrer les axes</TT> pour voir les axes ou ne pas les voir,
+</LI>
+<LI><TT>animate</TT> pour donner le temps d'affichage des objets lors d'une 
+animations (en faisant bouger la souris &#224; droite ou &#224; gauche on augmente ou
+on diminue ce temps ou on tape un nombre),
+</LI>
+<LI><TT>Round</TT> pour avoir les coordonn&#232;es visibles arrondies 
+automatiquement au dizaines,
+</LI>
+<LI><TT>Default</TT> remet les param&#232;tre choisis par d&#233;faut,
+</LI>
+<LI><TT>Autoscale</TT> choisit les &#233;chelles de fa&#231;on automatique et 
+appropri&#233;e,
+</LI>
+<LI><TT>Apply</TT> a le m&#234;me effet que la touche <TT>enter</TT> (pour valider une 
+valeur sans fermer la fen&#234;tre <TT>cfg</TT>),
+</LI>
+<LI><TT>OK</TT> pour valider et fermer la fen&#234;tre <TT>cfg</TT>,
+</LI>
+<LI><TT>Annuler</TT> pour annuler (annule cequi n'a pas &#233;t&#233; valid&#233; par 
+<TT>enter</TT> ou <TT>Apply</TT>) et fermer la fen&#234;tre <TT>cfg</TT>.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4057"
+  HREF="node117.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4051"
+  HREF="node113.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4045"
+  HREF="node115.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4053"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4055"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4058"
+  HREF="node117.html">Pour transformer un graphique</A>
+<B> monter:</B> <A NAME="tex2html4052"
+  HREF="node113.html">Le graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4046"
+  HREF="node115.html">La configuration de l'&#233;cran</A>
+ &nbsp; <B>  <A NAME="tex2html4054"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4056"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

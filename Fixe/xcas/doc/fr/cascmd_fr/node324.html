@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Z&#233;ros d'une expression : zeros</TITLE>
+<META NAME="description" CONTENT="Z&#233;ros d'une expression : zeros">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node325.html">
+<LINK REL="previous" HREF="node323.html">
+<LINK REL="up" HREF="node313.html">
+<LINK REL="next" HREF="node325.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7697"
+  HREF="node325.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7691"
+  HREF="node313.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7685"
+  HREF="node323.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7693"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7695"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7698"
+  HREF="node325.html">Z&#233;ros complexe d'une expression</A>
+<B> monter:</B> <A NAME="tex2html7692"
+  HREF="node313.html">Les expressions alg&#233;briques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7686"
+  HREF="node323.html">Factorisation dans : cFactor</A>
+ &nbsp; <B>  <A NAME="tex2html7694"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7696"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0091311000000000000000"></A><A NAME="7426"></A>
+<BR>
+Z&#233;ros d'une expression : <TT>zeros</TT>
+</H2>
+<TT>zeros</TT> a comme param&#232;tre une expression.
+<BR><TT>zeros</TT> renvoie la liste des &#233;l&#233;ments qui annulent l'expression.
+<BR>
+Selon le mode choisi, si on est en mode r&#233;el (<TT>complex_mode:=0</TT>) les 
+z&#233;ros seront r&#233;els et si on est en mode complexe (<TT>complex_mode:=1</TT>)
+les z&#233;ros seront complexes.
+<BR>
+On tape en mode r&#233;el: 
+<DIV ALIGN="CENTER">
+<TT>zeros(x<code>^</code>2+4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[]</TT>
+</DIV>
+On tape en mode complexe: 
+<DIV ALIGN="CENTER">
+<TT>zeros(x<code>^</code>2+4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-2*i,2*i]</TT>
+</DIV>
+On tape en mode r&#233;el : 
+<DIV ALIGN="CENTER">
+<TT>zeros(ln(x)<code>^</code>2-2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[exp(sqrt(2)),exp(-(sqrt(2)))]</TT>
+</DIV>
+On tape en mode r&#233;el : 
+<DIV ALIGN="CENTER">
+<TT>zeros(ln(y)<code>^</code>2-2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[exp(sqrt(2)),exp(-(sqrt(2)))]</TT>
+</DIV>
+On tape en mode r&#233;el : 
+<DIV ALIGN="CENTER">
+<TT>zeros(x*(exp(x))<code>^</code>2-2*x-2*(exp(x))<code>^</code>2+4)</TT>
+</DIV>
+On obtient :
+ <DIV ALIGN="CENTER">
+<TT>[[log(sqrt(2)),2]</TT>
+</DIV> 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

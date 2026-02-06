@@ -1,0 +1,52 @@
+2021-09-15 7:18:24 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 05:18:24.855: 2021-09-15 7:18:24 [7780] INFO [JS] ### Apply configuration +2ms
+2021-09-15 05:18:24.855: 2021-09-15 7:18:24 [7780] INFO [JS] creating configuration file C:\Windows\TEMP\776966695F656C65766573.xml +2ms
+2021-09-15 05:18:24.886: 2021-09-15 7:18:24 [7780] INFO [JS] Executing netsh command +30ms
+2021-09-15 05:18:24.933: 2021-09-15 7:18:24 [7780] INFO [Runner] Running result: true +44ms
+2021-09-15 05:18:24.933: 2021-09-15 7:18:24 [7780] INFO [ConfigurationRunner] Writing execution result of conf/network/all/wifi_eleves (17) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_network_all_wifi_eleves.json +2ms
+2021-09-15 05:18:24.995: 2021-09-15 7:18:24 [7780] INFO [JS] Result: 0 +65ms
+2021-09-15 05:18:24.995: 2021-09-15 7:18:25 [7780] INFO [JS] Stdout:  +1ms
+2021-09-15 05:18:24.995: 2021-09-15 7:18:25 [7780] INFO [JS] Stderr: #< CLIXML
+2021-09-15 05:18:24.995: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +1ms
+2021-09-15 05:18:24.995: 2021-09-15 7:18:25 [7780] INFO [Runner] Running result: true +1ms
+2021-09-15 05:18:24.995: 2021-09-15 7:18:25 [7780] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool (170) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool.json +3ms
+2021-09-15 05:18:25.729: 2021-09-15 7:18:25 [7780] INFO [JS] command result 0: Le profil wifi_eleves est ajout� sur l'interface Wi-Fi. +732ms
+2021-09-15 05:18:25.729: 2021-09-15 7:18:25 [7780] INFO [JS] Creation ok. connecting to network... +0ms
+2021-09-15 05:18:26.745: 2021-09-15 7:18:26 [7780] INFO [RequestPerformerService] Download finished undefined. +1048ms
+2021-09-15 05:18:26.791: 2021-09-15 7:18:26 [7780] INFO [RequestPerformerService] Digest: expected=fbe3b402868b0c153f55e9defec85f42, actual=fbe3b402868b0c153f55e9defec85f42. +6ms
+2021-09-15 05:18:26.791: 2021-09-15 7:18:26 [7780] INFO [RequestPerformerService] Complete. +0ms
+2021-09-15 05:18:26.807: 2021-09-15 7:18:26 [7780] INFO [PayloadDownloader] [PAYLOAD 119] Persisting status=state=Downloaded, error=None, active=true +19ms
+2021-09-15 05:18:26.838: 2021-09-15 7:18:26 [7780] INFO [PayloadDownloader] [PAYLOAD 119] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\119\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\119\payload... +25ms
+2021-09-15 05:18:26.838: 2021-09-15 7:18:26 [7780] INFO [RequestPerformerService] Got disposed. +14ms
+2021-09-15 05:18:28.213: 2021-09-15 7:18:28 [7780] INFO [RequestPerformerService] Download finished undefined. +1373ms
+2021-09-15 05:18:28.228: 2021-09-15 7:18:28 [7780] INFO [RequestPerformerService] Digest: expected=b78408942aef407236b76805f935bcd1, actual=b78408942aef407236b76805f935bcd1. +4ms
+2021-09-15 05:18:28.228: 2021-09-15 7:18:28 [7780] INFO [RequestPerformerService] Complete. +2ms
+2021-09-15 05:18:28.228: 2021-09-15 7:18:28 [7780] INFO [PayloadDownloader] [PAYLOAD 120] Persisting status=state=Downloaded, error=None, active=true +9ms
+2021-09-15 05:18:28.244: 2021-09-15 7:18:28 [7780] INFO [PayloadDownloader] [PAYLOAD 120] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\120\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\120\payload... +6ms
+2021-09-15 05:18:28.244: 2021-09-15 7:18:28 [7780] INFO [RequestPerformerService] Got disposed. +5ms
+2021-09-15 05:18:28.416: 2021-09-15 7:18:28 [7780] INFO [JS] Version of update package: 1.1 +169ms
+2021-09-15 05:18:28.416: 2021-09-15 7:18:28 [7780] INFO [JS] Your package is up to date +1ms
+2021-09-15 05:18:28.416: 2021-09-15 7:18:28 [7780] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-15 05:18:28.416: 2021-09-15 7:18:28 [7780] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +3ms
+2021-09-15 05:18:28.588: 2021-09-15 7:18:28 [7780] INFO [JS] Getting installed applications... +170ms
+2021-09-15 05:18:29.822: 2021-09-15 7:18:29 [7780] INFO [RequestPerformerService] Download finished undefined. +1230ms
+2021-09-15 05:18:29.822: 2021-09-15 7:18:29 [7780] INFO [RequestPerformerService] Digest: expected=ed1cae41f5ca553d19e3f594ecc0fed0, actual=ed1cae41f5ca553d19e3f594ecc0fed0. +2ms
+2021-09-15 05:18:29.822: 2021-09-15 7:18:29 [7780] INFO [RequestPerformerService] Complete. +1ms
+2021-09-15 05:18:29.837: 2021-09-15 7:18:29 [7780] INFO [PayloadDownloader] [PAYLOAD 225] Persisting status=state=Downloaded, error=None, active=true +11ms
+2021-09-15 05:18:29.853: 2021-09-15 7:18:29 [7780] INFO [PayloadDownloader] [PAYLOAD 225] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\225\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\225\payload... +23ms
+2021-09-15 05:18:29.869: 2021-09-15 7:18:29 [7780] INFO [RequestPerformerService] Got disposed. +7ms
+2021-09-15 05:18:30.478: 2021-09-15 7:18:30 [7780] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +620ms
+2021-09-15 05:18:30.493: 2021-09-15 7:18:30 [7780] INFO [JS] Installing the package ... +2ms
+2021-09-15 05:18:30.493: 2021-09-15 7:18:30 [7780] INFO [Runner] Performing runner... +1ms
+2021-09-15 05:18:30.493: 2021-09-15 7:18:30 [7780] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload\application.ppkg, args=-QuietInstall... +2ms
+2021-09-15 05:18:30.728: 2021-09-15 7:18:30 [7780] INFO [JS] Getting apps result: 0 +234ms
+2021-09-15 05:18:30.728: 2021-09-15 7:18:30 [7780] INFO [JS] Setting facts... +0ms
+2021-09-15 05:18:30.728: 2021-09-15 7:18:30 [7780] INFO [JS] Uploading facts... +4ms
+2021-09-15 05:18:31.056: 2021-09-15 7:18:31 [7780] INFO [JS] Uploading facts result:  +327ms
+2021-09-15 05:18:31.056: 2021-09-15 7:18:31 [7780] INFO [Runner] Running result: true +1ms
+2021-09-15 05:18:31.071: 2021-09-15 7:18:31 [7780] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +3ms
+2021-09-15 05:18:33.524: 2021-09-15 7:18:33 [7780] INFO [PayloadDownloader] [PAYLOAD 138] Persisting status=state=Ok, error=None, active=true +2455ms
+2021-09-15 05:18:34.742: 2021-09-15 7:18:34 [7780] INFO [RequestPerformerService] Download finished undefined. +1225ms
+2021-09-15 05:18:34.742: 2021-09-15 7:18:34 [7780] INFO [RequestPerformerService] Digest: expected=34c84c25199377fa484f5bbe691b1921, actual=34c84c25199377fa484f5bbe691b1921. +5ms
+2021-09-15 05:18:34.758: 2021-09-15 7:18:34 [7780] INFO [RequestPerformerService] Complete. +1ms
+2021-09-15 05:18:34.758: 2021-09-15 7:18:34 [7780] INFO [PayloadDownloader] [PAYLOAD 221] Persisting status=state=Downloaded, error=None, active=true +11ms

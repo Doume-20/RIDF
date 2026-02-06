@@ -1,0 +1,49 @@
+2021-12-16 11:24:49 [5260] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +3ms
+2021-12-16 10:24:49.063: 2021-12-16 11:24:49 [5260] INFO [Runner] Performing runner... +34ms
+2021-12-16 10:24:49.078: 2021-12-16 11:24:49 [5260] INFO [JS] Performing facts gathering and upload... +1ms
+2021-12-16 10:24:49.219: 2021-12-16 11:24:49 [5260] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net. +23ms
+2021-12-16 10:24:49.235: 2021-12-16 11:24:49 [5260] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/sqoolctl-paq_0.9.8.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload.jarfddcefb10ea59172.new: Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net +1ms
+2021-12-16 10:24:49.235: 2021-12-16 11:24:49 [5260] WARN [PayloadDownloader] Received Error while downloading Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net: Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net
+2021-12-16 10:24:49.235:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +2ms
+2021-12-16 10:24:49.344: 2021-12-16 11:24:49 [5260] WARN [PayloadDispatcher] Error on payload observer for id 279: Error: ENOTEMPTY: directory not empty, rmdir 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload' +116ms
+2021-12-16 10:24:49.344: 2021-12-16 11:24:49 [5260] INFO [RequestPerformerService] Got disposed. +1ms
+2021-12-16 10:24:49.360: 2021-12-16 11:24:49 [5260] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +12ms
+2021-12-16 10:24:49.531: 2021-12-16 11:24:49 [5260] INFO [JS] Current GPO version: 1.5 +172ms
+2021-12-16 10:24:49.531: 2021-12-16 11:24:49 [5260] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-12-16 10:24:49.531: 2021-12-16 11:24:49 [5260] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +2ms
+2021-12-16 10:24:57.747: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Got 9 items. 9 in, 0 out +8215ms
+2021-12-16 10:24:57.747: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +0ms
+2021-12-16 10:24:57.763: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +16ms
+2021-12-16 10:24:57.778: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +3ms
+2021-12-16 10:24:57.778: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +14ms
+2021-12-16 10:24:57.794: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +3ms
+2021-12-16 10:24:57.794: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +3ms
+2021-12-16 10:24:57.794: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2021-12-16 10:24:57.794: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +3ms
+2021-12-16 10:24:57.794: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +3ms
+2021-12-16 10:24:57.794: 2021-12-16 11:24:57 [5260] INFO [KeyedObservableCollector] Sending 9 items +2ms
+2021-12-16 10:24:58.200: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:3efdd7722ea08ebc9a282bbc0434846f for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +403ms
+2021-12-16 10:24:58.497: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +297ms
+2021-12-16 10:24:58.497: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:5238da14c9ec49ed27d246f3309a7e9b for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2021-12-16 10:24:58.512: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +3ms
+2021-12-16 10:24:58.512: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2021-12-16 10:24:58.528: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +4ms
+2021-12-16 10:24:58.528: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2021-12-16 10:24:58.528: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +3ms
+2021-12-16 10:24:58.528: 2021-12-16 11:24:58 [5260] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +2ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +367ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +4ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: false +1ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +1ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +0ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +1ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-16 10:24:58.903: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +1ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +3ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +1ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +1ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +1ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +0ms
+2021-12-16 10:24:58.918: 2021-12-16 11:24:58 [5260] INFO [DeviceConfigurationService]   => result: true +1ms

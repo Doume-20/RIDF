@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ouvrir le d&#233;buggeur : debug</TITLE>
+<META NAME="description" CONTENT="Ouvrir le d&#233;buggeur : debug">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node883.html">
+<LINK REL="previous" HREF="node881.html">
+<LINK REL="up" HREF="node881.html">
+<LINK REL="next" HREF="node883.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html16025"
+  HREF="node883.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16019"
+  HREF="node881.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16013"
+  HREF="node881.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16021"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16023"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16026"
+  HREF="node883.html">Avoir un arr&#234;t momentan&#233;</A>
+<B> monter:</B> <A NAME="tex2html16020"
+  HREF="node881.html">Le debuggeur</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16014"
+  HREF="node881.html">Le debuggeur</A>
+ &nbsp; <B>  <A NAME="tex2html16022"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16024"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001171000000000000000"></A><A NAME="23121"></A>
+<BR>
+Ouvrir le d&#233;buggeur : <TT>debug</TT>
+</H2>
+<TT>debug</TT> a comme argument une fonction et ses arguments.
+<BR><TT>debug</TT> ouvre l'&#233;cran de la fen&#234;tre de mise au point (ou d&#233;bugger)
+avec sa barre de boutons.
+On a la possibilit&#233; :
+
+<UL>
+<LI>d'ex&#233;cuter le programme au pas
+&#224; pas avec le bouton <TT>sst</TT><A NAME="23126"></A> qui inscrit la commande 
+<TT>sst()</TT> dans la ligne de commande,
+</LI>
+<LI>de mettre des points d'arr&#234;ts (breakpoint) avec 
+<TT>break</TT> (ou la commande <TT>breakpoint</TT>), 
+</LI>
+<LI>d'aller directement avec<TT>cont</TT> &#224; une ligne 
+pr&#233;cise marqu&#233;e par un point d'arr&#234;t (ou la commande <TT>cont</TT>),
+</LI>
+<LI>de voir avec <TT>watch</TT> les 
+variables que l'on d&#233;sire surveiller (ou la commande <TT>watch</TT>),
+</LI>
+<LI>d'ex&#233;cuter  au pas &#224; pas 
+les instructions d'une fonction utilisateur avec <TT>dans</TT><A NAME="23135"></A> qui 
+inscrit la commande <TT>sst_in()</TT> dans la ligne de commande, ou encore 
+</LI>
+<LI>de sortir brutalement du d&#233;buggeur avec<TT>tuer</TT> (ou la commande <TT>kill</TT>).
+</LI>
+</UL>
+On tape par exemple :
+<BR> <TT>debug(pgcd(15,25))</TT>. 
+<BR>
+Il faut bien s&#251;r que le programme <TT>pgcd</TT> existe. 
+Par exemple on a tap&#233; :
+<PRE>
+pgcd(a,b):={
+local r;
+while(b!=0) {
+r:=irem(a,b);
+a:=b;
+b:=r;
+}
+return a;
+}
+\begin{verbatim}
+Puis si on veut observer les variables {\tt a} et {\tt b}, on clique sur 
+{\tt watch} : {\tt watch(} s'inscrit dans la ligne {\tt eval} et on compl\'ete
+cette ligne en {\tt watch(a)} puis {\tt enter}, puis on clique sur 
+{\tt watch} et on compl\'ete {\tt watch(} en {\tt watch(b)} puis {\tt enter}.\\
+Ensuite on clique sur {\tt sst}, et on voit \`a chaque \`etape (la ligne qui 
+est ex\'ecut\'ee est en surbrillance) les valeurs de 
+{\tt a} et {\tt b} dans la zone situ\'ee en dessous de la barre des boutons.
+\subsection{Instruction du debuggeur : {\tt watch}}\index{watch}
+\noindent{\tt watch} a comme argument le nom des variables que l'on d\'esire 
+surveiller.\\
+On tape par exemple :
+\begin{center}{\tt watch(a,b)}\end{center}
+On obtient :
+\begin{center}{\tt l'\'evolution de a et de b lors du d\'eroulement du programme}\end{center}
+\subsection{Instruction du debuggeur : {\tt rmwatch}}\index{rmwatch}
+\noindent{\tt rmwatch} a comme argument le nom des variables que l'on ne
+d\'esire plus surveiller.\\
+On tape par exemple :
+\begin{center}{\tt rmwatch(a,b)}\end{center}
+On obtient :
+\begin{center}{\tt l'\'evolution de a et de b lors du d\'eroulement du programmen'est plus visible}\end{center}
+\subsection{Instruction du debuggeur : {\tt breakpoint}}\index{breakpoint}
+\noindent{\tt breakpoint} a comme argument le num\'ero de la ligne o\`u l'on 
+veut un point d'arr\^et.\\
+On tape par exemple :
+\begin{center}{\tt breakpoint(4)}\end{center}
+On obtient :
+\begin{center}{\tt cont() provoquera le d\'eroulement du programme et un arr\^et \`a la ligne 4}\end{center}
+\subsection{Instruction du debuggeur : {\tt rmbreakpoint}}\index{rmbreakpoint}
+\noindent{\tt rmbreakpoint} a comme argument le num\'ero de la ligne o\`u l'on 
+ne veut plus un point d'arr\^et.\\
+On tape par exemple :
+\begin{center}{\tt rmbreakpoint(4)}\end{center}
+On obtient :
+\begin{center}{\tt le point d'arr\^et \`a la ligne 4 a \'et\'e effac\'e}\end{center}
+\subsection{Instruction du debuggeur : {\tt cont}}\index{cont|textbf}
+\noindent{\tt cont} n'a pas d'argument.\\
+{\tt cont()}  est une instruction du debuggeur et permet de continuer un 
+programme arr\^et\'e, par un point d'arr\^et, dans le debuggeur.\\
+On tape :
+\begin{center}{\tt cont()}\end{center}
+On obtient :
+\begin{center}{\tt le d\'eroulement du programme jusqu'au prochain point d'arr\^et}\end{center}
+\subsection{Instruction du debuggeur : {\tt kill}}\index{kill|textbf}
+\noindent{\tt kill} n'a pas d'argument.\\
+{\tt kill()} est une instruction du debuggeur et permet de sortir du debuggeur.\\
+On tape :
+\begin{center}{\tt kill()}\end{center}
+On obtient :
+\begin{center}{\tt on sort du d\'ebuggeur}\end{center}
+\subsection{Instruction en vue d'un debugage : {\tt halt}}\index{halt|textbf}
+\noindent{\tt halt} n'a pas d'argument.\\
+{\tt halt()} est une instruction dans un programme pour 
+programmer un point d'arr\^et dans le debuggeur.\\
+On tape dans un programme :
+\begin{center}{\tt halt();}\end{center}
+On obtient lors du debogage de ce programme :
+\begin{center}{\tt un arr\^et du d\'eroulement du programme \`a cet endroit}\end{center}
+\subsection{Utilisation des instructions du debuggeur : {\tt cont halt kill}}\index{cont}\index{halt}\index{kill}
+\noindent{\tt cont halt kill} n'ont pas d'arguments.\\
+{\tt cont halt kill} sont des instructions du debuggeur.\\
+{\tt cont()} et {\tt kill()} s'utilisent uniquement dans une session de 
+debogage, 
+quand le programme est arr\^et\'e. Typiquement, {\tt kill()} s'utilise quand on
+ a vu o\`u se trouve l'erreur, et que on va savoir corriger le programme, et 
+qu'il est donc inutile de continuer l'ex\'ecution du programme  buggu\'e.\\
+{\tt  cont()} s'utilise pour atteindre le point d'arr\^et suivant.\\
+{\tt halt()} peut \^etre mis comme instruction dans le programme pour 
+programmer un point d'arr\^et (cela \'evite de faire une commande 
+{\tt breakpoint} avec un num\'ero de ligne)
+Par exemple on tape :
+\begin{verbatim}
+testhalt(x):={
+  local y; 
+  y:=x;  
+  halt();  
+  return(y);  
+}
+</PRE>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>debug(testhalt(5))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>l'ouverture du debuggeur et l'arr&#234;t du programme</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cont() pour continurer le debugage ou kill() pour l'arr&#234;ter </TT>
+</DIV>
+<B>Attention</B>
+<BR>
+Si on tape juste <TT>testhalt(5)</TT> sans mettre <TT>debug</TT>, le debuggeur 
+s'ouvre mais, la liste des instructions formant le programme n'est pas
+affich&#233;e donc il vaut mieux faire <TT>debug(testhalt(5))</TT> puis enlever 
+les <TT>halt()</TT> quand le programme est au point.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html16025"
+  HREF="node883.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html16019"
+  HREF="node881.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html16013"
+  HREF="node881.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html16021"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html16023"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html16026"
+  HREF="node883.html">Avoir un arr&#234;t momentan&#233;</A>
+<B> monter:</B> <A NAME="tex2html16020"
+  HREF="node881.html">Le debuggeur</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html16014"
+  HREF="node881.html">Le debuggeur</A>
+ &nbsp; <B>  <A NAME="tex2html16022"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html16024"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

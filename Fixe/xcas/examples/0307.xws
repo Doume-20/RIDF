@@ -1,0 +1,418 @@
+// fltk N4xcas6FigureE 34 -526 824 373
+// fltk N4xcas12History_PackE 36 -1378 254 1225
+[
+// fltk 7Fl_Tile 61 -1378 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -1378 229 30
+a:=point(0,0,0)
+,
+// fltk N4xcas10Log_OutputE 61 -1348 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -1347 229 25
+point([0,0,0])
+]
+,
+// fltk 7Fl_Tile 61 -1320 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -1320 229 30
+b:=point(4,0,0)
+,
+// fltk N4xcas10Log_OutputE 61 -1290 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -1289 229 25
+point([4,0,0])
+]
+,
+// fltk 7Fl_Tile 61 -1262 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -1262 229 30
+c:=point(4,4,0)
+,
+// fltk N4xcas10Log_OutputE 61 -1232 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -1231 229 25
+point([4,4,0])
+]
+,
+// fltk 7Fl_Tile 61 -1204 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -1204 229 30
+d:=point(0,4,0)
+,
+// fltk N4xcas10Log_OutputE 61 -1174 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -1173 229 25
+point([0,4,0])
+]
+,
+// fltk 7Fl_Tile 61 -1146 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -1146 229 30
+P:=polygone(a,b,c,d):;P
+,
+// fltk N4xcas10Log_OutputE 61 -1116 229 1
+
+,
+// fltk 9Fl_Scroll 61 -1115 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -1115 704 25
+["Done",polygone(point([0,0,0]),point([4,0,0]),point([4,4,0]),point([0,4,0]),point([0,0,0]))]
+,
+// fltk 12Fl_Scrollbar 61 127 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 96 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -1066 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -1066 229 30
+Q:=translation([0,0,4],P):;Q
+,
+// fltk N4xcas10Log_OutputE 61 -1036 229 1
+
+,
+// fltk 9Fl_Scroll 61 -1035 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -1035 704 25
+["Done",polygone(point([0,0,4]),point([4,0,4]),point([4,4,4]),point([0,4,4]),point([0,0,4]))]
+,
+// fltk 12Fl_Scrollbar 61 149 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 118 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -986 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -986 229 30
+A:=sommets(Q)[0]
+,
+// fltk N4xcas10Log_OutputE 61 -956 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -955 229 25
+point([0,0,4])
+]
+,
+// fltk 7Fl_Tile 61 -928 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -928 229 30
+B:=sommets(Q)[1]
+,
+// fltk N4xcas10Log_OutputE 61 -898 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -897 229 25
+point([4,0,4])
+]
+,
+// fltk 7Fl_Tile 61 -870 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -870 229 30
+C:=sommets(Q)[2]
+,
+// fltk N4xcas10Log_OutputE 61 -840 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -839 229 25
+point([4,4,4])
+]
+,
+// fltk 7Fl_Tile 61 -812 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -812 229 30
+D:=sommets(Q)[3]
+,
+// fltk N4xcas10Log_OutputE 61 -782 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -781 229 25
+point([0,4,4])
+]
+,
+// fltk 7Fl_Tile 61 -754 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -754 229 30
+I:=isobarycentre(A,D,d,a)
+,
+// fltk N4xcas10Log_OutputE 61 -724 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -723 229 25
+point([0,2,2])
+]
+,
+// fltk 7Fl_Tile 61 -696 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -696 229 30
+O:=isobarycentre(a,b,c,d)
+,
+// fltk N4xcas10Log_OutputE 61 -666 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -665 229 25
+point([2,2,0])
+]
+,
+// fltk 7Fl_Tile 61 -638 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -638 229 30
+segment(b,d,affichage=dash_line)
+,
+// fltk N4xcas10Log_OutputE 61 -608 229 1
+
+,
+// fltk 9Fl_Scroll 61 -607 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -607 307 25
+polygone(point([4,0,0]),point([0,4,0]))
+,
+// fltk 12Fl_Scrollbar 61 127 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 96 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -558 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -558 229 30
+polygone(a,b,B,A)
+,
+// fltk N4xcas10Log_OutputE 61 -528 229 1
+
+,
+// fltk 9Fl_Scroll 61 -527 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -527 634 25
+polygone(point([0,0,0]),point([4,0,0]),point([4,0,4]),point([0,0,4]),point([0,0,0]))
+,
+// fltk 12Fl_Scrollbar 61 56 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 25 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -478 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -478 229 30
+polygone(d,c,C,D)
+,
+// fltk N4xcas10Log_OutputE 61 -448 229 1
+
+,
+// fltk 9Fl_Scroll 61 -447 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -447 634 25
+polygone(point([0,4,0]),point([4,4,0]),point([4,4,4]),point([0,4,4]),point([0,4,0]))
+,
+// fltk 12Fl_Scrollbar 61 100 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 69 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -398 229 72
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -398 229 24
+triangle(a,c,D,color=red)
+,
+// fltk N4xcas10Log_OutputE 61 -374 229 1
+
+,
+// fltk 9Fl_Scroll 61 -373 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -373 525 25
+polygone(point([0,0,0]),point([4,4,0]),point([0,4,4]),point([0,0,0]))
+,
+// fltk 12Fl_Scrollbar 61 133 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 102 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -324 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -324 229 30
+segment(O,I,color=blue)
+,
+// fltk N4xcas10Log_OutputE 61 -294 229 1
+
+,
+// fltk 9Fl_Scroll 61 -293 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -293 307 25
+polygone(point([2,2,0]),point([0,2,2]))
+,
+// fltk 12Fl_Scrollbar 61 96 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 65 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -244 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -244 229 30
+J:=milieu(O,I)
+,
+// fltk N4xcas10Log_OutputE 61 -214 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -213 229 25
+point([1,2,1])
+]
+,
+// fltk 7Fl_Tile 61 -186 229 31
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -186 229 30
+
+,
+// fltk N4xcas10Log_OutputE 61 -156 229 1
+
+]
+]
+// fltk N4xcas5Geo3dE 308 -501 429 359
+-1,5,-1,5,[pnt(pnt[[0,0,0],0,"a"]),pnt(pnt[[4,0,0],0,"b"]),pnt(pnt[[4,4,0],0,"c"]),pnt(pnt[[0,4,0],0,"d"]),"Done",pnt(pnt[group[[0,0,0],[4,0,0],[4,4,0],[0,4,0],[0,0,0]],0]),"Done",pnt(pnt[group[[0,0,4],[4,0,4],[4,4,4],[0,4,4],[0,0,4]],0]),pnt(pnt[[0,0,4],0,"A"]),pnt(pnt[[4,0,4],0,"B"]),pnt(pnt[[4,4,4],0,"C"]),pnt(pnt[[0,4,4],0,"D"]),pnt(pnt[[0,2,2],0,"I"]),pnt(pnt[[2,2,0],0,"O"]),pnt(pnt[group[[4,0,0],[0,4,0]],4194304]),pnt(pnt[group[[0,0,0],[4,0,0],[4,0,4],[0,0,4],[0,0,0]],0]),pnt(pnt[group[[0,4,0],[4,4,0],[4,4,4],[0,4,4],[0,4,0]],0]),pnt(pnt[group[[0,0,0],[4,4,0],[0,4,4],[0,0,0]],1]),pnt(pnt[group[[2,2,0],[0,2,2]],4]),pnt(pnt[[1,2,1],0,"J"])],-1,5,0.72836,-0.57125,-0.23128,-0.29948,1,1,1
+
+,
+// fltk 7Fl_Tile 34 -151 824 78
+[
+// fltk N4xcas19Multiline_Input_tabE 34 -151 824 30
+longueur(O,C); longueur(I,C)
+,
+// fltk N4xcas10Log_OutputE 34 -121 824 1
+
+,
+// fltk N4xcas8EquationE 34 -120 824 47
+2*sqrt(6),2*sqrt(6)
+]
+,
+// fltk 7Fl_Tile 34 -71 824 78
+[
+// fltk N4xcas19Multiline_Input_tabE 34 -71 824 30
+longueur(C,J); longueur(a,J); longueur(a,C)
+,
+// fltk N4xcas10Log_OutputE 34 -41 824 1
+
+,
+// fltk N4xcas8EquationE 34 -40 824 47
+sqrt(22),sqrt(6),4*sqrt(3)
+]
+,
+// fltk 7Fl_Tile 34 9 824 74
+[
+// fltk N4xcas19Multiline_Input_tabE 34 9 824 30
+est_aligne(a,J,C)
+,
+// fltk N4xcas10Log_OutputE 34 39 824 1
+
+,
+// fltk N4xcas8EquationE 34 40 824 43
+0
+]
+,
+// fltk 7Fl_Tile 34 85 824 305
+[
+// fltk N4xcas19Multiline_Input_tabE 34 85 824 30
+D1:=droite(O,I);P1:=plan(a,J,C,couleur=rouge)
+,
+// fltk N4xcas10Log_OutputE 34 115 824 1
+
+,
+// fltk 7Fl_Tile 34 116 824 274
+[
+// fltk N4xcas7Graph3dE 34 116 704 274
+-1,5,-1,5,[pnt(pnt[line[[2,2,0],[0,2,2]],0,"D1"]),pnt(pnt[hyperplan([4,0,-4],[0,0,0]),1,"P1"])],-1,5,0.72836,-0.57124,-0.23127,-0.29948,1,1,1
+,
+// fltk 7Fl_Tile 738 116 120 274
+[
+// fltk N4xcas14Mouse_PositionE 738 116 120 30
+[]
+,
+// fltk 8Fl_Group 738 146 120 85
+[
+// fltk 9Fl_Button 738 146 40 17
+[]
+,
+// fltk 9Fl_Button 778 146 40 17
+[]
+,
+// fltk 9Fl_Button 818 146 40 17
+[]
+,
+// fltk 9Fl_Button 738 163 40 17
+[]
+,
+// fltk 9Fl_Button 778 163 40 17
+[]
+,
+// fltk 9Fl_Button 818 163 40 17
+[]
+,
+// fltk 9Fl_Button 738 180 40 17
+[]
+,
+// fltk 9Fl_Button 778 180 40 17
+[]
+,
+// fltk 9Fl_Button 818 180 40 17
+[]
+,
+// fltk 9Fl_Button 738 197 40 17
+[]
+,
+// fltk 9Fl_Button 778 197 40 17
+[]
+,
+// fltk 9Fl_Button 818 197 40 17
+[]
+,
+// fltk 11Fl_Menu_Bar 738 214 120 17
+[]
+]
+,
+// fltk 8Fl_Group 738 231 120 159
+[
+]
+]
+]
+]
+,
+// fltk 7Fl_Tile 34 392 824 74
+[
+// fltk N4xcas19Multiline_Input_tabE 34 392 824 30
+coordonnees(inter_unique(D1,P1)),coordonnees(J)
+,
+// fltk N4xcas10Log_OutputE 34 422 824 1
+
+,
+// fltk N4xcas8EquationE 34 423 824 43
+[1,2,1],[1,2,1]
+]
+,
+// fltk 7Fl_Tile 34 468 824 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 468 824 30
+
+,
+// fltk N4xcas10Log_OutputE 34 498 824 1
+
+]

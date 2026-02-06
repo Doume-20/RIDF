@@ -1,0 +1,160 @@
+2021-12-12 19:46:48 [5384] INFO [JS] Finishing Installation +1ms
+2021-12-12 18:46:48.106: 2021-12-12 19:46:48 [5384] INFO [Runner] Running result: true +1ms
+2021-12-12 18:46:48.106: 2021-12-12 19:46:48 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Biblio-Manuels-Windows (358) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Biblio-Manuels-Windows.json +2ms
+2021-12-12 18:46:49.590: 2021-12-12 19:46:49 [5384] INFO [JS] Version of update package: 1.0 +1479ms
+2021-12-12 18:46:49.590: 2021-12-12 19:46:49 [5384] INFO [JS] Your package is up to date +0ms
+2021-12-12 18:46:49.590: 2021-12-12 19:46:49 [5384] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-12-12 18:46:49.590: 2021-12-12 19:46:49 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Microsoft-Office-1.0.0 (359) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Microsoft-Office-1.0.0.json +2ms
+2021-12-12 18:46:49.715: 2021-12-12 19:46:49 [5384] INFO [JS] Version of update package: 1.1 +129ms
+2021-12-12 18:46:49.731: 2021-12-12 19:46:49 [5384] INFO [JS] Your package is up to date +1ms
+2021-12-12 18:46:49.731: 2021-12-12 19:46:49 [5384] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-12-12 18:46:49.731: 2021-12-12 19:46:49 [5384] INFO [ConfigurationRunner] Writing execution result of conf/other/disablerecovery (179) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_disablerecovery.json +1ms
+2021-12-12 18:46:52.255: 2021-12-12 19:46:52 [5384] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload\application.ppkg' -QuietInstall +2532ms
+2021-12-12 18:46:52.255: 2021-12-12 19:46:52 [5384] INFO [Runner] Running result: false +0ms
+2021-12-12 18:46:52.255: 2021-12-12 19:46:52 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (433) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2021-12-12 18:46:55.738: 2021-12-12 19:46:55 [5384] INFO [JS] Install Result: 0 +3478ms
+2021-12-12 18:46:55.738: 2021-12-12 19:46:55 [5384] INFO [JS] Install Stdout: 
+2021-12-12 18:46:55.738: 
+2021-12-12 18:46:55.738: IsInstalled     : False
+2021-12-12 18:46:55.738: PackageID       : 10108c63-247d-41bd-92fa-2e15beeb2c93
+2021-12-12 18:46:55.738: PackageName     : Educadhoc
+2021-12-12 18:46:55.738: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload\application.ppkg
+2021-12-12 18:46:55.738: Description     : 
+2021-12-12 18:46:55.738: Rank            : 0
+2021-12-12 18:46:55.738: Altitude        : 5000
+2021-12-12 18:46:55.738: Version         : 9.14
+2021-12-12 18:46:55.738: OwnerType       : ITAdmin
+2021-12-12 18:46:55.738: Notes           : 
+2021-12-12 18:46:55.738: LastInstallTime : 21/10/2021 22:10:15
+2021-12-12 18:46:55.738: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   4__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   5__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   6__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-12-12 18:46:55.738:                   	Category:Content
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-12-12 18:46:55.738:                   	Category:Scripts
+2021-12-12 18:46:55.738:                   	LastResult:Success
+2021-12-12 18:46:55.738:                   	Message:Provisioning succeeded
+2021-12-12 18:46:55.738:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738:                   
+2021-12-12 18:46:55.738: 
+2021-12-12 18:46:55.738: 
+2021-12-12 18:46:55.738:  +1ms
+2021-12-12 18:46:55.738: 2021-12-12 19:46:55 [5384] INFO [JS] Install Stderr:  +0ms
+2021-12-12 18:46:55.738: 2021-12-12 19:46:55 [5384] INFO [JS] Finishing Installation +0ms
+2021-12-12 18:46:55.738: 2021-12-12 19:46:55 [5384] INFO [Runner] Running result: true +0ms
+2021-12-12 18:46:55.738: 2021-12-12 19:46:55 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Educadhoc-Windows (394) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Educadhoc-Windows.json +1ms
+2021-12-12 18:46:57.488: 2021-12-12 19:46:57 [5384] INFO [JS] Install Result: 0 +1745ms
+2021-12-12 18:46:57.488: 2021-12-12 19:46:57 [5384] INFO [JS] Install Stdout: 
+2021-12-12 18:46:57.488: 
+2021-12-12 18:46:57.488: IsInstalled     : False
+2021-12-12 18:46:57.488: PackageID       : 105da565-d050-4a60-9c4f-556c6bdb5775
+2021-12-12 18:46:57.488: PackageName     : Lelivrescolaire
+2021-12-12 18:46:57.488: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\457\payload\application.ppkg
+2021-12-12 18:46:57.488: Description     : 
+2021-12-12 18:46:57.488: Rank            : 0
+2021-12-12 18:46:57.488: Altitude        : 5000
+2021-12-12 18:46:57.488: Version         : 3.16
+2021-12-12 18:46:57.488: OwnerType       : ITAdmin
+2021-12-12 18:46:57.488: Notes           : 
+2021-12-12 18:46:57.488: LastInstallTime : 25/11/2021 09:00:32
+2021-12-12 18:46:57.488: Result          : 0__OOBE_Desktop_HideOobe.provxml
+2021-12-12 18:46:57.488:                   	Category:InitialCustomization
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:OOBE successfully configured.
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   1__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   2__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   3__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   4__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   5__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   6__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   7__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2021-12-12 18:46:57.488:                   	Category:Content
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   8__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2021-12-12 18:46:57.488:                   	Category:Scripts
+2021-12-12 18:46:57.488:                   	LastResult:Success
+2021-12-12 18:46:57.488:                   	Message:Provisioning succeeded
+2021-12-12 18:46:57.488:                   	NumberOfFailures:0 (0x0)
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488:                   
+2021-12-12 18:46:57.488: 
+2021-12-12 18:46:57.488: 
+2021-12-12 18:46:57.488:  +1ms
+2021-12-12 18:46:57.488: 2021-12-12 19:46:57 [5384] INFO [JS] Install Stderr:  +1ms
+2021-12-12 18:46:57.488: 2021-12-12 19:46:57 [5384] INFO [JS] Finishing Installation +1ms
+2021-12-12 18:46:57.488: 2021-12-12 19:46:57 [5384] INFO [Runner] Running result: true +0ms
+2021-12-12 18:46:57.488: 2021-12-12 19:46:57 [5384] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Le-Livre-Scolaire-Windows (457) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Le-Livre-Scolaire-Windows.json +2ms

@@ -1,0 +1,54 @@
+2020-10-27 18:36:53.866: 2020-10-27 19:36:53 [4752] INFO [NestFactory] Starting Nest application...
+2020-10-27 18:36:53.957: 2020-10-27 19:36:53 [4752] INFO [ConfigurationService] Application data folder: C:\Program Files\Unowhy\HiSqool Manager\data +98ms
+2020-10-27 18:36:53.965: 2020-10-27 19:36:53 [4752] INFO [ConfigurationService] User data folder: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +1ms
+2020-10-27 18:36:53.967: 2020-10-27 19:36:53 [4752] INFO [InstanceLoader] HttpModule dependencies initialized +9ms
+2020-10-27 18:36:53.976: 2020-10-27 19:36:53 [4752] INFO [InstanceLoader] ConfigurationModule dependencies initialized +2ms
+2020-10-27 18:36:53.978: 2020-10-27 19:36:53 [4752] INFO [InstanceLoader] CommonModule dependencies initialized +7ms
+2020-10-27 18:36:53.986: 2020-10-27 19:36:53 [4752] INFO [CommandService] Connecting to MQTT... +2ms
+2020-10-27 18:36:53.988: 2020-10-27 19:36:53 [4752] INFO [InstanceLoader] DeviceConfigurationModule dependencies initialized +4ms
+2020-10-27 18:36:53.988: 2020-10-27 19:36:53 [4752] INFO [InstanceLoader] WatcherModule dependencies initialized +1ms
+2020-10-27 18:36:54.056: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] CommandModule dependencies initialized +66ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] SchedulerModule dependencies initialized +1ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] PayloadModule dependencies initialized +2ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] DeviceFactsModule dependencies initialized +1ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] ScriptorModule dependencies initialized +1ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] MqttModule dependencies initialized +1ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] GlobalModule dependencies initialized +1ms
+2020-10-27 18:36:54.058: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] AppModule dependencies initialized +2ms
+2020-10-27 18:36:54.066: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] ExecutorModule dependencies initialized +2ms
+2020-10-27 18:36:54.119: 2020-10-27 19:36:54 [4752] INFO [InstanceLoader] InstallerModule dependencies initialized +56ms
+2020-10-27 18:36:56.550: 2020-10-27 19:36:56 [4752] INFO [InstanceLoader] DeviceInformationModule dependencies initialized +2437ms
+2020-10-27 18:36:57.120: 2020-10-27 19:36:57 [4752] INFO [HiSqoolManager] Starting HiSqool Manager false +561ms
+2020-10-27 18:36:57.120: 2020-10-27 19:36:57 [4752] INFO [ConfigurationService] Configuration file is C:\snapshot\hisqoolmanager\config\idf.json +2ms
+2020-10-27 18:36:57.655: 2020-10-27 19:36:57 [4752] INFO [HiSqoolManager] Listening on port 7654... +538ms
+2020-10-27 18:36:57.655: 2020-10-27 19:36:57 [4752] INFO [DeviceConfigurationService] Starting with saved configuration +5ms
+2020-10-27 18:36:57.670: 2020-10-27 19:36:57 [4752] INFO [DeviceConfigurationService] Emitting configuration with 5 units +7ms
+2020-10-27 18:36:57.675: 2020-10-27 19:36:57 [4752] INFO [PayloadDispatcher] Got 5 payloads of which 5 are valid +1ms
+2020-10-27 18:36:57.675: 2020-10-27 19:36:57 [4752] INFO [PayloadDispatcher] Got 5 items. 5 in, 0 out +2ms
+2020-10-27 18:36:57.722: 2020-10-27 19:36:57 [4752] INFO [RoutesResolver] AppController {/}: +49ms
+2020-10-27 18:36:57.737: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/, GET} route +19ms
+2020-10-27 18:36:57.737: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/halamadridynadamas, GET} route +6ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/stop, GET} route +3ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RoutesResolver] MqttController {/mqtt}: +1ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/, GET} route +3ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/topic/*, GET} route +3ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/restart, GET} route +2ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RoutesResolver] WatcherController {/watcher}: +1ms
+2020-10-27 18:36:57.753: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/, GET} route +3ms
+2020-10-27 18:36:57.769: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/payloads, GET} route +6ms
+2020-10-27 18:36:57.775: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/payloads/:id, GET} route +3ms
+2020-10-27 18:36:57.777: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/payloads/:id/restart, GET} route +3ms
+2020-10-27 18:36:57.777: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/configuration/*, GET} route +2ms
+2020-10-27 18:36:57.785: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/restart/*, GET} route +5ms
+2020-10-27 18:36:57.787: 2020-10-27 19:36:57 [4752] INFO [RoutesResolver] DeviceConfigurationController {/device-configuration}: +2ms
+2020-10-27 18:36:57.787: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/, GET} route +5ms
+2020-10-27 18:36:57.795: 2020-10-27 19:36:57 [4752] INFO [RoutesResolver] DeviceInformationController {/device-information}: +3ms
+2020-10-27 18:36:57.797: 2020-10-27 19:36:57 [4752] INFO [RouterExplorer] Mapped {/, GET} route +2ms
+2020-10-27 18:36:57.808: 2020-10-27 19:36:57 [4752] INFO [NestApplication] Nest application successfully started +12ms
+2020-10-27 18:36:57.808: 2020-10-27 19:36:57 [4752] INFO [HiSqoolManager] Name of service DeviceFactsService... +2ms
+2020-10-27 18:36:57.858: 2020-10-27 19:36:57 [4752] INFO [PayloadDownloader] [PAYLOAD 111] Received payload Facts Uploader Windows. current status=state=Ok, error=None, active=true +46ms
+2020-10-27 18:36:57.858: 2020-10-27 19:36:57 [4752] INFO [PayloadDownloader] [PAYLOAD 111] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2020-10-27 18:36:57.858: 2020-10-27 19:36:57 [4752] INFO [PayloadDownloader] [PAYLOAD 173] Received payload Nettoyage post déploiement. current status=state=Ok, error=None, active=true +4ms
+2020-10-27 18:36:57.866: 2020-10-27 19:36:57 [4752] INFO [PayloadDownloader] [PAYLOAD 173] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2020-10-27 18:36:57.868: 2020-10-27 19:36:57 [4752] INFO [PayloadDownloader] [PAYLOAD 130] Received payload LGPO Windows. current status=state=Ok, error=None, active=true +9ms
+2020-10-27 18:36:57.876: 2020-10-27 19:36:57 [4752] INFO [PayloadDownloader] [PAYLOAD 130] Same payload as before emitting current status: state=Ok, error=None, active=true +2ms

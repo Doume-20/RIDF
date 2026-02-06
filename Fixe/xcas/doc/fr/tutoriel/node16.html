@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Limites et d&#233;veloppements limit&#233;s</TITLE>
+<META NAME="description" CONTENT="Limites et d&#233;veloppements limit&#233;s">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html289"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html283"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html277"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html285"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html287"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html290"
+  HREF="node17.html">Primitives et int&#233;grales</A>
+<B> monter:</B> <A NAME="tex2html284"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html278"
+  HREF="node15.html">D&#233;riv&#233;es</A>
+ &nbsp; <B>  <A NAME="tex2html286"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html288"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00032000000000000000">
+Limites et d&#233;veloppements limit&#233;s</A>
+</H2>
+La fonction  <code>limit</code> calcule les limites finies ou
+infinies, quand elles existent. On peut demander une limite 
+&#224; gauche ou &#224; droite &#224; l'aide d'un quatri&#232;me argument (+1 ou -1). 
+Quand la fonction d&#233;pend d'un
+param&#232;tre, la limite obtenue peut d&#233;pendre des hypoth&#232;ses
+faites, avec la fonction <TT>assume</TT>, sur ce param&#232;tre. 
+<A NAME="1644"></A>
+<A NAME="375"></A>
+<A NAME="376"></A>
+<A NAME="377"></A>
+<PRE>
+limit(1/x,x,0)
+limit(1/x,x,0,1)
+limit(1/x,x,0,-1)
+limit(a/x,x,0,1)
+assume(a&gt;0)
+limit(a/x,x,0,1)
+</PRE>
+Pour les d&#233;veloppements limit&#233;s,
+deux fonctions sont disponibles, <code>series</code> et <code>taylor</code>. La
+diff&#233;rence est que l'ordre du d&#233;veloppement doit &#234;tre
+sp&#233;cifi&#233; pour <code>series</code>, il est &#233;gal &#224; 6 par d&#233;faut
+pour <code>taylor</code>. 
+<A NAME="380"></A>
+<A NAME="1645"></A>
+<A NAME="1646"></A>
+
+<P>
+L'ordre du d&#233;veloppement limit&#233; demand&#233; est utilis&#233; par 
+<TT>Xcas</TT> en interne pour faire ses d&#233;veloppements. En cas de 
+simplifications, l'ordre du d&#233;veloppement obtenu pourra &#234;tre inf&#233;rieur, 
+il faudra alors recommencer le calcul avec un ordre plus grand. L'expression
+retourn&#233;e est constitu&#233;e du polyn&#244;me de Taylor, plus un reste
+dans lequel appara&#238;t une fonction <code>order_size</code> qui est telle que
+pour tout <I>a</I> &gt; 0, <I>x</I><SUP>a</SUP><code>order_size</code>(<I>x</I>) tend vers 0
+quand <I>x</I> tend vers 0. Pour supprimer le reste et ne garder
+que le polyn&#244;me de Taylor, on peut utiliser <code>convert</code> avec l'option 
+<TT>polynom</TT>.
+<PRE>
+taylor(1/(x^2+1),0)
+taylor(1/(x^2+a^2),x=0)
+series(1/(x^2+1),0,11)
+series(1/(x^2+1),+infinity,11)
+series(tan(x),pi/4,3)
+series(sin(x)^3/((1-cos(x))*tan(x)),0,4)
+series(sin(x)^3/((1-cos(x))*tan(x)),0,6)
+series(tan(sin(x))-sin(tan(x)),0,13)
+convert(ans(),polynom)
+series(f(x),0,3)
+g:=f@f; series(g(x),0,2)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Limites et d&#233;veloppements limit&#233;s</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>limit(ex,x,a)</code></TD>
+<TD ALIGN="LEFT">limite en a</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>limit(ex,x,a,1)</code></TD>
+<TD ALIGN="LEFT">limite &#224; droite en a</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>limit(ex,x,a,-1)</code></TD>
+<TD ALIGN="LEFT">limite &#224; gauche en a</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>taylor(ex,a)</code></TD>
+<TD ALIGN="LEFT">d&#233;veloppement limit&#233; en <I>a</I> ordre 6</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>series(ex,a,n)</code></TD>
+<TD ALIGN="LEFT">d&#233;veloppement limit&#233; en <I>a</I> ordre <I>n</I></TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html289"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html283"
+  HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html277"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html285"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html287"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html290"
+  HREF="node17.html">Primitives et int&#233;grales</A>
+<B> monter:</B> <A NAME="tex2html284"
+  HREF="node14.html">Outils pour l'Analyse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html278"
+  HREF="node15.html">D&#233;riv&#233;es</A>
+ &nbsp; <B>  <A NAME="tex2html286"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html288"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

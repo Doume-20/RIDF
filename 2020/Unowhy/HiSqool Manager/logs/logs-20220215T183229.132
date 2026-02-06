@@ -1,0 +1,67 @@
+2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +1ms
+2022-02-15 18:02:27.975: 2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2022-02-15 18:02:27.975: 2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +1ms
+2022-02-15 18:02:27.975: 2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +8ms
+2022-02-15 18:02:27.986: 2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +1ms
+2022-02-15 18:02:27.986: 2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +1ms
+2022-02-15 18:02:27.986: 2022-02-15 19:02:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms
+2022-02-15 18:02:27.986: 2022-02-15 19:02:27 [5360] INFO [Runner] Performing runner... +1ms
+2022-02-15 18:02:27.986: 2022-02-15 19:02:27 [5360] INFO [JS] Performing facts gathering and upload... +2ms
+2022-02-15 18:02:36.583: 2022-02-15 19:02:36 [5360] INFO [JS] Getting installed applications... +8590ms
+2022-02-15 18:02:40.766: 2022-02-15 19:02:40 [5360] INFO [JS] Getting apps result: 0 +4182ms
+2022-02-15 18:02:40.767: 2022-02-15 19:02:40 [5360] INFO [JS] Setting facts... +1ms
+2022-02-15 18:02:40.772: 2022-02-15 19:02:40 [5360] INFO [JS] Uploading facts... +3ms
+2022-02-15 18:02:41.130: 2022-02-15 19:02:41 [5360] INFO [JS] Uploading facts result:  +358ms
+2022-02-15 18:02:41.133: 2022-02-15 19:02:41 [5360] INFO [Runner] Running result: true +2ms
+2022-02-15 18:02:41.138: 2022-02-15 19:02:41 [5360] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +4ms
+2022-02-15 18:32:27.929: 2022-02-15 19:32:27 [5360] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +1786793ms
+2022-02-15 18:32:27.929: 2022-02-15 19:32:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +1ms
+2022-02-15 18:32:27.929: 2022-02-15 19:32:27 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +4ms
+2022-02-15 18:32:27.940: 2022-02-15 19:32:27 [5360] INFO [Runner] Creating configuration unit runner object... +8ms
+2022-02-15 18:32:27.940: 2022-02-15 19:32:27 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:27.940: 2022-02-15 19:32:27 [5360] INFO [JS] Checking if programming or tiggering with trigger configuration... +2ms
+2022-02-15 18:32:27.940: 2022-02-15 19:32:27 [5360] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2022-02-15 18:32:27.951: 2022-02-15 19:32:27 [5360] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +2ms
+2022-02-15 18:32:27.951: 2022-02-15 19:32:27 [5360] INFO [SchedulerService] Identical schedule existing. Doing nothing +2ms
+2022-02-15 18:32:27.951: 2022-02-15 19:32:27 [5360] INFO [JS] Scheduling result: undefined +1ms
+2022-02-15 18:32:27.951: 2022-02-15 19:32:27 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +2ms
+2022-02-15 18:32:27.951: 2022-02-15 19:32:27 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +4ms
+2022-02-15 18:32:27.995: 2022-02-15 19:32:27 [5360] INFO [Runner] Creating configuration unit runner object... +38ms
+2022-02-15 18:32:27.995: 2022-02-15 19:32:28 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:27.995: 2022-02-15 19:32:28 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-15 18:32:27.995: 2022-02-15 19:32:28 [5360] INFO [JS] Getting GPO version... +1ms
+2022-02-15 18:32:27.995: 2022-02-15 19:32:28 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +0ms
+2022-02-15 18:32:27.995: 2022-02-15 19:32:28 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +1ms
+2022-02-15 18:32:28.021: 2022-02-15 19:32:28 [5360] INFO [Runner] Creating configuration unit runner object... +14ms
+2022-02-15 18:32:28.021: 2022-02-15 19:32:28 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:28.021: 2022-02-15 19:32:28 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-15 18:32:28.021: 2022-02-15 19:32:28 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2022-02-15 18:32:28.021: 2022-02-15 19:32:28 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +1ms
+2022-02-15 18:32:28.031: 2022-02-15 19:32:28 [5360] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-02-15 18:32:28.031: 2022-02-15 19:32:28 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:28.031: 2022-02-15 19:32:28 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-15 18:32:28.076: 2022-02-15 19:32:28 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +39ms
+2022-02-15 18:32:28.076: 2022-02-15 19:32:28 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +2ms
+2022-02-15 18:32:28.087: 2022-02-15 19:32:28 [5360] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-02-15 18:32:28.087: 2022-02-15 19:32:28 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:28.087: 2022-02-15 19:32:28 [5360] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe +2ms
+2022-02-15 18:32:28.835: 2022-02-15 19:32:28 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> configuration... +737ms
+2022-02-15 18:32:28.835: 2022-02-15 19:32:28 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload... +2ms
+2022-02-15 18:32:28.846: 2022-02-15 19:32:28 [5360] INFO [Runner] Creating configuration unit runner object... +12ms
+2022-02-15 18:32:28.846: 2022-02-15 19:32:28 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:28.846: 2022-02-15 19:32:28 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-15 18:32:28.912: 2022-02-15 19:32:28 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +65ms
+2022-02-15 18:32:28.912: 2022-02-15 19:32:28 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2022-02-15 18:32:28.923: 2022-02-15 19:32:28 [5360] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-02-15 18:32:28.923: 2022-02-15 19:32:28 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:28.934: 2022-02-15 19:32:28 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-15 18:32:29.022: 2022-02-15 19:32:29 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +93ms
+2022-02-15 18:32:29.022: 2022-02-15 19:32:29 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +2ms
+2022-02-15 18:32:29.033: 2022-02-15 19:32:29 [5360] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-02-15 18:32:29.033: 2022-02-15 19:32:29 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:29.044: 2022-02-15 19:32:29 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> configuration... +3ms
+2022-02-15 18:32:29.044: 2022-02-15 19:32:29 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload... +2ms
+2022-02-15 18:32:29.055: 2022-02-15 19:32:29 [5360] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-02-15 18:32:29.055: 2022-02-15 19:32:29 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-15 18:32:29.088: 2022-02-15 19:32:29 [5360] INFO [JS] Checking that the unit needs to be performed +31ms
+2022-02-15 18:32:29.132: 2022-02-15 19:32:29 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +36ms

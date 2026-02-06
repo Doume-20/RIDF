@@ -1,0 +1,70 @@
+2021-09-16 20:33:06 [5224] INFO [JS] Reading result file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +1ms
+2021-09-16 18:33:06.647: 2021-09-16 20:33:06 [5224] INFO [JS] There are 0 components to uninstall +17ms
+2021-09-16 18:33:06.647: 2021-09-16 20:33:06 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-16 18:33:06.656: 2021-09-16 20:33:06 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 (271) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Charte-sur-la-protection-des-donnees-1.0.16.0.json +2ms
+2021-09-16 18:33:06.658: 2021-09-16 20:33:06 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-09-16 18:33:06.668: 2021-09-16 20:33:06 [5224] INFO [Runner] Creating configuration unit runner object... +12ms
+2021-09-16 18:33:06.668: 2021-09-16 20:33:06 [5224] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-09-16 18:33:06.668: 2021-09-16 20:33:06 [5224] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-09-16 18:33:06.668: {
+2021-09-16 18:33:06.668:   "platform": "win32",
+2021-09-16 18:33:06.668:   "deviceId": "IFP052046109",
+2021-09-16 18:33:06.668:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-09-16 18:33:06.668:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-09-16 18:33:06.668:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-09-16 18:33:06.668:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-09-16 18:33:06.668:   "versionCode": 21090427,
+2021-09-16 18:33:06.668:   "trigger": "configuration",
+2021-09-16 18:33:06.668:   "metadata": {
+2021-09-16 18:33:06.668:     "packageVersion": "1.0.16.0",
+2021-09-16 18:33:06.668:     "componentParameters": {
+2021-09-16 18:33:06.668:       "AppX": "Hisqool.Legal.GDPR",
+2021-09-16 18:33:06.668:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-09-16 18:33:06.668:       "DesktopShortcut": "Charte de protection*",
+2021-09-16 18:33:06.668:       "ProvisioningPackage": "Hisqool GDPR",
+2021-09-16 18:33:06.668:       "InstallationDirectory": "hisqool.gdpr",
+2021-09-16 18:33:06.668:       "UninstallationDirectory": "hisqool.gdpr",
+2021-09-16 18:33:06.668:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-09-16 18:33:06.668:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-09-16 18:33:06.668:     },
+2021-09-16 18:33:06.668:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-09-16 18:33:06.668:   }
+2021-09-16 18:33:06.668: } +2ms
+2021-09-16 18:33:06.668: 2021-09-16 20:33:06 [5224] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-09-16 18:33:06.676: 2021-09-16 20:33:06 [5224] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +2ms
+2021-09-16 18:33:07.901: 2021-09-16 20:33:07 [5224] WARN [JS] Error while checking shortcut C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk: Error: Command failed with exit code 2 (Unknown system error -2): C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\Shortcut.exe /f:C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Hi Sqool.lnk /a:q +1222ms
+2021-09-16 18:33:07.901: 2021-09-16 20:33:07 [5224] INFO [JS] Actions to perform: 1 +1ms
+2021-09-16 18:33:07.901: 2021-09-16 20:33:07 [5224] INFO [Runner] Performing runner... +1ms
+2021-09-16 18:33:07.901: 2021-09-16 20:33:07 [5224] INFO [JS] Running installer... +1ms
+2021-09-16 18:33:07.901: 2021-09-16 20:33:07 [5224] INFO [JS] Running installer command: Start-Process -Wait -FilePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe' -ArgumentList "/S","/D=c:\Progra~1\Unowhy\HiSqool" +0ms
+2021-09-16 18:33:10.450: 2021-09-16 20:33:10 [5224] WARN [JS] Error while installing the application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\226\payload\application.ppkg' -QuietInstall +2549ms
+2021-09-16 18:33:10.458: 2021-09-16 20:33:10 [5224] INFO [Runner] Running result: false +0ms
+2021-09-16 18:33:10.460: 2021-09-16 20:33:10 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LibManuels-3.7.4 (226) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LibManuels-3.7.4.json +2ms
+2021-09-16 18:33:10.460: 2021-09-16 20:33:10 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\226\payload... +3ms
+2021-09-16 18:33:10.471: 2021-09-16 20:33:10 [5224] INFO [Runner] Creating configuration unit runner object... +12ms
+2021-09-16 18:33:10.471: 2021-09-16 20:33:10 [5224] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-09-16 18:33:10.471: 2021-09-16 20:33:10 [5224] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-09-16 18:33:12.649: 2021-09-16 20:33:12 [5224] INFO [JS] GUID package: da2870c6-4410-412a-a8c2-4058176be8f6 +2172ms
+2021-09-16 18:33:15.533: 2021-09-16 20:33:15 [5224] INFO [JS] Result: 0 +2882ms
+2021-09-16 18:33:15.533: 2021-09-16 20:33:15 [5224] INFO [JS] Stdout:  +0ms
+2021-09-16 18:33:15.533: 2021-09-16 20:33:15 [5224] INFO [JS] Stderr: #< CLIXML
+2021-09-16 18:33:15.533: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">Get-ItemProperty : Impossible de trouver le chemin d'acc�s �HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding�, car il n'existe _x000D__x000A_</S><S S="Error">pas._x000D__x000A_</S><S S="Error">Au caract�re Ligne:1 : 2_x000D__x000A_</S><S S="Error">+ (Get-ItemProperty -Path HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding -Nam ..._x000D__x000A_</S><S S="Error">+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_x000D__x000A_</S><S S="Error">    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding:String) [Get-ItemProperty], It _x000D__x000A_</S><S S="Error">   emNotFoundException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand_x000D__x000A_</S><S S="Error"> _x000D__x000A_</S></Objs> +0ms
+2021-09-16 18:33:15.533: 2021-09-16 20:33:15 [5224] INFO [JS] isCustomShellPossible: true +1ms
+2021-09-16 18:33:15.533: 2021-09-16 20:33:15 [5224] INFO [JS] hasApiEnabledDeviceManager: true +1ms
+2021-09-16 18:33:15.533: 2021-09-16 20:33:15 [5224] INFO [JS] hasSqoolCtl: true +1ms
+2021-09-16 18:33:15.541: 2021-09-16 20:33:15 [5224] INFO [JS] hasOnboardingEnabledHiSqool: true +0ms
+2021-09-16 18:33:15.543: 2021-09-16 20:33:15 [5224] INFO [JS] hasViewedGDPR: true +1ms
+2021-09-16 18:33:15.543: 2021-09-16 20:33:15 [5224] INFO [JS] hasAcceptedGDPR: true +0ms
+2021-09-16 18:33:15.543: 2021-09-16 20:33:15 [5224] INFO [JS] isShellRestrictionActive: false +0ms
+2021-09-16 18:33:15.543: 2021-09-16 20:33:15 [5224] INFO [JS] isInUserSession: true +1ms
+2021-09-16 18:33:15.543: 2021-09-16 20:33:15 [5224] INFO [JS] isENTUser: true +1ms
+2021-09-16 18:33:15.543: 2021-09-16 20:33:15 [5224] INFO [JS] isUserExempt: false +0ms
+2021-09-16 18:33:15.551: 2021-09-16 20:33:15 [5224] INFO [JS] currentUserLogin: paul.peyrot@monlycee.net +1ms
+2021-09-16 18:33:15.553: 2021-09-16 20:33:15 [5224] INFO [JS] isRescueModeInstalled: true +3ms
+2021-09-16 18:33:15.553: 2021-09-16 20:33:15 [5224] INFO [JS] hisqoolLaunchNeeded: false +1ms
+2021-09-16 18:33:15.553: 2021-09-16 20:33:15 [5224] INFO [JS] isActivationScriptNeeded: false +1ms
+2021-09-16 18:33:15.561: 2021-09-16 20:33:15 [5224] INFO [JS] isDisabled: false +1ms
+2021-09-16 18:33:15.563: 2021-09-16 20:33:15 [5224] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-16 18:33:15.563: 2021-09-16 20:33:15 [5224] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows (280) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows.json +2ms
+2021-09-16 18:33:15.563: 2021-09-16 20:33:15 [5224] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2021-09-16 18:33:15.725: 2021-09-16 20:33:15 [5224] INFO [Runner] Creating configuration unit runner object... +158ms

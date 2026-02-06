@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Norme d'une matrice avec la norme des colonnes : colnorm colNorm</TITLE>
+<META NAME="description" CONTENT="Norme d'une matrice avec la norme des colonnes : colnorm colNorm">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node689.html">
+<LINK REL="up" HREF="node686.html">
+<LINK REL="next" HREF="node691.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13085"
+  HREF="node691.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13079"
+  HREF="node686.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13075"
+  HREF="node689.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13081"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13083"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13086"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> monter:</B> <A NAME="tex2html13080"
+  HREF="node686.html">Les diff&#233;rentes norme d'une</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13076"
+  HREF="node689.html">Norme d'une matrice avec</A>
+ &nbsp; <B>  <A NAME="tex2html13082"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13084"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009464000000000000000"></A><A NAME="17706"></A><A NAME="17707"></A>
+<BR>
+Norme d'une matrice avec la norme des colonnes : <TT>colnorm colNorm</TT>
+</H2>
+<TT>colnorm</TT> (ou <TT>colNorm</TT>) a comme argument une matrice <I>A</I>.
+<BR><TT>colnorm</TT> (ou <TT>colNorm</TT>) renvoie <!-- MATH
+ $\max_j(\sum_k(|a_{j,k}|))$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img463.png"
+ ALT="$ \max_{j}^{}$">(<IMG
+ WIDTH="31" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img464.png"
+ ALT="$ \sum_{k}^{}$">(| <I>a</I><SUB>j, k</SUB>|)) si 
+l'argument est <I>A</I> = <I>a</I><SUB>j, k</SUB>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>colnorm([[1,2],[3,-4]])</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>colNorm([[1,2],[3,-4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>6</TT>
+</DIV>
+En effet : <!-- MATH
+ $\max(1+3,2+4)=6$
+ -->
+max(1 + 3, 2 + 4) = 6
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

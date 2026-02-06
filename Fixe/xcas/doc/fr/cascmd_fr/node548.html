@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pour acc&#233;der aux bornes d'un intervalle : left gauche right droit</TITLE>
+<META NAME="description" CONTENT="Pour acc&#233;der aux bornes d'un intervalle : left gauche right droit">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node549.html">
+<LINK REL="previous" HREF="node547.html">
+<LINK REL="up" HREF="node546.html">
+<LINK REL="next" HREF="node549.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10988"
+  HREF="node549.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10982"
+  HREF="node546.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10976"
+  HREF="node547.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10984"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10986"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10989"
+  HREF="node549.html">Centre d'un intervalle :</A>
+<B> monter:</B> <A NAME="tex2html10983"
+  HREF="node546.html">Les intervalles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10977"
+  HREF="node547.html">D&#233;finition d'un intervalle :</A>
+ &nbsp; <B>  <A NAME="tex2html10985"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10987"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009352000000000000000"></A><A NAME="14014"></A><A NAME="14015"></A><A NAME="14016"></A><A NAME="14017"></A><A NAME="14018"></A><A NAME="14019"></A> <A NAME="14020"></A><A NAME="14021"></A>
+<BR>
+Pour acc&#233;der aux bornes d'un intervalle : <TT>left  gauche right droit</TT>
+</H2>
+<TT>left</TT> (resp <TT>right</TT>) a comme argument un intervalle.
+<BR><TT>left</TT> (resp <TT>right</TT>) permet d'acc&#233;der &#224; la partie 
+gauche (resp droite) de l'intervalle.
+<BR>
+On peut aussi consid&#233;rer que  <TT>..</TT> est un op&#233;rateur infix&#233;.
+<BR>
+Ainsi, <TT>sommet(1..5)</TT> est &#233;gal &#224;  <TT>'..'</TT> et <TT>feuille(1..5)</TT>
+ est &#233;gal &#224; <TT>(1,5)</TT>.
+<BR>
+Pour acc&#233;der &#224; l'op&#233;rateur <TT>..</TT>, on tape le nom de 
+l'intervalle puis <TT>[0]</TT> ou on utilise la commande <TT>sommet</TT>.
+<BR>
+Pour acc&#233;der  au premier &#233;l&#233;ment d'un intervalle, on tape le nom de 
+l'intervalle puis <TT>[1]</TT> ou on utilise la commande <TT>left</TT>.
+<BR>
+Pour acc&#233;der  au deuxi&#232;me &#233;l&#233;ment d'un intervalle, on tape le nom de 
+l'intervalle puis <TT>[2]</TT> ou on utilise la commande <TT>right</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>(3..5)[0]</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>sommet(3..5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>'..'</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>left(3..5)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>(3..5)[1]</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(3..5)[0]</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>op(3..5)[0]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>right(3..5)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>(2..5)[2]</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(3..5)[1]</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>op(3..5)[1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>5</TT>
+</DIV>
+<B>Remarque</B>
+<BR><TT>left</TT> et <TT>right</TT> permettent aussi d'acc&#233;der aux membres d'une 
+&#233;quation (par exemple <TT>left(2*x+1=x+2)</TT> renvoie <TT>2*x+1</TT>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10988"
+  HREF="node549.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10982"
+  HREF="node546.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10976"
+  HREF="node547.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10984"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10986"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10989"
+  HREF="node549.html">Centre d'un intervalle :</A>
+<B> monter:</B> <A NAME="tex2html10983"
+  HREF="node546.html">Les intervalles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10977"
+  HREF="node547.html">D&#233;finition d'un intervalle :</A>
+ &nbsp; <B>  <A NAME="tex2html10985"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10987"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

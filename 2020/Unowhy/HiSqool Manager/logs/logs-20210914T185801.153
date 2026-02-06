@@ -1,0 +1,56 @@
+2021-09-14 20:57:54 [5012] INFO [Runner] Performing runner... +4ms
+2021-09-14 18:57:54.890: 2021-09-14 20:57:54 [5012] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +1ms
+2021-09-14 18:57:54.905: 2021-09-14 20:57:54 [5012] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +25ms
+2021-09-14 18:57:54.937: 2021-09-14 20:57:54 [5012] INFO [Runner] Performing runner... +1ms
+2021-09-14 18:57:54.937: 2021-09-14 20:57:54 [5012] INFO [JS] Performing Check operation... +1ms
+2021-09-14 18:57:54.952: 2021-09-14 20:57:54 [5012] INFO [JS] Current GPO version: 1.5 +5ms
+2021-09-14 18:57:54.952: 2021-09-14 20:57:54 [5012] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-14 18:57:54.952: 2021-09-14 20:57:54 [5012] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +3ms
+2021-09-14 18:57:54.952: 2021-09-14 20:57:54 [5012] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +3ms
+2021-09-14 18:57:54.999: 2021-09-14 20:57:54 [5012] INFO [JS] Initialization of sqoolctl... +14ms
+2021-09-14 18:57:55.874: 2021-09-14 20:57:55 [5012] INFO [PayloadDownloader] [PAYLOAD 2] Persisting status=state=Ok, error=None, active=true +888ms
+2021-09-14 18:57:56.014: 2021-09-14 20:57:56 [5012] INFO [PayloadDownloader] [PAYLOAD 261] Persisting status=state=Downloaded, error=None, active=true +134ms
+2021-09-14 18:57:56.014: 2021-09-14 20:57:56 [5012] INFO [PayloadDownloader] [PAYLOAD 261] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\261\payload... +3ms
+2021-09-14 18:57:56.858: 2021-09-14 20:57:56 [5012] INFO [PayloadDownloader] [PAYLOAD 262] Persisting status=state=Downloaded, error=None, active=true +847ms
+2021-09-14 18:57:56.874: 2021-09-14 20:57:56 [5012] INFO [PayloadDownloader] [PAYLOAD 262] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\262\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\262\payload... +3ms
+2021-09-14 18:57:57.186: 2021-09-14 20:57:57 [5012] INFO [JS] Result: 1 +310ms
+2021-09-14 18:57:57.186: 2021-09-14 20:57:57 [5012] INFO [JS] Stdout: Custom shell possible: False +1ms
+2021-09-14 18:57:57.186: 2021-09-14 20:57:57 [5012] INFO [JS] Stderr: #< CLIXML
+2021-09-14 18:57:57.186: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>Custom shell possible: False</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>Custom shell possible: False</ToString><Props><S N="Message">Custom shell possible: False</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload\f49fa223ab4dc2f3952cb6efaff9640f.ps1</S><DT N="TimeGenerated">2021-09-14T20:57:57.0927281+02:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">3444</U32><U32 N="NativeThreadId">5312</U32><U32 N="ManagedThreadId">10</U32></Props></Obj></Objs> +1ms
+2021-09-14 18:57:57.248: 2021-09-14 20:57:57 [5012] INFO [JS] Result: 0 +56ms
+2021-09-14 18:57:57.248: 2021-09-14 20:57:57 [5012] INFO [JS] Stdout:  +2ms
+2021-09-14 18:57:57.248: 2021-09-14 20:57:57 [5012] INFO [JS] Stderr:  +1ms
+2021-09-14 18:57:57.248: 2021-09-14 20:57:57 [5012] INFO [JS] All went ok. Setting current version to 0.9.7... +1ms
+2021-09-14 18:57:57.373: 2021-09-14 20:57:57 [5012] INFO [Runner] Running result: true +2ms
+2021-09-14 18:57:57.389: 2021-09-14 20:57:57 [5012] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/sqoolctl (279) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_sqoolctl.json +2ms
+2021-09-14 18:57:57.826: 2021-09-14 20:57:57 [5012] INFO [PayloadDownloader] [PAYLOAD 170] Persisting status=state=Downloaded, error=None, active=true +447ms
+2021-09-14 18:57:57.826: 2021-09-14 20:57:57 [5012] INFO [PayloadDownloader] [PAYLOAD 170] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +5ms
+2021-09-14 18:57:58.357: 2021-09-14 20:57:58 [5012] INFO [JS] Result: 0 +527ms
+2021-09-14 18:57:58.357: 2021-09-14 20:57:58 [5012] INFO [JS] Stdout:  +1ms
+2021-09-14 18:57:58.357: 2021-09-14 20:57:58 [5012] INFO [JS] Stderr: #< CLIXML
+2021-09-14 18:57:58.357: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">Get-ItemProperty : Impossible de trouver le chemin d'acc�s �HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding�, car il n'existe _x000D__x000A_</S><S S="Error">pas._x000D__x000A_</S><S S="Error">Au caract�re Ligne:1 : 2_x000D__x000A_</S><S S="Error">+ (Get-ItemProperty -Path HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding -Nam ..._x000D__x000A_</S><S S="Error">+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_x000D__x000A_</S><S S="Error">    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding:String) [Get-ItemProperty], It _x000D__x000A_</S><S S="Error">   emNotFoundException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand_x000D__x000A_</S><S S="Error"> _x000D__x000A_</S></Objs> +0ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] isCustomShellPossible: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] hasApiEnabledDeviceManager: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] hasSqoolCtl: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] hasOnboardingEnabledHiSqool: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] hasViewedGDPR: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] hasAcceptedGDPR: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] isShellRestrictionActive: false +0ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] isInUserSession: false +1ms
+2021-09-14 18:57:58.373: 2021-09-14 20:57:58 [5012] INFO [JS] isENTUser: false +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [JS] isUserExempt: false +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [JS] currentUserLogin: null +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [JS] isRescueModeInstalled: false +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [JS] hisqoolLaunchNeeded: true +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [JS] isActivationScriptNeeded: false +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [JS] isDisabled: false +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-09-14 18:57:58.389: 2021-09-14 20:57:58 [5012] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows (280) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows.json +3ms
+2021-09-14 18:57:58.873: 2021-09-14 20:57:58 [5012] INFO [PayloadDownloader] [PAYLOAD 181] Persisting status=state=Downloaded, error=None, active=true +485ms
+2021-09-14 18:57:58.889: 2021-09-14 20:57:58 [5012] INFO [PayloadDownloader] [PAYLOAD 181] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\181\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\181\payload... +2ms
+2021-09-14 18:57:59.295: 2021-09-14 20:57:59 [5012] INFO [JS] GUID package: 05679c5b-ab18-4f74-82ca-c52dcd255947 +416ms
+2021-09-14 18:57:59.685: 2021-09-14 20:57:59 [5012] WARN [JS] Error while installing application: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe Install-ProvisioningPackage -PackagePath 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg' -QuietInstall +391ms
+2021-09-14 18:57:59.685: 2021-09-14 20:57:59 [5012] INFO [Runner] Running result: false +1ms
+2021-09-14 18:57:59.701: 2021-09-14 20:57:59 [5012] INFO [ConfigurationRunner] Writing execution result of conf/other/cleanafterinstall (173) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_other_cleanafterinstall.json +2ms
+2021-09-14 18:58:01.153: 2021-09-14 20:58:01 [5012] INFO [JS] Result: 0 +1461ms
+2021-09-14 18:58:01.153: 2021-09-14 20:58:01 [5012] INFO [JS] Stdout: [UNINSTALL] => Gettings components from C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json...

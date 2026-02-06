@@ -1,0 +1,77 @@
+2021-11-25 8:52:43 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:43.617: 2021-11-25 8:52:43 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-11-25 07:52:43.799: 2021-11-25 8:52:43 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +177ms
+2021-11-25 07:52:43.799: 2021-11-25 8:52:43 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +3ms
+2021-11-25 07:52:43.910: 2021-11-25 8:52:43 [11080] INFO [Runner] Creating configuration unit runner object... +109ms
+2021-11-25 07:52:43.912: 2021-11-25 8:52:43 [11080] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-11-25 07:52:43.912: 2021-11-25 8:52:43 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-11-25 07:52:43.912: 2021-11-25 8:52:43 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +2ms
+2021-11-25 07:52:43.912: 2021-11-25 8:52:43 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +2ms
+2021-11-25 07:52:44.113: 2021-11-25 8:52:44 [11080] INFO [Runner] Creating configuration unit runner object... +196ms
+2021-11-25 07:52:44.115: 2021-11-25 8:52:44 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:44.115: 2021-11-25 8:52:44 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-11-25 07:52:44.297: 2021-11-25 8:52:44 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +181ms
+2021-11-25 07:52:44.297: 2021-11-25 8:52:44 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +2ms
+2021-11-25 07:52:44.441: 2021-11-25 8:52:44 [11080] INFO [Runner] Creating configuration unit runner object... +145ms
+2021-11-25 07:52:44.441: 2021-11-25 8:52:44 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:44.451: 2021-11-25 8:52:44 [11080] INFO [WatcherService] Received a list of 14 payloads +4ms
+2021-11-25 07:52:44.451: 2021-11-25 8:52:44 [11080] INFO [PayloadDownloader] [PAYLOAD 457] Persisting status=state=Downloading, error=None, active=true +2ms
+2021-11-25 07:52:44.451: 2021-11-25 8:52:44 [11080] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_3.1.5.jar... +3ms
+2021-11-25 07:52:44.553: 2021-11-25 8:52:44 [11080] INFO [Runner] Performing runner... +99ms
+2021-11-25 07:52:44.563: 2021-11-25 8:52:44 [11080] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload\clean_deploy.ppkg, args=-QuietInstall... +11ms
+2021-11-25 07:52:44.826: 2021-11-25 8:52:44 [11080] INFO [JS] Current GPO version: 1.5 +21ms
+2021-11-25 07:52:44.826: 2021-11-25 8:52:44 [11080] INFO [Runner] Runner doesn't need to be performed +0ms
+2021-11-25 07:52:44.826: 2021-11-25 8:52:44 [11080] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +4ms
+2021-11-25 07:52:56.540: 2021-11-25 8:52:56 [11080] INFO [RequestPerformerService] Got Error Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net. +11707ms
+2021-11-25 07:52:56.540: 2021-11-25 8:52:56 [11080] ERROR [RequestPerformerService] Error while downloading https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_3.1.5.jar to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\457\payload.jar6ff93c7bb46a212f.new: Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net +0ms
+2021-11-25 07:52:56.540: 2021-11-25 8:52:56 [11080] WARN [PayloadDownloader] Received Error while downloading Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net: Error: getaddrinfo ENOTFOUND storage.gra.cloud.ovh.net
+2021-11-25 07:52:56.540:     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) +2ms
+2021-11-25 07:52:56.540: 2021-11-25 8:52:56 [11080] INFO [PayloadDownloader] [PAYLOAD 457] Persisting status=state=Error, error=Network, active=true +5ms
+2021-11-25 07:52:56.540: 2021-11-25 8:52:56 [11080] INFO [RequestPerformerService] Got disposed. +3ms
+2021-11-25 07:52:56.540: 2021-11-25 8:52:56 [11080] INFO [PayloadDownloader] [PAYLOAD 457] Persisting status=state=Error, error=Network, active=true +1ms
+2021-11-25 07:52:56.556: 2021-11-25 8:52:56 [11080] INFO [PayloadDownloader] [PAYLOAD 457] Error Network. Waiting 30 seconds before retrying... +3ms
+2021-11-25 07:53:00.289: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Got response 200. +3738ms
+2021-11-25 07:53:00.289: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Response content length is 24687042  +1ms
+2021-11-25 07:53:00.476: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Got response 200. +193ms
+2021-11-25 07:53:00.476: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Response content length is 18387  +0ms
+2021-11-25 07:53:00.492: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Download finished undefined. +7ms
+2021-11-25 07:53:00.492: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Digest: expected=e9da7e2459c4aa206bb7b73fabc8e6f9, actual=e9da7e2459c4aa206bb7b73fabc8e6f9. +1ms
+2021-11-25 07:53:00.492: 2021-11-25 8:53:00 [11080] INFO [PayloadDownloader] [PAYLOAD 271] Persisting status=state=Downloaded, error=None, active=true +6ms
+2021-11-25 07:53:00.492: 2021-11-25 8:53:00 [11080] INFO [PayloadDownloader] [PAYLOAD 271] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-11-25 07:53:00.507: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Got disposed. +6ms
+2021-11-25 07:53:00.507: 2021-11-25 8:53:00 [11080] INFO [RequestPerformerService] Complete. +3ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [PayloadDownloader] [PAYLOAD 271] Persisting status=state=Ok, error=None, active=true +358ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [PayloadDispatcher] Emitting 12 entries ["__/conf/agents/facts","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0","conf/application/windows/Educadhoc-Windows","conf/application/windows/HiSqool","conf/application/windows/LGPO-Windows","conf/application/windows/Lib-Manuels","conf/application/windows/Microsoft-Office-1.0.0","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows"] +2ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Processing for execution configuration with 12 keys +1ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Got 12 configurations. 1 in, 0 out +0ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +0ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0... +1ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> configuration... +2ms
+2021-11-25 07:53:00.867: 2021-11-25 8:53:00 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2021-11-25 07:53:00.976: 2021-11-25 8:53:00 [11080] INFO [Runner] Creating configuration unit runner object... +104ms
+2021-11-25 07:53:00.976: 2021-11-25 8:53:00 [11080] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-11-25 07:53:00.976: 2021-11-25 8:53:00 [11080] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-11-25 07:53:00.976: {
+2021-11-25 07:53:00.976:   "platform": "win32",
+2021-11-25 07:53:00.976:   "deviceId": "IFP052046109",
+2021-11-25 07:53:00.976:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-11-25 07:53:00.976:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-11-25 07:53:00.976:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-11-25 07:53:00.976:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-11-25 07:53:00.976:   "versionCode": 21093040,
+2021-11-25 07:53:00.976:   "trigger": "configuration",
+2021-11-25 07:53:00.976:   "metadata": {
+2021-11-25 07:53:00.976:     "packageVersion": "1.0.16.0",
+2021-11-25 07:53:00.976:     "componentParameters": {
+2021-11-25 07:53:00.976:       "AppX": "Hisqool.Legal.GDPR",
+2021-11-25 07:53:00.976:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-11-25 07:53:00.976:       "DesktopShortcut": "Charte de protection*",
+2021-11-25 07:53:00.976:       "ProvisioningPackage": "Hisqool GDPR",
+2021-11-25 07:53:00.976:       "InstallationDirectory": "hisqool.gdpr",
+2021-11-25 07:53:00.976:       "UninstallationDirectory": "hisqool.gdpr",
+2021-11-25 07:53:00.976:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-11-25 07:53:00.976:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-11-25 07:53:00.976:     },
+2021-11-25 07:53:00.976:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi normale : UTPN</TITLE>
+<META NAME="description" CONTENT="Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi normale : UTPN">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node822.html">
+<LINK REL="previous" HREF="node820.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node822.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15088"
+  HREF="node822.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15082"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15076"
+  HREF="node820.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15084"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15086"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15089"
+  HREF="node822.html">Densit&#233; de probabilit&#233; de</A>
+<B> monter:</B> <A NAME="tex2html15083"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15077"
+  HREF="node820.html">Fonction de r&#233;partition inverse</A>
+ &nbsp; <B>  <A NAME="tex2html15085"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15087"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010410000000000000000"></A><A NAME="21492"></A>
+<BR>
+Compl&#233;ment &#224; 1 de la fonction de r&#233;partition de la loi normale : <TT>UTPN</TT>
+</H2>
+Lorsqu'une variable al&#233;atoire <I>X</I> suit une loi normale  centr&#233;e r&#233;duite,
+on a : <!-- MATH
+ $Proba(X > x)$
+ -->
+<I>Proba</I>(<I>X</I> &gt; <I>x</I>)= <TT>UTPN(x)</TT>.
+<BR>
+Lorsqu'une variable al&#233;atoire <I>X</I> suit une loi normale de moyenne <IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$"> et 
+de variance <I>v</I>, on a : <!-- MATH
+ $Proba(X > x)=$
+ -->
+<I>Proba</I>(<I>X</I> &gt; <I>x</I>) = <TT>UTPN(<IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \mu$">,v,x)</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>UTPN(1.96)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.0249978951482</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>UTPN(1,4,1.96)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.315613696516</TT>
+</DIV>
+<B>Attention</B>
+<BR>
+Les param&#232;tres de <TT>UTPN</TT> sont la moyenne de <I>X</I>, la variance de <I>X</I>,
+ et la valeur <I>x</I>, alors que,
+pour <TT>normal_cdf</TT> les param&#232;tres sont la moyenne de <I>X</I>, l'&#233;cart-type 
+de <I>X</I> et la valeur <I>x</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>UTPN(1.96)+normal_cdf(1.96)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>UTPN(1,4,1.96)+normal_cdf(1,2,1.96)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

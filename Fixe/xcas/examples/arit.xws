@@ -1,0 +1,77 @@
+// fltk 7Fl_Tile 32 -711 1099 41 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 32 -711 1099 40 30
+Bezout, par la fonction integree, puis avec un programme, puis au tableur
+,
+// fltk N4xcas10Log_OutputE 32 -671 1099 1 30
+
+]
+,
+// fltk 7Fl_Tile 32 -668 1099 104 30
+[
+// fltk N4xcas19Multiline_Input_tabE 32 -668 1099 40 30
+iegcd(215,183)
+,
+// fltk N4xcas10Log_OutputE 32 -628 1099 1 30
+
+,
+// fltk N4xcas8EquationE 32 -627 1099 63 16
+[-40,47,1]
+]
+,
+// fltk 7Fl_Tile 32 -562 1099 633 30
+[
+// fltk N4xcas7EditeurE 32 -562 1099 476 30
+298 ,
+bezout(a,b) :={
+//renvoie la liste [u,v,d] telle que 
+//a*u+b*v=d=pgcd(a,b) (fct iterative)
+  local la,lb,lr,q,lb2;
+  la:=[1,0,eval(a)];
+  lb:=[0,1,eval(b)];
+  lb2:=eval(b);
+  while (lb2 !=0){
+    q:=iquo(la[2],lb2);
+    lr:=la+(-q)*lb;
+    la:=lb;
+    lb:=lr;
+    lb2:=lb[2];
+  }
+  return(la);
+}:;,
+// fltk N4xcas10Log_OutputE 32 -86 1099 94 30
+// Parsing bezout£// Success compiling bezout££
+,
+// fltk N4xcas8EquationE 32 8 1099 63 16
+"Done"
+]
+,
+// fltk 7Fl_Tile 32 73 1099 104 30
+[
+// fltk N4xcas19Multiline_Input_tabE 32 73 1099 40 30
+bezout(215,183); // debug() pour executer en pas a pas
+,
+// fltk N4xcas10Log_OutputE 32 113 1099 1 30
+
+,
+// fltk N4xcas8EquationE 32 114 1099 63 16
+[-40,47,1]
+]
+,
+// fltk 7Fl_Tile 32 179 1099 203 30
+[
+// fltk N4xcas23Comment_Multiline_InputE 32 179 1099 202 30
+On remplit le tableur avec :£A colonne des valeurs de u, pour k>1 A(k-2)-E(k)*A(k-1)=Ak£B colonne des valeurs de v, pour k>1 B(k-2)-E(k)*B(k-1)=Bk£C colonne des valeurs de a (commence par a,b,irem(a,b)...),£D colonne des quotients successifs : Dk=iquot(C(k-2) , C(k-1)).£Sur chaque ligne k on a Ak*a+Bk*b=Ck (calcul definissant E) car pour k>1 C(k-2)-D(k)*C(k-1)=Ck£On lit sur la ligne du premier reste non nul les coeff u,v et le pgcd(a,b)
+,
+// fltk N4xcas10Log_OutputE 32 381 1099 1 30
+
+]
+,
+// fltk 7Fl_Tile 32 384 1099 584 30
+[
+// fltk N4xcas13Tableur_GroupE 32 384 1099 584 30
+1 1 1 0 spreadsheet[[[1,1,[M,[-5.0,5.0,-5.0,5.0],5,[1.0,1.0],1,1]],[0,0,2],[215,215,2],[0,0,2],[0,0,2]],[[0,0,2],[1,1,2],[183,183,2],[0,0,2],[0,0,2]],[[A0-D2*A1,1,2],[B0-D2*B1,-1,2],[irem(C0,C1),32,2],[=iquo(C0,C1),1,2],[=A2*$C$0+B2*$C$1,32,2]],[[A1-D3*A2,-5,2],[B1-D3*B2,6,2],[irem(C1,C2),23,2],[=iquo(C1,C2),5,2],[=A3*$C$0+B3*$C$1,23,2]],[[A2-D4*A3,6,2],[B2-D4*B3,-7,2],[irem(C2,C3),9,2],[=iquo(C2,C3),1,2],[=A4*$C$0+B4*$C$1,9,2]],[[A3-D5*A4,-17,2],[B3-D5*B4,20,2],[irem(C3,C4),5,2],[=iquo(C3,C4),2,2],[=A5*$C$0+B5*$C$1,5,2]],[[A4-D6*A5,23,2],[B4-D6*B5,-27,2],[irem(C4,C5),4,2],[=iquo(C4,C5),1,2],[=A6*$C$0+B6*$C$1,4,2]],[[A5-D7*A6,-40,2],[B5-D7*B6,47,2],[irem(C5,C6),1,2],[=iquo(C5,C6),1,2],[=A7*$C$0+B7*$C$1,1,2]],[[A6-D8*A7,183,2],[B6-D8*B7,-215,2],[irem(C6,C7),0,2],[=iquo(C6,C7),4,2],[=A8*$C$0+B8*$C$1,0,2]],[[A7-D9*A8,-40,2],[B7-D9*B8,47,2],[irem(C7,C8),1,2],[=iquo(C7,C8),0,2],[=A9*$C$0+B9*$C$1,1,2]],[[A8-D10*A9,183,2],[B8-D10*B9,-215,2],[irem(C8,C9),0,2],[=iquo(C8,C9),0,2],[=A10*$C$0+B10*$C$1,0,2]],[[A9-D11*A10,-40,2],[B9-D11*B10,47,2],[irem(C9,C10),1,2],[=iquo(C9,C10),0,2],[=A11*$C$0+B11*$C$1,1,2]],[[A10-D12*A11,183,2],[B10-D12*B11,-215,2],[irem(C10,C11),0,2],[=iquo(C10,C11),0,2],[=A12*$C$0+B12*$C$1,0,2]],[[A11-D13*A12,-40,2],[B11-D13*B12,47,2],[irem(C11,C12),1,2],[=iquo(C11,C12),0,2],[=A13*$C$0+B13*$C$1,1,2]],[[A12-D14*A13,183,2],[B12-D14*B13,-215,2],[irem(C12,C13),0,2],[=iquo(C12,C13),0,2],[=A14*$C$0+B14*$C$1,0,2]],[[A13-D15*A14,-40,2],[B13-D15*B14,47,2],[irem(C13,C14),1,2],[=iquo(C13,C14),0,2],[=A15*$C$0+B15*$C$1,1,2]],[[A14-D16*A15,183,2],[B14-D16*B15,-215,2],[irem(C14,C15),0,2],[=iquo(C14,C15),0,2],[=A16*$C$0+B16*$C$1,0,2]],[[A15-D17*A16,-40,2],[B15-D17*B16,47,2],[irem(C15,C16),1,2],[=iquo(C15,C16),0,2],[=A17*$C$0+B17*$C$1,1,2]],[[A16-D18*A17,183,2],[B16-D18*B17,-215,2],[irem(C16,C17),0,2],[=iquo(C16,C17),0,2],[=A18*$C$0+B18*$C$1,0,2]],[[A17-D19*A18,-40,2],[B17-D19*B18,47,2],[irem(C17,C18),1,2],[=iquo(C17,C18),0,2],[=A19*$C$0+B19*$C$1,1,2]],[[A18-D20*A19,183,2],[B18-D20*B19,-215,2],[irem(C18,C19),0,2],[=iquo(C18,C19),0,2],[=A20*$C$0+B20*$C$1,0,2]],[[A19-D21*A20,-40,2],[B19-D21*B20,47,2],[irem(C19,C20),1,2],[=iquo(C19,C20),0,2],[=A21*$C$0+B21*$C$1,1,2]],[[A20-D22*A21,183,2],[B20-D22*B21,-215,2],[irem(C20,C21),0,2],[=iquo(C20,C21),0,2],[=A22*$C$0+B22*$C$1,0,2]],[[A21-D23*A22,-40,2],[B21-D23*B22,47,2],[irem(C21,C22),1,2],[=iquo(C21,C22),0,2],[=A23*$C$0+B23*$C$1,1,2]],[[A22-D24*A23,183,2],[B22-D24*B23,-215,2],[irem(C22,C23),0,2],[=iquo(C22,C23),0,2],[=A24*$C$0+B24*$C$1,0,2]],[[A23-D25*A24,-40,2],[B23-D25*B24,47,2],[irem(C23,C24),1,2],[=iquo(C23,C24),0,2],[=A25*$C$0+B25*$C$1,1,2]],[[A24-D26*A25,183,2],[B24-D26*B25,-215,2],[irem(C24,C25),0,2],[=iquo(C24,C25),0,2],[=A26*$C$0+B26*$C$1,0,2]],[[A25-D27*A26,-40,2],[B25-D27*B26,47,2],[irem(C25,C26),1,2],[=iquo(C25,C26),0,2],[=A27*$C$0+B27*$C$1,1,2]],[[A26-D28*A27,183,2],[B26-D28*B27,-215,2],[irem(C26,C27),0,2],[=iquo(C26,C27),0,2],[=A28*$C$0+B28*$C$1,0,2]],[[A27-D29*A28,-40,2],[B27-D29*B28,47,2],[irem(C27,C28),1,2],[=iquo(C27,C28),0,2],[=A29*$C$0+B29*$C$1,1,2]],[[A28-D30*A29,183,2],[B28-D30*B29,-215,2],[irem(C28,C29),0,2],[=iquo(C28,C29),0,2],[=A30*$C$0+B30*$C$1,0,2]],[[A29-D31*A30,-40,2],[B29-D31*B30,47,2],[irem(C29,C30),1,2],[=iquo(C29,C30),0,2],[=A31*$C$0+B31*$C$1,1,2]],[[A30-D32*A31,183,2],[B30-D32*B31,-215,2],[irem(C30,C31),0,2],[=iquo(C30,C31),0,2],[=A32*$C$0+B32*$C$1,0,2]],[[A31-D33*A32,-40,2],[B31-D33*B32,47,2],[irem(C31,C32),1,2],[=iquo(C31,C32),0,2],[=A33*$C$0+B33*$C$1,1,2]],[[A32-D34*A33,183,2],[B32-D34*B33,-215,2],[irem(C32,C33),0,2],[=iquo(C32,C33),0,2],[=A34*$C$0+B34*$C$1,0,2]],[[A33-D35*A34,-40,2],[B33-D35*B34,47,2],[irem(C33,C34),1,2],[=iquo(C33,C34),0,2],[=A35*$C$0+B35*$C$1,1,2]],[[A34-D36*A35,183,2],[B34-D36*B35,-215,2],[irem(C34,C35),0,2],[=iquo(C34,C35),0,2],[=A36*$C$0+B36*$C$1,0,2]],[[A35-D37*A36,-40,2],[B35-D37*B36,47,2],[irem(C35,C36),1,2],[=iquo(C35,C36),0,2],[=A37*$C$0+B37*$C$1,1,2]],[[A36-D38*A37,183,2],[B36-D38*B37,-215,2],[irem(C36,C37),0,2],[=iquo(C36,C37),0,2],[=A38*$C$0+B38*$C$1,0,2]],[[A37-D39*A38,-40,2],[B37-D39*B38,47,2],[irem(C37,C38),1,2],[=iquo(C37,C38),0,2],[=A39*$C$0+B39*$C$1,1,2]]]
+,
+// fltk N4xcas10Log_OutputE 32 968 1099 0 30
+
+]

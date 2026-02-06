@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite : coordinates coordonnees</TITLE>
+<META NAME="description" CONTENT="Les coordonn&#233;es d'un point, d'un vecteur ou d'une droite : coordinates coordonnees">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node979.html">
+<LINK REL="previous" HREF="node977.html">
+<LINK REL="up" HREF="node974.html">
+<LINK REL="next" HREF="node979.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17575"
+  HREF="node979.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17569"
+  HREF="node974.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17563"
+  HREF="node977.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17571"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17573"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17576"
+  HREF="node979.html">L'&#233;quation cart&#233;sienne d'un objet</A>
+<B> monter:</B> <A NAME="tex2html17570"
+  HREF="node974.html">Les mesures</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17564"
+  HREF="node977.html">L'ordonn&#233;e d'un point ou</A>
+ &nbsp; <B>  <A NAME="tex2html17572"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17574"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012164000000000000000"></A><A NAME="25546"></A><A NAME="25547"></A><A NAME="sec:coordonnees2"></A>
+<BR>
+Les coordonn&#233;es d'un point, d'un  vecteur ou d'une droite : <TT>coordinates coordonnees</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1077.html#sec:coordonnees3">10.11.4</A> pour la g&#233;om&#233;trie 3D.
+<BR><TT>coordonnees</TT>, en g&#233;om&#233;trie plane, est une fonction ayant 
+comme argument un point ou un nombre complexe ou un vecteur ou une droite.
+<BR><TT>coordonnees</TT> renvoie la liste de l'abscisse et de l'ordonn&#233;e du point 
+ou du vecteur ou la liste des affixes de deux points de la droite orient&#233;e.
+
+<UL>
+<LI>si le point <TT>A</TT> a pour coordonn&#233;es cart&#233;siennes (<I>x</I><SUB>A</SUB>, <I>y</I><SUB>A</SUB>),
+ <TT>coordonnees(A)</TT> renvoie [<I>x</I><SUB>A</SUB>, <I>y</I><SUB>A</SUB>], 
+</LI>
+<LI>si le point <TT>B</TT> a pour coordonn&#233;es cart&#233;siennes (<I>x</I><SUB>B</SUB>, <I>y</I><SUB>B</SUB>),
+ <TT>coordonnees(vecteur(A,B))</TT> ou <TT>coordonnees(B-A)</TT> renvoie 
+<!-- MATH
+ $[x_B-x_A,y_B-y_A]$
+ -->
+[<I>x</I><SUB>B</SUB> - <I>x</I><SUB>A</SUB>, <I>y</I><SUB>B</SUB> - <I>y</I><SUB>A</SUB>] (alors que <TT>B-A</TT> renvoie  <!-- MATH
+ $(x_B-x_A)+i*(y_B-y_A)$
+ -->
+(<I>x</I><SUB>B</SUB> - <I>x</I><SUB>A</SUB>) + <I>i</I>*(<I>y</I><SUB>B</SUB> - <I>y</I><SUB>A</SUB>) car 
+<TT>B-A</TT> d&#233;signe l'affixe du vecteur <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img581.png"
+ ALT="$ \overrightarrow{AB}$"> en g&#233;om&#233;trie 
+plane),
+</LI>
+<LI>si le vecteur <TT>V</TT> a pour coordonn&#233;es cart&#233;siennes (<I>x</I><SUB>V</SUB>, <I>y</I><SUB>V</SUB>),
+<TT>coordonnees(V)</TT> ou <TT>coordonnees(vecteur(A,V))</TT> renvoie [<I>x</I><SUB>V</SUB>, <I>y</I><SUB>V</SUB>],
+</LI>
+<LI>si une droite <TT>d</TT> est d&#233;finie par deux points <TT>A</TT> et <TT>B</TT>, 
+<TT>coordonnees(d)</TT> renvoie <TT>[affixe(A),affixe(B)]</TT>, si <TT>d</TT> est
+ d&#233;finie par son &#233;quation, <TT>coordonnees(d)</TT> renvoie 
+<TT>[affixe(A),affixe(B)]</TT> o&#249; <TT>A</TT> et <TT>B</TT>  sont deux points de la 
+droite <TT>d</TT>, le vecteur <TT>AB</TT> ayant m&#234;me orientation que <TT>d</TT>.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(point(1+2*i))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(1+2*i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(point(1+2*i)-point(i))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(point(1+2*i)-point(i))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur(point(i),point(1+2*i)))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur(i,1+2*i))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur([0,1],[1,2]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,1]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(1+2*i)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur(1+2*i))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(vecteur(point(i),vecteur(1+2*i)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>coordonnees(point(i),vecteur(1+2*i))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>d:=droite(-1+i,1+2*i)</TT>
+</DIV>
+Ou on tape
+<DIV ALIGN="CENTER">
+<TT>d:=droite(point(-1,1),point(1,2))</TT>
+</DIV>
+Puis, 
+<DIV ALIGN="CENTER">
+<TT>coordonnees(d)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-1+i,1+2*i]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>d:=droite(y=(1/2*x+3/2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(3*i)/2,1+2*i]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>d:=droite((x-2*y+3=0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(3*i)/2,(-4+i)/2]</TT>
+</DIV>
+<B>Attention</B>
+<BR><TT>coordonnees</TT> peut aussi avoir comme argument une s&#233;quence ou une liste
+de points. <TT>coordonnees</TT> renvoie alors la s&#233;quence ou la liste des
+listes des coordonn&#233;es de ces points, par exemple
+<TT>coordonnees(i,1+2*i)</TT> ou <TT>coordonnees(point(i),point(1+2*i))</TT> renvoie 
+la s&#233;quence :
+<BR><TT>[0,1],[1,2]</TT>
+<BR>
+et
+<BR><TT>coordonnees([i,1+2*i])</TT> ou <TT>coordonnees([point(i),point(1+2*i)])</TT> 
+renvoie la matrice :
+<BR><TT>[[0,1],[1,2]]</TT> donc
+<BR><TT>coordonnees([1,2])</TT> renvoie la matrice :
+<BR><TT>[[1,0],[2,0]]</TT> car <TT>[1,2]</TT> est consid&#233;r&#233; comme la liste de 2 
+points d'affixe  <TT>1</TT> et <TT>2</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17575"
+  HREF="node979.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17569"
+  HREF="node974.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17563"
+  HREF="node977.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17571"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17573"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17576"
+  HREF="node979.html">L'&#233;quation cart&#233;sienne d'un objet</A>
+<B> monter:</B> <A NAME="tex2html17570"
+  HREF="node974.html">Les mesures</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17564"
+  HREF="node977.html">L'ordonn&#233;e d'un point ou</A>
+ &nbsp; <B>  <A NAME="tex2html17572"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17574"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

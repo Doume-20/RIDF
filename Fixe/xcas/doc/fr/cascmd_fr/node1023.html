@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les enveloppes : envelope enveloppe</TITLE>
+<META NAME="description" CONTENT="Les enveloppes : envelope enveloppe">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1024.html">
+<LINK REL="previous" HREF="node1022.html">
+<LINK REL="up" HREF="node1021.html">
+<LINK REL="next" HREF="node1024.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18227"
+  HREF="node1024.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18221"
+  HREF="node1021.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18215"
+  HREF="node1022.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18223"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18225"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18228"
+  HREF="node1024.html">La trace d'un objet</A>
+<B> monter:</B> <A NAME="tex2html18222"
+  HREF="node1021.html">Les lieux et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18216"
+  HREF="node1022.html">Les lieux : locus</A>
+ &nbsp; <B>  <A NAME="tex2html18224"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18226"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012202000000000000000"></A><A NAME="26755"></A><A NAME="26756"></A> <A NAME="sec:envelope"></A>
+<BR>
+Les enveloppes : <TT>envelope enveloppe</TT>
+</H2>
+<TT>enveloppe</TT> a 2 arguments : une expression <I>E</I> d&#233;pendant de 3
+variables <I>x</I>, <I>y</I>, <I>t</I> (resp <I>u</I>, <I>v</I>, <I>t</I>) et <I>t</I> (resp le vecteur [<I>u</I>, <I>v</I>, <I>t</I>]).
+<BR>
+Les equations <I>E</I> = 0 sont consid&#233;r&#233;es comme les 
+&#233;quations de courbes de param&#232;tre <I>t</I>.
+<BR><TT>enveloppe</TT> renvoie l'enveloppe de ces courbes lorsque <I>t</I> varie.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>enveloppe(y+x*tan(t)-2*sin(t),t)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le dessin d'une astro&#239;de</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>enveloppe(v+u*tan(t)-3*sin(t),[u,v,t))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>le dessin d'une astro&#239;de</TT>
+</DIV>
+<B>Remarque</B>
+Si on a une famille de droites <TT>d</TT> qui d&#233;pendent d'un param&#232;tre 
+<TT>a</TT>, on peut utiliser soit <TT>enveloppe(equation(d,a</TT> soit 
+la commande<TT>lieu</TT> (voir <A HREF="node1022.html#sec:lieudroite">9.20.1</A>).
+<BR>
+Voici un exemple simple : enveloppe de la tangente &#224; un cercle.
+<BR>
+On tape :
+<PRE>
+c:=cercle(0,2):;
+assume(a:=1);
+A:=element(c,a);
+d:=tangente(cercle(0,2),A);
+</PRE>
+Puis soit:
+<DIV ALIGN="CENTER">
+<TT>enveloppe(equation(d),a)</TT>
+</DIV>
+soit :
+<DIV ALIGN="CENTER">
+<TT>lieu(d,A)</TT>
+</DIV> 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,46 @@
+2020-04-22 15:31:58.883: 2020-04-22 17:31:58 [4572] INFO [NestFactory] Starting Nest application...
+2020-04-22 15:31:58.994: 2020-04-22 17:31:58 [4572] INFO [ConfigurationService] Application data folder: C:\Program Files\Unowhy\HiSqool Manager\data +105ms
+2020-04-22 15:31:58.994: 2020-04-22 17:31:58 [4572] INFO [ConfigurationService] User data folder: C:\Windows\system32\config\systemprofile\AppData\Roaming\HiSqoolManager +1ms
+2020-04-22 15:31:59.004: 2020-04-22 17:31:58 [4572] INFO [InstanceLoader] HttpModule dependencies initialized +10ms
+2020-04-22 15:31:59.004: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] ConfigurationModule dependencies initialized +2ms
+2020-04-22 15:31:59.014: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] CommonModule dependencies initialized +7ms
+2020-04-22 15:31:59.014: 2020-04-22 17:31:59 [4572] INFO [CommandService] Connecting to MQTT... +4ms
+2020-04-22 15:31:59.045: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] DeviceConfigurationModule dependencies initialized +31ms
+2020-04-22 15:31:59.045: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] WatcherModule dependencies initialized +1ms
+2020-04-22 15:31:59.055: 2020-04-22 17:31:59 [4572] WARN [FileUtils] File C:\Program Files\Unowhy\HiSqool Manager\data\configurations\fullConfiguration.json does not exist +6ms
+2020-04-22 15:31:59.055: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] CommandModule dependencies initialized +2ms
+2020-04-22 15:31:59.055: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] SchedulerModule dependencies initialized +1ms
+2020-04-22 15:31:59.055: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] PayloadModule dependencies initialized +1ms
+2020-04-22 15:31:59.063: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] DeviceFactsModule dependencies initialized +2ms
+2020-04-22 15:31:59.063: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] ScriptorModule dependencies initialized +1ms
+2020-04-22 15:31:59.065: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] MqttModule dependencies initialized +2ms
+2020-04-22 15:31:59.065: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] GlobalModule dependencies initialized +2ms
+2020-04-22 15:31:59.065: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] AppModule dependencies initialized +1ms
+2020-04-22 15:31:59.065: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] ExecutorModule dependencies initialized +1ms
+2020-04-22 15:31:59.105: 2020-04-22 17:31:59 [4572] INFO [InstanceLoader] InstallerModule dependencies initialized +41ms
+2020-04-22 15:32:02.086: 2020-04-22 17:32:02 [4572] INFO [InstanceLoader] DeviceInformationModule dependencies initialized +2977ms
+2020-04-22 15:32:02.293: 2020-04-22 17:32:02 [4572] INFO [HiSqoolManager] Starting HiSqool Manager false +217ms
+2020-04-22 15:32:02.293: 2020-04-22 17:32:02 [4572] INFO [ConfigurationService] Configuration file is C:\snapshot\hisqoolmanager\config\idf.json +3ms
+2020-04-22 15:32:02.725: 2020-04-22 17:32:02 [4572] INFO [HiSqoolManager] Listening on port 7654... +423ms
+2020-04-22 15:32:02.741: 2020-04-22 17:32:02 [4572] INFO [RoutesResolver] AppController {/}: +10ms
+2020-04-22 15:32:02.746: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/, GET} route +6ms
+2020-04-22 15:32:02.768: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/halamadridynadamas, GET} route +21ms
+2020-04-22 15:32:02.771: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/stop, GET} route +3ms
+2020-04-22 15:32:02.772: 2020-04-22 17:32:02 [4572] INFO [RoutesResolver] MqttController {/mqtt}: +1ms
+2020-04-22 15:32:02.777: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/, GET} route +5ms
+2020-04-22 15:32:02.782: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/topic/*, GET} route +5ms
+2020-04-22 15:32:02.786: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/restart, GET} route +5ms
+2020-04-22 15:32:02.787: 2020-04-22 17:32:02 [4572] INFO [RoutesResolver] WatcherController {/watcher}: +1ms
+2020-04-22 15:32:02.793: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/, GET} route +5ms
+2020-04-22 15:32:02.796: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/payloads, GET} route +3ms
+2020-04-22 15:32:02.810: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/payloads/:id, GET} route +14ms
+2020-04-22 15:32:02.813: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/payloads/:id/restart, GET} route +2ms
+2020-04-22 15:32:02.815: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/configuration/*, GET} route +2ms
+2020-04-22 15:32:02.817: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/restart/*, GET} route +3ms
+2020-04-22 15:32:02.819: 2020-04-22 17:32:02 [4572] INFO [RoutesResolver] DeviceConfigurationController {/device-configuration}: +1ms
+2020-04-22 15:32:02.821: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/, GET} route +3ms
+2020-04-22 15:32:02.822: 2020-04-22 17:32:02 [4572] INFO [RoutesResolver] DeviceInformationController {/device-information}: +1ms
+2020-04-22 15:32:02.825: 2020-04-22 17:32:02 [4572] INFO [RouterExplorer] Mapped {/, GET} route +2ms
+2020-04-22 15:32:02.831: 2020-04-22 17:32:02 [4572] INFO [NestApplication] Nest application successfully started +6ms
+2020-04-22 15:32:02.833: 2020-04-22 17:32:02 [4572] INFO [HiSqoolManager] Name of service DeviceFactsService... +2ms
+2020-04-22 15:32:02.848: 2020-04-22 17:32:02 [4572] WARN [PayloadDownloader] Error while parsing json file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\schedules.json(undefined): Error: ENOENT: no such file or directory, open 'C:\Program Files\Unowhy\HiSqool Manager\data\configurations\schedules.json' +15ms

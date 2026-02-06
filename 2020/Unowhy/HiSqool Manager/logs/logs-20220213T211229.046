@@ -1,0 +1,73 @@
+2022-02-13 22:12:23 [4832] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2022-02-13 21:12:24.000: 2022-02-13 22:12:23 [4832] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2022-02-13 21:12:24.000: 2022-02-13 22:12:23 [4832] INFO [JS] Scheduling result: undefined +1ms
+2022-02-13 21:12:24.000: 2022-02-13 22:12:23 [4832] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-02-13 21:12:24.000: 2022-02-13 22:12:23 [4832] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +2ms
+2022-02-13 21:12:24.016: 2022-02-13 22:12:24 [4832] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'f7639fd5-22e3-42bd-9806-a3aafb44760a').version +22ms
+2022-02-13 21:12:24.016: 2022-02-13 22:12:24 [4832] INFO [JS] Installing the package ... +2ms
+2022-02-13 21:12:24.032: 2022-02-13 22:12:24 [4832] INFO [Runner] Performing runner... +1ms
+2022-02-13 21:12:24.032: 2022-02-13 22:12:24 [4832] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload\application.ppkg, args=-QuietInstall... +2ms
+2022-02-13 21:12:24.094: 2022-02-13 22:12:24 [4832] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '105da565-d050-4a60-9c4f-556c6bdb5775').version +69ms
+2022-02-13 21:12:24.094: 2022-02-13 22:12:24 [4832] INFO [JS] Installing the package ... +1ms
+2022-02-13 21:12:24.094: 2022-02-13 22:12:24 [4832] INFO [Runner] Performing runner... +1ms
+2022-02-13 21:12:24.094: 2022-02-13 22:12:24 [4832] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\457\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-02-13 21:12:24.641: 2022-02-13 22:12:24 [4832] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'd0fc2ec8-57da-4e9f-bc1a-c35828a76d83').version +548ms
+2022-02-13 21:12:24.656: 2022-02-13 22:12:24 [4832] INFO [JS] Installing the package ... +1ms
+2022-02-13 21:12:24.656: 2022-02-13 22:12:24 [4832] INFO [Runner] Performing runner... +1ms
+2022-02-13 21:12:24.656: 2022-02-13 22:12:24 [4832] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-02-13 21:12:24.703: 2022-02-13 22:12:24 [4832] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '10108c63-247d-41bd-92fa-2e15beeb2c93').version +47ms
+2022-02-13 21:12:24.703: 2022-02-13 22:12:24 [4832] INFO [JS] Installing the package ... +1ms
+2022-02-13 21:12:24.703: 2022-02-13 22:12:24 [4832] INFO [Runner] Performing runner... +1ms
+2022-02-13 21:12:24.703: 2022-02-13 22:12:24 [4832] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload\application.ppkg, args=-QuietInstall... +2ms
+2022-02-13 21:12:25.109: 2022-02-13 22:12:25 [4832] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '05679c5b-ab18-4f74-82ca-c52dcd255947').version +399ms
+2022-02-13 21:12:25.109: 2022-02-13 22:12:25 [4832] INFO [JS] Installing the package ... +1ms
+2022-02-13 21:12:25.109: 2022-02-13 22:12:25 [4832] INFO [Runner] Performing runner... +1ms
+2022-02-13 21:12:25.109: 2022-02-13 22:12:25 [4832] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload\RecoveryDisable_1.0.0.ppkg, args=-QuietInstall... +2ms
+2022-02-13 21:12:25.406: 2022-02-13 22:12:25 [4832] INFO [JS] Result: 1 +295ms
+2022-02-13 21:12:25.406: 2022-02-13 22:12:25 [4832] INFO [JS] Stdout: [UNINSTALL] => Gettings components from C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json...
+2022-02-13 21:12:25.406: [UNINSTALL] => Testing component AppX: Hisqool.Legal.GDPR... +1ms
+2022-02-13 21:12:25.406: 2022-02-13 22:12:25 [4832] INFO [JS] Stderr: #< CLIXML
+2022-02-13 21:12:25.406: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="1"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>[UNINSTALL] =&gt; Gettings components from C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json...</ToString><Props><Obj N="MessageData" RefId="2"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>[UNINSTALL] =&gt; Gettings components from C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json...</ToString><Props><S N="Message">[UNINSTALL] =&gt; Gettings components from C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json...</S><B N="NoNewLine">false</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\517c7cc322e534fd595c42a7faa0ba2b.ps1</S><DT N="TimeGenerated">2022-02-13T22:12:03.6791939+01:00</DT><Obj N="Tags" RefId="3"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">2012</U32><U32 N="NativeThreadId">7828</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="progress" RefId="4"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="5"><TNRef RefId="1" /><ToString>[UNINSTALL] =&gt; Testing component AppX: Hisqool.Legal.GDPR...</ToString><Props><Obj N="MessageData" RefId="6"><TNRef RefId="2" /><ToString>[UNINSTALL] =&gt; Testing component AppX: Hisqool.Legal.GDPR...</ToString><Props><S N="Message">[UNINSTALL] =&gt; Testing component AppX: Hisqool.Legal.GDPR...</S><B N="NoNewLine">true</B><S N="ForegroundColor">Gray</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\517c7cc322e534fd595c42a7faa0ba2b.ps1</S><DT N="TimeGenerated">2022-02-13T22:12:12.504498+01:00</DT><Obj N="Tags" RefId="7"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">AUTORITE NT\Syst�me</S><S N="Computer">IFP052046109</S><U32 N="ProcessId">2012</U32><U32 N="NativeThreadId">7828</U32><U32 N="ManagedThreadId">9</U32></Props></Obj><Obj S="progress" RefId="8"><TNRef RefId="0" /><MS><I64 N="SourceId">2</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs> +0ms
+2022-02-13 21:12:25.406: 2022-02-13 22:12:25 [4832] INFO [JS] Script failed +1ms
+2022-02-13 21:12:25.406: 2022-02-13 22:12:25 [4832] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-02-13 21:12:25.422: 2022-02-13 22:12:25 [4832] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 (271) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Charte-sur-la-protection-des-donnees-1.0.16.0.json +3ms
+2022-02-13 21:12:25.422: 2022-02-13 22:12:25 [4832] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2022-02-13 21:12:25.437: 2022-02-13 22:12:25 [4832] INFO [Runner] Creating configuration unit runner object... +17ms
+2022-02-13 21:12:25.437: 2022-02-13 22:12:25 [4832] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-13 21:12:25.437: 2022-02-13 22:12:25 [4832] INFO [JS] Checking that the unit needs to be performed. Params:
+2022-02-13 21:12:25.437: {
+2022-02-13 21:12:25.437:   "platform": "win32",
+2022-02-13 21:12:25.437:   "deviceId": "IFP052046109",
+2022-02-13 21:12:25.437:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2022-02-13 21:12:25.437:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2022-02-13 21:12:25.437:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2022-02-13 21:12:25.437:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2022-02-13 21:12:25.437:   "versionCode": 21093040,
+2022-02-13 21:12:25.437:   "trigger": "boot",
+2022-02-13 21:12:25.437:   "metadata": {
+2022-02-13 21:12:25.437:     "packageVersion": "1.0.16.0",
+2022-02-13 21:12:25.437:     "componentParameters": {
+2022-02-13 21:12:25.437:       "AppX": "Hisqool.Legal.GDPR",
+2022-02-13 21:12:25.437:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2022-02-13 21:12:25.437:       "DesktopShortcut": "Charte de protection*",
+2022-02-13 21:12:25.437:       "ProvisioningPackage": "Hisqool GDPR",
+2022-02-13 21:12:25.437:       "InstallationDirectory": "hisqool.gdpr",
+2022-02-13 21:12:25.437:       "UninstallationDirectory": "hisqool.gdpr",
+2022-02-13 21:12:25.437:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2022-02-13 21:12:25.437:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2022-02-13 21:12:25.437:     },
+2022-02-13 21:12:25.437:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2022-02-13 21:12:25.437:   }
+2022-02-13 21:12:25.437: } +2ms
+2022-02-13 21:12:25.437: 2022-02-13 22:12:25 [4832] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2022-02-13 21:12:25.469: 2022-02-13 22:12:25 [4832] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +32ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [JS] Install Result: 0 +3549ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [JS] Install Stdout:  +1ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [JS] Install Stderr:  +1ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [JS] Finishing Installation +0ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [Runner] Running result: true +1ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (433) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2022-02-13 21:12:29.030: 2022-02-13 22:12:29 [4832] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload... +3ms
+2022-02-13 21:12:29.046: 2022-02-13 22:12:29 [4832] INFO [Runner] Creating configuration unit runner object... +15ms
+2022-02-13 21:12:29.046: 2022-02-13 22:12:29 [4832] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-13 21:12:29.046: 2022-02-13 22:12:29 [4832] INFO [JS] Checking that the unit needs to be performed +1ms

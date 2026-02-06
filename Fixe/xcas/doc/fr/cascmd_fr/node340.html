@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les autres op&#233;rateurs de Xcas</TITLE>
+<META NAME="description" CONTENT="Les autres op&#233;rateurs de Xcas">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node341.html">
+<LINK REL="previous" HREF="node339.html">
+<LINK REL="up" HREF="node338.html">
+<LINK REL="next" HREF="node341.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7924"
+  HREF="node341.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7918"
+  HREF="node338.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7912"
+  HREF="node339.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7920"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7922"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7925"
+  HREF="node341.html">D&#233;finition d'un op&#233;rateur: user_operator</A>
+<B> monter:</B> <A NAME="tex2html7919"
+  HREF="node338.html">Les fonctions infix&#233;es ou</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7913"
+  HREF="node339.html">Les op&#233;rateurs usuels :+,</A>
+ &nbsp; <B>  <A NAME="tex2html7921"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7923"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009152000000000000000">
+Les autres op&#233;rateurs de <TT>Xcas</TT></A>
+</H2><A NAME="7956"></A><A NAME="7957"></A><A NAME="7958"></A><A NAME="7959"></A><A NAME="7960"></A><A NAME="7961"></A><A NAME="7962"></A><A NAME="7963"></A> <A NAME="7964"></A>
+<A NAME="7965"></A><A NAME="7966"></A><A NAME="7967"></A>
+
+<UL>
+<LI><TT>$ </TT> est la version infix&#233;e de <TT>seq</TT> par exemple :
+<BR><TT>(2<code>^</code>k)$(k=0..3)= seq(2<code>^</code>k,k=0..3)=(1,2,4,8)</TT> (ne pas oublier 
+de parenth&#233;ser les arguments),
+</LI>
+<LI><TT>mod</TT> ou <TT>%</TT> pour d&#233;finir un nombre modulaire,
+</LI>
+<LI><TT>@</TT> pour composer des fonctions par exemple :
+<TT>(f@g)(x)=f(g(x))</TT>,
+</LI>
+<LI><TT>@@ </TT> pour composer une fonction avec elle-m&#234;me par exemple :
+<BR><TT>(f@@3)(x)=f(f(f(x)))</TT>,
+</LI>
+<LI><TT>minus union intersect</TT>  pour traduire la diff&#233;rence, l'union et 
+l'intersection de deux ensembles,
+</LI>
+<LI><TT>-&gt;</TT> pour d&#233;finir une fonction,
+</LI>
+<LI><TT>:= ou =&gt;</TT> pour affecter une variable (c'est la version infix&#233;e de 
+<TT>sto</TT> avec l'ordre permut&#233; des arguments pour <TT>:=</TT>), 
+par exemple : <TT>a:=2</TT> or <TT>2=&gt;a</TT> or <TT>sto(2,a)</TT>.
+<TT>=&lt;</TT> pour stocker une expression dans une variable, avec une affectation 
+par r&#233;f&#233;rence (l'ordre des arguments est le m&#234;me que pour <TT>:=</TT>)
+si la cible est un &#233;l&#233;ment d'une matrice ou d'une liste.
+Ceci est plus rapide si on modifie les &#233;l&#232;ments d'une matrice ou d'une 
+liste existante de grande dimension, car on ne fait pas de copie.
+A utiliser avec pr&#233;cautions car tous les objets pointant sur cette matrice 
+seront modifi&#233;s. Dans un programme il faudra utiliser <TT>copy</TT> lors de 
+l'initialisation pour que les modifications se fassent sur la copie 
+(cf <A HREF="node856.html#sec:copie">8.4.14</A>)
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7924"
+  HREF="node341.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7918"
+  HREF="node338.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7912"
+  HREF="node339.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7920"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7922"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7925"
+  HREF="node341.html">D&#233;finition d'un op&#233;rateur: user_operator</A>
+<B> monter:</B> <A NAME="tex2html7919"
+  HREF="node338.html">Les fonctions infix&#233;es ou</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7913"
+  HREF="node339.html">Les op&#233;rateurs usuels :+,</A>
+ &nbsp; <B>  <A NAME="tex2html7921"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7923"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

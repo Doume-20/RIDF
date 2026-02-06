@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Sommet et feuille d'une expression : sommet feuille op</TITLE>
+<META NAME="description" CONTENT="Sommet et feuille d'une expression : sommet feuille op">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node344.html">
+<LINK REL="up" HREF="node342.html">
+<LINK REL="next" HREF="node346.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7993"
+  HREF="node346.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7987"
+  HREF="node342.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7983"
+  HREF="node344.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7989"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7991"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7994"
+  HREF="node346.html">Les fonctions</A>
+<B> monter:</B> <A NAME="tex2html7988"
+  HREF="node342.html">Les fonctions et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7984"
+  HREF="node344.html">Transformer une expression en</A>
+ &nbsp; <B>  <A NAME="tex2html7990"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7992"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009163000000000000000"></A><A NAME="8115"></A><A NAME="8116"></A><A NAME="8117"></A><A NAME="sec:op"></A>
+<BR>
+Sommet et feuille d'une expression : <TT>sommet feuille op</TT>
+</H2>
+Un op&#233;rateur est une fonction infix&#233;e : par exemple '+' est un 
+op&#233;rateur et 'sin' est une fonction.
+<BR>
+On peut repr&#233;senter une expression par un arbre. Le sommet de l'arbre est 
+soit un op&#233;rateur, soit une fonction et les feuilles de l'arbre sont les 
+arguments de l'op&#233;rateur ou de la fonction (voir aussi <A HREF="node577.html#sec:makesuiteop">6.38.11</A>).
+<BR>
+La fonction <TT>sommet</TT>  (resp <TT>feuille</TT> (ou <TT>op</TT>))
+renvoie le sommet (resp la liste des feuilles) d'une expression.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sommet(sin(x+2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>'sin'</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sommet(x+2*y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>'+'</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(sin(x+2))</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>op(sin(x+2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>x+2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(x+2*y)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>op(x+2*y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x,2*y) </TT>
+</DIV> 
+<B>Remarque</B>
+<BR>
+Lorsque l'utilisateur d&#233;finit une fonction par un programme par exemple la
+fonction <TT>pgcd</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>pgcd(a,b):={local r; while (b!=0) {r:=irem(a,b);a:=b;b:=r;} return a;}</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>sommet(pgcd)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>'program'</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(pgcd)[0]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(a,b)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(pgcd)[1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(0,0) ou (15,25) si l'on vient d'ex&#233;cuter pgcd(15,25)</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>feuille(pgcd)[2]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le corps du programme : {local r;....return(a);}</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html7993"
+  HREF="node346.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7987"
+  HREF="node342.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7983"
+  HREF="node344.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7989"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7991"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7994"
+  HREF="node346.html">Les fonctions</A>
+<B> monter:</B> <A NAME="tex2html7988"
+  HREF="node342.html">Les fonctions et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7984"
+  HREF="node344.html">Transformer une expression en</A>
+ &nbsp; <B>  <A NAME="tex2html7990"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7992"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

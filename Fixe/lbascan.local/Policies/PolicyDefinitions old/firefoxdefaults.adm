@@ -1,0 +1,224 @@
+CLASS USER
+
+CATEGORY "Mozilla Firefox Default Settings"
+
+KEYNAME "Software\Policies\Firefox"
+
+POLICY "General Settings"
+PART "Homepage" EDITTEXT REQUIRED
+VALUENAME FirefoxHomepage
+END PART
+END POLICY
+
+
+POLICY "Use Internet Explorer Settings"
+EXPLAIN "Warning!  Enabling this setting will override and replace home page, Automatic Proxy Configuration URL, proxy settings and exceptions for Firefox.  IMPORTANT:  SOCKS Version 5 and Connection Type still need to be selected in Firefox Proxy Settings"
+VALUENAME FirefoxUseIESettings
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+ACTIONLISTON
+	VALUENAME "FirefoxHomepage" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxAutoProxyURL" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxManualHTTP" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxManualHTTPPort" VALUE NUMERIC 1
+	VALUENAME "FirefoxManualSSL" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxManualSSLPort" VALUE NUMERIC 1
+	VALUENAME "FirefoxManualFTP" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxManualFTPPort" VALUE NUMERIC 1
+	VALUENAME "FirefoxManualGopher" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxManualGopherPort" VALUE NUMERIC 1
+	VALUENAME "FirefoxManualSOCKS" VALUE "Using IE's Settings"
+	VALUENAME "FirefoxManualSOCKSPort" VALUE NUMERIC 1
+	VALUENAME "FirefoxProxyExceptions" VALUE "Using IE's Settings"
+END ACTIONLISTON
+END POLICY
+
+
+POLICY "Proxy Settings"
+EXPLAIN "When using Automatic Proxy Configuration URL, URL field required.  When using Manual Proxy, ALL manual proxy fields must be filled"
+PART "Proxy Setting" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxProxy
+ITEMLIST
+	NAME "Connect Directly To The Internet" VALUE NUMERIC 0 DEFAULT
+	NAME "Autodetect Proxy Settings For This Network" VALUE NUMERIC 4
+	NAME "Manual Proxy Configuration" VALUE NUMERIC 1
+	NAME "Automatic Proxy Configuration URL" VALUE NUMERIC 2
+END ITEMLIST
+
+END PART
+
+PART "Automatic Proxy Configuration URL" EDITTEXT
+VALUENAME FirefoxAutoProxyURL
+END PART
+
+PART "Manual Setting - HTTP Proxy" EDITTEXT
+VALUENAME FirefoxManualHTTP
+END PART
+PART "HTTP Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualHTTPPort
+END PART
+
+PART "Manual Setting - SSL Proxy" EDITTEXT
+VALUENAME FirefoxManualSSL
+END PART
+PART "SSL Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualSSLPort
+END PART
+
+PART "Manual Setting - FTP Proxy" EDITTEXT
+VALUENAME FirefoxManualFTP
+END PART
+PART "FTP Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualFTPPort
+END PART
+
+PART "Manual Setting - Gopher Proxy" EDITTEXT
+VALUENAME FirefoxManualGopher
+END PART
+PART "Gopher Proxy Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualGopherPort
+END PART
+
+PART "Manual Setting - SOCKS Host" EDITTEXT
+VALUENAME FirefoxManualSOCKS
+END PART
+PART "SOCKS Host Port" NUMERIC DEFAULT 1
+VALUENAME FirefoxManualSOCKSPort
+END PART
+PART "SOCKS Version (4 or 5)" NUMERIC DEFAULT 4
+VALUENAME FirefoxManualSOCKSVersion
+MIN 4
+MAX 5
+END PART
+
+PART "Manual Setting - Proxy Exceptions" EDITTEXT
+VALUENAME FirefoxProxyExceptions
+DEFAULT "localhost, 127.0.0.1"
+END PART
+END POLICY
+
+
+POLICY "Enable Automatic Image Resizing"
+VALUENAME ImageResize
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Disable Firefox Default Browser Check"
+VALUENAME FirefoxCheckDefault
+VALUEON NUMERIC 0
+VALUEOFF NUMERIC 1
+END POLICY
+
+
+POLICY "Cache"
+PART "Firefox Maximum Cache" NUMERIC REQUIRED
+MAX 100000
+SPIN 1000
+DEFAULT 50000
+VALUENAME FirefoxCacheSize
+END PART
+END POLICY
+
+
+POLICY "Cache to Use Local Settings"
+EXPLAIN "Currently, the cache in Firefox is held within the profile folder for Firefox and is therefore copied up to the server with roaming profiles when a user logs out.  This sets cache to use Local Settings folder, which is not copied up with roaming profiles"
+VALUENAME FirefoxCacheLocal
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Disable XPI Installs"
+EXPLAIN "Enabling disables installation of XPI extensions and themes"
+VALUENAME FirefoxXPIState
+VALUEON NUMERIC 0
+VALUEOFF NUMERIC 1
+END POLICY
+
+
+POLICY "Set Default Download Location"
+PART "Download To:" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxDownloadType
+ITEMLIST
+	NAME "My Documents" VALUE "My Documents"
+	NAME "Desktop" VALUE "Desktop"
+	NAME "Set Manually" VALUE "Set"
+	NAME "Home Drive" VALUE "Home Drive"
+END ITEMLIST
+END PART
+PART "Manually Set Download Folder (Use if Set Manually selected above)" EDITTEXT
+VALUENAME FirefoxDownloadLocation
+END PART
+END POLICY
+
+
+POLICY "Set mandatory bookmarks file"
+EXPLAIN "Please enter network location of bookmarks file (must be called bookmarks.html)"
+PART "Location of mandatory bookmarks.html file - full path to file including filename (bookmarks.html)" EDITTEXT REQUIRED
+VALUENAME FirefoxMandatoryBookmarks
+END PART
+END POLICY
+
+
+POLICY "Set Hostperm.1 file - UNUSED - Use Whitelisted sites instead"
+EXPLAIN "The hostperm.1 file is the permissions file for which plugins and pop ups are allowed.  Define these in a Master Copy of Firefox and copy hostperm.1 file to network location as defined in policy"
+PART "Location of Permissions file - full path to file including filename (hostperm.1)" EDITTEXT REQUIRED
+VALUENAME FirefoxPermissionsFile
+END PART
+END POLICY
+
+
+POLICY "Whitelisted Site for download and popups"
+EXPLAIN ";-delimited lists, format: www.sitename.com.  If none to be set in either field, type NONE"
+PART "White list for Popups" EDITTEXT REQUIRED
+VALUENAME FirefoxPopupWhitelist
+END PART
+PART "White list for Allowed Install sites" EDITTEXT REQUIRED
+DEFAULT "addons.update.mozilla.org"
+VALUENAME FirefoxInstallWhitelist
+END PART
+END POLICY
+
+
+POLICY "Enable 'Type Ahead Find'"
+VALUENAME FirefoxTypeAheadFindState
+VALUEON NUMERIC 1
+VALUEOFF NUMERIC 0
+END POLICY
+
+
+POLICY "Accessibility (per user)"
+PART "Enable Keyboard browsing using 'Caret'" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxCaret
+ITEMLIST
+	NAME "Yes" VALUE NUMERIC 1 DEFAULT
+	NAME "No" VALUE NUMERIC 0
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Firefox Certificates"
+PART "Set Location of Master folder that contains the 3 certificate files (cert8.db, key3.db, secmod.db)" EDITTEXT REQUIRED
+VALUENAME FirefoxCertificateLocation
+END PART
+PART "Behaviour:" DROPDOWNLIST REQUIRED
+VALUENAME FirefoxMandatoryCertificates
+ITEMLIST
+	NAME "Replace User's Current Certificate Files, If Found" VALUE "Replace" DEFAULT
+	NAME "Do Not Replace Certificates, If Found" VALUE "Merge"
+END ITEMLIST
+END PART
+END POLICY
+
+
+POLICY "Firefox File:// Allowed Sites"
+PART "Set list of sites, each site with a space inbetween (eg: http://www.example.com http://www.example2.com)" EDITTEXT REQUIRED
+VALUENAME FirefoxFileSites
+END PART
+END POLICY
+
+
+END CATEGORY

@@ -1,0 +1,74 @@
+{
+  "platform": "win32",
+  "deviceId": "IFP052046109",
+  "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+  "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+  "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+  "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+  "versionCode": 21093040,
+  "trigger": "application_add",
+  "metadata": {
+    "packageVersion": "1.0.16.0",
+    "componentParameters": {
+      "AppX": "Hisqool.Legal.GDPR",
+      "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+      "DesktopShortcut": "Charte de protection*",
+      "ProvisioningPackage": "Hisqool GDPR",
+      "InstallationDirectory": "hisqool.gdpr",
+2021-10-21 20:08:47.517:       "UninstallationDirectory": "hisqool.gdpr",
+2021-10-21 20:08:47.517:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-10-21 20:08:47.517:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-10-21 20:08:47.517:     },
+2021-10-21 20:08:47.517:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-10-21 20:08:47.517:   }
+2021-10-21 20:08:47.517: } +2ms
+2021-10-21 20:08:47.517: 2021-10-21 22:08:47 [11080] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +1ms
+2021-10-21 20:08:47.517: 2021-10-21 22:08:47 [11080] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +4ms
+2021-10-21 20:08:48.439: 2021-10-21 22:08:48 [11080] INFO [PayloadDownloader] [PAYLOAD 394] Persisting status=state=Ok, error=None, active=true +916ms
+2021-10-21 20:08:48.439: 2021-10-21 22:08:48 [11080] INFO [PayloadDispatcher] Emitting 14 entries ["__/conf/agents/facts","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0","conf/application/windows/Educadhoc-Windows","conf/application/windows/HiSqool","conf/application/windows/Le-Livre-Scolaire-Windows","conf/application/windows/LGPO-Windows","conf/application/windows/Lib-Manuels","conf/application/windows/Microsoft-Office-1.0.0","conf/application/windows/sqoolctl","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows"] +3ms
+2021-10-21 20:08:48.439: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Processing for execution configuration with 14 keys +1ms
+2021-10-21 20:08:48.439: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got 14 configurations. 1 in, 0 out +2ms
+2021-10-21 20:08:48.439: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +1ms
+2021-10-21 20:08:48.455: 2021-10-21 22:08:48 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +3ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [Runner] Creating configuration unit runner object... +19ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [JS] Checking if programming or tiggering with trigger configuration... +1ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +0ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [SchedulerService] Identical schedule existing. Doing nothing +0ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [JS] Scheduling result: undefined +1ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +1ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> configuration... +0ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> configuration... +1ms
+2021-10-21 20:08:48.470: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/Educadhoc-Windows... +1ms
+2021-10-21 20:08:48.486: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> configuration... +2ms
+2021-10-21 20:08:48.486: 2021-10-21 22:08:48 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload... +2ms
+2021-10-21 20:08:48.564: 2021-10-21 22:08:48 [11080] INFO [Runner] Creating configuration unit runner object... +79ms
+2021-10-21 20:08:48.564: 2021-10-21 22:08:48 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:08:48.564: 2021-10-21 22:08:48 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-10-21 20:08:48.673: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +114ms
+2021-10-21 20:08:48.673: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> configuration... +1ms
+2021-10-21 20:08:48.673: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +1ms
+2021-10-21 20:08:48.689: 2021-10-21 22:08:48 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2021-10-21 20:08:48.720: 2021-10-21 22:08:48 [11080] INFO [Runner] Creating configuration unit runner object... +42ms
+2021-10-21 20:08:48.720: 2021-10-21 22:08:48 [11080] INFO [Runner] Checking if runner needs to be performed... +0ms
+2021-10-21 20:08:48.720: 2021-10-21 22:08:48 [11080] INFO [JS] Checking that the unit needs to be performed +2ms
+2021-10-21 20:08:48.720: 2021-10-21 22:08:48 [11080] INFO [JS] Getting GPO version... +1ms
+2021-10-21 20:08:48.736: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> configuration... +2ms
+2021-10-21 20:08:48.736: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +1ms
+2021-10-21 20:08:48.736: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> configuration... +0ms
+2021-10-21 20:08:48.736: 2021-10-21 22:08:48 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload... +3ms
+2021-10-21 20:08:48.751: 2021-10-21 22:08:48 [11080] INFO [Runner] Creating configuration unit runner object... +14ms
+2021-10-21 20:08:48.751: 2021-10-21 22:08:48 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:08:48.751: 2021-10-21 22:08:48 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-10-21 20:08:48.783: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +25ms
+2021-10-21 20:08:48.783: 2021-10-21 22:08:48 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2021-10-21 20:08:48.798: 2021-10-21 22:08:48 [11080] INFO [Runner] Creating configuration unit runner object... +14ms
+2021-10-21 20:08:48.798: 2021-10-21 22:08:48 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:08:48.798: 2021-10-21 22:08:48 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-10-21 20:08:48.798: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> configuration... +1ms
+2021-10-21 20:08:48.798: 2021-10-21 22:08:48 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +1ms
+2021-10-21 20:08:48.798: 2021-10-21 22:08:48 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +2ms
+2021-10-21 20:08:48.830: 2021-10-21 22:08:48 [11080] INFO [Runner] Creating configuration unit runner object... +24ms
+2021-10-21 20:08:48.830: 2021-10-21 22:08:48 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-10-21 20:08:48.830: 2021-10-21 22:08:48 [11080] INFO [WatcherService] Received a list of 14 payloads +7ms

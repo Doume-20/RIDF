@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Parameters (cursors)</TITLE>
+<META NAME="description" CONTENT="Parameters (cursors)">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html150"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html148"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html142"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html151"
+  HREF="node12.html">3-d rendering.</A>
+<B> Up:</B> <A NAME="tex2html149"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html143"
+  HREF="node10.html">2-d geometry</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00035300000000000000">
+Parameters (cursors)</A>
+</H3>
+Parameters or cursors are real values which can move in a fixed interval, e.g.
+between -5 and +5. The real value may be changed by moving a cursor
+with the mouse below the controls at the right of the geometrical
+representation. There are two kinds of parameters: formal
+and numeric parameters. Formal parameters have a formal name
+which is used in all exact calculations, and a numeric value
+which is used for all numeric evaluations (including graphical representation
+of objects depending on the parameter). They can therefore be used
+to make an analytical proof of a geometrical theorem using 
+the CAS engine, while displaying
+a figure. Numerical parameters evaluate always to their numerical value, 
+they can
+not be used to make an analytical proof (only to make conjectures 
+like with most interactive geometry softwares).
+
+<P>
+To add a new parameter, use the <TT>Geo-&gt;Edit-&gt;Add parameter</TT> menu.
+For example, add a level with <code>f(x):=a*x^2+b*x+c</code>
+then define 3 parameters named a, b, c and add the command
+<code>plot(f(x))</code>, then move one of them to see the 
+influence of each parameter
+on the shape of the parabola.
+You could also add a level <code>mini:=solve(diff(f(x),x))</code> and
+<code>M:=point(mini[0],f(mini[0]))</code> to display the minimum.
+Note  that the coordinates of M are displayed in terms of a and b
+under the commandline defining M at the left. You would have to add a level with
+<code>evalf(coordonnees(M))</code> to see the current numerical value.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html150"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html148"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html142"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html151"
+  HREF="node12.html">3-d rendering.</A>
+<B> Up:</B> <A NAME="tex2html149"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html143"
+  HREF="node10.html">2-d geometry</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>

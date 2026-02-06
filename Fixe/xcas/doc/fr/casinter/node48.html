@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les graphiques</TITLE>
+<META NAME="description" CONTENT="Les graphiques">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node57.html">
+<LINK REL="previous" HREF="node47.html">
+<LINK REL="up" HREF="casinter.html">
+<LINK REL="next" HREF="node49.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html857"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html851"
+  HREF="casinter.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html845"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html853"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html855"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html858"
+  HREF="node49.html">Animations</A>
+<B> monter:</B> <A NAME="tex2html852"
+  HREF="casinter.html">L'interface Xcas de giac</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html846"
+  HREF="node47.html">L'&#233;diteur d'expressions.</A>
+ &nbsp; <B>  <A NAME="tex2html854"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html856"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000150000000000000000">
+Les graphiques</A>
+</H1>
+Il y a plusieurs types de graphiques: dans le plan (2-d), dans
+l'espace (3-d), qui peuvent faire partie ou non d'une figure
+g&#233;om&#233;trique. Pour cr&#233;er les types de graphes les plus courants,
+vous pouvez utiliser les assistants du menu <TT>Graphes</TT> qui
+se chargera de cr&#233;er un niveau avec une ligne de commande, de le
+remplir et de le valider.
+Ainsi une commande pour tracer un graphe de fonction :
+<BR><code>plotfunc(sin(x),x=-5..5)</code> affichera un graphe 2-d (qui ne fait
+pas partie d'une figure),
+<BR><code>plotfunc(x^2-y^2,[x=-3..3,y=-4..4])</code>
+affichera un graphe 3-d (qui ne fait pas partie d'une figure).
+<BR>
+Alors que le menu <code>Geo-&gt;Nouvelle figure</code> 
+permet d'ajouter un &#233;cran de 
+g&#233;om&#233;trie 2-d ou 3-d permettant de faire &#224; la fois une figure 
+g&#233;om&#233;trique et des trac&#233;s de fonctions.
+
+<P>
+Chaque graphique dispose &#224; sa droite de boutons permettant de changer
+la visualisation du graphique&nbsp;: d&#233;placement selon les axes, zoom in et
+out, arr&#234;t ou reprise d'une animation, configuration, ou
+d'exporter/imprimer le graphique. Les deux sous-sections qui suivent
+d&#233;crivent les r&#233;glages sp&#233;cifiques au graphes dans le plan et dans
+l'espace, les deux sections qui suivent expliquent comment cr&#233;er
+des figures dans le plan ou dans l'espace. Les sections d&#233;crivant les
+attributs des objets des figures 2-d et 3-d (<A HREF="node63.html#sec:attributs2d">13.6</A>
+et <A HREF="node70.html#sec:attributs3d">14.3.2</A>) peuvent &#234;tre appliqu&#233;es
+&#224; la plupart des commandes de trac&#233;s m&#234;me si elles ne font pas partie d'une
+figure, par exemple on peut saisir dans un niveau de calcul formel&nbsp;:
+<DIV ALIGN="CENTER">
+<TT>plotfunc(cos(x)+cos(y)+cos(x+y),[x=-2*pi..2*pi, y=-2*pi..2*pi],
+xstep=0.2,ystep=0.2, affichage=vert+rempli);
+<BR>
+plan(z=1,affichage=cyan+rempli)</TT>
+
+</DIV>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html859"
+  HREF="node49.html">Animations</A>
+<LI><A NAME="tex2html860"
+  HREF="node50.html">Graphes dans le plan</A>
+<LI><A NAME="tex2html861"
+  HREF="node51.html">Graphes dans l'espace</A>
+<UL>
+<LI><A NAME="tex2html862"
+  HREF="node52.html">Comment modifier le point de vue</A>
+<LI><A NAME="tex2html863"
+  HREF="node53.html">Le plan de vision et l'axe de vision</A>
+<LI><A NAME="tex2html864"
+  HREF="node54.html">Comment modifier le plan de vision</A>
+<LI><A NAME="tex2html865"
+  HREF="node55.html">Rotation animée du point de vue</A>
+<LI><A NAME="tex2html866"
+  HREF="node56.html">Les lumières des graphes 3-d</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html857"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html851"
+  HREF="casinter.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html845"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html853"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html855"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html858"
+  HREF="node49.html">Animations</A>
+<B> monter:</B> <A NAME="tex2html852"
+  HREF="casinter.html">L'interface Xcas de giac</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html846"
+  HREF="node47.html">L'&#233;diteur d'expressions.</A>
+ &nbsp; <B>  <A NAME="tex2html854"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html856"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Accès aux fonctions de PARI/GP: commande pari</TITLE>
+<META NAME="description" CONTENT="Accès aux fonctions de PARI/GP: commande pari">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node264.html">
+<LINK REL="up" HREF="node255.html">
+<LINK REL="next" HREF="node266.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6814"
+  HREF="node266.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6808"
+  HREF="node255.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6804"
+  HREF="node264.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6810"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6812"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6815"
+  HREF="node266.html">Les r&#233;els</A>
+<B> monter:</B> <A NAME="tex2html6809"
+  HREF="node255.html">Les rationnels</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6805"
+  HREF="node264.html">Le n<SUP>i&#232;me</SUP> nombre de</A>
+ &nbsp; <B>  <A NAME="tex2html6811"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6813"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009910000000000000000"></A><A NAME="6039"></A>
+<BR>
+Acc&#232;s aux fonctions de PARI/GP: commande <TT>pari</TT>
+</H2>
+La commande <TT>pari</TT> sans argument exporte les fonctions de pari
+qui n'ont pas d'homonymes sous <TT>Xcas</TT> en leur nom habituel sous PARI/GP.
+<BR>
+Toutes les commandes sont aussi export&#233;es sous leur nom d'origine
+avec le pr&#233;fixe <TT>pari_</TT>.
+
+<P>
+La commande <TT>pari</TT> avec en premier argument un chaine de caract&#232;re
+- le nom d'une commande PARI - et d'&#233;ventuels autres arguments
+ex&#233;cute la commande PARI avec les autres arguments. 
+<BR>
+Par exemple :
+<BR>
+<UL>
+<LI>On tape <TT>pari()</TT> puis <TT>weber(1+i)</TT> ou directement
+<TT>pari("weber",1+i)</TT> et cela ex&#233;cute la commande <TT>weber</TT> de PARI
+avec comme argument <TT>1+i</TT>. La commande <TT>weber</TT> n'existant pas sous 
+<TT>Xcas</TT>.
+</LI>
+<LI>On tape <TT>pari("content",[25,15,50,75])</TT> ou 
+<TT>pari_content([25,15,50,75])</TT> et cela ex&#233;cute la commande 
+<TT>content</TT> de PARI avec comme argument <TT>[25,15,50,75]</TT> et renvoie 
+<TT>5</TT> qui est le pgcdde la liste d'entiers donn&#233;e en argument alors que 
+<TT>pari()</TT> puis <TT>content([25,15,50,75])</TT> ex&#233;cute la commande 
+<TT>content</TT> de <TT>Xcas</TT> et renvoie aussi <TT>5</TT> car <TT>content</TT>
+est une commande <TT>Xcas</TT> qui a comme argument un polyn&#244;me donn&#233; sous sa
+forme symbolique ou par la liste de ses coefficients et qui renvoie le m&#234;me 
+r&#233;sultat que la commande <TT>content</TT> de PARI 
+(<TT>content([25,15,50,75])=content(25x<code>^</code>3)+15x<code>^</code>2+50x+75=5</TT>).
+</LI>
+<LI>On tape <TT>pari("gcd",[4,3,2,15],[20,30,50,75])</TT> ou
+<TT>pari_gcd([4,3,2,15],[20,30,50,75])</TT> et cela ex&#233;cute la 
+commande <TT>gcd</TT> de PARI avec comme argument <TT>L1=[4,3,2,15]</TT> et
+<TT>L2=[20,30,50,75]</TT> et renvoie la matrice 
+<TT>[[4,1,2,5],[2,3,2,15],[2,1,2,5],[1,3,1,15]]</TT> qui est la matrice
+<TT>M[j,k]</TT>  &#233;gale au pgcd des entiers <TT>L1[j]</TT> et <TT>L2[k]</TT> alors que 
+<TT>pari()</TT> puis 
+<TT>gcd([4,3,2,15],[20,30,50,75])</TT> renvoie <TT>[4,3,2,15]</TT> car <TT>gcd</TT>
+est une commande <TT>Xcas</TT> qui avec comme argument 2 listes <TT>L1</TT> et  
+<TT>L2</TT> renvoie la liste <TT>L3[j]</TT> des pgcd de <TT>L1[j]</TT> et <TT>L2[j]</TT>
+c'est &#224; dire la diagonale de la matrice pr&#233;c&#233;dente
+(<TT>gcd([4,3,2,15],[20,30,50,75])=diag(pari("gcd", [4,3,2,15],[20,30,50,75]))</TT>).
+</LI>
+</UL>
+La documentation de PARI/GP est disponible  depuis le menu
+Aide-&gt;Manuels.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6814"
+  HREF="node266.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6808"
+  HREF="node255.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6804"
+  HREF="node264.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6810"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6812"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6815"
+  HREF="node266.html">Les r&#233;els</A>
+<B> monter:</B> <A NAME="tex2html6809"
+  HREF="node255.html">Les rationnels</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6805"
+  HREF="node264.html">Le n<SUP>i&#232;me</SUP> nombre de</A>
+ &nbsp; <B>  <A NAME="tex2html6811"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6813"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

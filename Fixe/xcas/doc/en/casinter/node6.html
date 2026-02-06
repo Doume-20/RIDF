@@ -1,0 +1,350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Expression editor</TITLE>
+<META NAME="description" CONTENT="Expression editor">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html94"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html92"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html86"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html95"
+  HREF="node7.html">Programs</A>
+<B> Up:</B> <A NAME="tex2html93"
+  HREF="node3.html">Level types</A>
+<B> Previous:</B> <A NAME="tex2html87"
+  HREF="node5.html">Comments</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00033000000000000000"></A> <A NAME="sec:eqw"></A>
+<BR>
+Expression editor
+</H2>
+Typing the shortcut <TT>Alt-e</TT> 
+or using the menu <TT>Expression-&gt;New expression</TT> will
+open an expression editor above the current level. The scientific
+keyboard should automatically appear (press the <!-- MATH
+ $\framebox{x}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="\framebox{x}"> button at the 
+top right of the keyboard if you don't want it).
+
+<P>
+The expression editor lets you enter complex mathematical expression
+in 2-d like on a paper. 
+For example suppose we want to enter
+<P><!-- MATH
+ \begin{displaymath}
+\left(\frac{x+1}{x+2}\right) \cdot \left(3+\frac{4}{x} \right)^5
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="18" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$\displaystyle \left(\vphantom{\frac{x+1}{x+2}}\right.$"><IMG
+ WIDTH="45" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$\displaystyle {\frac{{x+1}}{{x+2}}}$"><IMG
+ WIDTH="18" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$\displaystyle \left.\vphantom{\frac{x+1}{x+2}}\right)$"><SUP> . </SUP><IMG
+ WIDTH="18" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$\displaystyle \left(\vphantom{3+\frac{4}{x} }\right.$">3 + <IMG
+ WIDTH="17" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$\displaystyle {\frac{{4}}{{x}}}$"><IMG
+ WIDTH="25" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$\displaystyle \left.\vphantom{3+\frac{4}{x} }\right)^{5}_{}$">
+</DIV><P></P>
+Open an expression editor (<TT>Alt-e</TT>) then type
+
+<UL>
+<LI><!-- MATH
+ $x+1 \ \uparrow$
+ -->
+<I>x</I> + 1&nbsp; <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$">, this will select <I>x</I> + 1
+</LI>
+<LI><code>/</code> (for the division)
+</LI>
+<LI><!-- MATH
+ $x+2 \ \uparrow \ \uparrow$
+ -->
+<I>x</I> + 2&nbsp; <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> &nbsp; <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$">
+</LI>
+<LI>* 3 <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> + 4 <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> / x
+</LI>
+<LI><!-- MATH
+ $\uparrow \ \uparrow \ \uparrow$
+ -->
+<IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> &nbsp; <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> &nbsp; <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> <code>^</code> 5
+</LI>
+</UL>
+You can now move the selection in the tree of the expression
+with the arrows keys&nbsp;:
+
+<UL>
+<LI><IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$"> moves up one level in the tree, that is select the
+function or operator with had the current selection as argument 
+(it also selects the other arguments of the function/operator)
+</LI>
+<LI><!-- MATH
+ $\downarrow$
+ -->
+<IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \downarrow$"> moves down one level in the three, that is select
+the first argument of the function/operator of the current selection
+</LI>
+<LI><!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \leftarrow$"> or <!-- MATH
+ $\rightarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \rightarrow$"> select the left or right brother 
+of the current selection
+</LI>
+<LI>Ctrl-<!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \leftarrow$"> or Crtl-<!-- MATH
+ $\rightarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \rightarrow$"> exchange the current selection
+with it's left or right brother
+</LI>
+</UL>
+
+<P>
+Another example, let's enter
+<P><!-- MATH
+ \begin{displaymath}
+\int_0^{+\infty} \frac{1}{1+x^2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="44" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$\displaystyle \int_{0}^{{+\infty}}$"><IMG
+ WIDTH="52" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$\displaystyle {\frac{{1}}{{1+x^2}}}$">
+</DIV><P></P>
+Type <TT>Alt-e</TT> to open a new expression editor
+
+<UL>
+<LI>the <IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \int$"> key on the scientific keyboard or <TT>Ctrl-S</TT> on
+the keyboard, we now have an undefined integral
+</LI>
+<LI>the <code>,</code> key will switch to a defined integral (to do the
+reverse operation, one would select each bound and press the backspace
+key)
+</LI>
+<LI><!-- MATH
+ $\downarrow$
+ -->
+<IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \downarrow$">, replace 0 by the function <code>1/(1+x^2)</code>
+and <IMG
+ WIDTH="12" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ \uparrow$">
+</LI>
+<LI><!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \leftarrow$"> to select the upper bound
+</LI>
+<LI>the <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \infty$"> key on the scientific keyboard to replace the 1
+</LI>
+<LI>the Enter key to evaluate the integral
+</LI>
+</UL>
+
+<P>
+We know list the other special keys in the expression editor:
+
+<UL>
+<LI><code>,</code>: if a sequence is selected, add a 0 to the end of the
+sequence and select it. If the selection is not a sequence, creates
+a sequence of size 2 with first element the selection, init the second
+element to 0 and select it. You can move the newly created 0 in the
+sequence with Ctrl-<!-- MATH
+ $\rightarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \rightarrow$"> and Ctrl-<!-- MATH
+ $\leftarrow$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ \leftarrow$">.
+</LI>
+<LI><code>(</code>: if a sequence is selected, make a user function
+applied to this sequence, the name of the user function is initialized
+to <code>f</code> and selected (type the function name to replace 
+the <code>f</code> by your function name). If a vector is selected, it is replaced
+by a sequence.
+</LI>
+<LI><code>[</code>: if a sequence is selected, it is replaced by a vector,
+if a vector is selected, an indexed vector/matrix position is created
+where the variable name of the vector/matrix is initialized to
+<code>m</code> and selected (type the matrix/list name to replace <code>m</code>)
+</LI>
+<LI>keys in combination with the Ctrl key
+
+<UL>
+<LI>Ctrl-A: select All
+</LI>
+<LI>Ctrl-C: Copy selection to clipboard (like under windows)
+</LI>
+<LI>Ctrl-V: Paste selection from clipboard
+</LI>
+<LI>Ctrl-T: translate selection to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and copy to clipboard
+(the translation is also copied to the <code>Msg</code> output, click
+on the <code>Msg</code> button to make it visible or not)
+</LI>
+<LI>Ctrl-E: eval selection
+</LI>
+<LI>Ctrl-F: factor selection
+</LI>
+<LI>Ctrl-N: apply normal on selection
+</LI>
+<LI>Ctrl-P: apply partfrac on selection
+</LI>
+<LI>Ctrl-I (or Tab key) completion key (position in index at the function
+whose name begins the same)
+</LI>
+<LI>Ctrl-S: integral
+</LI>
+<LI>Ctrl-L: limit
+</LI>
+<LI>Ctrl-D: derivative
+</LI>
+<LI>Ctrl-Z: undo
+</LI>
+<LI>Ctrl-Y: redo
+</LI>
+</UL>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html94"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html92"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html86"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html95"
+  HREF="node7.html">Programs</A>
+<B> Up:</B> <A NAME="tex2html93"
+  HREF="node3.html">Level types</A>
+<B> Previous:</B> <A NAME="tex2html87"
+  HREF="node5.html">Comments</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>

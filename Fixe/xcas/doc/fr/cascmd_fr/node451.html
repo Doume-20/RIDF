@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#201;criture selon les puissances de (x-a) : ptayl</TITLE>
+<META NAME="description" CONTENT="&#201;criture selon les puissances de (x-a) : ptayl">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node452.html">
+<LINK REL="previous" HREF="node450.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node452.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9571"
+  HREF="node452.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9565"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9559"
+  HREF="node450.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9567"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9569"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9572"
+  HREF="node452.html">Calcul avec les racines</A>
+<B> monter:</B> <A NAME="tex2html9566"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9560"
+  HREF="node450.html">&#201;valuer un polyn&#244;me :</A>
+ &nbsp; <B>  <A NAME="tex2html9568"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9570"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092522000000000000000"></A><A NAME="11340"></A>
+<BR>
+&#201;criture selon les puissances de (x-a) : <TT>ptayl</TT>
+</H2>
+Il s'agit d'&#233;crire un polyn&#244;me <TT>P(x)</TT>  selon les puissances de 
+<TT>x-a)</TT><I>x</I> - <I>a</I>.
+<BR><TT>ptayl</TT> a deux param&#232;tres : un  polyn&#244;me <TT>P</TT> donn&#233; sous 
+forme symbolique ou par la liste de ses coefficients et un nombre <TT>a</TT>.
+<BR><TT>ptayl</TT> renvoie le polyn&#244;me <TT>Q</TT> tel que <TT>Q(x-a)=P(x)</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ptayl(x<code>^</code>2+2*x+1,2)</TT>
+</DIV>
+On obtient le polyn&#244;me Q(x):
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>2+6*x+9</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ptayl([1,2,1],2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,6,9]</TT>
+</DIV>
+<B>Attention</B>
+<BR>
+On a:
+<DIV ALIGN="CENTER">
+<TT>P(x)=Q(x-a)</TT>
+</DIV>
+c'est &#224; dire pour l'exemple que :
+<BR><!-- MATH
+ $x^2+2x+1=(x-2)^2+6(x-2)+9$
+ -->
+<I>x</I><SUP>2</SUP> +2<I>x</I> + 1 = (<I>x</I> - 2)<SUP>2</SUP> + 6(<I>x</I> - 2) + 9
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

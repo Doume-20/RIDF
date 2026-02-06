@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Copier sans l'&#233;valuer le contenu d'une variable : CopyVar</TITLE>
+<META NAME="description" CONTENT="Copier sans l'&#233;valuer le contenu d'une variable : CopyVar">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node96.html">
+<LINK REL="previous" HREF="node94.html">
+<LINK REL="up" HREF="node89.html">
+<LINK REL="next" HREF="node96.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3720"
+  HREF="node96.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3714"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3708"
+  HREF="node94.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3716"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3718"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3721"
+  HREF="node96.html">Faire une hypoth&#232;se sur</A>
+<B> monter:</B> <A NAME="tex2html3715"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3709"
+  HREF="node94.html">Archiver et d&#233;sarchiver des</A>
+ &nbsp; <B>  <A NAME="tex2html3717"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3719"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00556000000000000000"></A><A NAME="1807"></A>
+<BR>
+Copier sans l'&#233;valuer le contenu d'une variable : <TT>CopyVar</TT>
+</H2>
+<TT>CopyVar</TT> a comme arguments le nom de deux variables.
+<BR><TT>CopyVar</TT> copie sans l'&#233;valuer le contenu de la premi&#232;re variable dans 
+la deuxi&#232;me variable.
+<BR>
+On tape (attention &#224; l'ordre) :
+<DIV ALIGN="CENTER">
+<TT>a:=c</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>c:=5</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>CopyVar(a,b)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>b</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>5 </TT>
+</DIV>
+puis on tape :
+<DIV ALIGN="CENTER">
+<TT>c:=10</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>b</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>10</TT>
+</DIV>
+Une modification du contenu de <TT>c</TT> va modifier le contenu de <TT>b</TT> car
+<TT>b</TT> contient <TT>c</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>a:=d</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>b</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>10</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>purge(c)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>b</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>c</TT>
+</DIV>
+puisque <TT>b</TT> contient <TT>c</TT>.
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

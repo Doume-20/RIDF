@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Le cercle : circle cercle</TITLE>
+<META NAME="description" CONTENT="Le cercle : circle cercle">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node963.html">
+<LINK REL="previous" HREF="node961.html">
+<LINK REL="up" HREF="node961.html">
+<LINK REL="next" HREF="node963.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html17338"
+  HREF="node963.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17332"
+  HREF="node961.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17326"
+  HREF="node961.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17334"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17336"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17339"
+  HREF="node963.html">Les arcs de cercle</A>
+<B> monter:</B> <A NAME="tex2html17333"
+  HREF="node961.html">Les cercles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17327"
+  HREF="node961.html">Les cercles</A>
+ &nbsp; <B>  <A NAME="tex2html17335"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17337"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0012141000000000000000"></A><A NAME="25139"></A><A NAME="25140"></A><A NAME="sec:cercle"></A>
+<BR>
+Le cercle : <TT>circle cercle</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node963.html#sec:arc">9.14.2</A> pour les arcs de cercle.
+<BR><B>Voir aussi :</B> <A HREF="node1068.html#sec:cercle3d">10.9</A> pour les cercles de la 
+g&#233;om&#233;trie 3D.
+<BR><TT>cercle</TT> a un ou deux arguments pour dessiner un cercle et de quatre 
+&#224; six arguments pour dessiner un arc de cercle.
+<BR>
+Description des arguments :
+
+<UL>
+<LI>Avec un argument : l'argument de <TT>cercle</TT> est alors l'&#233;quation du 
+cercle ayant comme variables <I>x</I> et <I>y</I>,  
+</LI>
+<LI>Avec deux arguments <TT>cercle</TT> d&#233;signe un cercle :
+<BR>
+Le premier argument est un point ou un nombre complexe consid&#233;r&#233; comme 
+l'affixe d'un point.
+<BR>
+C'est le deuxi&#232;me argument qui d&#233;termine si on trace le cercle avec la 
+donn&#233;e de son centre  et de son rayon (le deuxi&#232;me argument est alors
+un nombre complexe de module le rayon) ou avec la donn&#233;e de son
+ diam&#232;tre (le deuxi&#232;me argument est un point).
+<BR>- <TT>cercle(C,r)</TT> o&#249; <TT>C</TT> est un point (ou un nombre complexe) et 
+<TT>r</TT> un nombre complexe, trace le cercle de centre <TT>C</TT> et de rayon le 
+module de <TT>r</TT>. Cela est utile, par exemple,  pour avoir le cercle de 
+centre <TT>A</TT> qui passe par <TT>B</TT> on tape <TT>cercle(A,B-A)</TT>.
+<BR>- <TT>cercle(A,B)</TT> o&#249; <TT>A</TT> est un point ou un nombre complexe et 
+<TT>B</TT> un point, trace le cercle de diam&#232;tre <TT>AB</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(x<code>^</code>2+y<code>^</code>2-2*x-2*y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le cercle de centre 1+i et de rayon sqrt(2) est trac&#233;</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(-1,i)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le cercle de centre -1 et de rayon 1 est trac&#233;</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(-1, point(i))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le cercle de diam&#233;tre -1,i</TT>
+</DIV>
+</LI>
+<LI>Avec de quatre &#224; six  arguments, <TT>cercle</TT> d&#233;signe un arc de 
+cercle. Dans ce cas les deux premiers arguments d&#233;terminent le cercle qui 
+porte l'arc (voir ci-dessus) et les deux arguments suivants sont les angles 
+au centre des points qui d&#233;limitent l'arc et les deux derniers arguments 
+sont des noms de variables qui contiendront les points qui d&#233;limitent 
+l'arc. Le troisi&#232;me et le quatri&#232;me argument sont les mesures des 
+angles au centre des points qui d&#233;limitent l'arc, ces angles sont mesur&#233;s
+en radians (ou en degr&#233;s) &#224; partir de  l'axe d&#233;fini par les deux 
+premiers arguments si le deuxi&#232;me argument est un point (d&#233;finition du 
+cercle par son diam&#232;tre) ou de l'axe d&#233;fini par son centre <I>C</I> et le 
+point <I>A</I> = <I>C</I> + <I>r</I> si le deuxi&#232;me argument est un complexe &#233;gal &#224; <I>r</I> 
+(d&#233;finition du cercle par son centre et un complexe dont le module est 
+&#233;gal au rayon).
+<BR>
+Le cinqui&#232;me et le sixi&#232;me argument ne sont pas obligatoires et 
+servent &#224; d&#233;finir les extr&#233;mit&#233;s de l'arc. 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(-1,1,0,pi/4,A,B)</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>L'arc AB (A=point(0) et B=point(<!-- MATH
+ $\frac{-1+\sqrt 2+i*\sqrt 2}{2}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img590.png"
+ ALT="$ {\frac{{-1+\sqrt 2+i*\sqrt 2}}{{2}}}$">)) du cercle de centre -1 et de rayon 1 est trac&#233;</TT>
+</DIV>
+En effet l'angle est compt&#233; &#224; partir de l'axe (-1,0) et donc l'angle 0 
+est le point(0).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(-1,i,0,pi/4,A,B)</TT>
+</DIV>
+On obtient si on a coch&#233; <TT>radian</TT> dans la configuration du <TT>cas</TT> 
+(bouton donnant la ligne d'&#233;tat) :
+<DIV ALIGN="CENTER">
+<TT>L'arc AB (A=point(-1+i) et B=point(<!-- MATH
+ $\frac{-1-\sqrt 2+i*\sqrt 2}{2}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img591.png"
+ ALT="$ {\frac{{-1-\sqrt 2+i*\sqrt 2}}{{2}}}$">)) du cercle de centre -1 et de rayon 1 est trac&#233;</TT>
+</DIV>
+En effet, l'angle est compt&#233; &#224; partir de l'axe (-1,i-1) et donc l'angle 0 
+est le point d'affixe i-1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>cercle(-1, point(i),0,pi/4,A,B)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>L'arc AB (A=point(i) et B=point(<!-- MATH
+ $\frac{-1+i*(1+\sqrt 2)}{2}$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img592.png"
+ ALT="$ {\frac{{-1+i*(1+\sqrt 2)}}{{2}}}$">)) du cercle de diam&#233;tre -1,i</TT>
+</DIV>
+En effet, l'angle est compt&#233; &#224; partir de l'axe (-1,i) et donc l'angle 0 est
+ le point d'affixe i.
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17338"
+  HREF="node963.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html17332"
+  HREF="node961.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html17326"
+  HREF="node961.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html17334"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html17336"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html17339"
+  HREF="node963.html">Les arcs de cercle</A>
+<B> monter:</B> <A NAME="tex2html17333"
+  HREF="node961.html">Les cercles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html17327"
+  HREF="node961.html">Les cercles</A>
+ &nbsp; <B>  <A NAME="tex2html17335"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html17337"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

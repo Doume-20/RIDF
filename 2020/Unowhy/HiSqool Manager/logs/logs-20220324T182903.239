@@ -1,0 +1,72 @@
+2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +0ms
+2022-03-24 18:28:45.122: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +1ms
+2022-03-24 18:28:45.122: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +0ms
+2022-03-24 18:28:45.122: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +1ms
+2022-03-24 18:28:45.122: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +0ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +15ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +1ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +1ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [Runner] Performing runner... +1ms
+2022-03-24 18:28:45.169: 2022-03-24 19:28:45 [4928] INFO [JS] Performing facts gathering and upload... +35ms
+2022-03-24 18:28:51.338: 2022-03-24 19:28:51 [4928] INFO [JS] Getting installed applications... +6175ms
+2022-03-24 18:28:52.806: 2022-03-24 19:28:52 [4928] INFO [JS] Getting apps result: 0 +1472ms
+2022-03-24 18:28:52.806: 2022-03-24 19:28:52 [4928] INFO [JS] Setting facts... +1ms
+2022-03-24 18:28:52.806: 2022-03-24 19:28:52 [4928] INFO [JS] Uploading facts... +2ms
+2022-03-24 18:28:55.415: 2022-03-24 19:28:55 [4928] ERROR [JS] Error while setting facts: Error: connect ECONNREFUSED 51.178.69.35:443
+2022-03-24 18:28:55.415:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) +2609ms
+2022-03-24 18:28:55.415: 2022-03-24 19:28:55 [4928] INFO [Runner] Running result: false +1ms
+2022-03-24 18:28:55.415: 2022-03-24 19:28:55 [4928] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [CommandService] Got command facts:set +2269ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [CommandService] Got command units:trigger +4ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> logout... +0ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> logout... +1ms
+2022-03-24 18:28:57.695: 2022-03-24 19:28:57 [4928] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> logout... +0ms
+2022-03-24 18:28:57.711: 127.0.0.1 - - [24/Mar/2022:18:28:57 +0000] "POST /commands HTTP/1.1" 200 25 "-" "-"
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:5dd3f91a9c1ec69aa743ef6693d8c6f3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +4427ms
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +2ms
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:7e3fb14071d24528fb23856f56cc3d8a for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +1ms
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +1ms
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +1ms
+2022-03-24 18:29:02.130: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +1ms
+2022-03-24 18:29:02.145: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +1ms
+2022-03-24 18:29:02.145: 2022-03-24 19:29:02 [4928] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +5ms
+2022-03-24 18:29:02.208: 2022-03-24 19:29:02 [4928] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +62ms
+2022-03-24 18:29:02.208: 2022-03-24 19:29:02 [4928] INFO [KeyedObservableCollector] Sending 9 items +0ms
+2022-03-24 18:29:02.223: 2022-03-24 19:29:02 [4928] INFO [KeyedObservableCollector] Got 9 items. 0 in, 0 out +14ms
+2022-03-24 18:29:02.223: 2022-03-24 19:29:02 [4928] INFO [KeyedObservableCollector] Sending 9 items +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1012ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: false +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +0ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-03-24 18:29:03.239: 2022-03-24 19:29:03 [4928] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +0ms

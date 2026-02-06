@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fonctions utiles pour les statistiques : mean moyenne, variance, stddev ecart_type, stddevp, stdDev, ecart_type_population, median, quantile, quartiles, boxwhisker, moustache</TITLE>
+<META NAME="description" CONTENT="Fonctions utiles pour les statistiques : mean moyenne, variance, stddev ecart_type, stddevp, stdDev, ecart_type_population, median, quantile, quartiles, boxwhisker, moustache">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node619.html">
+<LINK REL="previous" HREF="node609.html">
+<LINK REL="up" HREF="node195.html">
+<LINK REL="next" HREF="node619.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12021"
+  HREF="node619.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12015"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12009"
+  HREF="node617.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12017"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12019"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12022"
+  HREF="node619.html">Les tableaux indic&#233;s par</A>
+<B> monter:</B> <A NAME="tex2html12016"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12010"
+  HREF="node617.html">Le produit vectoriel :</A>
+ &nbsp; <B>  <A NAME="tex2html12018"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12020"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009400000000000000000"></A><A NAME="15934"></A> <A NAME="15935"></A><A NAME="15936"></A><A NAME="15937"></A> <A NAME="15938"></A><A NAME="15939"></A><A NAME="15940"></A><A NAME="15941"></A><A NAME="15942"></A><A NAME="15943"></A><A NAME="15944"></A><A NAME="15945"></A><A NAME="15946"></A><A NAME="sec:statlist"></A>
+<BR>
+Fonctions utiles pour les statistiques : <TT>mean moyenne, variance, stddev ecart_type, stddevp, stdDev, ecart_type_population, median, quantile, quartiles, boxwhisker, moustache</TT>
+</H1>
+Voir aussi <A HREF="node660.html#sec:statmat">6.43.32</A> and <A HREF="node763.html#sec:stat">7</A>.
+<BR>
+Fonctions utiles pour les statistiques dont les donn'ees sont des 
+listes :
+
+<UL>
+<LI><TT>mean</TT> ou <TT>moyenne</TT> pour calculer la moyenne des &#233;l&#233;ments d'une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mean([3,4,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mean([1,0,1])</TT>
+</DIV>
+On obtient 
+<DIV ALIGN="CENTER">
+<TT>2/3</TT>
+</DIV>
+</LI>
+<LI><TT>stddev</TT> ou <TT>ecart_type</TT> pour calculer l'&#233;cart type num&#232;rique des &#233;l&#233;ments 
+d'une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>stddev([3,4,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(2/3)</TT>
+</DIV>
+On a en effet la moyenne qui vaut 3 et l'&#233;cart type qui vaut 
+<!-- MATH
+ $\sqrt{((3-3)^2+(4-3)^2+(2-3)^2)/3}=\sqrt{2/3}$
+ -->
+<IMG
+ WIDTH="275" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img408.png"
+ ALT="$ \sqrt{{((3-3)^2+(4-3)^2+(2-3)^2)/3}}$"> = <IMG
+ WIDTH="48" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img409.png"
+ ALT="$ \sqrt{{2/3}}$"> 
+</LI>
+<LI><TT>stddevp</TT> ou <TT>stdDev</TT> ou <TT>ecart_type_population</TT> pour 
+calculer l'&#233;cart type num&#232;rique de la population &#224; partir d'un 
+&#233;chantillon dont les &#233;l&#233;ments sont donn&#233;s dans une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>stddevp([3,4,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On a en effet la moyenne qui vaut 3 et l'&#233;cart type qui vaut 
+<!-- MATH
+ $\sqrt{((3-3)^2+(4-3)^2+(2-3)^2)/2}=\sqrt{2/2}=1$
+ -->
+<IMG
+ WIDTH="275" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ \sqrt{{((3-3)^2+(4-3)^2+(2-3)^2)/2}}$"> = <IMG
+ WIDTH="48" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img411.png"
+ ALT="$ \sqrt{{2/2}}$"> = 1 
+On a la relation :
+<BR><TT>stddevp(l)<code>^</code>2=size(l)*stddev(l)<code>^</code>2/(size(l)-1)</TT>.
+</LI>
+<LI><TT>variance</TT> pour calculer la variance num&#232;rique des &#233;l&#233;ments 
+d'une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>variance([3,4,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2/3</TT>
+</DIV>
+</LI>
+<LI><TT>median</TT> pour calculer la m&#233;diane des &#233;l&#233;ments 
+d'une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>median([0,1,3,4,2,5,6])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3.0</TT>
+</DIV>
+</LI>
+<LI><TT>quantile</TT> pour calculer les d&#233;ciles des &#233;l&#233;ments 
+d'une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile([0,1,3,4,2,5,6],0.25)</TT>
+</DIV>
+On obtient le premier quartile :
+<DIV ALIGN="CENTER">
+<TT>[1.0]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile([0,1,3,4,2,5,6],0.5)</TT>
+</DIV>
+On obtient la m&#233;diane :
+<DIV ALIGN="CENTER">
+<TT>[3.0]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quantile([0,1,3,4,2,5,6],0.75)</TT>
+</DIV>
+On obtient le troisi&#232;me quartile :
+<DIV ALIGN="CENTER">
+<TT>[4.0]</TT>
+</DIV>
+</LI>
+<LI><TT>quartiles</TT> pour calculer le minimum, le premier quartile, la 
+m&#233;diane, le troisi&#232;me quartile et le maximum d'une serie
+ statistique.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>quartiles([0,1,3,4,2,5,6])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0.0],[1.0],[3.0],[4.0],[6.0]]</TT>
+</DIV>
+</LI>
+<LI><TT>boxwhisker</TT> ou <TT>moustache</TT> pour afficher la boite &#224; moustaches 
+des &#233;l&#233;ments d'une liste.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>moustache([0,1,3,4,2,5,6])</TT>
+</DIV>
+On obtient le dessin de la boite &#224; moustaches de la liste mise comme param&#232;tre.
+<BR></LI>
+</UL>
+Soit <TT>A</TT> la liste <TT>[0,1,2,3,4,5,6,7,8,9,10,11]</TT>.
+<BR>
+On tape :
+<BR><TT>A:=[0,1,2,3,4,5,6,7,8,9,10,11]</TT>
+<BR>
+On obtient :
+<BR><TT>11/2</TT> pour <TT>mean(A)</TT>
+<BR><TT>sqrt(143/12)</TT> pour <TT>stddev(A)</TT>
+<BR><TT>0</TT> pour <TT>min(A)</TT>
+<BR><TT>[1.0]</TT> pour <TT>quantile(A,0.1)</TT>
+<BR><TT>[2.0]</TT> pour <TT>quantile(A,0.25)</TT>
+<BR><TT>[5.0]</TT> pour <TT>median(A)</TT> ou pour <TT>quantile(A,0.5)</TT>
+<BR><TT>[8.0]</TT> pour <TT>quantile(A,0.75)</TT>
+<BR><TT>[9.0]</TT> pour <TT>quantile(A,0.9)</TT>
+<BR><TT>11</TT> pour <TT>max(A)</TT>
+<BR><TT>[[0.0],[2.0],[5.0],[8.0],[11.0]]</TT> pour <TT>quartiles(A)</TT>
+<BR>
+Voir aussi ces fonctions pour les matrices &#224; la section <A HREF="node660.html#sec:statmat">6.43.32</A> et 
+pour les listes pond&#233;r&#233;es au chapitre <A HREF="node763.html#sec:stat">7</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12021"
+  HREF="node619.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12015"
+  HREF="node195.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12009"
+  HREF="node617.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12017"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12019"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12022"
+  HREF="node619.html">Les tableaux indic&#233;s par</A>
+<B> monter:</B> <A NAME="tex2html12016"
+  HREF="node195.html">Les fonctions de calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12010"
+  HREF="node617.html">Le produit vectoriel :</A>
+ &nbsp; <B>  <A NAME="tex2html12018"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12020"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

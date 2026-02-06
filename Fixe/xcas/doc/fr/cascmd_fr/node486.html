@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Polyn&#244;me de Tchebychev de 1-i&#232;re esp&#232;ce : tchebyshev1</TITLE>
+<META NAME="description" CONTENT="Polyn&#244;me de Tchebychev de 1-i&#232;re esp&#232;ce : tchebyshev1">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node487.html">
+<LINK REL="previous" HREF="node485.html">
+<LINK REL="up" HREF="node482.html">
+<LINK REL="next" HREF="node487.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10081"
+  HREF="node487.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10075"
+  HREF="node482.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10069"
+  HREF="node485.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10077"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10079"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10082"
+  HREF="node487.html">Polyn&#244;me de Tchebychev de</A>
+<B> monter:</B> <A NAME="tex2html10076"
+  HREF="node482.html">Polyn&#244;mes orthogonaux</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10070"
+  HREF="node485.html">Polyn&#244;me de Laguerre :</A>
+ &nbsp; <B>  <A NAME="tex2html10078"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10080"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009274000000000000000"></A><A NAME="12607"></A>
+<BR>
+Polyn&#244;me de Tchebychev de 1-i&#232;re esp&#232;ce : <TT>tchebyshev1</TT>
+</H2>
+<TT>tchebyshev1</TT> a comme argument un entier <I>n</I> et eventuellement le 
+nom de la variable (<I>x</I> par d&#233;faut).
+<BR><TT>tchebyshev1</TT> renvoie le polyn&#244;me de Tchebychev de premi&#232;re esp&#232;ce,
+ de degr&#233; <I>n</I>, not&#233; <I>T</I>(<I>n</I>, <I>x</I>).
+<BR>
+On a :
+<P><!-- MATH
+ \begin{displaymath}
+T(n,x)= \cos(n.\arccos(x))
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>T</I>(<I>n</I>, <I>x</I>) = cos(<I>n</I>.arccos(<I>x</I>))
+</DIV><P></P>
+<BR><I>T</I>(<I>n</I>, <I>x</I>) v&#233;rifie les relations :
+<BR><I>T</I>(0, <I>x</I>) = 1
+<BR><I>T</I>(1, <I>x</I>) = <I>x</I>
+<BR><!-- MATH
+ $T(n,x)=2xT(n-1,x)-T(n-2,x)$
+ -->
+<I>T</I>(<I>n</I>, <I>x</I>) = 2<I>xT</I>(<I>n</I> - 1, <I>x</I>) - <I>T</I>(<I>n</I> - 2, <I>x</I>)
+<BR>
+Les polyn&#244;mes <I>T</I>(<I>n</I>, <I>x</I>) sont orthogonaux pour le produit scalaire :
+<BR><!-- MATH
+ $<f,g>=\int_{-1}^{+1}\frac{f(x)g(x)}{\sqrt{1-x^2}}dx$
+ -->
+&lt; <I>f</I>, <I>g</I> &gt; = <IMG
+ WIDTH="34" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img377.png"
+ ALT="$ \int_{{-1}}^{{+1}}$"><IMG
+ WIDTH="60" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img382.png"
+ ALT="$ {\frac{{f(x)g(x)}}{{\sqrt{1-x^2}}}}$"><I>dx</I> 
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tchebyshev1(4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>8*x<code>^</code>4+-8*x<code>^</code>2+1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>tchebyshev1(4,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>8*y<code>^</code>4+-8*y<code>^</code>2+1</TT>
+</DIV>
+et on a bien :
+<BR><!-- MATH
+ $\cos( 4.x)=Re((\cos(x)+i.\sin(x))^4)$
+ -->
+cos(4.<I>x</I>) = <I>Re</I>((cos(<I>x</I>) + <I>i</I>.sin(<I>x</I>))<SUP>4</SUP>)
+<BR><!-- MATH
+ $\cos( 4.x)=\cos(x)^4-6.\cos(x)^2.(1-\cos(x)^2)+((1-\cos(x)^2)^2$
+ -->
+cos(4.<I>x</I>) = cos(<I>x</I>)<SUP>4</SUP> -6.cos(<I>x</I>)<SUP>2</SUP>.(1 - cos(<I>x</I>)<SUP>2</SUP>) + ((1 - cos(<I>x</I>)<SUP>2</SUP>)<SUP>2</SUP>.
+<BR><!-- MATH
+ $\cos(4.x)=T(4,\cos(x))$
+ -->
+cos(4.<I>x</I>) = <I>T</I>(4, cos(<I>x</I>)).
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

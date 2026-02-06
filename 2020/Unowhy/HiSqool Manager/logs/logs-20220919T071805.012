@@ -1,0 +1,59 @@
+    at IncomingMessage.onclose (internal/streams/end-of-stream.js:117:38)
+    at IncomingMessage.emit (events.js:376:20)
+    at TLSSocket.socketCloseListener (_http_client.js:432:11)
+    at TLSSocket.emit (events.js:388:22)
+    at net.js:673:12
+2022-09-19 07:17:05.002:     at TCP.done (_tls_wrap.js:563:7) +3ms
+2022-09-19 07:17:05.002: 2022-09-19 9:17:04 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Error, error=Network, active=true +2ms
+2022-09-19 07:17:05.002: 2022-09-19 9:17:04 [4852] INFO [RequestPerformerService] Got disposed. +2ms
+2022-09-19 07:17:05.002: 2022-09-19 9:17:05 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Persisting status=state=Error, error=Network, active=true +1ms
+2022-09-19 07:17:05.002: 2022-09-19 9:17:05 [4852] INFO [PayloadDownloader] [PAYLOAD 1027] Error Network. Waiting 60 seconds before retrying... +3ms
+2022-09-19 07:17:10.282: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:dde471f7f11b13043f2fb1e8586dbe29 for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +5275ms
+2022-09-19 07:17:10.282: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:5238da14c9ec49ed27d246f3309a7e9b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-09-19 07:17:10.282: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +1ms
+2022-09-19 07:17:10.282: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +2ms
+2022-09-19 07:17:10.282: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2022-09-19 07:17:10.282: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2022-09-19 07:17:10.297: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2022-09-19 07:17:10.297: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +3ms
+2022-09-19 07:17:10.297: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/4TfPRFdCflq27KQ4qnK03RAMvus +2ms
+2022-09-19 07:17:10.297: 2022-09-19 9:17:10 [4852] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/configurations/groups/QODDUA2_GlkI74Ov0Us8PkndMLg +2ms
+2022-09-19 07:17:10.313: 2022-09-19 9:17:10 [4852] INFO [KeyedObservableCollector] Got 10 items. 0 in, 0 out +19ms
+2022-09-19 07:17:10.313: 2022-09-19 9:17:10 [4852] INFO [KeyedObservableCollector] Sending 10 items +0ms
+2022-09-19 07:17:10.376: 2022-09-19 9:17:10 [4852] INFO [KeyedObservableCollector] Got 10 items. 0 in, 0 out +54ms
+2022-09-19 07:17:10.376: 2022-09-19 9:17:10 [4852] INFO [KeyedObservableCollector] Sending 10 items +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1006ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: false +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows-3.11.0: context.platform==='win32' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Certificat-RIDF-1.1: context.platform==='win32' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-9.0.19: context.platform==='win32' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LeLivreScolaire-4.0.6: context.platform==='win32' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels-Windows-5.0.0: context.platform==='win32' +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Microsoft-Office-1.0.0: context.platform==='win32' +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/sqoolctl: context.platform === 'win32' +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/disablerecovery: context.platform==='win32' +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.android.vending_: context.platform === 'android' +0ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-09-19 07:17:11.384: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.rockstargames.gtasa: context.platform==='android' +1ms
+2022-09-19 07:17:11.400: 2022-09-19 9:17:11 [4852] INFO [DeviceConfigurationService]   => result: false +0ms
+2022-09-19 07:18:04.994: 2022-09-19 9:18:04 [4852] INFO [PayloadDownloader] [PAYLOAD 991] Persisting status=state=Error, error=Network, active=true +53604ms
+2022-09-19 07:18:04.994: 2022-09-19 9:18:04 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/libmanuels_5.0.0.jar... +4ms
+2022-09-19 07:18:05.004: 2022-09-19 9:18:05 [4852] INFO [PayloadDownloader] [PAYLOAD 984] Persisting status=state=Error, error=Network, active=true +5ms
+2022-09-19 07:18:05.004: 2022-09-19 9:18:05 [4852] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/bibliomanuels_3.11.0.jar... +4ms
+2022-09-19 07:18:05.012: 2022-09-19 9:18:05 [4852] INFO [PayloadDownloader] [PAYLOAD 986] Persisting status=state=Error, error=Network, active=true +5ms

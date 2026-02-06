@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Savoir si droites ou /et plans sont parall&#232;les is_parallel est_parallele</TITLE>
+<META NAME="description" CONTENT="Savoir si droites ou /et plans sont parall&#232;les is_parallel est_parallele">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node1087.html">
+<LINK REL="previous" HREF="node1085.html">
+<LINK REL="up" HREF="node1083.html">
+<LINK REL="next" HREF="node1087.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html19257"
+  HREF="node1087.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html19251"
+  HREF="node1083.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html19245"
+  HREF="node1085.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html19253"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html19255"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html19258"
+  HREF="node1087.html">Savoir si des droites</A>
+<B> monter:</B> <A NAME="tex2html19252"
+  HREF="node1083.html">Les propri&#233;t&#233;s</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html19246"
+  HREF="node1085.html">Savoir si des points</A>
+ &nbsp; <B>  <A NAME="tex2html19254"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html19256"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0013123000000000000000"></A><A NAME="28297"></A><A NAME="28298"></A><A NAME="sec:estpara3"></A>
+<BR>
+Savoir si droites ou /et plans sont parall&#232;les <TT>is_parallel est_parallele</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node1008.html#sec:estpara2">9.18.10</A> pour la g&#233;om&#233;trie plane.
+<BR><TT>est_parallele</TT>, en g&#233;om&#233;trie 3D, teste si deux droites ou, si une 
+droite et un plan ou, si deux plans sont parall&#232;les.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>d:=droite([0,0,0],[-1,-1,-1])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>dd:=droite([2,3,-2],[-1,-1,-1])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>est_parallele(d,dd)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>S:=plan([-1,-1,-1],[1,2,-3],[0,0,0])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>est_parallele(S,dd)</TT>
+</DIV>
+ou on tape :
+<DIV ALIGN="CENTER">
+<TT>est_parallele(dd,S)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>P:=plan([0,0,0],[1,2,-3],[1,1,-2])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>Q:=plan([1,1,0],[2,3,-3],[2,2,-2])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>est_parallele(P,Q)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1</TT>
+</DIV>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

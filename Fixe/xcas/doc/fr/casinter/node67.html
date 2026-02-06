@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Comment d&#233;finir des objets g&#233;om&#233;triques</TITLE>
+<META NAME="description" CONTENT="Comment d&#233;finir des objets g&#233;om&#233;triques">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node68.html">
+<LINK REL="previous" HREF="node66.html">
+<LINK REL="up" HREF="node65.html">
+<LINK REL="next" HREF="node68.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1142"
+  HREF="node68.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1136"
+  HREF="node65.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1130"
+  HREF="node66.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1138"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1140"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1143"
+  HREF="node68.html">Comment modifier des objets</A>
+<B> monter:</B> <A NAME="tex2html1137"
+  HREF="node65.html">La g&#233;om&#233;trie 3D</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1131"
+  HREF="node66.html">Que voit-on ?</A>
+ &nbsp; <B>  <A NAME="tex2html1139"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1141"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000172000000000000000">
+Comment d&#233;finir des objets g&#233;om&#233;triques</A>
+</H2>
+Comme en g&#233;om&#233;trie 2D, il y a deux fa&#231;ons 
+d'obtenir la plupart des objets 
+g&#233;om&#233;triques :
+
+<UL>
+<LI>avec la souris
+<BR>
+Les points d&#233;finis par un clic de souris seront dans le plan de vision
+c'est &#224; dire situ&#233;s dans le plan perpendiculaire &#224; l'axe de vision et 
+dont l'&#233;quation se trouve en haut et &#224; gauche de l'&#233;cran.
+Il faut choisir &#224; l'aide du bouton <TT>Mode</TT> l'objet 
+g&#233;om&#233;trique &#224; construire. Par exemple, il faut  &#234;tre en mode 
+<TT>segment</TT> pour tracer un segment ou &#234;tre en mode <TT>point</TT> pour 
+tracer un point etc....puis il faut cliquer dans le
+parall&#232;l&#233;pip&#232;de servant &#224; la repr&#233;sentation pour d&#233;finir les points
+servant &#224; la construction de l'objet 
+g&#233;om&#233;trique d&#233;sir&#233;. 
+Les commandes correspondantes s'inscrivent alors
+automatiquement dans les lignes de commandes.
+<BR><B>Attention</B> certains modes ne fonctionnent qu'en g&#233;om&#233;trie plane, il 
+faut alors  utiliser les commandes du menu <TT>Geo</TT>, 
+</LI>
+<LI>avec des commandes
+<BR>
+On utilise les commandes du menu <TT>Geo</TT>.
+</LI>
+</UL>
+Pour corriger une erreur, il suffit de 
+supprimer ou de modifier la ligne de commandes erron&#233;e.
+
+<P>
+Notez que si on a coch&#233; <!-- MATH
+ $\framebox{$\sim$}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{$\sim$}"><A NAME="1068"></A> dans la 
+configuration des attributs (cliquer sur le bouton des attributs pour
+cocher ou d&#233;cocher  <!-- MATH
+ $\framebox{$\sim$}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{$\sim$}">), tous les points auront des 
+coordonn&#233;es avec des 
+d&#233;cimales alors que si <!-- MATH
+ $\framebox{$\sim$}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{$\sim$}"> n'a pas &#233;t&#233; coch&#233;
+les points auront des coordonn&#233;es rationnelles.
+<BR>
+On peut aussi utiliser le bouton <!-- MATH
+ $\framebox{\tt Mode}$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.png"
+ ALT="\framebox{\tt Mode}"> puis <TT>Approx</TT> ou 
+<TT>Exact</TT> ce qui a pour effet de cocher ou d&#233;cocher <!-- MATH
+ $\framebox{$\sim$}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{$\sim$}">.
+
+<P>
+Par exemple, on clique dans l'&#233;cran graphique en mode <TT>point</TT> :
+
+<UL>
+<LI>si on a coch&#233;  <!-- MATH
+ $\framebox{$\sim$}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{$\sim$}">, on obtient :
+<BR><TT>A:=point(-5.001,2.511,1,012,'affichage'=0)</TT>
+</LI>
+<LI>si on n'avait pas coch&#233; <!-- MATH
+ $\framebox{$\sim$}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="\framebox{$\sim$}">, on aurait obtenu :
+<BR><TT>A:=point(-5,5/2,1,'affichage'=0)</TT>
+</LI>
+</UL>
+cela permet de d&#233;finir des points de coordonn&#233;es enti&#232;res, tr&#232;s 
+facilement, en cliquant et aussi de d&#233;placer les objets plus rapidement.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1142"
+  HREF="node68.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1136"
+  HREF="node65.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1130"
+  HREF="node66.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1138"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1140"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html1143"
+  HREF="node68.html">Comment modifier des objets</A>
+<B> monter:</B> <A NAME="tex2html1137"
+  HREF="node65.html">La g&#233;om&#233;trie 3D</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1131"
+  HREF="node66.html">Que voit-on ?</A>
+ &nbsp; <B>  <A NAME="tex2html1139"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html1141"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

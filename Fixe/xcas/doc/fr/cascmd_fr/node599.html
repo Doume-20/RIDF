@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Produit des &#233;l&#233;ments d'une liste : product</TITLE>
+<META NAME="description" CONTENT="Produit des &#233;l&#233;ments d'une liste : product">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node598.html">
+<LINK REL="up" HREF="node597.html">
+<LINK REL="next" HREF="node600.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11751"
+  HREF="node600.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11745"
+  HREF="node597.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11741"
+  HREF="node598.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11747"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11749"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11752"
+  HREF="node600.html">Appliquer une fonction d'une</A>
+<B> monter:</B> <A NAME="tex2html11746"
+  HREF="node597.html">Produit indic&#233; : product</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11742"
+  HREF="node598.html">Produit des valeurs d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11748"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11750"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION0093831200000000000000">
+Produit des &#233;l&#233;ments d'une liste : <TT>product</TT></A>
+</H3>
+Voir aussi <TT>.*</TT> (cf <A HREF="node614.html#sec:hadal">6.39.5</A>) et  <TT>hadamard</TT> pour les 
+matrices (cf <A HREF="node636.html#sec:hadam">6.43.8</A>).
+<BR><TT>product</TT> ou <TT>mul</TT> peut aussi avoir 1 ou 2 arguments :
+<BR>
+une liste de nombres r&#233;els (ou de d&#233;cimaux) ou 
+<BR>
+deux listes de m&#234;me longueur.
+<BR> (voir aussi <A HREF="node598.html#sec:product0">6.38.31</A>, <A HREF="node634.html#sec:product1">6.43.6</A> et <A HREF="node636.html#sec:product2">6.43.8</A>).
+
+<UL>
+<LI>si <TT>product</TT> ou <TT>mul</TT> a un argument <TT>l</TT>, <TT>product</TT> ou 
+<TT>mul</TT> 
+renvoie le produit des &#233;l&#233;ments de <TT>l</TT><A NAME="sec:product"></A>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product([2,3,4])</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>mul([2,3,4])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>24</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product([[2,3,4],[5,6,7]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[10,18,28]</TT>
+</DIV>
+-
+</LI>
+<LI>si <TT>product</TT>  ou <TT>mul</TT> a deux arguments <TT>l1</TT> et <TT>l2</TT> 
+(qui sont deux listes ou deux matrices), <TT>product</TT>  ou <TT>mul</TT> renvoie
+ le produit terme &#224; terme des &#233;l&#233;ments de <TT>l1</TT> et des &#233;l&#233;ments de
+<TT>l2</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product([2,3,4],[5,6,7])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>mul([2,3,4],[5,6,7])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[10,18,28]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>product([[2,3,4],[5,6,7]],[[2,3,4],[5,6,7]])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>mul([[2,3,4],[5,6,7]],[[2,3,4],[5,6,7]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,9,16],[25,36,49]]</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html11751"
+  HREF="node600.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11745"
+  HREF="node597.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11741"
+  HREF="node598.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11747"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11749"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11752"
+  HREF="node600.html">Appliquer une fonction d'une</A>
+<B> monter:</B> <A NAME="tex2html11746"
+  HREF="node597.html">Produit indic&#233; : product</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11742"
+  HREF="node598.html">Produit des valeurs d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11748"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11750"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

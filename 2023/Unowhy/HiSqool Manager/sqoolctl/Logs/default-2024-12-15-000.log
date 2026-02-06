@@ -1,0 +1,68 @@
+﻿info: Sqoolctl.Program[0] @ 2024-12-15T11:50:04.4348288+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2024-12-15T11:50:08.3234263+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2024-12-15T11:50:19.5813874+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.Program[0] @ 2024-12-15T11:50:22.2212131+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2024-12-15T11:50:21.2206967+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2024-12-15T11:50:21.3222697+01:00
+      Received event [Unlock] with arguments [] and user WORKGROUP\IFP219068526$, SA True
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2024-12-15T11:50:21.3528659+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2024-12-15T11:50:21.3566748+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2024-12-15T11:50:23.6187595+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 2258.6257ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2024-12-15T11:50:23.6229553+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 2277.3996ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2024-12-15T11:50:23.6287877+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2024-12-15T11:50:23.6291356+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2024-12-15T11:50:23.6435028+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 14.355ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2024-12-15T11:50:23.6437813+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 15.0175ms - 200
+info: Sqoolctl.Program[0] @ 2024-12-15T11:50:23.6537866+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================
+info: Sqoolctl.Program[0] @ 2024-12-15T11:54:50.4636156+01:00
+      ### SQOOLCTL ### START [Production] ======================================
+info: Sqoolctl.EventCommand[0] @ 2024-12-15T11:54:50.7163731+01:00
+      Received event [Lock] with arguments [] and user WORKGROUP\IFP219068526$, SA True
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2024-12-15T11:54:50.8004014+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2024-12-15T11:54:50.8053600+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2024-12-15T11:54:53.0495355+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 2240.8496ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2024-12-15T11:54:53.0537466+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 2261.8225ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineStart] @ 2024-12-15T11:54:53.0595376+01:00
+      => HTTP POST http://localhost:7654/commands
+      Start processing HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestStart] @ 2024-12-15T11:54:53.0598617+01:00
+      => HTTP POST http://localhost:7654/commands
+      Sending HTTP request POST http://localhost:7654/commands
+info: System.Net.Http.HttpClient.DeviceManagerService.ClientHandler[RequestEnd] @ 2024-12-15T11:54:53.0727754+01:00
+      => HTTP POST http://localhost:7654/commands
+      Received HTTP response headers after 12.901ms - 200
+info: System.Net.Http.HttpClient.DeviceManagerService.LogicalHandler[RequestPipelineEnd] @ 2024-12-15T11:54:53.0730173+01:00
+      => HTTP POST http://localhost:7654/commands
+      End processing HTTP request after 13.5075ms - 200
+info: Sqoolctl.Program[0] @ 2024-12-15T11:54:53.0830540+01:00
+      ### SQOOLCTL ### STOP: [0] ===============================================

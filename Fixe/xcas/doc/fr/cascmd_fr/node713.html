@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>D&#233;composition LU (compatible TI): LU</TITLE>
+<META NAME="description" CONTENT="D&#233;composition LU (compatible TI): LU">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node714.html">
+<LINK REL="previous" HREF="node712.html">
+<LINK REL="up" HREF="node708.html">
+<LINK REL="next" HREF="node714.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13425"
+  HREF="node714.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13419"
+  HREF="node708.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13413"
+  HREF="node712.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13421"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13423"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13426"
+  HREF="node714.html">Singular value decomposition :</A>
+<B> monter:</B> <A NAME="tex2html13420"
+  HREF="node708.html">Factorisation des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13414"
+  HREF="node712.html">D&#233;composition LU : lu</A>
+ &nbsp; <B>  <A NAME="tex2html13422"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13424"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009495000000000000000"></A><A NAME="18376"></A>
+<BR>
+D&#233;composition LU (compatible TI): <TT>LU</TT>
+</H2>
+<TT>LU</TT> a comme argument une matrice carr&#233;e num&#233;rique d'ordre <I>n</I>
+et trois noms de variables : <TT>var1</TT>, <TT>var2</TT> et <TT>var3</TT>.
+<BR><TT>LU(A,var1,var2,var3)</TT> renvoie <I>P</I> une matrice de permutation et met  :
+<BR>
+<UL>
+<LI>dans <TT>var1</TT>, <I>L</I> une matrice
+ triangulaire inf&#233;rieure avec des 1 sur sa diagonale,
+</LI>
+<LI>dans <TT>var2</TT>,  <I>U</I> une matrice triangulaire sup&#233;rieure,
+</LI>
+<LI>dans <TT>var3</TT>, la matrice de permutation <I>P</I> renvoy&#233;e.
+</LI>
+</UL>
+Ces matrices sont telles que :
+<BR>
+l'&#233;quation <I>A</I>*<I>x</I> = <I>B</I> &#233;quivaut &#224;  <I>L</I>*<I>U</I>*<I>x</I> = <I>P</I>*<I>B</I>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>LU([[3,5],[4,5]],L,U,P)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,1],[1,0]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>L</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0],[0.75,1]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>U</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[0,1.25]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>P</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,1],[1,0]]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

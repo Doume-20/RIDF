@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#201;valuer un r&#233;el et nombre de digits : evalf et Digits, DIGITS)</TITLE>
+<META NAME="description" CONTENT="&#201;valuer un r&#233;el et nombre de digits : evalf et Digits, DIGITS)">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node268.html">
+<LINK REL="previous" HREF="node266.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node268.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6858"
+  HREF="node268.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6852"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6846"
+  HREF="node266.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6854"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6856"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6859"
+  HREF="node268.html">Les fonctions infix&#233;es de</A>
+<B> monter:</B> <A NAME="tex2html6853"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6847"
+  HREF="node266.html">Les r&#233;els</A>
+ &nbsp; <B>  <A NAME="tex2html6855"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6857"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009101000000000000000"></A><A NAME="6091"></A><A NAME="6092"></A><A NAME="6093"></A>
+<BR>
+&#201;valuer un r&#233;el et nombre de digits : <TT>evalf</TT> et <TT>Digits</TT>, <TT>DIGITS</TT>)
+</H2>
+Il faut distinguer le nombre r&#233;el de sa valeur num&#233;rique qui est un nombre 
+flottant.
+<BR>
+La pr&#233;cision des nombres flottants, en nombre de chiffres est contr&#244;l&#233;e
+ par la variable <TT>Digits</TT> qui vaut 12 par d&#233;faut. 
+<BR>
+Une expression peut &#234;tre &#233;valu&#233;e en flottant gr&#226;ce &#224; la commande 
+<TT>evalf</TT>.
+<BR><B>Attention !!!!</B>
+<BR>
+Les nombres flottants sont contagieux (!) car une expression 
+qui comporte un nombre flottant est calcul&#233;e en flottant.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>1+1/2</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3/2</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>1.0+1/2</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.5</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>exp(pi*sqrt(20))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>exp(pi*2*sqrt(5)) </TT>
+</DIV>
+Avec la commande <TT>evalf</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(exp(pi*2*sqrt(5)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1263794.75367</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>1.1<code>^</code>20</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>6.72749994933</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sqrt(2)<code>^</code>21</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(2)*2<code>^</code>10</TT>
+</DIV>
+On tape pour avoir 30 chiffres significatifs :
+<DIV ALIGN="CENTER">
+<TT>Digits:=30</TT>
+</DIV>
+On tape pour avoir la valeur num&#233;rique de <!-- MATH
+ $e^{\pi\sqrt{163}}$
+ -->
+<I>e</I><SUP><IMG
+ WIDTH="13" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img132.png"
+ ALT="$\scriptstyle \pi$"><IMG
+ WIDTH="36" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.png"
+ ALT="$\scriptstyle \sqrt{{163}}$"></SUP>:
+<DIV ALIGN="CENTER">
+<TT>evalf(exp(pi*sqrt(163)))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.262537412640768743999999999985e18</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6858"
+  HREF="node268.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6852"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6846"
+  HREF="node266.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6854"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6856"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6859"
+  HREF="node268.html">Les fonctions infix&#233;es de</A>
+<B> monter:</B> <A NAME="tex2html6853"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6847"
+  HREF="node266.html">Les r&#233;els</A>
+ &nbsp; <B>  <A NAME="tex2html6855"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6857"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Reste entier de la division euclidienne : irem remain smod mods mod %</TITLE>
+<META NAME="description" CONTENT="Reste entier de la division euclidienne : irem remain smod mods mod %">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node234.html">
+<LINK REL="previous" HREF="node232.html">
+<LINK REL="up" HREF="node221.html">
+<LINK REL="next" HREF="node234.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html6358"
+  HREF="node234.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6352"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6346"
+  HREF="node232.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6354"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6356"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6359"
+  HREF="node234.html">Le quotient et le</A>
+<B> monter:</B> <A NAME="tex2html6353"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6347"
+  HREF="node232.html">Quotient entier de la</A>
+ &nbsp; <B>  <A NAME="tex2html6355"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6357"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009712000000000000000"></A><A NAME="5078"></A><A NAME="5079"></A>
+<BR>
+Reste entier de la division euclidienne : <TT>irem remain smod mods mod %</TT>
+</H2>
+
+<UL>
+<LI><TT>irem</TT> (ou <TT>remain</TT>) d&#233;signe le reste entier <I>r</I> de la 
+division euclidienne des deux entiers <I>a</I> et <I>b</I> donn&#233;s en argument 
+(<I>a</I> = <I>b</I>*<I>q</I> + <I>r</I> avec <!-- MATH
+ $0\leq r< b$
+ -->
+0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>r</I> &lt; <I>b</I>).
+<BR>
+Pour les entiers de Gauss, on choisit <I>q</I> pour <I>b</I>*<I>q</I> soit le plus proche 
+possible de <I>a</I> et on peut montrer que l'on peut choisir <I>r</I> tel que 
+<!-- MATH
+ $|r|^2 \leq |b|^2/2$
+ -->
+| <I>r</I>|<SUP>2</SUP> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> | <I>b</I>|<SUP>2</SUP>/2.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>irem(148,5) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+<TT>irem</TT> travaille avec des entiers longs ou des entiers de Gauss.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>irem(factorial(148),factorial(45)+2 )</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>111615339728229933018338917803008301992120942047239639312</TT>
+</DIV>
+ou encore
+<DIV ALIGN="CENTER">
+<TT>irem(25+12*i,5+7*i) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-4+i</TT>
+</DIV>
+On a :
+<BR><!-- MATH
+ $a-b*q=-4+i$
+ -->
+<I>a</I> - <I>b</I>*<I>q</I> = - 4 + <I>i</I> et on a <!-- MATH
+ $|-4+i|^2=17<|5+7*i|^2/2=74/2=37$
+ -->
+| - 4 + <I>i</I>|<SUP>2</SUP> = 17 &lt; | 5 + 7*<I>i</I>|<SUP>2</SUP>/2 = 74/2 = 37
+
+<P>
+</LI>
+<LI><TT>smod</TT> ou <TT>mods</TT><A NAME="5104"></A><A NAME="5105"></A> est pr&#233;fix&#233;
+et a 2 entiers comme arguments.
+<BR><TT>smod</TT> ou <TT>mods</TT>d&#233;signe le reste entier 
+sym&#233;trique <I>s</I> de la division euclidienne des deux entiers  <I>a</I> et <I>b</I> 
+donn&#233;s en argument (<I>a</I> = <I>b</I>*<I>q</I> + <I>s</I> avec <!-- MATH
+ $-b/2<s \leq b/2$
+ -->
+- <I>b</I>/2 &lt; <I>s</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I>/2).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>smod(148,5) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-2</TT>
+</DIV>
+
+<P>
+</LI>
+<LI><TT>mod</TT> ou <TT>%</TT> sert &#224; d&#233;signer un nombre modulaire.
+<BR><TT>mod</TT> ou <TT>%</TT> est infix&#233; et renvoie un nombre modulaire.
+<BR>
+On tape :<A NAME="5118"></A><A NAME="5119"></A>
+<DIV ALIGN="CENTER">
+<TT>148 mod 5 </TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>148 %  5 </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3 % 5</TT>
+</DIV>
+ce qui veut dire que <!-- MATH
+ ${\tt 148 \ mod \ 5=3\ mod\ 5 }$
+ -->
+<IMG
+ WIDTH="155" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.png"
+ ALT="$ \tt 148 \ mod \ 5=3\ mod\ 5$"> et que 
+<!-- MATH
+ ${\tt 148\ mod\ 5 }$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img79.png"
+ ALT="$ \tt 148\ mod\ 5$"> est un
+&#233;l&#233;ment de <I>Z</I>/5<I>Z</I> (voir <A HREF="node511.html#sec:modulaire">6.32</A> pour avoir les op&#233;rations 
+possibles dans  <I>Z</I>/5<I>Z</I>).
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html6358"
+  HREF="node234.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html6352"
+  HREF="node221.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html6346"
+  HREF="node232.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html6354"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html6356"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html6359"
+  HREF="node234.html">Le quotient et le</A>
+<B> monter:</B> <A NAME="tex2html6353"
+  HREF="node221.html">Les entiers (et les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html6347"
+  HREF="node232.html">Quotient entier de la</A>
+ &nbsp; <B>  <A NAME="tex2html6355"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html6357"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

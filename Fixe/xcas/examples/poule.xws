@@ -1,0 +1,85 @@
+// fltk 7Fl_Tile 34 -160 824 299
+[
+// fltk N4xcas7EditeurE 34 -160 824 298
+375 ,
+poule():={
+  rectangle_plein 20;
+  pas_de_cote 20;
+  tourne_gauche;
+  triangle_plein;
+  pas_de_cote -20;
+  disque(20,90);
+  pas_de_cote 40;
+  tourne_gauche;
+  disque(40,180);
+  pas_de_cote -20;
+  disque(20,90);
+  pas_de_cote 90;
+  saute 25;
+  avance;
+  tourne_droite;
+  avance 30;
+  pas_de_cote 10;
+  recule 30;
+  tourne_droite;
+  recule 10;
+  pas_de_cote 70;
+  recule 25;
+};,
+// fltk N4xcas10Log_OutputE 34 138 824 1
+
+]
+,
+// fltk N4xcas4LogoE 34 141 824 358
+// fltk N4xcas12History_PackE 34 141 186 171
+[
+// fltk 7Fl_Tile 49 141 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 141 171 30
+efface
+,
+// fltk N4xcas10Log_OutputE 49 171 171 1
+
+,
+// fltk 9Fl_Scroll 49 172 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 172 194 25
+[150.0,150.0,0.0,83,0,""]
+,
+// fltk 12Fl_Scrollbar 49 203 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 172 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 221 171 56
+[
+// fltk N4xcas19Multiline_Input_tabE 49 221 171 30
+poule()
+,
+// fltk N4xcas10Log_OutputE 49 251 171 1
+
+,
+// fltk N4xcas10Gen_OutputE 49 252 171 25
+[150,150,0.0,87,0,""]
+]
+,
+// fltk 7Fl_Tile 49 279 171 31
+[
+// fltk N4xcas19Multiline_Input_tabE 49 279 171 30
+
+,
+// fltk N4xcas10Log_OutputE 49 309 171 1
+
+]
+]
+// fltk N4xcas7EditeurE 652 141 206 358
+51 ,
+efface;
+poule();
+efface;
+poule();
+efface;
+poule();

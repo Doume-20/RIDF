@@ -1,0 +1,120 @@
+// fltk 7Fl_Tile 34 -160 824 299
+[
+// fltk N4xcas7EditeurE 34 -160 824 298
+360 ,
+petale():={
+  local n;
+  n:=crayon;
+  crayon rouge;
+  repete(4,disque 20,tourne_gauche);
+  pas_de_cote -10;
+  crayon jaune;
+  disque;
+  pas_de_cote 10;
+  crayon n;
+};
+
+tige():={
+  local n;
+  n:=crayon;
+  crayon vert;
+  avance 20;
+  repete(2,avance,disque(10,180),pas_de_cote 20);
+  avance 70;
+  crayon n;
+};
+
+fleur():={
+  tige();
+  petale();
+  saute -90;
+}
+
+
+
+,
+// fltk N4xcas10Log_OutputE 34 138 824 1
+
+]
+,
+// fltk N4xcas4LogoE 34 141 824 358
+// fltk N4xcas12History_PackE 34 141 186 273
+[
+// fltk 7Fl_Tile 49 141 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 141 171 30
+efface
+,
+// fltk N4xcas10Log_OutputE 49 171 171 1
+
+,
+// fltk 9Fl_Scroll 49 172 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 172 194 25
+[150.0,150.0,0.0,83,0,""]
+,
+// fltk 12Fl_Scrollbar 49 203 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 172 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 221 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 221 171 30
+pas_de_cote -90;tourne_gauche;
+,
+// fltk N4xcas10Log_OutputE 49 251 171 1
+
+,
+// fltk 9Fl_Scroll 49 252 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 252 379 25
+[150.0,60.0,0.0,83,0,""],[150.0,60.0,90.0,83,0,""]
+,
+// fltk 12Fl_Scrollbar 49 283 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 252 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 301 171 78
+[
+// fltk N4xcas19Multiline_Input_tabE 49 301 171 30
+fleur()
+,
+// fltk N4xcas10Log_OutputE 49 331 171 1
+
+,
+// fltk 9Fl_Scroll 49 332 171 47
+[
+// fltk N4xcas10Gen_OutputE 49 332 194 25
+[150.0,60.0,90.0,87,0,""]
+,
+// fltk 12Fl_Scrollbar 49 363 171 16
+[]
+,
+// fltk 12Fl_Scrollbar 220 332 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 49 381 171 31
+[
+// fltk N4xcas19Multiline_Input_tabE 49 381 171 30
+
+,
+// fltk N4xcas10Log_OutputE 49 411 171 1
+
+]
+]
+// fltk N4xcas7EditeurE 652 141 206 358
+93 ,
+efface;
+pas_de_cote -90;tourne_gauche;fleur();
+efface;
+pas_de_cote 90;tourne_gauche;fleur();

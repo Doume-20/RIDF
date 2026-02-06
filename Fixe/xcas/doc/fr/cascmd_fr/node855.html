@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les diff&#233;rences entre :=, =&lt; et copy</TITLE>
+<META NAME="description" CONTENT="Les diff&#233;rences entre :=, =&lt; et copy">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node856.html">
+<LINK REL="previous" HREF="node854.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node856.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15638"
+  HREF="node856.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15632"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15626"
+  HREF="node854.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15634"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15636"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15639"
+  HREF="node856.html">Les instructions copy et</A>
+<B> monter:</B> <A NAME="tex2html15633"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15627"
+  HREF="node854.html">L'affectation par copie :</A>
+ &nbsp; <B>  <A NAME="tex2html15635"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15637"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011413000000000000000"></A><A NAME="22294"></A><A NAME="22295"></A><A NAME="22296"></A><A NAME="sec:diffaffectation"></A>
+<BR>
+Les diff&#233;rences entre  <TT>:=</TT>, <TT>=&lt;</TT> et <TT>copy</TT>
+</H2>
+Attention, <TT>:=</TT> et <TT>=&lt;</TT> ne sont pas &#233;quivalents car <TT>=&lt;</TT> modifie
+l&#233;l&#233;ment d'une liste ou matrice par r&#233;f&#233;rence.
+
+<P>
+L'affectation <TT>=&lt;</TT> ne diff&#232;re de <TT>:=</TT> que si on modifie un 
+&#233;l&#233;ment d'une liste (ou matrice) contenue dans une variable, par exemple si 
+<TT>A</TT> contient la liste <TT>[0,1,2,3,4]</TT> i.e. si on a tap&#233; 
+<TT>A:=[0,1,2,3,4]</TT> et que l'on
+veut modifier la valeur de  <TT>A[3]</TT> et changer <TT>3</TT> en <TT>33</TT>, on peut 
+&#233;crire dans ce cas, <TT>A[3]:=33</TT> ou <TT>A[3] =&lt; 33</TT> mais ces deux 
+instructions sont diff&#233;rentes. 
+En effet <TT>A</TT> pointe vers une liste car <TT>A:=[0,1,2,3,4]</TT>, et 
+<TT>A[3] =&lt; 33</TT> modifie cette liste en la liste <TT>[0,1,2,33,4]</TT>, ainsi 
+toutes les variables de 
+<TT>Xcas</TT> qui pointent vers cette liste seront modifi&#233;es. Alors qu'avec
+<TT>A[3]:=33</TT> la liste est dupliqu&#233;e, la copie est modifi&#233;e et <TT>A</TT> 
+pointe vers la copie. Il faut donc utiliser <TT>=&lt;</TT> avec pr&#233;cautions car 
+tous les objets pointant sur cette liste (ou matrice) 
+seront modifi&#233;s.
+<BR>
+ 
+<UL>
+<LI>On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=A</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A[3]=&lt;33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=A</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B[3]=&lt;33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,33,4],[0,1,2,33,4]</TT>
+</DIV>
+En effet la liste <TT>[0,1,2,3,4]</TT> a &#233;t&#233; modifi&#233;e par
+l'instruction <TT>A[3]=&lt;33</TT>  (ou par <TT>B[3]=&lt;33</TT>) en la liste
+<TT>[0,1,2,33,4]</TT>. Les listes <TT>A</TT> et <TT>B</TT> 
+pointent sur cette liste donc <TT>A</TT> et <TT>B</TT> sont modifi&#233;es toutes les 
+deux.
+</LI>
+<LI>On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=A</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A[3]:=33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,33,4],[0,1,2,3,4]</TT>
+</DIV>
+car <TT>A[3]:=33</TT> fait une copie de la liste <TT>[0,1,2,3,4]</TT> et modifie 
+cette copie en <TT>[0,1,2,33,4]</TT> puis <TT>A</TT> pointe sur cette copie et cela ne modifie pas <TT>B</TT>.
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=A</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B[3]:=33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,3,4],[0,1,2,33,4]</TT>
+</DIV>
+car <TT>B[3]:=33</TT> fait une copie de la liste <TT>[0,1,2,3,4]</TT> et modifie 
+cette copie en <TT>[0,1,2,33,4]</TT> puis <TT>B</TT> pointe sur cette copie et cela ne modifie pas <TT>A</TT>.
+</LI>
+<LI>On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=copy(A)</TT>
+</DIV>
+Puis, si on tape :
+<DIV ALIGN="CENTER">
+<TT>A[3]=&lt;33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,33,4],[0,1,2,3,4]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B:=copy(A)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>B[3]=&lt;33</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A,B</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1,2,3,4],[0,1,2,33,4]</TT>
+</DIV>
+En effet <TT>B</TT> pointe sur la copie de <TT>A</TT>, donc une modifiucation par 
+r&#233;f&#233;rence de <TT>A[3]</TT> (resp<TT>B[3]</TT>) ne modifie pas <TT>B</TT> (resp 
+<TT>A</TT>). 
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15638"
+  HREF="node856.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15632"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15626"
+  HREF="node854.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15634"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15636"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15639"
+  HREF="node856.html">Les instructions copy et</A>
+<B> monter:</B> <A NAME="tex2html15633"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15627"
+  HREF="node854.html">L'affectation par copie :</A>
+ &nbsp; <B>  <A NAME="tex2html15635"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15637"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

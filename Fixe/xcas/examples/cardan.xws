@@ -1,0 +1,87 @@
+// fltk 7Fl_Tile 26 53 839 376 20
+[
+// fltk N4xcas7EditeurE 26 53 839 289 20
+686 ,
+cardan(P,x):={
+  local b,p,q,d,V,u,v,x1,x2,x3,n,j;
+  j:=exp(2*i*pi/3);
+  V:=coeffs(P,x);
+  n:=size(V);
+  if (n!=4){
+    throw(print(P)+" n'est pas de degre 3");
+  }
+  // Reduction de l'equation
+  V:=V/V[0];
+  b:=V[1];
+  V:=ptayl(V,-b/3);
+  p:=V[2];
+  q:=V[3];
+  // on est ramené à x^3+p*x+q=0
+  // x=u+v -> u^3+v^3+(3uv+p)(u+v)+q=0
+  // On pose uv=-p/3 donc u^3+v^3=-q et u^3 et v^3 sont solutions
+  // de u^3 v^3 = -p^3/27 et u^3+v^3=-q
+  // donc de x^2+q*x-p^3/27=0
+  d:=q^2/4+p^3/27;
+  if (d==0){
+    // racine double
+    return solve(P,x); 
+  }
+  d:=sqrt(d);
+  u:=(-q/2+d)^(1/3);
+  v:=-p/3/u;
+  x1:=u+v-b/3;
+  x2:=u*j+v*conj(j)-b/3;
+  x3:=u*conj(j)+v*j-b/3;
+  return [x1,x2,x3];
+}:;,
+// fltk N4xcas10Log_OutputE 26 342 839 44 20
+// Parsing cardan£// Warning:  declared as global variable(s) compiling cardan£
+,
+// fltk N4xcas8EquationE 26 386 839 43 16
+"Done"
+]
+,
+// fltk 7Fl_Tile 26 431 839 322 20
+[
+// fltk N4xcas19Multiline_Input_tabE 26 431 839 30 20
+S:=cardan(x^3+x+a,x)
+,
+// fltk N4xcas10Log_OutputE 26 461 839 1 20
+
+,
+// fltk N4xcas8EquationE 26 462 839 291 16
+[((-a)/2+sqrt((a^2)/4+1/27))^(1/3)+1/(((-a)/2+sqrt((a^2)/4+1/27))^(1/3)*-3),((-a)/2+sqrt((a^2)/4+1/27))^(1/3)*(-1/2+((i)*sqrt(3))/2)+1/-3*1/(((-a)/2+sqrt((a^2)/4+1/27))^(1/3))*(-1/2+((-i)*sqrt(3))/2),((-a)/2+sqrt((a^2)/4+1/27))^(1/3)*(-1/2+((-i)*sqrt(3))/2)+1/-3*1/(((-a)/2+sqrt((a^2)/4+1/27))^(1/3))*(-1/2+((i)*sqrt(3))/2)]
+]
+,
+// fltk 7Fl_Tile 26 755 839 97 20
+[
+// fltk N4xcas19Multiline_Input_tabE 26 755 839 30 20
+normal(eval(S[0],a=0)),normal(eval(S[1],a=0)),normal(eval(S[2],a=0))
+,
+// fltk N4xcas10Log_OutputE 26 785 839 24 20
+Evaluation time: 0.15£
+,
+// fltk N4xcas8EquationE 26 809 839 43 16
+0,i,-i
+]
+,
+// fltk 7Fl_Tile 26 854 839 74 20
+[
+// fltk N4xcas19Multiline_Input_tabE 26 854 839 30 20
+evalf(cardan(4x^3+2x^2+x+1,x)),proot(4x^3+2x^2+x+1)
+,
+// fltk N4xcas10Log_OutputE 26 884 839 1 20
+
+,
+// fltk N4xcas8EquationE 26 885 839 43 16
+[-0.6766049821,0.0883024910498+0.601410409643*i,0.0883024910498-0.601410409643*i],[-0.6766049821,0.0883024910498+0.601410409643*i,0.0883024910498-0.601410409643*i]
+]
+,
+// fltk 7Fl_Tile 26 930 839 31 20
+[
+// fltk N4xcas19Multiline_Input_tabE 26 930 839 30 20
+
+,
+// fltk N4xcas10Log_OutputE 26 960 839 1 20
+
+]

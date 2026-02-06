@@ -1,0 +1,110 @@
+2022-02-14 11:50:05 [5360] INFO [Runner] Creating configuration unit runner object... +12ms
+2022-02-14 10:50:05.721: 2022-02-14 11:50:05 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-14 10:50:05.721: 2022-02-14 11:50:05 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-14 10:50:09.050: 2022-02-14 11:50:09 [5360] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'f7639fd5-22e3-42bd-9806-a3aafb44760a').version +3327ms
+2022-02-14 10:50:09.052: 2022-02-14 11:50:09 [5360] INFO [JS] Installing the package ... +1ms
+2022-02-14 10:50:09.052: 2022-02-14 11:50:09 [5360] INFO [Runner] Performing runner... +1ms
+2022-02-14 10:50:09.052: 2022-02-14 11:50:09 [5360] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload\application.ppkg, args=-QuietInstall... +1ms
+2022-02-14 10:50:10.761: 2022-02-14 11:50:10 [5360] INFO [JS] Install Result: 0 +1707ms
+2022-02-14 10:50:10.761: 2022-02-14 11:50:10 [5360] INFO [JS] Install Stdout: 
+2022-02-14 10:50:10.761: 
+2022-02-14 10:50:10.761: IsInstalled     : False
+2022-02-14 10:50:10.761: PackageID       : d0fc2ec8-57da-4e9f-bc1a-c35828a76d83
+2022-02-14 10:50:10.761: PackageName     : LibManuels
+2022-02-14 10:50:10.761: PackagePath     : C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload\application.ppkg
+2022-02-14 10:50:10.761: Description     : 
+2022-02-14 10:50:10.761: Rank            : 0
+2022-02-14 10:50:10.761: Altitude        : 5000
+2022-02-14 10:50:10.761: Version         : 4.1
+2022-02-14 10:50:10.761: OwnerType       : ITAdmin
+2022-02-14 10:50:10.761: Notes           : 
+2022-02-14 10:50:10.761: LastInstallTime : 14/02/2022 11:48:40
+2022-02-14 10:50:10.761: Result          : 0__ProvisioningCommands_DeviceContext_CommandFiles_0.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   1__ProvisioningCommands_DeviceContext_CommandFiles_1.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   2__ProvisioningCommands_DeviceContext_CommandFiles_2.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   3__ProvisioningCommands_DeviceContext_CommandFiles_3.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   4__ProvisioningCommands_DeviceContext_CommandFiles_4.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   5__ProvisioningCommands_DeviceContext_CommandFiles_5.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   6__ProvisioningCommands_DeviceContext_CommandFiles_6.provxml
+2022-02-14 10:50:10.761:                   	Category:Content
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   7__ProvisioningCommands_DeviceContext_CommandLine.provxml
+2022-02-14 10:50:10.761:                   	Category:Scripts
+2022-02-14 10:50:10.761:                   	LastResult:Success
+2022-02-14 10:50:10.761:                   	Message:Provisioning succeeded
+2022-02-14 10:50:10.761:                   	NumberOfFailures:0 (0x0)
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761:                   
+2022-02-14 10:50:10.761: 
+2022-02-14 10:50:10.761: 
+2022-02-14 10:50:10.761:  +1ms
+2022-02-14 10:50:10.761: 2022-02-14 11:50:10 [5360] INFO [JS] Install Stderr:  +1ms
+2022-02-14 10:50:10.761: 2022-02-14 11:50:10 [5360] INFO [JS] Finishing Installation +1ms
+2022-02-14 10:50:10.761: 2022-02-14 11:50:10 [5360] INFO [Runner] Running result: true +0ms
+2022-02-14 10:50:10.769: 2022-02-14 11:50:10 [5360] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (433) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2022-02-14 10:50:12.048: 2022-02-14 11:50:12 [5360] INFO [JS] GUID package: 105da565-d050-4a60-9c4f-556c6bdb5775 +1282ms
+2022-02-14 10:50:12.676: 2022-02-14 11:50:12 [5360] INFO [CommandService] Got command facts:set +630ms
+2022-02-14 10:50:12.683: 2022-02-14 11:50:12 [5360] INFO [CommandService] Got command facts:set +3ms
+2022-02-14 10:50:12.686: 2022-02-14 11:50:12 [5360] INFO [CommandService] Got command units:trigger +3ms
+2022-02-14 10:50:12.686: 2022-02-14 11:50:12 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> boot... +1ms
+2022-02-14 10:50:12.686: 2022-02-14 11:50:12 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2022-02-14 10:50:12.693: 2022-02-14 11:50:12 [5360] INFO [Runner] Creating configuration unit runner object... +5ms
+2022-02-14 10:50:12.693: 2022-02-14 11:50:12 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-14 10:50:12.696: 2022-02-14 11:50:12 [5360] INFO [JS] Checking if programming or tiggering with trigger boot... +1ms
+2022-02-14 10:50:12.696: 2022-02-14 11:50:12 [5360] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2022-02-14 10:50:12.696: 2022-02-14 11:50:12 [5360] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +1ms
+2022-02-14 10:50:12.696: 2022-02-14 11:50:12 [5360] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2022-02-14 10:50:12.696: 2022-02-14 11:50:12 [5360] INFO [JS] Scheduling result: undefined +0ms
+2022-02-14 10:50:12.702: 2022-02-14 11:50:12 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> boot... +1ms
+2022-02-14 10:50:12.704: 2022-02-14 11:50:12 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2022-02-14 10:50:12.736: 2022-02-14 11:50:12 [5360] INFO [Runner] Creating configuration unit runner object... +37ms
+2022-02-14 10:50:12.736: 2022-02-14 11:50:12 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-14 10:50:12.742: 2022-02-14 11:50:12 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-14 10:50:12.744: 2022-02-14 11:50:12 [5360] INFO [JS] Getting GPO version... +1ms
+2022-02-14 10:50:12.744: 2022-02-14 11:50:12 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> boot... +2ms
+2022-02-14 10:50:12.747: 2022-02-14 11:50:12 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +1ms
+2022-02-14 10:50:12.762: 2022-02-14 11:50:12 [5360] INFO [Runner] Creating configuration unit runner object... +16ms
+2022-02-14 10:50:12.762: 2022-02-14 11:50:12 [5360] INFO [Runner] Checking if runner needs to be performed... +0ms
+2022-02-14 10:50:12.764: 2022-02-14 11:50:12 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-02-14 10:50:12.764: 2022-02-14 11:50:12 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> boot... +1ms
+2022-02-14 10:50:12.767: 2022-02-14 11:50:12 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\179\payload... +2ms
+2022-02-14 10:50:12.777: 2022-02-14 11:50:12 [5360] INFO [Runner] Creating configuration unit runner object... +13ms
+2022-02-14 10:50:12.783: 2022-02-14 11:50:12 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-02-14 10:50:12.783: 2022-02-14 11:50:12 [5360] INFO [JS] Checking that the unit needs to be performed +2ms
+2022-02-14 10:50:12.862: 2022-02-14 11:50:12 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> boot... +79ms
+2022-02-14 10:50:12.864: 2022-02-14 11:50:12 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +2ms
+2022-02-14 10:50:12.876: 2022-02-14 11:50:12 [5360] INFO [Runner] Creating configuration unit runner object... +12ms
+2022-02-14 10:50:12.876: 2022-02-14 11:50:12 [5360] INFO [Runner] Checking if runner needs to be performed... +0ms

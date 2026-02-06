@@ -1,0 +1,53 @@
+2020-10-06 01:19:20 [4632] INFO [KeyedObservableCollector] Sending 3 items +0ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +1003ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService]   => result: true +2ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService]   => result: true +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService]   => result: true +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService] Evaluating when directive of conf/other/cleanafterinstall: context.platform === 'win32' +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService]   => result: true +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService] Evaluating when directive of __/unowhy/manager/windows: context.platform === 'win32' +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService]   => result: true +1ms
+2020-10-05 23:19:21.738: 2020-10-06 01:19:21 [4632] INFO [DeviceConfigurationService] Emitting configuration with 5 units +4ms
+2020-10-05 23:19:21.754: 2020-10-06 01:19:21 [4632] INFO [PayloadDispatcher] Got 5 payloads of which 5 are valid +1ms
+2020-10-05 23:19:21.754: 2020-10-06 01:19:21 [4632] INFO [PayloadDispatcher] Got 5 items. 5 in, 0 out +1ms
+2020-10-05 23:19:21.754: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 111] Received payload Facts Uploader Windows. current status=state=Empty, error=None, active=false +9ms
+2020-10-05 23:19:21.754: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 111] payload is new. Downloading from https://idf.hisqool.com/conf/payloads/desktop-facts-paq_1.0.0.jar +1ms
+2020-10-05 23:19:21.754: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 170] Received payload HiSqool. current status=state=Empty, error=None, active=false +2ms
+2020-10-05 23:19:21.754: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 170] payload is new. Downloading from https://idf.hisqool.com/conf/payloads_rc/hisqool_1.0.0_20090186.jar +1ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 130] Received payload LGPO Windows. current status=state=Empty, error=None, active=false +1ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 130] payload is new. Downloading from https://idf.hisqool.com/conf/payloads/desktop-gpo_1.5.jar +1ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 173] Received payload Nettoyage post déploiement. current status=state=Empty, error=None, active=false +2ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 173] payload is new. Downloading from https://idf.hisqool.com/conf/payloads/_Nettoyage_post_deploiement_1.0.0.jar +2ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 2] Received payload Windows MDM Agent. current status=state=Empty, error=None, active=false +2ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 2] payload is new. Downloading from https://idf.hisqool.com/conf/payloads/windows_manager_1.1.0_19120948.jar +1ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 170] Persisting status=state=Todo, error=None, active=true +2ms
+2020-10-05 23:19:21.769: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 170] Persisting status=state=Downloading, error=None, active=true +4ms
+2020-10-05 23:19:21.785: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 111] Persisting status=state=Todo, error=None, active=true +5ms
+2020-10-05 23:19:21.785: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 111] Persisting status=state=Downloading, error=None, active=true +3ms
+2020-10-05 23:19:21.785: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Todo, error=None, active=true +5ms
+2020-10-05 23:19:21.785: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Downloading, error=None, active=true +3ms
+2020-10-05 23:19:21.800: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Todo, error=None, active=true +4ms
+2020-10-05 23:19:21.800: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Downloading, error=None, active=true +2ms
+2020-10-05 23:19:21.800: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 2] Persisting status=state=Todo, error=None, active=true +5ms
+2020-10-05 23:19:21.800: 2020-10-06 01:19:21 [4632] INFO [WatcherService] Received a list of 5 payloads +4ms
+2020-10-05 23:19:21.816: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 2] Persisting status=state=Downloading, error=None, active=true +1ms
+2020-10-05 23:19:21.910: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Downloaded, error=None, active=true +96ms
+2020-10-05 23:19:21.910: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 130] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +1ms
+2020-10-05 23:19:21.925: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 173] Persisting status=state=Downloaded, error=None, active=true +24ms
+2020-10-05 23:19:21.941: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 173] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +2ms
+2020-10-05 23:19:21.941: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 111] Persisting status=state=Downloaded, error=None, active=true +15ms
+2020-10-05 23:19:21.957: 2020-10-06 01:19:21 [4632] INFO [PayloadDownloader] [PAYLOAD 111] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2020-10-05 23:19:22.050: 2020-10-06 01:19:22 [4632] INFO [PayloadDownloader] [PAYLOAD 130] Persisting status=state=Ok, error=None, active=true +103ms
+2020-10-05 23:19:22.050: 2020-10-06 01:19:22 [4632] INFO [PayloadDispatcher] Emitting 1 entries ["conf/application/windows/LGPO-Windows"] +2ms
+2020-10-05 23:19:22.050: 2020-10-06 01:19:22 [4632] INFO [ConfigurationRunner] Processing for execution configuration with 1 keys +1ms
+2020-10-05 23:19:22.050: 2020-10-06 01:19:22 [4632] INFO [ConfigurationRunner] Got 1 configurations. 1 in, 0 out +1ms
+2020-10-05 23:19:22.066: 2020-10-06 01:19:22 [4632] INFO [ConfigurationRunner] Processing configuraiton unit with name conf/application/windows/LGPO-Windows... +1ms
+2020-10-05 23:19:22.066: 2020-10-06 01:19:22 [4632] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +2ms
+2020-10-05 23:19:22.066: 2020-10-06 01:19:22 [4632] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2020-10-05 23:19:22.097: 2020-10-06 01:19:22 [4632] INFO [Runner] Creating configuration unit runner object... +30ms
+2020-10-05 23:19:22.097: 2020-10-06 01:19:22 [4632] INFO [Runner] Checking if runner needs to be performed... +0ms
+2020-10-05 23:19:22.097: 2020-10-06 01:19:22 [4632] INFO [JS] Checking that the unit needs to be performed +2ms
+2020-10-05 23:19:22.097: 2020-10-06 01:19:22 [4632] INFO [JS] Getting GPO version... +1ms
+2020-10-05 23:19:22.097: 2020-10-06 01:19:22 [4632] INFO [WatcherService] Received a list of 5 payloads +2ms

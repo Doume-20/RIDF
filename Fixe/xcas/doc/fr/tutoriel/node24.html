@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Vecteurs et matrices</TITLE>
+<META NAME="description" CONTENT="Vecteurs et matrices">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node25.html">
+<LINK REL="previous" HREF="node23.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node25.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html405"
+  HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html399"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html393"
+  HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html401"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html403"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html406"
+  HREF="node25.html">Syst&#232;mes lin&#233;aires</A>
+<B> monter:</B> <A NAME="tex2html400"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html394"
+  HREF="node23.html">Trigonom&#233;trie</A>
+ &nbsp; <B>  <A NAME="tex2html402"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html404"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00044000000000000000"></A>
+<A NAME="587"></A>
+<A NAME="588"></A>
+<BR>
+Vecteurs et matrices
+</H2>
+Un vecteur est une liste de nombres, une matrice est la liste de ses
+vecteurs lignes. Le produit matriciel est not&#233; comme le produit
+ordinaire <code>*</code>. Les vecteurs sont a priori des vecteurs lignes,
+mais le produit &#224; droite par un vecteur ligne est effectu&#233; comme
+si c'&#233;tait une colonne. En particulier, si <code>v</code> et <code>w</code> 
+sont deux vecteurs de m&#234;me taille, <code>v*w</code> retourne leur produit
+scalaire. 
+<A NAME="589"></A>
+<PRE>
+A:=[[1,2,3],[4,5,6],[7,8,9]]
+v:=[1,1,1]
+v*v
+A*v
+v*A
+B:=[[1,1,1],[2,2,2]]
+A*B
+B*A
+A*tran(B)
+</PRE>
+A partir d'une fonction qui &#224; deux indices (<I>j</I>, <I>k</I>) associe un r&#233;el
+<I>a</I>(<I>j</I>, <I>k</I>), on peut constituer une matrice avec <code>makemat</code> ou
+<code>matrix</code>. Pour <code>makemat</code> les indices commencent &#224; 0, pour
+<code>matrix</code> il commencent &#224; 1.
+<A NAME="1715"></A>
+<A NAME="1716"></A>
+<PRE>
+makemat((j,k)-&gt;j+2*k,3,2)
+matrix(3,2,(j,k)-&gt;j+2*k)
+</PRE>
+On peut aussi cr&#233;er des matrices par blocs avec la commande
+<code>blockmatrix</code>.
+<A NAME="1717"></A>
+<PRE>
+A:=makemat((j,k)-&gt;j+2*k,3,2)
+B:=idn(3)
+blockmatrix(1,2,[A,B])
+blockmatrix(2,2,[A,B,B,A])
+</PRE>
+On acc&#232;de &#224; un &#233;l&#233;ment d'une matrice gr&#226;ce &#224; deux indices 
+s&#233;par&#233;s par une virgule et mis entre 
+crochets. Le premier indice est l'indice de la ligne et le deuxi&#232;me 
+celui de la colonne. Les indices commencent &#224; 0.
+Par exemple, si <code>A:=[[0,2],[1,3],[2,4]]</code> alors 
+<code>A[2,1]</code> renvoie <code>4</code>.
+Pour extraire un bloc de la matrice, on utilise des intervalles
+comme indices&nbsp;: <code>A[1..2,0..1]</code> renvoie le bloc
+constitu&#233; des lignes 1 &#224; 2 et des colonnes 0 &#224; 1.
+
+<P>
+Notez que les matrices de <TT>Xcas</TT> sont
+recopi&#233;es enti&#232;rement &#224; chaque modification d'un coefficient.
+Ceci est p&#233;nalisant si on modifie successivement 
+dans un programme beaucoup
+de coefficients d'une m&#234;me (grande) matrice.
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Vecteurs et matrices</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>v*w</code></TD>
+<TD ALIGN="LEFT">produit scalaire</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>cross(v,w)</code></TD>
+<TD ALIGN="LEFT">produit vectoriel</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>A*B</code></TD>
+<TD ALIGN="LEFT">produit matriciel</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>A.*B</code></TD>
+<TD ALIGN="LEFT">produit terme &#224; terme</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>1/A</code></TD>
+<TD ALIGN="LEFT">inverse</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tran</code></TD>
+<TD ALIGN="LEFT">transpos&#233;e</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>rank</code></TD>
+<TD ALIGN="LEFT">rang</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>det</code></TD>
+<TD ALIGN="LEFT">d&#233;terminant</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ker</code></TD>
+<TD ALIGN="LEFT">base du noyau</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>image</code></TD>
+<TD ALIGN="LEFT">base de l'image</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>idn</code></TD>
+<TD ALIGN="LEFT">matrice identit&#233;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>ranm</code></TD>
+<TD ALIGN="LEFT">matrice &#224; coefficients al&#233;atoires</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="608"></A>
+<A NAME="609"></A>
+<A NAME="610"></A>
+<A NAME="611"></A>
+<A NAME="1718"></A>
+<A NAME="1719"></A>
+<A NAME="1720"></A>
+<A NAME="1721"></A>
+<A NAME="1722"></A>
+<A NAME="1723"></A>
+<A NAME="618"></A>
+<A NAME="619"></A>
+<A NAME="620"></A>
+<A NAME="621"></A>
+<A NAME="622"></A>
+<A NAME="623"></A>
+<A NAME="624"></A>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html405"
+  HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html399"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html393"
+  HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html401"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html403"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html406"
+  HREF="node25.html">Syst&#232;mes lin&#233;aires</A>
+<B> monter:</B> <A NAME="tex2html400"
+  HREF="node20.html">Outils pour l'Alg&#232;bre</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html394"
+  HREF="node23.html">Trigonom&#233;trie</A>
+ &nbsp; <B>  <A NAME="tex2html402"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html404"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

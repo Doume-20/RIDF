@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Exercice 2</TITLE>
+<META NAME="description" CONTENT="Exercice 2">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="previous" HREF="node37.html">
+<LINK REL="up" HREF="node36.html">
+<LINK REL="next" HREF="node39.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html608"
+  HREF="node39.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html602"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html598"
+  HREF="node37.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html604"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html606"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html609"
+  HREF="node39.html">Calcul de primitives (niveau</A>
+<B> monter:</B> <A NAME="tex2html603"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html599"
+  HREF="node37.html">Exercice 1</A>
+ &nbsp; <B>  <A NAME="tex2html605"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html607"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00071200000000000000">
+Exercice 2</A>
+</H3>
+On consid&#232;re la fonction <I>f</I> de <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$"> dans <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$"> d&#233;finie par :
+<P><!-- MATH
+ \begin{displaymath}
+f(x)=\frac{\exp(x)^2-\exp(x)+1}{\exp(x)^3+\exp(x)}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>f</I> (<I>x</I>) = <IMG
+ WIDTH="141" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$\displaystyle {\frac{{\exp(x)^2-\exp(x)+1}}{{\exp(x)^3+\exp(x)}}}$">
+</DIV><P></P>
+
+<OL>
+<LI>Montrer que pour tout <!-- MATH
+ $x \in \mathbb R$
+ -->
+<I>x</I> <IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$">, <!-- MATH
+ $P(x)=x^4-2x^3+2x^2+1 \geq 1$
+ -->
+<I>P</I>(<I>x</I>) = <I>x</I><SUP>4</SUP> -2<I>x</I><SUP>3</SUP> +2<I>x</I><SUP>2</SUP> +1 <IMG
+ WIDTH="17" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \geq$"> 1
+</LI>
+<LI>&#201;tudier les variations de <I>f</I> et tracer son graphe.
+</LI>
+<LI>Trouver l'&#233;quation de la tangente au graphe au point d'abscisse <I>x</I> = 0
+</LI>
+<LI>Calculer <!-- MATH
+ $\displaystyle \int_0^x f(t)dt \$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$\displaystyle \int_{0}^{x}$"><I>f</I> (<I>t</I>)<I>dt</I>&nbsp; puis,
+  <!-- MATH
+ $\displaystyle \lim_{x->+\infty}\int_0^x f(t)dt$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\displaystyle \lim_{{x-&gt;+\infty}}^{}$"><IMG
+ WIDTH="25" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$\displaystyle \int_{0}^{x}$"><I>f</I> (<I>t</I>)<I>dt</I>
+</LI>
+</OL>
+
+<P>
+<B>R&#233;ponses</B>
+
+<OL>
+<LI>On tape :
+<DIV ALIGN="CENTER">
+<code> factor(x^4-2x^3+2x^2)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> (x^2+-2*x+2)*x^2</code>
+
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<code> canonical_form(x^2-2*x+2)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> (x-1)^2+1</code>
+
+</DIV>
+Donc pour tout <!-- MATH
+ $x \in \mathbb R$
+ -->
+<I>x</I> <IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$">, <!-- MATH
+ $x^4-2x^3+2x^2=x^2*(x-1)^2+x^2 \geq 0$
+ -->
+<I>x</I><SUP>4</SUP> -2<I>x</I><SUP>3</SUP> +2<I>x</I><SUP>2</SUP> = <I>x</I><SUP>2</SUP>*(<I>x</I> - 1)<SUP>2</SUP> + <I>x</I><SUP>2</SUP> <IMG
+ WIDTH="17" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \geq$"> 0 
+<BR>
+donc pour tout <!-- MATH
+ $x \in \mathbb R$
+ -->
+<I>x</I> <IMG
+ WIDTH="15" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ \mathbb {R}$">, <!-- MATH
+ $P(x)=x^4-2x^3+2x^2+1 \geq 1$
+ -->
+<I>P</I>(<I>x</I>) = <I>x</I><SUP>4</SUP> -2<I>x</I><SUP>3</SUP> +2<I>x</I><SUP>2</SUP> +1 <IMG
+ WIDTH="17" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ \geq$"> 1
+
+<P>
+</LI>
+<LI>On tape pour calculer la valeur de la d&#233;riv&#233;e de <I>f</I> en un point :
+<DIV ALIGN="CENTER">
+<code> normal(derive((exp(x)^2-exp(x)+1)/(exp(x)^3+exp(x)),x))</code>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code>(-(exp(x))^4+2*(exp(x))^3-2*(exp(x))^2-1)/</code>
+<code>((exp(x))^5+2*(exp(x))^3+exp(x))</code>
+</DIV>
+
+<P>
+Le num&#233;rateur est n&#233;gatif car il est &#233;gal &#224; <!-- MATH
+ $-P(\exp(x))$
+ -->
+- <I>P</I>(exp(<I>x</I>)) et le 
+d&#233;nominateur est strictement positif car il est &#233;gal &#224; une somme de 
+termes strictement positifs. La fonction <I>f</I> est donc d&#233;croissante.
+<BR>
+Pour chercher la limite de <I>f</I> en + <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">, on tape :
+<DIV ALIGN="CENTER">
+<code> limit((exp(x)^2-exp(x)+1)/(exp(x)^3+exp(x)),x=+infinity)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> 0</code>
+
+</DIV>
+Pour chercher la limite de <I>f</I> en - <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \infty$">, on tape :
+<DIV ALIGN="CENTER">
+<code> limit((exp(x)^2-exp(x)+1)/(exp(x)^3+exp(x)),x=-infinity)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> infinity</code>
+
+</DIV>
+Pour tracer le graphe de <I>f</I>, on tape :
+<DIV ALIGN="CENTER">
+<code> plotfunc(((exp(x))^2-exp(x)+1)/((exp(x))^3+exp(x)),x)</code>
+
+</DIV>
+On obtient le graphe de <I>f</I>.
+
+<P>
+</LI>
+<LI>On d&#233;finit la fonction <I>f</I>, on tape :
+<DIV ALIGN="CENTER">
+<code> f(x):=(exp(x)^2-exp(x)+1)/(exp(x)^3+exp(x))</code>
+
+</DIV>
+On calcule <I>f</I> (0), on tape :
+<DIV ALIGN="CENTER">
+<code> f(0)</code>
+
+</DIV>
+On obtient
+<P><!-- MATH
+ \begin{displaymath}
+\frac{1}{2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$">
+</DIV><P></P>
+On d&#233;finit la fonction <I>df</I> comme &#233;tant la d&#233;riv&#233;e de <I>f</I>, on tape :
+<DIV ALIGN="CENTER">
+<code> df:=unapply(normal(diff(f(x),x)),x)</code>
+
+</DIV>
+On calcule <I>df</I> (0), on tape :
+<DIV ALIGN="CENTER">
+<code> df(0)</code>
+
+</DIV>
+On obtient :
+<P><!-- MATH
+ \begin{displaymath}
+-\frac{1}{2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+- <IMG
+ WIDTH="16" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$">
+</DIV><P></P>
+L'&#233;quation de la tangente au point d'abscisse 0 est donc :
+<BR> <!-- MATH
+ $y=df(0)*x+f(0)$
+ -->
+<I>y</I> = <I>df</I> (0)*<I>x</I> + <I>f</I> (0)
+c'est &#224; dire <!-- MATH
+ $\displaystyle y=-\frac{1}{2}x+\frac{1}{2}$
+ -->
+<I>y</I> = - <IMG
+ WIDTH="16" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$"><I>x</I> + <IMG
+ WIDTH="16" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\displaystyle {\frac{{1}}{{2}}}$">.
+<BR>
+ou encore on tape :
+<DIV ALIGN="CENTER">
+<code>equation(tangent(plotfunc(f(x)),0),[x,y])</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> y=(1/-2*x+1/2)y=(1/-2*x+1/2)</code>
+
+</DIV>
+
+<P>
+</LI>
+<LI>On calcule l'int&#233;grale : <!-- MATH
+ $\displaystyle \int_0^x f(t)dt$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$\displaystyle \int_{0}^{x}$"><I>f</I> (<I>t</I>)<I>dt</I>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<code> int(f(t),t,0,x)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> (ln((exp(x))^2+1)*exp(x)+(-(2*x))*exp(x)+2*exp(x)-2)*</code>
+<code> 1/2/exp(x)-1/2*ln(2)</code>
+</DIV>
+Puis on calcule : <!-- MATH
+ $\displaystyle \lim_{x->+\infty}\int_0^x f(t)dt$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\displaystyle \lim_{{x-&gt;+\infty}}^{}$"><IMG
+ WIDTH="25" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$\displaystyle \int_{0}^{x}$"><I>f</I> (<I>t</I>)<I>dt</I>, on tape :
+<DIV ALIGN="CENTER">
+<code> limit((ln((exp(x))^2+1)*exp(x)+(-(2*x))*exp(x)+2*exp(x)-2)</code>
+<code>*1/2/exp(x)-1/2*ln(2),x=+infinity)</code>
+
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<code> -1/2*ln(2)+1</code>
+
+</DIV>
+</LI>
+</OL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html608"
+  HREF="node39.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html602"
+  HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html598"
+  HREF="node37.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html604"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html606"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html609"
+  HREF="node39.html">Calcul de primitives (niveau</A>
+<B> monter:</B> <A NAME="tex2html603"
+  HREF="node36.html">Fonction et repr&#233;sentation graphique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html599"
+  HREF="node37.html">Exercice 1</A>
+ &nbsp; <B>  <A NAME="tex2html605"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html607"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

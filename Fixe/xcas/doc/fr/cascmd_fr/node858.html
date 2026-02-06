@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'affectation d'une &#233;galit&#233; : assign</TITLE>
+<META NAME="description" CONTENT="L'affectation d'une &#233;galit&#233; : assign">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node859.html">
+<LINK REL="previous" HREF="node857.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node859.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15680"
+  HREF="node859.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15674"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15668"
+  HREF="node857.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15676"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15678"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15681"
+  HREF="node859.html">L'instruction conditionnelle : if</A>
+<B> monter:</B> <A NAME="tex2html15675"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15669"
+  HREF="node857.html">L'affectation prefix&#233;e : sto</A>
+ &nbsp; <B>  <A NAME="tex2html15677"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15679"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011416000000000000000"></A><A NAME="22552"></A><A NAME="22553"></A><A NAME="22554"></A>
+<BR>
+L'affectation d'une &#233;galit&#233; : <TT>assign</TT>
+</H2>
+<TT>assign</TT> permet de stocker une valeur dans une variable.
+<BR><TT>assign</TT> a un ou deux arguments :
+
+<UL>
+<LI>un argument : une &#233;galit&#233; entre un nom de variable et la 
+valeur &#224; stocker, ou une listed'&#233;galit&#233; entre des noms de variable et les
+valeurs &#224; stocker, 
+</LI>
+<LI>deux arguments : un nom de variable et la valeur &#224; stocker.
+<BR></LI>
+</UL>
+<B>Attention</B>
+<BR>
+La variable doit &#234;tre purg&#233;e avant l'utilisation de <TT>assign</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>assign(a,3)</TT>
+</DIV>
+ou :
+<DIV ALIGN="CENTER">
+<TT>assign(a=3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3 et la variable a contient 3</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>assign([a1=1,a2=2,a3=3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,3] et a1 contient 1, a2 contient 2 et a3 contient 3</TT>
+</DIV>
+<B>Remarque</B>
+<TT>assign</TT> sert surtout en mode Maple, voici un exemple :
+On tape en mode Maple :
+<DIV ALIGN="CENTER">
+<TT>purge(a,b)</TT>
+</DIV> 
+<DIV ALIGN="CENTER">
+<TT>sol:=solve([a+b=1,a-b=3],[a,b])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[a=2,b=(-1)]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>assign(sol)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,-1] et ainsi a contient 2 et b contient -1 </TT>
+</DIV>
+en mode <TT>Xcas</TT> la m&#234;me suite d'instructions donnent :
+<DIV ALIGN="CENTER">
+<TT>sol:=solve([a+b=1,a-b=3],[a,b])</TT>
+</DIV>
+On obtient la liste des solution donc ici une matrice 1&#215;1 :
+<DIV ALIGN="CENTER">
+<TT>[[2,-1]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>[a,b]:=sol[0])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,-1] et ainsi a contient 2 et b contient -1</TT>
+</DIV> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15680"
+  HREF="node859.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15674"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15668"
+  HREF="node857.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15676"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15678"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15681"
+  HREF="node859.html">L'instruction conditionnelle : if</A>
+<B> monter:</B> <A NAME="tex2html15675"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15669"
+  HREF="node857.html">L'affectation prefix&#233;e : sto</A>
+ &nbsp; <B>  <A NAME="tex2html15677"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15679"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

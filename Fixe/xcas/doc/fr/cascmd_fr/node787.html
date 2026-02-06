@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ligne polygonale : listplot plotlist</TITLE>
+<META NAME="description" CONTENT="Ligne polygonale : listplot plotlist">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node788.html">
+<LINK REL="previous" HREF="node786.html">
+<LINK REL="up" HREF="node781.html">
+<LINK REL="next" HREF="node788.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14587"
+  HREF="node788.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14581"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14575"
+  HREF="node786.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14583"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14585"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14588"
+  HREF="node788.html">Ligne polygonale et nuage</A>
+<B> monter:</B> <A NAME="tex2html14582"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14576"
+  HREF="node786.html">Ligne polygonale : polygonplot</A>
+ &nbsp; <B>  <A NAME="tex2html14584"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14586"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001026000000000000000"></A><A NAME="20603"></A><A NAME="20604"></A>
+<BR>
+Ligne polygonale : <TT>listplot plotlist</TT>
+</H2>
+<TT>listplot</TT> ou <TT>plotlist</TT> a pour argument une liste <TT>l</TT> ou 
+une matrice ayant deux colonnes.
+<BR><TT>listplot</TT> ou <TT>plotlist</TT> permet de visualiser les segments reliant le 
+nuage de points ayant 
+pour abscisse <TT>[1,2...n]</TT> et pour ordonn&#233;e <TT>l</TT>  ou pour coordonn&#233;es
+une ligne de la matrice. <TT>listplot</TT> ou <TT>plotlist</TT> relie par des 
+segments de droites, les diff&#233;rents points du nuage, mais sans r&#233;ordonner 
+les points contrairement &#224; <TT>polygonplot</TT> qui  r&#233;ordonne les points 
+selon leur abscisse puis les relie.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>listplot([1,4,9,16])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>listplot([[1,1],[2,4],[3,9],[4,16]])</TT>
+</DIV>
+La fen&#234;tre graphique s'ouvre automatiquement et on obtient :
+ <DIV ALIGN="CENTER">
+<TT>le dessin des 4 points ((1,1),...(4,16)) reli&#233;s par 3 segments</TT>
+</DIV> 
+&#224; condition d'avoir d&#233;fini correctement
+la configuration du graphique (menu <TT>Cfg</TT>).
+On tape si <I>A</I> est une matrice ayant 10 lignes et 2 colonnes :
+<DIV ALIGN="CENTER">
+<TT>listplot(A[0..9,0..1])</TT>
+</DIV>
+La fen&#234;tre graphique s'ouvre automatiquement et on obtient :
+<DIV ALIGN="CENTER">
+<TT>les 10 points reli&#233;s par 9 segments</TT>
+</DIV> 
+<B>Bien voir</B> la diff&#233;rence entre :
+ <DIV ALIGN="CENTER">
+<TT>listplot([[1,1],[5,4],[3,9],[4,16]])</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>polygonplot([[1,1],[5,4],[3,9],[4,16]])</TT>
+</DIV>
+<B>Attention</B> <TT>listplot([0,1,2,3,4],[0,1,4,9,16])</TT> n'est pas valide !
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14587"
+  HREF="node788.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14581"
+  HREF="node781.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14575"
+  HREF="node786.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14583"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14585"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14588"
+  HREF="node788.html">Ligne polygonale et nuage</A>
+<B> monter:</B> <A NAME="tex2html14582"
+  HREF="node781.html">Les fonctions statistiques &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14576"
+  HREF="node786.html">Ligne polygonale : polygonplot</A>
+ &nbsp; <B>  <A NAME="tex2html14584"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14586"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

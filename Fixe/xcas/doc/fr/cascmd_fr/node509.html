@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Racines et p&#244;les exacts d'une fraction rationnelle : froot</TITLE>
+<META NAME="description" CONTENT="Racines et p&#244;les exacts d'une fraction rationnelle : froot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node510.html">
+<LINK REL="previous" HREF="node508.html">
+<LINK REL="up" HREF="node508.html">
+<LINK REL="next" HREF="node510.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10414"
+  HREF="node510.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10408"
+  HREF="node508.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10402"
+  HREF="node508.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10410"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10412"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10415"
+  HREF="node510.html">Coefficients d'une fraction rationnelle</A>
+<B> monter:</B> <A NAME="tex2html10409"
+  HREF="node508.html">Fraction rationnelle, ses racines</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10403"
+  HREF="node508.html">Fraction rationnelle, ses racines</A>
+ &nbsp; <B>  <A NAME="tex2html10411"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10413"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009311000000000000000"></A><A NAME="13013"></A>
+<BR>
+Racines et p&#244;les exacts d'une fraction rationnelle : <TT>froot</TT>
+</H2>
+<TT>froot</TT> a comme argument une fraction rationnelle <I>F</I>(<I>x</I>).
+<BR><TT>froot</TT>  renvoie  un vecteur de composantes les racines et les p&#244;les de 
+<I>F</I>(<I>x</I>) suivis de leur multiplicit&#233;.
+<BR><TT>Xcas</TT> renvoie les valeurs exactes de ces racines ou p&#244;les quand cela est
+possible et sinon renvoie leur valeurs num&#233;riques.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>froot((x<code>^</code>5-2*x<code>^</code>4+x<code>^</code>3)/(x-2)) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,0,3,2,-1]</TT>
+</DIV>
+donc pour <!-- MATH
+ $\displaystyle F(x)=\frac{x^5-2.x^4+x^3}{x-2}$
+ -->
+<I>F</I>(<I>x</I>) = <IMG
+ WIDTH="117" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img390.png"
+ ALT="$\displaystyle {\frac{{x^5-2.x^4+x^3}}{{x-2}}}$"> : 
+<BR>
+1 est racine double,
+<BR>
+0 est racine triple et
+<BR>
+2 est un p&#244;le d'ordre 1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>froot((x<code>^</code>3-2*x<code>^</code>2+1)/(x-2)) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,1,(1+sqrt(5))/2,1,(1-sqrt(5))/2,1,2,-1]</TT>
+</DIV>
+Remarque : pour avoir les racines et les p&#244;les complexes il faut avoir 
+coch&#233; <TT>Complexe</TT> dans la configuration du <TT>cas</TT> (bouton donnant la 
+ligne d'&#233;tat).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>froot((x<code>^</code>2+1)/(x-2)) </TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-i,1,i,1,2,-1]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

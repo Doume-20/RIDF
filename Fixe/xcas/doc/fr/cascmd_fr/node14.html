@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'interface Xcas</TITLE>
+<META NAME="description" CONTENT="L'interface Xcas">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node70.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="cascmd_fr.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2448"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2442"
+  HREF="cascmd_fr.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2436"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2444"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html2446"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html2449"
+  HREF="node15.html">Mise en route de</A>
+<B> monter:</B> <A NAME="tex2html2443"
+  HREF="cascmd_fr.html">Calcul formel et Math&#233;matiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2437"
+  HREF="node13.html">Savoir avec quelle version</A>
+ &nbsp; <B>  <A NAME="tex2html2445"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2447"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00400000000000000000"></A><A NAME="chap:xcasnew"></A>
+<BR>
+L'interface <TT>Xcas</TT>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html2450"
+  HREF="node15.html">Mise en route de l'interface <TT>Xcas</TT></A>
+<UL>
+<LI><A NAME="tex2html2451"
+  HREF="node16.html">Sous Unix</A>
+<LI><A NAME="tex2html2452"
+  HREF="node17.html">Sous Windows</A>
+<LI><A NAME="tex2html2453"
+  HREF="node18.html">Sous MacOS</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2454"
+  HREF="node19.html">Les diff&#233;rents  niveaux d'entr&#233;e</A>
+<LI><A NAME="tex2html2455"
+  HREF="node20.html">Que voit-on  au d&#233;marrage ?</A>
+<LI><A NAME="tex2html2456"
+  HREF="node21.html">Les menus</A>
+<UL>
+<LI><A NAME="tex2html2457"
+  HREF="node22.html">Le menu <TT>Fich</TT></A>
+<LI><A NAME="tex2html2458"
+  HREF="node23.html">Le menu <TT>Edit</TT></A>
+<LI><A NAME="tex2html2459"
+  HREF="node24.html">Le menu <TT>Cfg</TT></A>
+<LI><A NAME="tex2html2460"
+  HREF="node25.html">Le menu <TT>Aide</TT></A>
+<LI><A NAME="tex2html2461"
+  HREF="node26.html">Les menus des commandes de calcul</A>
+<UL>
+<LI><A NAME="tex2html2462"
+  HREF="node27.html">D&#233;scription des menus des commandes de calcul</A>
+<LI><A NAME="tex2html2463"
+  HREF="node28.html">Rajouter un menu</A>
+<LI><A NAME="tex2html2464"
+  HREF="node29.html">Supprimer un menu</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html2465"
+  HREF="node30.html">Comment bien g&#233;rer son espace de travail</A>
+<UL>
+<LI><A NAME="tex2html2466"
+  HREF="node31.html">Pour s&#233;lectionner ou d&#233;s&#233;lectionner un niveau</A>
+<LI><A NAME="tex2html2467"
+  HREF="node32.html">Pour remplir les niveaux</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2468"
+  HREF="node33.html">Les diff&#233;rentes configurations</A>
+<UL>
+<LI><A NAME="tex2html2469"
+  HREF="node34.html">Configuration du Cas</A>
+<LI><A NAME="tex2html2470"
+  HREF="node35.html">Configuration du graphique avec le menu <TT>Cfg<!-- MATH
+ $\blacktriangleright$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \blacktriangleright$">Configuration graphique</TT></A>
+<LI><A NAME="tex2html2471"
+  HREF="node36.html">Configuration g&#233;n&#233;rale</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2472"
+  HREF="node37.html">Les diff&#233;rentes configurations avec les commandes</A>
+<UL>
+<LI><A NAME="tex2html2473"
+  HREF="node38.html">Le fichier <TT>.xcasrc</TT></A>
+<LI><A NAME="tex2html2474"
+  HREF="node39.html">La configuration g&#233;n&#233;rale et la fonction : <TT>widget_size</TT></A>
+<LI><A NAME="tex2html2475"
+  HREF="node40.html">La configuration du cas avec la fonction : <TT>cas_setup</TT></A>
+<LI><A NAME="tex2html2476"
+  HREF="node41.html">Nombres de chiffres significatifs : <TT>Digits DIGITS</TT></A>
+<LI><A NAME="tex2html2477"
+  HREF="node42.html">Choix du mode de langage <TT>Xcas</TT> ou Maple ou MuPad ou TI89 : <TT>maple_mode</TT></A>
+<LI><A NAME="tex2html2478"
+  HREF="node43.html">Choix de l'unit&#233; d'angle : <TT>angle_radian</TT></A>
+<LI><A NAME="tex2html2479"
+  HREF="node44.html">Choix du mode approximatif ou exact : <TT>approx_mode</TT></A>
+<LI><A NAME="tex2html2480"
+  HREF="node45.html">Choix du mode r&#233;el ou complexe : <TT>complex_mode</TT></A>
+<LI><A NAME="tex2html2481"
+  HREF="node46.html">Variables r&#233;elles ou complexes : <TT>complex_variables</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2482"
+  HREF="node47.html">L'aide</A>
+<UL>
+<LI><A NAME="tex2html2483"
+  HREF="node48.html">Aide g&#233;n&#233;rale</A>
+<LI><A NAME="tex2html2484"
+  HREF="node49.html">Aide sur une fonction : <TT>findhelp</TT> ou <TT>?</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2485"
+  HREF="node50.html">Sauver et imprimer</A>
+<UL>
+<LI><A NAME="tex2html2486"
+  HREF="node51.html">Pour sauver une session</A>
+<LI><A NAME="tex2html2487"
+  HREF="node52.html">Pour sauver un tableur</A>
+<LI><A NAME="tex2html2488"
+  HREF="node53.html">Pour sauver un programme</A>
+<LI><A NAME="tex2html2489"
+  HREF="node54.html">Pour imprimer</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2490"
+  HREF="node55.html">Traduction Latex</A>
+<UL>
+<LI><A NAME="tex2html2491"
+  HREF="node56.html">Traduction Latex d'une entr&#233;e : <TT>latex TeX</TT></A>
+<LI><A NAME="tex2html2492"
+  HREF="node57.html">Imprimer la session ou/et la convertir en un fichier Latex</A>
+<LI><A NAME="tex2html2493"
+  HREF="node58.html">Traduction Latex d'un &#233;cran de g&#233;om&#233;trie</A>
+<LI><A NAME="tex2html2494"
+  HREF="node59.html">Traduction Latex de l'&#233;cran <TT>DispG</TT></A>
+<LI><A NAME="tex2html2495"
+  HREF="node60.html">Traduction Latex de l'&#233;cran <TT>3D</TT> : <TT>graph3d2tex</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2496"
+  HREF="node61.html">Traduction Mathml</A>
+<UL>
+<LI><A NAME="tex2html2497"
+  HREF="node62.html">Traduction Mathml d'une expression : <TT>mathml</TT></A>
+<LI><A NAME="tex2html2498"
+  HREF="node63.html">Traduction Mathml du tableur </A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2499"
+  HREF="node64.html">Traduction de fichiers Maple en fichier <TT>Xcas</TT> ou Mupad</A>
+<UL>
+<LI><A NAME="tex2html2500"
+  HREF="node65.html">Fichier Maple traduit en fichier <TT>Xcas</TT> : <TT>maple2xcas</TT></A>
+<LI><A NAME="tex2html2501"
+  HREF="node66.html">Fichier Maple traduit en fichier Mupad : <TT>maple2mupad</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html2502"
+  HREF="node67.html">Traduction d'un fichier Mupad en un fichier <TT>Xcas</TT> ou Maple </A>
+<UL>
+<LI><A NAME="tex2html2503"
+  HREF="node68.html">Fichier Mupad traduit en fichier <TT>Xcas</TT> : <TT>mupad2xcas</TT></A>
+<LI><A NAME="tex2html2504"
+  HREF="node69.html">Fichier Mupad traduit en fichier Maple : <TT>mupad2maple</TT></A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,1162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>O&#249; interviennent ces sommes ?</TITLE>
+<META NAME="description" CONTENT="O&#249; interviennent ces sommes ?">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node414.html">
+<LINK REL="up" HREF="node413.html">
+<LINK REL="next" HREF="node416.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9030"
+  HREF="node416.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9024"
+  HREF="node413.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9020"
+  HREF="node414.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9026"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9028"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9031"
+  HREF="node416.html">La transform&#233;e de Fourier</A>
+<B> monter:</B> <A NAME="tex2html9025"
+  HREF="node413.html">Transform&#233;e de Fourier discr&#232;te</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9021"
+  HREF="node414.html">Les propri&#233;tes</A>
+ &nbsp; <B>  <A NAME="tex2html9027"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9029"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009232200000000000000">
+O&#249; interviennent ces sommes ?</A>
+</H3>
+
+<OL>
+<LI>Valeur d'un polyn&#244;me
+<BR>
+Soit un polyn&#244;me <!-- MATH
+ $P(x)=\sum_{j=0}^{N-1}c_jx^j$
+ -->
+<I>P</I>(<I>x</I>) = <IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.png"
+ ALT="$ \sum_{{j=0}}^{{N-1}}$"><I>c</I><SUB>j</SUB><I>x</I><SUP>j</SUP> donn&#233; par la liste de 
+ces coefficients <!-- MATH
+ $[c_0,c_1,..c_{N-1}]$
+ -->
+[<I>c</I><SUB>0</SUB>, <I>c</I><SUB>1</SUB>,..<I>c</I><SUB>N-1</SUB>] compl&#233;t&#233; par des z&#233;ros pour que 
+<I>N</I> soit une puissance de 2.
+
+<UL>
+<LI>On veut calculer les valeurs prises par <I>P</I>(<I>x</I>) aux points 
+<!-- MATH
+ $a_k=\omega_N^{-k}=\exp(\frac{-2ik\pi}{N})$
+ -->
+<I>a</I><SUB>k</SUB> = <IMG
+ WIDTH="35" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img280.png"
+ ALT="$ \omega_{N}^{{-k}}$"> = exp(<IMG
+ WIDTH="46" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img281.png"
+ ALT="$ {\frac{{-2ik\pi}}{{N}}}$">) pour <I>k</I> = 0..<I>N</I> - 1, c'est &#224; dire 
+les valeurs <!-- MATH
+ $\sum_{j=0}^{N-1}c_j(\omega_N^{-k})^j$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.png"
+ ALT="$ \sum_{{j=0}}^{{N-1}}$"><I>c</I><SUB>j</SUB>(<IMG
+ WIDTH="35" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img280.png"
+ ALT="$ \omega_{N}^{{-k}}$">)<SUP>j</SUP> pour <I>k</I> = 0..<I>N</I> - 1.
+<BR>
+On a :
+<BR><!-- MATH
+ $[P(a_0), P(a_1),..P(a_{N-1})]=F_N([c_0,c_1,..c_{N-1}])$
+ -->
+[<I>P</I>(<I>a</I><SUB>0</SUB>), <I>P</I>(<I>a</I><SUB>1</SUB>),..<I>P</I>(<I>a</I><SUB>N-1</SUB>)] = <I>F</I><SUB>N</SUB>([<I>c</I><SUB>0</SUB>, <I>c</I><SUB>1</SUB>,..<I>c</I><SUB>N-1</SUB>])
+<BR>
+Par exemple on tape :
+<BR><TT>P(x):=x+x<code>^</code>2</TT> et 
+<TT>w:=i</TT>
+<BR>
+Les coefficients de <I>P</I> sont [0,1,1,0],  
+<!-- MATH
+ $\omega=w=i$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img282.png"
+ ALT="$ \omega$"> = <I>w</I> = <I>i</I>, <I>N</I> = 4 et <!-- MATH
+ $\exp(2i\pi/4)=i$
+ -->
+exp(2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/4) = <I>i</I>.
+<BR>
+On a :
+<BR><TT>fft([0,1,1,0])=[2,-1-i,0,-1+i]</TT>
+et donc 
+<BR><TT>P(0)=2</TT>,
+<BR><TT>P(-i)=P(w<code>^</code>-1)=-1-i</TT>,
+<BR><TT>P(-1)=P(w<code>^</code>-2)=0</TT>,
+<BR><TT>P(i)=P(w<code>^</code>-3)=-1+i</TT>.
+</LI>
+<LI>On veut calculer les valeurs prises par <I>P</I>(<I>x</I>) aux points 
+<!-- MATH
+ $b_k=\omega_N^{k}=\exp(\frac{2ik\pi}{N})$
+ -->
+<I>b</I><SUB>k</SUB> = <IMG
+ WIDTH="28" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img283.png"
+ ALT="$ \omega_{N}^{{k}}$"> = exp(<IMG
+ WIDTH="35" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img284.png"
+ ALT="$ {\frac{{2ik\pi}}{{N}}}$">) pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1), c'est &#224; dire les 
+valeurs <!-- MATH
+ $\sum_{j=0}^{N-1}c_j(\omega_N^{k})^j$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.png"
+ ALT="$ \sum_{{j=0}}^{{N-1}}$"><I>c</I><SUB>j</SUB>(<IMG
+ WIDTH="28" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img283.png"
+ ALT="$ \omega_{N}^{{k}}$">)<SUP>j</SUP> pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1).
+<BR>
+On a :
+<BR><!-- MATH
+ $[P(a_0), P(a_1),..P(a_{(N-1)})]=N*F_N^{-1}([c_0,c_1,..c_{(N-1)}])$
+ -->
+[<I>P</I>(<I>a</I><SUB>0</SUB>), <I>P</I>(<I>a</I><SUB>1</SUB>),..<I>P</I>(<I>a</I><SUB>(N-1)</SUB>)] = <I>N</I>*<I>F</I><SUB>N</SUB><SUP>-1</SUP>([<I>c</I><SUB>0</SUB>, <I>c</I><SUB>1</SUB>,..<I>c</I><SUB>(N-1)</SUB>])
+<BR>
+Par exemple on tape :
+<BR><TT>P(x):=x+x<code>^</code>2</TT> et
+<TT>w:=i</TT>
+<BR>
+Les coefficients de <I>P</I> sont [0,1,1,0], 
+<!-- MATH
+ $\omega=w=i$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img282.png"
+ ALT="$ \omega$"> = <I>w</I> = <I>i</I>, <I>N</I> = 4 et <!-- MATH
+ $\exp(2i\pi/4)=i$
+ -->
+exp(2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/4) = <I>i</I>.
+<BR>
+On a :
+<BR><TT>4*ifft([0,1,1,0])=[2,-1+i,0,-1-i]</TT>
+et donc 
+<BR><TT>P(0)=2</TT>,
+<BR><TT>P(i)=P(w<code>^</code>1)=-1+i</TT>,
+<BR><TT>P(-1)=P(w<code>^</code>2)=0</TT>,
+<BR><TT>P(-i)=P(w<code>^</code>3)=-1-i</TT>.
+</LI>
+</UL>
+</LI>
+<LI>Interpolation trigonom&#233;trique
+<BR>
+Soit <I>f</I> une fonction 2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">-p&#233;riodique dont on connait les valeurs en
+<!-- MATH
+ $x_k=2k\pi/N$
+ -->
+<I>x</I><SUB>k</SUB> = 2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>, <!-- MATH
+ $f(x_k)=f(2k\pi/N)=f_k$
+ -->
+<I>f</I> (<I>x</I><SUB>k</SUB>) = <I>f</I> (2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) = <I>f</I><SUB>k</SUB> pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1) avec <I>N</I> = 2*<I>m</I>.
+<BR>
+On veut d&#233;terminer le polyn&#244;me <I>p</I> trigonom&#233;trique interpolateur de <I>f</I> 
+aux points 2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I> pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1), sous la forme :
+<BR><!-- MATH
+ $p(x)=a_0/2+\sum_{n=0}^{\frac{N}{2}-1}a_n\cos(nx)+b_n\sin(nx)+1/2 a_{\frac{N}{2}}cos(\frac{Nx}{2})$
+ -->
+<I>p</I>(<I>x</I>) = <I>a</I><SUB>0</SUB>/2 + <IMG
+ WIDTH="55" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img285.png"
+ ALT="$ \sum_{{n=0}}^{{\frac{N}{2}-1}}$"><I>a</I><SUB>n</SUB>cos(<I>nx</I>) + <I>b</I><SUB>n</SUB>sin(<I>nx</I>) + 1/2<I>a</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB><I>cos</I>(<IMG
+ WIDTH="28" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$ {\frac{{Nx}}{{2}}}$">)
+<BR>
+on suppose donc <!-- MATH
+ $b_0=b_{\frac{N}{2}}=0$
+ -->
+<I>b</I><SUB>0</SUB> = <I>b</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB> = 0 et on choisit cette notation pour
+simplifier les calculs ult&#233;rieurs.
+<BR>
+On a aussi :
+<BR><!-- MATH
+ $p(x)=1/2 p_{\frac{-N}{2}}\exp(-iNx/2)+\sum_{n=\frac{-N}{2}+1}^{\frac{N}{2}-1}p_n\exp(inx)+1/2 p_{\frac{N}{2}}\exp(iNx/2)$
+ -->
+<I>p</I>(<I>x</I>) = 1/2<I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB>exp(- <I>iNx</I>/2) + <IMG
+ WIDTH="83" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ \sum_{{n=\frac{-N}{2}+1}}^{{\frac{N}{2}-1}}$"><I>p</I><SUB>n</SUB>exp(<I>inx</I>) + 1/2<I>p</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB>exp(<I>iNx</I>/2).
+<BR>
+avec pour <!-- MATH
+ $k=0..\frac{N}{2}$
+ -->
+<I>k</I> = 0..<IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$">
+<BR><!-- MATH
+ $p_k=1/2(a_k-ib_k)$
+ -->
+<I>p</I><SUB>k</SUB> = 1/2(<I>a</I><SUB>k</SUB> - <I>ib</I><SUB>k</SUB>)
+<BR><!-- MATH
+ $p_{-k}=1/2(a_k+ib_k)$
+ -->
+<I>p</I><SUB>-k</SUB> = 1/2(<I>a</I><SUB>k</SUB> + <I>ib</I><SUB>k</SUB>)
+<BR>
+comme <!-- MATH
+ $b_{\frac{N}{2}}=0$
+ -->
+<I>b</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB> = 0 on a <!-- MATH
+ $p_{\frac{-N}{2}}=p_{\frac{N}{2}}$
+ -->
+<I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB> = <I>p</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB>
+<BR>
+On veut d&#233;terminer les <I>p</I><SUB>k</SUB> pour avoir :
+<BR><!-- MATH
+ $p(x_k)=f_k=$
+ -->
+<I>p</I>(<I>x</I><SUB>k</SUB>) = <I>f</I><SUB>k</SUB> =
+<BR><!-- MATH
+ $1/2 p_{\frac{-N}{2}}\exp(-ik\pi)+\sum_{n=\frac{-N}{2}+1}^{\frac{N}{2}-1}p_n\exp(in2k\pi/N)+1/2 p_{\frac{N}{2}}\exp(ik\pi)$
+ -->
+1/2<I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB>exp(- <I>ik</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">) + <IMG
+ WIDTH="83" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ \sum_{{n=\frac{-N}{2}+1}}^{{\frac{N}{2}-1}}$"><I>p</I><SUB>n</SUB>exp(<I>in</I>2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) + 1/2<I>p</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB>exp(<I>ik</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">)
+<BR>
+puisque <!-- MATH
+ $\exp(-ik\pi)=\exp(ik\pi)=-1$
+ -->
+exp(- <I>ik</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">) = exp(<I>ik</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">) = - 1 et <!-- MATH
+ $p_{\frac{-N}{2}}=p_{\frac{N}{2}}$
+ -->
+<I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB> = <I>p</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$"></SUB> on a 
+<BR><!-- MATH
+ $p(x_k)=f_k=-p_{\frac{-N}{2}}+\sum_{n=\frac{-N}{2}+1}^{\frac{N}{2}-1}p_n\exp(in2k\pi/N)$
+ -->
+<I>p</I>(<I>x</I><SUB>k</SUB>) = <I>f</I><SUB>k</SUB> = - <I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB> + <IMG
+ WIDTH="83" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ \sum_{{n=\frac{-N}{2}+1}}^{{\frac{N}{2}-1}}$"><I>p</I><SUB>n</SUB>exp(<I>in</I>2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>)
+<BR>
+On transforme <!-- MATH
+ $\sum_{n=\frac{-N}{2}+1}^{-1}$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="$ \sum_{{n=\frac{-N}{2}+1}}^{{-1}}$"> en posant <I>j</I> = <I>n</I> + <I>N</I> on obtient :
+<BR><!-- MATH
+ $\sum_{n=\frac{-N}{2}}^{-1} p_n \exp(inx)=\sum_{j=\frac{N}{2}}^{N-1}p_{j-N}\exp(i(j-N)x)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.png"
+ ALT="$ \sum_{{n=\frac{-N}{2}}}^{{-1}}$"><I>p</I><SUB>n</SUB>exp(<I>inx</I>) = <IMG
+ WIDTH="54" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img293.png"
+ ALT="$ \sum_{{j=\frac{N}{2}}}^{{N-1}}$"><I>p</I><SUB>j-N</SUB>exp(<I>i</I>(<I>j</I> - <I>N</I>)<I>x</I>)
+<BR>
+puisque pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1), <!-- MATH
+ $\exp(i(j-N)x_k)=\exp(ijx_k)$
+ -->
+exp(<I>i</I>(<I>j</I> - <I>N</I>)<I>x</I><SUB>k</SUB>) = exp(<I>ijx</I><SUB>k</SUB>),
+<BR>
+on a :
+<BR><!-- MATH
+ $p(x_k)=\sum_{j=\frac{N}{2}}^{N-1}p_{j-N}\exp(ijx_k)+\sum_{n=0}^{\frac{N}{2}-1}p_n\exp(inx_k)$
+ -->
+<I>p</I>(<I>x</I><SUB>k</SUB>) = <IMG
+ WIDTH="54" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img293.png"
+ ALT="$ \sum_{{j=\frac{N}{2}}}^{{N-1}}$"><I>p</I><SUB>j-N</SUB>exp(<I>ijx</I><SUB>k</SUB>) + <IMG
+ WIDTH="55" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img285.png"
+ ALT="$ \sum_{{n=0}}^{{\frac{N}{2}-1}}$"><I>p</I><SUB>n</SUB>exp(<I>inx</I><SUB>k</SUB>).
+<BR>
+ou encore : 
+<BR><!-- MATH
+ $p(x_k)=\sum_{n=0}^{\frac{N}{2}-1}p_n\exp(inx_k)+\sum_{n=\frac{N}{2}}^{N-1}p_{n-N}\exp(inx_k)$
+ -->
+<I>p</I>(<I>x</I><SUB>k</SUB>) = <IMG
+ WIDTH="55" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img285.png"
+ ALT="$ \sum_{{n=0}}^{{\frac{N}{2}-1}}$"><I>p</I><SUB>n</SUB>exp(<I>inx</I><SUB>k</SUB>) + <IMG
+ WIDTH="57" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.png"
+ ALT="$ \sum_{{n=\frac{N}{2}}}^{{N-1}}$"><I>p</I><SUB>n-N</SUB>exp(<I>inx</I><SUB>k</SUB>).
+<BR>
+On pose :
+<BR>
+pour <!-- MATH
+ $n=0..(\frac{N}{2}-1)$
+ -->
+<I>n</I> = 0..(<IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> - 1),  <I>q</I><SUB>n</SUB> = <I>p</I><SUB>n</SUB> et 
+<BR>
+pour <!-- MATH
+ $n=\frac{N}{2}..(N-1)$
+ -->
+<I>n</I> = <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$">..(<I>N</I> - 1),  <!-- MATH
+ $q_n=p_{n-N}$
+ -->
+<I>q</I><SUB>n</SUB> = <I>p</I><SUB>n-N</SUB>.
+<BR>
+Donc pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1), <!-- MATH
+ $p(x_k)=\sum_{n=0}^{N-1}q_n\exp(inx_k)=f_k$
+ -->
+<I>p</I>(<I>x</I><SUB>k</SUB>) = <IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img295.png"
+ ALT="$ \sum_{{n=0}}^{{N-1}}$"><I>q</I><SUB>n</SUB>exp(<I>inx</I><SUB>k</SUB>) = <I>f</I><SUB>k</SUB>.
+<BR>
+Il suffit donc de r&#233;soudre ce syst&#232;me d'inconnues <I>q</I><SUB>n</SUB>.
+<BR>
+On a :
+<BR><!-- MATH
+ $f_k=f(2k\pi/N)=p(x_k)=N*F_N^{-1}(q)={\tt N*ifft(q)}$
+ -->
+<I>f</I><SUB>k</SUB> = <I>f</I> (2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) = <I>p</I>(<I>x</I><SUB>k</SUB>) = <I>N</I>*<I>F</I><SUB>N</SUB><SUP>-1</SUP>(<I>q</I>) = <IMG
+ WIDTH="90" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img296.png"
+ ALT="$ \tt N*ifft(q)$">
+<BR>
+soit :
+<BR><!-- MATH
+ $q=[p_0,..p_{\frac{N}{2}-1},p_{\frac{-N}{2}},..,p_{-1}]=\frac{1}{N}F_N([f_0,..f_{(N-1)}])=$
+ -->
+<I>q</I> = [<I>p</I><SUB>0</SUB>,..<I>p</I><SUB><IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$\scriptstyle {\frac{{N}}{{2}}}$">-1</SUB>, <I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB>,.., <I>p</I><SUB>-1</SUB>] = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><I>F</I><SUB>N</SUB>([<I>f</I><SUB>0</SUB>,..<I>f</I><SUB>(N-1)</SUB>]) =
+<BR><!-- MATH
+ ${\tt\frac{1}{N}fft([f_0,...f_{(N-1)}])}$
+ -->
+<IMG
+ WIDTH="149" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$ \tt\frac{1}{N}fft([f_0,...f_{(N-1)}])$">
+<BR><TT>Remarque </TT>
+<BR>
+Si la fonction <I>f</I> est r&#233;elle on a :
+<BR><!-- MATH
+ $p_{-k}=\overline p_k$
+ -->
+<I>p</I><SUB>-k</SUB> = <IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$ \overline{p}_{k}^{}$"> pour <!-- MATH
+ $k=1..(\frac{N}{2}-1)$
+ -->
+<I>k</I> = 1..(<IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> - 1) et <I>p</I><SUB>0</SUB> et <!-- MATH
+ $p_{\frac{-N}{2}}$
+ -->
+<I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB> sont r&#233;els.
+<BR>
+Donc si la fonction <I>f</I> est r&#233;elle on a :
+<BR><!-- MATH
+ $p(x)=p_0+2*re(\sum_{k=0}^{\frac{N}{2}-1}p_k\exp(ikx)+1/2p_{\frac{-N}{2}}*\exp(-i\frac{Nx}{2}))$
+ -->
+<I>p</I>(<I>x</I>) = <I>p</I><SUB>0</SUB> +2*<I>re</I>(<IMG
+ WIDTH="55" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img299.png"
+ ALT="$ \sum_{{k=0}}^{{\frac{N}{2}-1}}$"><I>p</I><SUB>k</SUB>exp(<I>ikx</I>) + 1/2<I>p</I><SUB><IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$\scriptstyle {\frac{{-N}}{{2}}}$"></SUB>*exp(- <I>i</I><IMG
+ WIDTH="28" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$ {\frac{{Nx}}{{2}}}$">))
+<BR>
+En r&#233;sum&#233; :
+<BR>
+pour <!-- MATH
+ $0 \leq n<\frac{N}{2}$
+ -->
+0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>n</I> &lt; <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$">, <I>p</I><SUB>n</SUB> est le <I>n</I>-i&#232;me &#233;l&#233;ment de 
+<!-- MATH
+ $\frac{1}{N}F_N([f_0,..f_{(N-1)}])$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><I>F</I><SUB>N</SUB>([<I>f</I><SUB>0</SUB>,..<I>f</I><SUB>(N-1)</SUB>]) et,
+<BR>
+pour <!-- MATH
+ $-\frac{N}{2} \leq n<0$
+ -->
+- <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>n</I> &lt; 0, <I>p</I><SUB>n</SUB> est le (<I>n</I> + <I>N</I>)-i&#232;me &#233;l&#233;ment de 
+<!-- MATH
+ $\frac{1}{N}F_N([f_0,..f_{(N-1)}])$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><I>F</I><SUB>N</SUB>([<I>f</I><SUB>0</SUB>,..<I>f</I><SUB>(N-1)</SUB>]).
+
+<P>
+</LI>
+<LI>S&#233;rie de Fourier
+<BR>
+Soit <I>f</I> une fonction 2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">-p&#233;riodique dont on connait les valeurs en
+<!-- MATH
+ $x_k=2k\pi/N$
+ -->
+<I>x</I><SUB>k</SUB> = 2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>, <!-- MATH
+ $f(x_k)=f(2k\pi/N)=y_k$
+ -->
+<I>f</I> (<I>x</I><SUB>k</SUB>) = <I>f</I> (2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) = <I>y</I><SUB>k</SUB> pour <!-- MATH
+ $k=0..(N-1)$
+ -->
+<I>k</I> = 0..(<I>N</I> - 1).
+<BR>
+On suppose que sa s&#233;rie de Fourier converge simplement vers <I>f</I>, et on veut 
+conna&#238;tre les coefficients <I>c</I><SUB>n</SUB> pour <!-- MATH
+ $-\frac{N}{2} \leq n<\frac{N}{2}$
+ -->
+- <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>n</I> &lt; <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$">.
+<BR>
+Il fait donc calculer de fa&#231;on approch&#233;e :
+<BR><!-- MATH
+ $c_n=\frac{1}{2\pi} \int_0^{2\pi}f(t)\exp(-int)dt$
+ -->
+<I>c</I><SUB>n</SUB> = <IMG
+ WIDTH="23" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.png"
+ ALT="$ {\frac{{1}}{{2\pi}}}$"><IMG
+ WIDTH="32" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img301.png"
+ ALT="$ \int_{0}^{{2\pi}}$"><I>f</I> (<I>t</I>)exp(- <I>int</I>)<I>dt</I>
+<BR><B>Remarque</B>
+<BR>
+Lorsque la fonction p&#233;riodique <I>f</I> est &#233;gale &#224; sa s&#233;rie de Fourier,
+on a :
+<BR><!-- MATH
+ $f(x)=a_0/2+\sum_{k=1}^\infty a_k\cos(kx)+b_k\sin(kx)$
+ -->
+<I>f</I> (<I>x</I>) = <I>a</I><SUB>0</SUB>/2 + <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$ \sum_{{k=1}}^{\infty}$"><I>a</I><SUB>k</SUB>cos(<I>kx</I>) + <I>b</I><SUB>k</SUB>sin(<I>kx</I>) avec
+ <!-- MATH
+ $\displaystyle c_k=\frac{a_k-ib_k}{2}$
+ -->
+<I>c</I><SUB>k</SUB> = <IMG
+ WIDTH="69" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.png"
+ ALT="$\displaystyle {\frac{{a_k-ib_k}}{{2}}}$">.
+
+<P>
+On calcule l'int&#233;grale donnant <I>c</I><SUB>n</SUB> de mani&#232;re approch&#233;e par la m&#233;thode des 
+trap&#232;zes. Ici Romberg 
+ne sert a rien, car le d&#233;veloppement d'Euler Mac Laurin a ses coefficients 
+d&#233;j&#224; nuls puisque la fonction que l'on int&#232;gre est p&#233;riodique et 
+donc toutes ses d&#233;riv&#233;es sont &#233;gales en 0 et en 2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">.
+<BR>
+Si <!-- MATH
+ $\tilde{c_n}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> est la valeur approch&#233;e de <I>c</I><SUB>n</SUB> obtenue par la 
+m&#233;thode des trap&#232;zes, on a pour
+<!-- MATH
+ $-\frac{N}{2} \leq n<\frac{N}{2}$
+ -->
+- <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>n</I> &lt; <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$">:
+<BR><!-- MATH
+ $\tilde{c_n}=\frac{1}{2\pi}\frac{2\pi}{N}\sum_{k=0}^{N-1}y_k\exp(-2ink\pi/N)$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> = <IMG
+ WIDTH="23" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.png"
+ ALT="$ {\frac{{1}}{{2\pi}}}$"><IMG
+ WIDTH="23" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.png"
+ ALT="$ {\frac{{2\pi}}{{N}}}$"><IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><I>y</I><SUB>k</SUB>exp(- 2<I>ink</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>)
+<BR>
+puisque  <!-- MATH
+ $x_k=2k\pi/N$
+ -->
+<I>x</I><SUB>k</SUB> = 2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I> et <!-- MATH
+ $f(x_k)=y_k$
+ -->
+<I>f</I> (<I>x</I><SUB>k</SUB>) = <I>y</I><SUB>k</SUB> on a
+<BR><!-- MATH
+ $f(x_k)\exp(-inx_k)=y_k\exp(-2ink\pi/N)$
+ -->
+<I>f</I> (<I>x</I><SUB>k</SUB>)exp(- <I>inx</I><SUB>k</SUB>) = <I>y</I><SUB>k</SUB>exp(- 2<I>ink</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) et 
+<BR><!-- MATH
+ $f(0)\exp(0)=f(2\pi)\exp(-2inN\pi/N)=y_0=y_N$
+ -->
+<I>f</I> (0)exp(0) = <I>f</I> (2<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">)exp(- 2<I>inN</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) = <I>y</I><SUB>0</SUB> = <I>y</I><SUB>N</SUB>
+<BR>
+On a donc :
+<BR><!-- MATH
+ $[\tilde{c}_0,..\tilde{c}_{\frac{N}{2}-1},\tilde{c}_{\frac{-N}{2}},..c_{-1}]=\frac{1}{N}F_N([y_0,y_1...y_{(N-1)}])$
+ -->
+[<IMG
+ WIDTH="20" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img306.png"
+ ALT="$ \tilde{{c}}_{0}^{}$">,..<IMG
+ WIDTH="44" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img307.png"
+ ALT="$ \tilde{{c}}_{{\frac{N}{2}-1}}^{}$">,<IMG
+ WIDTH="36" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img308.png"
+ ALT="$ \tilde{{c}}_{{\frac{-N}{2}}}^{}$">,..<I>c</I><SUB>-1</SUB>] = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><I>F</I><SUB>N</SUB>([<I>y</I><SUB>0</SUB>, <I>y</I><SUB>1</SUB>...<I>y</I><SUB>(N-1)</SUB>])
+car 
+<BR>
+si <I>n</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0, on a <!-- MATH
+ $\tilde{c}_n=y_n$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \tilde{{c}}_{n}^{}$"> = <I>y</I><SUB>n</SUB> et 
+<BR>
+si <I>n</I> &lt; 0, on a <!-- MATH
+ $\tilde{c}_n=y_{n+N}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \tilde{{c}}_{n}^{}$"> = <I>y</I><SUB>n+N</SUB>
+si <!-- MATH
+ $\omega_N=\exp(\frac{2i\pi}{N})$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$ \omega_{N}^{}$"> = exp(<IMG
+ WIDTH="28" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img275.png"
+ ALT="$ {\frac{{2i\pi}}{{N}}}$">), <!-- MATH
+ $\omega_N^n=\omega_N^{n+N}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img310.png"
+ ALT="$ \omega_{N}^{n}$"> = <IMG
+ WIDTH="47" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img311.png"
+ ALT="$ \omega_{N}^{{n+N}}$"> puisque 
+<!-- MATH
+ $\omega_N^N=1$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.png"
+ ALT="$ \omega_{N}^{N}$"> = 1
+
+<P>
+<B>Propri&#233;t&#233;s</B>
+<BR>
+On retrouve les coefficients du polyn&#244;me interpolateur de <I>f</I> :
+<BR><!-- MATH
+ $p_n=\tilde{c}_n$
+ -->
+<I>p</I><SUB>n</SUB> = <IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \tilde{{c}}_{n}^{}$"> pour <!-- MATH
+ $-\frac{N}{2} \leq n<\frac{N}{2}$
+ -->
+- <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>n</I> &lt; <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$">.
+<BR>
+Ce qui veut dire que le polyn&#244;me trigonom&#233;trique 
+<!-- MATH
+ $\sum_{n=-\frac{N}{2}}^{\frac{N}{2}-1}\tilde{c}_n\exp(inx)$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ \sum_{{n=-\frac{N}{2}}}^{{\frac{N}{2}-1}}$"><IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \tilde{{c}}_{n}^{}$">exp(<I>inx</I>)
+interpole <I>f</I> (<I>x</I>) aux points <I>x</I> = 2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>.
+<BR>
+Donc si <I>f</I> est un polyn&#244;me trigonom&#233;trique <I>P</I> de degr&#233; <!-- MATH
+ $m\leq \frac{N}{2}$
+ -->
+<I>m</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <IMG
+ WIDTH="21" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\frac{{N}}{{2}}}$"> :
+<BR><!-- MATH
+ $f(t)=P(t)=\sum_{k=-m}^{m-1}c_k\exp(2ik\pi t)$
+ -->
+<I>f</I> (<I>t</I>) = <I>P</I>(<I>t</I>) = <IMG
+ WIDTH="64" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img314.png"
+ ALT="$ \sum_{{k=-m}}^{{m-1}}$"><I>c</I><SUB>k</SUB>exp(2<I>ik</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"><I>t</I>), 
+le polyn&#244;me trigonom&#233;trique qui interpole <I>f</I> = <I>P</I> est <I>P</I> lui-m&#234;me, les 
+coefficients approch&#233;s  sont  exacts (<!-- MATH
+ $\tilde{c}_n=c_n$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \tilde{{c}}_{n}^{}$"> = <I>c</I><SUB>n</SUB>).
+<BR>
+On peut, plus g&#233;n&#233;ralement calculer l'erreur <!-- MATH
+ $\tilde{c}_n-c_n$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ \tilde{{c}}_{n}^{}$"> - <I>c</I><SUB>n</SUB>.
+<BR>
+On suppose que <I>f</I> est &#233;gale &#224; sa s&#233;rie de Fourier, c'est &#224; dire que 
+l'on a :
+<BR><!-- MATH
+ $f(t)=\int_{m=-\infty}^{+\infty}c_m\exp(2i\pi mt)$
+ -->
+<I>f</I> (<I>t</I>) = <IMG
+ WIDTH="60" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img315.png"
+ ALT="$ \int_{{m=-\infty}}^{{+\infty}}$"><I>c</I><SUB>m</SUB>exp(2<I>i</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"><I>mt</I>) avec 
+<!-- MATH
+ $\sum_{m=-\infty}^{+\infty}|c_m|<\infty$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.png"
+ ALT="$ \sum_{{m=-\infty}}^{{+\infty}}$">| <I>c</I><SUB>m</SUB>| &lt; <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$">
+<BR>
+On a donc :
+<BR><!-- MATH
+ $f(x_k)=f(2k\pi/N)=y_k=\sum_{m=-\infty}^{+\infty}c_m\omega_N^{km}$
+ -->
+<I>f</I> (<I>x</I><SUB>k</SUB>) = <I>f</I> (2<I>k</I><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">/<I>N</I>) = <I>y</I><SUB>k</SUB> = <IMG
+ WIDTH="70" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.png"
+ ALT="$ \sum_{{m=-\infty}}^{{+\infty}}$"><I>c</I><SUB>m</SUB><IMG
+ WIDTH="36" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="$ \omega_{N}^{{km}}$"> et
+<BR><!-- MATH
+ $\tilde{c_n}=\frac{1}{N}\sum_{k=0}^{N-1}y_k\omega_N^{-kn}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><I>y</I><SUB>k</SUB><IMG
+ WIDTH="43" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \omega_{N}^{{-kn}}$">
+<BR>
+En rempla&#231;ant <I>y</I><SUB>k</SUB> on obtient :
+<BR><!-- MATH
+ $\tilde{c_n}=\frac{1}{N}\sum_{k=0}^{N-1}\sum_{m=-\infty}^{+\infty}c_m\omega_N^{km}\omega_N^{-kn}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><IMG
+ WIDTH="70" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.png"
+ ALT="$ \sum_{{m=-\infty}}^{{+\infty}}$"><I>c</I><SUB>m</SUB><IMG
+ WIDTH="36" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="$ \omega_{N}^{{km}}$"><IMG
+ WIDTH="43" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \omega_{N}^{{-kn}}$">
+<BR>
+Or :
+<BR><!-- MATH
+ $\omega_N^{km}\omega_N^{-kn}=\omega_N^{k(m-n)}$
+ -->
+<IMG
+ WIDTH="36" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="$ \omega_{N}^{{km}}$"><IMG
+ WIDTH="43" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \omega_{N}^{{-kn}}$"> = <IMG
+ WIDTH="65" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.png"
+ ALT="$ \omega_{N}^{{k(m-n)}}$"> et
+<BR>
+puisque <!-- MATH
+ $\omega_N^{m-n}$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \omega_{N}^{{m-n}}$"> est une racine <I>N</I>-i&#232;me de l'unit&#233;, on a :
+<BR><!-- MATH
+ $\omega_N^{(m-n)N}=1$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img321.png"
+ ALT="$ \omega_{N}^{{(m-n)N}}$"> = 1 et <!-- MATH
+ $\sum_{k=0}^{N-1}\omega_N^{(m-n)k}=0$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><IMG
+ WIDTH="65" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img322.png"
+ ALT="$ \omega_{N}^{{(m-n)k}}$"> = 0.
+<BR>
+Donc :
+<BR>
+si <I>m</I> - <I>n</I> est un multiple de <I>N</I> (<!-- MATH
+ $m=n+l\cdot N$
+ -->
+<I>m</I> = <I>n</I> + <I>l</I><SUP> . </SUP><I>N</I>) on a <!-- MATH
+ $\sum_{k=0}^{N-1}\omega_N^{k(m-n)}=N$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><IMG
+ WIDTH="65" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.png"
+ ALT="$ \omega_{N}^{{k(m-n)}}$"> = <I>N</I> et
+<BR>
+sinon <!-- MATH
+ $\sum_{k=0}^{N-1}\omega_N^{k(m-n)}=0$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><IMG
+ WIDTH="65" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.png"
+ ALT="$ \omega_{N}^{{k(m-n)}}$"> = 0
+<BR>
+En intervertisant les deux sommes on a :
+<BR><!-- MATH
+ $\tilde{c_n}=\frac{1}{N}\sum_{m=-\infty}^{+\infty}c_m\sum_{k=0}^{N-1}\omega_N^{k(m-n)}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> = <IMG
+ WIDTH="21" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ {\frac{{1}}{{N}}}$"><IMG
+ WIDTH="70" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.png"
+ ALT="$ \sum_{{m=-\infty}}^{{+\infty}}$"><I>c</I><SUB>m</SUB><IMG
+ WIDTH="53" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ \sum_{{k=0}}^{{N-1}}$"><IMG
+ WIDTH="65" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.png"
+ ALT="$ \omega_{N}^{{k(m-n)}}$">
+<BR><!-- MATH
+ $\tilde{c_n}=\sum_{l=-\infty}^{+\infty}c_{(n+l\cdot N)}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> = <IMG
+ WIDTH="62" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img323.png"
+ ALT="$ \sum_{{l=-\infty}}^{{+\infty}}$"><I>c</I><SUB>(n+l<SUP> . </SUP>N)</SUB>
+<BR>
+c'est &#224; dire :
+<BR><!-- MATH
+ $\tilde{c_n}=...c_{n-2\cdot N}+c_{n-N}+c_{n}c_{n+N}c_{n+2\cdot N}+.....$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \tilde{{c_n}}$"> = ...<I>c</I><SUB>n-2<SUP> . </SUP>N</SUB> + <I>c</I><SUB>n-N</SUB> + <I>c</I><SUB>n</SUB><I>c</I><SUB>n+N</SUB><I>c</I><SUB>n+2<SUP> . </SUP>N</SUB> + .....
+
+<P>
+Exemple :
+<BR><TT>f(t):=cos(t)+cos(2*t)</TT>
+<BR><TT>x:=f(2*k*pi/8)$(k=0..7)</TT>
+<BR>
+On obtient :
+<BR><!-- MATH
+ ${\tt x=\{2,(\sqrt 2)/2,-1,-((\sqrt2)/2),0,-((\sqrt2)/2),-1,(\sqrt2)/2\}}$
+ -->
+<IMG
+ WIDTH="447" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$ \tt x=\{2,(\sqrt 2)/2,-1,-((\sqrt2)/2),0,-((\sqrt2)/2),-1,(\sqrt2)/2\}$">
+<BR><TT>fft(x)=[0.0,4.0,4.0,0.0,0.0,0.0,4.0,4.0]</TT>
+<BR>
+donc en divisant par <I>N</I> = 8 :
+<BR><!-- MATH
+ $c_0=0,c_1=4.0/8,c_2=4.0/2,c_3=0.0,$
+ -->
+<I>c</I><SUB>0</SUB> = 0, <I>c</I><SUB>1</SUB> = 4.0/8, <I>c</I><SUB>2</SUB> = 4.0/2, <I>c</I><SUB>3</SUB> = 0.0,
+<BR><!-- MATH
+ $c_{-4}=0,c_{-3}=0,c_{-2}=4.0/8,=c_{-1}=4.0/8$
+ -->
+<I>c</I><SUB>-4</SUB> = 0, <I>c</I><SUB>-3</SUB> = 0, <I>c</I><SUB>-2</SUB> = 4.0/8, = <I>c</I><SUB>-1</SUB> = 4.0/8
+<BR>
+donc retrouve bien :
+<BR><I>b</I><SUB>k</SUB> = 0 et <!-- MATH
+ $a_k=c_{-k}+c_k$
+ -->
+<I>a</I><SUB>k</SUB> = <I>c</I><SUB>-k</SUB> + <I>c</I><SUB>k</SUB> vaut 1 si <I>k</I> = 1, 2 et 0 sinon. 
+
+<P>
+</LI>
+<LI>Produit de convolution
+<BR>
+Soient deux polyn&#244;mes <!-- MATH
+ $P(x)=\sum_{j=0}^{n-1}a_jx^j$
+ -->
+<I>P</I>(<I>x</I>) = <IMG
+ WIDTH="49" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img325.png"
+ ALT="$ \sum_{{j=0}}^{{n-1}}$"><I>a</I><SUB>j</SUB><I>x</I><SUP>j</SUP> 
+et <!-- MATH
+ $Q(x)=\sum_{j=0}^{m-1}b_jx^j$
+ -->
+<I>Q</I>(<I>x</I>) = <IMG
+ WIDTH="53" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.png"
+ ALT="$ \sum_{{j=0}}^{{m-1}}$"><I>b</I><SUB>j</SUB><I>x</I><SUP>j</SUP> donn&#233; par la liste de 
+leurs coefficients <!-- MATH
+ $a=[a_0,a_1,..a_{n-1}]$
+ -->
+<I>a</I> = [<I>a</I><SUB>0</SUB>, <I>a</I><SUB>1</SUB>,..<I>a</I><SUB>n-1</SUB>] et <!-- MATH
+ $b=[b_0,b_1,..b_{m-1}]$
+ -->
+<I>b</I> = [<I>b</I><SUB>0</SUB>, <I>b</I><SUB>1</SUB>,..<I>b</I><SUB>m-1</SUB>].
+<BR>
+On veut calculer le produit de ces deux polyn&#244;mes c'est &#224; dire le produit 
+de convolution de leurs coefficients si on se place dans l'ensemble des suites 
+p&#233;riodiques de p&#233;riode sup&#233;rieure ou &#233;gale &#224; (<I>n</I> + <I>m</I>) 
+en compl&#233;tant <I>a</I> (resp <I>b</I>) par <I>m</I> + ? (resp <I>n</I> + ?) z&#233;ros (en pratique
+on choisit ? pour que <I>n</I> + <I>m</I> + ? soit une puissance de 2. 
+<BR>
+On alors pour <!-- MATH
+ $a=[a_0,a_1,..a_{n-1},0..0]$
+ -->
+<I>a</I> = [<I>a</I><SUB>0</SUB>, <I>a</I><SUB>1</SUB>,..<I>a</I><SUB>n-1</SUB>, 0..0] et <!-- MATH
+ $b=[b_0,b_1,..b_{m-1},0..0]$
+ -->
+<I>b</I> = [<I>b</I><SUB>0</SUB>, <I>b</I><SUB>1</SUB>,..<I>b</I><SUB>m-1</SUB>, 0..0]:
+<BR><!-- MATH
+ $P(x)Q(x)=\sum_{j=0}^{n+m-1}(a*b)_jx^j$
+ -->
+<I>P</I>(<I>x</I>)<I>Q</I>(<I>x</I>) = <IMG
+ WIDTH="71" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img327.png"
+ ALT="$ \sum_{{j=0}}^{{n+m-1}}$">(<I>a</I>*<I>b</I>)<SUB>j</SUB><I>x</I><SUP>j</SUP>
+<BR>
+On calcule donc :
+<BR><I>F</I><SUB>n</SUB>(<I>a</I>), <I>F</I><SUB>n</SUB>(<I>b</I>), <!-- MATH
+ $F_n^{-1}(F_n(a)\cdot F_n(b))$
+ -->
+<I>F</I><SUB>n</SUB><SUP>-1</SUP>(<I>F</I><SUB>n</SUB>(<I>a</I>)<SUP> . </SUP><I>F</I><SUB>n</SUB>(<I>b</I>)) et puisque 
+<BR><!-- MATH
+ $nF_n(x \cdot y)=F_n(x) * F_n(y)$
+ -->
+<I>nF</I><SUB>n</SUB>(<I>x</I><SUP> . </SUP><I>y</I>) = <I>F</I><SUB>n</SUB>(<I>x</I>)*<I>F</I><SUB>n</SUB>(<I>y</I>)
+<BR><!-- MATH
+ $F_n(x * y)=F_n(x) \cdot F_n(y)$
+ -->
+<I>F</I><SUB>n</SUB>(<I>x</I>*<I>y</I>) = <I>F</I><SUB>n</SUB>(<I>x</I>)<SUP> . </SUP><I>F</I><SUB>n</SUB>(<I>y</I>)
+<BR>
+on a :
+<BR><!-- MATH
+ $a*b=F_n^{-1}(F_n(a)\cdot F_n(b))$
+ -->
+<I>a</I>*<I>b</I> = <I>F</I><SUB>n</SUB><SUP>-1</SUP>(<I>F</I><SUB>n</SUB>(<I>a</I>)<SUP> . </SUP><I>F</I><SUB>n</SUB>(<I>b</I>))
+</LI>
+</OL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9030"
+  HREF="node416.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9024"
+  HREF="node413.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9020"
+  HREF="node414.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9026"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9028"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9031"
+  HREF="node416.html">La transform&#233;e de Fourier</A>
+<B> monter:</B> <A NAME="tex2html9025"
+  HREF="node413.html">Transform&#233;e de Fourier discr&#232;te</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9021"
+  HREF="node414.html">Les propri&#233;tes</A>
+ &nbsp; <B>  <A NAME="tex2html9027"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9029"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

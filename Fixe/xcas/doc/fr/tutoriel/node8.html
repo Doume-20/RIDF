@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les variables</TITLE>
+<META NAME="description" CONTENT="Les variables">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html174"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html168"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html162"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html170"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html172"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html175"
+  HREF="node9.html">Les expressions</A>
+<B> monter:</B> <A NAME="tex2html169"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html163"
+  HREF="node7.html">Les caract&#232;res et les</A>
+ &nbsp; <B>  <A NAME="tex2html171"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html173"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00023000000000000000"></A>
+<A NAME="157"></A>
+<A NAME="158"></A>
+<BR>
+Les variables
+</H2>
+On dit qu'une variable est formelle si elle ne contient aucune valeur&nbsp;: 
+toutes les variables sont formelles tant qu'elles n'ont pas &#233;t&#233;
+affect&#233;es (&#224; une valeur).
+<A NAME="159"></A>
+L'affectation est not&#233;e <code>:=</code>. Au d&#233;but 
+de la session  <code>a</code> 
+est formelle, elle devient affect&#233;e apr&#232;s l'instruction 
+<code>a:=3</code>, <code>a</code> sera alors remplac&#233; par 3 dans tous
+les calculs qui suivent, et <code>a+1</code> renverra 4. 
+<TT>Xcas</TT> conserve tout le contenu de votre session. Si vous voulez que la variable 
+<code>a</code> apr&#232;s l'avoir affect&#233;e, soit &#224; nouveau une variable formelle, il
+faut la "vider" par <code>purge(a)</code>. Dans les exemples qui suivent, les 
+variables utilis&#233;es sont suppos&#233;es avoir &#233;t&#233; purg&#233;es avant chaque
+suite de commandes.
+<A NAME="1578"></A>  
+
+Il ne faut pas confondre
+<DL COMPACT>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>le signe <code>:=</code> qui d&#233;signe l'affectation
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>le signe <code>==</code> qui d&#233;signe une &#233;galit&#233;
+  bool&#233;enne&nbsp;: c'est une op&#233;ration binaire qui retourne 1 ou 0 (1 pour true
+qui veut dire Vrai et 0 pour false qui veut dire Faux) 
+</DD>
+<DT><IMG
+ WIDTH="12" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$ \bullet$"></DT>
+<DD>le signe <code>=</code> utilis&#233; pour d&#233;finir une &#233;quation.
+</DD>
+</DL>
+<A NAME="164"></A>
+<A NAME="165"></A>
+<PRE>
+a==b
+a:=b
+a==b
+solve(a=b,a)
+solve(2*a=b+1,a)
+</PRE>
+<A NAME="1579"></A>
+<A NAME="169"></A>
+On peut faire certains types d'hypoth&#232;ses sur une variable avec
+la commande <code>assume</code>, par exemple <code>assume(a&gt;2)</code>. Une
+hypoth&#232;se est une forme sp&#233;ciale d'affectation, elle efface
+une &#233;ventuelle valeur pr&#233;c&#233;demment affect&#233;e &#224; la variable.
+Lors d'un calcul, la variable n'est pas remplac&#233;e mais
+l'hypoth&#232;se sera utilis&#233;e dans la mesure du possible, par exemple
+<code>abs(a)</code> renverra <code>a</code> si on fait l'hypoth&#232;se <code>a&gt;2</code>.
+<PRE>
+sqrt(a^2)
+assume(a&lt;0)
+sqrt(a^2)
+assume(n,integer)
+sin(n*pi)
+</PRE>
+<A NAME="1580"></A>
+La fonction <code>subst</code> permet de remplacer une variable dans une
+expression par un nombre ou une autre expression, 
+sans affecter cette variable.
+<PRE>
+subst(a^2+1,a=1)
+subst(a^2+1,a=sqrt(b-1))
+a^2+1
+</PRE> 
+
+<P>
+<B>Remarque</B>&nbsp;: pour stocker une valeur dans une variable par r&#233;f&#233;rence,
+par exemple pour modifier une valeur dans une liste (un vecteur, une
+matrice), sans recr&#233;er une nouvelle liste mais en modifiant
+en place la liste existante, on utilise l'instruction <code>=&lt;</code>
+au lieu de <code>:=</code>.
+Cette instruction est plus rapide que l'instruction <code>:=</code>, car
+elle &#233;conomise le temps de copie de la liste.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html174"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html168"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html162"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html170"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html172"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html175"
+  HREF="node9.html">Les expressions</A>
+<B> monter:</B> <A NAME="tex2html169"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html163"
+  HREF="node7.html">Les caract&#232;res et les</A>
+ &nbsp; <B>  <A NAME="tex2html171"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html173"
+  HREF="node47.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

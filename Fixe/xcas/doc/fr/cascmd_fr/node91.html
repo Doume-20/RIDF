@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'affectation : := =&gt; sto Store</TITLE>
+<META NAME="description" CONTENT="L'affectation : := =&gt; sto Store">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node92.html">
+<LINK REL="previous" HREF="node90.html">
+<LINK REL="up" HREF="node89.html">
+<LINK REL="next" HREF="node92.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3664"
+  HREF="node92.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3658"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3652"
+  HREF="node90.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3660"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3662"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3665"
+  HREF="node92.html">L'affectation par référence dans</A>
+<B> monter:</B> <A NAME="tex2html3659"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3653"
+  HREF="node90.html">Le nom des variables</A>
+ &nbsp; <B>  <A NAME="tex2html3661"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3663"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00552000000000000000"></A><A NAME="1605"></A><A NAME="1606"></A><A NAME="1607"></A><A NAME="1608"></A><A NAME="sec:variable"></A>
+<BR>
+L'affectation : <TT>:= =&gt; sto Store</TT>
+</H2>
+On peut utiliser les fonctions infix&#233;es <TT>:=</TT> comme en Pascal ou <TT>=&gt;</TT>
+ comme le "sto" des calculatrices pour r&#233;aliser une affectation ou encore, 
+<BR>
+les fonctions pr&#233;fix&#233;es, <TT>sto</TT> ou <TT>Store</TT>, d'arguments la valeur 
+&#224; affecter et le nom d'une variable.
+<BR><TT>:=</TT> (ou <TT>=&gt;</TT> ou <TT>sto</TT> ou <TT>Store</TT>) permet d'affecter
+ une variable.
+<BR>
+On tape (attention &#224; l'ordre des arguments !) :
+<DIV ALIGN="CENTER">
+<TT>a:=4</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>4=&gt;a</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>sto(4,a)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>Store(4,a)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4</TT>
+</DIV>
+<TT>:=</TT> ou <TT>=&gt;</TT> permettent aussi de d&#233;finir des fonctions.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>f(x):=sin(x)/x</TT>
+</DIV>
+ou 
+<DIV ALIGN="CENTER">
+<TT>sin(x)/x=&gt;f(x)</TT>
+</DIV>
+ou encore 
+<DIV ALIGN="CENTER">
+<TT>f:=x-&gt;sin(x)/x</TT>
+</DIV>
+ou 
+<DIV ALIGN="CENTER">
+<TT>x-&gt;sin(x)/x=&gt;f</TT>
+</DIV>
+On peut aussi d&#233;finir une fonction par morceaux :
+
+<UL>
+<LI>une fonction d&#233;finie par 2 valeurs,
+<BR>
+par exemple, pour d&#233;finir 
+la fonction <I>g</I> qui vaut 1 si <I>x</I> &gt; 0 et 0 si <I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> 0 on tape :
+<A NAME="1648"></A><A NAME="1649"></A><A NAME="1650"></A><A NAME="1651"></A><A NAME="1652"></A>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>g(x):=ifte(x&gt;0,1,0)</TT>
+</DIV>
+ou encore 
+<DIV ALIGN="CENTER">
+<TT>g(x):=when(x&gt;0,1,0)</TT>
+</DIV>
+ou encore 
+<DIV ALIGN="CENTER">
+<TT>g(x):=x&gt;0?1:0</TT>
+</DIV>
+En effet <TT>ifte</TT> (ou <TT>when</TT> ou <TT>quand</TT> ) a trois arguments : une 
+condition et deux 
+expressions et <TT>?</TT> est infix&#233; avec la condition &#224; gauche et &#224; droite 
+on met les deux expressions s&#233;par&#233;es par <TT>:</TT>.
+<BR>
+Si la condition est vraie, <TT>ifte</TT> (ou <TT>when</TT> ou <TT>IFTE</TT> ou <TT>?</TT>) 
+renvoie la premi&#232;re expression et sinon <TT>ifte</TT> (ou <TT>when</TT> ou 
+<TT>IFTE</TT> ou<TT>?</TT>) renvoie la deuxi&#232;me expression.
+
+<P>
+<B>Remarque</B> La condition peut &#234;tre remplac&#233;e par un r&#232;el <I>r</I> :
+si <I>r</I> = = 0 la condition est fausse et sinon elle est vraie.
+<BR>
+On tape pour d&#233;finir la fonction qui vaut partout 0 sauf en 0 o&#249; elle 
+vaut 1:
+<BR>
+<DIV ALIGN="CENTER">
+<TT>h(x):=when(x,0,1)</TT>
+</DIV>
+
+<P>
+<B>Remarque :Diff&#233;rence entre <TT>ifte</TT> et <TT>when</TT></B>
+<BR>
+On tape :
+<TT>f(x):=ifte(x&gt;0,1,0);</TT>
+<BR><TT>g(x):=when(x&gt;0,1,0)</TT> ou <TT>g(x):=quand(x&gt;0,1,0)</TT>
+<BR>
+puis on tape <TT>f(x)</TT> 
+<BR>
+on obtient :
+<BR>
+Ifte: Unable to check test Error: Bad Argument Value
+<BR>
+car <TT>x</TT> n'a pas de valeur : avec <TT>ifte</TT>  ou <TT>IFTE</TT> il faut que la 
+variable <TT>x</TT> soit affect&#233;e pour pouvoir tester la condition (quand on 
+d&#233;finit une fonction ce qui suit le := n'est pas &#233;valu&#233; donc la 
+d&#233;finition de <TT>f(x)</TT> ne pose pas de probl&#232;me.
+<BR>
+alors que
+<BR>
+si on tape <TT>g(x)</TT>
+<BR>
+on obtient :
+<BR><TT>((x&gt;0)? 1 : -1)</TT>
+<BR>
+car <TT>?</TT> est la version infix&#233;e de <TT>when</TT>
+</LI>
+<LI>une fonction d&#233;finie par <I>n</I> valeurs,<A NAME="1694"></A>
+<BR>
+par exemple, pour d&#233;finir 
+la fonction <I>g</I> qui vaut -1 si <I>x</I> &lt; - 1, 0 si <!-- MATH
+ $-1\leq x\leq 1$
+ -->
+-1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> 1 et 1 si <I>x</I> &gt; 1,
+on tape :
+<DIV ALIGN="CENTER">
+<TT>g(x):=piecewise(x&lt;-1,-1,x&lt;=1,0,1)</TT> 
+</DIV>
+<TT>piecewise</TT> utilise des paires condition/valeur ou valeur est renvoy&#233;e si 
+sa condition est vraie ce qui implique que les conditions pr&#233;c&#233;dentes sont 
+fausses. Si le nombre d'arguments est impair, 
+la derni&#232;re valeur est la valeur par d&#233;faut (comme dans un <TT>switch</TT>).
+<BR>
+Pour d&#233;finir 
+la fonction <I>f</I> qui vaut -2 si <I>x</I> &lt; - 2, 3<I>x</I> + 4 si <!-- MATH
+ $-2\leq x <-1$
+ -->
+-2 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>x</I> &lt; - 1,
+ 1 si <!-- MATH
+ $-1 \leq x<0$
+ -->
+-1 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>x</I> &lt; 0 et <I>x</I> + 1 si <I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0,
+on tape :
+<DIV ALIGN="CENTER">
+<TT>f(x):=piecewise(x&lt;-2,-2,x&lt;-1,3x+4,x&lt;0,1,x+1)</TT>
+</DIV>
+On peut alors faire le graphe de <I>f</I> en tapant :
+<DIV ALIGN="CENTER">
+<TT>plotfunc(f(x))</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3664"
+  HREF="node92.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3658"
+  HREF="node89.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3652"
+  HREF="node90.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3660"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html3662"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html3665"
+  HREF="node92.html">L'affectation par référence dans</A>
+<B> monter:</B> <A NAME="tex2html3659"
+  HREF="node89.html">Les variables</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html3653"
+  HREF="node90.html">Le nom des variables</A>
+ &nbsp; <B>  <A NAME="tex2html3661"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html3663"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

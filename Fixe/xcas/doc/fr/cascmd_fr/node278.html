@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La fonction : Gamma</TITLE>
+<META NAME="description" CONTENT="La fonction : Gamma">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node279.html">
+<LINK REL="previous" HREF="node277.html">
+<LINK REL="up" HREF="node266.html">
+<LINK REL="next" HREF="node279.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html7012"
+  HREF="node279.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html7006"
+  HREF="node266.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html7000"
+  HREF="node277.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html7008"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html7010"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html7013"
+  HREF="node279.html">La fonction : Beta</A>
+<B> monter:</B> <A NAME="tex2html7007"
+  HREF="node266.html">Les r&#233;els</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html7001"
+  HREF="node277.html">La fonction erfc :</A>
+ &nbsp; <B>  <A NAME="tex2html7009"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html7011"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0091012000000000000000"></A><A NAME="6547"></A>
+<BR>
+La fonction <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$"> : <TT>Gamma</TT>
+</H2>
+<TT>Gamma</TT> a comme argument un nombre <I>a</I>.
+<BR><TT>Gamma</TT> calcule les valeurs de la fonction <IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ \Gamma$"> au point <I>a</I>.
+<BR>
+On a par d&#233;finition :
+<BR><P><!-- MATH
+ \begin{displaymath}
+\Gamma(x)=\int_0^{+\infty}e^{-t}t^{x-1}dt, \mbox{ si } x>0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(<I>x</I>) = <IMG
+ WIDTH="47" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.png"
+ ALT="$\displaystyle \int_{0}^{{+\infty}}$"><I>e</I><SUP>-t</SUP><I>t</I><SUP>x-1</SUP><I>dt</I>, si <I>x</I> &gt; 0
+</DIV><P></P>
+et on utilise la formule : 
+<P><!-- MATH
+ \begin{displaymath}
+\Gamma(x+1)=x*\Gamma(x) \mbox{ si } x \mbox{ n'est pas un entier negatif}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(<I>x</I> + 1) = <I>x</I>*<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(<I>x</I>) si <I>x</I> n'est pas un entier negatif
+</DIV><P></P>
+Donc : 
+<P><!-- MATH
+ \begin{displaymath}
+\Gamma(1)=1
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(1) = 1
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\Gamma(x+1)=x*\Gamma(x)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(<I>x</I> + 1) = <I>x</I>*<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(<I>x</I>)
+</DIV><P></P>
+et ainsi :
+<P><!-- MATH
+ \begin{displaymath}
+\Gamma(n+1)=n!
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \Gamma$">(<I>n</I> + 1) = <I>n</I>!
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Gamma(5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>24</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Gamma(1/2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>sqrt(pi)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Gamma(0.7)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.29805533265</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Gamma(-0.3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-4.32685110883</TT>
+</DIV>
+En effet : <TT>Gamma(0.7)=-0.3*Gamma(-0.3)</TT>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>Gamma(-1.3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3.32834700679</TT>
+</DIV>
+En effet :
+<BR> <TT>Gamma(0.7)=-0.3*Gamma(-0.3)=(-0.3)*(-1.3)*Gamma(-1.3)</TT>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

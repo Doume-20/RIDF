@@ -1,0 +1,54 @@
+2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 271] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2022-03-11 09:19:00.324: 2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 521] Received payload Lib Manuels Windows 4.0.4. current status=state=Ok, error=None, active=true +1ms
+2022-03-11 09:19:00.324: 2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 521] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2022-03-11 09:19:00.324: 2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 545] Received payload Certificat RIDF 1.1. current status=state=Empty, error=None, active=false +2ms
+2022-03-11 09:19:00.324: 2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 545] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/ridfcerauthority_1.1.jar +0ms
+2022-03-11 09:19:00.324: 2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 545] Persisting status=state=Todo, error=None, active=true +3ms
+2022-03-11 09:19:00.374: 2022-03-11 10:19:00 [5360] INFO [PayloadDispatcher] Emitting 13 entries ["__/conf/agents/facts","conf/application/windows/LGPO-Windows","conf/other/cleanafterinstall","conf/other/disablerecovery","conf/application/windows/HiSqool","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Microsoft-Office-1.0.0","__/unowhy/manager/windows","conf/application/windows/Educadhoc-Windows","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Le-Livre-Scolaire-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0","conf/application/windows/Lib-Manuels"] +50ms
+2022-03-11 09:19:00.374: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Processing for execution configuration with 13 keys +1ms
+2022-03-11 09:19:00.374: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got 13 configurations. 0 in, 0 out +0ms
+2022-03-11 09:19:00.374: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2022-03-11 09:19:00.382: 2022-03-11 10:19:00 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +2ms
+2022-03-11 09:19:00.506: 2022-03-11 10:19:00 [5360] INFO [Runner] Creating configuration unit runner object... +124ms
+2022-03-11 09:19:00.506: 2022-03-11 10:19:00 [5360] INFO [Runner] Checking if runner needs to be performed... +3ms
+2022-03-11 09:19:00.506: 2022-03-11 10:19:00 [5360] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.514: 2022-03-11 10:19:00 [5360] INFO [JS] We are triggering +3ms
+2022-03-11 09:19:00.516: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.516: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> __/conf/agents/facts... +1ms
+2022-03-11 09:19:00.516: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/disablerecovery -> __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.516: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.536: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> __/conf/agents/facts... +14ms
+2022-03-11 09:19:00.536: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.536: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.536: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> __/conf/agents/facts... +1ms
+2022-03-11 09:19:00.544: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +2ms
+2022-03-11 09:19:00.546: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Le-Livre-Scolaire-Windows -> __/conf/agents/facts... +1ms
+2022-03-11 09:19:00.546: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +1ms
+2022-03-11 09:19:00.546: 2022-03-11 10:19:00 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +1ms
+2022-03-11 09:19:00.546: 2022-03-11 10:19:00 [5360] INFO [WatcherService] Received a list of 15 payloads +1ms
+2022-03-11 09:19:00.546: 2022-03-11 10:19:00 [5360] INFO [PayloadDownloader] [PAYLOAD 545] Persisting status=state=Downloading, error=None, active=true +2ms
+2022-03-11 09:19:00.554: 2022-03-11 10:19:00 [5360] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/ridfcerauthority_1.1.jar... +3ms
+2022-03-11 09:19:00.556: 2022-03-11 10:19:00 [5360] INFO [Runner] Performing runner... +3ms
+2022-03-11 09:19:00.556: 2022-03-11 10:19:00 [5360] INFO [JS] Performing facts gathering and upload... +2ms
+2022-03-11 09:19:01.000: 2022-03-11 10:19:00 [5360] INFO [RequestPerformerService] Got response 200. +442ms
+2022-03-11 09:19:01.002: 2022-03-11 10:19:00 [5360] INFO [RequestPerformerService] Response content length is 18691  +0ms
+2022-03-11 09:19:01.022: 2022-03-11 10:19:01 [5360] INFO [RequestPerformerService] Download finished undefined. +26ms
+2022-03-11 09:19:01.022: 2022-03-11 10:19:01 [5360] INFO [RequestPerformerService] Digest: expected=2de99f4407ee33bc11ba29b60dfd333b, actual=2de99f4407ee33bc11ba29b60dfd333b. +2ms
+2022-03-11 09:19:01.033: 2022-03-11 10:19:01 [5360] INFO [PayloadDownloader] [PAYLOAD 545] Persisting status=state=Downloaded, error=None, active=true +3ms
+2022-03-11 09:19:01.033: 2022-03-11 10:19:01 [5360] INFO [PayloadDownloader] [PAYLOAD 545] Unzip file C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload.jar in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\545\payload... +2ms
+2022-03-11 09:19:01.225: 2022-03-11 10:19:01 [5360] INFO [RequestPerformerService] Got disposed. +191ms
+2022-03-11 09:19:01.225: 2022-03-11 10:19:01 [5360] INFO [RequestPerformerService] Complete. +2ms
+2022-03-11 09:19:01.991: 2022-03-11 10:19:01 [5360] INFO [PayloadDownloader] [PAYLOAD 545] Persisting status=state=Ok, error=None, active=true +763ms
+2022-03-11 09:19:01.993: 2022-03-11 10:19:01 [5360] INFO [PayloadDispatcher] Emitting 14 entries ["__/conf/agents/facts","conf/application/windows/LGPO-Windows","conf/other/cleanafterinstall","conf/other/disablerecovery","conf/application/windows/HiSqool","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Microsoft-Office-1.0.0","__/unowhy/manager/windows","conf/application/windows/Educadhoc-Windows","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Le-Livre-Scolaire-Windows","conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0","conf/application/windows/Lib-Manuels","conf/application/windows/Certificat-RIDF-1.1"] +4ms
+2022-03-11 09:19:01.993: 2022-03-11 10:19:01 [5360] INFO [ConfigurationRunner] Processing for execution configuration with 14 keys +0ms
+2022-03-11 09:19:01.993: 2022-03-11 10:19:01 [5360] INFO [ConfigurationRunner] Got 14 configurations. 1 in, 0 out +1ms
+2022-03-11 09:19:01.993: 2022-03-11 10:19:01 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +1ms
+2022-03-11 09:19:01.993: 2022-03-11 10:19:01 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +1ms
+2022-03-11 09:19:01.993: 2022-03-11 10:19:01 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +2ms
+2022-03-11 09:19:02.064: 2022-03-11 10:19:02 [5360] INFO [Runner] Creating configuration unit runner object... +66ms
+2022-03-11 09:19:02.064: 2022-03-11 10:19:02 [5360] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-03-11 09:19:02.064: 2022-03-11 10:19:02 [5360] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-03-11 09:19:02.064: 2022-03-11 10:19:02 [5360] INFO [JS] Getting GPO version... +1ms
+2022-03-11 09:19:02.104: 2022-03-11 10:19:02 [5360] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/other/cleanafterinstall -> configuration... +36ms
+2022-03-11 09:19:02.113: 2022-03-11 10:19:02 [5360] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\173\payload... +6ms
+2022-03-11 09:19:02.133: 2022-03-11 10:19:02 [5360] INFO [Runner] Creating configuration unit runner object... +20ms

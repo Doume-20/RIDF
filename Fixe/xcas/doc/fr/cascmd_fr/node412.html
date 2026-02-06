@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>fourier_cn</TITLE>
+<META NAME="description" CONTENT="fourier_cn">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node411.html">
+<LINK REL="up" HREF="node409.html">
+<LINK REL="next" HREF="node413.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8988"
+  HREF="node413.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8982"
+  HREF="node409.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8978"
+  HREF="node411.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8984"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8986"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8989"
+  HREF="node413.html">Transform&#233;e de Fourier discr&#232;te</A>
+<B> monter:</B> <A NAME="tex2html8983"
+  HREF="node409.html">Les coefficients de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8979"
+  HREF="node411.html">fourier_bn</A>
+ &nbsp; <B>  <A NAME="tex2html8985"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8987"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION009231300000000000000"></A><A NAME="10107"></A><A NAME="sec:fourier_cn"></A>
+<BR>
+<TT>fourier_cn</TT>
+</H3>
+<TT>fourier_cn</TT> a quatre ou cinq param&#232;tres : une expression 
+<I>ex</I>, le nom de la variable (par exemple <I>x</I>), la p&#233;riode <I>T</I>, un entier 
+<I>n</I> et <I>a</I> (<I>a</I> vaut 0 par d&#233;faut).
+<BR><TT>fourier_cn(ex,x,T,n,a)</TT> renvoie le coefficient de Fourier <I>c</I><SUB>n</SUB> d'une 
+fonction de variable <I>x</I> d&#233;finie sur [<I>a</I>, <I>a</I> + <I>T</I>[ par <I>f</I> (<I>x</I>) = <I>ex</I> et p&#233;riodique 
+de p&#233;riode <I>T</I>.
+<BR>
+Si <I>f</I> (<I>x</I>) = <I>ex</I> est continue par morceaux sur <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ \mathbb {R}$">,
+ <TT>fourier_cn(ex,x,T,n,a)</TT> renvoie 
+<!-- MATH
+ $\displaystyle c_n=\frac{1}{T}\int_a^{a+T}f(x)e^\frac{-2i\pi nx}{T}dx$
+ -->
+<I>c</I><SUB>n</SUB> = <IMG
+ WIDTH="21" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.png"
+ ALT="$\displaystyle {\frac{{1}}{{T}}}$"><IMG
+ WIDTH="50" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$\displaystyle \int_{a}^{{a+T}}$"><I>f</I> (<I>x</I>)<I>e</I><SUP><IMG
+ WIDTH="8" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$\scriptstyle {\frac{}{}}$"></SUP>-2<I>i</I><IMG
+ WIDTH="15" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$\displaystyle \pi$"><I>nxTdx</I>
+<BR><B>Exemples</B>
+
+<UL>
+<LI>D&#233;terminer les coefficients <I>c</I><SUB>n</SUB> de Fourier de la fonction <I>f</I> p&#233;riodique de p&#233;riode
+ 2 et d&#233;finie sur [- 1;1[ par <I>f</I> (<I>x</I>) = <I>x</I><SUP>2</SUP>.
+<BR>
+On tape, pour avoir <I>c</I><SUB>0</SUB> :
+<DIV ALIGN="CENTER">
+<TT>fourier_cn(x<code>^</code>2,x,2,0,-1)</TT>
+</DIV>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>1/3</TT>
+</DIV>
+On tape, pour avoir <I>c</I><SUB>n</SUB> :
+<DIV ALIGN="CENTER">
+<TT>assume(n,integer)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>fourier_cn(x<code>^</code>2,x,2,n,-1)</TT>
+</DIV>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>2*(-1)<code>^</code>n/(pi<code>^</code>2*n<code>^</code>2)</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>D&#233;terminer les coefficients  <I>c</I><SUB>n</SUB> de Fourier de la fonction <I>f</I> p&#233;riodique de p&#233;riode 2 et d&#233;finie sur [0;2[ par <I>f</I> (<I>x</I>) = <I>x</I><SUP>2</SUP>.
+<BR>
+On tape, pour avoir <I>c</I><SUB>0</SUB> :
+<DIV ALIGN="CENTER">
+<TT>fourier_cn(x<code>^</code>2,x,2,0)</TT>
+</DIV>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>4/3</TT>
+</DIV>
+On tape, pour avoir <I>c</I><SUB>n</SUB> :
+<DIV ALIGN="CENTER">
+<TT>assume(n,integer)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>fourier_cn(x<code>^</code>2,x,2,n)</TT>
+</DIV>
+On obtient:
+<DIV ALIGN="CENTER">
+<TT>((2*i)*pi*n+2)/(pi<code>^</code>2*n<code>^</code>2)</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>D&#233;terminer les coefficients <I>c</I><SUB>n</SUB> de Fourier de la fonction <I>f</I> p&#233;riodique de 
+p&#233;riode 2.<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$"> et d&#233;finie sur [0;2.<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \pi$">[ par <I>f</I> (<I>x</I>) = <I>x</I><SUP>2</SUP>.
+<BR>
+On tape <A NAME="10149"></A> :
+<DIV ALIGN="CENTER">
+<TT>assume(n,integer)</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>fourier_cn(x<code>^</code>2,x,2*pi,n)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>((2*i)*pi*n+2)/n<code>^</code>2</TT>
+</DIV>
+Si on ne met pas <TT>assume(n,integer)</TT> on obtient une expression non simplifi&#233;e :
+<DIV ALIGN="CENTER">
+<TT>((2*i)*pi<code>^</code>2*n<code>^</code>2*exp((-i)*n*2*pi)+2*pi*n*exp((-i)*n*2*pi)+</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>(-i)*exp((-i)*n*2*pi)+i)/(pi*n<code>^</code>3)</TT>
+</DIV>
+que l'on peut simplifier en remplacant <TT>exp((-i)*n*2*pi)</TT> par <TT>1</TT> :
+<DIV ALIGN="CENTER">
+<TT>subst(ans(),exp((-i)*n*2*pi)=1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>((2*i)*pi<code>^</code>2*n<code>^</code>2+2*pi*n+-i+i)/pi/n<code>^</code>3</TT>
+</DIV>
+expression que l'on peut simplifier avec <TT>normal</TT> et on trouve finalement :
+<DIV ALIGN="CENTER">
+<TT>((2*i)*pi*n+2)/n<code>^</code>2</TT>
+</DIV>
+Il est donc pr&#233;f&#233;rable d'&#233;crire <TT>assume(n,integer)</TT>.
+<BR>
+Donc si <I>n</I> <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> 0 on a :<P><!-- MATH
+ \begin{displaymath}
+c_n=\frac{2*i*n*\pi+2}{n^2}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>c</I><SUB>n</SUB> = <IMG
+ WIDTH="124" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img270.png"
+ ALT="$\displaystyle {\frac{{2*i*n*\pi+2}}{{n^2}}}$">
+</DIV><P></P>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>fourier_cn(x<code>^</code>2,x,2*pi,0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4*pi<code>^</code>2/3</TT>
+</DIV>
+Donc si <I>n</I> = 0 on a :
+<P><!-- MATH
+ \begin{displaymath}
+c_0=\frac{4.{\pi}^2}{3}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>c</I><SUB>0</SUB> = <IMG
+ WIDTH="40" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.png"
+ ALT="$\displaystyle {\frac{{4.{\pi}^2}}{{3}}}$">
+</DIV><P></P>
+</LI>
+</UL>
+Remarque :
+<BR>
+Lorsque l'on ne veut plus consid&#233;rer <I>n</I> comme un entier on doit taper :
+<BR><TT>purge(n)</TT><A NAME="10191"></A>.
+<BR>
+Pour conna&#238;tre les hypoth&#233;ses faites sur une variable, par exemple <I>n</I>,
+ on tape :
+<BR><TT>about(n)</TT><A NAME="10194"></A> ou,
+<BR><TT>assume(n)</TT><A NAME="10196"></A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8988"
+  HREF="node413.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8982"
+  HREF="node409.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8978"
+  HREF="node411.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8984"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8986"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8989"
+  HREF="node413.html">Transform&#233;e de Fourier discr&#232;te</A>
+<B> monter:</B> <A NAME="tex2html8983"
+  HREF="node409.html">Les coefficients de Fourier</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8979"
+  HREF="node411.html">fourier_bn</A>
+ &nbsp; <B>  <A NAME="tex2html8985"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8987"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

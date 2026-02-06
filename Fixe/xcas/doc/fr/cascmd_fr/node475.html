@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les restes chinois : chinrem</TITLE>
+<META NAME="description" CONTENT="Les restes chinois : chinrem">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node476.html">
+<LINK REL="previous" HREF="node474.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node476.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9924"
+  HREF="node476.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9918"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9912"
+  HREF="node474.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9920"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9922"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9925"
+  HREF="node476.html">Polyn&#244;me cyclotomique : cyclotomic</A>
+<B> monter:</B> <A NAME="tex2html9919"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9913"
+  HREF="node474.html">R&#233;solution polyn&#244;miale de au+bv=c</A>
+ &nbsp; <B>  <A NAME="tex2html9921"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9923"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092613000000000000000"></A><A NAME="12214"></A>
+<BR>
+Les restes chinois : <TT>chinrem</TT>
+</H2>
+<TT>chinrem</TT> a comme argument deux listes ayant chacun comme 
+composantes deux  polyn&#244;mes &#233;ventuellement donn&#233;s par la liste de leurs 
+coefficients par ordre d&#233;croissant.
+<BR><TT>chinrem</TT> renvoie une liste de composantes deux  polyn&#244;mes.
+<BR><TT>chinrem([A,R],[B,Q])</TT> renvoie la liste des polyn&#244;mes  
+<TT>P</TT> et <TT>S</TT> v&#233;rifiant :
+<BR><P><!-- MATH
+ \begin{displaymath}
+S=R.Q, \quad  P=A \pmod R, P=B \pmod Q
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>S</I> = <I>R</I>.<I>Q</I>,&nbsp;&nbsp;&nbsp;&nbsp;<I>P</I> = <I>A</I>(mod <I>R</I>), <I>P</I> = <I>B</I>(mod <I>Q</I>)
+</DIV><P></P>
+Il existe toujours une solution 
+<TT>P</TT> si <TT>R</TT> et <TT>Q</TT> sont premiers entre eux, et toutes les
+ solutions sont congrues modulo <TT>S=R*Q</TT>   
+<BR>
+Trouver les solutions <I>P</I>(<I>x</I>) de :
+<P><!-- MATH
+ \begin{displaymath}
+{\tt\left \{ \begin{array}{rlr} P(x)=&x\ &\bmod\ (x^2+1)\\P(x)=&x-1\ &\bmod\ (x^2-1) \end{array}\right.}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="268" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img357.png"
+ ALT="$\displaystyle \tt\left \{ \begin{array}{rlr} P(x)=&amp;x\ &amp;\bmod\ (x^2+1)\\  P(x)=&amp;x-1\ &amp;\bmod\ (x^2-1) \end{array}\right.$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>chinrem([[1,0],[1,0,1]],[[1,-1],[1,0,-1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1/-2,1,1/-2],[1,0,0,0,-1]]</TT>
+</DIV>
+ou on  tape :
+<DIV ALIGN="CENTER">
+<TT>chinrem([x,x<code>^</code>2+1],[x-1,x<code>^</code>2-1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1/-2*x<code>^</code>2+x+1/-2,x<code>^</code>4-1]</TT>
+</DIV>
+donc <!-- MATH
+ $\displaystyle P(x)=-\frac{x^2-2.x+1}{2} \ (\bmod\  x^4-1)$
+ -->
+<I>P</I>(<I>x</I>) = - <IMG
+ WIDTH="101" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img358.png"
+ ALT="$\displaystyle {\frac{{x^2-2.x+1}}{{2}}}$">&nbsp;( mod&nbsp;<I>x</I><SUP>4</SUP> - 1)
+<BR>
+Autre exemple :
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>chinrem([[1,2],[1,0,1]],[[1,1],[1,1,1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,-1,0,1],[1,1,2,1,1]]</TT>
+</DIV>
+ou on  tape :
+<DIV ALIGN="CENTER">
+<TT>chinrem([x+2,x<code>^</code>2+1],[x+1,x<code>^</code>2+x+1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[-x<code>^</code>3-x<code>^</code>2+1,x<code>^</code>4+x<code>^</code>3+2*x<code>^</code>2+x+1]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,795 @@
+{
+  "conf/application/windows/App-Runtime-(Windows)": {
+    "description": "Installation de l'application App-Runtime (Windows)",
+    "payload": {
+      "id": 2539,
+      "name": "App-Runtime (Windows)",
+      "description": "Windows App runtime",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/App-Runtime/5001.214.1843.0/package.jar",
+      "size": 22881462,
+      "digest": "MD5:9e3f662d369a13f9e19500f9b8cae121",
+      "metadata": {
+        "software": {
+          "id": "App-Runtime",
+          "version": "5001.214.1843.0"
+        },
+        "definition": {
+          "Id": "App-Runtime",
+          "Name": "Windows App runtime",
+          "Level": "Runtime",
+          "Factory": {
+            "Build": {
+              "Step": "847522",
+              "Workflow": "343659"
+            },
+            "Commit": {
+              "Id": "5599d9e4fde20a59082437b842e0338c791ad3ea",
+              "Name": "master"
+            }
+          },
+          "Release": "1.5.6",
+          "Version": "5001.214.1843.0"
+        },
+        "versionName": "1.5.6",
+        "applicationLabel": "Windows App runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Certificat-RIDF-1.1": {
+    "description": "Installation de l'application Certificat RIDF 1.1",
+    "payload": {
+      "id": 545,
+      "name": "Device-Authorities (Windows)",
+      "description": "Certificat RIDF",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/ridfcerauthority_1.1.jar",
+      "size": 18691,
+      "digest": "MD5:2de99f4407ee33bc11ba29b60dfd333b",
+      "metadata": {
+        "software": {
+          "id": "Device-Authorities",
+          "version": "1.1"
+        },
+        "versionName": "1.1",
+        "applicationLabel": "Certificat RIDF"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/correctif-site-ent-activation-y13": {
+    "description": "Correctif Site ENT Activation Y13",
+    "payload": {
+      "id": 2459,
+      "name": "Device-Script (Windows)",
+      "description": "Correction de l\u2019\u00e9quipement",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Device-Script/1.0.0/package.jar",
+      "size": 7003,
+      "digest": "MD5:b7ed628bdb1005bae3a3cc619bb722a7",
+      "metadata": {
+        "software": {
+          "id": "Device-Script",
+          "version": "1.0.0"
+        },
+        "definition": {
+          "Id": "Device-Script",
+          "Name": "Correction de l\u2019\u00e9quipement",
+          "Level": "Configuration",
+          "Factory": {
+            "Build": {
+              "Step": "735935",
+              "Workflow": "309139"
+            },
+            "Commit": {
+              "Id": "ed46c7702d5222e8d77507ea991995c479408f53",
+              "Name": "master"
+            }
+          },
+          "Release": "1.0.0",
+          "Version": "1.0.0",
+          "AllowLogonTrigger": true,
+          "AllowOptionRefresh": true
+        },
+        "versionName": "1.0.0",
+        "applicationLabel": "Correction de l\u2019\u00e9quipement",
+        "allow_logon_trigger": true,
+        "allow_options_refresh": true
+      }
+    },
+    "when": "(context.platform==='win32') && (/^(IFP5)/.test(context.deviceId))",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ],
+    "options": {
+      "engine": "Service",
+      "script": "PCMNClNJRCBkZSBBY3RpdmF0aW9uIEVudCB0cm91dmUgY29tbWUgY2EgOg0Kd21pYyB1c2VyYWNjb3VudCB3aGVyZSBuYW1lPSdFTlQnIGdldCBkb21haW4sbmFtZSxzaWQNCkRvbWFpbiAgICAgICAgTmFtZSAgU0lEDQpJRlA0MTMwMDAzOTYgIEVOVCAgIFMtMS01LTIxLTQyMzk3ODI4MDUtMjA2OTUxNjUyMy0xMjAyNjM0MTYyLTEwMDIgDQoNClNpbm9uIDogKEdldC1XbWlPYmplY3QgLUNsYXNzIHdpbjMyX1VzZXJBY2NvdW50IC1GaWx0ZXIgIm5hbWU9J0VOVCcgYW5kIGRvbWFpbj0nJGVudjpDb21wdXRlck5hbWUnIikuU0lEDQoNCiM+DQoNCiRFTlRfU0lEID0gKEdldC1XbWlPYmplY3QgLUNsYXNzIHdpbjMyX1VzZXJBY2NvdW50IC1GaWx0ZXIgIm5hbWU9J0VOVCcgYW5kIGRvbWFpbj0nJGVudjpDb21wdXRlck5hbWUnIikuU0lEIA0KDQpyZWcgYWRkICJIS0VZX1VTRVJTXCRFTlRfU0lEXFNPRlRXQVJFXFBvbGljaWVzXE1pY3Jvc29mdFxFZGdlXFVSTEFsbG93bGlzdCIgL3YgNCAvdCBSRUdfU1ogL2QgInd3dy55b3V0dWJlLmNvbS9lbWJlZC91N3h6blN0UUhqYyIgL2YNCg0KDQoNCiRtc2VkZ2V3YXRjaGRvZyA9ICdEbyB7ICRzdGF0dXMgPSBHZXQtUHJvY2VzcyBtc2VkZ2UgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgSWYgKCEoJHN0YXR1cykpIHsgIFN0YXJ0LXByb2Nlc3MgIkM6XFByb2dyYW0gRmlsZXMgKHg4NilcTWljcm9zb2Z0XEVkZ2VcQXBwbGljYXRpb25cbXNlZGdlLmV4ZSIgICItLW5vLWZpcnN0LXJ1biAtLWtpb3NrIGh0dHBzOi8vZW50Lm1vbmx5Y2VlLm5ldC9wYWdlcy9wL3dlYnNpdGUjL3dlYnNpdGUvZGVtYXJyZXItYXZlYy1tb24tb3JkaW5hdGV1ci11bm93aHkgLS1raW9zay1pZGxlLXRpbWVvdXQtbWludXRlcz0zMCAtLWVkZ2Uta2lvc2stdHlwZT1wdWJsaWMtYnJvd3NpbmcgLS1zdGFydC1mdWxsc2NyZWVuIiB9DQogIEVsc2UgeyAgfQ0KfXVudGlsKCAwICknDQoNCiRtc2VkZ2V3YXRjaGRvZyB8IE91dC1GaWxlIC1GaWxlUGF0aCAnQzpcUHJvZ3JhbURhdGFcUklERlxtc2VkZ2V3YXRjaGRvZy5wczEnIC1Gb3JjZQ0KDQpncHVwZGF0ZSAvZm9yY2UNCg0KIyBTSUcgIyBCZWdpbiBzaWduYXR1cmUgYmxvY2sNCiMgTUlJY3NRWUpLb1pJaHZjTkFRY0NvSUljb2pDQ0hKNENBUUV4Q3pBSkJnVXJEZ01DR2dVQU1Ha0dDaXNHQVFRQg0KIyBnamNDQVFTZ1d6QlpNRFFHQ2lzR0FRUUJnamNDQVI0d0pnSURBUUFBQkJBZnpEdGdXVXNJVHJjazBzWXBmdk5SDQojIEFnRUFBZ0VBQWdFQUFnRUFBZ0VBTUNFd0NRWUZLdzREQWhvRkFBUVU3azR1K2ZMN3JZUmU1a3VMVytTeUJCTmINCiMgYksyZ2doYllNSUlEbWpDQ0FvS2dBd0lCQWdJUUd1Wm5vOG5lR290TXR5YjU2ZkxrU1RBTkJna3Foa2lHOXcwQg0KIyBBUXNGQURCa01Rc3dDUVlEVlFRR0V3SkdVakVYTUJVR0ExVUVDQXdPdzQ1c1pTMWtaUzFHY21GdVkyVXhHakFZDQojIEJnTlZCQWNNRVU1bGRXbHNiSGt0YzNWeUxWTmxhVzVsTVE4d0RRWURWUVFLREFaVmJtOTNhSGt4RHpBTkJnTlYNCiMgQkFNTUJsVnViM2RvZVRBZ0Z3MHlOVEF4TURNeE56QTVNVFJhR0E4eU1USTFNREV3TXpFM01Ua3hORm93WkRFTA0KIyBNQWtHQTFVRUJoTUNSbEl4RnpBVkJnTlZCQWdNRHNPT2JHVXRaR1V0Um5KaGJtTmxNUm93R0FZRFZRUUhEQkZPDQojIFpYVnBiR3g1TFhOMWNpMVRaV2x1WlRFUE1BMEdBMVVFQ2d3R1ZXNXZkMmg1TVE4d0RRWURWUVFEREFaVmJtOTMNCiMgYUhrd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURtcXZUNkdpS2pra29rR3VsQg0KIyB5dFZ3NWtva3J6eHlvdmZ6TVE0SmZLaWlmZGdMS2FqVURwN01VeU1YK1lSVytZMXZJVk9IbUpEUzJXWExwUTlrDQojIEVHMVA2enRvU0RxYjZldU5QdlVocXFLNzYwWFpLVjNQdzFtSTMyamw5ZjBIWEFmc3pNd1E4NzI5K3ZDUFhPeEsNCiMgZnVxNUVpRlpjSXBsUy9KMU9iZlh2K1lMQWdXbEMwU0FKblEvZS9rbGpldm5zK2JrRE83aUtXaVZYTUhSOWJ2Vw0KIyAvWVEwNVlxRXZOMXBxaHBZdllqZk03WmJzeXhwU2p6TExUU0xwNVJDNnExRHIxRUZWcU56ejZ1alUwUXN3cXlMDQojIEdqVE1kN0JDNVJ4VVBibm5zSDU2djJMOTdjN1h0TFNIZDFrMkM4TnBGcHIwU3NYbjJ4OEdWZVltWUVIaG5TcVkNCiMgM3hhdEFnTUJBQUdqUmpCRU1BNEdBMVVkRHdFQi93UUVBd0lIZ0RBVEJnTlZIU1VFRERBS0JnZ3JCZ0VGQlFjRA0KIyBBekFkQmdOVkhRNEVGZ1FVV1JhWEZtekFObEZOUWc3ZzRxNjdJaUJsTXNvd0RRWUpLb1pJaHZjTkFRRUxCUUFEDQojIGdnRUJBSGt4amlEWXJvckV0K0p4WXhlVzMrTTlDaGpUa09oYmppejMzNHFLV01Rc2JuZkV4cmJFejZvaTlJUmcNCiMgQkpDQ00rWFQ3d0pPajZCWUlmYnE0MnZuTGhicExlQzdUQXlnakRvdFpxVE44MytOOE5ZUG0xYnpVZkNtNC8zZQ0KIyBUUWRmYlUwQWVKajBuK1lodmVzMnBDSURKc28zNEZ3UnVxS2lvTFk0Qi9RNnZ2dUtJb2Y3VDY4WWplUUNrbVRCDQojIG9TaTlRZFRSOWk4KzhiWFZzSzJrV0kzeU1PdXVqZ0RwVGRZZXBMTERFYVdITHVtZjhURGoxaUpSa2tDYjVHdTUNCiMgQmhoR2xEWGtZTlNCMUJKUHFVK0l2UVpwUFlGMS95VVdqeGZtbVhsU3VMS3c1ZGUvZkNTMGpSUFBjT3BDNGpWUg0KIyBkMHZkNW1sUWwwUUVwMXF4ZlpaK3JmV25ia293Z2dXTk1JSUVkYUFEQWdFQ0FoQU9teGlPK2RBdDUrL2JVT0lJDQojIFFCaGFNQTBHQ1NxR1NJYjNEUUVCREFVQU1HVXhDekFKQmdOVkJBWVRBbFZUTVJVd0V3WURWUVFLRXd4RWFXZHANCiMgUTJWeWRDQkpibU14R1RBWEJnTlZCQXNURUhkM2R5NWthV2RwWTJWeWRDNWpiMjB4SkRBaUJnTlZCQU1URzBScA0KIyBaMmxEWlhKMElFRnpjM1Z5WldRZ1NVUWdVbTl2ZENCRFFUQWVGdzB5TWpBNE1ERXdNREF3TURCYUZ3MHpNVEV4DQojIE1Ea3lNelU1TlRsYU1HSXhDekFKQmdOVkJBWVRBbFZUTVJVd0V3WURWUVFLRXd4RWFXZHBRMlZ5ZENCSmJtTXgNCiMgR1RBWEJnTlZCQXNURUhkM2R5NWthV2RwWTJWeWRDNWpiMjB4SVRBZkJnTlZCQU1UR0VScFoybERaWEowSUZSeQ0KIyBkWE4wWldRZ1VtOXZkQ0JITkRDQ0FpSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnSVBBRENDQWdvQ2dnSUJBTC9tDQojIGtITm8zcnZrWFVvOE1DSXdhVFBzd3FjbExza2hQZktLMkZuQzRTbW5QVmlyZHByTnJuc2JoQTNFTUIvekc2UTQNCiMgRnV0V3hwZHRIYXV5ZWZMS0VkTGtYOVlGUEZJUFVoL0duaFdsZnI2ZnFWY1dXVlZ5cjJpVGNNS3l1bldaYW5NeQ0KIyBsTkVRUkJBdTM0THpCNFRtZER0dGNlSXREQnZ1SU5YSklCMWpLUzNPN0Y1T3lKUDRJV0diTk9zRnhsN3NXeHE4DQojIDY4blB6YXcwUUYreGVtYnVkOGhJcUdaWFY1OVVXSTRNSzdkUHB6RFpWdTdLZTEzanJjbFBYdVUxNXpITDJwTmUNCiMgM0k2UGdOcTJrWmhBa0huRGVNZTJzY1MxYWhnNEF4Q04yTlEzcEM0RmZZajFnajRRa1hDclZZSkJNdGZiQkhNcQ0KIyBicEVCZkNGTTFMeXVHd04xWFhobTJUb3hSSm96UUw4STExcEpwTUxtcWFCbjNhUW52S0ZQT2JVUldCZjNKRnhHDQojIGoyVDN3V21JZHBoMlBWbGRRbmFIaVpkcGVranc0S0lTRzJhYWRNcmVTeDduRG1PdTV0VHZrcEk2bmozY0FPUkYNCiMgSlltMm1rUVpLMzdBbExUU1lXM3JNOW5GMzBzRUFNeDlISlhEai9jaHNySVJ0N3QvOHRXTWNDeEJZS3F4WXhoRQ0KIyBsUnAyWW43MmdMRDc2R1NtTTlHSkIrRzl0K1pEcEJpNHBuY0I0UStVRENFZHNsUXBKWWxzNVE1U1VVZDB2aWFzDQojIHRrRjEzbnFzWDQwL3lielRRUkVTVytVUVVPc3h4Y3B5RmlJSjMzeE1kVDlqN0NGZnhDQlJhMit4cTRhTFQ4TFcNCiMgUlYrZElQeWhIc1hBajZLeGZnb21tZlhrYVMrWUhTMzEyYW15SGVVYkFnTUJBQUdqZ2dFNk1JSUJOakFQQmdOVg0KIyBIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJUczErT0MwbkZkWkV6ZkxtYy81N3FZcmh3UFR6QWZCZ05WDQojIEhTTUVHREFXZ0JSRjY2S3Y5SkxMZ2pFdFVZdW5weUdkODIzSUR6QU9CZ05WSFE4QkFmOEVCQU1DQVlZd2VRWUkNCiMgS3dZQkJRVUhBUUVFYlRCck1DUUdDQ3NHQVFVRkJ6QUJoaGhvZEhSd09pOHZiMk56Y0M1a2FXZHBZMlZ5ZEM1ag0KIyBiMjB3UXdZSUt3WUJCUVVITUFLR04yaDBkSEE2THk5allXTmxjblJ6TG1ScFoybGpaWEowTG1OdmJTOUVhV2RwDQojIFEyVnlkRUZ6YzNWeVpXUkpSRkp2YjNSRFFTNWpjblF3UlFZRFZSMGZCRDR3UERBNm9EaWdOb1kwYUhSMGNEb3YNCiMgTDJOeWJETXVaR2xuYVdObGNuUXVZMjl0TDBScFoybERaWEowUVhOemRYSmxaRWxFVW05dmRFTkJMbU55YkRBUg0KIyBCZ05WSFNBRUNqQUlNQVlHQkZVZElBQXdEUVlKS29aSWh2Y05BUUVNQlFBRGdnRUJBSENndjBOY1ZlYzRYNkNqDQojIGRCczl0aGJYOTc5WEI3MmFyS0dITE95Rlhxa2F1eUw0aHhwcFZDTHRwSWgzYmIwYUZQUVRTbm92TGJjNDcvVC8NCiMgZ0xuNG9mZnljdDRrdkZJRHlFN1FLdDc2TFZiUCtmVDNyREI2bW91eVh0VFAwVU5FbTBNaDY1WnlvVWkwbWN1ZA0KIyBUNmNHQXhOM0owVFU1My9vV2Fqd3Z5OExwdW55TkR6czl3UEhoNmpTVEVBWk5VWnFhVlN3dUtGV2p1eWsxVDNvDQojIHNkejlITmowZDFwY1ZJeHY3NkZRUGZ4MkNXaUVuMi9LMnlDTk5XQWNBZ1BMSUxDc1dLQU9RR1BGbUNMQnNsbjENCiMgVld2UEo2dHNkczV2SXkzMGZuRnFJMnNpL3hLNFZDMG5mdGc2MmZDMmg1YjlXOUZjckJqRFRaOXp0d0dwbjFlcQ0KIyBYaWppdVpRd2dnYTBNSUlFbktBREFnRUNBaEFOeDZ4WEJmOGhtUzVBUXlJTU9rbUdNQTBHQ1NxR1NJYjNEUUVCDQojIEN3VUFNR0l4Q3pBSkJnTlZCQVlUQWxWVE1SVXdFd1lEVlFRS0V3eEVhV2RwUTJWeWRDQkpibU14R1RBWEJnTlYNCiMgQkFzVEVIZDNkeTVrYVdkcFkyVnlkQzVqYjIweElUQWZCZ05WQkFNVEdFUnBaMmxEWlhKMElGUnlkWE4wWldRZw0KIyBVbTl2ZENCSE5EQWVGdzB5TlRBMU1EY3dNREF3TURCYUZ3MHpPREF4TVRReU16VTVOVGxhTUdreEN6QUpCZ05WDQojIEJBWVRBbFZUTVJjd0ZRWURWUVFLRXc1RWFXZHBRMlZ5ZEN3Z1NXNWpMakZCTUQ4R0ExVUVBeE00UkdsbmFVTmwNCiMgY25RZ1ZISjFjM1JsWkNCSE5DQlVhVzFsVTNSaGJYQnBibWNnVWxOQk5EQTVOaUJUU0VFeU5UWWdNakF5TlNCRA0KIyBRVEV3Z2dJaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQ0R3QXdnZ0lLQW9JQ0FRQzBlREhUQ3BoQmNyNDhSc0FjDQojIHJIWGJvMFpvZExSUkY1MU5yWTBObExXWmxvTXNWTzFEYWhHUE5SY3liRUtxK1J1d09uUGhvZjZwdkY0dUdqd2oNCiMgcU5qZkV2VWk2d3VpbTViYXArMGxnbG9NMnpYNGtmdG41QjFJcFl6VHFweUZRLzRCdDBtQXhBSGVIWU5uUXhxWA0KIyBtUmludnVOZ3hWQmRKa2Y3N1MydVBvQ2o3R0g4Qkx1eEJHNUF2ZnRCZHNPRUNTMVVreEJ2TWdFZGdrRmlETllpDQojIE9UeDRPdGlGY01Ta3FUdEYyaGZRejN6UVNrdTJXczNJZkRSZWI2ZTNtbWRnbFRjYWFycHMwd2pVanNadmtnRmsNCiMgcmlLOXRVS0ptL3M4MEZpb2NTazFWWUxabER3RnQrY1ZGQlVSSmc2ek1ValphL3piQ2NsRjgzYlJWRkxlR2t1QQ0KIyBoSGlHUE12U0dtaGdhVHpWeWhZbjRwMCs4eTlvSFJhUVQvYW9mRW5TNXhMcmZ4bkdwVFhpVU9lU0xzSnlnb0xQDQojIHA2NmJrRFgxWmxBZVNwUWw5MlFPTWVSeHlrdnE2Z2J5bHNYUXNrQkJCbkd5M3RXL0FNT01DWklWTlNhejdCWDgNCiMgVnRZR3FMdDlNbWVPcmVHUFJkdEJ4M3lHT1ArcngzcktXREVKbElxTFh2SlduWTB2NXlkUHBPakw2czM2Y3p3eg0KIyBzdWN1b0tzN1lrL2VoYi8vV3grNWtNcUlNUnZVQkR4NnoxZXYrN3BzTk9kZ0pNb2l3T3JVRzJaZFNvUWJVMnJNDQojIGtwTGlRNmJHUmluWmJJNE9MdTlCTUlGbTFVVWw5Vm5lUHM2QmFhZUVXdmpKU2pObTJxQStzZEZVZUVZMHFWalANCiMgS09XdWcvRzZYNXVBaXluTTdCdTJheUJqVXdJREFRQUJvNElCWFRDQ0FWa3dFZ1lEVlIwVEFRSC9CQWd3QmdFQg0KIyAvd0lCQURBZEJnTlZIUTRFRmdRVTcyOVRTdW5rQm54Nnl1S1FWdll2MUVuc3kwNHdId1lEVlIwakJCZ3dGb0FVDQojIDdOZmpndEp4WFdSTTN5NW5QK2U2bUs0Y0QwOHdEZ1lEVlIwUEFRSC9CQVFEQWdHR01CTUdBMVVkSlFRTU1Bb0cNCiMgQ0NzR0FRVUZCd01JTUhjR0NDc0dBUVVGQndFQkJHc3dhVEFrQmdnckJnRUZCUWN3QVlZWWFIUjBjRG92TDI5ag0KIyBjM0F1WkdsbmFXTmxjblF1WTI5dE1FRUdDQ3NHQVFVRkJ6QUNoalZvZEhSd09pOHZZMkZqWlhKMGN5NWthV2RwDQojIFkyVnlkQzVqYjIwdlJHbG5hVU5sY25SVWNuVnpkR1ZrVW05dmRFYzBMbU55ZERCREJnTlZIUjhFUERBNk1EaWcNCiMgTnFBMGhqSm9kSFJ3T2k4dlkzSnNNeTVrYVdkcFkyVnlkQzVqYjIwdlJHbG5hVU5sY25SVWNuVnpkR1ZrVW05dg0KIyBkRWMwTG1OeWJEQWdCZ05WSFNBRUdUQVhNQWdHQm1lQkRBRUVBakFMQmdsZ2hrZ0JodjFzQndFd0RRWUpLb1pJDQojIGh2Y05BUUVMQlFBRGdnSUJBQmZPK3hhQUhQNEhQUkYyY1RDOXZndkl0VFNtZjgzUWg4V0lHakIvVDhPYlhBWnoNCiMgOE9qdWhVeGphYUZkbGVNTTBsQnJ5UFRRTTJxRUpQZTM2endiU0kvbVM4M2Fmc2wzWVRqK0lRaFFFN2pVL2tYag0KIyBqeXRKZ25uMGh2clY2aHFXR2QzckxBVXQ2dkp5OWxNRFBqVEx4TGdYZjlyNW5XTVF3cjhNeWI5ckVWS0NoSHlmDQojIHB6ZWU1a0gwRjhIQUJCZ3IwVWRxaXJaN2Jvd2U5VmoyQUlNRDhsaXlydWtaMmlBL3dkRzJ0aDl5MUlzQTBRRjgNCiMgZFRYcXZjblRtcGZlUWgzNWs1ek9DUG1TTnExVUg0MTBBTlZrbzQzK0NkbXU0eTgxaGphalYvZ3hkRWtNeDFOSw0KIyBVNHVIUWNLZlp4QXZCQUtxTVZ1cXRlNjlNOUo2QTQ3T3ZnUmFQcysyeWtnY0dWMDBUWXIyTHIzdHk5cUlpamFuDQojIHJVUjNhbnpFd2x2elppaXlmVFBqTGJuRlJzanNZZzM5T2xWOGNpcERvcTcrcU5OanFGemVHeGN5dEw1VFRMTDQNCiMgWmFvQmRxYmhPaFozWlJEVXBoUHZTUm1NVGhpMHZ3OXZPRFJ6VzZBeG5KbGwzOEYwY3VKRzd1RUJZVHB0TVNiaA0KIyBkaEdRRHBPWGdwSVVzV1RqZDZ4cFI2b2FRZi9ESmJnM3M2S0NMUEFsWjY2UnpJZzlzQytOSnB1ZC92NCs3UldzDQojIFdDaUtpOUVPTExIZk1SMlp5Si8reGhDeDl5SGJ4dGw1VFBhdTFqLzFNSURwTVB4MExja1RldGlTdUV0UXZMc04NCiMgejNRYnA3d0dXcWJJaU9XQ25iNVdxeEwzL0JBUHZJWEtValBTeHlac3E4V2hiYU0ydHN6V2tQWlB1YmRjTUlJRw0KIyA3VENDQk5XZ0F3SUJBZ0lRQ29EdkdFdU44UVdDMGNSMnA1VjBhREFOQmdrcWhraUc5dzBCQVFzRkFEQnBNUXN3DQojIENRWURWUVFHRXdKVlV6RVhNQlVHQTFVRUNoTU9SR2xuYVVObGNuUXNJRWx1WXk0eFFUQS9CZ05WQkFNVE9FUnANCiMgWjJsRFpYSjBJRlJ5ZFhOMFpXUWdSelFnVkdsdFpWTjBZVzF3YVc1bklGSlRRVFF3T1RZZ1UwaEJNalUySURJdw0KIyBNalVnUTBFeE1CNFhEVEkxTURZd05EQXdNREF3TUZvWERUTTJNRGt3TXpJek5UazFPVm93WXpFTE1Ba0dBMVVFDQojIEJoTUNWVk14RnpBVkJnTlZCQW9URGtScFoybERaWEowTENCSmJtTXVNVHN3T1FZRFZRUURFekpFYVdkcFEyVnkNCiMgZENCVFNFRXlOVFlnVWxOQk5EQTVOaUJVYVcxbGMzUmhiWEFnVW1WemNHOXVaR1Z5SURJd01qVWdNVENDQWlJdw0KIyBEUVlKS29aSWh2Y05BUUVCQlFBRGdnSVBBRENDQWdvQ2dnSUJBTkJHckMwU3hwN1E2cTVnVnJNclY3cHZVZitHDQojIGNBb0IzOG8zekJsQ01HTXlxSm5mRk5aeCt3dkE2OUhGVEJkd2JId0JTT2VMcHZQblo4Wk4rdm84ZEUyL3BQdk8NCiMgeC9WajhUY2hUeVNBMlI0UUtwVkQ3ZHZOWmg2d1cyUjZrU3U5Ukp0LzRRaGd1U3NzcDNxb21lN01yeFZ5ZlFPOQ0KIyBzTXg2WkFXakZEWU96RGk4U09oUFVXbExuaDAwQ2xsOHBqclVjQ1YzSzNFMHp6MDlsZFEvL25CWlpSRXI0aC9HDQojIEk2RHhiMlVveXJOMGlqdFVEVkhSWGRtbmNPT01BM0NvQi9pVVNST1VJTkRUOThva3NvdVRNWUZPbkhvUmg2KzgNCiMgNkx0YzV6alBLSFc1S3FDdnBTZHVTd2h3VW1vdHVRaGNnOXR3MllEM3c2eVNTU3UrM3FVOEREK25pZ05KRm10Ng0KIyBMQUh2SDNLU3VOTG9aTGMxSGYySk5NVkw0UTFPcGJ5YnBNZTQ2WWNlTkEwTGZOc25xY25wSmVJdEsvRGhLYlB4DQojIFRUdUdvWDd3Sk5kb1JPUlZiUFIxVlZuRHVTZUhWWmxjNHNlQU8rNmQyc0MyNi9QUVBkUDUxaG8xekJwK3hVSVoNCiMga3BTRkE4dldkb1VvSExXbnFXVTNkQ0N5Rkcxcm9TcmdIalNIbHE4eHltTG5qQ2JTTFo0OWtQbWs4aXl5aXpORA0KIyBJWGovL2NPZ3JZN3JsUnlUbGFDQ2Z3N2FTVVJPd251N3pFUjZFYUorQWxpTDdvalRkUzVQV1BzV2V1cFdzN05wDQojIENoVWs1NTVLMDk2VjFoRTB5WklYZStnaUF3VzAwYUh6ckRjaEljMmJRaHBwMElvS1JSN1l1ZkFrcHJ4TWlYQUoNCiMgUTFYQ21uQ2ZnUGY4KzNtbkFnTUJBQUdqZ2dHVk1JSUJrVEFNQmdOVkhSTUJBZjhFQWpBQU1CMEdBMVVkRGdRVw0KIyBCQlRrTy96eU1lMzkvZGZ6a1hGakdWQkR6MkdNNkRBZkJnTlZIU01FR0RBV2dCVHZiMU5LNmVRR2ZIcks0cEJXDQojIDlpL1VTZXpMVGpBT0JnTlZIUThCQWY4RUJBTUNCNEF3RmdZRFZSMGxBUUgvQkF3d0NnWUlLd1lCQlFVSEF3Z3cNCiMgZ1pVR0NDc0dBUVVGQndFQkJJR0lNSUdGTUNRR0NDc0dBUVVGQnpBQmhoaG9kSFJ3T2k4dmIyTnpjQzVrYVdkcA0KIyBZMlZ5ZEM1amIyMHdYUVlJS3dZQkJRVUhNQUtHVVdoMGRIQTZMeTlqWVdObGNuUnpMbVJwWjJsalpYSjBMbU52DQojIGJTOUVhV2RwUTJWeWRGUnlkWE4wWldSSE5GUnBiV1ZUZEdGdGNHbHVaMUpUUVRRd09UWlRTRUV5TlRZeU1ESTENCiMgUTBFeExtTnlkREJmQmdOVkhSOEVXREJXTUZTZ1VxQlFoazVvZEhSd09pOHZZM0pzTXk1a2FXZHBZMlZ5ZEM1ag0KIyBiMjB2UkdsbmFVTmxjblJVY25WemRHVmtSelJVYVcxbFUzUmhiWEJwYm1kU1UwRTBNRGsyVTBoQk1qVTJNakF5DQojIE5VTkJNUzVqY213d0lBWURWUjBnQkJrd0Z6QUlCZ1puZ1F3QkJBSXdDd1lKWUlaSUFZYjliQWNCTUEwR0NTcUcNCiMgU0liM0RRRUJDd1VBQTRJQ0FRQmxLcTN4SENjRXVhNWdRZXpSQ0VTZVkwQnlJZmprOWlKUDJ6V0xwUXExYjRVUg0KIyBHbndXQmRFWkQ5Z0JxOWZOYU5tRmo2RWg4L1ltUkRmeFQ3QzBrOEZVRnFOaCt0c2hnYjRPNkxnamc4SzhlbEM0DQojICtvV0NxblUvTUw5bEZmaW04Lzl5Sm1aU2UyRjhBUS9VZEtGT3RqN1lNVG1xUE85bXpza2dpQzNRWUlVUDJTM0gNCiMgUXZIRzFGRHUrV1VxVzRkYUlxVG9YRkUvSlEvRUFCZ2ZaWExXVTB6aVRONlIzeWdRQkhNVUJhQjViZHJQYkY2TQ0KIyBSWXMwM2g0b2JFTW54WU9YOFZCUktlMXVObnpRVlRlTG5pMm5Ia1gvUXF2WG5OYitZa0RGa3hVR3RNVGFpTFI5DQojIHdqeFV4dTJoRUNacHF5VTFkMEliWDZXcTgvZ1Z1dERvakJJRmVSbHFBY3VFVlQwY0tzYit6Sk5Fc3VFQjdPNy8NCiMgY3V2VFFhc25NOUFXY0lRZlZqbnpydndpQ1o4NUVFOExVa3FSaG9TM1k1ME9IZ2FZN1QvbHdkNlVBcmIrQk9WQQ0KIyBrZzJvT3ZvbC9ESmdkZEozNVhUeGZVbFErOEhnZ3Q4bDJZdjdyb2FuY0pJRmNib2pCY3hsUmNHRzBMSWhwNkd2DQojIFJlUUdnTWdZeFFiVjFTM0NyV3FaekJ0MVI5eEpnS2Y0N0NkeFZSZC9uZFVsUTA1b3hZeTJ6UldWRmpGN21jcjQNCiMgQzM0TWozb2NDVmNjQXZsS1Y5akVuc3RybmlMdlV4eFZaRS9ycHRiN0lSRTJsc2tLUElKZ2JhUDV0Mm5Hai9VTA0KIyBMaTQ5eFRjQlpVOGF0dWZrK0VNRi9jV3VpQzdQT0dUNzVxYUw2dmRDdkhsc2h0amROWE9DSVVqc2FyZk5aekdDDQojIEJVTXdnZ1UvQWdFQk1IZ3daREVMTUFrR0ExVUVCaE1DUmxJeEZ6QVZCZ05WQkFnTURzT09iR1V0WkdVdFJuSmgNCiMgYm1ObE1Sb3dHQVlEVlFRSERCRk9aWFZwYkd4NUxYTjFjaTFUWldsdVpURVBNQTBHQTFVRUNnd0dWVzV2ZDJoNQ0KIyBNUTh3RFFZRFZRUUREQVpWYm05M2FIa0NFQnJtWjZQSjNocUxUTGNtK2VueTVFa3dDUVlGS3c0REFob0ZBS0I0DQojIE1CZ0dDaXNHQVFRQmdqY0NBUXd4Q2pBSW9BS0FBS0VDZ0FBd0dRWUpLb1pJaHZjTkFRa0RNUXdHQ2lzR0FRUUINCiMgZ2pjQ0FRUXdIQVlLS3dZQkJBR0NOd0lCQ3pFT01Bd0dDaXNHQVFRQmdqY0NBUlV3SXdZSktvWklodmNOQVFrRQ0KIyBNUllFRkhEditaQ2ZGTFBMRU9XblhONjRpUmxWdFI5T01BMEdDU3FHU0liM0RRRUJBUVVBQklJQkFDZ2g1NllHDQojIGwybTZac2tIWG13bmE5THNZYVpYQ0tLcmF5SkRrZnpudjI0RkZQUkJiMFJibWg3L0ZkTU4vVHk0UmZtR0NHYmUNCiMgSU9wa2ZhVVU0U1I0VjQ5OWcyRjQzVkJtMEtJMTduSHZwQVR0MThrYS9BU1VtZ1pURi9tUnlKMURqYldLMU91Kw0KIyBRVDBzcUpRVHBnMUV6dkxXNEQ5OUtteW1JOVF5TWY4UC9tQThLQUQvUmxQakNFQ1dNK1FoRStWY1NOd1Vuak0yDQojIGQ0cEovRlcwWEI0dGNzUGRuRTh4Qjc4bFJDK1dmZ2hjUHF1Y1NCMjJrOGNwbFNHY0w1bUJiQy9PaTRJYUhGU20NCiMgKzQzNCtoS08vaTFPSGtVYzg0bGFyM2FENUxOSFZBSzhvRWRPZTErS3lYSXRpVGNaTDNyRzRPL3RLckdSOGwxNA0KIyBmejZCSi9veTNHZzNaR09oZ2dNbU1JSURJZ1lKS29aSWh2Y05BUWtHTVlJREV6Q0NBdzhDQVFFd2ZUQnBNUXN3DQojIENRWURWUVFHRXdKVlV6RVhNQlVHQTFVRUNoTU9SR2xuYVVObGNuUXNJRWx1WXk0eFFUQS9CZ05WQkFNVE9FUnANCiMgWjJsRFpYSjBJRlJ5ZFhOMFpXUWdSelFnVkdsdFpWTjBZVzF3YVc1bklGSlRRVFF3T1RZZ1UwaEJNalUySURJdw0KIyBNalVnUTBFeEFoQUtnTzhZUzQzeEJZTFJ4SGFubFhSb01BMEdDV0NHU0FGbEF3UUNBUVVBb0drd0dBWUpLb1pJDQojIGh2Y05BUWtETVFzR0NTcUdTSWIzRFFFSEFUQWNCZ2txaGtpRzl3MEJDUVV4RHhjTk1qVXdPVEEwTVRZeE56VTINCiMgV2pBdkJna3Foa2lHOXcwQkNRUXhJZ1FncVBLVDMzZUR2MmpmQk45VWR6RGIwOXVVUUpCT0xwZ01NZEcwcVRmdQ0KIyBXb013RFFZSktvWklodmNOQVFFQkJRQUVnZ0lBYVk4K1hLSWFhYXlQZ1BZTERTZlRFdWVvY1NLMVVNejVRL01UDQojIE56dzJRVnFuOHlzNUpTaS85MEhnVUFpL3J1Um0yU0gxR3B3Y2xuZndqdU80TUtOMXF0cVNYNzlVN2x6V1Q4ZjMNCiMgQWdwd3ZNQ1VSUHEyMXdaOXFzWWFYYnB4TTdsV1lYRzlJekIzR0g3WlgrRlVpOEtVQmFEQ3dsbTdHZGdKRDVEcA0KIyAvaGFRMmxxUWY4K005bWZjS1lka3dzNStiWnltN3lEU2VLbmpzVk5aa1ZpQVFaRWN2RVdsYlludHlVR1ErZlVMDQojIFpRSUhjSEVPcnF6K2tpU3N1d1BvS3lWY2tqL21tMHdaeTVUQk40WCtYYmRiNEJtUXZic0w4aDJ2WXlDSEZITkQNCiMgR29TUDhTWmhFdWd0RThYTUtXSzFIVnlvazl5bnZNVVAyVkl2WnRzcktpVmt0TGliTHBXMmUxdy84QktWVE9WZQ0KIyAyNGxSa0IwUVc5WkdiVm9oVDIxTm8rQUt1aGxMWXJvSlM2aml5TEJ3dmV6TUxPVlN6bDJnN2lIdFF4Zk96clFLDQojIGhQWWI4WnhhWnhYdDAycmt6Q1k0QmxOZ3RXdmtSKy9reWNBb3VMS3VpOEpoMXAwUitwUFBPU0VTR1dHcUE3Yk8NCiMgU0lJU2x0R2tta2loc2ZWd0tSQm9jRmZYOUdkQi9YdkZpYzRPbDlHMTM2dnpxUXRERjR0ZmMyTVBGZzl3WjlVWQ0KIyBER1RyYmtQQVg5d1hydDJxNXdyYW95WS81Y3kvL0VMK1FrQldDaUtHUU9JQUNMbno1SUVEUnJBN0F5T3FwNEVkDQojIGFSaHE2djg4SFlKaWFlMUNpSHlzTFE0SkRqbjhsNSt2dW5IaFFSYWdtcm1SVXdCNlN1T1V2cXJINkNlN3hrTTUNCiMgTHNDVWo1TT0NCiMgU0lHICMgRW5kIHNpZ25hdHVyZSBibG9jaw0K"
+    }
+  },
+  "conf/application/windows/cortex-xdr": {
+    "description": "Antivirus Cortex Xdr",
+    "payload": {
+      "id": 3605,
+      "name": "Cortex-Xdr 8.8.0.10622 (Windows)",
+      "description": "Cortex XDR 8.8.0.10622",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Cortex-Xdr/8.8.0.10622/package.jar",
+      "size": 58156223,
+      "digest": "MD5:fe9959b616e560bc5b5902fc68f9905e",
+      "metadata": {
+        "software": {
+          "id": "Cortex-Xdr",
+          "version": "8.8.0.10622"
+        },
+        "definition": {
+          "Id": "Cortex-Xdr",
+          "Name": "Cortex XDR",
+          "Level": "Infrastructure",
+          "Factory": {
+            "Build": {
+              "Step": "791811",
+              "Workflow": "326382"
+            },
+            "Commit": {
+              "Id": "7d4c353e114ca537ba073bf85e49312537a8806e",
+              "Name": "master"
+            }
+          },
+          "Release": "8.8.0.10622",
+          "Version": "8.8.0.10622"
+        },
+        "versionName": "8.8.0.10622",
+        "applicationLabel": "Cortex XDR"
+      }
+    },
+    "when": "(context.platform==='win32') && (/^(IFP5|IFP4|IFP3)/.test(context.deviceId))",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Cpp-Runtime-(Windows)": {
+    "description": "Installation de l'application Cpp-Runtime (Windows)",
+    "payload": {
+      "id": 2538,
+      "name": "Cpp-Runtime (Windows)",
+      "description": "Visual C++ runtime",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Cpp-Runtime/14.40.33816/package.jar",
+      "size": 25277653,
+      "digest": "MD5:23c068c48e159158ef04e74d0a423a8d",
+      "metadata": {
+        "software": {
+          "id": "Cpp-Runtime",
+          "version": "14.40.33816"
+        },
+        "definition": {
+          "Id": "Cpp-Runtime",
+          "Name": "Visual C++ runtime",
+          "Level": "Runtime",
+          "Factory": {
+            "Build": {
+              "Step": "686138",
+              "Workflow": "291273"
+            },
+            "Commit": {
+              "Id": "6180bbf1d4d407100b339c31c97871cdc6126fc5",
+              "Name": "master"
+            }
+          },
+          "Release": "14.40.33816",
+          "Version": "14.40.33816"
+        },
+        "versionName": "14.40.33816",
+        "applicationLabel": "Visual C++ runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Device-Battery-2.0.0": {
+    "description": "Installation du correctif Y13 2024 Device-Battery 2.0.0",
+    "payload": {
+      "id": 3643,
+      "name": "Device-Battery 2.0.0 (Windows)",
+      "description": "\u00c9talonnage des batteries 2.0.0",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Device-Battery/2.0.0/package.jar",
+      "size": 5668603,
+      "digest": "MD5:0ef557819d7097fbd5a53105e0baff63",
+      "metadata": {
+        "software": {
+          "id": "Device-Battery",
+          "version": "2.0.0"
+        },
+        "definition": {
+          "Id": "Device-Battery",
+          "Name": "\u00c9talonnage des batteries",
+          "Level": "Configuration",
+          "Factory": {
+            "Build": {
+              "Step": "807626",
+              "Workflow": "331331"
+            },
+            "Commit": {
+              "Id": "5bb3ecaa99abc3febb4e2b2fdea3151ab8582432",
+              "Name": "master"
+            }
+          },
+          "Release": "2.0.0",
+          "Version": "2.0.0"
+        },
+        "versionName": "2.0.0",
+        "applicationLabel": "\u00c9talonnage des batteries"
+      }
+    },
+    "when": "(context.platform==='win32')  && (/^(IFP4|UYE2)/.test(context.deviceId))",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Device-Manager-(Windows)": {
+    "description": "Installation de l'application Device-Manager (Windows)",
+    "payload": {
+      "id": 2531,
+      "name": "Device-Manager (Windows)",
+      "description": "Agent de contr\u00f4le Unowhy",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Device-Manager/1.3.62/package.jar",
+      "size": 36496384,
+      "digest": "MD5:41848d320153b5350b18f27c5b930da1",
+      "metadata": {
+        "software": {
+          "id": "Device-Manager",
+          "version": "1.3.62"
+        },
+        "definition": {
+          "Id": "Device-Manager",
+          "Name": "Agent de contr\u00f4le Unowhy",
+          "Level": "Infrastructure",
+          "Factory": {
+            "Build": {
+              "Step": "845711",
+              "Workflow": "343042"
+            },
+            "Commit": {
+              "Id": "5e911f4a57d94b3ea5e42ecd5cd1f6ecf3cc0930",
+              "Name": "master"
+            }
+          },
+          "Release": "1.3.62",
+          "Version": "1.3.62",
+          "AllowOptionRefresh": true
+        },
+        "versionName": "1.3.62",
+        "applicationLabel": "Agent de contr\u00f4le Unowhy",
+        "allow_options_refresh": true
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ],
+    "options": {
+      "services": {
+        "logs": {
+          "api_key": "U2FsdGVkX19hZDM4YWIwZolg60JX2lqIvQmpzEwl5LyFB8pzogLHmu7f0dkd5q5KTsmNLcdFzLHb9Frqb9Svcg/XDtEV0v/6AqxJy7OOewBjXoHegBhHNErHxO1HtKSh",
+          "endPoint": "https://facts.idf.hisqool.com/"
+        }
+      }
+    }
+  },
+  "conf/application/windows/Facts-Evaluator-(Windows)": {
+    "description": "Installation de l'application Facts-Evaluator (Windows)",
+    "payload": {
+      "id": 2534,
+      "name": "Facts-Evaluator (Windows)",
+      "description": "G\u00e9n\u00e9ration des rapports sur l\u2019\u00e9tat de l\u2019\u00e9quipement",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Facts-Evaluator/2.0.0/package.jar",
+      "size": 5955,
+      "digest": "MD5:2cdd66510a269b21f3b81f879ef20bf9",
+      "metadata": {
+        "software": {
+          "id": "Facts-Evaluator",
+          "version": "2.0.0"
+        },
+        "definition": {
+          "Id": "Facts-Evaluator",
+          "Name": "G\u00e9n\u00e9ration des rapports sur l\u2019\u00e9tat de l\u2019\u00e9quipement",
+          "Factory": {
+            "Build": {
+              "Step": "685389",
+              "Workflow": "291054"
+            },
+            "Commit": {
+              "Id": "dd5981d9020bdc669bb6ce726b3be6c6d0a5feb4",
+              "Name": "master"
+            }
+          },
+          "Release": "2.0.0",
+          "Version": "2.0.0"
+        },
+        "versionName": "2.0.0",
+        "applicationLabel": "G\u00e9n\u00e9ration des rapports sur l\u2019\u00e9tat de l\u2019\u00e9quipement"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Inventaire-de-l-equipement-windows": {
+    "description": "Installation de l'application Inventaire de l\u2019\u00e9quipement Windows",
+    "payload": {
+      "id": 2337,
+      "name": "Device-Inventory (Windows)",
+      "description": "Inventaire de l'\u00e9quipement",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/desktop-inventory-paq_1.0.0.jar",
+      "size": 12996,
+      "digest": "MD5:6ee358d3b807bed15e4ba05dc6fbfe61",
+      "metadata": {
+        "software": {
+          "id": "Device-Inventory",
+          "version": "1.0"
+        },
+        "versionName": "1.0",
+        "applicationLabel": "Inventaire de l'\u00e9quipement"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/LGPO-Windows": {
+    "description": "Installation de l'application LGPO Windows",
+    "payload": {
+      "id": 130,
+      "name": "Device-Policies (Windows)",
+      "description": "Application de strat\u00e9gies locales",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/desktop-gpo_1.5.jar",
+      "size": 43024,
+      "digest": "MD5:53675164bb5e6d8c20287960bae5bde4",
+      "metadata": {
+        "software": {
+          "id": "Device-Policies",
+          "version": "1.5"
+        },
+        "versionName": "1.5",
+        "applicationLabel": "Application de strat\u00e9gies locales"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Microsoft-Office-1.0.0": {
+    "description": "Installation de l'application Microsoft Office 1.0.0",
+    "payload": {
+      "id": 359,
+      "name": "Office (Windows)",
+      "description": "Office",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/Microsoft_Office_1.0.0.jar",
+      "size": 3742235,
+      "digest": "MD5:b08d791961b1b35a45d875e77b899b1c",
+      "metadata": {
+        "software": {
+          "id": "Office",
+          "version": "1.0.0"
+        },
+        "versionName": "1.0.0",
+        "applicationLabel": "Office"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Microsoft-Visual-C++-2015-2019-Redistributable-x64-14.29.30133": {
+    "description": "Installation de l'application Microsoft Visual C++ 2015-2019 Redistributable x64 14.29.30133",
+    "payload": {
+      "id": 320,
+      "name": "Cpp-Runtime 14.29.30133 (Windows)",
+      "description": "Visual C++ runtime 14.29.30133",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/vcredist.x64_14.29.30133.jar",
+      "size": 24943789,
+      "digest": "MD5:0780ddd82e1ad3043ab8c52a3d8afa23",
+      "metadata": {
+        "software": {
+          "id": "Cpp-Runtime",
+          "version": "14.29.30133"
+        },
+        "versionName": "14.29.30133",
+        "applicationLabel": "Visual C++ runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/.Net-6-Runtime-6.0.6": {
+    "description": "Installation de l'application .Net 6 Runtime 6.0.6",
+    "payload": {
+      "id": 1100,
+      "name": "Net-Runtime 6.0.6 (Windows)",
+      "description": ".NET runtime 6.0.6",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/dotnetruntime6_6.0.6.jar",
+      "size": 94297003,
+      "digest": "MD5:7a22865c94bbb08f39894fc736b3f6ea",
+      "metadata": {
+        "software": {
+          "id": "Net-Runtime",
+          "version": "6.0.6"
+        },
+        "versionName": "6.0.6",
+        "applicationLabel": ".NET runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Net-Runtime-8.0.10-(Windows)": {
+    "description": "Installation de l'application Net-Runtime 8.0.10 (Windows)",
+    "payload": {
+      "id": 2466,
+      "name": "Net-Runtime 8.0.10 (Windows)",
+      "description": ".NET runtime 8.0.10",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Net-Runtime/8.0.10/package.jar",
+      "size": 68759566,
+      "digest": "MD5:f298349ec9a5414d8e2db2a14e2aa873",
+      "metadata": {
+        "software": {
+          "id": "Net-Runtime",
+          "version": "8.0.10"
+        },
+        "definition": {
+          "Id": "Net-Runtime",
+          "Name": ".NET runtime",
+          "Level": "Runtime",
+          "Factory": {
+            "Build": {
+              "Step": "686141",
+              "Workflow": "291274"
+            },
+            "Commit": {
+              "Id": "6180bbf1d4d407100b339c31c97871cdc6126fc5",
+              "Name": "master"
+            }
+          },
+          "Release": "8.0.10",
+          "Version": "8.0.10"
+        },
+        "versionName": "8.0.10",
+        "applicationLabel": ".NET runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Net-Runtime-9.0.3-(Windows)": {
+    "description": "Installation de l'application Net-Runtime 9.0.3 (Windows)",
+    "payload": {
+      "id": 3553,
+      "name": "Net-Runtime 9.0.3 (Windows)",
+      "description": ".NET runtime 9.0.3",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Net-Runtime/9.0.3/package.jar",
+      "size": 70878922,
+      "digest": "MD5:c4a1ef7324fcf21d95c10d7b9e6554af",
+      "metadata": {
+        "software": {
+          "id": "Net-Runtime",
+          "version": "9.0.3"
+        },
+        "definition": {
+          "Id": "Net-Runtime",
+          "Name": ".NET runtime",
+          "Level": "Runtime",
+          "Factory": {
+            "Build": {
+              "Step": "752164",
+              "Workflow": "313994"
+            },
+            "Commit": {
+              "Id": "3811b2d3a0126368dbc36ad617a9572278e66e3e",
+              "Name": "master"
+            }
+          },
+          "Release": "9.0.3",
+          "Version": "9.0.3"
+        },
+        "versionName": "9.0.3",
+        "applicationLabel": ".NET runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Net-Runtime-(Windows)": {
+    "description": "Installation de l'application Net-Runtime (Windows)",
+    "payload": {
+      "id": 2537,
+      "name": "Net-Runtime (Windows)",
+      "description": ".NET runtime",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Net-Runtime/10.0.0/package.jar",
+      "size": 70713034,
+      "digest": "MD5:0ff9d4766eccc046ecaa1102bfe56548",
+      "metadata": {
+        "software": {
+          "id": "Net-Runtime",
+          "version": "10.0.0"
+        },
+        "definition": {
+          "Id": "Net-Runtime",
+          "Name": ".NET runtime",
+          "Level": "Runtime",
+          "Factory": {
+            "Build": {
+              "Step": "851556",
+              "Workflow": "344322"
+            },
+            "Commit": {
+              "Id": "635717ed4d78eec68299351cdf657d2ff1055850",
+              "Name": "master"
+            }
+          },
+          "Release": "10.0.0",
+          "Version": "10.0.0"
+        },
+        "versionName": "10.0.0",
+        "applicationLabel": ".NET runtime"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Protection-de-l'equipement-1.3.0": {
+    "description": "Installation de l'application Protection de l\u2019\u00e9quipement 1.3.0",
+    "payload": {
+      "id": 1146,
+      "name": "Device-Security 1.3.0 (Windows)",
+      "description": "Protection de l\u2019\u00e9quipement 1.3.0",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/desktop-security-paq_1.3.0.jar",
+      "size": 3934,
+      "digest": "MD5:7c34ef1009bf9cb33c8d60282efb7fda",
+      "metadata": {
+        "software": {
+          "id": "Device-Security",
+          "version": "1.3.0"
+        },
+        "versionName": "1.3.0",
+        "packageVersion": "1.3.0",
+        "applicationLabel": "Protection de l\u2019\u00e9quipement"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Protection-de-l'equipement-1.5.0": {
+    "description": "Installation de l'application Protection de l\u2019\u00e9quipement 1.5.0",
+    "payload": {
+      "id": 2275,
+      "name": "Device-Security 1.5.0 (Windows)",
+      "description": "Protection de l\u2019\u00e9quipement 1.5.0",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/desktop-security-paq_1.5.0.jar",
+      "size": 3894,
+      "digest": "MD5:470924481b34c31c28cf13ed0703c461",
+      "metadata": {
+        "software": {
+          "id": "Device-Security",
+          "version": "1.5.0"
+        },
+        "versionName": "1.5.0",
+        "packageVersion": "1.5.0",
+        "applicationLabel": "Protection de l\u2019\u00e9quipement"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Sqool-Net-(Windows)": {
+    "description": "Installation de l'application Sqool-Net (Windows)",
+    "payload": {
+      "id": 2532,
+      "name": "Sqool-Net (Windows)",
+      "description": "Utilitaires de gestion Unowhy (.NET)",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Sqool-Net/1.0.421/package.jar",
+      "size": 16382401,
+      "digest": "MD5:e71c056f020fb6329e111e999c32339d",
+      "metadata": {
+        "software": {
+          "id": "Sqool-Net",
+          "version": "1.0.421"
+        },
+        "definition": {
+          "Id": "Sqool-Net",
+          "Name": "Utilitaires de gestion Unowhy (.NET)",
+          "Level": "Infrastructure",
+          "Factory": {
+            "Build": {
+              "Step": "847239",
+              "Workflow": "343548"
+            },
+            "Commit": {
+              "Id": "9eda0bb7126250f13127722980a1d8be365740dd",
+              "Name": "master"
+            }
+          },
+          "Release": "1.0.421",
+          "Version": "1.0.421"
+        },
+        "versionName": "1.0.421",
+        "applicationLabel": "Utilitaires de gestion Unowhy (.NET)"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/application/windows/Sqool-Rs-(Windows)": {
+    "description": "Installation de l'application Sqool-Rs (Windows)",
+    "payload": {
+      "id": 2533,
+      "name": "Sqool-Rs (Windows)",
+      "description": "Utilitaires de gestion Unowhy (Rust)",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/legacy/windows/Sqool-Rs/1.0.27/package.jar",
+      "size": 307326,
+      "digest": "MD5:2cc2afbe5bed80fef15986624bf3b29d",
+      "metadata": {
+        "software": {
+          "id": "Sqool-Rs",
+          "version": "1.0.27"
+        },
+        "definition": {
+          "Id": "Sqool-Rs",
+          "Name": "Utilitaires de gestion Unowhy (Rust)",
+          "Level": "Infrastructure",
+          "Factory": {
+            "Build": {
+              "Step": "845732",
+              "Workflow": "343048"
+            },
+            "Commit": {
+              "Id": "5e911f4a57d94b3ea5e42ecd5cd1f6ecf3cc0930",
+              "Name": "master"
+            }
+          },
+          "Release": "1.0.27",
+          "Version": "1.0.27"
+        },
+        "versionName": "1.0.27",
+        "applicationLabel": "Utilitaires de gestion Unowhy (Rust)"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/other/cleanafterinstall": {
+    "description": "Maintenance Post D\u00e9ploiement",
+    "payload": {
+      "id": 173,
+      "name": "Device-Clean 1.0 (Windows)",
+      "description": "Nettoyage post-d\u00e9ploiement 1.0",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/_Nettoyage_post_deploiement_1.0.0.jar",
+      "size": 32742,
+      "digest": "MD5:b029d24b814bc8f60fb79b9fe260b461",
+      "metadata": {
+        "software": {
+          "id": "Device-Clean",
+          "version": "1.0"
+        },
+        "versionName": "1.0",
+        "applicationLabel": "Nettoyage post-d\u00e9ploiement"
+      }
+    },
+    "when": "context.platform === 'win32'",
+    "triggers": [
+      "boot",
+      "configuration",
+      "application_add",
+      "application_remove"
+    ]
+  },
+  "conf/other/disablerecovery": {
+    "description": "D\u00e9sactivation de la r\u00e9cup\u00e9ration",
+    "payload": {
+      "id": 179,
+      "name": "Device-Recovery 1.0 (Windows)",
+      "description": "Blocage du service de r\u00e9initialisation 1.0",
+      "url": "https://idfconf.s3.gra.io.cloud.ovh.net/payloads/disablerecovery_1.0.0.jar",
+      "size": 33989,
+      "digest": "MD5:1881272ba0e962b2388826671df2a66b",
+      "metadata": {
+        "software": {
+          "id": "Device-Recovery",
+          "version": "1.0"
+        },
+        "versionName": "1.0",
+        "applicationLabel": "Blocage du service de r\u00e9initialisation"
+      }
+    },
+    "when": "context.platform==='win32'",
+    "triggers": [
+      "boot",
+      "configuration"
+    ]
+  }
+}

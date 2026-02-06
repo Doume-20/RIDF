@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice de Jordan rationnelle : rat_jordan</TITLE>
+<META NAME="description" CONTENT="Matrice de Jordan rationnelle : rat_jordan">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node696.html">
+<LINK REL="previous" HREF="node694.html">
+<LINK REL="up" HREF="node691.html">
+<LINK REL="next" HREF="node696.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13168"
+  HREF="node696.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13162"
+  HREF="node691.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13156"
+  HREF="node694.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13164"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13166"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13169"
+  HREF="node696.html">Matrice de passage et</A>
+<B> monter:</B> <A NAME="tex2html13163"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13157"
+  HREF="node694.html">Vecteurs propres : egv</A>
+ &nbsp; <B>  <A NAME="tex2html13165"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13167"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009474000000000000000"></A><A NAME="17792"></A>
+<BR>
+Matrice de Jordan rationnelle : <TT>rat_jordan</TT>
+</H2>
+<TT>rat_jordan</TT> a comme argument une matrice <I>A</I> d'ordre <I>n</I> &#224; 
+coefficients rationnels.
+<BR><TT>rat_jordan</TT> renvoie :
+
+<UL>
+<LI>en mode <TT>Xcas</TT>, <TT>Mupad</TT> ou <TT>TI</TT>
+<BR>
+une s&#233;quencee compos&#233;e de deux matrices : une matrice 
+de changement de base <I>P</I>, suivie de la matrice de Jordan <I>J</I> associ&#233;e &#224; 
+<I>A</I> si celle-ci est rationnelle ou de la matrice dont les blocs de Jordan sont 
+remplac&#233;s par les matrices compagnons associ&#233;es au facteur non 
+rationnellement reductible du polyn&#244;me caract&#233;ristique de <I>A</I> (c'est la 
+matrice la plus reduite &#224; coefficient dans le corps de <I>A</I>, ou le corps 
+complexifi&#233; de <I>A</I> si on est en mode complexe).
+<BR></LI>
+<LI>en mode <TT>Maple</TT>
+<BR>
+la matrice de Jordan <I>J</I> associ&#233;e &#224; <I>A</I> si celle-ci est rationnelle ou de la matrice dont les blocs de Jordan sont 
+remplac&#233;s par les matrices compagnons associ&#233;es au facteur non 
+rationnellement reductible du polyn&#244;me caract&#233;ristique de <I>A</I>. On peut
+cependant obtenir la matrice de changement de base <I>P</I>, dans une variable 
+pass&#233;e en second argument, par exemple 
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[1,0,0],[1,2,-1],[0,0,1]],'P')</TT>
+
+</DIV>
+</LI>
+</UL>
+On a :
+<BR><!-- MATH
+ $J=P^{-1}AP$
+ -->
+<I>J</I> = <I>P</I><SUP>-1</SUP><I>AP</I> avec <I>J</I> est &#224; coefficients rationnels.
+<BR><B>Remarques</B>
+
+<UL>
+<LI>La syntaxe <TT>Maple</TT> est aussi valable dans les autres modes, par 
+exemple, en mode <TT>Xcas</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[4,1,1],[1,4,1],[1,1,4]],'P')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,-1,1/2],[1,0,-1],[1,1,1/2]]</TT>
+</DIV>
+puis <TT>P</TT> renvoie :
+<DIV ALIGN="CENTER">
+<TT>[[6,0,0],[0,3,0],[0,0,3]]</TT>
+</DIV>,
+</LI>
+<LI>Les coefficients de <I>P</I> et de <I>J</I> appartiennent au corps des 
+coefficients de <I>A</I>.
+<BR>
+Par exemple, en mode <TT>Xcas</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[1,0,1],[0,2,-1],[1,-1,1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,1,2],[0,0,-1],[0,1,2]],[[0,0,-1],[1,0,-3],[0,1,4]]</TT>
+</DIV>
+On tape (on met  <TT>-pcar(...)</TT> car l'argument de <TT>companion</TT> doit &#234;tre un polyn&#244;me unitaire (cf <A HREF="node701.html#sec:compagne">6.47.10</A>)
+<DIV ALIGN="CENTER">
+<TT>companion(-pcar([[1,0,1],[0,2,-1],[1,-1,1]],x),x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,0,-1],[1,0,-3],[0,1,4]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[1,0,0],[0,1,1],[1,1,-1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,0,0],[1,1,1],[0,0,1]],[[1,0,0],[0,0,2],[0,1,0]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>factor(pcar([[1,0,0],[0,1,1],[1,1,-1]],x))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-(x-1)*(x<code>^</code>2-2)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>companion((x<code>^</code>2-2),x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,2],[1,0]]</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Lorsque <I>A</I> est sym&#233;trique et a des valeurs propres d'ordre multiple,
+<TT>Xcas</TT> renvoie des vecteurs propres orthogonaux mais pas forc&#233;ment 
+norm&#233;s i.e. <TT>tran(P)*P</TT> est une matrice diagonale de diagonale le carr&#233;
+de la norme des vecteurs propres.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[4,1,1],[1,4,1],[1,1,4]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,-1,1/2],[1,0,-1],[1,1,1/2]],[[6,0,0],[0,3,0],[0,0,3]]</TT>
+</DIV>
+</LI>
+</UL>
+On tape en mode <TT>Xcas</TT>, <TT>Mupad</TT> et <TT>TI</TT>:
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[1,0,0],[1,2,-1],[0,0,1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,1,0],[1,0,1],[0,1,1]],[[2,0,0],[0,1,0],[0,0,1]] </TT>
+</DIV>
+On tape en mode <TT>Xcas</TT>, <TT>Mupad</TT> et <TT>TI</TT>:
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[4,1,-2],[1,2,-1],[2,1,0]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[[1,2,1],[0,1,0],[1,2,0]],[[2,1,0],[0,2,1],[0,0,2]]]</TT>
+</DIV>
+En mode complexe et en mode <TT>Xcas</TT>, <TT>Mupad</TT> et <TT>TI</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[2,0,0],[0,2,-1],[2,1,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,0,0],[-2,-1,-1],[0,-i,i]],[[2,0,0],[0,2-i,0],[0,0,2+i]]</TT>
+</DIV>
+On tape en mode <TT>Maple</TT> :
+<DIV ALIGN="CENTER">
+<TT>rat_jordan([[1,0,0],[1,2,-1],[0,0,1]],'P')</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[2,0,0],[0,1,0],[0,0,1]]</TT>
+</DIV>
+puis on tape :
+<DIV ALIGN="CENTER">
+<TT>P)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[0,1,0],[1,0,1],[0,1,1]]</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13168"
+  HREF="node696.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13162"
+  HREF="node691.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13156"
+  HREF="node694.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13164"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13166"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13169"
+  HREF="node696.html">Matrice de passage et</A>
+<B> monter:</B> <A NAME="tex2html13163"
+  HREF="node691.html">R&#233;duction des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13157"
+  HREF="node694.html">Vecteurs propres : egv</A>
+ &nbsp; <B>  <A NAME="tex2html13165"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13167"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

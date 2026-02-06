@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions statistiques &#224; 2 variables</TITLE>
+<META NAME="description" CONTENT="Les fonctions statistiques &#224; 2 variables">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node802.html">
+<LINK REL="previous" HREF="node764.html">
+<LINK REL="up" HREF="node763.html">
+<LINK REL="next" HREF="node782.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14483"
+  HREF="node782.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14477"
+  HREF="node763.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14471"
+  HREF="node780.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14479"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14481"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14484"
+  HREF="node782.html">La covariance : covariance</A>
+<B> monter:</B> <A NAME="tex2html14478"
+  HREF="node763.html">Les fonctions de statistique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14472"
+  HREF="node780.html">Pour dessiner un diagramme</A>
+ &nbsp; <B>  <A NAME="tex2html14480"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14482"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001020000000000000000">
+Les fonctions statistiques &#224; 2 variables</A>
+</H1>
+On continue &#224; utiliser la liste <TT>A</TT> dans les exemples.
+<BR>
+On tape :
+<BR>
+<DIV ALIGN="CENTER">
+<TT>A:=[0,1,2,3,4,5,6,7,8,9,10,11]</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html14485"
+  HREF="node782.html">La covariance : <TT>covariance</TT></A>
+<LI><A NAME="tex2html14486"
+  HREF="node783.html">La corr&#233;lation : <TT>correlation</TT></A>
+<LI><A NAME="tex2html14487"
+  HREF="node784.html">Covariance et corr&#233;lation : <TT>covariance_correlation</TT></A>
+<LI><A NAME="tex2html14488"
+  HREF="node785.html">Le nuage de points : <TT>scatterplot nuage_points</TT></A>
+<LI><A NAME="tex2html14489"
+  HREF="node786.html">Ligne polygonale : <TT>polygonplot ligne_polygonale</TT></A>
+<LI><A NAME="tex2html14490"
+  HREF="node787.html">Ligne polygonale : <TT>listplot plotlist</TT></A>
+<LI><A NAME="tex2html14491"
+  HREF="node788.html">Ligne polygonale et nuage de points : <TT>polygonscatterplot ligne_polygonale_pointee</TT></A>
+<LI><A NAME="tex2html14492"
+  HREF="node789.html">Interpolation lin&#233;aire : <TT>linear_interpolate</TT></A>
+<LI><A NAME="tex2html14493"
+  HREF="node790.html">R&#233;gression lin&#233;aire : <TT>linear_regression</TT></A>
+<LI><A NAME="tex2html14494"
+  HREF="node791.html">Graphe de la r&#233;gression lin&#233;aire : 
+<TT>linear_regression_plot</TT></A>
+<LI><A NAME="tex2html14495"
+  HREF="node792.html">R&#233;gression exponentielle : <TT>exponential_regression</TT></A>
+<LI><A NAME="tex2html14496"
+  HREF="node793.html">Graphe de la r&#233;gression exponentielle : 
+<TT>exponential_regression_plot</TT></A>
+<LI><A NAME="tex2html14497"
+  HREF="node794.html">R&#233;gression logarithmique : <TT>logarithmic_regression</TT></A>
+<LI><A NAME="tex2html14498"
+  HREF="node795.html">Graphe de la r&#233;gression logarithmique : 
+<TT>logarithmic_regression_plot</TT></A>
+<LI><A NAME="tex2html14499"
+  HREF="node796.html">R&#233;gression polyn&#244;miale : <TT>polynomial_regression</TT></A>
+<LI><A NAME="tex2html14500"
+  HREF="node797.html">Graphe de la r&#233;gression polynomiale :
+ <TT>polynomial_regression_plot</TT></A>
+<LI><A NAME="tex2html14501"
+  HREF="node798.html">R&#233;gression puissance : <TT>power_regression</TT></A>
+<LI><A NAME="tex2html14502"
+  HREF="node799.html">Graphe de la r&#233;gression puissance :
+ <TT>power_regression_plot</TT></A>
+<LI><A NAME="tex2html14503"
+  HREF="node800.html">R&#233;gression logistique : <TT>logistic_regression</TT></A>
+<LI><A NAME="tex2html14504"
+  HREF="node801.html">Graphe de la r&#233;gression logistique :
+ <TT>logistic_regression_plot</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les caract&#232;res et les cha&#238;nes</TITLE>
+<META NAME="description" CONTENT="Les caract&#232;res et les cha&#238;nes">
+<META NAME="keywords" CONTENT="tutoriel">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tutoriel.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html154"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html148"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html156"
+  HREF="node46.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html158"
+  HREF="node47.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html161"
+  HREF="node8.html">Les variables</A>
+<B> monter:</B> <A NAME="tex2html155"
+  HREF="node5.html">Les objets du calcul</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html149"
+  HREF="node6.html">Les nombres</A>
+ &nbsp; <B>  <A NAME="tex2html157"
+  HREF="node46.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html159"
+  HREF="node47.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00022000000000000000"></A>
+<A NAME="135"></A>
+<BR>
+Les caract&#232;res et les cha&#238;nes
+</H2>
+<A NAME="1576"></A>
+Une cha&#238;ne est parenth&#233;s&#233;e par des guillemets (<TT>"</TT>).
+Un caract&#232;re est une cha&#238;ne ayant un seul &#233;l&#233;ment.
+<PRE>
+s:="azertyuiop"
+size(s)
+s[0]+s[3]+s[size(s)-1]
+concat(s[0],concat(s[3],s[size(s)-1]))
+head(s)
+tail(s)
+mid(s,3,2)
+l:=asc(s)
+ss:=char(l)
+string(123)
+expr(123)
+expr(0123)
+</PRE>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=2><B>Cha&#238;nes</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>asc</code></TD>
+<TD ALIGN="LEFT">cha&#238;ne-&gt;liste des codes ASCII</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>char</code></TD>
+<TD ALIGN="LEFT">liste des codes ASCII-&gt;cha&#238;ne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>size</code></TD>
+<TD ALIGN="LEFT">nombre de caract&#232;res</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>concat</code> ou <code>+</code></TD>
+<TD ALIGN="LEFT">concat&#233;nation</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>mid</code></TD>
+<TD ALIGN="LEFT">morceau de cha&#238;ne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>head</code></TD>
+<TD ALIGN="LEFT">premier caract&#232;re</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>tail</code></TD>
+<TD ALIGN="LEFT">cha&#238;ne sans le 1ier caract&#232;re</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>string</code></TD>
+<TD ALIGN="LEFT">nombre ou expression-&gt;cha&#238;ne</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><code>expr</code></TD>
+<TD ALIGN="LEFT">cha&#238;ne-&gt;nombre (base 10 ou 8) ou expression</TD>
+</TR>
+</TABLE>
+</DIV><BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

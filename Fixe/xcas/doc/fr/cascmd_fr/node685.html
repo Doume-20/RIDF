@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Passage de la forme standard &#224; la forme canonique</TITLE>
+<META NAME="description" CONTENT="Passage de la forme standard &#224; la forme canonique">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node684.html">
+<LINK REL="up" HREF="node680.html">
+<LINK REL="next" HREF="node686.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13013"
+  HREF="node686.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13007"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13003"
+  HREF="node684.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13009"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13011"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13014"
+  HREF="node686.html">Les diff&#233;rentes norme d'une</A>
+<B> monter:</B> <A NAME="tex2html13008"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13004"
+  HREF="node684.html">Deuxi&#232;me cas: un argument</A>
+ &nbsp; <B>  <A NAME="tex2html13010"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13012"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009455000000000000000">
+Passage de la forme standard &#224; la forme canonique</A>
+</H2>
+La forme standard d'un probl&#232;me d'optimisation lin&#233;aire est
+analogue &#224; la forme canonique, mais en remplacant <I>Ax</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>b</I>
+par <I>Ax</I> = <I>b</I> avec <I>b</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 et o&#249; on cherche
+<I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 (on peut s'y ramener si n&#233;cessaire
+en changeant le signe d'une ligne).
+
+<P>
+Le probl&#232;me pour appliquer l'algorithme pr&#233;c&#233;dent est qu'on ne
+peut pas ajouter de variables d'&#233;carts et donc qu'on n'a pas de
+valeur <I>x</I> &#233;vidente dans le domaine de maximisation (dit autrement
+on n'a pas de sous-matrice identit&#233; dans la formulation matricielle
+du probl&#232;me et il n'y a pas d'op&#233;ration de lignes &#233;vidente
+qui permette de le faire).
+
+<P>
+On va se ramener &#224; des probl&#232;mes sous forme ``canonique'' par
+la m&#233;thode dite en 2 phases. Soit <I>m</I> le nombre de lignes de <I>A</I>
+(nombre de conditions dans <I>Ax</I> = <I>b</I>). On ajoute des variables
+artificielles <!-- MATH
+ $y_1,...,y_m$
+ -->
+<I>y</I><SUB>1</SUB>,..., <I>y</I><SUB>m</SUB> et on maximise
+- <IMG
+ WIDTH="23" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$ \sum$"><I>y</I><SUB>i</SUB> sous condition <!-- MATH
+ $Ax=b, x \geq 0, y \geq 0$
+ -->
+<I>Ax</I> = <I>b</I>, <I>x</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0, <I>y</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 
+en partant de la valeur initiale 0 pour les variables
+non artificielles et <I>b</I> pour <I>y</I>
+(on appelle donc <code>simplex_reduce</code> avec
+un argument matrice obtenue en augmentant <I>A</I> par l'identit&#233;, <I>b</I> inchang&#233;
+et un <I>c</I> artificiel form&#233; de 0 au d&#233;but et de 1 en dessous de 
+l'identit&#233; (que <TT>simplex_reduce</TT> va commencer par annuler).
+Si le maximum existe et est 0, on obtiendra une sous-matrice
+identit&#233; dans les colonnes correspondants &#224; <I>x</I>, et on pourra
+&#233;liminer les variables artificielles (dont la valeur sera 0
+pour atteindre l'optimum).
+Il restera &#224; appliquer &#224; nouveau l'algorithme du simplexe 
+mais avec le <I>c</I> original (comme les coefficients de <I>c</I> correspondant
+&#224; l'identit&#233; n'ont pas de raison d'&#234;tre nuls, 
+on doit commencer par les rendre
+nuls, ce que <code>simplex_reduce</code> fait si on permute les
+colonnes pour placer la sous-matrice identit&#233; &#224; droite).
+
+<P>
+Exemple&nbsp;: on cherche le minimum de 2<I>x</I> + 3<I>y</I> - <I>z</I> + <I>t</I> avec les
+<!-- MATH
+ $x,y,z,t\geq 0$
+ -->
+<I>x</I>, <I>y</I>, <I>z</I>, <I>t</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \geq$"> 0 et&nbsp;:
+<P><!-- MATH
+ \begin{displaymath}
+\left\{ \begin{array}{rcl}
+-x-y+t&=&1\\
+y-z+t&=&3
+\end{array}
+\right.
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img455.png"
+ ALT="$\displaystyle \left\{\vphantom{ \begin{array}{rcl}
+-x-y+t&amp;=&amp;1\\
+y-z+t&amp;=&amp;3
+\end{array}}\right.$"><IMG
+ WIDTH="156" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img456.png"
+ ALT="$\displaystyle \begin{array}{rcl}
+-x-y+t&amp;=&amp;1\\
+y-z+t&amp;=&amp;3
+\end{array}$">
+</DIV><P></P>
+Ceci revient &#224; calculer l'oppos&#233; du maximum de <!-- MATH
+ $-(2x+3y-z+t)$
+ -->
+- (2<I>x</I> + 3<I>y</I> - <I>z</I> + <I>t</I>).
+On ajoute donc deux variables artificielles <I>y</I><SUB>1</SUB> et <I>y</I><SUB>2</SUB>, on tape
+directement la matrice de l'algorithme
+<PRE>
+simplex_reduce([[-1,-1,0,1,1,0,1],
+[0,1,-1,1,0,1,3],
+[0,0,0,0,1,1,0]])
+</PRE>
+On obtient comme optimum 0, avec 0 comme valeurs pour les variables
+artificielles, et la matrice
+<P><!-- MATH
+ \begin{displaymath}
+\left(\begin{array}{ccccccc}
+-1/2 & 0 & -1/2 & 1 & 1/2 & 1/2 & 2 \\
+1/2 & 1 & -1/2 & 0 & -1/2 & 1/2 & 1 \\
+0 & 0 & 0 & 0 & 1 & 1 & 0
+\end{array}\right)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="21" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img457.png"
+ ALT="$\displaystyle \left(\vphantom{\begin{array}{ccccccc}
+-1/2 &amp; 0 &amp; -1/2 &amp; 1 &amp; 1/2 ...
+... &amp; -1/2 &amp; 0 &amp; -1/2 &amp; 1/2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0
+\end{array}}\right.$"><IMG
+ WIDTH="287" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img458.png"
+ ALT="$\displaystyle \begin{array}{ccccccc}
+-1/2 &amp; 0 &amp; -1/2 &amp; 1 &amp; 1/2 &amp; 1/2 &amp; 2 \\
+1/2 &amp; 1 &amp; -1/2 &amp; 0 &amp; -1/2 &amp; 1/2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0
+\end{array}$"><IMG
+ WIDTH="21" HEIGHT="82" ALIGN="MIDDLE" BORDER="0"
+ SRC="img459.png"
+ ALT="$\displaystyle \left.\vphantom{\begin{array}{ccccccc}
+-1/2 &amp; 0 &amp; -1/2 &amp; 1 &amp; 1/2 ...
+... &amp; -1/2 &amp; 0 &amp; -1/2 &amp; 1/2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0
+\end{array}}\right)$">
+</DIV><P></P>
+Ceci signifie aussi qu'une valeur initiale dans le domaine est
+(0, 1, 0, 2). Il nous reste &#224; optimiser le probl&#232;me de d&#233;part
+en remplacant les lignes de <I>Ax</I> = <I>b</I> par les 2 premi&#232;res lignes
+de la matrice r&#233;ponse ci-dessus dont on enl&#232;ve les variables 
+artificielles et en ajoutant la ligne de la fonction &#224; optimiser.
+On prend donc la matrice
+<PRE>
+simplex_reduce([[-1/2,0,-1/2,1,2],
+[1/2,1,-1/2,0,1],[2,3,-1,1,0]])
+</PRE>
+On obtient comme maximum -5, donc le minimum de l'oppos&#233; est 5,
+obtenu pour (0, 1, 0, 2) soit apr&#232;s replacement des colonnes 
+<I>t</I> = 2 et <I>y</I> = 1, les autres nuls.
+
+<P>
+Pour plus de d&#233;tails, chercher sur google <code>simplex algorithm</code> 
+ou dans une biblioth&#232;que Ciarlet ``Introduction &#224; l'analyse
+matricielle et &#224; l'optimisation''.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13013"
+  HREF="node686.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13007"
+  HREF="node680.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13003"
+  HREF="node684.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13009"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13011"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13014"
+  HREF="node686.html">Les diff&#233;rentes norme d'une</A>
+<B> monter:</B> <A NAME="tex2html13008"
+  HREF="node680.html">Programmation lin&#233;aire</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13004"
+  HREF="node684.html">Deuxi&#232;me cas: un argument</A>
+ &nbsp; <B>  <A NAME="tex2html13010"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13012"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

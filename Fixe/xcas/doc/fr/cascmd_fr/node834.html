@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les fonctions de programmation</TITLE>
+<META NAME="description" CONTENT="Les fonctions de programmation">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node886.html">
+<LINK REL="previous" HREF="node763.html">
+<LINK REL="up" HREF="cascmd_fr.html">
+<LINK REL="next" HREF="node835.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15268"
+  HREF="node835.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15262"
+  HREF="cascmd_fr.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15256"
+  HREF="node833.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15264"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15266"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15269"
+  HREF="node835.html">La forme d'une fonction,</A>
+<B> monter:</B> <A NAME="tex2html15263"
+  HREF="cascmd_fr.html">Calcul formel et Math&#233;matiques</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15257"
+  HREF="node833.html">Compl&#233;ment &#224; 1 de</A>
+ &nbsp; <B>  <A NAME="tex2html15265"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15267"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001100000000000000000">
+Les fonctions de programmation</A>
+</H1>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html15270"
+  HREF="node835.html">La forme d'une fonction, d'un programme et d'un script</A>
+<UL>
+<LI><A NAME="tex2html15271"
+  HREF="node836.html">Le choix de l'&#233;diteur</A>
+<LI><A NAME="tex2html15272"
+  HREF="node837.html">La forme d'une fonction</A>
+<LI><A NAME="tex2html15273"
+  HREF="node838.html">La forme d'un programme</A>
+<LI><A NAME="tex2html15274"
+  HREF="node839.html">La forme d'un script</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html15275"
+  HREF="node840.html">Ex&#233;cuter une fonction  pas &#224; pas</A>
+<LI><A NAME="tex2html15276"
+  HREF="node841.html">La s&#233;quence d'instructions</A>
+<LI><A NAME="tex2html15277"
+  HREF="node842.html">Les instructions de base</A>
+<UL>
+<LI><A NAME="tex2html15278"
+  HREF="node843.html">Les commentaires : <TT>comment //</TT></A>
+<LI><A NAME="tex2html15279"
+  HREF="node844.html">Les entr&#233;es : <TT>input, saisir, Input, InputStr, saisir_chaine, textinput</TT></A>
+<LI><A NAME="tex2html15280"
+  HREF="node845.html">Fonction testant si une touche est press&#233;e : <TT>getKey</TT></A>
+<LI><A NAME="tex2html15281"
+  HREF="node846.html">Fonction testant le type de son argument: <TT>type</TT></A>
+<LI><A NAME="tex2html15282"
+  HREF="node847.html">Fonction testant le type de son argument: <TT>getType</TT></A>
+<LI><A NAME="tex2html15283"
+  HREF="node848.html">Fonction testant le type de son argument: <TT>compare</TT></A>
+<LI><A NAME="tex2html15284"
+  HREF="node849.html">Les sorties : <TT>print, Disp, afficher</TT></A>
+<LI><A NAME="tex2html15285"
+  HREF="node850.html">Pour effacer les sorties : <TT>ClrIO</TT></A>
+<LI><A NAME="tex2html15286"
+  HREF="node851.html">Les sorties de <I>a</I><SUP>b</SUP> : <TT>printpow</TT></A>
+<LI><A NAME="tex2html15287"
+  HREF="node852.html">Sortie dans une petite fen&#234;tre : <TT>output Output</TT></A>
+<LI><A NAME="tex2html15288"
+  HREF="node853.html">Les affectations infix&#233;es : <TT>=&gt; := =&lt;</TT></A>
+<LI><A NAME="tex2html15289"
+  HREF="node854.html">L'affectation par copie : <TT>copy</TT></A>
+<LI><A NAME="tex2html15290"
+  HREF="node855.html">Les diff&#233;rences entre  <TT>:=</TT>, <TT>=&lt;</TT> et <TT>copy</TT></A>
+<LI><A NAME="tex2html15291"
+  HREF="node856.html">Les instructions <TT>copy</TT> et <TT>=&lt;</TT> dans un programme </A>
+<LI><A NAME="tex2html15292"
+  HREF="node857.html">L'affectation prefix&#233;e : <TT>sto Store</TT></A>
+<LI><A NAME="tex2html15293"
+  HREF="node858.html">L'affectation d'une &#233;galit&#233; : <TT>assign</TT></A>
+<LI><A NAME="tex2html15294"
+  HREF="node859.html">L'instruction conditionnelle : <TT>if else, si alors sinon fsi</TT></A>
+<LI><A NAME="tex2html15295"
+  HREF="node860.html">L'instruction conditionnelle : <TT>switch</TT></A>
+<LI><A NAME="tex2html15296"
+  HREF="node861.html">La boucle : <TT>for pour fpour</TT></A>
+<LI><A NAME="tex2html15297"
+  HREF="node862.html">La fonction : <TT>seq</TT></A>
+<LI><A NAME="tex2html15298"
+  HREF="node863.html">La boucle : <TT>repeat until</TT> et <TT>repeter jusqua</TT></A>
+<LI><A NAME="tex2html15299"
+  HREF="node864.html">La boucle : <TT>while</TT> et <TT>tantque</TT></A>
+<LI><A NAME="tex2html15300"
+  HREF="node865.html">Modifier l'ordre d'ex&#233;cution des instructions : <TT>label goto</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html15301"
+  HREF="node866.html">Les autres instructions</A>
+<UL>
+<LI><A NAME="tex2html15302"
+  HREF="node867.html">Pour lire les entr&#233;es &#224; partir d'un fichier : <TT>read</TT></A>
+<LI><A NAME="tex2html15303"
+  HREF="node868.html">Pour &#233;crire des variables et leur contenu dans un fichier : <TT>write</TT></A>
+<LI><A NAME="tex2html15304"
+  HREF="node869.html">Pour &#233;crire des sorties dans un fichier : <TT>fopen fprint fclose</TT></A>
+<LI><A NAME="tex2html15305"
+  HREF="node870.html">Pour utiliser une cha&#238;ne comme nom de variable ou comme nom de fonction : <TT>#</TT></A>
+<LI><A NAME="tex2html15306"
+  HREF="node871.html">Pour utiliser une cha&#238;ne comme un nombre : <TT>expr</TT></A>
+<LI><A NAME="tex2html15307"
+  HREF="node872.html">Pour utiliser une cha&#238;ne comme nom de commande : <TT>expr</TT></A>
+<LI><A NAME="tex2html15308"
+  HREF="node873.html">&#201;valuer une expression sous la forme d'une cha&#238;ne : <TT>string</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html15309"
+  HREF="node874.html">D'autres instructions utiles</A>
+<UL>
+<LI><A NAME="tex2html15310"
+  HREF="node875.html">D&#233;finir une fonction ayant un nombre variable d'arguments : <TT>args</TT></A>
+<LI><A NAME="tex2html15311"
+  HREF="node876.html">Pour sortir d'une boucle : <TT>break</TT></A>
+<LI><A NAME="tex2html15312"
+  HREF="node877.html">Pour ne pas faire la fin d'une boucle : <TT>continue</TT></A>
+<LI><A NAME="tex2html15313"
+  HREF="node878.html">Ouvrir l'&#232;cran <TT>DispG</TT> depuis un programme : <TT>DispG</TT></A>
+<LI><A NAME="tex2html15314"
+  HREF="node879.html">Effacer l'&#232;cran <TT>DispG</TT> depuis un programme : <TT>ClrGraph</TT></A>
+<LI><A NAME="tex2html15315"
+  HREF="node880.html">Fermer l'&#232;cran <TT>DispG</TT> depuis un programme : <TT>DispHome</TT></A>
+</UL>
+<BR>
+<LI><A NAME="tex2html15316"
+  HREF="node881.html">Le debuggeur</A>
+<UL>
+<LI><A NAME="tex2html15317"
+  HREF="node882.html">Ouvrir le d&#233;buggeur : <TT>debug</TT></A>
+<LI><A NAME="tex2html15318"
+  HREF="node883.html">Avoir un arr&#234;t momentan&#233; : <TT>Pause</TT></A>
+<LI><A NAME="tex2html15319"
+  HREF="node884.html">Intercepter une erreur : <TT>try..catch</TT></A>
+<LI><A NAME="tex2html15320"
+  HREF="node885.html">G&#233;n&#233;rer une erreur : <TT>throw error ERROR</TT></A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

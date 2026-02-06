@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Factorisation : factor factoriser</TITLE>
+<META NAME="description" CONTENT="Factorisation : factor factoriser">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node448.html">
+<LINK REL="previous" HREF="node446.html">
+<LINK REL="up" HREF="node429.html">
+<LINK REL="next" HREF="node448.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9515"
+  HREF="node448.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9509"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9503"
+  HREF="node446.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9511"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9513"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9516"
+  HREF="node448.html">Factorisation sans facteur carr&#233;</A>
+<B> monter:</B> <A NAME="tex2html9510"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9504"
+  HREF="node446.html">Factorisation sur les entiers</A>
+ &nbsp; <B>  <A NAME="tex2html9512"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9514"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092518000000000000000"></A><A NAME="11217"></A><A NAME="11218"></A><A NAME="sec:factor"></A>
+<BR>
+Factorisation : <TT>factor factoriser</TT>
+</H2>
+<TT>factor</TT> a pour argument un polyn&#244;me ou une liste de 
+polyn&#244;mes et &#233;ventuellement <TT>sqrt(n)</TT>.
+<BR><TT>factor</TT> factorise le polyn&#244;me ou la liste de polyn&#244;mes 
+sur les r&#233;els en mode r&#233;el et sur les complexes en mode 
+complexe Les  coefficients des facteurs sont dans <!-- MATH
+ $\mathbb Q(\sqrt(n))$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.png"
+ ALT="$ \mathbb {Q}$">(<IMG
+ WIDTH="29" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img340.png"
+ ALT="$ \sqrt{(}$"><I>n</I>)) si 
+<TT>Sqrt</TT> est coch&#233; dans la  configuration du <TT>cas</TT> ou si <TT>sqrt(n)</TT> 
+est le second argument (voir aussi <A HREF="node322.html#sec:factore">6.13.9</A>).
+
+<P>
+<B>Note</B> pour &#234;tre en mode r&#233;el (ou complexe) d&#233;cochez (ou cochez)
+ <TT>Complexe</TT> dans la configuration du 
+<TT>cas</TT> que l'on ouvre avec le bouton donnant la ligne d'&#233;tat.
+<BR>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>2+2*x+1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(x+1)<code>^</code>2</TT>
+</DIV>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>4-2*x<code>^</code>2+1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>(-x+1)<code>^</code>2*(x+1)<code>^</code>2</TT>
+</DIV>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code> 3-2*x<code>^</code>2+1)</TT>
+</DIV>
+On obtient si <TT>Sqrt</TT> n'est pas coch&#233; dans la configuration du <TT>cas</TT> :
+<DIV ALIGN="CENTER">
+<TT>(x-1)*(x<code>^</code>2-x-1)</TT>
+</DIV>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code> 3-2*x<code>^</code>2+1)</TT>
+</DIV>
+On obtient si <TT>Sqrt</TT> est coch&#233; dans la configuration du <TT>cas</TT> :
+<DIV ALIGN="CENTER">
+<TT>(x-1)*(x+(sqrt(5)+1)/2)*(x+(-sqrt(5)+1)/2)</TT>
+</DIV>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code> 3-2*x<code>^</code>2+1,sqrt(5))</TT>
+</DIV>
+On obtient si <TT>Sqrt</TT> est coch&#233; ou non dans la configuration du 
+<TT>cas</TT> :
+<DIV ALIGN="CENTER">
+<TT>((2*sqrt(5)-19)*((sqrt(5)+15)*x+7*sqrt(5)-5)*(-x+1)*((sqrt(5)+25)*x-13*sqrt(5)-15))/6820</TT>
+</DIV>
+On tape :
+ <DIV ALIGN="CENTER">
+<TT>factor(x<code>^</code>2+1)</TT>
+</DIV>
+On obtient en mode r&#233;el :
+<DIV ALIGN="CENTER">
+<TT>x<code>^</code>2+1</TT>
+</DIV>
+On obtient en mode complexe :
+<DIV ALIGN="CENTER">
+<TT>((-i)*x+1)*((i)*x+1)</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9515"
+  HREF="node448.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9509"
+  HREF="node429.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9503"
+  HREF="node446.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9511"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9513"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9516"
+  HREF="node448.html">Factorisation sans facteur carr&#233;</A>
+<B> monter:</B> <A NAME="tex2html9510"
+  HREF="node429.html">Les polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9504"
+  HREF="node446.html">Factorisation sur les entiers</A>
+ &nbsp; <B>  <A NAME="tex2html9512"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9514"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

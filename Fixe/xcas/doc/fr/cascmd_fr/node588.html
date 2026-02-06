@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Supprimer des &#233;l&#233;ments d'une liste : remove</TITLE>
+<META NAME="description" CONTENT="Supprimer des &#233;l&#233;ments d'une liste : remove">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node589.html">
+<LINK REL="previous" HREF="node587.html">
+<LINK REL="up" HREF="node564.html">
+<LINK REL="next" HREF="node589.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html11597"
+  HREF="node589.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html11591"
+  HREF="node564.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html11585"
+  HREF="node587.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html11593"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html11595"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html11598"
+  HREF="node589.html">Tester si un &#233;l&#233;ment</A>
+<B> monter:</B> <A NAME="tex2html11592"
+  HREF="node564.html">La liste ou les</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html11586"
+  HREF="node587.html">S&#233;lectionner des &#233;l&#233;ments d'une</A>
+ &nbsp; <B>  <A NAME="tex2html11594"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html11596"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0093822000000000000000"></A><A NAME="14911"></A>
+<BR>
+Supprimer des &#233;l&#233;ments d'une liste : <TT>remove</TT>
+</H2>
+<TT>remove</TT> a deux param&#232;tres : une fonction bool&#233;enne <TT>f</TT> et
+ une liste <TT>L</TT>.
+<BR><TT>remove</TT> enl&#232;ve les &#233;l&#233;ments <TT>c</TT> de la liste <TT>L</TT>, qui
+v&#233;rifie <TT>f(c)=true</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>remove(x-&gt;(x&gt;=2),[0,1,2,3,4,5])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[0,1]</TT>
+</DIV>
+<B>Remarque</B> Pour faire la m&#234;me chose avec une chaine de catact&#232;re, 
+par exemple, enlever tous les "a" d'une chaine :
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ord("a")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>97</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>f(chn):={local l:=length(chn)-1;
+return remove(x-&gt;(ord(x)==97),seq(chn[k],k,0,l));}</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>f("abracadabra")</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>["b","r","c","d","b","r"]</TT>
+</DIV>
+Puis on tape :
+<DIV ALIGN="CENTER">
+<TT>char(ord(["b","r","c","d","b","r"]))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>"brcdbr"</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

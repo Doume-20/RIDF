@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>&#201;valuation des r&#233;els : evalf approx et Digits</TITLE>
+<META NAME="description" CONTENT="&#201;valuation des r&#233;els : evalf approx et Digits">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node160.html">
+<LINK REL="previous" HREF="node156.html">
+<LINK REL="up" HREF="node155.html">
+<LINK REL="next" HREF="node160.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html4693"
+  HREF="node160.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4687"
+  HREF="node155.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4681"
+  HREF="node158.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4689"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4691"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4694"
+  HREF="node160.html">Quelques fonctions</A>
+<B> monter:</B> <A NAME="tex2html4688"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4682"
+  HREF="node158.html">Diff&#233;rence de codage entre</A>
+ &nbsp; <B>  <A NAME="tex2html4690"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4692"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00720000000000000000"></A><A NAME="3387"></A><A NAME="3388"></A><A NAME="3389"></A><A NAME="3390"></A>
+<BR>
+&#201;valuation des r&#233;els : <TT>evalf approx</TT> et <TT>Digits</TT>
+</H1>
+On peut &#233;valuer une expression num&#233;rique gr&#226;ce &#224; la 
+commande <TT>evalf</TT> ou <TT>approx</TT>.
+<BR>
+On peut sp&#233;cifier le nombre de chiffres significatifs en mettant ce nombre
+comme deuxi&#232;me argument ce qui a l'avantage de ne pas modifier la case 
+<TT>Chiffres</TT> de la configuration du CAS.
+<BR><B>Attention !</B>
+<BR>
+<UL>
+<LI>Si le deuxi&#232;me argument <TT>a</TT> est inf&#233;rieur &#224; 14 il n'est pas 
+pris en compte et c'est le nombre <TT>n</TT> de <TT>Digits</TT> qui donnera le nombre
+de chiffres significatifs de l'affichage sachant que si <TT>n</TT> est inf&#233;rieur
+&#224; 14, les calculs seront quand m&#234;me faits avec 14 chiffres significatifs.
+</LI>
+<LI>Si le deuxi&#232;me argument <TT>a</TT> est sup&#233;rieur &#224; 14, l'affichage et 
+les calculs se feront  avec <TT>a</TT> chiffres significatifs sans tenir compte de la valeur de <TT>Digits</TT>.
+</LI>
+</UL>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2))</TT>
+</DIV>
+On obtient, si dans la configuration du <TT>cas</TT> (menu <TT>Cfg</TT>) on a
+choisit <TT>Chiffres=7</TT> (ou si on a tap&#233; <TT>Digits:=7</TT>) :
+<DIV ALIGN="CENTER">
+<TT>1.414214</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2),3)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2),10)</TT>
+</DIV>
+On obtient toujours, si dans la configuration du <TT>cas</TT> (menu <TT>Cfg</TT>) on 
+a choisit <TT>Chiffres=7</TT> (ou si on a tap&#233; <TT>Digits:=7</TT>) :
+<DIV ALIGN="CENTER">
+<TT>1.414214</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2),3)-1.414214</TT>
+</DIV>
+On obtient toujours, si dans la configuration du <TT>cas</TT> (menu <TT>Cfg</TT>) on 
+a choisit <TT>Chiffres=7</TT> (ou si on a tap&#233; <TT>Digits:=7</TT>) :
+<DIV ALIGN="CENTER">
+<TT>-4.376269e-07</TT>
+</DIV>
+ce qui montre que <TT>Xcas</TT> fait les calculs avec 14 chiffres significatifs.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2),20)</TT>
+</DIV>
+On obtient, si dans <TT>Configuration du CAS</TT> (menu <TT>Cfg</TT>) on a
+choisit <TT>chiffres=7</TT> (7 repr&#233;sente le nombre de chiffres significatifs) :
+<DIV ALIGN="CENTER">
+<TT>1.41421356237309504880</TT>
+</DIV>
+et cela n'a pas modifi&#233; la configuration du CAS.
+<BR>
+On peut changer le nombre de chiffres significatifs avec la variable 
+<TT>DIGITS</TT> ou <TT>Digits</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=20</TT>
+</DIV>
+Cela a pour effet de changer <TT>Configuration du CAS</TT> et de mettre 20 dans la
+case <TT>Chiffres</TT>.
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2))</TT>
+</DIV>
+On obtient 20 chiffres apr&#232;s la virgule :
+<DIV ALIGN="CENTER">
+<TT>1.41421356237309504880</TT>
+</DIV>
+<B>Notation</B> : Le nombre r&#233;el 10<SUP>-4</SUP> est un nombre exact alors que 
+1<I>e</I> - 4 est un nombre approch&#233;. 
+<BR>
+On tape : 
+<DIV ALIGN="CENTER">
+<TT>evalf(10<code>^</code>-5)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1e-05</TT>
+</DIV>
+On tape : 
+<DIV ALIGN="CENTER">
+<TT>evalf(10<code>^</code>15)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1e+15</TT>
+</DIV>
+On tape : 
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2))*10<code>^</code>-5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.41421356237e-05</TT>
+</DIV>
+<B>Remarques</B>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=20</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>a:=evalf(sqrt(2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.41421356237309504880</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(a,10)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.4142135624</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2),10)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.414213562373</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>DIGITS:=10</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>b:=evalf(sqrt(2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.414213562</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(b,10)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.414213562</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>evalf(sqrt(2),10)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1.414213562</TT>
+</DIV><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html4693"
+  HREF="node160.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html4687"
+  HREF="node155.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html4681"
+  HREF="node158.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html4689"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html4691"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html4694"
+  HREF="node160.html">Quelques fonctions</A>
+<B> monter:</B> <A NAME="tex2html4688"
+  HREF="node155.html">Calcul num&#233;rique</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html4682"
+  HREF="node158.html">Diff&#233;rence de codage entre</A>
+ &nbsp; <B>  <A NAME="tex2html4690"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html4692"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

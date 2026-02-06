@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Matrice al&#233;atoire : ranm randmatrix randMat</TITLE>
+<META NAME="description" CONTENT="Matrice al&#233;atoire : ranm randmatrix randMat">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node809.html">
+<LINK REL="up" HREF="node802.html">
+<LINK REL="next" HREF="node811.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14914"
+  HREF="node811.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14908"
+  HREF="node802.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14904"
+  HREF="node809.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14910"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14912"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14915"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> monter:</B> <A NAME="tex2html14909"
+  HREF="node802.html">Les fonctions al&#233;atoires de</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14905"
+  HREF="node809.html">Tirage selon une loi</A>
+ &nbsp; <B>  <A NAME="tex2html14911"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14913"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001035000000000000000"></A><A NAME="21235"></A><A NAME="sec:ranm3"></A><A NAME="21237"></A><A NAME="21238"></A>
+<BR>
+Matrice al&#233;atoire : <TT>ranm randmatrix randMat</TT>
+</H2>
+<TT>ranm</TT> (ou <TT>randmatrix</TT> ou <TT>randMat</TT>) (voir aussi <A HREF="node459.html#sec:ranm1">6.25.30</A> et <A HREF="node623.html#sec:ranm2">6.42.3</A>) peut avoir comme  argument :
+<BR>
+<UL>
+<LI>un entier <TT>s</TT>, dans ce cas <TT>ranm</TT> renvoie une liste 
+de longueur <TT>s</TT> dont les &#233;l&#233;ments sont des entiers pris au hasard 
+de fa&#231;on &#233;quiprobable dans :
+<BR> <TT>[-99,-98,...,98,99]</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(5)</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>[-40,27,4,-1,94]</TT>
+</DIV>
+</LI>
+<LI>deux entiers <TT>n,p</TT>, dans ce cas <TT>ranm</TT> renvoie une 
+matrice de <TT>n</TT> lignes et <TT>p</TT> colonnes dont les &#233;l&#233;ments sont
+ des entiers pris au hasard de fa&#231;on &#233;quiprobable dans  <TT>[-99,-98,...,98,99]</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,3)</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>[[-32,53,-44],[10,-4,25]]</TT>
+</DIV>
+</LI>
+<LI>deux entiers <TT>n,p</TT> et un entier relatif, dans ce 
+cas <TT>ranm</TT> renvoie une matrice de <TT>n</TT> lignes et <TT>p</TT> colonnes dont 
+les &#233;l&#233;ments sont des entiers pris au hasard de fa&#231;on &#233;quiprobable 
+dans  <TT>[0;a[</TT> (ou <TT>]a;0]</TT> si <TT>a</TT> est n&#233;gatif)
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,3,10)</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>[[8,3,7],[7,9,1]]</TT>
+</DIV>
+</LI>
+<LI>deux entiers <TT>n,p</TT> et un intervalle <TT>a..b</TT>, dans ce 
+cas 
+<TT>ranm</TT> renvoie une matrice de <TT>n</TT> lignes et <TT>p</TT> colonnes dont 
+les &#233;l&#233;ments sont
+ des r&#233;els  pris au hasard de fa&#231;on &#233;quiprobable dans <TT>[a;b[</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(2,3,0..1)</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>[[0.840187716763,0.394382926635,0.783099223394],</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>[0.798440033104,0.911647357512,0.197551369201]] </TT>
+</DIV>
+</LI>
+<LI>deux entiers <TT>n,p</TT> et une fonction al&#233;atoire  de <TT>Xcas</TT> qu'il 
+faut quoter, dans ce cas 
+<TT>ranm</TT> renvoie une matrice de <TT>n</TT> lignes et <TT>p</TT> colonnes dont 
+les &#233;l&#233;ments sont pris au hasard selon la fonction donn&#233;e en 
+troisi&#232;me argument.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(3,2,'rand(3)')</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>ranm(3,2,3)</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>[[2,1],[0,0],[1,0]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>ranm(1,2,'randnorm(0,1)')</TT>
+</DIV>
+On obtient par exemple :
+<DIV ALIGN="CENTER">
+<TT>[[1.37439065645,-1.33195982697]]</TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14914"
+  HREF="node811.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14908"
+  HREF="node802.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14904"
+  HREF="node809.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14910"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14912"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14915"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> monter:</B> <A NAME="tex2html14909"
+  HREF="node802.html">Les fonctions al&#233;atoires de</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14905"
+  HREF="node809.html">Tirage selon une loi</A>
+ &nbsp; <B>  <A NAME="tex2html14911"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14913"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

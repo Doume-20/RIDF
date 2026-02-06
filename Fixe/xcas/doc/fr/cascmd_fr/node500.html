@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Partie enti&#232;re et fractionnaire : propfrac</TITLE>
+<META NAME="description" CONTENT="Partie enti&#232;re et fractionnaire : propfrac">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node501.html">
+<LINK REL="previous" HREF="node499.html">
+<LINK REL="up" HREF="node492.html">
+<LINK REL="next" HREF="node501.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10286"
+  HREF="node501.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10280"
+  HREF="node492.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10274"
+  HREF="node499.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10282"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10284"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10287"
+  HREF="node501.html">D&#233;composition en &#233;l&#233;ments simples</A>
+<B> monter:</B> <A NAME="tex2html10281"
+  HREF="node492.html">Les fractions rationnelles</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10275"
+  HREF="node499.html">R&#233;duire au m&#234;me d&#233;nominateur</A>
+ &nbsp; <B>  <A NAME="tex2html10283"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10285"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009298000000000000000"></A><A NAME="12846"></A><A NAME="sec:propfrac"></A>
+<BR>
+Partie enti&#232;re et fractionnaire : <TT>propfrac</TT>
+</H2>
+<TT>propfrac</TT> a comme argument une fraction  rationnelle.
+<BR><TT>propfrac</TT> renvoie cette fraction rationnelle &#233;crite de mani&#232;re &#224; mettre en &#233;vidence sa partie enti&#232;re.
+<BR><TT>propfrac(A(x)/B(x))</TT> &#233;crit la fraction rationnelle <!-- MATH
+ $\frac{A(x)}{B(x)}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img386.png"
+ ALT="$ {\frac{{A(x)}}{{B(x)}}}$"> apr&#232;s simplification sous la 
+forme :<P><!-- MATH
+ \begin{displaymath}
+Q(x)+\frac{R(x)}{B(x)}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<I>Q</I>(<I>x</I>) + <IMG
+ WIDTH="46" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img387.png"
+ ALT="$\displaystyle {\frac{{R(x)}}{{B(x)}}}$">
+</DIV><P></P>
+avec  <I>R</I>(<I>x</I>) = 0 ou  <!-- MATH
+ $0\leq \mbox{degree}(R(x))< \mbox{degree}(B(x))$
+ -->
+0 <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> degree(<I>R</I>(<I>x</I>)) &lt; degree(<I>B</I>(<I>x</I>)).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>propfrac((5*x+3)*(x-1)/(x+2))</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>5*x-12+21/(x+2)</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

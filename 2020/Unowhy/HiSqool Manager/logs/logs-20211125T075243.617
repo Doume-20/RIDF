@@ -1,0 +1,50 @@
+2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 179] Same payload as before emitting current status: state=Ok, error=None, active=true +1ms
+2021-11-25 07:52:42.037: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 360] Received payload Windows MDM Agent 1.2.3. current status=state=Ok, error=None, active=true +2ms
+2021-11-25 07:52:42.037: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 360] Same payload as before emitting current status: state=Ok, error=None, active=true +0ms
+2021-11-25 07:52:42.037: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 457] Received payload LeLivreScolaire 3.1.5. current status=state=Empty, error=None, active=false +3ms
+2021-11-25 07:52:42.037: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 457] payload is new. Downloading from https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/lelivrescolaire_3.1.5.jar +24ms
+2021-11-25 07:52:42.068: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 271] Persisting status=state=Todo, error=None, active=true +9ms
+2021-11-25 07:52:42.078: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 271] Persisting status=state=Downloading, error=None, active=true +4ms
+2021-11-25 07:52:42.078: 2021-11-25 8:52:42 [11080] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/windows-uninstall-app-paq_0.9.7.jar... +5ms
+2021-11-25 07:52:42.086: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 279] Persisting status=state=Todo, error=None, active=true +4ms
+2021-11-25 07:52:42.088: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 279] Persisting status=state=Downloading, error=None, active=true +3ms
+2021-11-25 07:52:42.098: 2021-11-25 8:52:42 [11080] INFO [RequestPerformerService] starting fetch for url https://storage.gra.cloud.ovh.net/v1/AUTH_765727b4bb3a465fa4e277aef1356869/idfconf/payloads/sqoolctl-paq_0.9.8.jar... +9ms
+2021-11-25 07:52:42.108: 2021-11-25 8:52:42 [11080] INFO [PayloadDownloader] [PAYLOAD 457] Persisting status=state=Todo, error=None, active=true +10ms
+2021-11-25 07:52:42.108: 2021-11-25 8:52:42 [11080] INFO [PayloadDispatcher] Emitting 11 entries ["__/conf/agents/facts","conf/application/windows/Acceptation-des-conditions-sur-Windows","conf/application/windows/Biblio-Manuels-Windows","conf/application/windows/Educadhoc-Windows","conf/application/windows/HiSqool","conf/application/windows/LGPO-Windows","conf/application/windows/Lib-Manuels","conf/application/windows/Microsoft-Office-1.0.0","conf/other/cleanafterinstall","conf/other/disablerecovery","__/unowhy/manager/windows"] +3ms
+2021-11-25 07:52:42.108: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Processing for execution configuration with 11 keys +2ms
+2021-11-25 07:52:42.159: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Got 11 configurations. 0 in, 3 out +45ms
+2021-11-25 07:52:42.159: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +2ms
+2021-11-25 07:52:42.159: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +54ms
+2021-11-25 07:52:42.230: 2021-11-25 8:52:42 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +16ms
+2021-11-25 07:52:42.321: 2021-11-25 8:52:42 [11080] INFO [Runner] Creating configuration unit runner object... +95ms
+2021-11-25 07:52:42.331: 2021-11-25 8:52:42 [11080] INFO [Runner] Checking if runner needs to be performed... +3ms
+2021-11-25 07:52:42.331: 2021-11-25 8:52:42 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-11-25 07:52:42.331: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Biblio-Manuels-Windows -> configuration... +2ms
+2021-11-25 07:52:42.331: 2021-11-25 8:52:42 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload... +2ms
+2021-11-25 07:52:42.433: 2021-11-25 8:52:42 [11080] INFO [Runner] Creating configuration unit runner object... +96ms
+2021-11-25 07:52:42.433: 2021-11-25 8:52:42 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:42.433: 2021-11-25 8:52:42 [11080] INFO [JS] Checking that the unit needs to be performed +4ms
+2021-11-25 07:52:42.615: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Educadhoc-Windows -> configuration... +178ms
+2021-11-25 07:52:42.623: 2021-11-25 8:52:42 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\394\payload... +2ms
+2021-11-25 07:52:42.785: 2021-11-25 8:52:42 [11080] INFO [Runner] Creating configuration unit runner object... +163ms
+2021-11-25 07:52:42.787: 2021-11-25 8:52:42 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:42.787: 2021-11-25 8:52:42 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-11-25 07:52:42.928: 2021-11-25 8:52:42 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool -> configuration... +144ms
+2021-11-25 07:52:42.928: 2021-11-25 8:52:42 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload... +2ms
+2021-11-25 07:52:43.007: 2021-11-25 8:52:43 [11080] INFO [Runner] Creating configuration unit runner object... +73ms
+2021-11-25 07:52:43.009: 2021-11-25 8:52:43 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:43.009: 2021-11-25 8:52:43 [11080] INFO [JS] Getting file version of C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\170\payload\HiSqool.exe +1ms
+2021-11-25 07:52:43.060: 2021-11-25 8:52:43 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/LGPO-Windows -> configuration... +48ms
+2021-11-25 07:52:43.060: 2021-11-25 8:52:43 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\130\payload... +1ms
+2021-11-25 07:52:43.191: 2021-11-25 8:52:43 [11080] INFO [Runner] Creating configuration unit runner object... +129ms
+2021-11-25 07:52:43.191: 2021-11-25 8:52:43 [11080] INFO [Runner] Checking if runner needs to be performed... +2ms
+2021-11-25 07:52:43.191: 2021-11-25 8:52:43 [11080] INFO [JS] Checking that the unit needs to be performed +1ms
+2021-11-25 07:52:43.191: 2021-11-25 8:52:43 [11080] INFO [JS] Getting GPO version... +1ms
+2021-11-25 07:52:43.242: 2021-11-25 8:52:43 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> configuration... +50ms
+2021-11-25 07:52:43.250: 2021-11-25 8:52:43 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\433\payload... +4ms
+2021-11-25 07:52:43.343: 2021-11-25 8:52:43 [11080] INFO [Runner] Creating configuration unit runner object... +95ms
+2021-11-25 07:52:43.343: 2021-11-25 8:52:43 [11080] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-11-25 07:52:43.343: 2021-11-25 8:52:43 [11080] INFO [JS] Checking that the unit needs to be performed +3ms
+2021-11-25 07:52:43.495: 2021-11-25 8:52:43 [11080] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Microsoft-Office-1.0.0 -> configuration... +146ms
+2021-11-25 07:52:43.495: 2021-11-25 8:52:43 [11080] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload... +2ms
+2021-11-25 07:52:43.617: 2021-11-25 8:52:43 [11080] INFO [Runner] Creating configuration unit runner object... +118ms

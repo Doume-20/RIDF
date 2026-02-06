@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Suites de Sturm : sturmseq</TITLE>
+<META NAME="description" CONTENT="Suites de Sturm : sturmseq">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node480.html">
+<LINK REL="previous" HREF="node478.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node480.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9980"
+  HREF="node480.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9974"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9968"
+  HREF="node478.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9976"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9978"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9981"
+  HREF="node480.html">Matrice de Sylvester de</A>
+<B> monter:</B> <A NAME="tex2html9975"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9969"
+  HREF="node478.html">Nombre de racines sur</A>
+ &nbsp; <B>  <A NAME="tex2html9977"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9979"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0092617000000000000000"></A><A NAME="12348"></A>
+<BR>
+Suites de Sturm : <TT>sturmseq</TT>
+</H2>
+<TT>sturmseq</TT> a comme param&#232;tre une expression polyn&#244;miale <I>P</I> 
+ou une fraction rationnelle <I>P</I>/<I>Q</I>.
+<BR><TT>sturmseq</TT> renvoie la liste des suites de Sturm et de leur multiplicit&#233; 
+pour <I>P</I> ou pour <I>P</I> et pour <I>Q</I>.
+<BR>
+La suite de sturm <!-- MATH
+ $R_1,R_2,...$
+ -->
+<I>R</I><SUB>1</SUB>, <I>R</I><SUB>2</SUB>,... est obtenue &#224; partir du facteur <I>F</I>
+sans carr&#233; de <I>P</I>. Pour obtenir <I>F</I> &#224; partir de la d&#233;composition de <I>P</I>
+ en facteurs premiers, on &#233;limine les termes carr&#233;s et on 
+transforme les puissances impaires en puissances 1.
+<BR><I>R</I><SUB>1</SUB> est l'oppos&#233; du  reste de la division euclidienne de <I>F</I> par <I>F'</I> puis, <I>R</I><SUB>2</SUB> est l'oppos&#233; du  reste de la division euclidienne de <I>F'</I> par <I>R</I><SUB>1</SUB>
+<BR>....
+<BR>
+et ainsi de suite jusqu'&#224; ce que <I>R</I><SUB>k</SUB> = 0.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmseq(2*x<code>^</code>3+2)</TT>
+</DIV>
+ou 
+<DIV ALIGN="CENTER">
+<TT>sturmseq(2*y<code>^</code>3+2,y)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,[[1,0,0,1],[3,0,0],-9],1]</TT>
+</DIV>
+Le premier terme donne le coefficient principal du num&#233;rateur (ici 2), 
+le dernier terme donne le d&#233;nominateur (ici 1). Entre les deux on a la 
+suite des polyn&#244;mes <!-- MATH
+ $[x^3+1,3x^2,-9]$
+ -->
+[<I>x</I><SUP>3</SUP> +1, 3<I>x</I><SUP>2</SUP>, - 9].
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmseq((2*x<code>^</code>3+2)/(3*x<code>^</code>2+2),x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,[[1,0,0,1],[3,0,0],-9],1,[1,[[3,0,2],[6,0],-72]]</TT>
+</DIV>
+Le premier terme donne le coefficient principal du num&#233;rateur (ici 2), 
+puis la suite de Sturm du num&#233;rateur ([[1,0,0,1],[3,0,0],-9]), puis le 
+coefficient principal du d&#233;nominateur (ici 1), et la suite de Sturm du 
+d&#233;nominateur ([[3,0,2],[6,0],-72]).  
+On a la suite des polyn&#244;mes <!-- MATH
+ $[x^3+1,3x^2, -9]$
+ -->
+[<I>x</I><SUP>3</SUP> +1, 3<I>x</I><SUP>2</SUP>, - 9] pour le num&#233;rateur et,
+<!-- MATH
+ $[3x^2+2,6x,-72]$
+ -->
+[3<I>x</I><SUP>2</SUP> + 2, 6<I>x</I>, - 72] pour le d&#233;nominateur.
+<BR>
+<P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmseq((x<code>^</code>3+1)<code>^</code>2,x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,1]</TT>
+</DIV>
+En effet les termes carr&#233;s sont &#233;limin&#233;s et <I>F</I> = 1.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>sturmseq(3*(3*x<code>^</code>3+1)/(2*x+2),x)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,[[3,0,0,1],[9,0,0],-81],2,[[1,1],1]]</TT>
+</DIV>
+Le premier terme donne le coefficient principal du num&#233;rateur 
+(ici <TT>3</TT>),
+<BR>
+le deuxi&#232;me terme donne la suite de polyn&#244;mes (ici 
+<TT>3x<code>^</code>3+1, 9x<code>^</code>2, -81</TT>),
+<BR>
+le troisi&#232;me terme donne le coefficient principal du d&#233;nominateur (ici 
+<TT>2</TT>),
+<BR>
+le quatri&#232;me  terme indique la suite de polyn&#244;mes du d&#233;nominateur 
+(<TT>x+1,1</TT>).
+<BR><B>Attention!!!!</B>
+<BR>  <I>P</I> doit &#234;tre donn&#233; par son expression symbolique et,si on tape :
+<BR><TT>sturmseq([1,0,0,1],x)</TT>,
+<BR>
+on obtient :
+<BR><TT>Bad argument type</TT>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9980"
+  HREF="node480.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9974"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9968"
+  HREF="node478.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9976"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9978"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9981"
+  HREF="node480.html">Matrice de Sylvester de</A>
+<B> monter:</B> <A NAME="tex2html9975"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9969"
+  HREF="node478.html">Nombre de racines sur</A>
+ &nbsp; <B>  <A NAME="tex2html9977"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9979"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

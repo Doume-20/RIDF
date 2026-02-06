@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Les instructions copy et =&lt; dans un programme </TITLE>
+<META NAME="description" CONTENT="Les instructions copy et =&lt; dans un programme ">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node857.html">
+<LINK REL="previous" HREF="node855.html">
+<LINK REL="up" HREF="node842.html">
+<LINK REL="next" HREF="node857.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15652"
+  HREF="node857.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15646"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15640"
+  HREF="node855.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15648"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15650"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15653"
+  HREF="node857.html">L'affectation prefix&#233;e : sto</A>
+<B> monter:</B> <A NAME="tex2html15647"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15641"
+  HREF="node855.html">Les diff&#233;rences entre :=,</A>
+ &nbsp; <B>  <A NAME="tex2html15649"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15651"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0011414000000000000000"></A><A NAME="22434"></A><A NAME="22435"></A><A NAME="sec:copie"></A>
+<BR>
+Les instructions <TT>copy</TT> et <TT>=&lt;</TT> dans un programme 
+</H2>
+<TT>=&lt;</TT> est surtout utile quand on fait beaucoup de 
+modifications dans une liste ou matrice
+de grande taille, par exemple dans un programme.
+Mais attention, il faudra utiliser <TT>copy</TT> lors de 
+l'initialisation des variables listes ou matrices qui seront modifi&#233;es avec 
+<TT>=&lt;</TT> pour que les modifications se fassent sur la copie.
+<BR>
+Voir aussi <A HREF="node92.html#sec:progref">2.5.3</A> et <A HREF="node855.html#sec:diffaffectation">8.4.13</A>.
+<BR><B>Attention</B>
+<BR>
+Dans un programme si on met :
+<PRE>
+local a;
+a:=[0,1,2,3,4];
+...
+a[3] =&lt; 33;
+</PRE>
+Cela modifie le programme lui-m&#234;me et la ligne 
+<TT>a:=[0,1,2,3,4];</TT> est remplac&#233;e par <TT>a:=[0,1,2,33,4];</TT> dans
+le programme compil&#233;.
+<BR>
+Donc dans un programme il faut &#233;crire :
+<PRE>
+local a;
+a:=copy([0,1,2,3,4]);
+...
+a[3] =&lt; 33;
+</PRE>
+ou
+<PRE>
+local a,c;
+c:=[0,1,2,3,4];
+a:=copy(c);
+...
+a[3] =&lt; 33;
+</PRE>
+pour que ce soit la copie de <TT>[0,1,2,3,4]</TT> qui soit modifi&#233;e et non 
+la liste <TT>[0,1,2,3,4]</TT> elle-m&#234;me.
+
+<P>
+<B>Remarque</B>
+<BR>
+On peut aussi utiliser les commandes <TT>makelist</TT>, <TT>seq</TT> ou <TT>$</TT>,
+par exemple :
+<BR><TT>a:=makelist(n,n,0,4);</TT>
+ou
+<BR><TT>a:=[n$(n=0..4)]</TT>;
+puis
+<BR><TT>a[3] =&lt; 33;</TT>
+car <TT>makelist(n,n,0,4)</TT> ou <TT>[n$(n=0..4)]</TT> est une liste qui va
+ se cr&#233;er &#224; chaque ex&#233;cution du programme.
+
+<P>
+<B>Exemple</B>
+<BR>
+On veut &#233;crire un programme qui renvoie les nombres entiers inf&#233;rieurs ou 
+&#233;gaux &#224; <I>n</I> et dont la somme des chiffres (en base 10) vaut 5.
+On tape :
+<PRE>
+somme5(n):={
+local L,j,k;
+L:=seq(0,0);
+k:=0;
+for(j:=0;j&lt;=n;j++){
+if (sum(convert(j,base,10))==5){
+L[k]=&lt;j;
+k:=k+1;
+}
+}
+return L;
+}:;
+</PRE>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>somme5(50)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>5,14,23,32,41,50</TT>
+</DIV>
+
+<P>
+Dans cet exemple, il faut bien comprendre et faire l'initialisation de <TT>L</TT> 
+correctement.
+<BR>
+Dans ce programme, on a choisit d'avoir le r&#233;sultat sous la forme d'une 
+s&#233;quence, et on a initialis&#233; <TT>L</TT> avec <TT>L:=seq(0,0)</TT>.
+Si on avait mis <TT>L:=NULL</TT>, le programme n'aurait pas fonctionn&#233;
+correctement !  En effet, si on tape :
+<PRE>
+fauxsom5(n):={
+local L,j,k;
+L:=NULL;
+k:=0;
+for(j:=0;j&lt;=n;j++){
+if (sum(convert(j,base,10))==5){
+L[k]=&lt;j;
+k:=k+1;
+}
+}
+return L;
+}:;
+</PRE> 
+puis :
+<DIV ALIGN="CENTER">
+<TT>fauxsom5(30)</TT>
+</DIV>
+on obtient :
+<DIV ALIGN="CENTER">
+<TT>5,14,23,32,41,50</TT>
+</DIV>
+Cela semble juste..... 
+Mais, lors de l'ex&#233;cution de <TT>fauxsom5(50)</TT>, au d&#233;part <TT>L</TT> pointe 
+sur la s&#233;quence <TT>NULL</TT>, puis cette s&#233;quence <TT>NULL</TT> est  modifi&#233;e 
+et devient &#224; la fin du programme <TT>5,14,23,32,41,50</TT> et le programme, si 
+on ne le recompile pas, a lui aussi &#233;t&#233; modifi&#233; est est devenu 
+<PRE>
+fauxsom5(n):={
+local L,j,k;
+L:=5,14,23,32,41,50;
+k:=0;
+for(j:=0;j&lt;=n;j++){
+if (sum(convert(j,base,10))==5){
+L[k]=&lt;j;
+k:=k+1;
+}
+}
+return L;
+}:;
+</PRE> 
+Si on tape maintenant :
+<DIV ALIGN="CENTER">
+<TT>fauxsom5(30)</TT>
+</DIV>
+On obtient une s&#233;quence trop longue :
+<DIV ALIGN="CENTER">
+<TT>5,14,23,32,41,50</TT>
+</DIV>
+alors que si on tape :
+<DIV ALIGN="CENTER">
+<TT>somme5(30)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>5,14,23</TT>
+</DIV>
+<B>R&#233;gle</B>
+<BR>
+Dans un programme, si on veut utiliser <TT>=&lt;</TT>
+pour modifier une liste <TT>L</TT> ou une s&#233;quence <TT>LL</TT>, il faut
+faire attention &#224; l'initialisation.
+<BR>
+Par exemple, pour initialiser  
+
+<UL>
+<LI><TT>L</TT> &#224; la liste vide, on tape :
+<BR><TT>L:=[seq(0,0)]</TT> ou <TT>L:=[0$0]</TT> ou <TT>L:=copy([])</TT> car 
+<TT>[seq(0,0)]</TT> ou <TT>[0$0]</TT> 
+d&#233;signe une liste qui va se cr&#233;er &#224; chaque ex&#233;cution du programme.
+</LI>
+<LI><TT>LL</TT> &#224; la s&#233;quence <TT>NULL</TT>, on tape :
+<BR><TT>LL:=seq(0,0)]</TT> ou <TT>LL:=0$0</TT> ou <TT>LL:=copy(NULL)</TT> car 
+<TT>seq(0,0)</TT> ou <TT>0$0</TT> d&#233;signe une s&#233;quence qui va se cr&#233;er &#224; 
+chaque ex&#233;cution du programme.
+</LI>
+</UL>
+Il faut donc utiliser <TT>=&lt;</TT> avec pr&#233;cautions car tous les objets pointant 
+sur cette matrice seront modifi&#233;s. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html15652"
+  HREF="node857.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15646"
+  HREF="node842.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15640"
+  HREF="node855.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15648"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15650"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15653"
+  HREF="node857.html">L'affectation prefix&#233;e : sto</A>
+<B> monter:</B> <A NAME="tex2html15647"
+  HREF="node842.html">Les instructions de base</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15641"
+  HREF="node855.html">Les diff&#233;rences entre :=,</A>
+ &nbsp; <B>  <A NAME="tex2html15649"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15651"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

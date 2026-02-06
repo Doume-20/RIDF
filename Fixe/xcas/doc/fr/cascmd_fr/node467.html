@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Reste euclidien : Rem</TITLE>
+<META NAME="description" CONTENT="Reste euclidien : Rem">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node468.html">
+<LINK REL="previous" HREF="node466.html">
+<LINK REL="up" HREF="node462.html">
+<LINK REL="next" HREF="node468.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html9812"
+  HREF="node468.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9806"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9800"
+  HREF="node466.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9808"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9810"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9813"
+  HREF="node468.html">Quotient et reste euclidien</A>
+<B> monter:</B> <A NAME="tex2html9807"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9801"
+  HREF="node466.html">Reste euclidien : rem</A>
+ &nbsp; <B>  <A NAME="tex2html9809"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9811"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009265000000000000000"></A><A NAME="11829"></A>
+<BR>
+Reste euclidien : <TT>Rem</TT>
+</H2>
+<TT>Rem</TT> est la forme inerte de <TT>rem</TT>.
+<BR><TT>Rem</TT> renvoie le reste de la division euclidienne de deux 
+polyn&#244;mes (division selon les puissances d&#233;croissantes) sans l'&#233;valuer et
+cela permet de calculer le reste euclidien de deux polyn&#244;mes &#224;
+coefficients dans <!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$"> en utilisant la syntaxe Maple.
+<BR> <B>Attention</B> il faut &#234;tre en mode Maple pour que cela soit efficace.
+<BR>
+On tape, en mode <TT>Xcas</TT> :
+<DIV ALIGN="CENTER">
+<TT>Rem(x<code>^</code>3-1,x<code>^</code>2-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>rem(x<code>^</code>3-1,x<code>^</code>2-1)</TT>
+</DIV>
+On  peut aussi taper pour avoir le reste de <I>x</I><SUP>2</SUP> + 2<I>x</I> + 4 par <I>x</I><SUP>2</SUP> + <I>x</I> + 2 :
+<DIV ALIGN="CENTER">
+<TT>Rem([1,2,4],[1,1,2])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>rem([1,2,4],[1,1,2])</TT>
+</DIV>
+En mode <TT>Maple</TT> on tape :
+<DIV ALIGN="CENTER">
+<TT>Rem(x<code>^</code>3+3*x,2*x<code>^</code>2+6*x+5) mod 5</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2*x</TT>
+</DIV>
+La division est faite dans <!-- MATH
+ ${\mathbb{Z}}/5{\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/5<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>] alors que pour :
+<DIV ALIGN="CENTER">
+<TT>rem(x<code>^</code>3+3*x,2*x<code>^</code>2+6*x+5) mod 5</TT>
+</DIV>
+la division est faite dans <!-- MATH
+ ${\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>] puis est r&#233;duite apr&#232;s :
+<DIV ALIGN="CENTER">
+<TT>12*x</TT>
+</DIV>
+Si <TT>Xcas</TT> n'est pas en mode Maple, la division des polyn&#244;mes dans 
+<!-- MATH
+ ${\mathbb{Z}}/p{\mathbb{Z}}[X]$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">/<I>p</I><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \mathbb {Z}$">[<I>X</I>] se fait en tapant&nbsp;:
+<DIV ALIGN="CENTER">
+<code>rem((x^3+3*x)% 5,(2x^2+6x+5)%5)</code>
+
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html9812"
+  HREF="node468.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html9806"
+  HREF="node462.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html9800"
+  HREF="node466.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html9808"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html9810"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html9813"
+  HREF="node468.html">Quotient et reste euclidien</A>
+<B> monter:</B> <A NAME="tex2html9807"
+  HREF="node462.html">Arithm&#233;tique des polyn&#244;mes</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html9801"
+  HREF="node466.html">Reste euclidien : rem</A>
+ &nbsp; <B>  <A NAME="tex2html9809"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html9811"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

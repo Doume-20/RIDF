@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Inverse de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : fisher_icdf snedecor_icdf</TITLE>
+<META NAME="description" CONTENT="Inverse de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : fisher_icdf snedecor_icdf">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node833.html">
+<LINK REL="previous" HREF="node831.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node833.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15242"
+  HREF="node833.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15236"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15230"
+  HREF="node831.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15238"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15240"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15243"
+  HREF="node833.html">Compl&#233;ment &#224; 1 de</A>
+<B> monter:</B> <A NAME="tex2html15237"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15231"
+  HREF="node831.html">La fonction de r&#233;partition</A>
+ &nbsp; <B>  <A NAME="tex2html15239"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15241"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010421000000000000000"></A><A NAME="21704"></A><A NAME="21705"></A>
+<BR>
+Inverse de la fonction de r&#233;partition de la loi de Fisher-Sn&#233;d&#233;cor : <TT>fisher_icdf snedecor_icdf</TT>
+</H2>
+Lorsqu'une variable al&#233;atoire <I>X</I> suit une loi de Fisher-Sn&#233;d&#233;cor 
+ ayant comme  degr&#233;s de libert&#233; <I>n</I>1, <I>n</I>2,
+si on a :
+<BR><TT>fisher_icdf(n1,n2,x)=h</TT> c'est que :
+<BR> <!-- MATH
+ $Proba(X \leq h)$
+ -->
+<I>Proba</I>(<I>X</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>h</I>)=<TT>x=fisher_cdf(n1,n2,h)</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>fisher_icdf(5,3,0.95)</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>snedecor_icdf(5,3,0.95)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>9.01345516752</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>1/fisher_icdf(3,5,0.05)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>9.01345516752</TT>
+</DIV>
+<B>Remarque</B> :
+<BR><TT>fisher_icdf(n1,n2,p)=1/fisher_icdf(n2,n1,1-p)</TT>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

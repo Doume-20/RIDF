@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>L'histogramme : histogram</TITLE>
+<META NAME="description" CONTENT="L'histogramme : histogram">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node778.html">
+<LINK REL="previous" HREF="node776.html">
+<LINK REL="up" HREF="node764.html">
+<LINK REL="next" HREF="node778.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html14429"
+  HREF="node778.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14423"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14417"
+  HREF="node776.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14425"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14427"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14430"
+  HREF="node778.html">Les fr&#233;quences cumul&#233;es :</A>
+<B> monter:</B> <A NAME="tex2html14424"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14418"
+  HREF="node776.html">La boite &#224; moustaches</A>
+ &nbsp; <B>  <A NAME="tex2html14426"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14428"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0010113000000000000000"></A><A NAME="20306"></A>
+<BR>
+L'histogramme : <TT>histogram</TT>
+</H2>
+<TT>histogram</TT> permet de visualiser la fonction densit&#233; des 
+fr&#233;quences : on met en abscisse les classes et en ordonn&#233;e la densit&#233; des
+ fr&#233;quences (si on a des valeurs discr&#233;tes elles sont consid&#233;r&#233;es 
+comme &#233;tant le centre de la classe). L'histogramme est donc un graphique en 
+escalier dans lequel les fr&#233;quences des diff&#233;rentes classes sont 
+repr&#233;sent&#233;es par les aires des diff&#233;rents rectangles situ&#233;s sous les 
+diff&#233;rents paliers.
+<BR>
+On rappelle que, si l'effectif de la classe <!-- MATH
+ $[a_{j-1};a_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>;<I>a</I><SUB>j</SUB>] est <I>n</I><SUB>j</SUB>, la 
+fr&#233;quence de la classe <!-- MATH
+ $[a_{j-1};a_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>;<I>a</I><SUB>j</SUB>] est <I>f</I><SUB>j</SUB> = <I>n</I><SUB>j</SUB>/<I>N</I> (si <I>N</I> est l'effectif
+ total) et la densit&#233;  de fr&#233;quence  de la classe  
+<!-- MATH
+ $[a_{j-1};a_j]$
+ -->
+[<I>a</I><SUB>j-1</SUB>;<I>a</I><SUB>j</SUB>] est <!-- MATH
+ $f_j/(a_j-a_{j-1})$
+ -->
+<I>f</I><SUB>j</SUB>/(<I>a</I><SUB>j</SUB> - <I>a</I><SUB>j-1</SUB>).
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>histogram([[1.5..1.65,50],[1.65..1.7,20],[1.7..1.8,30]])</TT>
+</DIV>
+La fen&#234;tre graphique s'ouvre automatiquement et on obtient l'histogramme de 
+la s&#233;rie <TT>[[1.5..1.65,50],[1.65..1.7,20],[1.7..1.8,30]]</TT>, &#224; condition 
+d'avoir d&#233;fini correctement la configuration du graphique.
+
+<P>
+L'argument de <TT>histogram</TT> peut aussi &#234;tre une liste de valeurs 
+discr&#232;tes, dans ce cas, les classes commencent &#224; une valeur 
+(<TT>class_min</TT>) et sont toutes de m&#234;me largeur (<TT>class_size</TT>) soit 
+d&#233;finies par d&#233;faut (&#224; 0 et 1, valeurs modifiables dans la configuration 
+graphique) ou pass&#233;es en second et troisi&#232;me arguments.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>histogram(seq(rand(1000),k,0,100),0,100)</TT>
+</DIV>
+Ici on a choisi <TT>class_min=0</TT> et <TT>class_size=100</TT>.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html14429"
+  HREF="node778.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14423"
+  HREF="node764.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14417"
+  HREF="node776.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14425"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html14427"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html14430"
+  HREF="node778.html">Les fr&#233;quences cumul&#233;es :</A>
+<B> monter:</B> <A NAME="tex2html14424"
+  HREF="node764.html">Les fonctions de Xcas</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html14418"
+  HREF="node776.html">La boite &#224; moustaches</A>
+ &nbsp; <B>  <A NAME="tex2html14426"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html14428"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

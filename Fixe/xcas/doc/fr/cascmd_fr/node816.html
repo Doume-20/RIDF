@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fonction de r&#233;partition de Poisson : poisson_cdf</TITLE>
+<META NAME="description" CONTENT="Fonction de r&#233;partition de Poisson : poisson_cdf">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node817.html">
+<LINK REL="previous" HREF="node815.html">
+<LINK REL="up" HREF="node811.html">
+<LINK REL="next" HREF="node817.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html15018"
+  HREF="node817.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html15012"
+  HREF="node811.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html15006"
+  HREF="node815.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html15014"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html15016"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html15019"
+  HREF="node817.html">Fonction de r&#233;partition inverse</A>
+<B> monter:</B> <A NAME="tex2html15013"
+  HREF="node811.html">Les fonctions de r&#233;partition</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html15007"
+  HREF="node815.html">Probabilit&#233; pour que X</A>
+ &nbsp; <B>  <A NAME="tex2html15015"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html15017"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001045000000000000000"></A><A NAME="21387"></A>
+<BR>
+Fonction  de r&#233;partition de Poisson  : <TT>poisson_cdf</TT>
+</H2>
+Lorsqu'une variable al&#233;atoire <I>X</I> suit une loi de Poisson de param&#232;tre 
+<TT>mu</TT>, c'est &#224; dire de moyenne <TT>mu</TT> et d'&#233;cart-type <TT>mu</TT>, 
+on a :
+<BR><!-- MATH
+ $Proba(X \leq x)$
+ -->
+<I>Proba</I>(<I>X</I> <IMG
+ WIDTH="18" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ \leq$"> <I>x</I>)=<TT>poisson_cdf( mu,x)</TT> avec <!-- MATH
+ $X\in \mathcal P(mu)$
+ -->
+<I>X</I> <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \in$"> <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \mathcal {P}$">(<I>mu</I>). et
+<BR><TT>poisson_cdf(mu,x1,x2)=poisson_cdf(mu,x2)-poisson_cdf(mu,x1)</TT>
+<BR><TT>poisson_cdf(mu,x)</TT> est la fonction de r&#233;partition de 
+la loi de Poisson de param&#232;tre <TT>mu</TT>,
+On tape :
+<DIV ALIGN="CENTER">
+<TT>poisson_cdf(10.0,3)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>0.0103360506759</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,19 @@
+Comment utiliser le moteur de calcul formel giac depuis python:
+Frederic Han a ecrit une interface python/giac:
+http://www.math.jussieu.fr/~han/xcas/giacpy
+Ce plugin supporte les flottants multiprecisions, la Gnu Scientific Library et peut afficher des objets graphiques 2-d en utilisant qcas.
+
+Installation: recuperez le fichier exe correspondant a votre version de Python
+http://www.math.jussieu.fr/~han/xcas/giacpy/win32/
+Desarchivez-le dans le sous-repertoire Lib/site-packages du repertoire d'installation de Python (par defaut c:\pythonxx\Lib\site-packages).
+Si vous ne pouvez pas ecrire sur le repertoire systeme Python d'installation, vous pouvez vous inspirer du fichier exemple.py (qui suppose que l'on a desarchive sur un support reconnu comme M: par windows)
+
+Exemple de commandes: lancez l'interpreteur python puis tapez:
+from giacpy import *
+ifactor(2**128+1)
+x=giac('x')
+f=factor(x**10-1)
+d=plot(sin(x))
+d.qcas()
+help("giacpy")
+normal.help()

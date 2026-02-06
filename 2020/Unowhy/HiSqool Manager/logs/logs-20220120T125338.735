@@ -1,0 +1,48 @@
+2022-01-20 13:53:37 [5284] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +2ms
+2022-01-20 12:53:37.314: 2022-01-20 13:53:37 [5284] INFO [Runner] Performing runner... +1ms
+2022-01-20 12:53:37.314: 2022-01-20 13:53:37 [5284] INFO [JS] Performing facts gathering and upload... +1ms
+2022-01-20 12:53:37.376: 2022-01-20 13:53:37 [5284] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +27ms
+2022-01-20 12:53:37.392: 2022-01-20 13:53:37 [5284] INFO [JS] Current GPO version: 1.5 +19ms
+2022-01-20 12:53:37.392: 2022-01-20 13:53:37 [5284] INFO [Runner] Runner doesn't need to be performed +1ms
+2022-01-20 12:53:37.408: 2022-01-20 13:53:37 [5284] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/LGPO-Windows (130) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_LGPO-Windows.json +1ms
+2022-01-20 12:53:37.486: 2022-01-20 13:53:37 [5284] INFO [RequestPerformerService] Got response 200. +82ms
+2022-01-20 12:53:37.486: 2022-01-20 13:53:37 [5284] INFO [RequestPerformerService] Response content length is 24687042  +0ms
+2022-01-20 12:53:37.611: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Got 9 items. 9 in, 0 out +119ms
+2022-01-20 12:53:37.611: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +1ms
+2022-01-20 12:53:37.626: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +15ms
+2022-01-20 12:53:37.626: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +3ms
+2022-01-20 12:53:37.642: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +14ms
+2022-01-20 12:53:37.642: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +3ms
+2022-01-20 12:53:37.642: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +3ms
+2022-01-20 12:53:37.642: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +3ms
+2022-01-20 12:53:37.642: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +2ms
+2022-01-20 12:53:37.657: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Subscribing on [object Object] for key /hisqool/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +3ms
+2022-01-20 12:53:37.657: 2022-01-20 13:53:37 [5284] INFO [KeyedObservableCollector] Sending 9 items +3ms
+2022-01-20 12:53:37.736: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/qauWzhaDykE97hm2wWNHqhOl9lQ +77ms
+2022-01-20 12:53:37.736: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:3efdd7722ea08ebc9a282bbc0434846f for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +3ms
+2022-01-20 12:53:37.736: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:5238da14c9ec49ed27d246f3309a7e9b for https://idf.hisqool.com/conf/configurations/groups/TNtsMqc4Tq7jzo408p8uj_oB9p8 +2ms
+2022-01-20 12:53:37.736: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/xlEFPVfe3ScE8LAwjZGN0WzkHNI +3ms
+2022-01-20 12:53:37.736: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/oI4mDC64iJljvyOJgrGJU8gtJ6o +2ms
+2022-01-20 12:53:37.736: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/ssf2b-HVWMGO7HClwCtaSwysw68 +2ms
+2022-01-20 12:53:37.751: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/DlY0YceBQTbVlQVhJl1WkgB7N9o +2ms
+2022-01-20 12:53:37.751: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/FZMZDtr_wW71uwhTG0dquPbdTkA +2ms
+2022-01-20 12:53:37.751: 2022-01-20 13:53:37 [5284] INFO [MQTTObserver] Received digest MD5:99914b932bd37a50b983c5e7c90ae93b for https://idf.hisqool.com/conf/configurations/groups/cmRAu0qNgK0SpxIzuI8huHmJO_w +2ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of __/conf/agents/facts: context.platform === 'win32' +937ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +2ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/android/com.ankiapp.client: context.platform==='android' +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: false +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Acceptation-des-conditions-sur-Windows: context.platform==='win32' +0ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Biblio-Manuels-Windows: context.platform==='win32' +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0: context.platform==='win32' +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Educadhoc-Windows: context.platform==='win32' +1ms
+2022-01-20 12:53:38.688: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.704: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/HiSqool: context.platform==='win32' +1ms
+2022-01-20 12:53:38.704: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.704: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Le-Livre-Scolaire-Windows: context.platform==='win32' +27ms
+2022-01-20 12:53:38.720: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +1ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/LGPO-Windows: context.platform==='win32' +4ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService]   => result: true +2ms
+2022-01-20 12:53:38.735: 2022-01-20 13:53:38 [5284] INFO [DeviceConfigurationService] Evaluating when directive of conf/application/windows/Lib-Manuels: context.platform==='win32' +0ms

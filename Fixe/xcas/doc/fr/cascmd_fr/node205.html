@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Distance de Hamming bit à bit : hamdist</TITLE>
+<META NAME="description" CONTENT="Distance de Hamming bit à bit : hamdist">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node204.html">
+<LINK REL="up" HREF="node203.html">
+<LINK REL="next" HREF="node206.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html5929"
+  HREF="node206.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html5923"
+  HREF="node203.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html5919"
+  HREF="node204.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html5925"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html5927"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html5930"
+  HREF="node206.html">Les cha&#238;nes de caract&#232;res</A>
+<B> monter:</B> <A NAME="tex2html5924"
+  HREF="node203.html">Les op&#233;rateurs bit &#224;</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html5920"
+  HREF="node204.html">Les op&#233;rateurs bitor, bitxor,</A>
+ &nbsp; <B>  <A NAME="tex2html5926"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html5928"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00942000000000000000"></A><A NAME="4390"></A>
+<BR>
+Distance de Hamming bit &#224; bit : <TT>hamdist</TT>
+</H2>
+La distance de Hamming bit &#224; bit est la somme des valeurs absolues
+des diff&#233;rences bit &#224; bit des 2 nombres c'est-&#224;-dire le nombre de bits 
+diff&#233;rents.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>hamdist(0x12,0x38)</TT>
+</DIV>
+ou on tape 
+<DIV ALIGN="CENTER">
+<TT>hamdist(18,56)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>3</TT>
+</DIV>
+en effet :
+<BR><TT>18</TT> s'&#233;crit <TT>0x12</TT> en base 16 et <TT>0b010010</TT> en base 2,
+<BR><TT>56</TT> s'&#233;crit <TT>0x38</TT> en base 16 et <TT>0b111000</TT> en base 2,
+<BR><TT>hamdist(18,56)</TT> vaut <TT>1+0+1+0+1+0</TT> et donc vaut <TT>3</TT>.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,68 @@
+2021-12-16 11:27:16 [5260] INFO [JS] There are 0 components to uninstall +4ms
+2021-12-16 10:27:16.350: 2021-12-16 11:27:16 [5260] INFO [Runner] Runner doesn't need to be performed +1ms
+2021-12-16 10:27:16.350: 2021-12-16 11:27:16 [5260] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 (271) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Charte-sur-la-protection-des-donnees-1.0.16.0.json +3ms
+2021-12-16 10:27:16.350: 2021-12-16 11:27:16 [5260] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +4ms
+2021-12-16 10:27:16.381: 2021-12-16 11:27:16 [5260] INFO [Runner] Creating configuration unit runner object... +28ms
+2021-12-16 10:27:16.381: 2021-12-16 11:27:16 [5260] INFO [Runner] Checking if runner needs to be performed... +1ms
+2021-12-16 10:27:16.381: 2021-12-16 11:27:16 [5260] INFO [JS] Checking that the unit needs to be performed. Params:
+2021-12-16 10:27:16.381: {
+2021-12-16 10:27:16.381:   "platform": "win32",
+2021-12-16 10:27:16.381:   "deviceId": "IFP052046109",
+2021-12-16 10:27:16.381:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2021-12-16 10:27:16.381:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2021-12-16 10:27:16.381:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2021-12-16 10:27:16.381:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2021-12-16 10:27:16.381:   "versionCode": 21093040,
+2021-12-16 10:27:16.381:   "trigger": "boot",
+2021-12-16 10:27:16.381:   "metadata": {
+2021-12-16 10:27:16.381:     "packageVersion": "1.0.16.0",
+2021-12-16 10:27:16.381:     "componentParameters": {
+2021-12-16 10:27:16.381:       "AppX": "Hisqool.Legal.GDPR",
+2021-12-16 10:27:16.381:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2021-12-16 10:27:16.381:       "DesktopShortcut": "Charte de protection*",
+2021-12-16 10:27:16.381:       "ProvisioningPackage": "Hisqool GDPR",
+2021-12-16 10:27:16.381:       "InstallationDirectory": "hisqool.gdpr",
+2021-12-16 10:27:16.381:       "UninstallationDirectory": "hisqool.gdpr",
+2021-12-16 10:27:16.381:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2021-12-16 10:27:16.381:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2021-12-16 10:27:16.381:     },
+2021-12-16 10:27:16.381:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"
+2021-12-16 10:27:16.389:   }
+2021-12-16 10:27:16.389: } +2ms
+2021-12-16 10:27:16.391: 2021-12-16 11:27:16 [5260] INFO [JS] Writing parameters {"AppX":"Hisqool.Legal.GDPR","UserDirectory":"AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR","DesktopShortcut":"Charte de protection*","ProvisioningPackage":"Hisqool GDPR","InstallationDirectory":"hisqool.gdpr","UninstallationDirectory":"hisqool.gdpr","InstallationScriptShortcut":"silent_hisqool.gdpr.vbs.lnk","ProtocolHandlerRegistryKey":"UYinstallAppGDPR"} in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json... +2ms
+2021-12-16 10:27:16.391: 2021-12-16 11:27:16 [5260] INFO [JS] Calling 517c7cc322e534fd595c42a7faa0ba2b.ps1 C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\components.json C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload\toperform.json... +2ms
+2021-12-16 10:27:21.491: 2021-12-16 11:27:21 [5260] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '105da565-d050-4a60-9c4f-556c6bdb5775').version +5094ms
+2021-12-16 10:27:21.491: 2021-12-16 11:27:21 [5260] INFO [JS] Installing the package ... +1ms
+2021-12-16 10:27:21.491: 2021-12-16 11:27:21 [5260] INFO [Runner] Performing runner... +1ms
+2021-12-16 10:27:21.491: 2021-12-16 11:27:21 [5260] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\457\payload\application.ppkg, args=-QuietInstall... +2ms
+2021-12-16 10:27:21.559: 2021-12-16 11:27:21 [5260] INFO [JS] Result: 0 +60ms
+2021-12-16 10:27:21.559: 2021-12-16 11:27:21 [5260] INFO [JS] Stdout:  +1ms
+2021-12-16 10:27:21.561: 2021-12-16 11:27:21 [5260] INFO [JS] Stderr: #< CLIXML
+2021-12-16 10:27:21.561: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Pr�paration des modules � la premi�re utilisation.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="Error">Get-ItemProperty : Impossible de trouver le chemin d'acc�s �HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding�, car il n'existe _x000D__x000A_</S><S S="Error">pas._x000D__x000A_</S><S S="Error">Au caract�re Ligne:1 : 2_x000D__x000A_</S><S S="Error">+ (Get-ItemProperty -Path HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding -Nam ..._x000D__x000A_</S><S S="Error">+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_x000D__x000A_</S><S S="Error">    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\Unowhy\HiSqool\Onboarding:String) [Get-ItemProperty], It _x000D__x000A_</S><S S="Error">   emNotFoundException_x000D__x000A_</S><S S="Error">    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand_x000D__x000A_</S><S S="Error"> _x000D__x000A_</S></Objs> +1ms
+2021-12-16 10:27:21.561: 2021-12-16 11:27:21 [5260] INFO [JS] isCustomShellPossible: true +0ms
+2021-12-16 10:27:21.561: 2021-12-16 11:27:21 [5260] INFO [JS] hasApiEnabledDeviceManager: true +1ms
+2021-12-16 10:27:21.561: 2021-12-16 11:27:21 [5260] INFO [JS] hasSqoolCtl: true +1ms
+2021-12-16 10:27:21.561: 2021-12-16 11:27:21 [5260] INFO [JS] hasOnboardingEnabledHiSqool: true +1ms
+2021-12-16 10:27:21.561: 2021-12-16 11:27:21 [5260] INFO [JS] hasViewedGDPR: true +0ms
+2021-12-16 10:27:21.570: 2021-12-16 11:27:21 [5260] INFO [JS] hasAcceptedGDPR: true +1ms
+2021-12-16 10:27:21.570: 2021-12-16 11:27:21 [5260] INFO [JS] isShellRestrictionActive: false +1ms
+2021-12-16 10:27:21.572: 2021-12-16 11:27:21 [5260] INFO [JS] isInUserSession: true +0ms
+2021-12-16 10:27:21.572: 2021-12-16 11:27:21 [5260] INFO [JS] isENTUser: true +0ms
+2021-12-16 10:27:21.572: 2021-12-16 11:27:21 [5260] INFO [JS] isUserExempt: false +0ms
+2021-12-16 10:27:21.572: 2021-12-16 11:27:21 [5260] INFO [JS] currentUserLogin: paul.peyrot@monlycee.net +1ms
+2021-12-16 10:27:21.572: 2021-12-16 11:27:21 [5260] INFO [JS] isRescueModeInstalled: true +1ms
+2021-12-16 10:27:21.580: 2021-12-16 11:27:21 [5260] INFO [JS] hisqoolLaunchNeeded: false +0ms
+2021-12-16 10:27:21.582: 2021-12-16 11:27:21 [5260] INFO [JS] isActivationScriptNeeded: false +1ms
+2021-12-16 10:27:21.582: 2021-12-16 11:27:21 [5260] INFO [JS] isDisabled: false +0ms
+2021-12-16 10:27:21.582: 2021-12-16 11:27:21 [5260] INFO [Runner] Runner doesn't need to be performed +2ms
+2021-12-16 10:27:21.582: 2021-12-16 11:27:21 [5260] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Acceptation-des-conditions-sur-Windows (280) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Acceptation-des-conditions-sur-Windows.json +2ms
+2021-12-16 10:27:22.965: 2021-12-16 11:27:22 [5260] INFO [JS] Version of current package: 9.14 +1377ms
+2021-12-16 10:27:23.129: 2021-12-16 11:27:23 [5260] INFO [JS] Version of current package: 1.1 +166ms
+2021-12-16 10:27:26.799: 2021-12-16 11:27:26 [5260] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId 'f7639fd5-22e3-42bd-9806-a3aafb44760a').version +3666ms
+2021-12-16 10:27:26.799: 2021-12-16 11:27:26 [5260] INFO [JS] Installing the package ... +1ms
+2021-12-16 10:27:26.799: 2021-12-16 11:27:26 [5260] INFO [Runner] Performing runner... +1ms
+2021-12-16 10:27:26.799: 2021-12-16 11:27:26 [5260] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\358\payload\application.ppkg, args=-QuietInstall... +1ms
+2021-12-16 10:27:27.282: 2021-12-16 11:27:27 [5260] WARN [JS] Error while processing current version: Error: Command failed with exit code 1 (Unknown system error -1): powershell.exe (Get-ProvisioningPackage -PackageId '52191d55-a6aa-4d53-9830-fded6eb78582').version +482ms
+2021-12-16 10:27:27.284: 2021-12-16 11:27:27 [5260] INFO [JS] Installing the package ... +1ms
+2021-12-16 10:27:27.284: 2021-12-16 11:27:27 [5260] INFO [Runner] Performing runner... +1ms
+2021-12-16 10:27:27.284: 2021-12-16 11:27:27 [5260] INFO [JS] Running C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\359\payload\application.ppkg, args=-QuietInstall... +1ms

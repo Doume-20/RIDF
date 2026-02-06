@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Valeurs exactes des racines rationnelles d'un polyn&#244;me : rationalroot</TITLE>
+<META NAME="description" CONTENT="Valeurs exactes des racines rationnelles d'un polyn&#244;me : rationalroot">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node507.html">
+<LINK REL="previous" HREF="node505.html">
+<LINK REL="up" HREF="node503.html">
+<LINK REL="next" HREF="node507.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10372"
+  HREF="node507.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10366"
+  HREF="node503.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10360"
+  HREF="node505.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10368"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10370"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10373"
+  HREF="node507.html">Valeurs exactes des racines</A>
+<B> monter:</B> <A NAME="tex2html10367"
+  HREF="node503.html">Racines exactes d'un polyn&#244;me</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10361"
+  HREF="node505.html">Encadrement exact des racines</A>
+ &nbsp; <B>  <A NAME="tex2html10369"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10371"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009303000000000000000"></A><A NAME="12958"></A>
+<BR>
+Valeurs exactes des racines rationnelles d'un polyn&#244;me : <TT>rationalroot</TT>
+</H2>
+<TT>rationalroot</TT> a 1 ou 3 arguments : un polyn&#244;me et 
+&#233;ventuellement deux r&#233;els <!-- MATH
+ $\alpha,\beta$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">,<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">.
+
+<UL>
+<LI>Si <TT>rationalroot</TT> a 1 argument, <TT>rationalroot</TT> renvoie la liste 
+ form&#233;e par la valeur des racines rationnelles du polyn&#244;me sans
+indiquer la multiplicit&#233; de ces racines.
+</LI>
+<LI>Si <TT>rationalroot</TT> a 3 arguments, <TT>rationalroot</TT> ne renvoie que 
+les racines rationnelles situ&#233;es dans l'intervalle <!-- MATH
+ $[\alpha,\beta]$
+ -->
+[<IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$ \alpha$">,<IMG
+ WIDTH="15" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ \beta$">].
+</LI>
+</UL>
+On tape pour avoir les racines rationnelles de <!-- MATH
+ $2*x^3-3*x^2-8*x+12$
+ -->
+2*<I>x</I><SUP>3</SUP> -3*<I>x</I><SUP>2</SUP> - 8*<I>x</I> + 12 :
+<DIV ALIGN="CENTER">
+<TT>rationalroot(2*x<code>^</code>3-3*x<code>^</code>2-8*x+12)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,3/2,-2]</TT>
+</DIV>
+On tape pour avoir les racines rationnelles de <!-- MATH
+ $2*x^3-3*x^2-8*x+12$
+ -->
+2*<I>x</I><SUP>3</SUP> -3*<I>x</I><SUP>2</SUP> - 8*<I>x</I> + 12 dans 
+[1;2] :
+<DIV ALIGN="CENTER">
+<TT>rationalroot(2*x<code>^</code>3-3*x<code>^</code>2-8*x+12,1,2)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,3/2]</TT>
+</DIV>
+On tape pour avoir les racines rationnelles de <!-- MATH
+ $2*x^3-3*x^2+8*x-12$
+ -->
+2*<I>x</I><SUP>3</SUP> -3*<I>x</I><SUP>2</SUP> + 8*<I>x</I> - 12 :
+<DIV ALIGN="CENTER">
+<TT>rationalroot(2*x<code>^</code>3-3*x<code>^</code>2+8*x-12)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3/2]</TT>
+</DIV>
+On tape pour avoir les racines rationnelles de <!-- MATH
+ $2*x^3-3*x^2+8*x-12$
+ -->
+2*<I>x</I><SUP>3</SUP> -3*<I>x</I><SUP>2</SUP> + 8*<I>x</I> - 12 :
+<DIV ALIGN="CENTER">
+<TT>rationalroot(2*x<code>^</code>3-3*x<code>^</code>2+8*x-12)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3/2]</TT>
+</DIV>
+On tape pour avoir les racines rationnelles de 
+<!-- MATH
+ $(3*x-2)^2*(2x+1))=18*x^3-15*x^2-4*x+4$
+ -->
+(3*<I>x</I> - 2)<SUP>2</SUP>*(2<I>x</I> + 1)) = 18*<I>x</I><SUP>3</SUP> -15*<I>x</I><SUP>2</SUP> - 4*<I>x</I> + 4 :
+<DIV ALIGN="CENTER">
+<TT>rationalroot(18*x<code>^</code>3-15*x<code>^</code>2-4*x+4)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[(-1)/2,2/3]</TT>
+</DIV> 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html10372"
+  HREF="node507.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html10366"
+  HREF="node503.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html10360"
+  HREF="node505.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html10368"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html10370"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html10373"
+  HREF="node507.html">Valeurs exactes des racines</A>
+<B> monter:</B> <A NAME="tex2html10367"
+  HREF="node503.html">Racines exactes d'un polyn&#244;me</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html10361"
+  HREF="node505.html">Encadrement exact des racines</A>
+ &nbsp; <B>  <A NAME="tex2html10369"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html10371"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

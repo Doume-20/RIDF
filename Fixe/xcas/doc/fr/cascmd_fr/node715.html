@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Recherche d'une base de vecteurs courts d'un réseau : lll</TITLE>
+<META NAME="description" CONTENT="Recherche d'une base de vecteurs courts d'un réseau : lll">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node714.html">
+<LINK REL="up" HREF="node708.html">
+<LINK REL="next" HREF="node716.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html13451"
+  HREF="node716.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13445"
+  HREF="node708.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13441"
+  HREF="node714.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13447"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13449"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13452"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> monter:</B> <A NAME="tex2html13446"
+  HREF="node708.html">Factorisation des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13442"
+  HREF="node714.html">Singular value decomposition :</A>
+ &nbsp; <B>  <A NAME="tex2html13448"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13450"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009497000000000000000"></A><A NAME="18436"></A>
+<BR>
+Recherche d'une base de vecteurs courts d'un r&#233;seau : <TT>lll</TT>
+</H2>
+<TT>lll</TT> a comme argument une matrice inversible <I>M</I> &#224; coefficients entiers.
+<BR><TT>lll</TT> renvoie (<I>S</I>, <I>A</I>, <I>L</I>, <I>O</I>) :
+
+<UL>
+<LI><I>S</I> a comme lignes une base courte du reseau engendr&#233; par les 
+lignes de <I>M</I>,
+</LI>
+<LI><I>A</I> est la matrice de passage de la base courte &#224; la base d&#233;finie 
+par les lignes de <I>M</I> (<I>A</I>*<I>M</I> = <I>S</I>),
+</LI>
+<LI><I>L</I> est une matrice triangulaire inf&#233;rieure dont les coefficients sont 
+de module plus petits que 1/2,
+</LI>
+<LI><I>O</I> est une matrice dont les lignes sont orthogonales et on a <I>L</I>*<I>O</I> = <I>S</I>.
+</LI>
+</UL>
+
+<P>
+Si en dimension 2, un vecteur du r&#233;seau a comme coordonn&#233;es [<I>a</I>, <I>b</I>] dans 
+la base d&#233;finie par <I>M</I> et a comme coordonn&#233;es [<I>a</I>1, <I>b</I>1] dans la base 
+courte d&#233;finie par <I>S</I> c'est &#224; dire si <!-- MATH
+ $[a,b]*M=[a1,b1]*S$
+ -->
+[<I>a</I>, <I>b</I>]*<I>M</I> = [<I>a</I>1, <I>b</I>1]*<I>S</I>, alors :
+<BR><!-- MATH
+ $[a,b]=[a1,b1]*A$
+ -->
+[<I>a</I>, <I>b</I>] = [<I>a</I>1, <I>b</I>1]*<I>A</I>
+<BR><!-- MATH
+ $[a1,b1]*S=[a1,b1]*A*M=[a,b]*M$
+ -->
+[<I>a</I>1, <I>b</I>1]*<I>S</I> = [<I>a</I>1, <I>b</I>1]*<I>A</I>*<I>M</I> = [<I>a</I>, <I>b</I>]*<I>M</I> et
+<BR><!-- MATH
+ $[a,b]*M=[a,b]*A^{-1}*S=[a1,b1]*S$
+ -->
+[<I>a</I>, <I>b</I>]*<I>M</I> = [<I>a</I>, <I>b</I>]*<I>A</I><SUP>-1</SUP>*<I>S</I> = [<I>a</I>1, <I>b</I>1]*<I>S</I>
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>(S,A,L,O):=lll([[2,1],[1,2]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[-1,1],[2,1]],[[-1,1],[1,0]],[[1,0],[1/-2,1]],[[-1,1],[3/2,3/2]]</TT>
+</DIV>
+Donc :
+<BR><TT>S=[[-1,1],[2,1]]</TT>
+<BR><TT>A=[[-1,1],[1,0]]</TT>
+<BR><TT>L=[[1,0],[1/-2,1]]</TT>
+<BR><TT>O=[[-1,1],[3/2,3/2]]</TT>
+<BR>
+<P>
+On a comme ancienne base : <TT>v1=[2,1], v2=[1,2]</TT> et  
+<BR>
+comme base courte : <TT>w1=[-1,1], w2=[2,1]</TT>.
+<BR>
+Puisque <TT>w1=-v1+v2</TT> et <TT>w2=v1</TT> on a 
+<BR><TT>A:=[[-1,1],[1,0]]</TT>, <TT>A*M==S</TT> et <TT>L*O==S</TT>.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>(S,A,L,O):=lll([[3,2,1],[1,2,3],[2,3,1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>S=[[-1,1,0],[-1,-1,2],[3,2,1]] </TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>A= [[-1,0,1],[0,1,-1],[1,0,0]]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>L= [[1,0,0],[0,1,0],[(-1)/2,(-1)/2,1]]</TT>
+</DIV>
+<DIV ALIGN="CENTER">
+<TT>O= [[-1,1,0],[-1,-1,2],[2,2,2]]</TT>
+</DIV>
+si on tape :
+<BR><TT>M:=[[3,2,1],[1,2,3],[2,3,1]]</TT>
+<BR>
+On a :
+<BR><TT>A*M==S</TT> et <TT>L*O==S</TT>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html13451"
+  HREF="node716.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html13445"
+  HREF="node708.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html13441"
+  HREF="node714.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html13447"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html13449"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html13452"
+  HREF="node716.html">Les formes quadratiques</A>
+<B> monter:</B> <A NAME="tex2html13446"
+  HREF="node708.html">Factorisation des matrices</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html13442"
+  HREF="node714.html">Singular value decomposition :</A>
+ &nbsp; <B>  <A NAME="tex2html13448"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html13450"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

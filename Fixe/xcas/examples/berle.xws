@@ -1,0 +1,245 @@
+// fltk 7Fl_Tile 45 -1610 1036 99 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1610 1036 29 26
+P:=normal((x^3+x+1)*(x^4+x+1)); P5:=P%5:;
+,
+// fltk N4xcas10Log_OutputE 45 -1581 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -1580 1036 69 16
+x^7+x^5+2*x^4+x^3+x^2+2*x+1,"Done"
+]
+,
+// fltk 7Fl_Tile 45 -1509 1036 88 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1509 1036 32 26
+gcd(P5,diff(P5));
+,
+// fltk N4xcas10Log_OutputE 45 -1477 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -1476 1036 55 16
+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 -1419 1036 84 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1419 1036 28 26
+p:=5;
+,
+// fltk N4xcas10Log_OutputE 45 -1391 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -1390 1036 55 16
+5
+]
+,
+// fltk 7Fl_Tile 45 -1333 1036 86 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1333 1036 30 26
+P1:=gcd(P5,(x^p-x) % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -1303 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -1302 1036 55 16
+(1 % 5)*x+2 % 5
+]
+,
+// fltk 7Fl_Tile 45 -1245 1036 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -1245 1036 30 26
+Donc modulo 5, il y a un facteur de degré 1, qu'on élimine
+,
+// fltk N4xcas10Log_OutputE 45 -1215 1036 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 -1212 1036 125 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1212 1036 29 26
+Q:=quo(P5,P1);rem(P5,P1);
+,
+// fltk N4xcas10Log_OutputE 45 -1183 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -1182 1036 95 16
+x^6+(-2 % 5)*x^5+(2 % 5)*x^3+(2 % 5)*x^2+(2 % 5)*x-2 % 5,0
+]
+,
+// fltk 7Fl_Tile 45 -1085 1036 183 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -1085 1036 32 26
+frob:= (P)->rem(P^p-P,Q);
+,
+// fltk N4xcas10Log_OutputE 45 -1053 1036 82 26
+// Warning: p Q  declared as global variable(s)££// End defining frob£
+,
+// fltk N4xcas8EquationE 45 -971 1036 69 16
+ (P)->rem(P^p-P,Q)
+]
+,
+// fltk 7Fl_Tile 45 -900 1036 102 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -900 1036 32 26
+frob(x % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -868 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -867 1036 69 16
+x^5-x
+]
+,
+// fltk 7Fl_Tile 45 -796 1036 104 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -796 1036 34 26
+frob(x^2 % 5);
+,
+// fltk N4xcas10Log_OutputE 45 -762 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -761 1036 69 16
+(-2 % 5)*x^5+(-2 % 5)*x^4+(2 % 5)*x^3+(-2 % 5)*x^2+(0 % 5)*x+2 % 5
+]
+,
+// fltk 7Fl_Tile 45 -690 1036 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -690 1036 30 26
+colonne j -> image des x^j par ordre decroissant avec coeff par ordre croissant
+,
+// fltk N4xcas10Log_OutputE 45 -660 1036 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 -657 1036 405 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -657 1036 34 26
+M:=matrix(6,6,(k,j)->coeff(frob(x^(6-j)%5),x,6-k))
+,
+// fltk N4xcas10Log_OutputE 45 -623 1036 56 26
+// Warning: frob x  declared as global variable(s)££
+,
+// fltk N4xcas8EquationE 45 -567 1036 315 16
+[[1,-1 % 5,2 % 5,-2 % 5,1,0],[-1 % 5,-1 % 5,2 % 5,-2 % 5,0,0],[-2 % 5,-1 % 5,2 % 5,2 % 5,0,0],[2 % 5,2 % 5,0,-2 % 5,0,0],[-2 % 5,1,2 % 5,0,-1,0],[0,1 % 5,-1 % 5,2 % 5,0,0]]
+]
+,
+// fltk 7Fl_Tile 45 -250 1036 144 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -250 1036 36 26
+K:=ker(M);
+,
+// fltk N4xcas10Log_OutputE 45 -214 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -213 1036 107 16
+[[-2 % 5,-1 % 5,-2 % 5,2 % 5,-1,0],[0 % 5,0 % 5,0 % 5,0 % 5,0,-1]]
+]
+,
+// fltk 7Fl_Tile 45 -104 1036 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 -104 1036 30 26
+Le noyau est de dim 2, il y a donc 2 facteurs irreductibles modulo 5
+,
+// fltk N4xcas10Log_OutputE 45 -74 1036 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 -71 1036 102 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 -71 1036 32 26
+K0:=normal(horner(K[0],x))
+,
+// fltk N4xcas10Log_OutputE 45 -39 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 -38 1036 69 16
+(-2 % 5)*x^5+(-1 % 5)*x^4+(-2 % 5)*x^3+(2 % 5)*x^2-x
+]
+,
+// fltk 7Fl_Tile 45 33 1036 104 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 33 1036 34 26
+P2:=gcd(K0,Q)
+,
+// fltk N4xcas10Log_OutputE 45 67 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 68 1036 69 16
+(1 % 5)*x^3+(1 % 5)*x+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 139 1036 103 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 139 1036 33 26
+P3:=quo(Q,P2);
+,
+// fltk N4xcas10Log_OutputE 45 172 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 173 1036 69 16
+x^3+(-2 % 5)*x^2-x-2 % 5
+]
+,
+// fltk 7Fl_Tile 45 244 1036 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 244 1036 30 26
+Par rapport a P[X], on reconnait P2, alors que P1 et P3 se recombineront
+,
+// fltk N4xcas10Log_OutputE 45 274 1036 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 277 1036 103 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 277 1036 33 26
+normal(P1*P3);
+,
+// fltk N4xcas10Log_OutputE 45 310 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 311 1036 69 16
+x^4+(1 % 5)*x+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 382 1036 31 26
+[
+// fltk N4xcas23Comment_Multiline_InputE 45 382 1036 30 26
+Si gcd(K0,Q) est trivial, on essaie gcd(K0,Q-j) pour j entier
+,
+// fltk N4xcas10Log_OutputE 45 412 1036 1 26
+
+]
+,
+// fltk 7Fl_Tile 45 415 1036 90 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 415 1036 34 26
+gcd(K0-1,Q);
+,
+// fltk N4xcas10Log_OutputE 45 449 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 450 1036 55 16
+1 % 5
+]
+,
+// fltk 7Fl_Tile 45 507 1036 101 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 507 1036 31 26
+gcd(K0-2,Q);
+,
+// fltk N4xcas10Log_OutputE 45 538 1036 1 26
+
+,
+// fltk N4xcas8EquationE 45 539 1036 69 16
+(1 % 5)*x^3+(-2 % 5)*x^2+(-1 % 5)*x-2 % 5
+]
+,
+// fltk 7Fl_Tile 45 610 1036 32 26
+[
+// fltk N4xcas19Multiline_Input_tabE 45 610 1036 31 26
+
+,
+// fltk N4xcas10Log_OutputE 45 641 1036 1 26
+
+]

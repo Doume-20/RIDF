@@ -1,0 +1,86 @@
+2022-05-25 14:34:09 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/HiSqool_hidden_prod (593) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_HiSqool_hidden_prod.json +12ms
+2022-05-25 12:34:10.176: 2022-05-25 14:34:10 [4976] INFO [JS] Version of update package: 1.1 +762ms
+2022-05-25 12:34:10.176: 2022-05-25 14:34:10 [4976] INFO [JS] Your package is up to date +1ms
+2022-05-25 12:34:10.176: 2022-05-25 14:34:10 [4976] INFO [Runner] Runner doesn't need to be performed +3ms
+2022-05-25 12:34:10.176: 2022-05-25 14:34:10 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Certificat-RIDF-1.1 (545) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Certificat-RIDF-1.1.json +2ms
+2022-05-25 12:34:10.214: 2022-05-25 14:34:10 [4976] INFO [JS] Version of update package: 4.1 +39ms
+2022-05-25 12:34:10.214: 2022-05-25 14:34:10 [4976] INFO [JS] Your package is up to date +0ms
+2022-05-25 12:34:10.214: 2022-05-25 14:34:10 [4976] INFO [Runner] Runner doesn't need to be performed +0ms
+2022-05-25 12:34:10.224: 2022-05-25 14:34:10 [4976] INFO [ConfigurationRunner] Writing execution result of conf/application/windows/Lib-Manuels (521) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\conf_application_windows_Lib-Manuels.json +2ms
+2022-05-25 12:35:49.529: 2022-05-25 14:35:49 [4976] INFO [MQTTObserver] Received digest MD5:7806e5dd5b95eecd239dbe3a89c64fb3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +99314ms
+2022-05-25 12:37:40.521: 2022-05-25 14:37:40 [4976] INFO [MQTTObserver] Received digest MD5:7806e5dd5b95eecd239dbe3a89c64fb3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +110989ms
+2022-05-25 12:42:55.781: 2022-05-25 14:42:55 [4976] INFO [MQTTObserver] Received digest MD5:7806e5dd5b95eecd239dbe3a89c64fb3 for https://idf.hisqool.com/conf/configurations/groups/I2wtMgAsLCNCS5N00QtmmuOtLB0 +315255ms
+2022-05-25 12:51:48.509: 2022-05-25 14:51:48 [4976] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +532730ms
+2022-05-25 12:51:48.509: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> __/conf/agents/facts... +1ms
+2022-05-25 12:51:48.509: 2022-05-25 14:51:48 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +5ms
+2022-05-25 12:51:48.509: 2022-05-25 14:51:48 [4976] INFO [Runner] Creating configuration unit runner object... +7ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [Runner] Checking if runner needs to be performed... +2ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [JS] Checking if programming or tiggering with trigger __/conf/agents/facts... +2ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [JS] We are triggering +2ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> __/conf/agents/facts... +1ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> __/conf/agents/facts... +1ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> __/conf/agents/facts... +1ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> __/conf/agents/facts... +2ms
+2022-05-25 12:51:48.524: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Lib-Manuels -> __/conf/agents/facts... +2ms
+2022-05-25 12:51:48.540: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Certificat-RIDF-1.1 -> __/conf/agents/facts... +1ms
+2022-05-25 12:51:48.540: 2022-05-25 14:51:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/HiSqool_hidden_prod -> __/conf/agents/facts... +2ms
+2022-05-25 12:51:48.540: 2022-05-25 14:51:48 [4976] INFO [Runner] Performing runner... +1ms
+2022-05-25 12:51:48.540: 2022-05-25 14:51:48 [4976] INFO [JS] Performing facts gathering and upload... +2ms
+2022-05-25 12:51:50.388: 2022-05-25 14:51:50 [4976] INFO [JS] Getting installed applications... +1844ms
+2022-05-25 12:51:51.110: 2022-05-25 14:51:51 [4976] INFO [JS] Getting apps result: 0 +717ms
+2022-05-25 12:51:51.110: 2022-05-25 14:51:51 [4976] INFO [JS] Setting facts... +0ms
+2022-05-25 12:51:51.110: 2022-05-25 14:51:51 [4976] INFO [JS] Uploading facts... +2ms
+2022-05-25 12:51:51.280: 2022-05-25 14:51:51 [4976] INFO [JS] Uploading facts result:  +179ms
+2022-05-25 12:51:51.280: 2022-05-25 14:51:51 [4976] INFO [Runner] Running result: true +1ms
+2022-05-25 12:51:51.295: 2022-05-25 14:51:51 [4976] INFO [ConfigurationRunner] Writing execution result of __/conf/agents/facts (111) to C:\Program Files\Unowhy\HiSqool Manager\data\configurations\results\___conf_agents_facts.json +4ms
+2022-05-25 13:21:48.517: 2022-05-25 15:21:48 [4976] INFO [SchedulerService] Triggering scheduled job facts with unit __/conf/agents/facts... +1797220ms
+2022-05-25 13:21:48.517: 2022-05-25 15:21:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/conf/agents/facts -> configuration... +1ms
+2022-05-25 13:21:48.517: 2022-05-25 15:21:48 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\111\payload... +4ms
+2022-05-25 13:21:48.517: 2022-05-25 15:21:48 [4976] INFO [Runner] Creating configuration unit runner object... +7ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [JS] Checking if programming or tiggering with trigger configuration... +3ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [JS] We are programmging on name __/conf/agents/facts with schedule: 30 minutes +1ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [SchedulerService] Adding schedule: name facts, interval=1800000, unit=__/conf/agents/facts, immediate=true +2ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [SchedulerService] Identical schedule existing. Doing nothing +1ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [JS] Scheduling result: undefined +2ms
+2022-05-25 13:21:48.532: 2022-05-25 15:21:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: __/unowhy/manager/windows -> configuration... +2ms
+2022-05-25 13:21:48.548: 2022-05-25 15:21:48 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\360\payload... +3ms
+2022-05-25 13:21:48.617: 2022-05-25 15:21:48 [4976] INFO [Runner] Creating configuration unit runner object... +69ms
+2022-05-25 13:21:48.617: 2022-05-25 15:21:48 [4976] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-05-25 13:21:48.617: 2022-05-25 15:21:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Acceptation-des-conditions-sur-Windows -> configuration... +6ms
+2022-05-25 13:21:48.617: 2022-05-25 15:21:48 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\280\payload... +2ms
+2022-05-25 13:21:48.664: 2022-05-25 15:21:48 [4976] INFO [Runner] Creating configuration unit runner object... +46ms
+2022-05-25 13:21:48.664: 2022-05-25 15:21:48 [4976] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-05-25 13:21:48.664: 2022-05-25 15:21:48 [4976] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-05-25 13:21:48.680: 2022-05-25 15:21:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/sqoolctl -> configuration... +1ms
+2022-05-25 13:21:48.680: 2022-05-25 15:21:48 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\279\payload... +2ms
+2022-05-25 13:21:48.702: 2022-05-25 15:21:48 [4976] INFO [Runner] Creating configuration unit runner object... +25ms
+2022-05-25 13:21:48.702: 2022-05-25 15:21:48 [4976] INFO [Runner] Checking if runner needs to be performed... +0ms
+2022-05-25 13:21:48.702: 2022-05-25 15:21:48 [4976] INFO [JS] Checking that the unit needs to be performed +1ms
+2022-05-25 13:21:48.717: 2022-05-25 15:21:48 [4976] INFO [ConfigurationRunner] Got fresh unit/trigger couple: conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0 -> configuration... +20ms
+2022-05-25 13:21:48.717: 2022-05-25 15:21:48 [4976] INFO [Runner] Requiring configuration unit index.js in C:\Program Files\Unowhy\HiSqool Manager\data\configurations\payloads\271\payload... +2ms
+2022-05-25 13:21:48.733: 2022-05-25 15:21:48 [4976] INFO [Runner] Creating configuration unit runner object... +14ms
+2022-05-25 13:21:48.733: 2022-05-25 15:21:48 [4976] INFO [Runner] Checking if runner needs to be performed... +1ms
+2022-05-25 13:21:48.749: 2022-05-25 15:21:48 [4976] INFO [JS] Checking that the unit needs to be performed. Params:
+2022-05-25 13:21:48.749: {
+2022-05-25 13:21:48.749:   "platform": "win32",
+2022-05-25 13:21:48.749:   "deviceId": "IFP052046109",
+2022-05-25 13:21:48.749:   "basePath": "C:\\Program Files\\Unowhy\\HiSqool Manager",
+2022-05-25 13:21:48.749:   "dataPath": "C:\\Program Files\\Unowhy\\HiSqool Manager\\data",
+2022-05-25 13:21:48.749:   "userPath": "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\HiSqoolManager",
+2022-05-25 13:21:48.749:   "scriptName": "conf/application/windows/Charte-sur-la-protection-des-donnees-1.0.16.0",
+2022-05-25 13:21:48.749:   "versionCode": 21093040,
+2022-05-25 13:21:48.749:   "trigger": "configuration",
+2022-05-25 13:21:48.749:   "metadata": {
+2022-05-25 13:21:48.749:     "packageVersion": "1.0.16.0",
+2022-05-25 13:21:48.749:     "componentParameters": {
+2022-05-25 13:21:48.749:       "AppX": "Hisqool.Legal.GDPR",
+2022-05-25 13:21:48.749:       "UserDirectory": "AppData\\Local\\Programs\\Unowhy\\Hisqool\\GDPR",
+2022-05-25 13:21:48.749:       "DesktopShortcut": "Charte de protection*",
+2022-05-25 13:21:48.749:       "ProvisioningPackage": "Hisqool GDPR",
+2022-05-25 13:21:48.749:       "InstallationDirectory": "hisqool.gdpr",
+2022-05-25 13:21:48.749:       "UninstallationDirectory": "hisqool.gdpr",
+2022-05-25 13:21:48.749:       "InstallationScriptShortcut": "silent_hisqool.gdpr.vbs.lnk",
+2022-05-25 13:21:48.749:       "ProtocolHandlerRegistryKey": "UYinstallAppGDPR"
+2022-05-25 13:21:48.749:     },
+2022-05-25 13:21:48.749:     "installationConfigurationName": "conf/application/windows/Charte-sur-la-protection-des-données-1.0.16.0"

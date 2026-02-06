@@ -1,0 +1,189 @@
+// fltk N4xcas6FigureE 34 61 824 373
+// fltk N4xcas12History_PackE 36 -311 254 745
+[
+// fltk 7Fl_Tile 61 -311 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -311 229 30
+C:=cercle(0,4)
+,
+// fltk N4xcas10Log_OutputE 61 -281 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -280 229 25
+cercle(point(0.0,0),4.0)
+]
+,
+// fltk 7Fl_Tile 61 -253 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -253 229 30
+c:=cercle(0,3)
+,
+// fltk N4xcas10Log_OutputE 61 -223 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -222 229 25
+cercle(point(0.0,0),3.0)
+]
+,
+// fltk 7Fl_Tile 61 -195 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -195 229 30
+A:=point(-4,0)
+,
+// fltk N4xcas10Log_OutputE 61 -165 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 -164 229 25
+point(-4.0,0)
+]
+,
+// fltk 7Fl_Tile 61 -137 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -137 229 30
+B:=element(C)-3.328-6.067*i
+,
+// fltk N4xcas10Log_OutputE 61 -107 229 1
+
+,
+// fltk 9Fl_Scroll 61 -106 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -106 329 25
+point(0.175600281981,-3.99614370875)
+,
+// fltk 12Fl_Scrollbar 61 -106 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 -137 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 -57 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 -57 229 30
+S:=segment(A,B)
+,
+// fltk N4xcas10Log_OutputE 61 -27 229 1
+
+,
+// fltk 9Fl_Scroll 61 -26 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 -26 524 25
+polygone(point(-4.0,0),point(0.175600281981,-3.99614370875))
+,
+// fltk 12Fl_Scrollbar 61 197 213 16
+[]
+,
+// fltk 12Fl_Scrollbar 274 166 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 23 229 56
+[
+// fltk N4xcas19Multiline_Input_tabE 61 23 229 30
+I:=inter(S,c):;
+,
+// fltk N4xcas10Log_OutputE 61 53 229 1
+
+,
+// fltk N4xcas10Gen_OutputE 61 54 229 25
+"Done"
+]
+,
+// fltk 7Fl_Tile 61 81 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 81 229 30
+a:=I[1]
+,
+// fltk N4xcas10Log_OutputE 61 111 229 1
+
+,
+// fltk 9Fl_Scroll 61 112 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 112 325 25
+point(-2.75199696664,-1.19436706904)
+,
+// fltk 12Fl_Scrollbar 61 143 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 112 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 161 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 161 229 30
+b:=I[0]
+,
+// fltk N4xcas10Log_OutputE 61 191 229 1
+
+,
+// fltk 9Fl_Scroll 61 192 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 192 325 25
+point(-1.07240275138,-2.80177663971)
+,
+// fltk 12Fl_Scrollbar 61 223 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 192 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 241 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 241 229 30
+C1:=homothetie(A,1/3,C)
+,
+// fltk N4xcas10Log_OutputE 61 271 229 1
+
+,
+// fltk 9Fl_Scroll 61 272 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 272 396 25
+cercle(point(-2.66666666667,0),1.33333333333)
+,
+// fltk 12Fl_Scrollbar 61 303 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 272 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 321 229 78
+[
+// fltk N4xcas19Multiline_Input_tabE 61 321 229 30
+M:=inter(C1,c)
+,
+// fltk N4xcas10Log_OutputE 61 351 229 1
+
+,
+// fltk 9Fl_Scroll 61 352 229 47
+[
+// fltk N4xcas10Gen_OutputE 61 352 515 25
+[point(-2.6875,-1.33317056298),point(-2.6875,1.33317056298)]
+,
+// fltk 12Fl_Scrollbar 61 383 229 16
+[]
+,
+// fltk 12Fl_Scrollbar 290 352 16 31
+[]
+]
+]
+,
+// fltk 7Fl_Tile 61 401 229 31
+[
+// fltk N4xcas19Multiline_Input_tabE 61 401 229 30
+
+,
+// fltk N4xcas10Log_OutputE 61 431 229 1
+
+]
+]
+// fltk N4xcas8GeometryE 308 86 429 348
+-7.07,7.07,-5.7186,5.7186,[pnt(pnt[cercle(pnt[group[-4.0,4.0],0,2*pi]),0,"C"]),pnt(pnt[cercle(pnt[group[-3.0,3.0],0,2*pi]),0,"c"]),pnt(pnt[-4.0,0,"A"]),pnt(pnt[0.175600281981-3.99614370875*i,[0,[pnt(pnt[cercle(pnt[group[-4.0,4.0],0.0,6.28318530718]),0]),-1.52688214324]],"B"]),pnt(pnt[group[-4.0,0.175600281981-3.99614370875*i],0,"S"]),"Done",pnt(pnt[-2.75199696664-1.19436706904*i,0.0,"a"]),pnt(pnt[-1.07240275138-2.80177663971*i,0.0,"b"]),pnt(pnt[cercle(pnt[group[-4.0,-1.33333333333],0.0,6.28318530718]),0,"C1"]),group[pnt(pnt[-2.6875-1.33317056298*i,0,"M"]),pnt(pnt[-2.6875+1.33317056298*i,0,"M"])]],-7.07,7.07,1,0,0,0,1,1,1
+

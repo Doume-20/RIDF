@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Limites : limit limite</TITLE>
+<META NAME="description" CONTENT="Limites : limit limite">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node378.html">
+<LINK REL="previous" HREF="node376.html">
+<LINK REL="up" HREF="node376.html">
+<LINK REL="next" HREF="node378.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html8466"
+  HREF="node378.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8460"
+  HREF="node376.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8454"
+  HREF="node376.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8462"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8464"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8467"
+  HREF="node378.html">Limite et int&#233;grale</A>
+<B> monter:</B> <A NAME="tex2html8461"
+  HREF="node376.html">Limites</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8455"
+  HREF="node376.html">Limites</A>
+ &nbsp; <B>  <A NAME="tex2html8463"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8465"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION009201000000000000000"></A><A NAME="9325"></A><A NAME="9326"></A><A NAME="sec:limit"></A>
+<BR>
+Limites : <TT>limit limite</TT>
+</H2>
+<TT>limit</TT> permet de calculer la limite d'une expression en un point fini (ou 
+infini). En utilisant un param&#232;tre supplementaire, on peut indiquer si on
+cherche une limite par valeurs sup&#233;rieures ou par 
+valeurs inf&#233;rieures (1 pour dire "par valeurs sup&#233;rieures" et -1 pour dire 
+"par valeurs inf&#233;rieures").
+<BR><TT>limit</TT> a trois ou quatre  arguments :
+<BR>
+une expression, le nom de la variable (par exemple <TT>x</TT>), le point limite 
+(par exemple <TT>a</TT>) et un argument optionnel qui indique si la limite est 
+unidirectionnelle ou bidirectionnelle (par d&#233;faut <TT>0</TT>). 
+Cet argument est &#233;gal &#224; 
+<TT>-1</TT> pour une limite &#224; gauche (<TT>x&lt;a</TT>) ou  est &#233;gal &#224; <TT>1</TT> 
+pour une limite &#224; droite (<TT>x&gt;a</TT>) ou &#224; <TT>0</TT> pour une limite.
+<BR>
+L'argument optionnel est donc utilis&#233; lorsque l'on veut calculer une limite 
+&#224; droite (+1) ou une limite &#224; gauche (-1).
+<BR><TT>limit</TT> renvoie la limite demand&#233;e.
+<BR><B>Remarque</B>
+<BR>
+On peut aussi mettre comme argument <TT>x=a</TT> &#224; la place de <TT>x,a</TT> donc :
+<TT>limit</TT> a aussi comme arguments une expression d&#233;pendant d'une variable, 
+une &#233;galit&#233; (variable =la valeur o&#249; l'on veut calculer la limite) et 
+&#233;ventuellement 1 ou -1 pour indiquer la direction.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x,0,-1)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x=0,-1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-(infinity)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x,0,1)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x=0,1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>+(infinity)</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x,0,0)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x,0)</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>limit(1/x,x=0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>infinity</TT>
+</DIV>
+cela veut dire que <TT>abs(1/x)</TT> tend vers + <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$"> 
+quand <I>x</I> tend vers 0.
+<BR>
+Exercices :
+
+<UL>
+<LI>Trouver pour <I>n</I> &gt; 2, la limite quand <I>x</I> tend vers 0 de :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{n\tan(x)-\tan(nx)}{\sin(nx)-n\sin(x)}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="151" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.png"
+ ALT="$\displaystyle {\frac{{n\tan(x)-\tan(nx)}}{{\sin(nx)-n\sin(x)}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit((n*tan(x)-tan(n*x))/(sin(n*x)-n*sin(x)),x=0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>2 </TT>
+</DIV>
+</LI>
+<LI>Trouver la limite quand <I>x</I> tend vers + <IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ \infty$"> de :
+<P><!-- MATH
+ \begin{displaymath}
+\sqrt{x+\sqrt{x+\sqrt x}}-\sqrt x
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="126" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img249.png"
+ ALT="$\displaystyle \sqrt{{x+\sqrt{x+\sqrt x}}}$"> - <IMG
+ WIDTH="29" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img250.png"
+ ALT="$\displaystyle \sqrt{x}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit(sqrt(x+sqrt(x+sqrt(x)))-sqrt(x),x=+infinity)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>1/2 </TT>
+</DIV>
+</LI>
+<LI>Trouver la limite quand <I>x</I> tend vers 0 de :
+<P><!-- MATH
+ \begin{displaymath}
+\frac{\sqrt{1+x+x^2/2}-\exp(x/2)}{(1-\cos(x))\sin(x)}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="211" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$\displaystyle {\frac{{\sqrt{1+x+x^2/2}-\exp(x/2)}}{{(1-\cos(x))\sin(x)}}}$">
+</DIV><P></P>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>limit((sqrt(1+x+x<code>^</code>2/2)-exp(x/2))/((1-cos(x))*sin(x)),x,0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>-1/6 </TT>
+</DIV>
+</LI>
+</UL>
+
+<P>
+Pour calculer quelquefois des limites plus ais&#233;ment, il peut &#234;tre 
+judicieux de quoter le premier argument.
+<BR>
+On tape par exemple :
+<DIV ALIGN="CENTER">
+<TT>limit('(2*x-1)*exp(1/(x-1))',x=+infinity)</TT>
+</DIV>
+On remarquera que l'on a quot&#233; ici le premier argument pour qu'il ne soit 
+pas &#233;valu&#233; c'est &#224; dire pour qu'il ne soit pas simplifi&#233;.
+<BR>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>+(infinity)</TT>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html8466"
+  HREF="node378.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html8460"
+  HREF="node376.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html8454"
+  HREF="node376.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html8462"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html8464"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html8467"
+  HREF="node378.html">Limite et int&#233;grale</A>
+<B> monter:</B> <A NAME="tex2html8461"
+  HREF="node376.html">Limites</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html8455"
+  HREF="node376.html">Limites</A>
+ &nbsp; <B>  <A NAME="tex2html8463"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html8465"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

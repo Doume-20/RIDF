@@ -1,0 +1,93 @@
+// fltk 7Fl_Tile 34 76 1031 349
+[
+// fltk N4xcas7EditeurE 34 76 1031 348
+972 ,
+// Algorithmes simples sur les nombres premiers
+factprem(n):={ 
+  local j,d,s,l; 
+  d:=2;  
+  s:=0;  
+  l:=[];  
+  while((d*d)<=n){ 
+    j:=0;  
+    while((irem(n,d))==0){ 
+      n:=iquo(n,d);  
+      j:=j+1;  
+    }  
+    if (j!=0) { 
+      l:=concat(l,[d,j]);  
+      s:=s+2;  
+    }  
+    if (d<4) { 
+      d:=2*d-1;  
+    } 
+    else { 
+      d:=d+irem(4*d,6);  
+    }  
+  }  
+  if (n!=1) { 
+    l:=concat(l,[n,1]);  
+    s:=s+2;  
+  }
+  return [l,s];  
+};
+
+ddiv:= (n,d)-> 
+{ 
+  local l,j; 
+  j:=0;  
+  while((irem(n,d))==0){ 
+    n:=iquo(n,d);  
+    j:=j+1;  
+  }
+  if (j==0) { 
+    l:=[n,[]];  
+  } 
+  else { 
+    l:=[n,[d,j]];  
+  }  
+  return(l);  
+};
+
+criblefact:= (n)-> 
+{ 
+  local d,prem,s,ld,ldiv; 
+  prem:=crible(floor(sqrt(n)));  
+  s:=size(prem);  
+  ldiv:=[];  
+  for (k:=0;k<s;k:=k+1) { 
+    ld:=ddiv(n,prem[k]);  
+    ldiv:=concat(ldiv,ld[1]);  
+    n:=ld[0];  
+    k:=k+1;  
+  }  
+  if (n!=1) { 
+    ldiv:=concat(ldiv,[n,1]);  
+  }
+  return(ldiv);  
+};
+,
+// fltk N4xcas10Log_OutputE 34 424 1031 1
+
+]
+,
+// fltk 7Fl_Tile 34 427 1031 73
+[
+// fltk N4xcas19Multiline_Input_tabE 34 427 1031 30
+factprem(125)
+,
+// fltk N4xcas10Log_OutputE 34 457 1031 1
+
+,
+// fltk N4xcas8EquationE 34 458 1031 42
+[[5,3],2]
+]
+,
+// fltk 7Fl_Tile 34 502 1031 31
+[
+// fltk N4xcas19Multiline_Input_tabE 34 502 1031 30
+
+,
+// fltk N4xcas10Log_OutputE 34 532 1031 1
+
+]

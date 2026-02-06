@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Extraire un ou des &#233;l&#233;ment(s) d'une matrice : at</TITLE>
+<META NAME="description" CONTENT="Extraire un ou des &#233;l&#233;ment(s) d'une matrice : at">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="next" HREF="node641.html">
+<LINK REL="previous" HREF="node639.html">
+<LINK REL="up" HREF="node628.html">
+<LINK REL="next" HREF="node641.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html12369"
+  HREF="node641.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12363"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12357"
+  HREF="node639.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12365"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12367"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12370"
+  HREF="node641.html">Modifier un &#233;l&#233;ment ou</A>
+<B> monter:</B> <A NAME="tex2html12364"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12358"
+  HREF="node639.html">Puissance de Hadamard (version</A>
+ &nbsp; <B>  <A NAME="tex2html12366"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12368"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0094312000000000000000"></A><A NAME="16422"></A>
+<BR>
+Extraire un ou des &#233;l&#233;ment(s) d'une matrice : <TT>at</TT>
+</H2>
+Un matrice est une liste de listes de m&#234;me longueur.
+<BR>
+On tape : 
+<DIV ALIGN="CENTER">
+<TT>A:=[[3,4,5],[1,2,6]]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[3,4,5],[1,2,6]]</TT>
+</DIV> 
+
+<UL>
+<LI>Pour obtenir un &#233;l&#233;ment, on met deux arguments entre des crochets :
+ l'indice de la ligne et l'indice de la colonne s&#233;par&#233; par une virgule.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>[[3,4,5],[1,2,6]][0,1]</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>A[0,1]</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>A[0][1]</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>at(A,[0,1])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>4</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Pour obtenir une ligne de la matrice <TT>A</TT>, on met l'indice de la 
+ligne entre des crochets, on tape:
+<DIV ALIGN="CENTER">
+<TT>[[3,4,5],[1,2,6]][0]</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>A[0]</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>at(A,0)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[3,4,2]</TT>
+</DIV>
+</LI>
+<LI>Pour obtenir une sous-ligne de la matrice <TT>A</TT>, on met deux arguments 
+entre des crochets : l'indice de la ligne et un 
+intervalle pour d&#233;signer les indices des colonnes formant la sous-ligne.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[1,0..2]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[1,2,6]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[1,1..2]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[2,6]</TT>
+</DIV>
+</LI>
+<LI>Pour obtenir, sous la forme d'une liste une colonne de la matrice 
+<TT>A</TT>, on utilise <TT>tran(A)</TT> qui 
+d&#233;signe la transpos&#233;e de <TT>A</TT> et on tape :
+<DIV ALIGN="CENTER">
+<TT>tran(A)[1]</TT>
+</DIV>
+ou
+<DIV ALIGN="CENTER">
+<TT>at(tran(A),1)</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[4,2]</TT>
+</DIV>
+ou encore on met deux arguments entre des crochets : un intervalle pour 
+d&#233;signer toutes les lignes et l'indice de la colonne.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[0..1,1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[4,2]</TT>
+</DIV>
+</LI>
+<LI>Pour avoir une liste repr&#233;sentant une sous-colonne, on met deux 
+arguments entre des crochets : un intervalle pour 
+d&#233;signer les indices des lignes formant la sous-colonne et l'indice de la 
+colonne.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[0..0,1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[4]</TT>
+</DIV>
+Cela peut &#234;tre utiliser pour extraire une colonne, en mettant comme premier 
+indice, l'intervalle d&#233;signant toutes les lignes.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[0..1,1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[4,2]</TT>
+</DIV>
+
+<P>
+</LI>
+<LI>Pour extraire une sous-matrice d'une matrice, on met deux arguments entre
+des crochets : un intervalle pour d&#233;signer les lignes et un intervalle pour 
+d&#233;signer les colonnes.
+<BR>
+On d&#233;finit la matrice <TT>A</TT>, on tape :
+<DIV ALIGN="CENTER">
+<TT>A:=[[3,4,5],[1,2,6]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[0..1,1..2]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4,5],[2,6]]</TT>
+</DIV>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[0..1,1..1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[4],[2]]</TT>
+</DIV>
+<B>Remarque</B>
+<BR>
+Si on veut une sous matrice constitu&#233;e de lignes cons&#233;cutives,
+on peut ommettre le deuxi&#232;me argument et ne  mettre que l'intervalle 
+pour d&#233;signer les lignes entre des crochets.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>A[1..1]</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>[[1,2,6]]</TT>
+</DIV>
+</LI>
+</UL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html12369"
+  HREF="node641.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html12363"
+  HREF="node628.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html12357"
+  HREF="node639.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html12365"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html12367"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html12370"
+  HREF="node641.html">Modifier un &#233;l&#233;ment ou</A>
+<B> monter:</B> <A NAME="tex2html12364"
+  HREF="node628.html">Cr&#233;ation et arithm&#233;tique des</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html12358"
+  HREF="node639.html">Puissance de Hadamard (version</A>
+ &nbsp; <B>  <A NAME="tex2html12366"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html12368"
+  HREF="node1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Point d&#233;fini comme barycentre de n points : barycenter barycentre</TITLE>
+<META NAME="description" CONTENT="Point d&#233;fini comme barycentre de n points : barycenter barycentre">
+<META NAME="keywords" CONTENT="cascmd_fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cascmd_fr.css">
+
+<LINK REL="previous" HREF="node1034.html">
+<LINK REL="up" HREF="node1028.html">
+<LINK REL="next" HREF="node1036.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html18504"
+  HREF="node1036.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html18498"
+  HREF="node1028.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html18494"
+  HREF="node1034.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html18500"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html18502"
+  HREF="node1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> suivant:</B> <A NAME="tex2html18505"
+  HREF="node1036.html">Les lignes</A>
+<B> monter:</B> <A NAME="tex2html18499"
+  HREF="node1028.html">Les points</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html18495"
+  HREF="node1034.html">L'isobarycentre de n points</A>
+ &nbsp; <B>  <A NAME="tex2html18501"
+  HREF="node2.html">Table des mati&#232;res</A></B> 
+ &nbsp; <B>  <A NAME="tex2html18503"
+  HREF="node1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001337000000000000000"></A><A NAME="26983"></A><A NAME="26984"></A><A NAME="sec:barycentre3"></A>
+<BR>
+Point d&#233;fini comme barycentre de <I>n</I> points : <TT>barycenter barycentre</TT>
+</H2>
+<B>Voir aussi :</B> <A HREF="node923.html#sec:barycentre2">9.9.9</A> pour la g&#233;om&#233;trie plane et
+<A HREF="node312.html#sec:baryc">6.12.10</A>.
+<BR><TT>barycentre</TT>, en g&#233;om&#233;trie 3D, a comme argument deux listes 
+de m&#234;me longueur (resp une matrice ayant deux colonnes) la premi&#232;re liste
+(resp colonne) contient des points <I>A</I><SUB>j</SUB>, la deuxi&#232;me liste 
+(resp colonne) contient des coefficients r&#233;els <IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$">.
+<BR><TT>barycentre</TT> renvoie et trace le point qui est le barycentre des points
+ <I>A</I><SUB>j</SUB> d'affixes <I>a</I><SUB>j</SUB> affect&#233;s des coefficients r&#233;els <IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$"> lorsque
+<!-- MATH
+ $\sum \alpha_j \neq 0$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$ \sum$"><IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$"> <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$ \neq$"> 0 .
+<BR>
+Si <!-- MATH
+ $\sum \alpha_j = 0$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$ \sum$"><IMG
+ WIDTH="22" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$ \alpha_{j}^{}$"> = 0, <TT>barycentre</TT> renvoie une erreur.
+<BR>
+On tape :
+<DIV ALIGN="CENTER">
+<TT>barycentre([point(1,4,0),point(1,-2,0)],[1,1])</TT>
+</DIV>
+Ou on tape :
+<DIV ALIGN="CENTER">
+<TT>barycentre([[point(1,4,0),1],[point(1,-2,0),1]])</TT>
+</DIV>
+On obtient :
+<DIV ALIGN="CENTER">
+<TT>Le point (1,1,0) est trac&#233;</TT>
+</DIV>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Documentation de <A HREF="http://www-fourier.ujf-grenoble.fr/~parisse/giac_fr.html">giac</A> &eacute;crite par Ren&eacute;e De Graeve
+</ADDRESS>
+</BODY>
+</HTML>

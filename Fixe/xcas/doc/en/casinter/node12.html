@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>3-d rendering.</TITLE>
+<META NAME="description" CONTENT="3-d rendering.">
+<META NAME="keywords" CONTENT="casinter">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="casinter.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html158"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html152"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html161"
+  HREF="node13.html">3-d spots</A>
+<B> Up:</B> <A NAME="tex2html159"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html153"
+  HREF="node11.html">Parameters (cursors)</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00035400000000000000">
+3-d rendering.</A>
+</H3>
+There are several options for 3-d graphs rendering that may be
+configured by hitting the cfg button. First, you have to choose
+between intrinsic colors or a scene viewed with 1 to 8 light spots, 
+see below.
+
+<P>
+Then you can choose the <I>x</I>, <I>y</I>, <I>z</I> ranged that will be visible.
+The position of the eye visualizing the scene may be changed by
+specifying a plan equation (normal to the vision direction). You
+may also easily change the view point outside of
+the cfg configuration window either with the
+mouse (push outside of the parallelepipedium, drag the mouse
+and release it at your option) or with the x,X, y,Y, z,Z keys to
+rotate around the <I>x</I>, <I>y</I> or <I>z</I> axis. 
+
+<P>
+By hitting the r key or by selecting 
+<code>M-&gt;3-d-&gt;Animation rotation</code>,
+you can get a visualization animation by rotation around the
+origin. By default, it will rotate the viewpoint around the <I>z</I> axis
+but this is configurable from the <code>cfg</code> button, you can configure
+
+<UL>
+<LI><code>Anim</code>: what will be animated, viewpoint if bit8 is 1, 
+spot number 7 to 0 if bit 7 to 0 are set to 1. For example, 255 will
+move all spots leaving the viewpoint unchanged.
+</LI>
+<LI><code>t</code>: interval between 2 redrawing
+</LI>
+<LI><code>n</code>: number of steps for a round trip
+</LI>
+<LI><code>x</code>, <code>y</code>, <code>z</code>: coordinates of the axis
+</LI>
+<LI><code>d</code>: normally 0, may be non 0 if you want also to move the
+number of image of a programmed animation
+</LI>
+</UL>
+You can specify the axis of rotation in the commandline defining the
+scene by 
+<DIV ALIGN="CENTER">
+<code>gl_rotation_axis=[x,y,z]</code> 
+
+</DIV>
+where <code>x,y,z</code>
+are the coordinates of the axis of rotation.
+
+<P>
+Do not confuse visualization animation with programmed animation
+obtained by instructions like <code>animate, animate3d, animation</code>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html158"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html152"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html161"
+  HREF="node13.html">3-d spots</A>
+<B> Up:</B> <A NAME="tex2html159"
+  HREF="node8.html">Geometry and graphics</A>
+<B> Previous:</B> <A NAME="tex2html153"
+  HREF="node11.html">Parameters (cursors)</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<A HREF=>giac</A> documentation written by Bernard Parisse
+</ADDRESS>
+</BODY>
+</HTML>
